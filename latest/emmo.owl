@@ -8,6 +8,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:emmo-annotations="http://emmo.info/latest/base/emmo-annotations.owl#">
     <owl:Ontology rdf:about="http://emmo.info/latest/emmo.owl">
+        <owl:imports rdf:resource="http://emmo.info/latest/domains/emmo-acoustical.owl"/>
         <owl:imports rdf:resource="http://emmo.info/latest/domains/emmo-geometry.owl"/>
         <owl:imports rdf:resource="http://emmo.info/latest/domains/emmo-material.owl"/>
         <owl:imports rdf:resource="http://emmo.info/latest/domains/emmo-math.owl"/>
