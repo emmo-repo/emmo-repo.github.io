@@ -1,0 +1,108 @@
+Classes
+-------
+Value
+  - subclassOf SymbolicDomain (??)
+  Subclasses:
+    * BasicValue
+        * Boolean
+        * Number
+        * String
+    * Array
+        - hasDimension some Dimension
+        Subclasses:
+          * NumericArray
+              - hasSpatialPart some Number
+              Subclasses:
+              * Matrix
+                  - hasDimension exactly 2 Dimension
+    * CompoundValue
+        An unordered set of key-value pairs, like C struct's or Python
+        dict's.  Not sure if we really want to include this.
+        - hasSpatialPart some CompoundItem
+    * NumericValue
+        - disjointUnionOf Number, NumericArray
+
+
+Number
+  * Natural
+  * Integer
+  * Rational
+      Subclasses:
+        * Float
+  * Real
+  * Complex
+  * Quaternion
+  * Octonion         # for Georg :-)
+
+
+CompoundItem
+  A CompoundItem has two spatial parts, 'name' and 'value'.  It makes a
+  connection between the name and the value.
+  - subclassOf Composition (???)
+    hasName some String      # should we use "exact 1" String ??
+    hasValue some Value      # should we use "exact 1" Value ??
+
+
+Dimension
+  Dimensions have a size and may be chained (using hasNextDimension)
+  to provide an ordered list of dimensions.  Tensor dimensions may be
+  either covariant or contravariant.
+  - hasValue some Natural               (or exactly 1?)
+  - hasNextDimension some Dimension     (or max 1?)
+
+
+Relations
+---------
+hasValue
+  - subclass of: hasSpatialPart
+  - domain: Item                        # should it be more restricted?
+  - range: Value
+
+hasName
+  - subrelationOf hasSpatialPart
+  - domain: CpmpoundItem
+  - range: String
+
+hasDimension
+  Cardinality may be used to specify exact, max or min size of a dimension.
+  Otherwise the dimension size must be assigned at instantiation.
+  - subclass of: hasSpatialPart
+  - domain: Array or Property?
+  - range: Dimension
+
+hasNextDimension
+  subclass of: hasSpatialPart
+  domain: Dimension
+  range: Dimension
+
+
+
+Tensor
+  Is a PhysicalQuantity with some Dimension (hasDimension some Dimension).
+  Subclasses:
+    * Scalar
+        A Tensor of rank 0 (hasDimension exactly 0 Dimension)
+    * Vector
+        A Tensor of rank 1 (hasDimension exactly 1 Dimension)
+
+PhyscalQuantity
+  Update relations:
+    - hasValue some NumericValue
+    - hasUnit some Unit
+
+  Subclasses:
+    * CovariantDimension
+    * ContravariantDimension
+
+
+
+
+
+Relations
+---------
+
+hasPreviousDimension
+  subclass of: hasSpatialPart
+  inverse: hasNextDimension
+  domain: Dimension
+ range: Dimension
