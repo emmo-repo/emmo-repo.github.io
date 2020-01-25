@@ -1,0 +1,42 @@
+Prefix(:=<http://emmo.info/0.9.9/emmo/emmo#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
+
+
+Ontology(<http://emmo.info/0.9.9/emmo/emmo>
+Import(<http://emmo.info/0.9.9/emmo/emmo-core>)
+Import(<http://emmo.info/0.9.9/emmo/emmo-direct>)
+Import(<http://emmo.info/0.9.9/emmo/emmo-material>)
+Import(<http://emmo.info/0.9.9/emmo/emmo-math>)
+Import(<http://emmo.info/0.9.9/emmo/emmo-models>)
+Import(<http://emmo.info/0.9.9/emmo/emmo-properties>)
+Import(<http://emmo.info/0.9.9/emmo/emmo-semiotics>)
+Import(<http://emmo.info/0.9.9/emmo/emmo-usercase>)
+Import(<http://emmo.info/0.9.9/emmo/emmo-process>)
+
+Annotation(<http://emmo.info/0.9.9/emmo/emmo-core#EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc> "EMMO is released under a Creative Commons license Attribution 4.0 International (CC BY 4.0)
+
+https://creativecommons.org/licenses/by/4.0/legalcode")
+Annotation(rdfs:comment "Contacts:
+Gerhard Goldbeck
+Goldbeck Consulting Ltd (UK)
+email: gerhard@goldbeck-consulting.com
+
+Emanuele Ghedini
+University of Bologna (IT)
+email: emanuele.ghedini@unibo.it")
+Annotation(rdfs:comment "European Materials and Modelling Ontology (EMMO)
+
+EMMO is a multidisciplinary effort to develop a standard representational framework (the ontology) based on current materials modelling knowledge, including physical sciences, analytical philosophy and information and communication technologies. 
+
+It provides the connection between the physical world, materials characterisation world and materials modelling world.")
+Annotation(owl:versionInfo "The European Materials Modelling Ontology
+
+Development Version v0.9.9")
+
+
+)
