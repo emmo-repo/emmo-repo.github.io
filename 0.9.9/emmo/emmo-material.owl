@@ -1,18 +1,18 @@
-Prefix(:=<http://emmc.info/emmo-material#>)
+Prefix(:=<http://emmo.info/0.9.9/emmo/emmo-material#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-Prefix(emmo-core:=<http://emmc.info/emmo-core#>)
-Prefix(emmo-direct:=<http://emmc.info/emmo-direct#>)
-Prefix(emmo-material:=<http://emmc.info/emmo-material#>)
+Prefix(emmo-core:=<http://emmo.info/0.9.9/emmo/emmo-core#>)
+Prefix(emmo-direct:=<http://emmo.info/0.9.9/emmo/emmo-direct#>)
+Prefix(emmo-material:=<http://emmo.info/0.9.9/emmo/emmo-material#>)
 
 
-Ontology(<http://emmc.info/emmo-material>
-Import(<http://emmc.info/emmo-direct>)
+Ontology(<http://emmo.info/0.9.9/emmo/emmo-material>
+Import(<http://emmo.info/0.9.9/emmo/emmo-direct>)
 
-Annotation(<http://emmc.info/emmo-core#EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc> "EMMO is released under a Creative Commons license Attribution 4.0 International (CC BY 4.0)
+Annotation(<http://emmo.info/0.9.9/emmo/emmo-core#EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc> "EMMO is released under a Creative Commons license Attribution 4.0 International (CC BY 4.0)
 
 https://creativecommons.org/licenses/by/4.0/legalcode")
 Annotation(rdfs:comment "Contacts:

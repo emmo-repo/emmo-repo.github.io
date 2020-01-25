@@ -1,4 +1,4 @@
-Prefix(:=<http://emmc.info/emmo#>)
+Prefix(:=<http://emmo.info/0.9.9/emmo/emmo#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
@@ -7,18 +7,18 @@ Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
 Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
 
 
-Ontology(<http://emmc.info/emmo>
-Import(<http://emmc.info/emmo-core>)
-Import(<http://emmc.info/emmo-direct>)
-Import(<http://emmc.info/emmo-material>)
-Import(<http://emmc.info/emmo-math>)
-Import(<http://emmc.info/emmo-models>)
-Import(<http://emmc.info/emmo-properties>)
-Import(<http://emmc.info/emmo-semiotics>)
-Import(<http://emmc.info/emmo-usercase>)
-Import(<http://emmc.info/emmo-process>)
+Ontology(<http://emmo.info/0.9.9/emmo/emmo>
+Import(<http://emmo.info/0.9.9/emmo/emmo-core>)
+Import(<http://emmo.info/0.9.9/emmo/emmo-direct>)
+Import(<http://emmo.info/0.9.9/emmo/emmo-material>)
+Import(<http://emmo.info/0.9.9/emmo/emmo-math>)
+Import(<http://emmo.info/0.9.9/emmo/emmo-models>)
+Import(<http://emmo.info/0.9.9/emmo/emmo-properties>)
+Import(<http://emmo.info/0.9.9/emmo/emmo-semiotics>)
+Import(<http://emmo.info/0.9.9/emmo/emmo-usercase>)
+Import(<http://emmo.info/0.9.9/emmo/emmo-process>)
 
-Annotation(<http://emmc.info/emmo-core#EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc> "EMMO is released under a Creative Commons license Attribution 4.0 International (CC BY 4.0)
+Annotation(<http://emmo.info/0.9.9/emmo/emmo-core#EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc> "EMMO is released under a Creative Commons license Attribution 4.0 International (CC BY 4.0)
 
 https://creativecommons.org/licenses/by/4.0/legalcode")
 Annotation(rdfs:comment "Contacts:

@@ -1,17 +1,17 @@
-Prefix(:=<http://emmc.info/emmo-math#>)
+Prefix(:=<http://emmo.info/0.9.9/emmo/emmo-math#>)
 Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
 Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
 Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
 Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
 Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-Prefix(emmo-core:=<http://emmc.info/emmo-core#>)
-Prefix(emmo-math:=<http://emmc.info/emmo-math#>)
+Prefix(emmo-core:=<http://emmo.info/0.9.9/emmo/emmo-core#>)
+Prefix(emmo-math:=<http://emmo.info/0.9.9/emmo/emmo-math#>)
 
 
-Ontology(<http://emmc.info/emmo-math>
-Import(<http://emmc.info/emmo-semiotics>)
+Ontology(<http://emmo.info/0.9.9/emmo/emmo-math>
+Import(<http://emmo.info/0.9.9/emmo/emmo-semiotics>)
 
-Annotation(<http://emmc.info/emmo-core#EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc> "EMMO is released under a Creative Commons license Attribution 4.0 International (CC BY 4.0)
+Annotation(<http://emmo.info/0.9.9/emmo/emmo-core#EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc> "EMMO is released under a Creative Commons license Attribution 4.0 International (CC BY 4.0)
 
 https://creativecommons.org/licenses/by/4.0/legalcode")
 Annotation(rdfs:comment "Contacts:
@@ -52,13 +52,13 @@ Declaration(NamedIndividual(emmo-core:EMMO_847b8c93_f66d_48b9_9a35_2ad83a29cded)
 # Object Property: emmo-math:EMMO_0e9f1075_e4ea_4a91_ab90_a772b4880e95 (has_value)
 
 AnnotationAssertion(rdfs:label emmo-math:EMMO_0e9f1075_e4ea_4a91_ab90_a772b4880e95 "has_value")
-SubObjectPropertyOf(emmo-math:EMMO_0e9f1075_e4ea_4a91_ab90_a772b4880e95 <http://emmc.info/emmo-semiotics#EMMO_233f6eca_6714_449e_8484_cb93ac832a0f>)
+SubObjectPropertyOf(emmo-math:EMMO_0e9f1075_e4ea_4a91_ab90_a772b4880e95 <http://emmo.info/0.9.9/emmo/emmo-semiotics#EMMO_233f6eca_6714_449e_8484_cb93ac832a0f>)
 InverseObjectProperties(emmo-math:EMMO_0e9f1075_e4ea_4a91_ab90_a772b4880e95 emmo-math:EMMO_3446e167_c576_49d6_846c_215bb8878a55)
 
 # Object Property: emmo-math:EMMO_3446e167_c576_49d6_846c_215bb8878a55 (is_value_for)
 
 AnnotationAssertion(rdfs:label emmo-math:EMMO_3446e167_c576_49d6_846c_215bb8878a55 "is_value_for"@en)
-SubObjectPropertyOf(emmo-math:EMMO_3446e167_c576_49d6_846c_215bb8878a55 <http://emmc.info/emmo-semiotics#EMMO_eb3518bf_f799_4f9e_8c3e_ce59af11453b>)
+SubObjectPropertyOf(emmo-math:EMMO_3446e167_c576_49d6_846c_215bb8878a55 <http://emmo.info/0.9.9/emmo/emmo-semiotics#EMMO_eb3518bf_f799_4f9e_8c3e_ce59af11453b>)
 
 
 
@@ -70,7 +70,7 @@ SubObjectPropertyOf(emmo-math:EMMO_3446e167_c576_49d6_846c_215bb8878a55 <http://
 
 AnnotationAssertion(emmo-core:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 emmo-math:EMMO_031d61af_6405_41de_8880_df2f85a53383 "A 'symbol' that is part of standard mathematical formalism.")
 AnnotationAssertion(rdfs:label emmo-math:EMMO_031d61af_6405_41de_8880_df2f85a53383 "math_symbol"@en)
-SubClassOf(emmo-math:EMMO_031d61af_6405_41de_8880_df2f85a53383 <http://emmc.info/emmo-semiotics#EMMO_a1083d0a_c1fb_471f_8e20_a98f881ad527>)
+SubClassOf(emmo-math:EMMO_031d61af_6405_41de_8880_df2f85a53383 <http://emmo.info/0.9.9/emmo/emmo-semiotics#EMMO_a1083d0a_c1fb_471f_8e20_a98f881ad527>)
 SubClassOf(emmo-math:EMMO_031d61af_6405_41de_8880_df2f85a53383 ObjectAllValuesFrom(emmo-core:EMMO_05b6fce2_322b_49b4_84aa_ab3c544cf1a1 ObjectComplementOf(emmo-math:EMMO_54ee6b5e_5261_44a8_86eb_5717e7fdb9d0)))
 
 # Class: emmo-math:EMMO_1a663927_3b68_4618_acd3_a8aa0d406329 (number)
@@ -89,7 +89,7 @@ SubClassOf(emmo-math:EMMO_1eed0732_e3f1_4b2c_a9c4_b4e75eeb5895 ObjectSomeValuesF
 
 AnnotationAssertion(rdfs:comment emmo-math:EMMO_54ee6b5e_5261_44a8_86eb_5717e7fdb9d0 "The class of general mathematical symbols.")
 AnnotationAssertion(rdfs:label emmo-math:EMMO_54ee6b5e_5261_44a8_86eb_5717e7fdb9d0 "mathematical"@en)
-SubClassOf(emmo-math:EMMO_54ee6b5e_5261_44a8_86eb_5717e7fdb9d0 <http://emmc.info/emmo-semiotics#EMMO_50ea1ec5_f157_41b0_b46b_a9032f17ca10>)
+SubClassOf(emmo-math:EMMO_54ee6b5e_5261_44a8_86eb_5717e7fdb9d0 <http://emmo.info/0.9.9/emmo/emmo-semiotics#EMMO_50ea1ec5_f157_41b0_b46b_a9032f17ca10>)
 
 # Class: emmo-math:EMMO_ae15fb4f_8e4d_41de_a0f9_3997f89ba6a2 (constant)
 
