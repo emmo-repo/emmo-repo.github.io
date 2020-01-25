@@ -267,14 +267,13 @@ img {
 caption,col,colgroup,table,tbody,td,tfoot,th,thead,tr {
     border-spacing: 0;
 }
-
 table {
     border: 1px solid rgba(0,0,0,0.25);
-    border-collapse: collapse;
+    /* border-collapse: collapse; */
     /* display: table; */
-    empty-cells: hide;
+    /* empty-cells: hide; */
     /* margin: -1px 0 23px; */
-    padding: 0;
+    /* padding: 0; */
     /* table-layout: fixed; */
 }
 
@@ -312,15 +311,18 @@ tr {
 }
 */
 table th,table td {
-    /* font-size: 1.1em; */
-    /* line-height: 23px; */
+    font-size: 1.0em;
+    line-height: 23px;
     padding: 0 1em;
+    border: 1px solid rgba(0,0,0,0.03);
 }
+
 
 table thead {
     background: rgba(0,0,0,0.15);
     border: 1px solid rgba(0,0,0,0.15);
     border-bottom: 1px solid rgba(0,0,0,0.2);
+    text-align: left;
 }
 
 table tbody {
