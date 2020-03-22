@@ -75,7 +75,25 @@ To access EMMO from Python, we recommend [EMMO-python](https://github.com/emmo-r
 
 ## Pre-inferred ontology and documentation
 Browsable documentation and pre-inferred versions of EMMO can be accessed in the table below.
+
+### Iframe
+
+<iframe src="https://raw.githubusercontent.com/emmo-repo/emmo-repo.github.io/master/html/releasetable.html"></iframe>
+
+### Iframe 2
+
+<iframe src="https://raw.githubusercontent.com/emmo-repo/emmo-repo.github.io/master/html/table.html"></iframe>
+
+
+### Object
+
 <object data="https://raw.githubusercontent.com/emmo-repo/emmo-repo.github.io/master/html/releasetable.html" width="100%">
+    Your browser doesn't support the object tag.
+</object>
+
+### Object 2
+
+<object data="https://raw.githubusercontent.com/emmo-repo/emmo-repo.github.io/master/html/table.html" width="100%">
     Your browser doesn't support the object tag.
 </object>
 
