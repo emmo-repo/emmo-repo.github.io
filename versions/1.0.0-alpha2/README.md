@@ -1,7 +1,9 @@
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
 # The European Materials Modelling Ontology (EMMO)
 
 ## About
-EMMO is a multidisciplinary effort to develop a standard representational framework (the ontology) for applied sciences.  It is based on physics, analytical philosophy and information and communication technologies. It has been instigated by materials science and provides the connection between the physical world, the experimental world (materials characterisation) and the simulation world (materials modelling).  It is released under a [Creative Commons license](LICENSE.md).
+EMMO is a multidisciplinary effort to develop a standard representational framework (the ontology) for applied sciences.  It is based on physics, analytical philosophy and information and communication technologies. It has been instigated by materials science and provides the connection between the physical world, the experimental world (materials characterisation) and the simulation world (materials modelling).  It is released under a Creative Commons [CC BY 4.0](LICENSE.md) license.
 
 
 ## EMMO in a Nutshell
@@ -57,6 +59,9 @@ The overall middle level ontoloiges are collected by the [emmo](emmo.owl) ontolo
 
 The OWL2-DL sources are available in RDF/XML format.
 
+A description of the EMMO Governance, organisation of related repositories,
+conventions and how to contribute can be found [here](doc/EMMO_governance.md).
+
 
 ## How To Use It
 In order to be able to view and navigate the EMMO ontology we recommend to download the Protégé editor from [https://protege.stanford.edu/products.php#desktop-protege](https://protege.stanford.edu/products.php#desktop-protege).
@@ -69,6 +74,11 @@ The EMMO hierarchy will be visible only after reasoning inference: use *ctrl-R* 
 
 It is recommended to use FaCT++ as reasoner. You can select it through the menu *Reasoner*.  An instruction for how to install the FaCT++ plugin on Protege 5.5.0 on Windows can be found in the [doc subdirectory](doc/installing_factplusplus.md).
 
+To access EMMO from Python, we recommend [EMMO-python](https://github.com/emmo-repo/EMMO-python/).
+
+
+## Pre-inferred ontology and documentation
+Browsable documentation and pre-inferred versions of EMMO are available on [GitHub Pages](https://emmo-repo.github.io/).
 
 ---
 
