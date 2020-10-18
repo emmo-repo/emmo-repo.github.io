@@ -8770,11 +8770,6 @@ e.g. Navier-Stokes or Euler equation applied to the same fluid are an example of
     
 
 
-    <!-- http://www.w3.org/2002/07/owl#Nothing -->
-
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Nothing">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
-    </rdf:Description>
     
 
 
