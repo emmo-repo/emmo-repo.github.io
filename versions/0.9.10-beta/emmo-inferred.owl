@@ -3,7 +3,7 @@
      xml:base="http://emmo.info/emmo/emmo-inferred"
      xmlns:mereotopology="http://emmo.info/emmo/top/mereotopology#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:isq="http://emmo.info/emmo/middle/isq#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
