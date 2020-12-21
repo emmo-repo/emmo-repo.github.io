@@ -6,7 +6,38 @@
 @prefix terms: <http://purl.org/dc/terms/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://emmo.info/emmo/emmo-inferred> a owl:Ontology .
+<http://emmo.info/emmo/emmo-inferred> a owl:Ontology ;
+    terms:abstract """European Materials & Modelling Ontology (EMMO)
+
+EMMO is a multidisciplinary effort to develop a standard representational framework (the ontology) based on current materials modelling knowledge, including physical sciences, analytical philosophy and information and communication technologies.
+
+It provides the connection between the physical world, materials characterisation world and materials modelling world.
+
+EMMO is released under a Creative Commons license Attribution 4.0 International (CC BY 4.0)."""@en ;
+    terms:contributor "Access, DE",
+        "Fraunhofer IWM, DE",
+        "Goldbeck Consulting Ltd (UK)",
+        "SINTEF, NO",
+        "University of Bologna, IT" ;
+    terms:creator "Adham Hashibon",
+        "Emanuele Ghedini",
+        "Georg Schmitz",
+        "Gerhard Goldbeck",
+        "Jesper Friis" ;
+    terms:license "https://creativecommons.org/licenses/by/4.0/legalcode" ;
+    terms:publisher "EMMC ASBL" ;
+    terms:title "European Materials & Modelling Ontology"@en ;
+    rdfs:comment """Contacts:
+Gerhard Goldbeck
+Goldbeck Consulting Ltd (UK)
+email: gerhard@goldbeck-consulting.com
+
+Emanuele Ghedini
+University of Bologna (IT)
+email: emanuele.ghedini@unibo.it"""@en,
+        "The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:versionIRI <http://emmo.info/emmo/1.0.0-beta/emmo-inferred> ;
+    owl:versionInfo "1.0.0-beta" .
 
 emmo:EMMO_0329f1f5_8339_4ce4_8505_a264c6d606ba a owl:Class ;
     emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/quantitykind/Velocity" ;
