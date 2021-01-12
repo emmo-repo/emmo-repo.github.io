@@ -108,6 +108,13 @@ This process is subjective, depends on the agent that draws this connection (e.g
                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "example"@en .
 
 
+###  http://emmo.info/emmo#EMMO_bb49844b_45d7_4f0d_8cae_8e552cbc20d6
+<http://emmo.info/emmo#EMMO_bb49844b_45d7_4f0d_8cae_8e552cbc20d6> rdf:type owl:AnnotationProperty ;
+                                                                  <http://emmo.info/emmo#EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a> "quantity value (term in VIM that corresponds to Quantity in EMMO)"@en ;
+                                                                  rdfs:comment "The term in the International vocabulary of metrology (VIM) (JCGM 200:2008) that corresponds to the annotated term in EMMO."@en ;
+                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "VIMTerm"@en .
+
+
 ###  http://emmo.info/emmo#EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d
 <http://emmo.info/emmo#EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d> rdf:type owl:AnnotationProperty ;
                                                                   rdfs:comment "URL to corresponding Wikipedia entry."@en ;
@@ -1111,6 +1118,28 @@ For example, immiscibile liquid phases (e.g. oil and water) constitute a mixture
                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Curve"@en .
 
 
+###  http://emmo.info/emmo#EMMO_0f6f0120_c079_4d95_bb11_4ddee05e530e
+<http://emmo.info/emmo#EMMO_0f6f0120_c079_4d95_bb11_4ddee05e530e> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_2a888cdf_ec4a_4ec5_af1c_0343372fc978> ,
+                                                                                  <http://emmo.info/emmo#EMMO_36c79456_e29c_400d_8bd3_0eedddb82652> ,
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <http://emmo.info/emmo#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe> ;
+                                                                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                    owl:onClass <http://emmo.info/emmo#EMMO_847724b7_acef_490e_9f0d_67da967f2812>
+                                                                                  ] ,
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <http://emmo.info/emmo#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe> ;
+                                                                                    owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                                    owl:onClass <http://emmo.info/emmo#EMMO_873b0ab3_88e6_4054_b901_5531e01f14a4>
+                                                                                  ] ;
+                                                                  <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> """Result of a measurement.
+
+A MeasurementResult is in EMMO expressed as a single MeasurendQuantitativeProperty and a MeasuredUncertainty"""@en ;
+                                                                  <http://emmo.info/emmo#EMMO_bb49844b_45d7_4f0d_8cae_8e552cbc20d6> "measurement result"@en ;
+                                                                  rdfs:comment "A measurement result generally contains “relevant information” about the set of measured quantity properties, such that some may be more representative of the measured quantity than others. This may be expressed in the form of a probability density function (pdf)."@en ;
+                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "MeasurementResult"@en .
+
+
 ###  http://emmo.info/emmo#EMMO_0f795e3e_c602_4577_9a43_d5a231aa1360
 <http://emmo.info/emmo#EMMO_0f795e3e_c602_4577_9a43_d5a231aa1360> rdf:type owl:Class ;
                                                                   rdfs:subClassOf <http://emmo.info/emmo#EMMO_c5ddfdba_c074_4aa4_ad6b_1ac4942d300d> ,
@@ -1522,7 +1551,8 @@ k"""@en ;
                                                                                     owl:someValuesFrom <http://emmo.info/emmo#EMMO_1cba0b27_15d0_4326_933f_379d0b3565b6>
                                                                                   ] ;
                                                                   <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "3-dimensional array who's spatial direct parts are matrices."@en ;
-                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "3DArray"@en .
+                                                                  <http://www.w3.org/2004/02/skos/core#altLabel> "3DArray"@en ;
+                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Array3D"@en .
 
 
 ###  http://emmo.info/emmo#EMMO_21205421_5783_4d3e_81e5_10c5d894a88a
@@ -1666,7 +1696,7 @@ For these reasons, the EMMO will consider numerals and numbers as the same conce
 The style of your clothing."""@en ;
                                                                   rdfs:comment """The word subjective means that a non-well defined or an unknown procedure is used for the definition of the property.
 
-This happens due to e.g. the complexity of the object, the lack of a underlying model for the representation of the object, the non-well specified meaning of the property symbols. 
+This happens due to e.g. the complexity of the object, the lack of a underlying model for the representation of the object, the non-well specified meaning of the property symbols.
 
 A 'SubjectiveProperty' cannot be used to univocally compare 'Object'-s.
 
@@ -2514,13 +2544,17 @@ A 'Process' is not only something that unfolds in time (which is automatically r
                                                                   rdfs:subClassOf <http://emmo.info/emmo#EMMO_10a5fd39_06aa_4648_9e70_f962a9cb2069> ,
                                                                                   [ rdf:type owl:Restriction ;
                                                                                     owl:onProperty <http://emmo.info/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
-                                                                                    owl:someValuesFrom <http://emmo.info/emmo#EMMO_dd4a7f3e_ef56_466c_ac1a_d2716b5f87ec>
+                                                                                    owl:someValuesFrom <http://emmo.info/emmo#EMMO_0f6f0120_c079_4d95_bb11_4ddee05e530e>
                                                                                   ] ,
                                                                                   [ rdf:type owl:Restriction ;
                                                                                     owl:onProperty <http://emmo.info/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
-                                                                                    owl:someValuesFrom <http://emmo.info/emmo#EMMO_f2d5d3ad_2e00_417f_8849_686f3988d929>
+                                                                                    owl:someValuesFrom <http://emmo.info/emmo#EMMO_7dea2572_ab42_45bd_9fd7_92448cec762a>
                                                                                   ] ;
                                                                   <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "An 'observation' that results in a quantitative comparison of a 'property' of an 'object' with a standard reference."@en ;
+                                                                  <http://emmo.info/emmo#EMMO_bb49844b_45d7_4f0d_8cae_8e552cbc20d6> "measurement"@en ;
+                                                                  rdfs:comment """A measurement is the process of experimentally obtaining one or more measurement results that can reasonably be attributed to a quantity.
+
+-- VIM"""@en ;
                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Measurement"@en .
 
 
@@ -2620,7 +2654,7 @@ Between these two extremes, there are several subjective ways to categorize real
                                                                   <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "An engineered object which is instrumental for reaching a particular purpose through its characteristic functioning process, with particular reference to mechanical or electronic equipment."@en ;
                                                                   rdfs:comment """From Old French \"deviser\", meaning: arrange, plan, contrive.
 
-Literally \"dispose in portions,\" from Vulgar Latin \"divisare\", frequentative of Latin dividere, meaning \"to divide\""""@en ;
+Literally \"dispose in portions,\" from Vulgar Latin \"divisare\", frequentative of Latin dividere, meaning \"to divide\"."""@en ;
                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Device"@en .
 
 
@@ -3293,6 +3327,7 @@ barn"""@en ;
 ###  http://emmo.info/emmo#EMMO_649bf97b_4397_4005_90d9_219755d92e34
 <http://emmo.info/emmo#EMMO_649bf97b_4397_4005_90d9_219755d92e34> rdf:type owl:Class ;
                                                                   rdfs:subClassOf <http://emmo.info/emmo#EMMO_49267eba_5548_4163_8f36_518d65b583f9> ;
+                                                                  <http://emmo.info/emmo#EMMO_705f27ae_954c_4f13_98aa_18473fc52b25> "From Latin perceptiō (“a receiving or collecting, perception, comprehension”), from perceptus (“perceived, observed”)."@en ;
                                                                   <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "A 'Physical' which stands for a real world object that can stimulate a perception (e.g. a mental impression, the excitation of a sensor) to an interpreter (human or non-human)."@en ;
                                                                   <http://emmo.info/emmo#EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a> """A line scratched on a surface.
 A sound.
@@ -3314,7 +3349,6 @@ I use the EMMO to record this experience by declaring:
                                                                                """A 'Perceptual' is a meta-object, meaning that is addressed by the ontologist (the meta-interpreter) in a meta-semiotic process occurring outside the EMMO.
 
 A 'Perceptual' becomes an 'Object', when it is part of a 'Semiotic' process described by the ontologist through the EMMO."""@en ,
-                                                                               "From Latin perceptiō (“a receiving or collecting, perception, comprehension”), from perceptus (“perceived, observed”)."@en ,
                                                                                """This class is the most general superclass for the categorization of real world objects that are recognizable by an interpreter (agent).
 
 A 'Perceptual' can stand for something else in a semiotic process (acting as sign or as object). 
@@ -3343,8 +3377,7 @@ However, a perceptual is not necessarily a 'Sign' (e.g. a line sketched on a bla
 
 ###  http://emmo.info/emmo#EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a
 <http://emmo.info/emmo#EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a> rdf:type owl:Class ;
-                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_5b2222df_4da6_442f_8244_96e9e45887d1> ,
-                                                                                  <http://emmo.info/emmo#EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2> ;
+                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2> ;
                                                                   <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "A matter object throughout which all physical properties of a material are essentially uniform."@en ;
                                                                   rdfs:comment """In the physical sciences, a phase is a region of space (a thermodynamic system), throughout which all physical properties of a material are essentially uniform. Examples of physical properties include density, index of refraction, magnetization and chemical composition. A simple description is that a phase is a region of material that is chemically uniform, physically distinct, and (often) mechanically separable. In a system consisting of ice and water in a glass jar, the ice cubes are one phase, the water is a second phase, and the humid air is a third phase over the ice and water. The glass of the jar is another separate phase.
 
@@ -3494,9 +3527,14 @@ Temperature is a relative quantity that can be used to express temperature diffe
 
 ###  http://emmo.info/emmo#EMMO_6c739b1a_a774_4416_bb31_1961486fa9ed
 <http://emmo.info/emmo#EMMO_6c739b1a_a774_4416_bb31_1961486fa9ed> rdf:type owl:Class ;
-                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_10a5fd39_06aa_4648_9e70_f962a9cb2069> ;
+                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_10a5fd39_06aa_4648_9e70_f962a9cb2069> ,
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <http://emmo.info/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a> ;
+                                                                                    owl:someValuesFrom <http://emmo.info/emmo#EMMO_8d2d9374_ef3a_47e6_8595_6bc208e07519>
+                                                                                  ] ;
                                                                   <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "The 'semiosis' process of interpreting a 'physical' and provide a complec sign, 'theory' that stands for it and explain it to another interpreter."@en ;
-                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Theorization"@en .
+                                                                  <http://www.w3.org/2004/02/skos/core#altLabel> "Theorization"@en ;
+                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "Theorisation"@en .
 
 
 ###  http://emmo.info/emmo#EMMO_6eca09be_17e9_445e_abc9_000aa61b7a11
@@ -3756,6 +3794,20 @@ Here the class 'Field' refers to the quantum field of massless bosonic particles
                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Gluon"@en .
 
 
+###  http://emmo.info/emmo#EMMO_7dea2572_ab42_45bd_9fd7_92448cec762a
+<http://emmo.info/emmo#EMMO_7dea2572_ab42_45bd_9fd7_92448cec762a> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_1b52ee70_121e_4d8d_8419_3f97cd0bd89c> ,
+                                                                                  [ rdf:type owl:Restriction ;
+                                                                                    owl:onProperty <http://emmo.info/emmo#EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f> ;
+                                                                                    owl:someValuesFrom <http://emmo.info/emmo#EMMO_f2d5d3ad_2e00_417f_8849_686f3988d929>
+                                                                                  ] ;
+                                                                  <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> """A set of one or more 'MeasuringInstruments' and often other devices, including any reagent and supply, assembled and adapted to give information used to generate 'MeasuredQuantityProperty' within specified intervals for quantities of specified kinds.
+
+-- VIM"""@en ;
+                                                                  <http://emmo.info/emmo#EMMO_bb49844b_45d7_4f0d_8cae_8e552cbc20d6> "measuring system"@en ;
+                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "MeasuringSystem"@en .
+
+
 ###  http://emmo.info/emmo#EMMO_7efd64d1_05a1_49cd_a7f0_783ca050d4f3
 <http://emmo.info/emmo#EMMO_7efd64d1_05a1_49cd_a7f0_783ca050d4f3> rdf:type owl:Class ;
                                                                   rdfs:subClassOf <http://emmo.info/emmo#EMMO_36c79456_e29c_400d_8bd3_0eedddb82652> ,
@@ -3912,6 +3964,19 @@ In general, metallic and ionic bonds have atoms sharing electrons."""@en ,
                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "UraniumSymbol"@en .
 
 
+###  http://emmo.info/emmo#EMMO_847724b7_acef_490e_9f0d_67da967f2812
+<http://emmo.info/emmo#EMMO_847724b7_acef_490e_9f0d_67da967f2812> rdf:type owl:Class ;
+                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_dd4a7f3e_ef56_466c_ac1a_d2716b5f87ec> ;
+                                                                  <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> "A non-negative parameter characterising the dispersion of the quantity being measured."@en ;
+                                                                  <http://emmo.info/emmo#EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a> """- Standard deviation
+
+- Half-width of an interval with a stated coverage probability"""@en ;
+                                                                  <http://emmo.info/emmo#EMMO_bb49844b_45d7_4f0d_8cae_8e552cbc20d6> "measured uncertainty"@en ;
+                                                                  rdfs:comment "In general, for a given set of information, it is understood that the measurement uncertainty is associated with a stated quantity value. A modification of this value results in a modification of the associated uncertainty."@en ,
+                                                                               "Measurement uncertainty includes components arising from systematic effects, such as components associated with corrections and the assigned quantity values of measurement standards, as well as the definitional uncertainty. Sometimes estimated systematic effects are not corrected for but, instead, associated measurement uncertainty components are incorporated."@en ;
+                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "MeasuredUncertainty"@en .
+
+
 ###  http://emmo.info/emmo#EMMO_847f1d9f_205e_46c1_8cb6_a9e479421f88
 <http://emmo.info/emmo#EMMO_847f1d9f_205e_46c1_8cb6_a9e479421f88> rdf:type owl:Class ;
                                                                   owl:equivalentClass [ rdf:type owl:Restriction ;
@@ -3998,6 +4063,15 @@ In general, metallic and ionic bonds have atoms sharing electrons."""@en ,
 ###  http://emmo.info/emmo#EMMO_873b0ab3_88e6_4054_b901_5531e01f14a4
 <http://emmo.info/emmo#EMMO_873b0ab3_88e6_4054_b901_5531e01f14a4> rdf:type owl:Class ;
                                                                   rdfs:subClassOf <http://emmo.info/emmo#EMMO_dd4a7f3e_ef56_466c_ac1a_d2716b5f87ec> ;
+                                                                  <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> """Measured value of a quantity representing a 'MeasurementResult'.
+
+-- VIM"""@en ;
+                                                                  <http://emmo.info/emmo#EMMO_bb49844b_45d7_4f0d_8cae_8e552cbc20d6> "measured quantity value"@en ;
+                                                                  rdfs:comment """For a measurement involving replicate indications, each indication can be used to provide a corresponding 'MeasuredQuantityProperty'. This set of individual measured quantity properties can be used to
+calculate a resulting measured quantity property, such as an average or median, usually with a decreased associated 'MeasuredUncertainty'.
+
+-- VIM"""@en ;
+                                                                  <http://www.w3.org/2004/02/skos/core#altLabel> "MeasuredQuantityValue"@en ;
                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "MeasuredQuantitativeProperty"@en .
 
 
@@ -5256,11 +5330,11 @@ For this reason each property is related to a specific observation process which
 
 The observation process (e.g. a look, a photo shot, a measurement) is performed  by an observer (e.g. you, a camera, an instrument) through a specific perception mechanism (e.g. retina impression, CMOS excitation, piezoelectric sensor activation) and involves an observed entity.
 
-An observation is a semiotic process, since it stimulate an interpretant within the interpreter who can communicate the perception result to other interpreters through a sign which is the property. 
+An observation is a semiotic process, since it stimulate an interpretant within the interpreter who can communicate the perception result to other interpreters through a sign which is the property.
 
 Property subclasses are specializations that depend on the type of observation processes.
 
-e.g. the property 'colour' is related to a process that involves emission or interaction of photon and an observer who can perceive electromagnetic radiation in the visible frequency range. 
+e.g. the property 'colour' is related to a process that involves emission or interaction of photon and an observer who can perceive electromagnetic radiation in the visible frequency range.
 
 Properties usually relies on symbolic systems (e.g. for colour it can be palette or RGB)."""@en ;
                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Property"@en .
@@ -5328,8 +5402,7 @@ With \"exact\" constants, we refer to physical constants that have an exact nume
 
 ###  http://emmo.info/emmo#EMMO_b9695e87_8261_412e_83cd_a86459426a28
 <http://emmo.info/emmo#EMMO_b9695e87_8261_412e_83cd_a86459426a28> rdf:type owl:Class ;
-                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_5b2222df_4da6_442f_8244_96e9e45887d1> ,
-                                                                                  <http://emmo.info/emmo#EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2> ;
+                                                                  rdfs:subClassOf <http://emmo.info/emmo#EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2> ;
                                                                   owl:disjointUnionOf ( <http://emmo.info/emmo#EMMO_04f2a2d5_e799_4692_a654_420e76f5acc1>
                                                                                         <http://emmo.info/emmo#EMMO_4c21fb86_fdcf_444e_b498_86fe656295af>
                                                                                         <http://emmo.info/emmo#EMMO_7509da43_56b1_4d7f_887a_65d1663df4ba>
@@ -5366,7 +5439,7 @@ the number of protons in the nucleus of an atom""" ;
 
 This quantity is used only to describe the outcome of a counting process, without regard of the type of entities.
 
-\"There are also some quantities that cannot be described in terms of the seven base quantities of the SI, but have the nature of a count. Examples are a number of molecules, a number of cellular or biomolecular entities (for example copies of a particular nucleic acid sequence), or degeneracy in quantum mechanics. Counting quantities are also quantities with the associated unit one.\""""@en ;
+There are also some quantities that cannot be described in terms of the seven base quantities of the SI, but have the nature of a count. Examples are a number of molecules, a number of cellular or biomolecular entities (for example copies of a particular nucleic acid sequence), or degeneracy in quantum mechanics. Counting quantities are also quantities with the associated unit one."""@en ;
                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "PureNumberQuantity"@en .
 
 
@@ -6106,7 +6179,8 @@ Sievert is derived from absorbed dose, but takes into account the biological eff
 ###  http://emmo.info/emmo#EMMO_dd4a7f3e_ef56_466c_ac1a_d2716b5f87ec
 <http://emmo.info/emmo#EMMO_dd4a7f3e_ef56_466c_ac1a_d2716b5f87ec> rdf:type owl:Class ;
                                                                   owl:equivalentClass [ rdf:type owl:Class ;
-                                                                                        owl:unionOf ( <http://emmo.info/emmo#EMMO_873b0ab3_88e6_4054_b901_5531e01f14a4>
+                                                                                        owl:unionOf ( <http://emmo.info/emmo#EMMO_847724b7_acef_490e_9f0d_67da967f2812>
+                                                                                                      <http://emmo.info/emmo#EMMO_873b0ab3_88e6_4054_b901_5531e01f14a4>
                                                                                                       <http://emmo.info/emmo#EMMO_d0200cf1_e4f4_45ae_873f_b9359daea3cd>
                                                                                                       <http://emmo.info/emmo#EMMO_d8aa8e1f_b650_416d_88a0_5118de945456>
                                                                                                     )
@@ -6564,7 +6638,7 @@ For this reason graviton is an useful concept to homogenize the approach between
                                                                                     owl:onProperty <http://emmo.info/emmo#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe> ;
                                                                                     owl:someValuesFrom <http://emmo.info/emmo#EMMO_f835f4d4_c665_403d_ab25_dca5cc74be52>
                                                                                   ] ;
-                                                                  <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> """A standalone atom has direct part one 'nucleus' and one 'electron_cloud'. 
+                                                                  <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> """A standalone atom has direct part one 'nucleus' and one 'electron_cloud'.
 
 An O 'atom' within an O2 'molecule' is an 'e-bonded_atom'.
 
@@ -6704,7 +6778,12 @@ We cannot say that H2 molecule has direct part two H atoms, but has direct part 
 ###  http://emmo.info/emmo#EMMO_f2d5d3ad_2e00_417f_8849_686f3988d929
 <http://emmo.info/emmo#EMMO_f2d5d3ad_2e00_417f_8849_686f3988d929> rdf:type owl:Class ;
                                                                   rdfs:subClassOf <http://emmo.info/emmo#EMMO_1b52ee70_121e_4d8d_8419_3f97cd0bd89c> ;
-                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "MeasurementInstrument"@en .
+                                                                  <http://emmo.info/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9> """Device used for making measurements, alone or in conjunction with one or more supplementary devices.
+
+-- VIM"""@en ;
+                                                                  <http://emmo.info/emmo#EMMO_bb49844b_45d7_4f0d_8cae_8e552cbc20d6> "measuring instrument"@en ;
+                                                                  rdfs:comment "A measuring instrument that can be used alone is a measuring system."@en ;
+                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "MeasuringInstrument"@en .
 
 
 ###  http://emmo.info/emmo#EMMO_f35cff4d_dc09_44cf_a729_22fb79e3bfb2
@@ -6784,6 +6863,7 @@ We cannot say that H2 molecule has direct part two H atoms, but has direct part 
 8 K
 6 MeV
 43.5 HRC(150 kg)"""@en ;
+                                                                  <http://emmo.info/emmo#EMMO_bb49844b_45d7_4f0d_8cae_8e552cbc20d6> "quantity value"@en ;
                                                                   rdfs:comment """A quantity is not necessarily a property, since it is possible to write \"10 kg\", without assigning this quantity to a specific object.
 
 However, a quantitative property is always a quantity."""@en ,
@@ -7097,16 +7177,13 @@ It defines the Kelvin unit in the SI system."""@en ;
                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "a"@en .
 
 
-[ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
 ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -7115,16 +7192,31 @@ It defines the Kelvin unit in the SI system."""@en ;
 [ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:qualifiedCardinality "3"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -7142,8 +7234,8 @@ It defines the Kelvin unit in the SI system."""@en ;
                                                                   owl:deprecated "Replaced by dcterms:license" .
 
 
-<http://emmo.info/emmo#EMMO_b306ae38_938e_48fe_83e9_6141e08b596f> <http://www.w3.org/2004/02/skos/core#prefLabel> "bdoMatch"@en ;
-                                                                  rdfs:comment "URL to corresponding concept in the Basic Datatype Ontology (DBO)"@en ;
+<http://emmo.info/emmo#EMMO_b306ae38_938e_48fe_83e9_6141e08b596f> rdfs:comment "URL to corresponding concept in the Basic Datatype Ontology (DBO)"@en ;
+                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "bdoMatch"@en ;
                                                                   rdfs:seeAlso "https://github.com/TechnicalBuildingSystems/Ontologies/blob/master/BasicDataTypeOntology/ontology.ttl"^^xsd:anyURI .
 
 
