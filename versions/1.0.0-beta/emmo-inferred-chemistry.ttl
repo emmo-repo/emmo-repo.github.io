@@ -7117,70 +7117,17 @@ It defines the Kelvin unit in the SI system."""@en ;
 #################################################################
 
 ###  http://emmo.info/emmo#EMMO_08cb807c_e626_447b_863f_e2835540e918
-<http://emmo.info/emmo#EMMO_08cb807c_e626_447b_863f_e2835540e918> rdf:type owl:NamedIndividual ,
-                                                                           <http://emmo.info/emmo#EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf> ;
+<http://emmo.info/emmo#EMMO_08cb807c_e626_447b_863f_e2835540e918> rdf:type owl:NamedIndividual ;
                                                                   <http://www.w3.org/2004/02/skos/core#prefLabel> "Universe"@en .
-
-
-###  http://emmo.info/emmo#EMMO_3ba933ab_81ba_4e9d_a003_6bca732201b0
-<http://emmo.info/emmo#EMMO_3ba933ab_81ba_4e9d_a003_6bca732201b0> rdf:type owl:NamedIndividual ,
-                                                                           <http://emmo.info/emmo#EMMO_15db234d_ecaf_4715_9838_4b4ec424fb13> ,
-                                                                           <http://emmo.info/emmo#EMMO_2e9ace8a_1155_45b5_a066_d5fd9774e76c> ,
-                                                                           <http://emmo.info/emmo#EMMO_36c79456_e29c_400d_8bd3_0eedddb82652> ,
-                                                                           <http://emmo.info/emmo#EMMO_49267eba_5548_4163_8f36_518d65b583f9> ,
-                                                                           <http://emmo.info/emmo#EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf> ,
-                                                                           <http://emmo.info/emmo#EMMO_c5ddfdba_c074_4aa4_ad6b_1ac4942d300d> ,
-                                                                           <http://emmo.info/emmo#EMMO_e0954911_fc88_492a_9830_fdb238e28cc2> ,
-                                                                           <http://emmo.info/emmo#EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de> ;
-                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "c"@en .
-
-
-###  http://emmo.info/emmo#EMMO_56aee5ea_265c_4352_b68f_5d606c25a6d2
-<http://emmo.info/emmo#EMMO_56aee5ea_265c_4352_b68f_5d606c25a6d2> rdf:type owl:NamedIndividual ,
-                                                                           <http://emmo.info/emmo#EMMO_15db234d_ecaf_4715_9838_4b4ec424fb13> ,
-                                                                           <http://emmo.info/emmo#EMMO_406f9b74_c927_4e05_b9af_5edbe5e280c5> ,
-                                                                           <http://emmo.info/emmo#EMMO_49267eba_5548_4163_8f36_518d65b583f9> ,
-                                                                           <http://emmo.info/emmo#EMMO_52211e5e_d767_4812_845e_eb6b402c476a> ,
-                                                                           <http://emmo.info/emmo#EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf> ,
-                                                                           <http://emmo.info/emmo#EMMO_c03bab53_fed3_4142_9741_cc7fc806f0a6> ,
-                                                                           <http://emmo.info/emmo#EMMO_c5ddfdba_c074_4aa4_ad6b_1ac4942d300d> ,
-                                                                           <http://emmo.info/emmo#EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de> ;
-                                                                  <http://emmo.info/emmo#EMMO_c0f48dc6_4a32_4d9a_a956_d68415954a8e> <http://emmo.info/emmo#EMMO_3ba933ab_81ba_4e9d_a003_6bca732201b0> ;
-                                                                  <http://emmo.info/emmo#EMMO_fe63194f_7c04_4dbd_a244_524b38b6699b> <http://emmo.info/emmo#EMMO_fcc34119_3389_4bfe_b8b4_f3b94ffe10a8> ;
-                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "d"@en .
-
-
-###  http://emmo.info/emmo#EMMO_b32b1cfb_6917_4d64_9633_04a00a93dd82
-<http://emmo.info/emmo#EMMO_b32b1cfb_6917_4d64_9633_04a00a93dd82> rdf:type owl:NamedIndividual ,
-                                                                           <http://emmo.info/emmo#EMMO_15db234d_ecaf_4715_9838_4b4ec424fb13> ,
-                                                                           <http://emmo.info/emmo#EMMO_2e9ace8a_1155_45b5_a066_d5fd9774e76c> ,
-                                                                           <http://emmo.info/emmo#EMMO_49267eba_5548_4163_8f36_518d65b583f9> ,
-                                                                           <http://emmo.info/emmo#EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf> ,
-                                                                           <http://emmo.info/emmo#EMMO_c5ddfdba_c074_4aa4_ad6b_1ac4942d300d> ,
-                                                                           <http://emmo.info/emmo#EMMO_e0954911_fc88_492a_9830_fdb238e28cc2> ,
-                                                                           <http://emmo.info/emmo#EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de> ;
-                                                                  <http://emmo.info/emmo#EMMO_499e24a5_5072_4c83_8625_fe3f96ae4a8d> <http://emmo.info/emmo#EMMO_3ba933ab_81ba_4e9d_a003_6bca732201b0> ;
-                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "b"@en .
-
-
-###  http://emmo.info/emmo#EMMO_fcc34119_3389_4bfe_b8b4_f3b94ffe10a8
-<http://emmo.info/emmo#EMMO_fcc34119_3389_4bfe_b8b4_f3b94ffe10a8> rdf:type owl:NamedIndividual ,
-                                                                           <http://emmo.info/emmo#EMMO_15db234d_ecaf_4715_9838_4b4ec424fb13> ,
-                                                                           <http://emmo.info/emmo#EMMO_2e9ace8a_1155_45b5_a066_d5fd9774e76c> ,
-                                                                           <http://emmo.info/emmo#EMMO_36c79456_e29c_400d_8bd3_0eedddb82652> ,
-                                                                           <http://emmo.info/emmo#EMMO_49267eba_5548_4163_8f36_518d65b583f9> ,
-                                                                           <http://emmo.info/emmo#EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf> ,
-                                                                           <http://emmo.info/emmo#EMMO_c5ddfdba_c074_4aa4_ad6b_1ac4942d300d> ,
-                                                                           <http://emmo.info/emmo#EMMO_e0954911_fc88_492a_9830_fdb238e28cc2> ,
-                                                                           <http://emmo.info/emmo#EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de> ;
-                                                                  <http://emmo.info/emmo#EMMO_499e24a5_5072_4c83_8625_fe3f96ae4a8d> <http://emmo.info/emmo#EMMO_b32b1cfb_6917_4d64_9633_04a00a93dd82> ;
-                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "a"@en .
 
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
 ] .
 
 [ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -7190,9 +7137,6 @@ It defines the Kelvin unit in the SI system."""@en ;
  ] .
 
 [ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -7234,8 +7178,8 @@ It defines the Kelvin unit in the SI system."""@en ;
                                                                   owl:deprecated "Replaced by dcterms:license" .
 
 
-<http://emmo.info/emmo#EMMO_b306ae38_938e_48fe_83e9_6141e08b596f> rdfs:comment "URL to corresponding concept in the Basic Datatype Ontology (DBO)"@en ;
-                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "bdoMatch"@en ;
+<http://emmo.info/emmo#EMMO_b306ae38_938e_48fe_83e9_6141e08b596f> <http://www.w3.org/2004/02/skos/core#prefLabel> "bdoMatch"@en ;
+                                                                  rdfs:comment "URL to corresponding concept in the Basic Datatype Ontology (DBO)"@en ;
                                                                   rdfs:seeAlso "https://github.com/TechnicalBuildingSystems/Ontologies/blob/master/BasicDataTypeOntology/ontology.ttl"^^xsd:anyURI .
 
 
