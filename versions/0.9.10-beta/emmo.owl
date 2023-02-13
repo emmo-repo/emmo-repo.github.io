@@ -1,0 +1,2178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+   xmlns:emmo-annotations="http://emmo.info/base/emmo-annotations.owl#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:nodeID="N706052e8ca794dc48bf443071f943da6">
+    <rdf:first rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_6f5af708_f825_4feb_a0d1_a8d813d3022b"/>
+    <rdf:rest rdf:nodeID="N62bcd3faaa344c2dbd8a5a31f8c5565b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/base/emmo-mereotopology.owl#EMMO_3f9ae00e_810c_4518_aec2_7200e424cf68">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>A quantum is the EMMO mereological 4D a-tomic entity. 
+
+To avoid confusion with the concept of atom coming from physics, we will use the expression quantum mereology, instead of a-tomistic mereology.</rdfs:comment>
+    <rdfs:comment>From Latin quantum (plural quanta) "as much as, so much as;", introduced in physics directly from Latin by Max Planck, 1900.</rdfs:comment>
+    <emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>For a physics based ontology, like the EMMO, the 'quantum' can stand for the smallest identifiable portion of spacetime defined by the Planck limit in length (1.616e-35 m) and time (5.39e-44 s).
+
+For a manpower management ontology, a 'quantum' can stand for an hour (time) of a worker (space) activity.</emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>
+    <rdfs:label xml:lang="en">quantum</rdfs:label>
+    <rdfs:comment>A 'quantum' stands for a 4D real world object.</rdfs:comment>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>An 'emmo' that can't be further divided in time nor in space.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de"/>
+    <rdfs:subClassOf rdf:nodeID="Nae83cff037334efeae2871f274f9e7b8"/>
+    <rdfs:comment>A 'quantum' is the most fundamental subclass of 'item', since we consider it as the smallest possible self-connected 4D real world object.
+
+The quantum concept recalls the fact that there is lower epistemological limit to our knowledge of the universe, related to the uncertainity principle.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-properties.owl#EMMO_b7bcff25_ffc3_474e_9ab5_01b1664bd4ba">
+    <rdfs:label xml:lang="en">property</rdfs:label>
+    <rdfs:comment>We know real world entities through observation/perception.
+
+A non-perceivable real world entity does not exist (or it exists on a plane of existance that has no intersection with us and we can say nothing about it).
+
+Perception/observation of a real wolrd entity occurs when the entity stimulate an observer in a peculiar way through a well defined perception channel.
+
+For this reason each property is related to a specific observation process which involves a specific observer with its own perception mechanisms.
+
+The observation process (e.g. a look, a photo shot, a measurement) is performed  by an observer (e.g. you, a camera, an instrument) through a specific perception mechanism (e.g. retina impression, CMOS excitation, piezoelectric sensor activation) and involves an observed entity.
+
+An observation is a semiotic process, since it stimulate an interpretant within the interpreter who can communicate the perception result to other interpreters through a sign which is the property. 
+
+Property subclasses are specializations that depend on the type of observation processes.
+
+e.g. the property 'colour' is related to a process that involves emission or interaction of photon and an observer who can perceive electromagnetic radiation in the visible frequency range. 
+
+Properties usually relies on symbolic systems (e.g. for colour it can be palette or RGB).</rdfs:comment>
+    <emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>Hardness is a subclass of properties.
+
+Vickers hardness is a subclass of hardness that involves the procedures and instruments defined by the standard hardness test.</emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-graphical.owl#EMMO_057e7d57_aff0_49de_911a_8861d85cef40"/>
+    <rdfs:subClassOf rdf:nodeID="N0dd015e21a2a46d89011f495ea44b2ed"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A 'sign' that stands for an 'object' that the 'interpreter' perceived through a well defined 'observation' process.
+
+(a property is always a partial representation of an 'object' since it reflects the 'object' capability to be part of a specific 'observation' process)</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>Let's define the class 'colour' as the subclass of the properties that involve photon emission and an electromagnetic radiation sensible observer.
+
+An individual C of this class 'colour' can be defined be declaring the process individual (e.g. daylight illumination) and the observer (e.g. my eyes)
+
+Stating that an entity E has_property C, we mean that it can be observed by such setup of process + observer (i.e. observed by my eyes under daylight).
+
+This definition can be generalized by using a generic human eye, so that the observer can be a generic human.
+
+This can be used in material characterization, to define exactly the type of measurement done, including the instrument type.</emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>
+    <owl:disjointUnionOf rdf:nodeID="N82d6a241c04343049430c5bc09bbe697"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-models.owl#EMMO_6c739b1a_a774_4416_bb31_1961486fa9ed">
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>The 'semiosis' process of interpreting a 'physical' and provide a complec sign, 'theory' that stands for it and explain it to another interpreter.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_10a5fd39_06aa_4648_9e70_f962a9cb2069"/>
+    <rdfs:label xml:lang="en">theorization</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/base/emmo-physical.owl#EMMO_29072ec4_ffcb_42fb_bdc7_26f05a2e9873">
+    <rdfs:comment>From Latin vacuus, “empty”.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="Nc443855b32714f438cb6009609575193"/>
+    <rdfs:label xml:lang="en">void</rdfs:label>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A 'item' that has no 'physical' parts.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_b803f122_4acb_4064_9d71_c1e5fd091fc9">
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>The class of individuals that stands for semiotic objects, i.e. objects that take part on a semiotic process.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <owl:equivalentClass rdf:nodeID="N8b7fc65d37ac477bb0037cb474fb0a8d"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">semiotic</rdfs:label>
+    <rdfs:comment>Semiotic subclasse are defined using Peirce's semiotic theory.
+
+"Namely, a sign is something, A, which brings something, B, its interpretant sign determined or created by it, into the same sort of correspondence with something, C, its object, as that in which itself stands to C." (Peirce 1902, NEM 4, 20–21).
+
+The triadic elements:
+- 'sign': the sign A (e.g. a name)
+- 'interpretant': the sign B as the effects of the sign A on the interpreter (e.g. the mental concept of what a name means)
+- 'object': the object C (e.g. the entity to which the sign A and B refer to)
+
+This class includes also the 'interpeter' i.e. the entity that connects the 'sign' to the 'object'</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="N28c68d9beab74e899bcd2d4d560fcf20"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N580dd687b3bd4ba1b151183c5b886cc7">
+    <rdf:first rdf:resource="http://emmo.info/base/emmo-physical.owl#EMMO_29072ec4_ffcb_42fb_bdc7_26f05a2e9873"/>
+    <rdf:rest rdf:nodeID="N24135a2e5bd842f4bd314640c5155b08"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N640e266832f74c8c89864f266a6b8a8a">
+    <owl:someValuesFrom rdf:resource="http://emmo.info/domains/emmo-graphical.owl#EMMO_a1083d0a_c1fb_471f_8e20_a98f881ad527"/>
+    <owl:onProperty rdf:resource="http://emmo.info/base/emmo-4d.owl#EMMO_f68030be_94b8_4c61_a161_886468558054"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-models.owl#EMMO_84cadc45_6758_46f2_ba2a_5ead65c70213">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">atomistic model</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-models.owl#EMMO_b29fd350_39aa_4af7_9459_3faa0544cba6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-physical-properties.owl#EMMO_909415d1_7c43_4d5e_bbeb_7e1910159f66">
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>An 'objective_property' that cannot be quantified.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>CFC is a 'sign' that stands for the fact that the morphology of atoms composing the microstructure of an entity is predominantly Cubic Face Centered</emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_2a888cdf_ec4a_4ec5_af1c_0343372fc978"/>
+    <rdfs:label xml:lang="en">qualitative property</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/base/emmo-physical.owl#EMMO_c5ddfdba_c074_4aa4_ad6b_1ac4942d300d">
+    <rdfs:comment>A 'physical' with dimensions other than 4D cannot exist, following the restriction of the parent 'emmo' class.
+
+It follows from the fact that perception is always a process (e.g. it unfolds in time).
+
+e.g. you always have an aperture time when you take a picture or measure a property. Instantaneous perceptions are idealizations (abstractions) or a very small time measurement.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">physical</rdfs:label>
+    <rdfs:comment>The purpose of the 'physical' branch is to provide a representation of the real world objects, while the models used to explain or predict the behaviour of the real world objects lay under the 'semiotic' branch.
+
+More than one model can be connected to the same 'physical'.
+
+e.g. Navier-Stokes or Euler equation applied to the same fluid</rdfs:comment>
+    <rdfs:comment>A 'physical' is the class that contains all the individuals that stand for real world objects that interact physically with the interpreter.
+
+Perception is a subcategory of interaction.
+
+A physical must be perceived through physical interaction by the ontologist. Then the ontologist can declare an individual standing for the physical object just perceived.</rdfs:comment>
+    <rdfs:comment>A 'physical' must include at least an 'elementary' part, but can also include void parts.
+
+A 'physical' may include as part also the 'void' surrounding or enclosed by its 'physical' sub parts.
+
+There are no particular criteria for 'physical'-s structure, except that is made of some 'elementary'-s as proper parts and not only 'void'.
+
+This is done in order to:
+a) take into account the quantum nature of physical systems, in which the actual position of sub-components (e.g. electrons in an atom) is not known except for its probability distribution function (according to the Copenhagen interpretation.)
+b) take into account the fact that large entities (e.g. devices, cars, materials) have some void into them.
+
+e.g. a 'spacetime' that has spatial parts an atom and a cubic light year of 'void' extending for some time can be a 'physical' individual.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="N179726f02a14440bbe893fd35828f6b8"/>
+    <rdfs:comment>The EMMO can be used to represent real world entities as 'physical'-s that are easy to connect to classical or quantum mechanical based models.
+
+Classical mechanics poses no representational issues, for the EMMO: the 4D representation of 'physical'-s is consistent with classical physics systems.
+
+However, the representation of 'physical'-s that are typically analized through quantum mechanics (e.g. molecules, atoms, clusters), is not straightforward.
+
+1) De Broglie - Bohm interpretation
+The most simple approach is to rely on Bohmian mechanics, in which each particle is supposed to exists in a specific position between measurements (hidden variables approach), while its trajectory is calculated using a Guiding Equation based on a quantum field calculated with the Schroedinger Equation.
+
+While this approach is really easy to implement in an ontology, since each entity has its own well defined 4D region, its mathematical representation failed to receive large consensus due to the difficulties to include relativistic effects, to be extended to subnuclear scale and the strong non-locality assumtpion of the quantum field.
+
+Nevertheless, the Bohmian mechanics is a numerical approach that is used in electronic models to reduce the computational effort of the solution of Schroedinger Equation.
+
+In practice, an EMMO user can declare a 'physical' individual that stand for the whole quantum system to be described, and at the same time all sub-parts individuals can be declared, having them a well defined position in time, according to De Broglie - Bohm interpretation. The Hamiltonian can be calculated by considering the sub-part individuals.
+
+'physical'-s are then made of 'physical' parts and 'void' parts that stand for the space between 'physical'-s (e.g. the void between electrons and nucleus in an atom).
+
+2) Copenhagen interpretation
+In this interpretation the properties (e.g. energy level, position, spin) of a particle are not defined in the interval between two measurements and the quantum system is entangled (i.e. properties of particles in the sysyem are correlated) and described by a global wavefunction obtained solving the Schroedinger Equation. 
+
+Upon measurement, the wavefunction collapses to a combination of close eigenstates that provide information about bservables of the system components (e.g. position, energy).
+
+The EMMO can be used to represent 'physical'-s that can be related to Copenhagen based models. In practice, the user should follow these steps:
+
+a) define the quantum system as a 'physical' individual (e.g. an H2 molecule) under a specific class (e.g. 'h2_molecule'). This individual is the whole.
+
+b) define the axioms of the  class that describe how many sub-parts are expected for the whole and their class types (e.g. 'h2_molecule' has axioms 'has_proper_part exactly 2 electron' and 'has_proper_part exactly 2 nucleus)
+
+c) the user can now connect the whole to a Schroedinger equation based model whose Hamiltonian is calculated trough the information coming only from the axioms. No individuals are declared for the subparts!
+
+d) a measurement done on the quantum system that provides information on the sub-part observables is interpreted as wavefunction collapse and leads to the end of the whole and the declaration of the sub-parts individuals which can be themselves other quantum systems 
+
+e.g. if the outer electron of the H2 molecule interacts with another entity defining its state, then the whole that stands for the entangled H2 molecule becomes a 'physical' made of an electron individual, a quantum system made of one electron and two nuclei and the void between them.
+
+e.g. in the Born-Oppenheimer approximation the user represent the atom by un-entangling nucleus and electronic cloud. The un-entanglement comes in the form of declaration of individual as parts.
+
+e.g. the double slit experiment can be represent in the EMMO as:
+a) before the slit: a 'physical' that extend in space and has parts 'electron' and 'void', called 'single_electron_wave_function'. 'electron' and 'void' are only in the axioms and not decalred individuals.
+b) during slit passage: a 'physical' made of one declared individual, the 'electron'.
+c) after the slit: again 'single_electron_wave_function'
+d) upon collision with the detector:  'physical' made of one declared individual, the 'electron'.</rdfs:comment>
+    <rdfs:comment>From Latin physica "study of nature" (and Ancient Greek φυσικός, “natural”). 
+
+Here the word relates to things perceived through the senses as opposed to the mind; tangible or concrete.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="N1e93dbf2efa145ad9a0b1ebf61a406ee"/>
+    <rdfs:comment>In the EMMO there are no relations such as 'occupies_space', since 'physical'-s are themselves the 4D region.</rdfs:comment>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A 'item' that is an 'elementary' or has some 'elementary' as proper parts and whose temporal proper parts are only 'physical'-s (i.e. it can be perceived without interruptions in time).</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nef94f55a27bd43d99576774dc25c91ab">
+    <owl:onClass rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_1067b97a_84f8_4d22_8ace_b842b8ce355c"/>
+    <owl:onProperty rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_4207e895_8b83_4318_996a_72cfb32acd94">
+    <rdfs:comment>The definition states that a 'material' is a portion of a real world object, being that a full functional device or component, or a sample made of that material (or the sample itself).</rdfs:comment>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>An 'existent' that stands for a real world object that represents an amount of a physical substance (or mixture of substances) that constitute (is part of) a more comprehensive real world object.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_52211e5e_d767_4812_845e_eb6b402c476a"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">material</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-usercase.owl#EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8">
+    <rdfs:label xml:lang="en">component</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-usercase.owl#EMMO_86ca9b93_1183_4b65_81b8_c0fcd3bba5ad"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N661ed425683542e4ac25dd67a0551c68">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://emmo.info/perspectives/emmo-processual.owl#EMMO_c5aae418_1622_4d02_93c5_21159e28e6c1"/>
+    <owl:someValuesFrom rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_b21a56ed_f969_4612_a6ec_cb7766f7f31d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/base/emmo-4d.owl">
+    <rdfs:comment>European Materials and Modelling Ontology (EMMO)
+
+EMMO is a multidisciplinary effort to develop a standard representational framework (the ontology) based on current materials modelling knowledge, including physical sciences, analytical philosophy and information and communication technologies. 
+
+It provides the connection between the physical world, materials characterisation world and materials modelling world.</rdfs:comment>
+    <rdfs:comment>The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege).</rdfs:comment>
+    <owl:versionInfo>The European Materials Modelling Ontology
+
+Version 0.9.10</owl:versionInfo>
+    <emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>Emanuele Ghedini (University of Bologna, IT)
+Gerhard Goldbeck (GCL Ltd, UK)
+Adham Hashibon (Fraunhofer IWM, DE)
+Georg Schmitz (Access, DE)
+Jesper Friis (SINTEF, NO)</emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>
+    <rdfs:comment>Contacts:
+Gerhard Goldbeck
+Goldbeck Consulting Ltd (UK)
+email: gerhard@goldbeck-consulting.com
+
+Emanuele Ghedini
+University of Bologna (IT)
+email: emanuele.ghedini@unibo.it</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>EMMO is released under a Creative Commons license Attribution 4.0 International (CC BY 4.0)
+
+https://creativecommons.org/licenses/by/4.0/legalcode</emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-usercase.owl#EMMO_86ca9b93_1183_4b65_81b8_c0fcd3bba5ad">
+    <rdfs:comment>While the 'state' branch describes single simple entities (e.g. atoms, molecules, nanoparticles), the 'engineered_entity' branch describe entities that show some level of complexity/heterogeneity in their composition, and are made for a specific use.
+
+Classes in this branch are primitive.
+
+e.g. car, tire, composite material.</rdfs:comment>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>An 'existent' that is a parthood composition of 'state' individuals for a particular purpose.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:label xml:lang="en">engineered entity</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_52211e5e_d767_4812_845e_eb6b402c476a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-models.owl#EMMO_939483b1_0148_43d1_8b35_851d2cd5d939">
+    <rdfs:comment>A 'model' prediction is always a prediction of the properties of an entity, since an entity is known by an interpreter only through perception.</rdfs:comment>
+    <owl:equivalentClass rdf:nodeID="N3b15c081a59a4d08937c8dba375fa52b"/>
+    <rdfs:label xml:lang="en">model</rdfs:label>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A 'sign' that not only stands for a 'physical' or a 'process', but it is also a simplified representation, aimed to assist calculations for its description or for predictions of its behaviour.
+
+A 'model' represents a 'physical' or a 'process' by direct similitude (e.g. small scale replica) or by capturing in a logical framework the relations between its properties (e.g. mathematical model).</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc1a31ced4e8c450da2951cc705a6a0b6">
+    <owl:someValuesFrom rdf:resource="http://emmo.info/perspectives/emmo-processual.owl#EMMO_49804605_c0fe_4538_abda_f70ba1dc8a5d"/>
+    <owl:onProperty rdf:resource="http://emmo.info/perspectives/emmo-processual.owl#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/base/emmo-mereotopology.owl#EMMO_9380ab64_0363_4804_b13f_3a8a94119a76">
+    <rdfs:seeAlso>is_proper_part_of</rdfs:seeAlso>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdfs:label xml:lang="en">has_proper_part</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-math.owl#EMMO_031d61af_6405_41de_8880_df2f85a53383">
+    <rdfs:subClassOf rdf:nodeID="N5f4914588cfa4b6ea88525bc12b8ac09"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-graphical.owl#EMMO_a1083d0a_c1fb_471f_8e20_a98f881ad527"/>
+    <rdfs:label xml:lang="en">math symbol</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A 'symbol' that is part of standard mathematical formalism.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-geometry.owl#EMMO_9268958f_7f54_48ab_a693_febe2645892b">
+    <rdfs:label xml:lang="en">2-manifold</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-geometry.owl#EMMO_b5957cef_a287_442d_a3ce_fd39f20ba1cd"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_eb3518bf_f799_4f9e_8c3e_ce59af11453b">
+    <rdfs:label xml:lang="en">has_convention</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_60577dea_9019_4537_ac41_80b0fb563d41"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_35d2e130_6e01_41ed_94f7_00b333d46cf9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-math.owl#EMMO_3446e167_c576_49d6_846c_215bb8878a55">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_eb3518bf_f799_4f9e_8c3e_ce59af11453b"/>
+    <rdfs:label xml:lang="en">has_variable</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc443855b32714f438cb6009609575193">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://emmo.info/base/emmo-physical.owl#EMMO_29072ec4_ffcb_42fb_bdc7_26f05a2e9873"/>
+    <owl:onProperty rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-models.owl#EMMO_22522299_4091_4d1f_82a2_3890492df6db">
+    <rdfs:subClassOf rdf:nodeID="Nad56ea85418942378cfd034dfa97ec31"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_10a5fd39_06aa_4648_9e70_f962a9cb2069"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>An experiment is a process that is intended to replicate a physical phenomenon in a controlled environment.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:label xml:lang="en">experiment</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_8f87e700_99a8_4427_8ffb_e493de05c217">
+    <rdfs:label xml:lang="en">proton</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="N8932216e38ae4bbbbc14ea43120c952d"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_87ac88ff_8379_4f5a_8c7b_424a8fff1ee8">
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A continuum that has no fixed shape and yields easily to external pressure.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2"/>
+    <emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>Gas, liquid, plasma,</emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>
+    <rdfs:label xml:lang="en">fluid</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_2fd3f574_5e93_47fe_afca_ed80b0a21ab4">
+    <rdfs:comment>A standalone atom can be bonded with other atoms by intermolecular forces (i.e. dipole–dipole, London dispersion force, hydrogen bonding), since this bonds does not involve electron sharing.</rdfs:comment>
+    <owl:disjointUnionOf rdf:nodeID="N5c9d5920650f444ab1f374b5f3183daa"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>An atom that does not share electrons with other atoms.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_eb77076b_a104_42ac_a065_798b2d2809ad"/>
+    <rdfs:label xml:lang="en">standalone atom</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/perspectives/emmo-processual.owl#EMMO_0277f24a_ea7f_4917_81b7_fb0406c8fc62">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/base/emmo-physical.owl#EMMO_c5ddfdba_c074_4aa4_ad6b_1ac4942d300d"/>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A 'physical' that stands for a real world object related to or involving the study of processes rather than discrete events.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">processual</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/base/emmo-mereotopology.owl#EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f">
+    <rdfs:label xml:lang="en">has_part</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_d893d373_b579_4867_841e_1c2b31a8d2c6"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_8c898653_1118_4682_9bbf_6cc334d16a99"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:seeAlso>is_part_of</rdfs:seeAlso>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8b7fc65d37ac477bb0037cb474fb0a8d">
+    <owl:unionOf rdf:nodeID="N2e019ebd341d45aa962069efba2edc91"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/perspectives/emmo-processual.owl#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a">
+    <rdfs:label xml:lang="en">has_participant</rdfs:label>
+    <rdfs:domain rdf:resource="http://emmo.info/perspectives/emmo-processual.owl#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce"/>
+    <rdfs:comment>Participation is a parthood relation: you must be part (and then be connected) of the process to contribute to it.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://emmo.info/perspectives/emmo-processual.owl#EMMO_49804605_c0fe_4538_abda_f70ba1dc8a5d"/>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>The relation between a process and an object participating to it.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:comment>Participation is not under direct parthood since a process is not strictly related to reductionism, but it's a way to categorize temporal regions by the interpreters.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N34e15e4619d44c77a290ec2340646370">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_eb3c61f0_3983_4346_a0c6_e7f6b90a67a8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_8303a247_f9d9_4616_bdcd_f5cbd7b298e3">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_eb77076b_a104_42ac_a065_798b2d2809ad"/>
+    <rdfs:comment>The bond types that are covered by this definition are the strong electonic bonds: covalent, metallic and ionic.</rdfs:comment>
+    <rdfs:comment>A real bond between atoms is always something hybrid between covalent, metallic and ionic.
+
+In general, metallic and ionic bonds have atoms sharing electrons.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>This class can be used to represent molecules as simplified quantum systems, in which outer molecule shared electrons are un-entangled with the inner shells of the atoms composing the molecule.</rdfs:comment>
+    <rdfs:label xml:lang="en">e-bonded atom</rdfs:label>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>An electronic bonded atom that shares at least one electron to the atom_based entity of which is part of.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/base/emmo-annotations.owl">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:comment>Contacts:
+Gerhard Goldbeck
+Goldbeck Consulting Ltd (UK)
+email: gerhard@goldbeck-consulting.com
+
+Emanuele Ghedini
+University of Bologna (IT)
+email: emanuele.ghedini@unibo.it</rdfs:comment>
+    <emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>Emanuele Ghedini (University of Bologna, IT)
+Gerhard Goldbeck (GCL Ltd, UK)
+Adham Hashibon (Fraunhofer IWM, DE)
+Georg Schmitz (Access, DE)
+Jesper Friis (SINTEF, NO)</emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>
+    <emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>EMMO is released under a Creative Commons license Attribution 4.0 International (CC BY 4.0)
+
+https://creativecommons.org/licenses/by/4.0/legalcode</emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>
+    <rdfs:comment>The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege).</rdfs:comment>
+    <rdfs:comment>European Materials and Modelling Ontology (EMMO)
+
+EMMO is a multidisciplinary effort to develop a standard representational framework (the ontology) based on current materials modelling knowledge, including physical sciences, analytical philosophy and information and communication technologies. 
+
+It provides the connection between the physical world, materials characterisation world and materials modelling world.</rdfs:comment>
+    <owl:versionInfo>The European Materials Modelling Ontology
+
+Version 0.9.10</owl:versionInfo>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd0cde1ff6c1a4355953b6ed177b9e6f8">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_50781fd9_a9e4_46ad_b7be_4500371d188d"/>
+    <owl:onProperty rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/base/emmo-mereotopology.owl#EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf">
+    <rdfs:label xml:lang="en">emmo</rdfs:label>
+    <owl:equivalentClass rdf:nodeID="N7b37cab18bd9430ba44f7799f26bbe5a"/>
+    <rdfs:comment>Parthood relations does not change dimensionality of an 'emmo' individual, i.e. every part of a real world object always retains its 4D dimensionality. 
+
+The smallest part is a 'quantum', that has no proper parts.
+
+It follows that, for the EMMO, real world objects of dimensionality lower than 4D do not exist (e.g. surfaces, lines).</rdfs:comment>
+    <owl:disjointUnionOf rdf:nodeID="Na2fbade79a3b4507bf0cf498a9734790"/>
+    <rdfs:comment>For the EMMO the whole universe is represented at meta-ontological level (i.e. the representational level that includes the ontologist, the ontology and the universe) as a 4D path-connected topological manifold (i.e. the spacetime).
+
+Mereotopology is the fundamental logical representation used to characterize the universe and to provide the definitions for the EMMO concepts at interpreter's level.
+
+A real world object is then a 4D topological sub-region of the universe. 
+
+A universe sub-region is isolated and defined as a real world object by the ontologist. Then, through a semiotic process that occurs at the meta-ontological level (i.e. outside the ontology). an ontology entity (e.g. an OWL individual) is assigned to represent that real object. 
+
+The fundamental distinction between real world objects upon which the EMMO is based in self-connectedness: a real world object can be self-connected xor not self-connected.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="Nd8a6fa7ba9024e10a0d358429709d1c3"/>
+    <rdfs:comment>'emmo' is the disjoint union of 'item' and 'collection' (covering axiom).
+
+The union implies that 'emmo' individuals can only be 'item' individuals (standing for self-connected real world objects) or 'collection' individuals (standing for a collection of disconnected items).
+
+Disjointness means that a 'collection' individual cannot be an 'item' individual and viceversa, meaning that a real world object cannot be self-connected and non-self connected at the same time.</rdfs:comment>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>The class representing the collection of all the individuals declared in this ontology that stand for real world objects.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:comment>In the EMMO we will refer to the universe as a Minkowski space, restricting the ontology to special relativity only. However, exension to general relativity, will adding more complexity, should not change the overall approach.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_385b8f6e_43ac_4596_ad76_ac322c68b7ca">
+    <owl:disjointUnionOf rdf:nodeID="N4c384097cee84d929280e066d03de556"/>
+    <rdfs:label xml:lang="en">massive</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/perspectives/emmo-impression.owl#EMMO_649bf97b_4397_4005_90d9_219755d92e34">
+    <emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>A line scratched on a surface.
+
+A sound.
+
+A smell.</emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>
+    <rdfs:comment>From Latin impressionem: "a pressing into, onset, attack," figuratively "a perception, mental impression".
+
+Literally "a pressing into" from Latin imprimere "press into or upon".</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>This class is the most general superclass that represents real world objects that can stand for something else in a semiotic process ('signs'), though an impression is no necessarily a 'sign' (e.g. a line sketched on a blackboard is a recognizable 'impression' but it may stand for nothing).</rdfs:comment>
+    <rdfs:label xml:lang="en">impression</rdfs:label>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A 'physical' which stands for a real world object that stimulate a perception (e.g. a mental impression) to an interpreter.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/base/emmo-physical.owl#EMMO_c5ddfdba_c074_4aa4_ad6b_1ac4942d300d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N27c18c195cc548b7b6227b6b090f11fc">
+    <rdf:first rdf:nodeID="Neb837d9b00194231b27e63eb02709b3a"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-graphical.owl#EMMO_057e7d57_aff0_49de_911a_8861d85cef40">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-graphical.owl#EMMO_c74da218_9147_4f03_92d1_8894abca55f3"/>
+    <rdfs:label xml:lang="en">symbolic</rdfs:label>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>An 'physical' that stands for a symbolic object, i.e. a string of symbols from a specific alphabet.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:comment>In formal languages it is called a string of symbols.</rdfs:comment>
+    <rdfs:comment>A 'symbol' or a composition of 'symbol'-s not necesarily respecting syntactic rules.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="N102e8a3d07d34846ac78879de4697ca6"/>
+    <emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>fe@è0
+emmo
+!5*a
+cat</emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-math.owl#EMMO_d1d436e7_72fc_49cd_863b_7bfb4ba5276a">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-math.owl#EMMO_1eed0732_e3f1_4b2c_a9c4_b4e75eeb5895"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>Viscosity, the total energy of the system given by an Hamiltonian, the force between two atoms.</emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>
+    <rdfs:comment>A 'variable' whose value is assumed to be known independently from the equation, but whose value is not explicitated in the equation.</rdfs:comment>
+    <rdfs:label xml:lang="en">parameter</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6ec88e097c81479486792f7ebf25264d">
+    <rdf:first rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_d7788d1a_020d_4c78_85a1_13563fcec168"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/base/emmo-mereotopology.owl#EMMO_6703954e_34c4_4a15_a9e7_f313760ae1a8">
+    <rdfs:subPropertyOf rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_03212fd7_abfd_4828_9c8e_62c293052d4b"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:label xml:lang="en">connected</rdfs:label>
+    <rdfs:comment>Items being connected means that there is a topological contact or "interaction" between them.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment>Causality is a topological property between connected items.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/base/emmo-physical.owl">
+    <rdfs:comment>The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege).</rdfs:comment>
+    <owl:versionInfo>The European Materials Modelling Ontology
+
+Version 0.9.10</owl:versionInfo>
+    <emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>Emanuele Ghedini (University of Bologna, IT)
+Gerhard Goldbeck (GCL Ltd, UK)
+Adham Hashibon (Fraunhofer IWM, DE)
+Georg Schmitz (Access, DE)
+Jesper Friis (SINTEF, NO)</emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:comment>Contacts:
+Gerhard Goldbeck
+Goldbeck Consulting Ltd (UK)
+email: gerhard@goldbeck-consulting.com
+
+Emanuele Ghedini
+University of Bologna (IT)
+email: emanuele.ghedini@unibo.it</rdfs:comment>
+    <emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>EMMO is released under a Creative Commons license Attribution 4.0 International (CC BY 4.0)
+
+https://creativecommons.org/licenses/by/4.0/legalcode</emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>
+    <rdfs:comment>European Materials and Modelling Ontology (EMMO)
+
+EMMO is a multidisciplinary effort to develop a standard representational framework (the ontology) based on current materials modelling knowledge, including physical sciences, analytical philosophy and information and communication technologies. 
+
+It provides the connection between the physical world, materials characterisation world and materials modelling world.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/base/emmo-physical.owl#EMMO_0f795e3e_c602_4577_9a43_d5a231aa1360">
+    <rdfs:comment>While a 'quantum' is a-tomistic in time and space, an 'elementary' is a-tomistic only in space, recalling the concept of elementary particle.</rdfs:comment>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>The basic constituent of 'item'-s that can be proper partitioned only in time up to quantum level.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/base/emmo-physical.owl#EMMO_c5ddfdba_c074_4aa4_ad6b_1ac4942d300d"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_36c79456_e29c_400d_8bd3_0eedddb82652"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_7d66bde4_b68d_41cc_b5fc_6fd98c5e2ff0"/>
+    <rdfs:subClassOf rdf:nodeID="N17e820deca1a43d3962c8b0067ad9e77"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de"/>
+    <rdfs:subClassOf rdf:nodeID="N3daf23d3928b4f2ead899dcd26ddbeba"/>
+    <owl:disjointUnionOf rdf:nodeID="Nf17a70af3585456f917a7e7af4e6e5af"/>
+    <rdfs:label xml:lang="en">elementary</rdfs:label>
+    <rdfs:comment>According to mereology, this should be call 'a-tomistic' in the strict etimological sense of the word (from greek, a-tomos: un-divisible).
+
+Mereology based on such items is called atomistic mereology.
+
+However, in order not to confuse the lexicon between mereology and physics (in which an atom is a divisible physical entity) we prefer to call it 'elementary', recalling the concept of elementary particle coming from the standard particles model.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5f4914588cfa4b6ea88525bc12b8ac09">
+    <owl:onProperty rdf:resource="http://emmo.info/base/emmo-4d.owl#EMMO_f68030be_94b8_4c61_a161_886468558054"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:nodeID="Nb49b3751321f40e7aca0138c38172100"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-graphical.owl#EMMO_a1083d0a_c1fb_471f_8e20_a98f881ad527">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-graphical.owl#EMMO_057e7d57_aff0_49de_911a_8861d85cef40"/>
+    <rdfs:comment>Symbols of a formal language need not be symbols of anything. For instance there are logical constants which do not refer to any idea, but rather serve as a form of punctuation in the language (e.g. parentheses). 
+
+Symbols of a formal language must be capable of being specified without any reference to any interpretation of them. 
+(Wikipedia)</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>The class is the idea of the symbol, while the individual of that class stands for a specific mark (or token) of that idea.</rdfs:comment>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>The class of individuals that stand for an elementary mark of a specific symbolic code (alphabet).</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:label xml:lang="en">symbol</rdfs:label>
+    <rdfs:comment>Subclasses of 'symbol' are alphabets, in formal languages terminology.</rdfs:comment>
+    <emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>The class of letter "A" is the symbol as idea and the letter A that you see on the screen is the mark.</emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_3397f270_dfc1_4500_8f6f_4d0d85ac5f71">
+    <rdfs:subClassOf rdf:nodeID="N22ae4de301764e9b815233ffb978d06c"/>
+    <rdfs:comment>This definition states that this object is a non-periodic set of atoms or a set with a finite periodicity.
+
+Removing an atom from the state will result in another type of atom_based state.
+
+e.g. you cannot remove H from H20 without changing the molecule type (essential). However, you can remove a C from a nanotube (redundant). C60 fullerene is a molecule, since it has a finite periodicity and is made of a well defined number of atoms (essential). A C nanotube is not a molecule, since it has an infinite periodicity (redundant).</rdfs:comment>
+    <rdfs:comment>An entity is called essential if removing one direct part will lead to a change in entity class.
+
+An entity is called redundand if removing one direct part will not lead to a change in entity class.</rdfs:comment>
+    <emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>H20, C6H12O6, CH4</emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>
+    <rdfs:label xml:lang="en">molecule</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="N4ddcef0c0c5145bb93fa865118ad43b1"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>An atom_based state defined by an exact number of e-bonded atomic species and an electron cloud made of the shared electrons.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_174cf221_9d16_427c_abea_e217a948969b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-models.owl#EMMO_53935db0_af45_4426_b9e9_244a0d77db00">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-models.owl#EMMO_b29fd350_39aa_4af7_9459_3faa0544cba6"/>
+    <rdfs:label xml:lang="en">mesoscopic model</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-physical-properties.owl#EMMO_dd4a7f3e_ef56_466c_ac1a_d2716b5f87ec">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A 'property' that can be quantified with respect to a standardized reference physical instance (e.g. the prototype meter bar, the kg prototype) or method (e.g. resilience) through a measurement process.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-graphical.owl#EMMO_50ea1ec5_f157_41b0_b46b_a9032f17ca10"/>
+    <rdfs:label xml:lang="en">quantitative property</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_2a888cdf_ec4a_4ec5_af1c_0343372fc978"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_db03061b_db31_4132_a47a_6a634846578b">
+    <rdfs:label xml:lang="en">ion atom</rdfs:label>
+    <rdfs:comment>The ion_atom is the basic part of a pure ionic bonded compound i.e. without eclectron sharing,</rdfs:comment>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A standalone atom with an unbalanced number of electrons with respect to its atomic number.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-math.owl#EMMO_fe7e56ce_118b_4243_9aad_20eb9f4f31f6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>The dependent variable for which an equation has been written.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-math.owl#EMMO_1eed0732_e3f1_4b2c_a9c4_b4e75eeb5895"/>
+    <rdfs:label xml:lang="en">unknown</rdfs:label>
+    <emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>Velocity, for the Navier-Stokes equation.</emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-graphical.owl#EMMO_50ea1ec5_f157_41b0_b46b_a9032f17ca10">
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A composition of more than one 'symbol'-s respecting a specific language syntactic rules (well-formed formula).</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="N001787303dba49faa56a8c4e00f33d3e"/>
+    <rdfs:label xml:lang="en">formula</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-graphical.owl#EMMO_057e7d57_aff0_49de_911a_8861d85cef40"/>
+    <rdfs:comment>In formal languages the terms word or well-formed formula are used with the same meaning.</rdfs:comment>
+    <emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>The word "cat" considered as a collection of 'symbol'-s respecting the rules of english language. 
+
+In this example the 'symbolic' entity "cat" is not related to the real cat, but it is only a word (like it would be to an italian person that ignores the meaning of this english word).
+
+If an 'interpreter' skilled in english language is involved in a 'semiotic' process with this word, that "cat" became also a 'sign' i.e. it became for the 'interpreter' a representation for a real cat.</emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/base/emmo-mereotopology.owl#EMMO_517dfaf9_4970_41ac_81ee_d031627d2c7c">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_03212fd7_abfd_4828_9c8e_62c293052d4b"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">disconnected</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_50781fd9_a9e4_46ad_b7be_4500371d188d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">nucleon</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_7d66bde4_b68d_41cc_b5fc_6fd98c5e2ff0"/>
+    <owl:disjointUnionOf rdf:nodeID="Nd5f17424d485462dba24ab8ca09deda2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/base/emmo-4d.owl#EMMO_6e046dd0_9634_4013_b2b1_9cc468087c83">
+    <rdfs:range rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de"/>
+    <rdfs:subPropertyOf rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_9380ab64_0363_4804_b13f_3a8a94119a76"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdfs:domain rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de"/>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A relation that isolates a proper part that extends itself in time through a portion of the lifetime whole.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">has_spatio-temporal_part</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_008fd3b2_4013_451f_8827_52bceab11841">
+    <rdfs:subClassOf rdf:nodeID="N749c171f16d142ba9d271a027f2ce6d2"/>
+    <rdfs:subClassOf rdf:nodeID="Nd6908119f2f742e29ae7d12777916c33"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/perspectives/emmo-processual.owl#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce"/>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A 'process', that has participant an 'interpreter', that is aimed to produce a 'sign' representing another participant, the 'interpreted'.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:label xml:lang="en">semiosis</rdfs:label>
+    <emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>Me looking a cat and saying loud: "Cat!" -&gt; the semiosis process
+
+me -&gt; interpreter
+cat -&gt; object (in Peirce semiotics)
+the cat perceived by my mind -&gt; interpretant
+"Cat!" -&gt; sign, the produced sign</emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="N661ed425683542e4ac25dd67a0551c68"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-models.owl#EMMO_27c5d8c6_8af7_4d63_beb1_ec37cd8b3fa3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">physics equation</rdfs:label>
+    <rdfs:comment>The Newton's equation of motion.
+
+The Schrodinger equation.
+
+The Navier-Stokes equation.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-math.owl#EMMO_e56ee3eb_7609_4ae1_8bed_51974f0960a6"/>
+    <rdfs:subClassOf rdf:nodeID="N27fbfaa5c12a4684a61e947adecf216d"/>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>An 'equation' that stands for a 'physical_law' by mathematically defining the relations between physics_quantities.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_5c4aff3c_c30c_4507_86d5_b4df41eb9f2f">
+    <rdfs:label xml:lang="en">atomic</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_36c79456_e29c_400d_8bd3_0eedddb82652"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/base/emmo-mereotopology.owl#EMMO_08cb807c_e626_447b_863f_e2835540e918">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdfs:label xml:lang="en">universe</rdfs:label>
+    <rdf:type rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_35d2e130_6e01_41ed_94f7_00b333d46cf9">
+    <rdfs:label xml:lang="en">conventional</rdfs:label>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A 'sign' that stand for an 'object' through convention, norm or habit, without any resemblance to it.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>In Peirce semiotics this kind of sign category is called symbol. However, since symbol is also used in formal languages, the name is changed in conventional.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_5b2222df_4da6_442f_8244_96e9e45887d1">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_52211e5e_d767_4812_845e_eb6b402c476a"/>
+    <rdfs:subClassOf rdf:nodeID="N1a8ead72e2cc4bef9553e86a170f356b"/>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A 'physical' that possesses some 'massive' parts.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">matter</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="Naae372bfcebb44449e1c7331788a29aa"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/base/emmo-annotations.owl#EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    <rdfs:label xml:lang="en">license</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb49b3751321f40e7aca0138c38172100">
+    <owl:complementOf rdf:resource="http://emmo.info/domains/emmo-math.owl#EMMO_54ee6b5e_5261_44a8_86eb_5717e7fdb9d0"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9305c6b6d9a24999bd6d080c62e96e78">
+    <owl:someValuesFrom rdf:resource="http://emmo.info/domains/emmo-models.owl#EMMO_27c5d8c6_8af7_4d63_beb1_ec37cd8b3fa3"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://emmo.info/base/emmo-4d.owl#EMMO_f68030be_94b8_4c61_a161_886468558054"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/base/emmo-mereotopology.owl#EMMO_d893d373_b579_4867_841e_1c2b31a8d2c6">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">overlaps</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_6703954e_34c4_4a15_a9e7_f313760ae1a8"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/base/emmo-annotations.owl#EMMO_70fe84ff_99b6_4206_a9fc_9a8931836d84">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:label xml:lang="en">definition</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-material.owl">
+    <emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>Emanuele Ghedini (University of Bologna, IT)
+Gerhard Goldbeck (GCL Ltd, UK)
+Adham Hashibon (Fraunhofer IWM, DE)
+Georg Schmitz (Access, DE)
+Jesper Friis (SINTEF, NO)</emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>
+    <rdfs:comment>European Materials and Modelling Ontology (EMMO)
+
+EMMO is a multidisciplinary effort to develop a standard representational framework (the ontology) based on current materials modelling knowledge, including physical sciences, analytical philosophy and information and communication technologies. 
+
+It provides the connection between the physical world, materials characterisation world and materials modelling world.</rdfs:comment>
+    <rdfs:comment>The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege).</rdfs:comment>
+    <emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>EMMO is released under a Creative Commons license Attribution 4.0 International (CC BY 4.0)
+
+https://creativecommons.org/licenses/by/4.0/legalcode</emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>
+    <rdfs:comment>Contacts:
+Gerhard Goldbeck
+Goldbeck Consulting Ltd (UK)
+email: gerhard@goldbeck-consulting.com
+
+Emanuele Ghedini
+University of Bologna (IT)
+email: emanuele.ghedini@unibo.it</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:versionInfo>The European Materials Modelling Ontology
+
+Version 0.9.10</owl:versionInfo>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N179726f02a14440bbe893fd35828f6b8">
+    <owl:onProperty rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://emmo.info/base/emmo-physical.owl#EMMO_0f795e3e_c602_4577_9a43_d5a231aa1360"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-physical-properties.owl#EMMO_f2d5d3ad_2e00_417f_8849_686f3988d929">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_1b52ee70_121e_4d8d_8419_3f97cd0bd89c"/>
+    <rdfs:label xml:lang="en">measurement instrument</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2eebed29d3d84b99b1360c07e723225e">
+    <owl:inverseOf rdf:resource="http://emmo.info/domains/emmo-math.owl#EMMO_3446e167_c576_49d6_846c_215bb8878a55"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-physical-properties.owl#EMMO_02c0621e_a527_4790_8a0f_2bb51973c819">
+    <rdfs:subClassOf rdf:nodeID="N1a306b5ecf4843ca9341c3b1690125e2"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-physical-properties.owl#EMMO_dd4a7f3e_ef56_466c_ac1a_d2716b5f87ec"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">physical quantity</rdfs:label>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A "symbolic" entity that is made of a 'number' and a 'measurement_unit'. 
+
+By definition it also stands for the result of a measurement process, and so it is also a 'sign'.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:subClassOf rdf:nodeID="Nfddeb923fcce4395863cf9776eeef4cf"/>
+    <rdfs:comment>Measured or simulated 'physical propertiy'-s are always defined by a physical law, connected to a physical entity through a model perspective and measurement is done according to the same model.
+
+Systems of units suggests that this is the correct approach, since except for the fundamental units (length, time, charge) every other unit is derived by mathematical relations between these fundamental units, implying a physical laws or definitions.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd02f03569e304740b26a8ad04af0bf89">
+    <owl:unionOf rdf:nodeID="N25a8dee1b7784d5e89f9bbaf53c03aea"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nca61c5f3260c4c9d854a04ac9aff26dd">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://emmo.info/base/emmo-4d.owl#EMMO_f68030be_94b8_4c61_a161_886468558054"/>
+    <owl:someValuesFrom rdf:resource="http://emmo.info/domains/emmo-math.owl#EMMO_1eed0732_e3f1_4b2c_a9c4_b4e75eeb5895"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-properties.owl#EMMO_2a888cdf_ec4a_4ec5_af1c_0343372fc978">
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A 'property' that is determined by each 'observer' following a well defined 'observation' procedure through a specific perception channel.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:label xml:lang="en">objective property</rdfs:label>
+    <rdfs:comment>The word objective does not mean that each observation will provide the same results. It means that the observation followed a well defined procedure.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/perspectives/emmo-processual.owl">
+    <rdfs:comment>Contacts:
+Gerhard Goldbeck
+Goldbeck Consulting Ltd (UK)
+email: gerhard@goldbeck-consulting.com
+
+Emanuele Ghedini
+University of Bologna (IT)
+email: emanuele.ghedini@unibo.it</rdfs:comment>
+    <emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>EMMO is released under a Creative Commons license Attribution 4.0 International (CC BY 4.0)
+
+https://creativecommons.org/licenses/by/4.0/legalcode</emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>
+    <rdfs:comment>European Materials and Modelling Ontology (EMMO)
+
+EMMO is a multidisciplinary effort to develop a standard representational framework (the ontology) based on current materials modelling knowledge, including physical sciences, analytical philosophy and information and communication technologies. 
+
+It provides the connection between the physical world, materials characterisation world and materials modelling world.</rdfs:comment>
+    <rdfs:comment>The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege).</rdfs:comment>
+    <owl:versionInfo>The European Materials Modelling Ontology
+
+Version 0.9.10</owl:versionInfo>
+    <emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>Emanuele Ghedini (University of Bologna, IT)
+Gerhard Goldbeck (GCL Ltd, UK)
+Adham Hashibon (Fraunhofer IWM, DE)
+Georg Schmitz (Access, DE)
+Jesper Friis (SINTEF, NO)</emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb36ed5aa1b68425a9b33a585bf35b1c7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://emmo.info/perspectives/emmo-processual.owl#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a"/>
+    <owl:someValuesFrom rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_1b52ee70_121e_4d8d_8419_3f97cd0bd89c"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A continuum characterized by structural rigidity and resistance to changes of shape or volume, that retains its shape and density when not confined.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2"/>
+    <rdfs:label xml:lang="en">solid</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-properties.owl#EMMO_251cfb4f_5c75_4778_91ed_6c8395212fd8">
+    <emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>The beauty of that girl.
+The style of your clothing.</emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">subjective property</rdfs:label>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A 'property' that cannot be univocally determined and depends on an agent (e.g. a human individual, a community) acting as black-box.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:comment>The word subjective means that a non-well defined or an unknown procedure is used for the definition of the property.
+
+This happens due to e.g. the complexity of the object, the lack of a underlying model for the representation of the object, the non-well specified meaning of the property symbols. 
+
+A 'subjective_property' cannot be used to univocally compare 'object'-s.
+
+e.g. you cannot evaluate the beauty of a person on objective basis.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/perspectives/emmo-existent.owl#EMMO_65a2c5b8_e4d8_4a51_b2f8_e55effc0547d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_7afbed84_7593_4a23_bd88_9d9c6b04e8f6"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdfs:label xml:lang="en">has_temporal_direct_part</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_36c79456_e29c_400d_8bd3_0eedddb82652"/>
+    <rdfs:domain rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_52211e5e_d767_4812_845e_eb6b402c476a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-geometry.owl#EMMO_86060335_31c2_4820_b433_27c64aea0366">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">torus</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-geometry.owl#EMMO_9268958f_7f54_48ab_a693_febe2645892b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-models.owl#EMMO_6eca09be_17e9_445e_abc9_000aa61b7a11">
+    <rdfs:label xml:lang="en">electronic model</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-models.owl#EMMO_b29fd350_39aa_4af7_9459_3faa0544cba6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2">
+    <rdfs:comment>A continuum is made of a sufficient number of parts that it continues to exists as continuum individual even after the loss of one of them i.e. a continuum is a redundant.</rdfs:comment>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A state that is a collection of sufficiently large number of other parts such that:
+- it is the bearer of qualities that can exists only by the fact that it is a sum of parts
+- the smallest partition dV of the state volume in which we are interested in, contains enough parts to be statistically consistent: n [#/m3] x dV [m3] &gt;&gt; 1</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:comment>A continuum is the bearer of properties that are generated by the interactions of parts such as viscosity and thermal or electrical conductivity.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>A continuum is not necessarily small (i.e. composed by the minimum amount of sates to fulfill the definition).
+
+A single continuum individual can be the whole fluid in a pipe.</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_36c79456_e29c_400d_8bd3_0eedddb82652"/>
+    <rdfs:label xml:lang="en">continuum</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_8043d3c6_a4c1_4089_ba34_9744e28e5b3d">
+    <rdfs:label xml:lang="en">electron</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_df808271_df91_4f27_ba59_fa423c51896c">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">neutron</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="Nb36a06cababd4bb9a8981bb38a839744"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-geometry.owl#EMMO_25f5ca8e_8f7f_44d8_a392_bd3fe8894458">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-geometry.owl#EMMO_9268958f_7f54_48ab_a693_febe2645892b"/>
+    <rdfs:label xml:lang="en">plane</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-physical-properties.owl#EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-physical-properties.owl#EMMO_dd4a7f3e_ef56_466c_ac1a_d2716b5f87ec"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">measurement unit</rdfs:label>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A 'quantitative_property' that stands for the standard reference magnitude of a specific class of measurement processes, defined and adopted by convention or by law.
+
+Quantitative measurement results are expressed as a multiple of the 'measurement_unit'.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-graphical.owl">
+    <rdfs:comment>European Materials and Modelling Ontology (EMMO)
+
+EMMO is a multidisciplinary effort to develop a standard representational framework (the ontology) based on current materials modelling knowledge, including physical sciences, analytical philosophy and information and communication technologies. 
+
+It provides the connection between the physical world, materials characterisation world and materials modelling world.</rdfs:comment>
+    <rdfs:comment>The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege).</rdfs:comment>
+    <owl:versionInfo>The European Materials Modelling Ontology
+
+Version 0.9.10</owl:versionInfo>
+    <emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>Emanuele Ghedini (University of Bologna, IT)
+Gerhard Goldbeck (GCL Ltd, UK)
+Adham Hashibon (Fraunhofer IWM, DE)
+Georg Schmitz (Access, DE)
+Jesper Friis (SINTEF, NO)</emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>
+    <rdfs:comment>Contacts:
+Gerhard Goldbeck
+Goldbeck Consulting Ltd (UK)
+email: gerhard@goldbeck-consulting.com
+
+Emanuele Ghedini
+University of Bologna (IT)
+email: emanuele.ghedini@unibo.it</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>EMMO is released under a Creative Commons license Attribution 4.0 International (CC BY 4.0)
+
+https://creativecommons.org/licenses/by/4.0/legalcode</emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/base/emmo-4d.owl#EMMO_f68030be_94b8_4c61_a161_886468558054">
+    <rdfs:domain rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_9380ab64_0363_4804_b13f_3a8a94119a76"/>
+    <rdfs:label xml:lang="en">has_spatial_part</rdfs:label>
+    <rdfs:range rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A relation that isolates a proper part that extends itself in time within the lifetime of the whole, without covering the full spatial extension of the 4D whole (i.e. is not a temporal part).</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf5aa8fd8262c467d97d47756dfd3a6b4">
+    <owl:inverseOf rdf:resource="http://emmo.info/perspectives/emmo-processual.owl#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/emmo.owl">
+    <rdfs:comment>Contacts:
+Gerhard Goldbeck
+Goldbeck Consulting Ltd (UK)
+email: gerhard@goldbeck-consulting.com
+
+Emanuele Ghedini
+University of Bologna (IT)
+email: emanuele.ghedini@unibo.it</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>EMMO is released under a Creative Commons license Attribution 4.0 International (CC BY 4.0)
+
+https://creativecommons.org/licenses/by/4.0/legalcode</emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>
+    <rdfs:comment>European Materials and Modelling Ontology (EMMO)
+
+EMMO is a multidisciplinary effort to develop a standard representational framework (the ontology) based on current materials modelling knowledge, including physical sciences, analytical philosophy and information and communication technologies. 
+
+It provides the connection between the physical world, materials characterisation world and materials modelling world.</rdfs:comment>
+    <rdfs:comment>The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege).</rdfs:comment>
+    <owl:versionInfo>The European Materials Modelling Ontology
+
+Version 0.9.10</owl:versionInfo>
+    <emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>Emanuele Ghedini (University of Bologna, IT)
+Gerhard Goldbeck (GCL Ltd, UK)
+Adham Hashibon (Fraunhofer IWM, DE)
+Georg Schmitz (Access, DE)
+Jesper Friis (SINTEF, NO)</emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-geometry.owl">
+    <rdfs:comment>Contacts:
+Gerhard Goldbeck
+Goldbeck Consulting Ltd (UK)
+email: gerhard@goldbeck-consulting.com
+
+Emanuele Ghedini
+University of Bologna (IT)
+email: emanuele.ghedini@unibo.it</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:versionInfo>The European Materials Modelling Ontology
+
+Version 0.9.10</owl:versionInfo>
+    <emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>Emanuele Ghedini (University of Bologna, IT)
+Gerhard Goldbeck (GCL Ltd, UK)
+Adham Hashibon (Fraunhofer IWM, DE)
+Georg Schmitz (Access, DE)
+Jesper Friis (SINTEF, NO)</emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>
+    <rdfs:comment>European Materials and Modelling Ontology (EMMO)
+
+EMMO is a multidisciplinary effort to develop a standard representational framework (the ontology) based on current materials modelling knowledge, including physical sciences, analytical philosophy and information and communication technologies. 
+
+It provides the connection between the physical world, materials characterisation world and materials modelling world.</rdfs:comment>
+    <rdfs:comment>The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege).</rdfs:comment>
+    <emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>EMMO is released under a Creative Commons license Attribution 4.0 International (CC BY 4.0)
+
+https://creativecommons.org/licenses/by/4.0/legalcode</emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-graphical.owl#EMMO_c74da218_9147_4f03_92d1_8894abca55f3">
+    <emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>'graphical' objects include writings, pictures, sketches ...</emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>From the Ancient Greek γραφή (graphḗ) which means drawing, painting, writing, a writing, description, and from γράφω (gráphō) which means scratch, carve.</rdfs:comment>
+    <rdfs:label xml:lang="en">graphical</rdfs:label>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>An 'impression' which stands for a real world object whose spatial configuration shows a pattern identifiable by an observer.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/perspectives/emmo-impression.owl#EMMO_649bf97b_4397_4005_90d9_219755d92e34"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N62bcd3faaa344c2dbd8a5a31f8c5565b">
+    <rdf:first rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_b21a56ed_f969_4612_a6ec_cb7766f7f31d"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfddeb923fcce4395863cf9776eeef4cf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://emmo.info/domains/emmo-physical-properties.owl#EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4"/>
+    <owl:onProperty rdf:resource="http://emmo.info/base/emmo-4d.owl#EMMO_f68030be_94b8_4c61_a161_886468558054"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_0cd58641_824c_4851_907f_f4c3be76630c">
+    <emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>Smoke stands for a combustion process (a fire).
+
+My facial expression stands for my emotional status.</emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>
+    <rdfs:label xml:lang="en">index</rdfs:label>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A 'sign' that stands for an 'objectì due to causal continguity.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd128bdacc1d040d9a4a103a2f7b54c36">
+    <owl:onProperty rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f"/>
+    <owl:someValuesFrom rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_e5488299_8dab_4ebb_900a_26d2abed8396"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-properties.owl#EMMO_10a5fd39_06aa_4648_9e70_f962a9cb2069">
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A 'semiosis' that involves an 'observer' that perceives another 'entity' (the 'object') through a specific perception mechanism and produces a 'property' (the 'sign') that stands for the result of that particular perception.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_008fd3b2_4013_451f_8827_52bceab11841"/>
+    <rdfs:label xml:lang="en">observation</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="N8a94fc0e97334272ad2253ff77a92bf8"/>
+    <rdfs:subClassOf rdf:nodeID="Nb36ed5aa1b68425a9b33a585bf35b1c7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4df5ad96a1e04648b833138f33bf0f03">
+    <rdf:rest rdf:nodeID="N1f4efc440b5346d797ec62b25601d6fc"/>
+    <rdf:first rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_36c79456_e29c_400d_8bd3_0eedddb82652"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/base/emmo-mereotopology.owl#EMMO_ec2472ae_cf4a_46a5_8555_1556f5a6c3c5">
+    <rdfs:domain rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf"/>
+    <rdfs:range rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf"/>
+    <rdfs:label xml:lang="en">emmo_relation</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_d7788d1a_020d_4c78_85a1_13563fcec168">
+    <emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>A picture that reproduces the aspect of a person. 
+
+An equation that reproduces the logical connection of the properties of a physical entity.</emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>
+    <rdfs:label xml:lang="en">icon</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>Three subtypes of icon are possible:
+ 
+(a) the image, which depends on a simple quality (e.g. picture)
+
+(b) the diagram, whose internal relations, mainly dyadic or so taken, represent by analogy the relations in something (e.g. math formula, geometric flowchart)
+
+(c) the metaphor, which represents the representative character of a sign by representing a parallelism in something else
+
+[Wikipedia]</rdfs:comment>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A 'sign' that stands for an 'object' by resembling or imitating it, in shape or by sharing a similar logical structure.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-properties.owl#EMMO_1b52ee70_121e_4d8d_8419_3f97cd0bd89c">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_0527413c_b286_4e9c_b2d0_03fb2a038dee"/>
+    <rdfs:subClassOf rdf:nodeID="N0e1f6761d13d4eca9bbbc12e96ea891a"/>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>An 'interpreter' that perceives another 'entity' (the 'object') through a specific perception mechanism and produces a 'property' (the 'sign') that stands for the result of that particular perception.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:label xml:lang="en">observer</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-math.owl#EMMO_1a663927_3b68_4618_acd3_a8aa0d406329">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-math.owl#EMMO_031d61af_6405_41de_8880_df2f85a53383"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">number</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Naae372bfcebb44449e1c7331788a29aa">
+    <owl:onProperty rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f"/>
+    <owl:someValuesFrom rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_385b8f6e_43ac_4596_ad76_ac322c68b7ca"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_174cf221_9d16_427c_abea_e217a948969b">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_36c79456_e29c_400d_8bd3_0eedddb82652"/>
+    <rdfs:label xml:lang="en">mesoscopic</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7f9c9fd4b1324564b38a51fff7142225">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-models.owl">
+    <rdfs:comment>European Materials and Modelling Ontology (EMMO)
+
+EMMO is a multidisciplinary effort to develop a standard representational framework (the ontology) based on current materials modelling knowledge, including physical sciences, analytical philosophy and information and communication technologies. 
+
+It provides the connection between the physical world, materials characterisation world and materials modelling world.</rdfs:comment>
+    <rdfs:comment>The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege).</rdfs:comment>
+    <owl:versionInfo>The European Materials Modelling Ontology
+
+Version 0.9.10</owl:versionInfo>
+    <emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>Emanuele Ghedini (University of Bologna, IT)
+Gerhard Goldbeck (GCL Ltd, UK)
+Adham Hashibon (Fraunhofer IWM, DE)
+Georg Schmitz (Access, DE)
+Jesper Friis (SINTEF, NO)</emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>
+    <rdfs:comment>Contacts:
+Gerhard Goldbeck
+Goldbeck Consulting Ltd (UK)
+email: gerhard@goldbeck-consulting.com
+
+Emanuele Ghedini
+University of Bologna (IT)
+email: emanuele.ghedini@unibo.it</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>EMMO is released under a Creative Commons license Attribution 4.0 International (CC BY 4.0)
+
+https://creativecommons.org/licenses/by/4.0/legalcode</emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-geometry.owl#EMMO_46f0f8df_4dc6_418f_8036_10427a3a288e">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-geometry.owl#EMMO_b5957cef_a287_442d_a3ce_fd39f20ba1cd"/>
+    <rdfs:label xml:lang="en">3-manifold</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-math.owl#EMMO_54ee6b5e_5261_44a8_86eb_5717e7fdb9d0">
+    <rdfs:label xml:lang="en">mathematical</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-graphical.owl#EMMO_50ea1ec5_f157_41b0_b46b_a9032f17ca10"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:comment>The class of general mathematical symbols.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/perspectives/emmo-existent.owl#EMMO_36c79456_e29c_400d_8bd3_0eedddb82652">
+    <rdfs:subClassOf rdf:nodeID="Nd02f03569e304740b26a8ad04af0bf89"/>
+    <emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>e.g. the existent in my glass is declared at t = t_start as made of two direct parts: the ice and the water. It will continue to exists as state as long as the ice is completely melt at t = t_end. The new state will be completely made of water. Between t_start and t_end there is an exchange of molecules between the ice and the water, but this does not affect the existence of the two states.
+
+If we partition the existent in my glass as ice surrounded by several molecules (we do not use the object water as direct part) then the appearance of a molecule coming from the ice will cause a state to end and another state to begin.</emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>
+    <rdfs:comment>Direct partitions declaration is a choice of the ontology developer that choses the classes to be used as direct parts, according to its own world view.
+
+A 'state' can always be direct partitioned in 'elementary'-s and 'void' or 'physical'.
+
+e.g. the water in my glass can be seen as a single object without declaring direct parts, or as made of H2O molecules direct parts.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>An 'existent' whose spatial direct parts extends from one change in spatial direct part cardinality (i.e. the number of spatial direct parts) to the immidiate next change.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:comment>The definition of 'state' implies that its spatial direct parts (i.e. 'physicals') are not gained or lost during its temporal extension (they exist from the left to the right side of the time interval), so that the granularity of a 'state' is constant.
+
+This does not mean that there cannot be a change in the internal structure of the 'state' direct parts. It means only that this change must not affect the existence of the direct part itself.
+
+There is no change in granularity or cardinality of direct parts within a 'state'.
+
+Also, the 'state' must cover all the time interval between two successive cardinality changes.
+
+The use of spatial direct parthood in 'state' definition means that a 'state' cannot overlap in space another 'state'.</rdfs:comment>
+    <rdfs:comment>The usefulness of 'state' is that it makes it possible to describe the evolution in time of an 'existent' in terms of series of 'state'-s that can take into account the disappearance or appearance of parts within a 'physical'. 
+
+A 'state' is a recognizable granularity level of matter, in the sense that its direct parts do not appear or disappear within its lifetime as it can be for a generic 'existent'.</rdfs:comment>
+    <rdfs:label xml:lang="en">state</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_52211e5e_d767_4812_845e_eb6b402c476a"/>
+    <rdfs:comment>There is no change in granularity or cardinality of parts within a state.
+
+The use of spatial direct parthood in state definition means that a state cannot overlap in space another state that is direct part of the same whole.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-models.owl#EMMO_24c71baf_6db6_48b9_86c8_8c70cf36db0c">
+    <rdfs:label xml:lang="en">has_model</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_39c3815d_8cae_4c8f_b2ff_eeba24bec455"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1f4efc440b5346d797ec62b25601d6fc">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="N689547ed91a64f06966f35005262f874"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-physical-properties.owl">
+    <rdfs:comment>Contacts:
+Gerhard Goldbeck
+Goldbeck Consulting Ltd (UK)
+email: gerhard@goldbeck-consulting.com
+
+Emanuele Ghedini
+University of Bologna (IT)
+email: emanuele.ghedini@unibo.it</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>EMMO is released under a Creative Commons license Attribution 4.0 International (CC BY 4.0)
+
+https://creativecommons.org/licenses/by/4.0/legalcode</emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>
+    <rdfs:comment>European Materials and Modelling Ontology (EMMO)
+
+EMMO is a multidisciplinary effort to develop a standard representational framework (the ontology) based on current materials modelling knowledge, including physical sciences, analytical philosophy and information and communication technologies. 
+
+It provides the connection between the physical world, materials characterisation world and materials modelling world.</rdfs:comment>
+    <rdfs:comment>The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege).</rdfs:comment>
+    <owl:versionInfo>The European Materials Modelling Ontology
+
+Version 0.9.10</owl:versionInfo>
+    <emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>Emanuele Ghedini (University of Bologna, IT)
+Gerhard Goldbeck (GCL Ltd, UK)
+Adham Hashibon (Fraunhofer IWM, DE)
+Georg Schmitz (Access, DE)
+Jesper Friis (SINTEF, NO)</emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-geometry.owl#EMMO_b2a234a8_579a_422c_9305_b8f7e72c76cd">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">circle</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-geometry.owl#EMMO_0c576e13_4ee7_4f3d_bfe9_1614243df018"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-usercase.owl">
+    <rdfs:comment>European Materials and Modelling Ontology (EMMO)
+
+EMMO is a multidisciplinary effort to develop a standard representational framework (the ontology) based on current materials modelling knowledge, including physical sciences, analytical philosophy and information and communication technologies. 
+
+It provides the connection between the physical world, materials characterisation world and materials modelling world.</rdfs:comment>
+    <emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>Emanuele Ghedini (University of Bologna, IT)
+Gerhard Goldbeck (GCL Ltd, UK)
+Adham Hashibon (Fraunhofer IWM, DE)
+Georg Schmitz (Access, DE)
+Jesper Friis (SINTEF, NO)</emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>
+    <owl:versionInfo>The European Materials Modelling Ontology
+
+Version 0.9.10</owl:versionInfo>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:comment>Contacts:
+Gerhard Goldbeck
+Goldbeck Consulting Ltd (UK)
+email: gerhard@goldbeck-consulting.com
+
+Emanuele Ghedini
+University of Bologna (IT)
+email: emanuele.ghedini@unibo.it</rdfs:comment>
+    <emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>EMMO is released under a Creative Commons license Attribution 4.0 International (CC BY 4.0)
+
+https://creativecommons.org/licenses/by/4.0/legalcode</emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>
+    <rdfs:comment>The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/base/emmo-mereotopology.owl#EMMO_03212fd7_abfd_4828_9c8e_62c293052d4b">
+    <rdfs:label xml:lang="en">mereotopological</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:comment>Mereotopology merges mereological and topological concepts and provides relations between wholes, parts, boundaries, etc.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_ec2472ae_cf4a_46a5_8555_1556f5a6c3c5"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-models.owl#EMMO_b29fd350_39aa_4af7_9459_3faa0544cba6">
+    <rdfs:subClassOf rdf:nodeID="N9305c6b6d9a24999bd6d080c62e96e78"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A solvable set of one Physics Equation and one or more Materials Relations.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:label xml:lang="en">physics based model</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="Neba1a86545c04453bcb216fd9e660217"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-models.owl#EMMO_f7ed665b_c2e1_42bc_889b_6b42ed3a36f0"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nad56ea85418942378cfd034dfa97ec31">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://emmo.info/perspectives/emmo-processual.owl#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a"/>
+    <owl:someValuesFrom rdf:resource="http://emmo.info/domains/emmo-models.owl#EMMO_314d0bd5_67ed_437e_a609_36d46147cea7"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd8a6fa7ba9024e10a0d358429709d1c3">
+    <owl:onProperty rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_3f9ae00e_810c_4518_aec2_7200e424cf68"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_25f8b804_9a0b_4387_a3e7_b35bce5365ee">
+    <rdfs:label xml:lang="en">photon</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N96d07546bfad487694d8a4952ad55ce3">
+    <owl:someValuesFrom rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_8043d3c6_a4c1_4089_ba34_9744e28e5b3d"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/base/emmo-annotations.owl#EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a">
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    <rdfs:label xml:lang="en">example</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/base/emmo-annotations.owl#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9">
+    <rdfs:label xml:lang="en">elucidation</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-geometry.owl#EMMO_39362460_2a97_4367_8f93_0418c2ac9a08">
+    <rdfs:label xml:lang="en">point</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-geometry.owl#EMMO_0ab0485c_9e5b_4257_a679_90a2dfba5c7c"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_eb77076b_a104_42ac_a065_798b2d2809ad">
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A standalone atom has direct part one 'nucleus' and one 'electron_cloud'. 
+
+An O 'atom' within an O2 'molecule' is an 'e-bonded_atom'.
+
+In this material branch, H atom is a particular case, with respect to higher atomic number atoms, since as soon as it shares its electron it has no nucleus entangled electron cloud.
+
+We cannot say that H2 molecule has direct part two H atoms, but has direct part two H nucleus.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:comment>An 'atom' is a 'nucleus' surrounded by an 'electron_cloud', i.e. a quantum system made of one or more bounded electrons.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="Nef94f55a27bd43d99576774dc25c91ab"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_5c4aff3c_c30c_4507_86d5_b4df41eb9f2f"/>
+    <rdfs:subClassOf rdf:nodeID="Nddfd1269b4224628a54ab8e29c7e23cf"/>
+    <rdfs:label xml:lang="en">atom</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5c9d5920650f444ab1f374b5f3183daa">
+    <rdf:first rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_4588526f_8553_4f4d_aa73_a483e88d599b"/>
+    <rdf:rest rdf:nodeID="N2afac667985e4135b78027625bfd9b1e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N656b28f42e2b44c685d74607fe5dde4b">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://emmo.info/perspectives/emmo-processual.owl#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a"/>
+    <owl:someValuesFrom rdf:resource="http://emmo.info/domains/emmo-physical-properties.owl#EMMO_f2d5d3ad_2e00_417f_8849_686f3988d929"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_b21a56ed_f969_4612_a6ec_cb7766f7f31d">
+    <rdfs:comment>It can be defined as the semiotic branch of the EMMO.
+
+'sign' subclasses categorize the type of signs that are used to create representations/models of the real world entities.</rdfs:comment>
+    <owl:equivalentClass rdf:nodeID="Ndbec66b3e5b1438aa3670de5ac885903"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>An 'spacetime' that is used as sign ("semeion" in greek) that stands for another 'spacetime' through an semiotic process.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:comment>A 'sign' can have temporal-direct-parts which are 'sign' themselves.
+
+A 'sign' usually have 'sign' spatial direct parts only up to a certain elementary semiotic level, in which the part is only a 'physical' and no more a 'sign' (i.e. it stands for nothing). This elementary semiotic level is peculiar to each particular system of signs (e.g. text, painting).
+
+Just like an 'elementary' in the 'physical' branch, each 'sign' branch should have an a-tomistic mereological part.</rdfs:comment>
+    <rdfs:comment>In a 4D ontology one could question if a 'sign' should be defined as a spatial direct part of a 'semiosis' i.e. a proper part of a 'semiosis' during all its existence.
+
+e.g. one can say that an unread text is not a 'sign': it was a 'sign' during the 'semiosis' process in which it was written, but after that it is something else, until somebody read it again.
+
+However, this is not the case for an ontology, since declaring an individual under the 'sign' class (a semiosis outside the EMMO, a meta-semiosis) is equivalent to say that for the ontologist (an interpreter outside the EMMO, a meta-interpreter) the real entity (an object outside the EMMO, a meta-object) is a 'sign'.
+
+So the 'semiosis' process within the EMMO is about how other 'interpreter'-s deal with the 'sign'-s here declared.</rdfs:comment>
+    <rdfs:label xml:lang="en">sign</rdfs:label>
+    <rdfs:comment>According to Peirce, 'sign' includes three subcategories:
+- symbols: that stand for an object through convention
+- indeces: that stand for an object due to causal continguity
+- icon: that stand for an object due to similitudes e.g. in shape or composition</rdfs:comment>
+    <emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>A novel is made of chapters, paragraphs, sentences, words and characters (in a direct parthood mereological hierarchy). 
+
+Each of them are 'sign'-s. 
+
+A character can be the a-tomistic 'sign' for the class of texts.
+
+The horizontal segment in the character "A" is direct part of "A" but it is not a 'sign' itself.
+
+For plain text we can propose the ASCII symbols, for math the fundamental math symbols.</emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_b803f122_4acb_4064_9d71_c1e5fd091fc9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_7db59e56_f68b_48b7_ae99_891c35ae5c3b">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">gluon</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_2337e25c_3c60_43fc_a8f9_b11a3f974291">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>The generic EMMO semiotical relation.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:label xml:lang="en">semiotical</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_ec2472ae_cf4a_46a5_8555_1556f5a6c3c5"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N749c171f16d142ba9d271a027f2ce6d2">
+    <owl:onProperty rdf:resource="http://emmo.info/perspectives/emmo-processual.owl#EMMO_c5aae418_1622_4d02_93c5_21159e28e6c1"/>
+    <owl:someValuesFrom rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_6f5af708_f825_4feb_a0d1_a8d813d3022b"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0cc6ad6e5b824d39ab83c0c76b26d05a">
+    <owl:onProperty rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
+    <owl:someValuesFrom rdf:resource="http://emmo.info/domains/emmo-usercase.owl#EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/perspectives/emmo-processual.owl#EMMO_49804605_c0fe_4538_abda_f70ba1dc8a5d">
+    <rdfs:label xml:lang="en">participant</rdfs:label>
+    <rdfs:comment>In the EMMO the relation of participation to a process falls under mereotopology.</rdfs:comment>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A portion of a 'process' that participates to the 'process' with a specific role.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/perspectives/emmo-processual.owl#EMMO_0277f24a_ea7f_4917_81b7_fb0406c8fc62"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-models.owl#EMMO_8d2d9374_ef3a_47e6_8595_6bc208e07519">
+    <rdfs:label xml:lang="en">theory</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_35d2e130_6e01_41ed_94f7_00b333d46cf9"/>
+    <rdfs:comment>The 'theory' is e.g. a proposition, a book or a paper whose sub-symbols suggest in the mind of the interpreter an interpretant structure that can represent a 'physical'.
+
+It is not an 'icon' (like a math equation), because it has no common resemblance or logical structure with the 'physical'.
+
+In Peirce semiotics: legisign-symbol-argument</rdfs:comment>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A 'conventional' that stand for a 'physical'.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/base/emmo-mereotopology.owl">
+    <rdfs:comment>Contacts:
+Gerhard Goldbeck
+Goldbeck Consulting Ltd (UK)
+email: gerhard@goldbeck-consulting.com
+
+Emanuele Ghedini
+University of Bologna (IT)
+email: emanuele.ghedini@unibo.it</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>EMMO is released under a Creative Commons license Attribution 4.0 International (CC BY 4.0)
+
+https://creativecommons.org/licenses/by/4.0/legalcode</emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>
+    <rdfs:comment>European Materials and Modelling Ontology (EMMO)
+
+EMMO is a multidisciplinary effort to develop a standard representational framework (the ontology) based on current materials modelling knowledge, including physical sciences, analytical philosophy and information and communication technologies. 
+
+It provides the connection between the physical world, materials characterisation world and materials modelling world.</rdfs:comment>
+    <rdfs:comment>The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege).</rdfs:comment>
+    <owl:versionInfo>The European Materials Modelling Ontology
+
+Version 0.9.10</owl:versionInfo>
+    <emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>Emanuele Ghedini (University of Bologna, IT)
+Gerhard Goldbeck (GCL Ltd, UK)
+Adham Hashibon (Fraunhofer IWM, DE)
+Georg Schmitz (Access, DE)
+Jesper Friis (SINTEF, NO)</emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-geometry.owl#EMMO_3e309118_e8b7_4021_80f4_642d2df65d94">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-geometry.owl#EMMO_0c576e13_4ee7_4f3d_bfe9_1614243df018"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">line</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-models.owl#EMMO_9c32fd69_f480_4130_83b3_fb25d9face14">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-models.owl#EMMO_db9a009e_f097_43f5_9520_6cbc07e7610b"/>
+    <rdfs:label xml:lang="en">physical law</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5a362108f5da4dc19427da65dfeeba4b">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:intersectionOf rdf:nodeID="N3941c781cc484033b29ab5f13999e3c1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-properties.owl">
+    <rdfs:comment>European Materials and Modelling Ontology (EMMO)
+
+EMMO is a multidisciplinary effort to develop a standard representational framework (the ontology) based on current materials modelling knowledge, including physical sciences, analytical philosophy and information and communication technologies. 
+
+It provides the connection between the physical world, materials characterisation world and materials modelling world.</rdfs:comment>
+    <owl:versionInfo>The European Materials Modelling Ontology
+
+Version 0.9.10</owl:versionInfo>
+    <emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>Emanuele Ghedini (University of Bologna, IT)
+Gerhard Goldbeck (GCL Ltd, UK)
+Adham Hashibon (Fraunhofer IWM, DE)
+Georg Schmitz (Access, DE)
+Jesper Friis (SINTEF, NO)</emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:comment>Contacts:
+Gerhard Goldbeck
+Goldbeck Consulting Ltd (UK)
+email: gerhard@goldbeck-consulting.com
+
+Emanuele Ghedini
+University of Bologna (IT)
+email: emanuele.ghedini@unibo.it</rdfs:comment>
+    <emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>EMMO is released under a Creative Commons license Attribution 4.0 International (CC BY 4.0)
+
+https://creativecommons.org/licenses/by/4.0/legalcode</emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>
+    <rdfs:comment>The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N682d55784bae4dea81686d65e848ec1e">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_7afbed84_7593_4a23_bd88_9d9c6b04e8f6"/>
+    <owl:allValuesFrom rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_70dac51e_bddd_48c2_8a98_7d8395e91fc2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/base/emmo-mereotopology.owl#EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de">
+    <rdfs:comment>From Latin item, "likewise, just so, moreover".</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointUnionOf rdf:nodeID="N580dd687b3bd4ba1b151183c5b886cc7"/>
+    <rdfs:comment>An 'item' individual stands for a real world self-connected object which can be represented as a whole made of connected parts (e.g. a car made of components).
+
+In the EMMO, connectivity is the topological foundation of causality.
+
+All physical systems, i.e. systems whose behaviour is explained by physics laws, are always represented by 'item'-s.
+
+Members of a 'collection' lack of causality connection, i.e. they do not constitute a physical system as a whole.</rdfs:comment>
+    <rdfs:comment>A real world object is self-connected if any two parts that make up the whole are connected to each other (here the concept of connection is primitive). 
+
+Alternatively, using the primitive path-connectivity concept we can define a self-connected real world object as an object for which each couple of points is path-connected.</rdfs:comment>
+    <rdfs:label xml:lang="en">item</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_f835f4d4_c665_403d_ab25_dca5cc74be52">
+    <rdfs:label xml:lang="en">nucleus</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="Nd0cde1ff6c1a4355953b6ed177b9e6f8"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_7d66bde4_b68d_41cc_b5fc_6fd98c5e2ff0"/>
+    <rdfs:subClassOf rdf:nodeID="N4a534940c0ee44d294feef7b5e8acbf9"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd25843f366414b71aea46099b1044c74">
+    <owl:onProperty rdf:nodeID="N2eebed29d3d84b99b1360c07e723225e"/>
+    <owl:someValuesFrom rdf:resource="http://emmo.info/domains/emmo-math.owl#EMMO_1a663927_3b68_4618_acd3_a8aa0d406329"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-geometry.owl#EMMO_b5957cef_a287_442d_a3ce_fd39f20ba1cd">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-graphical.owl#EMMO_c74da218_9147_4f03_92d1_8894abca55f3"/>
+    <rdfs:comment>A 'geometrical' stands for real world objects that express a geometrical concept in many ways.
+
+For example, a line can be expressed by:
+- an equation like y=mx+q, which is both an 'equation' and a 'geometrical'
+- a line drawn with a pencil on a paper, which is simply a 'graphical' object
+- a set of axioms, when the properties of a line are inferred by the interpreter reading them, that are both 'graphical' and also 'formula'</rdfs:comment>
+    <rdfs:label xml:lang="en">geometrical</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A 'graphical' aimed to represent a geometrical concept.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-math.owl">
+    <rdfs:comment>Contacts:
+Gerhard Goldbeck
+Goldbeck Consulting Ltd (UK)
+email: gerhard@goldbeck-consulting.com
+
+Emanuele Ghedini
+University of Bologna (IT)
+email: emanuele.ghedini@unibo.it</rdfs:comment>
+    <emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>EMMO is released under a Creative Commons license Attribution 4.0 International (CC BY 4.0)
+
+https://creativecommons.org/licenses/by/4.0/legalcode</emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>
+    <rdfs:comment>European Materials and Modelling Ontology (EMMO)
+
+EMMO is a multidisciplinary effort to develop a standard representational framework (the ontology) based on current materials modelling knowledge, including physical sciences, analytical philosophy and information and communication technologies. 
+
+It provides the connection between the physical world, materials characterisation world and materials modelling world.</rdfs:comment>
+    <rdfs:comment>The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege).</rdfs:comment>
+    <owl:versionInfo>The European Materials Modelling Ontology
+
+Version 0.9.10</owl:versionInfo>
+    <emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>Emanuele Ghedini (University of Bologna, IT)
+Gerhard Goldbeck (GCL Ltd, UK)
+Adham Hashibon (Fraunhofer IWM, DE)
+Georg Schmitz (Access, DE)
+Jesper Friis (SINTEF, NO)</emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N6e580fbf67b54c6d844677d27e106205">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:complementOf rdf:nodeID="N55aec2c69f454cb986c61af677a6cb25"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/base/emmo-mereotopology.owl#EMMO_7afbed84_7593_4a23_bd88_9d9c6b04e8f6">
+    <rdfs:range rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de"/>
+    <rdfs:label xml:lang="en">has_temporal_part</rdfs:label>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A relation that isolate a proper part that covers the total spatial extension of a whole within a time interval.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_9380ab64_0363_4804_b13f_3a8a94119a76"/>
+    <rdfs:domain rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-models.owl#EMMO_314d0bd5_67ed_437e_a609_36d46147cea7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">physical phenomenon</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/perspectives/emmo-processual.owl#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-physical-properties.owl#EMMO_463bcfda_867b_41d9_a967_211d4d437cfb">
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>An 'observation' that results in a quantitative comparison of a 'property' of an 'object' with a standard reference.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">measurement</rdfs:label>
+    <rdfs:subClassOf rdf:nodeID="N656b28f42e2b44c685d74607fe5dde4b"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_10a5fd39_06aa_4648_9e70_f962a9cb2069"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2afac667985e4135b78027625bfd9b1e">
+    <rdf:first rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_db03061b_db31_4132_a47a_6a634846578b"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd6908119f2f742e29ae7d12777916c33">
+    <owl:onProperty rdf:resource="http://emmo.info/perspectives/emmo-processual.owl#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a"/>
+    <owl:someValuesFrom rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_0527413c_b286_4e9c_b2d0_03fb2a038dee"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-math.owl#EMMO_e56ee3eb_7609_4ae1_8bed_51974f0960a6">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-math.owl#EMMO_54ee6b5e_5261_44a8_86eb_5717e7fdb9d0"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="Nca61c5f3260c4c9d854a04ac9aff26dd"/>
+    <rdfs:comment>The class of 'mathematical'-s that stand for a mathematical expression that puts in relation some variables and that can always be represented as:
+
+f(v0, v1, ..., vn) = g(v0, v1, ..., vn)
+
+where f is the left hand and g the right hand  side expressions and v0, v1, ..., vn are the variables.
+
+e.g. 
+
+x^2 +3x  = 5x
+
+dv/dt = a
+
+sin(x) = y</rdfs:comment>
+    <rdfs:label xml:lang="en">equation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-geometry.owl#EMMO_5f278af9_8593_4e27_a717_ccc9e07a0ddf">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-geometry.owl#EMMO_46f0f8df_4dc6_418f_8036_10427a3a288e"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">euclidean space</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N24135a2e5bd842f4bd314640c5155b08">
+    <rdf:first rdf:resource="http://emmo.info/base/emmo-physical.owl#EMMO_c5ddfdba_c074_4aa4_ad6b_1ac4942d300d"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/base/emmo-annotations.owl#EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab">
+    <rdfs:label xml:lang="en">author</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-models.owl#EMMO_a4b14b83_9392_4a5f_a2e8_b2b58793f59b">
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A computational model that uses data to create new insight into the behaviour of a system.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:label xml:lang="en">data based model</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-models.owl#EMMO_f7ed665b_c2e1_42bc_889b_6b42ed3a36f0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_6f5af708_f825_4feb_a0d1_a8d813d3022b">
+    <rdfs:comment>Here is assumed that the concept of 'object' is always relative to a 'semiotic' process. An 'object' does not exists per se, but it's always part of an interpretation.
+
+The EMMO relies on strong reductionism, i.e. everything real is a formless collection of elementary particles: we give a meaning to real world entities only by giving them boundaries and defining them using 'sign'-s. 
+
+In this way the 'sign'-ed entity become and 'object', and the 'object' is the basic entity needed in order to apply a logical formalism to the real world entities (i.e. we can speak of it through its sign, and use logics on it through its sign).</rdfs:comment>
+    <owl:equivalentClass rdf:nodeID="N60c7900d366c4e1883db46c78242d1ab"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>The object, in Peirce semiotics.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:label xml:lang="en">object</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_b803f122_4acb_4064_9d71_c1e5fd091fc9"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf2d2ee60ca4c4da9890e39e9e69521e7">
+    <rdf:first rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_7db59e56_f68b_48b7_ae99_891c35ae5c3b"/>
+    <rdf:rest rdf:nodeID="N34e15e4619d44c77a290ec2340646370"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/perspectives/emmo-existent.owl#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe">
+    <rdfs:domain rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_52211e5e_d767_4812_845e_eb6b402c476a"/>
+    <rdfs:subPropertyOf rdf:resource="http://emmo.info/base/emmo-4d.owl#EMMO_f68030be_94b8_4c61_a161_886468558054"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdfs:label xml:lang="en">has_spatial_direct_part</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdfs:range rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_52211e5e_d767_4812_845e_eb6b402c476a"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-math.owl#EMMO_1eed0732_e3f1_4b2c_a9c4_b4e75eeb5895">
+    <rdfs:label xml:lang="en">variable</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-math.owl#EMMO_031d61af_6405_41de_8880_df2f85a53383"/>
+    <rdfs:comment>A 'variable' is a 'symbol' that stands for a numerical defined 'mathematical' entity like e.g. a number, a vector, a matrix.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="Nd25843f366414b71aea46099b1044c74"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_297999d6_c9e4_4262_9536_bd524d1c6e21">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_60577dea_9019_4537_ac41_80b0fb563d41"/>
+    <rdfs:range rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_0cd58641_824c_4851_907f_f4c3be76630c"/>
+    <rdfs:label xml:lang="en">has_index</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8a94fc0e97334272ad2253ff77a92bf8">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://emmo.info/perspectives/emmo-processual.owl#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a"/>
+    <owl:someValuesFrom rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_b7bcff25_ffc3_474e_9ab5_01b1664bd4ba"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na2fbade79a3b4507bf0cf498a9734790">
+    <rdf:rest rdf:nodeID="N7f9c9fd4b1324564b38a51fff7142225"/>
+    <rdf:first rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_2d2ecd97_067f_4d0e_950c_d746b7700a31"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/perspectives/emmo-existent.owl#EMMO_52211e5e_d767_4812_845e_eb6b402c476a">
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A 'item' which is a 'state' or made only of 'state' temporal direct parts.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:label xml:lang="en">existent</rdfs:label>
+    <rdfs:comment>ex-sistere (latin): to stay (to persist through time) outside others of the same type (to be distinct from the rest).</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:nodeID="N069b4da84efb4dbe8ee34fee5433619f"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/base/emmo-physical.owl#EMMO_c5ddfdba_c074_4aa4_ad6b_1ac4942d300d"/>
+    <rdfs:comment>'existent' is the most important class to be used for representing real world physical objects under a reductionistic (i.e. objects come from the composition of sub-part objects) and epistemological pluralistic (i.e. objects definitions are interpreter dependent) perspectives . 
+
+'existent' class collects all individuals that stand for real world physical objects that can be structured in well defined temporal sub-parts called states through the temporal direct parthood.
+
+This class provides a granularity hierarchy in time, that provides a way to axiomatize tessellation principles for a specific whole with a non-transitivity relation that helps to retain the granularity levels.
+
+e.g. a car, a supersaturated gas with nucleating nanoparticles, an atom that becomes ionized and then recombines with an electron.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4a534940c0ee44d294feef7b5e8acbf9">
+    <owl:onClass rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_8f87e700_99a8_4427_8ffb_e493de05c217"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-models.owl#EMMO_f19ff3b4_6bfe_4c41_a2b2_9affd39c140b">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-models.owl#EMMO_db9a009e_f097_43f5_9520_6cbc07e7610b"/>
+    <rdfs:label xml:lang="en">material law</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/base/emmo-mereotopology.owl#EMMO_2d2ecd97_067f_4d0e_950c_d746b7700a31">
+    <rdfs:comment>A 'collection' individual is a sign that stands for a non-self-connected real world object.
+
+A 'collection' individual is related to each 'item' individuals of the collection (i.e. the members) through the membership relation.
+
+An 'item' individual stands for a real world self-connected object which can be represented as a whole made of connected parts (e.g. a car made of components).</rdfs:comment>
+    <rdfs:comment>Formally, 'collection' is axiomatized as the class of individuals that 'has_member' some 'item'.
+
+A 'collection' cannot have as member another 'collection'.</rdfs:comment>
+    <rdfs:comment>e.g. the collection of users of a particular software, the collection of atoms that have been part of that just dissociated molecule, or even the collection of atoms that are part of a molecule considered as single individual non-connected objects and not as a mereotopological self-connected fusion.</rdfs:comment>
+    <rdfs:subClassOf rdf:nodeID="Nfca2af843716414fa241fbf5e6c94708"/>
+    <rdfs:label xml:lang="en">collection</rdfs:label>
+    <rdfs:comment>From Latin collectio, from colligere ‘gather together’.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>The class of all individuals that stands for a real world not self-connected object.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_7d66bde4_b68d_41cc_b5fc_6fd98c5e2ff0">
+    <rdfs:label xml:lang="en">subatomic</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_36c79456_e29c_400d_8bd3_0eedddb82652"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/base/emmo-mereotopology.owl#EMMO_8c898653_1118_4682_9bbf_6cc334d16a99">
+    <rdfs:seeAlso>is_enclosed_by</rdfs:seeAlso>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">encloses</rdfs:label>
+    <rdfs:comment>Enclosure is reflexive and transitive.</rdfs:comment>
+    <rdfs:subPropertyOf rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_6703954e_34c4_4a15_a9e7_f313760ae1a8"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N689547ed91a64f06966f35005262f874">
+    <owl:someValuesFrom rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_36c79456_e29c_400d_8bd3_0eedddb82652"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_65a2c5b8_e4d8_4a51_b2f8_e55effc0547d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N17e820deca1a43d3962c8b0067ad9e77">
+    <owl:onProperty rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_7afbed84_7593_4a23_bd88_9d9c6b04e8f6"/>
+    <owl:allValuesFrom rdf:resource="http://emmo.info/base/emmo-physical.owl#EMMO_0f795e3e_c602_4577_9a43_d5a231aa1360"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0e1f6761d13d4eca9bbbc12e96ea891a">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:nodeID="Nf5aa8fd8262c467d97d47756dfd3a6b4"/>
+    <owl:someValuesFrom rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_10a5fd39_06aa_4648_9e70_f962a9cb2069"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1e93dbf2efa145ad9a0b1ebf61a406ee">
+    <owl:allValuesFrom rdf:resource="http://emmo.info/base/emmo-physical.owl#EMMO_c5ddfdba_c074_4aa4_ad6b_1ac4942d300d"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_7afbed84_7593_4a23_bd88_9d9c6b04e8f6"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-math.owl#EMMO_ae15fb4f_8e4d_41de_a0f9_3997f89ba6a2">
+    <rdfs:comment>pi = 3.14</rdfs:comment>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-math.owl#EMMO_1eed0732_e3f1_4b2c_a9c4_b4e75eeb5895"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">constant</rdfs:label>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A 'varaible' that stand for a well known constant.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N28c68d9beab74e899bcd2d4d560fcf20">
+    <owl:someValuesFrom rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_008fd3b2_4013_451f_8827_52bceab11841"/>
+    <owl:onProperty rdf:nodeID="N47f2a65d2606407b824174525ef526d9"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/perspectives/emmo-semiotics.owl">
+    <emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>EMMO is released under a Creative Commons license Attribution 4.0 International (CC BY 4.0)
+
+https://creativecommons.org/licenses/by/4.0/legalcode</emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>
+    <rdfs:comment>The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege).</rdfs:comment>
+    <rdfs:comment>European Materials and Modelling Ontology (EMMO)
+
+EMMO is a multidisciplinary effort to develop a standard representational framework (the ontology) based on current materials modelling knowledge, including physical sciences, analytical philosophy and information and communication technologies. 
+
+It provides the connection between the physical world, materials characterisation world and materials modelling world.</rdfs:comment>
+    <rdfs:comment>Contacts:
+Gerhard Goldbeck
+Goldbeck Consulting Ltd (UK)
+email: gerhard@goldbeck-consulting.com
+
+Emanuele Ghedini
+University of Bologna (IT)
+email: emanuele.ghedini@unibo.it</rdfs:comment>
+    <owl:versionInfo>The European Materials Modelling Ontology
+
+Version 0.9.10</owl:versionInfo>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>Emanuele Ghedini (University of Bologna, IT)
+Gerhard Goldbeck (GCL Ltd, UK)
+Adham Hashibon (Fraunhofer IWM, DE)
+Georg Schmitz (Access, DE)
+Jesper Friis (SINTEF, NO)</emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/perspectives/emmo-impression.owl">
+    <emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>EMMO is released under a Creative Commons license Attribution 4.0 International (CC BY 4.0)
+
+https://creativecommons.org/licenses/by/4.0/legalcode</emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>
+    <rdfs:comment>The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege).</rdfs:comment>
+    <rdfs:comment>European Materials and Modelling Ontology (EMMO)
+
+EMMO is a multidisciplinary effort to develop a standard representational framework (the ontology) based on current materials modelling knowledge, including physical sciences, analytical philosophy and information and communication technologies. 
+
+It provides the connection between the physical world, materials characterisation world and materials modelling world.</rdfs:comment>
+    <emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>Emanuele Ghedini (University of Bologna, IT)
+Gerhard Goldbeck (GCL Ltd, UK)
+Adham Hashibon (Fraunhofer IWM, DE)
+Georg Schmitz (Access, DE)
+Jesper Friis (SINTEF, NO)</emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>
+    <rdfs:comment>Contacts:
+Gerhard Goldbeck
+Goldbeck Consulting Ltd (UK)
+email: gerhard@goldbeck-consulting.com
+
+Emanuele Ghedini
+University of Bologna (IT)
+email: emanuele.ghedini@unibo.it</rdfs:comment>
+    <owl:versionInfo>The European Materials Modelling Ontology
+
+Version 0.9.10</owl:versionInfo>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N001787303dba49faa56a8c4e00f33d3e">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_9380ab64_0363_4804_b13f_3a8a94119a76"/>
+    <owl:someValuesFrom rdf:resource="http://emmo.info/domains/emmo-graphical.owl#EMMO_a1083d0a_c1fb_471f_8e20_a98f881ad527"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-geometry.owl#EMMO_d7bf784a_db94_4dd9_861c_54f262846fbf">
+    <rdfs:label xml:lang="en">sphere</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-geometry.owl#EMMO_9268958f_7f54_48ab_a693_febe2645892b"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N22ae4de301764e9b815233ffb978d06c">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onClass rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_1067b97a_84f8_4d22_8ace_b842b8ce355c"/>
+    <owl:onProperty rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7b37cab18bd9430ba44f7799f26bbe5a">
+    <owl:onProperty rdf:nodeID="N484ea25e5b2d4f30a8b43f5f45dc333c"/>
+    <owl:hasValue rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_08cb807c_e626_447b_863f_e2835540e918"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N47f2a65d2606407b824174525ef526d9">
+    <owl:inverseOf rdf:resource="http://emmo.info/perspectives/emmo-processual.owl#EMMO_c5aae418_1622_4d02_93c5_21159e28e6c1"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/perspectives/emmo-processual.owl#EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce">
+    <rdfs:subClassOf rdf:nodeID="Nc1a31ced4e8c450da2951cc705a6a0b6"/>
+    <rdfs:label xml:lang="en">process</rdfs:label>
+    <rdfs:comment>A 'process' is always a 'physical', since a 'void' does not have elements that evolves in time.</rdfs:comment>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A temporal part of a 'physical' that identifies a particular type of evolution in time.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/perspectives/emmo-processual.owl#EMMO_0277f24a_ea7f_4917_81b7_fb0406c8fc62"/>
+    <rdfs:comment>A 'process' is defined as a temporal part of a 'physical' that is categorized in a primitive process subclass according to what type of process we want to represent.
+
+Following the common definition of process, every 'physical' is a process since every 4D object always has a time dimension. However, in the EMMO we restrict the meaning of the word process to 'physical'-s whose evolution in time have a particular meaning for the ontologist. 
+
+i.e. a 'process' is not only something that unfolds in time (which is automatically represented in a 4D ontology), but something happening that has a meaning for the interpreter.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3daf23d3928b4f2ead899dcd26ddbeba">
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://emmo.info/base/emmo-4d.owl#EMMO_f68030be_94b8_4c61_a161_886468558054"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_39c3815d_8cae_4c8f_b2ff_eeba24bec455">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:range rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_d7788d1a_020d_4c78_85a1_13563fcec168"/>
+    <rdfs:label xml:lang="en">has_icon</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_60577dea_9019_4537_ac41_80b0fb563d41"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N7ead576c7ab6458d8376f36715a893dd">
+    <owl:onProperty rdf:resource="http://emmo.info/base/emmo-4d.owl#EMMO_f68030be_94b8_4c61_a161_886468558054"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://emmo.info/domains/emmo-physical-properties.owl#EMMO_02c0621e_a527_4790_8a0f_2bb51973c819"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/perspectives/emmo-existent.owl">
+    <emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>Emanuele Ghedini (University of Bologna, IT)
+Gerhard Goldbeck (GCL Ltd, UK)
+Adham Hashibon (Fraunhofer IWM, DE)
+Georg Schmitz (Access, DE)
+Jesper Friis (SINTEF, NO)</emmo-annotations:EMMO_cd5fb112_7ee7_4120_a35d_3ca3e6c3f4ab>
+    <rdfs:comment>European Materials and Modelling Ontology (EMMO)
+
+EMMO is a multidisciplinary effort to develop a standard representational framework (the ontology) based on current materials modelling knowledge, including physical sciences, analytical philosophy and information and communication technologies. 
+
+It provides the connection between the physical world, materials characterisation world and materials modelling world.</rdfs:comment>
+    <rdfs:comment>The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege).</rdfs:comment>
+    <emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>EMMO is released under a Creative Commons license Attribution 4.0 International (CC BY 4.0)
+
+https://creativecommons.org/licenses/by/4.0/legalcode</emmo-annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc>
+    <rdfs:comment>Contacts:
+Gerhard Goldbeck
+Goldbeck Consulting Ltd (UK)
+email: gerhard@goldbeck-consulting.com
+
+Emanuele Ghedini
+University of Bologna (IT)
+email: emanuele.ghedini@unibo.it</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <owl:versionInfo>The European Materials Modelling Ontology
+
+Version 0.9.10</owl:versionInfo>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N70c3156c87c846a692162a9287c13a21">
+    <owl:onProperty rdf:resource="http://emmo.info/base/emmo-4d.owl#EMMO_f68030be_94b8_4c61_a161_886468558054"/>
+    <owl:someValuesFrom rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_054af807_85cd_4a13_8eba_119dfdaaf38b"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_054af807_85cd_4a13_8eba_119dfdaaf38b">
+    <rdfs:label xml:lang="en">interpretant</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_b21a56ed_f969_4612_a6ec_cb7766f7f31d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N8932216e38ae4bbbbc14ea43120c952d">
+    <owl:someValuesFrom rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_72d53756_7fb1_46ed_980f_83f47efbe105"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nddfd1269b4224628a54ab8e29c7e23cf">
+    <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+    <owl:onProperty rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onClass rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_f835f4d4_c665_403d_ab25_dca5cc74be52"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/base/emmo-mereotopology.owl#EMMO_6b7276a4_4b9d_440a_b577_0277539c0fc4">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:label xml:lang="en">has_member</rdfs:label>
+    <rdfs:domain rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_2d2ecd97_067f_4d0e_950c_d746b7700a31"/>
+    <rdfs:range rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de"/>
+    <rdfs:subPropertyOf rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_9380ab64_0363_4804_b13f_3a8a94119a76"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N55aec2c69f454cb986c61af677a6cb25">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f"/>
+    <owl:someValuesFrom rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_385b8f6e_43ac_4596_ad76_ac322c68b7ca"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N345952fbf68c44acb8142fbd59ab671c">
+    <rdf:first rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_2a888cdf_ec4a_4ec5_af1c_0343372fc978"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nc62dab69c3564a1f9cf904063e01bd78">
+    <rdf:first rdf:resource="http://emmo.info/domains/emmo-graphical.owl#EMMO_a1083d0a_c1fb_471f_8e20_a98f881ad527"/>
+    <rdf:rest rdf:nodeID="N90d981da7a494da081ac50e692143042"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-physical-properties.owl#EMMO_c46f091c_0420_4c1a_af30_0a2c8ebcf7d7">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-physical-properties.owl#EMMO_dd4a7f3e_ef56_466c_ac1a_d2716b5f87ec"/>
+    <rdfs:label xml:lang="en">descriptive property</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-models.owl#EMMO_e5438930_04e7_4d42_ade5_3700d4a52ab7">
+    <rdfs:comment>A material_relation can e.g. return a predefined number, return a database query, be an equation that depends on other physics_quantities.</rdfs:comment>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>An 'equation' that stands for a physical assumption specific to a material, and provides an expression for a 'physics_quantity' (the dependent variable) as function of other variables, physics_quantity or data (independent variables).</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-math.owl#EMMO_e56ee3eb_7609_4ae1_8bed_51974f0960a6"/>
+    <rdfs:subClassOf rdf:nodeID="N7ead576c7ab6458d8376f36715a893dd"/>
+    <emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>The Lennard-Jones potential.
+
+A force field.
+
+An Hamiltonian.</emmo-annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a>
+    <rdfs:label xml:lang="en">material relation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-properties.owl#EMMO_e1097637_70d2_4895_973f_2396f04fa204">
+    <rdfs:label xml:lang="en">has_property</rdfs:label>
+    <rdfs:range rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_b7bcff25_ffc3_474e_9ab5_01b1664bd4ba"/>
+    <rdfs:subPropertyOf rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_eb3518bf_f799_4f9e_8c3e_ce59af11453b"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/base/emmo-mereotopology.owl#EMMO_4d6504f1_c470_4ce9_b941_bbbebc9ab05d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_6703954e_34c4_4a15_a9e7_f313760ae1a8"/>
+    <rdfs:label xml:lang="en">contacts</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-models.owl#EMMO_db9a009e_f097_43f5_9520_6cbc07e7610b">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">natural law</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-models.owl#EMMO_8d2d9374_ef3a_47e6_8595_6bc208e07519"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-models.owl#EMMO_4456a5d2_16a6_4ee1_9a8e_5c75956b28ea">
+    <rdfs:label xml:lang="en">continuum model</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-models.owl#EMMO_b29fd350_39aa_4af7_9459_3faa0544cba6"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3b15c081a59a4d08937c8dba375fa52b">
+    <owl:onProperty rdf:nodeID="Nbd504420218642cca58566c0a742ca75"/>
+    <owl:someValuesFrom rdf:resource="http://emmo.info/base/emmo-physical.owl#EMMO_c5ddfdba_c074_4aa4_ad6b_1ac4942d300d"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nfca2af843716414fa241fbf5e6c94708">
+    <owl:onProperty rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_6b7276a4_4b9d_440a_b577_0277539c0fc4"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd5f17424d485462dba24ab8ca09deda2">
+    <rdf:rest rdf:nodeID="N1a2e40e327254860b28fa99b0b343701"/>
+    <rdf:first rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_8f87e700_99a8_4427_8ffb_e493de05c217"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ndbec66b3e5b1438aa3670de5ac885903">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="Na96218a1e1b34cf982e5cede3398219a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf17a70af3585456f917a7e7af4e6e5af">
+    <rdf:rest rdf:nodeID="N5c435eda075f4f7ea51b1c1309d6fa1d"/>
+    <rdf:first rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_385b8f6e_43ac_4596_ad76_ac322c68b7ca"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N484ea25e5b2d4f30a8b43f5f45dc333c">
+    <owl:inverseOf rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nae83cff037334efeae2871f274f9e7b8">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:allValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Nothing"/>
+    <owl:onProperty rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_9380ab64_0363_4804_b13f_3a8a94119a76"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_1067b97a_84f8_4d22_8ace_b842b8ce355c">
+    <rdfs:label xml:lang="en">electron cloud</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_7d66bde4_b68d_41cc_b5fc_6fd98c5e2ff0"/>
+    <rdfs:subClassOf rdf:nodeID="N96d07546bfad487694d8a4952ad55ce3"/>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A 'spacetime' that stands for a quantum system made of electrons.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N102e8a3d07d34846ac78879de4697ca6">
+    <owl:unionOf rdf:nodeID="Nc62dab69c3564a1f9cf904063e01bd78"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/perspectives/emmo-existent.owl#EMMO_a50d920d_1ee3_4668_9a73_5d80a1c6fe15">
+    <rdfs:subPropertyOf rdf:resource="http://emmo.info/base/emmo-4d.owl#EMMO_6e046dd0_9634_4013_b2b1_9cc468087c83"/>
+    <rdfs:range rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_52211e5e_d767_4812_845e_eb6b402c476a"/>
+    <rdfs:label xml:lang="en">has_spatio-temporal_direct_part</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+    <rdfs:domain rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_52211e5e_d767_4812_845e_eb6b402c476a"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/base/emmo-mereotopology.owl#EMMO_9cb984ca_48ad_4864_b09e_50d3fff19420">
+    <rdfs:subPropertyOf rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_d893d373_b579_4867_841e_1c2b31a8d2c6"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:label xml:lang="en">overcrosses</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Neba1a86545c04453bcb216fd9e660217">
+    <owl:onProperty rdf:resource="http://emmo.info/base/emmo-4d.owl#EMMO_f68030be_94b8_4c61_a161_886468558054"/>
+    <owl:someValuesFrom rdf:resource="http://emmo.info/domains/emmo-models.owl#EMMO_e5438930_04e7_4d42_ade5_3700d4a52ab7"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-models.owl#EMMO_f7ed665b_c2e1_42bc_889b_6b42ed3a36f0">
+    <rdfs:label xml:lang="en">mathematical model</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-math.owl#EMMO_54ee6b5e_5261_44a8_86eb_5717e7fdb9d0"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-models.owl#EMMO_939483b1_0148_43d1_8b35_851d2cd5d939"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1a2e40e327254860b28fa99b0b343701">
+    <rdf:first rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_df808271_df91_4f27_ba59_fa423c51896c"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_0527413c_b286_4e9c_b2d0_03fb2a038dee">
+    <rdfs:subClassOf rdf:nodeID="N70c3156c87c846a692162a9287c13a21"/>
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>The entity (or agent, or observer, or cognitive entity) who connects 'sign', 'interpretant' and 'object'.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:label xml:lang="en">interpreter</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_b803f122_4acb_4064_9d71_c1e5fd091fc9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_e5488299_8dab_4ebb_900a_26d2abed8396">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">massless</rdfs:label>
+    <owl:disjointUnionOf rdf:nodeID="Nce1b95f7d6c94214a52b9257385e284b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_60577dea_9019_4537_ac41_80b0fb563d41">
+    <rdfs:range rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_b21a56ed_f969_4612_a6ec_cb7766f7f31d"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_2337e25c_3c60_43fc_a8f9_b11a3f974291"/>
+    <rdfs:domain rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_6f5af708_f825_4feb_a0d1_a8d813d3022b"/>
+    <rdfs:label xml:lang="en">has_sign</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_c74da218_9147_4f03_92d1_8894abca55f3">
+    <rdfs:comment>A 'graphical' object is not necessarily a 'sign'.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N0dd015e21a2a46d89011f495ea44b2ed">
+    <owl:onProperty rdf:nodeID="Nf1ba4f63baa9414a82d920844b608327"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1a306b5ecf4843ca9341c3b1690125e2">
+    <owl:onProperty rdf:resource="http://emmo.info/base/emmo-4d.owl#EMMO_f68030be_94b8_4c61_a161_886468558054"/>
+    <owl:someValuesFrom rdf:resource="http://emmo.info/domains/emmo-math.owl#EMMO_1a663927_3b68_4618_acd3_a8aa0d406329"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-geometry.owl#EMMO_0ab0485c_9e5b_4257_a679_90a2dfba5c7c">
+    <rdfs:label xml:lang="en">0-manifold</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-geometry.owl#EMMO_b5957cef_a287_442d_a3ce_fd39f20ba1cd"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N069b4da84efb4dbe8ee34fee5433619f">
+    <owl:unionOf rdf:nodeID="N4df5ad96a1e04648b833138f33bf0f03"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N27fbfaa5c12a4684a61e947adecf216d">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onProperty rdf:resource="http://emmo.info/base/emmo-4d.owl#EMMO_f68030be_94b8_4c61_a161_886468558054"/>
+    <owl:someValuesFrom rdf:resource="http://emmo.info/domains/emmo-physical-properties.owl#EMMO_02c0621e_a527_4790_8a0f_2bb51973c819"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Neb837d9b00194231b27e63eb02709b3a">
+    <owl:onProperty rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
+    <owl:someValuesFrom rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_52211e5e_d767_4812_845e_eb6b402c476a"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N82d6a241c04343049430c5bc09bbe697">
+    <rdf:first rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_251cfb4f_5c75_4778_91ed_6c8395212fd8"/>
+    <rdf:rest rdf:nodeID="N345952fbf68c44acb8142fbd59ab671c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N1a8ead72e2cc4bef9553e86a170f356b">
+    <owl:allValuesFrom rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_5b2222df_4da6_442f_8244_96e9e45887d1"/>
+    <owl:onProperty rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_7afbed84_7593_4a23_bd88_9d9c6b04e8f6"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-geometry.owl#EMMO_0c576e13_4ee7_4f3d_bfe9_1614243df018">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-geometry.owl#EMMO_b5957cef_a287_442d_a3ce_fd39f20ba1cd"/>
+    <rdfs:label xml:lang="en">1-manifold</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_70dac51e_bddd_48c2_8a98_7d8395e91fc2">
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A 'physical' with 'massless' parts that are mediators of interactions.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdfs:subClassOf rdf:nodeID="N682d55784bae4dea81686d65e848ec1e"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_52211e5e_d767_4812_845e_eb6b402c476a"/>
+    <rdfs:subClassOf rdf:nodeID="Nd128bdacc1d040d9a4a103a2f7b54c36"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">field</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N2e019ebd341d45aa962069efba2edc91">
+    <rdf:first rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_0527413c_b286_4e9c_b2d0_03fb2a038dee"/>
+    <rdf:rest rdf:nodeID="N706052e8ca794dc48bf443071f943da6"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5c435eda075f4f7ea51b1c1309d6fa1d">
+    <rdf:first rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_e5488299_8dab_4ebb_900a_26d2abed8396"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N25a8dee1b7784d5e89f9bbaf53c03aea">
+    <rdf:rest rdf:nodeID="N27c18c195cc548b7b6227b6b090f11fc"/>
+    <rdf:first rdf:resource="http://emmo.info/base/emmo-physical.owl#EMMO_0f795e3e_c602_4577_9a43_d5a231aa1360"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N3941c781cc484033b29ab5f13999e3c1">
+    <rdf:rest rdf:nodeID="N67d091780a43471ea3358929ca31845b"/>
+    <rdf:first rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_52211e5e_d767_4812_845e_eb6b402c476a"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4ddcef0c0c5145bb93fa865118ad43b1">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:onClass rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_8303a247_f9d9_4616_bdcd_f5cbd7b298e3"/>
+    <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+    <owl:onProperty rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N90d981da7a494da081ac50e692143042">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="N640e266832f74c8c89864f266a6b8a8a"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_72d53756_7fb1_46ed_980f_83f47efbe105">
+    <rdfs:label xml:lang="en">quark</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb67043f3bf5b4abeb317faebfc9e144c">
+    <rdf:rest rdf:nodeID="N6ec88e097c81479486792f7ebf25264d"/>
+    <rdf:first rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_35d2e130_6e01_41ed_94f7_00b333d46cf9"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-usercase.owl#EMMO_e775e341_5687_4d45_b50c_379b098a8c26">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">system</rdfs:label>
+    <owl:equivalentClass rdf:nodeID="N0cc6ad6e5b824d39ab83c0c76b26d05a"/>
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-usercase.owl#EMMO_86ca9b93_1183_4b65_81b8_c0fcd3bba5ad"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_eb3c61f0_3983_4346_a0c6_e7f6b90a67a8">
+    <rdfs:label xml:lang="en">graviton</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_4588526f_8553_4f4d_aa73_a483e88d599b">
+    <emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>A standalone atom that has no net charge.</emmo-annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">neutral atom</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbd504420218642cca58566c0a742ca75">
+    <owl:inverseOf rdf:resource="http://emmo.info/domains/emmo-models.owl#EMMO_24c71baf_6db6_48b9_86c8_8c70cf36db0c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N67d091780a43471ea3358929ca31845b">
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    <rdf:first rdf:nodeID="N6e580fbf67b54c6d844677d27e106205"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-material.owl#EMMO_3c218fbe_60c9_4597_8bcf_41eb1773af1f">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">vacuum</rdfs:label>
+    <owl:equivalentClass rdf:nodeID="N5a362108f5da4dc19427da65dfeeba4b"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/perspectives/emmo-processual.owl#EMMO_c5aae418_1622_4d02_93c5_21159e28e6c1">
+    <rdfs:label xml:lang="en">has_proper_participant</rdfs:label>
+    <rdfs:subPropertyOf rdf:resource="http://emmo.info/perspectives/emmo-processual.owl#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://emmo.info/base/emmo-mereotopology.owl#EMMO_9380ab64_0363_4804_b13f_3a8a94119a76"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N60c7900d366c4e1883db46c78242d1ab">
+    <owl:onProperty rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_60577dea_9019_4537_ac41_80b0fb563d41"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_b21a56ed_f969_4612_a6ec_cb7766f7f31d"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nb36a06cababd4bb9a8981bb38a839744">
+    <owl:onProperty rdf:resource="http://emmo.info/perspectives/emmo-existent.owl#EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+    <owl:someValuesFrom rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_72d53756_7fb1_46ed_980f_83f47efbe105"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nce1b95f7d6c94214a52b9257385e284b">
+    <rdf:first rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_25f8b804_9a0b_4387_a3e7_b35bce5365ee"/>
+    <rdf:rest rdf:nodeID="Nf2d2ee60ca4c4da9890e39e9e69521e7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://emmo.info/domains/emmo-geometry.owl#EMMO_0ef4ff4a_5458_4f2a_b51f_4689d472a3f2">
+    <rdfs:subClassOf rdf:resource="http://emmo.info/domains/emmo-geometry.owl#EMMO_0c576e13_4ee7_4f3d_bfe9_1614243df018"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label xml:lang="en">curve</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Na96218a1e1b34cf982e5cede3398219a">
+    <rdf:first rdf:resource="http://emmo.info/perspectives/emmo-semiotics.owl#EMMO_0cd58641_824c_4851_907f_f4c3be76630c"/>
+    <rdf:rest rdf:nodeID="Nb67043f3bf5b4abeb317faebfc9e144c"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4c384097cee84d929280e066d03de556">
+    <rdf:rest rdf:nodeID="N548a3765935b499fb1e75276f29e7958"/>
+    <rdf:first rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_72d53756_7fb1_46ed_980f_83f47efbe105"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N548a3765935b499fb1e75276f29e7958">
+    <rdf:first rdf:resource="http://emmo.info/domains/emmo-material.owl#EMMO_8043d3c6_a4c1_4089_ba34_9744e28e5b3d"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nf1ba4f63baa9414a82d920844b608327">
+    <owl:inverseOf rdf:resource="http://emmo.info/domains/emmo-properties.owl#EMMO_e1097637_70d2_4895_973f_2396f04fa204"/>
+  </rdf:Description>
+</rdf:RDF>
