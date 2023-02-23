@@ -1202,12 +1202,12 @@ emmo:Hyperon a owl:Class ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/perspectives/physicalistic#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:hasProperPart ;
-            owl:someValuesFrom emmo:StrangeQuark ],
-        [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Class ;
                     owl:unionOf ( emmo:UpQuark emmo:StrangeQuark emmo:DownQuark ) ] ;
             owl:onProperty emmo:hasProperPart ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:hasProperPart ;
+            owl:someValuesFrom emmo:StrangeQuark ],
         emmo:Baryon ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_f87e79eb_f549_4a06_9c27_a3d1412444c6" ;
     ns2:prefLabel "Hyperon"@en .
@@ -1678,7 +1678,8 @@ emmo:MaterialSynthesis a owl:Class ;
     emmo:elucidation "The creation of a material entity starting from fundamental substances, involving chemical phenomena (e.g. reaction, bonding)."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/manufacturing#> ;
-    rdfs:subClassOf emmo:MaterialsProcessing ;
+    rdfs:subClassOf emmo:MaterialsProcessing,
+        emmo:ProcessEngineeringProcess ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_fa9cfc5d_9c3c_4856_a708_28be3858917e" ;
     ns2:prefLabel "MaterialSynthesis"@en .
 
@@ -2232,12 +2233,12 @@ emmo:Real a owl:Class ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/math#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom xsd:double ;
+            owl:onProperty emmo:hasNumericalData ],
+        [ a owl:Restriction ;
             owl:onDataRange xsd:double ;
             owl:onProperty emmo:hasNumericalData ;
             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom xsd:double ;
-            owl:onProperty emmo:hasNumericalData ],
         emmo:Number ;
     owl:equivalentClass [ a owl:Restriction ;
             owl:onProperty emmo:hasNumericalData ;
@@ -2512,17 +2513,6 @@ emmo:Stress a owl:Class ;
         emmo:ISQDerivedQuantity ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_d1917609_db5e_4b8a_9b76_ef1d6f860a81" ;
     ns2:prefLabel "Stress"@en .
-
-emmo:StrictFundamental a owl:Class ;
-    emmo:elucidation "The class of individuals that satisfy a whole defining criteria (i.e. belongs to a subclass of whole) and have no proper parts that satisfy that same criteria (no parts that are of the same type of the whole)."@en ;
-    rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
-        <http://emmo.info/emmo/perspectives/holistic#> ;
-    rdfs:subClassOf emmo:SpatiallyFundamental,
-        emmo:TemporallyFundamental ;
-    owl:equivalentClass [ a owl:Class ;
-            owl:intersectionOf ( emmo:TemporallyFundamental emmo:SpatiallyFundamental ) ] ;
-    ns2:exactMatch "http://emmo.info/emmo#EMMO_4b32fc1e_5293_4247_9e8d_1175df9f1c0b" ;
-    ns2:prefLabel "StrictFundamental"@en .
 
 emmo:StructuralFormula a owl:Class ;
     emmo:elucidation "A graphical representation of a molecular structure showing the relative position in space of the atomic constituents and their bonds." ;
@@ -3352,14 +3342,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 95 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
+        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#AmericiumSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 243.06138 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
-        [ a owl:Restriction ;
-            owl:hasValue 95 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_f90da1f3-eb4c-54c4-b5d9-cf00fef180a1" ;
@@ -3370,14 +3360,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#AntimonySymbol> ],
-        [ a owl:Restriction ;
             owl:hasValue 121.76 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         [ a owl:Restriction ;
             owl:hasValue 51 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#AntimonySymbol> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_c32f8642-f1a1-5fae-8b4e-990b40f6eff8" ;
@@ -3388,11 +3378,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#ArgonSymbol> ],
-        [ a owl:Restriction ;
             owl:hasValue 39.948 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#ArgonSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 18 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
@@ -3409,11 +3399,11 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#ArsenicSymbol> ],
         [ a owl:Restriction ;
-            owl:hasValue 74.921595 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
-        [ a owl:Restriction ;
             owl:hasValue 33 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
+        [ a owl:Restriction ;
+            owl:hasValue 74.921595 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_41dba862-503f-57c2-86c7-bb40030481f0" ;
@@ -3442,14 +3432,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 56 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#BariumSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 137.327 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
+        [ a owl:Restriction ;
+            owl:hasValue 56 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_1b1aa658-a7d5-5bc6-9d78-37a901fd66dd" ;
@@ -3460,11 +3450,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 97 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#BerkeliumSymbol> ],
+        [ a owl:Restriction ;
+            owl:hasValue 97 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         [ a owl:Restriction ;
             owl:hasValue 247.07031 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
@@ -3478,14 +3468,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 4 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
+        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#BerylliumSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 9.0121831 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
-        [ a owl:Restriction ;
-            owl:hasValue 4 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_b8294a50-b121-5b9c-bacd-5d4206c3aaaf" ;
@@ -3604,11 +3594,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 20 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#CalciumSymbol> ],
+        [ a owl:Restriction ;
+            owl:hasValue 20 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         [ a owl:Restriction ;
             owl:hasValue 40.078 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
@@ -3622,11 +3612,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#CaliforniumSymbol> ],
-        [ a owl:Restriction ;
             owl:hasValue 251.07959 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#CaliforniumSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 98 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
@@ -3658,11 +3648,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 140.116 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#CeriumSymbol> ],
+        [ a owl:Restriction ;
+            owl:hasValue 140.116 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         [ a owl:Restriction ;
             owl:hasValue 58 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
@@ -3676,11 +3666,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 35.45 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#ChlorineSymbol> ],
+        [ a owl:Restriction ;
+            owl:hasValue 35.45 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         [ a owl:Restriction ;
             owl:hasValue 17 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
@@ -3694,14 +3684,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#ChromiumSymbol> ],
+            owl:hasValue 24 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         [ a owl:Restriction ;
             owl:hasValue 51.9961 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         [ a owl:Restriction ;
-            owl:hasValue 24 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#ChromiumSymbol> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_2a61986e-772c-5f68-bdc9-80adbc618e41" ;
@@ -3712,11 +3702,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#CobaltSymbol> ],
-        [ a owl:Restriction ;
             owl:hasValue 58.933194 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#CobaltSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 27 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
@@ -3730,14 +3720,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 112 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
+            owl:hasValue 285.177 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#CoperniciumSymbol> ],
         [ a owl:Restriction ;
-            owl:hasValue 285.177 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
+            owl:hasValue 112 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_f9125b67-8798-5595-9db3-ffc1840c9947" ;
@@ -3766,14 +3756,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 247.07035 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
+            owl:hasValue 96 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#CuriumSymbol> ],
         [ a owl:Restriction ;
-            owl:hasValue 96 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
+            owl:hasValue 247.07035 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_08522112-0872-599f-9d81-81889333254e" ;
@@ -3802,14 +3792,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 268.126 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
+        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#DubniumSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 105 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
-        [ a owl:Restriction ;
-            owl:hasValue 268.126 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_b65acde7-56c5-5cca-b589-b6744beb4223" ;
@@ -3820,14 +3810,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 66 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
+        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#DysprosiumSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 162.5 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
-        [ a owl:Restriction ;
-            owl:hasValue 66 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_e1e686a5-71c3-5a98-8646-6d4e0f665f35" ;
@@ -3838,14 +3828,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 99 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EinsteiniumSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 252.083 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
+        [ a owl:Restriction ;
+            owl:hasValue 99 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_2e36028f-f5a0-5a5a-af66-c357fb64765e" ;
@@ -3856,14 +3846,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 68 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
+        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#ErbiumSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 167.259 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
-        [ a owl:Restriction ;
-            owl:hasValue 68 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_14729316-fa36-5eda-a5e6-86e28a5d80ba" ;
@@ -3877,11 +3867,11 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:hasValue 151.964 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         [ a owl:Restriction ;
-            owl:hasValue 63 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EuropiumSymbol> ],
+        [ a owl:Restriction ;
+            owl:hasValue 63 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_8aa13073-865b-5035-b128-43a4758a0302" ;
@@ -3895,11 +3885,11 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#FermiumSymbol> ],
         [ a owl:Restriction ;
-            owl:hasValue 100 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
-        [ a owl:Restriction ;
             owl:hasValue 257.09511 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
+        [ a owl:Restriction ;
+            owl:hasValue 100 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_5ee30708-feb6-54c0-977e-3d069e496a76" ;
@@ -3949,11 +3939,11 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#FranciumSymbol> ],
         [ a owl:Restriction ;
-            owl:hasValue 87 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
-        [ a owl:Restriction ;
             owl:hasValue 223.01974 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
+        [ a owl:Restriction ;
+            owl:hasValue 87 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_291a1550-d4cb-5934-b0db-0ea3c6a23932" ;
@@ -3964,14 +3954,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 64 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
+        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#GadoliniumSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 157.25 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
-        [ a owl:Restriction ;
-            owl:hasValue 64 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_0724601e-642c-5770-bc86-7078e7441664" ;
@@ -3982,14 +3972,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 31 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#GalliumSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 69.723 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
+        [ a owl:Restriction ;
+            owl:hasValue 31 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_71c716bf-75bb-529f-b7c8-9d36a7c58b3a" ;
@@ -4000,14 +3990,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 32 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#GermaniumSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 72.63 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#GermaniumSymbol> ],
+            owl:hasValue 32 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_694e27a2-f3ee-5a3e-8851-d6f78d79d84e" ;
@@ -4039,11 +4029,11 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#HafniumSymbol> ],
         [ a owl:Restriction ;
-            owl:hasValue 178.49 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
-        [ a owl:Restriction ;
             owl:hasValue 72 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
+        [ a owl:Restriction ;
+            owl:hasValue 178.49 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_e37eaa49-d5e8-54e7-a7dc-9ad6073e86b7" ;
@@ -4057,11 +4047,11 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#HassiumSymbol> ],
         [ a owl:Restriction ;
-            owl:hasValue 269.1338 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
-        [ a owl:Restriction ;
             owl:hasValue 108 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
+        [ a owl:Restriction ;
+            owl:hasValue 269.1338 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_1acc07d0-709d-53f4-9807-cbc0d144865c" ;
@@ -4090,11 +4080,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 164.93033 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#HolmiumSymbol> ],
+        [ a owl:Restriction ;
+            owl:hasValue 164.93033 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         [ a owl:Restriction ;
             owl:hasValue 67 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
@@ -4111,11 +4101,11 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#HydrogenSymbol> ],
         [ a owl:Restriction ;
-            owl:hasValue 1.008 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
-        [ a owl:Restriction ;
             owl:hasValue 1 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
+        [ a owl:Restriction ;
+            owl:hasValue 1.008 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_5a4790e5-b11b-5a0c-80e4-81515c27a560" ;
@@ -4126,11 +4116,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#IndiumSymbol> ],
-        [ a owl:Restriction ;
             owl:hasValue 114.818 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#IndiumSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 49 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
@@ -4162,11 +4152,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#IridiumSymbol> ],
-        [ a owl:Restriction ;
             owl:hasValue 192.217 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#IridiumSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 77 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
@@ -4198,11 +4188,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 83.798 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#KryptonSymbol> ],
+        [ a owl:Restriction ;
+            owl:hasValue 83.798 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         [ a owl:Restriction ;
             owl:hasValue 36 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
@@ -4234,14 +4224,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 262.11 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#LawrenciumSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 103 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#LawrenciumSymbol> ],
+            owl:hasValue 262.11 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_41f2ed3b-aba4-5b99-a5a1-547109a7cb4c" ;
@@ -4270,11 +4260,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 6.94 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#LithiumSymbol> ],
+        [ a owl:Restriction ;
+            owl:hasValue 6.94 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         [ a owl:Restriction ;
             owl:hasValue 3 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
@@ -4291,11 +4281,11 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#LivermoriumSymbol> ],
         [ a owl:Restriction ;
-            owl:hasValue 293.204 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
-        [ a owl:Restriction ;
             owl:hasValue 116 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
+        [ a owl:Restriction ;
+            owl:hasValue 293.204 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_f2d4c89a-c354-5e4c-9cdb-f2de932e294f" ;
@@ -4306,14 +4296,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#LutetiumSymbol> ],
-        [ a owl:Restriction ;
             owl:hasValue 174.9668 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         [ a owl:Restriction ;
             owl:hasValue 71 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#LutetiumSymbol> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_098f6f77-746a-5fcc-a6d1-4988929bf404" ;
@@ -4324,11 +4314,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 24.305 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#MagnesiumSymbol> ],
+        [ a owl:Restriction ;
+            owl:hasValue 24.305 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         [ a owl:Restriction ;
             owl:hasValue 12 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
@@ -4342,11 +4332,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 54.938044 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#ManganeseSymbol> ],
+        [ a owl:Restriction ;
+            owl:hasValue 54.938044 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         [ a owl:Restriction ;
             owl:hasValue 25 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
@@ -4360,14 +4350,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 109 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
+        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#MeitneriumSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 278.156 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
-        [ a owl:Restriction ;
-            owl:hasValue 109 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_3213514e-b1ba-506c-ae22-d4e3a688ddf3" ;
@@ -4396,14 +4386,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 80 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#MercurySymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 200.592 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
+        [ a owl:Restriction ;
+            owl:hasValue 80 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_bc1bb0e8-ec90-5276-a15c-3e805144a083" ;
@@ -4414,14 +4404,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 42 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#MolybdenumSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 95.95 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
+        [ a owl:Restriction ;
+            owl:hasValue 42 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_0d8247fb-82b0-5ad6-996b-19469e1d7960" ;
@@ -4432,14 +4422,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 115 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
+        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#MoscoviumSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 289.194 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
-        [ a owl:Restriction ;
-            owl:hasValue 115 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_b655f801-c5b9-5187-99e8-c9eba8645c05" ;
@@ -4450,14 +4440,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 60 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#NeodymiumSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 144.242 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
+        [ a owl:Restriction ;
+            owl:hasValue 60 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_2e6eba5e-8c55-534c-b955-f09296e190e0" ;
@@ -4504,14 +4494,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 28 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
-        [ a owl:Restriction ;
             owl:hasValue 58.6934 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#NickelSymbol> ],
+        [ a owl:Restriction ;
+            owl:hasValue 28 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_caacc634-4328-5d9d-a8e8-1c25a2557e94" ;
@@ -4522,14 +4512,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 113 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
+        [ a owl:Restriction ;
             owl:hasValue 286.182 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#NihoniumSymbol> ],
-        [ a owl:Restriction ;
-            owl:hasValue 113 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_75771a96-5e17-568c-bc28-caba06c0047a" ;
@@ -4540,14 +4530,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#NiobiumSymbol> ],
+        [ a owl:Restriction ;
             owl:hasValue 92.90637 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         [ a owl:Restriction ;
             owl:hasValue 41 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
-        [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#NiobiumSymbol> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_ad2056af-0fa7-56cf-a881-80e3a7dfd266" ;
@@ -4597,11 +4587,11 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#OganessonSymbol> ],
         [ a owl:Restriction ;
-            owl:hasValue 294.214 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
-        [ a owl:Restriction ;
             owl:hasValue 118 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
+        [ a owl:Restriction ;
+            owl:hasValue 294.214 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_cffec057-9258-52ae-bb4c-ca761b6bc407" ;
@@ -4648,14 +4638,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 46 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
+        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#PalladiumSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 106.42 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
-        [ a owl:Restriction ;
-            owl:hasValue 46 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_cabcb18d-88ff-5ff7-aceb-ab573526620e" ;
@@ -4720,14 +4710,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#PoloniumSymbol> ],
-        [ a owl:Restriction ;
             owl:hasValue 208.98243 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         [ a owl:Restriction ;
             owl:hasValue 84 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#PoloniumSymbol> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_784119c1-c336-5b0c-80fc-4cc8bddc99ca" ;
@@ -4756,14 +4746,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#PraseodymiumSymbol> ],
+            owl:hasValue 59 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         [ a owl:Restriction ;
             owl:hasValue 140.90766 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         [ a owl:Restriction ;
-            owl:hasValue 59 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#PraseodymiumSymbol> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_18748aef-0e6b-5369-99b5-1e5ab1a0f99b" ;
@@ -4810,14 +4800,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 88 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#RadiumSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 226.02541 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
+        [ a owl:Restriction ;
+            owl:hasValue 88 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_3ea9993c-80b9-5133-b552-dce78cd17ade" ;
@@ -4846,14 +4836,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 75 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#RheniumSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 186.207 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
+        [ a owl:Restriction ;
+            owl:hasValue 75 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_8d93f51b-c7c7-5486-b64a-ee206f6b6672" ;
@@ -4864,14 +4854,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 45 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
+        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#RhodiumSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 102.9055 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
-        [ a owl:Restriction ;
-            owl:hasValue 45 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_3bc0aedf-c43e-5d30-8688-44d19900a68b" ;
@@ -4882,14 +4872,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#RoentgeniumSymbol> ],
+        [ a owl:Restriction ;
             owl:hasValue 281.166 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         [ a owl:Restriction ;
             owl:hasValue 111 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
-        [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#RoentgeniumSymbol> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_3f29d3e0-e9d9-5f1f-bd77-97af10125f7e" ;
@@ -4918,14 +4908,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 44 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#RutheniumSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 101.07 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
+        [ a owl:Restriction ;
+            owl:hasValue 44 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_948b47f0-3c24-50c7-a698-a805f760e667" ;
@@ -4954,14 +4944,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#SamariumSymbol> ],
+        [ a owl:Restriction ;
             owl:hasValue 150.36 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         [ a owl:Restriction ;
             owl:hasValue 62 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
-        [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#SamariumSymbol> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_65d84215-de2a-56c9-80e3-a49d08dfc1de" ;
@@ -4972,14 +4962,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 21 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
+        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#ScandiumSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 44.955908 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
-        [ a owl:Restriction ;
-            owl:hasValue 21 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_fbfd4b93-12ee-5a15-8377-d4c54635b5de" ;
@@ -4990,14 +4980,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 106 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#SeaborgiumSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 271.134 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
+        [ a owl:Restriction ;
+            owl:hasValue 106 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_67eaac8f-7f83-5bca-b1d0-10451d3a88a1" ;
@@ -5008,14 +4998,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 34 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
+            owl:hasValue 78.971 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#SeleniumSymbol> ],
         [ a owl:Restriction ;
-            owl:hasValue 78.971 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
+            owl:hasValue 34 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_808f7cd9-27b4-527b-974f-4213f10e1772" ;
@@ -5026,14 +5016,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#SiliconSymbol> ],
+        [ a owl:Restriction ;
             owl:hasValue 28.085 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         [ a owl:Restriction ;
             owl:hasValue 14 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
-        [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#SiliconSymbol> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_798b0c96-82ca-5ce8-8d5f-f9f72668cf5d" ;
@@ -5044,11 +5034,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#SilverSymbol> ],
-        [ a owl:Restriction ;
             owl:hasValue 107.8682 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#SilverSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 47 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
@@ -5098,14 +5088,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#SulfurSymbol> ],
+        [ a owl:Restriction ;
             owl:hasValue 32.06 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         [ a owl:Restriction ;
             owl:hasValue 16 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
-        [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#SulfurSymbol> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_87c8f425-c96c-5503-88a0-f10465669ea3" ;
@@ -5116,14 +5106,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 73 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#TantalumSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 180.94788 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
+        [ a owl:Restriction ;
+            owl:hasValue 73 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_dbe54798-a21f-519f-9d52-e6ab2c2e28cb" ;
@@ -5152,11 +5142,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#TelluriumSymbol> ],
-        [ a owl:Restriction ;
             owl:hasValue 127.6 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#TelluriumSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 52 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
@@ -5206,14 +5196,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 81 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#ThalliumSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 204.38 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
+        [ a owl:Restriction ;
+            owl:hasValue 81 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_bcf70555-8df3-5a39-b26a-a5e802d17a37" ;
@@ -5224,14 +5214,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#ThoriumSymbol> ],
+        [ a owl:Restriction ;
             owl:hasValue 232.0377 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         [ a owl:Restriction ;
             owl:hasValue 90 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
-        [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#ThoriumSymbol> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_59d342fd-1ace-5b68-9d0d-ed4ff9f55d63" ;
@@ -5242,14 +5232,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 69 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#ThuliumSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 168.93422 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
+        [ a owl:Restriction ;
+            owl:hasValue 69 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_82f9a8f3-2bb4-5d14-9a41-30a858ecce61" ;
@@ -5263,11 +5253,11 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#TinSymbol> ],
         [ a owl:Restriction ;
-            owl:hasValue 118.71 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
-        [ a owl:Restriction ;
             owl:hasValue 50 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
+        [ a owl:Restriction ;
+            owl:hasValue 118.71 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_9aa9e086-ae07-51f6-bf84-788ffdefcb6f" ;
@@ -5278,14 +5268,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 22 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#TitaniumSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 47.867 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
+        [ a owl:Restriction ;
+            owl:hasValue 22 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_0eee5986-12a1-5f73-b5e0-6eb2b640c924" ;
@@ -5314,11 +5304,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 238.02891 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#UraniumSymbol> ],
+        [ a owl:Restriction ;
+            owl:hasValue 238.02891 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         [ a owl:Restriction ;
             owl:hasValue 92 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
@@ -5353,11 +5343,11 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#XenonSymbol> ],
         [ a owl:Restriction ;
-            owl:hasValue 54 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
-        [ a owl:Restriction ;
             owl:hasValue 131.293 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
+        [ a owl:Restriction ;
+            owl:hasValue 54 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_57742ca9-95d8-50f8-9b33-0ded30da4532" ;
@@ -5386,11 +5376,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#YttriumSymbol> ],
-        [ a owl:Restriction ;
             owl:hasValue 88.90584 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#YttriumSymbol> ],
         [ a owl:Restriction ;
             owl:hasValue 39 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
@@ -5404,14 +5394,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#ZincSymbol> ],
+            owl:hasValue 30 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         [ a owl:Restriction ;
             owl:hasValue 65.38 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         [ a owl:Restriction ;
-            owl:hasValue 30 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#ZincSymbol> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_f4fee945-1d4a-5158-b0ca-eaef9ad40502" ;
@@ -5425,11 +5415,11 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#ZirconiumSymbol> ],
         [ a owl:Restriction ;
-            owl:hasValue 91.224 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
-        [ a owl:Restriction ;
             owl:hasValue 40 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
+        [ a owl:Restriction ;
+            owl:hasValue 91.224 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         emmo:Atom,
         emmo:Declared ;
     ns2:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_c052baf7-358f-55de-8ca3-9688563c3cfb" ;
@@ -5595,11 +5585,11 @@ emmo:ArcMinute a owl:Class ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/unitsextension#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "′" ;
-            owl:onProperty emmo:hasSymbolData ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:hasPhysicalDimension ;
             owl:someValuesFrom emmo:DimensionOne ],
+        [ a owl:Restriction ;
+            owl:hasValue "′" ;
+            owl:onProperty emmo:hasSymbolData ],
         emmo:SIAcceptedSpecialUnit ;
     ns2:altLabel "MinuteOfArc"@en ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_1e0b665d_db6c_4752_a6d4_262d3a8dbb46" ;
@@ -5611,11 +5601,11 @@ emmo:ArcSecond a owl:Class ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/unitsextension#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "″" ;
-            owl:onProperty emmo:hasSymbolData ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:hasPhysicalDimension ;
             owl:someValuesFrom emmo:DimensionOne ],
+        [ a owl:Restriction ;
+            owl:hasValue "″" ;
+            owl:onProperty emmo:hasSymbolData ],
         emmo:SIAcceptedSpecialUnit ;
     ns2:altLabel "SecondOfArc"@en ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_6a4547ab_3abb_430d_b81b_ce32d47729f5" ;
@@ -5790,13 +5780,13 @@ emmo:Centi a owl:Class ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "c" ;
+            owl:onProperty emmo:hasSymbolData ],
+        [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Restriction ;
                     owl:hasValue 1e-02 ;
                     owl:onProperty emmo:hasNumericalData ] ;
             owl:onProperty [ owl:inverseOf emmo:hasVariable ] ],
-        [ a owl:Restriction ;
-            owl:hasValue "c" ;
-            owl:onProperty emmo:hasSymbolData ],
         emmo:SIMetricPrefix ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_b55cd09a_e54d_4eb1_81dd_03c29d1b878e" ;
     ns2:prefLabel "Centi"@en .
@@ -6068,13 +6058,13 @@ emmo:Deka a owl:Class ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "da" ;
+            owl:onProperty emmo:hasSymbolData ],
+        [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Restriction ;
                     owl:hasValue 1e+01 ;
                     owl:onProperty emmo:hasNumericalData ] ;
             owl:onProperty [ owl:inverseOf emmo:hasVariable ] ],
-        [ a owl:Restriction ;
-            owl:hasValue "da" ;
-            owl:onProperty emmo:hasSymbolData ],
         emmo:SIMetricPrefix ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_1d8b370b_c672_4d0c_964e_eaafcbf2f51f" ;
     ns2:prefLabel "Deka"@en .
@@ -6285,13 +6275,13 @@ emmo:Exa a owl:Class ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "E" ;
-            owl:onProperty emmo:hasSymbolData ],
-        [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Restriction ;
                     owl:hasValue 1e+18 ;
                     owl:onProperty emmo:hasNumericalData ] ;
             owl:onProperty [ owl:inverseOf emmo:hasVariable ] ],
+        [ a owl:Restriction ;
+            owl:hasValue "E" ;
+            owl:onProperty emmo:hasSymbolData ],
         emmo:SIMetricPrefix ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_5cf9f86c_86f5_40c4_846d_60371f670e0a" ;
     ns2:prefLabel "Exa"@en .
@@ -6485,13 +6475,13 @@ emmo:Hecto a owl:Class ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "h" ;
-            owl:onProperty emmo:hasSymbolData ],
-        [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Restriction ;
                     owl:hasValue 1e+02 ;
                     owl:onProperty emmo:hasNumericalData ] ;
             owl:onProperty [ owl:inverseOf emmo:hasVariable ] ],
+        [ a owl:Restriction ;
+            owl:hasValue "h" ;
+            owl:onProperty emmo:hasSymbolData ],
         emmo:SIMetricPrefix ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_21aaefc1_3f86_4208_b7db_a755f31f0f8c" ;
     ns2:prefLabel "Hecto"@en .
@@ -6575,12 +6565,12 @@ emmo:Integer a owl:Class ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/math#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom xsd:integer ;
+            owl:onProperty emmo:hasNumericalData ],
+        [ a owl:Restriction ;
             owl:onDataRange xsd:integer ;
             owl:onProperty emmo:hasNumericalData ;
             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
-        [ a owl:Restriction ;
-            owl:allValuesFrom xsd:integer ;
-            owl:onProperty emmo:hasNumericalData ],
         emmo:Number ;
     owl:equivalentClass [ a owl:Restriction ;
             owl:onProperty emmo:hasNumericalData ;
@@ -6675,11 +6665,11 @@ emmo:Katal a owl:Class ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "kat" ;
-            owl:onProperty emmo:hasSymbolData ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:hasPhysicalDimension ;
             owl:someValuesFrom emmo:CatalyticActivityDimension ],
+        [ a owl:Restriction ;
+            owl:hasValue "kat" ;
+            owl:onProperty emmo:hasSymbolData ],
         emmo:SISpecialUnit ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_33b67e69_3645_4c73_b100_5ea6759221b4" ;
     ns2:prefLabel "Katal"@en .
@@ -6896,14 +6886,14 @@ emmo:MagneticFieldStrengthDimension a owl:Class ;
     ns2:prefLabel "MagneticFieldStrengthDimension"@en .
 
 emmo:Manufacturer a owl:Class ;
-    emmo:elucidation "The agent that is participates and drives a manufacturing process."@en ;
+    emmo:elucidation "A strict fundamental object overcrossing a manufacturing process, the intersection being the agent that participates and drives the manufacturing process."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/manufacturing#> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf emmo:hasTemporaryParticipant ] ;
             owl:someValuesFrom emmo:Manufacturing ],
         emmo:Object,
-        emmo:Whole ;
+        emmo:StrictFundamental ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_c0afb341_7d31_4883_a307_ae4606df2a1b" ;
     ns2:prefLabel "Manufacturer"@en .
 
@@ -7023,13 +7013,13 @@ emmo:Mega a owl:Class ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "M" ;
-            owl:onProperty emmo:hasSymbolData ],
-        [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Restriction ;
                     owl:hasValue 1e+06 ;
                     owl:onProperty emmo:hasNumericalData ] ;
             owl:onProperty [ owl:inverseOf emmo:hasVariable ] ],
+        [ a owl:Restriction ;
+            owl:hasValue "M" ;
+            owl:onProperty emmo:hasSymbolData ],
         emmo:SIMetricPrefix ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_5eaecadc_4f0d_4a3a_afc7_1fc0b83cc928" ;
     ns2:prefLabel "Mega"@en .
@@ -7069,13 +7059,13 @@ emmo:Micro a owl:Class ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "µ" ;
-            owl:onProperty emmo:hasSymbolData ],
-        [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Restriction ;
                     owl:hasValue 1e-06 ;
                     owl:onProperty emmo:hasNumericalData ] ;
             owl:onProperty [ owl:inverseOf emmo:hasVariable ] ],
+        [ a owl:Restriction ;
+            owl:hasValue "µ" ;
+            owl:onProperty emmo:hasSymbolData ],
         emmo:SIMetricPrefix ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae" ;
     ns2:prefLabel "Micro"@en .
@@ -7166,13 +7156,13 @@ emmo:Nano a owl:Class ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "n" ;
-            owl:onProperty emmo:hasSymbolData ],
-        [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Restriction ;
                     owl:hasValue 1e-09 ;
                     owl:onProperty emmo:hasNumericalData ] ;
             owl:onProperty [ owl:inverseOf emmo:hasVariable ] ],
+        [ a owl:Restriction ;
+            owl:hasValue "n" ;
+            owl:onProperty emmo:hasSymbolData ],
         emmo:SIMetricPrefix ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_e1981c25_7c55_4020_aa7a_d2e14ced86d4" ;
     ns2:prefLabel "Nano"@en .
@@ -7296,11 +7286,11 @@ emmo:Ohm a owl:Class ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:hasPhysicalDimension ;
-            owl:someValuesFrom emmo:ElectricResistanceDimension ],
-        [ a owl:Restriction ;
             owl:hasValue "Ω" ;
             owl:onProperty emmo:hasSymbolData ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:hasPhysicalDimension ;
+            owl:someValuesFrom emmo:ElectricResistanceDimension ],
         emmo:SISpecialUnit ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_59c10c5c_47bd_4348_ba39_38836607dfa1" ;
     ns2:prefLabel "Ohm"@en .
@@ -7360,11 +7350,11 @@ emmo:Pascal a owl:Class ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "Pa" ;
-            owl:onProperty emmo:hasSymbolData ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:hasPhysicalDimension ;
             owl:someValuesFrom emmo:PressureDimension ],
+        [ a owl:Restriction ;
+            owl:hasValue "Pa" ;
+            owl:onProperty emmo:hasSymbolData ],
         emmo:SISpecialUnit ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_a80dc6f5_b1aa_41a7_a3a8_cd5040da2162" ;
     ns2:prefLabel "Pascal"@en .
@@ -7502,13 +7492,13 @@ emmo:Pico a owl:Class ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "p" ;
-            owl:onProperty emmo:hasSymbolData ],
-        [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Restriction ;
                     owl:hasValue 1e-12 ;
                     owl:onProperty emmo:hasNumericalData ] ;
             owl:onProperty [ owl:inverseOf emmo:hasVariable ] ],
+        [ a owl:Restriction ;
+            owl:hasValue "p" ;
+            owl:onProperty emmo:hasSymbolData ],
         emmo:SIMetricPrefix ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_068c4e58_2470_4b1c_8454_010dd4906100" ;
     ns2:prefLabel "Pico"@en .
@@ -7559,6 +7549,13 @@ emmo:Power a owl:Class ;
         emmo:ISQDerivedQuantity ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_09b9021b_f97b_43eb_b83d_0a764b472bc2" ;
     ns2:prefLabel "Power"@en .
+
+emmo:ProcessEngineeringProcess a owl:Class ;
+    rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
+        <http://emmo.info/emmo/disciplines/manufacturing#> ;
+    rdfs:subClassOf emmo:IndustrialTechnologyProcess ;
+    ns2:exactMatch "http://emmo.info/emmo#EMMO_592b1d98_4736_4cac_9b62_849b8dbe11c7" ;
+    ns2:prefLabel "ProcessEngineeringProcess"@en .
 
 emmo:Proton a owl:Class ;
     emmo:elucidation "A positive charged subatomic particle found in the atomic nucleus."@en ;
@@ -7688,11 +7685,11 @@ emmo:Siemens a owl:Class ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:hasPhysicalDimension ;
-            owl:someValuesFrom emmo:ElectricConductanceDimension ],
-        [ a owl:Restriction ;
             owl:hasValue "S" ;
             owl:onProperty emmo:hasSymbolData ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:hasPhysicalDimension ;
+            owl:someValuesFrom emmo:ElectricConductanceDimension ],
         emmo:SISpecialUnit ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_f2523820_04a6_44ab_bb67_8237dda2b0c2" ;
     ns2:prefLabel "Siemens"@en .
@@ -7707,11 +7704,11 @@ Sievert is derived from absorbed dose, but takes into account the biological eff
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "Sv" ;
-            owl:onProperty emmo:hasSymbolData ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:hasPhysicalDimension ;
             owl:someValuesFrom emmo:AbsorbedDoseDimension ],
+        [ a owl:Restriction ;
+            owl:hasValue "Sv" ;
+            owl:onProperty emmo:hasSymbolData ],
         emmo:SISpecialUnit ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_dc232f53_8ed8_4ddd_9f41_cc057985eadb" ;
     ns2:prefLabel "Sievert"@en .
@@ -7853,6 +7850,17 @@ emmo:Steradian a owl:Class ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_cf3dd6cc_c5d6_4b3d_aef4_82f3b7a361af" ;
     ns2:prefLabel "Steradian"@en .
 
+emmo:StrictFundamental a owl:Class ;
+    emmo:elucidation "The class of individuals that satisfy a whole defining criteria (i.e. belongs to a subclass of whole) and have no proper parts that satisfy that same criteria (no parts that are of the same type of the whole)."@en ;
+    rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
+        <http://emmo.info/emmo/perspectives/holistic#> ;
+    rdfs:subClassOf emmo:SpatiallyFundamental,
+        emmo:TemporallyFundamental ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( emmo:TemporallyFundamental emmo:SpatiallyFundamental ) ] ;
+    ns2:exactMatch "http://emmo.info/emmo#EMMO_4b32fc1e_5293_4247_9e8d_1175df9f1c0b" ;
+    ns2:prefLabel "StrictFundamental"@en .
+
 emmo:String a owl:Class ;
     emmo:comment "A string is made of concatenated symbols whose arrangement is one-dimensional. Each symbol can have only one previous and one next neighborhood (bidirectional list)."@en,
         "A string is not requested to respect any syntactic rule: it's simply directly made of symbols."@en ;
@@ -7939,13 +7947,13 @@ emmo:Tera a owl:Class ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "T" ;
+            owl:onProperty emmo:hasSymbolData ],
+        [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Restriction ;
                     owl:hasValue 1e+12 ;
                     owl:onProperty emmo:hasNumericalData ] ;
             owl:onProperty [ owl:inverseOf emmo:hasVariable ] ],
-        [ a owl:Restriction ;
-            owl:hasValue "T" ;
-            owl:onProperty emmo:hasSymbolData ],
         emmo:SIMetricPrefix ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_3a204900_2b33_47d1_b444_815cc4c8cffa" ;
     ns2:prefLabel "Tera"@en .
@@ -7957,11 +7965,11 @@ emmo:Tesla a owl:Class ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:hasPhysicalDimension ;
-            owl:someValuesFrom emmo:MagneticFluxDensityDimension ],
-        [ a owl:Restriction ;
             owl:hasValue "T" ;
             owl:onProperty emmo:hasSymbolData ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:hasPhysicalDimension ;
+            owl:someValuesFrom emmo:MagneticFluxDensityDimension ],
         emmo:SISpecialUnit ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_acb50123_87a2_4753_b36c_f87114ad4de2" ;
     ns2:prefLabel "Tesla"@en .
@@ -8160,13 +8168,13 @@ emmo:Yocto a owl:Class ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "y" ;
-            owl:onProperty emmo:hasSymbolData ],
-        [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Restriction ;
                     owl:hasValue 1e-24 ;
                     owl:onProperty emmo:hasNumericalData ] ;
             owl:onProperty [ owl:inverseOf emmo:hasVariable ] ],
+        [ a owl:Restriction ;
+            owl:hasValue "y" ;
+            owl:onProperty emmo:hasSymbolData ],
         emmo:SIMetricPrefix ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_f5769206_9257_4b08_bf7b_dad7868c6afc" ;
     ns2:prefLabel "Yocto"@en .
@@ -8175,13 +8183,13 @@ emmo:Yotta a owl:Class ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "Y" ;
-            owl:onProperty emmo:hasSymbolData ],
-        [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Restriction ;
                     owl:hasValue 1e+24 ;
                     owl:onProperty emmo:hasNumericalData ] ;
             owl:onProperty [ owl:inverseOf emmo:hasVariable ] ],
+        [ a owl:Restriction ;
+            owl:hasValue "Y" ;
+            owl:onProperty emmo:hasSymbolData ],
         emmo:SIMetricPrefix ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_e79c62ff_10ad_4ec0_baba_c19ddd4eaa11" ;
     ns2:prefLabel "Yotta"@en .
@@ -10049,7 +10057,7 @@ emmo:MaterialsProcessing a owl:Class ;
     emmo:example "Synthesis of materials, quenching, the preparation of a cake, tempering of a steel beam."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/manufacturing#> ;
-    rdfs:subClassOf emmo:Manufacturing ;
+    rdfs:subClassOf emmo:IndustrialTechnologyProcess ;
     ns2:altLabel "ContinuumManufacturing"@en ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_71d1c8f0_c6e3_44b5_a4b6_1b74ff35698a" ;
     ns2:prefLabel "MaterialsProcessing"@en .
@@ -10505,7 +10513,8 @@ emmo:hasGatheredPart a owl:AsymmetricProperty,
     rdfs:domain emmo:Collection ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/mereocausality#> ;
-    rdfs:subPropertyOf emmo:hasProperPart ;
+    rdfs:subPropertyOf [ owl:inverseOf emmo:isProperPartOf ],
+        emmo:hasProperPart ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_c37d451b_e245_439f_bd94_9050e04ec9f7" ;
     ns2:prefLabel "hasGatheredPart"@en .
 
@@ -10523,7 +10532,8 @@ emmo:hasPortionPart a owl:AsymmetricProperty,
     rdfs:domain emmo:Item ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/mereocausality#> ;
-    rdfs:subPropertyOf emmo:hasProperPart ;
+    rdfs:subPropertyOf [ owl:inverseOf emmo:isProperPartOf ],
+        emmo:hasProperPart ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_55354438_7000_4284_b1b9_59d60c2261b9" ;
     ns2:prefLabel "hasPortionPart"@en .
 
@@ -10534,6 +10544,18 @@ emmo:hasProductOutput a owl:ObjectProperty ;
     rdfs:subPropertyOf emmo:hasOutput ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_0ee9e6a2_9240_4b1d_ac9a_f72416c7dc70" ;
     ns2:prefLabel "hasProductOutput"@en .
+
+emmo:hasProperOverlap a owl:IrreflexiveProperty,
+        owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
+        <http://emmo.info/emmo/mereocausality#> ;
+    rdfs:subPropertyOf [ owl:inverseOf emmo:isOvercrossedBy ],
+        emmo:isOvercrossedBy ;
+    owl:equivalentProperty [ owl:inverseOf emmo:hasProperOverlap ] ;
+    owl:inverseOf emmo:hasProperOverlap ;
+    ns2:exactMatch "http://emmo.info/emmo#EMMO_b3c8ba10_6bee_45e7_9416_e9019aa9f023" ;
+    ns2:prefLabel "hasProperOverlap"@en .
 
 emmo:hasQuantity a owl:ObjectProperty ;
     emmo:elucidation "The relation between a whole and its holistic quantity parts."@en ;
@@ -10709,13 +10731,13 @@ emmo:Cognition a owl:Class ;
         <http://emmo.info/emmo/perspectives/semiotics#> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty emmo:hasSpatialPart ;
-            owl:someValuesFrom emmo:Cogniser ],
+            owl:someValuesFrom emmo:Icon ],
         [ a owl:Restriction ;
             owl:onProperty emmo:hasSpatialPart ;
             owl:someValuesFrom emmo:Cognised ],
         [ a owl:Restriction ;
             owl:onProperty emmo:hasSpatialPart ;
-            owl:someValuesFrom emmo:Icon ],
+            owl:someValuesFrom emmo:Cogniser ],
         emmo:Semiosis ;
     ns2:altLabel "IconSemiosis"@en ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_7cdc375d_d371_4d78_acd5_d51732f52126" ;
@@ -10882,6 +10904,14 @@ emmo:HiggsBoson a owl:Class ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_676a29e6_d4e1_4b54_8961_25947bd20861" ;
     ns2:prefLabel "HiggsBoson"@en .
 
+emmo:IndustrialTechnologyProcess a owl:Class ;
+    rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
+        <http://emmo.info/emmo/disciplines/manufacturing#> ;
+    rdfs:subClassOf emmo:IntentionalProcess ;
+    ns2:altLabel "ProductionEngineeringProcess"@en ;
+    ns2:exactMatch "http://emmo.info/emmo#EMMO_2b9cbfb5_dbd0_4a68_9c6f_acc41b40dd72" ;
+    ns2:prefLabel "IndustrialTechnologyProcess"@en .
+
 emmo:Interpretant a owl:Class ;
     emmo:elucidation "The interpreter's internal representation of the object in a semiosis process."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
@@ -10982,10 +11012,10 @@ e.g. you cannot remove H from H20 without changing the molecule type (essential)
         <http://emmo.info/emmo/perspectives/physicalistic#> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty emmo:hasSpatialPart ;
-            owl:someValuesFrom emmo:Electron ],
+            owl:someValuesFrom emmo:AtomicNucleus ],
         [ a owl:Restriction ;
             owl:onProperty emmo:hasSpatialPart ;
-            owl:someValuesFrom emmo:AtomicNucleus ],
+            owl:someValuesFrom emmo:Electron ],
         emmo:CausalSystem,
         emmo:CompositeParticle,
         emmo:MolecularEntity ;
@@ -11229,10 +11259,10 @@ emmo:SingleComponentComposition a owl:Class ;
         <http://emmo.info/emmo/disciplines/chemistry#> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty emmo:hasSpatialTile ;
-            owl:someValuesFrom emmo:ChemicalCompositionQuantity ],
+            owl:someValuesFrom emmo:ChemicalSpecies ],
         [ a owl:Restriction ;
             owl:onProperty emmo:hasSpatialTile ;
-            owl:someValuesFrom emmo:ChemicalSpecies ],
+            owl:someValuesFrom emmo:ChemicalCompositionQuantity ],
         emmo:ChemicalComposition ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_172e2c96_180b_40f8_a3e7_b624471f40c2" ;
     ns2:prefLabel "SingleComponentComposition"@en .
@@ -11421,9 +11451,8 @@ In this sense, the man and the building process overcrosses. and the overlapping
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/perspectives/holistic#> ;
     rdfs:range emmo:Whole ;
-    rdfs:subPropertyOf [ owl:inverseOf emmo:isOvercrossing ],
-        emmo:hasHolisticRelation,
-        emmo:isOvercrossing ;
+    rdfs:subPropertyOf emmo:hasHolisticRelation,
+        emmo:isOvercrossedBy ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_53e5b1e1_6026_4ddc_8a4a_3aaaa5fdbdb7" ;
     ns2:prefLabel "hasHolisticOvercross"@en .
 
@@ -11489,7 +11518,8 @@ emmo:hasItemPart a owl:AsymmetricProperty,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/mereocausality#> ;
     rdfs:range emmo:Item ;
-    rdfs:subPropertyOf emmo:hasProperPart ;
+    rdfs:subPropertyOf [ owl:inverseOf emmo:isProperPartOf ],
+        emmo:hasProperPart ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_8e742d6f_7fbb_40cf_949b_6806ab0d801f" ;
     ns2:prefLabel "hasItemPart"@en .
 
@@ -11517,7 +11547,8 @@ emmo:hasScatteredPart a owl:AsymmetricProperty,
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/mereocausality#> ;
     rdfs:range emmo:Collection ;
-    rdfs:subPropertyOf emmo:hasProperPart ;
+    rdfs:subPropertyOf [ owl:inverseOf emmo:isProperPartOf ],
+        emmo:hasProperPart ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_cc0df52b_6211_4167_9e22_5cc3ba201bd9" ;
     ns2:prefLabel "hasScatteredPart"@en .
 
@@ -11618,6 +11649,7 @@ emmo:Beschichten a owl:Class ;
     emmo:elucidation "A manufacturing in which an adherent layer of amorphous material is applied to a workpiece."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/manufacturing#> ;
+    rdfs:seeAlso "DIN 8580:2020"@en ;
     rdfs:subClassOf emmo:MergingManufacturing ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_92028373_3a43_4b80_9a69_caca22df3918" ;
     ns2:prefLabel "Beschichten"@de,
@@ -12003,15 +12035,15 @@ emmo:PrefixedUnit a owl:Class ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/metrology#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onClass emmo:MetricPrefix ;
-            owl:onProperty emmo:hasSpatialTile ;
-            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
-        [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Class ;
                     owl:unionOf ( emmo:UnitSymbol emmo:MetricPrefix ) ] ;
             owl:onProperty emmo:hasSpatialTile ],
         [ a owl:Restriction ;
             owl:onClass emmo:UnitSymbol ;
+            owl:onProperty emmo:hasSpatialTile ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onClass emmo:MetricPrefix ;
             owl:onProperty emmo:hasSpatialTile ;
             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
         emmo:MeasurementUnit,
@@ -12330,7 +12362,7 @@ The combination of collection and item concepts is the EMMO mereocausality alter
     emmo:example "The collection of users of a particular software, the collection of atoms that have been part of that just dissociated molecule."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/mereocausality#> ;
-    rdfs:subClassOf _:872,
+    rdfs:subClassOf _:43,
         emmo:EMMO ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_2d2ecd97_067f_4d0e_950c_d746b7700a31" ;
     ns2:prefLabel "Collection"@en .
@@ -12593,6 +12625,7 @@ emmo:ReshapeManufacturing a owl:Class ;
     emmo:elucidation "A manufacturing in which workpieces are produced from solid raw parts through permanent deformation, provided that neither material is added nor removed."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/manufacturing#> ;
+    rdfs:seeAlso "DIN 8580:2020"@en ;
     rdfs:subClassOf emmo:Werkstücke ;
     ns2:altLabel "Forming"@en ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_2b4783a6_36ad_48c8_8f5d_fe7c05ad298b" ;
@@ -12708,7 +12741,8 @@ emmo:hasHolisticPart a owl:ObjectProperty ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/perspectives/holistic#> ;
     rdfs:range emmo:Role ;
-    rdfs:subPropertyOf emmo:hasHolisticRelation,
+    rdfs:subPropertyOf [ owl:inverseOf emmo:isProperPartOf ],
+        emmo:hasHolisticRelation,
         emmo:hasProperPart ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_8e52c42b_e879_4473_9fa1_4b23428b392b" ;
     ns2:prefLabel "hasHolisticPart"@en .
@@ -12739,19 +12773,6 @@ emmo:hasSpatialSlice a owl:ObjectProperty ;
     ns2:altLabel "hasSpatialIntegralPart"@en ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_f68030be_94b8_4c61_a161_886468558054" ;
     ns2:prefLabel "hasSpatialSlice"@en .
-
-emmo:isOvercrossing a owl:IrreflexiveProperty,
-        owl:ObjectProperty,
-        owl:SymmetricProperty ;
-    emmo:elucidation "The relation between two distinct entities that overlaps."@en ;
-    rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
-        <http://emmo.info/emmo/mereocausality#> ;
-    rdfs:subPropertyOf [ owl:inverseOf emmo:isOverlapping ],
-        emmo:isOverlapping ;
-    owl:equivalentProperty [ owl:inverseOf emmo:isOvercrossing ] ;
-    owl:inverseOf emmo:isOvercrossing ;
-    ns2:exactMatch "http://emmo.info/emmo#EMMO_9cb984ca_48ad_4864_b09e_50d3fff19420" ;
-    ns2:prefLabel "isOvercrossing"@en .
 
 emmo:mereological a owl:ObjectProperty ;
     emmo:comment "The EMMO adheres to Atomistic General Extensional Mereology (AGEM)."@en ;
@@ -13094,6 +13115,7 @@ emmo:SeparateManufacturing a owl:Class ;
     emmo:elucidation "A manufacturing in which the shape of a workpiece is changed by breaking the material cohesion at the processing point and thus the material cohesion is reduced overall."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/manufacturing#> ;
+    rdfs:seeAlso "DIN 8580:2020"@en ;
     rdfs:subClassOf emmo:Werkstücke ;
     ns2:altLabel "CuttingManufacturing"@en ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_90589553_5625_4074_8f0d_0532fd7eb42b" ;
@@ -13113,7 +13135,8 @@ emmo:Werkstücke a owl:Class ;
     emmo:elucidation "A manufacturing with an output that is an object with a specific function, shape, or intended use, not simply a material."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/manufacturing#> ;
-    rdfs:seeAlso """ISO 15531-1:2004
+    rdfs:seeAlso "DIN 8580:2020"@en,
+        """ISO 15531-1:2004
 discrete manufacturing: production of discrete items."""@en,
         """ISO 8887-1:2017
 manufacturing: production of components"""@en ;
@@ -13130,7 +13153,8 @@ emmo:hasDirectPart a owl:ObjectProperty ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/perspectives/reductionistic#> ;
     rdfs:range emmo:Tile ;
-    rdfs:subPropertyOf emmo:hasProperPart ;
+    rdfs:subPropertyOf [ owl:inverseOf emmo:isProperPartOf ],
+        emmo:hasProperPart ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_74a75cf1_3418_4244_b43c_b5db94635d42" ;
     ns2:prefLabel "hasDirectPart"@en .
 
@@ -13158,6 +13182,28 @@ emmo:hasWellFormedTile a owl:AsymmetricProperty,
     rdfs:subPropertyOf emmo:hasDirectPart ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_7efab93d_c8fe_49c7_ba8e_d21d13b38c85" ;
     ns2:prefLabel "hasWellFormedTile"@en .
+
+emmo:isOvercrossedBy a owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    emmo:elucidation "The relation between two distinct entities that overlaps."@en ;
+    rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
+        <http://emmo.info/emmo/mereocausality#> ;
+    rdfs:subPropertyOf [ owl:inverseOf emmo:isOverlapping ],
+        emmo:isOverlapping ;
+    ns2:exactMatch "http://emmo.info/emmo#EMMO_9cb984ca_48ad_4864_b09e_50d3fff19420" ;
+    ns2:prefLabel "isOvercrossedBy"@en .
+
+emmo:isProperPartOf a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
+        <http://emmo.info/emmo/mereocausality#> ;
+    rdfs:subPropertyOf [ owl:inverseOf emmo:hasPart ],
+        emmo:isOvercrossedBy ;
+    owl:equivalentProperty [ owl:inverseOf emmo:hasProperPart ] ;
+    owl:inverseOf emmo:hasProperPart ;
+    ns2:exactMatch "http://emmo.info/emmo#EMMO_559ab98c_1c7d_4794_996c_8c1d8d56381c" ;
+    ns2:prefLabel "isProperPartOf"@en .
 
 emmo:Coded a owl:Class ;
     emmo:elucidation "A conventional that stands for an object according to a code of interpretation to which the interpreter refers."@en ;
@@ -13195,10 +13241,10 @@ emmo:Determination a owl:Class ;
         <http://emmo.info/emmo/perspectives/semiotics#> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty emmo:hasSpatialPart ;
-            owl:someValuesFrom emmo:Property ],
+            owl:someValuesFrom emmo:Determiner ],
         [ a owl:Restriction ;
             owl:onProperty emmo:hasSpatialPart ;
-            owl:someValuesFrom emmo:Determiner ],
+            owl:someValuesFrom emmo:Property ],
         emmo:Declaration ;
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( emmo:Estimation emmo:Observation ) ] ;
@@ -13258,11 +13304,11 @@ On the contrary, the interpreter is an agent recognized by the ontologist. The s
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/perspectives/semiotics#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty [ owl:inverseOf emmo:hasSpatialPart ] ;
-            owl:someValuesFrom emmo:Semiosis ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:hasSpatialSlice ;
             owl:someValuesFrom emmo:Interpretant ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf emmo:hasSpatialPart ] ;
+            owl:someValuesFrom emmo:Semiosis ],
         emmo:CausalSystem,
         emmo:SemioticEntity ;
     owl:equivalentClass [ a owl:Class ;
@@ -13281,14 +13327,14 @@ manufacturing: function or act of converting or transforming material from raw m
 manufacturing process: set of processes in manufacturing involving a flow and/or transformation of material, information, energy, control, or any other element in a manufacturing area"""@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty emmo:hasTemporaryParticipant ;
-            owl:someValuesFrom emmo:ManufacturedProduct ],
-        [ a owl:Restriction ;
-            owl:onProperty emmo:hasTemporaryParticipant ;
             owl:someValuesFrom emmo:Manufacturer ],
         [ a owl:Restriction ;
             owl:onProperty emmo:hasOutput ;
             owl:someValuesFrom emmo:Product ],
-        emmo:IntentionalProcess ;
+        [ a owl:Restriction ;
+            owl:onProperty emmo:hasTemporaryParticipant ;
+            owl:someValuesFrom emmo:ManufacturedProduct ],
+        emmo:IndustrialTechnologyProcess ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_a4d66059_5dd3_4b90_b4cb_10960559441b" ;
     ns2:prefLabel "Manufacturing"@en .
 
@@ -13306,7 +13352,9 @@ emmo:MaterialTreatment a owl:Class ;
     emmo:elucidation "The processing of a material aimed to transform its structure by means of any type of treatment, without involving relevant synthesis phenomena."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/manufacturing#> ;
-    rdfs:subClassOf emmo:MaterialsProcessing ;
+    rdfs:seeAlso "DIN 8580:2020"@en ;
+    rdfs:subClassOf emmo:Manufacturing,
+        emmo:MaterialsProcessing ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_fc859d37_408d_44b6_b345_a0ea0b65121e" ;
     ns2:prefLabel "MaterialTreatment"@en .
 
@@ -13401,12 +13449,12 @@ While the string "1 kg" is a 'Physical Quantity'."""@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/metrology#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onClass emmo:Numerical ;
-            owl:onProperty emmo:hasQuantityValue ;
-            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
-        [ a owl:Restriction ;
             owl:onClass emmo:ReferenceUnit ;
             owl:onProperty emmo:hasReferenceUnit ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onClass emmo:Numerical ;
+            owl:onProperty emmo:hasQuantityValue ;
             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
         emmo:Metrological,
         emmo:SymbolicConstruct,
@@ -13427,7 +13475,7 @@ Using physics concepts, we can think the quantum as an elementary particle (e.g.
 However, the quantum mereotopology approach is not restricted only to physics. For example, in a manpower management ontology, a quantum can stand for an hour (time) of a worker (space) activity."""@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/mereocausality#> ;
-    rdfs:subClassOf _:326,
+    rdfs:subClassOf _:126,
         emmo:Particle ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_3f9ae00e_810c_4518_aec2_7200e424cf68" ;
     ns2:prefLabel "Quantum"@en .
@@ -13524,6 +13572,7 @@ emmo:ArchetypeManufacturing a owl:Class ;
     emmo:elucidation "A manufacturing in which the product is a solid body with a well defined geometrical shape made from shapeless original material parts, whose cohesion is created during the process."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/manufacturing#> ;
+    rdfs:seeAlso "DIN 8580:2020"@en ;
     rdfs:subClassOf emmo:Werkstücke ;
     ns2:altLabel "PrimitiveForming"@en ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_e9244742_c185_4c50_b455_c57654852582" ;
@@ -13541,6 +13590,7 @@ emmo:Fügen a owl:Class ;
     emmo:elucidation "A manufacturing involving the creation of long-term connection of several workpieces."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/manufacturing#> ;
+    rdfs:seeAlso "DIN 8580:2020"@en ;
     rdfs:subClassOf emmo:MergingManufacturing ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_6ab555fd_5803_4f03_82e8_127c01aabfea" ;
     ns2:prefLabel "Fügen"@de,
@@ -13683,11 +13733,11 @@ emmo:CausalChain a owl:Class ;
     emmo:example "An electron with at least one causal interaction with another particle."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/mereocausality#> ;
-    rdfs:subClassOf [ a owl:Restriction ;
+    rdfs:subClassOf _:361,
+        [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Class ;
                     owl:unionOf ( emmo:CausalChain emmo:Quantum ) ] ;
             owl:onProperty emmo:hasTemporalPart ],
-        _:866,
         emmo:CausalObject,
         emmo:Particle ;
     ns2:altLabel "Elementary"@en ;
@@ -13981,23 +14031,25 @@ Entities are not placed in space or time: space and time are always relative bet
     emmo:elucidation "The class of all the OWL individuals declared by EMMO as standing for world entities."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/mereocausality#> ;
-    rdfs:subClassOf _:466,
-        _:760,
+    rdfs:subClassOf _:77,
+        _:78,
         owl:Thing ;
     owl:disjointUnionOf ( emmo:Collection emmo:Item ) ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf" ;
     ns2:prefLabel "EMMO"@en .
 
-emmo:hasPart a owl:ObjectProperty ;
-    emmo:comment "All other mereology relations can be defined in FOL using hasPart as primitive."@en ;
-    emmo:elucidation "The primitive relation that express the concept of an entity being part of another one."@en ;
+emmo:Whole a owl:Class ;
+    emmo:elucidation "An entity which is defined according to a unity criteria that relates holistically its parts to form a whole."@en ;
+    rdfs:comment """A whole is always defined using a criterion expressed through the classical transitive parthood relation.
+This class is expected to host the definition of world objects as they appear in its wholeness, dependently on some of their parts and independently on the surroundings."""@en,
+        "A whole is categorized as fundamental (or maximal) or redundant (non-maximal)."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
-        <http://emmo.info/emmo/mereocausality#> ;
-    rdfs:subPropertyOf [ owl:inverseOf emmo:isOverlapping ],
-        emmo:isOverlapping ;
-    owl:propertyDisjointWith emmo:isOvercrossing ;
-    ns2:exactMatch "http://emmo.info/emmo#EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f" ;
-    ns2:prefLabel "hasPart"@en .
+        <http://emmo.info/emmo/perspectives/holistic#> ;
+    rdfs:subClassOf emmo:Holistic ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf ( emmo:Fundamental emmo:Redundant ) ] ;
+    ns2:exactMatch "http://emmo.info/emmo#EMMO_1efe8b96_e006_4a33_bc9a_421406cbb9f0" ;
+    ns2:prefLabel "Whole"@en .
 
 emmo:SIAcceptedSpecialUnit a owl:Class ;
     emmo:elucidation "Non-SI units mentioned in the SI."@en ;
@@ -14045,18 +14097,16 @@ Symbols of a formal language must be capable of being specified without any refe
     ns2:exactMatch "http://emmo.info/emmo#EMMO_a1083d0a_c1fb_471f_8e20_a98f881ad527" ;
     ns2:prefLabel "Symbol"@en .
 
-emmo:Whole a owl:Class ;
-    emmo:elucidation "An entity which is defined according to a unity criteria that relates holistically its parts to form a whole."@en ;
-    rdfs:comment """A whole is always defined using a criterion expressed through the classical transitive parthood relation.
-This class is expected to host the definition of world objects as they appear in its wholeness, dependently on some of their parts and independently on the surroundings."""@en,
-        "A whole is categorized as fundamental (or maximal) or redundant (non-maximal)."@en ;
+emmo:hasPart a owl:ObjectProperty ;
+    emmo:comment "All other mereology relations can be defined in FOL using hasPart as primitive."@en ;
+    emmo:elucidation "The primitive relation that express the concept of an entity being part of another one."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
-        <http://emmo.info/emmo/perspectives/holistic#> ;
-    rdfs:subClassOf emmo:Holistic ;
-    owl:equivalentClass [ a owl:Class ;
-            owl:unionOf ( emmo:Fundamental emmo:Redundant ) ] ;
-    ns2:exactMatch "http://emmo.info/emmo#EMMO_1efe8b96_e006_4a33_bc9a_421406cbb9f0" ;
-    ns2:prefLabel "Whole"@en .
+        <http://emmo.info/emmo/mereocausality#> ;
+    rdfs:subPropertyOf [ owl:inverseOf emmo:isOverlapping ],
+        emmo:isOverlapping ;
+    owl:propertyDisjointWith emmo:isOvercrossedBy ;
+    ns2:exactMatch "http://emmo.info/emmo#EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f" ;
+    ns2:prefLabel "hasPart"@en .
 
 ns2:altLabel a owl:AnnotationProperty ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
@@ -14138,15 +14188,6 @@ rdfs:seeAlso rdfs:comment """EMMO applies the naming convension to its sub-prope
   - 'Ref': non-resolvable reference to a human readable resource describing the subject"""@en,
         "Indicate a resource that might provide additional information about the subject resource."@en .
 
-emmo:hasProperPart a owl:AsymmetricProperty,
-        owl:ObjectProperty ;
-    emmo:elucidation "The relation between an entity and one of its parts, when both entities are distinct."@en ;
-    rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
-        <http://emmo.info/emmo/mereocausality#> ;
-    rdfs:subPropertyOf emmo:hasPart ;
-    ns2:exactMatch "http://emmo.info/emmo#EMMO_9380ab64_0363_4804_b13f_3a8a94119a76" ;
-    ns2:prefLabel "hasProperPart"@en .
-
 emmo:Process a owl:Class ;
     emmo:comment "A process can be defined only according to an entity type. The minimum process is an entity made of two entities of the same type that are temporally related."@en ;
     emmo:elucidation "A whole that is identified according to a criteria based on its temporal evolution that is satisfied throughout its time extension."@en ;
@@ -14168,6 +14209,16 @@ emmo:SIMetricPrefix a owl:Class ;
     owl:disjointUnionOf ( emmo:Pico emmo:Deci emmo:Deka emmo:Hecto emmo:Femto emmo:Zepto emmo:Tera emmo:Atto emmo:Peta emmo:Exa emmo:Mega emmo:Kilo emmo:Micro emmo:Milli emmo:Giga emmo:Centi emmo:Zetta emmo:Nano emmo:Yotta emmo:Yocto ) ;
     ns2:exactMatch "http://emmo.info/emmo#EMMO_471cb92b_edca_4cf9_bce8_a75084d876b8" ;
     ns2:prefLabel "SIMetricPrefix"@en .
+
+emmo:hasProperPart a owl:AsymmetricProperty,
+        owl:ObjectProperty ;
+    emmo:elucidation "The relation between an entity and one of its parts, when both entities are distinct."@en ;
+    rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
+        <http://emmo.info/emmo/mereocausality#> ;
+    rdfs:subPropertyOf [ owl:inverseOf emmo:isOvercrossedBy ],
+        emmo:hasPart ;
+    ns2:exactMatch "http://emmo.info/emmo#EMMO_9380ab64_0363_4804_b13f_3a8a94119a76" ;
+    ns2:prefLabel "hasProperPart"@en .
 
 emmo:hasVariable a owl:ObjectProperty ;
     rdfs:domain emmo:Mathematical ;
@@ -14378,274 +14429,25 @@ emmo:hasSymbolData a owl:DatatypeProperty,
     ns2:prefLabel "hasSymbolData"@en .
 
 [] a owl:Axiom ;
-    emmo:etymology "From Middle English liftime, equivalent to life +‎ time."@en ;
-    owl:annotatedProperty ns2:altLabel ;
+    emmo:wikipediaReference "https://en.wikipedia.org/wiki/Phase_(matter)"@en ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource emmo:PhaseOfMatter ;
+    owl:annotatedTarget """In the physical sciences, a phase is a region of space (a thermodynamic system), throughout which all physical properties of a material are essentially uniform. Examples of physical properties include density, index of refraction, magnetization and chemical composition. A simple description is that a phase is a region of material that is chemically uniform, physically distinct, and (often) mechanically separable. In a system consisting of ice and water in a glass jar, the ice cubes are one phase, the water is a second phase, and the humid air is a third phase over the ice and water. The glass of the jar is another separate phase.
+
+The term phase is sometimes used as a synonym for state of matter, but there can be several immiscible phases of the same state of matter. Also, the term phase is sometimes used to refer to a set of equilibrium states demarcated in terms of state variables such as pressure and temperature by a phase boundary on a phase diagram. Because phase boundaries relate to changes in the organization of matter, such as a change from liquid to solid or a more subtle change from one crystal structure to another, this latter usage is similar to the use of "phase" as a synonym for state of matter. However, the state of matter and phase diagram usages are not commensurate with the formal definition given above and the intended meaning must be determined in part from the context in which the term is used."""@en .
+
+[] a owl:Axiom ;
+    emmo:etymology """Coined by Stanisław Leśniewski in 1927, from Ancient Greek μέρος (méros, “part”) +‎ -logy (“study, discussion, science”).
+https://en.wiktionary.org/wiki/mereology"""@en ;
+    owl:annotatedProperty ns2:prefLabel ;
+    owl:annotatedSource emmo:mereological ;
+    owl:annotatedTarget "mereological"@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "From Latin fundamentum (“foundation”), from fundō (“to lay the foundation (of something), to found”), from fundus (“bottom”)."@en ;
+    owl:annotatedProperty ns2:prefLabel ;
     owl:annotatedSource emmo:Fundamental ;
-    owl:annotatedTarget "Lifetime"@en .
-
-[] a owl:Axiom ;
-    emmo:etymology "From Old French sambler, sembler, from Late Latin similāre, present active infinitive of similō, from Latin similis, from Proto-Italic *semalis, from Proto-Indo-European *sem- (“together, one”)."@en ;
-    owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:ResemblanceIcon ;
-    owl:annotatedTarget "ResemblanceIcon"@en .
-
-[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "https://en.wiktionary.org/wiki/procedure"^^xsd:anyURI ;
-    owl:annotatedProperty emmo:conceptualisation ;
-    owl:annotatedSource emmo:Procedure ;
-    owl:annotatedTarget "The set of established forms or methods of an organized body for accomplishing a certain task or tasks (Wiktionary)."@en .
-
-[] a owl:Axiom ;
-    emmo:comment "This axiom defines the quantum as a mereological atomistic entity, having no proper parts."@en ;
-    owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource emmo:Quantum ;
-    owl:annotatedTarget _:326 .
-
-[] a owl:Axiom ;
-    emmo:etymology "From Latin observare (“to watch, note, mark, heed, guard, keep, pay attention to, regard, comply with, etc.”), from ob (“before”) + servare (“to keep”),"@en ;
-    owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:Observation ;
-    owl:annotatedTarget "Observation"@en .
-
-[] a owl:Axiom ;
-    emmo:etymology "Old English tōl, from a Germanic base meaning ‘prepare’."@en ;
-    owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:Tool ;
-    owl:annotatedTarget "Tool"@en .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:15531:-1:ed-1:v1:en:term:3.6.9"^^xsd:anyURI ;
-    owl:annotatedProperty rdfs:seeAlso ;
-    owl:annotatedSource emmo:Werkstücke ;
-    owl:annotatedTarget """ISO 15531-1:2004
-discrete manufacturing: production of discrete items."""@en .
-
-[] a owl:Axiom ;
-    emmo:etymology "From Latin arte ‘by or using art’ + factum ‘something made’."@en ;
-    owl:annotatedProperty ns2:altLabel ;
-    owl:annotatedSource emmo:ManufacturedProduct ;
-    owl:annotatedTarget "Artifact"@en .
-
-[] a owl:AllDisjointClasses ;
-    owl:members ( emmo:MolecularEntity emmo:Mesoscopic emmo:Continuum ) .
-
-[] a owl:Axiom ;
-    emmo:etymology "Holism (from Greek ὅλος holos \"all, whole, entire\")."@en ;
-    owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:Holistic ;
-    owl:annotatedTarget "Holistic"@en .
-
-[] a owl:Axiom ;
-    emmo:etymology "EMMO is the acronym of Elementary Multiperspective Material Ontology."@en ;
-    owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:EMMO ;
-    owl:annotatedTarget "EMMO"@en .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy "https://dictionary.iucr.org/Crystal"^^xsd:anyURI ;
-    owl:annotatedProperty emmo:elucidation ;
-    owl:annotatedSource emmo:Crystal ;
-    owl:annotatedTarget """A material is a crystal if it has essentially a sharp diffraction pattern.
-
-A solid is a crystal if it has essentially a sharp diffraction pattern. The word essentially means that most of the intensity of the diffraction is concentrated in relatively sharp Bragg peaks, besides the always present diffuse scattering. In all cases, the positions of the diffraction peaks can be expressed by
-
-
-H=∑ni=1hia∗i  (n≥3)""" .
-
-[] a ns1:Imp ;
-    emmo:comment "Enforcing the fact that an entity cannot cause itself."@en ;
-    ns1:body [ a ns1:AtomList ;
-            rdf:first [ a ns1:ClassAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:classPredicate emmo:EMMO ] ;
-            rdf:rest () ] ;
-    ns1:head [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#x> ;
-                    ns1:propertyPredicate emmo:isNotCauseOf ] ;
-            rdf:rest () ] .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "http://www.linfo.org/program.html"^^xsd:anyURI ;
-    owl:annotatedProperty emmo:comment ;
-    owl:annotatedSource emmo:Software ;
-    owl:annotatedTarget """Software is usually used as a generic term for programs. However, in its broadest sense it can refer to all information (i.e., both programs and data) in electronic form and can provide a distinction from hardware, which refers to computers or other electronic systems on which software can exist and be use.
-Here we explicitly include in the definition also all the data (e.g. source code, script files) that takes part to the building of the executable, are necessary to the execution of a program or that document it for the users."""@en .
-
-[] owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger .
-
-[] a owl:Axiom ;
-    emmo:etymology "From Old French chaine, chaene (“chain”), from Latin catēna (“chain”)."@en ;
-    owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:CausalChain ;
-    owl:annotatedTarget "CausalChain"@en .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:3252:ed-5:v1:en:term:3.3.32"^^xsd:anyURI ;
-    owl:annotatedProperty rdfs:seeAlso ;
-    owl:annotatedSource emmo:LiquidPhaseSintering ;
-    owl:annotatedTarget """ISO 3252:2019 Powder metallurgy
-liquid-phase sintering: sintering of a powder or compact containing at least two constituents, under conditions such that a liquid phase is formed"""@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#Global_Restrictions_on_Axioms_in_OWL_2_DL"^^xsd:anyURI ;
-    owl:annotatedProperty emmo:elucidation ;
-    owl:annotatedSource emmo:OWLDLRestrictedAxiom ;
-    owl:annotatedTarget "Axiom not included in the theory because of OWL 2 DL global restrictions for decidability."@en .
-
-[] a owl:Axiom ;
-    emmo:etymology "From Latin causa (“reason, sake, cause”), and Ancient Greek σύστημα (sústēma, “musical scale; organized body; whole made of several parts or members”), from σῠν- (sun-, prefix meaning ‘with, together’) + ἵστημι (hístēmi, “to stand”)."@en ;
-    owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:CausalSystem ;
-    owl:annotatedTarget "CausalSystem"@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "https://en.wikipedia.org/wiki/Semiotic_theory_of_Charles_Sanders_Peirce#II._Icon,_index,_symbol"^^xsd:anyURI ;
-    owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:Icon ;
-    owl:annotatedTarget """In Peirce semiotics three subtypes of icon are possible:
-(a) the image, which depends on a simple quality (e.g. picture)
-(b) the diagram, whose internal relations, mainly dyadic or so taken, represent by analogy the relations in something (e.g. math formula, geometric flowchart)
-(c) the metaphor, which represents the representative character of a sign by representing a parallelism in something else
-[Wikipedia]"""@en .
-
-[] a ns1:Imp ;
-    ns1:body [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#y> ;
-                    ns1:propertyPredicate emmo:hasTemporalTile ] ;
-            rdf:rest [ a ns1:AtomList ;
-                    rdf:first [ a ns1:ClassAtom ;
-                            ns1:argument1 <urn:swrl:var#x> ;
-                            ns1:classPredicate emmo:Sequence ] ;
-                    rdf:rest () ] ] ;
-    ns1:head [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#y> ;
-                    ns1:propertyPredicate emmo:hasTemporalSlice ] ;
-            rdf:rest () ] .
-
-[] a owl:Axiom ;
-    emmo:etymology "From Latin manu factum (\"made by hand\")."@en ;
-    owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:Manufacturing ;
-    owl:annotatedTarget "Manufacturing"@en .
-
-[] a owl:Axiom ;
-    emmo:comment "Every collection has at least two item members, since a collection of one item is a self-connected entity (and then an item)."@en ;
-    owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource emmo:Collection ;
-    owl:annotatedTarget _:872 .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:3252:ed-5:v1:en:term:3.3.60"^^xsd:anyURI ;
-    owl:annotatedProperty rdfs:seeAlso ;
-    owl:annotatedSource emmo:Sintering ;
-    owl:annotatedTarget """ISO 3252:2019 Powder metallurgy
-sintering: thermal treatment of a powder or compact, at a temperature below the melting point of the main constituent, for the purpose of increasing its strength by the metallurgical bonding of its particles"""@en .
-
-[] a owl:Axiom ;
-    emmo:etymology "From the Ancient Greek γραφή (graphḗ) which means drawing, painting, writing, a writing, description, and from γράφω (gráphō) which means scratch, carve."@en ;
-    rdfs:comment "The term graphical is used in etymological sense, comprising both writings and visual arts."@en ;
-    owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:Graphical ;
-    owl:annotatedTarget "Graphical"@en .
-
-[] a owl:AllDisjointClasses ;
-    owl:members ( emmo:Fork emmo:Sequence emmo:Join ) .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "https://en.wiktionary.org/wiki/Wiktionary"@en ;
-    owl:annotatedProperty emmo:comment ;
-    owl:annotatedSource emmo:etymology ;
-    owl:annotatedTarget "Definitions are usually taken from Wiktionary."@en .
-
-[] a owl:Axiom ;
-    emmo:etymology "From Latin intentionem, derived from intendere (\"stretching out\")"@en ;
-    owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:IntentionalProcess ;
-    owl:annotatedTarget "IntentionalProcess"@en .
-
-[] a owl:Axiom ;
-    emmo:etymology "From Greek, nominative plural form of δεδομένο (dedoméno) (data, information)"@en ;
-    owl:annotatedProperty ns2:altLabel ;
-    owl:annotatedSource emmo:Data ;
-    owl:annotatedTarget "Dedomena"@en .
-
-[] a owl:Axiom ;
-    emmo:etymology "From Latin māchina (“a machine, engine, contrivance, device, stratagem, trick”), from Doric Greek μᾱχᾰνᾱ́ (mākhanā́), cognate with Attic Greek μηχᾰνή (mēkhanḗ, “a machine, engine, contrivance, device”), from which comes mechanical."@en ;
-    owl:annotatedProperty ns2:altLabel ;
-    owl:annotatedSource emmo:Device ;
-    owl:annotatedTarget "Machine"@en .
-
-[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
-
-[] a owl:Axiom ;
-    emmo:etymology "From Ancient Greek κρύσταλλος (krústallos, “clear ice”), from κρύος (krúos, “frost”)."@en ;
-    owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:Crystal ;
-    owl:annotatedTarget "Crystal"@en .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy "https://www.iso.org/obp/ui/fr/#iso:std:iso-iec:2382:-1:ed-3:en"@en ;
-    owl:annotatedProperty emmo:elucidation ;
-    owl:annotatedSource emmo:Software ;
-    owl:annotatedTarget "All or part of the programs, procedures, rules, and associated documentation of an information processing system."@en .
-
-[] a owl:Axiom ;
-    emmo:etymology "From Old French asembler, based on Latin ad- ‘to’ + simul ‘together’."@en ;
-    owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:Assemblying ;
-    owl:annotatedTarget "Assemblying"@en .
-
-[] a owl:Axiom ;
-    emmo:etymology "From Latin manufacture: \"made by hand\"."@en ;
-    owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:ManufacturedProduct ;
-    owl:annotatedTarget "ManufacturedProduct"@en .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy "https://www.iso.org/standard/45324.html"^^xsd:anyURI ;
-    owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:Measurement ;
-    owl:annotatedTarget "A measurement is the process of experimentally obtaining one or more measurement results that can reasonably be attributed to a quantity."@en .
-
-[] a owl:Axiom ;
-    emmo:etymology "From Latin quantum (plural quanta) \"as much as, so much as\"."@en ;
-    owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:Quantum ;
-    owl:annotatedTarget "Quantum"@en .
-
-[] a owl:Axiom ;
-    emmo:etymology "From Latin causa (“reason, sake, cause”)."@en ;
-    owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:isCauseOf ;
-    owl:annotatedTarget "isCauseOf"@en .
-
-[] a owl:Axiom ;
-    emmo:etymology "From Latin documentum, from the verb doceō (“teach”) +‎ -mentum."@en ;
-    owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:Document ;
-    owl:annotatedTarget "Document"@en .
-
-[] a owl:Axiom ;
-    emmo:etymology "From Latin particula (“small part, particle”), diminutive of pars (“part, piece”)."@en ;
-    owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:Particle ;
-    owl:annotatedTarget "Particle"@en .
-
-[] a owl:Axiom ;
-    emmo:comment "All EMMO individuals are part of the most comprehensive entity which is the universe."@en ;
-    owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource emmo:EMMO ;
-    owl:annotatedTarget _:466 .
-
-[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+    owl:annotatedTarget "Fundamental"@en .
 
 [] a owl:Axiom ;
     emmo:example "The electronical state of the RAM of my laptop is decoded by it as ASCII characters and printed on the screen."@en ;
@@ -14654,72 +14456,17 @@ sintering: thermal treatment of a powder or compact, at a temperature below the 
     owl:annotatedTarget """We call "decoding" the act of recognise the variation according to a particular rule and generate another equivalent schema (e.g. in the agent's cognitive apparatus, as another form of data).
 We call "interpreting" the act of providing semantic meaning to data, which is covered by the semiotic perspective."""@en .
 
-[] a ns1:Imp ;
-    emmo:comment "Enforcing exclusivity between overlapping and causality."@en ;
-    ns1:body [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#y> ;
-                    ns1:propertyPredicate emmo:isCauseOf ] ;
-            rdf:rest () ] ;
-    ns1:head [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#y> ;
-                    ns1:propertyPredicate emmo:isNotOverlapping ] ;
-            rdf:rest () ] .
-
-[] a ns1:Imp ;
-    emmo:comment "Enforcing parthood reflexivity."@en ;
-    ns1:body [ a ns1:AtomList ;
-            rdf:first [ a ns1:ClassAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:classPredicate emmo:EMMO ] ;
-            rdf:rest () ] ;
-    ns1:head [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#x> ;
-                    ns1:propertyPredicate emmo:hasPart ] ;
-            rdf:rest () ] .
+[] a owl:Axiom ;
+    emmo:comment "All EMMO individuals are part of the most comprehensive entity which is the universe."@en ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource emmo:EMMO ;
+    owl:annotatedTarget _:78 .
 
 [] a owl:Axiom ;
     emmo:etymology "From Ancient Greek εἰκών (eikṓn, “likeness, image, portrait”)."@en ;
     owl:annotatedProperty ns2:prefLabel ;
     owl:annotatedSource emmo:Icon ;
     owl:annotatedTarget "Icon"@en .
-
-[] a owl:Axiom ;
-    emmo:etymology "ex-sistere (latin): to stay (to persist through time) outside others of the same type (to be distinct from the rest)."@en ;
-    owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:Existent ;
-    owl:annotatedTarget "Existent"@en .
-
-[] a owl:Axiom ;
-    emmo:etymology "From Ancient Greek σύμβολον (súmbolon, “a sign by which one infers something; a mark, token, badge, ticket, tally, check, a signal, watchword, outward sign”), from συμβάλλω (sumbállō, “I throw together, dash together, compare, correspond, tally, come to a conclusion”), from σύν (sún, “with, together”) + βάλλω (bállō, “I throw, put”)." ;
-    owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:Symbolic ;
-    owl:annotatedTarget "Symbolic"@en .
-
-[] a owl:Axiom ;
-    emmo:etymology "From Latin index (“a discoverer, informer, spy; of things, an indicator, the forefinger, a title, superscription”), from indicō (“point out, show”)."@en ;
-    owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:Index ;
-    owl:annotatedTarget "Index"@en .
-
-[] a owl:Axiom ;
-    emmo:etymology "From Latin modus (“measure”)."@en ;
-    owl:annotatedProperty ns2:altLabel ;
-    owl:annotatedSource emmo:Icon ;
-    owl:annotatedTarget "Model"@en .
-
-[] owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "https://emmc.info/wp-content/uploads/2018/05/CWA_17284.pdf"^^xsd:anyURI ;
-    owl:annotatedProperty rdfs:isDefinedBy ;
-    owl:annotatedSource emmo:PhysicsBasedModel ;
-    owl:annotatedTarget "CEN Workshop Agreement – CWA 17284 “Materials modelling – terminology, classification and metadata”"@en .
 
 [] a owl:Axiom ;
     rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:3252:ed-5:v1:en:term:3.3.33"^^xsd:anyURI ;
@@ -14729,62 +14476,65 @@ We call "interpreting" the act of providing semantic meaning to data, which is c
 loose-powder sintering, gravity sintering: sintering of uncompacted powder"""@en .
 
 [] a owl:Axiom ;
-    emmo:etymology "From Latin productum ‘something produced’, derived from Latin producere, from pro- ‘forward’ + ducere ‘to lead’."@en ;
+    emmo:etymology "EMMO is the acronym of Elementary Multiperspective Material Ontology."@en ;
     owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:Product ;
-    owl:annotatedTarget "Product"@en .
+    owl:annotatedSource emmo:EMMO ;
+    owl:annotatedTarget "EMMO"@en .
 
 [] a owl:Axiom ;
-    emmo:etymology "From the word 'holistic' with the 'w-' prefix, due to the affinity with the existing word 'whole', that share the same meaning of 'holos'."@en ;
+    emmo:comment "The axiom should impose cardinality two, but due to transitivity, it would create a non-simple object property, preventing the use of reasoners."@en ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource emmo:CausalChain ;
+    owl:annotatedTarget _:361 .
+
+[] a owl:Axiom ;
+    emmo:etymology "Old English tōl, from a Germanic base meaning ‘prepare’."@en ;
+    owl:annotatedProperty ns2:prefLabel ;
+    owl:annotatedSource emmo:Tool ;
+    owl:annotatedTarget "Tool"@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "From Latin cognitio (“knowledge, perception, a judicial examination, trial”), from cognitus, past participle of cognoscere (“to know”), from co- (“together”) + *gnoscere, older form of noscere (“to know”"@en ;
+    owl:annotatedProperty ns2:prefLabel ;
+    owl:annotatedSource emmo:Cogniser ;
+    owl:annotatedTarget "Cogniser"@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "From Latin arte ‘by or using art’ + factum ‘something made’."@en ;
     owl:annotatedProperty ns2:altLabel ;
-    owl:annotatedSource emmo:Holistic ;
-    owl:annotatedTarget "Wholistic"@en .
-
-[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
-
-[] owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger .
+    owl:annotatedSource emmo:ManufacturedProduct ;
+    owl:annotatedTarget "Artifact"@en .
 
 [] a owl:Axiom ;
-    emmo:etymology "From Ancient Greek ἀναλογία (analogía), from ἀνά (aná) + λόγος (lógos, “speech, reckoning”)."@en ;
+    rdfs:isDefinedBy "http://www.linfo.org/program.html"^^xsd:anyURI ;
+    owl:annotatedProperty emmo:comment ;
+    owl:annotatedSource emmo:Program ;
+    owl:annotatedTarget "A program is a sequence of instructions understandable by a computer's central processing unit (CPU) that indicates which operations the computer should perform on a set of data."@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "From late Latin tangibilis, from tangere ‘to touch’."@en ;
+    owl:annotatedProperty ns2:altLabel ;
+    owl:annotatedSource emmo:ManufacturedProduct ;
+    owl:annotatedTarget "TangibleProduct"@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "From Latin māchina (“a machine, engine, contrivance, device, stratagem, trick”), from Doric Greek μᾱχᾰνᾱ́ (mākhanā́), cognate with Attic Greek μηχᾰνή (mēkhanḗ, “a machine, engine, contrivance, device”), from which comes mechanical."@en ;
+    owl:annotatedProperty ns2:altLabel ;
+    owl:annotatedSource emmo:Device ;
+    owl:annotatedTarget "Machine"@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "From Latin observare (“to watch, note, mark, heed, guard, keep, pay attention to, regard, comply with, etc.”), from ob (“before”) + servare (“to keep”),"@en ;
     owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:AnalogicalIcon ;
-    owl:annotatedTarget "AnalogicalIcon"@en .
+    owl:annotatedSource emmo:Observation ;
+    owl:annotatedTarget "Observation"@en .
 
 [] a owl:Axiom ;
-    emmo:etymology "From medieval Latin perspectiva ‘(science of) optics’, from perspect- ‘looked at closely’, from the verb perspicere, from per- ‘through’ + specere ‘to look’."@en ;
-    owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:Perspective ;
-    owl:annotatedTarget "Perspective"@en .
-
-[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
-
-[] owl:qualifiedCardinality "3"^^xsd:nonNegativeInteger .
-
-[] a owl:Axiom ;
-    emmo:etymology "From Latin data, nominative plural of datum (“that is given”), neuter past participle of dō (“I give”)."@en ;
-    owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:Data ;
-    owl:annotatedTarget "Data"@en .
-
-[] owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger .
-
-[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
-
-[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
-
-[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
-
-[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
-
-[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
-
-[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "https://emmc.info/wp-content/uploads/2018/05/CWA_17284.pdf" ;
-    owl:annotatedProperty rdfs:isDefinedBy ;
-    owl:annotatedSource emmo:PhysicsBasedSimulation ;
-    owl:annotatedTarget "CEN Workshop Agreement – CWA 17284 “Materials modelling – terminology, classification and metadata”"@en .
+    rdfs:seeAlso "http://www.linfo.org/program.html"^^xsd:anyURI ;
+    owl:annotatedProperty emmo:comment ;
+    owl:annotatedSource emmo:Software ;
+    owl:annotatedTarget """Software is usually used as a generic term for programs. However, in its broadest sense it can refer to all information (i.e., both programs and data) in electronic form and can provide a distinction from hardware, which refers to computers or other electronic systems on which software can exist and be use.
+Here we explicitly include in the definition also all the data (e.g. source code, script files) that takes part to the building of the executable, are necessary to the execution of a program or that document it for the users."""@en .
 
 [] a owl:Axiom ;
     emmo:etymology "From Latin physica \"study of nature\" (and Ancient Greek φυσικός, “natural”), and Medieval Latin obiectum (“object”, literally “thrown against”)."@en ;
@@ -14793,22 +14543,125 @@ loose-powder sintering, gravity sintering: sintering of uncompacted powder"""@en
     owl:annotatedTarget "PhysicalObject"@en .
 
 [] a owl:Axiom ;
-    emmo:etymology "From Latin proprietas (“a peculiarity, one's peculiar nature or quality, right or fact of possession, property”), from proprius (“special, particular, one's own”)."@en ;
-    owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:Property ;
-    owl:annotatedTarget "Property"@en .
+    emmo:comment "Every collection has at least two item members, since a collection of one item is a self-connected entity (and then an item)."@en ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource emmo:Collection ;
+    owl:annotatedTarget _:43 .
 
 [] a owl:Axiom ;
-    emmo:etymology "From soft +‎ -ware, by contrast with hardware (“the computer itself”). Coined by Paul Niquette in 1953."@en ;
-    owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:Software ;
-    owl:annotatedTarget "Software"@en .
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:15531:-1:ed-1:v1:en:term:3.6.22"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:seeAlso ;
+    owl:annotatedSource emmo:Manufacturing ;
+    owl:annotatedTarget """ISO 15531-1:2004
+manufacturing: function or act of converting or transforming material from raw material or semi-finished state to a state of further completion"""@en .
 
 [] a owl:Axiom ;
-    emmo:etymology "From Latin elementārius (“elementary”), from elementum (“one of the four elements of antiquity; fundamentals”)."@en ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:15531:-1:ed-1:v1:en:term:3.6.9"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:seeAlso ;
+    owl:annotatedSource emmo:Werkstücke ;
+    owl:annotatedTarget """ISO 15531-1:2004
+discrete manufacturing: production of discrete items."""@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "From French rôle, from obsolete French roule ‘roll’, referring originally to the roll of paper on which the actor's part was written."@en ;
+    owl:annotatedProperty ns2:prefLabel ;
+    owl:annotatedSource emmo:Role ;
+    owl:annotatedTarget "Role"@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "ex-sistere (latin): to stay (to persist through time) outside others of the same type (to be distinct from the rest)."@en ;
+    owl:annotatedProperty ns2:prefLabel ;
+    owl:annotatedSource emmo:Existent ;
+    owl:annotatedTarget "Existent"@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "From Old French sambler, sembler, from Late Latin similāre, present active infinitive of similō, from Latin similis, from Proto-Italic *semalis, from Proto-Indo-European *sem- (“together, one”)."@en ;
+    owl:annotatedProperty ns2:prefLabel ;
+    owl:annotatedSource emmo:ResemblanceIcon ;
+    owl:annotatedTarget "ResemblanceIcon"@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "From Latin documentum, from the verb doceō (“teach”) +‎ -mentum."@en ;
+    owl:annotatedProperty ns2:prefLabel ;
+    owl:annotatedSource emmo:Document ;
+    owl:annotatedTarget "Document"@en .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso-astm:tr:52906:ed-1:v1:en:term:3.9"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:seeAlso ;
+    owl:annotatedSource emmo:Sintering ;
+    owl:annotatedTarget """ISO/ASTM TR 52906:2022 Additive manufacturing
+sintering: process of heating a powder metal compact to increase density and/or improve mechanical properties via solid state diffusion"""@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "From Middle English hole (“healthy, unhurt, whole”)."@en ;
+    owl:annotatedProperty ns2:prefLabel ;
+    owl:annotatedSource emmo:Whole ;
+    owl:annotatedTarget "Whole"@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "From Latin modus (“measure”)."@en ;
     owl:annotatedProperty ns2:altLabel ;
-    owl:annotatedSource emmo:CausalChain ;
-    owl:annotatedTarget "Elementary"@en .
+    owl:annotatedSource emmo:Icon ;
+    owl:annotatedTarget "Model"@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "From Greek, nominative plural form of δεδομένο (dedoméno) (data, information)"@en ;
+    owl:annotatedProperty ns2:altLabel ;
+    owl:annotatedSource emmo:Data ;
+    owl:annotatedTarget "Dedomena"@en .
+
+[] a owl:Axiom ;
+    emmo:comment """The union implies that world entities can only be items or collections (standing for a collection of causally disconnected items).
+Disjointness means that a collection cannot be an item and viceversa, representing the fact that a world entity cannot be causally self-connected and non-self connected at the same time."""@en ;
+    owl:annotatedProperty emmo:definition ;
+    owl:annotatedSource emmo:EMMO ;
+    owl:annotatedTarget "The disjoint union of the Item and Collection classes."@en .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/fr/#iso:std:iso-iec:2382:-1:ed-3:en"@en ;
+    owl:annotatedProperty emmo:elucidation ;
+    owl:annotatedSource emmo:Software ;
+    owl:annotatedTarget "All or part of the programs, procedures, rules, and associated documentation of an information processing system."@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "From Latin particula (“small part, particle”), diminutive of pars (“part, piece”)."@en ;
+    owl:annotatedProperty ns2:prefLabel ;
+    owl:annotatedSource emmo:Particle ;
+    owl:annotatedTarget "Particle"@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "From Latin lingua (“tongue, speech, language”), from Old Latin dingua (“tongue”)."@en ;
+    owl:annotatedProperty ns2:prefLabel ;
+    owl:annotatedSource emmo:Language ;
+    owl:annotatedTarget "Language"@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "From Latin manu factum (\"made by hand\")."@en ;
+    owl:annotatedProperty ns2:prefLabel ;
+    owl:annotatedSource emmo:Manufacturing ;
+    owl:annotatedTarget "Manufacturing"@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "Holism (from Greek ὅλος holos \"all, whole, entire\")."@en ;
+    owl:annotatedProperty ns2:prefLabel ;
+    owl:annotatedSource emmo:Holistic ;
+    owl:annotatedTarget "Holistic"@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "From Latin particula (“small part, particle”), diminutive of pars (“part, piece”)."@en ;
+    owl:annotatedProperty ns2:altLabel ;
+    owl:annotatedSource emmo:PhysicalParticle ;
+    owl:annotatedTarget "Particle"@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#Global_Restrictions_on_Axioms_in_OWL_2_DL"^^xsd:anyURI ;
+    owl:annotatedProperty emmo:elucidation ;
+    owl:annotatedSource emmo:OWLDLRestrictedAxiom ;
+    owl:annotatedTarget "Axiom not included in the theory because of OWL 2 DL global restrictions for decidability."@en .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( emmo:MolecularEntity emmo:Mesoscopic emmo:Continuum ) .
 
 [] a owl:Axiom ;
     emmo:etymology "From Latin item, \"likewise, just so, moreover\"."@en ;
@@ -14817,22 +14670,10 @@ loose-powder sintering, gravity sintering: sintering of uncompacted powder"""@en
     owl:annotatedTarget "Item"@en .
 
 [] a owl:Axiom ;
-    emmo:etymology "From Latin percipiō, past participle perceptus (“take hold of, obtain, receive, observe”), from per (“by, through”) + capiō (“to take”)."@en ;
+    emmo:etymology "From Latin causa (“reason, sake, cause”)."@en ;
     owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:Perceptual ;
-    owl:annotatedTarget "Perceptual"@en .
-
-[] a owl:Axiom ;
-    emmo:etymology "From Latin functiō (“performance, execution”), from functus, perfect participle of fungor (“to perform, execute, discharge”)."@en ;
-    owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:FunctionalIcon ;
-    owl:annotatedTarget "FunctionalIcon"@en .
-
-[] a owl:Axiom ;
-    emmo:etymology "From Latin fundamentum (“foundation”), from fundō (“to lay the foundation (of something), to found”), from fundus (“bottom”)."@en ;
-    owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:Fundamental ;
-    owl:annotatedTarget "Fundamental"@en .
+    owl:annotatedSource emmo:isCauseOf ;
+    owl:annotatedTarget "isCauseOf"@en .
 
 [] a ns1:Imp ;
     emmo:comment "Transitivity for proper parthood."@en ;
@@ -14855,61 +14696,10 @@ loose-powder sintering, gravity sintering: sintering of uncompacted powder"""@en
             rdf:rest () ] .
 
 [] a owl:Axiom ;
-    emmo:etymology """Coined by Stanisław Leśniewski in 1927, from Ancient Greek μέρος (méros, “part”) +‎ -logy (“study, discussion, science”).
-https://en.wiktionary.org/wiki/mereology"""@en ;
+    emmo:etymology "From Latin data, nominative plural of datum (“that is given”), neuter past participle of dō (“I give”)."@en ;
     owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:mereological ;
-    owl:annotatedTarget "mereological"@en .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:8887:-1:ed-1:v1:en:term:3.1.5"^^xsd:anyURI ;
-    owl:annotatedProperty rdfs:seeAlso ;
-    owl:annotatedSource emmo:Werkstücke ;
-    owl:annotatedTarget """ISO 8887-1:2017
-manufacturing: production of components"""@en .
-
-[] a owl:Axiom ;
-    emmo:etymology "From Latin cognitio (“knowledge, perception, a judicial examination, trial”), from cognitus, past participle of cognoscere (“to know”), from co- (“together”) + *gnoscere, older form of noscere (“to know”"@en ;
-    owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:Cogniser ;
-    owl:annotatedTarget "Cogniser"@en .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy "http://www.linfo.org/source_code.html"^^xsd:anyURI ;
-    owl:annotatedProperty emmo:comment ;
-    owl:annotatedSource emmo:SourceCode ;
-    owl:annotatedTarget "Source code (also referred to as source or code) is the version of software as it is originally written (i.e., typed into a computer) by a human in plain text (i.e., human readable alphanumeric characters)."@en .
-
-[] a owl:Axiom ;
-    emmo:etymology "From Latin particula (“small part, particle”), diminutive of pars (“part, piece”)."@en ;
-    owl:annotatedProperty ns2:altLabel ;
-    owl:annotatedSource emmo:PhysicalParticle ;
-    owl:annotatedTarget "Particle"@en .
-
-[] a owl:Axiom ;
-    emmo:wikipediaReference "https://en.wikipedia.org/wiki/Tessellation"^^xsd:anyURI ;
-    owl:annotatedProperty emmo:conceptualisation ;
-    owl:annotatedSource emmo:Tessellation ;
-    owl:annotatedTarget "A tessellation (or tiling) is the covering of a surface, often a plane, using one or more geometric shapes, called tiles, with no overlaps and no gaps."@en .
-
-[] a owl:Axiom ;
-    emmo:etymology "From Latin collectio, from colligere ‘gather together’."@en ;
-    owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:Collection ;
-    owl:annotatedTarget "Collection"@en .
-
-[] a owl:Axiom ;
-    emmo:wikipediaReference "https://en.wikipedia.org/wiki/Variable_(mathematics)"^^xsd:anyURI ;
-    owl:annotatedProperty emmo:elucidation ;
-    owl:annotatedSource emmo:Variable ;
-    owl:annotatedTarget "A variable is a symbolic object that stands for any other mathematical object, such as  number, a vector, a matrix, a function, the argument of a function, a set, an element of a set."@en .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:18435:-1:ed-1:v1:en:term:3.16"^^xsd:anyURI ;
-    owl:annotatedProperty rdfs:seeAlso ;
-    owl:annotatedSource emmo:Manufacturing ;
-    owl:annotatedTarget """ISO 18435-1:2009
-manufacturing process: set of processes in manufacturing involving a flow and/or transformation of material, information, energy, control, or any other element in a manufacturing area"""@en .
+    owl:annotatedSource emmo:Data ;
+    owl:annotatedTarget "Data"@en .
 
 [] a owl:Axiom ;
     emmo:etymology "From Latin partire, partiri ‘divide, share’."@en ;
@@ -14918,31 +14708,42 @@ manufacturing process: set of processes in manufacturing involving a flow and/or
     owl:annotatedTarget "Part"@en .
 
 [] a owl:Axiom ;
-    emmo:wikipediaReference "https://en.wikipedia.org/wiki/Phase_(matter)"@en ;
-    owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:PhaseOfMatter ;
-    owl:annotatedTarget """In the physical sciences, a phase is a region of space (a thermodynamic system), throughout which all physical properties of a material are essentially uniform. Examples of physical properties include density, index of refraction, magnetization and chemical composition. A simple description is that a phase is a region of material that is chemically uniform, physically distinct, and (often) mechanically separable. In a system consisting of ice and water in a glass jar, the ice cubes are one phase, the water is a second phase, and the humid air is a third phase over the ice and water. The glass of the jar is another separate phase.
+    rdfs:seeAlso "https://en.wiktionary.org/wiki/Wiktionary"@en ;
+    owl:annotatedProperty emmo:comment ;
+    owl:annotatedSource emmo:etymology ;
+    owl:annotatedTarget "Definitions are usually taken from Wiktionary."@en .
 
-The term phase is sometimes used as a synonym for state of matter, but there can be several immiscible phases of the same state of matter. Also, the term phase is sometimes used to refer to a set of equilibrium states demarcated in terms of state variables such as pressure and temperature by a phase boundary on a phase diagram. Because phase boundaries relate to changes in the organization of matter, such as a change from liquid to solid or a more subtle change from one crystal structure to another, this latter usage is similar to the use of "phase" as a synonym for state of matter. However, the state of matter and phase diagram usages are not commensurate with the formal definition given above and the intended meaning must be determined in part from the context in which the term is used."""@en .
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
 
 [] a owl:Axiom ;
-    emmo:etymology "Fom Latin variabilis (\"changeable\")."@en ;
+    emmo:etymology "From Latin causa (“reason, sake, cause”), and Ancient Greek σύστημα (sústēma, “musical scale; organized body; whole made of several parts or members”), from σῠν- (sun-, prefix meaning ‘with, together’) + ἵστημι (hístēmi, “to stand”)."@en ;
     owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:Variable ;
-    owl:annotatedTarget "Variable"@en .
+    owl:annotatedSource emmo:CausalSystem ;
+    owl:annotatedTarget "CausalSystem"@en .
 
 [] a owl:Axiom ;
-    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:ts:16791:ed-2:v1:en:term:3.1.17"^^xsd:anyURI ;
-    owl:annotatedProperty rdfs:seeAlso ;
-    owl:annotatedSource emmo:CompleteManufacturing ;
-    owl:annotatedTarget """ISO/TS 16791:2020
-manufacturing, manufacture: process of production from the acquisition of all materials through all processing stages, including final packaging"""@en .
-
-[] a owl:Axiom ;
-    emmo:etymology "From Middle English hole (“healthy, unhurt, whole”)."@en ;
+    emmo:etymology "From Latin con- +‎ putō (“I reckon”)."@en ;
     owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:Whole ;
-    owl:annotatedTarget "Whole"@en .
+    owl:annotatedSource emmo:Computation ;
+    owl:annotatedTarget "Computation"@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "From Latin collectio, from colligere ‘gather together’."@en ;
+    owl:annotatedProperty ns2:prefLabel ;
+    owl:annotatedSource emmo:Collection ;
+    owl:annotatedTarget "Collection"@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "From Latin causa (“reason, sake, cause”), and Medieval Latin obiectum (“object”, literally “thrown against”)."@en ;
+    owl:annotatedProperty ns2:prefLabel ;
+    owl:annotatedSource emmo:CausalObject ;
+    owl:annotatedTarget "CausalObject"@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "From Latin elementārius (“elementary”), from elementum (“one of the four elements of antiquity; fundamentals”)."@en ;
+    owl:annotatedProperty ns2:altLabel ;
+    owl:annotatedSource emmo:CausalChain ;
+    owl:annotatedTarget "Elementary"@en .
 
 [] a owl:Axiom ;
     rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:3252:ed-5:v1:en:term:3.3.55"^^xsd:anyURI ;
@@ -14950,6 +14751,32 @@ manufacturing, manufacture: process of production from the acquisition of all ma
     owl:annotatedSource emmo:ReactionSintering ;
     owl:annotatedTarget """ISO 3252:2019 Powder metallurgy
 reaction sintering: process wherein at least two constituents of a powder mixture react during sintering"""@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "From Latin pro-cedere (“to go forward, to proceed”)."@en ;
+    owl:annotatedProperty ns2:prefLabel ;
+    owl:annotatedSource emmo:Procedure ;
+    owl:annotatedTarget "Procedure"@en .
+
+[] a ns1:Imp ;
+    emmo:comment "Enforcing reflexivity of overlapping."@en ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 <urn:swrl:var#x> ;
+                    ns1:classPredicate emmo:EMMO ] ;
+            rdf:rest () ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 <urn:swrl:var#x> ;
+                    ns1:argument2 <urn:swrl:var#x> ;
+                    ns1:propertyPredicate emmo:isOverlapping ] ;
+            rdf:rest () ] .
+
+[] a owl:Axiom ;
+    emmo:etymology "From Latin simulacrum (\"likeness, semblance\")"@en ;
+    owl:annotatedProperty ns2:altLabel ;
+    owl:annotatedSource emmo:Icon ;
+    owl:annotatedTarget "Simulacrum"@en .
 
 [] a ns1:Imp ;
     ns1:body [ a ns1:AtomList ;
@@ -14965,41 +14792,77 @@ reaction sintering: process wherein at least two constituents of a powder mixtur
             rdf:rest () ] .
 
 [] a owl:Axiom ;
-    emmo:etymology "From Latin lingua (“tongue, speech, language”), from Old Latin dingua (“tongue”)."@en ;
-    owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:Language ;
-    owl:annotatedTarget "Language"@en .
-
-[] a owl:Axiom ;
-    emmo:etymology "From French équipement, from équiper ‘equip’."@en ;
-    owl:annotatedProperty ns2:altLabel ;
-    owl:annotatedSource emmo:Device ;
-    owl:annotatedTarget "Equipment"@en .
-
-[] a owl:Axiom ;
-    emmo:etymology "From Latin simulacrum (\"likeness, semblance\")"@en ;
-    owl:annotatedProperty ns2:altLabel ;
-    owl:annotatedSource emmo:Icon ;
-    owl:annotatedTarget "Simulacrum"@en .
-
-[] a owl:Axiom ;
-    emmo:etymology "From Latin causa (“reason, sake, cause”), and Medieval Latin obiectum (“object”, literally “thrown against”)."@en ;
-    owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:CausalObject ;
-    owl:annotatedTarget "CausalObject"@en .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:15531:-1:ed-1:v1:en:term:3.6.22"^^xsd:anyURI ;
-    owl:annotatedProperty rdfs:seeAlso ;
-    owl:annotatedSource emmo:Manufacturing ;
-    owl:annotatedTarget """ISO 15531-1:2004
-manufacturing: function or act of converting or transforming material from raw material or semi-finished state to a state of further completion"""@en .
-
-[] a owl:Axiom ;
-    emmo:comment "Every entity is made of quantum parts. This axiomatisation is the expression of the radical reductionistic approach of the EMMO."@en ;
+    emmo:comment "This axiom defines the quantum as a mereological atomistic entity, having no proper parts."@en ;
     owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource emmo:EMMO ;
-    owl:annotatedTarget _:760 .
+    owl:annotatedSource emmo:Quantum ;
+    owl:annotatedTarget _:126 .
+
+[] a owl:Axiom ;
+    emmo:wikipediaReference "https://en.wikipedia.org/wiki/Variable_(mathematics)"^^xsd:anyURI ;
+    owl:annotatedProperty emmo:elucidation ;
+    owl:annotatedSource emmo:Variable ;
+    owl:annotatedTarget "A variable is a symbolic object that stands for any other mathematical object, such as  number, a vector, a matrix, a function, the argument of a function, a set, an element of a set."@en .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] a owl:Axiom ;
+    emmo:etymology "From Latin index (“a discoverer, informer, spy; of things, an indicator, the forefinger, a title, superscription”), from indicō (“point out, show”)."@en ;
+    owl:annotatedProperty ns2:prefLabel ;
+    owl:annotatedSource emmo:Index ;
+    owl:annotatedTarget "Index"@en .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "http://www.linfo.org/source_code.html"^^xsd:anyURI ;
+    owl:annotatedProperty emmo:comment ;
+    owl:annotatedSource emmo:SourceCode ;
+    owl:annotatedTarget "Source code (also referred to as source or code) is the version of software as it is originally written (i.e., typed into a computer) by a human in plain text (i.e., human readable alphanumeric characters)."@en .
+
+[] owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] a owl:Axiom ;
+    emmo:etymology "From the word 'holistic' with the 'w-' prefix, due to the affinity with the existing word 'whole', that share the same meaning of 'holos'."@en ;
+    owl:annotatedProperty ns2:altLabel ;
+    owl:annotatedSource emmo:Holistic ;
+    owl:annotatedTarget "Wholistic"@en .
+
+[] a ns1:Imp ;
+    emmo:comment "Enforcing the fact that an entity cannot cause itself."@en ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 <urn:swrl:var#x> ;
+                    ns1:classPredicate emmo:EMMO ] ;
+            rdf:rest () ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 <urn:swrl:var#x> ;
+                    ns1:argument2 <urn:swrl:var#x> ;
+                    ns1:propertyPredicate emmo:isNotCauseOf ] ;
+            rdf:rest () ] .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "3"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( emmo:Fork emmo:Sequence emmo:Join ) .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
 
 [] a ns1:Imp ;
     emmo:comment "Transitivity for parthood."@en ;
@@ -15022,63 +14885,25 @@ manufacturing: function or act of converting or transforming material from raw m
             rdf:rest () ] .
 
 [] a owl:Axiom ;
-    emmo:etymology "From Latin pro-cedere (“to go forward, to proceed”)."@en ;
+    emmo:etymology "From Latin factor, from fact- ‘done’, from the verb facere (to do)."@en ;
     owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:Procedure ;
-    owl:annotatedTarget "Procedure"@en .
+    owl:annotatedSource emmo:Factory ;
+    owl:annotatedTarget "Factory"@en .
 
 [] a owl:Axiom ;
-    emmo:etymology "From Old French \"deviser\", meaning: arrange, plan, contrive. Literally \"dispose in portions,\" from Vulgar Latin \"divisare\", frequentative of Latin dividere, meaning \"to divide\"."@en ;
+    emmo:etymology "From Latin productum ‘something produced’, derived from Latin producere, from pro- ‘forward’ + ducere ‘to lead’."@en ;
     owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:Device ;
-    owl:annotatedTarget "Device"@en .
+    owl:annotatedSource emmo:Product ;
+    owl:annotatedTarget "Product"@en .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
 
 [] a owl:Axiom ;
-    emmo:comment "While EMMO mereocausality conceptualisation can be used on any possibile domain, so that a quantum can be a Lego brick or an furniture component, it can be better understood when a quantum is elucidated as the smallest measured time interval of existence of an elementary particle (e.g. quark, photon)."@en ;
-    owl:annotatedProperty emmo:conceptualisation ;
-    owl:annotatedSource emmo:EMMO ;
-    owl:annotatedTarget """The EMMO conceptualises the world using the primitive concepts of causality and parthood. Parthood is about the composition of world entities starting from other more fundamental entities. Causality is about the interactions between world entities. 
-The quantum is the smallest indivisible part of any world entity. Quantum individuals are the fundamental causal constituents of the universe, since it is implied that causality originates from quantum-to-quantum interactions. Quantums are no-dimensional, and their aggregation makes spacetime emerge from their causal structure. Causality between macro entities (i.e. entities made of more than one quantum) is explained as the sum of the causality relations between their quantum constituents.
-The fundamental distinction between world entities is direct causality self-connectedness: a world entity can be self-connected xor not self-connected depending on the causality network of its fundamental components.
-Void regions do not exist in the EMMO, or in other words there is no spacetime without entities, since space and time are measured quantities following a causality relation between entities (spacetime emerges as relational property not as a self-standing entity).
-Entities are not placed in space or time: space and time are always relative between entities and are measured. In other words, space and time relations originates from causality interactions."""@en .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso-astm:tr:52906:ed-1:v1:en:term:3.9"^^xsd:anyURI ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:55000:ed-1:v2:en:term:3.1.13"^^xsd:anyURI ;
     owl:annotatedProperty rdfs:seeAlso ;
-    owl:annotatedSource emmo:Sintering ;
-    owl:annotatedTarget """ISO/ASTM TR 52906:2022 Additive manufacturing
-sintering: process of heating a powder metal compact to increase density and/or improve mechanical properties via solid state diffusion"""@en .
-
-[] a owl:Axiom ;
-    emmo:etymology "From French rôle, from obsolete French roule ‘roll’, referring originally to the roll of paper on which the actor's part was written."@en ;
-    owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:Role ;
-    owl:annotatedTarget "Role"@en .
-
-[] a owl:Axiom ;
-    emmo:etymology "From late Latin tangibilis, from tangere ‘to touch’."@en ;
-    owl:annotatedProperty ns2:altLabel ;
-    owl:annotatedSource emmo:ManufacturedProduct ;
-    owl:annotatedTarget "TangibleProduct"@en .
-
-[] a owl:Axiom ;
-    emmo:comment "The axiom should impose cardinality two, but due to transitivity, it would create a non-simple object property, preventing the use of reasoners."@en ;
-    owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource emmo:CausalChain ;
-    owl:annotatedTarget _:866 .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy "http://www.linfo.org/program.html"^^xsd:anyURI ;
-    owl:annotatedProperty emmo:comment ;
-    owl:annotatedSource emmo:Program ;
-    owl:annotatedTarget "A program is a sequence of instructions understandable by a computer's central processing unit (CPU) that indicates which operations the computer should perform on a set of data."@en .
-
-[] a owl:Axiom ;
-    emmo:etymology "From Latin con- +‎ putō (“I reckon”)."@en ;
-    owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:Computation ;
-    owl:annotatedTarget "Computation"@en .
+    owl:annotatedSource emmo:Organisation ;
+    owl:annotatedTarget """ISO 55000:2014
+organization: person or group of people that has its own functions with responsibilities, authorities and relationships to achieve its objectives"""@en .
 
 [] a ns1:Imp ;
     ns1:body [ a ns1:AtomList ;
@@ -15098,8 +14923,175 @@ sintering: process of heating a powder metal compact to increase density and/or 
                     ns1:propertyPredicate emmo:hasSpatialSlice ] ;
             rdf:rest () ] .
 
+[] a owl:Axiom ;
+    emmo:etymology "From Old French \"deviser\", meaning: arrange, plan, contrive. Literally \"dispose in portions,\" from Vulgar Latin \"divisare\", frequentative of Latin dividere, meaning \"to divide\"."@en ;
+    owl:annotatedProperty ns2:prefLabel ;
+    owl:annotatedSource emmo:Device ;
+    owl:annotatedTarget "Device"@en .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:18435:-1:ed-1:v1:en:term:3.16"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:seeAlso ;
+    owl:annotatedSource emmo:Manufacturing ;
+    owl:annotatedTarget """ISO 18435-1:2009
+manufacturing process: set of processes in manufacturing involving a flow and/or transformation of material, information, energy, control, or any other element in a manufacturing area"""@en .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:3252:ed-5:v1:en:term:3.3.60"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:seeAlso ;
+    owl:annotatedSource emmo:Sintering ;
+    owl:annotatedTarget """ISO 3252:2019 Powder metallurgy
+sintering: thermal treatment of a powder or compact, at a temperature below the melting point of the main constituent, for the purpose of increasing its strength by the metallurgical bonding of its particles"""@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "From Ancient Greek κρύσταλλος (krústallos, “clear ice”), from κρύος (krúos, “frost”)."@en ;
+    owl:annotatedProperty ns2:prefLabel ;
+    owl:annotatedSource emmo:Crystal ;
+    owl:annotatedTarget "Crystal"@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "From Latin intentionem, derived from intendere (\"stretching out\")"@en ;
+    owl:annotatedProperty ns2:prefLabel ;
+    owl:annotatedSource emmo:IntentionalProcess ;
+    owl:annotatedTarget "IntentionalProcess"@en .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:3252:ed-5:v1:en:term:3.3.32"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:seeAlso ;
+    owl:annotatedSource emmo:LiquidPhaseSintering ;
+    owl:annotatedTarget """ISO 3252:2019 Powder metallurgy
+liquid-phase sintering: sintering of a powder or compact containing at least two constituents, under conditions such that a liquid phase is formed"""@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "From medieval Latin perspectiva ‘(science of) optics’, from perspect- ‘looked at closely’, from the verb perspicere, from per- ‘through’ + specere ‘to look’."@en ;
+    owl:annotatedProperty ns2:prefLabel ;
+    owl:annotatedSource emmo:Perspective ;
+    owl:annotatedTarget "Perspective"@en .
+
+[] owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://dictionary.iucr.org/Crystal"^^xsd:anyURI ;
+    owl:annotatedProperty emmo:elucidation ;
+    owl:annotatedSource emmo:Crystal ;
+    owl:annotatedTarget """A material is a crystal if it has essentially a sharp diffraction pattern.
+
+A solid is a crystal if it has essentially a sharp diffraction pattern. The word essentially means that most of the intensity of the diffraction is concentrated in relatively sharp Bragg peaks, besides the always present diffuse scattering. In all cases, the positions of the diffraction peaks can be expressed by
+
+
+H=∑ni=1hia∗i  (n≥3)""" .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "https://en.wikipedia.org/wiki/Semiotic_theory_of_Charles_Sanders_Peirce#II._Icon,_index,_symbol"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource emmo:Icon ;
+    owl:annotatedTarget """In Peirce semiotics three subtypes of icon are possible:
+(a) the image, which depends on a simple quality (e.g. picture)
+(b) the diagram, whose internal relations, mainly dyadic or so taken, represent by analogy the relations in something (e.g. math formula, geometric flowchart)
+(c) the metaphor, which represents the representative character of a sign by representing a parallelism in something else
+[Wikipedia]"""@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "https://emmc.info/wp-content/uploads/2018/05/CWA_17284.pdf" ;
+    owl:annotatedProperty rdfs:isDefinedBy ;
+    owl:annotatedSource emmo:PhysicsBasedSimulation ;
+    owl:annotatedTarget "CEN Workshop Agreement – CWA 17284 “Materials modelling – terminology, classification and metadata”"@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "From Old French asembler, based on Latin ad- ‘to’ + simul ‘together’."@en ;
+    owl:annotatedProperty ns2:prefLabel ;
+    owl:annotatedSource emmo:Assemblying ;
+    owl:annotatedTarget "Assemblying"@en .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/standard/45324.html"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource emmo:Measurement ;
+    owl:annotatedTarget "A measurement is the process of experimentally obtaining one or more measurement results that can reasonably be attributed to a quantity."@en .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:ts:16791:ed-2:v1:en:term:3.1.17"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:seeAlso ;
+    owl:annotatedSource emmo:CompleteManufacturing ;
+    owl:annotatedTarget """ISO/TS 16791:2020
+manufacturing, manufacture: process of production from the acquisition of all materials through all processing stages, including final packaging"""@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "From Latin proprietas (“a peculiarity, one's peculiar nature or quality, right or fact of possession, property”), from proprius (“special, particular, one's own”)."@en ;
+    owl:annotatedProperty ns2:prefLabel ;
+    owl:annotatedSource emmo:Property ;
+    owl:annotatedTarget "Property"@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "From French équipement, from équiper ‘equip’."@en ;
+    owl:annotatedProperty ns2:altLabel ;
+    owl:annotatedSource emmo:Device ;
+    owl:annotatedTarget "Equipment"@en .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:8887:-1:ed-1:v1:en:term:3.1.5"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:seeAlso ;
+    owl:annotatedSource emmo:Werkstücke ;
+    owl:annotatedTarget """ISO 8887-1:2017
+manufacturing: production of components"""@en .
+
 [] a ns1:Imp ;
-    emmo:comment "Enforcing reflexivity of overlapping."@en ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 <urn:swrl:var#x> ;
+                    ns1:argument2 <urn:swrl:var#y> ;
+                    ns1:propertyPredicate emmo:hasTemporalTile ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:ClassAtom ;
+                            ns1:argument1 <urn:swrl:var#x> ;
+                            ns1:classPredicate emmo:Sequence ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 <urn:swrl:var#x> ;
+                    ns1:argument2 <urn:swrl:var#y> ;
+                    ns1:propertyPredicate emmo:hasTemporalSlice ] ;
+            rdf:rest () ] .
+
+[] a owl:Axiom ;
+    emmo:etymology "From soft +‎ -ware, by contrast with hardware (“the computer itself”). Coined by Paul Niquette in 1953."@en ;
+    owl:annotatedProperty ns2:prefLabel ;
+    owl:annotatedSource emmo:Software ;
+    owl:annotatedTarget "Software"@en .
+
+[] a owl:Axiom ;
+    emmo:comment "Every entity is made of quantum parts. This axiomatisation is the expression of the radical reductionistic approach of the EMMO."@en ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource emmo:EMMO ;
+    owl:annotatedTarget _:77 .
+
+[] a owl:Axiom ;
+    emmo:etymology "From Latin manufacture: \"made by hand\"."@en ;
+    owl:annotatedProperty ns2:prefLabel ;
+    owl:annotatedSource emmo:ManufacturedProduct ;
+    owl:annotatedTarget "ManufacturedProduct"@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "From Ancient Greek σύμβολον (súmbolon, “a sign by which one infers something; a mark, token, badge, ticket, tally, check, a signal, watchword, outward sign”), from συμβάλλω (sumbállō, “I throw together, dash together, compare, correspond, tally, come to a conclusion”), from σύν (sún, “with, together”) + βάλλω (bállō, “I throw, put”)." ;
+    owl:annotatedProperty ns2:prefLabel ;
+    owl:annotatedSource emmo:Symbolic ;
+    owl:annotatedTarget "Symbolic"@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "From Ancient Greek ἀναλογία (analogía), from ἀνά (aná) + λόγος (lógos, “speech, reckoning”)."@en ;
+    owl:annotatedProperty ns2:prefLabel ;
+    owl:annotatedSource emmo:AnalogicalIcon ;
+    owl:annotatedTarget "AnalogicalIcon"@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "From the Ancient Greek γραφή (graphḗ) which means drawing, painting, writing, a writing, description, and from γράφω (gráphō) which means scratch, carve."@en ;
+    rdfs:comment "The term graphical is used in etymological sense, comprising both writings and visual arts."@en ;
+    owl:annotatedProperty ns2:prefLabel ;
+    owl:annotatedSource emmo:Graphical ;
+    owl:annotatedTarget "Graphical"@en .
+
+[] a ns1:Imp ;
+    emmo:comment "Enforcing parthood reflexivity."@en ;
     ns1:body [ a ns1:AtomList ;
             rdf:first [ a ns1:ClassAtom ;
                     ns1:argument1 <urn:swrl:var#x> ;
@@ -15109,10 +15101,8 @@ sintering: process of heating a powder metal compact to increase density and/or 
             rdf:first [ a ns1:IndividualPropertyAtom ;
                     ns1:argument1 <urn:swrl:var#x> ;
                     ns1:argument2 <urn:swrl:var#x> ;
-                    ns1:propertyPredicate emmo:isOverlapping ] ;
+                    ns1:propertyPredicate emmo:hasPart ] ;
             rdf:rest () ] .
-
-[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
 
 [] a owl:Axiom ;
     emmo:wikipediaReference "https://en.wikipedia.org/wiki/Supply_chain"@en ;
@@ -15121,57 +15111,118 @@ sintering: process of heating a powder metal compact to increase density and/or 
     owl:annotatedTarget "A supply chain is a system of organizations, people, activities, information, and resources involved in supplying a product or service to a consumer."@en .
 
 [] a owl:Axiom ;
+    emmo:etymology "From Latin quantum (plural quanta) \"as much as, so much as\"."@en ;
+    owl:annotatedProperty ns2:prefLabel ;
+    owl:annotatedSource emmo:Quantum ;
+    owl:annotatedTarget "Quantum"@en .
+
+[] a owl:Axiom ;
+    emmo:comment "While EMMO mereocausality conceptualisation can be used on any possibile domain, so that a quantum can be a Lego brick or an furniture component, it can be better understood when a quantum is elucidated as the smallest measured time interval of existence of an elementary particle (e.g. quark, photon)."@en ;
+    owl:annotatedProperty emmo:conceptualisation ;
+    owl:annotatedSource emmo:EMMO ;
+    owl:annotatedTarget """The EMMO conceptualises the world using the primitive concepts of causality and parthood. Parthood is about the composition of world entities starting from other more fundamental entities. Causality is about the interactions between world entities. 
+The quantum is the smallest indivisible part of any world entity. Quantum individuals are the fundamental causal constituents of the universe, since it is implied that causality originates from quantum-to-quantum interactions. Quantums are no-dimensional, and their aggregation makes spacetime emerge from their causal structure. Causality between macro entities (i.e. entities made of more than one quantum) is explained as the sum of the causality relations between their quantum constituents.
+The fundamental distinction between world entities is direct causality self-connectedness: a world entity can be self-connected xor not self-connected depending on the causality network of its fundamental components.
+Void regions do not exist in the EMMO, or in other words there is no spacetime without entities, since space and time are measured quantities following a causality relation between entities (spacetime emerges as relational property not as a self-standing entity).
+Entities are not placed in space or time: space and time are always relative between entities and are measured. In other words, space and time relations originates from causality interactions."""@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "Fom Latin variabilis (\"changeable\")."@en ;
+    owl:annotatedProperty ns2:prefLabel ;
+    owl:annotatedSource emmo:Variable ;
+    owl:annotatedTarget "Variable"@en .
+
+[] a owl:Axiom ;
+    emmo:wikipediaReference "https://en.wikipedia.org/wiki/Tessellation"^^xsd:anyURI ;
+    owl:annotatedProperty emmo:conceptualisation ;
+    owl:annotatedSource emmo:Tessellation ;
+    owl:annotatedTarget "A tessellation (or tiling) is the covering of a surface, often a plane, using one or more geometric shapes, called tiles, with no overlaps and no gaps."@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "From Latin percipiō, past participle perceptus (“take hold of, obtain, receive, observe”), from per (“by, through”) + capiō (“to take”)."@en ;
+    owl:annotatedProperty ns2:prefLabel ;
+    owl:annotatedSource emmo:Perceptual ;
+    owl:annotatedTarget "Perceptual"@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "From Latin functiō (“performance, execution”), from functus, perfect participle of fungor (“to perform, execute, discharge”)."@en ;
+    owl:annotatedProperty ns2:prefLabel ;
+    owl:annotatedSource emmo:FunctionalIcon ;
+    owl:annotatedTarget "FunctionalIcon"@en .
+
+[] owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger .
+
+[] a ns1:Imp ;
+    emmo:comment "Enforcing exclusivity between overlapping and causality."@en ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 <urn:swrl:var#x> ;
+                    ns1:argument2 <urn:swrl:var#y> ;
+                    ns1:propertyPredicate emmo:isCauseOf ] ;
+            rdf:rest () ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 <urn:swrl:var#x> ;
+                    ns1:argument2 <urn:swrl:var#y> ;
+                    ns1:propertyPredicate emmo:isNotOverlapping ] ;
+            rdf:rest () ] .
+
+[] a owl:Axiom ;
+    emmo:etymology "From Old French chaine, chaene (“chain”), from Latin catēna (“chain”)."@en ;
+    owl:annotatedProperty ns2:prefLabel ;
+    owl:annotatedSource emmo:CausalChain ;
+    owl:annotatedTarget "CausalChain"@en .
+
+[] a owl:Axiom ;
+    emmo:etymology "From Middle English liftime, equivalent to life +‎ time."@en ;
+    owl:annotatedProperty ns2:altLabel ;
+    owl:annotatedSource emmo:Fundamental ;
+    owl:annotatedTarget "Lifetime"@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "https://en.wiktionary.org/wiki/procedure"^^xsd:anyURI ;
+    owl:annotatedProperty emmo:conceptualisation ;
+    owl:annotatedSource emmo:Procedure ;
+    owl:annotatedTarget "The set of established forms or methods of an organized body for accomplishing a certain task or tasks (Wiktionary)."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "https://emmc.info/wp-content/uploads/2018/05/CWA_17284.pdf"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:isDefinedBy ;
+    owl:annotatedSource emmo:PhysicsBasedModel ;
+    owl:annotatedTarget "CEN Workshop Agreement – CWA 17284 “Materials modelling – terminology, classification and metadata”"@en .
+
+[] a owl:Axiom ;
     emmo:etymology "From Latin ingenium \"innate qualities, ability; inborn character,\" in Late Latin \"a war engine, battering ram\"; literally \"that which is inborn,\" from in- (\"in\") + gignere (\"give birth, beget\")."@en ;
     owl:annotatedProperty ns2:altLabel ;
     owl:annotatedSource emmo:ManufacturedProduct ;
     owl:annotatedTarget "Engineered"@en .
 
-[] a owl:Axiom ;
-    emmo:etymology "From Latin factor, from fact- ‘done’, from the verb facere (to do)."@en ;
-    owl:annotatedProperty ns2:prefLabel ;
-    owl:annotatedSource emmo:Factory ;
-    owl:annotatedTarget "Factory"@en .
+_:1329 owl:inverseOf emmo:hasPart .
 
-[] a owl:Axiom ;
-    emmo:comment """The union implies that world entities can only be items or collections (standing for a collection of causally disconnected items).
-Disjointness means that a collection cannot be an item and viceversa, representing the fact that a world entity cannot be causally self-connected and non-self connected at the same time."""@en ;
-    owl:annotatedProperty emmo:definition ;
-    owl:annotatedSource emmo:EMMO ;
-    owl:annotatedTarget "The disjoint union of the Item and Collection classes."@en .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:55000:ed-1:v2:en:term:3.1.13"^^xsd:anyURI ;
-    owl:annotatedProperty rdfs:seeAlso ;
-    owl:annotatedSource emmo:Organisation ;
-    owl:annotatedTarget """ISO 55000:2014
-organization: person or group of people that has its own functions with responsibilities, authorities and relationships to achieve its objectives"""@en .
-
-_:1297 rdf:first emmo:CausalChain ;
+_:1447 rdf:first emmo:CausalChain ;
     rdf:rest ( emmo:Quantum ) .
 
-_:1529 a owl:Class ;
-    owl:unionOf _:1297 .
+_:362 a owl:Class ;
+    owl:unionOf _:1447 .
 
-_:467 owl:inverseOf emmo:hasPart .
-
-_:326 a owl:Restriction ;
+_:126 a owl:Restriction ;
     owl:allValuesFrom owl:Nothing ;
     owl:onProperty emmo:hasProperPart .
 
-_:466 a owl:Restriction ;
-    owl:hasValue emmo:universe ;
-    owl:onProperty _:467 .
-
-_:760 a owl:Restriction ;
-    owl:onProperty emmo:hasPart ;
-    owl:someValuesFrom emmo:Quantum .
-
-_:866 a owl:Restriction ;
+_:361 a owl:Restriction ;
     owl:onProperty emmo:hasTemporalPart ;
-    owl:someValuesFrom _:1529 .
+    owl:someValuesFrom _:362 .
 
-_:872 a owl:Restriction ;
+_:43 a owl:Restriction ;
     owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
     owl:onClass emmo:Item ;
     owl:onProperty emmo:hasMember .
+
+_:77 a owl:Restriction ;
+    owl:onProperty emmo:hasPart ;
+    owl:someValuesFrom emmo:Quantum .
+
+_:78 a owl:Restriction ;
+    owl:hasValue emmo:universe ;
+    owl:onProperty _:1329 .
 
