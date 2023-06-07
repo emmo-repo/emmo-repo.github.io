@@ -5718,7 +5718,7 @@ emmo:Atto a owl:Class ;
 
 emmo:Auditory a owl:Class ;
     emmo:elucidation "A 'Perceptual' which stands for a real world object whose spatiotemporal pattern makes it identifiable by an observer as a sound."@en ;
-    emmo:example """When we use the term 'sound' what are we referring to? The EMMO identifis a sound as the physical object that can be heard by the observer (more exactly, by the sensor of the observer). 
+    emmo:example """When we use the term 'sound' what are we referring to? The EMMO identifis a sound as the physical object that can be heard by the observer (more exactly, by the sensor of the observer).
 
 In this sense, a sound (which is an acoustical object) is to be identified as the air region that manifests the sound wave and is able to be perceived by an observer. In case the wave is travelling through water or steel, then these other media regions are the sounds.
 
@@ -6358,7 +6358,7 @@ emmo:Exa a owl:Class ;
 
 emmo:Existent a owl:Class ;
     emmo:elucidation "A 'Physical' which is a tessellation of 'State' temporal direct parts."@en ;
-    rdfs:comment """'Existent' is the EMMO class to be used for representing real world physical objects under a reductionistic perspective (i.e. objects come from the composition of sub-part objects, both in time and space). 
+    rdfs:comment """'Existent' is the EMMO class to be used for representing real world physical objects under a reductionistic perspective (i.e. objects come from the composition of sub-part objects, both in time and space).
 
 'Existent' class collects all individuals that stand for physical objects that can be structured in well defined temporal sub-parts called states, through the temporal direct parthood relation.
 
@@ -8077,7 +8077,7 @@ emmo:String a owl:Class ;
     emmo:comment "A string is made of concatenated symbols whose arrangement is one-dimensional. Each symbol can have only one previous and one next neighborhood (bidirectional list)."@en,
         "A string is not requested to respect any syntactic rule: it's simply directly made of symbols."@en ;
     emmo:elucidation "A physical made of more than one symbol sequentially arranged."@en ;
-    emmo:example """The word "cat" considered as a collection of 'symbol'-s respecting the rules of english language. 
+    emmo:example """The word "cat" considered as a collection of 'symbol'-s respecting the rules of english language.
 
 In this example the 'symbolic' entity "cat" is not related to the real cat, but it is only a word (like it would be to an italian person that ignores the meaning of this english word).
 
@@ -11705,7 +11705,7 @@ emmo:Persistence a owl:Class ;
 - object (focus on spatial configuration)
 - process (focus on temporal evolution)
 
-The concepts of endurant and perdurant implicitly rely on the concept of instantaneous 3D snapshot of the world object, that in the EMMO is not allowed since everything extends in 4D and there are no abstract objects. Moreover, time is a measured property in the EMMO and not an objective characteristic of an object, and cannot be used as temporal index to identify endurant position in time. 
+The concepts of endurant and perdurant implicitly rely on the concept of instantaneous 3D snapshot of the world object, that in the EMMO is not allowed since everything extends in 4D and there are no abstract objects. Moreover, time is a measured property in the EMMO and not an objective characteristic of an object, and cannot be used as temporal index to identify endurant position in time.
 
 For this reason an individual in the EMMO can always be classified both endurant and perdurant, due to its nature of 4D entity (e.g. an individual may belong both to the class of runners and the class of running process), and the distinction is purely semantic.  In fact, the object/process distinction is simply a matter of convenience in a 4D approach since a temporal extension is always the case, and stationarity depends upon observer time scale. For this reason, the same individual (4D object) may play the role of a process or of an object class depending on the object to which it relates.
 
@@ -11923,7 +11923,7 @@ emmo:SpeedDimension a owl:Class ;
 emmo:StandardModelParticle a owl:Class ;
     emmo:comment "Disjointness comes from the fact that standard model elementary particles are entities that possess objectively distinct and singular characters."@en,
         "Graviton is included, even if it is an hypothetical particle, to enable causality for gravitational interactions."@en,
-        """This class represents only real particles that are the input and output of a Feynman diagram, and hence respect the E²-p²c²=m²c⁴ energy-momentum equality (on the mass shell). 
+        """This class represents only real particles that are the input and output of a Feynman diagram, and hence respect the E²-p²c²=m²c⁴ energy-momentum equality (on the mass shell).
 In the EMMO the virtual particles (off the mass shell), the internal propagators of the interaction within a Feynman diagram, are not represented as mereological entities but as object relations (binary predicates)."""@en ;
     emmo:elucidation "The union of all classes categorising elementary particles according to the Standard Model."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
@@ -12065,7 +12065,7 @@ emmo:hasDataValue a owl:DatatypeProperty ;
 
 emmo:hasHolisticOvercross a owl:ObjectProperty ;
     emmo:elucidation "A relation between two holistic wholes that overcross, sharing one of their holistic parts."@en ;
-    emmo:example """A man and the process of building a house. 
+    emmo:example """A man and the process of building a house.
 The man is a whole that possesses an holistic temporal part which is an interval of six monts and represents a working period in his lifetime.
 The process of building a house is a whole that possesses an holistic spatial part which is a builder.
 The working period of the man and the builder participating the building process are the same individual, belonging both to a man lifetime and to a building holistic views.
@@ -12486,7 +12486,7 @@ emmo:GaugeBoson a owl:Class ;
 
 emmo:Geometrical a owl:Class ;
     emmo:elucidation "A 'graphical' aimed to represent a geometrical concept."@en ;
-    emmo:example """A geometrical object can be expressed in many different forms. 
+    emmo:example """A geometrical object can be expressed in many different forms.
 
 For example, a line can be expressed by:
 a) an equation like y=mx+q, which is both an 'equation' and a 'geometrical'
@@ -13283,7 +13283,7 @@ emmo:Numerical a owl:Class ;
     skos:prefLabel "Numerical"@en .
 
 emmo:PhysicalObject a owl:Class ;
-    emmo:comment """It is natural to define entities made or more than one smaller parts according to some unity criteria. One of the most general one applicable to causal systems is to ask that all the quantum parts of the system are bonded to the rest. 
+    emmo:comment """It is natural to define entities made or more than one smaller parts according to some unity criteria. One of the most general one applicable to causal systems is to ask that all the quantum parts of the system are bonded to the rest.
 In other words, causal convexity excludes all quantums that leave the system (no more interacting), or that are not yet part of it (not yet interacting).
 So, a photon leaving a body is not part of the body as convex system, while a photon the is carrier of electromagnetic interaction between two molecular parts of the body, is part of the convex body."""@en ;
     emmo:elucidation "A CausalSystem whose quantum parts are all bonded to the rest of the system."@en ;
@@ -13661,7 +13661,7 @@ emmo:FunctionalIcon a owl:Class ;
 
 emmo:Fundamental a owl:Class ;
     emmo:elucidation "A whole that represent the overall lifetime of the world object that represents according to some holistic criteria."@en ;
-    emmo:example """A marathon is an example of class whose individuals are always maximal since the criteria satisfied by a marathon 4D entity poses some constraints on its temporal and spatial extent. 
+    emmo:example """A marathon is an example of class whose individuals are always maximal since the criteria satisfied by a marathon 4D entity poses some constraints on its temporal and spatial extent.
 
 On the contrary, the class for a generic running process does not necessarily impose maximality to its individuals. A running individual is maximal only when it extends in time for the minimum amount required to identify a running act, so every possible temporal part is always a non-running.
 
@@ -13695,7 +13695,7 @@ emmo:Interpreter a owl:Class ;
     emmo:example """For example, the ontologist may be interest in cataloguing in the EMMO how the same object (e.g. a cat) is addressed using different signs (e.g. cat, gatto, chat) by different interpreters (e.g. english, italian or french people).
 
 The same applies for the results of measurements: the ontologist may be interest to represent in the EMMO how different measurement processes (i.e. semiosis) lead to different quantitative results (i.e. signs) according to different measurement devices (i.e. interpreters)."""@en ;
-    rdfs:comment """The interpreter is not the ontologist, being the ontologist acting outside the ontology at the meta-ontology level. 
+    rdfs:comment """The interpreter is not the ontologist, being the ontologist acting outside the ontology at the meta-ontology level.
 
 On the contrary, the interpreter is an agent recognized by the ontologist. The semiotic branch of the EMMO is the tool used by the ontologist to represent an interpreter's semiotic activity."""@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
@@ -14348,7 +14348,7 @@ emmo:isCauseOf a owl:IrreflexiveProperty,
     emmo:OWLDLRestrictedAxiom ":isCauseOf owl:propertyDisjointWith :overlaps"@en ;
     emmo:comment "Each pair of causally connected entities is either in isDirectCauseOf or isIndirectCauseOf relation. The two are mutually exclusive."@en,
         "It applies to both quantums and macro-entities (entities made of more than one quantum). It is admissible for two entities to be one the cause of the other, excepts when they are both quantums."@en,
-        """The OWL 2 DL version of the EMMO introduces this object property as primitive causal relation. It refers to the macro causality relation mC(x,y), defined in the EMMO FOL version. 
+        """The OWL 2 DL version of the EMMO introduces this object property as primitive causal relation. It refers to the macro causality relation mC(x,y), defined in the EMMO FOL version.
 While the EMMO FOL introduces the quantum causality relation C(x,y) as primitive, the OWL 2 DL version substantially simplifies the theory, neglecting these lower level relations that are well above DL expressivity."""@en ;
     emmo:conceptualisation """We say that an entity causes another if there is a quantum part of the first that is in causal relation with a quantum parts of the second.
 An entity cannot cause itself (causal loops are forbidden) or a part of itself. For this reasons causality between entities excludes reflexivity and prevents them to overlap."""@en ;
@@ -14945,9 +14945,9 @@ emmo:Symbol a owl:Class ;
 e.g. a math symbol is not made of other math symbols
 A Symbol may be a String in another language.
 e.g. "Bq" is the symbol for Becquerel units when dealing with metrology, or a string of "B" and "q" symbols when dealing with characters."""@en,
-        """Symbols of a formal language need not be symbols of anything. For instance there are logical constants which do not refer to any idea, but rather serve as a form of punctuation in the language (e.g. parentheses). 
+        """Symbols of a formal language need not be symbols of anything. For instance there are logical constants which do not refer to any idea, but rather serve as a form of punctuation in the language (e.g. parentheses).
 
-Symbols of a formal language must be capable of being specified without any reference to any interpretation of them. 
+Symbols of a formal language must be capable of being specified without any reference to any interpretation of them.
 (Wikipedia)"""@en,
         "The class is the idea of the symbol, while the individual of that class stands for a specific mark (or token) of that idea."@en ;
     emmo:elucidation "The class of individuals that stand for an elementary mark of a specific symbolic code (alphabet)."@en ;
@@ -15283,8 +15283,7 @@ We cannot say that H₂ molecule has direct part two H atoms, but has direct par
             owl:onProperty emmo:hasSpatialSlice ;
             owl:someValuesFrom emmo:Nucleus ],
         emmo:MolecularEntity ;
-    skos:altLabel "ChemicalElement",
-        "ChemicalElement"@en ;
+    skos:altLabel "ChemicalElement"@en ;
     skos:exactMatch "http://emmo.info/emmo#EMMO_eb77076b_a104_42ac_a065_798b2d2809ad" ;
     skos:prefLabel "Atom"@en .
 
@@ -16186,4 +16185,3 @@ _:968 a owl:Restriction ;
     owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
     owl:onClass emmo:Item ;
     owl:onProperty emmo:hasMember .
-
