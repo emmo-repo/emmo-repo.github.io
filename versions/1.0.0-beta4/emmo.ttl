@@ -570,11 +570,11 @@ emmo:EMMO_27c530c4_dfcd_486e_b324_54ad4448cd26 a owl:Class ;
 Dispite of that, it is often used in the natural sciences and technology."""@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/unitsextension#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
-            owl:someValuesFrom emmo:EMMO_b3600e73_3e05_479d_9714_c041c3acf5cc ],
-        [ a owl:Restriction ;
             owl:hasValue "Å" ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+            owl:someValuesFrom emmo:EMMO_b3600e73_3e05_479d_9714_c041c3acf5cc ],
         emmo:EMMO_591e02fd_8d37_45a6_9d11_bb21cef391a0 ;
     skos:altLabel "Angstrom"@en ;
     skos:prefLabel "Ångström"@en .
@@ -3093,14 +3093,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for osmium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_fb1bb238-24bc-5d37-9243-414770fda5be> ],
-        [ a owl:Restriction ;
             owl:hasValue 76 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         [ a owl:Restriction ;
             owl:hasValue 190.23 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_fb1bb238-24bc-5d37-9243-414770fda5be> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "OsmiumAtom"@en .
 
@@ -3123,14 +3123,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for cadmium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 112.414 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
+        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_b12e3fea-4467-5a08-9b14-67c51def1431> ],
         [ a owl:Restriction ;
             owl:hasValue 48 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
-        [ a owl:Restriction ;
-            owl:hasValue 112.414 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "CadmiumAtom"@en .
 
@@ -3153,14 +3153,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for lutetium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_66c364c4-16b7-5d5f-abd5-b6977c46f525> ],
+            owl:hasValue 71 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         [ a owl:Restriction ;
             owl:hasValue 174.9668 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         [ a owl:Restriction ;
-            owl:hasValue 71 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_66c364c4-16b7-5d5f-abd5-b6977c46f525> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "LutetiumAtom"@en .
 
@@ -3168,11 +3168,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for gold."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_811c67a9-bcdf-5a9e-bbce-28ae2af12915> ],
-        [ a owl:Restriction ;
             owl:hasValue 79 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_811c67a9-bcdf-5a9e-bbce-28ae2af12915> ],
         [ a owl:Restriction ;
             owl:hasValue 196.966569 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
@@ -3183,14 +3183,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for molybdenum."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 42 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_e4c89307-e63b-57c8-8892-60924c65aa3b> ],
         [ a owl:Restriction ;
             owl:hasValue 95.95 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
+        [ a owl:Restriction ;
+            owl:hasValue 42 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "MolybdenumAtom"@en .
 
@@ -3198,14 +3198,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for bismuth."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_ed5acb06-0af0-5a3a-9b31-a1b32267f753> ],
+        [ a owl:Restriction ;
             owl:hasValue 208.9804 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         [ a owl:Restriction ;
             owl:hasValue 83 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
-        [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_ed5acb06-0af0-5a3a-9b31-a1b32267f753> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "BismuthAtom"@en .
 
@@ -3231,11 +3231,11 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:hasValue 195.084 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_e580b699-7725-58d5-b057-7b3c816e84a1> ],
-        [ a owl:Restriction ;
             owl:hasValue 78 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_e580b699-7725-58d5-b057-7b3c816e84a1> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "PlatinumAtom"@en .
 
@@ -3273,14 +3273,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for neptunium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 93 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_e941986d-658b-5a08-ae3d-4cc170344b06> ],
         [ a owl:Restriction ;
             owl:hasValue 237.04817 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_e941986d-658b-5a08-ae3d-4cc170344b06> ],
+            owl:hasValue 93 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "NeptuniumAtom"@en .
 
@@ -3303,11 +3303,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for praseodymium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 140.90766 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
-        [ a owl:Restriction ;
             owl:hasValue 59 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
+        [ a owl:Restriction ;
+            owl:hasValue 140.90766 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_3565b4e7-51bd-57e5-afde-60be404857cf> ],
@@ -3363,14 +3363,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for nitrogen."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_26b7c6ca-6c6c-52e0-ba01-dcc883e64d46> ],
-        [ a owl:Restriction ;
             owl:hasValue 14.007 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         [ a owl:Restriction ;
             owl:hasValue 7 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_26b7c6ca-6c6c-52e0-ba01-dcc883e64d46> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "NitrogenAtom"@en .
 
@@ -3393,14 +3393,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for protactinium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_209b3242-1274-5d1d-a965-f8cb3fcc1073> ],
-        [ a owl:Restriction ;
             owl:hasValue 91 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         [ a owl:Restriction ;
             owl:hasValue 231.03588 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_209b3242-1274-5d1d-a965-f8cb3fcc1073> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "ProtactiniumAtom"@en .
 
@@ -3408,14 +3408,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for chromium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 51.9961 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_517752af-5883-5cf5-8363-6b19f76aca3e> ],
         [ a owl:Restriction ;
             owl:hasValue 24 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
+        [ a owl:Restriction ;
+            owl:hasValue 51.9961 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "ChromiumAtom"@en .
 
@@ -3438,11 +3438,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for manganese."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_179a652d-68c8-5412-9621-98b4b00984dd> ],
-        [ a owl:Restriction ;
             owl:hasValue 25 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_179a652d-68c8-5412-9621-98b4b00984dd> ],
         [ a owl:Restriction ;
             owl:hasValue 54.938044 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
@@ -3453,14 +3453,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for helium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 2 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
+        [ a owl:Restriction ;
             owl:hasValue 4.002602 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_fad04773-08a7-5bd3-8990-06d7e9d2c21e> ],
-        [ a owl:Restriction ;
-            owl:hasValue 2 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "HeliumAtom"@en .
 
@@ -3468,11 +3468,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for einsteinium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 252.083 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_6b241a1f-2a5f-5ea8-b0aa-7b162d7d73e4> ],
+        [ a owl:Restriction ;
+            owl:hasValue 252.083 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         [ a owl:Restriction ;
             owl:hasValue 99 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
@@ -3483,11 +3483,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for neodymium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 60 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
-        [ a owl:Restriction ;
             owl:hasValue 144.242 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
+        [ a owl:Restriction ;
+            owl:hasValue 60 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_afee3bf0-d0e0-53dc-bfb1-b624b5724d47> ],
@@ -3498,11 +3498,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for meitnerium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_b2e41936-a44f-578d-960b-91f8f0135b2b> ],
-        [ a owl:Restriction ;
             owl:hasValue 278.156 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_b2e41936-a44f-578d-960b-91f8f0135b2b> ],
         [ a owl:Restriction ;
             owl:hasValue 109 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
@@ -3516,11 +3516,11 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:hasValue 107.8682 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_e82869a8-32a8-5d57-81a8-e2d618976f23> ],
-        [ a owl:Restriction ;
             owl:hasValue 47 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_e82869a8-32a8-5d57-81a8-e2d618976f23> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "SilverAtom"@en .
 
@@ -3573,14 +3573,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for radium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 226.02541 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_9a24be51-7059-5306-af89-400c78a49e9c> ],
         [ a owl:Restriction ;
             owl:hasValue 88 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_9a24be51-7059-5306-af89-400c78a49e9c> ],
+            owl:hasValue 226.02541 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "RadiumAtom"@en .
 
@@ -3603,14 +3603,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for cobalt."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 58.933194 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
+        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_4aa59242-76e7-5cce-a126-c7e9c657e7ad> ],
         [ a owl:Restriction ;
             owl:hasValue 27 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
-        [ a owl:Restriction ;
-            owl:hasValue 58.933194 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "CobaltAtom"@en .
 
@@ -3618,14 +3618,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for arsenic."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_0ba17fb4-6149-5332-b65f-0639ace42edf> ],
+            owl:hasValue 33 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         [ a owl:Restriction ;
             owl:hasValue 74.921595 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         [ a owl:Restriction ;
-            owl:hasValue 33 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_0ba17fb4-6149-5332-b65f-0639ace42edf> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "ArsenicAtom"@en .
 
@@ -3633,14 +3633,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for lawrencium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_f21db3a4-d5de-52dd-9460-5cdd138fb83f> ],
+            owl:hasValue 103 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         [ a owl:Restriction ;
             owl:hasValue 262.11 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         [ a owl:Restriction ;
-            owl:hasValue 103 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_f21db3a4-d5de-52dd-9460-5cdd138fb83f> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "LawrenciumAtom"@en .
 
@@ -3648,14 +3648,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for oxygen."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_96fb9a6c-80d6-57fa-a4f2-0d2a59232418> ],
+            owl:hasValue 8 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         [ a owl:Restriction ;
             owl:hasValue 15.999 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         [ a owl:Restriction ;
-            owl:hasValue 8 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_96fb9a6c-80d6-57fa-a4f2-0d2a59232418> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "OxygenAtom"@en .
 
@@ -3663,14 +3663,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for nobelium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_c1bb775c-0888-5b88-9cce-c49bae1d298b> ],
-        [ a owl:Restriction ;
             owl:hasValue 259.101 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         [ a owl:Restriction ;
             owl:hasValue 102 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_c1bb775c-0888-5b88-9cce-c49bae1d298b> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "NobeliumAtom"@en .
 
@@ -3678,14 +3678,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for iodine."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 126.90447 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
-        [ a owl:Restriction ;
             owl:hasValue 53 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_c10700ef-832b-5b39-a0a0-5e3f5f17b8e8> ],
+        [ a owl:Restriction ;
+            owl:hasValue 126.90447 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "IodineAtom"@en .
 
@@ -3708,14 +3708,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for xenon."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 131.293 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
+        [ a owl:Restriction ;
             owl:hasValue 54 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_fba570fc-6881-51d6-8e9d-a8c23e422b62> ],
-        [ a owl:Restriction ;
-            owl:hasValue 131.293 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "XenonAtom"@en .
 
@@ -3726,11 +3726,11 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:hasValue 63.546 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_bd93ef72-3d4f-5f17-b613-01f440296995> ],
-        [ a owl:Restriction ;
             owl:hasValue 29 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_bd93ef72-3d4f-5f17-b613-01f440296995> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "CopperAtom"@en .
 
@@ -3756,11 +3756,11 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:hasValue 1.008 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_93582808-e5fc-5bb5-bc7a-0e674e1a7f0e> ],
-        [ a owl:Restriction ;
             owl:hasValue 1 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_93582808-e5fc-5bb5-bc7a-0e674e1a7f0e> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "HydrogenAtom"@en .
 
@@ -3768,11 +3768,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for iridium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_b8aab013-b729-51f1-bc14-5302e7f97cbe> ],
-        [ a owl:Restriction ;
             owl:hasValue 77 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_b8aab013-b729-51f1-bc14-5302e7f97cbe> ],
         [ a owl:Restriction ;
             owl:hasValue 192.217 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
@@ -3783,14 +3783,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for fermium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_9c5b1294-ac9e-554f-a135-a3d72a763d9c> ],
+        [ a owl:Restriction ;
             owl:hasValue 257.09511 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         [ a owl:Restriction ;
             owl:hasValue 100 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
-        [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_9c5b1294-ac9e-554f-a135-a3d72a763d9c> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "FermiumAtom"@en .
 
@@ -3828,14 +3828,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for bohrium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 107 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_0805a892-352b-53e3-9577-60aa0835bc17> ],
         [ a owl:Restriction ;
             owl:hasValue 270.133 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_0805a892-352b-53e3-9577-60aa0835bc17> ],
+            owl:hasValue 107 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "BohriumAtom"@en .
 
@@ -3861,11 +3861,11 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:hasValue 32 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_6b670dce-5692-5505-9688-8f735b325214> ],
-        [ a owl:Restriction ;
             owl:hasValue 72.63 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_6b670dce-5692-5505-9688-8f735b325214> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "GermaniumAtom"@en .
 
@@ -3873,11 +3873,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for plutonium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_15841f91-ad7d-5b81-89d1-c12b13e42f32> ],
-        [ a owl:Restriction ;
             owl:hasValue 94 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_15841f91-ad7d-5b81-89d1-c12b13e42f32> ],
         [ a owl:Restriction ;
             owl:hasValue 244.06421 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
@@ -3888,14 +3888,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for tennessine."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 117 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
-        [ a owl:Restriction ;
             owl:hasValue 293.208 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_490c2981-b1cb-5f8c-be82-17a1ef1c27b4> ],
+        [ a owl:Restriction ;
+            owl:hasValue 117 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "TennessineAtom"@en .
 
@@ -3918,11 +3918,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for krypton."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 36 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_7c79a41c-c0aa-564b-b0b1-6fd4ee6f3256> ],
+        [ a owl:Restriction ;
+            owl:hasValue 36 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         [ a owl:Restriction ;
             owl:hasValue 83.798 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
@@ -3933,14 +3933,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for yttrium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_74fd9704-69a8-5112-b65a-72ba05bba315> ],
-        [ a owl:Restriction ;
             owl:hasValue 39 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         [ a owl:Restriction ;
             owl:hasValue 88.90584 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_74fd9704-69a8-5112-b65a-72ba05bba315> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "YttriumAtom"@en .
 
@@ -3948,14 +3948,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for promethium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 144.91276 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
-        [ a owl:Restriction ;
             owl:hasValue 61 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_c45d9e2f-54f3-5464-82f3-c0f11a36389a> ],
+        [ a owl:Restriction ;
+            owl:hasValue 144.91276 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "PromethiumAtom"@en .
 
@@ -3966,11 +3966,11 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:hasValue 82 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         [ a owl:Restriction ;
-            owl:hasValue 207.2 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_717d8808-5085-5f35-86b4-6bc75bafac0b> ],
+        [ a owl:Restriction ;
+            owl:hasValue 207.2 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "LeadAtom"@en .
 
@@ -4023,14 +4023,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for rutherfordium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 104 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
+            owl:hasValue 267.122 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_ce8cedc4-4835-5298-b723-6223d2a17e5a> ],
         [ a owl:Restriction ;
-            owl:hasValue 267.122 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
+            owl:hasValue 104 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "RutherfordiumAtom"@en .
 
@@ -4083,14 +4083,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for tungsten."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 183.84 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_68a887df-63af-55c0-8239-b0b8edaa94ea> ],
         [ a owl:Restriction ;
             owl:hasValue 74 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
+        [ a owl:Restriction ;
+            owl:hasValue 183.84 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "TungstenAtom"@en .
 
@@ -4113,11 +4113,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for selenium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 34 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_cfac37de-991d-5a7d-9adc-8946324ffef6> ],
+        [ a owl:Restriction ;
+            owl:hasValue 34 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         [ a owl:Restriction ;
             owl:hasValue 78.971 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
@@ -4158,11 +4158,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for sulfur."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 16 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_66d895f4-42fa-58a2-89af-ef065f52c1eb> ],
+        [ a owl:Restriction ;
+            owl:hasValue 16 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         [ a owl:Restriction ;
             owl:hasValue 32.06 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
@@ -4188,14 +4188,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for ytterbium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_fdcc0ac2-f82f-5650-838c-ec1ad138a632> ],
+            owl:hasValue 173.054 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         [ a owl:Restriction ;
             owl:hasValue 70 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         [ a owl:Restriction ;
-            owl:hasValue 173.054 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_fdcc0ac2-f82f-5650-838c-ec1ad138a632> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "YtterbiumAtom"@en .
 
@@ -4203,14 +4203,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for rhenium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 75 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
+            owl:hasValue 186.207 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_8d2f22ab-ba39-5e40-98dc-56f075cf22f1> ],
         [ a owl:Restriction ;
-            owl:hasValue 186.207 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
+            owl:hasValue 75 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "RheniumAtom"@en .
 
@@ -4233,11 +4233,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for ruthenium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 101.07 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_0edbde89-9714-53c7-b2a9-0ef6c0f73091> ],
+        [ a owl:Restriction ;
+            owl:hasValue 101.07 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         [ a owl:Restriction ;
             owl:hasValue 44 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
@@ -4263,14 +4263,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for tin."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 50 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
+        [ a owl:Restriction ;
             owl:hasValue 118.71 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_09e84f72-511a-5d22-adf1-accacaf7146a> ],
-        [ a owl:Restriction ;
-            owl:hasValue 50 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "TinAtom"@en .
 
@@ -4278,14 +4278,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for technetium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 43 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
+        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_8caaf41b-df30-5355-be5a-74283c49f50a> ],
         [ a owl:Restriction ;
             owl:hasValue 97.90721 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
-        [ a owl:Restriction ;
-            owl:hasValue 43 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "TechnetiumAtom"@en .
 
@@ -4293,11 +4293,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for iron."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 26 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
-        [ a owl:Restriction ;
             owl:hasValue 55.845 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
+        [ a owl:Restriction ;
+            owl:hasValue 26 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_71b5082d-9908-5011-8ad0-b2ab70ffd08c> ],
@@ -4383,11 +4383,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for moscovium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 289.194 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_ced3fb28-51f7-5208-9aab-d1f8bef21ee5> ],
+        [ a owl:Restriction ;
+            owl:hasValue 289.194 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         [ a owl:Restriction ;
             owl:hasValue 115 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
@@ -4398,14 +4398,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for dubnium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 268.126 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
+            owl:hasValue 105 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_43815c80-05dc-5917-8d52-b200badbf1d3> ],
         [ a owl:Restriction ;
-            owl:hasValue 105 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
+            owl:hasValue 268.126 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "DubniumAtom"@en .
 
@@ -4413,14 +4413,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for beryllium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 9.0121831 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_b42b9f49-aa2a-5dc7-afa5-9c5c013b621d> ],
         [ a owl:Restriction ;
             owl:hasValue 4 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_b42b9f49-aa2a-5dc7-afa5-9c5c013b621d> ],
+            owl:hasValue 9.0121831 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "BerylliumAtom"@en .
 
@@ -4443,11 +4443,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for mercury."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 80 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
-        [ a owl:Restriction ;
             owl:hasValue 200.592 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
+        [ a owl:Restriction ;
+            owl:hasValue 80 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_12120d44-785e-5e5e-a9fd-73fe7c24ead4> ],
@@ -4473,14 +4473,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for zirconium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 91.224 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
+        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_7ab01303-b09e-5a90-8a5b-f5087d6559d3> ],
         [ a owl:Restriction ;
             owl:hasValue 40 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
-        [ a owl:Restriction ;
-            owl:hasValue 91.224 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "ZirconiumAtom"@en .
 
@@ -4488,11 +4488,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for tellurium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 52 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_cf55f4d1-3865-5de4-88b4-3045f0db3a20> ],
+        [ a owl:Restriction ;
+            owl:hasValue 52 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         [ a owl:Restriction ;
             owl:hasValue 127.6 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
@@ -4503,14 +4503,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for antimony."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 121.76 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
+        [ a owl:Restriction ;
             owl:hasValue 51 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_4ee57a22-0634-5889-a283-0b4f8e5023f6> ],
-        [ a owl:Restriction ;
-            owl:hasValue 121.76 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "AntimonyAtom"@en .
 
@@ -4563,14 +4563,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for oganesson."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_e5d7bd48-4098-59b6-b872-8bba421157eb> ],
+        [ a owl:Restriction ;
             owl:hasValue 294.214 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         [ a owl:Restriction ;
             owl:hasValue 118 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
-        [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_e5d7bd48-4098-59b6-b872-8bba421157eb> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "OganessonAtom"@en .
 
@@ -4578,11 +4578,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for berkelium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 247.07031 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_5c736993-31b7-5839-aa36-38b6cd8b41a2> ],
+        [ a owl:Restriction ;
+            owl:hasValue 247.07031 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         [ a owl:Restriction ;
             owl:hasValue 97 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
@@ -4608,14 +4608,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for tantalum."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 180.94788 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
-        [ a owl:Restriction ;
             owl:hasValue 73 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_6378a9e9-29e5-5cae-b75b-46ca365e49b9> ],
+        [ a owl:Restriction ;
+            owl:hasValue 180.94788 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "TantalumAtom"@en .
 
@@ -4698,11 +4698,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for vanadium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 50.9415 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
-        [ a owl:Restriction ;
             owl:hasValue 23 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
+        [ a owl:Restriction ;
+            owl:hasValue 50.9415 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_113acda0-3c17-59d9-87ef-7e5e5c0ba128> ],
@@ -4713,14 +4713,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for livermorium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_31fda9f8-24e1-5c53-8616-a63cee7613de> ],
+        [ a owl:Restriction ;
             owl:hasValue 116 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         [ a owl:Restriction ;
             owl:hasValue 293.204 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
-        [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_31fda9f8-24e1-5c53-8616-a63cee7613de> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "LivermoriumAtom"@en .
 
@@ -4743,11 +4743,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for americium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 243.06138 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
-        [ a owl:Restriction ;
             owl:hasValue 95 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
+        [ a owl:Restriction ;
+            owl:hasValue 243.06138 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_f107c0e5-0b9f-566c-9cba-a3443c904f78> ],
@@ -4773,11 +4773,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for scandium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
-            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_3fb231cb-7818-5b59-b8da-b5bd2c09c0fc> ],
-        [ a owl:Restriction ;
             owl:hasValue 21 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
+        [ a owl:Restriction ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
+            owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_3fb231cb-7818-5b59-b8da-b5bd2c09c0fc> ],
         [ a owl:Restriction ;
             owl:hasValue 44.955908 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
@@ -4788,14 +4788,14 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for holmium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 164.93033 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
+        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_e0136ad7-1435-5292-9ed6-9848b481d503> ],
         [ a owl:Restriction ;
             owl:hasValue 67 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
-        [ a owl:Restriction ;
-            owl:hasValue 164.93033 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "HolmiumAtom"@en .
 
@@ -4833,11 +4833,11 @@ email: emanuele.ghedini@unibo.it"""@en,
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Atom subclass for magnesium."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 12 ;
-            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
-        [ a owl:Restriction ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a> ;
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#EMMO_91579f8a-e3b1-5ac9-9533-402c8cb1ffdd> ],
+        [ a owl:Restriction ;
+            owl:hasValue 12 ;
+            owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f> ],
         [ a owl:Restriction ;
             owl:hasValue 24.305 ;
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575> ],
@@ -5415,13 +5415,13 @@ emmo:EMMO_06448f64_8db6_4304_8b2c_e785dba82044 a owl:Class ;
 emmo:EMMO_068c4e58_2470_4b1c_8454_010dd4906100 a owl:Class ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "p" ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Restriction ;
                     owl:hasValue 1e-12 ;
                     owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ] ;
-            owl:onProperty [ owl:inverseOf emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ] ] ;
+            owl:onProperty [ owl:inverseOf emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ] ],
+        [ a owl:Restriction ;
+            owl:hasValue "p" ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ] ;
     skos:prefLabel "Pico"@en .
 
 emmo:EMMO_080052a1_f295_44be_a60f_1326ce13f1ba a owl:Class ;
@@ -5430,11 +5430,11 @@ emmo:EMMO_080052a1_f295_44be_a60f_1326ce13f1ba a owl:Class ;
     rdfs:comment "Measurement unit for power."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "W" ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
-            owl:someValuesFrom emmo:EMMO_c8d084ad_f88e_4596_8e4d_982c6655ce6f ] ;
+            owl:someValuesFrom emmo:EMMO_c8d084ad_f88e_4596_8e4d_982c6655ce6f ],
+        [ a owl:Restriction ;
+            owl:hasValue "W" ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ] ;
     skos:prefLabel "Watt"@en .
 
 emmo:EMMO_08cb807c_e626_447b_863f_e2835540e918 a emmo:EMMO_e7aac247_31d6_4b2e_9fd2_e842b1b7ccac,
@@ -5624,13 +5624,13 @@ emmo:EMMO_1c957677_a460_4702_85a6_baef659d14b1 a owl:Class ;
 emmo:EMMO_1d8b370b_c672_4d0c_964e_eaafcbf2f51f a owl:Class ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "da" ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Restriction ;
                     owl:hasValue 1e+01 ;
                     owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ] ;
-            owl:onProperty [ owl:inverseOf emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ] ] ;
+            owl:onProperty [ owl:inverseOf emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ] ],
+        [ a owl:Restriction ;
+            owl:hasValue "da" ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ] ;
     skos:prefLabel "Deka"@en .
 
 emmo:EMMO_1dcc2b31_7ff4_49ed_a1bc_6e4c055c951c a owl:Class ;
@@ -5643,11 +5643,11 @@ emmo:EMMO_1e0b665d_db6c_4752_a6d4_262d3a8dbb46 a owl:Class ;
     emmo:EMMO_70fe84ff_99b6_4206_a9fc_9a8931836d84 "Measure of plane angle defined as 1/60 or a degree."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/unitsextension#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "′" ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
             owl:someValuesFrom emmo:EMMO_3227b821_26a5_4c7c_9c01_5c24483e0bd0 ],
+        [ a owl:Restriction ;
+            owl:hasValue "′" ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
         emmo:EMMO_591e02fd_8d37_45a6_9d11_bb21cef391a0 ;
     skos:altLabel "MinuteOfArc"@en ;
     skos:prefLabel "ArcMinute"@en .
@@ -5685,13 +5685,13 @@ emmo:EMMO_21a13e48_e4e2_450b_ad03_d9a112daee87 a owl:Class ;
 emmo:EMMO_21aaefc1_3f86_4208_b7db_a755f31f0f8c a owl:Class ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "h" ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Restriction ;
                     owl:hasValue 1e+02 ;
                     owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ] ;
-            owl:onProperty [ owl:inverseOf emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ] ],
-        [ a owl:Restriction ;
-            owl:hasValue "h" ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ] ;
+            owl:onProperty [ owl:inverseOf emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ] ] ;
     skos:prefLabel "Hecto"@en .
 
 emmo:EMMO_21ef2ed6_c086_4d24_8a75_980d2bcc9282 a owl:Class ;
@@ -5718,13 +5718,13 @@ emmo:EMMO_220b7201_d277_4dca_bf6a_5a5e2c4062dd a owl:Class ;
 emmo:EMMO_23bfe79a_cade_48f1_9a8c_fd96e6bac8ba a owl:Class ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "f" ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Restriction ;
                     owl:hasValue 1e-15 ;
                     owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ] ;
-            owl:onProperty [ owl:inverseOf emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ] ] ;
+            owl:onProperty [ owl:inverseOf emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ] ],
+        [ a owl:Restriction ;
+            owl:hasValue "f" ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ] ;
     skos:prefLabel "Femto"@en .
 
 emmo:EMMO_2469e4c6_ac2e_4c8f_b49f_7b2d2e277215 a owl:Class ;
@@ -5957,13 +5957,13 @@ emmo:EMMO_39c3815d_8cae_4c8f_b2ff_eeba24bec455 a owl:ObjectProperty ;
 emmo:EMMO_3a204900_2b33_47d1_b444_815cc4c8cffa a owl:Class ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "T" ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Restriction ;
                     owl:hasValue 1e+12 ;
                     owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ] ;
-            owl:onProperty [ owl:inverseOf emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ] ],
-        [ a owl:Restriction ;
-            owl:hasValue "T" ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ] ;
+            owl:onProperty [ owl:inverseOf emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ] ] ;
     skos:prefLabel "Tera"@en .
 
 emmo:EMMO_3b1b64d1_60c9_4689_a300_eb9cd56e368b a owl:Class ;
@@ -6516,11 +6516,11 @@ emmo:EMMO_696ed548_9477_45ea_993c_6a8f5271914a a owl:Class ;
     rdfs:comment "Measurement unit for electric charge."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "C" ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
-            owl:someValuesFrom emmo:EMMO_ab79e92b_5377_454d_be06_d61b50db295a ] ;
+            owl:someValuesFrom emmo:EMMO_ab79e92b_5377_454d_be06_d61b50db295a ],
+        [ a owl:Restriction ;
+            owl:hasValue "C" ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ] ;
     skos:prefLabel "Coulomb"@en .
 
 emmo:EMMO_6a4547ab_3abb_430d_b81b_ce32d47729f5 a owl:Class ;
@@ -6569,11 +6569,11 @@ emmo:EMMO_6c7160fc_cc64_46f0_b43b_aba65e9952e3 a owl:Class ;
         "bel is used to express the ratio of one value of a power or field quantity to another, on a logarithmic scale, the logarithmic quantity being called the power level or field level, respectively."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/unitsextension#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "B" ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
             owl:someValuesFrom emmo:EMMO_3227b821_26a5_4c7c_9c01_5c24483e0bd0 ],
+        [ a owl:Restriction ;
+            owl:hasValue "B" ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
         emmo:EMMO_591e02fd_8d37_45a6_9d11_bb21cef391a0,
         emmo:EMMO_972e01b0_b017_4903_8c05_b7edda958723 ;
     skos:prefLabel "Bel"@en .
@@ -6687,11 +6687,11 @@ emmo:EMMO_7db11dbf_a643_464a_9b56_07eabcc3e9c5 a owl:Class ;
     emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.M03884" ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
-            owl:someValuesFrom emmo:EMMO_b3600e73_3e05_479d_9714_c041c3acf5cc ],
-        [ a owl:Restriction ;
             owl:hasValue "m" ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ] ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+            owl:someValuesFrom emmo:EMMO_b3600e73_3e05_479d_9714_c041c3acf5cc ] ;
     skos:prefLabel "Metre"@en .
 
 emmo:EMMO_7db59e56_f68b_48b7_ae99_891c35ae5c3b a owl:Class ;
@@ -6857,11 +6857,11 @@ emmo:EMMO_8a70dea4_d6ab_4260_b931_a3e990982416 a owl:Class ;
     rdfs:comment "Measurement unit for energy."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "J" ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
-            owl:someValuesFrom emmo:EMMO_f6070071_d054_4b17_9d2d_f446f7147d0f ] ;
+            owl:someValuesFrom emmo:EMMO_f6070071_d054_4b17_9d2d_f446f7147d0f ],
+        [ a owl:Restriction ;
+            owl:hasValue "J" ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ] ;
     skos:prefLabel "Joule"@en .
 
 emmo:EMMO_8a83b7bd_85bd_48e4_a4ac_bb2eb97d3014 a owl:Class ;
@@ -7034,13 +7034,13 @@ emmo:EMMO_9fd1e79d_41d1_44f8_8142_66dbdf0fc7ad a owl:Class ;
 emmo:EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae a owl:Class ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "µ" ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Restriction ;
                     owl:hasValue 1e-06 ;
                     owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ] ;
-            owl:onProperty [ owl:inverseOf emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ] ] ;
+            owl:onProperty [ owl:inverseOf emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ] ],
+        [ a owl:Restriction ;
+            owl:hasValue "µ" ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ] ;
     skos:prefLabel "Micro"@en .
 
 emmo:EMMO_a06e3d38_1aa8_4f45_89a8_722dbacfda24 a owl:Class ;
@@ -7071,11 +7071,11 @@ emmo:EMMO_a155dc93_d266_487e_b5e7_2a2c72d5ebf9 a owl:Class ;
     emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.L03594" ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/unitsextension#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "l" ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
             owl:someValuesFrom emmo:EMMO_9141801c_c539_4c72_b423_8c74ff6b8f05 ],
+        [ a owl:Restriction ;
+            owl:hasValue "l" ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
         emmo:EMMO_591e02fd_8d37_45a6_9d11_bb21cef391a0 ;
     skos:prefLabel "Litre"@en .
 
@@ -7103,13 +7103,13 @@ emmo:EMMO_a2f94f33_71fa_443c_a1fb_d1685fc537ec a owl:Class ;
 emmo:EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7 a owl:Class ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "m" ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Restriction ;
                     owl:hasValue 1e-03 ;
                     owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ] ;
-            owl:onProperty [ owl:inverseOf emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ] ],
-        [ a owl:Restriction ;
-            owl:hasValue "m" ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ] ;
+            owl:onProperty [ owl:inverseOf emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ] ] ;
     skos:prefLabel "Milli"@en .
 
 emmo:EMMO_a633c6f8_4269_4870_9b28_f5ca1783fd54 a owl:Class ;
@@ -7243,11 +7243,11 @@ emmo:EMMO_b20be325_8bfd_4237_bee7_201ab0fd9c75 a owl:Class ;
     rdfs:comment "Measurement unit for Celsius temperature. This unit can only be used for expressing temperature differences."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "°C" ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
-            owl:someValuesFrom emmo:EMMO_a77a0a4b_6bd2_42b2_be27_4b63cebbb59e ] ;
+            owl:someValuesFrom emmo:EMMO_a77a0a4b_6bd2_42b2_be27_4b63cebbb59e ],
+        [ a owl:Restriction ;
+            owl:hasValue "°C" ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ] ;
     skos:prefLabel "DegreeCelsius"@en .
 
 emmo:EMMO_b41515a9_28d8_4d78_8165_74b2fc72f89e a owl:Class ;
@@ -7262,11 +7262,11 @@ Wikipedia"""@en ;
     emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.N04106" ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/unitsextension#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
-            owl:someValuesFrom emmo:EMMO_3227b821_26a5_4c7c_9c01_5c24483e0bd0 ],
-        [ a owl:Restriction ;
             owl:hasValue "Np" ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+            owl:someValuesFrom emmo:EMMO_3227b821_26a5_4c7c_9c01_5c24483e0bd0 ],
         emmo:EMMO_591e02fd_8d37_45a6_9d11_bb21cef391a0,
         emmo:EMMO_972e01b0_b017_4903_8c05_b7edda958723 ;
     skos:prefLabel "Neper"@en .
@@ -7324,11 +7324,11 @@ emmo:EMMO_b8830065_3809_41b7_be3c_e33795567fd9 a owl:Class ;
     emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.D01560" ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/unitsextension#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "°" ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
             owl:someValuesFrom emmo:EMMO_3227b821_26a5_4c7c_9c01_5c24483e0bd0 ],
+        [ a owl:Restriction ;
+            owl:hasValue "°" ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
         emmo:EMMO_591e02fd_8d37_45a6_9d11_bb21cef391a0 ;
     skos:prefLabel "Degree"@en .
 
@@ -7615,11 +7615,11 @@ emmo:EMMO_d7b7fd1e_645a_42cb_8f40_85f0d034d3ae a owl:Class ;
     rdfs:comment "Measurement unit for luminous flux."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "lm" ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
-            owl:someValuesFrom emmo:EMMO_14ff4393_0f28_4fb4_abc7_c2cc00bc761d ] ;
+            owl:someValuesFrom emmo:EMMO_14ff4393_0f28_4fb4_abc7_c2cc00bc761d ],
+        [ a owl:Restriction ;
+            owl:hasValue "lm" ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ] ;
     skos:prefLabel "Lumen"@en .
 
 emmo:EMMO_d7f11b34_a121_4519_87c0_aa754f1c4737 a owl:Class ;
@@ -7713,11 +7713,11 @@ emmo:EMMO_db5dd38d_ac79_4af6_8782_fee7e7150ae8 a owl:Class ;
     emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.A00300" ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "A" ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
-            owl:someValuesFrom emmo:EMMO_d5f3e0e5_fc7d_4e64_86ad_555e74aaff84 ] ;
+            owl:someValuesFrom emmo:EMMO_d5f3e0e5_fc7d_4e64_86ad_555e74aaff84 ],
+        [ a owl:Restriction ;
+            owl:hasValue "A" ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ] ;
     skos:prefLabel "Ampere"@en .
 
 emmo:EMMO_dbb2ae7f_9f47_41b3_bf68_d9bece864e2c a owl:Class ;
@@ -7737,11 +7737,11 @@ emmo:EMMO_dc232f53_8ed8_4ddd_9f41_cc057985eadb a owl:Class ;
 Sievert is derived from absorbed dose, but takes into account the biological effectiveness of the radiation, which is dependent on the radiation type and energy."""@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
-            owl:someValuesFrom emmo:EMMO_847f1d9f_205e_46c1_8cb6_a9e479421f88 ],
-        [ a owl:Restriction ;
             owl:hasValue "Sv" ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ] ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+            owl:someValuesFrom emmo:EMMO_847f1d9f_205e_46c1_8cb6_a9e479421f88 ] ;
     skos:prefLabel "Sievert"@en .
 
 emmo:EMMO_dc5dee4e_4305_4a21_8dd5_4e8311c98c73 a owl:Class ;
@@ -7774,11 +7774,11 @@ emmo:EMMO_df6eeb01_1b41_4bd8_9257_a04fbd7cf000 a owl:Class ;
     emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.M03980" ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "mol" ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
-            owl:someValuesFrom emmo:EMMO_e501069c_34d3_4dc7_ac87_c90c7342192b ] ;
+            owl:someValuesFrom emmo:EMMO_e501069c_34d3_4dc7_ac87_c90c7342192b ],
+        [ a owl:Restriction ;
+            owl:hasValue "mol" ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ] ;
     skos:prefLabel "Mole"@en .
 
 emmo:EMMO_df808271_df91_4f27_ba59_fa423c51896c a owl:Class ;
@@ -7786,13 +7786,13 @@ emmo:EMMO_df808271_df91_4f27_ba59_fa423c51896c a owl:Class ;
     emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Neutron" ;
     rdfs:isDefinedBy <http://emmo.info/emmo/perspectives/physicalistic#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onClass emmo:EMMO_a4edc1d4_bb38_4897_ba1e_f87e7aa31c5b ;
-            owl:onProperty emmo:EMMO_f68030be_94b8_4c61_a161_886468558054 ;
-            owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger ],
-        [ a owl:Restriction ;
             owl:onClass emmo:EMMO_0a3f04a6_ba3a_49d9_99da_08b0e26f51f0 ;
             owl:onProperty emmo:EMMO_f68030be_94b8_4c61_a161_886468558054 ;
-            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ] ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onClass emmo:EMMO_a4edc1d4_bb38_4897_ba1e_f87e7aa31c5b ;
+            owl:onProperty emmo:EMMO_f68030be_94b8_4c61_a161_886468558054 ;
+            owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger ] ;
     skos:prefLabel "Neutron"@en .
 
 emmo:EMMO_e024544d_e374_45b7_9340_1982040bc6b7 a owl:Class ;
@@ -7989,11 +7989,11 @@ emmo:EMMO_f2523820_04a6_44ab_bb67_8237dda2b0c2 a owl:Class ;
     rdfs:comment "Measurement unit for electrical conductance."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "S" ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
-            owl:someValuesFrom emmo:EMMO_321af35f_f0cc_4a5c_b4fe_8c2c0303fb0c ] ;
+            owl:someValuesFrom emmo:EMMO_321af35f_f0cc_4a5c_b4fe_8c2c0303fb0c ],
+        [ a owl:Restriction ;
+            owl:hasValue "S" ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ] ;
     skos:prefLabel "Siemens"@en .
 
 emmo:EMMO_f2d5d3ad_2e00_417f_8849_686f3988d929 a owl:Class ;
@@ -8009,13 +8009,13 @@ emmo:EMMO_f2d5d3ad_2e00_417f_8849_686f3988d929 a owl:Class ;
 emmo:EMMO_f5769206_9257_4b08_bf7b_dad7868c6afc a owl:Class ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "y" ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
             owl:allValuesFrom [ a owl:Restriction ;
                     owl:hasValue 1e-24 ;
                     owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ] ;
-            owl:onProperty [ owl:inverseOf emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ] ],
-        [ a owl:Restriction ;
-            owl:hasValue "y" ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ] ;
+            owl:onProperty [ owl:inverseOf emmo:EMMO_3446e167_c576_49d6_846c_215bb8878a55 ] ] ;
     skos:prefLabel "Yocto"@en .
 
 emmo:EMMO_f678173d_f036_4df1_a86b_2894560be617 a owl:Class ;
@@ -8060,11 +8060,11 @@ emmo:EMMO_f8b92999_3cde_46e3_99d5_664da3090a02 a owl:Class ;
     emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.T06394" ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/unitsextension#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "t" ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
             owl:someValuesFrom emmo:EMMO_77e9dc31_5b19_463e_b000_44c6e79f98aa ],
+        [ a owl:Restriction ;
+            owl:hasValue "t" ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
         emmo:EMMO_591e02fd_8d37_45a6_9d11_bb21cef391a0 ;
     skos:prefLabel "Tonne"@en .
 
@@ -8106,11 +8106,11 @@ emmo:EMMO_fab003c8_f7a6_4346_9988_7161325ed7a3 a owl:Class ;
     rdfs:comment "Measurement unit for electrical inductance."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/disciplines/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
-            owl:someValuesFrom emmo:EMMO_585e0ff0_9429_4d3c_b578_58abb1ba21d1 ],
-        [ a owl:Restriction ;
             owl:hasValue "H" ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ] ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+            owl:someValuesFrom emmo:EMMO_585e0ff0_9429_4d3c_b578_58abb1ba21d1 ] ;
     skos:prefLabel "Henry"@en .
 
 emmo:EMMO_fb27e6d6_159e_48a6_9c29_76dc31d8a860 a owl:Class ;
@@ -9384,10 +9384,10 @@ e.g. you cannot remove H from H₂0 without changing the molecule type (essentia
     rdfs:isDefinedBy <http://emmo.info/emmo/perspectives/physicalistic#> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_dc57d998_23db_4d8e_b2cd_f346b195b846 ;
-            owl:someValuesFrom emmo:EMMO_f835f4d4_c665_403d_ab25_dca5cc74be52 ],
+            owl:someValuesFrom emmo:EMMO_8043d3c6_a4c1_4089_ba34_9744e28e5b3d ],
         [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_dc57d998_23db_4d8e_b2cd_f346b195b846 ;
-            owl:someValuesFrom emmo:EMMO_8043d3c6_a4c1_4089_ba34_9744e28e5b3d ],
+            owl:someValuesFrom emmo:EMMO_f835f4d4_c665_403d_ab25_dca5cc74be52 ],
         emmo:EMMO_21205421_5783_4d3e_81e5_10c5d894a88a ;
     owl:disjointUnionOf ( emmo:EMMO_50967f46_51f9_462a_b1e4_e63365b4a184 emmo:EMMO_e024544d_e374_45b7_9340_1982040bc6b7 ) ;
     skos:altLabel "ChemicalSubstance"@en ;
@@ -10399,9 +10399,9 @@ Data are always generated by an agent but not necessarily possess a semantic mea
 A data object may be used as the physical basis for a sign, under Semiotics perspective."""@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/perspectives/data#> ;
     owl:equivalentClass [ a owl:Class ;
-            owl:unionOf ( emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a emmo:EMMO_50d6236a_7667_4883_8ae1_9bb5d190423a ) ],
-        [ a owl:Class ;
             owl:unionOf ( emmo:EMMO_0d1c0018_42e2_4506_bc3d_f53c117c1ad3 emmo:EMMO_be8592a7_68d1_4a06_ad23_82f2b56ef926 ) ],
+        [ a owl:Class ;
+            owl:unionOf ( emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a emmo:EMMO_50d6236a_7667_4883_8ae1_9bb5d190423a ) ],
         [ a owl:Class ;
             owl:unionOf ( emmo:EMMO_6fa1feac_c388_44cc_a721_283499d5addc emmo:EMMO_ed257e78_8b59_44c3_9d61_06c261184f55 ) ],
         [ a owl:Class ;
@@ -10453,13 +10453,13 @@ emmo:EMMO_47bf3513_4ae6_4858_9c45_76e23230d68d a owl:Class ;
     rdfs:isDefinedBy <http://emmo.info/emmo/perspectives/semiotics#> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_dc57d998_23db_4d8e_b2cd_f346b195b846 ;
-            owl:someValuesFrom emmo:EMMO_c9805ac9_a943_4be4_ac4b_6da64ba36c73 ],
-        [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_dc57d998_23db_4d8e_b2cd_f346b195b846 ;
             owl:someValuesFrom emmo:EMMO_2d72e38c_d587_437f_98f6_f2718fb130eb ],
         [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_dc57d998_23db_4d8e_b2cd_f346b195b846 ;
-            owl:someValuesFrom emmo:EMMO_35d2e130_6e01_41ed_94f7_00b333d46cf9 ] ;
+            owl:someValuesFrom emmo:EMMO_35d2e130_6e01_41ed_94f7_00b333d46cf9 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_dc57d998_23db_4d8e_b2cd_f346b195b846 ;
+            owl:someValuesFrom emmo:EMMO_c9805ac9_a943_4be4_ac4b_6da64ba36c73 ] ;
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( emmo:EMMO_10a5fd39_06aa_4648_9e70_f962a9cb2069 emmo:EMMO_e999f9e0_7d63_4564_9028_07246580a267 ) ] ;
     skos:altLabel "ConventionalSemiosis"@en ;
@@ -10541,8 +10541,8 @@ emmo:EMMO_72d53756_7fb1_46ed_980f_83f47efbe105 a owl:Class ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of individuals that stand for quarks elementary particles."@en ;
     emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Quark" ;
     rdfs:isDefinedBy <http://emmo.info/emmo/perspectives/standardmodel#> ;
-    owl:disjointUnionOf ( emmo:EMMO_fc47b76f_ad01_4cd0_8fc6_55532000e7c8 emmo:EMMO_ff010476_5153_422b_99ad_0cd59b226892 ),
-        ( emmo:EMMO_cf972459_e649_4aa8_9676_3d219b5e0fe6 emmo:EMMO_dcc63058_f36a_4f49_a109_a8c3de88d890 emmo:EMMO_dcca141c_dba1_4f83_86ac_f4cb2d9a1bdd ) ;
+    owl:disjointUnionOf ( emmo:EMMO_cf972459_e649_4aa8_9676_3d219b5e0fe6 emmo:EMMO_dcc63058_f36a_4f49_a109_a8c3de88d890 emmo:EMMO_dcca141c_dba1_4f83_86ac_f4cb2d9a1bdd ),
+        ( emmo:EMMO_fc47b76f_ad01_4cd0_8fc6_55532000e7c8 emmo:EMMO_ff010476_5153_422b_99ad_0cd59b226892 ) ;
     skos:prefLabel "Quark"@en .
 
 emmo:EMMO_79751276_b2d0_4e2f_bbd4_99d412f43d55 a owl:Class ;
@@ -10564,10 +10564,10 @@ emmo:EMMO_7cdc375d_d371_4d78_acd5_d51732f52126 a owl:Class ;
     rdfs:isDefinedBy <http://emmo.info/emmo/perspectives/semiotics#> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_dc57d998_23db_4d8e_b2cd_f346b195b846 ;
-            owl:someValuesFrom emmo:EMMO_19608340_178c_4bfd_bd4d_0d3b935c6fec ],
+            owl:someValuesFrom emmo:EMMO_881606d0_6f2f_4947_bc8b_75c5b7b2b688 ],
         [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_dc57d998_23db_4d8e_b2cd_f346b195b846 ;
-            owl:someValuesFrom emmo:EMMO_881606d0_6f2f_4947_bc8b_75c5b7b2b688 ],
+            owl:someValuesFrom emmo:EMMO_19608340_178c_4bfd_bd4d_0d3b935c6fec ],
         [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_dc57d998_23db_4d8e_b2cd_f346b195b846 ;
             owl:someValuesFrom emmo:EMMO_d7788d1a_020d_4c78_85a1_13563fcec168 ] ;
@@ -10925,9 +10925,9 @@ emmo:EMMO_2e46d966-9f14-4673-821e-7c7cf2957926 a owl:Class ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 emmo:EMMO_22c91e99_61f8_4433_8853_432d44a2a46a ;
     rdfs:isDefinedBy <http://emmo.info/emmo/perspectives/reductionistic#> ;
     owl:equivalentClass [ a owl:Class ;
-            owl:unionOf ( emmo:EMMO_caa63d00_80b1_4408_ac1b_cd0d23b0ec50 emmo:EMMO_edf72228_e040_4edc_8b46_78b2a47c72d7 emmo:EMMO_fa595892_070d_455e_9459_06c97179c080 ) ],
+            owl:unionOf ( emmo:EMMO_4cf484af_082a_40f5_9f11_930bf4634482 emmo:EMMO_504ad89e_dd4a_4fa6_aeb6_15c8ce0cde9b emmo:EMMO_d4c95fa1_5bda_4063_a22d_62c81fcea284 ) ],
         [ a owl:Class ;
-            owl:unionOf ( emmo:EMMO_4cf484af_082a_40f5_9f11_930bf4634482 emmo:EMMO_504ad89e_dd4a_4fa6_aeb6_15c8ce0cde9b emmo:EMMO_d4c95fa1_5bda_4063_a22d_62c81fcea284 ) ] ;
+            owl:unionOf ( emmo:EMMO_caa63d00_80b1_4408_ac1b_cd0d23b0ec50 emmo:EMMO_edf72228_e040_4edc_8b46_78b2a47c72d7 emmo:EMMO_fa595892_070d_455e_9459_06c97179c080 ) ] ;
     skos:prefLabel "WellFormedTile"@en .
 
 emmo:EMMO_31252f35_c767_4b97_a877_1235076c3e13 a owl:AnnotationProperty ;
@@ -11450,7 +11450,7 @@ The combination of collection and item concepts is the EMMO mereocausality alter
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of not direct causally self-connected world entities."@en ;
     emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a "The collection of users of a particular software, the collection of atoms that have been part of that just dissociated molecule."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/mereocausality#> ;
-    rdfs:subClassOf _:52 ;
+    rdfs:subClassOf _:56 ;
     skos:prefLabel "Collection"@en .
 
 emmo:EMMO_2d72e38c_d587_437f_98f6_f2718fb130eb a owl:Class ;
@@ -11474,9 +11474,9 @@ emmo:EMMO_4207e895_8b83_4318_996a_72cfb32acd94 a owl:Class ;
         emmo:EMMO_6e9cb807_fc68_4bcf_b3ba_5fccc887c644 ;
     owl:disjointUnionOf ( emmo:EMMO_660a4964_0333_4663_bc66_e93ef59b0679 emmo:EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2 ) ;
     owl:equivalentClass [ a owl:Class ;
-            owl:unionOf ( emmo:EMMO_4c1f58cd_6e2c_48fb_8098_1cbb762abb05 emmo:EMMO_c5e9e390_8836_4440_b4fd_c906fdd4f438 emmo:EMMO_f678173d_f036_4df1_a86b_2894560be617 emmo:EMMO_fb27e6d6_159e_48a6_9c29_76dc31d8a860 ) ],
+            owl:unionOf ( emmo:EMMO_0afc19b0_2d43_4b3d_8da0_9ffb63bc1492 emmo:EMMO_f1025834_0cd2_42a1_bfeb_13bec41c8655 ) ],
         [ a owl:Class ;
-            owl:unionOf ( emmo:EMMO_0afc19b0_2d43_4b3d_8da0_9ffb63bc1492 emmo:EMMO_f1025834_0cd2_42a1_bfeb_13bec41c8655 ) ] ;
+            owl:unionOf ( emmo:EMMO_4c1f58cd_6e2c_48fb_8098_1cbb762abb05 emmo:EMMO_c5e9e390_8836_4440_b4fd_c906fdd4f438 emmo:EMMO_f678173d_f036_4df1_a86b_2894560be617 emmo:EMMO_fb27e6d6_159e_48a6_9c29_76dc31d8a860 ) ] ;
     skos:prefLabel "Material"@en .
 
 emmo:EMMO_4ce76d7f_03f8_45b6_9003_90052a79bfaa a owl:Class ;
@@ -12262,8 +12262,8 @@ Entities are not placed in space or time: space and time are always relative bet
 The EMMO conceptualisation does not allow the existence of space without a temporal dimension, the latter coming from a causal relation between entities.
 For this reason, the EMMO entities that are not quantum or elementaries, may be considered to be always spatiotemporal. The EMMO poses no constraints to the number of spatial dimensions for a causal system (except being higher than one)."""@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/mereocausality#> ;
-    rdfs:subClassOf _:44,
-        _:45 ;
+    rdfs:subClassOf _:40,
+        _:67 ;
     owl:disjointUnionOf ( emmo:EMMO_2d2ecd97_067f_4d0e_950c_d746b7700a31 emmo:EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de ) ;
     skos:prefLabel "EMMO"@en .
 
@@ -12604,41 +12604,16 @@ emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 a owl:DatatypeProperty,
     owl:versionInfo "1.0.0-beta4"@en .
 
 [] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin collectio, from colligere ‘gather together’."@en ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_2d2ecd97_067f_4d0e_950c_d746b7700a31 ;
-    owl:annotatedTarget "Collection"@en .
+    rdfs:seeAlso "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#Global_Restrictions_on_Axioms_in_OWL_2_DL"^^xsd:anyURI ;
+    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+    owl:annotatedSource emmo:EMMO_c6e77b51_681b_4d04_b20d_a08f2b977470 ;
+    owl:annotatedTarget "Axiom not included in the theory because of OWL 2 DL global restrictions for decidability."@en .
 
 [] a owl:Axiom ;
-    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "While EMMO mereocausality conceptualisation can be used on any possibile domain, so that a quantum can be a Lego brick or an furniture component, it can be better understood when a quantum is elucidated as the smallest measured time interval of existence of an elementary particle (e.g. quark, photon)."@en ;
-    owl:annotatedProperty emmo:EMMO_31252f35_c767_4b97_a877_1235076c3e13 ;
-    owl:annotatedSource emmo:EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf ;
-    owl:annotatedTarget """The EMMO conceptualises the world using the primitive concepts of causality and parthood. Parthood is about the composition of world entities starting from other more fundamental entities. Causality is about the interactions between world entities.
-The quantum is the smallest indivisible part of any world entity. Quantum individuals are the fundamental causal constituents of the universe, since it is implied that causality originates from quantum-to-quantum interactions. Quantums are no-dimensional, and their aggregation makes spacetime emerge from their causal structure. Causality between macro entities (i.e. entities made of more than one quantum) is explained as the sum of the causality relations between their quantum constituents.
-The fundamental distinction between world entities is direct causality self-connectedness: a world entity can be self-connected xor not self-connected depending on the causality network of its fundamental components.
-Void regions do not exist in the EMMO, or in other words there is no spacetime without entities, since space and time are measured quantities following a causality relation between entities (spacetime emerges as relational property not as a self-standing entity).
-Entities are not placed in space or time: space and time are always relative between entities and are measured. In other words, space and time relations originates from causality interactions."""@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Ancient Greek πάτος (pátos, “path”)."@en ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin quantum (plural quanta) \"as much as, so much as\"."@en ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_0f795e3e_c602_4577_9a43_d5a231aa1360 ;
-    owl:annotatedTarget "CausalPath"@en .
-
-[] a ns1:Imp ;
-    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Enforcing a strict one-way causality direction."@en ;
-    ns1:body [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#y> ;
-                    ns1:propertyPredicate emmo:EMMO_3733bd38_ca2b_4264_a92a_3075a1715598 ] ;
-            rdf:rest () ] ;
-    ns1:head [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#y> ;
-                    ns1:argument2 <urn:swrl:var#x> ;
-                    ns1:propertyPredicate emmo:EMMO_01e5766d_dac3_4574_8a78_310de92a5c9d ] ;
-            rdf:rest () ] .
+    owl:annotatedSource emmo:EMMO_3f9ae00e_810c_4518_aec2_7200e424cf68 ;
+    owl:annotatedTarget "Quantum"@en .
 
 [] a ns1:Imp ;
     emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Enforcing exclusivity between overlapping and causality."@en ;
@@ -12653,6 +12628,21 @@ Entities are not placed in space or time: space and time are always relative bet
                     ns1:argument1 <urn:swrl:var#x> ;
                     ns1:argument2 <urn:swrl:var#y> ;
                     ns1:propertyPredicate emmo:EMMO_aa987900_caf1_4ce2_82fa_6b1d6fbd2ead ] ;
+            rdf:rest () ] .
+
+[] a ns1:Imp ;
+    rdfs:comment "Ensure that the hasNext relation expresses a strictly one-way causality arrow between two entities."^^rdfs:Literal ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 <urn:swrl:var#x> ;
+                    ns1:argument2 <urn:swrl:var#y> ;
+                    ns1:propertyPredicate emmo:EMMO_499e24a5_5072_4c83_8625_fe3f96ae4a8d ] ;
+            rdf:rest () ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 <urn:swrl:var#y> ;
+                    ns1:argument2 <urn:swrl:var#x> ;
+                    ns1:propertyPredicate emmo:EMMO_01e5766d_dac3_4574_8a78_310de92a5c9d ] ;
             rdf:rest () ] .
 
 [] a ns1:Imp ;
@@ -12674,77 +12664,20 @@ Entities are not placed in space or time: space and time are always relative bet
                     ns1:argument2 <urn:swrl:var#y> ] ;
             rdf:rest () ] .
 
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Old French chaine, chaene (“chain”), from Latin catēna (“chain”)."@en ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource emmo:EMMO_0f795e3e_c602_4577_9a43_d5a231aa1360 ;
-    owl:annotatedTarget "CausalChain"@en .
-
-[] a ns1:Imp ;
-    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Enforcing the fact that an entity cannot cause itself."@en ;
-    ns1:body [ a ns1:AtomList ;
-            rdf:first [ a ns1:ClassAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:classPredicate emmo:EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf ] ;
-            rdf:rest () ] ;
-    ns1:head [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#x> ;
-                    ns1:propertyPredicate emmo:EMMO_01e5766d_dac3_4574_8a78_310de92a5c9d ] ;
-            rdf:rest () ] .
-
 [] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
 
 [] a ns1:Imp ;
-    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Enforcing parthood reflexivity."@en ;
     ns1:body [ a ns1:AtomList ;
-            rdf:first [ a ns1:ClassAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:classPredicate emmo:EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf ] ;
-            rdf:rest () ] ;
-    ns1:head [ a ns1:AtomList ;
             rdf:first [ a ns1:IndividualPropertyAtom ;
                     ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#x> ;
-                    ns1:propertyPredicate emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ] ;
+                    ns1:argument2 <urn:swrl:var#y> ;
+                    ns1:propertyPredicate emmo:EMMO_6835537c_d294_4005_a770_ec9621f29ed1 ] ;
+            rdf:rest () ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:SameIndividualAtom ;
+                    ns1:argument1 <urn:swrl:var#x> ;
+                    ns1:argument2 <urn:swrl:var#y> ] ;
             rdf:rest () ] .
-
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin quantum (plural quanta) \"as much as, so much as\"."@en ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_3f9ae00e_810c_4518_aec2_7200e424cf68 ;
-    owl:annotatedTarget "Quantum"@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin fundamentum (“foundation”), from fundō (“to lay the foundation (of something), to found”), from fundus (“bottom”)."@en ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_57c75ca1_bf8a_42bc_85d9_58cfe38c7df2 ;
-    owl:annotatedTarget "Fundamental"@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From French rôle, from obsolete French roule ‘roll’, referring originally to the roll of paper on which the actor's part was written."@en ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_4f226cf3_6d02_4d35_8566_a9e641bc6ff3 ;
-    owl:annotatedTarget "Role"@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Middle English liftime, equivalent to life +‎ time."@en ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource emmo:EMMO_57c75ca1_bf8a_42bc_85d9_58cfe38c7df2 ;
-    owl:annotatedTarget "Lifetime"@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin partire, partiri ‘divide, share’."@en ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource emmo:EMMO_4f226cf3_6d02_4d35_8566_a9e641bc6ff3 ;
-    owl:annotatedTarget "Part"@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From the word 'holistic' with the 'w-' prefix, due to the affinity with the existing word 'whole', that share the same meaning of 'holos'."@en ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource emmo:EMMO_0277f24a_ea7f_4917_81b7_fb0406c8fc62 ;
-    owl:annotatedTarget "Wholistic"@en .
 
 [] a owl:Axiom ;
     emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "Holism (from Greek ὅλος holos \"all, whole, entire\")."@en ;
@@ -12753,24 +12686,46 @@ Entities are not placed in space or time: space and time are always relative bet
     owl:annotatedTarget "Holistic"@en .
 
 [] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin fundamentum (“foundation”), from fundō (“to lay the foundation (of something), to found”), from fundus (“bottom”)."@en ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_57c75ca1_bf8a_42bc_85d9_58cfe38c7df2 ;
+    owl:annotatedTarget "Fundamental"@en .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From the word 'holistic' with the 'w-' prefix, due to the affinity with the existing word 'whole', that share the same meaning of 'holos'."@en ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource emmo:EMMO_0277f24a_ea7f_4917_81b7_fb0406c8fc62 ;
+    owl:annotatedTarget "Wholistic"@en .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Middle English liftime, equivalent to life +‎ time."@en ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource emmo:EMMO_57c75ca1_bf8a_42bc_85d9_58cfe38c7df2 ;
+    owl:annotatedTarget "Lifetime"@en .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Greek, nominative plural form of δεδομένο (dedoméno) (data, information)"@en ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource emmo:EMMO_1e877c70_3b01_45a8_a8f6_8ce4f6a24660 ;
+    owl:annotatedTarget "Dedomena"@en .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From French rôle, from obsolete French roule ‘roll’, referring originally to the roll of paper on which the actor's part was written."@en ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_4f226cf3_6d02_4d35_8566_a9e641bc6ff3 ;
+    owl:annotatedTarget "Role"@en .
+
+[] a owl:Axiom ;
     emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Middle English hole (“healthy, unhurt, whole”)."@en ;
     owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource emmo:EMMO_1efe8b96_e006_4a33_bc9a_421406cbb9f0 ;
     owl:annotatedTarget "Whole"@en .
 
 [] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin particula (“small part, particle”), diminutive of pars (“part, piece”)."@en ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin partire, partiri ‘divide, share’."@en ;
     owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource emmo:EMMO_a15cea10_9946_4d2b_95c5_cfc333fd2abb ;
-    owl:annotatedTarget "Particle"@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Phase_(matter)"@en ;
-    owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
-    owl:annotatedSource emmo:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a ;
-    owl:annotatedTarget """In the physical sciences, a phase is a region of space (a thermodynamic system), throughout which all physical properties of a material are essentially uniform. Examples of physical properties include density, index of refraction, magnetization and chemical composition. A simple description is that a phase is a region of material that is chemically uniform, physically distinct, and (often) mechanically separable. In a system consisting of ice and water in a glass jar, the ice cubes are one phase, the water is a second phase, and the humid air is a third phase over the ice and water. The glass of the jar is another separate phase.
-
-The term phase is sometimes used as a synonym for state of matter, but there can be several immiscible phases of the same state of matter. Also, the term phase is sometimes used to refer to a set of equilibrium states demarcated in terms of state variables such as pressure and temperature by a phase boundary on a phase diagram. Because phase boundaries relate to changes in the organization of matter, such as a change from liquid to solid or a more subtle change from one crystal structure to another, this latter usage is similar to the use of "phase" as a synonym for state of matter. However, the state of matter and phase diagram usages are not commensurate with the formal definition given above and the intended meaning must be determined in part from the context in which the term is used."""@en .
+    owl:annotatedSource emmo:EMMO_4f226cf3_6d02_4d35_8566_a9e641bc6ff3 ;
+    owl:annotatedTarget "Part"@en .
 
 [] a owl:Axiom ;
     emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin materia (“matter, stuff, material”), from mater (“mother”)."@en ;
@@ -12786,28 +12741,16 @@ The term phase is sometimes used as a synonym for state of matter, but there can
 We call "interpreting" the act of providing semantic meaning to data, which is covered by the semiotic perspective."""@en .
 
 [] a owl:Axiom ;
-    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Condensed_matter_physics"@en ;
-    owl:annotatedProperty emmo:EMMO_31252f35_c767_4b97_a877_1235076c3e13 ;
-    owl:annotatedSource emmo:EMMO_220b7201_d277_4dca_bf6a_5a5e2c4062dd ;
-    owl:annotatedTarget "The subject of condensed matter physics that deals with the macroscopic and microscopic physical properties of matter, especially the solid and liquid phases which arise from electromagnetic forces between atoms. More generally, the subject deals with \"condensed\" phases of matter: systems of many constituents with strong interactions between them."@en .
-
-[] a owl:Axiom ;
     emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From medieval Latin perspectiva ‘(science of) optics’, from perspect- ‘looked at closely’, from the verb perspicere, from per- ‘through’ + specere ‘to look’."@en ;
     owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource emmo:EMMO_49267eba_5548_4163_8f36_518d65b583f9 ;
     owl:annotatedTarget "Perspective"@en .
 
 [] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "1940s: named after S.N. Bose."@en ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_b5a5494c_83bf_44aa_a9a6_49b948e68939 ;
-    owl:annotatedTarget "Boson"@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin elementārius (“elementary”), from elementum (“one of the four elements of antiquity; fundamentals”)."@en ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin particula (“small part, particle”), diminutive of pars (“part, piece”)."@en ;
     owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource emmo:EMMO_0f795e3e_c602_4577_9a43_d5a231aa1360 ;
-    owl:annotatedTarget "Elementary"@en .
+    owl:annotatedSource emmo:EMMO_a15cea10_9946_4d2b_95c5_cfc333fd2abb ;
+    owl:annotatedTarget "Particle"@en .
 
 [] a owl:Axiom ;
     emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin physica \"study of nature\" (and Ancient Greek φυσικός, “natural”), and Medieval Latin obiectum (“object”, literally “thrown against”)."@en ;
@@ -12815,57 +12758,19 @@ We call "interpreting" the act of providing semantic meaning to data, which is c
     owl:annotatedSource emmo:EMMO_38b579de_4331_40e0_803d_09efa298e726 ;
     owl:annotatedTarget "PhysicalObject"@en .
 
-[] a ns1:Imp ;
-    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Transitivity for proper parthood."@en ;
-    ns1:body [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#y> ;
-                    ns1:propertyPredicate emmo:EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ] ;
-            rdf:rest [ a ns1:AtomList ;
-                    rdf:first [ a ns1:IndividualPropertyAtom ;
-                            ns1:argument1 <urn:swrl:var#y> ;
-                            ns1:argument2 <urn:swrl:var#z> ;
-                            ns1:propertyPredicate emmo:EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ] ;
-                    rdf:rest () ] ] ;
-    ns1:head [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#z> ;
-                    ns1:propertyPredicate emmo:EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ] ;
-            rdf:rest () ] .
+[] a owl:Axiom ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Condensed_matter_physics"@en ;
+    owl:annotatedProperty emmo:EMMO_31252f35_c767_4b97_a877_1235076c3e13 ;
+    owl:annotatedSource emmo:EMMO_220b7201_d277_4dca_bf6a_5a5e2c4062dd ;
+    owl:annotatedTarget "The subject of condensed matter physics that deals with the macroscopic and microscopic physical properties of matter, especially the solid and liquid phases which arise from electromagnetic forces between atoms. More generally, the subject deals with \"condensed\" phases of matter: systems of many constituents with strong interactions between them."@en .
 
 [] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin prae (\"beforehand\") and decedere (\"depart\")."@en ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_3733bd38_ca2b_4264_a92a_3075a1715598 ;
-    owl:annotatedTarget "isPredecessorOf"@en .
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Phase_(matter)"@en ;
+    owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
+    owl:annotatedSource emmo:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a ;
+    owl:annotatedTarget """In the physical sciences, a phase is a region of space (a thermodynamic system), throughout which all physical properties of a material are essentially uniform. Examples of physical properties include density, index of refraction, magnetization and chemical composition. A simple description is that a phase is a region of material that is chemically uniform, physically distinct, and (often) mechanically separable. In a system consisting of ice and water in a glass jar, the ice cubes are one phase, the water is a second phase, and the humid air is a third phase over the ice and water. The glass of the jar is another separate phase.
 
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin elementārius (“elementary”), from elementum (“one of the four elements of antiquity; fundamentals”)."@en ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_7b79b2ac_3cf2_4d3b_8cdc_bcabb59d869e ;
-    owl:annotatedTarget "ElementaryParticle"@en .
-
-[] a ns1:Imp ;
-    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Transitivity for parthood."@en ;
-    ns1:body [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#y> ;
-                    ns1:propertyPredicate emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ] ;
-            rdf:rest [ a ns1:AtomList ;
-                    rdf:first [ a ns1:IndividualPropertyAtom ;
-                            ns1:argument1 <urn:swrl:var#y> ;
-                            ns1:argument2 <urn:swrl:var#z> ;
-                            ns1:propertyPredicate emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ] ;
-                    rdf:rest () ] ] ;
-    ns1:head [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#z> ;
-                    ns1:propertyPredicate emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ] ;
-            rdf:rest () ] .
+The term phase is sometimes used as a synonym for state of matter, but there can be several immiscible phases of the same state of matter. Also, the term phase is sometimes used to refer to a set of equilibrium states demarcated in terms of state variables such as pressure and temperature by a phase boundary on a phase diagram. Because phase boundaries relate to changes in the organization of matter, such as a change from liquid to solid or a more subtle change from one crystal structure to another, this latter usage is similar to the use of "phase" as a synonym for state of matter. However, the state of matter and phase diagram usages are not commensurate with the formal definition given above and the intended meaning must be determined in part from the context in which the term is used."""@en .
 
 [] a ns1:Imp ;
     emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Enforcing reflexivity of overlapping."@en ;
@@ -12884,8 +12789,27 @@ We call "interpreting" the act of providing semantic meaning to data, which is c
 [] a owl:Axiom ;
     emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "1940s: named after S.N. Bose."@en ;
     owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_b5a5494c_83bf_44aa_a9a6_49b948e68939 ;
+    owl:annotatedTarget "Boson"@en .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "1940s: named after S.N. Bose."@en ;
+    owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource emmo:EMMO_fa3c9d4d_9fc9_4e8a_82c1_28c84e34133a ;
     owl:annotatedTarget "FundamentalBoson"@en .
+
+[] a owl:Axiom ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The union implies that world entities can only be items or collections (standing for a collection of causally disconnected items).
+Disjointness means that a collection cannot be an item and viceversa, representing the fact that a world entity cannot be causally self-connected and non-self connected at the same time."""@en ;
+    owl:annotatedProperty emmo:EMMO_70fe84ff_99b6_4206_a9fc_9a8931836d84 ;
+    owl:annotatedSource emmo:EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf ;
+    owl:annotatedTarget "The disjoint union of the Item and Collection classes."@en .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin elementārius (“elementary”), from elementum (“one of the four elements of antiquity; fundamentals”)."@en ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_7b79b2ac_3cf2_4d3b_8cdc_bcabb59d869e ;
+    owl:annotatedTarget "ElementaryParticle"@en .
 
 [] a owl:Axiom ;
     emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin elementārius (“elementary”), from elementum (“one of the four elements of antiquity; fundamentals”)."@en ;
@@ -12893,11 +12817,58 @@ We call "interpreting" the act of providing semantic meaning to data, which is c
     owl:annotatedSource emmo:EMMO_c26a0340_d619_4928_b1a1_1a04e88bb89d ;
     owl:annotatedTarget "ElementaryParticle"@en .
 
+[] a ns1:Imp ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Enforcing a strict one-way causality direction."@en ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 <urn:swrl:var#x> ;
+                    ns1:argument2 <urn:swrl:var#y> ;
+                    ns1:propertyPredicate emmo:EMMO_3733bd38_ca2b_4264_a92a_3075a1715598 ] ;
+            rdf:rest () ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 <urn:swrl:var#y> ;
+                    ns1:argument2 <urn:swrl:var#x> ;
+                    ns1:propertyPredicate emmo:EMMO_01e5766d_dac3_4574_8a78_310de92a5c9d ] ;
+            rdf:rest () ] .
+
 [] a owl:Axiom ;
-    rdfs:seeAlso "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#Global_Restrictions_on_Axioms_in_OWL_2_DL"^^xsd:anyURI ;
-    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
-    owl:annotatedSource emmo:EMMO_c6e77b51_681b_4d04_b20d_a08f2b977470 ;
-    owl:annotatedTarget "Axiom not included in the theory because of OWL 2 DL global restrictions for decidability."@en .
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Every entity is made of quantum parts. This axiomatisation is the expression of the radical reductionistic approach of the EMMO."@en ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource emmo:EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf ;
+    owl:annotatedTarget _:40 .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin particula (“small part, particle”), diminutive of pars (“part, piece”)."@en ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_6c03574f_6daa_4488_a970_ee355cca2530 ;
+    owl:annotatedTarget "CausalParticle"@en .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin prae (\"beforehand\") and decedere (\"depart\")."@en ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_3733bd38_ca2b_4264_a92a_3075a1715598 ;
+    owl:annotatedTarget "isPredecessorOf"@en .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin causa (“reason, sake, cause”), and Ancient Greek σύστημα (sústēma, “musical scale; organized body; whole made of several parts or members”), from σῠν- (sun-, prefix meaning ‘with, together’) + ἵστημι (hístēmi, “to stand”)."@en ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_e7aac247_31d6_4b2e_9fd2_e842b1b7ccac ;
+    owl:annotatedTarget "CausalSystem"@en .
+
+[] a ns1:Imp ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Enforcing parthood reflexivity."@en ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 <urn:swrl:var#x> ;
+                    ns1:classPredicate emmo:EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf ] ;
+            rdf:rest () ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 <urn:swrl:var#x> ;
+                    ns1:argument2 <urn:swrl:var#x> ;
+                    ns1:propertyPredicate emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ] ;
+            rdf:rest () ] .
 
 [] a owl:Axiom ;
     rdfs:seeAlso "https://en.wikipedia.org/wiki/Semiotic_theory_of_Charles_Sanders_Peirce#II._Icon,_index,_symbol"^^xsd:anyURI ;
@@ -12910,95 +12881,10 @@ We call "interpreting" the act of providing semantic meaning to data, which is c
 [Wikipedia]"""@en .
 
 [] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Ancient Greek ἀναλογία (analogía), from ἀνά (aná) + λόγος (lógos, “speech, reckoning”)."@en ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_4f2d1fcc_e20c_4479_9ad7_7a0480dd3e44 ;
-    owl:annotatedTarget "AnalogicalIcon"@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin observare (“to watch, note, mark, heed, guard, keep, pay attention to, regard, comply with, etc.”), from ob (“before”) + servare (“to keep”),"@en ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_3b19eab4_79be_4b02_bdaf_ecf1f0067a68 ;
-    owl:annotatedTarget "Observation"@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin index (“a discoverer, informer, spy; of things, an indicator, the forefinger, a title, superscription”), from indicō (“point out, show”)."@en ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_0cd58641_824c_4851_907f_f4c3be76630c ;
-    owl:annotatedTarget "Index"@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "All EMMO individuals are part of the most comprehensive entity which is the universe."@en ;
-    owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource emmo:EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf ;
-    owl:annotatedTarget _:45 .
-
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin modus (“measure”)."@en ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource emmo:EMMO_d7788d1a_020d_4c78_85a1_13563fcec168 ;
-    owl:annotatedTarget "Model"@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin causa (“reason, sake, cause”), and Ancient Greek σύστημα (sústēma, “musical scale; organized body; whole made of several parts or members”), from σῠν- (sun-, prefix meaning ‘with, together’) + ἵστημι (hístēmi, “to stand”)."@en ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_e7aac247_31d6_4b2e_9fd2_e842b1b7ccac ;
-    owl:annotatedTarget "CausalSystem"@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin aestimatus (“to value, rate, esteem”)."@en ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_1c0b22a2_be82_4fa8_9e2b_a569a625d442 ;
-    owl:annotatedTarget "Estimation"@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin data, nominative plural of datum (“that is given”), neuter past participle of dō (“I give”)."@en ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_1e877c70_3b01_45a8_a8f6_8ce4f6a24660 ;
-    owl:annotatedTarget "Data"@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The union implies that world entities can only be items or collections (standing for a collection of causally disconnected items).
-Disjointness means that a collection cannot be an item and viceversa, representing the fact that a world entity cannot be causally self-connected and non-self connected at the same time."""@en ;
-    owl:annotatedProperty emmo:EMMO_70fe84ff_99b6_4206_a9fc_9a8931836d84 ;
-    owl:annotatedSource emmo:EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf ;
-    owl:annotatedTarget "The disjoint union of the Item and Collection classes."@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Old French sambler, sembler, from Late Latin similāre, present active infinitive of similō, from Latin similis, from Proto-Italic *semalis, from Proto-Indo-European *sem- (“together, one”)."@en ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_8c537c06_8e1d_4a3b_a251_1c89bb2c4790 ;
-    owl:annotatedTarget "ResemblanceIcon"@en .
-
-[] a owl:Axiom ;
     emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Ancient Greek εἰκών (eikṓn, “likeness, image, portrait”)."@en ;
     owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource emmo:EMMO_d7788d1a_020d_4c78_85a1_13563fcec168 ;
     owl:annotatedTarget "Icon"@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin cognitio (“knowledge, perception, a judicial examination, trial”), from cognitus, past participle of cognoscere (“to know”), from co- (“together”) + *gnoscere, older form of noscere (“to know”"@en ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_19608340_178c_4bfd_bd4d_0d3b935c6fec ;
-    owl:annotatedTarget "Cogniser"@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Every collection has at least two item members, since a collection of one item is a self-connected entity (and then an item)."@en ;
-    owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource emmo:EMMO_2d2ecd97_067f_4d0e_950c_d746b7700a31 ;
-    owl:annotatedTarget _:52 .
-
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin proprietas (“a peculiarity, one's peculiar nature or quality, right or fact of possession, property”), from proprius (“special, particular, one's own”)."@en ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_b7bcff25_ffc3_474e_9ab5_01b1664bd4ba ;
-    owl:annotatedTarget "Property"@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin simulacrum (\"likeness, semblance\")"@en ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource emmo:EMMO_d7788d1a_020d_4c78_85a1_13563fcec168 ;
-    owl:annotatedTarget "Simulacrum"@en .
 
 [] a owl:Axiom ;
     emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin functiō (“performance, execution”), from functus, perfect participle of fungor (“to perform, execute, discharge”)."@en ;
@@ -13007,37 +12893,77 @@ Disjointness means that a collection cannot be an item and viceversa, representi
     owl:annotatedTarget "FunctionalIcon"@en .
 
 [] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "ex-sistere (latin): to stay (to persist through time) outside others of the same type (to be distinct from the rest)."@en ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin index (“a discoverer, informer, spy; of things, an indicator, the forefinger, a title, superscription”), from indicō (“point out, show”)."@en ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_52211e5e_d767_4812_845e_eb6b402c476a ;
-    owl:annotatedTarget "Existent"@en .
+    owl:annotatedSource emmo:EMMO_0cd58641_824c_4851_907f_f4c3be76630c ;
+    owl:annotatedTarget "Index"@en .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin aestimatus (“to value, rate, esteem”)."@en ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_1c0b22a2_be82_4fa8_9e2b_a569a625d442 ;
+    owl:annotatedTarget "Estimation"@en .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin cognitio (“knowledge, perception, a judicial examination, trial”), from cognitus, past participle of cognoscere (“to know”), from co- (“together”) + *gnoscere, older form of noscere (“to know”"@en ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_19608340_178c_4bfd_bd4d_0d3b935c6fec ;
+    owl:annotatedTarget "Cogniser"@en .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Ancient Greek ἀναλογία (analogía), from ἀνά (aná) + λόγος (lógos, “speech, reckoning”)."@en ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_4f2d1fcc_e20c_4479_9ad7_7a0480dd3e44 ;
+    owl:annotatedTarget "AnalogicalIcon"@en .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin proprietas (“a peculiarity, one's peculiar nature or quality, right or fact of possession, property”), from proprius (“special, particular, one's own”)."@en ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_b7bcff25_ffc3_474e_9ab5_01b1664bd4ba ;
+    owl:annotatedTarget "Property"@en .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 """Coined by Stanisław Leśniewski in 1927, from Ancient Greek μέρος (méros, “part”) +‎ -logy (“study, discussion, science”).
+https://en.wiktionary.org/wiki/mereology"""@en ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_3f2e4ac2_8ef3_4a14_b826_60d37f15f8ee ;
+    owl:annotatedTarget "mereological"@en .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin elementārius (“elementary”), from elementum (“one of the four elements of antiquity; fundamentals”)."@en ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource emmo:EMMO_0f795e3e_c602_4577_9a43_d5a231aa1360 ;
+    owl:annotatedTarget "Elementary"@en .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin observare (“to watch, note, mark, heed, guard, keep, pay attention to, regard, comply with, etc.”), from ob (“before”) + servare (“to keep”),"@en ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_3b19eab4_79be_4b02_bdaf_ecf1f0067a68 ;
+    owl:annotatedTarget "Observation"@en .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin modus (“measure”)."@en ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource emmo:EMMO_d7788d1a_020d_4c78_85a1_13563fcec168 ;
+    owl:annotatedTarget "Model"@en .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Old French sambler, sembler, from Late Latin similāre, present active infinitive of similō, from Latin similis, from Proto-Italic *semalis, from Proto-Indo-European *sem- (“together, one”)."@en ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_8c537c06_8e1d_4a3b_a251_1c89bb2c4790 ;
+    owl:annotatedTarget "ResemblanceIcon"@en .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin simulacrum (\"likeness, semblance\")"@en ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource emmo:EMMO_d7788d1a_020d_4c78_85a1_13563fcec168 ;
+    owl:annotatedTarget "Simulacrum"@en .
 
 [] a owl:Axiom ;
     emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Tessellation"^^xsd:anyURI ;
     owl:annotatedProperty emmo:EMMO_31252f35_c767_4b97_a877_1235076c3e13 ;
     owl:annotatedSource emmo:EMMO_ee0466e4_780d_4236_8281_ace7ad3fc5d2 ;
     owl:annotatedTarget "A tessellation (or tiling) is the covering of a surface, often a plane, using one or more geometric shapes, called tiles, with no overlaps and no gaps."@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Due to the transitivity characteristic of :overlaps subclasses, that makes it a composite property." ;
-    owl:annotatedProperty emmo:EMMO_c6e77b51_681b_4d04_b20d_a08f2b977470 ;
-    owl:annotatedSource emmo:EMMO_d67ee67e_4fac_4676_82c9_aec361dba698 ;
-    owl:annotatedTarget ":isCauseOf owl:propertyDisjointWith :overlaps"@en .
-
-[] a ns1:Imp ;
-    rdfs:comment "Ensure that the hasNext relation expresses a strictly one-way causality arrow between two entities."^^rdfs:Literal ;
-    ns1:body [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#y> ;
-                    ns1:propertyPredicate emmo:EMMO_499e24a5_5072_4c83_8625_fe3f96ae4a8d ] ;
-            rdf:rest () ] ;
-    ns1:head [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#y> ;
-                    ns1:argument2 <urn:swrl:var#x> ;
-                    ns1:propertyPredicate emmo:EMMO_01e5766d_dac3_4574_8a78_310de92a5c9d ] ;
-            rdf:rest () ] .
 
 [] a ns1:Imp ;
     ns1:body [ a ns1:AtomList ;
@@ -13076,10 +13002,34 @@ Disjointness means that a collection cannot be an item and viceversa, representi
             rdf:rest () ] .
 
 [] a owl:Axiom ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Every collection has at least two item members, since a collection of one item is a self-connected entity (and then an item)."@en ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource emmo:EMMO_2d2ecd97_067f_4d0e_950c_d746b7700a31 ;
+    owl:annotatedTarget _:56 .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "ex-sistere (latin): to stay (to persist through time) outside others of the same type (to be distinct from the rest)."@en ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_52211e5e_d767_4812_845e_eb6b402c476a ;
+    owl:annotatedTarget "Existent"@en .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin causa (“reason, sake, cause”)."@en ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_d67ee67e_4fac_4676_82c9_aec361dba698 ;
+    owl:annotatedTarget "isCauseOf"@en .
+
+[] a owl:Axiom ;
     emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin documentum, from the verb doceō (“teach”) +‎ -mentum."@en ;
     owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource emmo:EMMO_ccdc1a41_6e96_416b_92ec_efe67917434a ;
     owl:annotatedTarget "Document"@en .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin percipiō, past participle perceptus (“take hold of, obtain, receive, observe”), from per (“by, through”) + capiō (“to take”)."@en ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_649bf97b_4397_4005_90d9_219755d92e34 ;
+    owl:annotatedTarget "Perceptual"@en .
 
 [] a owl:Axiom ;
     emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From the Ancient Greek γραφή (graphḗ) which means drawing, painting, writing, a writing, description, and from γράφω (gráphō) which means scratch, carve."@en ;
@@ -13089,40 +13039,10 @@ Disjointness means that a collection cannot be an item and viceversa, representi
     owl:annotatedTarget "Graphical"@en .
 
 [] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin causa (“reason, sake, cause”), and Medieval Latin obiectum (“object”, literally “thrown against”)."@en ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource emmo:EMMO_c5ddfdba_c074_4aa4_ad6b_1ac4942d300d ;
-    owl:annotatedTarget "CausalObject"@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin percipiō, past participle perceptus (“take hold of, obtain, receive, observe”), from per (“by, through”) + capiō (“to take”)."@en ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_649bf97b_4397_4005_90d9_219755d92e34 ;
-    owl:annotatedTarget "Perceptual"@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "https://en.wiktionary.org/wiki/procedure"^^xsd:anyURI ;
-    owl:annotatedProperty emmo:EMMO_31252f35_c767_4b97_a877_1235076c3e13 ;
-    owl:annotatedSource emmo:EMMO_472a0ca2_58bf_4618_b561_6fe68bd9fd49 ;
-    owl:annotatedTarget "The set of established forms or methods of an organized body for accomplishing a certain task or tasks (Wiktionary)."@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin intentionem, derived from intendere (\"stretching out\")"@en ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ;
-    owl:annotatedTarget "IntentionalProcess"@en .
-
-[] a owl:Axiom ;
     emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin pro-cedere (“to go forward, to proceed”)."@en ;
     owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource emmo:EMMO_472a0ca2_58bf_4618_b561_6fe68bd9fd49 ;
     owl:annotatedTarget "Procedure"@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Greek, nominative plural form of δεδομένο (dedoméno) (data, information)"@en ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource emmo:EMMO_1e877c70_3b01_45a8_a8f6_8ce4f6a24660 ;
-    owl:annotatedTarget "Dedomena"@en .
 
 [] a owl:Axiom ;
     rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:55000:ed-1:v2:en:term:3.1.13"^^xsd:anyURI ;
@@ -13131,23 +13051,49 @@ Disjointness means that a collection cannot be an item and viceversa, representi
     owl:annotatedTarget """ISO 55000:2014
 organization: person or group of people that has its own functions with responsibilities, authorities and relationships to achieve its objectives"""@en .
 
-[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+[] a owl:Axiom ;
+    rdfs:seeAlso "https://en.wiktionary.org/wiki/procedure"^^xsd:anyURI ;
+    owl:annotatedProperty emmo:EMMO_31252f35_c767_4b97_a877_1235076c3e13 ;
+    owl:annotatedSource emmo:EMMO_472a0ca2_58bf_4618_b561_6fe68bd9fd49 ;
+    owl:annotatedTarget "The set of established forms or methods of an organized body for accomplishing a certain task or tasks (Wiktionary)."@en .
 
-[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
-
-[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
-
-[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
-
-[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
-
-[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+[] a ns1:Imp ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Transitivity for parthood."@en ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 <urn:swrl:var#x> ;
+                    ns1:argument2 <urn:swrl:var#y> ;
+                    ns1:propertyPredicate emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 <urn:swrl:var#y> ;
+                            ns1:argument2 <urn:swrl:var#z> ;
+                            ns1:propertyPredicate emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 <urn:swrl:var#x> ;
+                    ns1:argument2 <urn:swrl:var#z> ;
+                    ns1:propertyPredicate emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ] ;
+            rdf:rest () ] .
 
 [] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Ancient Greek σύμβολον (súmbolon, “a sign by which one infers something; a mark, token, badge, ticket, tally, check, a signal, watchword, outward sign”), from συμβάλλω (sumbállō, “I throw together, dash together, compare, correspond, tally, come to a conclusion”), from σύν (sún, “with, together”) + βάλλω (bállō, “I throw, put”)." ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin intentionem, derived from intendere (\"stretching out\")"@en ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_057e7d57_aff0_49de_911a_8861d85cef40 ;
-    owl:annotatedTarget "Symbolic"@en .
+    owl:annotatedSource emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ;
+    owl:annotatedTarget "IntentionalProcess"@en .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
 
 [] a owl:Axiom ;
     emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin lingua (“tongue, speech, language”), from Old Latin dingua (“tongue”)."@en ;
@@ -13156,22 +13102,52 @@ organization: person or group of people that has its own functions with responsi
     owl:annotatedTarget "Language"@en .
 
 [] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin particula (“small part, particle”), diminutive of pars (“part, piece”)."@en ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Ancient Greek σύμβολον (súmbolon, “a sign by which one infers something; a mark, token, badge, ticket, tally, check, a signal, watchword, outward sign”), from συμβάλλω (sumbállō, “I throw together, dash together, compare, correspond, tally, come to a conclusion”), from σύν (sún, “with, together”) + βάλλω (bállō, “I throw, put”)." ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_6c03574f_6daa_4488_a970_ee355cca2530 ;
-    owl:annotatedTarget "CausalParticle"@en .
+    owl:annotatedSource emmo:EMMO_057e7d57_aff0_49de_911a_8861d85cef40 ;
+    owl:annotatedTarget "Symbolic"@en .
 
 [] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin causa (“reason, sake, cause”)."@en ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin collectio, from colligere ‘gather together’."@en ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_d67ee67e_4fac_4676_82c9_aec361dba698 ;
-    owl:annotatedTarget "isCauseOf"@en .
+    owl:annotatedSource emmo:EMMO_2d2ecd97_067f_4d0e_950c_d746b7700a31 ;
+    owl:annotatedTarget "Collection"@en .
 
 [] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Ancient Greek κρύσταλλος (krústallos, “clear ice”), from κρύος (krúos, “frost”)."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "While EMMO mereocausality conceptualisation can be used on any possibile domain, so that a quantum can be a Lego brick or an furniture component, it can be better understood when a quantum is elucidated as the smallest measured time interval of existence of an elementary particle (e.g. quark, photon)."@en ;
+    owl:annotatedProperty emmo:EMMO_31252f35_c767_4b97_a877_1235076c3e13 ;
+    owl:annotatedSource emmo:EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf ;
+    owl:annotatedTarget """The EMMO conceptualises the world using the primitive concepts of causality and parthood. Parthood is about the composition of world entities starting from other more fundamental entities. Causality is about the interactions between world entities.
+The quantum is the smallest indivisible part of any world entity. Quantum individuals are the fundamental causal constituents of the universe, since it is implied that causality originates from quantum-to-quantum interactions. Quantums are no-dimensional, and their aggregation makes spacetime emerge from their causal structure. Causality between macro entities (i.e. entities made of more than one quantum) is explained as the sum of the causality relations between their quantum constituents.
+The fundamental distinction between world entities is direct causality self-connectedness: a world entity can be self-connected xor not self-connected depending on the causality network of its fundamental components.
+Void regions do not exist in the EMMO, or in other words there is no spacetime without entities, since space and time are measured quantities following a causality relation between entities (spacetime emerges as relational property not as a self-standing entity).
+Entities are not placed in space or time: space and time are always relative between entities and are measured. In other words, space and time relations originates from causality interactions."""@en .
+
+[] a owl:Axiom ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "All EMMO individuals are part of the most comprehensive entity which is the universe."@en ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource emmo:EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf ;
+    owl:annotatedTarget _:67 .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin data, nominative plural of datum (“that is given”), neuter past participle of dō (“I give”)."@en ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_0bb3b434_73aa_428f_b4e8_2a2468648e19 ;
-    owl:annotatedTarget "Crystal"@en .
+    owl:annotatedSource emmo:EMMO_1e877c70_3b01_45a8_a8f6_8ce4f6a24660 ;
+    owl:annotatedTarget "Data"@en .
+
+[] a ns1:Imp ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Enforcing the fact that an entity cannot cause itself."@en ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:ClassAtom ;
+                    ns1:argument1 <urn:swrl:var#x> ;
+                    ns1:classPredicate emmo:EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf ] ;
+            rdf:rest () ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 <urn:swrl:var#x> ;
+                    ns1:argument2 <urn:swrl:var#x> ;
+                    ns1:propertyPredicate emmo:EMMO_01e5766d_dac3_4574_8a78_310de92a5c9d ] ;
+            rdf:rest () ] .
 
 [] a owl:Axiom ;
     rdfs:isDefinedBy "https://dictionary.iucr.org/Crystal"^^xsd:anyURI ;
@@ -13185,24 +13161,10 @@ A solid is a crystal if it has essentially a sharp diffraction pattern. The word
 H=∑ni=1hia∗i  (n≥3)""" .
 
 [] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "EMMO is the acronym of Elementary Multiperspective Material Ontology."@en ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Ancient Greek κρύσταλλος (krústallos, “clear ice”), from κρύος (krúos, “frost”)."@en ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf ;
-    owl:annotatedTarget "EMMO"@en .
-
-[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
-
-[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
-
-[] owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger .
-
-[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
-
-[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
-
-[] owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger .
-
-[] owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger .
+    owl:annotatedSource emmo:EMMO_0bb3b434_73aa_428f_b4e8_2a2468648e19 ;
+    owl:annotatedTarget "Crystal"@en .
 
 [] a owl:Axiom ;
     emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin causa (“reason, sake, cause”), and from Latin struere (“arrange, assemble, build”)."@en ;
@@ -13210,31 +13172,43 @@ H=∑ni=1hia∗i  (n≥3)""" .
     owl:annotatedSource emmo:EMMO_c5ddfdba_c074_4aa4_ad6b_1ac4942d300d ;
     owl:annotatedTarget "CausalStructure"@en .
 
+[] owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
 [] a owl:Axiom ;
     rdfs:isDefinedBy "https://www.iso.org/standard/45324.html"^^xsd:anyURI ;
     owl:annotatedProperty rdfs:comment ;
     owl:annotatedSource emmo:EMMO_463bcfda_867b_41d9_a967_211d4d437cfb ;
     owl:annotatedTarget "A measurement is the process of experimentally obtaining one or more measurement results that can reasonably be attributed to a quantity."@en .
 
-[] a ns1:Imp ;
-    ns1:body [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#y> ;
-                    ns1:propertyPredicate emmo:EMMO_6835537c_d294_4005_a770_ec9621f29ed1 ] ;
-            rdf:rest () ] ;
-    ns1:head [ a ns1:AtomList ;
-            rdf:first [ a ns1:SameIndividualAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#y> ] ;
-            rdf:rest () ] .
+[] a owl:Axiom ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Due to the transitivity characteristic of :overlaps subclasses, that makes it a composite property." ;
+    owl:annotatedProperty emmo:EMMO_c6e77b51_681b_4d04_b20d_a08f2b977470 ;
+    owl:annotatedSource emmo:EMMO_d67ee67e_4fac_4676_82c9_aec361dba698 ;
+    owl:annotatedTarget ":isCauseOf owl:propertyDisjointWith :overlaps"@en .
 
 [] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 """Coined by Stanisław Leśniewski in 1927, from Ancient Greek μέρος (méros, “part”) +‎ -logy (“study, discussion, science”).
-https://en.wiktionary.org/wiki/mereology"""@en ;
+    rdfs:seeAlso "https://en.wiktionary.org/wiki/Wiktionary"@en ;
+    owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
+    owl:annotatedSource emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 ;
+    owl:annotatedTarget "Definitions are usually taken from Wiktionary."@en .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Ancient Greek πάτος (pátos, “path”)."@en ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_3f2e4ac2_8ef3_4a14_b826_60d37f15f8ee ;
-    owl:annotatedTarget "mereological"@en .
+    owl:annotatedSource emmo:EMMO_0f795e3e_c602_4577_9a43_d5a231aa1360 ;
+    owl:annotatedTarget "CausalPath"@en .
 
 [] a owl:Axiom ;
     emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin item, \"likewise, just so, moreover\"."@en ;
@@ -13243,16 +13217,22 @@ https://en.wiktionary.org/wiki/mereology"""@en ;
     owl:annotatedTarget "Item"@en .
 
 [] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "Fom Latin variabilis (\"changeable\")."@en ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "EMMO is the acronym of Elementary Multiperspective Material Ontology."@en ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_1eed0732_e3f1_4b2c_a9c4_b4e75eeb5895 ;
-    owl:annotatedTarget "Variable"@en .
+    owl:annotatedSource emmo:EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf ;
+    owl:annotatedTarget "EMMO"@en .
 
 [] a owl:Axiom ;
     emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Variable_(mathematics)"^^xsd:anyURI ;
     owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
     owl:annotatedSource emmo:EMMO_1eed0732_e3f1_4b2c_a9c4_b4e75eeb5895 ;
     owl:annotatedTarget "A variable is a symbolic object that stands for any other mathematical object, such as  number, a vector, a matrix, a function, the argument of a function, a set, an element of a set."@en .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "Fom Latin variabilis (\"changeable\")."@en ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_1eed0732_e3f1_4b2c_a9c4_b4e75eeb5895 ;
+    owl:annotatedTarget "Variable"@en .
 
 [] owl:qualifiedCardinality "3"^^xsd:nonNegativeInteger .
 
@@ -13261,10 +13241,28 @@ https://en.wiktionary.org/wiki/mereology"""@en ;
 [] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
 
 [] a owl:Axiom ;
-    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Every entity is made of quantum parts. This axiomatisation is the expression of the radical reductionistic approach of the EMMO."@en ;
-    owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource emmo:EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf ;
-    owl:annotatedTarget _:44 .
+    rdfs:isDefinedBy "http://www.linfo.org/source_code.html"^^xsd:anyURI ;
+    owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
+    owl:annotatedSource emmo:EMMO_348d39f7_6a17_49d1_9860_9b33b69b51de ;
+    owl:annotatedTarget "Source code (also referred to as source or code) is the version of software as it is originally written (i.e., typed into a computer) by a human in plain text (i.e., human readable alphanumeric characters)."@en .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "http://www.linfo.org/program.html"^^xsd:anyURI ;
+    owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
+    owl:annotatedSource emmo:EMMO_65411b3d_c8d3_4111_86a9_a2ce0a64c647 ;
+    owl:annotatedTarget "A program is a sequence of instructions understandable by a computer's central processing unit (CPU) that indicates which operations the computer should perform on a set of data."@en .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/fr/#iso:std:iso-iec:2382:-1:ed-3:en"@en ;
+    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+    owl:annotatedSource emmo:EMMO_8681074a_e225_4e38_b586_e85b0f43ce38 ;
+    owl:annotatedTarget "All or part of the programs, procedures, rules, and associated documentation of an information processing system."@en .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From soft +‎ -ware, by contrast with hardware (“the computer itself”). Coined by Paul Niquette in 1953."@en ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_8681074a_e225_4e38_b586_e85b0f43ce38 ;
+    owl:annotatedTarget "Software"@en .
 
 [] a owl:Axiom ;
     rdfs:seeAlso "http://www.linfo.org/program.html"^^xsd:anyURI ;
@@ -13274,148 +13272,11 @@ https://en.wiktionary.org/wiki/mereology"""@en ;
 Here we explicitly include in the definition also all the data (e.g. source code, script files) that takes part to the building of the executable, are necessary to the execution of a program or that document it for the users."""@en .
 
 [] a owl:Axiom ;
-    rdfs:isDefinedBy "http://www.linfo.org/source_code.html"^^xsd:anyURI ;
-    owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
-    owl:annotatedSource emmo:EMMO_348d39f7_6a17_49d1_9860_9b33b69b51de ;
-    owl:annotatedTarget "Source code (also referred to as source or code) is the version of software as it is originally written (i.e., typed into a computer) by a human in plain text (i.e., human readable alphanumeric characters)."@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From soft +‎ -ware, by contrast with hardware (“the computer itself”). Coined by Paul Niquette in 1953."@en ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_8681074a_e225_4e38_b586_e85b0f43ce38 ;
-    owl:annotatedTarget "Software"@en .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy "https://www.iso.org/obp/ui/fr/#iso:std:iso-iec:2382:-1:ed-3:en"@en ;
-    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
-    owl:annotatedSource emmo:EMMO_8681074a_e225_4e38_b586_e85b0f43ce38 ;
-    owl:annotatedTarget "All or part of the programs, procedures, rules, and associated documentation of an information processing system."@en .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy "http://www.linfo.org/program.html"^^xsd:anyURI ;
-    owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
-    owl:annotatedSource emmo:EMMO_65411b3d_c8d3_4111_86a9_a2ce0a64c647 ;
-    owl:annotatedTarget "A program is a sequence of instructions understandable by a computer's central processing unit (CPU) that indicates which operations the computer should perform on a set of data."@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin māchina (“a machine, engine, contrivance, device, stratagem, trick”), from Doric Greek μᾱχᾰνᾱ́ (mākhanā́), cognate with Attic Greek μηχᾰνή (mēkhanḗ, “a machine, engine, contrivance, device”), from which comes mechanical."@en ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource emmo:EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8 ;
-    owl:annotatedTarget "Machine"@en .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:ts:16791:ed-2:v1:en:term:3.1.17"^^xsd:anyURI ;
-    owl:annotatedProperty rdfs:seeAlso ;
-    owl:annotatedSource emmo:EMMO_28440627_1088_4733_bd3a_a63dc71411a8 ;
-    owl:annotatedTarget """ISO/TS 16791:2020
-manufacturing, manufacture: process of production from the acquisition of all materials through all processing stages, including final packaging"""@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From French équipement, from équiper ‘equip’."@en ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource emmo:EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8 ;
-    owl:annotatedTarget "Equipment"@en .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:8887:-1:ed-1:v1:en:term:3.1.5"^^xsd:anyURI ;
-    owl:annotatedProperty rdfs:seeAlso ;
-    owl:annotatedSource emmo:EMMO_8786cb47_8e1f_4968_9b15_f6d41fc51252 ;
-    owl:annotatedTarget """ISO 8887-1:2017
-manufacturing: production of components"""@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "Old English tōl, from a Germanic base meaning ‘prepare’."@en ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_5c68497d_2544_4cd4_897b_1ea783c9f6fe ;
-    owl:annotatedTarget "Tool"@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin ingenium \"innate qualities, ability; inborn character,\" in Late Latin \"a war engine, battering ram\"; literally \"that which is inborn,\" from in- (\"in\") + gignere (\"give birth, beget\")."@en ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource emmo:EMMO_86ca9b93_1183_4b65_81b8_c0fcd3bba5ad ;
-    owl:annotatedTarget "Engineered"@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Old French asembler, based on Latin ad- ‘to’ + simul ‘together’."@en ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_912ac3a2_a124_4233_92dd_06c9aebea46c ;
-    owl:annotatedTarget "Assemblying"@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Supply_chain" ;
-    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
-    owl:annotatedSource emmo:EMMO_0c7ad550_00ae_45ff_a4e2_58d6a61f48eb ;
-    owl:annotatedTarget "A supply chain is a system of organizations, people, activities, information, and resources involved in supplying a product or service to a consumer."@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Old French \"deviser\", meaning: arrange, plan, contrive. Literally \"dispose in portions,\" from Vulgar Latin \"divisare\", frequentative of Latin dividere, meaning \"to divide\"."@en ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8 ;
-    owl:annotatedTarget "Device"@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From late Latin tangibilis, from tangere ‘to touch’."@en ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource emmo:EMMO_86ca9b93_1183_4b65_81b8_c0fcd3bba5ad ;
-    owl:annotatedTarget "TangibleProduct"@en .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:3252:ed-5:v1:en:term:3.3.55"^^xsd:anyURI ;
-    owl:annotatedProperty rdfs:seeAlso ;
-    owl:annotatedSource emmo:EMMO_2b524942_4e3e_403a_b4ab_2b53750f3d3b ;
-    owl:annotatedTarget """ISO 3252:2019 Powder metallurgy
-reaction sintering: process wherein at least two constituents of a powder mixture react during sintering"""@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin factor, from fact- ‘done’, from the verb facere (to do)."@en ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_02122e58_e0b3_4274_bdd4_745f64a61645 ;
-    owl:annotatedTarget "Factory"@en .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:18435:-1:ed-1:v1:en:term:3.16"^^xsd:anyURI ;
-    owl:annotatedProperty rdfs:seeAlso ;
-    owl:annotatedSource emmo:EMMO_a4d66059_5dd3_4b90_b4cb_10960559441b ;
-    owl:annotatedTarget """ISO 18435-1:2009
-manufacturing process: set of processes in manufacturing involving a flow and/or transformation of material, information, energy, control, or any other element in a manufacturing area"""@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin productum ‘something produced’, derived from Latin producere, from pro- ‘forward’ + ducere ‘to lead’."@en ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_82fc8506_1f84_4add_9683_abea077bd1e3 ;
-    owl:annotatedTarget "Product"@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "https://en.wiktionary.org/wiki/Wiktionary"@en ;
-    owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
-    owl:annotatedSource emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 ;
-    owl:annotatedTarget "Definitions are usually taken from Wiktionary."@en .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso-astm:tr:52906:ed-1:v1:en:term:3.9"^^xsd:anyURI ;
-    owl:annotatedProperty rdfs:seeAlso ;
-    owl:annotatedSource emmo:EMMO_03441eb3_d1fd_4906_b953_b83312d7589e ;
-    owl:annotatedTarget """ISO/ASTM TR 52906:2022 Additive manufacturing
-sintering: process of heating a powder metal compact to increase density and/or improve mechanical properties via solid state diffusion"""@en .
-
-[] a owl:Axiom ;
     rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:3252:ed-5:v1:en:term:3.3.32"^^xsd:anyURI ;
     owl:annotatedProperty rdfs:seeAlso ;
     owl:annotatedSource emmo:EMMO_3cb27225_df45_4616_aa3b_32dba383524c ;
     owl:annotatedTarget """ISO 3252:2019 Powder metallurgy
 liquid-phase sintering: sintering of a powder or compact containing at least two constituents, under conditions such that a liquid phase is formed"""@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin manufacture: \"made by hand\"."@en ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_86ca9b93_1183_4b65_81b8_c0fcd3bba5ad ;
-    owl:annotatedTarget "ManufacturedProduct"@en .
-
-[] a owl:Axiom ;
-    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin manu factum (\"made by hand\")."@en ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_a4d66059_5dd3_4b90_b4cb_10960559441b ;
-    owl:annotatedTarget "Manufacturing"@en .
 
 [] a owl:Axiom ;
     rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:15531:-1:ed-1:v1:en:term:3.6.22"^^xsd:anyURI ;
@@ -13425,11 +13286,10 @@ liquid-phase sintering: sintering of a powder or compact containing at least two
 manufacturing: function or act of converting or transforming material from raw material or semi-finished state to a state of further completion"""@en .
 
 [] a owl:Axiom ;
-    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:3252:ed-5:v1:en:term:3.3.60"^^xsd:anyURI ;
-    owl:annotatedProperty rdfs:seeAlso ;
-    owl:annotatedSource emmo:EMMO_03441eb3_d1fd_4906_b953_b83312d7589e ;
-    owl:annotatedTarget """ISO 3252:2019 Powder metallurgy
-sintering: thermal treatment of a powder or compact, at a temperature below the melting point of the main constituent, for the purpose of increasing its strength by the metallurgical bonding of its particles"""@en .
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin factor, from fact- ‘done’, from the verb facere (to do)."@en ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_02122e58_e0b3_4274_bdd4_745f64a61645 ;
+    owl:annotatedTarget "Factory"@en .
 
 [] a owl:Axiom ;
     rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:3252:ed-5:v1:en:term:3.3.33"^^xsd:anyURI ;
@@ -13439,11 +13299,61 @@ sintering: thermal treatment of a powder or compact, at a temperature below the 
 loose-powder sintering, gravity sintering: sintering of uncompacted powder"""@en .
 
 [] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Old French asembler, based on Latin ad- ‘to’ + simul ‘together’."@en ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_912ac3a2_a124_4233_92dd_06c9aebea46c ;
+    owl:annotatedTarget "Assemblying"@en .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:3252:ed-5:v1:en:term:3.3.60"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:seeAlso ;
+    owl:annotatedSource emmo:EMMO_03441eb3_d1fd_4906_b953_b83312d7589e ;
+    owl:annotatedTarget """ISO 3252:2019 Powder metallurgy
+sintering: thermal treatment of a powder or compact, at a temperature below the melting point of the main constituent, for the purpose of increasing its strength by the metallurgical bonding of its particles"""@en .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:ts:16791:ed-2:v1:en:term:3.1.17"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:seeAlso ;
+    owl:annotatedSource emmo:EMMO_28440627_1088_4733_bd3a_a63dc71411a8 ;
+    owl:annotatedTarget """ISO/TS 16791:2020
+manufacturing, manufacture: process of production from the acquisition of all materials through all processing stages, including final packaging"""@en .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin manu factum (\"made by hand\")."@en ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_a4d66059_5dd3_4b90_b4cb_10960559441b ;
+    owl:annotatedTarget "Manufacturing"@en .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "Old English tōl, from a Germanic base meaning ‘prepare’."@en ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_5c68497d_2544_4cd4_897b_1ea783c9f6fe ;
+    owl:annotatedTarget "Tool"@en .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From French équipement, from équiper ‘equip’."@en ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource emmo:EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8 ;
+    owl:annotatedTarget "Equipment"@en .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Old French \"deviser\", meaning: arrange, plan, contrive. Literally \"dispose in portions,\" from Vulgar Latin \"divisare\", frequentative of Latin dividere, meaning \"to divide\"."@en ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8 ;
+    owl:annotatedTarget "Device"@en .
+
+[] a owl:Axiom ;
     rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:15531:-1:ed-1:v1:en:term:3.6.9"^^xsd:anyURI ;
     owl:annotatedProperty rdfs:seeAlso ;
     owl:annotatedSource emmo:EMMO_8786cb47_8e1f_4968_9b15_f6d41fc51252 ;
     owl:annotatedTarget """ISO 15531-1:2004
 discrete manufacturing: production of discrete items."""@en .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin productum ‘something produced’, derived from Latin producere, from pro- ‘forward’ + ducere ‘to lead’."@en ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_82fc8506_1f84_4add_9683_abea077bd1e3 ;
+    owl:annotatedTarget "Product"@en .
 
 [] a owl:Axiom ;
     emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin arte ‘by or using art’ + factum ‘something made’."@en ;
@@ -13452,10 +13362,94 @@ discrete manufacturing: production of discrete items."""@en .
     owl:annotatedTarget "Artifact"@en .
 
 [] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin manufacture: \"made by hand\"."@en ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_86ca9b93_1183_4b65_81b8_c0fcd3bba5ad ;
+    owl:annotatedTarget "ManufacturedProduct"@en .
+
+[] a owl:Axiom ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Supply_chain" ;
+    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+    owl:annotatedSource emmo:EMMO_0c7ad550_00ae_45ff_a4e2_58d6a61f48eb ;
+    owl:annotatedTarget "A supply chain is a system of organizations, people, activities, information, and resources involved in supplying a product or service to a consumer."@en .
+
+[] a ns1:Imp ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Transitivity for proper parthood."@en ;
+    ns1:body [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 <urn:swrl:var#x> ;
+                    ns1:argument2 <urn:swrl:var#y> ;
+                    ns1:propertyPredicate emmo:EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ] ;
+            rdf:rest [ a ns1:AtomList ;
+                    rdf:first [ a ns1:IndividualPropertyAtom ;
+                            ns1:argument1 <urn:swrl:var#y> ;
+                            ns1:argument2 <urn:swrl:var#z> ;
+                            ns1:propertyPredicate emmo:EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ] ;
+                    rdf:rest () ] ] ;
+    ns1:head [ a ns1:AtomList ;
+            rdf:first [ a ns1:IndividualPropertyAtom ;
+                    ns1:argument1 <urn:swrl:var#x> ;
+                    ns1:argument2 <urn:swrl:var#z> ;
+                    ns1:propertyPredicate emmo:EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ] ;
+            rdf:rest () ] .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin māchina (“a machine, engine, contrivance, device, stratagem, trick”), from Doric Greek μᾱχᾰνᾱ́ (mākhanā́), cognate with Attic Greek μηχᾰνή (mēkhanḗ, “a machine, engine, contrivance, device”), from which comes mechanical."@en ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource emmo:EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8 ;
+    owl:annotatedTarget "Machine"@en .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso-astm:tr:52906:ed-1:v1:en:term:3.9"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:seeAlso ;
+    owl:annotatedSource emmo:EMMO_03441eb3_d1fd_4906_b953_b83312d7589e ;
+    owl:annotatedTarget """ISO/ASTM TR 52906:2022 Additive manufacturing
+sintering: process of heating a powder metal compact to increase density and/or improve mechanical properties via solid state diffusion"""@en .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:8887:-1:ed-1:v1:en:term:3.1.5"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:seeAlso ;
+    owl:annotatedSource emmo:EMMO_8786cb47_8e1f_4968_9b15_f6d41fc51252 ;
+    owl:annotatedTarget """ISO 8887-1:2017
+manufacturing: production of components"""@en .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:18435:-1:ed-1:v1:en:term:3.16"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:seeAlso ;
+    owl:annotatedSource emmo:EMMO_a4d66059_5dd3_4b90_b4cb_10960559441b ;
+    owl:annotatedTarget """ISO 18435-1:2009
+manufacturing process: set of processes in manufacturing involving a flow and/or transformation of material, information, energy, control, or any other element in a manufacturing area"""@en .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:3252:ed-5:v1:en:term:3.3.55"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:seeAlso ;
+    owl:annotatedSource emmo:EMMO_2b524942_4e3e_403a_b4ab_2b53750f3d3b ;
+    owl:annotatedTarget """ISO 3252:2019 Powder metallurgy
+reaction sintering: process wherein at least two constituents of a powder mixture react during sintering"""@en .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin ingenium \"innate qualities, ability; inborn character,\" in Late Latin \"a war engine, battering ram\"; literally \"that which is inborn,\" from in- (\"in\") + gignere (\"give birth, beget\")."@en ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource emmo:EMMO_86ca9b93_1183_4b65_81b8_c0fcd3bba5ad ;
+    owl:annotatedTarget "Engineered"@en .
+
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From late Latin tangibilis, from tangere ‘to touch’."@en ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource emmo:EMMO_86ca9b93_1183_4b65_81b8_c0fcd3bba5ad ;
+    owl:annotatedTarget "TangibleProduct"@en .
+
+[] a owl:Axiom ;
     emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin con- +‎ putō (“I reckon”)."@en ;
     owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource emmo:EMMO_eff42cb3_208e_4768_9a39_f8b6b3c3d7a2 ;
     owl:annotatedTarget "Computation"@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "https://emmc.info/wp-content/uploads/2018/05/CWA_17284.pdf"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:isDefinedBy ;
+    owl:annotatedSource emmo:EMMO_b29fd350_39aa_4af7_9459_3faa0544cba6 ;
+    owl:annotatedTarget "CEN Workshop Agreement – CWA 17284 “Materials modelling – terminology, classification and metadata”"@en .
 
 [] a owl:Axiom ;
     rdfs:seeAlso "https://emmc.info/wp-content/uploads/2018/05/CWA_17284.pdf" ;
@@ -13464,23 +13458,29 @@ discrete manufacturing: production of discrete items."""@en .
     owl:annotatedTarget "CEN Workshop Agreement – CWA 17284 “Materials modelling – terminology, classification and metadata”"@en .
 
 [] a owl:Axiom ;
-    rdfs:seeAlso "https://emmc.info/wp-content/uploads/2018/05/CWA_17284.pdf"^^xsd:anyURI ;
-    owl:annotatedProperty rdfs:isDefinedBy ;
-    owl:annotatedSource emmo:EMMO_b29fd350_39aa_4af7_9459_3faa0544cba6 ;
-    owl:annotatedTarget "CEN Workshop Agreement – CWA 17284 “Materials modelling – terminology, classification and metadata”"@en .
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Old French chaine, chaene (“chain”), from Latin catēna (“chain”)."@en ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource emmo:EMMO_0f795e3e_c602_4577_9a43_d5a231aa1360 ;
+    owl:annotatedTarget "CausalChain"@en .
 
-_:72 owl:inverseOf emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f .
+[] a owl:Axiom ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin causa (“reason, sake, cause”), and Medieval Latin obiectum (“object”, literally “thrown against”)."@en ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource emmo:EMMO_c5ddfdba_c074_4aa4_ad6b_1ac4942d300d ;
+    owl:annotatedTarget "CausalObject"@en .
 
-_:44 a owl:Restriction ;
+_:118 owl:inverseOf emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f .
+
+_:40 a owl:Restriction ;
     owl:onProperty emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ;
     owl:someValuesFrom emmo:EMMO_3f9ae00e_810c_4518_aec2_7200e424cf68 .
 
-_:45 a owl:Restriction ;
-    owl:hasValue emmo:EMMO_08cb807c_e626_447b_863f_e2835540e918 ;
-    owl:onProperty _:72 .
-
-_:52 a owl:Restriction ;
+_:56 a owl:Restriction ;
     owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
     owl:onClass emmo:EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de ;
     owl:onProperty emmo:EMMO_6b7276a4_4b9d_440a_b577_0277539c0fc4 .
+
+_:67 a owl:Restriction ;
+    owl:hasValue emmo:EMMO_08cb807c_e626_447b_863f_e2835540e918 ;
+    owl:onProperty _:118 .
 
