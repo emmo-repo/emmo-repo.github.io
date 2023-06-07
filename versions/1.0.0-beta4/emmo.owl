@@ -2330,7 +2330,6 @@ email: emanuele.ghedini@unibo.it</rdfs:comment>
     <rdfs:isDefinedBy rdf:resource="http://emmo.info/emmo/perspectives/physicalistic#"/>
     <emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f xml:lang="en">An 'atom' is a 'nucleus' surrounded by an 'electron_cloud', i.e. a quantum system made of one or more bounded electrons.</emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f>
     <skos:altLabel xml:lang="en">ChemicalElement</skos:altLabel>
-    <skos:altLabel>ChemicalElement</skos:altLabel>
     <skos:prefLabel xml:lang="en">Atom</skos:prefLabel>
     <emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">A standalone atom has direct part one 'nucleus' and one 'electron_cloud'.
 

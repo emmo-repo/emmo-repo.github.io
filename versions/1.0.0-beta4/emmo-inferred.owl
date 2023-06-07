@@ -3787,7 +3787,6 @@ In this material branch, H atom is a particular case, with respect to higher ato
 We cannot say that H₂ molecule has direct part two H atoms, but has direct part two H nucleus.</emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
     <emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f xml:lang="en">An 'atom' is a 'nucleus' surrounded by an 'electron_cloud', i.e. a quantum system made of one or more bounded electrons.</emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f>
     <rdfs:isDefinedBy rdf:resource="http://emmo.info/emmo/perspectives/physicalistic#"/>
-    <skos:altLabel>ChemicalElement</skos:altLabel>
     <skos:altLabel xml:lang="en">ChemicalElement</skos:altLabel>
     <skos:prefLabel xml:lang="en">Atom</skos:prefLabel>
   </rdf:Description>

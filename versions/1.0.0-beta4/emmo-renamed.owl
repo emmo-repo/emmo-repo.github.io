@@ -4388,7 +4388,6 @@ Using physics concepts, we can think the quantum as an elementary particle (e.g.
     <rdfs:subClassOf rdf:nodeID="458"/>
     <rdfs:isDefinedBy rdf:resource="http://emmo.info/emmo/perspectives/physicalistic#"/>
     <rdfs:isDefinedBy rdf:resource="http://emmo.info/emmo-inferred#"/>
-    <skos:altLabel>ChemicalElement</skos:altLabel>
     <skos:altLabel xml:lang="en">ChemicalElement</skos:altLabel>
     <skos:prefLabel xml:lang="en">Atom</skos:prefLabel>
     <emmo:elucidation xml:lang="en">A standalone atom has direct part one 'nucleus' and one 'electron_cloud'.
