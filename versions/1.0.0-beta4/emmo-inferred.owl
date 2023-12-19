@@ -2466,7 +2466,7 @@ A data object may be used as the physical basis for a sign, under Semiotics pers
     <owl:onProperty rdf:resource="http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575"/>
     <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">118.71</owl:hasValue>
   </rdf:Description>
-  <rdf:Description rdf:about="http://emmo.info/emmo-inferred">
+  <rdf:Description rdf:about="http://emmo.info/emmo">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
     <owl:versionIRI rdf:resource="http://emmo.info/emmo/1.0.0-beta4"/>
     <rdfs:comment xml:lang="en">Contacts:

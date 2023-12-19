@@ -272,7 +272,7 @@ where g is the appropriate g factor, μ is mostly the Bohr magneton or nuclear m
     <owl:onProperty rdf:resource="http://emmo.info/emmo#EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569"/>
     <owl:someValuesFrom rdf:resource="http://emmo.info/emmo#EMMO_847f1d9f_205e_46c1_8cb6_a9e479421f88"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://emmo.info/emmo-inferred">
+  <rdf:Description rdf:about="http://emmo.info/emmo">
     <dcterms:title xml:lang="en">European Materials &amp; Modelling Ontology</dcterms:title>
     <dcterms:contributor>Access, DE</dcterms:contributor>
     <dcterms:creator>Georg Schmitz</dcterms:creator>
@@ -303,7 +303,7 @@ email: emanuele.ghedini@unibo.it</rdfs:comment>
     <dcterms:creator>Adham Hashibon</dcterms:creator>
     <dcterms:publisher>EMMC ASBL</dcterms:publisher>
     <dcterms:license>https://creativecommons.org/licenses/by/4.0/legalcode</dcterms:license>
-    <owl:versionIRI rdf:resource="http://emmo.info/emmo-inferred/1.0.0-beta"/>
+    <owl:versionIRI rdf:resource="http://emmo.info/emmo/1.0.0-beta"/>
     <owl:versionInfo>1.0.0-beta</owl:versionInfo>
   </rdf:Description>
   <rdf:Description rdf:about="http://emmo.info/emmo#EMMO_b9695e87_8261_412e_83cd_a86459426a28">

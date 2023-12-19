@@ -1,4 +1,4 @@
-@prefix : <http://emmo.info/emmo-inferred#> .
+@prefix : <http://emmo.info/emmo#> .
 @prefix core: <http://www.w3.org/2004/02/skos/core#> .
 @prefix emmo: <http://emmo.info/emmo#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -165,7 +165,7 @@ emmo:EMMO_4b32fc1e_5293_4247_9e8d_1175df9f1c0b a owl:Class ;
 
 emmo:EMMO_50ea1ec5_f157_41b0_b46b_a9032f17ca10 a owl:Class ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A physical made of more than one symbol sequentially arranged."@en ;
-    emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a """The word "cat" considered as a collection of 'symbol'-s respecting the rules of english language. 
+    emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a """The word "cat" considered as a collection of 'symbol'-s respecting the rules of english language.
 
 In this example the 'symbolic' entity "cat" is not related to the real cat, but it is only a word (like it would be to an italian person that ignores the meaning of this english word).
 
@@ -281,7 +281,7 @@ emmo:EMMO_9335cf09_431f_4613_9dab_ce4ceaca965b a owl:Class ;
 emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 a owl:AnnotationProperty ;
     rdfs:comment """Short enlightening explanation of an ontological entity aimed to facilitate the connection (interpretation) between the ontological concept and a real-world object.
 
-An elucidation provides the meta-ontological semiotic relation that connects an entity within the ontology, to a real-world entity outside the ontology. 
+An elucidation provides the meta-ontological semiotic relation that connects an entity within the ontology, to a real-world entity outside the ontology.
 
 This process is subjective, depends on the agent that draws this connection (e.g. the EMMO user, a machine), and is independent (outside) from the ontology representational capabilities."""@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/top#> ;
@@ -486,7 +486,7 @@ emmo:c773cf3b_0810_4d07_bea7_af08cd88538e a owl:ObjectProperty ;
     rdfs:subPropertyOf emmo:EMMO_7afbed84_7593_4a23_bd88_9d9c6b04e8f6 ;
     core:prefLabel "hasTemporalCollectionPart"@en .
 
-<http://emmo.info/emmo-inferred> a owl:Ontology ;
+<http://emmo.info/emmo> a owl:Ontology ;
     term:abstract """Elemental Multiperspective Material Ontology (EMMO)
 
 EMMO is a multidisciplinary effort to develop a standard representational framework (the ontology) based on current materials modelling knowledge, including physical sciences, analytical philosophy and information and communication technologies.
@@ -666,7 +666,7 @@ Since topological connection means causality, then the only way for a real world
 
 emmo:EMMO_4b3afb22_27cf_4ce3_88bc_492bfccb546b a owl:Class ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A 'Perceptual' which stands for a real world object whose spatiotemporal pattern makes it identifiable by an observer as a sound."@en ;
-    emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a """When we use the term 'sound' what are we referring to? The EMMO identifis a sound as the physical object that can be heard by the observer (more exactly, by the sensor of the observer). 
+    emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a """When we use the term 'sound' what are we referring to? The EMMO identifis a sound as the physical object that can be heard by the observer (more exactly, by the sensor of the observer).
 
 In this sense, a sound (which is an acoustical object) is to be identified as the air region that manifests the sound wave and is able to be perceived by an observer. In case the wave is travelling through water or steel, then these other media regions are the sounds.
 
@@ -953,7 +953,7 @@ emmo:EMMO_517dfaf9_4970_41ac_81ee_d031627d2c7c a owl:ObjectProperty,
 
 emmo:EMMO_52211e5e_d767_4812_845e_eb6b402c476a a owl:Class ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A 'Physical' which is a tessellation of 'State' temporal direct parts."@en ;
-    rdfs:comment """'Existent' is the EMMO class to be used for representing real world physical objects under a reductionistic perspective (i.e. objects come from the composition of sub-part objects, both in time and space). 
+    rdfs:comment """'Existent' is the EMMO class to be used for representing real world physical objects under a reductionistic perspective (i.e. objects come from the composition of sub-part objects, both in time and space).
 
 'Existent' class collects all individuals that stand for physical objects that can be structured in well defined temporal sub-parts called states, through the temporal direct parthood relation.
 
@@ -1067,7 +1067,7 @@ emmo:EMMO_e04884d9_eda6_487e_93d5_7722d7eda96b a owl:Class ;
 - object (focus on spatial configuration)
 - process (focus on temporal evolution)
 
-The concepts of endurant and perdurant implicitly rely on the concept of instantaneous 3D snapshot of the world object, that in the EMMO is not allowed since everything extends in 4D and there are no abstract objects. Moreover, time is a measured property in the EMMO and not an objective characteristic of an object, and cannot be used as temporal index to identify endurant position in time. 
+The concepts of endurant and perdurant implicitly rely on the concept of instantaneous 3D snapshot of the world object, that in the EMMO is not allowed since everything extends in 4D and there are no abstract objects. Moreover, time is a measured property in the EMMO and not an objective characteristic of an object, and cannot be used as temporal index to identify endurant position in time.
 
 For this reason an individual in the EMMO can always be classified both endurant and perdurant, due to its nature of 4D entity (e.g. an individual may belong both to the class of runners and the class of running process), and the distinction is purely semantic.  In fact, the object/process distinction is simply a matter of convenience in a 4D approach since a temporal extension is always the case, and stationarity depends upon observer time scale. For this reason, the same individual (4D object) may play the role of a process or of an object class depending on the object to which it relates.
 
@@ -1204,7 +1204,7 @@ emmo:EMMO_50781fd9_a9e4_46ad_b7be_4500371d188d a owl:Class ;
 
 emmo:EMMO_53e5b1e1_6026_4ddc_8a4a_3aaaa5fdbdb7 a owl:ObjectProperty ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A relation between two holistic wholes that overcross, sharing one of their holistic parts."@en ;
-    emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a """A man and the process of building a house. 
+    emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a """A man and the process of building a house.
 The man is a whole that possesses an holistic temporal part which is an interval of six monts and represents a working period in his lifetime.
 The process of building a house is a whole that possesses an holistic spatial part which is a builder.
 The working period of the man and the builder participating the building process are the same individual, belonging both to a man lifetime and to a building holistic views.
@@ -1559,7 +1559,7 @@ emmo:EMMO_ad0e72fc_dcaa_490d_8371_b4d814dcda2c a owl:ObjectProperty ;
 
 emmo:EMMO_b5957cef_a287_442d_a3ce_fd39f20ba1cd a owl:Class ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A 'graphical' aimed to represent a geometrical concept."@en ;
-    emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a """A geometrical object can be expressed in many different forms. 
+    emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a """A geometrical object can be expressed in many different forms.
 
 For example, a line can be expressed by:
 a) an equation like y=mx+q, which is both an 'equation' and a 'geometrical'
@@ -1727,7 +1727,7 @@ This does not mean that there cannot be a change in the internal structure of th
 There is no change in granularity or cardinality of direct parts of a 'State'.
 
 The use of spatial direct parthood in 'State' definition means that a 'State' cannot overlap in space another 'State'."""@en,
-        """The usefulness of 'State' is that it makes it possible to describe the evolution in time of an 'Existent' in terms of series of 'State'-s that can take into account the disappearance or appearance of parts within a 'Physical'. 
+        """The usefulness of 'State' is that it makes it possible to describe the evolution in time of an 'Existent' in terms of series of 'State'-s that can take into account the disappearance or appearance of parts within a 'Physical'.
 
 A 'State' is a recognizable granularity level of matter, in the sense that its direct parts do not appear or disappear within its lifetime as it can be for a generic 'Existent'."""@en,
         """There is no change in granularity or cardinality of parts within a state.
@@ -1751,7 +1751,7 @@ The quantum concept recalls the fact that there is lower epistemological limit t
 
 Space and time emerge following the network of causal connections between quantum objects. So quantum objects are adimensional objects, that precede space and time dimensions.
 
-A quantum is the EMMO mereological atomistic entity. 
+A quantum is the EMMO mereological atomistic entity.
 
 To avoid confusion with the concept of atom coming from physics, we will use the expression quantum mereology, instead of atomistic mereology."""@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/top#> ;
@@ -1783,7 +1783,7 @@ The union implies that 'EMMO' individuals can only be 'Item' individuals (standi
 Disjointness means that a 'Collection' individual cannot be an 'Item' individual and viceversa, representing the fact that a world object cannot be self-connected and non-self connected at the same time."""@en,
         """Mereotopology is the logical framework used by the EMMO ontologist to characterize the universe and to provide the definitions to connect world objects to the EMMO concepts.
 
-For the EMMO ontologist the whole universe is the most comprehensive object. World objects are then sub-parts of the universe. 
+For the EMMO ontologist the whole universe is the most comprehensive object. World objects are then sub-parts of the universe.
 
 The fundamental distinction between world objects, upon which the EMMO is based, is self-connectedness: a world object can be self-connected xor not self-connected.
 
@@ -1918,7 +1918,7 @@ For example, an output is a part (a role or the final stage) of a process, but i
 
 emmo:EMMO_57c75ca1_bf8a_42bc_85d9_58cfe38c7df2 a owl:Class ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A whole that represent the overall lifetime of the world object that represents."@en ;
-    emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a """A marathon is an example of class whose individuals are always maximal since the criteria satisfied by a marathon 4D entity poses some constraints on its temporal and spatial extent. 
+    emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a """A marathon is an example of class whose individuals are always maximal since the criteria satisfied by a marathon 4D entity poses some constraints on its temporal and spatial extent.
 
 On the contrary, the class for a generic running process does not necessarily impose maximality to its individuals. A running individual is maximal only when it extends in time for the minimum amount required to identify a running act, so every possible temporal part is always a non-running.
 
@@ -2085,7 +2085,7 @@ emmo:EMMO_0527413c_b286_4e9c_b2d0_03fb2a038dee a owl:Class ;
     emmo:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a """For example, the ontologist may be interest in cataloguing in the EMMO how the same object (e.g. a cat) is addressed using different signs (e.g. cat, gatto, chat) by different interpreters (e.g. english, italian or french people).
 
 The same applies for the results of measurements: the ontologist may be interest to represent in the EMMO how different measurement processes (i.e. semiosis) lead to different quantitative results (i.e. signs) according to different measurement devices (i.e. interpreters)."""@en ;
-    rdfs:comment """The interpreter is not the ontologist, being the ontologist acting outside the ontology at the meta-ontology level. 
+    rdfs:comment """The interpreter is not the ontologist, being the ontologist acting outside the ontology at the meta-ontology level.
 
 On the contrary, the interpreter is an agent recognized by the ontologist. The semiotic branch of the EMMO is the tool used by the ontologist to represent an interpreter's semiotic activity."""@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/middle/semiotics#> ;
@@ -2211,9 +2211,9 @@ e.g. a math symbol is not made of other math symbols
 
 A Symbol may be a String in another language.
 e.g. "Bq" is the symbol for Becquerel units when dealing with metrology, or a string of "B" and "q" symbols when dealing with characters."""@en,
-        """Symbols of a formal language need not be symbols of anything. For instance there are logical constants which do not refer to any idea, but rather serve as a form of punctuation in the language (e.g. parentheses). 
+        """Symbols of a formal language need not be symbols of anything. For instance there are logical constants which do not refer to any idea, but rather serve as a form of punctuation in the language (e.g. parentheses).
 
-Symbols of a formal language must be capable of being specified without any reference to any interpretation of them. 
+Symbols of a formal language must be capable of being specified without any reference to any interpretation of them.
 (Wikipedia)"""@en,
         "The class is the idea of the symbol, while the individual of that class stands for a specific mark (or token) of that idea."@en ;
     rdfs:isDefinedBy <http://emmo.info/emmo/middle/symbolic#> ;
@@ -2252,7 +2252,7 @@ emmo:EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 a owl:ObjectProperty,
 
 emmo:EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de a owl:Class ;
     emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of individuals standing for world self-connected objects."@en ;
-    rdfs:comment """A world object is self-connected if any two parts that make up the whole are topologically connected to each other. 
+    rdfs:comment """A world object is self-connected if any two parts that make up the whole are topologically connected to each other.
 
 In the EMMO, topological connectivity is based on causality.
 
@@ -2490,4 +2490,3 @@ emmo:EMMO_dc57d998_23db_4d8e_b2cd_f346b195b846 a owl:ObjectProperty ;
     owl:annotatedProperty core:prefLabel ;
     owl:annotatedSource emmo:EMMO_3b19eab4_79be_4b02_bdaf_ecf1f0067a68 ;
     owl:annotatedTarget "Observation"@en .
-

@@ -418,7 +418,7 @@ On the contrary, the holistic parthood, is expected to go that deep.</rdfs:comme
     <rdfs:isDefinedBy rdf:resource="http://emmo.info/emmo/middle/semiotics#"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="http://emmo.info/emmo-inferred">
+  <rdf:Description rdf:about="http://emmo.info/emmo">
     <rdfs:comment xml:lang="en">The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege).</rdfs:comment>
     <ns2:versionIRI rdf:resource="http://emmo.info/emmo/1.0.0-beta3"/>
     <ns4:creator>Emanuele Ghedini</ns4:creator>

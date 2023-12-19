@@ -1,4 +1,4 @@
-@prefix : <http://emmo.info/emmo/emmo-inferred#> .
+@prefix : <http://emmo.info/emmo/emmo#> .
 @prefix annotations: <http://emmo.info/emmo/top/annotations#> .
 @prefix mereotopology: <http://emmo.info/emmo/top/mereotopology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -8,7 +8,7 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://emmo.info/emmo/emmo-inferred> a owl:Ontology ;
+<http://emmo.info/emmo/emmo> a owl:Ontology ;
     annotations:EMMO_5525a055_dda5_4556_8b91_f0d22fa676cc """EMMO is released under a Creative Commons license Attribution 4.0 International (CC BY 4.0)
 
 https://creativecommons.org/licenses/by/4.0/legalcode""" ;
@@ -24,7 +24,7 @@ EMMO is a multidisciplinary effort to develop a standard representational framew
 It provides the connection between the physical world, materials characterisation world and materials modelling world.""",
         """European Materials and Modelling Ontology (EMMO)
 
-EMMO is a multidisciplinary effort to develop a standard representational framework (the ontology) based on current materials modelling knowledge, including physical sciences, analytical philosophy and information and communication technologies. 
+EMMO is a multidisciplinary effort to develop a standard representational framework (the ontology) based on current materials modelling knowledge, including physical sciences, analytical philosophy and information and communication technologies.
 
 It provides the connection between the physical world, materials characterisation world and materials modelling world.""",
         "The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege).",
@@ -44,7 +44,7 @@ email: gerhard@goldbeck-consulting.com
 Emanuele Ghedini
 University of Bologna (IT)
 email: emanuele.ghedini@unibo.it"""@en ;
-    owl:versionIRI <http://emmo.info/emmo/1.0.0-alpha/emmo-inferred> ;
+    owl:versionIRI <http://emmo.info/emmo/1.0.0-alpha/emmo> ;
     owl:versionInfo """The European Materials Modelling Ontology
 
 Version 1.0.0-alpha""" .
@@ -922,7 +922,7 @@ perceptual:EMMO_46f0f8df_4dc6_418f_8036_10427a3a288e a owl:Class ;
 The style of your clothing.""" ;
     rdfs:comment """The word subjective means that a non-well defined or an unknown procedure is used for the definition of the property.
 
-This happens due to e.g. the complexity of the object, the lack of a underlying model for the representation of the object, the non-well specified meaning of the property symbols. 
+This happens due to e.g. the complexity of the object, the lack of a underlying model for the representation of the object, the non-well specified meaning of the property symbols.
 
 A 'SubjectiveProperty' cannot be used to univocally compare 'Object'-s.
 
@@ -1280,7 +1280,7 @@ A single continuum individual can be the whole fluid in a pipe.""",
 
 <http://emmo.info/emmo/middle/materials#EMMO_eb77076b_a104_42ac_a065_798b2d2809ad> a owl:Class ;
     rdfs:label "Atom"@en ;
-    annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """A standalone atom has direct part one 'nucleus' and one 'electron_cloud'. 
+    annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """A standalone atom has direct part one 'nucleus' and one 'electron_cloud'.
 
 An O 'atom' within an O2 'molecule' is an 'e-bonded_atom'.
 
@@ -1381,7 +1381,7 @@ A 'model' represents a 'physical' or a 'process' by direct similitude (e.g. smal
 perceptual:EMMO_50ea1ec5_f157_41b0_b46b_a9032f17ca10 a owl:Class ;
     rdfs:label "String"@en ;
     annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A physical made of more than one symbol sequentially arranged." ;
-    annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a """The word "cat" considered as a collection of 'symbol'-s respecting the rules of english language. 
+    annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a """The word "cat" considered as a collection of 'symbol'-s respecting the rules of english language.
 
 In this example the 'symbolic' entity "cat" is not related to the real cat, but it is only a word (like it would be to an italian person that ignores the meaning of this english word).
 
@@ -1828,7 +1828,7 @@ owl:topObjectProperty a owl:ReflexiveProperty,
 
 <http://emmo.info/emmo/middle/models#EMMO_f7ed665b_c2e1_42bc_889b_6b42ed3a36f0> a owl:Class ;
     rdfs:label "MathematicalModel"@en ;
-    rdfs:comment """A mathematical model can be defined as a description of a system using mathematical concepts and language to facilitate proper explanation of a system or to study the effects of different components and to make predictions on patterns of behaviour. 
+    rdfs:comment """A mathematical model can be defined as a description of a system using mathematical concepts and language to facilitate proper explanation of a system or to study the effects of different components and to make predictions on patterns of behaviour.
 
 Abramowitz and Stegun, 1968""" ;
     rdfs:subClassOf <http://emmo.info/emmo/middle/math#EMMO_54ee6b5e_5261_44a8_86eb_5717e7fdb9d0>,
@@ -2092,7 +2092,7 @@ A 'Perceptual' becomes an 'Object', when it is part of a 'Semiotic' process desc
         "From Latin perceptiō (“a receiving or collecting, perception, comprehension”), from perceptus (“perceived, observed”).",
         """This class is the most general superclass for the categorization of real world objects that are recognizable by an interpreter (agent).
 
-A 'Perceptual' can stand for something else in a semiotic process (acting as sign or as object). 
+A 'Perceptual' can stand for something else in a semiotic process (acting as sign or as object).
 
 However, a perceptual is not necessarily a 'Sign' (e.g. a line sketched on a blackboard is a recognizable 'Perceptual' but it may stand for nothing).""" ;
     rdfs:subClassOf <http://emmo.info/emmo/top#EMMO_49267eba_5548_4163_8f36_518d65b583f9> ;
@@ -2170,11 +2170,11 @@ For this reason each property is related to a specific observation process which
 
 The observation process (e.g. a look, a photo shot, a measurement) is performed  by an observer (e.g. you, a camera, an instrument) through a specific perception mechanism (e.g. retina impression, CMOS excitation, piezoelectric sensor activation) and involves an observed entity.
 
-An observation is a semiotic process, since it stimulate an interpretant within the interpreter who can communicate the perception result to other interpreters through a sign which is the property. 
+An observation is a semiotic process, since it stimulate an interpretant within the interpreter who can communicate the perception result to other interpreters through a sign which is the property.
 
 Property subclasses are specializations that depend on the type of observation processes.
 
-e.g. the property 'colour' is related to a process that involves emission or interaction of photon and an observer who can perceive electromagnetic radiation in the visible frequency range. 
+e.g. the property 'colour' is related to a process that involves emission or interaction of photon and an observer who can perceive electromagnetic radiation in the visible frequency range.
 
 Properties usually relies on symbolic systems (e.g. for colour it can be palette or RGB).""" ;
     rdfs:subClassOf [ a owl:Restriction ;
@@ -2399,11 +2399,11 @@ This class includes also the 'interpeter' i.e. the entity that connects the 'sig
 <http://emmo.info/emmo/top/semiotics#EMMO_d7788d1a_020d_4c78_85a1_13563fcec168> a owl:Class ;
     rdfs:label "Icon"@en ;
     annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A 'Sign' that stands for an 'Object' by resembling or imitating it, in shape or by sharing a similar logical structure." ;
-    annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a """A picture that reproduces the aspect of a person. 
+    annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a """A picture that reproduces the aspect of a person.
 
 An equation that reproduces the logical connection of the properties of a physical entity.""" ;
     rdfs:comment """Three subtypes of icon are possible:
- 
+
 (a) the image, which depends on a simple quality (e.g. picture)
 
 (b) the diagram, whose internal relations, mainly dyadic or so taken, represent by analogy the relations in something (e.g. math formula, geometric flowchart)
@@ -2419,7 +2419,7 @@ An equation that reproduces the logical connection of the properties of a physic
     rdfs:comment "A 'Process' is always a 'Physical', since a 'Void' does not have elements that evolves in time.",
         """A 'Process' is defined as a temporal part of a 'Physical' that is categorized according to an EMMO user that recognizes a particular type of evolution in time of the real world object.
 
-Following the common definition of process, every 'Physical' should be a process, since every 4D object always has a time dimension. 
+Following the common definition of process, every 'Physical' should be a process, since every 4D object always has a time dimension.
 
 However, in the EMMO we restrict the meaning of the word process to 'Physical'-s whose evolution in time have a particular meaning for the ontologist.
 
@@ -3154,7 +3154,7 @@ The union implies that 'EMMO' individuals can only be 'Item' individuals (standi
 Disjointness means that a 'Collection' individual cannot be an 'Item' individual and viceversa, representing the fact that a real world object cannot be self-connected and non-self connected at the same time.""",
         """For the EMMO ontologist the whole universe is represented as a 4D path-connected topological manifold (i.e. the spacetime).
 
-A real world object is then a 4D topological sub-region of the universe. 
+A real world object is then a 4D topological sub-region of the universe.
 
 A universe sub-region is isolated and defined as a real world object by the ontologist. Then, through a semiotic process that occurs at meta-ontological level (i.e. outside the ontology). an EMMO ontology entity (e.g. an OWL individual) is assigned to represent that real world object.
 
@@ -3162,7 +3162,7 @@ The fundamental distinction between real world objects, upon which the EMMO is b
         "In the EMMO we will refer to the universe as a Minkowski space, restricting the ontology to special relativity only. However, exension to general relativity, will adding more complexity, should not change the overall approach.",
         """Mereotopology is the fundamental logical representation used by the EMMO ontologist to characterize the universe and to provide the definitions to connect real world objects to the EMMO concepts.
 
-Parthood relations do not change dimensionality of the real world object referred by an 'EMMO' individual, i.e. every part of a real world object always retains its 4D dimensionality. 
+Parthood relations do not change dimensionality of the real world object referred by an 'EMMO' individual, i.e. every part of a real world object always retains its 4D dimensionality.
 
 The smallest part of a real world object (i.e. a part that has no proper parts) is referred in the EMMO by a 'Quantum' individual.
 
@@ -3185,7 +3185,7 @@ mereotopology:EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 a owl:ObjectProperty,
     annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The object, in Peirce semiotics." ;
     rdfs:comment """Here is assumed that the concept of 'object' is always relative to a 'semiotic' process. An 'object' does not exists per se, but it's always part of an interpretation.
 
-The EMMO relies on strong reductionism, i.e. everything real is a formless collection of elementary particles: we give a meaning to real world entities only by giving them boundaries and defining them using 'sign'-s. 
+The EMMO relies on strong reductionism, i.e. everything real is a formless collection of elementary particles: we give a meaning to real world entities only by giving them boundaries and defining them using 'sign'-s.
 
 In this way the 'sign'-ed entity become and 'object', and the 'object' is the basic entity needed in order to apply a logical formalism to the real world entities (i.e. we can speak of it through its sign, and use logics on it through its sign).""" ;
     rdfs:subClassOf <http://emmo.info/emmo/top/semiotics#EMMO_b803f122_4acb_4064_9d71_c1e5fd091fc9> .
@@ -3536,7 +3536,7 @@ Direct parthood is the relation used to build the class hierarchy (and the granu
 <http://emmo.info/emmo/middle/reductionistic#EMMO_52211e5e_d767_4812_845e_eb6b402c476a> a owl:Class ;
     rdfs:label "Existent"@en ;
     annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A 'Physical' which is a tessellation of 'State' temporal direct parts." ;
-    rdfs:comment """'Existent' is the EMMO class to be used for representing real world physical objects under a reductionistic perspective (i.e. objects come from the composition of sub-part objects, both in time and space). 
+    rdfs:comment """'Existent' is the EMMO class to be used for representing real world physical objects under a reductionistic perspective (i.e. objects come from the composition of sub-part objects, both in time and space).
 
 'Existent' class collects all individuals that stand for physical objects that can be structured in well defined temporal sub-parts called states, through the temporal direct parthood relation.
 
@@ -3607,9 +3607,9 @@ Moreover, due to inverse functionality, a 'State' can be part of only one 'Exist
 <http://emmo.info/emmo/top/semiotics#EMMO_b21a56ed_f969_4612_a6ec_cb7766f7f31d> a owl:Class ;
     rdfs:label "Sign"@en ;
     annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An 'Physical' that is used as sign (\"semeion\" in greek) that stands for another 'Physical' through an semiotic process." ;
-    annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a """A novel is made of chapters, paragraphs, sentences, words and characters (in a direct parthood mereological hierarchy). 
+    annotations:EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a """A novel is made of chapters, paragraphs, sentences, words and characters (in a direct parthood mereological hierarchy).
 
-Each of them are 'sign'-s. 
+Each of them are 'sign'-s.
 
 A character can be the a-tomistic 'sign' for the class of texts.
 
@@ -4381,7 +4381,7 @@ e.g. a real world object that has spatial parts an atom and a cubic light year o
 It follows from the fact that perception is always unfolding in time.
 
 e.g. you always have an aperture time when you take a picture or measure a property. Instantaneous perceptions are idealizations (abstractions) or a very small time measurement.""",
-        """From Latin physica "study of nature" (and Ancient Greek φυσικός, “natural”). 
+        """From Latin physica "study of nature" (and Ancient Greek φυσικός, “natural”).
 
 Here the word relates to things perceived through the senses as opposed to the mind; tangible or concrete.""",
         "In the EMMO there are no relations such as occupiesSpace, since 'Physical'-s are themselves the 4D regions.",
@@ -4403,7 +4403,7 @@ In practice, an EMMO user can declare a 'physical' individual that stand for the
 'physical'-s are then made of 'physical' parts and 'void' parts that stand for the space between 'physical'-s (e.g. the void between electrons and nucleus in an atom).
 
 2) Copenhagen interpretation
-In this interpretation the properties (e.g. energy level, position, spin) of a particle are not defined in the interval between two measurements and the quantum system is entangled (i.e. properties of particles in the sysyem are correlated) and described by a global wavefunction obtained solving the Schroedinger Equation. 
+In this interpretation the properties (e.g. energy level, position, spin) of a particle are not defined in the interval between two measurements and the quantum system is entangled (i.e. properties of particles in the sysyem are correlated) and described by a global wavefunction obtained solving the Schroedinger Equation.
 
 Upon measurement, the wavefunction collapses to a combination of close eigenstates that provide information about bservables of the system components (e.g. position, energy).
 
@@ -4415,7 +4415,7 @@ b) define the axioms of the  class that describe how many sub-parts are expected
 
 c) the user can now connect the whole to a Schroedinger equation based model whose Hamiltonian is calculated trough the information coming only from the axioms. No individuals are declared for the subparts!
 
-d) a measurement done on the quantum system that provides information on the sub-part observables is interpreted as wavefunction collapse and leads to the end of the whole and the declaration of the sub-parts individuals which can be themselves other quantum systems 
+d) a measurement done on the quantum system that provides information on the sub-part observables is interpreted as wavefunction collapse and leads to the end of the whole and the declaration of the sub-parts individuals which can be themselves other quantum systems
 
 e.g. if the outer electron of the H2 molecule interacts with another entity defining its state, then the whole that stands for the entangled H2 molecule becomes a 'physical' made of an electron individual, a quantum system made of one electron and two nuclei and the void between them.
 
@@ -4468,7 +4468,7 @@ e.g. Navier-Stokes or Euler equation applied to the same fluid are an example of
 
 mereotopology:EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de a owl:Class ;
     rdfs:label "Item"@en ;
-    rdfs:comment """A real world object is self-connected if any two parts that make up the whole are connected to each other (here the concept of connection is primitive). 
+    rdfs:comment """A real world object is self-connected if any two parts that make up the whole are connected to each other (here the concept of connection is primitive).
 
 Alternatively, using the primitive path-connectivity concept we can define a self-connected real world object as an object for which each couple of points is path-connected.""",
         """An 'Item' individual stands for a real world self-connected object which can be represented as a whole made of connected parts (e.g. a car made of components).
@@ -4641,7 +4641,7 @@ Members of a 'Collection' lack of causality connection, i.e. they do not constit
 <http://emmo.info/emmo/middle/isq#EMMO_66bc9029_f473_45ff_bab9_c3509ff37a22> a owl:Class ;
     rdfs:label "CelsiusTemperature" ;
     annotations:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "http://dbpedia.org/page/Temperature" ;
-    annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """An objective comparative measure of hot or cold. 
+    annotations:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """An objective comparative measure of hot or cold.
 
 Temperature is a relative quantity that can be used to express temperature differences. Unlike ThermodynamicTemperature, it cannot express absolute temperatures.""" ;
     annotations:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.T06261" ;
@@ -5897,7 +5897,7 @@ This does not mean that there cannot be a change in the internal structure of th
 There is no change in granularity or cardinality of direct parts of a 'State'.
 
 The use of spatial direct parthood in 'State' definition means that a 'State' cannot overlap in space another 'State'.""",
-        """The usefulness of 'State' is that it makes it possible to describe the evolution in time of an 'Existent' in terms of series of 'State'-s that can take into account the disappearance or appearance of parts within a 'Physical'. 
+        """The usefulness of 'State' is that it makes it possible to describe the evolution in time of an 'Existent' in terms of series of 'State'-s that can take into account the disappearance or appearance of parts within a 'Physical'.
 
 A 'State' is a recognizable granularity level of matter, in the sense that its direct parts do not appear or disappear within its lifetime as it can be for a generic 'Existent'.""",
         """There is no change in granularity or cardinality of parts within a state.
@@ -9744,13 +9744,13 @@ ISO 80000-1""",
         """Measured or simulated 'physical propertiy'-s are always defined by a physical law, connected to a physical entity through a model perspective and measurement is done according to the same model.
 
 Systems of units suggests that this is the correct approach, since except for the fundamental units (length, time, charge) every other unit is derived by mathematical relations between these fundamental units, implying a physical laws or definitions.""",
-        """Measurement units of quantities of the same quantity dimension may be designated by the same name and symbol even when the quantities are not of the same kind. 
+        """Measurement units of quantities of the same quantity dimension may be designated by the same name and symbol even when the quantities are not of the same kind.
 
-For example, joule per kelvin and J/K are respectively the name and symbol of both a measurement unit of heat capacity and a measurement unit of entropy, which are generally not considered to be quantities of the same kind. 
+For example, joule per kelvin and J/K are respectively the name and symbol of both a measurement unit of heat capacity and a measurement unit of entropy, which are generally not considered to be quantities of the same kind.
 
-However, in some cases special measurement unit names are restricted to be used with quantities of specific kind only. 
+However, in some cases special measurement unit names are restricted to be used with quantities of specific kind only.
 
-For example, the measurement unit ‘second to the power minus one’ (1/s) is called hertz (Hz) when used for frequencies and becquerel (Bq) when used for activities of radionuclides. 
+For example, the measurement unit ‘second to the power minus one’ (1/s) is called hertz (Hz) when used for frequencies and becquerel (Bq) when used for activities of radionuclides.
 
 As another example, the joule (J) is used as a unit of energy, but never as a unit of moment of force, i.e. the newton metre (N · m).""",
         """— quantities of the same kind have the same quantity dimension,
@@ -10676,7 +10676,7 @@ ISO 80000-1""" ;
 <http://emmo.info/emmo/middle/metrology#EMMO_b953f2b1_c8d1_4dd9_b630_d3ef6580c2bb> a owl:Class ;
     rdfs:label "PhysicalConstant"@en ;
     annotations:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/List_of_physical_constants" ;
-    rdfs:comment """Physical constants are categorised into "exact" and measured constants. 
+    rdfs:comment """Physical constants are categorised into "exact" and measured constants.
 
 With "exact" constants, we refer to physical constants that have an exact numerical value after the revision of the SI system that was enforsed May 2019.""" ;
     rdfs:subClassOf <http://emmo.info/emmo/middle/metrology#EMMO_02c0621e_a527_4790_8a0f_2bb51973c819> ;
@@ -12236,7 +12236,7 @@ An Hamiltonian.""" ;
 
 However, a quantitative property is always a quantity.""",
         "Referred as Quantity Value in International vocabulary of metrology (VIM)",
-        """SI distinguishes between a quantity (an abstract concept) and the quantity value (a number and a reference). 
+        """SI distinguishes between a quantity (an abstract concept) and the quantity value (a number and a reference).
 
 The EMMO, following strict nominalism, denies the existence of abstract objects and then collapses the two concepts of SI quantity and SI quantity value into a single one: the 'Quantity'.
 
@@ -13419,9 +13419,9 @@ e.g. a math symbol is not made of other math symbols
 
 A Symbol may be a String in another language.
 e.g. "Bq" is the symbol for Becquerel units when dealing with metrology, or a string of "B" and "q" symbols when dealing with characters.""",
-        """Symbols of a formal language need not be symbols of anything. For instance there are logical constants which do not refer to any idea, but rather serve as a form of punctuation in the language (e.g. parentheses). 
+        """Symbols of a formal language need not be symbols of anything. For instance there are logical constants which do not refer to any idea, but rather serve as a form of punctuation in the language (e.g. parentheses).
 
-Symbols of a formal language must be capable of being specified without any reference to any interpretation of them. 
+Symbols of a formal language must be capable of being specified without any reference to any interpretation of them.
 (Wikipedia)""",
         "The class is the idea of the symbol, while the individual of that class stands for a specific mark (or token) of that idea." ;
     rdfs:subClassOf [ a owl:Restriction ;
@@ -13471,7 +13471,7 @@ where the exponents α, β, γ, δ, ε, ζ and η, which are generally small int
         """The conventional symbolic representation of the dimension of a base quantity is a single upper case letter in roman (upright) type. The conventional symbolic representation of the dimension of a derived quantity is the product of powers of the dimensions of the base quantities according to the definition of the derived quantity. The dimension of a quantity Q is denoted by dim Q.
 ISO 80000-1""",
         """The expression used by the EMMO for physical dimensions is a metrological symbol (but a string at meta level, i.e. the ontologist level) like this:
- 
+
 Ta Lb Mc Id Θe Nf Jg
 
 where a, b, c, d, e, f and g are 0 or signed integers.
@@ -15635,7 +15635,7 @@ However, the quantum mereotopology approach is not restricted only to physics. F
 
 The quantum concept recalls the fact that there is lower epistemological limit to our knowledge of the universe, related to the uncertainity principle.""",
         "A 'Quantum' stands for a 4D real world object.",
-        """A quantum is the EMMO mereological 4D a-tomic entity. 
+        """A quantum is the EMMO mereological 4D a-tomic entity.
 
 To avoid confusion with the concept of atom coming from physics, we will use the expression quantum mereology, instead of a-tomistic mereology.""",
         "From Latin quantum (plural quanta) \"as much as, so much as;\", introduced in physics directly from Latin by Max Planck, 1900." ;
@@ -17470,7 +17470,7 @@ y = f(x)""" ;
     annotations:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/SV" ;
     annotations:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Equivalent_dose" ;
     annotations:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.S05658" ;
-    rdfs:comment """Measurement unit for equivalent doseof ionizing radiation. 
+    rdfs:comment """Measurement unit for equivalent doseof ionizing radiation.
 
 Sievert is derived from absorbed dose, but takes into account the biological effectiveness of the radiation, which is dependent on the radiation type and energy.""" ;
     rdfs:subClassOf [ a owl:Restriction ;
@@ -17878,4 +17878,3 @@ A 'Collection' cannot have as member another 'Collection'.""",
 [] owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger .
 
 [] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
-
