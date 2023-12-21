@@ -939,7 +939,7 @@ Physical object temporal parts must be always self-connected. In other words, a 
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 xml:lang="en">The class of all the individuals that stand for world objects that are a self-connected composition of more than one quantum object and whose temporal parts are always self-connected.</emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9>
   </rdf:Description>
-  <rdf:Description rdf:about="http://emmo.info/emmo-inferred">
+  <rdf:Description rdf:about="http://emmo.info/emmo">
     <ns4:creator>Jesper Friis</ns4:creator>
     <rdfs:comment xml:lang="en">Contacts:
 Gerhard Goldbeck
