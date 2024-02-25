@@ -1,7 +1,7 @@
 @prefix : <https://w3id.org/emmo#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ns1: <http://www.w3.org/2003/11/swrl#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -17990,7 +17990,7 @@ This means that the causing entity can be in direct and optionally indirect caus
     skos:altLabel "Sound"@en ;
     skos:prefLabel "Auditory"@en ;
     :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A 'Perceptual' which stands for a real world object whose spatiotemporal pattern makes it identifiable by an observer as a sound."@en ;
-    :EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a """When we use the term 'sound' what are we referring to? The EMMO identifis a sound as the physical object that can be heard by the observer (more exactly, by the sensor of the observer). 
+    :EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a """When we use the term 'sound' what are we referring to? The EMMO identifis a sound as the physical object that can be heard by the observer (more exactly, by the sensor of the observer).
 
 In this sense, a sound (which is an acoustical object) is to be identified as the air region that manifests the sound wave and is able to be perceived by an observer. In case the wave is travelling through water or steel, then these other media regions are the sounds.
 
@@ -18098,7 +18098,7 @@ If the waveform is travelling through a cable as electronic signal (analog or di
     skos:prefLabel "ChromiumSymbol"@en .
 
 :EMMO_52211e5e_d767_4812_845e_eb6b402c476a a owl:Class ;
-    rdfs:comment """'Existent' is the EMMO class to be used for representing real world physical objects under a reductionistic perspective (i.e. objects come from the composition of sub-part objects, both in time and space). 
+    rdfs:comment """'Existent' is the EMMO class to be used for representing real world physical objects under a reductionistic perspective (i.e. objects come from the composition of sub-part objects, both in time and space).
 
 'Existent' class collects all individuals that stand for physical objects that can be structured in well defined temporal sub-parts called states, through the temporal direct parthood relation.
 
@@ -20717,7 +20717,7 @@ Abramowitz and Stegun, 1968"""@en ;
     :EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "http://dbpedia.org/resource/Henry"^^xsd:anyURI ;
     :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI unit for electrical inductance."@en ;
     :EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "H = Wb/A = V·s/A = Ω·s"@en,
-        """The SI unit of electric inductance. A changing magnetic field induces an electric current in a loop of wire (or in a coil of many loops) located in the field. Although the induced voltage depends only on the rate at which the magnetic flux changes, measured in webers per second, the amount of the current depends also on the physical properties of the coil. A coil with an inductance of one henry requires a flux of one weber for each ampere of induced current. If, on the other hand, it is the current which changes, then the induced field will generate a potential difference within the coil: if the inductance is one henry a current change of one ampere per second generates a potential difference of one volt. The henry is a large unit; inductances in practical circuits are measured in millihenrys (mH) or microhenrys (μH). The unit is named for the American physicist Joseph Henry (1797-1878), one of several scientists who discovered independently how magnetic fields can be used to generate alternating currents. 
+        """The SI unit of electric inductance. A changing magnetic field induces an electric current in a loop of wire (or in a coil of many loops) located in the field. Although the induced voltage depends only on the rate at which the magnetic flux changes, measured in webers per second, the amount of the current depends also on the physical properties of the coil. A coil with an inductance of one henry requires a flux of one weber for each ampere of induced current. If, on the other hand, it is the current which changes, then the induced field will generate a potential difference within the coil: if the inductance is one henry a current change of one ampere per second generates a potential difference of one volt. The henry is a large unit; inductances in practical circuits are measured in millihenrys (mH) or microhenrys (μH). The unit is named for the American physicist Joseph Henry (1797-1878), one of several scientists who discovered independently how magnetic fields can be used to generate alternating currents.
 
 -- QUDT"""@en ;
     :EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Henry?oldid=491435978"^^xsd:anyURI ;
@@ -20984,7 +20984,7 @@ Abramowitz and Stegun, 1968"""@en ;
     :EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "S" ;
     :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI unit for electrical conductance."@en ;
     :EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "S = A/V = F/s",
-        """Siemens  is the SI unit of electric conductance, susceptance, and admittance. The most important property of a conductor is the amount of current it will carry when a voltage is applied. Current flow is opposed by resistance in all circuits, and by also by reactance and impedance in alternating current circuits. Conductance, susceptance, and admittance are the inverses of resistance, reactance, and impedance, respectively. To measure these properties, the siemens is the reciprocal of the ohm. In other words, the conductance, susceptance, or admittance, in siemens, is simply 1 divided by the resistance, reactance or impedance, respectively, in ohms. The unit is named for the German electrical engineer Werner von Siemens (1816-1892). 
+        """Siemens  is the SI unit of electric conductance, susceptance, and admittance. The most important property of a conductor is the amount of current it will carry when a voltage is applied. Current flow is opposed by resistance in all circuits, and by also by reactance and impedance in alternating current circuits. Conductance, susceptance, and admittance are the inverses of resistance, reactance, and impedance, respectively. To measure these properties, the siemens is the reciprocal of the ohm. In other words, the conductance, susceptance, or admittance, in siemens, is simply 1 divided by the resistance, reactance or impedance, respectively, in ohms. The unit is named for the German electrical engineer Werner von Siemens (1816-1892).
 
 -- QUDT"""@en ;
     :EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Siemens_(unit)"^^xsd:anyURI .
@@ -21039,7 +21039,7 @@ Abramowitz and Stegun, 1968"""@en ;
     :EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "http://dbpedia.org/resource/Tesla"^^xsd:anyURI ;
     :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI unit for magnetic flux density or induction."@en ;
     :EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "T = V·s·m⁻² = N/(A·m) = Wb/m",
-        """The SI unit of flux density (or field intensity) for magnetic fields (also called the magnetic induction). The intensity of a magnetic field can be measured by placing a current-carrying conductor in the field. The magnetic field exerts a force on the conductor, a force which depends on the amount of the current and on the length of the conductor. One tesla is defined as the field intensity generating one newton of force per ampere of current per meter of conductor. Equivalently, one tesla represents a magnetic flux density of one weber per square meter of area. A field of one tesla is quite strong: the strongest fields available in laboratories are about 20 teslas, and the Earth's magnetic flux density, at its surface, is about 50 microteslas. The tesla, defined in 1958, honors the Serbian-American electrical engineer Nikola Tesla (1856-1943), whose work in electromagnetic induction led to the first practical generators and motors using alternating current. 
+        """The SI unit of flux density (or field intensity) for magnetic fields (also called the magnetic induction). The intensity of a magnetic field can be measured by placing a current-carrying conductor in the field. The magnetic field exerts a force on the conductor, a force which depends on the amount of the current and on the length of the conductor. One tesla is defined as the field intensity generating one newton of force per ampere of current per meter of conductor. Equivalently, one tesla represents a magnetic flux density of one weber per square meter of area. A field of one tesla is quite strong: the strongest fields available in laboratories are about 20 teslas, and the Earth's magnetic flux density, at its surface, is about 50 microteslas. The tesla, defined in 1958, honors the Serbian-American electrical engineer Nikola Tesla (1856-1943), whose work in electromagnetic induction led to the first practical generators and motors using alternating current.
 
 -- QUDT"""@en ;
     :EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Tesla_(unit)"^^xsd:anyURI ;
@@ -22672,7 +22672,7 @@ Participation is not under direct parthood since a process is not strictly relat
     rdfs:subClassOf :EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4 ;
     skos:prefLabel "DimensionalUnit"@en ;
     :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A subclass of measurement unit focusing on the physical dimensionality that is carried by the unit."@en ;
-    :EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The current version of EMMO does not provide explicit classes for physical dimensions. Rather it embraces the fact that the physical dimensionality of a physical quantity is carried by its measurement unit. 
+    :EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The current version of EMMO does not provide explicit classes for physical dimensions. Rather it embraces the fact that the physical dimensionality of a physical quantity is carried by its measurement unit.
 
 The role of dimensional unit and its subclasses is to express the physical dimensionality that is carried by the unit.
 
@@ -23462,7 +23462,7 @@ This requirement implies that a physical phenomena is either a decay, annihilati
         :EMMO_b3c8ba10_6bee_45e7_9416_e9019aa9f023 ;
     skos:prefLabel "hasHolisticOverlap"@en ;
     :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A relation between two holistic wholes that properly overlap, sharing one of their holistic parts."@en ;
-    :EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a """A man and the process of building a house. 
+    :EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a """A man and the process of building a house.
 The man is a whole that possesses an holistic temporal part which is an interval of six monts and represents a working period in his lifetime.
 The process of building a house is a whole that possesses an holistic spatial part which is a builder.
 The working period of the man and the builder participating the building process are the same individual, belonging both to a man lifetime and to a building holistic views.
@@ -23775,7 +23775,7 @@ With "exact" constants, we refer to physical constants that have an exact numeri
     :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The union of all classes categorising elementary particles according to the Standard Model."@en ;
     :EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Disjointness comes from the fact that standard model elementary particles are entities that possess objectively distinct and singular characters."@en,
         "Graviton is included, even if it is an hypothetical particle, to enable causality for gravitational interactions."@en,
-        """This class represents only real particles that are the input and output of a Feynman diagram, and hence respect the E²-p²c²=m²c⁴ energy-momentum equality (on the mass shell). 
+        """This class represents only real particles that are the input and output of a Feynman diagram, and hence respect the E²-p²c²=m²c⁴ energy-momentum equality (on the mass shell).
 In the EMMO the virtual particles (off the mass shell), the internal propagators of the interaction within a Feynman diagram, are not represented as mereological entities but as object relations (binary predicates)."""@en .
 
 :EMMO_c404e6d9_261d_4d2e_ab0d_ba4e05062647 a owl:Class ;
@@ -23885,7 +23885,7 @@ A mail."""@en .
 - object (focus on spatial configuration)
 - process (focus on temporal evolution)
 
-The concepts of endurant and perdurant implicitly rely on the concept of instantaneous 3D snapshot of the world object, that in the EMMO is not allowed since everything extends in 4D and there are no abstract objects. Moreover, time is a measured property in the EMMO and not an objective characteristic of an object, and cannot be used as temporal index to identify endurant position in time. 
+The concepts of endurant and perdurant implicitly rely on the concept of instantaneous 3D snapshot of the world object, that in the EMMO is not allowed since everything extends in 4D and there are no abstract objects. Moreover, time is a measured property in the EMMO and not an objective characteristic of an object, and cannot be used as temporal index to identify endurant position in time.
 
 For this reason an individual in the EMMO can always be classified both endurant and perdurant, due to its nature of 4D entity (e.g. an individual may belong both to the class of runners and the class of running process), and the distinction is purely semantic.  In fact, the object/process distinction is simply a matter of convenience in a 4D approach since a temporal extension is always the case, and stationarity depends upon observer time scale. For this reason, the same individual (4D object) may play the role of a process or of an object class depending on the object to which it relates.
 
@@ -24471,7 +24471,7 @@ In Peirce semiotics: legisign-symbol-argument"""@en ;
     rdfs:subClassOf :EMMO_c5ae6d8e_6b39_431f_8de4_ae4e357abc04 ;
     skos:prefLabel "Geometrical"@en ;
     :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A 'graphical' aimed to represent a geometrical concept."@en ;
-    :EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a """A geometrical object can be expressed in many different forms. 
+    :EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a """A geometrical object can be expressed in many different forms.
 
 For example, a line can be expressed by:
 a) an equation like y=mx+q, which is both an 'equation' and a 'geometrical'
@@ -24722,7 +24722,7 @@ https://en.wikipedia.org/wiki/General_Conference_on_Weights_and_Measures"""@en ;
     :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Measure of the ease for electric current to pass through a material."@en ;
     :EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.E01925" .
 
-<urn:swrl:var#z> a ns1:Variable .
+<urn:swrl:var#z> a swrl:Variable .
 
 rdfs:isDefinedBy rdfs:subPropertyOf rdfs:seeAlso .
 
@@ -24883,7 +24883,7 @@ k"""@en .
     owl:disjointUnionOf ( :EMMO_8b1367d6_0133_4b56_acc1_fa8b058169e3 :EMMO_57d977ab_0036_4779_b59a_e47620afdb9c ) ;
     skos:prefLabel "PhysicalObject"@en ;
     :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A CausalSystem whose quantum parts are all bonded to the rest of the system."@en ;
-    :EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """It is natural to define entities made or more than one smaller parts according to some unity criteria. One of the most general one applicable to causal systems is to ask that all the quantum parts of the system are bonded to the rest. 
+    :EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """It is natural to define entities made or more than one smaller parts according to some unity criteria. One of the most general one applicable to causal systems is to ask that all the quantum parts of the system are bonded to the rest.
 In other words, causal convexity excludes all quantums that leave the system (no more interacting), or that are not yet part of it (not yet interacting).
 So, a photon leaving a body is not part of the body as convex system, while a photon the is carrier of electromagnetic interaction between two molecular parts of the body, is part of the convex body."""@en .
 
@@ -25302,7 +25302,7 @@ the cat perceived by my mind -> interpretant
 "Cat!" -> sign, the produced sign"""@en .
 
 :EMMO_0527413c_b286_4e9c_b2d0_03fb2a038dee a owl:Class ;
-    rdfs:comment """The interpreter is not the ontologist, being the ontologist acting outside the ontology at the meta-ontology level. 
+    rdfs:comment """The interpreter is not the ontologist, being the ontologist acting outside the ontology at the meta-ontology level.
 
 On the contrary, the interpreter is an agent recognized by the ontologist. The semiotic branch of the EMMO is the tool used by the ontologist to represent an interpreter's semiotic activity."""@en ;
     rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
@@ -25488,7 +25488,7 @@ The execution of an algorithm."""@en ;
         "Maximal"@en ;
     skos:prefLabel "Fundamental"@en ;
     :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A whole that represent the overall lifetime of the world object that represents according to some holistic criteria."@en ;
-    :EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a """A marathon is an example of class whose individuals are always maximal since the criteria satisfied by a marathon 4D entity poses some constraints on its temporal and spatial extent. 
+    :EMMO_b432d2d5_25f4_4165_99c5_5935a7763c1a """A marathon is an example of class whose individuals are always maximal since the criteria satisfied by a marathon 4D entity poses some constraints on its temporal and spatial extent.
 
 On the contrary, the class for a generic running process does not necessarily impose maximality to its individuals. A running individual is maximal only when it extends in time for the minimum amount required to identify a running act, so every possible temporal part is always a non-running.
 
@@ -26545,7 +26545,7 @@ b) y and x non-overlapping"""@en ;
     :EMMO_c6e77b51_681b_4d04_b20d_a08f2b977470 ":isCauseOf owl:propertyDisjointWith :overlaps"@en ;
     :EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Each pair of causally connected entities is either in isDirectCauseOf or isIndirectCauseOf relation. The two are mutually exclusive."@en,
         "It applies to both quantums and macro-entities (entities made of more than one quantum). It is admissible for two entities to be one the cause of the other, excepts when they are both quantums."@en,
-        """The OWL 2 DL version of the EMMO introduces this object property as primitive causal relation. It refers to the macro causality relation mC(x,y), defined in the EMMO FOL version. 
+        """The OWL 2 DL version of the EMMO introduces this object property as primitive causal relation. It refers to the macro causality relation mC(x,y), defined in the EMMO FOL version.
 While the EMMO FOL introduces the quantum causality relation C(x,y) as primitive, the OWL 2 DL version substantially simplifies the theory, neglecting these lower level relations that are well above DL expressivity."""@en .
 
 :EMMO_fced2382_9c23_47a1_8246_a5dcd45ad99c a owl:Class ;
@@ -27120,7 +27120,7 @@ Symbols of a formal language must be capable of being specified without any refe
     :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A text that add some information about the entity."@en ;
     :EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "A comment can be addressed to facilitate interpretation, to suggest possible usage, to clarify the concepts behind each entity with respect to other ontological apporaches."@en .
 
-<urn:swrl:var#y> a ns1:Variable .
+<urn:swrl:var#y> a swrl:Variable .
 
 :EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce a owl:Class ;
     rdfs:comment """Following the common definition of process, the reader may think that every whole should be a process, since every 4D object always has a time dimension. However, in the EMMO we restrict the meaning of the word process to items whose evolution in time have a particular meaning for the ontologist (i.e. every 4D object unfolds in time, but not every 4D time unfolding may be of interest for the ontologist and categorized as a process).
@@ -27207,7 +27207,7 @@ ChemicalPotential"""@en .
     :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A property of objects which can be transferred to other objects or converted into different forms."@en ;
     :EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.E02101" .
 
-<urn:swrl:var#x> a ns1:Variable .
+<urn:swrl:var#x> a swrl:Variable .
 
 :EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef a owl:Class ;
     rdfs:comment """Quantities defined as ratios `Q=A/B` having equal dimensions in numerator and denominator are dimensionless quantities but still have a physical dimension defined as dim(A)/dim(B).
@@ -27545,18 +27545,18 @@ reaction sintering: process wherein at least two constituents of a powder mixtur
     owl:annotatedSource :EMMO_91c2db4b_83e2_4c36_aadf_453acc72e6d2 ;
     owl:annotatedTarget "Continuous or stepwise pressure forming with one or more rotating tools (rollers), without or with additional tools, e.g. plugs or mandrels, rods, guide tools" .
 
-[] a ns1:Imp ;
-    ns1:body [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#y> ;
-                    ns1:propertyPredicate :EMMO_d67ee67e_4fac_4676_82c9_aec361dba698 ] ;
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate :EMMO_d67ee67e_4fac_4676_82c9_aec361dba698 ] ;
             rdf:rest () ] ;
-    ns1:head [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#y> ;
-                    ns1:propertyPredicate :EMMO_aa987900_caf1_4ce2_82fa_6b1d6fbd2ead ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate :EMMO_aa987900_caf1_4ce2_82fa_6b1d6fbd2ead ] ;
             rdf:rest () ] ;
     :EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Enforcing exclusivity between overlapping and causality."@en .
 
@@ -27702,17 +27702,17 @@ https://en.wiktionary.org/wiki/mereology"""@en .
     owl:annotatedSource :EMMO_5c15f8c4_d2de_47a0_acdd_470b8dda979b ;
     owl:annotatedTarget "An Internationalized Resource Identifier (IRI) is a compact sequence of characters that identifies an abstract or physical resource. It is similar to URI, but greatly extends the allowed character set from ASCII to the Universal Character Set."@en .
 
-[] a ns1:Imp ;
-    ns1:body [ a ns1:AtomList ;
-            rdf:first [ a ns1:ClassAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:classPredicate :EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf ] ;
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:ClassAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:classPredicate :EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf ] ;
             rdf:rest () ] ;
-    ns1:head [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#x> ;
-                    ns1:propertyPredicate :EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#x> ;
+                    swrl:propertyPredicate :EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ] ;
             rdf:rest () ] ;
     :EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Enforcing parthood reflexivity."@en .
 
@@ -27821,17 +27821,17 @@ sintering: thermal treatment of a powder or compact, at a temperature below the 
     owl:annotatedTarget "Matter"@en ;
     :EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin materia (“matter, stuff, material”), from mater (“mother”)."@en .
 
-[] a ns1:Imp ;
-    ns1:body [ a ns1:AtomList ;
-            rdf:first [ a ns1:ClassAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:classPredicate :EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf ] ;
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:ClassAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:classPredicate :EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf ] ;
             rdf:rest () ] ;
-    ns1:head [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#x> ;
-                    ns1:propertyPredicate :EMMO_01e5766d_dac3_4574_8a78_310de92a5c9d ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#x> ;
+                    swrl:propertyPredicate :EMMO_01e5766d_dac3_4574_8a78_310de92a5c9d ] ;
             rdf:rest () ] ;
     :EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Enforcing the fact that an entity cannot cause itself."@en .
 
@@ -27869,19 +27869,19 @@ Entities are not placed in space or time: space and time are always relative bet
     owl:annotatedSource :EMMO_b8ce01a5_1e0c_4c69_8e54_7235fd4fe47e ;
     owl:annotatedTarget "A manufacturing process in which metallic material is anodically dissolved under the influence of an electric current and an electrolyte solution. The current flow can be caused either by connection to an external current source or due to local element formation on the workpiece (etching)." .
 
-[] a ns1:Imp ;
+[] a swrl:Imp ;
     rdfs:comment "Ensure that the hasNext relation expresses a strictly one-way causality arrow between two entities."^^rdfs:Literal ;
-    ns1:body [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#y> ;
-                    ns1:propertyPredicate :EMMO_499e24a5_5072_4c83_8625_fe3f96ae4a8d ] ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate :EMMO_499e24a5_5072_4c83_8625_fe3f96ae4a8d ] ;
             rdf:rest () ] ;
-    ns1:head [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#y> ;
-                    ns1:argument2 <urn:swrl:var#x> ;
-                    ns1:propertyPredicate :EMMO_01e5766d_dac3_4574_8a78_310de92a5c9d ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#y> ;
+                    swrl:argument2 <urn:swrl:var#x> ;
+                    swrl:propertyPredicate :EMMO_01e5766d_dac3_4574_8a78_310de92a5c9d ] ;
             rdf:rest () ] .
 
 [] a owl:Axiom ;
@@ -27891,23 +27891,23 @@ Entities are not placed in space or time: space and time are always relative bet
     owl:annotatedTarget """fabrication of objects through the deposition of a material using a print head, nozzle or another printer technology
 Note 1 to entry: This term is often used in a non-technical context synonymously with additive manufacturing (3.1.2) and, in these cases, typically associated with machines used for non-industrial purposes including personal use.""" .
 
-[] a ns1:Imp ;
+[] a swrl:Imp ;
     rdfs:comment "Implementation of equality based on mereology."^^rdfs:Literal ;
-    ns1:body [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#y> ;
-                    ns1:propertyPredicate :EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ] ;
-            rdf:rest [ a ns1:AtomList ;
-                    rdf:first [ a ns1:IndividualPropertyAtom ;
-                            ns1:argument1 <urn:swrl:var#y> ;
-                            ns1:argument2 <urn:swrl:var#x> ;
-                            ns1:propertyPredicate :EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ] ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate :EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl:var#y> ;
+                            swrl:argument2 <urn:swrl:var#x> ;
+                            swrl:propertyPredicate :EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ] ;
                     rdf:rest () ] ] ;
-    ns1:head [ a ns1:AtomList ;
-            rdf:first [ a ns1:SameIndividualAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#y> ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:SameIndividualAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ] ;
             rdf:rest () ] .
 
 [] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
@@ -27925,17 +27925,17 @@ Disjointness means that a collection cannot be an item and viceversa, representi
     owl:annotatedTarget "Quantum"@en ;
     :EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin quantum (plural quanta) \"as much as, so much as\"."@en .
 
-[] a ns1:Imp ;
-    ns1:body [ a ns1:AtomList ;
-            rdf:first [ a ns1:ClassAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:classPredicate :EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf ] ;
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:ClassAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:classPredicate :EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf ] ;
             rdf:rest () ] ;
-    ns1:head [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#x> ;
-                    ns1:propertyPredicate :EMMO_d893d373_b579_4867_841e_1c2b31a8d2c6 ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#x> ;
+                    swrl:propertyPredicate :EMMO_d893d373_b579_4867_841e_1c2b31a8d2c6 ] ;
             rdf:rest () ] ;
     :EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Enforcing reflexivity of overlapping."@en .
 
@@ -28092,23 +28092,23 @@ Here we explicitly include in the definition also all the data (e.g. source code
 
 [] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
 
-[] a ns1:Imp ;
-    ns1:body [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#y> ;
-                    ns1:propertyPredicate :EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ] ;
-            rdf:rest [ a ns1:AtomList ;
-                    rdf:first [ a ns1:IndividualPropertyAtom ;
-                            ns1:argument1 <urn:swrl:var#y> ;
-                            ns1:argument2 <urn:swrl:var#z> ;
-                            ns1:propertyPredicate :EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ] ;
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate :EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl:var#y> ;
+                            swrl:argument2 <urn:swrl:var#z> ;
+                            swrl:propertyPredicate :EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ] ;
                     rdf:rest () ] ] ;
-    ns1:head [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#z> ;
-                    ns1:propertyPredicate :EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#z> ;
+                    swrl:propertyPredicate :EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ] ;
             rdf:rest () ] ;
     :EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Transitivity for proper parthood."@en .
 
@@ -28430,17 +28430,17 @@ H=∑ni=1hia∗i  (n≥3)""" .
     owl:annotatedTarget _:N0d5c95794cfb47a69bba02efb5d33965 ;
     :EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Every collection has at least two item members, since a collection of one item is a self-connected entity (and then an item)."@en .
 
-[] a ns1:Imp ;
-    ns1:body [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#y> ;
-                    ns1:propertyPredicate :EMMO_6835537c_d294_4005_a770_ec9621f29ed1 ] ;
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate :EMMO_6835537c_d294_4005_a770_ec9621f29ed1 ] ;
             rdf:rest () ] ;
-    ns1:head [ a ns1:AtomList ;
-            rdf:first [ a ns1:SameIndividualAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#y> ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:SameIndividualAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ] ;
             rdf:rest () ] .
 
 [] a owl:Axiom ;
@@ -28588,22 +28588,22 @@ sintering: process of heating a powder metal compact to increase density and/or 
     owl:annotatedTarget "Boson"@en ;
     :EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "1940s: named after S.N. Bose."@en .
 
-[] a ns1:Imp ;
-    ns1:body [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#y> ;
-                    ns1:propertyPredicate :EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ] ;
-            rdf:rest [ a ns1:AtomList ;
-                    rdf:first [ a ns1:ClassAtom ;
-                            ns1:argument1 <urn:swrl:var#x> ;
-                            ns1:classPredicate :EMMO_36c79456_e29c_400d_8bd3_0eedddb82652 ] ;
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate :EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:ClassAtom ;
+                            swrl:argument1 <urn:swrl:var#x> ;
+                            swrl:classPredicate :EMMO_36c79456_e29c_400d_8bd3_0eedddb82652 ] ;
                     rdf:rest () ] ] ;
-    ns1:head [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#y> ;
-                    ns1:propertyPredicate :EMMO_f68030be_94b8_4c61_a161_886468558054 ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate :EMMO_f68030be_94b8_4c61_a161_886468558054 ] ;
             rdf:rest () ] .
 
 [] a owl:Axiom ;
@@ -28631,22 +28631,22 @@ manufacturing: production of components"""@en .
     owl:annotatedTarget "Equipment"@en ;
     :EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From French équipement, from équiper ‘equip’."@en .
 
-[] a ns1:Imp ;
-    ns1:body [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#y> ;
-                    ns1:propertyPredicate :EMMO_65a2c5b8_e4d8_4a51_b2f8_e55effc0547d ] ;
-            rdf:rest [ a ns1:AtomList ;
-                    rdf:first [ a ns1:ClassAtom ;
-                            ns1:argument1 <urn:swrl:var#x> ;
-                            ns1:classPredicate :EMMO_92829beb_6ed4_4c88_bbd5_3bc7403e2895 ] ;
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate :EMMO_65a2c5b8_e4d8_4a51_b2f8_e55effc0547d ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:ClassAtom ;
+                            swrl:argument1 <urn:swrl:var#x> ;
+                            swrl:classPredicate :EMMO_92829beb_6ed4_4c88_bbd5_3bc7403e2895 ] ;
                     rdf:rest () ] ] ;
-    ns1:head [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#y> ;
-                    ns1:propertyPredicate :EMMO_2a33ee61_8235_4da4_b9a1_ca62cb87a016 ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate :EMMO_2a33ee61_8235_4da4_b9a1_ca62cb87a016 ] ;
             rdf:rest () ] .
 
 [] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
@@ -28663,18 +28663,18 @@ manufacturing: production of components"""@en .
     owl:annotatedSource :EMMO_214e9a99_58de_40e2_86cf_fa6aa1d180a8 ;
     owl:annotatedTarget "Widening is tensile forming to increase the circumference of a hollow body. A distinction is made between: Widening, bulging." .
 
-[] a ns1:Imp ;
-    ns1:body [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#y> ;
-                    ns1:propertyPredicate :EMMO_3733bd38_ca2b_4264_a92a_3075a1715598 ] ;
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate :EMMO_3733bd38_ca2b_4264_a92a_3075a1715598 ] ;
             rdf:rest () ] ;
-    ns1:head [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#y> ;
-                    ns1:argument2 <urn:swrl:var#x> ;
-                    ns1:propertyPredicate :EMMO_01e5766d_dac3_4574_8a78_310de92a5c9d ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#y> ;
+                    swrl:argument2 <urn:swrl:var#x> ;
+                    swrl:propertyPredicate :EMMO_01e5766d_dac3_4574_8a78_310de92a5c9d ] ;
             rdf:rest () ] ;
     :EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Enforcing a strict one-way causality direction."@en .
 
@@ -28684,23 +28684,23 @@ manufacturing: production of components"""@en .
     owl:annotatedTarget "Observation"@en ;
     :EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin observare (“to watch, note, mark, heed, guard, keep, pay attention to, regard, comply with, etc.”), from ob (“before”) + servare (“to keep”),"@en .
 
-[] a ns1:Imp ;
-    ns1:body [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#y> ;
-                    ns1:propertyPredicate :EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ] ;
-            rdf:rest [ a ns1:AtomList ;
-                    rdf:first [ a ns1:IndividualPropertyAtom ;
-                            ns1:argument1 <urn:swrl:var#y> ;
-                            ns1:argument2 <urn:swrl:var#z> ;
-                            ns1:propertyPredicate :EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ] ;
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate :EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl:var#y> ;
+                            swrl:argument2 <urn:swrl:var#z> ;
+                            swrl:propertyPredicate :EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ] ;
                     rdf:rest () ] ] ;
-    ns1:head [ a ns1:AtomList ;
-            rdf:first [ a ns1:IndividualPropertyAtom ;
-                    ns1:argument1 <urn:swrl:var#x> ;
-                    ns1:argument2 <urn:swrl:var#z> ;
-                    ns1:propertyPredicate :EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#z> ;
+                    swrl:propertyPredicate :EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ] ;
             rdf:rest () ] ;
     :EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Transitivity for parthood."@en .
 
@@ -28718,4 +28718,3 @@ _:N0f6a10ecd5434362b9ed9152774f1476 a owl:Restriction ;
 _:N3328ea29f68d4440aff63011a278662b a owl:Restriction ;
     owl:hasValue :EMMO_08cb807c_e626_447b_863f_e2835540e918 ;
     owl:onProperty _:N5b8c6af85dbe443f97884c085528da4a .
-
