@@ -2396,7 +2396,7 @@ emmo:Sawing a owl:Class ;
     rdfs:isDefinedBy <http://emmo.info/emmo-inferred#>,
         <http://emmo.info/emmo/disciplines/manufacturing#> ;
     rdfs:subClassOf emmo:Machining ;
-    skos:exactMatch "http://emmo.info/emmo#EMMO_c7d004db-59fa-5ae3-adb1-e75736aa721a" ;
+    skos:exactMatch "http://emmo.info/emmo#EMMO_c7d004db_59fa_5ae3_adb1_e75736aa721a" ;
     skos:prefLabel "Sawing"@en .
 
 emmo:Screwing a owl:Class ;
@@ -3377,7 +3377,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_380f1ba6-b4f3-51e2-a63f-ceeeca2ed2f4" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_380f1ba6_b4f3_51e2_a63f_ceeeca2ed2f4" ;
     skos:prefLabel "ActiniumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#AluminiumAtom> a owl:Class ;
@@ -3395,7 +3395,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#AluminiumSymbol> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_7e8f9419-0bda-5aa3-ba88-00b2be6ca69e" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_7e8f9419_0bda_5aa3_ba88_00b2be6ca69e" ;
     skos:prefLabel "AluminiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#AmericiumAtom> a owl:Class ;
@@ -3413,7 +3413,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_f90da1f3-eb4c-54c4-b5d9-cf00fef180a1" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_f90da1f3_eb4c_54c4_b5d9_cf00fef180a1" ;
     skos:prefLabel "AmericiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#AntimonyAtom> a owl:Class ;
@@ -3431,7 +3431,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#AntimonySymbol> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_c32f8642-f1a1-5fae-8b4e-990b40f6eff8" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_c32f8642_f1a1_5fae_8b4e_990b40f6eff8" ;
     skos:prefLabel "AntimonyAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#ArgonAtom> a owl:Class ;
@@ -3449,7 +3449,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_755d962f-c703-514f-8d90-ca4f55e331d4" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_755d962f_c703_514f_8d90_ca4f55e331d4" ;
     skos:prefLabel "ArgonAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#ArsenicAtom> a owl:Class ;
@@ -3467,7 +3467,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#ArsenicSymbol> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_41dba862-503f-57c2-86c7-bb40030481f0" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_41dba862_503f_57c2_86c7_bb40030481f0" ;
     skos:prefLabel "ArsenicAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#AstatineAtom> a owl:Class ;
@@ -3485,7 +3485,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_186607c3-fe59-5731-983f-4374a1f8544b" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_186607c3_fe59_5731_983f_4374a1f8544b" ;
     skos:prefLabel "AstatineAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#BariumAtom> a owl:Class ;
@@ -3503,7 +3503,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_1b1aa658-a7d5-5bc6-9d78-37a901fd66dd" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_1b1aa658_a7d5_5bc6_9d78_37a901fd66dd" ;
     skos:prefLabel "BariumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#BerkeliumAtom> a owl:Class ;
@@ -3521,7 +3521,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_d2a4df79-23a0-5536-9f12-37d3b49c323f" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_d2a4df79_23a0_5536_9f12_37d3b49c323f" ;
     skos:prefLabel "BerkeliumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#BerylliumAtom> a owl:Class ;
@@ -3539,7 +3539,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_b8294a50-b121-5b9c-bacd-5d4206c3aaaf" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_b8294a50_b121_5b9c_bacd_5d4206c3aaaf" ;
     skos:prefLabel "BerylliumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#BismuthAtom> a owl:Class ;
@@ -3557,7 +3557,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_0e08326e-376b-5d54-ad2c-2a7cf274af61" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_0e08326e_376b_5d54_ad2c_2a7cf274af61" ;
     skos:prefLabel "BismuthAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#BohriumAtom> a owl:Class ;
@@ -3575,7 +3575,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_67761ddc-260b-5945-bfc3-311813ab71c9" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_67761ddc_260b_5945_bfc3_311813ab71c9" ;
     skos:prefLabel "BohriumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#BoronAtom> a owl:Class ;
@@ -3593,7 +3593,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_62cb8f50-5ce5-5f99-9cc8-514eff05d05e" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_62cb8f50_5ce5_5f99_9cc8_514eff05d05e" ;
     skos:prefLabel "BoronAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#BromineAtom> a owl:Class ;
@@ -3611,7 +3611,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_b3dfa085-5206-5868-b060-13efa01caf8e" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_b3dfa085_5206_5868_b060_13efa01caf8e" ;
     skos:prefLabel "BromineAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#CadmiumAtom> a owl:Class ;
@@ -3629,7 +3629,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#CadmiumSymbol> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_0761710a-3de3-5cff-a0cc-dfb8eba5a99d" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_0761710a_3de3_5cff_a0cc_dfb8eba5a99d" ;
     skos:prefLabel "CadmiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#CaesiumAtom> a owl:Class ;
@@ -3647,7 +3647,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_85ab88f1-3bb6-5fb7-8996-d1be786da995" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_85ab88f1_3bb6_5fb7_8996_d1be786da995" ;
     skos:prefLabel "CaesiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#CalciumAtom> a owl:Class ;
@@ -3665,7 +3665,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_2b6dcba2-8e5f-50fb-8242-26fa609379a8" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_2b6dcba2_8e5f_50fb_8242_26fa609379a8" ;
     skos:prefLabel "CalciumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#CaliforniumAtom> a owl:Class ;
@@ -3683,7 +3683,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_b443dea3-7407-59c3-9e86-6784e715f48b" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_b443dea3_7407_59c3_9e86_6784e715f48b" ;
     skos:prefLabel "CaliforniumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#CarbonAtom> a owl:Class ;
@@ -3701,7 +3701,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_0056cc2f-f2fe-558e-a65c-9a8fc5cea333" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_0056cc2f_f2fe_558e_a65c_9a8fc5cea333" ;
     skos:prefLabel "CarbonAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#CeriumAtom> a owl:Class ;
@@ -3719,7 +3719,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_125b6f65-caf4-5ff2-89f2-90a6183ee34e" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_125b6f65_caf4_5ff2_89f2_90a6183ee34e" ;
     skos:prefLabel "CeriumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#ChlorineAtom> a owl:Class ;
@@ -3737,7 +3737,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_b92900ac-69b2-5a63-a9d5-4984ae20905a" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_b92900ac_69b2_5a63_a9d5_4984ae20905a" ;
     skos:prefLabel "ChlorineAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#ChromiumAtom> a owl:Class ;
@@ -3755,7 +3755,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_2a61986e-772c-5f68-bdc9-80adbc618e41" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_2a61986e_772c_5f68_bdc9_80adbc618e41" ;
     skos:prefLabel "ChromiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#CobaltAtom> a owl:Class ;
@@ -3773,7 +3773,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_3fe9d899-f1f1-5657-b176-ac6afff2e93d" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_3fe9d899_f1f1_5657_b176_ac6afff2e93d" ;
     skos:prefLabel "CobaltAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#CoperniciumAtom> a owl:Class ;
@@ -3791,7 +3791,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_f9125b67-8798-5595-9db3-ffc1840c9947" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_f9125b67_8798_5595_9db3_ffc1840c9947" ;
     skos:prefLabel "CoperniciumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#CopperAtom> a owl:Class ;
@@ -3809,7 +3809,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_57a7ab6b-30a4-54e5-821d-0b8efb5e08b2" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_57a7ab6b_30a4_54e5_821d_0b8efb5e08b2" ;
     skos:prefLabel "CopperAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#CuriumAtom> a owl:Class ;
@@ -3827,7 +3827,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_08522112-0872-599f-9d81-81889333254e" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_08522112_0872_599f_9d81_81889333254e" ;
     skos:prefLabel "CuriumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#DarmastadtiumAtom> a owl:Class ;
@@ -3845,7 +3845,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_5455d87d-1c98-50e1-9904-c94f6a697097" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_5455d87d_1c98_50e1_9904_c94f6a697097" ;
     skos:prefLabel "DarmastadtiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#DubniumAtom> a owl:Class ;
@@ -3863,7 +3863,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_b65acde7-56c5-5cca-b589-b6744beb4223" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_b65acde7_56c5_5cca_b589_b6744beb4223" ;
     skos:prefLabel "DubniumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#DysprosiumAtom> a owl:Class ;
@@ -3881,7 +3881,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_e1e686a5-71c3-5a98-8646-6d4e0f665f35" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_e1e686a5_71c3_5a98_8646_6d4e0f665f35" ;
     skos:prefLabel "DysprosiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#EinsteiniumAtom> a owl:Class ;
@@ -3899,7 +3899,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_2e36028f-f5a0-5a5a-af66-c357fb64765e" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_2e36028f_f5a0_5a5a_af66_c357fb64765e" ;
     skos:prefLabel "EinsteiniumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#ErbiumAtom> a owl:Class ;
@@ -3917,7 +3917,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_14729316-fa36-5eda-a5e6-86e28a5d80ba" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_14729316_fa36_5eda_a5e6_86e28a5d80ba" ;
     skos:prefLabel "ErbiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#EuropiumAtom> a owl:Class ;
@@ -3935,7 +3935,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_8aa13073-865b-5035-b128-43a4758a0302" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_8aa13073_865b_5035_b128_43a4758a0302" ;
     skos:prefLabel "EuropiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#FermiumAtom> a owl:Class ;
@@ -3953,7 +3953,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_5ee30708-feb6-54c0-977e-3d069e496a76" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_5ee30708_feb6_54c0_977e_3d069e496a76" ;
     skos:prefLabel "FermiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#FleroviumAtom> a owl:Class ;
@@ -3971,7 +3971,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_7aa6b5b1-34c8-5d37-9db0-cc6a232f3946" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_7aa6b5b1_34c8_5d37_9db0_cc6a232f3946" ;
     skos:prefLabel "FleroviumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#FluorineAtom> a owl:Class ;
@@ -3989,7 +3989,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_ff4e0ff1-a3ea-5c59-82dc-75f0abad66eb" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_ff4e0ff1_a3ea_5c59_82dc_75f0abad66eb" ;
     skos:prefLabel "FluorineAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#FranciumAtom> a owl:Class ;
@@ -4007,7 +4007,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_291a1550-d4cb-5934-b0db-0ea3c6a23932" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_291a1550_d4cb_5934_b0db_0ea3c6a23932" ;
     skos:prefLabel "FranciumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#GadoliniumAtom> a owl:Class ;
@@ -4025,7 +4025,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#GadoliniumSymbol> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_0724601e-642c-5770-bc86-7078e7441664" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_0724601e_642c_5770_bc86_7078e7441664" ;
     skos:prefLabel "GadoliniumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#GalliumAtom> a owl:Class ;
@@ -4043,7 +4043,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_71c716bf-75bb-529f-b7c8-9d36a7c58b3a" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_71c716bf_75bb_529f_b7c8_9d36a7c58b3a" ;
     skos:prefLabel "GalliumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#GermaniumAtom> a owl:Class ;
@@ -4061,7 +4061,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_694e27a2-f3ee-5a3e-8851-d6f78d79d84e" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_694e27a2_f3ee_5a3e_8851_d6f78d79d84e" ;
     skos:prefLabel "GermaniumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#GoldAtom> a owl:Class ;
@@ -4079,7 +4079,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_0d37beeb-9dea-558e-82c5-4df3fb6d08d0" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_0d37beeb_9dea_558e_82c5_4df3fb6d08d0" ;
     skos:prefLabel "GoldAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#HafniumAtom> a owl:Class ;
@@ -4097,7 +4097,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_e37eaa49-d5e8-54e7-a7dc-9ad6073e86b7" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_e37eaa49_d5e8_54e7_a7dc_9ad6073e86b7" ;
     skos:prefLabel "HafniumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#HassiumAtom> a owl:Class ;
@@ -4115,7 +4115,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_1acc07d0-709d-53f4-9807-cbc0d144865c" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_1acc07d0_709d_53f4_9807_cbc0d144865c" ;
     skos:prefLabel "HassiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#HeliumAtom> a owl:Class ;
@@ -4133,7 +4133,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#HeliumSymbol> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_2c85ff7a-835c-5559-b369-193683d631c8" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_2c85ff7a_835c_5559_b369_193683d631c8" ;
     skos:prefLabel "HeliumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#HolmiumAtom> a owl:Class ;
@@ -4151,7 +4151,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_fd03c660-7b3b-5451-9d78-bc48836e1cc6" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_fd03c660_7b3b_5451_9d78_bc48836e1cc6" ;
     skos:prefLabel "HolmiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#HydrogenAtom> a owl:Class ;
@@ -4169,7 +4169,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_5a4790e5-b11b-5a0c-80e4-81515c27a560" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_5a4790e5_b11b_5a0c_80e4_81515c27a560" ;
     skos:prefLabel "HydrogenAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#IndiumAtom> a owl:Class ;
@@ -4187,7 +4187,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#IndiumSymbol> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_96522455-d7d7-5b1e-b10a-ad87e41a5adc" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_96522455_d7d7_5b1e_b10a_ad87e41a5adc" ;
     skos:prefLabel "IndiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#IodineAtom> a owl:Class ;
@@ -4205,7 +4205,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_52a611ba-81df-5557-9dfe-c55e4d0f5860" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_52a611ba_81df_5557_9dfe_c55e4d0f5860" ;
     skos:prefLabel "IodineAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#IridiumAtom> a owl:Class ;
@@ -4223,7 +4223,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_5ae62317-1681-5ca9-9fa7-8801757ee5c8" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_5ae62317_1681_5ca9_9fa7_8801757ee5c8" ;
     skos:prefLabel "IridiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#IronAtom> a owl:Class ;
@@ -4241,7 +4241,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_a4839f08-1080-53bf-9cb3-101e20c2656b" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_a4839f08_1080_53bf_9cb3_101e20c2656b" ;
     skos:prefLabel "IronAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#KryptonAtom> a owl:Class ;
@@ -4259,7 +4259,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_72379870-0d00-5e48-912b-62cbd5b3f548" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_72379870_0d00_5e48_912b_62cbd5b3f548" ;
     skos:prefLabel "KryptonAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#LanthanumAtom> a owl:Class ;
@@ -4277,7 +4277,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_b0597d20-6438-53e5-a627-b9dacebc69da" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_b0597d20_6438_53e5_a627_b9dacebc69da" ;
     skos:prefLabel "LanthanumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#LawrenciumAtom> a owl:Class ;
@@ -4295,7 +4295,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_41f2ed3b-aba4-5b99-a5a1-547109a7cb4c" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_41f2ed3b_aba4_5b99_a5a1_547109a7cb4c" ;
     skos:prefLabel "LawrenciumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#LeadAtom> a owl:Class ;
@@ -4313,7 +4313,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_749a9347-0b50-530a-995a-054f2a90bc0d" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_749a9347_0b50_530a_995a_054f2a90bc0d" ;
     skos:prefLabel "LeadAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#LithiumAtom> a owl:Class ;
@@ -4331,7 +4331,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#LithiumSymbol> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_3bb84fc5-5cb4-5250-ba87-169ae90ec6d7" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_3bb84fc5_5cb4_5250_ba87_169ae90ec6d7" ;
     skos:prefLabel "LithiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#LivermoriumAtom> a owl:Class ;
@@ -4349,7 +4349,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_f2d4c89a-c354-5e4c-9cdb-f2de932e294f" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_f2d4c89a_c354_5e4c_9cdb_f2de932e294f" ;
     skos:prefLabel "LivermoriumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#LutetiumAtom> a owl:Class ;
@@ -4367,7 +4367,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_098f6f77-746a-5fcc-a6d1-4988929bf404" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_098f6f77_746a_5fcc_a6d1_4988929bf404" ;
     skos:prefLabel "LutetiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#MagnesiumAtom> a owl:Class ;
@@ -4385,7 +4385,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_ff5e8306-8e33-5305-84aa-d99055d34e0c" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_ff5e8306_8e33_5305_84aa_d99055d34e0c" ;
     skos:prefLabel "MagnesiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#ManganeseAtom> a owl:Class ;
@@ -4403,7 +4403,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_2c701f72-a859-5e33-9552-b6bdbcbd28d9" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_2c701f72_a859_5e33_9552_b6bdbcbd28d9" ;
     skos:prefLabel "ManganeseAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#MeitneriumAtom> a owl:Class ;
@@ -4421,7 +4421,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_3213514e-b1ba-506c-ae22-d4e3a688ddf3" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_3213514e_b1ba_506c_ae22_d4e3a688ddf3" ;
     skos:prefLabel "MeitneriumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#MendeleviumAtom> a owl:Class ;
@@ -4439,7 +4439,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_e85b68e1-ca2b-51b5-8b61-dea134d88bef" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_e85b68e1_ca2b_51b5_8b61_dea134d88bef" ;
     skos:prefLabel "MendeleviumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#MercuryAtom> a owl:Class ;
@@ -4457,7 +4457,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_bc1bb0e8-ec90-5276-a15c-3e805144a083" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_bc1bb0e8_ec90_5276_a15c_3e805144a083" ;
     skos:prefLabel "MercuryAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#MolybdenumAtom> a owl:Class ;
@@ -4475,7 +4475,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_0d8247fb-82b0-5ad6-996b-19469e1d7960" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_0d8247fb_82b0_5ad6_996b_19469e1d7960" ;
     skos:prefLabel "MolybdenumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#MoscoviumAtom> a owl:Class ;
@@ -4493,7 +4493,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_b655f801-c5b9-5187-99e8-c9eba8645c05" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_b655f801_c5b9_5187_99e8_c9eba8645c05" ;
     skos:prefLabel "MoscoviumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#NeodymiumAtom> a owl:Class ;
@@ -4511,7 +4511,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_2e6eba5e-8c55-534c-b955-f09296e190e0" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_2e6eba5e_8c55_534c_b955_f09296e190e0" ;
     skos:prefLabel "NeodymiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#NeonAtom> a owl:Class ;
@@ -4529,7 +4529,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_24e7961c-26c8-5ae1-a29c-c32717c40684" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_24e7961c_26c8_5ae1_a29c_c32717c40684" ;
     skos:prefLabel "NeonAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#NeptuniumAtom> a owl:Class ;
@@ -4547,7 +4547,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_15595dc5-20a7-5b9f-a896-aad79f97bb8b" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_15595dc5_20a7_5b9f_a896_aad79f97bb8b" ;
     skos:prefLabel "NeptuniumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#NickelAtom> a owl:Class ;
@@ -4565,7 +4565,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_caacc634-4328-5d9d-a8e8-1c25a2557e94" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_caacc634_4328_5d9d_a8e8_1c25a2557e94" ;
     skos:prefLabel "NickelAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#NihoniumAtom> a owl:Class ;
@@ -4583,7 +4583,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_75771a96-5e17-568c-bc28-caba06c0047a" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_75771a96_5e17_568c_bc28_caba06c0047a" ;
     skos:prefLabel "NihoniumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#NiobiumAtom> a owl:Class ;
@@ -4601,7 +4601,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_ad2056af-0fa7-56cf-a881-80e3a7dfd266" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_ad2056af_0fa7_56cf_a881_80e3a7dfd266" ;
     skos:prefLabel "NiobiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#NitrogenAtom> a owl:Class ;
@@ -4619,7 +4619,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#NitrogenSymbol> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_252f143a-2c00-5d9a-a551-c07daa22c5c0" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_252f143a_2c00_5d9a_a551_c07daa22c5c0" ;
     skos:prefLabel "NitrogenAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#NobeliumAtom> a owl:Class ;
@@ -4637,7 +4637,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_49eb0790-50c2-5691-a8bf-dfa6f4a9f6c7" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_49eb0790_50c2_5691_a8bf_dfa6f4a9f6c7" ;
     skos:prefLabel "NobeliumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#OganessonAtom> a owl:Class ;
@@ -4655,7 +4655,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_cffec057-9258-52ae-bb4c-ca761b6bc407" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_cffec057_9258_52ae_bb4c_ca761b6bc407" ;
     skos:prefLabel "OganessonAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#OsmiumAtom> a owl:Class ;
@@ -4673,7 +4673,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_016c831e-66b7-546e-ad4a-fc22c739b0f5" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_016c831e_66b7_546e_ad4a_fc22c739b0f5" ;
     skos:prefLabel "OsmiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#OxygenAtom> a owl:Class ;
@@ -4691,7 +4691,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_48be0f49-9e7f-51c1-96ce-88e7794a13b0" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_48be0f49_9e7f_51c1_96ce_88e7794a13b0" ;
     skos:prefLabel "OxygenAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#PalladiumAtom> a owl:Class ;
@@ -4709,7 +4709,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_cabcb18d-88ff-5ff7-aceb-ab573526620e" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_cabcb18d_88ff_5ff7_aceb_ab573526620e" ;
     skos:prefLabel "PalladiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#PhosphorusAtom> a owl:Class ;
@@ -4727,7 +4727,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_7905373a-cf03-57fe-a627-bfdb1db9369c" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_7905373a_cf03_57fe_a627_bfdb1db9369c" ;
     skos:prefLabel "PhosphorusAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#PlatinumAtom> a owl:Class ;
@@ -4745,7 +4745,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_123629bd-efd6-5ba6-979e-2a4698b54e70" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_123629bd_efd6_5ba6_979e_2a4698b54e70" ;
     skos:prefLabel "PlatinumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#PlutoniumAtom> a owl:Class ;
@@ -4763,7 +4763,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_6e467e25-2883-5f7b-a60f-2f4b651bba3f" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_6e467e25_2883_5f7b_a60f_2f4b651bba3f" ;
     skos:prefLabel "PlutoniumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#PoloniumAtom> a owl:Class ;
@@ -4781,7 +4781,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_784119c1-c336-5b0c-80fc-4cc8bddc99ca" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_784119c1_c336_5b0c_80fc_4cc8bddc99ca" ;
     skos:prefLabel "PoloniumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#PotassiumAtom> a owl:Class ;
@@ -4799,7 +4799,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_d7c9e90e-ba46-55b2-9671-43408f6a1d74" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_d7c9e90e_ba46_55b2_9671_43408f6a1d74" ;
     skos:prefLabel "PotassiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#PraseodymiumAtom> a owl:Class ;
@@ -4817,7 +4817,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_18748aef-0e6b-5369-99b5-1e5ab1a0f99b" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_18748aef_0e6b_5369_99b5_1e5ab1a0f99b" ;
     skos:prefLabel "PraseodymiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#PromethiumAtom> a owl:Class ;
@@ -4835,7 +4835,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#PromethiumSymbol> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_73e73382-f3c0-5d09-bcee-f6e380269388" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_73e73382_f3c0_5d09_bcee_f6e380269388" ;
     skos:prefLabel "PromethiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#ProtactiniumAtom> a owl:Class ;
@@ -4853,7 +4853,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_29987c5a-a7fb-5207-9610-b94316977a3d" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_29987c5a_a7fb_5207_9610_b94316977a3d" ;
     skos:prefLabel "ProtactiniumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#RadiumAtom> a owl:Class ;
@@ -4871,7 +4871,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_3ea9993c-80b9-5133-b552-dce78cd17ade" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_3ea9993c_80b9_5133_b552_dce78cd17ade" ;
     skos:prefLabel "RadiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#RadonAtom> a owl:Class ;
@@ -4889,7 +4889,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_fd99c17e-6385-5b97-a20c-eddffdd56837" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_fd99c17e_6385_5b97_a20c_eddffdd56837" ;
     skos:prefLabel "RadonAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#RheniumAtom> a owl:Class ;
@@ -4907,7 +4907,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#RheniumSymbol> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_8d93f51b-c7c7-5486-b64a-ee206f6b6672" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_8d93f51b_c7c7_5486_b64a_ee206f6b6672" ;
     skos:prefLabel "RheniumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#RhodiumAtom> a owl:Class ;
@@ -4925,7 +4925,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_3bc0aedf-c43e-5d30-8688-44d19900a68b" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_3bc0aedf_c43e_5d30_8688_44d19900a68b" ;
     skos:prefLabel "RhodiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#RoentgeniumAtom> a owl:Class ;
@@ -4943,7 +4943,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_3f29d3e0-e9d9-5f1f-bd77-97af10125f7e" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_3f29d3e0_e9d9_5f1f_bd77_97af10125f7e" ;
     skos:prefLabel "RoentgeniumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#RubidiumAtom> a owl:Class ;
@@ -4961,7 +4961,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_c828cd65-e2de-5ae2-b581-4e5d2498e493" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_c828cd65_e2de_5ae2_b581_4e5d2498e493" ;
     skos:prefLabel "RubidiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#RutheniumAtom> a owl:Class ;
@@ -4979,7 +4979,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_948b47f0-3c24-50c7-a698-a805f760e667" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_948b47f0_3c24_50c7_a698_a805f760e667" ;
     skos:prefLabel "RutheniumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#RutherfordiumAtom> a owl:Class ;
@@ -4997,7 +4997,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_78c3f353-1296-5dca-9759-7c59a7f53927" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_78c3f353_1296_5dca_9759_7c59a7f53927" ;
     skos:prefLabel "RutherfordiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#SamariumAtom> a owl:Class ;
@@ -5015,7 +5015,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#SamariumSymbol> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_65d84215-de2a-56c9-80e3-a49d08dfc1de" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_65d84215_de2a_56c9_80e3_a49d08dfc1de" ;
     skos:prefLabel "SamariumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#ScandiumAtom> a owl:Class ;
@@ -5033,7 +5033,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_fbfd4b93-12ee-5a15-8377-d4c54635b5de" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_fbfd4b93_12ee_5a15_8377_d4c54635b5de" ;
     skos:prefLabel "ScandiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#SeaborgiumAtom> a owl:Class ;
@@ -5051,7 +5051,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#SeaborgiumSymbol> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_67eaac8f-7f83-5bca-b1d0-10451d3a88a1" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_67eaac8f_7f83_5bca_b1d0_10451d3a88a1" ;
     skos:prefLabel "SeaborgiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#SeleniumAtom> a owl:Class ;
@@ -5069,7 +5069,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_808f7cd9-27b4-527b-974f-4213f10e1772" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_808f7cd9_27b4_527b_974f_4213f10e1772" ;
     skos:prefLabel "SeleniumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#SiliconAtom> a owl:Class ;
@@ -5087,7 +5087,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_798b0c96-82ca-5ce8-8d5f-f9f72668cf5d" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_798b0c96_82ca_5ce8_8d5f_f9f72668cf5d" ;
     skos:prefLabel "SiliconAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#SilverAtom> a owl:Class ;
@@ -5105,7 +5105,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_36ab7281-0187-568f-b0b4-61e33dc08cfc" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_36ab7281_0187_568f_b0b4_61e33dc08cfc" ;
     skos:prefLabel "SilverAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#SodiumAtom> a owl:Class ;
@@ -5123,7 +5123,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_dea931ca-1ec7-58f8-88e5-fb5615d8b214" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_dea931ca_1ec7_58f8_88e5_fb5615d8b214" ;
     skos:prefLabel "SodiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#StrontiumAtom> a owl:Class ;
@@ -5141,7 +5141,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_8ec7fdf6-5652-547d-942f-b8b09ad84660" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_8ec7fdf6_5652_547d_942f_b8b09ad84660" ;
     skos:prefLabel "StrontiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#SulfurAtom> a owl:Class ;
@@ -5159,7 +5159,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_87c8f425-c96c-5503-88a0-f10465669ea3" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_87c8f425_c96c_5503_88a0_f10465669ea3" ;
     skos:prefLabel "SulfurAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#TantalumAtom> a owl:Class ;
@@ -5177,7 +5177,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_dbe54798-a21f-519f-9d52-e6ab2c2e28cb" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_dbe54798_a21f_519f_9d52_e6ab2c2e28cb" ;
     skos:prefLabel "TantalumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#TechnetiumAtom> a owl:Class ;
@@ -5195,7 +5195,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_9c803415-5978-5525-9de9-fcf0a2098b4c" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_9c803415_5978_5525_9de9_fcf0a2098b4c" ;
     skos:prefLabel "TechnetiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#TelluriumAtom> a owl:Class ;
@@ -5213,7 +5213,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:someValuesFrom <http://emmo.info/emmo/disciplines/periodictable#TelluriumSymbol> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_c1b40f92-d27d-5aa0-9811-b6c58391f951" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_c1b40f92_d27d_5aa0_9811_b6c58391f951" ;
     skos:prefLabel "TelluriumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#TennessineAtom> a owl:Class ;
@@ -5231,7 +5231,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_706cac26-78f1-5ca4-a63c-2600828db412" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_706cac26_78f1_5ca4_a63c_2600828db412" ;
     skos:prefLabel "TennessineAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#TerbiumAtom> a owl:Class ;
@@ -5249,7 +5249,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_e3cd5791-6fbb-587a-a535-0e937800beaa" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_e3cd5791_6fbb_587a_a535_0e937800beaa" ;
     skos:prefLabel "TerbiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#ThalliumAtom> a owl:Class ;
@@ -5267,7 +5267,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_bcf70555-8df3-5a39-b26a-a5e802d17a37" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_bcf70555_8df3_5a39_b26a_a5e802d17a37" ;
     skos:prefLabel "ThalliumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#ThoriumAtom> a owl:Class ;
@@ -5285,7 +5285,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_59d342fd-1ace-5b68-9d0d-ed4ff9f55d63" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_59d342fd_1ace_5b68_9d0d_ed4ff9f55d63" ;
     skos:prefLabel "ThoriumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#ThuliumAtom> a owl:Class ;
@@ -5303,7 +5303,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_82f9a8f3-2bb4-5d14-9a41-30a858ecce61" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_82f9a8f3_2bb4_5d14_9a41_30a858ecce61" ;
     skos:prefLabel "ThuliumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#TinAtom> a owl:Class ;
@@ -5321,7 +5321,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_9aa9e086-ae07-51f6-bf84-788ffdefcb6f" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_9aa9e086_ae07_51f6_bf84_788ffdefcb6f" ;
     skos:prefLabel "TinAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#TitaniumAtom> a owl:Class ;
@@ -5339,7 +5339,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_0eee5986-12a1-5f73-b5e0-6eb2b640c924" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_0eee5986_12a1_5f73_b5e0_6eb2b640c924" ;
     skos:prefLabel "TitaniumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#TungstenAtom> a owl:Class ;
@@ -5357,7 +5357,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_7b7d258b-3ea7-5716-af58-afc68679de23" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_7b7d258b_3ea7_5716_af58_afc68679de23" ;
     skos:prefLabel "TungstenAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#UraniumAtom> a owl:Class ;
@@ -5375,7 +5375,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_b233f8c0-37d8-51ae-9264-560e6649e246" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_b233f8c0_37d8_51ae_9264_560e6649e246" ;
     skos:prefLabel "UraniumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#VanadiumAtom> a owl:Class ;
@@ -5393,7 +5393,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_f02b58a5-8f1e-5d72-a261-8fe5ad2fbb4b" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_f02b58a5_8f1e_5d72_a261_8fe5ad2fbb4b" ;
     skos:prefLabel "VanadiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#XenonAtom> a owl:Class ;
@@ -5411,7 +5411,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_57742ca9-95d8-50f8-9b33-0ded30da4532" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_57742ca9_95d8_50f8_9b33_0ded30da4532" ;
     skos:prefLabel "XenonAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#YtterbiumAtom> a owl:Class ;
@@ -5429,7 +5429,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_8d722efa-b49d-51b1-8bf3-bf50ba4b438c" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_8d722efa_b49d_51b1_8bf3_bf50ba4b438c" ;
     skos:prefLabel "YtterbiumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#YttriumAtom> a owl:Class ;
@@ -5447,7 +5447,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_733b8473-aa8f-59d5-81c3-c97ca40ea9d0" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_733b8473_aa8f_59d5_81c3_c97ca40ea9d0" ;
     skos:prefLabel "YttriumAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#ZincAtom> a owl:Class ;
@@ -5465,7 +5465,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_f4fee945-1d4a-5158-b0ca-eaef9ad40502" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_f4fee945_1d4a_5158_b0ca_eaef9ad40502" ;
     skos:prefLabel "ZincAtom"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#ZirconiumAtom> a owl:Class ;
@@ -5483,7 +5483,7 @@ email: emanuele.ghedini@unibo.it"""@en,
             owl:onProperty <http://emmo.info/emmo/disciplines/periodictable#hasAtomicNumber> ],
         emmo:Atom,
         emmo:Declared ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_c052baf7-358f-55de-8ca3-9688563c3cfb" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_c052baf7_358f_55de_8ca3_9688563c3cfb" ;
     skos:prefLabel "ZirconiumAtom"@en .
 
 dcterms:abstract a owl:AnnotationProperty ;
@@ -8646,7 +8646,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Ac"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_3bf0809d-2f7c-5282-b7fd-2e5486f6dbd3" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_3bf0809d_2f7c_5282_b7fd_2e5486f6dbd3" ;
     skos:prefLabel "ActiniumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#AluminiumSymbol> a owl:Class ;
@@ -8656,7 +8656,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Al"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_fc7ab7d2-d960-5ae8-b13b-a53dbc547cca" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_fc7ab7d2_d960_5ae8_b13b_a53dbc547cca" ;
     skos:prefLabel "AluminiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#AmericiumSymbol> a owl:Class ;
@@ -8666,7 +8666,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Am"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_f107c0e5-0b9f-566c-9cba-a3443c904f78" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_f107c0e5_0b9f_566c_9cba_a3443c904f78" ;
     skos:prefLabel "AmericiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#AntimonySymbol> a owl:Class ;
@@ -8676,7 +8676,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Sb"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_4ee57a22-0634-5889-a283-0b4f8e5023f6" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_4ee57a22_0634_5889_a283_0b4f8e5023f6" ;
     skos:prefLabel "AntimonySymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#ArgonSymbol> a owl:Class ;
@@ -8686,7 +8686,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Ar"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_69e0ff08-9843-5ca2-b2bb-58467b07c4bb" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_69e0ff08_9843_5ca2_b2bb_58467b07c4bb" ;
     skos:prefLabel "ArgonSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#ArsenicSymbol> a owl:Class ;
@@ -8696,7 +8696,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "As"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_0ba17fb4-6149-5332-b65f-0639ace42edf" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_0ba17fb4_6149_5332_b65f_0639ace42edf" ;
     skos:prefLabel "ArsenicSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#AstatineSymbol> a owl:Class ;
@@ -8706,7 +8706,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "At"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_c7651944-e33f-56bc-8d83-f6de9760d661" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_c7651944_e33f_56bc_8d83_f6de9760d661" ;
     skos:prefLabel "AstatineSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#BariumSymbol> a owl:Class ;
@@ -8716,7 +8716,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Ba"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_d60619c8-1abe-52c0-9491-eb3086245e22" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_d60619c8_1abe_52c0_9491_eb3086245e22" ;
     skos:prefLabel "BariumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#BerkeliumSymbol> a owl:Class ;
@@ -8726,7 +8726,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Bk"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_5c736993-31b7-5839-aa36-38b6cd8b41a2" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_5c736993_31b7_5839_aa36_38b6cd8b41a2" ;
     skos:prefLabel "BerkeliumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#BerylliumSymbol> a owl:Class ;
@@ -8736,7 +8736,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Be"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_b42b9f49-aa2a-5dc7-afa5-9c5c013b621d" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_b42b9f49_aa2a_5dc7_afa5_9c5c013b621d" ;
     skos:prefLabel "BerylliumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#BismuthSymbol> a owl:Class ;
@@ -8746,7 +8746,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Bi"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_ed5acb06-0af0-5a3a-9b31-a1b32267f753" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_ed5acb06_0af0_5a3a_9b31_a1b32267f753" ;
     skos:prefLabel "BismuthSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#BohriumSymbol> a owl:Class ;
@@ -8756,7 +8756,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Bh"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_0805a892-352b-53e3-9577-60aa0835bc17" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_0805a892_352b_53e3_9577_60aa0835bc17" ;
     skos:prefLabel "BohriumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#BoronSymbol> a owl:Class ;
@@ -8766,7 +8766,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "B"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_a30e9658-1a08-50cc-b200-25dbc8add30a" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_a30e9658_1a08_50cc_b200_25dbc8add30a" ;
     skos:prefLabel "BoronSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#BromineSymbol> a owl:Class ;
@@ -8776,7 +8776,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Br"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_41ee55be-d0e9-5f39-86a6-36b81a7bc301" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_41ee55be_d0e9_5f39_86a6_36b81a7bc301" ;
     skos:prefLabel "BromineSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#CadmiumSymbol> a owl:Class ;
@@ -8786,7 +8786,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Cd"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_b12e3fea-4467-5a08-9b14-67c51def1431" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_b12e3fea_4467_5a08_9b14_67c51def1431" ;
     skos:prefLabel "CadmiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#CaesiumSymbol> a owl:Class ;
@@ -8796,7 +8796,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Cs"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_f7e8a63d-d40c-57f7-8017-7ad6b1d89b4e" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_f7e8a63d_d40c_57f7_8017_7ad6b1d89b4e" ;
     skos:prefLabel "CaesiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#CalciumSymbol> a owl:Class ;
@@ -8806,7 +8806,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Ca"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_38626021-30ac-5bd1-8776-0541a8341bf2" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_38626021_30ac_5bd1_8776_0541a8341bf2" ;
     skos:prefLabel "CalciumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#CaliforniumSymbol> a owl:Class ;
@@ -8816,7 +8816,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Cf"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_ff1d6ece-712d-54b8-9c05-c26854e0c35a" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_ff1d6ece_712d_54b8_9c05_c26854e0c35a" ;
     skos:prefLabel "CaliforniumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#CarbonSymbol> a owl:Class ;
@@ -8826,7 +8826,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "C"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_a7180b5f-d46d-5751-b3bc-ae28a6655992" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_a7180b5f_d46d_5751_b3bc_ae28a6655992" ;
     skos:prefLabel "CarbonSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#CeriumSymbol> a owl:Class ;
@@ -8836,7 +8836,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Ce"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_44eb5d63-b868-54c5-bd52-7528db10674d" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_44eb5d63_b868_54c5_bd52_7528db10674d" ;
     skos:prefLabel "CeriumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#ChlorineSymbol> a owl:Class ;
@@ -8846,7 +8846,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Cl"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_2dc17698-8cd9-562e-8eca-7818d507c813" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_2dc17698_8cd9_562e_8eca_7818d507c813" ;
     skos:prefLabel "ChlorineSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#ChromiumSymbol> a owl:Class ;
@@ -8856,7 +8856,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Cr"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_517752af-5883-5cf5-8363-6b19f76aca3e" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_517752af_5883_5cf5_8363_6b19f76aca3e" ;
     skos:prefLabel "ChromiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#CobaltSymbol> a owl:Class ;
@@ -8866,7 +8866,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Co"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_4aa59242-76e7-5cce-a126-c7e9c657e7ad" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_4aa59242_76e7_5cce_a126_c7e9c657e7ad" ;
     skos:prefLabel "CobaltSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#CoperniciumSymbol> a owl:Class ;
@@ -8876,7 +8876,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Cn"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_920b8adc-575b-55e9-9cd5-cf5eab1696f1" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_920b8adc_575b_55e9_9cd5_cf5eab1696f1" ;
     skos:prefLabel "CoperniciumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#CopperSymbol> a owl:Class ;
@@ -8886,7 +8886,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Cu"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_bd93ef72-3d4f-5f17-b613-01f440296995" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_bd93ef72_3d4f_5f17_b613_01f440296995" ;
     skos:prefLabel "CopperSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#CuriumSymbol> a owl:Class ;
@@ -8896,7 +8896,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Cm"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_c97277f7-f011-51bb-aeb8-5e8b1f3f711c" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_c97277f7_f011_51bb_aeb8_5e8b1f3f711c" ;
     skos:prefLabel "CuriumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#DarmastadtiumSymbol> a owl:Class ;
@@ -8906,7 +8906,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Ds"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_71d48627-4696-54c2-a990-4fdd9f353aef" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_71d48627_4696_54c2_a990_4fdd9f353aef" ;
     skos:prefLabel "DarmastadtiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#DubniumSymbol> a owl:Class ;
@@ -8916,7 +8916,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Db"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_43815c80-05dc-5917-8d52-b200badbf1d3" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_43815c80_05dc_5917_8d52_b200badbf1d3" ;
     skos:prefLabel "DubniumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#DysprosiumSymbol> a owl:Class ;
@@ -8926,7 +8926,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Dy"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_1936bc9e-5e81-5267-bd48-cbec9a6cfb17" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_1936bc9e_5e81_5267_bd48_cbec9a6cfb17" ;
     skos:prefLabel "DysprosiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#EinsteiniumSymbol> a owl:Class ;
@@ -8936,7 +8936,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Es"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_6b241a1f-2a5f-5ea8-b0aa-7b162d7d73e4" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_6b241a1f_2a5f_5ea8_b0aa_7b162d7d73e4" ;
     skos:prefLabel "EinsteiniumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#ErbiumSymbol> a owl:Class ;
@@ -8946,7 +8946,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Er"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_357b32b5-7d1b-5649-b9bd-2b1b9359fcd0" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_357b32b5_7d1b_5649_b9bd_2b1b9359fcd0" ;
     skos:prefLabel "ErbiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#EuropiumSymbol> a owl:Class ;
@@ -8956,7 +8956,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Eu"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_4894a40d-6bf5-54a2-8b21-e9b278e0e973" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_4894a40d_6bf5_54a2_8b21_e9b278e0e973" ;
     skos:prefLabel "EuropiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#FermiumSymbol> a owl:Class ;
@@ -8966,7 +8966,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Fm"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_9c5b1294-ac9e-554f-a135-a3d72a763d9c" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_9c5b1294_ac9e_554f_a135_a3d72a763d9c" ;
     skos:prefLabel "FermiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#FleroviumSymbol> a owl:Class ;
@@ -8976,7 +8976,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Fl"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_1c5c8217-481b-5ae9-b44f-9ec353f6ea93" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_1c5c8217_481b_5ae9_b44f_9ec353f6ea93" ;
     skos:prefLabel "FleroviumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#FluorineSymbol> a owl:Class ;
@@ -8986,7 +8986,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "F"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_36a32a8c-8307-5b09-adcb-bbaeb9e36b49" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_36a32a8c_8307_5b09_adcb_bbaeb9e36b49" ;
     skos:prefLabel "FluorineSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#FranciumSymbol> a owl:Class ;
@@ -8996,7 +8996,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Fr"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_c3a05192-7d78-5190-bc3e-3ea44cfc9d19" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_c3a05192_7d78_5190_bc3e_3ea44cfc9d19" ;
     skos:prefLabel "FranciumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#GadoliniumSymbol> a owl:Class ;
@@ -9006,7 +9006,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Gd"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_2563e18a-93d2-5d81-86d3-736295e9e519" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_2563e18a_93d2_5d81_86d3_736295e9e519" ;
     skos:prefLabel "GadoliniumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#GalliumSymbol> a owl:Class ;
@@ -9016,7 +9016,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Ga"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_b546b51b-c19d-5368-8810-c9e4e9b1c1f3" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_b546b51b_c19d_5368_8810_c9e4e9b1c1f3" ;
     skos:prefLabel "GalliumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#GermaniumSymbol> a owl:Class ;
@@ -9026,7 +9026,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Ge"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_6b670dce-5692-5505-9688-8f735b325214" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_6b670dce_5692_5505_9688_8f735b325214" ;
     skos:prefLabel "GermaniumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#GoldSymbol> a owl:Class ;
@@ -9036,7 +9036,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Au"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_811c67a9-bcdf-5a9e-bbce-28ae2af12915" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_811c67a9_bcdf_5a9e_bbce_28ae2af12915" ;
     skos:prefLabel "GoldSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#HafniumSymbol> a owl:Class ;
@@ -9046,7 +9046,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Hf"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_c9ac19ce-af4f-5abd-975d-c86dca0b4d58" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_c9ac19ce_af4f_5abd_975d_c86dca0b4d58" ;
     skos:prefLabel "HafniumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#HassiumSymbol> a owl:Class ;
@@ -9056,7 +9056,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Hs"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_ef4ce791-8ba4-55cd-a6fa-778133a19d19" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_ef4ce791_8ba4_55cd_a6fa_778133a19d19" ;
     skos:prefLabel "HassiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#HeliumSymbol> a owl:Class ;
@@ -9066,7 +9066,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "He"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_fad04773-08a7-5bd3-8990-06d7e9d2c21e" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_fad04773_08a7_5bd3_8990_06d7e9d2c21e" ;
     skos:prefLabel "HeliumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#HolmiumSymbol> a owl:Class ;
@@ -9076,7 +9076,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Ho"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_e0136ad7-1435-5292-9ed6-9848b481d503" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_e0136ad7_1435_5292_9ed6_9848b481d503" ;
     skos:prefLabel "HolmiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#HydrogenSymbol> a owl:Class ;
@@ -9086,7 +9086,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "H"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_93582808-e5fc-5bb5-bc7a-0e674e1a7f0e" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_93582808_e5fc_5bb5_bc7a_0e674e1a7f0e" ;
     skos:prefLabel "HydrogenSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#IndiumSymbol> a owl:Class ;
@@ -9096,7 +9096,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "In"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_67589be3-8acd-5230-bc54-89280412a3fb" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_67589be3_8acd_5230_bc54_89280412a3fb" ;
     skos:prefLabel "IndiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#IodineSymbol> a owl:Class ;
@@ -9106,7 +9106,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "I"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_c10700ef-832b-5b39-a0a0-5e3f5f17b8e8" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_c10700ef_832b_5b39_a0a0_5e3f5f17b8e8" ;
     skos:prefLabel "IodineSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#IridiumSymbol> a owl:Class ;
@@ -9116,7 +9116,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Ir"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_b8aab013-b729-51f1-bc14-5302e7f97cbe" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_b8aab013_b729_51f1_bc14_5302e7f97cbe" ;
     skos:prefLabel "IridiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#IronSymbol> a owl:Class ;
@@ -9126,7 +9126,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Fe"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_71b5082d-9908-5011-8ad0-b2ab70ffd08c" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_71b5082d_9908_5011_8ad0_b2ab70ffd08c" ;
     skos:prefLabel "IronSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#KryptonSymbol> a owl:Class ;
@@ -9136,7 +9136,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Kr"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_7c79a41c-c0aa-564b-b0b1-6fd4ee6f3256" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_7c79a41c_c0aa_564b_b0b1_6fd4ee6f3256" ;
     skos:prefLabel "KryptonSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#LanthanumSymbol> a owl:Class ;
@@ -9146,7 +9146,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "La"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_a3569860-5d20-5e69-baf6-cbe8ae7cfc15" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_a3569860_5d20_5e69_baf6_cbe8ae7cfc15" ;
     skos:prefLabel "LanthanumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#LawrenciumSymbol> a owl:Class ;
@@ -9156,7 +9156,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Lr"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_f21db3a4-d5de-52dd-9460-5cdd138fb83f" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_f21db3a4_d5de_52dd_9460_5cdd138fb83f" ;
     skos:prefLabel "LawrenciumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#LeadSymbol> a owl:Class ;
@@ -9166,7 +9166,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Pb"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_717d8808-5085-5f35-86b4-6bc75bafac0b" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_717d8808_5085_5f35_86b4_6bc75bafac0b" ;
     skos:prefLabel "LeadSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#LithiumSymbol> a owl:Class ;
@@ -9176,7 +9176,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Li"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_0755dd67-bdf1-5164-a706-55fcf9ced526" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_0755dd67_bdf1_5164_a706_55fcf9ced526" ;
     skos:prefLabel "LithiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#LivermoriumSymbol> a owl:Class ;
@@ -9186,7 +9186,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Lv"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_31fda9f8-24e1-5c53-8616-a63cee7613de" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_31fda9f8_24e1_5c53_8616_a63cee7613de" ;
     skos:prefLabel "LivermoriumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#LutetiumSymbol> a owl:Class ;
@@ -9196,7 +9196,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Lu"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_66c364c4-16b7-5d5f-abd5-b6977c46f525" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_66c364c4_16b7_5d5f_abd5_b6977c46f525" ;
     skos:prefLabel "LutetiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#MagnesiumSymbol> a owl:Class ;
@@ -9206,7 +9206,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Mg"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_91579f8a-e3b1-5ac9-9533-402c8cb1ffdd" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_91579f8a_e3b1_5ac9_9533_402c8cb1ffdd" ;
     skos:prefLabel "MagnesiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#ManganeseSymbol> a owl:Class ;
@@ -9216,7 +9216,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Mn"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_179a652d-68c8-5412-9621-98b4b00984dd" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_179a652d_68c8_5412_9621_98b4b00984dd" ;
     skos:prefLabel "ManganeseSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#MeitneriumSymbol> a owl:Class ;
@@ -9226,7 +9226,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Mt"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_b2e41936-a44f-578d-960b-91f8f0135b2b" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_b2e41936_a44f_578d_960b_91f8f0135b2b" ;
     skos:prefLabel "MeitneriumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#MendeleviumSymbol> a owl:Class ;
@@ -9236,7 +9236,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Md"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_20bb4724-2370-5205-ab8e-51a4c3609d3b" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_20bb4724_2370_5205_ab8e_51a4c3609d3b" ;
     skos:prefLabel "MendeleviumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#MercurySymbol> a owl:Class ;
@@ -9246,7 +9246,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Hg"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_12120d44-785e-5e5e-a9fd-73fe7c24ead4" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_12120d44_785e_5e5e_a9fd_73fe7c24ead4" ;
     skos:prefLabel "MercurySymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#MolybdenumSymbol> a owl:Class ;
@@ -9256,7 +9256,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Mo"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_e4c89307-e63b-57c8-8892-60924c65aa3b" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_e4c89307_e63b_57c8_8892_60924c65aa3b" ;
     skos:prefLabel "MolybdenumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#MoscoviumSymbol> a owl:Class ;
@@ -9266,7 +9266,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Mc"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_ced3fb28-51f7-5208-9aab-d1f8bef21ee5" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_ced3fb28_51f7_5208_9aab_d1f8bef21ee5" ;
     skos:prefLabel "MoscoviumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#NeodymiumSymbol> a owl:Class ;
@@ -9276,7 +9276,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Nd"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_afee3bf0-d0e0-53dc-bfb1-b624b5724d47" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_afee3bf0_d0e0_53dc_bfb1_b624b5724d47" ;
     skos:prefLabel "NeodymiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#NeonSymbol> a owl:Class ;
@@ -9286,7 +9286,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Ne"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_2e96348b-f8d1-5877-a5c5-b6863c5ebcf2" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_2e96348b_f8d1_5877_a5c5_b6863c5ebcf2" ;
     skos:prefLabel "NeonSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#NeptuniumSymbol> a owl:Class ;
@@ -9296,7 +9296,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Np"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_e941986d-658b-5a08-ae3d-4cc170344b06" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_e941986d_658b_5a08_ae3d_4cc170344b06" ;
     skos:prefLabel "NeptuniumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#NickelSymbol> a owl:Class ;
@@ -9306,7 +9306,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Ni"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_1fade54b-20ed-5e58-af59-214ea3b15ba9" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_1fade54b_20ed_5e58_af59_214ea3b15ba9" ;
     skos:prefLabel "NickelSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#NihoniumSymbol> a owl:Class ;
@@ -9316,7 +9316,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Nh"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_8fbc9110-c822-5b8e-a5fc-ee5430d9f34a" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_8fbc9110_c822_5b8e_a5fc_ee5430d9f34a" ;
     skos:prefLabel "NihoniumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#NiobiumSymbol> a owl:Class ;
@@ -9326,7 +9326,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Nb"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_f0f7abe2-766d-5dcd-ba67-ada816684677" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_f0f7abe2_766d_5dcd_ba67_ada816684677" ;
     skos:prefLabel "NiobiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#NitrogenSymbol> a owl:Class ;
@@ -9336,7 +9336,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "N"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_26b7c6ca-6c6c-52e0-ba01-dcc883e64d46" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_26b7c6ca_6c6c_52e0_ba01_dcc883e64d46" ;
     skos:prefLabel "NitrogenSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#NobeliumSymbol> a owl:Class ;
@@ -9346,7 +9346,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "No"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_c1bb775c-0888-5b88-9cce-c49bae1d298b" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_c1bb775c_0888_5b88_9cce_c49bae1d298b" ;
     skos:prefLabel "NobeliumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#OganessonSymbol> a owl:Class ;
@@ -9356,7 +9356,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Og"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_e5d7bd48-4098-59b6-b872-8bba421157eb" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_e5d7bd48_4098_59b6_b872_8bba421157eb" ;
     skos:prefLabel "OganessonSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#OsmiumSymbol> a owl:Class ;
@@ -9366,7 +9366,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Os"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_fb1bb238-24bc-5d37-9243-414770fda5be" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_fb1bb238_24bc_5d37_9243_414770fda5be" ;
     skos:prefLabel "OsmiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#OxygenSymbol> a owl:Class ;
@@ -9376,7 +9376,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "O"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_96fb9a6c-80d6-57fa-a4f2-0d2a59232418" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_96fb9a6c_80d6_57fa_a4f2_0d2a59232418" ;
     skos:prefLabel "OxygenSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#PalladiumSymbol> a owl:Class ;
@@ -9386,7 +9386,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Pd"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_89f46282-58a4-5140-8c5b-7aaddcccdcf0" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_89f46282_58a4_5140_8c5b_7aaddcccdcf0" ;
     skos:prefLabel "PalladiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#PhosphorusSymbol> a owl:Class ;
@@ -9396,7 +9396,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "P"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_6bd7b6f4-db3b-58da-b9a0-58f44bb3ed37" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_6bd7b6f4_db3b_58da_b9a0_58f44bb3ed37" ;
     skos:prefLabel "PhosphorusSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#PlatinumSymbol> a owl:Class ;
@@ -9406,7 +9406,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Pt"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_e580b699-7725-58d5-b057-7b3c816e84a1" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_e580b699_7725_58d5_b057_7b3c816e84a1" ;
     skos:prefLabel "PlatinumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#PlutoniumSymbol> a owl:Class ;
@@ -9416,7 +9416,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Pu"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_15841f91-ad7d-5b81-89d1-c12b13e42f32" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_15841f91_ad7d_5b81_89d1_c12b13e42f32" ;
     skos:prefLabel "PlutoniumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#PoloniumSymbol> a owl:Class ;
@@ -9426,7 +9426,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Po"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_af362dae-2da6-595e-8581-21a8363a5a54" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_af362dae_2da6_595e_8581_21a8363a5a54" ;
     skos:prefLabel "PoloniumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#PotassiumSymbol> a owl:Class ;
@@ -9436,7 +9436,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "K"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_a939c29d-2304-5e48-8b15-fc592a9d1813" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_a939c29d_2304_5e48_8b15_fc592a9d1813" ;
     skos:prefLabel "PotassiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#PraseodymiumSymbol> a owl:Class ;
@@ -9446,7 +9446,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Pr"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_3565b4e7-51bd-57e5-afde-60be404857cf" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_3565b4e7_51bd_57e5_afde_60be404857cf" ;
     skos:prefLabel "PraseodymiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#PromethiumSymbol> a owl:Class ;
@@ -9456,7 +9456,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Pm"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_c45d9e2f-54f3-5464-82f3-c0f11a36389a" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_c45d9e2f_54f3_5464_82f3_c0f11a36389a" ;
     skos:prefLabel "PromethiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#ProtactiniumSymbol> a owl:Class ;
@@ -9466,7 +9466,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Pa"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_209b3242-1274-5d1d-a965-f8cb3fcc1073" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_209b3242_1274_5d1d_a965_f8cb3fcc1073" ;
     skos:prefLabel "ProtactiniumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#RadiumSymbol> a owl:Class ;
@@ -9476,7 +9476,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Ra"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_9a24be51-7059-5306-af89-400c78a49e9c" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_9a24be51_7059_5306_af89_400c78a49e9c" ;
     skos:prefLabel "RadiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#RadonSymbol> a owl:Class ;
@@ -9486,7 +9486,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Rn"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_d0af02f3-8a47-554e-a725-42b752451a1b" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_d0af02f3_8a47_554e_a725_42b752451a1b" ;
     skos:prefLabel "RadonSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#RheniumSymbol> a owl:Class ;
@@ -9496,7 +9496,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Re"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_8d2f22ab-ba39-5e40-98dc-56f075cf22f1" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_8d2f22ab_ba39_5e40_98dc_56f075cf22f1" ;
     skos:prefLabel "RheniumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#RhodiumSymbol> a owl:Class ;
@@ -9506,7 +9506,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Rh"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_ddcc9683-bee2-5ea0-8b18-54c85b551ad6" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_ddcc9683_bee2_5ea0_8b18_54c85b551ad6" ;
     skos:prefLabel "RhodiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#RoentgeniumSymbol> a owl:Class ;
@@ -9516,7 +9516,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Rg"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_c1102bae-7e7d-5142-95fe-ec25c8cb4903" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_c1102bae_7e7d_5142_95fe_ec25c8cb4903" ;
     skos:prefLabel "RoentgeniumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#RubidiumSymbol> a owl:Class ;
@@ -9526,7 +9526,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Rb"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_f9544c7c-d259-5839-b36a-61595809c538" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_f9544c7c_d259_5839_b36a_61595809c538" ;
     skos:prefLabel "RubidiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#RutheniumSymbol> a owl:Class ;
@@ -9536,7 +9536,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Ru"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_0edbde89-9714-53c7-b2a9-0ef6c0f73091" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_0edbde89_9714_53c7_b2a9_0ef6c0f73091" ;
     skos:prefLabel "RutheniumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#RutherfordiumSymbol> a owl:Class ;
@@ -9546,7 +9546,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Rf"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_ce8cedc4-4835-5298-b723-6223d2a17e5a" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_ce8cedc4_4835_5298_b723_6223d2a17e5a" ;
     skos:prefLabel "RutherfordiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#SamariumSymbol> a owl:Class ;
@@ -9556,7 +9556,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Sm"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_96252ae5-c061-5ba0-80a4-774e5d949e06" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_96252ae5_c061_5ba0_80a4_774e5d949e06" ;
     skos:prefLabel "SamariumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#ScandiumSymbol> a owl:Class ;
@@ -9566,7 +9566,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Sc"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_3fb231cb-7818-5b59-b8da-b5bd2c09c0fc" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_3fb231cb_7818_5b59_b8da_b5bd2c09c0fc" ;
     skos:prefLabel "ScandiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#SeaborgiumSymbol> a owl:Class ;
@@ -9576,7 +9576,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Sg"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_3fb44e47-7de9-5d86-9320-5949d8792951" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_3fb44e47_7de9_5d86_9320_5949d8792951" ;
     skos:prefLabel "SeaborgiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#SeleniumSymbol> a owl:Class ;
@@ -9586,7 +9586,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Se"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_cfac37de-991d-5a7d-9adc-8946324ffef6" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_cfac37de_991d_5a7d_9adc_8946324ffef6" ;
     skos:prefLabel "SeleniumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#SiliconSymbol> a owl:Class ;
@@ -9596,7 +9596,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Si"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_4f9670f5-14ca-53da-a1ea-9b0550a61035" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_4f9670f5_14ca_53da_a1ea_9b0550a61035" ;
     skos:prefLabel "SiliconSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#SilverSymbol> a owl:Class ;
@@ -9606,7 +9606,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Ag"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_e82869a8-32a8-5d57-81a8-e2d618976f23" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_e82869a8_32a8_5d57_81a8_e2d618976f23" ;
     skos:prefLabel "SilverSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#SodiumSymbol> a owl:Class ;
@@ -9616,7 +9616,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Na"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_c00cc96e-a51e-5dc9-9e6c-1cc4dfaf1c67" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_c00cc96e_a51e_5dc9_9e6c_1cc4dfaf1c67" ;
     skos:prefLabel "SodiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#StrontiumSymbol> a owl:Class ;
@@ -9626,7 +9626,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Sr"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_649415e4-1e31-5809-aceb-59efbba7d5f5" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_649415e4_1e31_5809_aceb_59efbba7d5f5" ;
     skos:prefLabel "StrontiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#SulfurSymbol> a owl:Class ;
@@ -9636,7 +9636,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "S"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_66d895f4-42fa-58a2-89af-ef065f52c1eb" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_66d895f4_42fa_58a2_89af_ef065f52c1eb" ;
     skos:prefLabel "SulfurSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#TantalumSymbol> a owl:Class ;
@@ -9646,7 +9646,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Ta"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_6378a9e9-29e5-5cae-b75b-46ca365e49b9" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_6378a9e9_29e5_5cae_b75b_46ca365e49b9" ;
     skos:prefLabel "TantalumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#TechnetiumSymbol> a owl:Class ;
@@ -9656,7 +9656,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Tc"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_8caaf41b-df30-5355-be5a-74283c49f50a" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_8caaf41b_df30_5355_be5a_74283c49f50a" ;
     skos:prefLabel "TechnetiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#TelluriumSymbol> a owl:Class ;
@@ -9666,7 +9666,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Te"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_cf55f4d1-3865-5de4-88b4-3045f0db3a20" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_cf55f4d1_3865_5de4_88b4_3045f0db3a20" ;
     skos:prefLabel "TelluriumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#TennessineSymbol> a owl:Class ;
@@ -9676,7 +9676,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Ts"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_490c2981-b1cb-5f8c-be82-17a1ef1c27b4" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_490c2981_b1cb_5f8c_be82_17a1ef1c27b4" ;
     skos:prefLabel "TennessineSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#TerbiumSymbol> a owl:Class ;
@@ -9686,7 +9686,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Tb"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_6599389d-7a26-5d51-a65c-5dd9c3ed532f" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_6599389d_7a26_5d51_a65c_5dd9c3ed532f" ;
     skos:prefLabel "TerbiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#ThalliumSymbol> a owl:Class ;
@@ -9696,7 +9696,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Tl"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_5833085e-0afc-516a-a584-f56f1f191a13" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_5833085e_0afc_516a_a584_f56f1f191a13" ;
     skos:prefLabel "ThalliumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#ThoriumSymbol> a owl:Class ;
@@ -9706,7 +9706,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Th"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_e9fbc98d-3ac1-5a2d-a354-6e3ba1412157" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_e9fbc98d_3ac1_5a2d_a354_6e3ba1412157" ;
     skos:prefLabel "ThoriumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#ThuliumSymbol> a owl:Class ;
@@ -9716,7 +9716,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Tm"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_849f62cf-3e92-5122-94ba-bcce51a04c5f" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_849f62cf_3e92_5122_94ba_bcce51a04c5f" ;
     skos:prefLabel "ThuliumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#TinSymbol> a owl:Class ;
@@ -9726,7 +9726,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Sn"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_09e84f72-511a-5d22-adf1-accacaf7146a" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_09e84f72_511a_5d22_adf1_accacaf7146a" ;
     skos:prefLabel "TinSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#TitaniumSymbol> a owl:Class ;
@@ -9736,7 +9736,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Ti"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_1cba8181-2ea5-5772-8bd7-e668ffcde394" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_1cba8181_2ea5_5772_8bd7_e668ffcde394" ;
     skos:prefLabel "TitaniumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#TungstenSymbol> a owl:Class ;
@@ -9746,7 +9746,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "W"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_68a887df-63af-55c0-8239-b0b8edaa94ea" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_68a887df_63af_55c0_8239_b0b8edaa94ea" ;
     skos:prefLabel "TungstenSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#UraniumSymbol> a owl:Class ;
@@ -9756,7 +9756,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "U"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_0080b38f-bac4-5dd6-9d28-d821cf723787" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_0080b38f_bac4_5dd6_9d28_d821cf723787" ;
     skos:prefLabel "UraniumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#VanadiumSymbol> a owl:Class ;
@@ -9766,7 +9766,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "V"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_113acda0-3c17-59d9-87ef-7e5e5c0ba128" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_113acda0_3c17_59d9_87ef_7e5e5c0ba128" ;
     skos:prefLabel "VanadiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#XenonSymbol> a owl:Class ;
@@ -9776,7 +9776,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Xe"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_fba570fc-6881-51d6-8e9d-a8c23e422b62" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_fba570fc_6881_51d6_8e9d_a8c23e422b62" ;
     skos:prefLabel "XenonSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#YtterbiumSymbol> a owl:Class ;
@@ -9786,7 +9786,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Yb"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_fdcc0ac2-f82f-5650-838c-ec1ad138a632" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_fdcc0ac2_f82f_5650_838c_ec1ad138a632" ;
     skos:prefLabel "YtterbiumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#YttriumSymbol> a owl:Class ;
@@ -9796,7 +9796,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Y"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_74fd9704-69a8-5112-b65a-72ba05bba315" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_74fd9704_69a8_5112_b65a_72ba05bba315" ;
     skos:prefLabel "YttriumSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#ZincSymbol> a owl:Class ;
@@ -9806,7 +9806,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Zn"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_0bd0c81a-2972-5b2d-8ff5-bb72a82b9c0d" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_0bd0c81a_2972_5b2d_8ff5_bb72a82b9c0d" ;
     skos:prefLabel "ZincSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#ZirconiumSymbol> a owl:Class ;
@@ -9816,7 +9816,7 @@ emmo:universe a emmo:CausalStructure,
             owl:hasValue "Zr"^^xsd:string ;
             owl:onProperty emmo:hasSymbolValue ],
         emmo:ChemicalElement ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_7ab01303-b09e-5a90-8a5b-f5087d6559d3" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_7ab01303_b09e_5a90_8a5b_f5087d6559d3" ;
     skos:prefLabel "ZirconiumSymbol"@en .
 
 <http://emmo.info/emmo/domain/openmodel#DataProcessingApplication> a owl:Class ;
@@ -11123,7 +11123,7 @@ emmo:SpatialTiling a owl:Class ;
             owl:allValuesFrom emmo:SpatialTile ;
             owl:onProperty emmo:hasSpatioTemporalTile ],
         emmo:SpatioTemporalTessellation ;
-    skos:exactMatch "http://emmo.info/emmo#EMMO_8944581c-64da-46a9-be29-7074f7cc8098" ;
+    skos:exactMatch "http://emmo.info/emmo#EMMO_8944581c_64da_46a9_be29_7074f7cc8098" ;
     skos:prefLabel "SpatialTiling"@en .
 
 emmo:StandaloneAtom a owl:Class ;
@@ -12816,7 +12816,7 @@ emmo:TemporalTiling a owl:Class ;
             owl:allValuesFrom emmo:TemporalTile ;
             owl:onProperty emmo:hasSpatioTemporalTile ],
         emmo:SpatioTemporalTessellation ;
-    skos:exactMatch "http://emmo.info/emmo#EMMO_f7f41d20-eabb-4bcb-9a16-0436851fcd5c" ;
+    skos:exactMatch "http://emmo.info/emmo#EMMO_f7f41d20_eabb_4bcb_9a16_0436851fcd5c" ;
     skos:prefLabel "TemporalTiling"@en .
 
 emmo:TemporallyFundamental a owl:Class ;
@@ -14567,7 +14567,7 @@ emmo:SpatioTemporalTile a owl:Class ;
         [ a owl:Class ;
             owl:unionOf ( emmo:ThroughTile emmo:EndTile emmo:BeginTile ) ] ;
     skos:altLabel "WellFormedTile"@en ;
-    skos:exactMatch "http://emmo.info/emmo#EMMO_2e46d966-9f14-4673-821e-7c7cf2957926" ;
+    skos:exactMatch "http://emmo.info/emmo#EMMO_2e46d966_9f14_4673_821e_7c7cf2957926" ;
     skos:prefLabel "SpatioTemporalTile" .
 
 emmo:SymbolicConstruct a owl:Class ;
@@ -14861,7 +14861,7 @@ emmo:SpatioTemporalTessellation a owl:Class ;
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( emmo:MixedTiling emmo:SpatialTiling emmo:TemporalTiling ) ] ;
     skos:altLabel "WellFormedTessellation"@en ;
-    skos:exactMatch "http://emmo.info/emmo#EMMO_e12dcfa4-c9f1-4546-9a12-8457c052e6ba" ;
+    skos:exactMatch "http://emmo.info/emmo#EMMO_e12dcfa4_c9f1_4546_9a12_8457c052e6ba" ;
     skos:prefLabel "SpatioTemporalTessellation" .
 
 emmo:hasReferenceUnit a owl:AsymmetricProperty,
@@ -15290,7 +15290,7 @@ emmo:hasPhysicalDimension a owl:ObjectProperty ;
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:range xsd:integer ;
     rdfs:subPropertyOf owl:topDataProperty ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_a585728e_36c8_5df4_9d95_aa128d2a0e7f" ;
     skos:prefLabel "hasAtomicNumber"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#hasChemicalSymbol> a owl:ObjectProperty ;
@@ -15300,7 +15300,7 @@ emmo:hasPhysicalDimension a owl:ObjectProperty ;
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:range emmo:ChemicalElement ;
     rdfs:subPropertyOf emmo:hasProperty ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa-06f9-5149-b754-28c589035b8a" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_79c0edfa_06f9_5149_b754_28c589035b8a" ;
     skos:prefLabel "hasChemicalSymbol"@en .
 
 <http://emmo.info/emmo/disciplines/periodictable#hasIUPAC2016AtomicMass> a owl:DatatypeProperty,
@@ -15312,7 +15312,7 @@ emmo:hasPhysicalDimension a owl:ObjectProperty ;
         <http://emmo.info/emmo/disciplines/periodictable#> ;
     rdfs:range xsd:decimal ;
     rdfs:subPropertyOf owl:topDataProperty ;
-    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01-276c-55ed-a166-ad097ec75575" ;
+    skos:exactMatch "http://emmo.info/emmo/disciplines/periodictable#EMMO_43de6d01_276c_55ed_a166_ad097ec75575" ;
     skos:prefLabel "hasIUPAC2016AtomicMass"@en .
 
 emmo:ChemicalElement a owl:Class ;

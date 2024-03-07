@@ -73,21 +73,21 @@ email: emanuele.ghedini@unibo.it"""@en,
     owl:versionInfo "1.0.0-rc1" ;
     foaf:logo "https://github.com/emmo-repo/EMMO/raw/master/doc/emmo-logo.png" .
 
-:0528e41d_edd2_49f9_bd2a_aeabdc215515 a owl:ObjectProperty ;
+:EMMO_0528e41d_edd2_49f9_bd2a_aeabdc215515 a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://w3id.org/emmo/mereocausality#> ;
-    rdfs:subPropertyOf :33fd15ab_7662_4cc6_8bf6_988422efc631,
+    rdfs:subPropertyOf :EMMO_33fd15ab_7662_4cc6_8bf6_988422efc631,
         :EMMO_49e17ba8_dd17_4c28_b8c8_c8c5d5a9aab9,
         :EMMO_c37d451b_e245_439f_bd94_9050e04ec9f7 ;
     skos:prefLabel "hasMaximalCollection"@en .
 
-:0558e802_46a4_45de_af85_47aff4dc427e a owl:ObjectProperty ;
+:EMMO_0558e802_46a4_45de_af85_47aff4dc427e a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://w3id.org/emmo/mereocausality#> ;
-    rdfs:subPropertyOf :3bd4339b_e01f_43e5_a011_74a4ef3ffa90,
-        :76413949_896c_4363_a955_de4722c6e149,
+    rdfs:subPropertyOf :EMMO_3bd4339b_e01f_43e5_a011_74a4ef3ffa90,
+        :EMMO_76413949_896c_4363_a955_de4722c6e149,
         :EMMO_c37d451b_e245_439f_bd94_9050e04ec9f7 ;
     skos:prefLabel "hasFractionalMember"@en .
 
-:157fdf31_6387_42be_8e72_10530519214a a owl:AnnotationProperty ;
+:EMMO_157fdf31_6387_42be_8e72_10530519214a a owl:AnnotationProperty ;
     rdfs:isDefinedBy <https://w3id.org/emmo/mereocausality#> ;
     rdfs:range xsd:anyURI ;
     rdfs:subPropertyOf rdfs:seeAlso ;
@@ -4729,7 +4729,7 @@ The class Material hosts the subclasses for which a substance can be identified 
 :EMMO_5022e4cb_125f_429d_8556_c3e635c561f2 a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://w3id.org/emmo/mereocausality#> ;
     rdfs:subPropertyOf :EMMO_2a33ee61_8235_4da4_b9a1_ca62cb87a016,
-        :a32021dc_58d8_454b_915d_3951b413b8b7 ;
+        :EMMO_a32021dc_58d8_454b_915d_3951b413b8b7 ;
     skos:prefLabel "hasTemporalItemSlice"@en ;
     :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A temporal part that is an item."@en .
 
@@ -5029,7 +5029,7 @@ In this sense, the man and the building process overcrosses. and the overlapping
         owl:ObjectProperty ;
     rdfs:isDefinedBy <https://w3id.org/emmo/mereocausality#> ;
     rdfs:seeAlso :EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ;
-    rdfs:subPropertyOf :a8bd7094_6b40_47af_b1f4_a69d81a3afbd ;
+    rdfs:subPropertyOf :EMMO_a8bd7094_6b40_47af_b1f4_a69d81a3afbd ;
     owl:inverseOf :EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ;
     skos:prefLabel "isProperPartOf"@en ;
     :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The inverse relation for hasProperPart." .
@@ -6676,7 +6676,7 @@ In general, metallic and ionic bonds have atoms sharing electrons."""@en,
 
 :EMMO_850b976f_0726_4408_b1b2_1f0ae367faf6 a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://w3id.org/emmo/mereocausality#> ;
-    rdfs:subPropertyOf :5fa16188_d95b_4dd2_ac63_eae63fe01504,
+    rdfs:subPropertyOf :EMMO_5fa16188_d95b_4dd2_ac63_eae63fe01504,
         :EMMO_2a33ee61_8235_4da4_b9a1_ca62cb87a016 ;
     skos:prefLabel "hasTemporalCollectionSlice"@en ;
     :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A temporal part that is a collection."@en .
@@ -7386,7 +7386,7 @@ Sex of a human being."""@en ;
     :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The speed of light in vacuum. Defines the base unit metre in the SI system."@en ;
     :EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.S05854" .
 
-:EMMO_998dd3a0-c85f-4c8d-9fb8-816a93cc3bb8 a owl:Class ;
+:EMMO_998dd3a0_c85f_4c8d_9fb8_816a93cc3bb8 a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/computerscience#> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty :EMMO_a592c856_4103_43cf_8635_1982a1e5d5de ;
@@ -9649,7 +9649,7 @@ The distinction between endurant and perdurant as usually introduced in literatu
 
 :EMMO_e1805abe_f5b7_4c40_810a_1a01950546be a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://w3id.org/emmo/mereocausality#> ;
-    rdfs:subPropertyOf :76413949_896c_4363_a955_de4722c6e149,
+    rdfs:subPropertyOf :EMMO_76413949_896c_4363_a955_de4722c6e149,
         :EMMO_49e17ba8_dd17_4c28_b8c8_c8c5d5a9aab9,
         :EMMO_c37d451b_e245_439f_bd94_9050e04ec9f7 ;
     skos:prefLabel "hasFractionalCollection"@en .
@@ -18954,7 +18954,7 @@ We could have represented the word "elephant" within a physicalistic approach, b
         owl:SymmetricProperty ;
     rdfs:isDefinedBy <https://w3id.org/emmo/mereocausality#> ;
     rdfs:subPropertyOf :EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f,
-        :a8bd7094_6b40_47af_b1f4_a69d81a3afbd ;
+        :EMMO_a8bd7094_6b40_47af_b1f4_a69d81a3afbd ;
     owl:propertyDisjointWith :EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ;
     skos:prefLabel "equalsTo"@en ;
     :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The relation between two entities that stands for the same individuals." ;
@@ -19022,8 +19022,8 @@ We could have represented the word "elephant" within a physicalistic approach, b
 :EMMO_6b7276a4_4b9d_440a_b577_0277539c0fc4 a owl:AsymmetricProperty,
         owl:ObjectProperty ;
     rdfs:isDefinedBy <https://w3id.org/emmo/mereocausality#> ;
-    rdfs:subPropertyOf :33fd15ab_7662_4cc6_8bf6_988422efc631,
-        :3bd4339b_e01f_43e5_a011_74a4ef3ffa90,
+    rdfs:subPropertyOf :EMMO_33fd15ab_7662_4cc6_8bf6_988422efc631,
+        :EMMO_3bd4339b_e01f_43e5_a011_74a4ef3ffa90,
         :EMMO_c37d451b_e245_439f_bd94_9050e04ec9f7 ;
     skos:prefLabel "hasMember"@en ;
     :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The relation between a collection and one of its item members."@en .
@@ -21820,12 +21820,12 @@ https://en.wikipedia.org/wiki/General_Conference_on_Weights_and_Measures"""@en ;
     :EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Weber_(unit)"^^xsd:anyURI ;
     :EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.W06666" .
 
-:a32021dc_58d8_454b_915d_3951b413b8b7 a owl:ObjectProperty ;
+:EMMO_a32021dc_58d8_454b_915d_3951b413b8b7 a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://w3id.org/emmo/mereocausality#> ;
     rdfs:range :EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de ;
     rdfs:subPropertyOf :EMMO_55354438_7000_4284_b1b9_59d60c2261b9,
         :EMMO_8e742d6f_7fbb_40cf_949b_6806ab0d801f ;
-    owl:propertyDisjointWith :5fa16188_d95b_4dd2_ac63_eae63fe01504 ;
+    owl:propertyDisjointWith :EMMO_5fa16188_d95b_4dd2_ac63_eae63fe01504 ;
     skos:prefLabel "hasConnectedPortion"@en .
 
 :emmo_fd2aa864_eef7_4c3d_8243_9ea832d9df3e a owl:Class ;
@@ -21838,20 +21838,20 @@ https://en.wikipedia.org/wiki/General_Conference_on_Weights_and_Measures"""@en ;
     :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Power transferred per unit area."@en ;
     :EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Intensity_(physics)"@en .
 
-:33fd15ab_7662_4cc6_8bf6_988422efc631 a owl:ObjectProperty ;
+:EMMO_33fd15ab_7662_4cc6_8bf6_988422efc631 a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://w3id.org/emmo/mereocausality#> ;
     rdfs:subPropertyOf :EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ;
-    owl:propertyDisjointWith :76413949_896c_4363_a955_de4722c6e149 ;
+    owl:propertyDisjointWith :EMMO_76413949_896c_4363_a955_de4722c6e149 ;
     skos:prefLabel "hasMaximalPart"@en .
 
-:3bd4339b_e01f_43e5_a011_74a4ef3ffa90 a owl:ObjectProperty ;
+:EMMO_3bd4339b_e01f_43e5_a011_74a4ef3ffa90 a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://w3id.org/emmo/mereocausality#> ;
     rdfs:range :EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de ;
     rdfs:subPropertyOf :EMMO_8e742d6f_7fbb_40cf_949b_6806ab0d801f,
         :EMMO_c37d451b_e245_439f_bd94_9050e04ec9f7 ;
     skos:prefLabel "hasSubItem"@en .
 
-:5fa16188_d95b_4dd2_ac63_eae63fe01504 a owl:ObjectProperty ;
+:EMMO_5fa16188_d95b_4dd2_ac63_eae63fe01504 a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://w3id.org/emmo/mereocausality#> ;
     rdfs:range :EMMO_2d2ecd97_067f_4d0e_950c_d746b7700a31 ;
     rdfs:subPropertyOf :EMMO_55354438_7000_4284_b1b9_59d60c2261b9,
@@ -22976,8 +22976,8 @@ On the contrary, the holistic parthood, is expected to go that deep."""@en .
         owl:ObjectProperty ;
     rdfs:isDefinedBy <https://w3id.org/emmo/mereocausality#> ;
     rdfs:subPropertyOf :EMMO_d893d373_b579_4867_841e_1c2b31a8d2c6 ;
-    owl:inverseOf :e4f66254_7312_4de5_a86a_6e0808baaaab ;
-    owl:propertyDisjointWith :a8bd7094_6b40_47af_b1f4_a69d81a3afbd ;
+    owl:inverseOf :EMMO_e4f66254_7312_4de5_a86a_6e0808baaaab ;
+    owl:propertyDisjointWith :EMMO_a8bd7094_6b40_47af_b1f4_a69d81a3afbd ;
     skos:prefLabel "overcrosses"@en ;
     :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The relation between an entity that overlaps another without being its part."@en .
 
@@ -23554,7 +23554,7 @@ While the string "1 kg" is a 'QuantityValue'."""@en ;
             owl:onProperty :EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ] ;
     skos:prefLabel "Zetta"@en .
 
-:e4f66254_7312_4de5_a86a_6e0808baaaab a owl:ObjectProperty ;
+:EMMO_e4f66254_7312_4de5_a86a_6e0808baaaab a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://w3id.org/emmo/mereocausality#> ;
     rdfs:subPropertyOf :EMMO_d893d373_b579_4867_841e_1c2b31a8d2c6 ;
     skos:prefLabel "isOvercrossedBy"@en .
@@ -24381,7 +24381,7 @@ C:\\\\Users\\\\John\\\\Desktop  (DOS-like path)"""@en ;
             owl:onProperty :EMMO_19d925d0_2cf1_40e5_a391_1a99d68409c9 ] ;
     skos:prefLabel "PermeabilityUnit"@en .
 
-:76413949_896c_4363_a955_de4722c6e149 a owl:ObjectProperty ;
+:EMMO_76413949_896c_4363_a955_de4722c6e149 a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://w3id.org/emmo/mereocausality#> ;
     rdfs:subPropertyOf :EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ;
     skos:prefLabel "hasNonMaximalPart"@en .
@@ -24703,7 +24703,7 @@ Following the two examples, a marathon individual is a maximal that can be decom
             owl:onProperty :EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
             owl:someValuesFrom xsd:anyURI ] ;
     skos:prefLabel "URI"@en ;
-    :157fdf31_6387_42be_8e72_10530519214a "https://en.wikipedia.org/wiki/File:URI_syntax_diagram.svg"^^xsd:anyURI ;
+    :EMMO_157fdf31_6387_42be_8e72_10530519214a "https://en.wikipedia.org/wiki/File:URI_syntax_diagram.svg"^^xsd:anyURI ;
     :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A Uniform Resource Identifier (URI) is a compact sequence of characters that identifies an abstract or physical resource."@en ;
     :EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "URI = scheme \":\" [\"//\" authority] path [\"?\" query] [\"#\" fragment]"@en .
 
@@ -25067,7 +25067,7 @@ A computation machine that calculate the average value of a dataset."""@en ;
     :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Measure of the ease for electric current to pass through a material."@en ;
     :EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.E01925" .
 
-:a8bd7094_6b40_47af_b1f4_a69d81a3afbd a owl:ObjectProperty ;
+:EMMO_a8bd7094_6b40_47af_b1f4_a69d81a3afbd a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://w3id.org/emmo/mereocausality#> ;
     rdfs:subPropertyOf :EMMO_d893d373_b579_4867_841e_1c2b31a8d2c6 ;
     skos:prefLabel "isPartOf"@en .
@@ -25283,7 +25283,7 @@ This class is expected to host the definition of world objects as they appear in
         owl:ObjectProperty ;
     rdfs:domain :EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de ;
     rdfs:isDefinedBy <https://w3id.org/emmo/mereocausality#> ;
-    rdfs:subPropertyOf :76413949_896c_4363_a955_de4722c6e149,
+    rdfs:subPropertyOf :EMMO_76413949_896c_4363_a955_de4722c6e149,
         :EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ;
     owl:propertyDisjointWith :EMMO_c37d451b_e245_439f_bd94_9050e04ec9f7 ;
     skos:prefLabel "hasPortionPart"@en ;
@@ -26611,8 +26611,8 @@ Because the sintering temperature doesn’t reach the materials’ melting point
 :EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://w3id.org/emmo/mereocausality#> ;
     rdfs:subPropertyOf :EMMO_d893d373_b579_4867_841e_1c2b31a8d2c6 ;
-    owl:inverseOf :a8bd7094_6b40_47af_b1f4_a69d81a3afbd ;
-    owl:propertyDisjointWith :e4f66254_7312_4de5_a86a_6e0808baaaab ;
+    owl:inverseOf :EMMO_a8bd7094_6b40_47af_b1f4_a69d81a3afbd ;
+    owl:propertyDisjointWith :EMMO_e4f66254_7312_4de5_a86a_6e0808baaaab ;
     skos:prefLabel "hasPart"@en ;
     :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The primitive relation that express the concept of an entity being part of another one."@en ;
     :EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "All other mereology relations can be defined in FOL using hasPart as primitive."@en .

@@ -40,7 +40,7 @@ email: emanuele.ghedini@unibo.it"""@en,
     ns1:versionIRI <http://emmo.info/emmo/1.0.0-beta2> ;
     ns1:versionInfo "1.0.0-beta2" .
 
-<http://emmo.info/emmo#5022e4cb_125f_429d_8556_c3e635c561f2> a ns1:ObjectProperty ;
+:EMMO_5022e4cb_125f_429d_8556_c3e635c561f2 a ns1:ObjectProperty ;
     rdfs:isDefinedBy <http://emmo.info/emmo/top#> ;
     rdfs:range emmo:EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de ;
     rdfs:subPropertyOf emmo:EMMO_7afbed84_7593_4a23_bd88_9d9c6b04e8f6 ;
@@ -578,7 +578,7 @@ emmo:EMMO_f94e509a_be29_4365_a4cd_70165e47e232 a ns1:Class ;
     rdfs:subClassOf emmo:EMMO_4a1c73f1_b6f5_4d10_a3a6_5de90bac7cd0 ;
     ns3:prefLabel "Modeller"@en .
 
-emmo:c773cf3b_0810_4d07_bea7_af08cd88538e a ns1:ObjectProperty ;
+emmo:EMMO_c773cf3b_0810_4d07_bea7_af08cd88538e a ns1:ObjectProperty ;
     rdfs:isDefinedBy <http://emmo.info/emmo/top#> ;
     rdfs:range emmo:EMMO_2d2ecd97_067f_4d0e_950c_d746b7700a31 ;
     rdfs:subPropertyOf emmo:EMMO_7afbed84_7593_4a23_bd88_9d9c6b04e8f6 ;
