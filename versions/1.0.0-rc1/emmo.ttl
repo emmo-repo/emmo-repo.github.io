@@ -1,4 +1,5 @@
 @prefix : <https://w3id.org/emmo#> .
+@prefix emmo: <https://w3id.org/emmo#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
@@ -4972,7 +4973,7 @@ where m_0 is the rest mass of that particle and c_0 is the speed of light in a v
     rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/holistic#> ;
     rdfs:range :EMMO_1efe8b96_e006_4a33_bc9a_421406cbb9f0 ;
     rdfs:subPropertyOf :EMMO_bcaddc91_a881_4c40_a102_562cbaf61c6c ;
-    skos:example """A man and the process of building a house. 
+    skos:example """A man and the process of building a house.
 The man is a whole that possesses an holistic temporal part which is an interval of six monts and represents a working period in his lifetime.
 The process of building a house is a whole that possesses an holistic spatial part which is a builder.
 The working period of the man and the builder participating the building process are the same individual, belonging both to a man lifetime and to a building holistic views.
@@ -9588,7 +9589,7 @@ Sex of a human being."""@en ;
 - object (focus on spatial configuration)
 - process (focus on temporal evolution)
 
-The concepts of endurant and perdurant implicitly rely on the concept of instantaneous 3D snapshot of the world object, that in the EMMO is not allowed since everything extends in 4D and there are no abstract objects. Moreover, time is a measured property in the EMMO and not an objective characteristic of an object, and cannot be used as temporal index to identify endurant position in time. 
+The concepts of endurant and perdurant implicitly rely on the concept of instantaneous 3D snapshot of the world object, that in the EMMO is not allowed since everything extends in 4D and there are no abstract objects. Moreover, time is a measured property in the EMMO and not an objective characteristic of an object, and cannot be used as temporal index to identify endurant position in time.
 
 For this reason an individual in the EMMO can always be classified both endurant and perdurant, due to its nature of 4D entity (e.g. an individual may belong both to the class of runners and the class of running process), and the distinction is purely semantic.  In fact, the object/process distinction is simply a matter of convenience in a 4D approach since a temporal extension is always the case, and stationarity depends upon observer time scale. For this reason, the same individual (4D object) may play the role of a process or of an object class depending on the object to which it relates.
 
@@ -18424,7 +18425,7 @@ This means that the causing entity can be in direct and optionally indirect caus
     rdfs:comment "'acoustical' refers to the perception mechanism of the observer that can occur through a microphone, a ear."@en ;
     rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/perceptual#> ;
     skos:altLabel "Sound"@en ;
-    skos:example """When we use the term 'sound' what are we referring to? The EMMO identifis a sound as the physical object that can be heard by the observer (more exactly, by the sensor of the observer). 
+    skos:example """When we use the term 'sound' what are we referring to? The EMMO identifis a sound as the physical object that can be heard by the observer (more exactly, by the sensor of the observer).
 
 In this sense, a sound (which is an acoustical object) is to be identified as the air region that manifests the sound wave and is able to be perceived by an observer. In case the wave is travelling through water or steel, then these other media regions are the sounds.
 
@@ -18554,7 +18555,7 @@ If an 'interpreter' skilled in english language is involved in a 'semiotic' proc
     skos:prefLabel "ChromiumSymbol"@en .
 
 :EMMO_52211e5e_d767_4812_845e_eb6b402c476a a owl:Class ;
-    rdfs:comment """'Existent' is the EMMO class to be used for representing real world physical objects under a reductionistic perspective (i.e. objects come from the composition of sub-part objects, both in time and space). 
+    rdfs:comment """'Existent' is the EMMO class to be used for representing real world physical objects under a reductionistic perspective (i.e. objects come from the composition of sub-part objects, both in time and space).
 
 'Existent' class collects all individuals that stand for physical objects that can be structured in well defined temporal sub-parts called states, through the temporal direct parthood relation.
 
@@ -21460,7 +21461,7 @@ https://en.wikipedia.org/wiki/General_Conference_on_Weights_and_Measures"""@en ;
     :EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "http://dbpedia.org/resource/Henry"^^xsd:anyURI ;
     :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI unit for electrical inductance."@en ;
     :EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "H = Wb/A = V·s/A = Ω·s"@en,
-        """The SI unit of electric inductance. A changing magnetic field induces an electric current in a loop of wire (or in a coil of many loops) located in the field. Although the induced voltage depends only on the rate at which the magnetic flux changes, measured in webers per second, the amount of the current depends also on the physical properties of the coil. A coil with an inductance of one henry requires a flux of one weber for each ampere of induced current. If, on the other hand, it is the current which changes, then the induced field will generate a potential difference within the coil: if the inductance is one henry a current change of one ampere per second generates a potential difference of one volt. The henry is a large unit; inductances in practical circuits are measured in millihenrys (mH) or microhenrys (μH). The unit is named for the American physicist Joseph Henry (1797-1878), one of several scientists who discovered independently how magnetic fields can be used to generate alternating currents. 
+        """The SI unit of electric inductance. A changing magnetic field induces an electric current in a loop of wire (or in a coil of many loops) located in the field. Although the induced voltage depends only on the rate at which the magnetic flux changes, measured in webers per second, the amount of the current depends also on the physical properties of the coil. A coil with an inductance of one henry requires a flux of one weber for each ampere of induced current. If, on the other hand, it is the current which changes, then the induced field will generate a potential difference within the coil: if the inductance is one henry a current change of one ampere per second generates a potential difference of one volt. The henry is a large unit; inductances in practical circuits are measured in millihenrys (mH) or microhenrys (μH). The unit is named for the American physicist Joseph Henry (1797-1878), one of several scientists who discovered independently how magnetic fields can be used to generate alternating currents.
 
 -- QUDT"""@en ;
     :EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Henry?oldid=491435978"^^xsd:anyURI ;
@@ -21712,7 +21713,7 @@ https://en.wikipedia.org/wiki/General_Conference_on_Weights_and_Measures"""@en ;
     :EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "S" ;
     :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI unit for electrical conductance."@en ;
     :EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "S = A/V = F/s",
-        """Siemens  is the SI unit of electric conductance, susceptance, and admittance. The most important property of a conductor is the amount of current it will carry when a voltage is applied. Current flow is opposed by resistance in all circuits, and by also by reactance and impedance in alternating current circuits. Conductance, susceptance, and admittance are the inverses of resistance, reactance, and impedance, respectively. To measure these properties, the siemens is the reciprocal of the ohm. In other words, the conductance, susceptance, or admittance, in siemens, is simply 1 divided by the resistance, reactance or impedance, respectively, in ohms. The unit is named for the German electrical engineer Werner von Siemens (1816-1892). 
+        """Siemens  is the SI unit of electric conductance, susceptance, and admittance. The most important property of a conductor is the amount of current it will carry when a voltage is applied. Current flow is opposed by resistance in all circuits, and by also by reactance and impedance in alternating current circuits. Conductance, susceptance, and admittance are the inverses of resistance, reactance, and impedance, respectively. To measure these properties, the siemens is the reciprocal of the ohm. In other words, the conductance, susceptance, or admittance, in siemens, is simply 1 divided by the resistance, reactance or impedance, respectively, in ohms. The unit is named for the German electrical engineer Werner von Siemens (1816-1892).
 
 -- QUDT"""@en ;
     :EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Siemens_(unit)"^^xsd:anyURI .
@@ -21764,7 +21765,7 @@ https://en.wikipedia.org/wiki/General_Conference_on_Weights_and_Measures"""@en ;
     :EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "http://dbpedia.org/resource/Tesla"^^xsd:anyURI ;
     :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI unit for magnetic flux density or induction."@en ;
     :EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "T = V·s·m⁻² = N/(A·m) = Wb/m",
-        """The SI unit of flux density (or field intensity) for magnetic fields (also called the magnetic induction). The intensity of a magnetic field can be measured by placing a current-carrying conductor in the field. The magnetic field exerts a force on the conductor, a force which depends on the amount of the current and on the length of the conductor. One tesla is defined as the field intensity generating one newton of force per ampere of current per meter of conductor. Equivalently, one tesla represents a magnetic flux density of one weber per square meter of area. A field of one tesla is quite strong: the strongest fields available in laboratories are about 20 teslas, and the Earth's magnetic flux density, at its surface, is about 50 microteslas. The tesla, defined in 1958, honors the Serbian-American electrical engineer Nikola Tesla (1856-1943), whose work in electromagnetic induction led to the first practical generators and motors using alternating current. 
+        """The SI unit of flux density (or field intensity) for magnetic fields (also called the magnetic induction). The intensity of a magnetic field can be measured by placing a current-carrying conductor in the field. The magnetic field exerts a force on the conductor, a force which depends on the amount of the current and on the length of the conductor. One tesla is defined as the field intensity generating one newton of force per ampere of current per meter of conductor. Equivalently, one tesla represents a magnetic flux density of one weber per square meter of area. A field of one tesla is quite strong: the strongest fields available in laboratories are about 20 teslas, and the Earth's magnetic flux density, at its surface, is about 50 microteslas. The tesla, defined in 1958, honors the Serbian-American electrical engineer Nikola Tesla (1856-1943), whose work in electromagnetic induction led to the first practical generators and motors using alternating current.
 
 -- QUDT"""@en ;
     :EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Tesla_(unit)"^^xsd:anyURI ;
@@ -23201,7 +23202,7 @@ Participation is not under direct parthood since a process is not strictly relat
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siacceptedunits#> ;
     skos:prefLabel "DimensionalUnit"@en ;
     :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A subclass of measurement unit focusing on the physical dimensionality that is carried by the unit."@en ;
-    :EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The current version of EMMO does not provide explicit classes for physical dimensions. Rather it embraces the fact that the physical dimensionality of a physical quantity is carried by its measurement unit. 
+    :EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The current version of EMMO does not provide explicit classes for physical dimensions. Rather it embraces the fact that the physical dimensionality of a physical quantity is carried by its measurement unit.
 
 The role of dimensional unit and its subclasses is to express the physical dimensionality that is carried by the unit.
 
@@ -24673,7 +24674,7 @@ This class is expected to host the definition of world objects as they appear in
             owl:unionOf ( :EMMO_aaad78a9_abaf_4f97_9c1a_d763a94c4ba3 :EMMO_f055e217_0b1b_4e7e_b8be_7340211b0c5e ) ] ;
     skos:altLabel "Lifetime"@en,
         "Maximal"@en ;
-    skos:example """A marathon is an example of class whose individuals are always maximal since the criteria satisfied by a marathon 4D entity poses some constraints on its temporal and spatial extent. 
+    skos:example """A marathon is an example of class whose individuals are always maximal since the criteria satisfied by a marathon 4D entity poses some constraints on its temporal and spatial extent.
 
 On the contrary, the class for a generic running process does not necessarily impose maximality to its individuals. A running individual is maximal only when it extends in time for the minimum amount required to identify a running act, so every possible temporal part is always a non-running.
 
@@ -24925,7 +24926,7 @@ In Peirce semiotics: legisign-symbol-argument"""@en ;
 :EMMO_b5957cef_a287_442d_a3ce_fd39f20ba1cd a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/perceptual#> ;
     rdfs:subClassOf :EMMO_c5ae6d8e_6b39_431f_8de4_ae4e357abc04 ;
-    skos:example """A geometrical object can be expressed in many different forms. 
+    skos:example """A geometrical object can be expressed in many different forms.
 
 For example, a line can be expressed by:
 a) an equation like y=mx+q, which is both an 'equation' and a 'geometrical'
@@ -26382,7 +26383,7 @@ b) y and x non-overlapping"""@en ;
     :EMMO_c6e77b51_681b_4d04_b20d_a08f2b977470 ":isCauseOf owl:propertyDisjointWith :overlaps"@en ;
     :EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Each pair of causally connected entities is either in isDirectCauseOf or isIndirectCauseOf relation. The two are mutually exclusive."@en,
         "It applies to both quantums and macro-entities (entities made of more than one quantum). It is admissible for two entities to be one the cause of the other, excepts when they are both quantums."@en,
-        """The OWL 2 DL version of the EMMO introduces this object property as primitive causal relation. It refers to the macro causality relation mC(x,y), defined in the EMMO FOL version. 
+        """The OWL 2 DL version of the EMMO introduces this object property as primitive causal relation. It refers to the macro causality relation mC(x,y), defined in the EMMO FOL version.
 While the EMMO FOL introduces the quantum causality relation C(x,y) as primitive, the OWL 2 DL version substantially simplifies the theory, neglecting these lower level relations that are well above DL expressivity."""@en .
 
 :EMMO_d7788d1a_020d_4c78_85a1_13563fcec168 a owl:Class ;
@@ -28348,4 +28349,3 @@ _:38 a owl:Restriction ;
     owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
     owl:onClass :EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de ;
     owl:onProperty :EMMO_6b7276a4_4b9d_440a_b577_0277539c0fc4 .
-
