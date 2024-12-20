@@ -2687,10 +2687,11 @@ For this reason the EMMO OWL 2 DL will only deal with macro causality relations,
 ###  https://w3id.org/emmo#EMMO_19d925d0_2cf1_40e5_a391_1a99d68409c9
 :EMMO_19d925d0_2cf1_40e5_a391_1a99d68409c9 rdf:type owl:DatatypeProperty ,
                                                     owl:FunctionalProperty ;
-                                           rdfs:range xsd:string ;
+                                           rdfs:range :EMMO_799c067b_083f_4365_9452_1f1433b03676 ;
                                            rdfs:comment "Relates a SI dimensional unit to a dimension string."@en ;
                                            rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
                                            rdfs:label "hasDimensionString"@en ;
+                                           rdfs:seeAlso :EMMO_799c067b_083f_4365_9452_1f1433b03676 ;
                                            skos:prefLabel "hasDimensionString"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Relates a SI dimensional unit to a dimension string."@en .
 
@@ -2909,7 +2910,7 @@ The unit should be a valid, possible prefixed, derived SI unit."""@en .
 ###  http://w3id.org/emmo#EMMO_946b5162_95b0_4801_81d4_efef43842a0d
 <http://w3id.org/emmo#EMMO_946b5162_95b0_4801_81d4_efef43842a0d> rdf:type owl:Class ;
                                                                  rdfs:subClassOf :EMMO_0277f24a_ea7f_4917_81b7_fb0406c8fc62 ;
-                                                                 rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/holistic#> ;
+                                                                 rdfs:isDefinedBy <https://w3id.org/emmo/reference/agency#> ;
                                                                  rdfs:label "QRole"@en ;
                                                                  skos:altLabel "QualifiedRole"@en ;
                                                                  skos:prefLabel "QRole"@en .
@@ -2918,7 +2919,7 @@ The unit should be a valid, possible prefixed, derived SI unit."""@en .
 ###  http://w3id.org/emmo#EMMO_eb50c9cb_9576_4a61_95ec_f81fb8218187
 <http://w3id.org/emmo#EMMO_eb50c9cb_9576_4a61_95ec_f81fb8218187> rdf:type owl:Class ;
                                                                  rdfs:subClassOf :EMMO_0277f24a_ea7f_4917_81b7_fb0406c8fc62 ;
-                                                                 rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/holistic#> ;
+                                                                 rdfs:isDefinedBy <https://w3id.org/emmo/reference/persholistic#> ;
                                                                  rdfs:label "QWhole"@en ;
                                                                  skos:altLabel "QualifiedWhole"@en ;
                                                                  skos:prefLabel "QWhole"@en .
@@ -2977,7 +2978,7 @@ The unit should be a valid, possible prefixed, derived SI unit."""@en .
 ###  https://w3id.org.org/emmo#EMMO_2c07a731_84f9_4883_9e58_2bc073abda29
 <https://w3id.org.org/emmo#EMMO_2c07a731_84f9_4883_9e58_2bc073abda29> rdf:type owl:Class ;
                                                                       rdfs:subClassOf :EMMO_a15cea10_9946_4d2b_95c5_cfc333fd2abb ;
-                                                                      rdfs:isDefinedBy <https://w3id.org/emmo/reference/physicalistic#> ;
+                                                                      rdfs:isDefinedBy <https://w3id.org/emmo/reference/standardmodel#> ;
                                                                       rdfs:label "PhysicalParticleBySpin"@en ;
                                                                       skos:prefLabel "PhysicalParticleBySpin"@en .
 
@@ -2986,7 +2987,7 @@ The unit should be a valid, possible prefixed, derived SI unit."""@en .
 <https://w3id.org.org/emmo#EMMO_38f31ba5_348f_4ac2_9a67_a62b5dd7aadd> rdf:type owl:Class ;
                                                                       rdfs:subClassOf :EMMO_7286b164_df4c_4c14_a4b5_d41ad9c121f3 ;
                                                                       rdfs:comment "A coded classified by its structure."@en ;
-                                                                      rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                                                      rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                                                       rdfs:label "CodedByStructure"@en ;
                                                                       skos:prefLabel "CodedByStructure"@en ;
                                                                       :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A coded classified by its structure."@en .
@@ -3006,7 +3007,7 @@ The unit should be a valid, possible prefixed, derived SI unit."""@en .
 <https://w3id.org.org/emmo#EMMO_41c5f63b_f0e7_475e_bfac_a92027585979> rdf:type owl:Class ;
                                                                       rdfs:subClassOf :EMMO_2e46d966_9f14_4673_821e_7c7cf2957926 ;
                                                                       rdfs:comment "The superclass for tiles categorized accordingly to their topological role within a tessellation."@en ;
-                                                                      rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
+                                                                      rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/reductionistic#> ;
                                                                       rdfs:label "SpatioTemporalTileByConnection"@en ;
                                                                       skos:prefLabel "SpatioTemporalTileByConnection"@en ;
                                                                       :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The superclass for tiles categorized accordingly to their topological role within a tessellation."@en .
@@ -3042,7 +3043,7 @@ The unit should be a valid, possible prefixed, derived SI unit."""@en .
 <https://w3id.org.org/emmo#EMMO_5e38e44b_a0d1_4afc_a876_95095c0a589f> rdf:type owl:Class ;
                                                                       rdfs:subClassOf :EMMO_2e46d966_9f14_4673_821e_7c7cf2957926 ;
                                                                       rdfs:comment "The superclass for tiles categorized accordingly to their location within a tessellation in terms of causal source, sink or intermediary."@en ;
-                                                                      rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
+                                                                      rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/reductionistic#> ;
                                                                       rdfs:label "SpatioTemporalTileByPosition"@en ;
                                                                       skos:prefLabel "SpatioTemporalTileByPosition"@en ;
                                                                       :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The superclass for tiles categorized accordingly to their location within a tessellation in terms of causal source, sink or intermediary."@en .
@@ -3051,7 +3052,7 @@ The unit should be a valid, possible prefixed, derived SI unit."""@en .
 ###  https://w3id.org.org/emmo#EMMO_b32fe85d_2f7b_4972_9dd7_7cf20d4bba59
 <https://w3id.org.org/emmo#EMMO_b32fe85d_2f7b_4972_9dd7_7cf20d4bba59> rdf:type owl:Class ;
                                                                       rdfs:subClassOf :EMMO_a15cea10_9946_4d2b_95c5_cfc333fd2abb ;
-                                                                      rdfs:isDefinedBy <https://w3id.org/emmo/reference/physicalistic#> ;
+                                                                      rdfs:isDefinedBy <https://w3id.org/emmo/reference/standardmodel#> ;
                                                                       rdfs:label "PhysicalParticleByBond"@en ;
                                                                       skos:prefLabel "PhysicalParticleByBond"@en .
 
@@ -3059,7 +3060,7 @@ The unit should be a valid, possible prefixed, derived SI unit."""@en .
 ###  https://w3id.org.org/emmo#EMMO_c66ad523_3937_485e_91bb_ad488ddb373f
 <https://w3id.org.org/emmo#EMMO_c66ad523_3937_485e_91bb_ad488ddb373f> rdf:type owl:Class ;
                                                                       rdfs:subClassOf :EMMO_3e7add3d_e6ed_489a_a796_8e31fef9b490 ;
-                                                                      rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
+                                                                      rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                                                       rdfs:label "DataByDiscretness"@en ;
                                                                       skos:prefLabel "DataByDiscretness"@en .
 
@@ -6327,7 +6328,7 @@ the cat perceived by my mind -> interpretant
 This class allows the picking of parts without necessarily going trough a rigid hierarchy of spatial compositions (e.g. body -> organ -> cell -> molecule) or temporal composition. This is inline with the transitive nature of parthood, as it is usually defined in literature."""@en ,
                                                         "The holistic perspective is not excluding the reductionistic perspective, on the contrary it can be considered its complement."@en ,
                                                         "The union of classes whole and part."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/holistic#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/persholistic#> ;
                                            rdfs:label "Holistic"@en ;
                                            skos:altLabel "Wholistic"@en ;
                                            skos:example "A molecule of a body can have role in the body evolution, without caring if its part of a specific organ and without specifying the time interval in which this role occurred."@en ,
@@ -6396,7 +6397,7 @@ As another example, the joule (J) is used as a unit of energy, but never as a un
 — quantities of different quantity dimensions are always of different kinds, and
 — quantities having the same quantity dimension are not necessarily of the same kind.
 ISO 80000-1"""@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "PhysicalQuantity"@en ;
                                            skos:prefLabel "PhysicalQuantity"@en ;
                                            :EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db "DisjointUnionOf: DerivedQuantity, BaseQuantity" ;
@@ -6424,7 +6425,7 @@ ISO 80000-1"""@en ;
                                                              owl:hasValue "T+1 L0 M0 I0 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'Time'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "TimeUnit"@en ;
                                            skos:prefLabel "TimeUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'Time'."@en .
@@ -6650,7 +6651,7 @@ sintering: process of heating a powder metal compact to increase density and/or 
                                                              owl:hasValue "T+3 L-2 M-1 I0 Θ0 N0 J+1"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'LuminousEfficacy'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/coherentsiunits#> ;
                                            rdfs:label "LuminousEfficacyUnit"@en ;
                                            skos:prefLabel "LuminousEfficacyUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'LuminousEfficacy'."@en .
@@ -6803,7 +6804,7 @@ However, in case of analogic film we can always look at the negatve that will su
                                            rdfs:comment "A discrete data whose elements can be decoded as tokens from one or more alphabets, without necessarily respecting syntactic rules."@en ,
                                                         """A symbolic entity is not necessarily graphical (e.g. it doesn't necessarily have the physical shape of a letter), but its elements can be decoded and put in relation with an alphabet.
 In other words, a sequence of bit \"1000010\" in a RAM (a non-graphical entity) is a valid symbol since it can be decoded through ASCII rules as the letter \"B\". The same holds for an entity standing for the sound of a voice saying: \"Hello\", since it can be decomposed in discrete parts, each of them being associated to a letter of an alphabet."""@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "Symbolic"@en ;
                                            skos:example """fe780
 emmo
@@ -6866,7 +6867,7 @@ For example, text is made of words, spaces and punctuations. Words are made of c
                                                         """VIM defines a quantity as a \"property of a phenomenon, body, or substance, where the property has a magnitude that can be expressed as a number and a reference\".
 
 A quantity in EMMO is a property and therefore only addresses the first part of the VIM definition (that is a property of a phenomenon, body, or substance). The second part (that it can be expressed as a number and a reference) is syntactic and addressed by emmo:QuantityValue."""@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "Quantity"@en ;
                                            skos:altLabel "Measurand"@en ;
                                            skos:example """length
@@ -6915,7 +6916,7 @@ A quantity in EMMO is a property and therefore only addresses the first part of 
                                                              owl:someValuesFrom :EMMO_21f56795_ee72_4858_b571_11cfaa59c1a8
                                                            ] ;
                                            rdfs:comment "1-dimensional array who's spatial direct parts are numbers."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/math#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "Vector"@en ;
                                            skos:altLabel "1DArray"@en ,
                                                          "LinearArray" ;
@@ -7273,7 +7274,7 @@ A quantity in EMMO is a property and therefore only addresses the first part of 
                                                              owl:hasValue "T-2 L+2 M+1 I0 Θ0 N-1 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'EnergyPerAmount'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/noncoherentsiunits#> ;
                                            rdfs:label "EnergyPerAmountUnit"@en ;
                                            skos:prefLabel "EnergyPerAmountUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'EnergyPerAmount'."@en .
@@ -7358,7 +7359,7 @@ A quantity in EMMO is a property and therefore only addresses the first part of 
                                            rdfs:subClassOf :EMMO_b295158f_fda4_4124_ab58_d9ea4ccfca5a ;
                                            owl:disjointWith :EMMO_0f19d84e_05b4_47c9_a5de_bb2a913d211b ;
                                            rdfs:comment "A causally bonded system is a system in which there are at least two causal paths that are interacting."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/physicalistic#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/standardmodel#> ;
                                            rdfs:label "InteractingSystem"@en ;
                                            skos:prefLabel "InteractingSystem"@en ;
                                            :EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db "DisjointUnionOf: PhysicalObject, PhysicalPhenomenon" ;
@@ -8271,7 +8272,7 @@ _:genid355 rdf:type owl:Restriction ;
                                                              owl:hasValue "T0 L-2 M0 I+1 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'ElectricCurrentDensity'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/noncoherentsiunits#> ;
                                            rdfs:label "ElectricCurrentDensityUnit"@en ;
                                            skos:prefLabel "ElectricCurrentDensityUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'ElectricCurrentDensity'."@en .
@@ -8491,7 +8492,7 @@ kg/m^3""" ;
                                                              owl:someValuesFrom :EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce
                                                            ] ;
                                            rdfs:comment "An object which is an holistic spatial part of a process."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/persistence#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/agency#> ;
                                            rdfs:label "Participant"@en ;
                                            skos:example "A student during an examination."@en ;
                                            skos:prefLabel "Participant"@en ;
@@ -8623,7 +8624,7 @@ kg/m^3""" ;
                                                              owl:hasValue "T0 L0 M0 I0 Θ0 N0 J+1"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'LuminousIntensity'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "LuminousIntensityUnit"@en ;
                                            skos:prefLabel "LuminousIntensityUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'LuminousIntensity'."@en .
@@ -8723,7 +8724,7 @@ Unit of degeneracy in quantum mechanics"""@en ;
     - covers the entire whole (y = x1 +x2 + ... + xn)
     - do not overlap
     - are part of one, and one only, whole (inverse functional)"""@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/reductionistic#> ;
                                            rdfs:label "Reductionistic"@en ;
                                            skos:prefLabel "Reductionistic"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A class devoted to categorize causal objects by specifying their granularity levels."@en ;
@@ -8949,7 +8950,7 @@ It defines the base unit mole in the SI system."""@en ;
 :EMMO_18448443_dcf1_49b8_a321_cf46e2c393e1 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_c2f5ee66_579c_44c6_a2e9_fa2eaa9fa4da ;
                                            rdfs:comment "Unit for quantities of dimension one that are the fraction of two masses."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/noncoherentsiunits#> ;
                                            rdfs:label "MassFractionUnit"@en ;
                                            skos:example "Unit for mass fraction."@en ;
                                            skos:prefLabel "MassFractionUnit"@en ;
@@ -9028,7 +9029,7 @@ For this reason we can't declare the axiom:
 MetrologicalReference SubClassOf: inverse(hasMetrologicalReference) some Quantity
 because there exist reference units without being part of a quantity.
 This is peculiar to EMMO, where quantities as syntatic entities (explicit quantities) are distinct with quantities as semantic entities (properties)."""@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "MetrologicalReference"@en ;
                                            skos:prefLabel "MetrologicalReference"@en ;
                                            :EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db "EquivalentTo: StandardUnit or MeasurementUnit or ProcedureUnit" ;
@@ -9044,7 +9045,7 @@ This is peculiar to EMMO, where quantities as syntatic entities (explicit quanti
 :EMMO_18d180e4_5e3e_42f7_820c_e08951223486 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_8b305b63_6fa3_44dd_9679_17eb8403a07a ;
                                            rdfs:comment "A data representing a real number."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/symbolic#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "RealData"@en ;
                                            skos:prefLabel "RealData"@en ;
                                            :EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db "EquivalentTo: hasDataValue some owl:real" ;
@@ -9278,7 +9279,7 @@ https://www.computer.org/education/bodies-of-knowledge/software-engineering"""@e
                                                              owl:hasValue "T+3 L-2 M-1 I+1 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'ElectricCurrentPerUnitEnergy'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/coherentsiunits#> ;
                                            rdfs:label "ElectricCurrentPerUnitEnergyUnit"@en ;
                                            skos:prefLabel "ElectricCurrentPerUnitEnergyUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'ElectricCurrentPerUnitEnergy'."@en .
@@ -9487,7 +9488,7 @@ https://www.computer.org/education/bodies-of-knowledge/software-engineering"""@e
                                                              owl:hasValue "T-2 L+3 M+1 I-1 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'MagneticDipoleMoment'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/coherentsiunits#> ;
                                            rdfs:label "MagneticDipoleMomentUnit"@en ;
                                            skos:prefLabel "MagneticDipoleMomentUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'MagneticDipoleMoment'."@en .
@@ -9736,7 +9737,7 @@ A data can be of different physical types (e.g., matter, wave, atomic excited st
 How the variations are recognised and eventually decoded depends on the interpreting rules that characterise that type of data.
 Variations are pure physical variations and do not necessarily possess semantic meaning."""@en ,
                                                         "A perspective in which entities are represented according to the variation of their properties."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/geometrical#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "Contrast"@en ;
                                            rdfs:seeAlso "Luciano Floridi, \"Information - A very Short Introduction\", Oxford University Press., (2010) ISBN 978-0199551378"@en ;
                                            skos:altLabel "Dedomena"@en ,
@@ -9808,7 +9809,7 @@ k"""@en ;
                                            rdfs:comment """A whole is always defined using a criterion expressed through the classical transitive parthood relation.
 This class is expected to host the definition of world objects as they appear in its wholeness, dependently on some of their parts and independently on the surroundings."""@en ,
                                                         "The superclass of entities which are defined by requiring the existence of some parts (at least one) of specifically given types, where the specified types are different with respect to the type of the whole."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/holistic#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/persholistic#> ;
                                            rdfs:label "Whole"@en ;
                                            skos:prefLabel "Whole"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The superclass of entities which are defined by requiring the existence of some parts (at least one) of specifically given types, where the specified types are different with respect to the type of the whole."@en ;
@@ -10904,7 +10905,7 @@ The Navier-Stokes equation."""@en ;
 See Shape4x3Matrix as an example."""@en ,
                                                         "Arrays are ordered mathematical objects who's elementary spatial parts are numbers. Their dimensionality is constructed with spatial direct parthood, where 1-dimensional arrays have spatial direct parts Number and n-dimensional array have spatial direct parts (n-1)-dimensional arrays."@en ,
                                                         "Arrays are ordered objects, since they are a subclasses of Arrangement."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/math#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "Array"@en ;
                                            skos:example """A Vector is a 1-dimensional Array with Number as spatial direct parts,
 a Matrix is a 2-dimensional Array with Vector as spatial direct parts,
@@ -11518,7 +11519,7 @@ _:genid567 rdf:type owl:Restriction ;
                                                              owl:hasValue "T-2 L+1 M0 I0 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'Acceleration'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/noncoherentsiunits#> ;
                                            rdfs:label "AccelerationUnit"@en ;
                                            skos:prefLabel "AccelerationUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'Acceleration'."@en .
@@ -11608,7 +11609,7 @@ _:genid567 rdf:type owl:Restriction ;
 :EMMO_2e46d966_9f14_4673_821e_7c7cf2957926 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_9953c19f_ee33_4af8_be5e_dbf6d1e33581 ;
                                            rdfs:comment "The superclass for all tiles belonging to tessellations in which all tiles are connected through spatiotemporal relations hasNext or contacts."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/reductionistic#> ;
                                            rdfs:label "SpatioTemporalTile" ;
                                            rdfs:seeAlso :EMMO_22c91e99_61f8_4433_8853_432d44a2a46a ;
                                            skos:altLabel "WellFormedTile"@en ;
@@ -11667,7 +11668,7 @@ _:genid567 rdf:type owl:Restriction ;
                                                              owl:hasValue "T-3 L+2 M+1 I-1 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'ElectricPotential'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "ElectricPotentialUnit"@en ;
                                            skos:prefLabel "ElectricPotentialUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'ElectricPotential'."@en .
@@ -11815,7 +11816,7 @@ _:genid567 rdf:type owl:Restriction ;
                                                              owl:hasValue "T-2 L+3 M-1 I0 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'NewtonianConstantOfGravity'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/coherentsiunits#> ;
                                            rdfs:label "NewtonianConstantOfGravityUnit"@en ;
                                            skos:prefLabel "NewtonianConstantOfGravityUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'NewtonianConstantOfGravity'."@en .
@@ -11998,7 +11999,7 @@ Number of apples"""@en ;
 :EMMO_32e701c0_a925_49df_9829_0931b8554807 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_49267eba_5548_4163_8f36_518d65b583f9 ;
                                            rdfs:comment "A perspective that categorises causal structures according to the merelogical relations between the whole and the parts, taking into account their types."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/structural#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ;
                                            rdfs:label "Structural"@en ;
                                            skos:prefLabel "Structural"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A perspective that categorises causal structures according to the merelogical relations between the whole and the parts, taking into account their types."@en .
@@ -12028,7 +12029,7 @@ Number of apples"""@en ;
                                                              owl:hasValue "T0 L+2 M0 I0 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'Area'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siacceptedspecialunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/noncoherentsiunits#> ;
                                            rdfs:label "AreaUnit"@en ;
                                            skos:prefLabel "AreaUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'Area'."@en .
@@ -12272,7 +12273,7 @@ e.g. you cannot remove H from H₂0 without changing the molecule type (essentia
                                                            ] ;
                                            rdfs:comment "A 'Sign' that stands for an 'Object' through convention, norm or habit, without any resemblance to it."@en ,
                                                         "In Peirce semiotics this kind of sign category is called symbol. However, since symbol is also used in formal languages, the name is changed in conventional."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "Conventional"@en ;
                                            skos:prefLabel "Conventional"@en ;
                                            :EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db "EquivalentTo: Uncoded or Coded" ;
@@ -13264,7 +13265,7 @@ liquid-phase sintering: sintering of a powder or compact containing at least two
                                                         """EncodedData is the class where inventions that don't actually exist would be placed.
 For example, the blueprint of a bridge is an encoded data. When the bridge will be built, than the blueprint will also be a semiotical entity.
 Another example is Superman, that exists only as a set of magazines, drawings, novels, movies, but not in the real world."""@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/geometrical#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "Data"@en ;
                                            skos:altLabel "EncodedContrast"@en ,
                                                          "EncodedData"@en ;
@@ -13362,7 +13363,7 @@ loose-powder sintering, gravity sintering: sintering of uncompacted powder"""@en
                                                              owl:hasValue "T-2 L+2 M+1 I0 Θ-1 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'Entropy'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/noncoherentsiunits#> ;
                                            rdfs:label "EntropyUnit"@en ;
                                            skos:prefLabel "EntropyUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'Entropy'."@en .
@@ -13408,7 +13409,7 @@ J stands for N m"""@en ;
                                            rdfs:subClassOf :EMMO_b953f2b1_c8d1_4dd9_b630_d3ef6580c2bb ;
                                            owl:disjointWith :EMMO_89762966_8076_4f7c_b745_f718d653e8e2 ;
                                            rdfs:comment "For a given unit system, measured constants are physical constants that are not used to define the unit system. Hence, these constants have to be measured and will therefore be associated with an uncertainty."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "MeasuredConstant"@en ;
                                            skos:prefLabel "MeasuredConstant"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "For a given unit system, measured constants are physical constants that are not used to define the unit system. Hence, these constants have to be measured and will therefore be associated with an uncertainty."@en .
@@ -13635,7 +13636,7 @@ A quantum stands for an incoming or outcoming real particle in a Feynman diagram
                                                              owl:hasValue "T0 L-2 M0 I0 Θ0 N0 J+1"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'Luminance'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "LuminanceUnit"@en ;
                                            skos:prefLabel "LuminanceUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'Luminance'."@en .
@@ -14010,7 +14011,7 @@ It means that you can declare that e.g. tightening a bolt is a task of building 
                                                              owl:hasValue "T-2 L+3 M+1 I-1 Θ+1 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'NewtonSquareMetrePerAmpere'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/coherentsiunits#> ;
                                            rdfs:label "NewtonSquareMetrePerAmpereUnit"@en ;
                                            skos:prefLabel "NewtonSquareMetrePerAmpereUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'NewtonSquareMetrePerAmpere'."@en .
@@ -14824,7 +14825,7 @@ The class Material hosts the subclasses for which a substance can be identified 
                                            rdfs:comment "The class of causal objects that stand for world objects according to a specific representational perspective."@en ,
                                                         """This class is the practical implementation of the EMMO pluralistic approach for which the only objective categorization is provided by the Universe individual and all the Quantum individuals.
 Between these two extremes, there are several subjective ways to categorize real world objects, each one provide under a 'Perspective' subclass."""@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/holistic#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/persholistic#> ;
                                            rdfs:label "Perspective"@en ;
                                            skos:prefLabel "Perspective"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of causal objects that stand for world objects according to a specific representational perspective."@en ;
@@ -14965,7 +14966,7 @@ Since topological connection means causality, then the only way for a real world
 :EMMO_4a2bf359_c47b_4aa3_9811_b59c3e1dac1e rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_b21a56ed_f969_4612_a6ec_cb7766f7f31d ;
                                            rdfs:comment "Sign classified by how the sign stands for its reference object."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "SignByReferent"@en ;
                                            skos:prefLabel "SignByReferent"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Sign classified by how the sign stands for its reference object."@en .
@@ -15154,7 +15155,7 @@ If the waveform is travelling through a cable as electronic signal (analog or di
                                                              owl:hasValue "T-2 L+2 M+1 I-1 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'MagneticFlux'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "MagneticFluxUnit"@en ;
                                            skos:prefLabel "MagneticFluxUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'MagneticFlux'."@en .
@@ -15383,7 +15384,7 @@ This class is expected to host the definition of world objects as they appear in
 For example. a human being is a stand alone type, but an instance of a human being can also be an instance of the type student (intended as a role) if it plays a part into a school environment (i.e., a student entity can exist only if it is part of a surrounding whole: the school).
 The role type requires that also the whole type depends on the existence of parts of a specific type (e.g., there is no school without students)."""@en ,
                                                         "An entity that is categorized according to its relation with a whole through a parthood relation and that contributes to it according to an holistic criterion, where the type of the whole is not the type of the part."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/holistic#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/agency#> ;
                                            rdfs:label "Role"@en ;
                                            skos:altLabel "HolisticPart"@en ,
                                                          "Part"@en ;
@@ -15514,7 +15515,7 @@ This qualifies a chemical element as a name and not a matter obejct that can sta
                                                              owl:hasValue "T-1 L+1 M0 I0 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'Speed'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/noncoherentsiunits#> ;
                                            rdfs:label "SpeedUnit"@en ;
                                            skos:prefLabel "SpeedUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'Speed'."@en .
@@ -15589,7 +15590,7 @@ This qualifies a chemical element as a name and not a matter obejct that can sta
                                                              owl:hasValue "T-1 L+2 M+1 I0 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'AngularMomentum'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/noncoherentsiunits#> ;
                                            rdfs:label "AngularMomentumUnit"@en ;
                                            skos:prefLabel "AngularMomentumUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'AngularMomentum'."@en .
@@ -15599,7 +15600,7 @@ This qualifies a chemical element as a name and not a matter obejct that can sta
 :EMMO_504ad89e_dd4a_4fa6_aeb6_15c8ce0cde9b rdf:type owl:Class ;
                                            rdfs:subClassOf <https://w3id.org.org/emmo#EMMO_41c5f63b_f0e7_475e_bfac_a92027585979> ;
                                            rdfs:comment "A direct part that is obtained by partitioning a whole purely in temporal parts."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/reductionistic#> ;
                                            rdfs:label "TemporalTile"@en ;
                                            skos:prefLabel "TemporalTile"@en ;
                                            :EMMO_157fdf31_6387_42be_8e72_10530519214a "https://w3id.org/emmo/raw/1.0.0/doc/figs/TemporalTile.png"^^xsd:anyURI ;
@@ -15758,7 +15759,7 @@ This qualifies a chemical element as a name and not a matter obejct that can sta
                                            rdfs:subClassOf :EMMO_89a0c87c_0804_4013_937a_6fe234d9499c ;
                                            rdfs:comment "A physical made of more than one symbol sequentially arranged."@en ,
                                                         "A string is made of concatenated symbols whos arrangement is one-dimensional. Each symbol can have only one previous and one next neighborhood (bidirectional list)."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/computerscience#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/symbolic#> ;
                                            rdfs:label "String"@en ;
                                            skos:example """The word \"cat\" considered as a collection of 'symbol'-s respecting the rules of english language.
 
@@ -15801,7 +15802,7 @@ where m_0 is the rest mass of that particle and c_0 is the speed of light in a v
                                                              owl:hasValue "T-1 L0 M0 I0 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'Frequency'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "FrequencyUnit"@en ;
                                            skos:prefLabel "FrequencyUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'Frequency'."@en .
@@ -16129,7 +16130,7 @@ where m_0 is the rest mass of that particle and c_0 is the speed of light in a v
                                                              owl:hasValue "T-2 L-1 M+1 I0 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'Pressure'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "PressureUnit"@en ;
                                            skos:prefLabel "PressureUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'Pressure'."@en .
@@ -16140,7 +16141,7 @@ where m_0 is the rest mass of that particle and c_0 is the speed of light in a v
                                            rdfs:subClassOf <https://w3id.org.org/emmo#EMMO_2c07a731_84f9_4883_9e58_2bc073abda29> ;
                                            owl:disjointWith :EMMO_b5a5494c_83bf_44aa_a9a6_49b948e68939 ;
                                            rdfs:comment "A physical particle with half odd integer spin (1/2, 3/2, etc...) that follows Fermi-Dirac statistics."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/physicalistic#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/standardmodel#> ;
                                            rdfs:label "Fermion"@en ;
                                            skos:prefLabel "Fermion"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A physical particle with half odd integer spin (1/2, 3/2, etc...) that follows Fermi-Dirac statistics."@en ;
@@ -16163,7 +16164,7 @@ where m_0 is the rest mass of that particle and c_0 is the speed of light in a v
                                                              owl:hasValue "T-2 L+1 M+1 I0 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'Force'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "ForceUnit"@en ;
                                            skos:prefLabel "ForceUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'Force'."@en .
@@ -16175,7 +16176,7 @@ where m_0 is the rest mass of that particle and c_0 is the speed of light in a v
                                            rdfs:comment "A mereological fusion is any entity that is made up of two or more quantum entities, regardless of the fact that they are or not self-connected. It captures the idea of set, but excluding singletons."@en ,
                                                         "The class of individuals representing mereological fusions consisting of two or more quantum entities."@en ,
                                                         "The union of the CausalCluster and CausalStructure classes."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/holistic#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/persholistic#> ;
                                            rdfs:label "Fusion"@en ;
                                            skos:example "An atom, a group of persons, a fluid."@en ;
                                            skos:prefLabel "Fusion"@en ;
@@ -16232,7 +16233,7 @@ where m_0 is the rest mass of that particle and c_0 is the speed of light in a v
                                            rdfs:subClassOf :EMMO_d8d2144e_5c8d_455d_a643_5caf4d8d9df8 ;
                                            rdfs:comment "A mathematical object in this branch is not representing a concept but an actual graphical object built using mathematcal symbols arranged in some way, according to math conventions."@en ,
                                                         "The class of general mathematical symbolic objects respecting mathematical syntactic rules."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "Mathematical"@en ;
                                            skos:prefLabel "Mathematical"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of general mathematical symbolic objects respecting mathematical syntactic rules."@en ;
@@ -16451,7 +16452,7 @@ where m_0 is the rest mass of that particle and c_0 is the speed of light in a v
                                            rdfs:subClassOf :EMMO_32e701c0_a925_49df_9829_0931b8554807 ;
                                            rdfs:comment "The superclass for all classes of entities that have no proper parts of the same type of the whole."@en ,
                                                         "Fundamental(x) ≡ ∃φ[φ(x) ∧ ¬∃yRP⟨φ⟩(y, x)]" ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/structural#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ;
                                            rdfs:label "Fundamental"@en ;
                                            rdfs:seeAlso :EMMO_bbca6dfa_7463_4e8d_8280_35862ff50ce0 ;
                                            skos:altLabel "Lifetime"@en ,
@@ -16557,7 +16558,7 @@ Concurrent tasks may or may not communicate. Communication is represented as a s
                                                              owl:hasValue "T-2 L+2 M+1 I-2 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'Inductance'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "InductanceUnit"@en ;
                                            skos:prefLabel "InductanceUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'Inductance'."@en .
@@ -17334,7 +17335,7 @@ For example, a path starting from an elementary  photon, then through the electr
                                            rdfs:subClassOf :EMMO_70bbb94e_2ca7_4d73_ba01_6397f134d172 ;
                                            rdfs:comment "Since a string is a simple type that can contain only characters but not other child elements, is often not suitable for representing human text, that may need additional elements for control of aspects such as bidirectional formatting or ruby annotation."@en ,
                                                         "Symbolic data that consist of a sequence of characters."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/computerscience#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/symbolic#> ;
                                            rdfs:label "StringData"@en ;
                                            rdfs:seeAlso "https://www.w3.org/TR/xmlschema11-2/#string"^^xsd:anyURI ;
                                            skos:prefLabel "StringData"@en ;
@@ -17365,7 +17366,7 @@ For example, a path starting from an elementary  photon, then through the electr
                                                              owl:hasValue "T+4 L-3 M-1 I+2 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'Permittivity'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/noncoherentsiunits#> ;
                                            rdfs:label "PermittivityUnit"@en ;
                                            skos:prefLabel "PermittivityUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'Permittivity'."@en .
@@ -17461,7 +17462,7 @@ ChemicalPotential"""@en ;
                                                              owl:hasValue "T0 L-1 M0 I0 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'ReciprocalLength'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/noncoherentsiunits#> ;
                                            rdfs:label "ReciprocalLengthUnit"@en ;
                                            skos:prefLabel "ReciprocalLengthUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'ReciprocalLength'."@en .
@@ -17500,7 +17501,7 @@ ChemicalPotential"""@en ;
 ###  https://w3id.org/emmo#EMMO_611e4040_9a3e_4a1a_9fa2_7b1012269401
 :EMMO_611e4040_9a3e_4a1a_9fa2_7b1012269401 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4 ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "MeasurementUnitByDimensionality"@en ;
                                            skos:prefLabel "MeasurementUnitByDimensionality"@en .
 
@@ -17757,7 +17758,7 @@ ChemicalPotential"""@en ;
                                                              owl:someValuesFrom :EMMO_4299e344_a321_4ef2_a744_bacfcce80afc
                                                            ] ;
                                            rdfs:comment "A procedure that has at least two procedures (tasks) as proper parts."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/computerscience#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
                                            rdfs:label "Workflow"@en ;
                                            skos:prefLabel "Workflow"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A procedure that has at least two procedures (tasks) as proper parts."@en .
@@ -18463,7 +18464,7 @@ Temperature is a relative quantity that can be used to express temperature diffe
 :EMMO_69ebb235_9c5e_443d_9a3b_7042b1005f1f rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
                                            rdfs:comment "A symbolic data representing a rational number, that is a number that can be expressed exact by `p/q` where `p` and `q` are integer numbers."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/symbolic#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "RationalData"@en ;
                                            skos:prefLabel "RationalData"@en ;
                                            :EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db "EquivalentTo: hasDataValue some owl:rational" ;
@@ -18478,7 +18479,7 @@ Temperature is a relative quantity that can be used to express temperature diffe
                                                              owl:hasValue "T0 L0 M-2 I0 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'InverseSquareMass'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/coherentsiunits#> ;
                                            rdfs:label "InverseSquareMassUnit"@en ;
                                            skos:prefLabel "InverseSquareMassUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'InverseSquareMass'."@en .
@@ -19110,7 +19111,7 @@ In this way the 'sign'-ed entity becomes an 'object', and the 'object' is the ba
                                            rdfs:subClassOf :EMMO_057e7d57_aff0_49de_911a_8861d85cef40 ;
                                            rdfs:comment "A symbolic data is a data that is rooted on some specified symbolic based encoding, such as floating point numbers, strings, integer. When a symbolic data is used for expressing numerical data (e.g., integer), it is not to be intended as a mathematical entity (even if it may be interpreted as such) but as a syntactic structure (datastructures or datatypes) based on concatenated tokens (or symbols, letters) that can deliver data."@en ,
                                                         "The class for entities which stands for a specific data format expressed using a symbolic encoding."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/computerscience#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "SymbolicData"@en ;
                                            rdfs:seeAlso "https://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/#built-in-datatypes"^^xsd:anyURI ,
                                                         "https://www.w3.org/TR/rdf11-concepts/"^^xsd:anyURI ,
@@ -19243,7 +19244,7 @@ In this way the 'sign'-ed entity becomes an 'object', and the 'object' is the ba
                                            rdfs:subClassOf :EMMO_9159bb16_8a70_49f9_bac4_f5cf2a82c39a ;
                                            owl:disjointWith :EMMO_acaaa124_3dde_48b6_86e6_6ec6f364f408 ;
                                            rdfs:comment "\"Quantity, in a system of quantities, defined in terms of the base quantities of that system\"."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "DerivedQuantity"@en ;
                                            skos:prefLabel "DerivedQuantity"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "\"Quantity, in a system of quantities, defined in terms of the base quantities of that system\"."@en ;
@@ -19383,7 +19384,7 @@ A coded is a sort of name or label that we put upon objects that interact with a
 
 For example, \"hot\" objects are objects that interact with an observer through a perception mechanism aimed to perceive an heat source. The code is made of terms such as \"hot\", \"warm\", \"cold\", that commonly refer to the perception of heat."""@en ,
                                                         "A conventional that stands for an object according to a code of interpretation to which the interpreter refers."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "Coded"@en ;
                                            skos:example "A biography that makes use of a code that is provided by the meaning of the element of the language used by the author."@en ,
                                                         "The name \"red\" that stands for the color of an object."@en ;
@@ -19719,7 +19720,7 @@ This can be used in material characterization, to define exactly the type of mea
                                                              owl:hasValue "T-3 L+2 M+1 I-2 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'ElectricResistance'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "ElectricResistanceUnit"@en ;
                                            skos:prefLabel "ElectricResistanceUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'ElectricResistance'."@en .
@@ -19745,7 +19746,7 @@ This can be used in material characterization, to define exactly the type of mea
                                            rdfs:comment "The class of individuals representing causal clusters."@en ,
                                                         "The disjoint union of the CausalSystem and Collection classes."@en ,
                                                         "With the causal cluster term we address an heterogeneous group of entities, which possess the common feature of having at least two causally non connected quanta. It comprises collections (non self-connected entities) and causal systems (entities extended in space)."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/physicalistic#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/standardmodel#> ;
                                            rdfs:label "CausalCluster"@en ;
                                            skos:prefLabel "CausalCluster"@en ;
                                            :EMMO_31252f35_c767_4b97_a877_1235076c3e13 "With the causal cluster term we address an heterogeneous group of entities, which possess the common feature of having at least two causally non connected quanta. It comprises collections (non self-connected entities) and causal systems (entities extended in space)."@en ;
@@ -19815,7 +19816,7 @@ This can be used in material characterization, to define exactly the type of mea
                                                              owl:hasValue "T0 L0 M+1 I0 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'Mass'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "MassUnit"@en ;
                                            skos:prefLabel "MassUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'Mass'."@en .
@@ -19952,7 +19953,7 @@ This can be used in material characterization, to define exactly the type of mea
 :EMMO_79751276_b2d0_4e2f_bbd4_99d412f43d55 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 ;
                                            rdfs:comment "The superclass for all physical quantities classes that are categorized according to some domain of interests (e.g. metallurgy, chemistry), property (intensive/extensive) or application."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "CategorizedPhysicalQuantity"@en ;
                                            rdfs:seeAlso "https://physics.nist.gov/cuu/Constants" ;
                                            skos:prefLabel "CategorizedPhysicalQuantity"@en ;
@@ -20520,7 +20521,7 @@ The fundamental distinction between world entities is causality self-connectedne
 Void regions do not exist in the EMMO. In other words there is no spacetime without entities and spacetime emerges as relational property not as a self-standing entity). Entities are not placed in space or time: space and time are measured quantities, always relative between entities and are measured. In other words, space and time relations originates from causality interactions."""@en ,
                                                         "The class of all the OWL individuals representing world entities according to EMMO conceptualisation."@en ,
                                                         "The disjoint union of the fundamental mereocausal classes of Quantum, CausalPath, CausalSystem and Collection."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/holistic#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/persholistic#> ;
                                            rdfs:label "EMMO"@en ;
                                            skos:prefLabel "EMMO"@en ;
                                            :EMMO_31252f35_c767_4b97_a877_1235076c3e13 """The EMMO conceptualises the world using the primitive concepts of causality and parthood. Parthood is about the composition of world entities starting from other more fundamental entities. Causality is about the interactions between world entities.
@@ -20962,7 +20963,7 @@ In general, metallic and ionic bonds have atoms sharing electrons."""@en ,
                                                              owl:hasValue "T-3 L+2 M0 I0 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'AbsorbedDoseRate'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/coherentsiunits#> ;
                                            rdfs:label "AbsorbedDoseRateUnit"@en ;
                                            skos:prefLabel "AbsorbedDoseRateUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'AbsorbedDoseRate'."@en .
@@ -21030,7 +21031,7 @@ In general, metallic and ionic bonds have atoms sharing electrons."""@en ,
                                                              owl:hasValue "T-2 L+2 M0 I0 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'AbsorbedDose'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "AbsorbedDoseUnit"@en ;
                                            skos:prefLabel "AbsorbedDoseUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'AbsorbedDose'."@en .
@@ -21071,7 +21072,7 @@ In general, metallic and ionic bonds have atoms sharing electrons."""@en ,
                                                              owl:hasValue "T+1 L+1 M0 I+1 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'LengthTimeCurrent'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/coherentsiunits#> ;
                                            rdfs:label "LengthTimeCurrentUnit"@en ;
                                            skos:prefLabel "LengthTimeCurrentUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'LengthTimeCurrent'."@en .
@@ -21370,7 +21371,7 @@ Here we explicitly include in the definition also all the data (e.g. source code
                                                              owl:hasValue "T+3 L-3 M-1 I+2 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'ElectricConductivity'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/noncoherentsiunits#> ;
                                            rdfs:label "ElectricConductivityUnit"@en ;
                                            skos:prefLabel "ElectricConductivityUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'ElectricConductivity'."@en .
@@ -21705,7 +21706,7 @@ manufacturing: production of components"""@en ;
 :EMMO_89762966_8076_4f7c_b745_f718d653e8e2 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_b953f2b1_c8d1_4dd9_b630_d3ef6580c2bb ;
                                            rdfs:comment "Physical constant used to define a unit system. Hence, when expressed in that unit system they have an exact value with no associated uncertainty."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "ExactConstant"@en ;
                                            skos:prefLabel "ExactConstant"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Physical constant used to define a unit system. Hence, when expressed in that unit system they have an exact value with no associated uncertainty."@en .
@@ -21894,7 +21895,7 @@ A single continuum individual can be the whole fluid in a pipe."""@en ,
 :EMMO_8b305b63_6fa3_44dd_9679_17eb8403a07a rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_70bbb94e_2ca7_4d73_ba01_6397f134d172 ;
                                            rdfs:comment "A symbolic data representing a numerical value."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/symbolic#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "NumericData"@en ;
                                            skos:prefLabel "NumericData"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A symbolic data representing a numerical value."@en .
@@ -21947,7 +21948,7 @@ A single continuum individual can be the whole fluid in a pipe."""@en ,
 ###  https://w3id.org/emmo#EMMO_8bb6b688_812a_4cb9_b76c_d5a058928719
 :EMMO_8bb6b688_812a_4cb9_b76c_d5a058928719 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_49267eba_5548_4163_8f36_518d65b583f9 ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "Semiotics"@en ;
                                            skos:prefLabel "Semiotics"@en ;
                                            :EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db "EquivalentTo: Semiosis or SemioticEntity" .
@@ -22458,7 +22459,7 @@ In Peirce semiotics: legisign-symbol-argument"""@en ;
                                                              owl:hasValue "T0 L-2 M+1 I0 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'AreaDensity'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/noncoherentsiunits#> ;
                                            rdfs:label "AreaDensityUnit"@en ;
                                            skos:prefLabel "AreaDensityUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'AreaDensity'."@en .
@@ -22686,7 +22687,7 @@ For this reason, the definition of object is done by considering only item tempo
                                                              owl:hasValue "T0 L+3 M0 I0 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'Volume'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/prefixedsiunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/noncoherentsiunits#> ;
                                            rdfs:label "VolumeUnit"@en ;
                                            skos:prefLabel "VolumeUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'Volume'."@en .
@@ -22721,7 +22722,7 @@ For this reason, the definition of object is done by considering only item tempo
 ###  https://w3id.org/emmo#EMMO_9159bb16_8a70_49f9_bac4_f5cf2a82c39a
 :EMMO_9159bb16_8a70_49f9_bac4_f5cf2a82c39a rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "PhysicalQuantiyByDefinition"@en ;
                                            skos:prefLabel "PhysicalQuantiyByDefinition"@en .
 
@@ -22827,7 +22828,7 @@ For this reason, the definition of object is done by considering only item tempo
 :EMMO_92829beb_6ed4_4c88_bbd5_3bc7403e2895 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_f7f41d20_eabb_4bcb_9a16_0436851fcd5c ;
                                            rdfs:comment "A tessellation of temporal slices."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/reductionistic#> ;
                                            rdfs:label "TemporalSequence"@en ;
                                            skos:altLabel "Sequence"@en ;
                                            skos:prefLabel "TemporalSequence"@en ;
@@ -23364,7 +23365,7 @@ It is advisory to create a uniquely defined subclass these units for concrete us
                                            rdfs:subClassOf :EMMO_d8d2144e_5c8d_455d_a643_5caf4d8d9df8 ;
                                            rdfs:comment "A language entity used in the metrology discipline."@en ,
                                                         "Metrology is the science of measurement and its application and includes all theoretical and practical aspects of measurement, whatever the measurement uncertainty and field of application (VIM3 2.2)"@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "Metrological"@en ;
                                            skos:prefLabel "Metrological"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A language entity used in the metrology discipline."@en ;
@@ -23431,7 +23432,7 @@ The physical dimensionality of all subclasses of SIDimensionalUnit are defined b
 - AmountOfSubstanceUnit <=> \"T0 L0 M0 I0 Θ0 N+1 J0\"
 - TimeUnit <=> \"T+1 L0 M0 I0 Θ0 N0 J0\"
 - ElectricCurrentDensityUnit <=> \"T0 L-2 M0 I+1 Θ0 N0 J0\""""@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "SIDimensionalUnit"@en ;
                                            rdfs:seeAlso "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf"^^xsd:anyURI ;
                                            skos:prefLabel "SIDimensionalUnit"@en ;
@@ -23510,7 +23511,7 @@ The physical dimensionality of all subclasses of SIDimensionalUnit are defined b
                                                              owl:someValuesFrom :EMMO_ee0466e4_780d_4236_8281_ace7ad3fc5d2
                                                            ] ;
                                            rdfs:comment "A causal object that is direct part of a tessellation."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/reductionistic#> ;
                                            rdfs:label "Tile"@en ;
                                            skos:prefLabel "Tile"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A causal object that is direct part of a tessellation."@en .
@@ -23767,7 +23768,7 @@ The physical dimensionality of all subclasses of SIDimensionalUnit are defined b
 :EMMO_9c407ac0_fd4c_4178_8763_95fad9fe29ec rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_02c0621e_a527_4790_8a0f_2bb51973c819 ;
                                            rdfs:comment "The superclass for all physical quantities classes that are categorized according to a standard (e.g. ISQ)." ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "StandardizedPhysicalQuantity"@en ;
                                            skos:prefLabel "StandardizedPhysicalQuantity"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The superclass for all physical quantities classes that are categorized according to a standard (e.g. ISQ)." .
@@ -24126,7 +24127,7 @@ The tiles of an n-dimensional array are (n-1) dimensional arrays. The tiles of a
 :EMMO_9fd1e79d_41d1_44f8_8142_66dbdf0fc7ad rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_c2f5ee66_579c_44c6_a2e9_fa2eaa9fa4da ;
                                            rdfs:comment "Unit for quantities of dimension one that are the fraction of two volumes."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/noncoherentsiunits#> ;
                                            rdfs:label "VolumeFractionUnit"@en ;
                                            skos:example "Unit for volume fraction."@en ;
                                            skos:prefLabel "VolumeFractionUnit"@en ;
@@ -24289,7 +24290,7 @@ Symbols of a formal language must be capable of being specified without any refe
                                            rdfs:comment "A well defined physical entity, elementary or composite, usually treated as a singular unit, that is found at scales spanning from the elementary particles to molecules, as fundamental constituents of larger scale substances (as the etymology of \"particle\" suggests)."@en ,
                                                         "The scope of the physical particle definition goes from the elementary particles to molecules, as fundamental constituents of substances."@en ,
                                                         "The union of hadron and lepton, or fermion and bosons."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/physicalistic#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/standardmodel#> ;
                                            rdfs:label "PhysicalParticle"@en ;
                                            skos:altLabel "Particle"@en ;
                                            skos:prefLabel "PhysicalParticle"@en ;
@@ -24810,7 +24811,7 @@ manufacturing process: set of processes in manufacturing involving a flow and/or
                                                              owl:hasValue "T0 L0 M0 I0 Θ+1 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'Temperature'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "TemperatureUnit"@en ;
                                            skos:prefLabel "TemperatureUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'Temperature'."@en .
@@ -25041,7 +25042,7 @@ manufacturing process: set of processes in manufacturing involving a flow and/or
                                                              owl:hasValue "T+1 L0 M0 I+1 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'ElectricCharge'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "ElectricChargeUnit"@en ;
                                            skos:prefLabel "ElectricChargeUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'ElectricCharge'."@en .
@@ -25122,7 +25123,7 @@ manufacturing process: set of processes in manufacturing involving a flow and/or
                                            rdfs:subClassOf :EMMO_9159bb16_8a70_49f9_bac4_f5cf2a82c39a ;
                                            rdfs:comment """\"Quantity in a conventionally chosen subset of a given system of quantities, where no quantity in the subset can be expressed in terms of the other quantities within that subset\"
 ISO 80000-1"""@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "BaseQuantity"@en ;
                                            skos:prefLabel "BaseQuantity"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """\"Quantity in a conventionally chosen subset of a given system of quantities, where no quantity in the subset can be expressed in terms of the other quantities within that subset\"
@@ -25357,7 +25358,7 @@ International vocabulary of metrology (VIM)"""@en .
                                                              owl:hasValue "T0 L0 M0 I0 Θ0 N-1 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'PerAmount'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/coherentsiunits#> ;
                                            rdfs:label "PerAmountUnit"@en ;
                                            skos:prefLabel "PerAmountUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'PerAmount'."@en .
@@ -25539,7 +25540,7 @@ International vocabulary of metrology (VIM)"""@en .
                                            rdfs:comment """\"Real scalar quantity, defined and adopted by convention, with which any other quantity of the same kind can be compared to express the ratio of the second quantity to the first one as a number\"
 ISO 80000-1"""@en ,
                                                         "A metrological reference for a physical quantity."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "MeasurementUnit"@en ;
                                            skos:example """kg
 m/s
@@ -25598,7 +25599,7 @@ https://www.bipm.org/utils/common/pdf/si-brochure/SI-Brochure-9-EN.pdf"""@en ,
                                                              owl:hasValue "T+4 L-2 M-1 I+2 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'Capacitance'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "CapacitanceUnit"@en ;
                                            skos:prefLabel "CapacitanceUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'Capacitance'."@en .
@@ -25637,7 +25638,7 @@ A 'Sign' usually havs 'sign' spatial direct parts only up to a certain elementar
 
 Just like an 'Elementary' in the 'Physical' branch, each 'Sign' branch should have an a-tomistic mereological part."""@en ,
                                                         "An 'Physical' that is used as sign (\"semeion\" in greek) that stands for another 'Physical' through an semiotic process."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "Sign"@en ;
                                            skos:example """A novel is made of chapters, paragraphs, sentences, words and characters (in a direct parthood mereological hierarchy).
 
@@ -25708,7 +25709,7 @@ Just like an 'Elementary' in the 'Physical' branch, each 'Sign' branch should ha
 :EMMO_b295158f_fda4_4124_ab58_d9ea4ccfca5a rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_e7aac247_31d6_4b2e_9fd2_e842b1b7ccac ;
                                            rdfs:comment "A causal system posessing bonding that can not be representated by a simple Feynman diagram."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/physicalistic#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/standardmodel#> ;
                                            rdfs:label "GenericPhysicalSystem"@en ;
                                            skos:prefLabel "GenericPhysicalSystem"@en ;
                                            :EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db "DisjointUnionOf: InteractingSystem, ParticlesSystem" ;
@@ -25819,7 +25820,7 @@ Just like an 'Elementary' in the 'Physical' branch, each 'Sign' branch should ha
                                                              owl:hasValue "T0 L+1 M0 I0 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'Length'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "LengthUnit"@en ;
                                            skos:prefLabel "LengthUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'Length'."@en .
@@ -25941,7 +25942,7 @@ Just like an 'Elementary' in the 'Physical' branch, each 'Sign' branch should ha
                                            rdfs:subClassOf :EMMO_57c75ca1_bf8a_42bc_85d9_58cfe38c7df2 ;
                                            rdfs:comment "A maximal class M (subclass of Maximal) is defined by choosing a reference type φ so that M is subclass of φ, all parts of x are needed to keep φ(x) and if you add something to x, then x is no more a φ."@en ,
                                                         "The superclass for all classes of entities that have no proper parts of the same type of the whole are not proper part of an entity of that type."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/structural#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/manufacturing#> ;
                                            rdfs:label "Maximal"@en ;
                                            skos:prefLabel "Maximal"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The superclass for all classes of entities that have no proper parts of the same type of the whole are not proper part of an entity of that type."@en ;
@@ -26118,7 +26119,7 @@ The case a) is a geometrical and mathematical, b) is geometrical and pictorial, 
 :EMMO_b5a5494c_83bf_44aa_a9a6_49b948e68939 rdf:type owl:Class ;
                                            rdfs:subClassOf <https://w3id.org.org/emmo#EMMO_2c07a731_84f9_4883_9e58_2bc073abda29> ;
                                            rdfs:comment "A physical particle with integer spin that follows Bose–Einstein statistics."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/physicalistic#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/standardmodel#> ;
                                            rdfs:label "Boson"@en ;
                                            skos:prefLabel "Boson"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A physical particle with integer spin that follows Bose–Einstein statistics."@en ;
@@ -26281,7 +26282,7 @@ The case a) is a geometrical and mathematical, b) is geometrical and pictorial, 
                                            rdfs:subClassOf <https://w3id.org.org/emmo#EMMO_38f31ba5_348f_4ac2_9a67_a62b5dd7aadd> ;
                                            rdfs:comment "A coded that makes use of an atomic symbol with respect to the code used to refer to the interaction."@en ,
                                                         "A property is atomic in the sense that is aimed to deliver one and one only aspect of the object according to one code, such as the color with one sign (e.g., black) or a quantitiative property (e.g., 1.4 kg)."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "Property"@en ;
                                            skos:example """Hardness is a subclass of properties.
 Vickers hardness is a subclass of hardness that involves the procedures and instruments defined by the standard hardness test."""@en ,
@@ -26312,7 +26313,7 @@ The triadic elements:
 
 This class includes also the 'interpeter' i.e. the entity that connects the 'sign' to the 'object'"""@en ,
                                                         "The class of individuals that stands for semiotic objects, i.e. objects that take part on a semiotic process."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "SemioticEntity"@en ;
                                            skos:prefLabel "SemioticEntity"@en ;
                                            :EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db "EquivalentTo: Interpreter or SemioticObject or Sign" ;
@@ -26476,7 +26477,7 @@ This class includes also the 'interpeter' i.e. the entity that connects the 'sig
                                            rdfs:comment """Physical constants are categorised into \"exact\" and measured constants.
 
 With \"exact\" constants, we refer to physical constants that have an exact numerical value after the revision of the SI system that was enforsed May 2019."""@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "PhysicalConstant"@en ;
                                            skos:prefLabel "PhysicalConstant"@en ;
                                            :EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db "DisjointUnionOf: MeasuredConstant, ExactConstant" ;
@@ -26887,7 +26888,7 @@ If A is a water-fluid so small that its every proper part is no more a continuum
                                            rdfs:comment """A discrete schema may be based on a continuum material basis that is filtered according to its variations. For example, a continuous voltage based signal can be considered 1 or 0 according to some threshold.
 Discrete does not mean that the material basis is discrete, but that the data are encoded according to such step-based rules."""@en ,
                                                         "Data whose variations are decoded according to a discrete schema."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "DiscreteData"@en ;
                                            skos:example "A text is a collection of discrete symbols. A compact disc is designed to host discrete states in the form of pits and lands."@en ;
                                            skos:prefLabel "DiscreteData"@en ;
@@ -26975,7 +26976,7 @@ Discrete does not mean that the material basis is discrete, but that the data ar
                                                              owl:hasValue "T+10 L-2 M-3 I+4 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'QuarticElectricDipoleMomentPerCubicEnergy'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/coherentsiunits#> ;
                                            rdfs:label "QuarticElectricDipoleMomentPerCubicEnergyUnit"@en ;
                                            skos:prefLabel "QuarticElectricDipoleMomentPerCubicEnergyUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'QuarticElectricDipoleMomentPerCubicEnergy'."@en .
@@ -27574,7 +27575,7 @@ A mail."""@en ;
                                                         """The most fundamental unity criterion for the definition of an structure is that:
 - is made of at least two quantums (a structure is not a simple entity)
 - all quantum parts form a causally connected graph""" ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/holistic#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/persholistic#> ;
                                            rdfs:label "CausalStructure"@en ;
                                            skos:prefLabel "CausalStructure"@en ;
                                            :EMMO_31252f35_c767_4b97_a877_1235076c3e13 """The most fundamental unity criterion for the definition of an structure is that:
@@ -27725,7 +27726,7 @@ A mail."""@en ;
                                                              owl:hasValue "T-2 L0 M0 I0 Θ+1 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'TemperaturePerSquareTime'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/coherentsiunits#> ;
                                            rdfs:label "TemperaturePerSquareTimeUnit"@en ;
                                            skos:prefLabel "TemperaturePerSquareTimeUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'TemperaturePerSquareTime'."@en .
@@ -27871,7 +27872,7 @@ A mail."""@en ;
                                                              owl:hasValue "T-3 L+2 M+1 I0 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'Power'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "PowerUnit"@en ;
                                            skos:prefLabel "PowerUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'Power'."@en .
@@ -28091,7 +28092,7 @@ Batch programming languages."""@en ;
 :EMMO_caa63d00_80b1_4408_ac1b_cd0d23b0ec50 rdf:type owl:Class ;
                                            rdfs:subClassOf <https://w3id.org.org/emmo#EMMO_5e38e44b_a0d1_4afc_a876_95095c0a589f> ;
                                            rdfs:comment "A tile that has next and is next of other tiles within the same tessellation."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/reductionistic#> ;
                                            rdfs:label "IntermidiateTile"@en ;
                                            skos:prefLabel "IntermidiateTile"@en ;
                                            :EMMO_157fdf31_6387_42be_8e72_10530519214a "https://w3id.org/emmo/raw/1.0.0/doc/figs/ThroughTile.png"^^xsd:anyURI ;
@@ -28306,7 +28307,7 @@ Chemical species is the macroscopic equivalent of molecular entity and refers to
 The role of dimensional unit and its subclasses is to express the physical dimensionality that is carried by the unit.
 
 Since the dimensionality of a physical quantity can be written as the product of powers of the physical dimensions of the base quantities in the selected system of quantities, the physical dimensionality of a measurement unit is uniquely determined by the exponents. For a dimensional unit, at least one of these exponents must be non-zero (making it disjoint from dimensionless units)."""@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "DimensionalUnit"@en ;
                                            skos:prefLabel "DimensionalUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A subclass of measurement unit focusing on the physical dimensionality that is carried by the unit."@en ;
@@ -28475,7 +28476,7 @@ Since the dimensionality of a physical quantity can be written as the product of
                                                              owl:hasValue "T-1 L0 M0 I0 Θ0 N+1 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'CatalyticActivity'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "CatalyticActivityUnit"@en ;
                                            skos:prefLabel "CatalyticActivityUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'CatalyticActivity'."@en .
@@ -28692,7 +28693,7 @@ Since the dimensionality of a physical quantity can be written as the product of
                                                              owl:hasValue "T+2 L0 M-1 I-1 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'SquareLengthPerVoltageTime'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/coherentsiunits#> ;
                                            rdfs:label "SquareLengthPerVoltageTimeUnit"@en ;
                                            skos:prefLabel "SquareLengthPerVoltageTimeUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'SquareLengthPerVoltageTime'."@en .
@@ -28922,7 +28923,7 @@ Since the dimensionality of a physical quantity can be written as the product of
 :EMMO_d43546df_7fd7_44d5_9d7c_0f2bf56cefe3 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_69ebb235_9c5e_443d_9a3b_7042b1005f1f ;
                                            rdfs:comment "A data representing an arbitrary precision decimal number."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/symbolic#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "DecimalData"@en ;
                                            rdfs:seeAlso "https://www.w3.org/TR/xmlschema11-2/#decimal"^^xsd:anyURI ;
                                            skos:prefLabel "DecimalData"@en ;
@@ -29097,7 +29098,7 @@ Since the dimensionality of a physical quantity can be written as the product of
                                                              owl:hasValue "T0 L0 M0 I+1 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'ElectricCurrent'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "ElectricCurrentUnit"@en ;
                                            skos:prefLabel "ElectricCurrentUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'ElectricCurrent'."@en .
@@ -29432,7 +29433,7 @@ Then I have two different physical quantities that are properties thanks to two 
 :EMMO_d8d2144e_5c8d_455d_a643_5caf4d8d9df8 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_057e7d57_aff0_49de_911a_8861d85cef40 ;
                                            rdfs:comment "A language object is a discrete data entity respecting specific language syntactic rules (a well-formed formula)."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "Language"@en ;
                                            skos:prefLabel "Language"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A language object is a discrete data entity respecting specific language syntactic rules (a well-formed formula)."@en .
@@ -29676,7 +29677,7 @@ Then I have two different physical quantities that are properties thanks to two 
 ###  https://w3id.org/emmo#EMMO_dbbbf0ed_a446_4f9e_877c_8c46e7842f43
 :EMMO_dbbbf0ed_a446_4f9e_877c_8c46e7842f43 rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_0650c031_42b6_4f0a_b62d_d88f071da6bf ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "QuantityByPhysical"@en ;
                                            skos:prefLabel "QuantityByPhysical"@en .
 
@@ -30211,7 +30212,7 @@ This categorisation has been introduced due to the large use of object/process c
                                                              owl:someValuesFrom :EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de
                                                            ] ;
                                            rdfs:comment "The superclass for all tessellations in which all tiles are connected through spatiotemporal relations hasNext or contacts."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/reductionistic#> ;
                                            rdfs:label "SpatioTemporalTessellation" ;
                                            skos:altLabel "WellFormedTessellation"@en ;
                                            skos:prefLabel "SpatioTemporalTessellation" ;
@@ -30599,7 +30600,7 @@ This categorisation has been introduced due to the large use of object/process c
                                                              owl:hasValue "T0 L0 M0 I0 Θ0 N+1 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'Amount'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "AmountUnit"@en ;
                                            skos:prefLabel "AmountUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'Amount'."@en .
@@ -30627,7 +30628,7 @@ An Hamiltonian."""@en ;
                                                              owl:hasValue "T0 L+5 M0 I0 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'SectionAreaIntegral'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/coherentsiunits#> ;
                                            rdfs:label "SectionAreaIntegralUnit"@en ;
                                            skos:prefLabel "SectionAreaIntegralUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'SectionAreaIntegral'."@en .
@@ -30769,7 +30770,7 @@ sin(x) = y"""@en ;
                                                              owl:hasValue "T0 L-1 M0 I+1 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'MagneticFieldStrength'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/noncoherentsiunits#> ;
                                            rdfs:label "MagneticFieldStrengthUnit"@en ;
                                            skos:prefLabel "MagneticFieldStrengthUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'MagneticFieldStrength'."@en .
@@ -30860,7 +30861,7 @@ sin(x) = y"""@en ;
                                            rdfs:comment """A causal system provides the most general concept of system, being a union of causal structures interacting together. In its most simple form, a causal system is an interlacement of causal paths (the most simple structure type).
 A causal system is always a spatial-like structure, and is represented as a multiple topologically orderable direct acyclic graph, with quanta as nodes and causality relations as edges."""@en ,
                                                         "The class of individuals representing a causal system."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/physicalistic#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/standardmodel#> ;
                                            rdfs:label "CausalSystem"@en ;
                                            skos:example "A electron binded by a nucleus."@en ;
                                            skos:prefLabel "CausalSystem"@en ;
@@ -31055,7 +31056,7 @@ A causal system is always a spatial-like structure, and is represented as a mult
                                                              owl:hasValue "T0 L-3 M0 I0 Θ0 N+1 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'AmountConcentration'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/noncoherentsiunits#> ;
                                            rdfs:label "AmountConcentrationUnit"@en ;
                                            skos:prefLabel "AmountConcentrationUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'AmountConcentration'."@en .
@@ -31414,7 +31415,7 @@ Following graph theory concepts, the quantums of an item are all connected toget
                                                         "The class of individuals standing for quantum or causally self-connected world entities."@en ,
                                                         "The disjoint union of Particle and CausalStructure classes."@en ,
                                                         "The concept of self-connectivity is applied using a 4D approach. Given that, the entity made of an electron and a proton that travel, interact, and then depart from each other is an item, since we don't focus only on the beginning or the end stage but to the overall 4D entity, being the interaction the connectivity bridge between the two particles." ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/holistic#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/persholistic#> ;
                                            rdfs:label "Item"@en ;
                                            skos:altLabel "CausalObject"@en ;
                                            skos:example "A person life, an interval of a person life. The lifetime of two components, from the production in separate manufacturing lines, their being connected components in a device, including their eparation and decommissioning."@en ;
@@ -31619,7 +31620,7 @@ We cannot say that H₂ molecule has direct part two H atoms, but has direct par
                                                              owl:hasValue "T-2 L0 M+1 I-1 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'MagneticFluxDensity'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "MagneticFluxDensityUnit"@en ;
                                            skos:prefLabel "MagneticFluxDensityUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'MagneticFluxDensity'."@en .
@@ -31633,7 +31634,7 @@ We cannot say that H₂ molecule has direct part two H atoms, but has direct par
                                                              owl:hasValue "T-1 L+1 M+1 I0 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'Momentum'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/coherentsiunits#> ;
                                            rdfs:label "MomentumUnit"@en ;
                                            skos:prefLabel "MomentumUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'Momentum'."@en .
@@ -31794,7 +31795,7 @@ We cannot say that H₂ molecule has direct part two H atoms, but has direct par
 :EMMO_edf72228_e040_4edc_8b46_78b2a47c72d7 rdf:type owl:Class ;
                                            rdfs:subClassOf <https://w3id.org.org/emmo#EMMO_5e38e44b_a0d1_4afc_a876_95095c0a589f> ;
                                            rdfs:comment "A direct part that only is the target, but not the source of temporal relations."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/reductionistic#> ;
                                            rdfs:label "EndTile"@en ;
                                            skos:prefLabel "EndTile"@en ;
                                            :EMMO_157fdf31_6387_42be_8e72_10530519214a "https://w3id.org/emmo/raw/1.0.0/doc/figs/EndTile.png"^^xsd:anyURI ;
@@ -31810,7 +31811,7 @@ We cannot say that H₂ molecule has direct part two H atoms, but has direct par
                                                            ] ;
                                            rdfs:comment "A causal structure that is tessellated in direct parts."@en ,
                                                         "A tessellation (or tiling) is the covering of a surface, often a plane, using one or more geometric shapes, called tiles, with no overlaps and no gaps."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/reductionistic#> ;
                                            rdfs:label "Tessellation"@en ;
                                            skos:altLabel "Tiling"@en ;
                                            skos:prefLabel "Tessellation"@en ;
@@ -32450,7 +32451,7 @@ A computation machine that calculate the average value of a dataset."""@en ;
                                                              owl:hasValue "T-2 L+2 M+1 I0 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'Energy'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "EnergyUnit"@en ;
                                            skos:prefLabel "EnergyUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'Energy'."@en .
@@ -32581,7 +32582,7 @@ While the string \"1 kg\" is a 'QuantityValue'."""@en ;
 :EMMO_f76f5a24_d703_4e8c_b368_f9a7777cb73a rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_c2f5ee66_579c_44c6_a2e9_fa2eaa9fa4da ;
                                            rdfs:comment "Unit for quantities of dimension one that are the fraction of two amount of substance."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/noncoherentsiunits#> ;
                                            rdfs:label "AmountFractionUnit"@en ;
                                            skos:example "Unit for amount fraction."@en ;
                                            skos:prefLabel "AmountFractionUnit"@en ;
@@ -32633,7 +32634,7 @@ Abramowitz and Stegun, 1968"""@en ,
                                                              owl:allValuesFrom :EMMO_504ad89e_dd4a_4fa6_aeb6_15c8ce0cde9b
                                                            ] ;
                                            rdfs:comment "A well formed tessellation with tiles that are all temporal."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/reductionistic#> ;
                                            rdfs:label "TemporalTiling"@en ;
                                            skos:prefLabel "TemporalTiling"@en ;
                                            :EMMO_157fdf31_6387_42be_8e72_10530519214a "https://w3id.org/emmo/raw/1.0.0/doc/figs/TemporalTile.png"^^xsd:anyURI ;
@@ -32729,7 +32730,7 @@ Abramowitz and Stegun, 1968"""@en ,
 :EMMO_f8bd64d5_5d3e_4ad4_a46e_c30714fecb7f rdf:type owl:Class ;
                                            rdfs:subClassOf :EMMO_d43546df_7fd7_44d5_9d7c_0f2bf56cefe3 ;
                                            rdfs:comment "A data representing an arbritrary sized integer number."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/symbolic#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
                                            rdfs:label "IntegerData"@en ;
                                            rdfs:seeAlso "https://www.w3.org/TR/xmlschema11-2/#integer"^^xsd:anyURI ;
                                            skos:prefLabel "IntegerData"@en ;
@@ -32886,7 +32887,7 @@ It defines the base unit second in the SI system."""@en .
 :EMMO_fa595892_070d_455e_9459_06c97179c080 rdf:type owl:Class ;
                                            rdfs:subClassOf <https://w3id.org.org/emmo#EMMO_5e38e44b_a0d1_4afc_a876_95095c0a589f> ;
                                            rdfs:comment "A direct part that only is the source, but not the target of temporal relations."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/reductionistic#> ;
                                            rdfs:label "BeginTile"@en ;
                                            skos:prefLabel "BeginTile"@en ;
                                            :EMMO_157fdf31_6387_42be_8e72_10530519214a "https://w3id.org/emmo/raw/1.0.0/doc/figs/BeginTile.png"^^xsd:anyURI ;
@@ -32917,7 +32918,7 @@ It defines the base unit second in the SI system."""@en .
                                                              owl:hasValue "T-2 L+1 M+1 I-2 Θ0 N0 J0"
                                                            ] ;
                                            rdfs:comment "The class of units with dimensionality 'Permeability'."@en ;
-                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
+                                           rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/noncoherentsiunits#> ;
                                            rdfs:label "PermeabilityUnit"@en ;
                                            skos:prefLabel "PermeabilityUnit"@en ;
                                            :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of units with dimensionality 'Permeability'."@en .
@@ -49462,30 +49463,15 @@ This axiom may be seen as Ockam's razor applied to causality."""@en
 
 
 [ :EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The rule for the subproperty chain:
- inverse (hasReferent) o inverse (hasInterpreter) ⇒ hasSign"""@en
-] .
-
-[ :EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The rule for the subproperty chain:
 inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"""@en
- ] .
+] .
 
 [ :EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The rule for the subproperty chain:
  inverse (hasInterpreter) o inverse (hasSign) ⇒ hasReferent"""@en
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
- ] .
-
-[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+[ :EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The rule for the subproperty chain:
+ inverse (hasReferent) o inverse (hasInterpreter) ⇒ hasSign"""@en
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -49494,7 +49480,7 @@ inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"""@en
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -49515,10 +49501,13 @@ inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"""@en
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
-[ owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
@@ -49533,7 +49522,19 @@ inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"""@en
 [ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
+ ] .
+
 [ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger
+ ] .
+
+[ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 [ owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger
