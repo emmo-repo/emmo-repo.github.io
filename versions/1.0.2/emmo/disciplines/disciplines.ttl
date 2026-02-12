@@ -1,0 +1,39 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/emmo/disciplines> a owl:Ontology ;
+    dcterms:abstract """EMMO disciplines is a container for the EMMO discipline level ontologies.
+
+Discipline level ontologies are reference ontologies that does not cover the whole world."""@en ;
+    dcterms:contributor ns1:FrancescaBleken,
+        ns1:GeorgSchmitz,
+        ns1:SimonClark ;
+    dcterms:creator <https://orcid.org/0000-0003-4065-9742>,
+        ns1:AdhamHashibon,
+        ns1:EmanueleGhedini,
+        ns1:GerhardGoldbeck,
+        ns1:JesperFriis ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "EMMO discipline-level ontology"@en ;
+    rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.2/disciplines/chemistry>,
+        <https://w3id.org/emmo/1.0.2/disciplines/computerscience>,
+        <https://w3id.org/emmo/1.0.2/disciplines/geometrical>,
+        <https://w3id.org/emmo/1.0.2/disciplines/isq>,
+        <https://w3id.org/emmo/1.0.2/disciplines/manufacturing>,
+        <https://w3id.org/emmo/1.0.2/disciplines/materials>,
+        <https://w3id.org/emmo/1.0.2/disciplines/math>,
+        <https://w3id.org/emmo/1.0.2/disciplines/metrology>,
+        <https://w3id.org/emmo/1.0.2/disciplines/models>,
+        <https://w3id.org/emmo/1.0.2/disciplines/perceptual>,
+        <https://w3id.org/emmo/1.0.2/disciplines/periodictable>,
+        <https://w3id.org/emmo/1.0.2/disciplines/sisystem>,
+        <https://w3id.org/emmo/1.0.2/reference> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.2/disciplines> ;
+    owl:versionInfo "1.0.2"^^xsd:string ;
+    ns1:EMMO_1246b120_abbe_4840_b0f8_3e4348b24a17 "emmo@emmc.eu"^^xsd:string .
+

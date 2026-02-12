@@ -1,0 +1,141 @@
+@prefix : <https://w3id.org/emmo/hume/disciplines/geometrical#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:Circle a owl:Class ;
+    rdfs:label "Circle"@en ;
+    rdfs:comment "Self-connected one-manyfold."@en ;
+    rdfs:subClassOf ns1:OneManifold ;
+    skos:prefLabel "Circle"@en ;
+    ns1:elucidation "Self-connected one-manyfold."@en .
+
+ns1:Curve a owl:Class ;
+    rdfs:label "Curve"@en ;
+    rdfs:comment "A one-manyfold with two unconnected end points."@en ;
+    rdfs:subClassOf ns1:OneManifold ;
+    skos:prefLabel "Curve"@en ;
+    ns1:elucidation "A one-manyfold with two unconnected end points."@en .
+
+ns1:Cylinder a owl:Class ;
+    rdfs:label "Cylinder"@en ;
+    rdfs:comment "A 2-manifold with one unconnected boundary and two \"faces\"."@en ;
+    rdfs:subClassOf ns1:TwoManifold ;
+    skos:prefLabel "Cylinder"@en ;
+    ns1:elucidation "A 2-manifold with one unconnected boundary and two \"faces\"."@en .
+
+ns1:EuclideanSpace a owl:Class ;
+    rdfs:label "EuclideanSpace"@en ;
+    rdfs:comment "A three-manifold with Euclidean metric."@en ;
+    rdfs:subClassOf ns1:ThreeManifold ;
+    skos:prefLabel "EuclideanSpace"@en ;
+    ns1:elucidation "A three-manifold with Euclidean metric."@en .
+
+ns1:MobiusStrip a owl:Class ;
+    rdfs:label "MobiusStrip"@en ;
+    rdfs:comment "A 2-manifold with one unconnected boundary and one \"face\"."@en ;
+    rdfs:subClassOf ns1:TwoManifold ;
+    skos:prefLabel "MobiusStrip"@en ;
+    ns1:elucidation "A 2-manifold with one unconnected boundary and one \"face\"."@en .
+
+ns1:Plane a owl:Class ;
+    rdfs:label "Plane"@en ;
+    rdfs:comment "A 2-manifold with two unconnected boundaries."@en ;
+    rdfs:subClassOf ns1:TwoManifold ;
+    skos:prefLabel "Plane"@en ;
+    ns1:elucidation "A 2-manifold with two unconnected boundaries."@en .
+
+ns1:Point a owl:Class ;
+    rdfs:label "Point"@en ;
+    rdfs:comment "A zero-manifold of only one point."@en ;
+    rdfs:subClassOf ns1:ZeroManifold ;
+    skos:prefLabel "Point"@en ;
+    ns1:elucidation "A zero-manifold of only one point."@en .
+
+ns1:Sphere a owl:Class ;
+    rdfs:label "Sphere"@en ;
+    rdfs:comment "A standard 2-manifold with no unconnected boundaries."@en ;
+    rdfs:subClassOf ns1:TwoManifold ;
+    skos:prefLabel "Sphere"@en ;
+    ns1:elucidation "A standard 2-manifold with no unconnected boundaries."@en .
+
+ns1:Torus a owl:Class ;
+    rdfs:label "Torus"@en ;
+    rdfs:comment "The simplest 2-manifold with genus 1."@en ;
+    rdfs:subClassOf ns1:TwoManifold ;
+    skos:prefLabel "Torus"@en ;
+    ns1:elucidation "The simplest 2-manifold with genus 1."@en .
+
+: a owl:Ontology ;
+    dcterms:abstract "The graphical module provides classes for the representation of geometrical concepts."@en ;
+    dcterms:creator <https://orcid.org/AdhamHashibon>,
+        <https://orcid.org/EmanueleGhedini>,
+        <https://orcid.org/GeorgSchmitz>,
+        <https://orcid.org/GerhardGoldbeck>,
+        <https://orcid.org/JesperFriis> ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "Geometrical"@en ;
+    rdfs:comment "The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.4/reference/data> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/disciplines/geometrical> ;
+    owl:versionInfo "1.0.4"^^xsd:string ;
+    ns1:contact "emmo@emmc.eu"^^xsd:string .
+
+ns1:ThreeManifold a owl:Class ;
+    rdfs:label "ThreeManifold"@en ;
+    rdfs:comment "A topological space with the property that each point has a neighborhood that is homeomorphic to an open subset of 3-dimensional Euclidean space."@en ;
+    rdfs:subClassOf ns1:Geometrical ;
+    skos:altLabel "3-manifold"@en ;
+    skos:prefLabel "ThreeManifold"@en ;
+    ns1:elucidation "A topological space with the property that each point has a neighborhood that is homeomorphic to an open subset of 3-dimensional Euclidean space."@en .
+
+ns1:ZeroManifold a owl:Class ;
+    rdfs:label "ZeroManifold"@en ;
+    rdfs:comment "A topological space with the property that each point has a neighborhood that is homeomorphic to an open subset of 0-dimensional Euclidean space."@en ;
+    rdfs:subClassOf ns1:Geometrical ;
+    skos:altLabel "0-manifold"@en ;
+    skos:prefLabel "ZeroManifold"@en ;
+    ns1:elucidation "A topological space with the property that each point has a neighborhood that is homeomorphic to an open subset of 0-dimensional Euclidean space."@en .
+
+ns1:OneManifold a owl:Class ;
+    rdfs:label "OneManifold"@en ;
+    rdfs:comment "A topological space with the property that each point has a neighborhood that is homeomorphic to an open subset of 1-dimensional Euclidean space."@en ;
+    rdfs:subClassOf ns1:Geometrical ;
+    skos:altLabel "1-manifold"@en ;
+    skos:prefLabel "OneManifold"@en ;
+    ns1:elucidation "A topological space with the property that each point has a neighborhood that is homeomorphic to an open subset of 1-dimensional Euclidean space."@en ;
+    ns1:note "One-dimensional manifolds include lines and circles, but not self-crossing curves. Two-dimensional manifolds are also called surfaces. Examples include the plane, the sphere, and the torus, and also the Klein bottle and real projective plane."@en .
+
+ns1:Geometrical a owl:Class ;
+    rdfs:label "Geometrical"@en ;
+    rdfs:comment "A 'graphical' aimed to represent a geometrical concept."@en ;
+    rdfs:subClassOf ns1:Data ;
+    skos:example """A geometrical object can be expressed in many different forms.
+
+For example, a line can be expressed by:
+a) an equation like y=mx+q, which is both an 'equation' and a 'geometrical'
+b) a line drawn with a pencil on a paper, which is simply a 'graphical' object
+c) a set of axioms, when the properties of a line are inferred by the interpreter reading them, that are both 'graphical' and also 'formula'
+
+The case a) is a geometrical and mathematical, b) is geometrical and pictorial, while c) is geometrical and a composition of idiomatic strings."""@en ;
+    skos:prefLabel "Geometrical"@en ;
+    ns1:elucidation "A 'graphical' aimed to represent a geometrical concept."@en .
+
+ns1:TwoManifold a owl:Class ;
+    rdfs:label "TwoManifold"@en ;
+    rdfs:comment "A topological space with the property that each point has a neighborhood that is homeomorphic to an open subset of 2-dimensional Euclidean space."@en ;
+    rdfs:subClassOf ns1:Geometrical ;
+    skos:altLabel "2-manifold"@en ;
+    skos:prefLabel "TwoManifold"@en ;
+    ns1:elucidation "A topological space with the property that each point has a neighborhood that is homeomorphic to an open subset of 2-dimensional Euclidean space."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty ns1:note ;
+    owl:annotatedSource ns1:OneManifold ;
+    owl:annotatedTarget "One-dimensional manifolds include lines and circles, but not self-crossing curves. Two-dimensional manifolds are also called surfaces. Examples include the plane, the sphere, and the torus, and also the Klein bottle and real projective plane."@en ;
+    ns1:wikipediaReference "https://en.wikipedia.org/wiki/Manifold"^^xsd:anyURI .
+

@@ -1,0 +1,3478 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix emmo: <https://w3id.org/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+emmo:AttoCoulomb a owl:Class ;
+    rdfs:label "AttoCoulomb"^^xsd:string ;
+    rdfs:comment """An AttoColomb is 10⁻¹⁸ C.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-18 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Coulomb ],
+        emmo:EMMO_42955b2d_b465_4666_86cc_ea3c2d685753,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_ab79e92b_5377_454d_be06_d61b50db295a,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:altLabel "AttoCoulomb"@en ;
+    skos:prefLabel "AttoCoulomb"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/AttoC"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "aC"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "aC"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """An AttoColomb is 10⁻¹⁸ C.
+
+-- QUDT"""@en .
+
+emmo:AttoFarad a owl:Class ;
+    rdfs:label "AttoFarad"^^xsd:string ;
+    rdfs:comment """0,000 000 000 000 000 001-fold of the SI derived unit farad
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Farad ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-18 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_42955b2d_b465_4666_86cc_ea3c2d685753,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_b14d9be5_f81e_469b_abca_379c2e83feab,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "AttoFarad"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/AttoFARAD"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "aF"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "aF"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0,000 000 000 000 000 001-fold of the SI derived unit farad
+
+-- QUDT"""@en .
+
+emmo:AttoJoule a owl:Class ;
+    rdfs:label "AttoJoule"^^xsd:string ;
+    rdfs:comment """0,000 000 000 000 000 001-fold of the derived SI unit joule
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Joule ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-18 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_42955b2d_b465_4666_86cc_ea3c2d685753,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_f6070071_d054_4b17_9d2d_f446f7147d0f ;
+    skos:prefLabel "AttoJoule"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/AttoJ"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "aJ"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "aJ"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0,000 000 000 000 000 001-fold of the derived SI unit joule
+
+-- QUDT"""@en .
+
+emmo:CentiCoulomb a owl:Class ;
+    rdfs:label "CentiCoulomb"^^xsd:string ;
+    rdfs:comment """A CentiCoulomb is 10⁻² C.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Coulomb ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-02 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_ab79e92b_5377_454d_be06_d61b50db295a,
+        emmo:EMMO_b55cd09a_e54d_4eb1_81dd_03c29d1b878e,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:altLabel "CentiCoulomb"@en ;
+    skos:prefLabel "CentiCoulomb"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/CentiC"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "cC"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "cC"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """A CentiCoulomb is 10⁻² C.
+
+-- QUDT"""@en .
+
+emmo:CentiGram a owl:Class ;
+    rdfs:label "CentiGram"^^xsd:string ;
+    rdfs:comment """0,000 01-fold of the SI base unit kilogram
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Gram ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-05 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_77e9dc31_5b19_463e_b000_44c6e79f98aa,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_b55cd09a_e54d_4eb1_81dd_03c29d1b878e,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "CentiGram"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/CentiGM"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "cg"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "cg"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0,000 01-fold of the SI base unit kilogram
+
+-- QUDT"""@en .
+
+emmo:CentiMetre a owl:Class ;
+    rdfs:label "CentiMetre"^^xsd:string ;
+    rdfs:comment """A centimetre is a unit of length in the metric system, equal to one hundredth of a metre, which is the SI base unit of length. Centi is the SI prefix for a factor of 10.  The centimetre is the base unit of length in the now deprecated centimetre-gram-second (CGS) system of units.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-02 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Metre ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_b3600e73_3e05_479d_9714_c041c3acf5cc,
+        emmo:EMMO_b55cd09a_e54d_4eb1_81dd_03c29d1b878e,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "CentiMetre"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/CentiM"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "cm"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "cm"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """A centimetre is a unit of length in the metric system, equal to one hundredth of a metre, which is the SI base unit of length. Centi is the SI prefix for a factor of 10.  The centimetre is the base unit of length in the now deprecated centimetre-gram-second (CGS) system of units.
+
+-- QUDT"""@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Centimetre?oldid=494931891"^^xsd:string .
+
+emmo:CentiMole a owl:Class ;
+    rdfs:label "CentiMole"@en ;
+    rdfs:comment "A centimole 0.01 N."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Mole ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-02 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_b55cd09a_e54d_4eb1_81dd_03c29d1b878e,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_e501069c_34d3_4dc7_ac87_c90c7342192b ;
+    skos:altLabel "centimole"@en ;
+    skos:prefLabel "CentiMole"@en ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/CentiMOL"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "cmol"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A centimole 0.01 N."@en .
+
+emmo:CentiNewton a owl:Class ;
+    rdfs:label "CentiNewton"@en ;
+    rdfs:comment "A CentiNewton 0.01 N."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Newton ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-02 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_53e825d9_1a09_483c_baa7_37501ebfbe1c,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_b55cd09a_e54d_4eb1_81dd_03c29d1b878e,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "CentiNewton"@en ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/CentiN"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "cN"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A CentiNewton 0.01 N."@en .
+
+emmo:DecaCoulomb a owl:Class ;
+    rdfs:label "DecaCoulomb"@en ;
+    rdfs:comment """A DecaCoulomb is 10 C.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Coulomb ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+01 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_1d8b370b_c672_4d0c_964e_eaafcbf2f51f,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_ab79e92b_5377_454d_be06_d61b50db295a,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "DecaCoulomb"@en ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/DecaC"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "daC"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "daC"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """A DecaCoulomb is 10 C.
+
+-- QUDT"""@en .
+
+emmo:DecaGram a owl:Class ;
+    rdfs:label "DecaGram"^^xsd:string ;
+    rdfs:comment """0,01-fold of the SI base unit kilogram
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Gram ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-02 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_1d8b370b_c672_4d0c_964e_eaafcbf2f51f,
+        emmo:EMMO_77e9dc31_5b19_463e_b000_44c6e79f98aa,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "DecaGram"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/DecaGM"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "dag"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "dag"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0,01-fold of the SI base unit kilogram
+
+-- QUDT"""@en .
+
+emmo:DecaMetre a owl:Class ;
+    rdfs:label "DecaMetre"^^xsd:string ;
+    rdfs:comment """10-fold of the SI base unit metre
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+01 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Metre ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_1d8b370b_c672_4d0c_964e_eaafcbf2f51f,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_b3600e73_3e05_479d_9714_c041c3acf5cc,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "DecaMetre"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/DecaM"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "dam"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "dam"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """10-fold of the SI base unit metre
+
+-- QUDT"""@en .
+
+emmo:DecaPascal a owl:Class ;
+    rdfs:label "DecaPascal"^^xsd:string ;
+    rdfs:comment """10-fold of the derived SI unit pascal
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Pascal ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+01 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_1d8b370b_c672_4d0c_964e_eaafcbf2f51f,
+        emmo:EMMO_53bd0c90_41c3_46e2_8779_cd2a80f7e18b,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "DecaPascal"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/DecaPA"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "daPa"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "daPa"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """10-fold of the derived SI unit pascal
+
+-- QUDT"""@en .
+
+emmo:DeciCoulomb a owl:Class ;
+    rdfs:label "DeciCoulomb"^^xsd:string ;
+    rdfs:comment """A DeciCoulomb is 10⁻¹ C.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-01 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Coulomb ],
+        emmo:EMMO_1181c938_c8f0_4ad6_bc7a_2bfdc0903d29,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_ab79e92b_5377_454d_be06_d61b50db295a,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:altLabel "DeciCoulomb"@en ;
+    skos:prefLabel "DeciCoulomb"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/DeciC"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "dC"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "dC"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """A DeciCoulomb is 10⁻¹ C.
+
+-- QUDT"""@en .
+
+emmo:DeciGram a owl:Class ;
+    rdfs:label "DeciGram"^^xsd:string ;
+    rdfs:comment """0.0001-fold of the SI base unit kilogram
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-04 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Gram ],
+        emmo:EMMO_1181c938_c8f0_4ad6_bc7a_2bfdc0903d29,
+        emmo:EMMO_77e9dc31_5b19_463e_b000_44c6e79f98aa,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "DeciGram"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/DeciGM"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "dg"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "dg"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.0001-fold of the SI base unit kilogram
+
+-- QUDT"""@en .
+
+emmo:DeciMetre a owl:Class ;
+    rdfs:label "DeciMetre"^^xsd:string ;
+    rdfs:comment """A decimeter is a tenth of a meter.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Metre ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-01 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_1181c938_c8f0_4ad6_bc7a_2bfdc0903d29,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_b3600e73_3e05_479d_9714_c041c3acf5cc,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "DeciMetre"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/DeciM"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "dm"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "dm"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """A decimeter is a tenth of a meter.
+
+-- QUDT"""@en .
+
+emmo:DeciNewton a owl:Class ;
+    rdfs:label "DeciNewton"^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-01 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Newton ],
+        emmo:EMMO_1181c938_c8f0_4ad6_bc7a_2bfdc0903d29,
+        emmo:EMMO_53e825d9_1a09_483c_baa7_37501ebfbe1c,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:altLabel "DeciNewton"@en ;
+    skos:prefLabel "DeciNewton"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/DeciN"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "dN"^^xsd:string .
+
+emmo:DeciSiemens a owl:Class ;
+    rdfs:label "DeciSiemens"@en ;
+    rdfs:comment "A decisiemens is 0.1 S."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Siemens ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-01 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_1181c938_c8f0_4ad6_bc7a_2bfdc0903d29,
+        emmo:EMMO_321af35f_f0cc_4a5c_b4fe_8c2c0303fb0c,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:altLabel "decisiemens"@en ;
+    skos:prefLabel "DeciSiemens"@en ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/DeciS"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "dS"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A decisiemens is 0.1 S."@en .
+
+emmo:EMMO_6795a4b8_ffd0_4588_a581_a9413fe49cac rdfs:label "SIAcceptedUnit"@en ;
+    rdfs:comment "Non-SI units mentioned in the SI."@en .
+
+emmo:EMMO_e8b5f7de_4fd9_41d7_b988_87b512fe0180 rdfs:label "SIAccepted"@en ;
+    rdfs:comment "Non-SI unit that has been accepted by SI to be used together with the SI system."@en .
+
+emmo:ExaCoulomb a owl:Class ;
+    rdfs:label "ExaCoulomb"^^xsd:string ;
+    rdfs:comment """An ExaCoulomb is 10¹⁸ C.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Coulomb ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+18 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_5cf9f86c_86f5_40c4_846d_60371f670e0a,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_ab79e92b_5377_454d_be06_d61b50db295a,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:altLabel "ExaCoulomb"@en ;
+    skos:prefLabel "ExaCoulomb"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/ExaC"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "EC"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "EC"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """An ExaCoulomb is 10¹⁸ C.
+
+-- QUDT"""@en .
+
+emmo:ExaJoule a owl:Class ;
+    rdfs:label "ExaJoule"^^xsd:string ;
+    rdfs:comment """1 000 000 000 000 000 000-fold of the derived SI unit joule
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+18 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Joule ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_5cf9f86c_86f5_40c4_846d_60371f670e0a,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_f6070071_d054_4b17_9d2d_f446f7147d0f ;
+    skos:prefLabel "ExaJoule"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/ExaJ"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "EJ"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "EJ"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """1 000 000 000 000 000 000-fold of the derived SI unit joule
+
+-- QUDT"""@en .
+
+emmo:FemtoCoulomb a owl:Class ;
+    rdfs:label "FemtoCoulomb"^^xsd:string ;
+    rdfs:comment """A FemtoCoulomb is 10⁻¹⁵ C.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-15 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Coulomb ],
+        emmo:EMMO_23bfe79a_cade_48f1_9a8c_fd96e6bac8ba,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_ab79e92b_5377_454d_be06_d61b50db295a,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:altLabel "FemtoCoulomb"@en ;
+    skos:prefLabel "FemtoCoulomb"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/FemtoC"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "fC"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "fC"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """A FemtoCoulomb is 10⁻¹⁵ C.
+
+-- QUDT"""@en .
+
+emmo:FemtoGram a owl:Class ;
+    rdfs:label "FemtoGram"^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-18 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Gram ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_23bfe79a_cade_48f1_9a8c_fd96e6bac8ba,
+        emmo:EMMO_77e9dc31_5b19_463e_b000_44c6e79f98aa,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:altLabel "FemtoGram"@en ;
+    skos:prefLabel "FemtoGram"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/FemtoGM"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "fg"^^xsd:string .
+
+emmo:FemtoJoule a owl:Class ;
+    rdfs:label "FemtoJoule"^^xsd:string ;
+    rdfs:comment """0,000 000 000 000 001-fold of the derived SI unit joule
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Joule ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-15 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_23bfe79a_cade_48f1_9a8c_fd96e6bac8ba,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_f6070071_d054_4b17_9d2d_f446f7147d0f ;
+    skos:prefLabel "FemtoJoule"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/FemtoJ"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "fJ"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "fJ"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0,000 000 000 000 001-fold of the derived SI unit joule
+
+-- QUDT"""@en .
+
+emmo:FemtoMetre a owl:Class ;
+    rdfs:label "FemtoMetre"^^xsd:string ;
+    rdfs:comment """The `femtometre` is an SI unit of length equal to 10⁻¹⁵ meter. This distance can also be called `fermi` and was so named in honour of Enrico Fermi. It is often encountered in nuclear physics as a characteristic of this scale. The symbol for the fermi is also fm.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Metre ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-15 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_23bfe79a_cade_48f1_9a8c_fd96e6bac8ba,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_b3600e73_3e05_479d_9714_c041c3acf5cc,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "FemtoMetre"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/FemtoM"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "fm"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "fm"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """The `femtometre` is an SI unit of length equal to 10⁻¹⁵ meter. This distance can also be called `fermi` and was so named in honour of Enrico Fermi. It is often encountered in nuclear physics as a characteristic of this scale. The symbol for the fermi is also fm.
+
+-- QUDT"""@en .
+
+emmo:FemtoMole a owl:Class ;
+    rdfs:label "FemtoMole"^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-15 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Mole ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_23bfe79a_cade_48f1_9a8c_fd96e6bac8ba,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_e501069c_34d3_4dc7_ac87_c90c7342192b ;
+    skos:altLabel "FemtoMole"@en ;
+    skos:prefLabel "FemtoMole"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/FemtoMOL"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "fmol"^^xsd:string .
+
+emmo:GigaBecquerel a owl:Class ;
+    rdfs:label "GigaBecquerel"^^xsd:string ;
+    rdfs:comment """1 000 000 000-fold of the derived SI unit becquerel
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Becquerel ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+09 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_515b5579_d526_4842_9e6f_ecc34db6f368,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_a8eb4bbb_1bd3_4ad4_b114_2789bcbd2134,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "GigaBecquerel"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/GigaBQ"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "GBq"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "GBq"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """1 000 000 000-fold of the derived SI unit becquerel
+
+-- QUDT"""@en .
+
+emmo:GigaCoulomb a owl:Class ;
+    rdfs:label "GigaCoulomb"^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+09 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Coulomb ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_a8eb4bbb_1bd3_4ad4_b114_2789bcbd2134,
+        emmo:EMMO_ab79e92b_5377_454d_be06_d61b50db295a,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:altLabel "GigaCoulomb"@en ;
+    skos:prefLabel "GigaCoulomb"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/GigaC"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "GC"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "GC"^^xsd:string .
+
+emmo:GigaHertz a owl:Class ;
+    rdfs:label "GigaHertz"^^xsd:string ;
+    rdfs:comment """The hertz (symbol Hz) is the SI unit of frequency defined as the number of cycles per second of a periodic phenomenon. A GigaHertz is 10⁹ hz.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Hertz ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+09 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_515b5579_d526_4842_9e6f_ecc34db6f368,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_a8eb4bbb_1bd3_4ad4_b114_2789bcbd2134,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "GigaHertz"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/GigaHZ"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "GHz"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "GHz"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """The hertz (symbol Hz) is the SI unit of frequency defined as the number of cycles per second of a periodic phenomenon. A GigaHertz is 10⁹ hz.
+
+-- QUDT"""@en .
+
+emmo:GigaJoule a owl:Class ;
+    rdfs:label "GigaJoule"^^xsd:string ;
+    rdfs:comment """1 000 000 000-fold of the SI derived unit joule
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Joule ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+09 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_a8eb4bbb_1bd3_4ad4_b114_2789bcbd2134,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_f6070071_d054_4b17_9d2d_f446f7147d0f ;
+    skos:prefLabel "GigaJoule"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/GigaJ"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "GJ"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "GJ"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """1 000 000 000-fold of the SI derived unit joule
+
+-- QUDT"""@en .
+
+emmo:GigaOhm a owl:Class ;
+    rdfs:label "GigaOhm"^^xsd:string ;
+    rdfs:comment """1 000 000 000-fold of the SI derived unit ohm
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+09 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Ohm ],
+        emmo:EMMO_7610efb8_c7c6_4684_abc1_774783c62472,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_a8eb4bbb_1bd3_4ad4_b114_2789bcbd2134,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "GigaOhm"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/GigaOHM"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "GOhm"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "GΩ"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """1 000 000 000-fold of the SI derived unit ohm
+
+-- QUDT"""@en .
+
+emmo:GigaPascal a owl:Class ;
+    rdfs:label "GigaPascal"^^xsd:string ;
+    rdfs:comment """1 000 000 000-fold of the SI derived unit pascal
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Pascal ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+09 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_53bd0c90_41c3_46e2_8779_cd2a80f7e18b,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_a8eb4bbb_1bd3_4ad4_b114_2789bcbd2134,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "GigaPascal"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/GigaPA"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "GPa"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "GPa"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """1 000 000 000-fold of the SI derived unit pascal
+
+-- QUDT"""@en .
+
+emmo:GigaWatt a owl:Class ;
+    rdfs:label "GigaWatt"^^xsd:string ;
+    rdfs:comment """1 000 000 000-fold of the SI derived unit watt
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Watt ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+09 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_a8eb4bbb_1bd3_4ad4_b114_2789bcbd2134,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_c8d084ad_f88e_4596_8e4d_982c6655ce6f ;
+    skos:prefLabel "GigaWatt"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/GigaW"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "GW"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "GW"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """1 000 000 000-fold of the SI derived unit watt
+
+-- QUDT"""@en .
+
+emmo:HectoCoulomb a owl:Class ;
+    rdfs:label "HectoCoulomb"^^xsd:string ;
+    rdfs:comment """"HectoCoulomb" is a unit for  'Electric Charge' expressed as hC.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Coulomb ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+02 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_21aaefc1_3f86_4208_b7db_a755f31f0f8c,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_ab79e92b_5377_454d_be06_d61b50db295a,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:altLabel "HectoCoulomb"@en ;
+    skos:prefLabel "HectoCoulomb"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/HectoC"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "hC"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "hC"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """"HectoCoulomb" is a unit for  'Electric Charge' expressed as hC.
+
+-- QUDT"""@en .
+
+emmo:HectoGram a owl:Class ;
+    rdfs:label "HectoGram"^^xsd:string ;
+    rdfs:comment """0.1-fold of the SI base unit kilogram
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-01 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Gram ],
+        emmo:EMMO_21aaefc1_3f86_4208_b7db_a755f31f0f8c,
+        emmo:EMMO_77e9dc31_5b19_463e_b000_44c6e79f98aa,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "HectoGram"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/HectoGM"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "hg"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "hg"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.1-fold of the SI base unit kilogram
+
+-- QUDT"""@en .
+
+emmo:HectoMetre a owl:Class ;
+    rdfs:label "HectoMetre"^^xsd:string ;
+    rdfs:comment """100-fold of the SI base unit metre
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+02 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Metre ],
+        emmo:EMMO_21aaefc1_3f86_4208_b7db_a755f31f0f8c,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_b3600e73_3e05_479d_9714_c041c3acf5cc,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "HectoMetre"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/HectoM"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "hm"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "hm"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """100-fold of the SI base unit metre
+
+-- QUDT"""@en .
+
+emmo:HectoPascal a owl:Class ;
+    rdfs:label "HectoPascal"^^xsd:string ;
+    rdfs:comment """Hectopascal is a unit of pressure. 1 Pa is approximately the pressure exerted by a 10-g mass resting on a 1-cm2 area. 1013 hPa = 1 atm. There are 100 pascals in 1 hectopascal.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Pascal ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+02 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_21aaefc1_3f86_4208_b7db_a755f31f0f8c,
+        emmo:EMMO_53bd0c90_41c3_46e2_8779_cd2a80f7e18b,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "HectoPascal"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/HectoPA"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "hPa"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "hPa"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """Hectopascal is a unit of pressure. 1 Pa is approximately the pressure exerted by a 10-g mass resting on a 1-cm2 area. 1013 hPa = 1 atm. There are 100 pascals in 1 hectopascal.
+
+-- QUDT"""@en .
+
+emmo:KiloAmpere a owl:Class ;
+    rdfs:label "KiloAmpere"@en ;
+    rdfs:comment "A kiloampere is 1000 A"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Ampere ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_74931b1b_c133_4e59_9a75_1bf0e1626201,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_d5f3e0e5_fc7d_4e64_86ad_555e74aaff84 ;
+    skos:altLabel "kiloampere"@en ;
+    skos:prefLabel "KiloAmpere"@en ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/KiloA"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "kA"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "kA"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A kiloampere is 1000 A"@en .
+
+emmo:KiloBecquerel a owl:Class ;
+    rdfs:label "KiloBecquerel"^^xsd:string ;
+    rdfs:comment """1 000-fold of the SI derived unit becquerel
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Becquerel ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_515b5579_d526_4842_9e6f_ecc34db6f368,
+        emmo:EMMO_74931b1b_c133_4e59_9a75_1bf0e1626201,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "KiloBecquerel"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/KiloBQ"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "kBq"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "kBq"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """1 000-fold of the SI derived unit becquerel
+
+-- QUDT"""@en .
+
+emmo:KiloCoulomb a owl:Class ;
+    rdfs:label "KiloCoulomb"^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Coulomb ],
+        emmo:EMMO_74931b1b_c133_4e59_9a75_1bf0e1626201,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_ab79e92b_5377_454d_be06_d61b50db295a,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:altLabel "KiloCoulomb"@en ;
+    skos:prefLabel "KiloCoulomb"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/KiloC"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "kC"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "kC"^^xsd:string .
+
+emmo:KiloHertz a owl:Class ;
+    rdfs:label "KiloHertz"^^xsd:string ;
+    rdfs:comment """"Kilohertz" is a C.G.S System unit for  'Frequency' expressed as KHz.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Hertz ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_515b5579_d526_4842_9e6f_ecc34db6f368,
+        emmo:EMMO_74931b1b_c133_4e59_9a75_1bf0e1626201,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "KiloHertz"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/KiloHZ"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "kHz"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "kHz"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """"Kilohertz" is a C.G.S System unit for  'Frequency' expressed as KHz.
+
+-- QUDT"""@en .
+
+emmo:KiloJoule a owl:Class ;
+    rdfs:label "KiloJoule"^^xsd:string ;
+    rdfs:comment """1 000-fold of the SI derived unit joule
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Joule ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_74931b1b_c133_4e59_9a75_1bf0e1626201,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_f6070071_d054_4b17_9d2d_f446f7147d0f ;
+    skos:prefLabel "KiloJoule"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/KiloJ"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "kJ"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "kJ"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """1 000-fold of the SI derived unit joule
+
+-- QUDT"""@en .
+
+emmo:KiloMetre a owl:Class ;
+    rdfs:label "KiloMetre"^^xsd:string ;
+    rdfs:comment """A common metric unit of length or distance. One kilometer equals exactly 1000 meters, about 0.621 371 19 mile, 1093.6133 yards, or 3280.8399 feet. Oddly, higher multiples of the meter are rarely used; even the distances to the farthest galaxies are usually measured in kilometers.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Metre ],
+        emmo:EMMO_74931b1b_c133_4e59_9a75_1bf0e1626201,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_b3600e73_3e05_479d_9714_c041c3acf5cc,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "KiloMetre"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/KiloM"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "km"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "km"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """A common metric unit of length or distance. One kilometer equals exactly 1000 meters, about 0.621 371 19 mile, 1093.6133 yards, or 3280.8399 feet. Oddly, higher multiples of the meter are rarely used; even the distances to the farthest galaxies are usually measured in kilometers.
+
+-- QUDT"""@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Kilometre?oldid=494821851"^^xsd:string .
+
+emmo:KiloMole a owl:Class ;
+    rdfs:label "KiloMole"^^xsd:string ;
+    rdfs:comment """1 000-fold of the SI base unit mol
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Mole ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_74931b1b_c133_4e59_9a75_1bf0e1626201,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_e501069c_34d3_4dc7_ac87_c90c7342192b ;
+    skos:prefLabel "KiloMole"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/KiloMOL"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "kmol"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "kmol"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """1 000-fold of the SI base unit mol
+
+-- QUDT"""@en .
+
+emmo:KiloNewton a owl:Class ;
+    rdfs:label "KiloNewton"^^xsd:string ;
+    rdfs:comment """1 000-fold of the SI derived unit newton
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Newton ],
+        emmo:EMMO_53e825d9_1a09_483c_baa7_37501ebfbe1c,
+        emmo:EMMO_74931b1b_c133_4e59_9a75_1bf0e1626201,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "KiloNewton"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/KiloN"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "kN"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "kN"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """1 000-fold of the SI derived unit newton
+
+-- QUDT"""@en .
+
+emmo:KiloOhm a owl:Class ;
+    rdfs:label "KiloOhm"^^xsd:string ;
+    rdfs:comment """1 000-fold of the SI derived unit ohm
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Ohm ],
+        emmo:EMMO_74931b1b_c133_4e59_9a75_1bf0e1626201,
+        emmo:EMMO_7610efb8_c7c6_4684_abc1_774783c62472,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "KiloOhm"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/KiloOHM"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "kOhm"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "kΩ"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """1 000-fold of the SI derived unit ohm
+
+-- QUDT"""@en .
+
+emmo:KiloPascal a owl:Class ;
+    rdfs:label "KiloPascal"^^xsd:string ;
+    rdfs:comment """Kilopascal is a unit of pressure. 1 kPa is approximately the pressure exerted by a 10-g mass resting on a 1-cm2 area. 101.3 kPa = 1 atm. There are 1,000 pascals in 1 kilopascal.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Pascal ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_53bd0c90_41c3_46e2_8779_cd2a80f7e18b,
+        emmo:EMMO_74931b1b_c133_4e59_9a75_1bf0e1626201,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "KiloPascal"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/KiloPA"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "kPa"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "kPa"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """Kilopascal is a unit of pressure. 1 kPa is approximately the pressure exerted by a 10-g mass resting on a 1-cm2 area. 101.3 kPa = 1 atm. There are 1,000 pascals in 1 kilopascal.
+
+-- QUDT"""@en .
+
+emmo:KiloVolt a owl:Class ;
+    rdfs:label "KiloVolt"^^xsd:string ;
+    rdfs:comment """1 000-fold of the SI derived unit volt
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Volt ],
+        emmo:EMMO_2e7e5796_4a80_4d73_bb84_f31138446c0c,
+        emmo:EMMO_74931b1b_c133_4e59_9a75_1bf0e1626201,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "KiloVolt"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/KiloV"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "kV"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "kV"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """1 000-fold of the SI derived unit volt
+
+-- QUDT"""@en .
+
+emmo:KiloWatt a owl:Class ;
+    rdfs:label "KiloWatt"^^xsd:string ;
+    rdfs:comment """The kilowatt is a derived unit of power in the International System of Units (SI),  The unit, defined as 1,000 joule per second, measures the rate of energy conversion or transfer.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Watt ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_74931b1b_c133_4e59_9a75_1bf0e1626201,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_c8d084ad_f88e_4596_8e4d_982c6655ce6f ;
+    skos:prefLabel "KiloWatt"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/KiloW"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "kW"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "kW"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """The kilowatt is a derived unit of power in the International System of Units (SI),  The unit, defined as 1,000 joule per second, measures the rate of energy conversion or transfer.
+
+-- QUDT"""@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Watt?oldid=494906356"^^xsd:string .
+
+emmo:KiloWeber a owl:Class ;
+    rdfs:label "KiloWeber"^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Weber ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_4c49ab58_a6f6_409e_b849_f873ae1dcbee,
+        emmo:EMMO_74931b1b_c133_4e59_9a75_1bf0e1626201,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:altLabel "KiloWeber"@en ;
+    skos:prefLabel "KiloWeber"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/KiloWB"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "kWb"^^xsd:string .
+
+emmo:MegaAmpere a owl:Class ;
+    rdfs:label "MegaAmpere"^^xsd:string ;
+    rdfs:comment """1 000 000-fold of the SI base unit ampere
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Ampere ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+06 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_5eaecadc_4f0d_4a3a_afc7_1fc0b83cc928,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_d5f3e0e5_fc7d_4e64_86ad_555e74aaff84 ;
+    skos:prefLabel "MegaAmpere"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MegaA"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "MA"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "MA"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """1 000 000-fold of the SI base unit ampere
+
+-- QUDT"""@en .
+
+emmo:MegaBecquerel a owl:Class ;
+    rdfs:label "MegaBecquerel"^^xsd:string ;
+    rdfs:comment """1 000 000-fold of the derived unit becquerel
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Becquerel ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+06 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_515b5579_d526_4842_9e6f_ecc34db6f368,
+        emmo:EMMO_5eaecadc_4f0d_4a3a_afc7_1fc0b83cc928,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "MegaBecquerel"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MegaBQ"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "MBq"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "MBq"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """1 000 000-fold of the derived unit becquerel
+
+-- QUDT"""@en .
+
+emmo:MegaCoulomb a owl:Class ;
+    rdfs:label "MegaCoulomb"^^xsd:string ;
+    rdfs:comment """A MegaCoulomb is 10⁶ C.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+06 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Coulomb ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_5eaecadc_4f0d_4a3a_afc7_1fc0b83cc928,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_ab79e92b_5377_454d_be06_d61b50db295a,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:altLabel "MegaCoulomb"@en ;
+    skos:prefLabel "MegaCoulomb"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MegaC"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "MC"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "MC"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """A MegaCoulomb is 10⁶ C.
+
+-- QUDT"""@en .
+
+emmo:MegaGram a owl:Class ;
+    rdfs:label "MegaGram"^^xsd:string ;
+    rdfs:comment """1 000-fold of the SI base unit kilogram
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Gram ],
+        emmo:EMMO_5eaecadc_4f0d_4a3a_afc7_1fc0b83cc928,
+        emmo:EMMO_77e9dc31_5b19_463e_b000_44c6e79f98aa,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "MegaGram"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MegaGM"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "Mg"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "Mg"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """1 000-fold of the SI base unit kilogram
+
+-- QUDT"""@en .
+
+emmo:MegaHertz a owl:Class ;
+    rdfs:label "MegaHertz"^^xsd:string ;
+    rdfs:comment """"Megahertz" is a C.G.S System unit for  'Frequency' expressed as MHz.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Hertz ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+06 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_515b5579_d526_4842_9e6f_ecc34db6f368,
+        emmo:EMMO_5eaecadc_4f0d_4a3a_afc7_1fc0b83cc928,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "MegaHertz"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MegaHZ"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "MHz"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "MHz"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """"Megahertz" is a C.G.S System unit for  'Frequency' expressed as MHz.
+
+-- QUDT"""@en .
+
+emmo:MegaJoule a owl:Class ;
+    rdfs:label "MegaJoule"^^xsd:string ;
+    rdfs:comment """1,000,000-fold of the derived unit joule
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Joule ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+06 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_5eaecadc_4f0d_4a3a_afc7_1fc0b83cc928,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_f6070071_d054_4b17_9d2d_f446f7147d0f ;
+    skos:prefLabel "MegaJoule"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MegaJ"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "MJ"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "MJ"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """1,000,000-fold of the derived unit joule
+
+-- QUDT"""@en .
+
+emmo:MegaNewton a owl:Class ;
+    rdfs:label "MegaNewton"^^xsd:string ;
+    rdfs:comment """1,000,000-fold of the SI derived unit newton
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+06 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Newton ],
+        emmo:EMMO_53e825d9_1a09_483c_baa7_37501ebfbe1c,
+        emmo:EMMO_5eaecadc_4f0d_4a3a_afc7_1fc0b83cc928,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "MegaNewton"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MegaN"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "MN"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "MN"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """1,000,000-fold of the SI derived unit newton
+
+-- QUDT"""@en .
+
+emmo:MegaOhm a owl:Class ;
+    rdfs:label "MegaOhm"^^xsd:string ;
+    rdfs:comment """1,000,000-fold of the derived unit ohm
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+06 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Ohm ],
+        emmo:EMMO_5eaecadc_4f0d_4a3a_afc7_1fc0b83cc928,
+        emmo:EMMO_7610efb8_c7c6_4684_abc1_774783c62472,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "MegaOhm"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MegaOHM"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "MOhm"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "MΩ"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """1,000,000-fold of the derived unit ohm
+
+-- QUDT"""@en .
+
+emmo:MegaPascal a owl:Class ;
+    rdfs:label "MegaPascal"^^xsd:string ;
+    rdfs:comment """1,000,000-fold of the derived unit pascal
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Pascal ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+06 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_53bd0c90_41c3_46e2_8779_cd2a80f7e18b,
+        emmo:EMMO_5eaecadc_4f0d_4a3a_afc7_1fc0b83cc928,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "MegaPascal"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MegaPA"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "MPa"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "MPa"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """1,000,000-fold of the derived unit pascal
+
+-- QUDT"""@en .
+
+emmo:MegaSiemens a owl:Class ;
+    rdfs:label "MegaSiemens"^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Siemens ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+06 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_321af35f_f0cc_4a5c_b4fe_8c2c0303fb0c,
+        emmo:EMMO_5eaecadc_4f0d_4a3a_afc7_1fc0b83cc928,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:altLabel "MegaSiemens"@en ;
+    skos:prefLabel "MegaSiemens"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MegaS"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "MS"^^xsd:string .
+
+emmo:MegaVolt a owl:Class ;
+    rdfs:label "MegaVolt"^^xsd:string ;
+    rdfs:comment """1,000,000-fold of the derived unit volt
+
+-- QUDT"""@en ;
+    rdfs:isDefinedBy "http://qudt.org/2.1/vocab/unit"^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+06 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_2e7e5796_4a80_4d73_bb84_f31138446c0c,
+        emmo:EMMO_5eaecadc_4f0d_4a3a_afc7_1fc0b83cc928 ;
+    skos:prefLabel "MegaVolt"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MegaV"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "MV"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "MV"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """1,000,000-fold of the derived unit volt
+
+-- QUDT"""@en .
+
+emmo:MegaWatt a owl:Class ;
+    rdfs:label "MegaWatt"@en ;
+    rdfs:comment "Unit for power; 1 000 000 watt."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+06 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Watt ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_2024fca1_b015_45ee_9490_e9e7d36bf704,
+        emmo:EMMO_5eaecadc_4f0d_4a3a_afc7_1fc0b83cc928,
+        emmo:EMMO_c8d084ad_f88e_4596_8e4d_982c6655ce6f ;
+    skos:prefLabel "MegaWatt"@en ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MegaW"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "MW"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "MW"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Unit for power; 1 000 000 watt."@en .
+
+emmo:MicroAmpere a owl:Class ;
+    rdfs:label "MicroAmpere"^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Ampere ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-06 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_d5f3e0e5_fc7d_4e64_86ad_555e74aaff84 ;
+    skos:altLabel "microampere"@en ;
+    skos:prefLabel "MicroAmpere"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MicroA"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "uA"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "µA"^^xsd:string .
+
+emmo:MicroBecquerel a owl:Class ;
+    rdfs:label "MicroBecquerel"^^xsd:string ;
+    rdfs:comment """0.000001-fold of the SI derived unit becquerel
+
+-- QUDT"""@en ;
+    rdfs:isDefinedBy "http://qudt.org/2.1/vocab/unit"^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-06 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_515b5579_d526_4842_9e6f_ecc34db6f368,
+        emmo:EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae ;
+    skos:prefLabel "MicroBecquerel"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MicroBQ"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "uBq"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "μBq"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.000001-fold of the SI derived unit becquerel
+
+-- QUDT"""@en .
+
+emmo:MicroCoulomb a owl:Class ;
+    rdfs:label "MicroCoulomb"^^xsd:string ;
+    rdfs:comment """A MicroCoulomb is 10⁻⁶ C.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Coulomb ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-06 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae,
+        emmo:EMMO_ab79e92b_5377_454d_be06_d61b50db295a,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:altLabel "MicroCoulomb"@en ;
+    skos:prefLabel "MicroCoulomb"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MicroC"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "uC"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "µC"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """A MicroCoulomb is 10⁻⁶ C.
+
+-- QUDT"""@en .
+
+emmo:MicroFarad a owl:Class ;
+    rdfs:label "MicroFarad"^^xsd:string ;
+    rdfs:comment """The "microfarad" (symbolized μ F) is a unit of capacitance, equivalent to 0.000001 (10 to the -6th power) farad. The microfarad is a moderate unit of capacitance. In utility alternating-current (AC) and audio-frequency (AF) circuits, capacitors with values on the order of 1 μ F or more are common. At radio frequencies (RF), a smaller unit, the picofarad (pF), is often used.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-06 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Farad ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae,
+        emmo:EMMO_b14d9be5_f81e_469b_abca_379c2e83feab,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:altLabel "microfarad"@en ;
+    skos:prefLabel "MicroFarad"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MicroFARAD"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "uF"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "µF"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """The "microfarad" (symbolized μ F) is a unit of capacitance, equivalent to 0.000001 (10 to the -6th power) farad. The microfarad is a moderate unit of capacitance. In utility alternating-current (AC) and audio-frequency (AF) circuits, capacitors with values on the order of 1 μ F or more are common. At radio frequencies (RF), a smaller unit, the picofarad (pF), is often used.
+
+-- QUDT"""@en .
+
+emmo:MicroGram a owl:Class ;
+    rdfs:label "MicroGram"^^xsd:string ;
+    rdfs:comment """0.000000001-fold of the SI base unit kilogram
+
+-- QUDT"""@en ;
+    rdfs:isDefinedBy "http://qudt.org/2.1/vocab/unit"^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-09 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_77e9dc31_5b19_463e_b000_44c6e79f98aa,
+        emmo:EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae ;
+    skos:prefLabel "MicroGram"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MicroGM"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "ug"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "μg"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.000000001-fold of the SI base unit kilogram
+
+-- QUDT"""@en .
+
+emmo:MicroGray a owl:Class ;
+    rdfs:label "MicroGray"^^xsd:string ;
+    rdfs:comment """0.000001 fold of the SI unit of radiation dose. Radiation carries energy, and when it is absorbed by matter the matter receives this energy. The dose is the amount of energy deposited per unit of mass. One gray is defined to be the dose of one joule of energy absorbed per kilogram of matter, or 100 rad. The unit is named for the British physician L. Harold Gray (1905-1965), an authority on the use of radiation in the treatment of cancer.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Gray ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-06 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_847f1d9f_205e_46c1_8cb6_a9e479421f88,
+        emmo:EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:altLabel "MicroGray"@en ;
+    skos:prefLabel "MicroGray"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MicroGRAY"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "uGy"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "µGy"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.000001 fold of the SI unit of radiation dose. Radiation carries energy, and when it is absorbed by matter the matter receives this energy. The dose is the amount of energy deposited per unit of mass. One gray is defined to be the dose of one joule of energy absorbed per kilogram of matter, or 100 rad. The unit is named for the British physician L. Harold Gray (1905-1965), an authority on the use of radiation in the treatment of cancer.
+
+-- QUDT"""@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Grey?oldid=494774160"^^xsd:string .
+
+emmo:MicroHenry a owl:Class ;
+    rdfs:label "MicroHenry"^^xsd:string ;
+    rdfs:comment """The SI derived unit for inductance is the henry. 1 henry is equal to 1000000 microhenry.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Henry ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-06 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_585e0ff0_9429_4d3c_b578_58abb1ba21d1,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "MicroHenry"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MicroH"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "uH"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "µH"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """The SI derived unit for inductance is the henry. 1 henry is equal to 1000000 microhenry.
+
+-- QUDT"""@en .
+
+emmo:MicroJoule a owl:Class ;
+    rdfs:label "MicroJoule"@en ;
+    rdfs:comment """0.000001-fold of the SI derived unit joule
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-06 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Joule ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_f6070071_d054_4b17_9d2d_f446f7147d0f ;
+    skos:altLabel "Micro Joule"@en ;
+    skos:prefLabel "MicroJoule"@en ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MicroJ"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "µJ"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.000001-fold of the SI derived unit joule
+
+-- QUDT"""@en .
+
+emmo:MicroMetre a owl:Class ;
+    rdfs:label "MicroMetre"@en ;
+    rdfs:comment """"Micrometer" is a unit for  'Length' expressed as microm.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-06 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Metre ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae,
+        emmo:EMMO_b3600e73_3e05_479d_9714_c041c3acf5cc,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:altLabel "Microm"@en,
+        "MicroMeter"@en-us ;
+    skos:prefLabel "MicroMetre"@en ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MicroM"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "um"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "µm"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """"Micrometer" is a unit for  'Length' expressed as microm.
+
+-- QUDT"""@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Micrometer?oldid=491270437"^^xsd:string .
+
+emmo:MicroMole a owl:Class ;
+    rdfs:label "MicroMole"^^xsd:string ;
+    rdfs:comment """0.000001-fold of the SI base unit mol
+
+-- QUDT"""@en ;
+    rdfs:isDefinedBy "http://qudt.org/2.1/vocab/unit"^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-06 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_9d28f9ad_d9d3_4edb_bc00_5d9bd242244d,
+        emmo:EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae,
+        emmo:EMMO_e501069c_34d3_4dc7_ac87_c90c7342192b ;
+    skos:prefLabel "MicroMole"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MicroMOL"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "umol"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "μmol"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.000001-fold of the SI base unit mol
+
+-- QUDT"""@en .
+
+emmo:MicroNewton a owl:Class ;
+    rdfs:label "MicroNewton"^^xsd:string ;
+    rdfs:comment """0.000001-fold of the SI derived unit newton
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-06 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_53e825d9_1a09_483c_baa7_37501ebfbe1c,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae ;
+    skos:prefLabel "MicroNewton"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MicroN"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "uN"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "μN"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.000001-fold of the SI derived unit newton
+
+-- QUDT"""@en .
+
+emmo:MicroOhm a owl:Class ;
+    rdfs:label "MicroOhm"^^xsd:string ;
+    rdfs:comment """0.000001-fold of the SI derived unit ohm
+
+-- QUDT"""@en ;
+    rdfs:isDefinedBy "http://qudt.org/2.1/vocab/unit"^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-06 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_7610efb8_c7c6_4684_abc1_774783c62472,
+        emmo:EMMO_9d28f9ad_d9d3_4edb_bc00_5d9bd242244d,
+        emmo:EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae ;
+    skos:prefLabel "MicroOhm"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MicroOHM"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "uOhm"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "μΩ"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.000001-fold of the SI derived unit ohm
+
+-- QUDT"""@en .
+
+emmo:MicroPascal a owl:Class ;
+    rdfs:label "MicroPascal"^^xsd:string ;
+    rdfs:comment """0.000001-fold of the SI derived unit pascal
+
+-- QUDT"""@en ;
+    rdfs:isDefinedBy "http://qudt.org/2.1/vocab/unit"^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-06 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_53bd0c90_41c3_46e2_8779_cd2a80f7e18b,
+        emmo:EMMO_9d28f9ad_d9d3_4edb_bc00_5d9bd242244d,
+        emmo:EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae ;
+    skos:prefLabel "MicroPascal"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MicroPA"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "uPa"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "μPa"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.000001-fold of the SI derived unit pascal
+
+-- QUDT"""@en .
+
+emmo:MicroRadian a owl:Class ;
+    rdfs:label "MicroRadian"^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-06 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Radian ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_cdc962d8_f3ea_4764_a57a_c7caa4859179 ;
+    skos:altLabel "microradian"@en ;
+    skos:prefLabel "MicroRadian"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MicroRAD"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "urad"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "µrad"^^xsd:string .
+
+emmo:MicroSecond a owl:Class ;
+    rdfs:label "MicroSecond"^^xsd:string ;
+    rdfs:comment """"Microsecond" is a unit for  'Time' expressed as microsec.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-06 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Second ],
+        emmo:EMMO_02e894c3_b793_4197_b120_3442e08f58d1,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:altLabel "microsecond"@en ;
+    skos:prefLabel "MicroSecond"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MicroSEC"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "us"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "µs"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """"Microsecond" is a unit for  'Time' expressed as microsec.
+
+-- QUDT"""@en .
+
+emmo:MicroSiemens a owl:Class ;
+    rdfs:label "MicroSiemens"^^xsd:string ;
+    rdfs:comment """0.000001-fold of the SI derived unit siemens
+
+-- QUDT"""@en ;
+    rdfs:isDefinedBy "http://qudt.org/2.1/vocab/unit"^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-06 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_321af35f_f0cc_4a5c_b4fe_8c2c0303fb0c,
+        emmo:EMMO_9d28f9ad_d9d3_4edb_bc00_5d9bd242244d,
+        emmo:EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae ;
+    skos:prefLabel "MicroSiemens"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MicroS"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "uS"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "μS"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.000001-fold of the SI derived unit siemens
+
+-- QUDT"""@en .
+
+emmo:MicroSievert a owl:Class ;
+    rdfs:label "MicroSievert"^^xsd:string ;
+    rdfs:comment """Although the sievert has the same dimensions as the gray (i.e. joules per kilogram), it measures a different quantity. To avoid any risk of confusion between the absorbed dose and the equivalent dose, the corresponding special units, namely the gray instead of the joule per kilogram for absorbed dose and the sievert instead of the joule per kilogram for the dose equivalent, should be used. 0.000001-fold of the SI derived unit sievert.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-06 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Sievert ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_847f1d9f_205e_46c1_8cb6_a9e479421f88,
+        emmo:EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:altLabel "MicroSievert"@en ;
+    skos:prefLabel "MicroSievert"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MicroSV"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "uSv"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "µSv"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """Although the sievert has the same dimensions as the gray (i.e. joules per kilogram), it measures a different quantity. To avoid any risk of confusion between the absorbed dose and the equivalent dose, the corresponding special units, namely the gray instead of the joule per kilogram for absorbed dose and the sievert instead of the joule per kilogram for the dose equivalent, should be used. 0.000001-fold of the SI derived unit sievert.
+
+-- QUDT"""@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Sievert?oldid=495474333"^^xsd:string .
+
+emmo:MicroTesla a owl:Class ;
+    rdfs:label "MicroTesla"^^xsd:string ;
+    rdfs:comment """0.000001-fold of the SI derived unit tesla
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Tesla ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-06 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_ec903946_ddc9_464a_903c_7373e0d1eeb5 ;
+    skos:prefLabel "MicroTesla"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MicroT"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "uT"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "µT"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.000001-fold of the SI derived unit tesla
+
+-- QUDT"""@en .
+
+emmo:MicroVolt a owl:Class ;
+    rdfs:label "MicroVolt"^^xsd:string ;
+    rdfs:comment """0.000001-fold of the SI derived unit volt
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Volt ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-06 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_2e7e5796_4a80_4d73_bb84_f31138446c0c,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "MicroVolt"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MicroV"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "uV"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "µV"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.000001-fold of the SI derived unit volt
+
+-- QUDT"""@en .
+
+emmo:MicroWatt a owl:Class ;
+    rdfs:label "MicroWatt"^^xsd:string ;
+    rdfs:comment """0.000001-fold of the SI derived unit watt
+
+-- QUDT"""@en ;
+    rdfs:isDefinedBy "http://qudt.org/2.1/vocab/unit"^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-06 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_9d28f9ad_d9d3_4edb_bc00_5d9bd242244d,
+        emmo:EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae,
+        emmo:EMMO_c8d084ad_f88e_4596_8e4d_982c6655ce6f ;
+    skos:prefLabel "MicroWatt"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MicroW"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "uW"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "μW"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.000001-fold of the SI derived unit watt
+
+-- QUDT"""@en .
+
+emmo:MilliAmpere a owl:Class ;
+    rdfs:label "MilliAmpere"@en ;
+    rdfs:comment "A milliampere is 0.001 A"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Ampere ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_d5f3e0e5_fc7d_4e64_86ad_555e74aaff84 ;
+    skos:altLabel "milliampere"@en ;
+    skos:prefLabel "MilliAmpere"@en ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MilliA"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "mA"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "mA"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A milliampere is 0.001 A"@en .
+
+emmo:MilliBecquerel a owl:Class ;
+    rdfs:label "MilliBecquerel"^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Becquerel ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_515b5579_d526_4842_9e6f_ecc34db6f368,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:altLabel "MilliBecquerel"@en ;
+    skos:prefLabel "MilliBecquerel"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MilliBQ"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "mBq"^^xsd:string .
+
+emmo:MilliCoulomb a owl:Class ;
+    rdfs:label "MilliCoulomb"^^xsd:string ;
+    rdfs:comment """A MilliCoulomb is 10⁻³ C.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Coulomb ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7,
+        emmo:EMMO_ab79e92b_5377_454d_be06_d61b50db295a,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:altLabel "MilliCoulomb"@en ;
+    skos:prefLabel "MilliCoulomb"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MilliC"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "mC"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "mC"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """A MilliCoulomb is 10⁻³ C.
+
+-- QUDT"""@en .
+
+emmo:MilliDegreeCelsius a owl:Class ;
+    rdfs:label "MilliDegreeCelsius"^^xsd:string ;
+    rdfs:comment """Millidegree Celsius is a scaled unit of measurement for temperature.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 2.7315e+02 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:DegreeCelsius ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7,
+        emmo:EMMO_a77a0a4b_6bd2_42b2_be27_4b63cebbb59e,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_feb03a8a_bbb6_4918_a891_46713ef557f4 ;
+    skos:altLabel "Millidegree Celsius"@en ;
+    skos:prefLabel "MilliDegreeCelsius"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MilliDEG_C"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "mCel"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "m°C"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """Millidegree Celsius is a scaled unit of measurement for temperature.
+
+-- QUDT"""@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Celsius?oldid=494152178"^^xsd:string .
+
+emmo:MilliFarad a owl:Class ;
+    rdfs:label "MilliFarad"^^xsd:string ;
+    rdfs:comment """0.001-fold of the SI derived unit farad
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Farad ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7,
+        emmo:EMMO_b14d9be5_f81e_469b_abca_379c2e83feab,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "MilliFarad"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MilliFARAD"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "mF"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "mF"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.001-fold of the SI derived unit farad
+
+-- QUDT"""@en .
+
+emmo:MilliGram a owl:Class ;
+    rdfs:label "MilliGram"^^xsd:string ;
+    rdfs:comment """0.000001-fold of the SI base unit kilogram
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Gram ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-06 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_77e9dc31_5b19_463e_b000_44c6e79f98aa,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "MilliGram"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MilliGM"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "mg"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "mg"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.000001-fold of the SI base unit kilogram
+
+-- QUDT"""@en .
+
+emmo:MilliGray a owl:Class ;
+    rdfs:label "MilliGray"^^xsd:string ;
+    rdfs:comment """0.001-fold of the SI derived unit gray
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Gray ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_847f1d9f_205e_46c1_8cb6_a9e479421f88,
+        emmo:EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "MilliGray"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MilliGRAY"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "mGy"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "mGy"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.001-fold of the SI derived unit gray
+
+-- QUDT"""@en .
+
+emmo:MilliHenry a owl:Class ;
+    rdfs:label "MilliHenry"^^xsd:string ;
+    rdfs:comment """A unit of inductance equal to one thousandth of a henry.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Henry ],
+        emmo:EMMO_585e0ff0_9429_4d3c_b578_58abb1ba21d1,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "MilliHenry"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MilliH"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "mH"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "mH"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """A unit of inductance equal to one thousandth of a henry.
+
+-- QUDT"""@en .
+
+emmo:MilliJoule a owl:Class ;
+    rdfs:label "MilliJoule"^^xsd:string ;
+    rdfs:comment """0.001-fold of the SI derived unit joule
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Joule ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_f6070071_d054_4b17_9d2d_f446f7147d0f ;
+    skos:prefLabel "MilliJoule"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MilliJ"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "mJ"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "mJ"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.001-fold of the SI derived unit joule
+
+-- QUDT"""@en .
+
+emmo:MilliMetre a owl:Class ;
+    rdfs:label "MilliMetre"^^xsd:string ;
+    rdfs:comment """The millimetre (International spelling as used by the International Bureau of Weights and Measures) or millimeter (American spelling) (SI unit symbol mm) is a unit of length in the metric system, equal to one thousandth of a metre, which is the SI base unit of length. It is equal to 1000 micrometres or 1000000 nanometres. A millimetre is equal to exactly 5/127 (approximately 0.039370) of an inch.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Metre ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7,
+        emmo:EMMO_b3600e73_3e05_479d_9714_c041c3acf5cc,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "MilliMetre"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MilliM"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "mm"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "mm"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """The millimetre (International spelling as used by the International Bureau of Weights and Measures) or millimeter (American spelling) (SI unit symbol mm) is a unit of length in the metric system, equal to one thousandth of a metre, which is the SI base unit of length. It is equal to 1000 micrometres or 1000000 nanometres. A millimetre is equal to exactly 5/127 (approximately 0.039370) of an inch.
+
+-- QUDT"""@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Millimetre?oldid=493032457"^^xsd:string .
+
+emmo:MilliMole a owl:Class ;
+    rdfs:label "MilliMole"^^xsd:string ;
+    rdfs:comment """0.001-fold of the SI base unit mol
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Mole ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_e501069c_34d3_4dc7_ac87_c90c7342192b ;
+    skos:prefLabel "MilliMole"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MilliMOL"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "mmol"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "mmol"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.001-fold of the SI base unit mol
+
+-- QUDT"""@en .
+
+emmo:MilliNewton a owl:Class ;
+    rdfs:label "MilliNewton"^^xsd:string ;
+    rdfs:comment """0.001-fold of the SI derived unit newton
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Newton ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_53e825d9_1a09_483c_baa7_37501ebfbe1c,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "MilliNewton"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MilliN"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "mN"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "mN"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.001-fold of the SI derived unit newton
+
+-- QUDT"""@en .
+
+emmo:MilliOhm a owl:Class ;
+    rdfs:label "MilliOhm"^^xsd:string ;
+    rdfs:comment """0.001-fold of the SI derived unit ohm
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Ohm ],
+        emmo:EMMO_7610efb8_c7c6_4684_abc1_774783c62472,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "MilliOhm"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MilliOHM"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "mOhm"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "mΩ"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.001-fold of the SI derived unit ohm
+
+-- QUDT"""@en .
+
+emmo:MilliPascal a owl:Class ;
+    rdfs:label "MilliPascal"^^xsd:string ;
+    rdfs:comment """0.001-fold of the SI derived unit pascal
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Pascal ],
+        emmo:EMMO_53bd0c90_41c3_46e2_8779_cd2a80f7e18b,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "MilliPascal"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MilliPA"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "mPa"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "mPa"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.001-fold of the SI derived unit pascal
+
+-- QUDT"""@en .
+
+emmo:MilliRadian a owl:Class ;
+    rdfs:label "MilliRadian"^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Radian ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_cdc962d8_f3ea_4764_a57a_c7caa4859179 ;
+    skos:altLabel "milliradian"@en ;
+    skos:prefLabel "MilliRadian"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MilliRAD"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "mrad"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "mrad"^^xsd:string .
+
+emmo:MilliSecond a owl:Class ;
+    rdfs:label "MilliSecond"^^xsd:string ;
+    rdfs:comment """"Millisecond" is an Imperial unit for 'Time' expressed as ms.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Second ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_02e894c3_b793_4197_b120_3442e08f58d1,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:altLabel "millisecond"@en ;
+    skos:prefLabel "MilliSecond"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MilliSEC"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "ms"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "ms"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """"Millisecond" is an Imperial unit for 'Time' expressed as ms.
+
+-- QUDT"""@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Millisecond?oldid=495102042"^^xsd:string .
+
+emmo:MilliSiemens a owl:Class ;
+    rdfs:label "MilliSiemens"^^xsd:string ;
+    rdfs:comment """0.001-fold of the SI derived unit siemens
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Siemens ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_321af35f_f0cc_4a5c_b4fe_8c2c0303fb0c,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "MilliSiemens"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MilliS"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "mS"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "mS"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.001-fold of the SI derived unit siemens
+
+-- QUDT"""@en .
+
+emmo:MilliSievert a owl:Class ;
+    rdfs:label "MilliSievert"^^xsd:string ;
+    rdfs:comment """0.001-fold of the SI derived unit sievert
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Sievert ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_847f1d9f_205e_46c1_8cb6_a9e479421f88,
+        emmo:EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "MilliSievert"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MilliSV"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "mSv"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "mSv"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.001-fold of the SI derived unit sievert
+
+-- QUDT"""@en .
+
+emmo:MilliTesla a owl:Class ;
+    rdfs:label "MilliTesla"^^xsd:string ;
+    rdfs:comment """0.001-fold of the SI derived unit tesla
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Tesla ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_ec903946_ddc9_464a_903c_7373e0d1eeb5 ;
+    skos:prefLabel "MilliTesla"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MilliT"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "mT"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "mT"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.001-fold of the SI derived unit tesla
+
+-- QUDT"""@en .
+
+emmo:MilliVolt a owl:Class ;
+    rdfs:label "MilliVolt"^^xsd:string ;
+    rdfs:comment """0,001-fold of the SI derived unit volt
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Volt ],
+        emmo:EMMO_2e7e5796_4a80_4d73_bb84_f31138446c0c,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "MilliVolt"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MilliV"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "mV"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "mV"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0,001-fold of the SI derived unit volt
+
+-- QUDT"""@en .
+
+emmo:MilliWatt a owl:Class ;
+    rdfs:label "MilliWatt"@en ;
+    rdfs:comment "A milliwatt 0.01 N."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Watt ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_c8d084ad_f88e_4596_8e4d_982c6655ce6f ;
+    skos:altLabel "milliwatt"@en ;
+    skos:prefLabel "MilliWatt"@en ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MilliW"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "mW"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "mW"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A milliwatt 0.01 N."@en .
+
+emmo:MilliWeber a owl:Class ;
+    rdfs:label "MilliWeber"^^xsd:string ;
+    rdfs:comment """0.001-fold of the SI derived unit weber
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Weber ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-03 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_4c49ab58_a6f6_409e_b849_f873ae1dcbee,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "MilliWeber"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MilliWB"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "mWb"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "mWb"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.001-fold of the SI derived unit weber
+
+-- QUDT"""@en .
+
+emmo:NanoAmpere a owl:Class ;
+    rdfs:label "NanoAmpere"^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-09 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Ampere ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_d5f3e0e5_fc7d_4e64_86ad_555e74aaff84,
+        emmo:EMMO_e1981c25_7c55_4020_aa7a_d2e14ced86d4 ;
+    skos:altLabel "nanoampere"@en ;
+    skos:prefLabel "NanoAmpere"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/NanoA"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "nA"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "nA"^^xsd:string .
+
+emmo:NanoBecquerel a owl:Class ;
+    rdfs:label "NanoBecquerel"^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Becquerel ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-09 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_515b5579_d526_4842_9e6f_ecc34db6f368,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_e1981c25_7c55_4020_aa7a_d2e14ced86d4 ;
+    skos:altLabel "NanoBecquerel"@en ;
+    skos:prefLabel "NanoBecquerel"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/NanoBQ"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "nBq"^^xsd:string .
+
+emmo:NanoCoulomb a owl:Class ;
+    rdfs:label "NanoCoulomb"^^xsd:string ;
+    rdfs:comment """A NanoCoulomb is 10⁻⁹ C.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-09 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Coulomb ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_ab79e92b_5377_454d_be06_d61b50db295a,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_e1981c25_7c55_4020_aa7a_d2e14ced86d4 ;
+    skos:altLabel "NanoCoulomb"@en ;
+    skos:prefLabel "NanoCoulomb"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/NanoC"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "nC"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "nC"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """A NanoCoulomb is 10⁻⁹ C.
+
+-- QUDT"""@en .
+
+emmo:NanoFarad a owl:Class ;
+    rdfs:label "NanoFarad"^^xsd:string ;
+    rdfs:comment """A common metric unit of electric capacitance equal to 10⁻⁹ farad. This unit was previously called the millimicrofarad.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Farad ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-09 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_b14d9be5_f81e_469b_abca_379c2e83feab,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_e1981c25_7c55_4020_aa7a_d2e14ced86d4 ;
+    skos:prefLabel "NanoFarad"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/NanoFARAD"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "nF"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "nF"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """A common metric unit of electric capacitance equal to 10⁻⁹ farad. This unit was previously called the millimicrofarad.
+
+-- QUDT"""@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Farad?oldid=493070876"^^xsd:string .
+
+emmo:NanoGram a owl:Class ;
+    rdfs:label "NanoGram"^^xsd:string ;
+    rdfs:comment """10**-9 grams or one 10**-12 of the SI standard unit of mass (kilogram).
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-12 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Gram ],
+        emmo:EMMO_77e9dc31_5b19_463e_b000_44c6e79f98aa,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_e1981c25_7c55_4020_aa7a_d2e14ced86d4 ;
+    skos:prefLabel "NanoGram"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/NanoGM"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "ng"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "ng"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """10**-9 grams or one 10**-12 of the SI standard unit of mass (kilogram).
+
+-- QUDT"""@en .
+
+emmo:NanoHenry a owl:Class ;
+    rdfs:label "NanoHenry"^^xsd:string ;
+    rdfs:comment """0.000000001-fold of the SI derived unit henry
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-09 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Henry ],
+        emmo:EMMO_585e0ff0_9429_4d3c_b578_58abb1ba21d1,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_e1981c25_7c55_4020_aa7a_d2e14ced86d4 ;
+    skos:prefLabel "NanoHenry"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/NanoH"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "nH"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "nH"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.000000001-fold of the SI derived unit henry
+
+-- QUDT"""@en .
+
+emmo:NanoMetre a owl:Class ;
+    rdfs:label "NanoMetre"^^xsd:string ;
+    rdfs:comment """0.000000001-fold of the SI base unit metre
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Metre ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-09 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_b3600e73_3e05_479d_9714_c041c3acf5cc,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_e1981c25_7c55_4020_aa7a_d2e14ced86d4 ;
+    skos:prefLabel "NanoMetre"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/NanoM"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "nm"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "nM"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.000000001-fold of the SI base unit metre
+
+-- QUDT"""@en .
+
+emmo:NanoMole a owl:Class ;
+    rdfs:label "NanoMole"^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Mole ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-09 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_e1981c25_7c55_4020_aa7a_d2e14ced86d4,
+        emmo:EMMO_e501069c_34d3_4dc7_ac87_c90c7342192b ;
+    skos:altLabel "NanoMole"@en ;
+    skos:prefLabel "NanoMole"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/NanoMOL"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "nmol"^^xsd:string .
+
+emmo:NanoSecond a owl:Class ;
+    rdfs:label "NanoSecond"^^xsd:string ;
+    rdfs:comment """A nanosecond is a SI unit of time equal to one billionth of a second (10-9 or 1/1,000,000,000 s). One nanosecond is to one second as one second is to 31.69 years. The word nanosecond is formed by the prefix nano and the unit second.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Second ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-09 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_02e894c3_b793_4197_b120_3442e08f58d1,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_e1981c25_7c55_4020_aa7a_d2e14ced86d4 ;
+    skos:altLabel "nanosecond"@en ;
+    skos:prefLabel "NanoSecond"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/NanoSEC"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "ns"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "ns"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """A nanosecond is a SI unit of time equal to one billionth of a second (10-9 or 1/1,000,000,000 s). One nanosecond is to one second as one second is to 31.69 years. The word nanosecond is formed by the prefix nano and the unit second.
+
+-- QUDT"""@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Nanosecond?oldid=919778950"^^xsd:string .
+
+emmo:NanoSiemens a owl:Class ;
+    rdfs:label "NanoSiemens"^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-09 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Siemens ],
+        emmo:EMMO_321af35f_f0cc_4a5c_b4fe_8c2c0303fb0c,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_e1981c25_7c55_4020_aa7a_d2e14ced86d4 ;
+    skos:altLabel "NanoSiemens"@en ;
+    skos:prefLabel "NanoSiemens"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/NanoS"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "nS"^^xsd:string .
+
+emmo:NanoTesla a owl:Class ;
+    rdfs:label "NanoTesla"^^xsd:string ;
+    rdfs:comment """0.000000001-fold of the SI derived unit tesla
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Tesla ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-09 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_e1981c25_7c55_4020_aa7a_d2e14ced86d4,
+        emmo:EMMO_ec903946_ddc9_464a_903c_7373e0d1eeb5 ;
+    skos:prefLabel "NanoTesla"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/NanoT"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "nT"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "nT"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.000000001-fold of the SI derived unit tesla
+
+-- QUDT"""@en .
+
+emmo:NanoWatt a owl:Class ;
+    rdfs:label "NanoWatt"^^xsd:string ;
+    rdfs:comment """0.000000001-fold of the SI derived unit watt
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-09 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Watt ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_c8d084ad_f88e_4596_8e4d_982c6655ce6f,
+        emmo:EMMO_e1981c25_7c55_4020_aa7a_d2e14ced86d4 ;
+    skos:prefLabel "NanoWatt"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/NanoW"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "nW"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "nW"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.000000001-fold of the SI derived unit watt
+
+-- QUDT"""@en .
+
+emmo:PetaCoulomb a owl:Class ;
+    rdfs:label "PetaCoulomb"^^xsd:string ;
+    rdfs:comment """A PetaCoulomb is 10¹⁵ C.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+15 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Coulomb ],
+        emmo:EMMO_43a6b269_da31_4bb6_a537_c97df4fff32a,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_ab79e92b_5377_454d_be06_d61b50db295a,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:altLabel "PetaCoulomb"@en ;
+    skos:prefLabel "PetaCoulomb"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/PetaC"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "PC"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "PC"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """A PetaCoulomb is 10¹⁵ C.
+
+-- QUDT"""@en .
+
+emmo:PetaJoule a owl:Class ;
+    rdfs:label "PetaJoule"^^xsd:string ;
+    rdfs:comment """1,000,000,000,000,000-fold of the derived SI unit joule
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+15 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Joule ],
+        emmo:EMMO_43a6b269_da31_4bb6_a537_c97df4fff32a,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_f6070071_d054_4b17_9d2d_f446f7147d0f ;
+    skos:prefLabel "PetaJoule"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/PetaJ"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "PJ"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "PJ"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """1,000,000,000,000,000-fold of the derived SI unit joule
+
+-- QUDT"""@en .
+
+emmo:PicoAmpere a owl:Class ;
+    rdfs:label "PicoAmpere"^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Ampere ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-12 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_068c4e58_2470_4b1c_8454_010dd4906100,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_d5f3e0e5_fc7d_4e64_86ad_555e74aaff84 ;
+    skos:altLabel "picoampere"@en ;
+    skos:prefLabel "PicoAmpere"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/PicoA"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "pA"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "pA"^^xsd:string .
+
+emmo:PicoCoulomb a owl:Class ;
+    rdfs:label "PicoCoulomb"^^xsd:string ;
+    rdfs:comment """A PicoCoulomb is 10⁻¹² C.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-12 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Coulomb ],
+        emmo:EMMO_068c4e58_2470_4b1c_8454_010dd4906100,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_ab79e92b_5377_454d_be06_d61b50db295a,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:altLabel "PicoCoulomb"@en ;
+    skos:prefLabel "PicoCoulomb"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/PicoC"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "pC"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "pC"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """A PicoCoulomb is 10⁻¹² C.
+
+-- QUDT"""@en .
+
+emmo:PicoFarad a owl:Class ;
+    rdfs:label "PicoFarad"^^xsd:string ;
+    rdfs:comment """"PicoF" is a common unit of electric capacitance equal to 10⁻¹² farad. This unit was formerly called the micromicrofarad.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-12 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Farad ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_068c4e58_2470_4b1c_8454_010dd4906100,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_b14d9be5_f81e_469b_abca_379c2e83feab,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "PicoFarad"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/PicoFARAD"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "pF"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "pF"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """"PicoF" is a common unit of electric capacitance equal to 10⁻¹² farad. This unit was formerly called the micromicrofarad.
+
+-- QUDT"""@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Farad?oldid=493070876"^^xsd:string .
+
+emmo:PicoGram a owl:Class ;
+    rdfs:label "PicoGram"^^xsd:string ;
+    rdfs:comment """10**-12 grams or one 10**-15 of the SI standard unit of mass (kilogram).
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-15 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Gram ],
+        emmo:EMMO_068c4e58_2470_4b1c_8454_010dd4906100,
+        emmo:EMMO_77e9dc31_5b19_463e_b000_44c6e79f98aa,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "PicoGram"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/PicoGM"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "pg"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "pg"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """10**-12 grams or one 10**-15 of the SI standard unit of mass (kilogram).
+
+-- QUDT"""@en .
+
+emmo:PicoHenry a owl:Class ;
+    rdfs:label "PicoHenry"^^xsd:string ;
+    rdfs:comment """0.000000000001-fold of the SI derived unit henry
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Henry ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-12 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_068c4e58_2470_4b1c_8454_010dd4906100,
+        emmo:EMMO_585e0ff0_9429_4d3c_b578_58abb1ba21d1,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "PicoHenry"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/PicoH"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "pH"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "pH"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.000000000001-fold of the SI derived unit henry
+
+-- QUDT"""@en .
+
+emmo:PicoLitre a owl:Class ;
+    rdfs:label "PicoLitre"^^xsd:string ;
+    rdfs:comment """0.000000000001-fold of the unit litre
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Litre ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-15 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_068c4e58_2470_4b1c_8454_010dd4906100,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_9141801c_c539_4c72_b423_8c74ff6b8f05,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "PicoLitre"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/PicoL"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "pL"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "pL"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.000000000001-fold of the unit litre
+
+-- QUDT"""@en .
+
+emmo:PicoMetre a owl:Class ;
+    rdfs:label "PicoMetre"^^xsd:string ;
+    rdfs:comment """0.000000000001-fold of the SI base unit metre
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-12 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Metre ],
+        emmo:EMMO_068c4e58_2470_4b1c_8454_010dd4906100,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_b3600e73_3e05_479d_9714_c041c3acf5cc,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "PicoMetre"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/PicoM"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "pm"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "pm"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.000000000001-fold of the SI base unit metre
+
+-- QUDT"""@en .
+
+emmo:PicoMole a owl:Class ;
+    rdfs:label "PicoMole"^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-12 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Mole ],
+        emmo:EMMO_068c4e58_2470_4b1c_8454_010dd4906100,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_e501069c_34d3_4dc7_ac87_c90c7342192b ;
+    skos:altLabel "PicoMole"@en ;
+    skos:prefLabel "PicoMole"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/PicoMOL"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "pmol"^^xsd:string .
+
+emmo:PicoPascal a owl:Class ;
+    rdfs:label "PicoPascal"^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Pascal ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-12 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_068c4e58_2470_4b1c_8454_010dd4906100,
+        emmo:EMMO_53bd0c90_41c3_46e2_8779_cd2a80f7e18b,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:altLabel "PicoPascal"@en ;
+    skos:prefLabel "PicoPascal"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/PicoPA"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "pPa"^^xsd:string .
+
+emmo:PicoSecond a owl:Class ;
+    rdfs:label "PicoSecond"^^xsd:string ;
+    rdfs:comment """0.000000000001-fold of the SI base unit second
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Second ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-12 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_02e894c3_b793_4197_b120_3442e08f58d1,
+        emmo:EMMO_068c4e58_2470_4b1c_8454_010dd4906100,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "PicoSecond"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/PicoSEC"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "ps"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "ps"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.000000000001-fold of the SI base unit second
+
+-- QUDT"""@en .
+
+emmo:PicoSiemens a owl:Class ;
+    rdfs:label "PicoSiemens"^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-12 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Siemens ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_068c4e58_2470_4b1c_8454_010dd4906100,
+        emmo:EMMO_321af35f_f0cc_4a5c_b4fe_8c2c0303fb0c,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:altLabel "PicoSiemens"@en ;
+    skos:prefLabel "PicoSiemens"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/PicoS"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "pS"^^xsd:string .
+
+emmo:PicoWatt a owl:Class ;
+    rdfs:label "PicoWatt"^^xsd:string ;
+    rdfs:comment """0.000000000001-fold of the SI derived unit watt
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Watt ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-12 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_068c4e58_2470_4b1c_8454_010dd4906100,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_c8d084ad_f88e_4596_8e4d_982c6655ce6f ;
+    skos:prefLabel "PicoWatt"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/PicoW"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "pW"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "pW"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """0.000000000001-fold of the SI derived unit watt
+
+-- QUDT"""@en .
+
+emmo:TeraCoulomb a owl:Class ;
+    rdfs:label "TeraCoulomb"^^xsd:string ;
+    rdfs:comment """A TeraCoulomb is 10¹² C.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+12 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Coulomb ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_3a204900_2b33_47d1_b444_815cc4c8cffa,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_ab79e92b_5377_454d_be06_d61b50db295a,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:altLabel "TeraCoulomb"@en ;
+    skos:prefLabel "TeraCoulomb"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/TeraC"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "TC"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "TC"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """A TeraCoulomb is 10¹² C.
+
+-- QUDT"""@en .
+
+emmo:TeraHertz a owl:Class ;
+    rdfs:label "TeraHertz"^^xsd:string ;
+    rdfs:comment """1 000 000 000 000-fold of the SI derived unit hertz
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+12 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Hertz ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_3a204900_2b33_47d1_b444_815cc4c8cffa,
+        emmo:EMMO_515b5579_d526_4842_9e6f_ecc34db6f368,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "TeraHertz"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/TeraHZ"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "THz"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "THz"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """1 000 000 000 000-fold of the SI derived unit hertz
+
+-- QUDT"""@en .
+
+emmo:TeraJoule a owl:Class ;
+    rdfs:label "TeraJoule"^^xsd:string ;
+    rdfs:comment """1 000 000 000 000-fold of the SI derived unit joule
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Joule ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+12 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_3a204900_2b33_47d1_b444_815cc4c8cffa,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_f6070071_d054_4b17_9d2d_f446f7147d0f ;
+    skos:prefLabel "TeraJoule"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/TeraJ"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "TJ"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "TJ"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """1 000 000 000 000-fold of the SI derived unit joule
+
+-- QUDT"""@en .
+
+emmo:TeraOhm a owl:Class ;
+    rdfs:label "TeraOhm"^^xsd:string ;
+    rdfs:comment """1,000,000,000,000-fold of the SI derived unit ohm
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+12 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Ohm ],
+        emmo:EMMO_3a204900_2b33_47d1_b444_815cc4c8cffa,
+        emmo:EMMO_7610efb8_c7c6_4684_abc1_774783c62472,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "TeraOhm"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/TeraOHM"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "TOhm"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "TΩ"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """1,000,000,000,000-fold of the SI derived unit ohm
+
+-- QUDT"""@en .
+
+emmo:TeraWatt a owl:Class ;
+    rdfs:label "TeraWatt"^^xsd:string ;
+    rdfs:comment """1,000,000,000,000-fold of the SI derived unit watt
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Watt ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+12 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_3a204900_2b33_47d1_b444_815cc4c8cffa,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_c8d084ad_f88e_4596_8e4d_982c6655ce6f ;
+    skos:prefLabel "TeraWatt"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/TeraW"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "TW"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "TW"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """1,000,000,000,000-fold of the SI derived unit watt
+
+-- QUDT"""@en .
+
+emmo:YoctoCoulomb a owl:Class ;
+    rdfs:label "YoctoCoulomb"^^xsd:string ;
+    rdfs:comment """A YoctoCoulomb is 10⁻²⁴ C.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Coulomb ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-24 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_ab79e92b_5377_454d_be06_d61b50db295a,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_f5769206_9257_4b08_bf7b_dad7868c6afc ;
+    skos:altLabel "YoctoCoulomb"@en ;
+    skos:prefLabel "YoctoCoulomb"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/YoctoC"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "yC"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "yC"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """A YoctoCoulomb is 10⁻²⁴ C.
+
+-- QUDT"""@en .
+
+emmo:YottaCoulomb a owl:Class ;
+    rdfs:label "YottaCoulomb"^^xsd:string ;
+    rdfs:comment """A YottaCoulomb is 10²⁴ C.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+24 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Coulomb ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_ab79e92b_5377_454d_be06_d61b50db295a,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_e79c62ff_10ad_4ec0_baba_c19ddd4eaa11 ;
+    skos:altLabel "YottaCoulomb"@en ;
+    skos:prefLabel "YottaCoulomb"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/YottaC"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "YC"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "YC"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """A YottaCoulomb is 10²⁴ C.
+
+-- QUDT"""@en .
+
+emmo:ZeptoCoulomb a owl:Class ;
+    rdfs:label "ZeptoCoulomb"^^xsd:string ;
+    rdfs:comment """A ZeptoCoulomb is 10⁻²¹ C.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-21 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Coulomb ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_254472c6_3dbd_4f02_bc43_571389cd281f,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_ab79e92b_5377_454d_be06_d61b50db295a,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:altLabel "ZeptoCoulomb"@en ;
+    skos:prefLabel "ZeptoCoulomb"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/ZeptoC"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "zC"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "zC"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """A ZeptoCoulomb is 10⁻²¹ C.
+
+-- QUDT"""@en .
+
+emmo:ZettaCoulomb a owl:Class ;
+    rdfs:label "ZettaCoulomb"^^xsd:string ;
+    rdfs:comment """A ZettaCoulomb is 10²¹ C.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+21 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_d4e0a0ab_2f67_4f87_a0db_b544e6dceed4 ;
+            owl:someValuesFrom emmo:Coulomb ],
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_ab79e92b_5377_454d_be06_d61b50db295a,
+        emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_daa9ee97_4c5f_42e5_918c_44d7523e8958 ;
+    skos:altLabel "ZettaCoulomb"@en ;
+    skos:prefLabel "ZettaCoulomb"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/ZettaC"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "ZC"^^xsd:string ;
+    emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 "ZC"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """A ZettaCoulomb is 10²¹ C.
+
+-- QUDT"""@en .
+
+<https://w3id.org/emmo/disciplines/units/prefixedsiunits> a owl:Ontology ;
+    dcterms:abstract """The module 'prefixedsiunits' contains prefixed SI units that are made of a metrix prefix and a unit symbol for a base or derived SI unit. Examples: km, ms, MPa, mg, etc...
+
+Note that this module is not complete and may be extended with more prefixed SI units over time."""@en ;
+    dcterms:contributor <https://orcid.org/0000-0001-8869-3718>,
+        <https://orcid.org/0000-0002-4181-2852>,
+        <https://orcid.org/0000-0002-8758-6109> ;
+    dcterms:creator <https://orcid.org/0000-0002-1560-809X>,
+        <https://orcid.org/0000-0003-3805-8761> ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "Prefixed SI units"@en ;
+    rdfs:comment """Note: this file has automatically been populated with units from QUDT.
+
+We kindly acknowledge NIST for reusing their content, including the selection of units, their elucidations and conversion multiplier."""@en,
+        "The EMMO should be reasoned with HermiT to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.4/disciplines/units/siunits> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.4/disciplines/units/prefixedsiunits> ;
+    owl:versionInfo "1.0.4"^^xsd:string ;
+    emmo:EMMO_1246b120_abbe_4840_b0f8_3e4348b24a17 "emmo@emmc.eu"^^xsd:string .
+
+emmo:Litre a owl:Class ;
+    rdfs:label "Litre"@en ;
+    rdfs:comment "A non-SI unit of volume defined as 1 cubic decimetre (dm3),"@en,
+        """The litre (American spelling: `liter`; SI symbol l or L) is a non-SI metric system unit of volume equal to 1 `cubic decimetre` (dm³), 1,000 cubic centimetres (cm³) or 1/1000 `cubic metre`. If the lower case "L" is used as the symbol, it is sometimes rendered as a italic "l" to help distinguish it from the capital "I", although this usage has no official approval by any international bureau.
+
+-- QUDT"""@en .
+
+emmo:Gram a owl:Class .
+

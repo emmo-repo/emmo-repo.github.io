@@ -1,0 +1,150 @@
+@prefix : <https://w3id.org/emmo/hume/perspectives/structural#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:Convergent a owl:Class ;
+    rdfs:label "Convergent"@en ;
+    rdfs:comment "The superclass for all classes of entities that have a proper parts of the same type φ of the whole, and so that for every two distinct φ proper parts one is part of the other."@en ;
+    rdfs:subClassOf ns1:Nuclear ;
+    skos:prefLabel "Convergent"@en ;
+    ns1:elucidation "The superclass for all classes of entities that have a proper parts of the same type φ of the whole, and so that for every two distinct φ proper parts one is part of the other."@en ;
+    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.2/doc/figs/Convergent.png"^^xsd:anyURI .
+
+ns1:Heap a owl:Class ;
+    rdfs:label "Heap"@en ;
+    rdfs:comment "The superclass for all classes of entities that have at least two non overlapping proper parts of the same type of the whole."@en ;
+    rdfs:subClassOf ns1:Redundant ;
+    skos:prefLabel "Heap"@en ;
+    ns1:elucidation "The superclass for all classes of entities that have at least two non overlapping proper parts of the same type of the whole."@en ;
+    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.2/doc/figs/Heap.png"^^xsd:anyURI ;
+    ns1:note "A heap class H (subclass of Heap) is defined by choosing a reference type φ, with H subclass of φ, so that each H entity has non overlapping φ parts."@en .
+
+ns1:Maximal a owl:Class ;
+    rdfs:label "Maximal"@en ;
+    rdfs:comment "The superclass for all classes of entities that have no proper parts of the same type of the whole are not proper part of an entity of that type."@en ;
+    rdfs:subClassOf ns1:Fundamental ;
+    skos:prefLabel "Maximal"@en ;
+    ns1:elucidation "The superclass for all classes of entities that have no proper parts of the same type of the whole are not proper part of an entity of that type."@en ;
+    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.2/doc/figs/Maximal.png"^^xsd:anyURI ;
+    ns1:note "A maximal class M (subclass of Maximal) is defined by choosing a reference type φ so that M is subclass of φ, all parts of x are needed to keep φ(x) and if you add something to x, then x is no more a φ."@en .
+
+ns1:Minimal a owl:Class ;
+    rdfs:label "Minimal"@en ;
+    rdfs:comment "The superclass for all classes of entities that have no proper parts of the same type of the whole is proper part of an entity of that type."@en ;
+    rdfs:subClassOf ns1:Fundamental ;
+    skos:prefLabel "Minimal"@en ;
+    ns1:elucidation "The superclass for all classes of entities that have no proper parts of the same type of the whole is proper part of an entity of that type."@en ;
+    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.2/doc/figs/Minimal.png"^^xsd:anyURI ;
+    ns1:note "A minimal class M (subclass of Minimal) is defined by choosing a reference type φ so that M is subclass of φ, all parts of x are needed to keep φ(x) and x is proper part of a larger φ entity."@en .
+
+ns1:NonConvergent a owl:Class ;
+    rdfs:label "NonConvergent"@en ;
+    rdfs:comment "The superclass for all classes of entities that have a proper parts of the same type φ of the whole, and so that for every two distinct φ proper parts one is not part of the other."@en ;
+    rdfs:subClassOf ns1:Nuclear ;
+    skos:prefLabel "NonConvergent"@en ;
+    ns1:elucidation "The superclass for all classes of entities that have a proper parts of the same type φ of the whole, and so that for every two distinct φ proper parts one is not part of the other."@en ;
+    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.2/doc/figs/NonConvergent.png"^^xsd:anyURI .
+
+ns1:NonNuclear a owl:Class ;
+    rdfs:label "NonNuclear"@en ;
+    rdfs:comment "The superclass for all classes of entities that have a proper parts of the same type φ of the whole, but have no φ proper part that is part of other φ proper parts."@en ;
+    rdfs:subClassOf ns1:Multiplex ;
+    skos:prefLabel "NonNuclear"@en ;
+    ns1:elucidation "The superclass for all classes of entities that have a proper parts of the same type φ of the whole, but have no φ proper part that is part of other φ proper parts."@en ;
+    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.2/doc/figs/NonNuclear.png"^^xsd:anyURI .
+
+: a owl:Ontology ;
+    dcterms:abstract "Defines the structural perspective which defines an entity according to its type and the types of other entities mereological relations with it."@en ;
+    dcterms:contributor <https://orcid.org/FrancescoZaccarini>,
+        <https://orcid.org/GerhardGoldbeck>,
+        <https://orcid.org/JesperFriis> ;
+    dcterms:creator <https://orcid.org/EmanueleGhedini> ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "Structural"@en ;
+    rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.4/perspectives/perspective> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/perspectives/structural> ;
+    owl:versionInfo "1.0.4"^^xsd:string ;
+    ns1:contact "emmo@emmc.eu"^^xsd:string .
+
+ns1:Multiplex a owl:Class ;
+    rdfs:label "Multiplex"@en ;
+    rdfs:comment "The superclass for all classes of entities that have a proper parts of the same type of the whole that overlaps all the oter proper parts of the same type."@en ;
+    rdfs:subClassOf ns1:Redundant ;
+    skos:prefLabel "Multiplex"@en ;
+    ns1:elucidation "The superclass for all classes of entities that have a proper parts of the same type of the whole that overlaps all the oter proper parts of the same type."@en .
+
+ns1:Nuclear a owl:Class ;
+    rdfs:label "Nuclear"@en ;
+    rdfs:comment "The superclass for all classes of entities that have a proper parts of the same type of the whole that is part of all the other proper parts of the same type."@en ;
+    rdfs:subClassOf ns1:Multiplex ;
+    skos:prefLabel "Nuclear"@en ;
+    ns1:elucidation "The superclass for all classes of entities that have a proper parts of the same type of the whole that is part of all the other proper parts of the same type."@en .
+
+ns1:Structural a owl:Class ;
+    rdfs:label "Structural"@en ;
+    rdfs:comment "A perspective that categorises causal structures according to the merelogical relations between the whole and the parts, taking into account their types."@en ;
+    rdfs:subClassOf ns1:Perspective ;
+    skos:prefLabel "Structural"@en ;
+    ns1:elucidation "A perspective that categorises causal structures according to the merelogical relations between the whole and the parts, taking into account their types."@en .
+
+ns1:hasRedundantPart rdfs:domain ns1:Redundant .
+
+ns1:Redundant a owl:Class ;
+    rdfs:label "Redundant"@en ;
+    rdfs:comment "Redundant(x) ≡ ∃φ[φ(x) ∧ ∃yRP⟨φ⟩(y, x)]"@en,
+        "The superclass for all classes of entities that have parts of the same type of the whole."@en ;
+    rdfs:seeAlso ns1:Fundamental ;
+    rdfs:subClassOf ns1:Structural ;
+    skos:altLabel "NonMaximal"@en ;
+    skos:example "A sufficently large volume of liquid water has parts of the same type."@en,
+        """An object A which is classified as water-fluid possesses a proper part B which is water itself if the lenght scale of the B is larger than the water intermolecular distance keeping it in the continuum range. In this sense, A is redundant.
+
+If A is a water-fluid so small that its every proper part is no more a continuum object (i.e. no more a fluid), then A is fundamental."""@en ;
+    skos:prefLabel "Redundant"@en ;
+    ns1:definition "Redundant(x) ≡ ∃φ[φ(x) ∧ ∃yRP⟨φ⟩(y, x)]"@en ;
+    ns1:elucidation "The superclass for all classes of entities that have parts of the same type of the whole."@en .
+
+ns1:Fundamental a owl:Class ;
+    rdfs:label "Fundamental"@en ;
+    rdfs:comment "Fundamental(x) ≡ ∃φ[φ(x) ∧ ¬∃yRP⟨φ⟩(y, x)]"^^xsd:string,
+        "The superclass for all classes of entities that have no proper parts of the same type of the whole."@en ;
+    rdfs:seeAlso ns1:Redundant ;
+    rdfs:subClassOf ns1:Structural ;
+    skos:altLabel "Lifetime"@en ;
+    skos:example """A marathon is an example of class whose individuals are always maximal since the criteria satisfied by a marathon 4D entity poses some constraints on its temporal and spatial extent.
+On the contrary, the class for a generic running process does not necessarily impose maximality to its individuals. A running individual is maximal only when it extends in time for the minimum amount required to identify a running act, so every possible temporal part is always a non-running.
+Following the two examples, a marathon individual is a maximal that can be decomposed into running intervals. The marathon class is a subclass of running."""@en ;
+    skos:prefLabel "Fundamental"@en ;
+    ns1:definition "Fundamental(x) ≡ ∃φ[φ(x) ∧ ¬∃yRP⟨φ⟩(y, x)]"^^xsd:string ;
+    ns1:elucidation "The superclass for all classes of entities that have no proper parts of the same type of the whole."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Fundamental ;
+    owl:annotatedTarget "Fundamental"@en ;
+    ns1:etymology "From Latin fundamentum (“foundation”), from fundō (“to lay the foundation (of something), to found”), from fundus (“bottom”)."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource ns1:Fundamental ;
+    owl:annotatedTarget "Lifetime"@en ;
+    ns1:etymology "From Middle English liftime, equivalent to life +‎ time."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso ns1:hasRedundantPart ;
+    owl:annotatedProperty ns1:definition ;
+    owl:annotatedSource ns1:Redundant ;
+    owl:annotatedTarget "Redundant(x) ≡ ∃φ[φ(x) ∧ ∃yRP⟨φ⟩(y, x)]"@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso ns1:hasRedundantPart ;
+    owl:annotatedProperty ns1:definition ;
+    owl:annotatedSource ns1:Fundamental ;
+    owl:annotatedTarget "Fundamental(x) ≡ ∃φ[φ(x) ∧ ¬∃yRP⟨φ⟩(y, x)]"^^xsd:string .
+
