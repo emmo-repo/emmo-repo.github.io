@@ -1,0 +1,66 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+owl:qualifiedCardinality a owl:AnnotationProperty .
+
+ns1:EMMO_9be5fcc4_0d8b_481d_b984_6338d4b55588 a owl:Class ;
+    rdfs:subClassOf ns1:EMMO_ea67caa5_2609_4e91_98ae_81103f2d5c25 ;
+    skos:prefLabel "Measurer"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An observer that makes use of a measurement tool and provides a quantitative property."@en .
+
+ns1:EMMO_d271f202_4c1a_4d74_b86a_387c82034eb7 a owl:ObjectProperty ;
+    rdfs:label "hasCharacterised"@en ;
+    rdfs:domain ns1:EMMO_1b52ee70_121e_4d8d_8419_3f97cd0bd89c ;
+    rdfs:subPropertyOf ns1:EMMO_0d829933_29e3_4e61_b3d3_88e6b9d0d0ce ;
+    skos:prefLabel "hasCharacterised"@en .
+
+ns1:EMMO_eeb8118c_b290_4f57_b0f8_bd65bb6d77ad a owl:ObjectProperty ;
+    rdfs:label "hasCharacteriser"@en ;
+    rdfs:domain ns1:EMMO_b7bcff25_ffc3_474e_9ab5_01b1664bd4ba ;
+    rdfs:range ns1:EMMO_1b52ee70_121e_4d8d_8419_3f97cd0bd89c ;
+    rdfs:subPropertyOf ns1:EMMO_cc823237_398d_4c9a_b8fa_aa157ee3e3a5 ;
+    skos:prefLabel "hasCharacteriser"@en .
+
+ns1:EMMO_f94e509a_be29_4365_a4cd_70165e47e232 a owl:Class ;
+    rdfs:label "Modeller"@en ;
+    rdfs:comment "A estimator that uses modelling to declare a property of an object (i.e. infer a property from other properties)."@en ;
+    rdfs:subClassOf ns1:EMMO_4a1c73f1_b6f5_4d10_a3a6_5de90bac7cd0 ;
+    skos:prefLabel "Modeller"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A estimator that uses modelling to declare a property of an object (i.e. infer a property from other properties)."@en .
+
+<https://w3id.org/emmo/disciplines/properties> a owl:Ontology ;
+    dcterms:abstract """Defines properties as the result of an observation process. Observation is a semiotic process that stimulate an interpretant within the interpreter who communicates the observed result to other interpreters through a sign, which is the property.
+
+Hence, properties creates a link between the holistic and the symbolic perspectives.
+
+Subclasses of property are subclasses that spesialise the type of observation process."""@en ;
+    dcterms:creator <https://orcid.org/0000-0003-4065-9742>,
+        ns1:AdhamHashibon,
+        ns1:EmanueleGhedini,
+        ns1:GerhardGoldbeck,
+        ns1:JesperFriis ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "Properties"@en ;
+    rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.2/perspectives/semiotics> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.2/disciplines/properties> ;
+    owl:versionInfo "1.0.2"^^xsd:string ;
+    ns1:EMMO_1246b120_abbe_4840_b0f8_3e4348b24a17 "emmo@emmc.eu"^^xsd:string .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+

@@ -1,0 +1,140 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix emmo: <https://w3id.org/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+emmo:EMMO_0ef4ff4a_5458_4f2a_b51f_4689d472a3f2 a owl:Class ;
+    rdfs:label "Curve"@en ;
+    rdfs:comment "A one-manyfold with two unconnected end points."@en ;
+    rdfs:subClassOf emmo:EMMO_0c576e13_4ee7_4f3d_bfe9_1614243df018 ;
+    skos:prefLabel "Curve"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A one-manyfold with two unconnected end points."@en .
+
+emmo:EMMO_25f5ca8e_8f7f_44d8_a392_bd3fe8894458 a owl:Class ;
+    rdfs:label "Plane"@en ;
+    rdfs:comment "A 2-manifold with two unconnected boundaries."@en ;
+    rdfs:subClassOf emmo:EMMO_9268958f_7f54_48ab_a693_febe2645892b ;
+    skos:prefLabel "Plane"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A 2-manifold with two unconnected boundaries."@en .
+
+emmo:EMMO_39362460_2a97_4367_8f93_0418c2ac9a08 a owl:Class ;
+    rdfs:label "Point"@en ;
+    rdfs:comment "A zero-manifold of only one point."@en ;
+    rdfs:subClassOf emmo:EMMO_0ab0485c_9e5b_4257_a679_90a2dfba5c7c ;
+    skos:prefLabel "Point"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A zero-manifold of only one point."@en .
+
+emmo:EMMO_5f278af9_8593_4e27_a717_ccc9e07a0ddf a owl:Class ;
+    rdfs:label "EuclideanSpace"@en ;
+    rdfs:comment "A three-manifold with Euclidean metric."@en ;
+    rdfs:subClassOf emmo:EMMO_46f0f8df_4dc6_418f_8036_10427a3a288e ;
+    skos:prefLabel "EuclideanSpace"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A three-manifold with Euclidean metric."@en .
+
+emmo:EMMO_750d42f1_c291_42ce_91b2_a079d79639fb a owl:Class ;
+    rdfs:label "Cylinder"@en ;
+    rdfs:comment "A 2-manifold with one unconnected boundary and two \"faces\"."@en ;
+    rdfs:subClassOf emmo:EMMO_9268958f_7f54_48ab_a693_febe2645892b ;
+    skos:prefLabel "Cylinder"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A 2-manifold with one unconnected boundary and two \"faces\"."@en .
+
+emmo:EMMO_8406f483_eafc_4700_b6c0_5d2908ea2adf a owl:Class ;
+    rdfs:label "MobiusStrip"@en ;
+    rdfs:comment "A 2-manifold with one unconnected boundary and one \"face\"."@en ;
+    rdfs:subClassOf emmo:EMMO_9268958f_7f54_48ab_a693_febe2645892b ;
+    skos:prefLabel "MobiusStrip"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A 2-manifold with one unconnected boundary and one \"face\"."@en .
+
+emmo:EMMO_86060335_31c2_4820_b433_27c64aea0366 a owl:Class ;
+    rdfs:label "Torus"@en ;
+    rdfs:comment "The simplest 2-manifold with genus 1."@en ;
+    rdfs:subClassOf emmo:EMMO_9268958f_7f54_48ab_a693_febe2645892b ;
+    skos:prefLabel "Torus"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The simplest 2-manifold with genus 1."@en .
+
+emmo:EMMO_b2a234a8_579a_422c_9305_b8f7e72c76cd a owl:Class ;
+    rdfs:label "Circle"@en ;
+    rdfs:comment "Self-connected one-manyfold."@en ;
+    rdfs:subClassOf emmo:EMMO_0c576e13_4ee7_4f3d_bfe9_1614243df018 ;
+    skos:prefLabel "Circle"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Self-connected one-manyfold."@en .
+
+emmo:EMMO_d7bf784a_db94_4dd9_861c_54f262846fbf a owl:Class ;
+    rdfs:label "Sphere"@en ;
+    rdfs:comment "A standard 2-manifold with no unconnected boundaries."@en ;
+    rdfs:subClassOf emmo:EMMO_9268958f_7f54_48ab_a693_febe2645892b ;
+    skos:prefLabel "Sphere"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A standard 2-manifold with no unconnected boundaries."@en .
+
+<https://w3id.org/emmo/disciplines/geometrical> a owl:Ontology ;
+    dcterms:abstract "The graphical module provides classes for the representation of geometrical concepts."@en ;
+    dcterms:creator <https://orcid.org/0000-0002-1560-809X>,
+        <https://orcid.org/0000-0002-4181-2852>,
+        <https://orcid.org/0000-0003-0514-9229>,
+        <https://orcid.org/0000-0003-3805-8761>,
+        <https://orcid.org/0000-0003-4065-9742> ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "Geometrical"@en ;
+    rdfs:comment "The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.4/reference/data> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.4/disciplines/geometrical> ;
+    owl:versionInfo "1.0.4"^^xsd:string ;
+    emmo:EMMO_1246b120_abbe_4840_b0f8_3e4348b24a17 "emmo@emmc.eu"^^xsd:string .
+
+emmo:EMMO_0ab0485c_9e5b_4257_a679_90a2dfba5c7c a owl:Class ;
+    rdfs:label "ZeroManifold"@en ;
+    rdfs:comment "A topological space with the property that each point has a neighborhood that is homeomorphic to an open subset of 0-dimensional Euclidean space."@en ;
+    rdfs:subClassOf emmo:EMMO_b5957cef_a287_442d_a3ce_fd39f20ba1cd ;
+    skos:altLabel "0-manifold"@en ;
+    skos:prefLabel "ZeroManifold"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A topological space with the property that each point has a neighborhood that is homeomorphic to an open subset of 0-dimensional Euclidean space."@en .
+
+emmo:EMMO_46f0f8df_4dc6_418f_8036_10427a3a288e a owl:Class ;
+    rdfs:label "ThreeManifold"@en ;
+    rdfs:comment "A topological space with the property that each point has a neighborhood that is homeomorphic to an open subset of 3-dimensional Euclidean space."@en ;
+    rdfs:subClassOf emmo:EMMO_b5957cef_a287_442d_a3ce_fd39f20ba1cd ;
+    skos:altLabel "3-manifold"@en ;
+    skos:prefLabel "ThreeManifold"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A topological space with the property that each point has a neighborhood that is homeomorphic to an open subset of 3-dimensional Euclidean space."@en .
+
+emmo:EMMO_0c576e13_4ee7_4f3d_bfe9_1614243df018 a owl:Class ;
+    rdfs:label "OneManifold"@en ;
+    rdfs:comment "A topological space with the property that each point has a neighborhood that is homeomorphic to an open subset of 1-dimensional Euclidean space."@en ;
+    rdfs:subClassOf emmo:EMMO_b5957cef_a287_442d_a3ce_fd39f20ba1cd ;
+    skos:altLabel "1-manifold"@en ;
+    skos:prefLabel "OneManifold"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A topological space with the property that each point has a neighborhood that is homeomorphic to an open subset of 1-dimensional Euclidean space."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "One-dimensional manifolds include lines and circles, but not self-crossing curves. Two-dimensional manifolds are also called surfaces. Examples include the plane, the sphere, and the torus, and also the Klein bottle and real projective plane."@en .
+
+emmo:EMMO_b5957cef_a287_442d_a3ce_fd39f20ba1cd a owl:Class ;
+    rdfs:label "Geometrical"@en ;
+    rdfs:comment "A 'graphical' aimed to represent a geometrical concept."@en ;
+    rdfs:subClassOf emmo:EMMO_3e7add3d_e6ed_489a_a796_8e31fef9b490 ;
+    skos:example """A geometrical object can be expressed in many different forms.
+
+For example, a line can be expressed by:
+a) an equation like y=mx+q, which is both an 'equation' and a 'geometrical'
+b) a line drawn with a pencil on a paper, which is simply a 'graphical' object
+c) a set of axioms, when the properties of a line are inferred by the interpreter reading them, that are both 'graphical' and also 'formula'
+
+The case a) is a geometrical and mathematical, b) is geometrical and pictorial, while c) is geometrical and a composition of idiomatic strings."""@en ;
+    skos:prefLabel "Geometrical"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A 'graphical' aimed to represent a geometrical concept."@en .
+
+emmo:EMMO_9268958f_7f54_48ab_a693_febe2645892b a owl:Class ;
+    rdfs:label "TwoManifold"@en ;
+    rdfs:comment "A topological space with the property that each point has a neighborhood that is homeomorphic to an open subset of 2-dimensional Euclidean space."@en ;
+    rdfs:subClassOf emmo:EMMO_b5957cef_a287_442d_a3ce_fd39f20ba1cd ;
+    skos:altLabel "2-manifold"@en ;
+    skos:prefLabel "TwoManifold"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A topological space with the property that each point has a neighborhood that is homeomorphic to an open subset of 2-dimensional Euclidean space."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
+    owl:annotatedSource emmo:EMMO_0c576e13_4ee7_4f3d_bfe9_1614243df018 ;
+    owl:annotatedTarget "One-dimensional manifolds include lines and circles, but not self-crossing curves. Two-dimensional manifolds are also called surfaces. Examples include the plane, the sphere, and the torus, and also the Klein bottle and real projective plane."@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Manifold"^^xsd:anyURI .
+

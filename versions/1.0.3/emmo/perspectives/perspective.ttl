@@ -1,0 +1,68 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix emmo: <https://w3id.org/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+emmo:EMMO_53ed8611_2cd7_4286_9ef0_36572117b963 rdfs:label "Fusion"@en ;
+    rdfs:comment "A mereological fusion is any entity that is made up of two or more quantum entities, regardless of the fact that they are or not self-connected. It captures the idea of set, but excluding singletons."@en,
+        "The class of individuals representing mereological fusions consisting of two or more quantum entities."@en,
+        "The union of the CausalCluster and CausalStructure classes."@en .
+
+emmo:EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf rdfs:label "EMMO"@en ;
+    rdfs:comment """The EMMO conceptualises the world using the primitive concepts of causality and parthood. Parthood is about the composition of world entities starting from other more fundamental entities. Causality is about the interactions between world entities.
+The quantum is the smallest indivisible part of any world entity. Quantum individuals are the fundamental causal constituents of the universe, since it is implied that causality originates from quantum-to-quantum interactions. Quantums are no-dimensional, and their aggregation makes spacetime emerge from their causal structure. We can think of a quantum as an elementary particle after and interaction and before another interaction.
+Causality between macro entities (i.e. entities made of more than one quantum) is explained as the sum of the causality relations between their quantum constituents. Fundamental interactions (quantum fields) are represented as symmetric causality relation between macro entities, while classical interactions are mediated by chain of quantums (i.e. elementary particles).
+The fundamental distinction between world entities is causality self-connectedness: a world entity can be self-connected xor not self-connected depending on the causality network of its fundamental components.
+Void regions do not exist in the EMMO. In other words there is no spacetime without entities and spacetime emerges as relational property not as a self-standing entity). Entities are not placed in space or time: space and time are measured quantities, always relative between entities and are measured. In other words, space and time relations originates from causality interactions."""@en,
+        "The class of all the OWL individuals representing world entities according to EMMO conceptualisation."@en,
+        "The disjoint union of the fundamental mereocausal classes of Quantum, CausalPath, CausalSystem and Collection."@en .
+
+emmo:EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de rdfs:label "Item"@en ;
+    rdfs:comment """A world entity is direct causally self-connected if any two parts that make up the whole are direct causally connected to each other. In the EMMO, topological connectivity is based on causality.
+All physical objects, i.e. entities whose behaviour is explained by physics laws, are represented only by items. In other words, a physical object part is embedded in a direct causal graph that provides always a path between two of its parts.
+Members of a collection lack such direct causality connection, i.e. they do not constitute a physical object.
+Following graph theory concepts, the quantums of an item are all connected together within a network of causal relations, forming a connected causal graph. A collection is then a set of disconnected graphs."""@en,
+        "The class of individuals standing for quantum or causally self-connected world entities."@en,
+        "The disjoint union of Particle and CausalStructure classes."@en .
+
+<https://w3id.org/emmo/perspectives/perspective> a owl:Ontology ;
+    dcterms:abstract """The perspective module provides the practical implementation of the EMMO pluralistic approach for which the only objective categorization is provided by the Universe individual and all the Quantum individuals.
+Between these two extremes, there are several subjective ways to categorize real world objects, each one provide under a 'Perspective' subclass."""@en ;
+    dcterms:contributor <https://orcid.org/0000-0002-1560-809X>,
+        <https://orcid.org/0000-0002-4181-2852>,
+        <https://orcid.org/0009-0007-5850-6628>,
+        <https://orcid.org/0009-0008-8009-5009> ;
+    dcterms:creator <https://orcid.org/0000-0003-3805-8761> ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "Perspective"@en ;
+    rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.3/foundation/mereocausality> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.3/perspectives/perspective> ;
+    owl:versionInfo "1.0.3"^^xsd:string ;
+    emmo:EMMO_1246b120_abbe_4840_b0f8_3e4348b24a17 "emmo@emmc.eu"^^xsd:string .
+
+emmo:EMMO_49267eba_5548_4163_8f36_518d65b583f9 a owl:Class ;
+    rdfs:label "Perspective"@en ;
+    rdfs:comment "The class of causal objects that stand for world objects according to a specific representational perspective."@en ;
+    rdfs:subClassOf emmo:EMMO_c5ddfdba_c074_4aa4_ad6b_1ac4942d300d ;
+    skos:prefLabel "Perspective"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of causal objects that stand for world objects according to a specific representational perspective."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """This class is the practical implementation of the EMMO pluralistic approach for which the only objective categorization is provided by the Universe individual and all the Quantum individuals.
+Between these two extremes, there are several subjective ways to categorize real world objects, each one provide under a 'Perspective' subclass."""@en .
+
+emmo:EMMO_c5ddfdba_c074_4aa4_ad6b_1ac4942d300d rdfs:label "CausalStructure"@en ;
+    rdfs:comment "The class of individuals representing causally self-connected world entities."^^xsd:string,
+        "The disjoint union of Causal Path and CausalSystem classes."^^xsd:string,
+        """The most fundamental unity criterion for the definition of an structure is that:
+- is made of at least two quantums (a structure is not a simple entity)
+- all quantum parts form a causally connected graph"""^^xsd:string .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_49267eba_5548_4163_8f36_518d65b583f9 ;
+    owl:annotatedTarget "Perspective"@en ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From medieval Latin perspectiva ‘(science of) optics’, from perspect- ‘looked at closely’, from the verb perspicere, from per- ‘through’ + specere ‘to look’."@en .
+

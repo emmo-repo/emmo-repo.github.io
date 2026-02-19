@@ -1,0 +1,37 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/emmo/perspectives/perspective> a owl:Ontology ;
+    dcterms:abstract """The perspective module provides the practical implementation of the EMMO pluralistic approach for which the only objective categorization is provided by the Universe individual and all the Quantum individuals.
+Between these two extremes, there are several subjective ways to categorize real world objects, each one provide under a 'Perspective' subclass."""@en ;
+    dcterms:contributor ns1:AnnedeBaas,
+        ns1:FrancescoZaccarini,
+        ns1:GerhardGoldbeck,
+        ns1:JesperFriis ;
+    dcterms:creator ns1:EmanueleGhedini ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "Perspective"@en ;
+    rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.2/mereocausality> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.2/perspectives/perspective> ;
+    owl:versionInfo "1.0.2"^^xsd:string ;
+    ns1:contact "emmo@emmc.eu"^^xsd:string .
+
+ns1:Perspective a owl:Class ;
+    rdfs:subClassOf ns1:CausalStructure ;
+    skos:prefLabel "Perspective"@en ;
+    ns1:elucidation "The class of causal objects that stand for world objects according to a specific representational perspective."@en ;
+    ns1:note """This class is the practical implementation of the EMMO pluralistic approach for which the only objective categorization is provided by the Universe individual and all the Quantum individuals.
+Between these two extremes, there are several subjective ways to categorize real world objects, each one provide under a 'Perspective' subclass."""@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Perspective ;
+    owl:annotatedTarget "Perspective"@en ;
+    ns1:etymology "From medieval Latin perspectiva ‘(science of) optics’, from perspect- ‘looked at closely’, from the verb perspicere, from per- ‘through’ + specere ‘to look’."@en .
+

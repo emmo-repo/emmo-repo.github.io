@@ -1,0 +1,79 @@
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <https://w3id.org/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dcterms:alternative a owl:AnnotationProperty .
+
+dcterms:bibliographicCitation a owl:AnnotationProperty .
+
+dcterms:created a owl:AnnotationProperty .
+
+dcterms:hasFormat a owl:AnnotationProperty .
+
+dcterms:issued a owl:AnnotationProperty .
+
+dcterms:modified a owl:AnnotationProperty .
+
+dcterms:source a owl:AnnotationProperty .
+
+bibo:doi a owl:AnnotationProperty .
+
+bibo:status a owl:AnnotationProperty .
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+
+foaf:homepage a owl:AnnotationProperty .
+
+foaf:logo a owl:AnnotationProperty .
+
+foaf:mbox a owl:AnnotationProperty .
+
+<https://w3id.org/emmo/emmo> a owl:Ontology ;
+    dcterms:abstract """Elementary Multiperspective Material Ontology (EMMO)
+
+EMMO is a multidisciplinary effort to develop a standard representational framework (the ontology) based on current materials modelling knowledge, including physical sciences, analytical philosophy and information and communication technologies.
+
+It provides the connection between the physical world, materials characterisation world and materials modelling world.
+
+EMMO is released under a Creative Commons license Attribution 4.0 International (CC BY 4.0)."""@en ;
+    dcterms:alternative "EMMO"@en ;
+    dcterms:bibliographicCitation "F. A. Zaccarini, C. Masolo, E. Ghedini, and S. Borgo. From Causation (and Parthood) to Time: The Case of EMMO (2023) doi: 10.3233/FAIA231120"^^xsd:string ;
+    dcterms:contributor ns1:FrancescaBleken,
+        ns1:FrancescoZaccarini,
+        ns1:OtelloRoscioni,
+        ns1:SimonClark ;
+    dcterms:created "2025-02-20"^^xsd:string ;
+    dcterms:creator ns1:AdhamHashibon,
+        ns1:EmanueleGhedini,
+        ns1:GeorgSchmitz,
+        ns1:GerhardGoldbeck,
+        ns1:JesperFriis ;
+    dcterms:hasFormat <https://www.w3.org/TR/turtle> ;
+    dcterms:issued "2018-05-03"^^xsd:string ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:modified "2025-03-27"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:source "CWA 17815, Materials characterisation - Terminology, metadata and classification. Led by EMMC. 2017. https://www.cencenelec.eu/media/CEN-CENELEC/CWAs/ICT/cwa17815.pdf"^^xsd:string,
+        "European Commission, Directorate-General for Research and Innovation, Baas, A., What makes a material function? - Let me compute the ways - Modelling in H2020 LEIT-NMBP programme materials and nanotechnology projects -Sixth version - Short version, Baas, A.(editor), Publications Office of the European Union, 2017, https://data.europa.eu/doi/10.2777/404734"@en ;
+    dcterms:title "Elementary Multiperspective Material Ontology (EMMO)"@en ;
+    bibo:doi "10.5281/zenodo.5730500"^^xsd:string ;
+    bibo:status "Hotfix for release 1.0.0 of the reference-level ontology."^^xsd:string ;
+    vann:preferredNamespacePrefix "emmo"^^xsd:string ;
+    vann:preferredNamespaceUri "https://w3id.org/emmo"^^xsd:string ;
+    rdfs:comment "The EMMO should be reasoned in order to visualize all inferences and class hierarchy in Protege (ctrl+R hotkey).  It is tested with both the HermiT (preferred) and HermiT reasoners."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.2/disciplines> ;
+    owl:priorVersion "1.0.1"^^xsd:string ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.2/emmo> ;
+    owl:versionInfo "1.0.2"^^xsd:string ;
+    foaf:homepage <https://github.com/emmo-repo/EMMO> ;
+    foaf:logo "https://github.com/emmo-repo/EMMO/raw/master/doc/emmo-logo.png"^^xsd:string ;
+    foaf:mbox <mailto:emmo@emmc.eu> ;
+    ns1:EMMO_1246b120_abbe_4840_b0f8_3e4348b24a17 "emmo@emmc.eu"^^xsd:string .
+

@@ -1,0 +1,1614 @@
+@prefix : <https://w3id.org/emmo/hume/disciplines/manufacturing#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/emmo#> .
+@prefix ns2: <http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:ArchetypeManufacturing a owl:Class ;
+    rdfs:label "ArchetypeManufacturing"@en ;
+    rdfs:comment "A manufacturing in which the product is a solid body with a well defined geometrical shape made from shapeless original material parts, whose cohesion is created during the process."@en ;
+    rdfs:seeAlso "DIN 8580:2020"@en ;
+    rdfs:subClassOf ns1:WorkpieceManufacturing ;
+    skos:altLabel "Urformen"@de,
+        "PrimitiveForming"@en ;
+    skos:prefLabel "ArchetypeManufacturing"@en ;
+    ns1:elucidation "A manufacturing in which the product is a solid body with a well defined geometrical shape made from shapeless original material parts, whose cohesion is created during the process."@en .
+
+ns1:Assembled a owl:Class ;
+    rdfs:label "Assembled"@en ;
+    rdfs:comment "A system of independent elements that are assembled together to perform a function."@en ;
+    rdfs:subClassOf ns1:HolisticArrangement ;
+    skos:prefLabel "Assembled"@en ;
+    ns1:elucidation "A system of independent elements that are assembled together to perform a function."@en .
+
+ns1:AssemblyLine a owl:Class ;
+    rdfs:label "AssemblyLine"@en ;
+    rdfs:comment "A manufacturing process in which interchangeable parts are added to a product in a sequential manner to create an end product."@en,
+        "Is not collection, since the connection between the elements of an assembly line occurs through the flow of objects that are processed."@en ;
+    rdfs:subClassOf ns1:ManufacturingSystem ;
+    skos:prefLabel "AssemblyLine"@en ;
+    ns1:elucidation "A manufacturing process in which interchangeable parts are added to a product in a sequential manner to create an end product."@en .
+
+ns1:BlowMolding a owl:Class ;
+    rdfs:label "BlowMolding"@en ;
+    rdfs:subClassOf ns1:FormingFromPlastic ;
+    skos:prefLabel "BlowMolding"@en .
+
+ns1:Calendering a owl:Class ;
+    rdfs:label "Calendering"@en ;
+    rdfs:subClassOf ns1:FormingFromPlastic ;
+    skos:prefLabel "Calendering"@en .
+
+ns1:Cementing a owl:Class ;
+    rdfs:label "Cementing"@en ;
+    rdfs:subClassOf ns1:ArchetypeJoin ;
+    skos:prefLabel "Cementing"@en .
+
+ns1:CentrifugalCasting a owl:Class ;
+    rdfs:label "CentrifugalCasting"@en ;
+    rdfs:subClassOf ns1:Casting ;
+    skos:prefLabel "CentrifugalCasting"@en .
+
+ns1:CeramicSintering a owl:Class ;
+    rdfs:label "CeramicSintering"@en ;
+    rdfs:subClassOf ns1:Sintering ;
+    skos:prefLabel "CeramicSintering"@en .
+
+ns1:ChipboardManufacturing a owl:Class ;
+    rdfs:label "ChipboardManufacturing"@en ;
+    rdfs:subClassOf ns1:FormingFromChip ;
+    skos:prefLabel "ChipboardManufacturing"@en .
+
+ns1:CommercialProduct a owl:Class ;
+    rdfs:label "CommercialProduct"@en ;
+    rdfs:comment "An product that is ready for commercialisation."@en ;
+    rdfs:subClassOf ns1:Product ;
+    skos:altLabel "Product"@en ;
+    skos:prefLabel "CommercialProduct"@en ;
+    ns1:elucidation "An product that is ready for commercialisation."@en .
+
+ns1:ConcreteOrPlasterPouring a owl:Class ;
+    rdfs:label "ConcreteOrPlasterPouring"@en ;
+    rdfs:subClassOf ns1:FormingFromPulp ;
+    skos:prefLabel "ConcreteOrPlasterPouring"@en .
+
+ns1:ContinuousCasting a owl:Class ;
+    rdfs:label "ContinuousCasting"@en ;
+    rdfs:subClassOf ns1:Casting ;
+    skos:prefLabel "ContinuousCasting"@en .
+
+ns1:DieCasting a owl:Class ;
+    rdfs:label "DieCasting"@en ;
+    rdfs:subClassOf ns1:Casting ;
+    skos:prefLabel "DieCasting"@en .
+
+ns1:DippingForms a owl:Class ;
+    rdfs:label "DippingForms"@en ;
+    rdfs:subClassOf ns1:FormingFromLiquid ;
+    skos:prefLabel "DippingForms"@en .
+
+ns1:DrawForms a owl:Class ;
+    rdfs:label "DrawForms"@en ;
+    rdfs:subClassOf ns1:FormingFromPlastic ;
+    skos:prefLabel "DrawForms"@en .
+
+ns1:DropForging a owl:Class ;
+    rdfs:label "DropForging"@en ;
+    rdfs:subClassOf ns1:ReshapeManufacturing ;
+    skos:prefLabel "DropForging"@en .
+
+ns1:ElectricCurrentAssistedSintering a owl:Class ;
+    rdfs:label "ElectricCurrentAssistedSintering"@en ;
+    rdfs:subClassOf ns1:Sintering ;
+    skos:prefLabel "ElectricCurrentAssistedSintering"@en .
+
+ns1:ElectroSinterForging a owl:Class ;
+    rdfs:label "ElectroSinterForging"@en ;
+    rdfs:subClassOf ns1:Sintering ;
+    skos:prefLabel "ElectroSinterForging"@en .
+
+ns1:ElectrolyticDeposition a owl:Class ;
+    rdfs:label "ElectrolyticDeposition"@en ;
+    rdfs:subClassOf ns1:FormingFromIonised ;
+    skos:prefLabel "ElectrolyticDeposition"@en .
+
+ns1:Electroplating a owl:Class ;
+    rdfs:label "Electroplating"@en ;
+    rdfs:subClassOf ns1:CoatingManufacturing ;
+    skos:prefLabel "Electroplating"@en .
+
+ns1:Extrusion a owl:Class ;
+    rdfs:label "Extrusion"@en ;
+    rdfs:subClassOf ns1:FormingFromPlastic,
+        ns1:ReshapeManufacturing ;
+    skos:prefLabel "Extrusion"@en .
+
+ns1:FiberReinforcePlasticManufacturing a owl:Class ;
+    rdfs:label "FiberReinforcePlasticManufacturing"@en ;
+    rdfs:subClassOf ns1:FormingFromLiquid ;
+    skos:prefLabel "FiberReinforcePlasticManufacturing"@en .
+
+ns1:FiberboardManufacturing a owl:Class ;
+    rdfs:label "FiberboardManufacturing"@en ;
+    rdfs:subClassOf ns1:FormingFromChip ;
+    skos:prefLabel "FiberboardManufacturing"@en .
+
+ns1:Filling a owl:Class ;
+    rdfs:label "Filling"@en ;
+    rdfs:subClassOf ns1:JoinManufacturing ;
+    skos:prefLabel "Filling"@en .
+
+ns1:FlameCutting a owl:Class ;
+    rdfs:label "FlameCutting"@en ;
+    rdfs:subClassOf ns1:ThermalCutting ;
+    skos:prefLabel "FlameCutting"@en .
+
+ns1:Flanging a owl:Class ;
+    rdfs:label "Flanging"@en ;
+    rdfs:subClassOf ns1:FormingJoin ;
+    skos:prefLabel "Flanging"@en .
+
+ns1:Foaming a owl:Class ;
+    rdfs:label "Foaming"@en ;
+    rdfs:subClassOf ns1:FormingFromLiquid ;
+    skos:prefLabel "Foaming"@en .
+
+ns1:Folding a owl:Class ;
+    rdfs:label "Folding"@en ;
+    rdfs:subClassOf ns1:FormingJoin ;
+    skos:prefLabel "Folding"@en .
+
+ns1:Galvanizing a owl:Class ;
+    rdfs:label "Galvanizing"@en ;
+    rdfs:subClassOf ns1:ArchetypeJoin ;
+    skos:prefLabel "Galvanizing"@en .
+
+ns1:GravityCasting a owl:Class ;
+    rdfs:label "GravityCasting"@en ;
+    rdfs:subClassOf ns1:Casting ;
+    skos:prefLabel "GravityCasting"@en .
+
+ns1:GrowingCrystal a owl:Class ;
+    rdfs:label "GrowingCrystal"@en ;
+    rdfs:subClassOf ns1:FormingFromLiquid ;
+    skos:prefLabel "GrowingCrystal"@en .
+
+ns1:HandlingDevice a owl:Class ;
+    rdfs:label "HandlingDevice"@en ;
+    rdfs:subClassOf ns1:Device ;
+    skos:prefLabel "HandlingDevice"@en .
+
+ns1:HardeningByDrawing a owl:Class ;
+    rdfs:label "HardeningByDrawing"@en ;
+    rdfs:subClassOf ns1:HardeningByForming ;
+    skos:prefLabel "HardeningByDrawing"@en .
+
+ns1:HardeningByForging a owl:Class ;
+    rdfs:label "HardeningByForging"@en ;
+    rdfs:subClassOf ns1:HardeningByForming ;
+    skos:prefLabel "HardeningByForging"@en .
+
+ns1:HotDipGalvanizing a owl:Class ;
+    rdfs:label "HotDipGalvanizing"@en ;
+    rdfs:subClassOf ns1:CoatingManufacturing ;
+    skos:altLabel "Hot-dipGalvanizing"@en ;
+    skos:prefLabel "HotDipGalvanizing"@en .
+
+ns1:InjectionMolding a owl:Class ;
+    rdfs:label "InjectionMolding"@en ;
+    rdfs:subClassOf ns1:ArchetypeJoin,
+        ns1:FormingFromPlastic ;
+    skos:prefLabel "InjectionMolding"@en .
+
+ns1:InspectionDevice a owl:Class ;
+    rdfs:label "InspectionDevice"@en ;
+    rdfs:subClassOf ns1:Device ;
+    skos:prefLabel "InspectionDevice"@en .
+
+ns1:InterferenceFitting a owl:Class ;
+    rdfs:label "InterferenceFitting"@en ;
+    rdfs:subClassOf ns1:Pressing ;
+    skos:prefLabel "InterferenceFitting"@en .
+
+ns1:Irradiate a owl:Class ;
+    rdfs:label "Irradiate"@en ;
+    rdfs:subClassOf ns1:MaterialTreatment ;
+    skos:prefLabel "Irradiate"@en .
+
+ns1:IsothermalConversion a owl:Class ;
+    rdfs:label "IsothermalConversion"@en ;
+    rdfs:subClassOf ns1:HeatTreatment ;
+    skos:prefLabel "IsothermalConversion"@en .
+
+ns1:LaserCutting a owl:Class ;
+    rdfs:label "LaserCutting"@en ;
+    rdfs:subClassOf ns1:ThermalCutting ;
+    skos:prefLabel "LaserCutting"@en .
+
+ns1:LowPressureCasting a owl:Class ;
+    rdfs:label "LowPressureCasting"@en ;
+    rdfs:subClassOf ns1:Casting ;
+    skos:prefLabel "LowPressureCasting"@en .
+
+ns1:MachineCell a owl:Class ;
+    rdfs:label "MachineCell"@en ;
+    rdfs:comment "A group of machineries used to process a group of similar parts."@en,
+        "Is not simply a collection of machineries, since the connection between them is due to the parallel flow of processed parts that comes from a unique source and ends into a common repository."@en ;
+    rdfs:subClassOf ns1:ManufacturingSystem ;
+    skos:prefLabel "MachineCell"@en ;
+    ns1:elucidation "A group of machineries used to process a group of similar parts."@en .
+
+ns1:Magnetizing a owl:Class ;
+    rdfs:label "Magnetizing"@en ;
+    rdfs:subClassOf ns1:MaterialTreatment ;
+    skos:prefLabel "Magnetizing"@en .
+
+ns1:ManufacturingDevice a owl:Class ;
+    rdfs:label "ManufacturingDevice"@en ;
+    rdfs:comment "A device that is designed to participate to a manufacturing process."@en ;
+    rdfs:subClassOf ns1:Device ;
+    skos:prefLabel "ManufacturingDevice"@en ;
+    ns1:elucidation "A device that is designed to participate to a manufacturing process."@en .
+
+ns1:MaterialSynthesis a owl:Class ;
+    rdfs:label "MaterialSynthesis"@en ;
+    rdfs:comment "The creation of a material entity starting from fundamental substances, involving chemical phenomena (e.g. reaction, bonding)."@en ;
+    rdfs:subClassOf ns1:MaterialsProcessing,
+        ns1:ProductionEngineering ;
+    skos:prefLabel "MaterialSynthesis"@en ;
+    ns1:elucidation "The creation of a material entity starting from fundamental substances, involving chemical phenomena (e.g. reaction, bonding)."@en ;
+    ns1:note "Deals with undefined shapes both input and output."@en .
+
+ns1:MetallicPowderSintering a owl:Class ;
+    rdfs:label "MetallicPowderSintering"@en ;
+    rdfs:subClassOf ns1:Sintering ;
+    skos:prefLabel "MetallicPowderSintering"@en .
+
+ns1:MicrowaveSintering a owl:Class ;
+    rdfs:label "MicrowaveSintering"@en ;
+    rdfs:subClassOf ns1:Sintering ;
+    skos:prefLabel "MicrowaveSintering"@en .
+
+ns1:Molds a owl:Class ;
+    rdfs:label "Molds"@en ;
+    rdfs:subClassOf ns1:FormingFromPlastic ;
+    skos:prefLabel "Molds"@en .
+
+ns1:Painting a owl:Class ;
+    rdfs:label "Painting"@en ;
+    rdfs:subClassOf ns1:CoatingManufacturing ;
+    skos:prefLabel "Painting"@en .
+
+ns1:PaperManufacturing a owl:Class ;
+    rdfs:label "PaperManufacturing"@en ;
+    rdfs:subClassOf ns1:FormingFromChip ;
+    skos:prefLabel "PaperManufacturing"@en .
+
+ns1:PermanentLiquidPhaseSintering a owl:Class ;
+    rdfs:label "PermanentLiquidPhaseSintering"@en ;
+    rdfs:subClassOf ns1:Sintering ;
+    skos:prefLabel "PermanentLiquidPhaseSintering"@en .
+
+ns1:PhotochemicalProcesses a owl:Class ;
+    rdfs:label "PhotochemicalProcesses"@en ;
+    rdfs:subClassOf ns1:MaterialTreatment ;
+    skos:prefLabel "PhotochemicalProcesses"@en .
+
+ns1:PlasmaCutting a owl:Class ;
+    rdfs:label "PlasmaCutting"@en ;
+    rdfs:subClassOf ns1:ThermalCutting ;
+    skos:prefLabel "PlasmaCutting"@en .
+
+ns1:PlasticModeling a owl:Class ;
+    rdfs:label "PlasticModeling"@en ;
+    rdfs:subClassOf ns1:FormingFromPlastic ;
+    skos:prefLabel "PlasticModeling"@en .
+
+ns1:PlasticSintering a owl:Class ;
+    rdfs:label "PlasticSintering"@en ;
+    rdfs:subClassOf ns1:Sintering ;
+    skos:prefLabel "PlasticSintering"@en .
+
+ns1:PorcelainOrCeramicCasting a owl:Class ;
+    rdfs:label "PorcelainOrCeramicCasting"@en ;
+    rdfs:subClassOf ns1:FormingFromPulp ;
+    skos:prefLabel "PorcelainOrCeramicCasting"@en .
+
+ns1:PowderCoating a owl:Class ;
+    rdfs:label "PowderCoating"@en ;
+    rdfs:subClassOf ns1:CoatingManufacturing ;
+    skos:prefLabel "PowderCoating"@en .
+
+ns1:Presses a owl:Class ;
+    rdfs:label "Presses"@en ;
+    rdfs:subClassOf ns1:FormingFromPowder ;
+    skos:prefLabel "Presses"@en .
+
+ns1:ProductionSystem a owl:Class ;
+    rdfs:label "ProductionSystem"@en ;
+    rdfs:comment "A network of objects that implements a production process through a series of interconnected elements."@en ;
+    rdfs:subClassOf ns1:Network ;
+    skos:prefLabel "ProductionSystem"@en ;
+    ns1:elucidation "A network of objects that implements a production process through a series of interconnected elements."@en .
+
+ns1:RapidPrototyping a owl:Class ;
+    rdfs:label "RapidPrototyping"@en ;
+    rdfs:comment "Application of additive manufacturing intended for reducing the time needed for producing prototypes."@en ;
+    rdfs:subClassOf ns1:AdditiveManufacturing ;
+    skos:prefLabel "RapidPrototyping"@en ;
+    ns1:elucidation "Application of additive manufacturing intended for reducing the time needed for producing prototypes."@en .
+
+ns1:Riveting a owl:Class ;
+    rdfs:label "Riveting"@en ;
+    rdfs:subClassOf ns1:FormingJoin ;
+    skos:prefLabel "Riveting"@en .
+
+ns1:SandMolds a owl:Class ;
+    rdfs:label "SandMolds"@en ;
+    rdfs:subClassOf ns1:FormingFromPowder ;
+    skos:prefLabel "SandMolds"@en .
+
+ns1:SparkPlasmaSintering a owl:Class ;
+    rdfs:label "SparkPlasmaSintering"@en ;
+    rdfs:subClassOf ns1:Sintering ;
+    skos:prefLabel "SparkPlasmaSintering"@en .
+
+ns1:ThermalSprayingForming a owl:Class ;
+    rdfs:label "ThermalSprayingForming"@en ;
+    rdfs:subClassOf ns1:FormingFromPowder ;
+    skos:prefLabel "ThermalSprayingForming"@en .
+
+ns1:ThermochemicalTreatment a owl:Class ;
+    rdfs:label "ThermochemicalTreatment"@en ;
+    rdfs:subClassOf ns1:HeatTreatment ;
+    skos:prefLabel "ThermochemicalTreatment"@en .
+
+ns1:ThermomechanicalTreatment a owl:Class ;
+    rdfs:label "ThermomechanicalTreatment"@en ;
+    rdfs:subClassOf ns1:MaterialTreatment ;
+    skos:prefLabel "ThermomechanicalTreatment"@en .
+
+ns1:TransferMolding a owl:Class ;
+    rdfs:label "TransferMolding"@en ;
+    rdfs:subClassOf ns1:FormingFromPlastic ;
+    skos:prefLabel "TransferMolding"@en .
+
+ns1:TransientLiquidPhaseSintering a owl:Class ;
+    rdfs:label "TransientLiquidPhaseSintering"@en ;
+    rdfs:subClassOf ns1:Sintering ;
+    skos:prefLabel "TransientLiquidPhaseSintering"@en .
+
+ns1:TransportationDevice a owl:Class ;
+    rdfs:label "TransportationDevice"@en ;
+    rdfs:subClassOf ns1:Device ;
+    skos:prefLabel "TransportationDevice"@en .
+
+ns1:VaporDeposition a owl:Class ;
+    rdfs:label "VaporDeposition"@en ;
+    rdfs:subClassOf ns1:FormingFromGas ;
+    skos:prefLabel "VaporDeposition"@en .
+
+ns1:hasManufacturedOutput a owl:ObjectProperty ;
+    rdfs:label "hasManufacturedOutput"@en ;
+    ns2:python_name "hasManufacturedOutput"@en ;
+    rdfs:domain ns1:Manufacturing ;
+    rdfs:range ns1:ManufacturedProduct ;
+    rdfs:subPropertyOf ns1:hasProductOutput ;
+    skos:prefLabel "hasManufacturedOutput"@en .
+
+ns1:hasServiceOutput a owl:ObjectProperty ;
+    rdfs:label "hasServiceOutput"@en ;
+    ns2:python_name "hasServiceOutput"@en ;
+    rdfs:range ns1:Service ;
+    rdfs:subPropertyOf ns1:hasProductOutput ;
+    skos:prefLabel "hasServiceOutput"@en .
+
+: a owl:Ontology ;
+    dcterms:abstract "Describes manufacturing processes with engineered participants. The module also provides a root for engineered materials."@en ;
+    dcterms:creator <https://orcid.org/AdhamHashibon>,
+        <https://orcid.org/EmanueleGhedini>,
+        <https://orcid.org/GeorgSchmitz>,
+        <https://orcid.org/GerhardGoldbeck>,
+        <https://orcid.org/JesperFriis> ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "Manufacturing"@en ;
+    rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.4/disciplines/materials>,
+        <https://w3id.org/emmo/1.0.4/reference/agency> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/disciplines/manufacturing> ;
+    owl:versionInfo "1.0.4"^^xsd:string ;
+    ns1:contact "emmo@emmc.eu"^^xsd:string .
+
+ns1:3DPrinting a owl:Class ;
+    rdfs:label "3DPrinting"@en ;
+    rdfs:comment """fabrication of objects through the deposition of a material using a print head, nozzle or another printer technology
+Note 1 to entry: This term is often used in a non-technical context synonymously with additive manufacturing (3.1.2) and, in these cases, typically associated with machines used for non-industrial purposes including personal use."""^^xsd:string,
+        "Fabrication of objects through the deposition of a material using a print head, nozzle or another printer technology."@en ;
+    rdfs:subClassOf ns1:AdditiveManufacturing ;
+    skos:prefLabel "3DPrinting"@en ;
+    ns1:elucidation "Fabrication of objects through the deposition of a material using a print head, nozzle or another printer technology."@en ;
+    ns1:note "This term is often used in a non-technical context synonymously with additive manufacturing and, in these cases, typically associated with machines used for non-industrial purposes including personal use."@en .
+
+ns1:Annealing a owl:Class ;
+    rdfs:label "Annealing"@en ;
+    rdfs:subClassOf ns1:HeatTreatment ;
+    skos:prefLabel "Annealing"@en ;
+    ns1:note "heat treatment consisting of heating and soaking at a suitable temperature, followed by cooling under conditions such that, after return to ambient temperature, the metal will be in a structural state closer to that of equilibrium"^^xsd:string .
+
+ns1:Assemblying a owl:Class ;
+    rdfs:label "Assemblying"@en ;
+    rdfs:comment "The act of connecting together the parts of something"@en ;
+    rdfs:subClassOf ns1:JoinManufacturing ;
+    skos:prefLabel "Assemblying"@en ;
+    ns1:elucidation "The act of connecting together the parts of something"@en ;
+    ns1:note "No loss or adds of parts by the components, nor merging. In assemblying parts are losing some of theirs movement degrees of freedom."@en .
+
+ns1:Bending a owl:Class ;
+    rdfs:label "Bending"@en ;
+    rdfs:comment "Forming of a solid body, whereby the plastic state is essentially brought about by a bending stress"^^xsd:string ;
+    rdfs:subClassOf ns1:FlexuralForming,
+        ns1:FormingJoin ;
+    skos:prefLabel "Bending"@en .
+
+ns1:Cleaning a owl:Class ;
+    rdfs:label "Cleaning"@en ;
+    rdfs:comment "Process for removing unwanted residual or waste material from a given product or material"^^xsd:string ;
+    rdfs:subClassOf ns1:SeparateManufacturing ;
+    skos:prefLabel "Cleaning"@en .
+
+ns1:DeepDrawing a owl:Class ;
+    rdfs:label "DeepDrawing"@en ;
+    rdfs:comment "Forming of vessel parts from a flat mould into a three-dimensional shape by means of a press and tools, whereby material is neither removed nor added"^^xsd:string ;
+    rdfs:subClassOf ns1:ReshapeManufacturing,
+        ns1:TensileForming ;
+    skos:altLabel "Tiefziehen"^^xsd:string ;
+    skos:prefLabel "DeepDrawing"@en .
+
+ns1:DeepFreezing a owl:Class ;
+    rdfs:label "DeepFreezing"@en ;
+    rdfs:subClassOf ns1:HeatTreatment ;
+    skos:altLabel "Cryogenic treatment, Deep-freeze"^^xsd:string,
+        "Tieftemperaturbehandeln"^^xsd:string ;
+    skos:prefLabel "DeepFreezing"@en ;
+    ns1:note "Treatment carried out after hardening or case hardening consisting of cooling to a temperature below room temperature to complete the transformation of austenite to martensite"^^xsd:string .
+
+ns1:Dismantling a owl:Class ;
+    rdfs:label "Dismantling"@en ;
+    rdfs:subClassOf ns1:SeparateManufacturing ;
+    skos:altLabel "Demontage"^^xsd:string ;
+    skos:prefLabel "Dismantling"@en ;
+    ns1:note "action to disassemble a product or a component by removing all or some of its constituent parts with the intent to salvage"^^xsd:string .
+
+ns1:DrawForming a owl:Class ;
+    rdfs:label "DrawForming"@en ;
+    rdfs:comment "Draw forming by drawing a workpiece through a tool opening that is narrowed in the drawing direction."^^xsd:string ;
+    rdfs:subClassOf ns1:TensileForming ;
+    skos:prefLabel "DrawForming"@en .
+
+ns1:Drilling a owl:Class ;
+    rdfs:label "Drilling"@en ;
+    rdfs:comment "machining with a circular cutting movement in which the axis of rotation of the tool and the axis of the internal surface to be produced are identical and the feed movement is in the direction of this axis. The axis of rotation of the cutting movement maintains its position relative to the workpiece independently of the feed movement (axis of rotation workpiece-bound)."^^xsd:string ;
+    rdfs:subClassOf ns1:Machining ;
+    skos:altLabel "Bohren"^^xsd:string ;
+    skos:prefLabel "Drilling"@en .
+
+ns1:Factory a owl:Class ;
+    rdfs:label "Factory"@en ;
+    rdfs:comment "A building or group of buildings where goods are manufactured or assembled."@en ;
+    rdfs:subClassOf ns1:HolisticSystem ;
+    skos:altLabel "IndustrialPlant"@en ;
+    skos:prefLabel "Factory"@en ;
+    ns1:elucidation "A building or group of buildings where goods are manufactured or assembled."@en .
+
+ns1:FormingBlasting a owl:Class ;
+    rdfs:label "FormingBlasting"@en ;
+    rdfs:comment "Shot peening is shot peening for shaping or straightening workpieces by introducing residual compressive stresses (from: DIN 8200/10.82)."^^xsd:string ;
+    rdfs:subClassOf ns1:MaterialTreatment ;
+    skos:altLabel "Umformstrahlen"^^xsd:string ;
+    skos:prefLabel "FormingBlasting"@en .
+
+ns1:FormingFromGas a owl:Class ;
+    rdfs:label "FormingFromGas"@en ;
+    rdfs:subClassOf ns1:FromNotProperShapeToWorkPiece ;
+    skos:prefLabel "FormingFromGas"@en .
+
+ns1:FormingFromIonised a owl:Class ;
+    rdfs:label "FormingFromIonised"@en ;
+    rdfs:subClassOf ns1:FromNotProperShapeToWorkPiece ;
+    skos:prefLabel "FormingFromIonised"@en .
+
+ns1:FreeForming a owl:Class ;
+    rdfs:label "FreeForming"@en ;
+    rdfs:comment "Free forming is pressure forming with tools that do not or only partially contain the shape of the workpiece and move against each other."^^xsd:string,
+        "Non la metterei"^^xsd:string,
+        "Printing forms with tools that do not or only partially contain the shape of the workpiece and move against each other. The workpiece shape is created by free or fixed relative movement between the tool and the workpiece (kinematic shape generation)."^^xsd:string ;
+    rdfs:subClassOf ns1:CompressiveForming ;
+    skos:prefLabel "FreeForming"@en .
+
+ns1:FromWorkPIecetoWorkPiece a owl:Class ;
+    rdfs:label "FromWorkPIecetoWorkPiece"@en ;
+    rdfs:subClassOf ns1:WorkpieceForming ;
+    skos:prefLabel "FromWorkPIecetoWorkPiece"@en .
+
+ns1:Gluing a owl:Class ;
+    rdfs:label "Gluing"@en ;
+    rdfs:comment "Process for joining two (base) materials by means of an adhesive polymer material"^^xsd:string ;
+    rdfs:subClassOf ns1:JoinManufacturing ;
+    skos:altLabel "Kleben"^^xsd:string ;
+    skos:prefLabel "Gluing"@en .
+
+ns1:GravitySintering a owl:Class ;
+    rdfs:label "GravitySintering"@en ;
+    rdfs:seeAlso """ISO 3252:2019 Powder metallurgy
+loose-powder sintering, gravity sintering: sintering of uncompacted powder"""@en ;
+    rdfs:subClassOf ns1:Sintering ;
+    skos:altLabel "Loose-powderSintering"@en,
+        "PressurelessSintering"@en ;
+    skos:prefLabel "GravitySintering"@en .
+
+ns1:Grinding a owl:Class ;
+    rdfs:label "Grinding"@en ;
+    rdfs:comment "Removal of material by means of rigid or flexible discs or belts containing abrasives."^^xsd:string ;
+    rdfs:subClassOf ns1:UndefinedEdgeCutting ;
+    skos:altLabel "Schleifen"^^xsd:string ;
+    skos:prefLabel "Grinding"@en .
+
+ns1:Hardening a owl:Class ;
+    rdfs:label "Hardening"@en ;
+    rdfs:subClassOf ns1:HeatTreatment ;
+    skos:prefLabel "Hardening"@en ;
+    ns1:note "Heat treatment process that generally produces martensite in the matrix."^^xsd:string .
+
+ns1:HardeningByRolling a owl:Class ;
+    rdfs:label "HardeningByRolling"@en ;
+    rdfs:subClassOf ns1:HardeningByForming ;
+    skos:altLabel "VerfestigendurchWalzen"^^xsd:string ;
+    skos:prefLabel "HardeningByRolling"@en ;
+    ns1:note "Strengthening by rolling is the strengthening of component surfaces by mechanically generating compressive stresses in the component surface and consolidating the material."^^xsd:string .
+
+ns1:LiquidPhaseSintering a owl:Class ;
+    rdfs:label "LiquidPhaseSintering"@en ;
+    rdfs:seeAlso """ISO 3252:2019 Powder metallurgy
+liquid-phase sintering: sintering of a powder or compact containing at least two constituents, under conditions such that a liquid phase is formed"""@en ;
+    rdfs:subClassOf ns1:Sintering ;
+    skos:prefLabel "LiquidPhaseSintering"@en .
+
+ns1:ManufacturedMaterial a owl:Class ;
+    rdfs:label "ManufacturedMaterial"@en ;
+    rdfs:comment "A material that is obtained through a manufacturing process."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf ns1:hasOutput ] ;
+            owl:someValuesFrom ns1:Manufacturing ] ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( ns1:ManufacturedProduct ns1:ArtificialMaterial ) ] ;
+    skos:altLabel "EngineeredMaterial"@en,
+        "ProcessedMaterial"@en ;
+    skos:prefLabel "ManufacturedMaterial"@en ;
+    ns1:elucidation "A material that is obtained through a manufacturing process."@en .
+
+ns1:Milling a owl:Class ;
+    rdfs:label "Milling"@en ;
+    rdfs:comment "Machining with a circular cutting movement, usually associated with a multi-toothed tool, and with a feed movement perpendicular or oblique to the axis of rotation of the tool, to produce any workpiece surface."^^xsd:string ;
+    rdfs:subClassOf ns1:Machining ;
+    skos:altLabel "Fräsen"^^xsd:string ;
+    skos:prefLabel "Milling"@en .
+
+ns1:Moulding a owl:Class ;
+    rdfs:label "Moulding"@en ;
+    rdfs:comment "Free forming is pressure forming with tools that do not or only partially contain the shape of the workpiece and move against each other (from: DIN 8583 Part 3/05.70)."^^xsd:string ;
+    rdfs:subClassOf ns1:CompressiveForming,
+        ns1:FromNotProperShapeToWorkPiece ;
+    skos:altLabel "Gesenkformen"^^xsd:string ;
+    skos:prefLabel "Moulding"@en .
+
+ns1:Nailing a owl:Class ;
+    rdfs:label "Nailing"@en ;
+    rdfs:comment "Nailing is joining by hammering or pressing nails (wire pins) as auxiliary parts into the solid material. Several parts are joined by pressing them together (from: DIN 8593 part 3/09.85)."^^xsd:string ;
+    rdfs:subClassOf ns1:Pressing ;
+    skos:altLabel "Nageln"^^xsd:string ;
+    skos:prefLabel "Nailing"@en .
+
+ns1:Peening a owl:Class ;
+    rdfs:label "Peening"@en ;
+    rdfs:subClassOf ns1:HardeningByForming ;
+    skos:altLabel "ShotPeening"^^xsd:string,
+        "Verfestigungsstrahlen"^^xsd:string ;
+    skos:prefLabel "Peening"@en ;
+    ns1:note "(according to DIN 8200) Shot peening to generate residual compressive stresses in layers of the blasting material close to the surface in order to improve certain component properties, e.g. fatigue strength, corrosion resistance, wear resistance (from: DIN 8200:1982)"^^xsd:string .
+
+ns1:Planing a owl:Class ;
+    rdfs:label "Planing"@en ;
+    rdfs:comment "Type of scratching behaviour where the scratching force and the (displacement) deflection of the scratching tip are constant over the scratching distance during the test."^^xsd:string ;
+    rdfs:subClassOf ns1:Machining ;
+    skos:altLabel "Hobeln"^^xsd:string ;
+    skos:prefLabel "Planing"@en .
+
+ns1:PrecipitationHardening a owl:Class ;
+    rdfs:label "PrecipitationHardening"@en ;
+    rdfs:subClassOf ns1:HeatTreatment ;
+    skos:prefLabel "PrecipitationHardening"@en ;
+    ns1:note "hardening of a workpiece caused by the precipitation of one or more compounds from a supersaturated solid solution"^^xsd:string .
+
+ns1:ProcessEngineeringProcess a owl:Class ;
+    rdfs:label "ProcessEngineeringProcess"@en ;
+    rdfs:subClassOf ns1:TechnologyProcess ;
+    skos:prefLabel "ProcessEngineeringProcess"@en ;
+    ns1:note """Deals with entities that have a undefined shape. Undefined means that the actual shape of the entity that is produced is not relevant for the definition of the process.
+In fact, everything has a shape, but in process engineering this is not relevant.
+
+e.g. the fact that steel comes in sheets is not relevant for the definition of steel material generated in a steel-making process."""@en ;
+    ns1:wikipediaReference "https://de.wikipedia.org/wiki/Verfahrenstechnik"@en .
+
+ns1:ProductionEngineering a owl:Class ;
+    rdfs:label "ProductionEngineering"@en ;
+    rdfs:subClassOf ns1:ProcessEngineeringProcess ;
+    skos:prefLabel "ProductionEngineering"@en .
+
+ns1:ReactionSintering a owl:Class ;
+    rdfs:label "ReactionSintering"@en ;
+    rdfs:seeAlso """ISO 3252:2019 Powder metallurgy
+reaction sintering: process wherein at least two constituents of a powder mixture react during sintering"""@en ;
+    rdfs:subClassOf ns1:Sintering ;
+    skos:prefLabel "ReactionSintering"@en .
+
+ns1:Rolling a owl:Class ;
+    rdfs:label "Rolling"@en ;
+    rdfs:comment "Continuous or stepwise pressure forming with one or more rotating tools (rollers), without or with additional tools, e.g. plugs or mandrels, rods, guide tools"^^xsd:string ;
+    rdfs:subClassOf ns1:CompressiveForming ;
+    skos:altLabel "Walzen"^^xsd:string ;
+    skos:prefLabel "Rolling"@en .
+
+ns1:Sawing a owl:Class ;
+    rdfs:label "Sawing"@en ;
+    rdfs:comment "Cutting with circular or straight cutting motion, using a multi-toothed tool of small cutting width, the cutting motion being performed by the tool"^^xsd:string,
+        "Process of cutting a workpiece into smaller parts that are either doughter parts, samples (e.g. for testing) or scrap."@en ;
+    rdfs:subClassOf ns1:Machining ;
+    skos:altLabel "Sägen"^^xsd:string ;
+    skos:prefLabel "Sawing"@en ;
+    ns1:elucidation "Process of cutting a workpiece into smaller parts that are either doughter parts, samples (e.g. for testing) or scrap."@en .
+
+ns1:Screwing a owl:Class ;
+    rdfs:label "Screwing"@en ;
+    rdfs:comment "Screwing (screwing on, screwing in, screwing tight) is joining by pressing on by means of a self-locking thread (from: DIN 8593 Part 3/09.85)."^^xsd:string ;
+    rdfs:subClassOf ns1:Pressing ;
+    skos:altLabel "Schrauben"^^xsd:string ;
+    skos:prefLabel "Screwing"@en .
+
+ns1:ShearCutting a owl:Class ;
+    rdfs:label "ShearCutting"@en ;
+    rdfs:comment "Cutting workpieces between two cutting edges that move past each other (see Figure 1 [see figure in the standard])."^^xsd:string ;
+    rdfs:subClassOf ns1:Cutting ;
+    skos:altLabel "Scherschneiden"^^xsd:string ;
+    skos:prefLabel "ShearCutting"@en .
+
+ns1:ShearForming a owl:Class ;
+    rdfs:label "ShearForming"@en ;
+    rdfs:comment "Forming of a solid body, whereby the plastic state is essentially brought about by shear stress."^^xsd:string ;
+    rdfs:subClassOf ns1:ReshapeManufacturing ;
+    skos:altLabel "Schubumformen"^^xsd:string ;
+    skos:prefLabel "ShearForming"@en .
+
+ns1:Soldering a owl:Class ;
+    rdfs:label "Soldering"@en ;
+    rdfs:comment "Method of joining metallic materials with the aid of a molten filler metal (solder), optionally with the use of flow agents"^^xsd:string ;
+    rdfs:subClassOf ns1:JoinManufacturing ;
+    skos:altLabel "Löten"^^xsd:string ;
+    skos:prefLabel "Soldering"@en .
+
+ns1:SparkErosion a owl:Class ;
+    rdfs:label "SparkErosion"@en ;
+    rdfs:comment "A manufacturing process in which metallic material is anodically dissolved under the influence of an electric current and an electrolyte solution. The current flow can be caused either by connection to an external current source or due to local element formation on the workpiece (etching)."^^xsd:string ;
+    rdfs:subClassOf ns1:Ablation ;
+    skos:altLabel "elektrochemisches Abtragen"^^xsd:string ;
+    skos:prefLabel "SparkErosion"@en .
+
+ns1:SupplyChain a owl:Class ;
+    rdfs:label "SupplyChain"@en ;
+    rdfs:comment "A supply chain is a system of organizations, people, activities, information, and resources involved in supplying a product or service to a consumer."@en ;
+    rdfs:subClassOf ns1:Network ;
+    skos:prefLabel "SupplyChain"@en ;
+    ns1:elucidation "A supply chain is a system of organizations, people, activities, information, and resources involved in supplying a product or service to a consumer."@en .
+
+ns1:Tempering a owl:Class ;
+    rdfs:label "Tempering"@en ;
+    rdfs:subClassOf ns1:HeatTreatment ;
+    skos:altLabel "QuenchingAndTempering"^^xsd:string,
+        "Vergüten"^^xsd:string ;
+    skos:prefLabel "Tempering"@en ;
+    ns1:note "Process consisting of two steps: - first, the steel is heated in a quenching treatment to a temperature above Ac3 and then rapidly cooled in a liquid to produce a process-specific grain structure; - subsequently, the steel is heated to a specific temperature during tempering to set the desired property and cooled in air."^^xsd:string .
+
+ns1:Tool a owl:Class ;
+    rdfs:label "Tool"@en ;
+    rdfs:comment "An object that enables or facilitate an agent in the execution of a process that modifies the surrounding environment."@en ;
+    rdfs:subClassOf ns1:Object,
+        ns1:Participant ;
+    skos:prefLabel "Tool"@en ;
+    ns1:elucidation "An object that enables or facilitate an agent in the execution of a process that modifies the surrounding environment."@en .
+
+ns1:UndefinedEdgeCutting a owl:Class ;
+    rdfs:label "UndefinedEdgeCutting"@en ;
+    rdfs:subClassOf ns1:SeparateManufacturing ;
+    skos:altLabel "Spanen mit geometrisch unbestimmten Schneiden"^^xsd:string ;
+    skos:prefLabel "UndefinedEdgeCutting"@en .
+
+ns1:Welding a owl:Class ;
+    rdfs:label "Welding"@en ;
+    rdfs:comment "Joining process by softening the surfaces to be joined, either by heat or with a solvent (swelling welding, solvent welding), and pressing the softened surfaces together."^^xsd:string ;
+    rdfs:subClassOf ns1:JoinManufacturing ;
+    skos:altLabel "Schweißen"^^xsd:string ;
+    skos:prefLabel "Welding"@en .
+
+ns1:Widening a owl:Class ;
+    rdfs:label "Widening"@en ;
+    rdfs:comment "Widening is tensile forming to increase the circumference of a hollow body. A distinction is made between: Widening, bulging."^^xsd:string ;
+    rdfs:subClassOf ns1:TensileForming ;
+    skos:altLabel "Weiten"^^xsd:string ;
+    skos:prefLabel "Widening"@en .
+
+ns1:manufacturedBy a owl:ObjectProperty ;
+    rdfs:label "manufacturedBy"@en ;
+    ns2:python_name "manufacturedBy"@en ;
+    rdfs:comment "Relates a manufactured product to its manufacturer."@en ;
+    rdfs:domain ns1:ManufacturedProduct ;
+    rdfs:range ns1:Manufacturer ;
+    rdfs:subPropertyOf ns1:indirectlyCauses ;
+    skos:prefLabel "manufacturedBy"@en ;
+    ns1:elucidation "Relates a manufactured product to its manufacturer."@en .
+
+ns1:manufacturedWith a owl:ObjectProperty ;
+    rdfs:label "manufacturedWith"@en ;
+    ns2:python_name "manufacturedWith"@en ;
+    rdfs:comment "Relates a manufactured product to the manufacturing process that it was manufactured with."@en ;
+    rdfs:domain ns1:ManufacturedProduct ;
+    rdfs:range ns1:Manufacturing ;
+    rdfs:subPropertyOf ns1:isObjectOutputOf ;
+    skos:altLabel "isManufacturedOutputOf"@en ;
+    skos:prefLabel "manufacturedWith"@en ;
+    ns1:elucidation "Relates a manufactured product to the manufacturing process that it was manufactured with."@en .
+
+ns1:Cutting a owl:Class ;
+    rdfs:label "Cutting"@en ;
+    rdfs:comment "Mechanical separation of workpieces without the formation of shapeless material, i.e. also without chips (chipless)."^^xsd:string ;
+    rdfs:subClassOf ns1:SeparateManufacturing ;
+    skos:altLabel "Schneiden"^^xsd:string ;
+    skos:prefLabel "Cutting"@en .
+
+ns1:DefinedEdgeCutting a owl:Class ;
+    rdfs:label "DefinedEdgeCutting"@en ;
+    rdfs:subClassOf ns1:SeparateManufacturing ;
+    skos:altLabel "Machining in which a tool is used whose number of cutting edges, geometry of the cutting wedges and position of the cutting edges in relation to the workpiece are determined"^^xsd:string,
+        "Spanen mit geometrisch bestimmten Schneiden"^^xsd:string ;
+    skos:prefLabel "DefinedEdgeCutting"@en .
+
+ns1:FlexuralForming a owl:Class ;
+    rdfs:label "FlexuralForming"@en ;
+    rdfs:comment "Forming of a solid body, whereby the plastic state is essentially brought about by a bending stress."^^xsd:string ;
+    rdfs:subClassOf ns1:ReshapeManufacturing ;
+    skos:altLabel "Biegeumformen"^^xsd:string ;
+    skos:prefLabel "FlexuralForming"@en .
+
+ns1:FormingFromPulp a owl:Class ;
+    rdfs:label "FormingFromPulp"@en ;
+    rdfs:subClassOf ns1:FromNotProperShapeToWorkPiece ;
+    skos:prefLabel "FormingFromPulp"@en .
+
+ns1:ManufacturingSystem a owl:Class ;
+    rdfs:label "ManufacturingSystem"@en ;
+    rdfs:comment "A system arranged to setup a specific manufacturing process."@en ;
+    rdfs:subClassOf ns1:HolisticArrangement ;
+    skos:prefLabel "ManufacturingSystem"@en ;
+    ns1:elucidation "A system arranged to setup a specific manufacturing process."@en .
+
+ns1:MaterialsProcessing a owl:Class ;
+    rdfs:label "MaterialsProcessing"@en ;
+    rdfs:comment "A manufacturing process aimed to modify the precursor objects through a physical process (involving other materials, energy, manipulation) to change its material properties."@en ;
+    rdfs:subClassOf ns1:TechnologyProcess ;
+    skos:altLabel "ContinuumManufacturing"@en ;
+    skos:example "Synthesis of materials, quenching, the preparation of a cake, tempering of a steel beam."@en ;
+    skos:prefLabel "MaterialsProcessing"@en ;
+    ns1:elucidation "A manufacturing process aimed to modify the precursor objects through a physical process (involving other materials, energy, manipulation) to change its material properties."@en ;
+    ns1:note "A material process requires the output to be classified as an individual of a material subclass."@en .
+
+ns1:MergingManufacturing a owl:Class ;
+    rdfs:label "MergingManufacturing"@en ;
+    rdfs:subClassOf ns1:WorkpieceManufacturing ;
+    skos:altLabel "AddingManufacturing"^^xsd:string ;
+    skos:prefLabel "MergingManufacturing"@en .
+
+ns1:Service a owl:Class ;
+    rdfs:label "Service"@en ;
+    rdfs:subClassOf ns1:IntentionalAgency,
+        ns1:Product ;
+    skos:altLabel "IntangibleProduct"@en ;
+    skos:prefLabel "Service"@en .
+
+ns1:WorkpieceForming a owl:Class ;
+    rdfs:label "WorkpieceForming"@en ;
+    rdfs:comment "A manufacturing in which it is formed a solid body with its shape from shapeless original material parts, whose cohesion is created during the process."^^xsd:string ;
+    rdfs:subClassOf ns1:Manufacturing ;
+    skos:altLabel "ArchetypeForming"^^xsd:string,
+        "PrimitiveForming"^^xsd:string ;
+    skos:prefLabel "WorkpieceForming"@en .
+
+ns1:hasProductOutput a owl:ObjectProperty ;
+    rdfs:label "hasProductOutput"@en ;
+    ns2:python_name "hasProductOutput"@en ;
+    rdfs:range ns1:Product ;
+    rdfs:subPropertyOf ns1:hasOutput ;
+    skos:prefLabel "hasProductOutput"@en .
+
+ns1:Ablation a owl:Class ;
+    rdfs:label "Ablation"@en ;
+    rdfs:comment "Manufacturing by separating particles of material from a solid body by non-mechanical means. Ablation refers both to the removal of layers of material and to the separation of workpiece parts. The production process of ablation is considered in its stationary instantaneous state, independently of the application of auxiliary processes necessary to initiate the process. Ablation is divided into three subgroups according to the order point of view (OGP) \"process in the effective zone on the surface of the workpiece\": - thermal ablation; - chemical ablation; - electrochemical ablation."^^xsd:string ;
+    rdfs:subClassOf ns1:SeparateManufacturing ;
+    skos:altLabel "Abtragen"^^xsd:string ;
+    skos:prefLabel "Ablation"@en .
+
+ns1:AdditiveManufacturing a owl:Class ;
+    rdfs:label "AdditiveManufacturing"@en ;
+    rdfs:subClassOf ns1:FromNotProperShapeToWorkPiece ;
+    skos:altLabel "GenerativeManufacturing"@en ;
+    skos:prefLabel "AdditiveManufacturing"@en ;
+    ns1:note "process of joining materials to make parts from 3D model data, usually layer upon layer, as opposed to subtractive manufacturing (3.1.29) and formative manufacturing methodologies,"^^xsd:string .
+
+ns1:ArchetypeJoin a owl:Class ;
+    rdfs:label "ArchetypeJoin"@en ;
+    rdfs:comment "Archetype join attaches two workpiece with geometrically defined shape together, using supplementary workpiece made of amorphous material (e.g. powder)."@en ;
+    rdfs:subClassOf ns1:JoinManufacturing ;
+    skos:prefLabel "ArchetypeJoin"@en ;
+    ns1:elucidation "Archetype join attaches two workpiece with geometrically defined shape together, using supplementary workpiece made of amorphous material (e.g. powder)."@en .
+
+ns1:FormingFromChip a owl:Class ;
+    rdfs:label "FormingFromChip"@en ;
+    rdfs:subClassOf ns1:FromNotProperShapeToWorkPiece ;
+    skos:prefLabel "FormingFromChip"@en .
+
+ns1:FormingFromPowder a owl:Class ;
+    rdfs:label "FormingFromPowder"@en ;
+    rdfs:subClassOf ns1:FromNotProperShapeToWorkPiece ;
+    skos:prefLabel "FormingFromPowder"@en .
+
+ns1:IntentionalAgency skos:altLabel "Project"@en .
+
+ns1:Manufacturer a owl:Class ;
+    rdfs:label "Manufacturer"@en ;
+    rdfs:comment "A fundamental object overcrossing a manufacturing process, the intersection being the agent that participates and drives the manufacturing process."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf ns1:isParticipatedBy ] ;
+            owl:someValuesFrom ns1:Manufacturing ],
+        ns1:IntentionalAgent ;
+    skos:prefLabel "Manufacturer"@en ;
+    ns1:elucidation "A fundamental object overcrossing a manufacturing process, the intersection being the agent that participates and drives the manufacturing process."@en .
+
+ns1:CoatingManufacturing a owl:Class ;
+    rdfs:label "CoatingManufacturing"@en ;
+    rdfs:comment "A manufacturing in which an adherent layer of amorphous material is applied to a workpiece."@en ;
+    rdfs:seeAlso "DIN 8580:2020"@en ;
+    rdfs:subClassOf ns1:MergingManufacturing ;
+    skos:altLabel "Beschichten"@de ;
+    skos:prefLabel "CoatingManufacturing"@en ;
+    ns1:elucidation "A manufacturing in which an adherent layer of amorphous material is applied to a workpiece."@en .
+
+ns1:CompressiveForming a owl:Class ;
+    rdfs:label "CompressiveForming"@en ;
+    rdfs:comment "Forming of a solid body, whereby the plastic state is essentially brought about by uniaxial or multiaxial compressive stress."^^xsd:string,
+        "lasciano tensioni residue di compressione"^^xsd:string ;
+    rdfs:subClassOf ns1:ReshapeManufacturing ;
+    skos:altLabel "Druckumformen"^^xsd:string ;
+    skos:prefLabel "CompressiveForming"@en .
+
+ns1:FormingJoin a owl:Class ;
+    rdfs:label "FormingJoin"@en ;
+    rdfs:subClassOf ns1:JoinManufacturing ;
+    skos:prefLabel "FormingJoin"@en .
+
+ns1:Machining a owl:Class ;
+    rdfs:label "Machining"@en ;
+    rdfs:comment "A manufacturing in which material is removed from the workpiece in the form of chips."@en ;
+    rdfs:subClassOf ns1:DefinedEdgeCutting ;
+    skos:altLabel "RemovingChipsFromWorkpiece"^^xsd:string ;
+    skos:prefLabel "Machining"@en ;
+    ns1:elucidation "A manufacturing in which material is removed from the workpiece in the form of chips."@en .
+
+ns1:Pressing a owl:Class ;
+    rdfs:label "Pressing"@en ;
+    rdfs:comment "A collective term for the processes in which, during joining, the parts to be joined and any auxiliary parts are essentially only elastically deformed and unintentional loosening is prevented by frictional connection."^^xsd:string ;
+    rdfs:subClassOf ns1:JoinManufacturing ;
+    skos:altLabel "Anpressen"^^xsd:string ;
+    skos:prefLabel "Pressing"@en .
+
+ns1:TensileForming a owl:Class ;
+    rdfs:label "TensileForming"@en ;
+    rdfs:comment "Forming of a solid body, whereby the plastic state is essentially brought about by a combined tensile and compressive stress."^^xsd:string ;
+    rdfs:subClassOf ns1:ReshapeManufacturing ;
+    skos:altLabel "Zugdruckumformen"^^xsd:string ;
+    skos:prefLabel "TensileForming"@en .
+
+ns1:ThermalCutting a owl:Class ;
+    rdfs:label "ThermalCutting"@en ;
+    rdfs:subClassOf ns1:Ablation ;
+    skos:altLabel "Thermisches Abtragen"^^xsd:string ;
+    skos:prefLabel "ThermalCutting"@en ;
+    ns1:note "Thermal ablation is the separation of material particles in solid, liquid or gaseous state by heat processes as well as the removal of these material particles by mechanical or electromagnetic forces (from: DIN"^^xsd:string .
+
+ns1:Casting a owl:Class ;
+    rdfs:label "Casting"@en ;
+    rdfs:subClassOf ns1:FormingFromLiquid ;
+    skos:prefLabel "Casting"@en .
+
+ns1:FormingFromLiquid a owl:Class ;
+    rdfs:label "FormingFromLiquid"@en ;
+    rdfs:subClassOf ns1:FromNotProperShapeToWorkPiece ;
+    skos:prefLabel "FormingFromLiquid"@en .
+
+ns1:HardeningByForming a owl:Class ;
+    rdfs:label "HardeningByForming"@en ;
+    rdfs:subClassOf ns1:MaterialTreatment ;
+    skos:altLabel "Verfestigen durch Umformen"^^xsd:string ;
+    skos:prefLabel "HardeningByForming"@en .
+
+ns1:Product a owl:Class ;
+    rdfs:label "Product"@en ;
+    rdfs:comment "The overall lifetime of an holistic that has been the output of an intentional process."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isOutputOf ;
+            owl:someValuesFrom ns1:IntentionalAgency ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:hasAgent ;
+            owl:someValuesFrom ns1:IntentionalAgent ],
+        ns1:Maximal ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf ( ns1:Service ns1:ManufacturedProduct ) ] ;
+    skos:altLabel "Output"@en ;
+    skos:prefLabel "Product"@en ;
+    ns1:elucidation "The overall lifetime of an holistic that has been the output of an intentional process."@en ;
+    ns1:note """This concepts encompass the overall lifetime of a product.
+Is temporaly fundamental, meaning that it can have other products as holistic spatial parts, but its holistic temporal parts are not products. In other words, the individual must encompass the whole lifetime from creation to disposal.
+A product can be a tangible object (e.g. a manufactured object), a process (e.g. service). It can be the outcome of a natural or an artificially driven process.
+It must have and initial stage of its life that is also an outcome of a intentional process."""@en .
+
+ns1:WorkPiece a owl:Class ;
+    rdfs:label "WorkPiece"@en ;
+    rdfs:comment "A WorkPiece is physical artifact, that has a proper shape and occupyes a proper volume intended for subsequent transformation. It is a condensed state, so it is a compact body that is processed or  has to be processed."^^xsd:string,
+        "A solid is defined as a portion of matter that is in a condensed state characterised by resistance to deformation and volume changes."^^xsd:string,
+        "In manufacturing, a workpiece is a single, delimited part of largely solid material that is processed in some form (e.g. stone )."^^xsd:string,
+        "In physics, a rigid body (also known as a rigid object[2]) is a solid body in which deformation is zero or so small it can be neglected. The distance between any two given points on a rigid body remains constant in time regardless of external forces or moments exerted on it. A rigid body is usually considered as a continuous distribution of mass."^^xsd:string,
+        "It has a shape, so we conclude that it is solid"^^xsd:string,
+        "Object that is processed with a machine"^^xsd:string,
+        "Seems to have to be processed through mechanical deformation. So it takes part of a manufacturing process. It is a Manufactured Product and it can be a Commercial Product"^^xsd:string,
+        "The raw material or partially finished piece that is shaped by performing various operations."^^xsd:string,
+        "They are not powders or threads"^^xsd:string,
+        "a physical artifact, real or virtual, intended for subsequent transformation within some manufacturing operation"^^xsd:string,
+        "fili e polveri non sono compresi"^^xsd:string,
+        "it seems to be an intermediate product, that has to reach the final shape."^^xsd:string,
+        "it seems to be solid, so it has a proper shape"^^xsd:string,
+        "powder is not workpiece because it has the shape of the recipient containing them"^^xsd:string ;
+    rdfs:subClassOf ns1:ManufacturedMaterial ;
+    skos:altLabel "Werkstück"^^xsd:string ;
+    skos:prefLabel "WorkPiece"@en ;
+    ns1:elucidation "A WorkPiece is physical artifact, that has a proper shape and occupyes a proper volume intended for subsequent transformation. It is a condensed state, so it is a compact body that is processed or  has to be processed."^^xsd:string .
+
+ns1:SeparateManufacturing a owl:Class ;
+    rdfs:label "SeparateManufacturing"@en ;
+    rdfs:comment "A manufacturing process in which the shape of a workpiece is changed by breaking the material cohesion at the processing point and thus the material cohesion is reduced overall."@en ;
+    rdfs:seeAlso "DIN 8580:2020"@en ;
+    rdfs:subClassOf ns1:WorkpieceManufacturing ;
+    skos:altLabel "Trennen"@de,
+        "CuttingManufacturing"@en ;
+    skos:prefLabel "SeparateManufacturing"@en ;
+    ns1:elucidation "A manufacturing process in which the shape of a workpiece is changed by breaking the material cohesion at the processing point and thus the material cohesion is reduced overall."@en .
+
+ns1:WorkpieceManufacturing a owl:Class ;
+    rdfs:label "WorkpieceManufacturing"@en ;
+    rdfs:comment "A manufacturing with an output that is an object with a specific function, shape, or intended use, not simply a material."@en ;
+    rdfs:seeAlso "DIN 8580:2020"@en,
+        """ISO 15531-1:2004
+discrete manufacturing: production of discrete items."""@en,
+        """ISO 8887-1:2017
+manufacturing: production of components"""@en ;
+    rdfs:subClassOf ns1:Manufacturing ;
+    skos:altLabel "Werkstücke"@de,
+        "DiscreteManufacturing"@en ;
+    skos:prefLabel "WorkpieceManufacturing"@en ;
+    ns1:elucidation "A manufacturing with an output that is an object with a specific function, shape, or intended use, not simply a material."@en .
+
+ns1:Device a owl:Class ;
+    rdfs:label "Device"@en ;
+    rdfs:comment "An object which is instrumental for reaching a particular purpose through its characteristic functioning process, with particular reference to mechanical or electronic equipment."@en ;
+    rdfs:subClassOf ns1:ManufacturedProduct ;
+    skos:altLabel "Equipment"@en,
+        "Machine"@en ;
+    skos:prefLabel "Device"@en ;
+    ns1:elucidation "An object which is instrumental for reaching a particular purpose through its characteristic functioning process, with particular reference to mechanical or electronic equipment."@en .
+
+ns1:ReshapeManufacturing a owl:Class ;
+    rdfs:label "ReshapeManufacturing"@en ;
+    rdfs:comment "A manufacturing in which workpieces are produced from solid raw parts through permanent deformation, provided that neither material is added nor removed."@en ;
+    rdfs:seeAlso "DIN 8580:2020"@en ;
+    rdfs:subClassOf ns1:FromWorkPIecetoWorkPiece,
+        ns1:WorkpieceManufacturing ;
+    skos:altLabel "Umformen"@de,
+        "Forming"@en ;
+    skos:prefLabel "ReshapeManufacturing"@en ;
+    ns1:elucidation "A manufacturing in which workpieces are produced from solid raw parts through permanent deformation, provided that neither material is added nor removed."@en ;
+    ns1:note "The mass of the raw part is equal to the mass of the finished part."@en .
+
+ns1:FormingFromPlastic a owl:Class ;
+    rdfs:label "FormingFromPlastic"@en ;
+    rdfs:subClassOf ns1:FromNotProperShapeToWorkPiece ;
+    skos:prefLabel "FormingFromPlastic"@en .
+
+ns1:HeatTreatment a owl:Class ;
+    rdfs:label "HeatTreatment"@en ;
+    rdfs:subClassOf ns1:MaterialTreatment ;
+    skos:altLabel "wärmebehandeln"^^xsd:string ;
+    skos:prefLabel "HeatTreatment"@en ;
+    ns1:note "Heat to a temperature appropriate for the particular material, maintain at that temperature and then cool at an appropriate rate to reduce hardness, improve machinability or achieve desired properties."^^xsd:string .
+
+ns1:MaterialTreatment a owl:Class ;
+    rdfs:label "MaterialTreatment"@en ;
+    rdfs:comment "esce workpiece"^^xsd:string,
+        "The processing of a material aimed to transform its structure by means of any type of treatment, without involving relevant synthesis phenomena."@en ;
+    rdfs:seeAlso "DIN 8580:2020"@en ;
+    rdfs:subClassOf ns1:Manufacturing,
+        ns1:MaterialsProcessing ;
+    skos:altLabel "Stoffeigenschaft ändern"^^xsd:string,
+        "WorkPieceTreatment"^^xsd:string ;
+    skos:prefLabel "MaterialTreatment"@en ;
+    ns1:elucidation "The processing of a material aimed to transform its structure by means of any type of treatment, without involving relevant synthesis phenomena."@en ;
+    ns1:note "Manufacturing by changing the properties of the material of which a workpiece is made, which is done, among other things, by changes in the submicroscopic or atomic range, e.g. by diffusion of atoms, generation and movement of dislocations in the atomic lattice or chemical reactions, and where unavoidable changes in shape are not part of the essence of these processes."^^xsd:string,
+        "Has shaped bodies as input and output."@en .
+
+ns1:TechnologyProcess a owl:Class ;
+    rdfs:label "TechnologyProcess"@en ;
+    rdfs:comment "Class that includes the application of scientific knowledge, tools and techniques in order to transform a precursor object (ex. conversion of material) following a practic purpose."^^xsd:string,
+        "Conversion of materials and assembly of components for the manufacture of products"^^xsd:string,
+        "Technology is the application of knowledge for achieving practical goals in a reproducible way."^^xsd:string,
+        "Technology refers to methods, systems, and devices which are the result of scientific knowledge being used for practical purposes."^^xsd:string,
+        "application of scientific knowledge, tools, techniques, crafts or systems in order to solve a problem or to achieve an objective which can result in a product or process"^^xsd:string,
+        "application of scientific knowledge, tools, techniques, crafts, systems or methods of organization in order to solve a problem or achieve an objective"^^xsd:string ;
+    rdfs:subClassOf ns1:IntentionalAgency ;
+    skos:altLabel "ProductionEngineeringProcess"@en ;
+    skos:prefLabel "TechnologyProcess"@en ;
+    ns1:elucidation "Class that includes the application of scientific knowledge, tools and techniques in order to transform a precursor object (ex. conversion of material) following a practic purpose."^^xsd:string .
+
+ns1:JoinManufacturing a owl:Class ;
+    rdfs:label "JoinManufacturing"@en ;
+    rdfs:comment "The permanent joining or other bringing together of two or more workpieces of a geometric shape or of similar workpieces with shapeless material. In each case, the cohesion is created locally and increased as a whole."^^xsd:string,
+        "A manufacturing involving the creation of long-term connection of several workpieces."@en ;
+    rdfs:seeAlso "DIN 8580:2020"@en ;
+    rdfs:subClassOf ns1:MergingManufacturing ;
+    skos:altLabel "Fügen"@de ;
+    skos:prefLabel "JoinManufacturing"@en ;
+    ns1:elucidation "A manufacturing involving the creation of long-term connection of several workpieces."@en .
+
+ns1:FromNotProperShapeToWorkPiece a owl:Class ;
+    rdfs:label "FromNotProperShapeToWorkPiece"@en ;
+    rdfs:comment "da una forma non propria ad una forma propria"^^xsd:string ;
+    rdfs:subClassOf ns1:WorkpieceForming ;
+    skos:prefLabel "FromNotProperShapeToWorkPiece"@en ;
+    ns1:note "From Powder, from liquid, from gas"^^xsd:string,
+        """Powder:
+particles that are usually less than 1 mm in size"""^^xsd:string .
+
+ns1:ManufacturedProduct a owl:Class ;
+    rdfs:label "ManufacturedProduct"@en ;
+    rdfs:comment "An object that has been designed and manufactured for a particular purpose."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:manufacturedBy ;
+            owl:someValuesFrom ns1:Manufacturer ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:manufacturedWith ;
+            owl:someValuesFrom ns1:Manufacturing ],
+        ns1:Object,
+        ns1:Product ;
+    skos:altLabel "Artifact"@en,
+        "Engineered"@en,
+        "TangibleProduct"@en ;
+    skos:example "Car, tire, composite material."@en ;
+    skos:prefLabel "ManufacturedProduct"@en ;
+    ns1:elucidation "An object that has been designed and manufactured for a particular purpose."@en .
+
+ns1:Manufacturing a owl:Class ;
+    rdfs:label "Manufacturing"@en ;
+    rdfs:comment "The process of transforming precursor objects (e.g. raw materials) into a product by the use of manual labor, machinery or chemical/biological processes."@en ;
+    rdfs:seeAlso "DIN 8580:2020"@en,
+        """ISO 15531-1:2004
+manufacturing: function or act of converting or transforming material from raw material or semi-finished state to a state of further completion"""@en,
+        """ISO 18435-1:2009
+manufacturing process: set of processes in manufacturing involving a flow and/or transformation of material, information, energy, control, or any other element in a manufacturing area"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:hasOutput ;
+            owl:someValuesFrom ns1:WorkPiece ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf ns1:isParticipatedBy ] ;
+            owl:someValuesFrom ns1:Manufacturer ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf ns1:isParticipatedBy ] ;
+            owl:someValuesFrom ns1:ManufacturedProduct ],
+        ns1:TechnologyProcess ;
+    skos:prefLabel "Manufacturing"@en ;
+    ns1:elucidation "The process of transforming precursor objects (e.g. raw materials) into a product by the use of manual labor, machinery or chemical/biological processes."@en ;
+    ns1:note "Deals with entities that have a defined shape."@en ;
+    ns1:wikipediaReference "https://de.wikipedia.org/wiki/Fertigungsverfahren"@en .
+
+ns1:Sintering a owl:Class ;
+    rdfs:label "Sintering"@en ;
+    rdfs:comment "Sintering is the process of forming a solid mass of material through heat and pressure without melting to the point of liquefaction. This process involves the atoms in materials diffusing across the particle boundaries and fusing together into one piece."@en ;
+    rdfs:seeAlso """ISO 3252:2019 Powder metallurgy
+sintering: thermal treatment of a powder or compact, at a temperature below the melting point of the main constituent, for the purpose of increasing its strength by the metallurgical bonding of its particles"""@en,
+        """ISO/ASTM TR 52906:2022 Additive manufacturing
+sintering: process of heating a powder metal compact to increase density and/or improve mechanical properties via solid state diffusion"""@en,
+        "https://www.twi-global.com/technical-knowledge/faqs/what-is-sintering"@en ;
+    rdfs:subClassOf ns1:FromNotProperShapeToWorkPiece ;
+    skos:altLabel "Sintern"^^xsd:string ;
+    skos:prefLabel "Sintering"@en ;
+    ns1:elucidation "Sintering is the process of forming a solid mass of material through heat and pressure without melting to the point of liquefaction. This process involves the atoms in materials diffusing across the particle boundaries and fusing together into one piece."@en ;
+    ns1:note """Sintering occurs naturally in mineral deposits, and is used as a manufacturing process for materials including ceramics, metals and plastics.
+Because the sintering temperature doesn’t reach the materials’ melting point, it is often used for materials with high melting points, such as molybdenum and tungsten."""@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Factory ;
+    owl:annotatedTarget "Factory"@en ;
+    ns1:etymology "From Latin factor, from fact- ‘done’, from the verb facere (to do)."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource ns1:Device ;
+    owl:annotatedTarget "Equipment"@en ;
+    ns1:etymology "From French équipement, from équiper ‘equip’."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN EN 13956:2013-03"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:Welding ;
+    owl:annotatedTarget "Joining process by softening the surfaces to be joined, either by heat or with a solvent (swelling welding, solvent welding), and pressing the softened surfaces together."^^xsd:string .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource ns1:ManufacturedProduct ;
+    owl:annotatedTarget "Artifact"@en ;
+    ns1:etymology "From Latin arte ‘by or using art’ + factum ‘something made’."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN EN 13831:2007-12"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:DeepDrawing ;
+    owl:annotatedTarget "Forming of vessel parts from a flat mould into a three-dimensional shape by means of a press and tools, whereby material is neither removed nor added"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN EN 14943:2006-03"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:TechnologyProcess ;
+    owl:annotatedTarget "Conversion of materials and assembly of components for the manufacture of products"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 8590 Berichtigung 1:2004-02"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:SparkErosion ;
+    owl:annotatedTarget "A manufacturing process in which metallic material is anodically dissolved under the influence of an electric current and an electrolyte solution. The current flow can be caused either by connection to an external current source or due to local element formation on the workpiece (etching)."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 8590 Berichtigung 1:2004-02"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:Ablation ;
+    owl:annotatedTarget "Manufacturing by separating particles of material from a solid body by non-mechanical means. Ablation refers both to the removal of layers of material and to the separation of workpiece parts. The production process of ablation is considered in its stationary instantaneous state, independently of the application of auxiliary processes necessary to initiate the process. Ablation is divided into three subgroups according to the order point of view (OGP) \"process in the effective zone on the surface of the workpiece\": - thermal ablation; - chemical ablation; - electrochemical ablation."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 8589-3:2003-09"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:Milling ;
+    owl:annotatedTarget "Machining with a circular cutting movement, usually associated with a multi-toothed tool, and with a feed movement perpendicular or oblique to the axis of rotation of the tool, to produce any workpiece surface."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 8593-0:2003-09"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:JoinManufacturing ;
+    owl:annotatedTarget "The permanent joining or other bringing together of two or more workpieces of a geometric shape or of similar workpieces with shapeless material. In each case, the cohesion is created locally and increased as a whole."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:3252:ed-5:v1:en:term:3.3.32"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:seeAlso ;
+    owl:annotatedSource ns1:LiquidPhaseSintering ;
+    owl:annotatedTarget """ISO 3252:2019 Powder metallurgy
+liquid-phase sintering: sintering of a powder or compact containing at least two constituents, under conditions such that a liquid phase is formed"""@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "ISO 4885:2018-02"^^xsd:string ;
+    owl:annotatedProperty ns1:note ;
+    owl:annotatedSource ns1:PrecipitationHardening ;
+    owl:annotatedTarget "hardening of a workpiece caused by the precipitation of one or more compounds from a supersaturated solid solution"^^xsd:string .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Device ;
+    owl:annotatedTarget "Device"@en ;
+    ns1:etymology "From Old French \"deviser\", meaning: arrange, plan, contrive. Literally \"dispose in portions,\" from Vulgar Latin \"divisare\", frequentative of Latin dividere, meaning \"to divide\"."@en .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:8887:-1:ed-1:v1:en:term:3.1.5"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:seeAlso ;
+    owl:annotatedSource ns1:WorkpieceManufacturing ;
+    owl:annotatedTarget """ISO 8887-1:2017
+manufacturing: production of components"""@en .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:18435:-1:ed-1:v1:en:term:3.16"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:seeAlso ;
+    owl:annotatedSource ns1:Manufacturing ;
+    owl:annotatedTarget """ISO 18435-1:2009
+manufacturing process: set of processes in manufacturing involving a flow and/or transformation of material, information, energy, control, or any other element in a manufacturing area"""@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 8580:2022-12"^^xsd:string ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource ns1:HardeningByForming ;
+    owl:annotatedTarget "Verfestigen durch Umformen"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 65099-4:1989-11"^^xsd:string ;
+    owl:annotatedProperty ns1:note ;
+    owl:annotatedSource ns1:ThermalCutting ;
+    owl:annotatedTarget "Thermal ablation is the separation of material particles in solid, liquid or gaseous state by heat processes as well as the removal of these material particles by mechanical or electromagnetic forces (from: DIN"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 8588:2013-08"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:ShearCutting ;
+    owl:annotatedTarget "Cutting workpieces between two cutting edges that move past each other (see Figure 1 [see figure in the standard])."^^xsd:string .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:ManufacturedProduct ;
+    owl:annotatedTarget "ManufacturedProduct"@en ;
+    ns1:etymology "From Latin manufacture: \"made by hand\"."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "https://www.collinsdictionary.com/it/dizionario/inglese/technology"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:TechnologyProcess ;
+    owl:annotatedTarget "Technology refers to methods, systems, and devices which are the result of scientific knowledge being used for practical purposes."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 8584-1:2003-09"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:TensileForming ;
+    owl:annotatedTarget "Forming of a solid body, whereby the plastic state is essentially brought about by a combined tensile and compressive stress."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN EN ISO 15156-3:2015-12"^^xsd:string ;
+    owl:annotatedProperty ns1:note ;
+    owl:annotatedSource ns1:HeatTreatment ;
+    owl:annotatedTarget "Heat to a temperature appropriate for the particular material, maintain at that temperature and then cool at an appropriate rate to reduce hardness, improve machinability or achieve desired properties."^^xsd:string .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Manufacturing ;
+    owl:annotatedTarget "Manufacturing"@en ;
+    ns1:etymology "From Latin manu factum (\"made by hand\")."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 65099-5:1989-11"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:Screwing ;
+    owl:annotatedTarget "Screwing (screwing on, screwing in, screwing tight) is joining by pressing on by means of a self-locking thread (from: DIN 8593 Part 3/09.85)."^^xsd:string .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Assemblying ;
+    owl:annotatedTarget "Assemblying"@en ;
+    ns1:etymology "From Old French asembler, based on Latin ad- ‘to’ + simul ‘together’."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "ISO 23704-1:2022(en), 3.1.2"^^xsd:string ;
+    owl:annotatedProperty ns1:note ;
+    owl:annotatedSource ns1:AdditiveManufacturing ;
+    owl:annotatedTarget "process of joining materials to make parts from 3D model data, usually layer upon layer, as opposed to subtractive manufacturing (3.1.29) and formative manufacturing methodologies,"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 8589-0:2003-09"^^xsd:string ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource ns1:DefinedEdgeCutting ;
+    owl:annotatedTarget "Machining in which a tool is used whose number of cutting edges, geometry of the cutting wedges and position of the cutting edges in relation to the workpiece are determined"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN EN ISO 4885:2018-07"^^xsd:string ;
+    owl:annotatedProperty ns1:note ;
+    owl:annotatedSource ns1:DeepFreezing ;
+    owl:annotatedTarget "Treatment carried out after hardening or case hardening consisting of cooling to a temperature below room temperature to complete the transformation of austenite to martensite"^^xsd:string .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource ns1:ManufacturedProduct ;
+    owl:annotatedTarget "Engineered"@en ;
+    ns1:etymology "From Latin ingenium \"innate qualities, ability; inborn character,\" in Late Latin \"a war engine, battering ram\"; literally \"that which is inborn,\" from in- (\"in\") + gignere (\"give birth, beget\")."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 8589-6:2003-09"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:Sawing ;
+    owl:annotatedTarget "Cutting with circular or straight cutting motion, using a multi-toothed tool of small cutting width, the cutting motion being performed by the tool"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN EN ISO 472/A1:2019-03"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:Planing ;
+    owl:annotatedTarget "Type of scratching behaviour where the scratching force and the (displacement) deflection of the scratching tip are constant over the scratching distance during the test."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:15531:-1:ed-1:v1:en:term:3.6.22"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:seeAlso ;
+    owl:annotatedSource ns1:Manufacturing ;
+    owl:annotatedTarget """ISO 15531-1:2004
+manufacturing: function or act of converting or transforming material from raw material or semi-finished state to a state of further completion"""@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN EN 9110:2018-08"^^xsd:string ;
+    owl:annotatedProperty ns1:note ;
+    owl:annotatedSource ns1:Dismantling ;
+    owl:annotatedTarget "action to disassemble a product or a component by removing all or some of its constituent parts with the intent to salvage"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 8587:2003-09"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:ShearForming ;
+    owl:annotatedTarget "Forming of a solid body, whereby the plastic state is essentially brought about by shear stress."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 55405:2014-12"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:Soldering ;
+    owl:annotatedTarget "Method of joining metallic materials with the aid of a molten filler metal (solder), optionally with the use of flow agents"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "ISO/TR 10809-1:2009, 0000_19"^^xsd:string ;
+    owl:annotatedProperty ns1:note ;
+    owl:annotatedSource ns1:Hardening ;
+    owl:annotatedTarget "Heat treatment process that generally produces martensite in the matrix."^^xsd:string .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty ns1:elucidation ;
+    owl:annotatedSource ns1:SupplyChain ;
+    owl:annotatedTarget "A supply chain is a system of organizations, people, activities, information, and resources involved in supplying a product or service to a consumer."@en ;
+    ns1:wikipediaReference "https://en.wikipedia.org/wiki/Supply_chain"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 8583-1:2003-09"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:CompressiveForming ;
+    owl:annotatedTarget "Forming of a solid body, whereby the plastic state is essentially brought about by uniaxial or multiaxial compressive stress."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 65099-3:1989-11"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:FormingBlasting ;
+    owl:annotatedTarget "Shot peening is shot peening for shaping or straightening workpieces by introducing residual compressive stresses (from: DIN 8200/10.82)."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 65099-7:1989-11"^^xsd:string ;
+    owl:annotatedProperty ns1:note ;
+    owl:annotatedSource ns1:Peening ;
+    owl:annotatedTarget "(according to DIN 8200) Shot peening to generate residual compressive stresses in layers of the blasting material close to the surface in order to improve certain component properties, e.g. fatigue strength, corrosion resistance, wear resistance (from: DIN 8200:1982)"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "EN 16603-11:2019-11"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:TechnologyProcess ;
+    owl:annotatedTarget "application of scientific knowledge, tools, techniques, crafts, systems or methods of organization in order to solve a problem or achieve an objective"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 8585-3:2003-09"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:Widening ;
+    owl:annotatedTarget "Widening is tensile forming to increase the circumference of a hollow body. A distinction is made between: Widening, bulging."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "EN 10028-1:2017-07"^^xsd:string ;
+    owl:annotatedProperty ns1:note ;
+    owl:annotatedSource ns1:Annealing ;
+    owl:annotatedTarget "heat treatment consisting of heating and soaking at a suitable temperature, followed by cooling under conditions such that, after return to ambient temperature, the metal will be in a structural state closer to that of equilibrium"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 65099-3:1989-11"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:Moulding ;
+    owl:annotatedTarget "Free forming is pressure forming with tools that do not or only partially contain the shape of the workpiece and move against each other (from: DIN 8583 Part 3/05.70)."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:3252:ed-5:v1:en:term:3.3.55"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:seeAlso ;
+    owl:annotatedSource ns1:ReactionSintering ;
+    owl:annotatedTarget """ISO 3252:2019 Powder metallurgy
+reaction sintering: process wherein at least two constituents of a powder mixture react during sintering"""@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 8586:2003-09"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:FlexuralForming ;
+    owl:annotatedTarget "Forming of a solid body, whereby the plastic state is essentially brought about by a bending stress."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 65099-3:1989-11"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:FreeForming ;
+    owl:annotatedTarget "Free forming is pressure forming with tools that do not or only partially contain the shape of the workpiece and move against each other."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 65099-5:1989-11"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:Nailing ;
+    owl:annotatedTarget "Nailing is joining by hammering or pressing nails (wire pins) as auxiliary parts into the solid material. Several parts are joined by pressing them together (from: DIN 8593 part 3/09.85)."^^xsd:string .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Tool ;
+    owl:annotatedTarget "Tool"@en ;
+    ns1:etymology "Old English tōl, from a Germanic base meaning ‘prepare’."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 8593-3:2003-09"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:Pressing ;
+    owl:annotatedTarget "A collective term for the processes in which, during joining, the parts to be joined and any auxiliary parts are essentially only elastically deformed and unintentional loosening is prevented by frictional connection."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 65099-7:1989-11"^^xsd:string ;
+    owl:annotatedProperty ns1:note ;
+    owl:annotatedSource ns1:HardeningByRolling ;
+    owl:annotatedTarget "Strengthening by rolling is the strengthening of component surfaces by mechanically generating compressive stresses in the component surface and consolidating the material."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "https://en.wiktionary.org/wiki/workpiece"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:WorkPiece ;
+    owl:annotatedTarget "The raw material or partially finished piece that is shaped by performing various operations."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:15531:-1:ed-1:v1:en:term:3.6.9"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:seeAlso ;
+    owl:annotatedSource ns1:WorkpieceManufacturing ;
+    owl:annotatedTarget """ISO 15531-1:2004
+discrete manufacturing: production of discrete items."""@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 8589-2:2003-09"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:Drilling ;
+    owl:annotatedTarget "machining with a circular cutting movement in which the axis of rotation of the tool and the axis of the internal surface to be produced are identical and the feed movement is in the direction of this axis. The axis of rotation of the cutting movement maintains its position relative to the workpiece independently of the feed movement (axis of rotation workpiece-bound)."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:3252:ed-5:v1:en:term:3.3.33"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:seeAlso ;
+    owl:annotatedSource ns1:GravitySintering ;
+    owl:annotatedTarget """ISO 3252:2019 Powder metallurgy
+loose-powder sintering, gravity sintering: sintering of uncompacted powder"""@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 8580:2022-12"^^xsd:string ;
+    owl:annotatedProperty ns1:note ;
+    owl:annotatedSource ns1:MaterialTreatment ;
+    owl:annotatedTarget "Manufacturing by changing the properties of the material of which a workpiece is made, which is done, among other things, by changes in the submicroscopic or atomic range, e.g. by diffusion of atoms, generation and movement of dislocations in the atomic lattice or chemical reactions, and where unavoidable changes in shape are not part of the essence of these processes."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN EN 62047-1:2016-12"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:Gluing ;
+    owl:annotatedTarget "Process for joining two (base) materials by means of an adhesive polymer material"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 8583-2:2003-09"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:Rolling ;
+    owl:annotatedTarget "Continuous or stepwise pressure forming with one or more rotating tools (rollers), without or with additional tools, e.g. plugs or mandrels, rods, guide tools"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN EN 10210-3:2020-11"^^xsd:string ;
+    owl:annotatedProperty ns1:note ;
+    owl:annotatedSource ns1:Tempering ;
+    owl:annotatedTarget "Process consisting of two steps: - first, the steel is heated in a quenching treatment to a temperature above Ac3 and then rapidly cooled in a liquid to produce a process-specific grain structure; - subsequently, the steel is heated to a specific temperature during tempering to set the desired property and cooled in air."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "ISO 14034:2016-11"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:TechnologyProcess ;
+    owl:annotatedTarget "application of scientific knowledge, tools, techniques, crafts or systems in order to solve a problem or to achieve an objective which can result in a product or process"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "https://en.wikipedia.org/wiki/Technology"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:TechnologyProcess ;
+    owl:annotatedTarget "Technology is the application of knowledge for achieving practical goals in a reproducible way."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "ISO 23952:2020(en), 3.4.143"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:WorkPiece ;
+    owl:annotatedTarget "a physical artifact, real or virtual, intended for subsequent transformation within some manufacturing operation"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "ISO 13574:2015-02"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:Cleaning ;
+    owl:annotatedTarget "Process for removing unwanted residual or waste material from a given product or material"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "ISO/ASTM 52900:2021(en), 3.3.1"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:3DPrinting ;
+    owl:annotatedTarget """fabrication of objects through the deposition of a material using a print head, nozzle or another printer technology
+Note 1 to entry: This term is often used in a non-technical context synonymously with additive manufacturing (3.1.2) and, in these cases, typically associated with machines used for non-industrial purposes including personal use."""^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "https://de.wikipedia.org/wiki/Werkst%C3%BCck"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:WorkPiece ;
+    owl:annotatedTarget "In manufacturing, a workpiece is a single, delimited part of largely solid material that is processed in some form (e.g. stone )."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso-astm:tr:52906:ed-1:v1:en:term:3.9"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:seeAlso ;
+    owl:annotatedSource ns1:Sintering ;
+    owl:annotatedTarget """ISO/ASTM TR 52906:2022 Additive manufacturing
+sintering: process of heating a powder metal compact to increase density and/or improve mechanical properties via solid state diffusion"""@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 8584-2:2003-09"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:DrawForming ;
+    owl:annotatedTarget "Draw forming by drawing a workpiece through a tool opening that is narrowed in the drawing direction."^^xsd:string .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource ns1:ManufacturedProduct ;
+    owl:annotatedTarget "TangibleProduct"@en ;
+    ns1:etymology "From late Latin tangibilis, from tangere ‘to touch’."@en .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:3252:ed-5:v1:en:term:3.3.60"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:seeAlso ;
+    owl:annotatedSource ns1:Sintering ;
+    owl:annotatedTarget """ISO 3252:2019 Powder metallurgy
+sintering: thermal treatment of a powder or compact, at a temperature below the melting point of the main constituent, for the purpose of increasing its strength by the metallurgical bonding of its particles"""@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN EN ISO 5349-2:2015-12"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:WorkPiece ;
+    owl:annotatedTarget "Object that is processed with a machine"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 8586:2003-09"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:Bending ;
+    owl:annotatedTarget "Forming of a solid body, whereby the plastic state is essentially brought about by a bending stress"^^xsd:string .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource ns1:Device ;
+    owl:annotatedTarget "Machine"@en ;
+    ns1:etymology "From Latin māchina (“a machine, engine, contrivance, device, stratagem, trick”), from Doric Greek μᾱχᾰνᾱ́ (mākhanā́), cognate with Attic Greek μηχᾰνή (mēkhanḗ, “a machine, engine, contrivance, device”), from which comes mechanical."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 8588:2013-08"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:Cutting ;
+    owl:annotatedTarget "Mechanical separation of workpieces without the formation of shapeless material, i.e. also without chips (chipless)."^^xsd:string .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Product ;
+    owl:annotatedTarget "Product"@en ;
+    ns1:etymology "From Latin productum ‘something produced’, derived from Latin producere, from pro- ‘forward’ + ducere ‘to lead’."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN EN 12258-1:2012-08"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource ns1:Grinding ;
+    owl:annotatedTarget "Removal of material by means of rigid or flexible discs or belts containing abrasives."^^xsd:string .
+

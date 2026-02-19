@@ -1,0 +1,345 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/emmo#> .
+@prefix ns2: <http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:AmountConcentration rdfs:subClassOf ns1:ChemicalCompositionQuantity .
+
+ns1:AmountFraction rdfs:subClassOf ns1:ChemicalCompositionQuantity .
+
+ns1:CASRN a owl:Class ;
+    rdfs:label "CASRN"@en ;
+    rdfs:comment "Chemical Abstact Service registry number for a chemical substance from the American Chemical Society"^^xsd:string ;
+    rdfs:subClassOf ns1:ChemicalNomenclature ;
+    skos:example "Water is 7732-18-5"^^xsd:string ;
+    skos:prefLabel "CASRN"@en ;
+    ns1:elucidation "Chemical Abstact Service registry number for a chemical substance from the American Chemical Society"^^xsd:string .
+
+ns1:ChemicalComposition a owl:Class ;
+    rdfs:label "ChemicalComposition"@en ;
+    rdfs:comment "A language construct that provides information about the consitutents of a substance and their fractions or amounts."^^xsd:string ;
+    rdfs:subClassOf ns1:Chemical,
+        ns1:SymbolicConstruct ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf ( ns1:TotalComposition ns1:SingleComponentComposition ns1:PartialComposition ) ] ;
+    skos:prefLabel "ChemicalComposition"@en ;
+    ns1:elucidation "A language construct that provides information about the consitutents of a substance and their fractions or amounts."^^xsd:string .
+
+ns1:ChemicalCompound a owl:Class ;
+    rdfs:label "ChemicalCompound"@en ;
+    rdfs:comment "A chemical substance composed of many identical molecules (or molecular entities) composed of atoms from more than one element held together by chemical bonds."^^xsd:string ;
+    rdfs:subClassOf ns1:ChemicalSubstance ;
+    owl:disjointUnionOf ( ns1:InorganicCompound ns1:OrganicCompound ) ;
+    skos:prefLabel "ChemicalCompound"@en ;
+    ns1:elucidation "A chemical substance composed of many identical molecules (or molecular entities) composed of atoms from more than one element held together by chemical bonds."^^xsd:string ;
+    ns1:wikipediaReference "https://en.wikipedia.org/wiki/Chemical_compound"^^xsd:string .
+
+ns1:ChemicalEntity a owl:Class ;
+    rdfs:label "ChemicalEntity"@en ;
+    rdfs:comment """A chemical entity comprises the two different ways to represents matter: as single recognizable particle entity (molecular entity) and as a composition of particle entities (substance).
+
+This distinction is not well assessed in actual chemical nomenclature, in which an element name refers to both the pure elemental substance or the atom.
+
+In the EMMO we force the adoption of a more strict categorization based on mereotopology.
+
+The class Material hosts the subclasses for which a substance can be identified without necessarily considering its nature of molecule/atom or substance (e.g. hydrocarbon is the class of both hydrocarbon molecules or gases)."""^^xsd:string ;
+    rdfs:subClassOf ns1:Matter ;
+    owl:disjointUnionOf ( ns1:MolecularEntity ns1:ChemicalSubstance ) ;
+    skos:prefLabel "ChemicalEntity"@en .
+
+ns1:ChemicalSymbolicConstruct a owl:Class ;
+    rdfs:label "ChemicalSymbolicConstruct"@en ;
+    rdfs:comment "A symbolic construct that stands for a chemical."@en ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( ns1:SymbolicConstruct ns1:Chemical ) ] ;
+    skos:example "H2O"@en ;
+    skos:prefLabel "ChemicalSymbolicConstruct"@en ;
+    ns1:elucidation "A symbolic construct that stands for a chemical."@en .
+
+ns1:CondensedFormula a owl:Class ;
+    rdfs:label "CondensedFormula"@en ;
+    rdfs:subClassOf ns1:ChemicalFormula ;
+    skos:example "An expression that provides information about the element types that constiture a molecule or a molecular substance and their number, together with simple information about the connectivity of its groups by using parenthesis or by goruping element names according to its molecular structure."^^xsd:string ;
+    skos:prefLabel "CondensedFormula"@en .
+
+ns1:ElementalMaterial a owl:Class ;
+    rdfs:label "ElementalMaterial"@en ;
+    rdfs:subClassOf ns1:ChemicalMaterial ;
+    skos:prefLabel "ElementalMaterial"@en .
+
+ns1:ElementalSubstance a owl:Class ;
+    rdfs:label "ElementalSubstance"@en ;
+    rdfs:comment "A chemical substance composed of atoms with the same number of protons in the atomic nucleus."^^xsd:string ;
+    rdfs:subClassOf ns1:ChemicalSubstance ;
+    skos:altLabel "PureSubstance"@en ;
+    skos:prefLabel "ElementalSubstance"@en ;
+    ns1:elucidation "A chemical substance composed of atoms with the same number of protons in the atomic nucleus."^^xsd:string ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.C01022"^^xsd:string .
+
+ns1:EmpiricalFormula a owl:Class ;
+    rdfs:label "EmpiricalFormula"@en ;
+    rdfs:comment "An expression that provide information about the element type of a compound and their relative ratio."^^xsd:string ;
+    rdfs:subClassOf ns1:ChemicalFormula ;
+    skos:example "Hydrogen peroxide is HO"^^xsd:string ;
+    skos:prefLabel "EmpiricalFormula"@en ;
+    ns1:elucidation "An expression that provide information about the element type of a compound and their relative ratio."^^xsd:string .
+
+ns1:IUPACName a owl:Class ;
+    rdfs:label "IUPACName"@en ;
+    rdfs:comment "Name of a chemical according to the IUPAC standard."@en ;
+    rdfs:subClassOf ns1:ChemicalName,
+        ns1:IUPACNomenclature ;
+    skos:prefLabel "IUPACName"@en ;
+    ns1:elucidation "Name of a chemical according to the IUPAC standard."@en .
+
+ns1:InChI a owl:Class ;
+    rdfs:label "InChI"@en ;
+    rdfs:comment "The International Chemical Identifier (InChI) textual identifier proposed by IUPAC to provide a standard encoding for databases of molecular information."^^xsd:string ;
+    rdfs:subClassOf ns1:IUPACNomenclature ;
+    skos:prefLabel "InChI"@en ;
+    ns1:elucidation "The International Chemical Identifier (InChI) textual identifier proposed by IUPAC to provide a standard encoding for databases of molecular information."^^xsd:string .
+
+ns1:Macromolecule a owl:Class ;
+    rdfs:label "Macromolecule"@en ;
+    rdfs:comment "A polyatomic entity containing a very large number of atoms."@en ;
+    rdfs:subClassOf ns1:PolyatomicEntity ;
+    skos:example "Protein, nucleic acid, or synthetic polymer."@en ;
+    skos:prefLabel "Macromolecule"@en ;
+    ns1:elucidation "A polyatomic entity containing a very large number of atoms."@en .
+
+ns1:MassConcentration rdfs:subClassOf ns1:ChemicalCompositionQuantity .
+
+ns1:MassFraction rdfs:subClassOf ns1:ChemicalCompositionQuantity .
+
+ns1:MolecularFormula a owl:Class ;
+    rdfs:label "MolecularFormula"@en ;
+    rdfs:comment "An expression that provides information about the element types that constiture a molecule or a molecular substance and their number."^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:hasSpatialTile ;
+            owl:someValuesFrom ns1:ChemicalElement ],
+        ns1:ChemicalFormula ;
+    skos:example "Hydrogen peroxide is H2O2"^^xsd:string ;
+    skos:prefLabel "MolecularFormula"@en ;
+    ns1:elucidation "An expression that provides information about the element types that constiture a molecule or a molecular substance and their number."^^xsd:string .
+
+ns1:SMILESReference a owl:AnnotationProperty ;
+    rdfs:label "SMILESReference"@en ;
+    ns2:python_name "SMILESReference"@en ;
+    rdfs:comment "OpenSMILES representation of a molecular structure."@en ;
+    rdfs:isDefinedBy <http://opensmiles.org/opensmiles.html> ;
+    rdfs:subPropertyOf rdfs:seeAlso ;
+    skos:prefLabel "SMILESReference"@en ;
+    ns1:elucidation "OpenSMILES representation of a molecular structure."@en ;
+    ns1:note "OpenSMILES is an open specification of the SMILE language for specifying molecular structures, which has become a defacto standard for exchange of molecular structures."@en ;
+    ns1:wikipediaReference <https://en.wikipedia.org/wiki/Simplified_molecular-input_line-entry_system> .
+
+ns1:StructuralFormula a owl:Class ;
+    rdfs:label "StructuralFormula"@en ;
+    rdfs:comment "A graphical representation of a molecular structure showing the relative position in space of the atomic constituents and their bonds."^^xsd:string ;
+    rdfs:subClassOf ns1:ChemicalRepresentation ;
+    skos:prefLabel "StructuralFormula"@en ;
+    ns1:elucidation "A graphical representation of a molecular structure showing the relative position in space of the atomic constituents and their bonds."^^xsd:string .
+
+ns1:VolumeFraction rdfs:subClassOf ns1:ChemicalCompositionQuantity .
+
+ns1:chemicalSymbolValue a owl:DatatypeProperty ;
+    rdfs:label "chemicalSymbolValue"@en ;
+    ns2:python_name "chemicalSymbolValue"@en ;
+    rdfs:domain ns1:ChemicalSymbol ;
+    rdfs:subPropertyOf ns1:hasSymbolValue ;
+    skos:prefLabel "chemicalSymbolValue"@en .
+
+ns1:inchiKey a owl:AnnotationProperty ;
+    rdfs:label "inchiKey"@en ;
+    ns2:python_name "inchiKey"@en ;
+    rdfs:comment "A hash of the full International Chemical Identifier (InChi) for a chemical substance."@en ;
+    rdfs:seeAlso "https://inchi.info/inchikey_overview_en.html"^^xsd:anyURI ;
+    rdfs:subPropertyOf rdfs:seeAlso ;
+    skos:prefLabel "inchiKey"@en ;
+    ns1:elucidation "A hash of the full International Chemical Identifier (InChi) for a chemical substance."@en ;
+    ns1:note "The InChiKey is a hash of the full InChi identifier using the SHA-256 algorithm, designed to allow for easy web searches of chemical compounds."@en .
+
+<https://w3id.org/emmo/disciplines/chemistry> a owl:Ontology ;
+    dcterms:abstract "The chemistry module populates the physicalistic perspective with materials subclasses categorised according to modern applied chemistry."@en ;
+    dcterms:creator ns1:EmanueleGhedini,
+        ns1:GerhardGoldbeck,
+        ns1:JesperFriis ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "Chemistry"@en ;
+    rdfs:comment "The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.2/disciplines/isq>,
+        <https://w3id.org/emmo/1.0.2/disciplines/perceptual> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.2/disciplines/chemistry> ;
+    owl:versionInfo "1.0.2"^^xsd:string ;
+    ns1:contact "emmo@emmc.eu"^^xsd:string .
+
+ns1:ChemicalMaterial a owl:Class ;
+    rdfs:label "ChemicalMaterial"@en ;
+    rdfs:subClassOf ns1:Material ;
+    skos:prefLabel "ChemicalMaterial"@en .
+
+ns1:ChemicalName a owl:Class ;
+    rdfs:label "ChemicalName"@en ;
+    rdfs:comment "Name of a chemical according to a standard."@en ;
+    rdfs:subClassOf ns1:ChemicalNomenclature ;
+    skos:prefLabel "ChemicalName"@en ;
+    ns1:elucidation "Name of a chemical according to a standard."@en .
+
+ns1:ChemicalRepresentation a owl:Class ;
+    rdfs:label "ChemicalRepresentation"@en ;
+    rdfs:comment "A representation of objects belonging to the chemistry field."^^xsd:string ;
+    rdfs:subClassOf ns1:Representation ;
+    skos:prefLabel "ChemicalRepresentation"@en ;
+    ns1:elucidation "A representation of objects belonging to the chemistry field."^^xsd:string .
+
+ns1:ChemicalSpecies a owl:Class ;
+    rdfs:label "ChemicalSpecies"@en ;
+    rdfs:comment """Following nominalistic approach a species is simply a name that can point to an element name, a chemical formula or a chemical compound.
+
+So everything addressed by these classes of names can be calleded a chemical species."""^^xsd:string,
+        """N2
+Methane
+CH4
+Fe
+Sodium Chloride"""^^xsd:string,
+        """Specific form of an element defined as to isotopic composition, electronic or oxidation state, and/or complex or molecular structure.
+
+Chemical species is the macroscopic equivalent of molecular entity and refers to sets or ensembles of molecular entities."""^^xsd:string ;
+    rdfs:subClassOf ns1:Chemical ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf ( ns1:ChemicalElement ns1:ChemicalNomenclature ns1:ChemicalFormula ) ] ;
+    skos:prefLabel "ChemicalSpecies"@en ;
+    ns1:elucidation """Specific form of an element defined as to isotopic composition, electronic or oxidation state, and/or complex or molecular structure.
+
+Chemical species is the macroscopic equivalent of molecular entity and refers to sets or ensembles of molecular entities."""^^xsd:string ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.CT06859"^^xsd:string .
+
+ns1:ChemicalSymbol a owl:Class ;
+    rdfs:label "ChemicalSymbol"@en ;
+    rdfs:comment "A symbol that stands for a chemical element."@en ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( ns1:Symbol ns1:Chemical ) ] ;
+    skos:example """"H"
+"He"
+"Li"
+..."""@en ;
+    skos:prefLabel "ChemicalSymbol"@en ;
+    ns1:elucidation "A symbol that stands for a chemical element."@en .
+
+ns1:InorganicCompound a owl:Class ;
+    rdfs:label "InorganicCompound"@en ;
+    skos:prefLabel "InorganicCompound"@en .
+
+ns1:OrganicCompound a owl:Class ;
+    rdfs:label "OrganicCompound"@en ;
+    skos:prefLabel "OrganicCompound"@en .
+
+ns1:PartialComposition a owl:Class ;
+    rdfs:label "PartialComposition"@en ;
+    rdfs:comment "A language construct that represents fraction or amount of some (but not all) constituents of a substance."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:hasSpatialTile ;
+            owl:someValuesFrom ns1:SingleComponentComposition ] ;
+    skos:prefLabel "PartialComposition"@en ;
+    ns1:elucidation "A language construct that represents fraction or amount of some (but not all) constituents of a substance."@en .
+
+ns1:PolyatomicEntity a owl:Class ;
+    rdfs:label "PolyatomicEntity"@en ;
+    rdfs:comment "An entity made of two or more bonded atoms."@en ;
+    rdfs:subClassOf ns1:MolecularEntity ;
+    skos:prefLabel "PolyatomicEntity"@en ;
+    ns1:elucidation "An entity made of two or more bonded atoms."@en .
+
+ns1:TotalComposition a owl:Class ;
+    rdfs:label "TotalComposition"@en ;
+    rdfs:comment "A language construct that represents fraction or amount of all constituents of a substance."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:hasSpatialTile ;
+            owl:someValuesFrom ns1:SingleComponentComposition ] ;
+    skos:prefLabel "TotalComposition"@en ;
+    ns1:elucidation "A language construct that represents fraction or amount of all constituents of a substance."@en .
+
+ns1:IUPACNomenclature a owl:Class ;
+    rdfs:label "IUPACNomenclature"@en ;
+    rdfs:comment "Chemical nomenclauture following the IUPAC standard."@en ;
+    rdfs:subClassOf ns1:ChemicalNomenclature ;
+    skos:prefLabel "IUPACNomenclature"@en ;
+    ns1:elucidation "Chemical nomenclauture following the IUPAC standard."@en .
+
+ns1:MolecularEntity rdfs:comment """Molecular entity is used as a general term for singular entities, irrespective of their nature, while chemical species stands for sets or ensembles of molecular entities.
+
+Note that the name of a compound may refer to the respective molecular entity or to the chemical species,"""^^xsd:string ;
+    skos:example "Hydrogen molecule is an adequate definition of a certain molecular entity for some purposes, whereas for others it is necessary to distinguish the electronic state and/or vibrational state and/or nuclear spin, etc. of the hydrogen molecule."^^xsd:string,
+        "Methane, may mean a single molecule of CH4 (molecular entity) or a molar amount, specified or not (chemical species), participating in a reaction. The degree of precision necessary to describe a molecular entity depends on the context."^^xsd:string .
+
+ns1:ChemicalElement a owl:Class ;
+    rdfs:label "ChemicalElement"@en ;
+    rdfs:comment """The IUPAC Gold Book defines the a chemical element both as:
+- a species of atoms; all atoms with the same number of protons in the atomic nucleus
+-  a pure chemical substance composed of atoms with the same number of protons in the atomic nucleus
+
+This qualifies a chemical element as a name and not a matter obejct that can stand for an atom or a substance."""^^xsd:string,
+        "The symbol for a specific chemical element, that can stand both for an atom or a substance."^^xsd:string ;
+    rdfs:seeAlso "http://publications.iupac.org/ci/2005/2701/ud.html"^^xsd:string ;
+    rdfs:subClassOf ns1:Chemical,
+        ns1:Symbol ;
+    skos:prefLabel "ChemicalElement"@en ;
+    ns1:elucidation "The symbol for a specific chemical element, that can stand both for an atom or a substance."^^xsd:string ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.C01022"^^xsd:string .
+
+ns1:ChemicalSubstance a owl:Class ;
+    rdfs:label "ChemicalSubstance"@en ;
+    rdfs:comment "A substance is always composed of more than one molecular entity. It lays in the continuum or mesoscopic domain."^^xsd:string,
+        "Matter of constant composition best characterized by the entities (molecules, formula units, atoms) it is composed of."^^xsd:string ;
+    rdfs:subClassOf ns1:Substance ;
+    skos:prefLabel "ChemicalSubstance"@en ;
+    ns1:elucidation "Matter of constant composition best characterized by the entities (molecules, formula units, atoms) it is composed of."^^xsd:string ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.C01039"^^xsd:string .
+
+ns1:SingleComponentComposition a owl:Class ;
+    rdfs:label "SingleComponentComposition"@en ;
+    rdfs:comment "A language construct that represents the fraction or amount of a single constituent of a substance."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:hasSpatialTile ;
+            owl:someValuesFrom ns1:ChemicalSpecies ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:hasSpatialTile ;
+            owl:someValuesFrom ns1:ChemicalCompositionQuantity ] ;
+    skos:prefLabel "SingleComponentComposition"@en ;
+    ns1:elucidation "A language construct that represents the fraction or amount of a single constituent of a substance."@en .
+
+ns1:ChemicalFormula a owl:Class ;
+    rdfs:label "ChemicalFormula"@en ;
+    rdfs:comment "A chemical formula may also include other symbols such as parentheses, plus and minus signs, brackets"^^xsd:string,
+        "A symbolic construct that provides informations about the chemical proportions of the elements that constitute a chemical compound or a specific molecule."^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:hasSpatialTile ;
+            owl:someValuesFrom ns1:ChemicalElement ],
+        ns1:Chemical ;
+    skos:prefLabel "ChemicalFormula"@en ;
+    ns1:elucidation "A symbolic construct that provides informations about the chemical proportions of the elements that constitute a chemical compound or a specific molecule."^^xsd:string .
+
+ns1:ChemicalNomenclature a owl:Class ;
+    rdfs:label "ChemicalNomenclature"@en ;
+    rdfs:comment "A chemical numenclature should not be confused with the chemical formula."^^xsd:string,
+        "A language object following a specific nomenclature rules for defining univocal names of chemical compounds."^^xsd:string ;
+    rdfs:subClassOf ns1:Chemical ;
+    skos:prefLabel "ChemicalNomenclature"@en ;
+    ns1:elucidation "A language object following a specific nomenclature rules for defining univocal names of chemical compounds."^^xsd:string .
+
+ns1:ChemicalCompositionQuantity a owl:Class ;
+    rdfs:subClassOf ns1:CategorizedPhysicalQuantity ;
+    skos:prefLabel "ChemicalCompositionQuantity"@en .
+
+ns1:Chemical a owl:Class ;
+    rdfs:label "Chemical"@en ;
+    rdfs:comment "A language object that follows the syntactic rules used in the chemical field."^^xsd:string ;
+    rdfs:subClassOf ns1:Language ;
+    skos:prefLabel "Chemical"@en ;
+    ns1:elucidation "A language object that follows the syntactic rules used in the chemical field."^^xsd:string .
+

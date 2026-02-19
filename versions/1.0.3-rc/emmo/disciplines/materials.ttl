@@ -1,0 +1,665 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix emmo: <https://w3id.org/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+owl:minQualifiedCardinality a owl:AnnotationProperty .
+
+owl:qualifiedCardinality a owl:AnnotationProperty .
+
+emmo:EMMO_0afc19b0_2d43_4b3d_8da0_9ffb63bc1492 a owl:Class ;
+    rdfs:label "AmorphousMaterial"@en ;
+    rdfs:subClassOf emmo:EMMO_f00fb163_48c9_4c59_b6c2_4205c082aa54 ;
+    skos:altLabel "NonCrystallineMaterial"@en ;
+    skos:prefLabel "AmorphousMaterial"@en .
+
+emmo:EMMO_0b15f4ae_092e_4487_9100_3c44176c545c a owl:Class ;
+    rdfs:label "Dispersion"@en ;
+    rdfs:comment "A material in which distributed particles of one phase are dispersed in a different continuous phase."@en ;
+    rdfs:subClassOf emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c ;
+    owl:disjointUnionOf ( emmo:EMMO_2031516a_2be7_48e8_9af7_7e1270e308fe emmo:EMMO_4a464c8d_8895_44a8_a628_aed13509f1bd emmo:EMMO_6c487fb3_03d1_4e56_91ed_c2e16dcbef60 ) ;
+    skos:prefLabel "Dispersion"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A material in which distributed particles of one phase are dispersed in a different continuous phase."@en .
+
+emmo:EMMO_12a9a254_9791_4a00_b045_f397bc3ab2bc a owl:Class ;
+    rdfs:label "GasMixture"@en ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( emmo:EMMO_04f2a2d5_e799_4692_a654_420e76f5acc1 emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c ) ] ;
+    skos:prefLabel "GasMixture"@en .
+
+emmo:EMMO_29a15bcd_e219_4afc_9f82_9d3fceb666cd a owl:Class ;
+    rdfs:label "Powder"@en ;
+    rdfs:comment "A powder is a granular material composed of many very fine dry solid particles that may flow freely when shaken or tilted."@en ;
+    rdfs:isDefinedBy "Duran, J., Reisinger A., Sands, Powders, and Grains: An Introduction to the Physics of Granular Materials. November 1999, Springer-Verlag New York, Inc., New York, ISBN 0-387-98656-1."@en ;
+    rdfs:subClassOf emmo:EMMO_48fc6f16_0f04_4e86_a9fc_fcfc14c5ef4b ;
+    skos:prefLabel "Powder"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A powder is a granular material composed of many very fine dry solid particles that may flow freely when shaken or tilted."@en .
+
+emmo:EMMO_3995e22d_5720_4dcf_ba3b_d0ce03f514c6 a owl:Class ;
+    rdfs:label "Gel"@en ;
+    rdfs:comment "A soft, solid or solid-like colloid consisting of two or more components, one of which is a liquid, present in substantial quantity."@en ;
+    rdfs:subClassOf emmo:EMMO_6c487fb3_03d1_4e56_91ed_c2e16dcbef60,
+        emmo:EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1 ;
+    skos:prefLabel "Gel"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A soft, solid or solid-like colloid consisting of two or more components, one of which is a liquid, present in substantial quantity."@en .
+
+emmo:EMMO_40e18c93_a1b5_49ff_b06a_d9d932d1fb65 a owl:Class ;
+    rdfs:label "Emulsion"@en ;
+    rdfs:comment "An emulsion is a mixture of two or more liquids that are normally immiscible (a liquid-liquid heterogeneous mixture)."@en ;
+    rdfs:subClassOf emmo:EMMO_6c487fb3_03d1_4e56_91ed_c2e16dcbef60,
+        emmo:EMMO_7509da43_56b1_4d7f_887a_65d1663df4ba ;
+    skos:example "Mayonnaise, milk."@en ;
+    skos:prefLabel "Emulsion"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An emulsion is a mixture of two or more liquids that are normally immiscible (a liquid-liquid heterogeneous mixture)."@en .
+
+emmo:EMMO_4354ac74_7425_43ab_92e4_6dc19d1afee9 a owl:Class ;
+    rdfs:label "LiquidSol"@en ;
+    rdfs:comment "A type of sol in the form of one solid dispersed in liquid."@en ;
+    rdfs:subClassOf emmo:EMMO_31557fae_b039_491c_bcbb_0ccb8711d5a6,
+        emmo:EMMO_7509da43_56b1_4d7f_887a_65d1663df4ba ;
+    skos:prefLabel "LiquidSol"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A type of sol in the form of one solid dispersed in liquid."@en .
+
+emmo:EMMO_43d0bb2c_bb0e_4312_a0de_084c29ff7f9e rdfs:label "MatterByType"@en ;
+    rdfs:comment "Categorisation of matter by its type."@en .
+
+emmo:EMMO_4588526f_8553_4f4d_aa73_a483e88d599b a owl:Class ;
+    rdfs:label "NeutralAtom"@en ;
+    rdfs:comment "A standalone atom that has no net charge."@en ;
+    rdfs:subClassOf emmo:EMMO_2fd3f574_5e93_47fe_afca_ed80b0a21ab4 ;
+    owl:disjointWith emmo:EMMO_db03061b_db31_4132_a47a_6a634846578b ;
+    skos:prefLabel "NeutralAtom"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A standalone atom that has no net charge."@en .
+
+emmo:EMMO_498aad49_f8d4_40a4_a9eb_efd563a0115f a owl:Class ;
+    rdfs:label "Spray"@en ;
+    rdfs:comment "A suspension of liquid droplets dispersed in a gas through an atomization process."@en ;
+    rdfs:subClassOf emmo:EMMO_e0edfb9e_9a96_4fae_b942_831ffe27b84a ;
+    skos:prefLabel "Spray"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A suspension of liquid droplets dispersed in a gas through an atomization process."@en .
+
+emmo:EMMO_4c1f58cd_6e2c_48fb_8098_1cbb762abb05 a owl:Class ;
+    rdfs:label "MetallicMaterial"@en ;
+    rdfs:comment "Inorganic substance, consisting of one or more metallic elements."@en ;
+    rdfs:subClassOf emmo:EMMO_4db521a3_f80f_436b_b9c7_e4b52b1383ea ;
+    skos:prefLabel "MetallicMaterial"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Inorganic substance, consisting of one or more metallic elements."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Metallic materials are known for their shiny luster, excellent electrical/thermal conductivity, malleability (shapable by hammering), and ductility (can be drawn into wires), due to metallic bonding (shared electrons); they often form alloys (like steel from iron/carbon) to enhance these properties for diverse applications."@en .
+
+emmo:EMMO_4d604a13_d1f6_42fd_818f_d3138d5e308c a owl:Class ;
+    rdfs:label "Vapor"@en ;
+    rdfs:comment "A liquid aerosol composed of water droplets in air or another gas."@en ;
+    rdfs:subClassOf emmo:EMMO_94010cbc_c2a6_4cb9_b29a_83aa99d2ff70 ;
+    skos:prefLabel "Vapor"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A liquid aerosol composed of water droplets in air or another gas."@en .
+
+emmo:EMMO_5a2af26d_99de_4e5e_b1cd_514be71420c3 a owl:Class ;
+    rdfs:label "Smoke"@en ;
+    rdfs:comment "Smoke is a solid aerosol made of particles emitted when a material undergoes combustion or pyrolysis."@en ;
+    rdfs:subClassOf emmo:EMMO_96c8d72f_b436_44e2_9f7f_085c24094292 ;
+    skos:prefLabel "Smoke"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Smoke is a solid aerosol made of particles emitted when a material undergoes combustion or pyrolysis."@en .
+
+emmo:EMMO_5add9885_dc98_4fa5_8482_fdf9ba5e3889 a owl:Class ;
+    rdfs:label "SolidSol"@en ;
+    rdfs:comment "A type of sol in the form of one solid dispersed in another continuous solid."@en ;
+    rdfs:subClassOf emmo:EMMO_31557fae_b039_491c_bcbb_0ccb8711d5a6,
+        emmo:EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1 ;
+    skos:prefLabel "SolidSol"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A type of sol in the form of one solid dispersed in another continuous solid."@en .
+
+emmo:EMMO_5be9c137_325a_43d8_b7cd_ea93e7721c2d a owl:Class ;
+    rdfs:label "GasSolution"@en ;
+    rdfs:comment "A gaseous solution made of more than one component type."@en ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( emmo:EMMO_04f2a2d5_e799_4692_a654_420e76f5acc1 emmo:EMMO_2031516a_2be7_48e8_9af7_7e1270e308fe ) ] ;
+    skos:altLabel "GasMixture"@en ;
+    skos:prefLabel "GasSolution"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A gaseous solution made of more than one component type."@en .
+
+emmo:EMMO_5cb107ba_7daa_46dd_8f9f_da22a6eac676 a owl:Class ;
+    rdfs:label "AqueousSolution"@en ;
+    rdfs:comment "A liquid solution in which the solvent is water."@en ;
+    rdfs:subClassOf emmo:EMMO_4b3e2374_52a1_4420_8e3f_3ae6b9bf7dff ;
+    skos:prefLabel "AqueousSolution"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A liquid solution in which the solvent is water."@en .
+
+emmo:EMMO_5d659e25_a508_43ed_903c_3707c7c7cd4b a owl:Class ;
+    rdfs:label "NanoMaterial"@en ;
+    rdfs:comment "Nanomaterials are Materials possessing, at minimum, one external dimension measuring 1-100nm"@en ;
+    rdfs:subClassOf emmo:EMMO_e4e80813_f379_4091_b017_ee059811f806 ;
+    skos:prefLabel "NanoMaterial"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Nanomaterials are Materials possessing, at minimum, one external dimension measuring 1-100nm"@en .
+
+emmo:EMMO_5e77f00d_5c0a_44e7_baf1_2c2a4cb5b3ae a owl:Class ;
+    rdfs:label "SolidSolution"@en ;
+    rdfs:comment "A solid solution made of two or more component substances."@en ;
+    rdfs:subClassOf emmo:EMMO_2031516a_2be7_48e8_9af7_7e1270e308fe,
+        emmo:EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1 ;
+    skos:prefLabel "SolidSolution"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A solid solution made of two or more component substances."@en .
+
+emmo:EMMO_660a4964_0333_4663_bc66_e93ef59b0679 a owl:Class ;
+    rdfs:label "MesoscopicSubstance"@en ;
+    rdfs:comment "A matter that is not a particulate matter and that does not fullfill the criteria of being a continuum substance."@en ;
+    rdfs:subClassOf emmo:EMMO_bc37743c_37c4_4ec7_9d58_d1aae5567352 ;
+    owl:disjointWith emmo:EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2 ;
+    skos:example """nanoparticle,
+quantum dot, 
+carbon nanotupe"""@en ;
+    skos:prefLabel "MesoscopicSubstance"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A matter that is not a particulate matter and that does not fullfill the criteria of being a continuum substance."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Mesoscopic substances typically exist on a length scale between atoms and molecules and macroscopic (bulk) substances. They are typically in the range of some nanometers to about a micrometer and often exhibit unique physical properties due to their size and shape."@en .
+
+emmo:EMMO_75fe4fd1_0f7e_429b_b91d_59d248561bae a owl:Class ;
+    rdfs:label "NaturalMaterial"@en ;
+    rdfs:comment "A Material occurring in nature, without the need of human intervention."@en ;
+    rdfs:subClassOf emmo:EMMO_ddb62e5b_9a1f_4d10_8cd8_32655301bfc9 ;
+    skos:prefLabel "NaturalMaterial"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A Material occurring in nature, without the need of human intervention."@en .
+
+emmo:EMMO_77e2e601_5ecb_450b_b563_92f096997832 a owl:Class ;
+    rdfs:label "SolidMixture"@en ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( emmo:EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1 emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c ) ] ;
+    skos:prefLabel "SolidMixture"@en .
+
+emmo:EMMO_8303a247_f9d9_4616_bdcd_f5cbd7b298e3 a owl:Class ;
+    rdfs:label "BondedAtom"@en ;
+    rdfs:comment "A bonded atom that shares at least one electron to the atom-based entity of which is part of."@en,
+        """A real bond between atoms is always something hybrid between covalent, metallic and ionic.
+
+In general, metallic and ionic bonds have atoms sharing electrons."""@en,
+        "The bond types that are covered by this definition are the strong electronic bonds: covalent, metallic and ionic."@en,
+        "This class can be used to represent molecules as simplified quantum systems, in which outer molecule shared electrons are un-entangled with the inner shells of the atoms composing the molecule."@en ;
+    rdfs:subClassOf emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
+    skos:prefLabel "BondedAtom"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A bonded atom that shares at least one electron to the atom-based entity of which is part of."@en .
+
+emmo:EMMO_8820f251_ad36_43f4_a693_c0e86a89cc1f a owl:Class ;
+    rdfs:label "MaterialByFunction"@en ;
+    rdfs:subClassOf emmo:EMMO_4207e895_8b83_4318_996a_72cfb32acd94 ;
+    skos:altLabel "FunctionalMaterial"@en ;
+    skos:prefLabel "MaterialByFunction"@en .
+
+emmo:EMMO_9bed5d66_805a_4b3a_9153_beaf67143848 a owl:Class ;
+    rdfs:label "SolidFoam"@en ;
+    rdfs:comment "A foam of trapped gas in a solid."@en ;
+    rdfs:subClassOf emmo:EMMO_1f5e3e7e_72c9_40d4_91dd_ae432d7b7018,
+        emmo:EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1 ;
+    skos:example "Aerogel"@en ;
+    skos:prefLabel "SolidFoam"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A foam of trapped gas in a solid."@en .
+
+emmo:EMMO_9ebb6e14_c656_4568_abfa_f7f193ea14ac a owl:Class ;
+    rdfs:label "CompactMaterial"@en ;
+    rdfs:subClassOf emmo:EMMO_9ec16158_9118_4886_be97_4310f02f7571 ;
+    skos:prefLabel "CompactMaterial"@en .
+
+emmo:EMMO_b418c9ac_be7c_42d1_862c_64f655ced6c5 a owl:Class ;
+    rdfs:label "ArtificialMaterial"@en ;
+    rdfs:subClassOf emmo:EMMO_ddb62e5b_9a1f_4d10_8cd8_32655301bfc9 ;
+    skos:prefLabel "ArtificialMaterial"@en .
+
+emmo:EMMO_c5e9e390_8836_4440_b4fd_c906fdd4f438 a owl:Class ;
+    rdfs:label "CeramicMaterial"@en ;
+    rdfs:comment "An inorganic non-metallic solid made from elements (metals, non-metals, semi-metals like silicon) combined into compounds (oxides, carbides, nitrides) that are typically hard, strong, brittle, corrosion-resistant, and good insulators."@en ;
+    rdfs:subClassOf emmo:EMMO_4db521a3_f80f_436b_b9c7_e4b52b1383ea ;
+    skos:altLabel "Ceramic"@en ;
+    skos:prefLabel "CeramicMaterial"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An inorganic non-metallic solid made from elements (metals, non-metals, semi-metals like silicon) combined into compounds (oxides, carbides, nitrides) that are typically hard, strong, brittle, corrosion-resistant, and good insulators."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Ceramic materials are hardened by intense heat and typically used from pottery and tiles to advanced electronics and aerospace parts."@en .
+
+emmo:EMMO_d69d2e95_b22f_499a_a552_17fde0d778fc a owl:Class ;
+    rdfs:label "LiquidFoam"@en ;
+    rdfs:comment "A foam of trapped gas in a liquid."@en ;
+    rdfs:subClassOf emmo:EMMO_1f5e3e7e_72c9_40d4_91dd_ae432d7b7018,
+        emmo:EMMO_7509da43_56b1_4d7f_887a_65d1663df4ba ;
+    skos:prefLabel "LiquidFoam"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A foam of trapped gas in a liquid."@en .
+
+emmo:EMMO_d8a7aac9_984a_4254_ab3b_7d8b1c061149 a owl:Class ;
+    rdfs:label "MaterialByForceResponse"@en ;
+    rdfs:subClassOf emmo:EMMO_4207e895_8b83_4318_996a_72cfb32acd94 ;
+    skos:prefLabel "MaterialByForceResponse"@en .
+
+emmo:EMMO_e4281979_2b07_4a43_a772_4903fb3696fe a owl:Class ;
+    rdfs:label "Dust"@en ;
+    rdfs:comment "A suspension of fine particles in the atmosphere."@en ;
+    rdfs:subClassOf emmo:EMMO_d4f37e32_16ae_4cc6_b4cd_fd896b2449c4 ;
+    skos:prefLabel "Dust"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A suspension of fine particles in the atmosphere."@en .
+
+emmo:EMMO_f678173d_f036_4df1_a86b_2894560be617 a owl:Class ;
+    rdfs:label "CompositeMaterial"@en ;
+    rdfs:comment "A material that contains two or more constituent materials."@en ;
+    rdfs:subClassOf emmo:EMMO_4db521a3_f80f_436b_b9c7_e4b52b1383ea ;
+    skos:altLabel "Composite"@en ;
+    skos:prefLabel "CompositeMaterial"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A material that contains two or more constituent materials."@en .
+
+emmo:EMMO_fb27e6d6_159e_48a6_9c29_76dc31d8a860 a owl:Class ;
+    rdfs:label "PolymericMaterial"@en ;
+    rdfs:comment "A substance made of macromolecules formed by linking many smaller, repeating chemical units called monomers into long chains or networks, resulting in unique properties like toughness, elasticity, or flexibility, found in both natural forms (like DNA, protein) and synthetic plastics, rubbers, and fibers."@en ;
+    rdfs:subClassOf emmo:EMMO_4db521a3_f80f_436b_b9c7_e4b52b1383ea ;
+    skos:prefLabel "PolymericMaterial"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A substance made of macromolecules formed by linking many smaller, repeating chemical units called monomers into long chains or networks, resulting in unique properties like toughness, elasticity, or flexibility, found in both natural forms (like DNA, protein) and synthetic plastics, rubbers, and fibers."@en .
+
+<https://w3id.org/emmo/disciplines/materials> a owl:Ontology ;
+    dcterms:abstract "The materials module populates the physicalistic perspective with materials subclasses categorised according to modern applied physical sciences."@en ;
+    dcterms:contributor <https://orcid.org/0000-0001-7815-6636> ;
+    dcterms:creator <https://orcid.org/0000-0002-1560-809X>,
+        <https://orcid.org/0000-0002-4181-2852>,
+        <https://orcid.org/0000-0003-0514-9229>,
+        <https://orcid.org/0000-0003-3805-8761>,
+        <https://orcid.org/0000-0003-4065-9742> ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "Materials"@en ;
+    rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.3/reference/physicalistic> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.3/disciplines/materials> ;
+    owl:versionInfo "1.0.3"^^xsd:string ;
+    emmo:EMMO_1246b120_abbe_4840_b0f8_3e4348b24a17 "emmo@emmc.eu"^^xsd:string .
+
+emmo:EMMO_0e6378df_1ce8_4321_b00c_ee9beea60a67 a owl:Class ;
+    rdfs:label "PhaseHomogeneousMixture"@en ;
+    rdfs:comment "A single phase mixture."@en ;
+    rdfs:subClassOf emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c ;
+    skos:prefLabel "PhaseHomogeneousMixture"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A single phase mixture."@en .
+
+emmo:EMMO_2dd512a1_5187_47cc_b0b8_141214e22b59 a owl:Class ;
+    rdfs:label "SolidSolidSuspension"@en ;
+    rdfs:comment "A coarse dispersion of solid in a solid continuum phase."@en ;
+    rdfs:subClassOf emmo:EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1 ;
+    skos:example "Granite, sand, dried concrete."@en ;
+    skos:prefLabel "SolidSolidSuspension"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A coarse dispersion of solid in a solid continuum phase."@en .
+
+emmo:EMMO_33e0ac8b_a318_4285_b1de_e95347784632 a owl:Class ;
+    rdfs:label "SolidLiquidSuspension"@en ;
+    rdfs:comment "A coarse dispersion of liquid in a solid continuum phase."@en ;
+    rdfs:subClassOf emmo:EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1 ;
+    skos:prefLabel "SolidLiquidSuspension"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A coarse dispersion of liquid in a solid continuum phase."@en .
+
+emmo:EMMO_42185fe7_122c_4e0c_a3cd_659d3e21c389 a owl:Class ;
+    rdfs:label "LiquidGasSuspension"@en ;
+    rdfs:comment "A coarse dispersion of gas in a liquid continuum phase."@en ;
+    rdfs:subClassOf emmo:EMMO_7509da43_56b1_4d7f_887a_65d1663df4ba ;
+    skos:example "Sparkling water"@en ;
+    skos:prefLabel "LiquidGasSuspension"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A coarse dispersion of gas in a liquid continuum phase."@en .
+
+emmo:EMMO_47fe2379_be21_48d1_9ede_402f0faf494b a owl:Class ;
+    rdfs:label "LiquidLiquidSuspension"@en ;
+    rdfs:comment "A coarse dispersion of liquid in a liquid continuum phase."@en ;
+    rdfs:subClassOf emmo:EMMO_7509da43_56b1_4d7f_887a_65d1663df4ba ;
+    skos:prefLabel "LiquidLiquidSuspension"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A coarse dispersion of liquid in a liquid continuum phase."@en .
+
+emmo:EMMO_48fc6f16_0f04_4e86_a9fc_fcfc14c5ef4b a owl:Class ;
+    rdfs:label "GranularMaterial"@en ;
+    rdfs:comment "A granular material is a conglomeration of discrete solid, macroscopic particles that are  large enough to avoid thermal motion fluctuations, and characterized by a loss of energy whenever the particles interact."@en ;
+    rdfs:subClassOf emmo:EMMO_9ec16158_9118_4886_be97_4310f02f7571 ;
+    skos:prefLabel "GranularMaterial"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A granular material is a conglomeration of discrete solid, macroscopic particles that are  large enough to avoid thermal motion fluctuations, and characterized by a loss of energy whenever the particles interact."@en .
+
+emmo:EMMO_4a464c8d_8895_44a8_a628_aed13509f1bd a owl:Class ;
+    rdfs:label "Suspension"@en ;
+    rdfs:comment "An heterogeneous mixture that contains coarsly dispersed particles (no Tyndall effect), that generally tend to separate in time to the dispersion medium phase."@en,
+        "Suspensions show no significant effect on light."@en ;
+    rdfs:subClassOf emmo:EMMO_0e030040_98a7_49b2_a871_dced1f3a6131 ;
+    owl:disjointUnionOf ( emmo:EMMO_2dd512a1_5187_47cc_b0b8_141214e22b59 emmo:EMMO_33e0ac8b_a318_4285_b1de_e95347784632 emmo:EMMO_42185fe7_122c_4e0c_a3cd_659d3e21c389 emmo:EMMO_47fe2379_be21_48d1_9ede_402f0faf494b emmo:EMMO_c457b6b9_5e73_4853_ae08_d776c12b8058 emmo:EMMO_d4f37e32_16ae_4cc6_b4cd_fd896b2449c4 emmo:EMMO_e0edfb9e_9a96_4fae_b942_831ffe27b84a emmo:EMMO_e9e02156_651f_41c8_9efb_d5da0d4ce5e2 ) ;
+    skos:prefLabel "Suspension"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An heterogeneous mixture that contains coarsly dispersed particles (no Tyndall effect), that generally tend to separate in time to the dispersion medium phase."@en .
+
+emmo:EMMO_4b3e2374_52a1_4420_8e3f_3ae6b9bf7dff a owl:Class ;
+    rdfs:label "LiquidSolution"@en ;
+    rdfs:comment "A liquid solution made of two or more component substances."@en ;
+    rdfs:subClassOf emmo:EMMO_2031516a_2be7_48e8_9af7_7e1270e308fe,
+        emmo:EMMO_7509da43_56b1_4d7f_887a_65d1663df4ba ;
+    skos:prefLabel "LiquidSolution"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A liquid solution made of two or more component substances."@en .
+
+emmo:EMMO_6e9cb807_fc68_4bcf_b3ba_5fccc887c644 rdfs:label "OrdinaryMatter"@en ;
+    rdfs:comment "Matter composed of only matter particles, excluding anti-matter particles."@en .
+
+emmo:EMMO_94010cbc_c2a6_4cb9_b29a_83aa99d2ff70 a owl:Class ;
+    rdfs:label "LiquidAerosol"@en ;
+    rdfs:comment "An aerosol composed of liquid droplets in air or another gas."@en ;
+    rdfs:subClassOf emmo:EMMO_560d833a_6184_410c_859a_05d982712fd7 ;
+    skos:prefLabel "LiquidAerosol"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An aerosol composed of liquid droplets in air or another gas."@en .
+
+emmo:EMMO_96c8d72f_b436_44e2_9f7f_085c24094292 a owl:Class ;
+    rdfs:label "SolidAerosol"@en ;
+    rdfs:comment "An aerosol composed of fine solid particles in air or another gas."@en ;
+    rdfs:subClassOf emmo:EMMO_560d833a_6184_410c_859a_05d982712fd7 ;
+    skos:prefLabel "SolidAerosol"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An aerosol composed of fine solid particles in air or another gas."@en .
+
+emmo:EMMO_c457b6b9_5e73_4853_ae08_d776c12b8058 a owl:Class ;
+    rdfs:label "SolidGasSuspension"@en ;
+    rdfs:comment "A coarse dispersion of gas in a solid continuum phase."@en ;
+    rdfs:subClassOf emmo:EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1 ;
+    skos:prefLabel "SolidGasSuspension"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A coarse dispersion of gas in a solid continuum phase."@en .
+
+emmo:EMMO_db03061b_db31_4132_a47a_6a634846578b a owl:Class ;
+    rdfs:label "IonAtom"@en ;
+    rdfs:comment "A standalone atom with an unbalanced number of electrons with respect to its atomic number."@en,
+        "The ion_atom is the basic part of a pure ionic bonded compound i.e. without eclectron sharing,"@en ;
+    rdfs:subClassOf emmo:EMMO_2fd3f574_5e93_47fe_afca_ed80b0a21ab4 ;
+    skos:prefLabel "IonAtom"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A standalone atom with an unbalanced number of electrons with respect to its atomic number."@en .
+
+emmo:EMMO_e4e80813_f379_4091_b017_ee059811f806 a owl:Class ;
+    rdfs:label "MaterialBySize"@en ;
+    rdfs:subClassOf emmo:EMMO_4207e895_8b83_4318_996a_72cfb32acd94 ;
+    skos:prefLabel "MaterialBySize"@en .
+
+emmo:EMMO_e9e02156_651f_41c8_9efb_d5da0d4ce5e2 a owl:Class ;
+    rdfs:label "LiquidSolidSuspension"@en ;
+    rdfs:comment "A coarse dispersion of solids in a liquid continuum phase."@en ;
+    rdfs:subClassOf emmo:EMMO_7509da43_56b1_4d7f_887a_65d1663df4ba ;
+    skos:example "Mud"@en ;
+    skos:prefLabel "LiquidSolidSuspension"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A coarse dispersion of solids in a liquid continuum phase."@en .
+
+emmo:EMMO_f1025834_0cd2_42a1_bfeb_13bec41c8655 a owl:Class ;
+    rdfs:label "CrystallineMaterial"@en ;
+    rdfs:comment "Suggestion of Rickard Armiento"^^xsd:string ;
+    rdfs:subClassOf emmo:EMMO_f00fb163_48c9_4c59_b6c2_4205c082aa54 ;
+    skos:prefLabel "CrystallineMaterial"@en .
+
+emmo:EMMO_0bb3b434_73aa_428f_b4e8_2a2468648e19 a owl:Class ;
+    rdfs:label "Crystal"@en ;
+    rdfs:comment """A material is a crystal if it has essentially a sharp diffraction pattern.
+
+A solid is a crystal if it has essentially a sharp diffraction pattern. The word essentially means that most of the intensity of the diffraction is concentrated in relatively sharp Bragg peaks, besides the always present diffuse scattering. In all cases, the positions of the diffraction peaks can be expressed by
+
+
+H=∑ni=1hia∗i  (n≥3)"""^^xsd:string ;
+    rdfs:subClassOf emmo:EMMO_f1025834_0cd2_42a1_bfeb_13bec41c8655 ;
+    skos:prefLabel "Crystal"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """A material is a crystal if it has essentially a sharp diffraction pattern.
+
+A solid is a crystal if it has essentially a sharp diffraction pattern. The word essentially means that most of the intensity of the diffraction is concentrated in relatively sharp Bragg peaks, besides the always present diffuse scattering. In all cases, the positions of the diffraction peaks can be expressed by
+
+
+H=∑ni=1hia∗i  (n≥3)"""^^xsd:string .
+
+emmo:EMMO_0e030040_98a7_49b2_a871_dced1f3a6131 a owl:Class ;
+    rdfs:label "PhaseHeterogeneousMixture"@en ;
+    rdfs:comment "A mixture in which more than one phases of matter cohexists."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ;
+            owl:someValuesFrom emmo:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a ],
+        emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c ;
+    skos:prefLabel "PhaseHeterogeneousMixture"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A mixture in which more than one phases of matter cohexists."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """Phase heterogeneous mixture may share the same state of matter.
+
+For example, immiscibile liquid phases (e.g. oil and water) constitute a mixture whose phases are clearly separated but share the same state of matter."""@en .
+
+emmo:EMMO_1f5e3e7e_72c9_40d4_91dd_ae432d7b7018 a owl:Class ;
+    rdfs:label "Foam"@en ;
+    rdfs:comment "A colloid formed by trapping pockets of gas in a liquid or solid."@en ;
+    rdfs:subClassOf emmo:EMMO_6c487fb3_03d1_4e56_91ed_c2e16dcbef60 ;
+    skos:prefLabel "Foam"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A colloid formed by trapping pockets of gas in a liquid or solid."@en .
+
+emmo:EMMO_2fd3f574_5e93_47fe_afca_ed80b0a21ab4 a owl:Class ;
+    rdfs:label "StandaloneAtom"@en ;
+    rdfs:comment "A standalone atom can be bonded with other atoms by intermolecular forces (i.e. dipole–dipole, London dispersion force, hydrogen bonding), since this bonds does not involve electron sharing."@en,
+        "An atom that does not share electrons with other atoms."@en ;
+    rdfs:subClassOf emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
+    skos:prefLabel "StandaloneAtom"@en ;
+    emmo:EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db "DisjointUnionOf: NeutralAtom, IonAtom"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An atom that does not share electrons with other atoms."@en .
+
+emmo:EMMO_31557fae_b039_491c_bcbb_0ccb8711d5a6 a owl:Class ;
+    rdfs:label "Sol"@en ;
+    rdfs:comment "A colloid in which small particles (1 nm to 100 nm) are suspended in a continuum phase."@en ;
+    rdfs:subClassOf emmo:EMMO_6c487fb3_03d1_4e56_91ed_c2e16dcbef60 ;
+    skos:prefLabel "Sol"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A colloid in which small particles (1 nm to 100 nm) are suspended in a continuum phase."@en .
+
+emmo:EMMO_39348191_08fd_4bb6_9b1e_012d5b2f1ff6 a owl:Class ;
+    rdfs:label "MaterialByClassicalMaterialsScience"@en ;
+    rdfs:subClassOf emmo:EMMO_4207e895_8b83_4318_996a_72cfb32acd94 ;
+    skos:prefLabel "MaterialByClassicalMaterialsScience"@en ;
+    emmo:EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db "Equivalent To: AmorphousMaterial or CrystallineMaterial"^^xsd:string,
+        "Equivalent To: MetallicMaterial or CeramicMaterial or CompositeMaterial or PolymericMaterial"^^xsd:string .
+
+emmo:EMMO_4c21fb86_fdcf_444e_b498_86fe656295af a owl:Class ;
+    rdfs:label "Plasma"@en ;
+    rdfs:comment "A fluid in which a gas is ionized to a level where its electrical conductivity allows long-range electric and magnetic fields to dominate its behaviour."@en ;
+    rdfs:subClassOf emmo:EMMO_87ac88ff_8379_4f5a_8c7b_424a8fff1ee8 ;
+    skos:prefLabel "Plasma"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A fluid in which a gas is ionized to a level where its electrical conductivity allows long-range electric and magnetic fields to dominate its behaviour."@en .
+
+emmo:EMMO_560d833a_6184_410c_859a_05d982712fd7 a owl:Class ;
+    rdfs:label "Aerosol"@en ;
+    rdfs:comment "A colloid composed of fine solid particles or liquid droplets in air or another gas."@en ;
+    rdfs:subClassOf emmo:EMMO_04f2a2d5_e799_4692_a654_420e76f5acc1,
+        emmo:EMMO_6c487fb3_03d1_4e56_91ed_c2e16dcbef60 ;
+    skos:prefLabel "Aerosol"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A colloid composed of fine solid particles or liquid droplets in air or another gas."@en .
+
+emmo:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a a owl:Class ;
+    rdfs:label "PhaseOfMatter"@en ;
+    rdfs:comment "A matter object throughout which all physical properties of a material are essentially uniform."@en ;
+    rdfs:subClassOf emmo:EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2 ;
+    skos:altLabel "Phase"@en ;
+    skos:prefLabel "PhaseOfMatter"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A matter object throughout which all physical properties of a material are essentially uniform."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """In the physical sciences, a phase is a region of space (a thermodynamic system), throughout which all physical properties of a material are essentially uniform. Examples of physical properties include density, index of refraction, magnetization and chemical composition. A simple description is that a phase is a region of material that is chemically uniform, physically distinct, and (often) mechanically separable. In a system consisting of ice and water in a glass jar, the ice cubes are one phase, the water is a second phase, and the humid air is a third phase over the ice and water. The glass of the jar is another separate phase.
+
+The term phase is sometimes used as a synonym for state of matter, but there can be several immiscible phases of the same state of matter. Also, the term phase is sometimes used to refer to a set of equilibrium states demarcated in terms of state variables such as pressure and temperature by a phase boundary on a phase diagram. Because phase boundaries relate to changes in the organization of matter, such as a change from liquid to solid or a more subtle change from one crystal structure to another, this latter usage is similar to the use of "phase" as a synonym for state of matter. However, the state of matter and phase diagram usages are not commensurate with the formal definition given above and the intended meaning must be determined in part from the context in which the term is used."""@en .
+
+emmo:EMMO_9ec16158_9118_4886_be97_4310f02f7571 a owl:Class ;
+    rdfs:label "MaterialByCompactness"@en ;
+    rdfs:subClassOf emmo:EMMO_4207e895_8b83_4318_996a_72cfb32acd94 ;
+    skos:prefLabel "MaterialByCompactness"@en .
+
+emmo:EMMO_b9695e87_8261_412e_83cd_a86459426a28 a owl:Class ;
+    rdfs:label "StateOfMatter"@en ;
+    rdfs:comment "A superclass made as the disjoint union of all the form under which matter can exist."@en ;
+    rdfs:subClassOf emmo:EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2 ;
+    skos:prefLabel "StateOfMatter"@en ;
+    emmo:EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db "Disjoint Union Of: Gas, Plasma, Liquid, Solid"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A superclass made as the disjoint union of all the form under which matter can exist."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "In physics, a state of matter is one of the distinct forms in which matter can exist. Four states of matter are observable in everyday life: solid, liquid, gas, and plasma."@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/State_of_matter"@en .
+
+emmo:EMMO_d4f37e32_16ae_4cc6_b4cd_fd896b2449c4 a owl:Class ;
+    rdfs:label "GasSolidSuspension"@en ;
+    rdfs:comment "A coarse dispersion of solid in a gas continuum phase."@en ;
+    rdfs:subClassOf emmo:EMMO_04f2a2d5_e799_4692_a654_420e76f5acc1 ;
+    skos:example "Dust, sand storm."@en ;
+    skos:prefLabel "GasSolidSuspension"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A coarse dispersion of solid in a gas continuum phase."@en .
+
+emmo:EMMO_ddb62e5b_9a1f_4d10_8cd8_32655301bfc9 a owl:Class ;
+    rdfs:label "MaterialByOrigin"@en ;
+    rdfs:subClassOf emmo:EMMO_4207e895_8b83_4318_996a_72cfb32acd94 ;
+    skos:prefLabel "MaterialByOrigin"@en .
+
+emmo:EMMO_e0edfb9e_9a96_4fae_b942_831ffe27b84a a owl:Class ;
+    rdfs:label "GasLiquidSuspension"@en ;
+    rdfs:comment "A coarse dispersion of liquid in a gas continuum phase."@en ;
+    rdfs:subClassOf emmo:EMMO_04f2a2d5_e799_4692_a654_420e76f5acc1 ;
+    skos:example "Rain, spray."@en ;
+    skos:prefLabel "GasLiquidSuspension"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A coarse dispersion of liquid in a gas continuum phase."@en .
+
+emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad rdfs:label "Atom"@en ;
+    rdfs:comment """A standalone atom has direct part one 'nucleus' and one 'electron_cloud'.
+
+An O 'atom' within an O₂ 'molecule' is an 'e-bonded_atom'.
+
+In this material branch, H atom is a particular case, with respect to higher atomic number atoms, since as soon as it shares its electron it has no nucleus entangled electron cloud.
+
+We cannot say that H₂ molecule has direct part two H atoms, but has direct part two H nucleus."""@en .
+
+emmo:EMMO_f00fb163_48c9_4c59_b6c2_4205c082aa54 a owl:Class ;
+    rdfs:label "MaterialByStructure"@en ;
+    rdfs:subClassOf emmo:EMMO_39348191_08fd_4bb6_9b1e_012d5b2f1ff6 ;
+    skos:prefLabel "MaterialByStructure"@en .
+
+emmo:EMMO_220b7201_d277_4dca_bf6a_5a5e2c4062dd a owl:Class ;
+    rdfs:label "CondensedMatter"@en ;
+    rdfs:comment "The subject of condensed matter physics that deals with the macroscopic and microscopic physical properties of matter, especially the solid and liquid phases which arise from electromagnetic forces between atoms. More generally, the subject deals with \"condensed\" phases of matter: systems of many constituents with strong interactions between them."@en ;
+    rdfs:subClassOf emmo:EMMO_b9695e87_8261_412e_83cd_a86459426a28 ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf ( emmo:EMMO_7509da43_56b1_4d7f_887a_65d1663df4ba emmo:EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1 ) ] ;
+    skos:prefLabel "CondensedMatter"@en ;
+    emmo:EMMO_31252f35_c767_4b97_a877_1235076c3e13 "The subject of condensed matter physics that deals with the macroscopic and microscopic physical properties of matter, especially the solid and liquid phases which arise from electromagnetic forces between atoms. More generally, the subject deals with \"condensed\" phases of matter: systems of many constituents with strong interactions between them."@en ;
+    emmo:EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db "Equivalent To: Liquid or Solid"^^xsd:string .
+
+emmo:EMMO_87ac88ff_8379_4f5a_8c7b_424a8fff1ee8 a owl:Class ;
+    rdfs:label "Fluid"@en ;
+    rdfs:comment "A continuum that has no fixed shape and yields easily to external pressure."@en ;
+    rdfs:subClassOf emmo:EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2,
+        emmo:EMMO_b9695e87_8261_412e_83cd_a86459426a28 ;
+    owl:disjointUnionOf ( emmo:EMMO_04f2a2d5_e799_4692_a654_420e76f5acc1 emmo:EMMO_4c21fb86_fdcf_444e_b498_86fe656295af emmo:EMMO_7509da43_56b1_4d7f_887a_65d1663df4ba ) ;
+    skos:example "Gas, liquid, plasma,"@en ;
+    skos:prefLabel "Fluid"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A continuum that has no fixed shape and yields easily to external pressure."@en .
+
+emmo:EMMO_2031516a_2be7_48e8_9af7_7e1270e308fe a owl:Class ;
+    rdfs:label "Solution"@en ;
+    rdfs:comment "A solution is a homogeneous mixture composed of two or more substances."@en,
+        "Solutions are characterized by the occurrence of Rayleigh scattering on light,"@en ;
+    rdfs:subClassOf emmo:EMMO_0e6378df_1ce8_4321_b00c_ee9beea60a67 ;
+    skos:prefLabel "Solution"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A solution is a homogeneous mixture composed of two or more substances."@en .
+
+emmo:EMMO_4db521a3_f80f_436b_b9c7_e4b52b1383ea a owl:Class ;
+    rdfs:label "MaterialByType"@en ;
+    rdfs:subClassOf emmo:EMMO_39348191_08fd_4bb6_9b1e_012d5b2f1ff6 ;
+    skos:prefLabel "MaterialByType"@en .
+
+emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c a owl:Class ;
+    rdfs:label "Mixture"@en ;
+    rdfs:comment "A continuum substance made up of two or more different substances which are physically (not chemically) combined."@en ;
+    rdfs:subClassOf emmo:EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2 ;
+    skos:prefLabel "Mixture"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A continuum substance made up of two or more different substances which are physically (not chemically) combined."@en .
+
+emmo:EMMO_4207e895_8b83_4318_996a_72cfb32acd94 a owl:Class ;
+    rdfs:label "Material"@en ;
+    rdfs:comment "The class of individuals standing for an amount of ordinary matter substance."@en ;
+    rdfs:subClassOf emmo:EMMO_6e9cb807_fc68_4bcf_b3ba_5fccc887c644,
+        emmo:EMMO_bc37743c_37c4_4ec7_9d58_d1aae5567352 ;
+    skos:prefLabel "Material"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The class of individuals standing for an amount of ordinary matter substance."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "A instance of a material (e.g. nitrogen) can represent any state of matter. The fact that the individual also belongs to other classes (e.g. Gas) would reveal the actual form in which the material is found."@en,
+        "A material may be either a mesoscopic or a continuum substance."@en,
+        "Material usually means some definite kind, quality, or quantity of matter, especially as intended for use."@en .
+
+emmo:EMMO_6c487fb3_03d1_4e56_91ed_c2e16dcbef60 a owl:Class ;
+    rdfs:label "Colloid"@en ;
+    rdfs:comment "A mixture in which one substance of microscopically dispersed insoluble or soluble particles (from 1 nm to 1 μm) is suspended throughout another substance and that does not settle, or would take a very long time to settle appreciably."@en ;
+    rdfs:subClassOf emmo:EMMO_0e030040_98a7_49b2_a871_dced1f3a6131 ;
+    skos:prefLabel "Colloid"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A mixture in which one substance of microscopically dispersed insoluble or soluble particles (from 1 nm to 1 μm) is suspended throughout another substance and that does not settle, or would take a very long time to settle appreciably."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Colloids are characterized by the occurring of the Tyndall effect on light."@en .
+
+emmo:EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2 a owl:Class ;
+    rdfs:label "ContinuumSubstance"@en ;
+    rdfs:comment """A state that is a collection of sufficiently large number of other parts such that:
+- it is the bearer of qualities that can exists only by the fact that it is a sum of parts
+- the smallest partition dV of the state volume in which we are interested in, contains enough parts to be statistically consistent: n [#/m3] x dV [m3] >> 1"""@en ;
+    rdfs:subClassOf emmo:EMMO_bc37743c_37c4_4ec7_9d58_d1aae5567352 ;
+    skos:prefLabel "ContinuumSubstance"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """A state that is a collection of sufficiently large number of other parts such that:
+- it is the bearer of qualities that can exists only by the fact that it is a sum of parts
+- the smallest partition dV of the state volume in which we are interested in, contains enough parts to be statistically consistent: n [#/m3] x dV [m3] >> 1"""@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "A continuum is made of a sufficient number of parts that it continues to exists as continuum individual even after the loss of one of them i.e. a continuum is a redundant."@en,
+        """A continuum is not necessarily small (i.e. composed by the minimum amount of sates to fulfill the definition).
+
+A single continuum individual can be the whole fluid in a pipe."""@en,
+        "A continuum is the bearer of properties that are generated by the interactions of parts such as viscosity and thermal or electrical conductivity."@en .
+
+emmo:EMMO_04f2a2d5_e799_4692_a654_420e76f5acc1 a owl:Class ;
+    rdfs:label "Gas"@en ;
+    rdfs:comment "Gas is a compressible fluid, a state of matter that has no fixed shape and no fixed volume."@en ;
+    rdfs:subClassOf emmo:EMMO_87ac88ff_8379_4f5a_8c7b_424a8fff1ee8 ;
+    skos:prefLabel "Gas"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Gas is a compressible fluid, a state of matter that has no fixed shape and no fixed volume."@en .
+
+emmo:EMMO_7509da43_56b1_4d7f_887a_65d1663df4ba a owl:Class ;
+    rdfs:label "Liquid"@en ;
+    rdfs:comment "A liquid is a nearly incompressible fluid that conforms to the shape of its container but retains a (nearly) constant volume independent of pressure."@en ;
+    rdfs:subClassOf emmo:EMMO_220b7201_d277_4dca_bf6a_5a5e2c4062dd,
+        emmo:EMMO_87ac88ff_8379_4f5a_8c7b_424a8fff1ee8 ;
+    skos:prefLabel "Liquid"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A liquid is a nearly incompressible fluid that conforms to the shape of its container but retains a (nearly) constant volume independent of pressure."@en .
+
+emmo:EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1 a owl:Class ;
+    rdfs:label "Solid"@en ;
+    rdfs:comment "A continuum characterized by structural rigidity and resistance to changes of shape or volume, that retains its shape and density when not confined."@en ;
+    rdfs:subClassOf emmo:EMMO_220b7201_d277_4dca_bf6a_5a5e2c4062dd,
+        emmo:EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2 ;
+    skos:prefLabel "Solid"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A continuum characterized by structural rigidity and resistance to changes of shape or volume, that retains its shape and density when not confined."@en .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( emmo:EMMO_04f2a2d5_e799_4692_a654_420e76f5acc1 emmo:EMMO_4c21fb86_fdcf_444e_b498_86fe656295af emmo:EMMO_7509da43_56b1_4d7f_887a_65d1663df4ba emmo:EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1 ) .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_0bb3b434_73aa_428f_b4e8_2a2468648e19 ;
+    owl:annotatedTarget "Crystal"@en ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Ancient Greek κρύσταλλος (krústallos, “clear ice”), from κρύος (krúos, “frost”)."@en .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://dictionary.iucr.org/Crystal"^^xsd:anyURI ;
+    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+    owl:annotatedSource emmo:EMMO_0bb3b434_73aa_428f_b4e8_2a2468648e19 ;
+    owl:annotatedTarget """A material is a crystal if it has essentially a sharp diffraction pattern.
+
+A solid is a crystal if it has essentially a sharp diffraction pattern. The word essentially means that most of the intensity of the diffraction is concentrated in relatively sharp Bragg peaks, besides the always present diffuse scattering. In all cases, the positions of the diffraction peaks can be expressed by
+
+
+H=∑ni=1hia∗i  (n≥3)"""^^xsd:string .
+
+[] owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger .
+
+[] owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger .
+
+[] owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty emmo:EMMO_31252f35_c767_4b97_a877_1235076c3e13 ;
+    owl:annotatedSource emmo:EMMO_220b7201_d277_4dca_bf6a_5a5e2c4062dd ;
+    owl:annotatedTarget "The subject of condensed matter physics that deals with the macroscopic and microscopic physical properties of matter, especially the solid and liquid phases which arise from electromagnetic forces between atoms. More generally, the subject deals with \"condensed\" phases of matter: systems of many constituents with strong interactions between them."@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Condensed_matter_physics"@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
+    owl:annotatedSource emmo:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a ;
+    owl:annotatedTarget """In the physical sciences, a phase is a region of space (a thermodynamic system), throughout which all physical properties of a material are essentially uniform. Examples of physical properties include density, index of refraction, magnetization and chemical composition. A simple description is that a phase is a region of material that is chemically uniform, physically distinct, and (often) mechanically separable. In a system consisting of ice and water in a glass jar, the ice cubes are one phase, the water is a second phase, and the humid air is a third phase over the ice and water. The glass of the jar is another separate phase.
+
+The term phase is sometimes used as a synonym for state of matter, but there can be several immiscible phases of the same state of matter. Also, the term phase is sometimes used to refer to a set of equilibrium states demarcated in terms of state variables such as pressure and temperature by a phase boundary on a phase diagram. Because phase boundaries relate to changes in the organization of matter, such as a change from liquid to solid or a more subtle change from one crystal structure to another, this latter usage is similar to the use of "phase" as a synonym for state of matter. However, the state of matter and phase diagram usages are not commensurate with the formal definition given above and the intended meaning must be determined in part from the context in which the term is used."""@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Phase_(matter)"@en .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger .
+

@@ -1,0 +1,583 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix emmo: <https://w3id.org/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+rdf:HTML a rdfs:Datatype .
+
+owl:qualifiedCardinality a owl:AnnotationProperty .
+
+emmo:EMMO_03d4cd70_0d16_4403_b68c_d41a9117f981 a owl:Class ;
+    rdfs:label "SimulationLanguage"@en ;
+    rdfs:comment "A computer language used to describe simulations."@en ;
+    rdfs:subClassOf emmo:EMMO_18c4634c_b821_49a3_beff_5eb7515ffc40 ;
+    skos:prefLabel "SimulationLanguage"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A computer language used to describe simulations."@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Simulation_language"^^xsd:anyURI .
+
+emmo:EMMO_09007bc0_b5f2_4fb9_af01_caf948cf2044 a owl:Class ;
+    rdfs:label "Java"@en ;
+    rdfs:subClassOf emmo:EMMO_1461e904_a2bf_4558_ad74_2706f5706b34 ;
+    skos:prefLabel "Java"@en .
+
+emmo:EMMO_13fea749_0b3b_4756_9c81_22cce620fc25 a owl:Class ;
+    rdfs:label "DataExchangeLanguage"@en ;
+    rdfs:comment "A computer language that is domain-independent and can be used for expressing data from any kind of discipline."@en ;
+    rdfs:subClassOf emmo:EMMO_19fe0747_6954_40cb_9f8f_b87498bc8e78 ;
+    skos:example "JSON, YAML, XML"@en ;
+    skos:prefLabel "DataExchangeLanguage"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A computer language that is domain-independent and can be used for expressing data from any kind of discipline."@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Data_exchange#Data_exchange_languages"^^xsd:anyURI .
+
+emmo:EMMO_161bef57_cc59_4246_8249_19dbdae96e7b a owl:Class ;
+    rdfs:label "JavaScript"@en ;
+    rdfs:subClassOf emmo:EMMO_f84b1b92_1dc8_4146_99f0_b03cd53e455b ;
+    skos:prefLabel "JavaScript"@en .
+
+emmo:EMMO_1beed5ca_2bab_425d_bbe6_db6fab6ffe64 a owl:Class ;
+    rdfs:label "Database"@en ;
+    rdfs:comment "A structured collection of data held in a computer system that has a well-defined interface."@en ;
+    rdfs:subClassOf emmo:EMMO_4db96fb7_e9e0_466d_942b_f6f17bfdc145 ;
+    skos:example """- A database covering nine million chemical compositions.
+- A thermodynamic database."""@en ;
+    skos:prefLabel "Database"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A structured collection of data held in a computer system that has a well-defined interface."@en .
+
+emmo:EMMO_268a8a97_3a6f_4022_93da_962a66827cdc a owl:Class ;
+    rdfs:label "CSharp"@en ;
+    rdfs:subClassOf emmo:EMMO_1461e904_a2bf_4558_ad74_2706f5706b34 ;
+    skos:altLabel "C#"@en ;
+    skos:prefLabel "CSharp"@en .
+
+emmo:EMMO_29791c75_2899_47a8_bfad_fc239aa4dd2d a owl:Class ;
+    rdfs:label "QueryLanguage"@en ;
+    rdfs:comment "A construction language used to make queries in databases and information systems."@en ;
+    rdfs:subClassOf emmo:EMMO_3ab914c1_5d8d_4a6e_804b_84aa89623c48 ;
+    skos:example "SQL, SPARQL"@en ;
+    skos:prefLabel "QueryLanguage"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A construction language used to make queries in databases and information systems."@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Query_language"^^xsd:anyURI .
+
+emmo:EMMO_36a9bf69_483b_42fd_8a0c_7ac9206320bc a owl:Class ;
+    rdfs:label "C"@en ;
+    rdfs:subClassOf emmo:EMMO_1461e904_a2bf_4558_ad74_2706f5706b34 ;
+    skos:prefLabel "C"@en .
+
+emmo:EMMO_3997e1f5_f478_4572_a030_4b8e7e5cc63a a owl:Class ;
+    rdfs:label "ConfigurationLanguage"@en ;
+    rdfs:comment "A construction language used to write configuration files."@en ;
+    rdfs:subClassOf emmo:EMMO_3ab914c1_5d8d_4a6e_804b_84aa89623c48 ;
+    skos:example ".ini files"@en,
+        "Files in the standard .config directory on Unix systems."@en ;
+    skos:prefLabel "ConfigurationLanguage"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A construction language used to write configuration files."@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Configuration_file#Configuration_languages"^^xsd:anyURI .
+
+emmo:EMMO_3c5b33a1_4f28_41f9_b725_1994df79bf55 a owl:Class ;
+    rdfs:label "ApplicationSpecificScript"@en ;
+    rdfs:comment "A scripting language developed specifically for an application, so that it's usage and interpretation is limited in this context."^^xsd:string ;
+    rdfs:subClassOf emmo:EMMO_f84b1b92_1dc8_4146_99f0_b03cd53e455b ;
+    skos:example "Scripting file for the execution of modelling software such as LAMMPS, OpenFOAM, or for general purpose platforms such as MATLAB or Mathematica."^^xsd:string ;
+    skos:prefLabel "ApplicationSpecificScript"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A scripting language developed specifically for an application, so that it's usage and interpretation is limited in this context."^^xsd:string .
+
+emmo:EMMO_51645022_3a21_4fa9_a9ce_a795eebbeca7 a owl:Class ;
+    rdfs:label "Command"@en ;
+    rdfs:comment "An instruction to a computer system to perform a given task."@en ;
+    rdfs:subClassOf emmo:EMMO_64963ed6_39c9_4258_85e0_6466c4b5420c ;
+    skos:example "From a bash shell would e.g. `ls` be a command. Another example of a shell command would be `/path/to/executable arg1 arg2`."@en ;
+    skos:prefLabel "Command"@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "A command must be interpretable by the computer system."@en,
+        "Commands are typically performed from a shell or a shell script, but not limited to them."@en .
+
+emmo:EMMO_53dd6f2a_f9de_4f83_b925_1bf39a4ab9a6 a owl:Class ;
+    rdfs:label "Ruby"@en ;
+    rdfs:subClassOf emmo:EMMO_f84b1b92_1dc8_4146_99f0_b03cd53e455b ;
+    skos:prefLabel "Ruby"@en .
+
+emmo:EMMO_64aba1e5_24b7_4140_8eb4_676c35698e79 a owl:Class ;
+    rdfs:label "CPlusPlus"@en ;
+    rdfs:comment "A language object respecting the syntactic rules of C++."@en ;
+    rdfs:subClassOf emmo:EMMO_1461e904_a2bf_4558_ad74_2706f5706b34 ;
+    skos:altLabel "C++"@en ;
+    skos:prefLabel "CPlusPlus"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A language object respecting the syntactic rules of C++."@en .
+
+emmo:EMMO_712f46a1_0aaa_4a41_b681_b10e1cc05233 a owl:DatatypeProperty ;
+    rdfs:label "hasJSONValue"@en ;
+    rdfs:comment "The owl:dataProperty that provides a serialisation of an EMMO JSON data entity."@en ;
+    rdfs:domain emmo:EMMO_90bfd475_ba4a_4065_b0c1_1f08230be252 ;
+    rdfs:range rdf:JSON ;
+    rdfs:subPropertyOf emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
+    skos:prefLabel "hasJSONValue"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The owl:dataProperty that provides a serialisation of an EMMO JSON data entity."@en .
+
+emmo:EMMO_998dd3a0_c85f_4c8d_9fb8_816a93cc3bb8 a owl:Class ;
+    rdfs:label "File"@en ;
+    rdfs:comment "In computing, a computer file is a resource for recording data on a computer storage device, primarily identified by its file path."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_a592c856_4103_43cf_8635_1982a1e5d5de ;
+            owl:someValuesFrom emmo:EMMO_e94a9156_fb6c_4e16_88ee_829ac9933155 ],
+        emmo:EMMO_4db96fb7_e9e0_466d_942b_f6f17bfdc145,
+        emmo:EMMO_51f1ba0d_e92b_4be2_9a9d_4640b16ac7ed ;
+    skos:prefLabel "File"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "In computing, a computer file is a resource for recording data on a computer storage device, primarily identified by its file path."@en .
+
+emmo:EMMO_aab6a0cc_2fbd_43ac_ac5a_b7b7b75331dc a owl:Class ;
+    rdfs:label "FORTRAN"@en ;
+    rdfs:subClassOf emmo:EMMO_1461e904_a2bf_4558_ad74_2706f5706b34 ;
+    skos:prefLabel "FORTRAN"@en .
+
+emmo:EMMO_ac852bf0_3251_4d6b_9e57_acbfcb5e7e08 a owl:DatatypeProperty ;
+    rdfs:label "hasURLValue"@en ;
+    rdfs:comment "The owl:dataProperty that provides a serialisation of an EMMO URL data entity."@en ;
+    rdfs:domain emmo:EMMO_8a8f664b_dc59_4e00_ae00_81fdf1e1d12e ;
+    rdfs:range xsd:anyURI ;
+    rdfs:subPropertyOf emmo:EMMO_b35e92d7_7fa0_4661_aa5a_5cea7c8e6925 ;
+    skos:prefLabel "hasURLValue"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The owl:dataProperty that provides a serialisation of an EMMO URL data entity."@en .
+
+emmo:EMMO_ad8b1096_4df1_44f5_a3b9_fc2ec9e7f5b1 a owl:Class ;
+    rdfs:label "StyleSheetLanguage"@en ;
+    rdfs:comment "A computer language that expresses the presentation of structured documents."@en ;
+    rdfs:subClassOf emmo:EMMO_19fe0747_6954_40cb_9f8f_b87498bc8e78 ;
+    skos:example "CSS"@en ;
+    skos:prefLabel "StyleSheetLanguage"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A computer language that expresses the presentation of structured documents."@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Style_sheet_language"^^xsd:anyURI .
+
+emmo:EMMO_add2e29d_6d87_4b78_9706_588e25557093 a owl:Class ;
+    rdfs:label "Python"@en ;
+    rdfs:subClassOf emmo:EMMO_f84b1b92_1dc8_4146_99f0_b03cd53e455b ;
+    skos:prefLabel "Python"@en .
+
+emmo:EMMO_af7b627d_6528_4fdb_97df_ba4579c4bb5d a owl:Class ;
+    rdfs:label "MarkupLanguage"@en ;
+    rdfs:comment "A grammar for annotating a document in a way that is syntactically distinguishable from the text."@en ;
+    rdfs:subClassOf emmo:EMMO_19fe0747_6954_40cb_9f8f_b87498bc8e78 ;
+    skos:example "HTML"@en ;
+    skos:prefLabel "MarkupLanguage"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A grammar for annotating a document in a way that is syntactically distinguishable from the text."@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Markup_language"^^xsd:anyURI .
+
+emmo:EMMO_b7493aee_366c_442d_8f59_49ac7aa664d7 a owl:DatatypeProperty ;
+    rdfs:label "hasURNValue"@en ;
+    rdfs:comment "The owl:dataProperty that provides a serialisation of an EMMO URN data entity."@en ;
+    rdfs:domain emmo:EMMO_db99b1e5_2f34_467b_a784_d104946d9f00 ;
+    rdfs:range xsd:anyURI ;
+    rdfs:subPropertyOf emmo:EMMO_b35e92d7_7fa0_4661_aa5a_5cea7c8e6925 ;
+    skos:prefLabel "hasURNValue"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The owl:dataProperty that provides a serialisation of an EMMO URN data entity."@en .
+
+emmo:EMMO_ea00dafc_ac92_4e67_aa65_ce5a29e77fcf a owl:Class ;
+    rdfs:label "TransformationLanguage"@en ;
+    rdfs:comment "A construction language designed to transform some input text in a certain formal language into a modified output text that meets some specific goal."@en ;
+    rdfs:subClassOf emmo:EMMO_3ab914c1_5d8d_4a6e_804b_84aa89623c48 ;
+    skos:example "Tritium, XSLT, XQuery, STX, FXT, XDuce, CDuce, HaXml, XMLambda, FleXML"@en ;
+    skos:prefLabel "TransformationLanguage"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A construction language designed to transform some input text in a certain formal language into a modified output text that meets some specific goal."@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Transformation_language"^^xsd:anyURI .
+
+emmo:EMMO_f42a0e95_c130_4a69_9660_6bfdbb897d4a a owl:Class ;
+    rdfs:label "ShellScript"@en ;
+    rdfs:comment "A command language designed to be run by a command-line interpreter, like a Unix shell."@en ;
+    rdfs:subClassOf emmo:EMMO_c8fe15d0_caf7_46f7_883c_0e98081987f1 ;
+    skos:prefLabel "ShellScript"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A command language designed to be run by a command-line interpreter, like a Unix shell."@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Shell_script"^^xsd:string .
+
+emmo:EMMO_fb294e8d_603c_4fe5_bd71_8f4d152b2fb5 a owl:Class ;
+    rdfs:label "SpecificationLanguage"@en ;
+    rdfs:comment "A language used to describe what a computer system should do."@en ;
+    rdfs:subClassOf emmo:EMMO_19fe0747_6954_40cb_9f8f_b87498bc8e78 ;
+    skos:example "ACSL, VDM, LOTUS, MML, ..."@en ;
+    skos:prefLabel "SpecificationLanguage"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A language used to describe what a computer system should do."@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Specification_language"^^xsd:anyURI .
+
+<https://w3id.org/emmo/disciplines/computerscience> a owl:Ontology ;
+    dcterms:abstract "Key concepts from the domain of computer science."@en ;
+    dcterms:contributor <https://orcid.org/0000-0001-7815-6636>,
+        <https://orcid.org/0000-0001-8869-3718> ;
+    dcterms:creator <https://orcid.org/0000-0002-1560-809X>,
+        <https://orcid.org/0000-0002-4181-2852>,
+        <https://orcid.org/0000-0003-3805-8761> ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "Computer science"@en ;
+    rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.4/perspectives/semiotics>,
+        <https://w3id.org/emmo/1.0.4/reference/symbolic>,
+        <https://w3id.org/emmo/1.0.4/reference/workflow> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.4/disciplines/computerscience> ;
+    owl:versionInfo "1.0.4"^^xsd:string ;
+    emmo:EMMO_1246b120_abbe_4840_b0f8_3e4348b24a17 "emmo@emmc.eu"^^xsd:anyURI .
+
+emmo:EMMO_0266ec8c_bd13_4c9c_be77_607498793ed3 a owl:Class ;
+    rdfs:label "NCNameData"@en ;
+    rdfs:subClassOf emmo:EMMO_6796ec88_e49f_4628_b28d_6559f9dd630a ;
+    skos:prefLabel "NCNameData"@en .
+
+emmo:EMMO_18c4634c_b821_49a3_beff_5eb7515ffc40 a owl:Class ;
+    rdfs:label "ModellingLanguage"@en ;
+    rdfs:comment "An artificial computer language used to express information or knowledge, often for use in computer system design."@en ;
+    rdfs:subClassOf emmo:EMMO_19fe0747_6954_40cb_9f8f_b87498bc8e78 ;
+    skos:example "Architecture description language – used as a language (or a conceptual model) to describe and represent system architectures."@en,
+        """Hardware description language – used to model integrated circuits.
+
+Architecture description language – used as a language (or a conceptual model) to describe and represent system architectures.
+
+Algebraic Modeling Language which is a high-level programming languages for describing and solving high complexity problems like large-scale optimisation."""@en ;
+    skos:prefLabel "ModellingLanguage"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An artificial computer language used to express information or knowledge, often for use in computer system design."@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Modeling_language"^^xsd:anyURI .
+
+emmo:EMMO_1abe0ea7_2378_402f_b950_89b0795d2f45 a owl:Class ;
+    rdfs:label "NMTOKENData"@en ;
+    rdfs:subClassOf emmo:EMMO_be8680e5_28ec_4168_9206_d1cd33fbd458 ;
+    skos:prefLabel "NMTOKENData"@en .
+
+emmo:EMMO_348d39f7_6a17_49d1_9860_9b33b69b51de a owl:Class ;
+    rdfs:label "SourceCode"@en ;
+    rdfs:comment "A programming language entity expressing a formal detailed plan of what a software is intended to do."@en ;
+    rdfs:subClassOf emmo:EMMO_8681074a_e225_4e38_b586_e85b0f43ce38,
+        emmo:EMMO_9ffffb55_3496_4307_82b8_a0d78fe1fcd8 ;
+    skos:prefLabel "SourceCode"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A programming language entity expressing a formal detailed plan of what a software is intended to do."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "A source code is the companion of an application, being it the entity used to generate the application list of CPU executable instructions."@en,
+        "Source code (also referred to as source or code) is the version of software as it is originally written (i.e., typed into a computer) by a human in plain text (i.e., human readable alphanumeric characters)."@en .
+
+emmo:EMMO_3b031fa9_8623_4ea5_8b57_bcafb70c5c8b a owl:Class ;
+    rdfs:subClassOf emmo:EMMO_8681074a_e225_4e38_b586_e85b0f43ce38 ;
+    skos:altLabel "App"@en,
+        "Application"@en ;
+    skos:example "Word processors, graphic image processing programs, database management systems, numerical simulation software and games."@en ;
+    skos:prefLabel "ApplicationProgram"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A program aimed to provide a specific high level function to the user, usually hiding lower level procedures."@en .
+
+emmo:EMMO_58b17cac_3125_4486_9b9c_8c45ac254040 a owl:Class ;
+    rdfs:label "SystemProgram"@en ;
+    rdfs:comment "System program refers to operating systems and utility programs that manage computer resources at a low level enabling a computer to function."@en ;
+    rdfs:subClassOf emmo:EMMO_8681074a_e225_4e38_b586_e85b0f43ce38 ;
+    skos:example "An operating system. A graphic driver."@en ;
+    skos:prefLabel "SystemProgram"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "System program refers to operating systems and utility programs that manage computer resources at a low level enabling a computer to function."@en .
+
+emmo:EMMO_65411b3d_c8d3_4111_86a9_a2ce0a64c647 a owl:Class ;
+    rdfs:label "Program"@en ;
+    rdfs:comment "A set of instructions that tell a computer what to do."@en ;
+    rdfs:subClassOf emmo:EMMO_8681074a_e225_4e38_b586_e85b0f43ce38 ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf ( emmo:EMMO_3b031fa9_8623_4ea5_8b57_bcafb70c5c8b emmo:EMMO_58b17cac_3125_4486_9b9c_8c45ac254040 ) ] ;
+    skos:altLabel "Executable"@en ;
+    skos:prefLabel "Program"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A set of instructions that tell a computer what to do."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "A program is a sequence of instructions understandable by a computer's central processing unit (CPU) that indicates which operations the computer should perform on a set of data."@en .
+
+emmo:EMMO_9e5f464a_658c_4b34_b80d_a5f8d5ec811a a owl:Class ;
+    rdfs:label "LanguageData"@en ;
+    rdfs:subClassOf emmo:EMMO_be8680e5_28ec_4168_9206_d1cd33fbd458 ;
+    skos:prefLabel "LanguageData"@en .
+
+emmo:EMMO_a592c856_4103_43cf_8635_1982a1e5d5de a owl:ObjectProperty ;
+    rdfs:label "hasResourceIdentifier"@en ;
+    rdfs:comment "Relates a resource to its identifier."@en ;
+    rdfs:range emmo:EMMO_c404e6d9_261d_4d2e_ab0d_ba4e05062647 ;
+    rdfs:subPropertyOf emmo:EMMO_eb3518bf_f799_4f9e_8c3e_ce59af11453b ;
+    skos:prefLabel "hasResourceIdentifier"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Relates a resource to its identifier."@en .
+
+emmo:EMMO_c8fe15d0_caf7_46f7_883c_0e98081987f1 a owl:Class ;
+    rdfs:label "CommandLanguage"@en ;
+    rdfs:comment "An interpreted computer language for job control in computing."@en ;
+    rdfs:subClassOf emmo:EMMO_3ab914c1_5d8d_4a6e_804b_84aa89623c48 ;
+    skos:example """Unix shell.
+Batch programming languages."""@en ;
+    skos:prefLabel "CommandLanguage"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An interpreted computer language for job control in computing."@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Command_language"^^xsd:anyURI .
+
+emmo:EMMO_e7848014_ad79_422d_be02_74df892f7c11 a owl:Class ;
+    rdfs:label "ComputerSystem"@en ;
+    rdfs:comment "Electronic device capable of processing data, typically in binary form, according to instructions given to it in a variable program."@en ;
+    rdfs:subClassOf emmo:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606 ;
+    skos:altLabel "Computer"@en ;
+    skos:prefLabel "ComputerSystem"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Electronic device capable of processing data, typically in binary form, according to instructions given to it in a variable program."@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Computer"^^xsd:anyURI .
+
+rdf:JSON a rdfs:Datatype .
+
+emmo:EMMO_51f1ba0d_e92b_4be2_9a9d_4640b16ac7ed a owl:Class ;
+    rdfs:label "SystemResource"@en ;
+    rdfs:comment "Any physical or virtual component of limited availability within a computer system."@en ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:intersectionOf ( emmo:EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de [ a owl:Restriction ;
+                        owl:onProperty [ owl:inverseOf emmo:EMMO_55354438_7000_4284_b1b9_59d60c2261b9 ] ;
+                        owl:someValuesFrom emmo:EMMO_e7848014_ad79_422d_be02_74df892f7c11 ] ) ],
+        emmo:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606 ;
+    skos:altLabel "Resource"@en ;
+    skos:prefLabel "SystemResource"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Any physical or virtual component of limited availability within a computer system."@en .
+
+emmo:EMMO_5c15f8c4_d2de_47a0_acdd_470b8dda979b a owl:Class ;
+    rdfs:label "IRI"@en ;
+    rdfs:comment "An Internationalized Resource Identifier (IRI) is a compact sequence of characters that identifies an abstract or physical resource. It is similar to URI, but greatly extends the allowed character set from ASCII to the Universal Character Set (Unicode/ISO 10646).."@en ;
+    rdfs:subClassOf emmo:EMMO_70bbb94e_2ca7_4d73_ba01_6397f134d172,
+        emmo:EMMO_c404e6d9_261d_4d2e_ab0d_ba4e05062647 ;
+    skos:example "https://en.wiktionary.org/wiki/Ῥόδος"^^xsd:anyURI ;
+    skos:prefLabel "IRI"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An Internationalized Resource Identifier (IRI) is a compact sequence of characters that identifies an abstract or physical resource. It is similar to URI, but greatly extends the allowed character set from ASCII to the Universal Character Set (Unicode/ISO 10646).."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "IRIs are commonly used as identifiers for ontological entities, although the extended unicode character set is rarely used."@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Internationalized_Resource_Identifier"^^xsd:anyURI .
+
+emmo:EMMO_6796ec88_e49f_4628_b28d_6559f9dd630a a owl:Class ;
+    rdfs:label "NameData"@en ;
+    rdfs:subClassOf emmo:EMMO_be8680e5_28ec_4168_9206_d1cd33fbd458 ;
+    skos:prefLabel "NameData"@en .
+
+emmo:EMMO_826bd296_d8e2_4c43_8f54_d684bf00090a a owl:Class ;
+    rdfs:label "NormalizedStringData"@en ;
+    rdfs:subClassOf emmo:EMMO_5f334606_f67d_4f0e_acb9_eeb21cb10c66 ;
+    skos:prefLabel "NormalizedStringData"@en .
+
+emmo:EMMO_8a8f664b_dc59_4e00_ae00_81fdf1e1d12e a owl:Class ;
+    rdfs:label "URL"@en ;
+    rdfs:comment "The term \"Uniform Resource Locator\" (URL) refers to the subset of URIs that, in addition to identifying a resource, provide a means of locating the resource by describing its primary access mechanism (e.g., its network \"location\")."@en ;
+    rdfs:subClassOf emmo:EMMO_6470bbfa_04a6_4360_9534_1aa18d68329b ;
+    skos:prefLabel "URL"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The term \"Uniform Resource Locator\" (URL) refers to the subset of URIs that, in addition to identifying a resource, provide a means of locating the resource by describing its primary access mechanism (e.g., its network \"location\")."@en .
+
+emmo:EMMO_90bfd475_ba4a_4065_b0c1_1f08230be252 a owl:Class ;
+    rdfs:label "JSONData"@en ;
+    rdfs:subClassOf emmo:EMMO_70bbb94e_2ca7_4d73_ba01_6397f134d172,
+        emmo:EMMO_b45fbdc6_2519_4885_aa49_c56b394c3910 ;
+    skos:prefLabel "JSONData"@en .
+
+emmo:EMMO_b35e92d7_7fa0_4661_aa5a_5cea7c8e6925 a owl:DatatypeProperty ;
+    rdfs:label "hasURIValue"@en ;
+    rdfs:comment "The owl:dataProperty that provides a serialisation of an EMMO URI data entity."@en ;
+    rdfs:domain emmo:EMMO_6470bbfa_04a6_4360_9534_1aa18d68329b ;
+    rdfs:range xsd:anyURI ;
+    rdfs:subPropertyOf emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
+    skos:prefLabel "hasURIValue"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The owl:dataProperty that provides a serialisation of an EMMO URI data entity."@en .
+
+emmo:EMMO_db99b1e5_2f34_467b_a784_d104946d9f00 a owl:Class ;
+    rdfs:label "URN"@en ;
+    rdfs:comment "The term \"Uniform Resource Name\" (URN) has been used historically to refer to both URIs under the \"urn\" scheme [RFC2141], which are required to remain globally unique and persistent even when the resource ceases to exist or becomes unavailable, and to any other URI with the properties of a name."@en ;
+    rdfs:subClassOf emmo:EMMO_6470bbfa_04a6_4360_9534_1aa18d68329b ;
+    skos:prefLabel "URN"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The term \"Uniform Resource Name\" (URN) has been used historically to refer to both URIs under the \"urn\" scheme [RFC2141], which are required to remain globally unique and persistent even when the resource ceases to exist or becomes unavailable, and to any other URI with the properties of a name."@en .
+
+emmo:EMMO_e94a9156_fb6c_4e16_88ee_829ac9933155 a owl:Class ;
+    rdfs:label "Path"@en ;
+    rdfs:comment "A path is a string of characters used to uniquely identify a location in a directory structure according to a particular convention."@en ;
+    rdfs:subClassOf emmo:EMMO_50ea1ec5_f157_41b0_b46b_a9032f17ca10,
+        emmo:EMMO_c404e6d9_261d_4d2e_ab0d_ba4e05062647 ;
+    skos:example """/etc/fstab  (UNIX-like path)
+C:\\\\Users\\\\John\\\\Desktop  (DOS-like path)"""@en ;
+    skos:prefLabel "Path"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A path is a string of characters used to uniquely identify a location in a directory structure according to a particular convention."@en .
+
+emmo:EMMO_9ffffb55_3496_4307_82b8_a0d78fe1fcd8 a owl:Class ;
+    rdfs:label "ProgrammingLanguage"@en ;
+    rdfs:comment "A language object that follows syntactic rules of a programming language."@en ;
+    rdfs:subClassOf emmo:EMMO_3ab914c1_5d8d_4a6e_804b_84aa89623c48 ;
+    skos:altLabel "Code"@en,
+        "SoftwareCode"@en ;
+    skos:prefLabel "ProgrammingLanguage"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A language object that follows syntactic rules of a programming language."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "A programming language object can also be a fragment (e.g. a C function) not suitable for exectution."@en,
+        "Entities are not necessarily digital data, but can be code fragments printed on paper."@en .
+
+emmo:EMMO_c404e6d9_261d_4d2e_ab0d_ba4e05062647 a owl:Class ;
+    rdfs:label "ResourceIdentifier"@en ;
+    rdfs:comment "A formal computer-interpretable identifier of a system resource."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf emmo:EMMO_eb3518bf_f799_4f9e_8c3e_ce59af11453b ] ;
+            owl:someValuesFrom emmo:EMMO_51f1ba0d_e92b_4be2_9a9d_4640b16ac7ed ],
+        emmo:EMMO_b45fbdc6_2519_4885_aa49_c56b394c3910 ;
+    skos:prefLabel "ResourceIdentifier"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A formal computer-interpretable identifier of a system resource."@en .
+
+emmo:EMMO_4db96fb7_e9e0_466d_942b_f6f17bfdc145 a owl:Class ;
+    rdfs:subClassOf emmo:EMMO_be8592a7_68d1_4a06_ad23_82f2b56ef926 ;
+    skos:altLabel "BinaryData"@en ;
+    skos:prefLabel "DigitalData"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Discrete data that are decoded as a sequence of 1/0, or true/false, or on/off."@en .
+
+emmo:EMMO_b45fbdc6_2519_4885_aa49_c56b394c3910 a owl:Class ;
+    rdfs:label "ComputerScience"@en ;
+    rdfs:comment "A well-formed formula that follows the syntactic rules of computer science."@en ;
+    rdfs:subClassOf emmo:EMMO_d8d2144e_5c8d_455d_a643_5caf4d8d9df8 ;
+    skos:prefLabel "ComputerScience"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A well-formed formula that follows the syntactic rules of computer science."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "A well-formed formula in computer science may be or not be interpreted by a computer. For example pseudo-code is only intended for human consumption."@en .
+
+emmo:EMMO_be8680e5_28ec_4168_9206_d1cd33fbd458 a owl:Class ;
+    rdfs:label "TokenData"@en ;
+    rdfs:subClassOf emmo:EMMO_826bd296_d8e2_4c43_8f54_d684bf00090a ;
+    skos:prefLabel "TokenData"@en .
+
+emmo:EMMO_f84b1b92_1dc8_4146_99f0_b03cd53e455b a owl:Class ;
+    rdfs:label "ScriptingLanguage"@en ;
+    rdfs:comment "A programming language that is executed through runtime interpretation."@en ;
+    rdfs:subClassOf emmo:EMMO_9ffffb55_3496_4307_82b8_a0d78fe1fcd8 ;
+    skos:prefLabel "ScriptingLanguage"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A programming language that is executed through runtime interpretation."@en .
+
+emmo:EMMO_1461e904_a2bf_4558_ad74_2706f5706b34 a owl:Class ;
+    rdfs:label "CompiledLanguage"@en ;
+    rdfs:subClassOf emmo:EMMO_9ffffb55_3496_4307_82b8_a0d78fe1fcd8 ;
+    skos:prefLabel "CompiledLanguage"@en .
+
+emmo:EMMO_3ab914c1_5d8d_4a6e_804b_84aa89623c48 a owl:Class ;
+    rdfs:label "ConstructionLanguage"@en ;
+    rdfs:comment "A computer language by which a human can specify an executable problem solution to a computer."@en ;
+    rdfs:subClassOf emmo:EMMO_19fe0747_6954_40cb_9f8f_b87498bc8e78 ;
+    skos:prefLabel "ConstructionLanguage"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A computer language by which a human can specify an executable problem solution to a computer."@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Software_construction#Construction_languages"^^xsd:anyURI .
+
+emmo:EMMO_6470bbfa_04a6_4360_9534_1aa18d68329b a owl:Class ;
+    rdfs:label "URI"@en ;
+    rdfs:comment "A Uniform Resource Identifier (URI) is a compact sequence of characters that identifies an abstract or physical resource."@en ;
+    rdfs:subClassOf emmo:EMMO_5c15f8c4_d2de_47a0_acdd_470b8dda979b,
+        emmo:EMMO_b45fbdc6_2519_4885_aa49_c56b394c3910 ;
+    skos:prefLabel "URI"@en ;
+    emmo:EMMO_157fdf31_6387_42be_8e72_10530519214a "https://en.wikipedia.org/wiki/File:URI_syntax_diagram.svg"^^xsd:anyURI ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A Uniform Resource Identifier (URI) is a compact sequence of characters that identifies an abstract or physical resource."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "URI = scheme \":\" [\"//\" authority] path [\"?\" query] [\"#\" fragment]"@en .
+
+emmo:EMMO_19fe0747_6954_40cb_9f8f_b87498bc8e78 a owl:Class ;
+    rdfs:label "ComputerLanguage"@en ;
+    rdfs:comment "A formal language used to communicate with a computer."@en ;
+    rdfs:subClassOf emmo:EMMO_b45fbdc6_2519_4885_aa49_c56b394c3910 ;
+    skos:prefLabel "ComputerLanguage"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A formal language used to communicate with a computer."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The categorisation of computer languages is based on
+
+Guide to the Software Engineering Body of Knowledge (SWEBOK(R)): Version 3.0, January 2014. Editors Pierre Bourque, Richard E. Fairley. Publisher: IEEE Computer Society PressWashingtonDCUnited States. ISBN:978-0-7695-5166-1.
+https://www.computer.org/education/bodies-of-knowledge/software-engineering"""@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Computer_language"^^xsd:anyURI .
+
+emmo:EMMO_8681074a_e225_4e38_b586_e85b0f43ce38 a owl:Class ;
+    rdfs:subClassOf emmo:EMMO_4db96fb7_e9e0_466d_942b_f6f17bfdc145 ;
+    skos:prefLabel "Software"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "All or part of the programs, procedures, rules, and associated documentation of an information processing system."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """Software is usually used as a generic term for programs. However, in its broadest sense it can refer to all information (i.e., both programs and data) in electronic form and can provide a distinction from hardware, which refers to computers or other electronic systems on which software can exist and be use.
+Here we explicitly include in the definition also all the data (e.g. source code, script files) that takes part to the building of the executable, are necessary to the execution of a program or that document it for the users."""@en .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf emmo:EMMO_1abe0ea7_2378_402f_b950_89b0795d2f45 ;
+    owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
+    owl:someValuesFrom xsd:NMTOKEN .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.ietf.org/rfc/rfc3986.txt"^^xsd:anyURI ;
+    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+    owl:annotatedSource emmo:EMMO_8a8f664b_dc59_4e00_ae00_81fdf1e1d12e ;
+    owl:annotatedTarget "The term \"Uniform Resource Locator\" (URL) refers to the subset of URIs that, in addition to identifying a resource, provide a means of locating the resource by describing its primary access mechanism (e.g., its network \"location\")."@en .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/fr/#iso:std:iso-iec:2382:-1:ed-3:en"@en ;
+    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+    owl:annotatedSource emmo:EMMO_8681074a_e225_4e38_b586_e85b0f43ce38 ;
+    owl:annotatedTarget "All or part of the programs, procedures, rules, and associated documentation of an information processing system."@en .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf emmo:EMMO_826bd296_d8e2_4c43_8f54_d684bf00090a ;
+    owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
+    owl:someValuesFrom xsd:normalizedString .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.ietf.org/rfc/rfc3986.txt"^^xsd:anyURI ;
+    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+    owl:annotatedSource emmo:EMMO_6470bbfa_04a6_4360_9534_1aa18d68329b ;
+    owl:annotatedTarget "A Uniform Resource Identifier (URI) is a compact sequence of characters that identifies an abstract or physical resource."@en .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf emmo:EMMO_0266ec8c_bd13_4c9c_be77_607498793ed3 ;
+    owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
+    owl:someValuesFrom xsd:NCName .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf emmo:EMMO_6470bbfa_04a6_4360_9534_1aa18d68329b ;
+    owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
+    owl:someValuesFrom xsd:anyURI .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_8681074a_e225_4e38_b586_e85b0f43ce38 ;
+    owl:annotatedTarget "Software"@en ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From soft +‎ -ware, by contrast with hardware (“the computer itself”). Coined by Paul Niquette in 1953."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+    owl:annotatedSource emmo:EMMO_e94a9156_fb6c_4e16_88ee_829ac9933155 ;
+    owl:annotatedTarget "A path is a string of characters used to uniquely identify a location in a directory structure according to a particular convention."@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Path_(computing)#Universal_Naming_Convention"^^xsd:string .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf emmo:EMMO_6796ec88_e49f_4628_b28d_6559f9dd630a ;
+    owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
+    owl:someValuesFrom xsd:Name .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "http://www.linfo.org/program.html"^^xsd:anyURI ;
+    owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
+    owl:annotatedSource emmo:EMMO_8681074a_e225_4e38_b586_e85b0f43ce38 ;
+    owl:annotatedTarget """Software is usually used as a generic term for programs. However, in its broadest sense it can refer to all information (i.e., both programs and data) in electronic form and can provide a distinction from hardware, which refers to computers or other electronic systems on which software can exist and be use.
+Here we explicitly include in the definition also all the data (e.g. source code, script files) that takes part to the building of the executable, are necessary to the execution of a program or that document it for the users."""@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_4db96fb7_e9e0_466d_942b_f6f17bfdc145 ;
+    owl:annotatedTarget "DigitalData"@en ;
+    emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin digitus (“finger”)."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.ietf.org/rfc/rfc3986.txt"^^xsd:anyURI ;
+    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+    owl:annotatedSource emmo:EMMO_db99b1e5_2f34_467b_a784_d104946d9f00 ;
+    owl:annotatedTarget "The term \"Uniform Resource Name\" (URN) has been used historically to refer to both URIs under the \"urn\" scheme [RFC2141], which are required to remain globally unique and persistent even when the resource ceases to exist or becomes unavailable, and to any other URI with the properties of a name."@en .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://datatracker.ietf.org/doc/rfc3987/"^^xsd:anyURI ;
+    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+    owl:annotatedSource emmo:EMMO_5c15f8c4_d2de_47a0_acdd_470b8dda979b ;
+    owl:annotatedTarget "An Internationalized Resource Identifier (IRI) is a compact sequence of characters that identifies an abstract or physical resource. It is similar to URI, but greatly extends the allowed character set from ASCII to the Universal Character Set (Unicode/ISO 10646).."@en .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "http://www.linfo.org/program.html"^^xsd:anyURI ;
+    owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
+    owl:annotatedSource emmo:EMMO_65411b3d_c8d3_4111_86a9_a2ce0a64c647 ;
+    owl:annotatedTarget "A program is a sequence of instructions understandable by a computer's central processing unit (CPU) that indicates which operations the computer should perform on a set of data."@en .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf emmo:EMMO_be8680e5_28ec_4168_9206_d1cd33fbd458 ;
+    owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
+    owl:someValuesFrom xsd:token .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf emmo:EMMO_9e5f464a_658c_4b34_b80d_a5f8d5ec811a ;
+    owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
+    owl:someValuesFrom xsd:language .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf emmo:EMMO_90bfd475_ba4a_4065_b0c1_1f08230be252 ;
+    owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
+    owl:someValuesFrom rdf:JSON .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "http://www.linfo.org/source_code.html"^^xsd:anyURI ;
+    owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
+    owl:annotatedSource emmo:EMMO_348d39f7_6a17_49d1_9860_9b33b69b51de ;
+    owl:annotatedTarget "Source code (also referred to as source or code) is the version of software as it is originally written (i.e., typed into a computer) by a human in plain text (i.e., human readable alphanumeric characters)."@en .
+

@@ -1,0 +1,717 @@
+@prefix : <https://w3id.org/emmo/hume/perspectives/persistence#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#> .
+@prefix ns2: <https://w3id.org/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns2:affects a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "affects"@en ;
+    ns1:python_name "affects"@en ;
+    rdfs:comment "The relation between a process P that through overlaps an object O."@en ;
+    rdfs:domain ns2:Process ;
+    rdfs:range ns2:Object ;
+    rdfs:subPropertyOf ns2:throughOverlaps ;
+    owl:inverseOf ns2:isAffectedBy ;
+    skos:prefLabel "affects"@en ;
+    ns2:elucidation "The relation between a process P that through overlaps an object O."@en ;
+    ns2:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/affects.png"^^xsd:string .
+
+ns2:generates a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "generates"@en ;
+    ns1:python_name "generates"@en ;
+    rdfs:comment "The relation between an object O that proper overlaps a process P, where the non-overlapping part of P is caused by O."@en ;
+    rdfs:range ns2:Process ;
+    rdfs:subPropertyOf ns2:isLeftBy ;
+    owl:inverseOf ns2:isGeneratedBy ;
+    skos:prefLabel "generates"@en ;
+    ns2:elucidation "The relation between an object O that proper overlaps a process P, where the non-overlapping part of P is caused by O."@en ;
+    ns2:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/generates.png"^^xsd:string .
+
+ns2:gets a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "gets"@en ;
+    ns1:python_name "gets"@en ;
+    rdfs:comment "The relation between an object O1 that proper overlaps an object O2, where the non-overlapping part of O2 causes O1."@en ;
+    rdfs:range ns2:Object ;
+    rdfs:subPropertyOf ns2:isJoinedBy ;
+    owl:inverseOf ns2:isAddedTo ;
+    skos:prefLabel "gets"@en ;
+    ns2:elucidation "The relation between an object O1 that proper overlaps an object O2, where the non-overlapping part of O2 causes O1."@en ;
+    ns2:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/gets.png"^^xsd:string .
+
+ns2:hasObjectInput a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "hasObjectInput"@en ;
+    ns1:python_name "hasObjectInput"@en ;
+    rdfs:comment "The relation between a process P that proper overlaps an object O, where the non-overlapping part of O causes P."@en ;
+    rdfs:range ns2:Object ;
+    rdfs:subPropertyOf ns2:hasInput ;
+    owl:inverseOf ns2:isObjectInputOf ;
+    skos:prefLabel "hasObjectInput"@en ;
+    ns2:elucidation "The relation between a process P that proper overlaps an object O, where the non-overlapping part of O causes P."@en ;
+    ns2:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/hasObjectInput.png"^^xsd:string .
+
+ns2:isContributedBy a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "isContributedBy"@en ;
+    ns1:python_name "isContributedBy"@en ;
+    rdfs:subPropertyOf ns2:isThroughOverlappedBy ;
+    owl:inverseOf ns2:contributesTo ;
+    skos:prefLabel "isContributedBy"@en .
+
+ns2:isInfluencedBy a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "isInfluencedBy"@en ;
+    ns1:python_name "isInfluencedBy"@en ;
+    rdfs:comment "The relation between an object O that proper overlaps a process P, where the non-overlapping part of P causes O."@en ;
+    rdfs:range ns2:Process ;
+    rdfs:subPropertyOf ns2:isJoinedBy ;
+    owl:inverseOf ns2:influences ;
+    skos:prefLabel "isInfluencedBy"@en ;
+    ns2:elucidation "The relation between an object O that proper overlaps a process P, where the non-overlapping part of P causes O."@en ;
+    ns2:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/isInfluencedBy.png"^^xsd:string .
+
+ns2:isObjectOutputOf a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "isObjectOutputOf"@en ;
+    ns1:python_name "isObjectOutputOf"@en ;
+    rdfs:domain ns2:Object ;
+    rdfs:subPropertyOf ns2:isOutputOf ;
+    owl:inverseOf ns2:hasObjectOutput ;
+    skos:prefLabel "isObjectOutputOf"@en .
+
+ns2:isPartakenBy a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "isPartakenBy"@en ;
+    ns1:python_name "isPartakenBy"@en ;
+    rdfs:comment "The relation between an object O1 that through overlaps an object O2."@en ;
+    rdfs:subPropertyOf ns2:isThroughOverlappedBy ;
+    owl:inverseOf ns2:partakesIn ;
+    skos:prefLabel "isPartakenBy"@en ;
+    ns2:elucidation "The relation between an object O1 that through overlaps an object O2."@en .
+
+ns2:isParticipatedBy a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "isParticipatedBy"@en ;
+    ns1:python_name "isParticipatedBy"@en ;
+    rdfs:subPropertyOf ns2:isThroughOverlappedBy ;
+    owl:inverseOf ns2:participatesTo ;
+    skos:prefLabel "isParticipatedBy"@en .
+
+ns2:isProcessInputOf a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "isProcessInputOf"@en ;
+    ns1:python_name "isProcessInputOf"@en ;
+    rdfs:subPropertyOf ns2:isInputOf ;
+    owl:inverseOf ns2:hasProcessInput ;
+    skos:prefLabel "isProcessInputOf"@en .
+
+ns2:isProcessOutputOf a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "isProcessOutputOf"@en ;
+    ns1:python_name "isProcessOutputOf"@en ;
+    rdfs:comment "The relation between a process P1 that proper overlaps a process P2, where the non overlapping part of P1 is caused by P2."@en ;
+    rdfs:domain ns2:Process ;
+    rdfs:subPropertyOf ns2:isOutputOf ;
+    owl:inverseOf ns2:hasProcessOutput ;
+    skos:prefLabel "isProcessOutputOf"@en ;
+    ns2:elucidation "The relation between a process P1 that proper overlaps a process P2, where the non overlapping part of P1 is caused by P2."@en .
+
+ns2:isRemovedFrom a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "isRemovedFrom"@en ;
+    ns1:python_name "isRemovedFrom"@en ;
+    rdfs:comment "The relation between an object O1 and a object O2 that proper overlap, where the non overapping part of O2 is caused by O1."@en ;
+    rdfs:domain ns2:Object ;
+    rdfs:range ns2:Object ;
+    rdfs:subPropertyOf ns2:leaves ;
+    owl:inverseOf ns2:releases ;
+    skos:prefLabel "isRemovedFrom"@en ;
+    ns2:elucidation "The relation between an object O1 and a object O2 that proper overlap, where the non overapping part of O2 is caused by O1."@en .
+
+: a owl:Ontology ;
+    dcterms:abstract ""@en ;
+    dcterms:contributor <https://orcid.org/GerhardGoldbeck>,
+        <https://orcid.org/JesperFriis> ;
+    dcterms:creator <https://orcid.org/EmanueleGhedini> ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "Persistence"@en ;
+    rdfs:comment <https://orcid.org/FrancescoZaccarini>,
+        "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.4/perspectives/perspective> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/perspectives/persistence> ;
+    owl:versionInfo "1.0.4"^^xsd:string ;
+    ns2:contact "emmo@emmc.eu"^^xsd:string .
+
+ns2:Behaviour a owl:Class ;
+    rdfs:label "Behaviour"@en ;
+    rdfs:comment "A process which is a temporal part of an object."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf ns2:hasBehaviour ] ;
+            owl:someValuesFrom ns2:Object ],
+        ns2:ProcessByContext ;
+    skos:example "Accelerating is a behaviour of a car."@en ;
+    skos:prefLabel "Behaviour"@en ;
+    ns2:elucidation "A process which is a temporal part of an object."@en .
+
+ns2:Constituent a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf ns2:hasConstituent ] ;
+            owl:someValuesFrom ns2:Object ],
+        ns2:ObjectByContext ;
+    skos:altLabel "ObjectPart"@en ;
+    skos:example "A tire is a constituent of a car."@en ;
+    skos:prefLabel "Constituent"@en ;
+    ns2:elucidation "An object which is a spatial part of another object."@en .
+
+ns2:ConstitutiveProcess a owl:Class ;
+    rdfs:label "ConstitutiveProcess"@en ;
+    rdfs:comment "A process which is a spatial part of an object."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf ns2:hasConstitutiveProcess ] ;
+            owl:someValuesFrom ns2:Object ],
+        ns2:ProcessByContext ;
+    skos:example "Blood circulation in a human body."@en ;
+    skos:prefLabel "ConstitutiveProcess"@en ;
+    ns2:elucidation "A process which is a spatial part of an object."@en ;
+    ns2:note "A constitutive process is a process that is holistically relevant for the definition of the whole."@en .
+
+ns2:Participant a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf ns2:hasParticipant ] ;
+            owl:someValuesFrom ns2:Process ],
+        ns2:ObjectByContext ;
+    skos:example "A student during an examination."@en ;
+    skos:prefLabel "Participant"@en ;
+    ns2:elucidation "An object which is a spatial part of a process."@en .
+
+ns2:Stage a owl:Class ;
+    rdfs:label "Stage"@en ;
+    rdfs:comment "A process which is a temporal part of another process."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf ns2:hasStage ] ;
+            owl:someValuesFrom ns2:Process ],
+        ns2:ProcessByContext ;
+    skos:example "Moving a leg is a stage of the process of running."@en ;
+    skos:prefLabel "Stage"@en ;
+    ns2:elucidation "A process which is a temporal part of another process."@en .
+
+ns2:Status a owl:Class ;
+    rdfs:label "Status"@en ;
+    rdfs:comment "An object which is a temporal part of a process."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf ns2:hasStatus ] ;
+            owl:someValuesFrom ns2:Process ],
+        ns2:ObjectByContext ;
+    skos:altLabel "State"@en ;
+    skos:example "A semi-naked man is a status in the process of a man's dressing."@en ;
+    skos:prefLabel "Status"@en ;
+    ns2:elucidation "An object which is a temporal part of a process."@en .
+
+ns2:SubObject a owl:Class ;
+    rdfs:label "SubObject"@en ;
+    rdfs:comment "An object which is a temporal part of another object."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf ns2:hasSubObject ] ;
+            owl:someValuesFrom ns2:Object ],
+        ns2:ObjectByContext ;
+    skos:example "If an inhabited house is considered as an house that is occupied by some people in its majority of time, then an interval of inhabited house in which occasionally nobody is in there is no more an inhabited house, but an unhinabited house, since this temporal part does not satisfy the criteria of the whole."@en ;
+    skos:prefLabel "SubObject"@en ;
+    ns2:elucidation "An object which is a temporal part of another object."@en ;
+    ns2:note "Here we consider a temporal interval that is lower than the characteristic time of the physical process that provides the causality connection between the object parts."@en .
+
+ns2:SubProcess a owl:Class ;
+    rdfs:label "SubProcess"@en ;
+    rdfs:comment "A process which is a spatial part of another process."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf ns2:hasSubProcess ] ;
+            owl:someValuesFrom ns2:Process ],
+        ns2:ProcessByContext ;
+    skos:example "Breathing is a subprocess of living for a human being."@en ;
+    skos:prefLabel "SubProcess"@en ;
+    ns2:elucidation "A process which is a spatial part of another process."@en ;
+    ns2:note """In the EMMO the relation of participation to a process falls under mereotopology.
+
+Since topological connection means causality, then the only way for a real world object to participate to a process is to be a part of it."""@en .
+
+ns2:contributesTo a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "contributesTo"@en ;
+    ns1:python_name "contributesTo"@en ;
+    rdfs:comment "The relation between a process P1 that through overlaps a process P2."@en ;
+    rdfs:domain ns2:Process ;
+    rdfs:range ns2:Process ;
+    rdfs:subPropertyOf ns2:throughOverlaps ;
+    skos:prefLabel "contributesTo"@en ;
+    ns2:elucidation "The relation between a process P1 that through overlaps a process P2."@en ;
+    ns2:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/contributesTo.png"^^xsd:string .
+
+ns2:hasBehaviour a owl:ObjectProperty ;
+    rdfs:label "hasBehaviour"@en ;
+    ns1:python_name "hasBehaviour"@en ;
+    rdfs:domain ns2:Object ;
+    rdfs:range ns2:Behaviour ;
+    rdfs:subPropertyOf ns2:hasTemporalPart ;
+    skos:prefLabel "hasBehaviour"@en .
+
+ns2:hasConstituent a owl:ObjectProperty ;
+    rdfs:label "hasConstituent"@en ;
+    ns1:python_name "hasConstituent"@en ;
+    rdfs:comment "The relation between an object and one of its holistic part that contributes to the object under some spatial-based criteria."@en ;
+    rdfs:domain ns2:Object ;
+    rdfs:range ns2:Constituent ;
+    rdfs:subPropertyOf ns2:hasNonTemporalPart ;
+    skos:prefLabel "hasConstituent"@en ;
+    ns2:elucidation "The relation between an object and one of its holistic part that contributes to the object under some spatial-based criteria."@en .
+
+ns2:hasConstitutiveProcess a owl:ObjectProperty ;
+    rdfs:label "hasConstitutiveProcess"@en ;
+    ns1:python_name "hasConstitutiveProcess"@en ;
+    rdfs:comment "Relates an object to one of its constitutive process parts that contributes to the object under some spatial-based criteria."@en ;
+    rdfs:domain ns2:Object ;
+    rdfs:range ns2:ConstitutiveProcess ;
+    rdfs:subPropertyOf ns2:hasNonTemporalPart ;
+    skos:prefLabel "hasConstitutiveProcess"@en ;
+    ns2:elucidation "Relates an object to one of its constitutive process parts that contributes to the object under some spatial-based criteria."@en .
+
+ns2:hasObjectOutput a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "hasObjectOutput"@en ;
+    ns1:python_name "hasObjectOutput"@en ;
+    rdfs:comment "The relation between a process P that proper overlaps an object O, where the non-overlapping part of O is caused by P."@en ;
+    rdfs:range ns2:Object ;
+    rdfs:subPropertyOf ns2:hasOutput ;
+    skos:prefLabel "hasObjectOutput"@en ;
+    ns2:elucidation "The relation between a process P that proper overlaps an object O, where the non-overlapping part of O is caused by P."@en ;
+    ns2:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/hasObjectOutput.png"^^xsd:string .
+
+ns2:hasParticipant a owl:ObjectProperty ;
+    rdfs:label "hasParticipant"@en ;
+    ns1:python_name "hasParticipant"@en ;
+    rdfs:comment """Participation is a parthood relation: you must be part of the process to contribute to it. A participant whose 4D extension is totally contained within the process.
+
+Participation is not under direct parthood since a process is not strictly related to reductionism, but it's a way to categorise temporal regions by the interpreters."""@en,
+        "The relation between a process and an object participating to it, i.e. that is relevant to the process itself."@en ;
+    rdfs:domain ns2:Process ;
+    rdfs:range ns2:Participant ;
+    rdfs:subPropertyOf ns2:hasNonTemporalPart ;
+    skos:prefLabel "hasParticipant"@en ;
+    ns2:elucidation "The relation between a process and an object participating to it, i.e. that is relevant to the process itself."@en .
+
+ns2:hasProcessInput a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "hasProcessInput"@en ;
+    ns1:python_name "hasProcessInput"@en ;
+    rdfs:comment "The relation between a process P1 that proper overlaps a process P2, where the non-overlapping part of P2 causes P1."@en ;
+    rdfs:range ns2:Process ;
+    rdfs:subPropertyOf ns2:hasInput ;
+    skos:prefLabel "hasProcessInput"@en ;
+    ns2:elucidation "The relation between a process P1 that proper overlaps a process P2, where the non-overlapping part of P2 causes P1."@en ;
+    ns2:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/hasProcessInput.png"^^xsd:string .
+
+ns2:hasProcessOutput a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "hasProcessOutput"@en ;
+    ns1:python_name "hasProcessOutput"@en ;
+    rdfs:comment "The relation between a process P1 that proper overlaps a process P2, where the non-overlapping part of P2 is caused by P1."@en ;
+    rdfs:range ns2:Process ;
+    rdfs:subPropertyOf ns2:hasOutput ;
+    skos:prefLabel "hasProcessOutput"@en ;
+    ns2:elucidation "The relation between a process P1 that proper overlaps a process P2, where the non-overlapping part of P2 is caused by P1."@en ;
+    ns2:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/hasProcessOutput.png"^^xsd:string .
+
+ns2:hasStage a owl:ObjectProperty ;
+    rdfs:label "hasStage"@en ;
+    ns1:python_name "hasStage"@en ;
+    rdfs:domain ns2:Process ;
+    rdfs:range ns2:Stage ;
+    rdfs:subPropertyOf ns2:hasTemporalPart ;
+    skos:prefLabel "hasStage"@en .
+
+ns2:hasStatus a owl:ObjectProperty ;
+    rdfs:label "hasStatus"@en ;
+    ns1:python_name "hasStatus"@en ;
+    rdfs:domain ns2:Process ;
+    rdfs:range ns2:Status ;
+    rdfs:subPropertyOf ns2:hasTemporalPart ;
+    skos:prefLabel "hasStatus"@en .
+
+ns2:hasSubObject a owl:ObjectProperty ;
+    rdfs:label "hasSubObject"@en ;
+    ns1:python_name "hasSubObject"@en ;
+    rdfs:domain ns2:Object ;
+    rdfs:range ns2:SubObject ;
+    rdfs:subPropertyOf ns2:hasTemporalPart ;
+    skos:prefLabel "hasSubObject"@en .
+
+ns2:hasSubProcess a owl:ObjectProperty ;
+    rdfs:label "hasSubProcess"@en ;
+    ns1:python_name "hasSubProcess"@en ;
+    rdfs:comment "The relation between a process and one of its process parts."@en ;
+    rdfs:domain ns2:Process ;
+    rdfs:range ns2:SubProcess ;
+    rdfs:subPropertyOf ns2:hasNonTemporalPart ;
+    skos:prefLabel "hasSubProcess"@en ;
+    ns2:elucidation "The relation between a process and one of its process parts."@en .
+
+ns2:influences a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "influences"@en ;
+    ns1:python_name "influences"@en ;
+    rdfs:comment "The relation between a process P that proper overlaps an object O, where the non overlapping part of P is cause of O."@en ;
+    rdfs:subPropertyOf ns2:joins ;
+    skos:prefLabel "influences"@en ;
+    ns2:elucidation "The relation between a process P that proper overlaps an object O, where the non overlapping part of P is cause of O."@en .
+
+ns2:isAddedTo a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "isAddedTo"@en ;
+    ns1:python_name "isAddedTo"@en ;
+    rdfs:comment "The relation between an object O1 and a object O2 that proper overlap, and the overlapping part of O1 is: a) next of the non overlapping part and b) a constituent of O2."@en ;
+    rdfs:domain ns2:Object ;
+    rdfs:range ns2:Object ;
+    rdfs:subPropertyOf ns2:joins ;
+    skos:prefLabel "isAddedTo"@en ;
+    ns2:elucidation "The relation between an object O1 and a object O2 that proper overlap, and the overlapping part of O1 is: a) next of the non overlapping part and b) a constituent of O2."@en .
+
+ns2:isAffectedBy a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "isAffectedBy"@en ;
+    ns1:python_name "isAffectedBy"@en ;
+    rdfs:subPropertyOf ns2:isThroughOverlappedBy ;
+    skos:prefLabel "isAffectedBy"@en .
+
+ns2:isGeneratedBy a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "isGeneratedBy"@en ;
+    ns1:python_name "isGeneratedBy"@en ;
+    rdfs:comment "The relation between a process P that proper overlaps an object O , where the non overapping part of P is caused by O."@en ;
+    rdfs:domain ns2:Process ;
+    rdfs:range ns2:Object ;
+    rdfs:subPropertyOf ns2:leaves ;
+    skos:prefLabel "isGeneratedBy"@en ;
+    ns2:elucidation "The relation between a process P that proper overlaps an object O , where the non overapping part of P is caused by O."@en .
+
+ns2:isObjectInputOf a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "isObjectInputOf"@en ;
+    ns1:python_name "isObjectInputOf"@en ;
+    rdfs:subPropertyOf ns2:isInputOf ;
+    skos:prefLabel "isObjectInputOf"@en .
+
+ns2:partakesIn a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "partakesIn"@en ;
+    ns1:python_name "partakesIn"@en ;
+    rdfs:comment "The relation between an object O1 that through overlaps an object O2."@en ;
+    rdfs:domain ns2:Object ;
+    rdfs:range ns2:Object ;
+    rdfs:subPropertyOf ns2:throughOverlaps ;
+    skos:prefLabel "partakesIn"@en ;
+    ns2:elucidation "The relation between an object O1 that through overlaps an object O2."@en ;
+    ns2:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/partakesIn.png"^^xsd:string .
+
+ns2:participatesTo a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "participatesTo"@en ;
+    ns1:python_name "participatesTo"@en ;
+    rdfs:comment "The relation between an object O that through overlaps a process P."@en ;
+    rdfs:domain ns2:Object ;
+    rdfs:range ns2:Process ;
+    rdfs:subPropertyOf ns2:throughOverlaps ;
+    skos:prefLabel "participatesTo"@en ;
+    ns2:elucidation "The relation between an object O that through overlaps a process P."@en ;
+    ns2:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/participatesTo.png"^^xsd:string .
+
+ns2:processedFrom a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "processedFrom"@en ;
+    ns1:python_name "processedFrom"@en ;
+    rdfs:subPropertyOf ns2:successorOf ;
+    skos:prefLabel "processedFrom"@en .
+
+ns2:processedTo a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "processedTo"@en ;
+    ns1:python_name "processedTo"@en ;
+    rdfs:comment "An indirect causal relation that relates the input of a process to its output."@en ;
+    rdfs:subPropertyOf ns2:foreruns ;
+    owl:inverseOf ns2:processedFrom ;
+    skos:altLabel "isProcessedTo"@en ;
+    skos:prefLabel "processedTo"@en ;
+    ns2:elucidation "An indirect causal relation that relates the input of a process to its output."@en .
+
+ns2:releases a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "releases"@en ;
+    ns1:python_name "releases"@en ;
+    rdfs:comment "The relation between an object O1 that proper overlaps an object O2, where the non-overlapping part of O2 is caused by O1."@en ;
+    rdfs:range ns2:Object ;
+    rdfs:subPropertyOf ns2:isLeftBy ;
+    skos:prefLabel "releases"@en ;
+    ns2:elucidation "The relation between an object O1 that proper overlaps an object O2, where the non-overlapping part of O2 is caused by O1."@en ;
+    ns2:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/releases.png"^^xsd:string .
+
+ns2:Persistence a owl:Class ;
+    rdfs:subClassOf ns2:Perspective ;
+    skos:prefLabel "Persistence"@en ;
+    ns2:OWLRL2DLAxioms "EquivalentTo: Process or Object"^^xsd:string ;
+    ns2:elucidation "The union of the object or process classes."@en ;
+    ns2:note """The persistence perspective classifies entities according to the persistence of temporal parts of specifc type, introducing the distiction between objects (when a type is conserved through all its time parts) or processes (where a type is not conserved through all its time parts).
+This perspective provides classes aimed to represent concepts similar to the ones of endurant and perdurant (a.k.a. continuant and occurrent). However, in the EMMO case, an entity is defined as an object or a process according to a specific type, and not per-se. For this reason an entity in the EMMO can be classified both object or a process depending on the reference type, due to the underlying 4D framework (e.g. an individual may belong both to the class of runners and the class of running process), and the distinction is purely representational.
+This categorisation has been introduced due to the large use of object/process commonsensical concepts, and the fact that our language distinguish between nouns and verbs to address things, forcing the separation between things that happens and things that persist."""@en .
+
+ns2:isIncomingOverlappedBy a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "isIncomingOverlappedBy"@en ;
+    ns1:python_name "isIncomingOverlappedBy"@en ;
+    rdfs:comment "The relation between an item I1 that proper overlaps an item I2, where the non-overlapping part of I2 causes I1."@en ;
+    rdfs:domain ns2:Item ;
+    rdfs:range ns2:Item ;
+    rdfs:subPropertyOf ns2:properOverlaps ;
+    owl:inverseOf ns2:incomingOverlaps ;
+    skos:prefLabel "isIncomingOverlappedBy"@en ;
+    ns2:elucidation "The relation between an item I1 that proper overlaps an item I2, where the non-overlapping part of I2 causes I1."@en ;
+    ns2:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/isIncomingOverlappedBy.png"^^xsd:string .
+
+ns2:isLeftBy a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "isLeftBy"@en ;
+    ns1:python_name "isLeftBy"@en ;
+    rdfs:comment "The relation between an object O that proper overlaps an item I, where the non-overlapping part of I is caused by O."@en ;
+    rdfs:domain ns2:Object ;
+    rdfs:subPropertyOf ns2:isOutgoingOverlappedBy ;
+    owl:inverseOf ns2:leaves ;
+    skos:prefLabel "isLeftBy"@en ;
+    ns2:elucidation "The relation between an object O that proper overlaps an item I, where the non-overlapping part of I is caused by O."@en ;
+    ns2:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/isLeftBy.png"^^xsd:string .
+
+ns2:isOutgoingOverlappedBy a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "isOutgoingOverlappedBy"@en ;
+    ns1:python_name "isOutgoingOverlappedBy"@en ;
+    rdfs:comment "The relation between an item I1 that proper overlaps an item I2, where the non-overlapping part of I2 is caused by I1."@en ;
+    rdfs:domain ns2:Item ;
+    rdfs:range ns2:Item ;
+    rdfs:subPropertyOf ns2:properOverlaps ;
+    owl:inverseOf ns2:outgoingOverlaps ;
+    skos:prefLabel "isOutgoingOverlappedBy"@en ;
+    ns2:elucidation "The relation between an item I1 that proper overlaps an item I2, where the non-overlapping part of I2 is caused by I1."@en ;
+    ns2:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/isOutgoingOverlappedBy.png"^^xsd:string .
+
+ns2:isOutputOf a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "isOutputOf"@en ;
+    ns1:python_name "isOutputOf"@en ;
+    rdfs:range ns2:Process ;
+    rdfs:subPropertyOf ns2:outgoingOverlaps ;
+    owl:inverseOf ns2:hasOutput ;
+    skos:prefLabel "isOutputOf"@en .
+
+ns2:joins a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "joins"@en ;
+    ns1:python_name "joins"@en ;
+    rdfs:subPropertyOf ns2:incomingOverlaps ;
+    owl:inverseOf ns2:isJoinedBy ;
+    skos:prefLabel "joins"@en .
+
+<urn:swrl:var#x> a swrl:Variable .
+
+<urn:swrl:var#y> a swrl:Variable .
+
+<urn:swrl:var#z> a swrl:Variable .
+
+ns2:hasInput a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "hasInput"@en ;
+    ns1:python_name "hasInput"@en ;
+    rdfs:comment "The relation between a process P that proper overlaps an item I, where the non-overlapping part of I causes P."@en ;
+    rdfs:domain ns2:Process ;
+    rdfs:subPropertyOf ns2:isIncomingOverlappedBy ;
+    skos:prefLabel "hasInput"@en ;
+    ns2:elucidation "The relation between a process P that proper overlaps an item I, where the non-overlapping part of I causes P."@en ;
+    ns2:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/hasInput.png"^^xsd:string .
+
+ns2:incomingOverlaps a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "incomingOverlaps"@en ;
+    ns1:python_name "incomingOverlaps"@en ;
+    rdfs:subPropertyOf ns2:properOverlaps ;
+    skos:prefLabel "incomingOverlaps"@en .
+
+ns2:isInputOf a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "isInputOf"@en ;
+    ns1:python_name "isInputOf"@en ;
+    rdfs:subPropertyOf ns2:incomingOverlaps ;
+    owl:inverseOf ns2:hasInput ;
+    skos:prefLabel "isInputOf"@en .
+
+ns2:isJoinedBy a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "isJoinedBy"@en ;
+    ns1:python_name "isJoinedBy"@en ;
+    rdfs:comment "The relation between an object O that proper overlaps an item I, where the non-overlapping part of I causes O."@en ;
+    rdfs:domain ns2:Object ;
+    rdfs:subPropertyOf ns2:isIncomingOverlappedBy ;
+    skos:prefLabel "isJoinedBy"@en ;
+    ns2:elucidation "The relation between an object O that proper overlaps an item I, where the non-overlapping part of I causes O."@en ;
+    ns2:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/isJoinedBy.png"^^xsd:string .
+
+ns2:leaves a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "leaves"@en ;
+    ns1:python_name "leaves"@en ;
+    rdfs:subPropertyOf ns2:outgoingOverlaps ;
+    skos:prefLabel "leaves"@en .
+
+ns2:outgoingOverlaps a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "outgoingOverlaps"@en ;
+    ns1:python_name "outgoingOverlaps"@en ;
+    rdfs:domain ns2:Item ;
+    rdfs:range ns2:Item ;
+    rdfs:subPropertyOf ns2:properOverlaps ;
+    skos:prefLabel "outgoingOverlaps"@en .
+
+ns2:ObjectByContext a owl:Class ;
+    rdfs:subClassOf ns2:Object ;
+    skos:prefLabel "ObjectByContext"@en ;
+    ns2:elucidation "The superclass for all classes that categorise objects according to their mereological and persistence context"@en .
+
+ns2:ProcessByContext a owl:Class ;
+    rdfs:label "ProcessByContext"@en ;
+    rdfs:comment "The superclass for all classes that categorise projects according to their mereological and persistence context"@en ;
+    rdfs:subClassOf ns2:Process ;
+    skos:prefLabel "ProcessByContext"@en ;
+    ns2:elucidation "The superclass for all classes that categorise projects according to their mereological and persistence context"@en .
+
+ns2:hasOutput a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "hasOutput"@en ;
+    ns1:python_name "hasOutput"@en ;
+    rdfs:comment "The relation between a process P that proper overlaps an item I, where the non-overlapping part of I is caused by P."@en ;
+    rdfs:domain ns2:Process ;
+    rdfs:subPropertyOf ns2:isOutgoingOverlappedBy ;
+    skos:prefLabel "hasOutput"@en ;
+    ns2:elucidation "The relation between a process P that proper overlaps an item I, where the non-overlapping part of I is caused by P."@en ;
+    ns2:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.2/figs/hasOutput.png"^^xsd:string .
+
+ns2:throughOverlaps a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "throughOverlaps"@en ;
+    ns1:python_name "throughOverlaps"@en ;
+    rdfs:comment "The relation between an item I1 that proper overlaps an Item I2 where I1 has two non-overlapping parts, one that causes I2 and one that is a cause of I2."@en ;
+    rdfs:domain ns2:Item ;
+    rdfs:range ns2:Item ;
+    rdfs:subPropertyOf ns2:properOverlaps ;
+    owl:inverseOf ns2:isThroughOverlappedBy ;
+    skos:prefLabel "throughOverlaps"@en ;
+    ns2:elucidation "The relation between an item I1 that proper overlaps an Item I2 where I1 has two non-overlapping parts, one that causes I2 and one that is a cause of I2."@en ;
+    ns2:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/throughOverlaps.png"^^xsd:string .
+
+ns2:isThroughOverlappedBy a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "isThroughOverlappedBy"@en ;
+    ns1:python_name "isThroughOverlappedBy"@en ;
+    rdfs:domain ns2:Item ;
+    rdfs:range ns2:Item ;
+    rdfs:subPropertyOf ns2:properOverlaps ;
+    skos:prefLabel "isThroughOverlappedBy"@en .
+
+ns2:Process a owl:Class ;
+    rdfs:subClassOf ns2:Persistence ;
+    skos:altLabel "Occurrent"@en,
+        "Perdurant"@en ;
+    skos:example """Practically speaking, the Process class can be populated by primitive subclasses (e.g. Cooking) for each of which holds the axiom that not all the item temporal parts are of the same type of the whole (e.g. breaking an egg, which is not necessarily a cooking process) and there are at least two temporal item parts of different types (e.g. breaking and egg and turning on the stove).
+The intended usage is not for an individual to belong directly to Process, but to belong to a specific subclass of Process that identifies entities with a specific non-type-persistent structure."""@en ;
+    skos:prefLabel "Process"@en ;
+    ns2:OWLRL2DLAxioms "Equivalent To: Behaviour or ConstitutiveProcess or Stage or SubProcess"^^xsd:string ;
+    ns2:elucidation "The superclass for causal structure classes whose individuals have some temporal item parts that are not of the same type of the whole."@en ;
+    ns2:note "A process can be defined only according to an entity type. The minimum process is an entity made of two entities of different types that are temporally related."@en,
+        """Following the common definition of process, the reader may think that every entity in the EMMO should be a process, since every 4D entity0 always has a time dimension. However, in the EMMO we restrict the concept of process to items whose temporal parts show a change in type (i.e. every 4D object unfolds in time, but not every 4D time unfolding may be of interest for the ontologist and categorized as a process).
+The definition of every specific process subclass requires a reference type, that is expressed by some but not all temporal parts."""@en .
+
+ns2:Object a owl:Class ;
+    rdfs:subClassOf ns2:Persistence ;
+    skos:altLabel "Continuant"@en,
+        "Endurant"@en ;
+    skos:example "If ϕ is the class of human beings, then the 4D entity representing a lifetime from birth to death in senile age is an object. if ϕ is the class of underages, the 4D entity representing the same lifetime is a process, since the underage covers only a part of the lifetime."@en,
+        """Practically speaking, the Object class can be populated by primitive subclasses (e.g. Car) for each of which holds the axiom that all the item parts are of the same type of the whole (e.g. Car SubClassOf hasTemporalItemPart only Car).
+The intended usage is not for an individual to belong directly to Object, but to belong to a specific subclass of Object that identifies entities with a type-persistent structure."""@en ;
+    skos:prefLabel "Object"@en ;
+    ns2:OWLRL2DLAxioms "Equivalent To: Constituent or Participant or Status or SubObject"^^xsd:string ;
+    ns2:conceptualisation "An item can be classified as an object according to a type ϕ (a ϕ-object) if it's a ϕ all its temporal item parts are also of type ϕ. This conceptualisation tries to catch the persistency of type in the temporal parts of an entity."@en ;
+    ns2:elucidation "The superclass for causal structure classes whose individuals have all temporal item parts of the same type of the whole."@en ;
+    ns2:note """Indefinitely temporally slicing of an entity leads to temporal parts whose temporal extension is so small that the connectivity relations that define the entity as an item will no longer hold. More generally. a temporal part is no more of type ϕ when the temporal interval is lower than the interval that characterizes the causality interactions between the object parts.
+In other terms, if the time span of a temporal part is lower than the inverse of the frequency of interactions between the constituents, then the constituents in such temporal part are not connected. The object is no more an object, neither an item, but simply a collection of fundamental quantum parts.
+For this reason, the definition of object is done by considering only item temporal parts, meaning that slicing in time has the lower limit of a self-connected (i.e. item) entity."""@en .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate ns2:isInputOf ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl:var#y> ;
+                            swrl:argument2 <urn:swrl:var#z> ;
+                            swrl:propertyPredicate ns2:hasOutput ] ;
+                    rdf:rest () ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#z> ;
+                    swrl:propertyPredicate ns2:processedTo ] ;
+            rdf:rest () ] .
+
