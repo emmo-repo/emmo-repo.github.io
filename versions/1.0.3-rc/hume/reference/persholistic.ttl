@@ -1,0 +1,204 @@
+@prefix : <https://w3id.org/emmo/hume/reference/persholistic#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/emmo#> .
+@prefix ns2: <http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:CausalStructure rdfs:label "CausalStructure"@en ;
+    rdfs:comment "The class of individuals representing causally self-connected world entities."^^xsd:string,
+        "The disjoint union of Causal Path and CausalSystem classes."^^xsd:string,
+        """The most fundamental unity criterion for the definition of an structure is that:
+- is made of at least two quantums (a structure is not a simple entity)
+- all quantum parts form a causally connected graph"""^^xsd:string .
+
+ns1:EMMO rdfs:label "EMMO"@en ;
+    rdfs:comment """The EMMO conceptualises the world using the primitive concepts of causality and parthood. Parthood is about the composition of world entities starting from other more fundamental entities. Causality is about the interactions between world entities.
+The quantum is the smallest indivisible part of any world entity. Quantum individuals are the fundamental causal constituents of the universe, since it is implied that causality originates from quantum-to-quantum interactions. Quantums are no-dimensional, and their aggregation makes spacetime emerge from their causal structure. We can think of a quantum as an elementary particle after and interaction and before another interaction.
+Causality between macro entities (i.e. entities made of more than one quantum) is explained as the sum of the causality relations between their quantum constituents. Fundamental interactions (quantum fields) are represented as symmetric causality relation between macro entities, while classical interactions are mediated by chain of quantums (i.e. elementary particles).
+The fundamental distinction between world entities is causality self-connectedness: a world entity can be self-connected xor not self-connected depending on the causality network of its fundamental components.
+Void regions do not exist in the EMMO. In other words there is no spacetime without entities and spacetime emerges as relational property not as a self-standing entity). Entities are not placed in space or time: space and time are measured quantities, always relative between entities and are measured. In other words, space and time relations originates from causality interactions."""@en,
+        "The class of all the OWL individuals representing world entities according to EMMO conceptualisation."@en,
+        "The disjoint union of the fundamental mereocausal classes of Quantum, CausalPath, CausalSystem and Collection."@en .
+
+ns1:Fusion rdfs:label "Fusion"@en ;
+    rdfs:comment "A mereological fusion is any entity that is made up of two or more quantum entities, regardless of the fact that they are or not self-connected. It captures the idea of set, but excluding singletons."@en,
+        "The class of individuals representing mereological fusions consisting of two or more quantum entities."@en,
+        "The union of the CausalCluster and CausalStructure classes."@en .
+
+ns1:Holistic rdfs:label "Holistic"@en ;
+    rdfs:comment """A perspective characterized by the belief that:
+- a whole is more than merely the sum of its parts (wholism)
+- the parts of a whole are interconnected in a way that can be explained only by reference to the whole (rolism)."""@en,
+        """An holistic perspective considers each part of the whole as equally important, without the need to position the parts within a hierarchy (in time or space). The interest is on the whole, on its parts (how they contribute to the whole, i.e. their roles), and their types, without going further into specifying the spatial hierarchy or the temporal position of each part.
+This class allows the picking of parts without necessarily going trough a rigid hierarchy of spatial compositions (e.g. body -> organ -> cell -> molecule) or temporal composition. This is inline with the transitive nature of parthood, as it is usually defined in literature."""@en,
+        "The union of classes whole and part."@en .
+
+ns1:HolisticArrangement a owl:Class ;
+    rdfs:label "HolisticArrangement"@en ;
+    rdfs:comment "A system which is mainly characterised by the spatial configuration of its elements."@en ;
+    rdfs:subClassOf ns1:HolisticSystem ;
+    skos:prefLabel "HolisticArrangement"@en ;
+    ns1:elucidation "A system which is mainly characterised by the spatial configuration of its elements."@en .
+
+ns1:Item rdfs:label "Item"@en ;
+    rdfs:comment """A world entity is direct causally self-connected if any two parts that make up the whole are direct causally connected to each other. In the EMMO, topological connectivity is based on causality.
+All physical objects, i.e. entities whose behaviour is explained by physics laws, are represented only by items. In other words, a physical object part is embedded in a direct causal graph that provides always a path between two of its parts.
+Members of a collection lack such direct causality connection, i.e. they do not constitute a physical object.
+Following graph theory concepts, the quantums of an item are all connected together within a network of causal relations, forming a connected causal graph. A collection is then a set of disconnected graphs."""@en,
+        "The class of individuals standing for quantum or causally self-connected world entities."@en,
+        "The disjoint union of Particle and CausalStructure classes."@en .
+
+ns1:NaturalProcess a owl:Class ;
+    rdfs:label "NaturalProcess"@en ;
+    rdfs:comment "A process occurring by natural (non-intentional) laws."@en ;
+    rdfs:subClassOf ns1:Process ;
+    skos:altLabel "NonIntentionalProcess"@en ;
+    skos:prefLabel "NaturalProcess"@en ;
+    ns1:elucidation "A process occurring by natural (non-intentional) laws."@en .
+
+ns1:Network a owl:Class ;
+    rdfs:label "Network"@en ;
+    rdfs:comment "A system whose is mainly characterised by the way in which elements are interconnected."@en ;
+    rdfs:subClassOf ns1:HolisticSystem ;
+    skos:prefLabel "Network"@en ;
+    ns1:elucidation "A system whose is mainly characterised by the way in which elements are interconnected."@en .
+
+ns1:ObjectByContext rdfs:label "ObjectByContext"@en ;
+    rdfs:comment "The superclass for all classes that categorise objects according to their mereological and persistence context"@en .
+
+ns1:Persistence rdfs:label "Persistence"@en ;
+    rdfs:comment "The union of the object or process classes."@en .
+
+ns1:Perspective rdfs:label "Perspective"@en ;
+    rdfs:comment "The class of causal objects that stand for world objects according to a specific representational perspective."@en .
+
+ns1:QualifiedRole rdfs:label "QualifiedRole"@en ;
+    rdfs:comment """The qualified role concept express the requirement for an entity of a type, say A, to be part of a larger entity of another type, say B, with A and B belonging to different taxonomical branches.
+The concept of role is then defined as something that needs a wider and specific environment to exist.
+For example, the car radio type requires all instances to be a part of a car, while the opposite (the car having a radio) is not mandatory for qualified roles.  The same applies for airplane winglets that are by definition an optional part of an airplane. Food preservatives are anothe optional part of foods."""@en,
+        "The superclass for all classes of individuals that requires their individuals to be part of another specific class of entity of different type with a specific role with respect to it."@en .
+
+ns1:QualifiedWhole rdfs:label "QualifiedWhole"@en ;
+    rdfs:comment """The qualified whole concept express the requirement for an entity of a type, say A, to have a part of another type, say B, with A and B belonging to different taxonomical branches.
+The concept of whole is then defined as something that needs a part of a specific type to exist.
+For example, an atom always requires a nucleus part to exist (but not viceversa)"""@en,
+        "The superclass for all classes of individuals that requires to have a part of another specific class of entity of different type with a specific relation with it."@en .
+
+ns1:hasInterval a owl:ObjectProperty ;
+    rdfs:label "hasInterval"@en ;
+    ns2:python_name "hasInterval"@en ;
+    rdfs:comment "The relation between a process whole and a temporal part of the same type."@en ;
+    rdfs:domain ns1:Process,
+        ns1:Redundant ;
+    rdfs:range ns1:Process ;
+    rdfs:subPropertyOf ns1:hasRedundantPart,
+        ns1:hasTemporalPart ;
+    skos:prefLabel "hasInterval"@en ;
+    ns1:elucidation "The relation between a process whole and a temporal part of the same type."@en .
+
+ns1:hasPortion a owl:ObjectProperty ;
+    rdfs:label "hasPortion"@en ;
+    ns2:python_name "hasPortion"@en ;
+    rdfs:comment "The relation between a object whole and its spatial part of the same type."@en ;
+    rdfs:domain ns1:Object,
+        ns1:Redundant ;
+    rdfs:range ns1:Object ;
+    rdfs:subPropertyOf ns1:hasRedundantPart ;
+    skos:example "A volume of 1 cc of milk within a 1 litre can be considered still milk as a whole. If you scale down to a cluster of molecules, than the milk cannot be considered a fluid no more (and then no more a milk)."@en ;
+    skos:prefLabel "hasPortion"@en ;
+    ns1:elucidation "The relation between a object whole and its spatial part of the same type."@en .
+
+: a owl:Ontology ;
+    dcterms:abstract ""@en ;
+    dcterms:contributor <https://orcid.org/FrancescoZaccarini>,
+        <https://orcid.org/GerhardGoldbeck>,
+        <https://orcid.org/JesperFriis> ;
+    dcterms:creator <https://orcid.org/EmanueleGhedini> ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "Persholistic"@en ;
+    rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.3/perspectives/contrast>,
+        <https://w3id.org/emmo/1.0.3/perspectives/holistic>,
+        <https://w3id.org/emmo/1.0.3/perspectives/persistence>,
+        <https://w3id.org/emmo/1.0.3/perspectives/semiotics>,
+        <https://w3id.org/emmo/1.0.3/perspectives/structural> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.3/hume/reference/persholistic> ;
+    owl:versionInfo "1.0.3"^^xsd:string ;
+    ns1:contact "emmo@emmc.eu"^^xsd:string .
+
+ns1:Constituent rdfs:label "Constituent"@en ;
+    rdfs:comment "An object which is a spatial part of another object."@en .
+
+ns1:Organisation a owl:Class ;
+    rdfs:label "Organisation"@en ;
+    rdfs:comment "An holistic system of people that has its own functions with responsibilities, authorities and relationships to achieve its objectives."@en ;
+    rdfs:seeAlso """ISO 55000:2014
+organization: person or group of people that has its own functions with responsibilities, authorities and relationships to achieve its objectives"""@en ;
+    rdfs:subClassOf ns1:HolisticSystem ;
+    skos:prefLabel "Organisation"@en ;
+    ns1:elucidation "An holistic system of people that has its own functions with responsibilities, authorities and relationships to achieve its objectives."@en .
+
+ns1:Role rdfs:label "Role"@en ;
+    rdfs:comment """A role entity is categorized according to its relation with the whole, i.e. how it contribute to make a specific whole, and not as standalone entity.
+This class is expected to host the definition of world objects as they appear in its relation with the surrounding whole (being a part implies being surrounded by something bigger to which it contributes).
+For example. a human being is a stand alone type, but an instance of a human being can also be an instance of the type student (intended as a role) if it plays a part into a school environment (i.e., a student entity can exist only if it is part of a surrounding whole: the school).
+The role type requires that also the whole type depends on the existence of parts of a specific type (e.g., there is no school without students)."""@en,
+        "An entity that is categorized according to its relation with a whole through a parthood relation and that contributes to it according to an holistic criterion, where the type of the whole is not the type of the part."@en .
+
+ns1:Whole rdfs:label "Whole"@en ;
+    rdfs:comment "The superclass of entities which are defined by requiring the existence of some parts (at least one) of specifically given types, where the specified types are different with respect to the type of the whole."@en .
+
+ns1:Component a owl:Class ;
+    rdfs:label "Component"@en ;
+    rdfs:comment "A constituent of a system."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf ns1:hasComponent ] ;
+            owl:someValuesFrom ns1:HolisticSystem ],
+        ns1:Constituent,
+        ns1:Role ;
+    skos:prefLabel "Component"@en ;
+    ns1:OWLRL2DLAxioms "SubClassOf:  inverse (hasConstituent) some HolisticSystem"^^xsd:string ;
+    ns1:elucidation "A constituent of a system."@en .
+
+ns1:hasComponent a owl:ObjectProperty ;
+    rdfs:label "hasComponent"@en ;
+    ns2:python_name "hasComponent"@en ;
+    rdfs:comment "Relation a holistic system to one of its components."@en ;
+    rdfs:domain ns1:HolisticSystem ;
+    rdfs:range ns1:Component ;
+    rdfs:subPropertyOf ns1:hasConstituent,
+        ns1:hasRole ;
+    skos:prefLabel "hasComponent"@en ;
+    ns1:elucidation "Relation a holistic system to one of its components."@en .
+
+ns1:Object rdfs:label "Object"@en ;
+    rdfs:comment "An item can be classified as an object according to a type ϕ (a ϕ-object) if it's a ϕ all its temporal item parts are also of type ϕ. This conceptualisation tries to catch the persistency of type in the temporal parts of an entity."@en,
+        "The superclass for causal structure classes whose individuals have all temporal item parts of the same type of the whole."@en .
+
+ns1:Process rdfs:label "Process"@en ;
+    rdfs:comment "The superclass for causal structure classes whose individuals have some temporal item parts that are not of the same type of the whole."@en .
+
+ns1:HolisticSystem a owl:Class ;
+    rdfs:label "HolisticSystem"@en ;
+    rdfs:comment "An object that is made of a set of sub objects working together as parts of a mechanism or an interconnecting network (natural or artificial); a complex whole."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:hasComponent ;
+            owl:someValuesFrom ns1:Component ],
+        ns1:Object,
+        ns1:Whole ;
+    skos:prefLabel "HolisticSystem"@en ;
+    ns1:OWLRL2DLAxioms "SubClassOf: hasComponent some Component"^^xsd:string ;
+    ns1:elucidation "An object that is made of a set of sub objects working together as parts of a mechanism or an interconnecting network (natural or artificial); a complex whole."@en ;
+    ns1:note "A system is conceived as an aggregate of things that 'work' (or interact) together. While a system extends in time through distinct temporal parts (like every other 4D object), this elucdation focuses on a timescale in which the obejct shows a persistence in time."@en .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:55000:ed-1:v2:en:term:3.1.13"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:seeAlso ;
+    owl:annotatedSource ns1:Organisation ;
+    owl:annotatedTarget """ISO 55000:2014
+organization: person or group of people that has its own functions with responsibilities, authorities and relationships to achieve its objectives"""@en .
+

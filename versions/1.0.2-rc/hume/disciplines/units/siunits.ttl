@@ -1,0 +1,1489 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/emmo#> .
+@prefix ns2: <http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:CausalStructure rdfs:label "CausalStructure"@en ;
+    rdfs:comment "The class of individuals representing causally self-connected world entities."^^xsd:string,
+        "The disjoint union of Causal Path and CausalSystem classes."^^xsd:string,
+        """The most fundamental unity criterion for the definition of an structure is that:
+- is made of at least two quantums (a structure is not a simple entity)
+- all quantum parts form a causally connected graph"""^^xsd:string .
+
+ns1:Constant rdfs:label "Constant"@en ;
+    rdfs:comment "A variable that stand for a numerical constant, even if it is unknown."@en .
+
+ns1:Contrast rdfs:label "Contrast"@en ;
+    rdfs:comment "A perspective in which entities are represented according to the variation of their properties."@en .
+
+ns1:Data rdfs:label "Data"@en ;
+    rdfs:comment "A causal object whose properties variation are encoded by an agent and that can be decoded by another agent according to a specific rule."@en .
+
+ns1:DataByDiscretness rdfs:label "DataByDiscretness"@en ;
+    rdfs:comment "Categorisation of data by whether it is descrete or not."@en .
+
+ns1:DimensionalUnit rdfs:label "DimensionalUnit"@en ;
+    rdfs:comment "A subclass of measurement unit focusing on the physical dimensionality that is carried by the unit."@en .
+
+ns1:DimensionlessUnit rdfs:label "DimensionlessUnit"@en ;
+    rdfs:comment "The subclass of measurement units with no physical dimension."@en .
+
+ns1:DiscreteData rdfs:label "DiscreteData"@en ;
+    rdfs:comment "Data whose variations are decoded according to a discrete schema."@en .
+
+ns1:EMMO rdfs:label "EMMO"@en ;
+    rdfs:comment """The EMMO conceptualises the world using the primitive concepts of causality and parthood. Parthood is about the composition of world entities starting from other more fundamental entities. Causality is about the interactions between world entities.
+The quantum is the smallest indivisible part of any world entity. Quantum individuals are the fundamental causal constituents of the universe, since it is implied that causality originates from quantum-to-quantum interactions. Quantums are no-dimensional, and their aggregation makes spacetime emerge from their causal structure. We can think of a quantum as an elementary particle after and interaction and before another interaction.
+Causality between macro entities (i.e. entities made of more than one quantum) is explained as the sum of the causality relations between their quantum constituents. Fundamental interactions (quantum fields) are represented as symmetric causality relation between macro entities, while classical interactions are mediated by chain of quantums (i.e. elementary particles).
+The fundamental distinction between world entities is causality self-connectedness: a world entity can be self-connected xor not self-connected depending on the causality network of its fundamental components.
+Void regions do not exist in the EMMO. In other words there is no spacetime without entities and spacetime emerges as relational property not as a self-standing entity). Entities are not placed in space or time: space and time are measured quantities, always relative between entities and are measured. In other words, space and time relations originates from causality interactions."""@en,
+        "The class of all the OWL individuals representing world entities according to EMMO conceptualisation."@en,
+        "The disjoint union of the fundamental mereocausal classes of Quantum, CausalPath, CausalSystem and Collection."@en .
+
+ns1:FractionUnit rdfs:label "FractionUnit"@en ;
+    rdfs:comment "Unit for fractions of quantities of the same kind, to aid the understanding of the quantity being expressed."@en .
+
+ns1:Fusion rdfs:label "Fusion"@en ;
+    rdfs:comment "A mereological fusion is any entity that is made up of two or more quantum entities, regardless of the fact that they are or not self-connected. It captures the idea of set, but excluding singletons."@en,
+        "The class of individuals representing mereological fusions consisting of two or more quantum entities."@en,
+        "The union of the CausalCluster and CausalStructure classes."@en .
+
+ns1:Item rdfs:label "Item"@en ;
+    rdfs:comment """A world entity is direct causally self-connected if any two parts that make up the whole are direct causally connected to each other. In the EMMO, topological connectivity is based on causality.
+All physical objects, i.e. entities whose behaviour is explained by physics laws, are represented only by items. In other words, a physical object part is embedded in a direct causal graph that provides always a path between two of its parts.
+Members of a collection lack such direct causality connection, i.e. they do not constitute a physical object.
+Following graph theory concepts, the quantums of an item are all connected together within a network of causal relations, forming a connected causal graph. A collection is then a set of disconnected graphs."""@en,
+        "The class of individuals standing for quantum or causally self-connected world entities."@en,
+        "The disjoint union of Particle and CausalStructure classes."@en .
+
+ns1:Language rdfs:label "Language"@en ;
+    rdfs:comment "A language object is a discrete data entity respecting specific language syntactic rules (a well-formed formula)."@en .
+
+ns1:Mathematical rdfs:label "Mathematical"@en ;
+    rdfs:comment "The class of general mathematical symbolic objects respecting mathematical syntactic rules."@en .
+
+ns1:MeasurementUnitByDimensionality rdfs:label "MeasurementUnitByDimensionality"@en ;
+    rdfs:comment "Categorisation of measurement units by their physical dimensionality."@en .
+
+ns1:MeasurementUnitByPrefix rdfs:label "MeasurementUnitByPrefix"@en ;
+    rdfs:comment "Categorisation of measurement units by whether they are prefixed or not."@en .
+
+ns1:Metrological rdfs:label "Metrological"@en ;
+    rdfs:comment "A language entity used in the metrology discipline."@en .
+
+ns1:MetrologicalReference rdfs:label "MetrologicalReference"@en ;
+    rdfs:comment "A reference can be a measurement unit, a measurement procedure, a reference material, or a combination of such (VIM3 1.1 NOTE 2)."@en .
+
+ns1:NonPrefixedUnit rdfs:label "NonPrefixedUnit"@en ;
+    rdfs:comment "A measurement unit symbol that do not have a metric prefix as a direct spatial part."@en .
+
+ns1:NumericalVariable rdfs:label "NumericalVariable"@en ;
+    rdfs:comment "A variable standing for a numerical defined mathematical object like e.g. a number, a vector of numbers, a matrix of numbers."@en .
+
+ns1:Perspective rdfs:label "Perspective"@en ;
+    rdfs:comment "The class of causal objects that stand for world objects according to a specific representational perspective."@en .
+
+ns1:SICoherentUnit a owl:Class ;
+    rdfs:label "SICoherentUnit"@en ;
+    rdfs:comment "A unit that can be expressed as a product of powers of SI base units with no pre-factor or offset."@en ;
+    rdfs:subClassOf ns1:SIUnit ;
+    owl:disjointUnionOf ( ns1:SICoherentDerivedUnit ns1:SIBaseUnit ns1:SISpecialUnit ) ;
+    skos:prefLabel "SICoherentUnit"@en ;
+    ns1:elucidation "A unit that can be expressed as a product of powers of SI base units with no pre-factor or offset."@en ;
+    ns1:note "Derived units are defined as products of powers of the base units. When the numerical factor of this product is one, the derived units are called coherent derived units. The base and coherent derived units of the SI form a coherent set, designated the set of coherent SI units."@en .
+
+ns1:SIDerivedUnit a owl:Class ;
+    rdfs:label "SIDerivedUnit"@en ;
+    rdfs:comment "A derived unit that belongs to the SI system."@en ;
+    rdfs:subClassOf ns1:DerivedUnit ;
+    owl:disjointUnionOf ( ns1:SICoherentDerivedUnit ns1:SINonCoherentDerivedUnit ) ;
+    skos:prefLabel "SIDerivedUnit"@en ;
+    ns1:elucidation "A derived unit that belongs to the SI system."@en .
+
+ns1:SIDimensionalUnit rdfs:label "SIDimensionalUnit"@en ;
+    rdfs:comment "Dimensional unit with its physical dimensionality described accortind to the International System of Units (SI)."@en .
+
+ns1:SINonCoherentUnit a owl:Class ;
+    rdfs:label "SINonCoherentUnit"@en ;
+    rdfs:comment "An SI unit whos numerical factor in front of the product of base SI units is NOT equal to one."@en ;
+    owl:disjointUnionOf ( ns1:SIMetricPrefixedUnit ns1:SINonCoherentDerivedUnit ) ;
+    skos:prefLabel "SINonCoherentUnit"@en ;
+    ns1:elucidation "An SI unit whos numerical factor in front of the product of base SI units is NOT equal to one."@en ;
+    ns1:note """A non-SI coherent can be expressed in terms of its corresponding SI coherent unit, as
+
+    nonsi_coherent_unit = si_coherent_unit * multiplier + offset
+
+where `multiplier` and `offset` are specified via the 'hasConversionMultiplier' and 'hasConversionOffset' data properties, respectively."""@en .
+
+ns1:SIPrefix a owl:Class ;
+    rdfs:label "SIPrefix"@en ;
+    rdfs:comment "Metric prefix defined in the SI system."@en ;
+    rdfs:subClassOf ns1:MetricPrefix ;
+    owl:disjointUnionOf ( ns1:SIMultiplePrefix ns1:SISubMultiplePrefix ) ;
+    skos:prefLabel "SIPrefix"@en ;
+    ns1:elucidation "Metric prefix defined in the SI system."@en .
+
+ns1:SIUnitSymbol a owl:Class ;
+    rdfs:label "SIUnitSymbol"@en ;
+    rdfs:comment "A unit symbol that belongs to the SI system. Is either a SI base unit or a SI special unit."@en ;
+    rdfs:subClassOf ns1:UnitSymbol ;
+    owl:disjointUnionOf ( ns1:SIBaseUnit ns1:SISpecialUnit ) ;
+    skos:prefLabel "SIUnitSymbol"@en ;
+    ns1:elucidation "A unit symbol that belongs to the SI system. Is either a SI base unit or a SI special unit."@en .
+
+ns1:Symbol rdfs:label "Symbol"@en ;
+    rdfs:comment "The class of individuals that stand for an elementary mark of a specific symbolic code (alphabet)."@en .
+
+ns1:Symbolic rdfs:label "Symbolic"@en ;
+    rdfs:comment "A discrete data whose elements can be decoded as tokens from one or more alphabets, without necessarily respecting syntactic rules."@en .
+
+ns1:SymbolicByStructure rdfs:label "SymbolicByStructure"@en ;
+    rdfs:comment "Symbolic caterorised by its internal structure."@en .
+
+ns1:Variable rdfs:label "Variable"@en ;
+    rdfs:comment "A variable is a symbolic object that stands for any other mathematical object, such as  number, a vector, a matrix, a function, the argument of a function, a set, an element of a set."@en .
+
+ns1:hasPrefixSymbol a owl:DatatypeProperty ;
+    rdfs:label "hasPrefixSymbol"@en ;
+    ns2:python_name "hasPrefixSymbol"@en ;
+    rdfs:comment "Relates a SI prefixed unit to the prefix symbol."@en ;
+    rdfs:domain ns1:MetricPrefixedUnit ;
+    rdfs:range xsd:string ;
+    owl:deprecated true ;
+    skos:prefLabel "hasPrefixSymbol"@en ;
+    ns1:elucidation "Relates a SI prefixed unit to the prefix symbol."@en .
+
+ns1:unitSymbol a owl:AnnotationProperty ;
+    rdfs:label "unitSymbol"@en ;
+    ns2:python_name "unitSymbol"@en ;
+    rdfs:comment "The standard symbol for a unit."@en ;
+    rdfs:domain ns1:MeasurementUnit ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf rdfs:comment ;
+    skos:prefLabel "unitSymbol"@en ;
+    ns1:elucidation "The standard symbol for a unit."@en ;
+    ns1:note "A unit symbol may be a symbolic construct (e.g. km) or a symbol (e.g. m)."@en .
+
+<https://w3id.org/emmo/disciplines/units/siunits> a owl:Ontology ;
+    dcterms:abstract """The module 'siunits' defines the 7 base units and 22 derived units as well as the metric prefixes specified in the SI system.
+
+All other SI units goes into one of the following modules:
+- prefixedsiunits: SI units made of a metric prefix and a SI base, derived or accepted unit. Examples: km, mg...
+- coherentsiunits: Coherent SI-units. Products of integer powers of the base and derived SI units. Examples: A/J, Nm, m³, ...
+- noncoherentsiunits: Non-coherent SI-units whos numerical factor in front of the product of base SI units is NOT equal to one. This include all SI-units not included in the modules above. Examples: g, mg/s..."""@en ;
+    dcterms:contributor ns1:GerhardGoldbeck,
+        ns1:SimonClark ;
+    dcterms:creator ns1:EmanueleGhedini,
+        ns1:JesperFriis ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "SI units"@en ;
+    rdfs:comment "The EMMO should be reasoned with HermiT to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.2/disciplines/metrology>,
+        <https://w3id.org/emmo/1.0.2/disciplines/units/sidimensionalunits> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.2/disciplines/units/siunits> ;
+    owl:versionInfo "1.0.2"^^xsd:string ;
+    ns1:contact "emmo@emmc.eu"^^xsd:string .
+
+ns1:AmountUnit rdfs:label "AmountUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'Amount'."@en .
+
+ns1:Ampere a owl:Class ;
+    rdfs:label "Ampere"@en ;
+    rdfs:comment "The ampere, symbol A, is the SI unit of electric current. It is defined by taking the fixed numerical value of the elementary charge e to be 1.602176634×10−19 when expressed in the unit C, which is equal to A s, where the second is defined in terms of ∆νCs."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "A"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        ns1:ElectricCurrentUnit ;
+    skos:prefLabel "Ampere"@en ;
+    schema:unitCode "AMP"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/resource/Ampere"^^xsd:anyURI ;
+    ns1:definition "The ampere, symbol A, is the SI unit of electric current. It is defined by taking the fixed numerical value of the elementary charge e to be 1.602176634×10−19 when expressed in the unit C, which is equal to A s, where the second is defined in terms of ∆νCs."@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.A00300"^^xsd:string ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/A"^^xsd:string ;
+    ns1:ucumCode "A"^^xsd:string ;
+    ns1:wikipediaReference "http://en.wikipedia.org/wiki/Ampere?oldid=494026699"^^xsd:anyURI .
+
+ns1:AreaFractionUnit rdfs:label "AreaFractionUnit"@en ;
+    rdfs:comment "Unit for quantities of dimension one that are the fraction of two areas."@en .
+
+ns1:AttoPrefixedUnit a owl:Class ;
+    rdfs:label "AttoPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"atto\" (1e-18)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-18 ;
+            owl:onProperty ns1:hasPrefixMultiplier ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:hasMetricPrefix ;
+            owl:someValuesFrom ns1:Atto ] ;
+    skos:prefLabel "AttoPrefixedUnit"@en ;
+    ns1:elucidation "Superclass for all units prefixed with \"atto\" (1e-18)."@en .
+
+ns1:BaseUnit rdfs:label "BaseUnit"@en ;
+    rdfs:comment "A set of units that correspond to the base quantities in a system of units."@en .
+
+ns1:Becquerel a owl:Class ;
+    rdfs:label "Becquerel"@en ;
+    rdfs:comment "Radioactive decays per second."@en,
+        "SI unit for radioactive activity."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Bq"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        ns1:FrequencyUnit ;
+    skos:prefLabel "Becquerel"@en ;
+    schema:unitCode "BQL"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/resource/Becquerel"^^xsd:anyURI ;
+    ns1:definition "Radioactive decays per second."@en ;
+    ns1:elucidation "SI unit for radioactive activity."@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.B00624"^^xsd:string ;
+    ns1:note """The SI derived unit of activity, usually meaning radioactivity. "Radioactivity" is caused when atoms disintegrate, ejecting energetic particles. One becquerel is the radiation caused by one disintegration per second; this is equivalent to about 27.0270 picocuries (pCi). The unit is named for a French physicist, Antoine-Henri Becquerel (1852-1908), the discoverer of radioactivity. Note: both the becquerel and the hertz are basically defined as one event per second, yet they measure different things. The hertz is used to measure the rates of events that happen periodically in a fixed and definite cycle. The becquerel is used to measure the rates of events that happen sporadically and unpredictably, not in a definite cycle.
+
+-- QUDT"""@en ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/BQ"^^xsd:string ;
+    ns1:ucumCode "Bq"^^xsd:string ;
+    ns1:wikipediaReference "http://en.wikipedia.org/wiki/Becquerel?oldid=493710036"^^xsd:anyURI .
+
+ns1:Candela a owl:Class ;
+    rdfs:label "Candela"@en ;
+    rdfs:comment "The candela, symbol cd, is the SI unit of luminous intensity in a given direction. It is defined by taking the fixed numerical value of the luminous efficacy of monochromatic radiation of frequency 540×1012 Hz, Kcd, to be 683 when expressed in the unit lm W−1, which is equal to cd sr W−1, or cd sr kg−1 m−2 s3, where the kilogram, metre and second are defined in terms of h, c and ∆νCs."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "cd"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        ns1:LuminousIntensityUnit ;
+    skos:prefLabel "Candela"@en ;
+    schema:unitCode "CDL"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/resource/Candela"^^xsd:anyURI ;
+    ns1:definition "The candela, symbol cd, is the SI unit of luminous intensity in a given direction. It is defined by taking the fixed numerical value of the luminous efficacy of monochromatic radiation of frequency 540×1012 Hz, Kcd, to be 683 when expressed in the unit lm W−1, which is equal to cd sr W−1, or cd sr kg−1 m−2 s3, where the kilogram, metre and second are defined in terms of h, c and ∆νCs."@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.C00787"^^xsd:string ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/CD"^^xsd:string ;
+    ns1:ucumCode "cd"^^xsd:string ;
+    ns1:wikipediaReference "http://en.wikipedia.org/wiki/Candela?oldid=484253082"^^xsd:anyURI .
+
+ns1:CapacitanceUnit rdfs:label "CapacitanceUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'Capacitance'."@en .
+
+ns1:CatalyticActivityUnit rdfs:label "CatalyticActivityUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'CatalyticActivity'."@en .
+
+ns1:CentiPrefixedUnit a owl:Class ;
+    rdfs:label "CentiPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"centi\" (0.01)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:hasMetricPrefix ;
+            owl:someValuesFrom ns1:Centi ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-02 ;
+            owl:onProperty ns1:hasPrefixMultiplier ] ;
+    skos:prefLabel "CentiPrefixedUnit"@en ;
+    ns1:elucidation "Superclass for all units prefixed with \"centi\" (0.01)."@en .
+
+ns1:Coulomb a owl:Class ;
+    rdfs:label "Coulomb"@en ;
+    rdfs:comment "SI unit for electric charge."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "C"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        ns1:ElectricChargeUnit ;
+    skos:prefLabel "Coulomb"@en ;
+    schema:unitCode "COU"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/resource/Coulomb"^^xsd:anyURI ;
+    ns1:elucidation "SI unit for electric charge."@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.C01365"^^xsd:string ;
+    ns1:note """The SI unit of electric charge. One coulomb is the amount of charge accumulated in one second by a current of one ampere. Electricity is actually a flow of charged particles, such as electrons, protons, or ions. The charge on one of these particles is a whole-number multiple of the charge e on a single electron, and one coulomb represents a charge of approximately 6.241 506 x 1018 e. The coulomb is named for a French physicist, Charles-Augustin de Coulomb (1736-1806), who was the first to measure accurately the forces exerted between electric charges.
+
+-- QUDT"""@en ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/C"^^xsd:string ;
+    ns1:ucumCode "C"^^xsd:string ;
+    ns1:wikipediaReference "http://en.wikipedia.org/wiki/Coulomb?oldid=491815163"^^xsd:anyURI .
+
+ns1:DecaPrefixedUnit a owl:Class ;
+    rdfs:label "DecaPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"deca\" (10)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:hasMetricPrefix ;
+            owl:someValuesFrom ns1:Deca ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+01 ;
+            owl:onProperty ns1:hasPrefixMultiplier ] ;
+    skos:altLabel "DekaPrefixedUnit"@en ;
+    skos:prefLabel "DecaPrefixedUnit"@en ;
+    ns1:elucidation "Superclass for all units prefixed with \"deca\" (10)."@en .
+
+ns1:DeciPrefixedUnit a owl:Class ;
+    rdfs:label "DeciPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"deci\" (0.1)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-01 ;
+            owl:onProperty ns1:hasPrefixMultiplier ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:hasMetricPrefix ;
+            owl:someValuesFrom ns1:Deci ] ;
+    skos:prefLabel "DeciPrefixedUnit"@en ;
+    ns1:elucidation "Superclass for all units prefixed with \"deci\" (0.1)."@en .
+
+ns1:DegreeCelsius a owl:Class ;
+    rdfs:label "DegreeCelsius"@en ;
+    rdfs:comment "Measurement unit for Celsius temperature. This unit can only be used for expressing temperature differences."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue -2.7315e+02 ;
+            owl:onProperty ns1:hasSIConversionOffset ],
+        [ a owl:Restriction ;
+            owl:hasValue "°C"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+00 ;
+            owl:onProperty ns1:hasSIConversionMultiplier ],
+        ns1:TemperatureUnit ;
+    skos:prefLabel "DegreeCelsius"@en ;
+    schema:unitCode "CEL"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/resource/Celsius"^^xsd:anyURI ;
+    ns1:elucidation "Measurement unit for Celsius temperature. This unit can only be used for expressing temperature differences."@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.D01561"^^xsd:string ;
+    ns1:note """Celsius, also known as centigrade, is a scale and unit of measurement for temperature. It can refer to a specific temperature on the Celsius scale as well as a unit to indicate a temperature interval, a difference between two temperatures or an uncertainty. This definition fixes the magnitude of both the degree Celsius and the kelvin as precisely 1 part in 273.16 (approximately 0.00366) of the difference between absolute zero and the triple point of water. Thus, it sets the magnitude of one degree Celsius and that of one kelvin as exactly the same. Additionally, it establishes the difference between the two scales' null points as being precisely 273.15 °C.
+
+-- QUDT"""@en ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/DEG_C"^^xsd:string ;
+    ns1:ucumCode "Cel"^^xsd:string ;
+    ns1:wikipediaReference "http://en.wikipedia.org/wiki/Celsius?oldid=494152178"^^xsd:anyURI .
+
+ns1:ElectricChargeUnit rdfs:label "ElectricChargeUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'ElectricCharge'."@en .
+
+ns1:ElectricConductanceUnit rdfs:label "ElectricConductanceUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'ElectricConductance'."@en .
+
+ns1:ElectricCurrentUnit rdfs:label "ElectricCurrentUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'ElectricCurrent'."@en .
+
+ns1:ElectricPotentialUnit rdfs:label "ElectricPotentialUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'ElectricPotential'."@en .
+
+ns1:ElectricResistanceUnit rdfs:label "ElectricResistanceUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'ElectricResistance'."@en .
+
+ns1:EnergyUnit rdfs:label "EnergyUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'Energy'."@en .
+
+ns1:ExaPrefixedUnit a owl:Class ;
+    rdfs:label "ExaPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"exa\" (1e18)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+18 ;
+            owl:onProperty ns1:hasPrefixMultiplier ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:hasMetricPrefix ;
+            owl:someValuesFrom ns1:Exa ] ;
+    skos:prefLabel "ExaPrefixedUnit"@en ;
+    ns1:elucidation "Superclass for all units prefixed with \"exa\" (1e18)."@en .
+
+ns1:Farad a owl:Class ;
+    rdfs:label "Farad"@en ;
+    rdfs:comment "Measurement unit for electric capacitance."@en,
+        """The SI unit of electric capacitance. Very early in the study of electricity scientists discovered that a pair of conductors separated by an insulator can store a much larger charge than an isolated conductor can store. The better the insulator, the larger the charge that the conductors can hold. This property of a circuit is called capacitance, and it is measured in farads. One farad is defined as the ability to store one coulomb of charge per volt of potential difference between the two conductors. This is a natural definition, but the unit it defines is very large. In practical circuits, capacitance is often measured in microfarads, nanofarads, or sometimes even in picofarads (10⁻¹² farad, or trillionths of a farad). The unit is named for the British physicist Michael Faraday (1791-1867), who was known for his work in electricity and electrochemistry.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "F"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        ns1:CapacitanceUnit ;
+    skos:prefLabel "Farad"@en ;
+    schema:unitCode "FAR"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/resource/Farad"^^xsd:anyURI ;
+    ns1:elucidation """The SI unit of electric capacitance. Very early in the study of electricity scientists discovered that a pair of conductors separated by an insulator can store a much larger charge than an isolated conductor can store. The better the insulator, the larger the charge that the conductors can hold. This property of a circuit is called capacitance, and it is measured in farads. One farad is defined as the ability to store one coulomb of charge per volt of potential difference between the two conductors. This is a natural definition, but the unit it defines is very large. In practical circuits, capacitance is often measured in microfarads, nanofarads, or sometimes even in picofarads (10⁻¹² farad, or trillionths of a farad). The unit is named for the British physicist Michael Faraday (1791-1867), who was known for his work in electricity and electrochemistry.
+
+-- QUDT"""@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.F02320"^^xsd:string ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/FARAD"^^xsd:string ;
+    ns1:ucumCode "F"^^xsd:string ;
+    ns1:wikipediaReference "http://en.wikipedia.org/wiki/Farad?oldid=493070876"^^xsd:anyURI .
+
+ns1:FemtoPrefixedUnit a owl:Class ;
+    rdfs:label "FemtoPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"femto\" (1e-15)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-15 ;
+            owl:onProperty ns1:hasPrefixMultiplier ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:hasMetricPrefix ;
+            owl:someValuesFrom ns1:Femto ] ;
+    skos:prefLabel "FemtoPrefixedUnit"@en ;
+    ns1:elucidation "Superclass for all units prefixed with \"femto\" (1e-15)."@en .
+
+ns1:ForceUnit rdfs:label "ForceUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'Force'."@en .
+
+ns1:GigaPrefixedUnit a owl:Class ;
+    rdfs:label "GigaPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"giga\" (1e9)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:hasMetricPrefix ;
+            owl:someValuesFrom ns1:Giga ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+09 ;
+            owl:onProperty ns1:hasPrefixMultiplier ] ;
+    skos:prefLabel "GigaPrefixedUnit"@en ;
+    ns1:elucidation "Superclass for all units prefixed with \"giga\" (1e9)."@en .
+
+ns1:Gray a owl:Class ;
+    rdfs:label "Gray"@en ;
+    rdfs:comment "SI unit for absorbed dose."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Gy"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        ns1:AbsorbedDoseUnit ;
+    skos:prefLabel "Gray"@en ;
+    schema:unitCode "A95"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/resource/Grey"^^xsd:anyURI ;
+    ns1:elucidation "SI unit for absorbed dose."@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.G02696"^^xsd:string ;
+    ns1:note """The SI unit of radiation dose. Radiation carries energy, and when it is absorbed by matter the matter receives this energy. The dose is the amount of energy deposited per unit of mass. One gray is defined to be the dose of one joule of energy absorbed per kilogram of matter, or 100 rad. The unit is named for the British physician L. Harold Gray (1905-1965), an authority on the use of radiation in the treatment of cancer.
+
+-- QUDT"""^^xsd:string ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/GRAY"^^xsd:string ;
+    ns1:ucumCode "Gy"^^xsd:string ;
+    ns1:wikipediaReference "//en.wikipedia.org/wiki/Grey?oldid=494774160"^^xsd:anyURI .
+
+ns1:HectoPrefixedUnit a owl:Class ;
+    rdfs:label "HectoPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"hecto\" (100)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+02 ;
+            owl:onProperty ns1:hasPrefixMultiplier ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:hasMetricPrefix ;
+            owl:someValuesFrom ns1:Hecto ] ;
+    skos:prefLabel "HectoPrefixedUnit"@en ;
+    ns1:elucidation "Superclass for all units prefixed with \"hecto\" (100)."@en .
+
+ns1:Henry a owl:Class ;
+    rdfs:label "Henry"@en ;
+    rdfs:comment "SI unit for electrical inductance."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "H"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        ns1:InductanceUnit ;
+    skos:prefLabel "Henry"@en ;
+    schema:unitCode "81"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/resource/Henry"^^xsd:anyURI ;
+    ns1:elucidation "SI unit for electrical inductance."@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.H02782"^^xsd:string ;
+    ns1:note "H = Wb/A = V·s/A = Ω·s"@en,
+        """The SI unit of electric inductance. A changing magnetic field induces an electric current in a loop of wire (or in a coil of many loops) located in the field. Although the induced voltage depends only on the rate at which the magnetic flux changes, measured in webers per second, the amount of the current depends also on the physical properties of the coil. A coil with an inductance of one henry requires a flux of one weber for each ampere of induced current. If, on the other hand, it is the current which changes, then the induced field will generate a potential difference within the coil: if the inductance is one henry a current change of one ampere per second generates a potential difference of one volt. The henry is a large unit; inductances in practical circuits are measured in millihenrys (mH) or microhenrys (μH). The unit is named for the American physicist Joseph Henry (1797-1878), one of several scientists who discovered independently how magnetic fields can be used to generate alternating currents.
+
+-- QUDT"""@en ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/H"^^xsd:string ;
+    ns1:ucumCode "H"^^xsd:string ;
+    ns1:wikipediaReference "http://en.wikipedia.org/wiki/Henry?oldid=491435978"^^xsd:anyURI .
+
+ns1:Hertz a owl:Class ;
+    rdfs:label "Hertz"@en ;
+    rdfs:comment "SI unit for frequence."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Hz"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        ns1:FrequencyUnit ;
+    skos:prefLabel "Hertz"@en ;
+    schema:unitCode "HTZ"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/resource/Hertz"^^xsd:anyURI ;
+    ns1:elucidation "SI unit for frequence."@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.H02785"^^xsd:string ;
+    ns1:note """The hertz (symbol Hz) is the SI unit of frequency defined as the number of cycles per second of a periodic phenomenon. One of its most common uses is the description of the sine wave, particularly those used in radio and audio applications, such as the frequency of musical tones. The word "hertz" is named for Heinrich Rudolf Hertz, who was the first to conclusively prove the existence of electromagnetic waves.
+
+-- QUDT"""@en ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/HZ"^^xsd:string ;
+    ns1:ucumCode "Hz"^^xsd:string .
+
+ns1:InductanceUnit rdfs:label "InductanceUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'Inductance'."@en .
+
+ns1:Joule a owl:Class ;
+    rdfs:label "Joule"@en ;
+    rdfs:comment "SI unit for energy."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "J"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        ns1:EnergyUnit ;
+    skos:prefLabel "Joule"@en ;
+    schema:unitCode "JOU"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/resource/Joule"^^xsd:anyURI ;
+    ns1:elucidation "SI unit for energy."@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.J03363"^^xsd:string ;
+    ns1:note """The SI unit of work or energy, defined to be the work done by a force of one newton acting to move an object through a distance of one meter in the direction in which the force is applied. Equivalently, since kinetic energy is one half the mass times the square of the velocity, one joule is the kinetic energy of a mass of two kilograms moving at a velocity of 1 m/s.
+
+-- QUDT"""@en ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/J"^^xsd:string ;
+    ns1:ucumCode "J"^^xsd:string ;
+    ns1:wikipediaReference "http://en.wikipedia.org/wiki/Joule?oldid=494340406"^^xsd:anyURI .
+
+ns1:Katal a owl:Class ;
+    rdfs:label "Katal"@en ;
+    rdfs:comment "SI unit for catalytic activity."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "kat"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        ns1:CatalyticActivityUnit ;
+    skos:prefLabel "Katal"@en ;
+    schema:unitCode "KAT"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/resource/Katal"^^xsd:anyURI ;
+    ns1:elucidation "SI unit for catalytic activity."@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.K03372"^^xsd:string ;
+    ns1:note """A unit of catalytic activity used especially in the chemistry of enzymes. A catalyst is a substance that starts or speeds a chemical reaction. Enzymes are proteins that act as catalysts within the bodies of living plants and animals. A catalyst has an activity of one katal if it enables a reaction to proceed at the rate of one mole per second.
+
+-- QUDT"""@en ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/KAT"^^xsd:string ;
+    ns1:ucumCode "kat"^^xsd:string ;
+    ns1:wikipediaReference "http://en.wikipedia.org/wiki/Katal?oldid=486431865"^^xsd:anyURI .
+
+ns1:Kelvin a owl:Class ;
+    rdfs:label "Kelvin"@en ;
+    rdfs:comment "The kelvin, symbol K, is the SI unit of thermodynamic temperature. It is defined by taking the fixed numerical value of the Boltzmann constant k to be 1.380649×10−23 when expressed in the unit J K−1, which is equal to kg m2 s−2 K−1, where the kilogram, metre and second are defined in terms of h, c and ∆νCs."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "K"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        ns1:TemperatureUnit ;
+    skos:prefLabel "Kelvin"@en ;
+    schema:unitCode "KEL"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/resource/Kelvin"^^xsd:anyURI ;
+    ns1:definition "The kelvin, symbol K, is the SI unit of thermodynamic temperature. It is defined by taking the fixed numerical value of the Boltzmann constant k to be 1.380649×10−23 when expressed in the unit J K−1, which is equal to kg m2 s−2 K−1, where the kilogram, metre and second are defined in terms of h, c and ∆νCs."@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.K03374"^^xsd:string ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/K"^^xsd:string ;
+    ns1:ucumCode "K"^^xsd:string ;
+    ns1:wikipediaReference "http://en.wikipedia.org/wiki/Kelvin?oldid=495075694"^^xsd:anyURI .
+
+ns1:KiloPrefixedUnit a owl:Class ;
+    rdfs:label "KiloPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"kilo\" (1000)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:hasMetricPrefix ;
+            owl:someValuesFrom ns1:Kilo ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+03 ;
+            owl:onProperty ns1:hasPrefixMultiplier ] ;
+    skos:prefLabel "KiloPrefixedUnit"@en ;
+    ns1:elucidation "Superclass for all units prefixed with \"kilo\" (1000)."@en .
+
+ns1:Kilogram a owl:Class ;
+    rdfs:label "Kilogram"@en ;
+    rdfs:comment "The kilogram, symbol kg, is the SI unit of mass. It is defined by taking the fixed numerical value of the Planck constant h to be 6.62607015×10−34 when expressed in the unit J s, which is equal to kg m2 s−1, where the metre and the second are defined in terms of c and ∆νCs."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "kg"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        ns1:MassUnit ;
+    skos:altLabel "Kilogram"@en ;
+    skos:prefLabel "Kilogram"@en ;
+    schema:unitCode "KGM"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/resource/Kilogram"^^xsd:anyURI ;
+    ns1:definition "The kilogram, symbol kg, is the SI unit of mass. It is defined by taking the fixed numerical value of the Planck constant h to be 6.62607015×10−34 when expressed in the unit J s, which is equal to kg m2 s−1, where the metre and the second are defined in terms of c and ∆νCs."@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.K03391"^^xsd:string ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/KiloGM"^^xsd:string ;
+    ns1:ucumCode "kg"^^xsd:string ;
+    ns1:wikipediaReference "http://en.wikipedia.org/wiki/Kilogram?oldid=493633626"^^xsd:anyURI .
+
+ns1:LengthFractionUnit rdfs:label "LengthFractionUnit"@en ;
+    rdfs:comment "Unit for quantities of dimension one that are the fraction of two lengths."@en .
+
+ns1:LengthUnit rdfs:label "LengthUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'Length'."@en .
+
+ns1:Lumen a owl:Class ;
+    rdfs:label "Lumen"@en ;
+    rdfs:comment "SI unit for luminous flux."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "lm"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        ns1:LuminousIntensityUnit ;
+    skos:prefLabel "Lumen"@en ;
+    schema:unitCode "LUM"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/resource/Lumen"^^xsd:anyURI ;
+    ns1:elucidation "SI unit for luminous flux."@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.L03639"^^xsd:string ;
+    ns1:note """The SI unit for measuring the flux of light being produced by a light source or received by a surface. The intensity of a light source is measured in candelas. One lumen represents the total flux of light emitted, equal to the intensity in candelas multiplied by the solid angle in steradians into which the light is emitted. A full sphere has a solid angle of 4·π steradians. A light source that uniformly radiates one candela in all directions has a total luminous flux of 1 cd·4π sr = 4π cd·sr ≈ 12.57 lumens. "Lumen" is a Latin word for light.
+
+-- QUDT"""@en ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/LM"^^xsd:string ;
+    ns1:ucumCode "lm"^^xsd:string ;
+    ns1:wikipediaReference "https://en.wikipedia.org/wiki/Lumen_(unit)"^^xsd:anyURI .
+
+ns1:LuminanceUnit rdfs:label "LuminanceUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'Luminance'."@en .
+
+ns1:Lux a owl:Class ;
+    rdfs:label "Lux"@en ;
+    rdfs:comment "SI unit for illuminance."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "lx"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        ns1:LuminanceUnit ;
+    skos:prefLabel "Lux"@en ;
+    schema:unitCode "LUX"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/resource/Lux"^^xsd:anyURI ;
+    ns1:elucidation "SI unit for illuminance."@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.L03651"^^xsd:string ;
+    ns1:note """The SI unit for measuring the illumination (illuminance) of a surface. One lux is defined as an illumination of one lumen per square meter or 0.0001 phot. In considering the various light units, it's useful to think about light originating at a point and shining upon a surface. The intensity of the light source is measured in candelas; the total light flux in transit is measured in lumens (1 lumen = 1 candelau·steradian); and the amount of light received per unit of surface area is measured in lux (1 lux = 1 lumen/square meter). One lux is equal to approximately 0.09290 foot candle.
+
+-- QUDT"""@en ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/LUX"^^xsd:string ;
+    ns1:ucumCode "lx"^^xsd:string ;
+    ns1:wikipediaReference "http://en.wikipedia.org/wiki/Lux?oldid=494700274"^^xsd:anyURI .
+
+ns1:MagneticFluxDensityUnit rdfs:label "MagneticFluxDensityUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'MagneticFluxDensity'."@en .
+
+ns1:MagneticFluxUnit rdfs:label "MagneticFluxUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'MagneticFlux'."@en .
+
+ns1:MassUnit rdfs:label "MassUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'Mass'."@en .
+
+ns1:MegaPrefixedUnit a owl:Class ;
+    rdfs:label "MegaPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"mega\" (1e6)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:hasMetricPrefix ;
+            owl:someValuesFrom ns1:Mega ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+06 ;
+            owl:onProperty ns1:hasPrefixMultiplier ] ;
+    skos:prefLabel "MegaPrefixedUnit"@en ;
+    ns1:elucidation "Superclass for all units prefixed with \"mega\" (1e6)."@en .
+
+ns1:Metre a owl:Class ;
+    rdfs:label "Metre"@en ;
+    rdfs:comment "The metre, symbol m, is the SI unit of length. It is defined by taking the fixed numerical value of the speed of light in vacuum c to be 299792458 when expressed in the unit m s−1, where the second is defined in terms of ∆νCs."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "m"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        ns1:LengthUnit ;
+    skos:altLabel "Meter"@en-us ;
+    skos:prefLabel "Metre"@en ;
+    schema:unitCode "MTR"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/resource/Metre"^^xsd:anyURI ;
+    ns1:definition "The metre, symbol m, is the SI unit of length. It is defined by taking the fixed numerical value of the speed of light in vacuum c to be 299792458 when expressed in the unit m s−1, where the second is defined in terms of ∆νCs."@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.M03884"^^xsd:string ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/M"^^xsd:string ;
+    ns1:ucumCode "m"^^xsd:string ;
+    ns1:wikipediaReference "http://en.wikipedia.org/wiki/Metre?oldid=495145797"^^xsd:anyURI .
+
+ns1:MetricMultipleUnit a owl:Class ;
+    rdfs:label "MetricMultipleUnit"@en ;
+    rdfs:comment "Measurement unit obtained by multiplying a given measurement unit by an integer SI prefix greater than one."@en ;
+    owl:disjointUnionOf ( ns1:DecaPrefixedUnit ns1:HectoPrefixedUnit ns1:TeraPrefixedUnit ns1:PetaPrefixedUnit ns1:ExaPrefixedUnit ns1:MegaPrefixedUnit ns1:KiloPrefixedUnit ns1:GigaPrefixedUnit ns1:ZettaPrefixedUnit ns1:YottaPrefixedUnit ) ;
+    skos:prefLabel "MetricMultipleUnit"@en ;
+    ns1:elucidation "Measurement unit obtained by multiplying a given measurement unit by an integer SI prefix greater than one."@en .
+
+ns1:MetricPrefix rdfs:label "MetricPrefix"@en ;
+    rdfs:comment "Dimensionless multiplicative unit prefix."@en .
+
+ns1:MetricSubMultipleUnit a owl:Class ;
+    rdfs:label "MetricSubMultipleUnit"@en ;
+    rdfs:comment "Measurement unit obtained by dividing a given measurement unit by an integer SI prefix greater than one."@en ;
+    owl:disjointUnionOf ( ns1:PicoPrefixedUnit ns1:DeciPrefixedUnit ns1:FemtoPrefixedUnit ns1:ZeptoPrefixedUnit ns1:AttoPrefixedUnit ns1:MicroPrefixedUnit ns1:MilliPrefixedUnit ns1:CentiPrefixedUnit ns1:NanoPrefixedUnit ns1:YoctoPrefixedUnit ) ;
+    skos:prefLabel "MetricSubMultipleUnit"@en ;
+    ns1:elucidation "Measurement unit obtained by dividing a given measurement unit by an integer SI prefix greater than one."@en .
+
+ns1:MicroPrefixedUnit a owl:Class ;
+    rdfs:label "MicroPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"micro\" (1e-6)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:hasMetricPrefix ;
+            owl:someValuesFrom ns1:Micro ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-06 ;
+            owl:onProperty ns1:hasPrefixMultiplier ] ;
+    skos:prefLabel "MicroPrefixedUnit"@en ;
+    ns1:elucidation "Superclass for all units prefixed with \"micro\" (1e-6)."@en .
+
+ns1:MilliPrefixedUnit a owl:Class ;
+    rdfs:label "MilliPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"milli\" (1e-3)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-03 ;
+            owl:onProperty ns1:hasPrefixMultiplier ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:hasMetricPrefix ;
+            owl:someValuesFrom ns1:Milli ] ;
+    skos:prefLabel "MilliPrefixedUnit"@en ;
+    ns1:elucidation "Superclass for all units prefixed with \"milli\" (1e-3)."@en .
+
+ns1:Mole a owl:Class ;
+    rdfs:label "Mole"@en ;
+    rdfs:comment "The mole, symbol mol, is the SI unit of amount of substance. One mole contains exactly 6.022 140 76 × 1023 elementary entities. This number is the fixed numerical value of the Avogadro constant, NA, when expressed in the unit mol−1 and is called the Avogadro number. The amount of substance, symbol n, of a system is a measure of the number of specified elementary entities. An elementary entity may be an atom, a molecule, an ion, an electron, any other particle or specified group of particles."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "mol"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        ns1:AmountUnit ;
+    skos:prefLabel "Mole"@en ;
+    schema:unitCode "C34"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/resource/Mole_%28unit%29"^^xsd:anyURI ;
+    ns1:definition "The mole, symbol mol, is the SI unit of amount of substance. One mole contains exactly 6.022 140 76 × 1023 elementary entities. This number is the fixed numerical value of the Avogadro constant, NA, when expressed in the unit mol−1 and is called the Avogadro number. The amount of substance, symbol n, of a system is a measure of the number of specified elementary entities. An elementary entity may be an atom, a molecule, an ion, an electron, any other particle or specified group of particles."@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.M03980"^^xsd:string ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/MOL"^^xsd:string ;
+    ns1:ucumCode "mol"^^xsd:string ;
+    ns1:wikipediaReference "http://en.wikipedia.org/wiki/Mole_(unit)"^^xsd:anyURI .
+
+ns1:NanoPrefixedUnit a owl:Class ;
+    rdfs:label "NanoPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"nano\" (1e-9)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-09 ;
+            owl:onProperty ns1:hasPrefixMultiplier ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:hasMetricPrefix ;
+            owl:someValuesFrom ns1:Nano ] ;
+    skos:prefLabel "NanoPrefixedUnit"@en ;
+    ns1:elucidation "Superclass for all units prefixed with \"nano\" (1e-9)."@en .
+
+ns1:Newton a owl:Class ;
+    rdfs:label "Newton"@en ;
+    rdfs:comment "SI unit for force."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "N"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        ns1:ForceUnit ;
+    skos:prefLabel "Newton"@en ;
+    schema:unitCode "NEW"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/resource/Newton"^^xsd:anyURI ;
+    ns1:elucidation "SI unit for force."@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.N04135"^^xsd:string ;
+    ns1:note """The "Newton" is the SI unit of force. A force of one newton will accelerate a mass of one kilogram at the rate of one meter per second per second. The newton is named for Isaac Newton (1642-1727), the British mathematician, physicist, and natural philosopher. He was the first person to understand clearly the relationship between force (F), mass (m), and acceleration (a) expressed by the formula F = m·a.
+
+-- QUDT"""@en ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/N"^^xsd:string ;
+    ns1:ucumCode "N"^^xsd:string ;
+    ns1:wikipediaReference "http://en.wikipedia.org/wiki/Newton?oldid=488427661"^^xsd:anyURI .
+
+ns1:NonSIUnit a owl:Class ;
+    rdfs:label "NonSIUnit"@en ;
+    rdfs:comment "Measurement units that are not SI units."@en ;
+    skos:prefLabel "NonSIUnit"@en ;
+    ns1:elucidation "Measurement units that are not SI units."@en .
+
+ns1:Ohm a owl:Class ;
+    rdfs:label "Ohm"@en ;
+    rdfs:comment "The SI derived unit of electrical resistance, named after German physicist Georg Simon Ohm."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Ω"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        ns1:ElectricResistanceUnit ;
+    skos:prefLabel "Ohm"@en ;
+    schema:unitCode "OHM"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/resource/Ohm"^^xsd:string ;
+    ns1:elucidation "The SI derived unit of electrical resistance, named after German physicist Georg Simon Ohm."@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.O04280"^^xsd:string ;
+    ns1:note "Ω = V/A = H/s"@en ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/OHM"^^xsd:string ;
+    ns1:ucumCode "Ohm"^^xsd:string ;
+    ns1:wikipediaReference "http://en.wikipedia.org/wiki/Ohm?oldid=494685555"^^xsd:anyURI .
+
+ns1:Pascal a owl:Class ;
+    rdfs:label "Pascal"@en ;
+    rdfs:comment "SI unit for pressure."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Pa"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        ns1:PressureUnit ;
+    skos:prefLabel "Pascal"@en ;
+    schema:unitCode "PAL"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/resource/Pascal"^^xsd:string ;
+    ns1:elucidation "SI unit for pressure."@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.P04442"^^xsd:string ;
+    ns1:note """The SI unit of pressure. The pascal is the standard pressure unit in the MKS metric system, equal to one newton per square meter or one "kilogram per meter per second per second." The unit is named for Blaise Pascal (1623-1662), French philosopher and mathematician, who was the first person to use a barometer to measure differences in altitude.
+
+-- QUDT"""@en ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/PA"^^xsd:string ;
+    ns1:ucumCode "Pa"^^xsd:string ;
+    ns1:wikipediaReference "http://en.wikipedia.org/wiki/Pascal?oldid=492989202"^^xsd:anyURI .
+
+ns1:PetaPrefixedUnit a owl:Class ;
+    rdfs:label "PetaPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"peta\" (1e15)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+15 ;
+            owl:onProperty ns1:hasPrefixMultiplier ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:hasMetricPrefix ;
+            owl:someValuesFrom ns1:Peta ] ;
+    skos:prefLabel "PetaPrefixedUnit"@en ;
+    ns1:elucidation "Superclass for all units prefixed with \"peta\" (1e15)."@en .
+
+ns1:PicoPrefixedUnit a owl:Class ;
+    rdfs:label "PicoPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"pico\" (1e-12)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:hasMetricPrefix ;
+            owl:someValuesFrom ns1:Pico ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-12 ;
+            owl:onProperty ns1:hasPrefixMultiplier ] ;
+    skos:prefLabel "PicoPrefixedUnit"@en ;
+    ns1:elucidation "Superclass for all units prefixed with \"pico\" (1e-12)."@en .
+
+ns1:PowerUnit rdfs:label "PowerUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'Power'."@en .
+
+ns1:PressureUnit rdfs:label "PressureUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'Pressure'."@en .
+
+ns1:Quecto a owl:Class ;
+    rdfs:label "Quecto"@en ;
+    rdfs:comment "SI prefix who's value is 1e-30."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "q"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-30 ;
+            owl:onProperty ns1:hasNumberValue ] ;
+    skos:prefLabel "Quecto"@en ;
+    ns1:elucidation "SI prefix who's value is 1e-30."@en .
+
+ns1:Quetta a owl:Class ;
+    rdfs:label "Quetta"@en ;
+    rdfs:comment "SI prefix who's value is 1e30."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+30 ;
+            owl:onProperty ns1:hasNumberValue ],
+        [ a owl:Restriction ;
+            owl:hasValue "Q"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ] ;
+    skos:prefLabel "Quetta"@en ;
+    ns1:elucidation "SI prefix who's value is 1e30."@en .
+
+ns1:Radian a owl:Class ;
+    rdfs:label "Radian"@en ;
+    rdfs:comment "Dimensionless measurement unit for plane angle."@en,
+        "Measure of plane angle."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "rad"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        ns1:LengthFractionUnit ;
+    skos:prefLabel "Radian"@en ;
+    schema:unitCode "C81"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/resource/Radian"^^xsd:anyURI ;
+    ns1:elucidation "Measure of plane angle."@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.R05036"^^xsd:string ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/RAD"^^xsd:string ;
+    ns1:ucumCode "rad"^^xsd:string ;
+    ns1:wikipediaReference "http://en.wikipedia.org/wiki/Radian?oldid=492309312"^^xsd:anyURI .
+
+ns1:Ronna a owl:Class ;
+    rdfs:label "Ronna"@en ;
+    rdfs:comment "SI prefix who's value is 1e27."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "R"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+27 ;
+            owl:onProperty ns1:hasNumberValue ] ;
+    skos:prefLabel "Ronna"@en ;
+    ns1:elucidation "SI prefix who's value is 1e27."@en .
+
+ns1:Ronto a owl:Class ;
+    rdfs:label "Ronto"@en ;
+    rdfs:comment "SI prefix who's value is 1e-27."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "r"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-27 ;
+            owl:onProperty ns1:hasNumberValue ] ;
+    skos:prefLabel "Ronto"@en ;
+    ns1:elucidation "SI prefix who's value is 1e-27."@en .
+
+ns1:SIMultiplePrefix a owl:Class ;
+    rdfs:label "SIMultiplePrefix"@en ;
+    rdfs:comment "SI prefix who's value is a positive integer larger than 1."@en ;
+    owl:disjointUnionOf ( ns1:Giga ns1:Tera ns1:Exa ns1:Hecto ns1:Kilo ns1:Mega ns1:Ronna ns1:Yotta ns1:Peta ns1:Quetta ns1:Deca ns1:Zetta ) ;
+    skos:prefLabel "SIMultiplePrefix"@en ;
+    ns1:elucidation "SI prefix who's value is a positive integer larger than 1."@en .
+
+ns1:SISubMultiplePrefix a owl:Class ;
+    rdfs:label "SISubMultiplePrefix"@en ;
+    rdfs:comment "SI prefix who's value is 1/N where N is a positive integer larger than 1."@en ;
+    owl:disjointUnionOf ( ns1:Centi ns1:Pico ns1:Milli ns1:Zepto ns1:Quecto ns1:Micro ns1:Yocto ns1:Femto ns1:Deci ns1:Nano ns1:Atto ns1:Ronto ) ;
+    skos:prefLabel "SISubMultiplePrefix"@en ;
+    ns1:elucidation "SI prefix who's value is 1/N where N is a positive integer larger than 1."@en .
+
+ns1:Second a owl:Class ;
+    rdfs:label "Second"@en ;
+    rdfs:comment "The second, symbol s, is the SI unit of time. It is defined by taking the fixed numerical value of the caesium frequency ∆νCs, the unperturbed ground-state hyperfine transition frequency of the caesium 133 atom, to be 9192631770 when expressed in the unit Hz, which is equal to s−1."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "s"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        ns1:TimeUnit ;
+    skos:prefLabel "Second"@en ;
+    schema:unitCode "SEC"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/resource/Second"^^xsd:anyURI ;
+    ns1:definition "The second, symbol s, is the SI unit of time. It is defined by taking the fixed numerical value of the caesium frequency ∆νCs, the unperturbed ground-state hyperfine transition frequency of the caesium 133 atom, to be 9192631770 when expressed in the unit Hz, which is equal to s−1."@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.S05513"^^xsd:string ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/SEC"^^xsd:string ;
+    ns1:ucumCode "s"^^xsd:string ;
+    ns1:wikipediaReference "http://en.wikipedia.org/wiki/Second?oldid=495241006"^^xsd:anyURI .
+
+ns1:Siemens a owl:Class ;
+    rdfs:label "Siemens"@en ;
+    rdfs:comment "SI unit for electrical conductance."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "S"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        ns1:ElectricConductanceUnit ;
+    skos:prefLabel "Siemens"@en ;
+    schema:unitCode "SIE"^^xsd:string ;
+    ns1:elucidation "SI unit for electrical conductance."@en ;
+    ns1:note "S = A/V = F/s"^^xsd:string,
+        """Siemens  is the SI unit of electric conductance, susceptance, and admittance. The most important property of a conductor is the amount of current it will carry when a voltage is applied. Current flow is opposed by resistance in all circuits, and by also by reactance and impedance in alternating current circuits. Conductance, susceptance, and admittance are the inverses of resistance, reactance, and impedance, respectively. To measure these properties, the siemens is the reciprocal of the ohm. In other words, the conductance, susceptance, or admittance, in siemens, is simply 1 divided by the resistance, reactance or impedance, respectively, in ohms. The unit is named for the German electrical engineer Werner von Siemens (1816-1892).
+
+-- QUDT"""@en ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/S"^^xsd:anyURI ;
+    ns1:ucumCode "S"^^xsd:string ;
+    ns1:wikipediaReference "https://en.wikipedia.org/wiki/Siemens_(unit)"^^xsd:anyURI .
+
+ns1:Sievert a owl:Class ;
+    rdfs:label "Sievert"@en ;
+    rdfs:comment "SI unit for equivalent doseof ionizing radiation. Sievert is derived from absorbed dose, but takes into account the biological effectiveness of the radiation, which is dependent on the radiation type and energy."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Sv"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        ns1:AbsorbedDoseUnit ;
+    skos:prefLabel "Sievert"@en ;
+    schema:unitCode "D13"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/resource/Sievert"^^xsd:anyURI ;
+    ns1:elucidation "SI unit for equivalent doseof ionizing radiation. Sievert is derived from absorbed dose, but takes into account the biological effectiveness of the radiation, which is dependent on the radiation type and energy."@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.S05658"^^xsd:string ;
+    ns1:note """Although the sievert has the same dimensions as the gray (i.e. joules per kilogram), it measures a different quantity. To avoid any risk of confusion between the absorbed dose and the equivalent dose, the corresponding special units, namely the gray instead of the joule per kilogram for absorbed dose and the sievert instead of the joule per kilogram for the dose equivalent, should be used.
+
+-- QUDT"""@en ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/SV"^^xsd:string ;
+    ns1:ucumCode "Sv"^^xsd:string ;
+    ns1:wikipediaReference "http://en.wikipedia.org/wiki/Sievert?oldid=495474333"^^xsd:anyURI,
+        "https://en.wikipedia.org/wiki/Equivalent_dose"^^xsd:string .
+
+ns1:SpecialUnit rdfs:label "SpecialUnit"@en ;
+    rdfs:comment "A unit symbol that stands for a derived unit."@en .
+
+ns1:Steradian a owl:Class ;
+    rdfs:label "Steradian"@en ;
+    rdfs:comment "Dimensionless measurement unit for solid angle."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "sr"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        ns1:AreaFractionUnit ;
+    skos:prefLabel "Steradian"@en ;
+    schema:unitCode "D27"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/resource/Steradian"^^xsd:string ;
+    ns1:elucidation "Dimensionless measurement unit for solid angle."@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.S05971"^^xsd:string ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/SR"^^xsd:string ;
+    ns1:ucumCode "sr"^^xsd:string ;
+    ns1:wikipediaReference "http://en.wikipedia.org/wiki/Steradian?oldid=494317847"^^xsd:anyURI .
+
+ns1:SystemUnit rdfs:label "SystemUnit"@en ;
+    rdfs:comment "A unit that belongs to one or more unit systems."@en .
+
+ns1:TeraPrefixedUnit a owl:Class ;
+    rdfs:label "TeraPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"tera\" (1e12)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:hasMetricPrefix ;
+            owl:someValuesFrom ns1:Tera ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+12 ;
+            owl:onProperty ns1:hasPrefixMultiplier ] ;
+    skos:prefLabel "TeraPrefixedUnit"@en ;
+    ns1:elucidation "Superclass for all units prefixed with \"tera\" (1e12)."@en .
+
+ns1:Tesla a owl:Class ;
+    rdfs:label "Tesla"@en ;
+    rdfs:comment "SI unit for magnetic flux density or induction."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "T"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        ns1:MagneticFluxDensityUnit ;
+    skos:prefLabel "Tesla"@en ;
+    schema:unitCode "D33"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/resource/Tesla"^^xsd:anyURI ;
+    ns1:elucidation "SI unit for magnetic flux density or induction."@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.T06283"^^xsd:string ;
+    ns1:note "T = V·s·m⁻² = N/(A·m) = Wb/m²"^^xsd:string,
+        """The SI unit of flux density (or field intensity) for magnetic fields (also called the magnetic induction). The intensity of a magnetic field can be measured by placing a current-carrying conductor in the field. The magnetic field exerts a force on the conductor, a force which depends on the amount of the current and on the length of the conductor. One tesla is defined as the field intensity generating one newton of force per ampere of current per meter of conductor. Equivalently, one tesla represents a magnetic flux density of one weber per square meter of area. A field of one tesla is quite strong: the strongest fields available in laboratories are about 20 teslas, and the Earth's magnetic flux density, at its surface, is about 50 microteslas. The tesla, defined in 1958, honors the Serbian-American electrical engineer Nikola Tesla (1856-1943), whose work in electromagnetic induction led to the first practical generators and motors using alternating current.
+
+-- QUDT"""@en ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/T"^^xsd:string ;
+    ns1:ucumCode "T"^^xsd:string ;
+    ns1:wikipediaReference "http://en.wikipedia.org/wiki/Tesla_(unit)"^^xsd:anyURI .
+
+ns1:TimeUnit rdfs:label "TimeUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'Time'."@en .
+
+ns1:UnitSymbol rdfs:label "UnitSymbol"@en ;
+    rdfs:comment "A symbol that stands for a single unit."@en .
+
+ns1:Volt a owl:Class ;
+    rdfs:label "Volt"@en ;
+    rdfs:comment "SI unit for electric potential difference."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "V"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        ns1:ElectricPotentialUnit ;
+    skos:prefLabel "Volt"@en ;
+    schema:unitCode "VLT"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/resource/Volt"^^xsd:anyURI ;
+    ns1:elucidation "SI unit for electric potential difference."@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.V06634"^^xsd:string ;
+    ns1:note "The volt is the unit of electric potential difference—electric potential difference is also known as voltage. The size of 1 volt is officially defined as the potential difference between two points of a wire carrying a current of 1 ampere when the power dissipated in the wire is 1 watt."@en ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/V"^^xsd:string ;
+    ns1:ucumCode "V"^^xsd:string ;
+    ns1:wikipediaReference "http://en.wikipedia.org/wiki/Volt?oldid=494812083"^^xsd:anyURI .
+
+ns1:Watt a owl:Class ;
+    rdfs:label "Watt"@en ;
+    rdfs:comment "SI unit for power."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "W"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        ns1:PowerUnit ;
+    skos:prefLabel "Watt"@en ;
+    schema:unitCode "WTT"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/resource/Watt"^^xsd:string ;
+    ns1:elucidation "SI unit for power."@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.W06656"^^xsd:string ;
+    ns1:note """The SI unit of power. Power is the rate at which work is done, or (equivalently) the rate at which energy is expended. One watt is equal to a power rate of one joule of work per second of time. This unit is used both in mechanics and in electricity, so it links the mechanical and electrical units to one another. In mechanical terms, one watt equals about 0.001 341 02 horsepower (hp) or 0.737 562 foot-pound per second (lbf/s). In electrical terms, one watt is the power produced by a current of one ampere flowing through an electric potential of one volt. The name of the unit honors James Watt (1736-1819), the British engineer whose improvements to the steam engine are often credited with igniting the Industrial Revolution.
+
+-- QUDT"""@en ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/W"^^xsd:string ;
+    ns1:ucumCode "W"^^xsd:string ;
+    ns1:wikipediaReference "http://en.wikipedia.org/wiki/Watt?oldid=494906356"^^xsd:anyURI .
+
+ns1:Weber a owl:Class ;
+    rdfs:label "Weber"@en ;
+    rdfs:comment "SI unit for magnetic flux."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Wb"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        ns1:MagneticFluxUnit ;
+    skos:prefLabel "Weber"@en ;
+    schema:unitCode "WEB"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/resource/Weber"^^xsd:anyURI ;
+    ns1:elucidation "SI unit for magnetic flux."@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.W06666"^^xsd:string ;
+    ns1:note "The SI unit of magnetic flux. \"Flux\" is the rate (per unit of time) at which something crosses a surface perpendicular to the flow. The weber is a large unit, equal to 10⁸ maxwells, and practical fluxes are usually fractions of one weber. The weber is the magnetic flux which, linking a circuit of one turn, would produce in it an electromotive force of 1 volt if it were reduced to zero at a uniform rate in 1 second. In SI base units, the dimensions of the weber are (kg·m²)/(s²·A). The weber is commonly expressed in terms of other derived units as the Tesla-square meter (T·m²), volt-seconds (V·s), or joules per ampere (J/A)."@en ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/WB"^^xsd:string ;
+    ns1:ucumCode "Wb"^^xsd:string ;
+    ns1:wikipediaReference "https://en.wikipedia.org/wiki/Weber_(unit)"^^xsd:anyURI .
+
+ns1:YoctoPrefixedUnit a owl:Class ;
+    rdfs:label "YoctoPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"yocto\" (1e-24)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:hasMetricPrefix ;
+            owl:someValuesFrom ns1:Yocto ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-24 ;
+            owl:onProperty ns1:hasPrefixMultiplier ] ;
+    skos:prefLabel "YoctoPrefixedUnit"@en ;
+    ns1:elucidation "Superclass for all units prefixed with \"yocto\" (1e-24)."@en .
+
+ns1:YottaPrefixedUnit a owl:Class ;
+    rdfs:label "YottaPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"yotta\" (1e24)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+24 ;
+            owl:onProperty ns1:hasPrefixMultiplier ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:hasMetricPrefix ;
+            owl:someValuesFrom ns1:Yotta ] ;
+    skos:prefLabel "YottaPrefixedUnit"@en ;
+    ns1:elucidation "Superclass for all units prefixed with \"yotta\" (1e24)."@en .
+
+ns1:ZeptoPrefixedUnit a owl:Class ;
+    rdfs:label "ZeptoPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"zepto\" (1e-21)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:hasMetricPrefix ;
+            owl:someValuesFrom ns1:Zepto ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-21 ;
+            owl:onProperty ns1:hasPrefixMultiplier ] ;
+    skos:prefLabel "ZeptoPrefixedUnit"@en ;
+    ns1:elucidation "Superclass for all units prefixed with \"zepto\" (1e-21)."@en .
+
+ns1:ZettaPrefixedUnit a owl:Class ;
+    rdfs:label "ZettaPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"zetta\" (1e21)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+21 ;
+            owl:onProperty ns1:hasPrefixMultiplier ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:hasMetricPrefix ;
+            owl:someValuesFrom ns1:Zetta ] ;
+    skos:prefLabel "ZettaPrefixedUnit"@en ;
+    ns1:elucidation "Superclass for all units prefixed with \"zetta\" (1e21)."@en .
+
+ns1:hasSIConversionMultiplier a owl:DatatypeProperty ;
+    rdfs:label "hasSIConversionMultiplier"@en ;
+    ns2:python_name "hasSIConversionMultiplier"@en ;
+    rdfs:comment "Number to multiply a SI coherent unit with when converting to a given non-SI coherent unit."@en ;
+    rdfs:domain ns1:MeasurementUnit ;
+    rdfs:range xsd:double ;
+    skos:prefLabel "hasSIConversionMultiplier"@en ;
+    ns1:elucidation "Number to multiply a SI coherent unit with when converting to a given non-SI coherent unit."@en ;
+    ns1:note """Conversion formula:
+
+    nonsi_coherent_unit = si_coherent_unit * multiplier + offset"""@en .
+
+ns1:hasSIConversionOffset a owl:DatatypeProperty ;
+    rdfs:label "hasSIConversionOffset"@en ;
+    ns2:python_name "hasSIConversionOffset"@en ;
+    rdfs:comment "Number to add to a SI coherent unit when converting to a given non-SI coherent unit."@en ;
+    rdfs:domain ns1:MeasurementUnit ;
+    rdfs:range xsd:double ;
+    skos:prefLabel "hasSIConversionOffset"@en ;
+    ns1:elucidation "Number to add to a SI coherent unit when converting to a given non-SI coherent unit."@en ;
+    ns1:note """Conversion formula:
+
+    nonsi_coherent_unit = si_coherent_unit * multiplier + offset"""@en .
+
+ns1:AbsorbedDoseUnit rdfs:label "AbsorbedDoseUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'AbsorbedDose'."@en .
+
+ns1:Atto a owl:Class ;
+    rdfs:label "Atto"@en ;
+    rdfs:comment "SI prefix who's value is 1e-18."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-18 ;
+            owl:onProperty ns1:hasNumberValue ],
+        [ a owl:Restriction ;
+            owl:hasValue "a"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ] ;
+    skos:prefLabel "Atto"@en ;
+    ns1:elucidation "SI prefix who's value is 1e-18."@en .
+
+ns1:Centi a owl:Class ;
+    rdfs:label "Centi"@en ;
+    rdfs:comment "SI prefix who's value is 1/100."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-02 ;
+            owl:onProperty ns1:hasNumberValue ],
+        [ a owl:Restriction ;
+            owl:hasValue "c"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ] ;
+    skos:prefLabel "Centi"@en ;
+    ns1:elucidation "SI prefix who's value is 1/100."@en .
+
+ns1:Deca a owl:Class ;
+    rdfs:label "Deca"@en ;
+    rdfs:comment "SI prefix who's value is 10."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "da"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+01 ;
+            owl:onProperty ns1:hasNumberValue ] ;
+    skos:altLabel "Deka"@en ;
+    skos:prefLabel "Deca"@en ;
+    ns1:elucidation "SI prefix who's value is 10."@en .
+
+ns1:Deci a owl:Class ;
+    rdfs:label "Deci"@en ;
+    rdfs:comment "SI prefix who's value is 1/10."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-01 ;
+            owl:onProperty ns1:hasNumberValue ],
+        [ a owl:Restriction ;
+            owl:hasValue "d"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ] ;
+    skos:prefLabel "Deci"@en ;
+    ns1:elucidation "SI prefix who's value is 1/10."@en .
+
+ns1:Exa a owl:Class ;
+    rdfs:label "Exa"@en ;
+    rdfs:comment "SI prefix who's value is 1e18."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "E"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+18 ;
+            owl:onProperty ns1:hasNumberValue ] ;
+    skos:prefLabel "Exa"@en ;
+    ns1:elucidation "SI prefix who's value is 1e18."@en .
+
+ns1:Femto a owl:Class ;
+    rdfs:label "Femto"@en ;
+    rdfs:comment "SI prefix who's value is 1e-15."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-15 ;
+            owl:onProperty ns1:hasNumberValue ],
+        [ a owl:Restriction ;
+            owl:hasValue "f"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ] ;
+    skos:prefLabel "Femto"@en ;
+    ns1:elucidation "SI prefix who's value is 1e-15."@en .
+
+ns1:FrequencyUnit rdfs:label "FrequencyUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'Frequency'."@en .
+
+ns1:Giga a owl:Class ;
+    rdfs:label "Giga"@en ;
+    rdfs:comment "SI prefix who's value is 1e9."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "G"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+09 ;
+            owl:onProperty ns1:hasNumberValue ] ;
+    skos:prefLabel "Giga"@en ;
+    ns1:elucidation "SI prefix who's value is 1e9."@en .
+
+ns1:Hecto a owl:Class ;
+    rdfs:label "Hecto"@en ;
+    rdfs:comment "SI prefix who's value is 100."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+02 ;
+            owl:onProperty ns1:hasNumberValue ],
+        [ a owl:Restriction ;
+            owl:hasValue "h"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ] ;
+    skos:prefLabel "Hecto"@en ;
+    ns1:elucidation "SI prefix who's value is 100."@en .
+
+ns1:Kilo a owl:Class ;
+    rdfs:label "Kilo"@en ;
+    rdfs:comment "SI prefix who's value is 1000."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "k"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+03 ;
+            owl:onProperty ns1:hasNumberValue ] ;
+    skos:prefLabel "Kilo"@en ;
+    ns1:elucidation "SI prefix who's value is 1000."@en .
+
+ns1:LuminousIntensityUnit rdfs:label "LuminousIntensityUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'LuminousIntensity'."@en .
+
+ns1:Mega a owl:Class ;
+    rdfs:label "Mega"@en ;
+    rdfs:comment "SI prefix who's value is 1e6."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "M"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+06 ;
+            owl:onProperty ns1:hasNumberValue ] ;
+    skos:prefLabel "Mega"@en ;
+    ns1:elucidation "SI prefix who's value is 1e6."@en .
+
+ns1:MetricPrefixedUnit a owl:Class ;
+    rdfs:label "MetricPrefixedUnit"@en ;
+    rdfs:comment "A special unit with a metric prefix."@en,
+        "The presence of the prefix makes this units non-coherent with SI system."@en ;
+    rdfs:subClassOf ns1:PrefixedUnit ;
+    owl:disjointUnionOf ( ns1:MetricMultipleUnit ns1:MetricSubMultipleUnit ) ;
+    skos:prefLabel "MetricPrefixedUnit"@en ;
+    ns1:elucidation "A special unit with a metric prefix."@en .
+
+ns1:Micro a owl:Class ;
+    rdfs:label "Micro"@en ;
+    rdfs:comment "SI prefix who's value is 1e-6."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-06 ;
+            owl:onProperty ns1:hasNumberValue ],
+        [ a owl:Restriction ;
+            owl:hasValue "μ"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ] ;
+    skos:prefLabel "Micro"@en ;
+    ns1:elucidation "SI prefix who's value is 1e-6."@en .
+
+ns1:Milli a owl:Class ;
+    rdfs:label "Milli"@en ;
+    rdfs:comment "SI prefix who's value is 1/1000."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "m"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-03 ;
+            owl:onProperty ns1:hasNumberValue ] ;
+    skos:prefLabel "Milli"@en ;
+    ns1:elucidation "SI prefix who's value is 1/1000."@en .
+
+ns1:Nano a owl:Class ;
+    rdfs:label "Nano"@en ;
+    rdfs:comment "SI prefix who's value is 1e-9."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "n"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-09 ;
+            owl:onProperty ns1:hasNumberValue ] ;
+    skos:prefLabel "Nano"@en ;
+    ns1:elucidation "SI prefix who's value is 1e-9."@en .
+
+ns1:Peta a owl:Class ;
+    rdfs:label "Peta"@en ;
+    rdfs:comment "SI prefix who's value is 1e15."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+15 ;
+            owl:onProperty ns1:hasNumberValue ],
+        [ a owl:Restriction ;
+            owl:hasValue "P"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ] ;
+    skos:prefLabel "Peta"@en ;
+    ns1:elucidation "SI prefix who's value is 1e15."@en .
+
+ns1:Pico a owl:Class ;
+    rdfs:label "Pico"@en ;
+    rdfs:comment "SI prefix who's value is 1e-12."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "p"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-12 ;
+            owl:onProperty ns1:hasNumberValue ] ;
+    skos:prefLabel "Pico"@en ;
+    ns1:elucidation "SI prefix who's value is 1e-12."@en .
+
+ns1:PrefixedUnit rdfs:label "PrefixedUnit"@en ;
+    rdfs:comment "A measurement unit that is made of a metric prefix and a unit symbol."@en .
+
+ns1:SIMetricPrefixedUnit a owl:Class ;
+    rdfs:label "SIMetricPrefixedUnit"@en ;
+    rdfs:comment "A SI base unit or SI derived unit with a metric prefix."@en ;
+    rdfs:subClassOf ns1:MetricPrefixedUnit ;
+    skos:prefLabel "SIMetricPrefixedUnit"@en ;
+    ns1:elucidation "A SI base unit or SI derived unit with a metric prefix."@en .
+
+ns1:TemperatureUnit rdfs:label "TemperatureUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'Temperature'."@en .
+
+ns1:Tera a owl:Class ;
+    rdfs:label "Tera"@en ;
+    rdfs:comment "SI prefix who's value is 1e12."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "T"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+12 ;
+            owl:onProperty ns1:hasNumberValue ] ;
+    skos:prefLabel "Tera"@en ;
+    ns1:elucidation "SI prefix who's value is 1e12."@en .
+
+ns1:Yocto a owl:Class ;
+    rdfs:label "Yocto"@en ;
+    rdfs:comment "SI prefix who's value is 1e-24."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "y"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-24 ;
+            owl:onProperty ns1:hasNumberValue ] ;
+    skos:prefLabel "Yocto"@en ;
+    ns1:elucidation "SI prefix who's value is 1e-24."@en .
+
+ns1:Yotta a owl:Class ;
+    rdfs:label "Yotta"@en ;
+    rdfs:comment "SI prefix who's value is 1e24."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Y"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+24 ;
+            owl:onProperty ns1:hasNumberValue ] ;
+    skos:prefLabel "Yotta"@en ;
+    ns1:elucidation "SI prefix who's value is 1e24."@en .
+
+ns1:Zepto a owl:Class ;
+    rdfs:label "Zepto"@en ;
+    rdfs:comment "SI prefix who's value is 1e-21."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "z"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-21 ;
+            owl:onProperty ns1:hasNumberValue ] ;
+    skos:prefLabel "Zepto"@en ;
+    ns1:elucidation "SI prefix who's value is 1e-21."@en .
+
+ns1:Zetta a owl:Class ;
+    rdfs:label "Zetta"@en ;
+    rdfs:comment "SI prefix who's value is 1e21."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Z"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-21 ;
+            owl:onProperty ns1:hasNumberValue ] ;
+    skos:prefLabel "Zetta"@en ;
+    ns1:elucidation "SI prefix who's value is 1e21."@en .
+
+ns1:DerivedUnit rdfs:label "DerivedUnit"@en ;
+    rdfs:comment "Derived units are defined as products of powers of the base units corresponding to the relations defining the derived quantities in terms of the base quantities."@en .
+
+ns1:MeasurementUnit rdfs:label "MeasurementUnit"@en ;
+    rdfs:comment "A metrological reference for a physical quantity."@en ;
+    owl:disjointUnionOf ( ns1:NonSIUnit ns1:SIUnit ) .
+
+ns1:SIBaseUnit a owl:Class ;
+    rdfs:label "SIBaseUnit"@en ;
+    rdfs:comment "The base units in the SI system."@en ;
+    rdfs:seeAlso "https://www.bipm.org/utils/common/pdf/si-brochure/SI-Brochure-9-EN.pdf"^^xsd:string ;
+    rdfs:subClassOf ns1:BaseUnit ;
+    owl:disjointUnionOf ( ns1:Ampere ns1:Candela ns1:Kelvin ns1:Kilogram ns1:Metre ns1:Mole ns1:Second ) ;
+    skos:prefLabel "SIBaseUnit"@en ;
+    ns1:elucidation "The base units in the SI system."@en .
+
+ns1:SICoherentDerivedUnit a owl:Class ;
+    rdfs:label "SICoherentDerivedUnit"@en ;
+    rdfs:comment "A SI derived unit whos numerical factor in front of the product of SI base units is one."@en,
+        "This class collects all units that are products or powers of SI base or SI special units only."@en ;
+    rdfs:subClassOf ns1:DerivedUnit ;
+    skos:example """m/s
+kg/m^3"""^^xsd:string ;
+    skos:prefLabel "SICoherentDerivedUnit"@en ;
+    ns1:elucidation "A SI derived unit whos numerical factor in front of the product of SI base units is one."@en .
+
+ns1:SINonCoherentDerivedUnit a owl:Class ;
+    rdfs:label "SINonCoherentDerivedUnit"@en ;
+    rdfs:comment "A derived unit whos numerical factor in front of the product of base units is NOT equal to one."@en ;
+    rdfs:subClassOf ns1:DerivedUnit,
+        ns1:SIUnit ;
+    skos:example "cm/s"^^xsd:string ;
+    skos:prefLabel "SINonCoherentDerivedUnit"@en ;
+    ns1:elucidation "A derived unit whos numerical factor in front of the product of base units is NOT equal to one."@en .
+
+ns1:SISpecialUnit a owl:Class ;
+    rdfs:label "SISpecialUnit"@en ;
+    rdfs:comment "The 22 derived units that are given a special name in the SI system that stands for units derived by SI base units."@en ;
+    rdfs:subClassOf ns1:SpecialUnit ;
+    owl:disjointUnionOf ( ns1:Becquerel ns1:Coulomb ns1:DegreeCelsius ns1:Farad ns1:Gray ns1:Henry ns1:Hertz ns1:Joule ns1:Katal ns1:Lumen ns1:Lux ns1:Newton ns1:Ohm ns1:Pascal ns1:Radian ns1:Siemens ns1:Sievert ns1:Steradian ns1:Tesla ns1:Volt ns1:Watt ns1:Weber ) ;
+    skos:prefLabel "SISpecialUnit"@en ;
+    ns1:elucidation "The 22 derived units that are given a special name in the SI system that stands for units derived by SI base units."@en ;
+    ns1:note "These units are SI coherent by definition."@en ;
+    ns1:wikipediaReference "https://en.wikipedia.org/wiki/International_System_of_Units#Derived_units"^^xsd:string .
+
+ns1:SIUnit a owl:Class ;
+    rdfs:label "SIUnit"@en ;
+    rdfs:comment "The complete set of SI units includes both the coherent set and the multiples and sub-multiples formed by using the SI prefixes."@en,
+        """The names, symbols and prefixes of SI units are defined by the General Conference on Weights and Measures (CGPM).
+
+https://en.wikipedia.org/wiki/General_Conference_on_Weights_and_Measures"""@en,
+        "The set of units provided by the SI referring to the ISQ."@en ;
+    rdfs:subClassOf ns1:SystemUnit ;
+    owl:disjointUnionOf ( ns1:SICoherentDerivedUnit ns1:SIMetricPrefixedUnit ns1:SIBaseUnit ns1:SINonCoherentDerivedUnit ns1:SISpecialUnit ) ;
+    skos:prefLabel "SIUnit"@en ;
+    ns1:elucidation "The set of units provided by the SI referring to the ISQ."@en .
+
+ns1:hasPrefixMultiplier a owl:DatatypeProperty ;
+    rdfs:label "hasPrefixMultiplier"@en ;
+    ns2:python_name "hasPrefixMultiplier"@en ;
+    rdfs:comment "Relates a SI prefixed unit to the multiplication factor corresponding to the prefix."@en ;
+    rdfs:domain ns1:PrefixedUnit ;
+    rdfs:range xsd:double ;
+    skos:prefLabel "hasPrefixMultiplier"@en ;
+    ns1:elucidation "Relates a SI prefixed unit to the multiplication factor corresponding to the prefix."@en .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+

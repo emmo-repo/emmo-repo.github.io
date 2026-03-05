@@ -1,0 +1,1462 @@
+@prefix : <https://w3id.org/emmo/hume/foundation/mereocausality#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix ns1: <https://w3id.org/emmo#> .
+@prefix ns2: <http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dcterms:abstract a owl:AnnotationProperty .
+
+dcterms:contributor a owl:AnnotationProperty .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:publisher a owl:AnnotationProperty .
+
+dcterms:source a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+rdfs:isDefinedBy rdfs:subPropertyOf rdfs:seeAlso .
+
+skos:example a owl:AnnotationProperty .
+
+skos:hiddenLabel a owl:AnnotationProperty ;
+    rdfs:subPropertyOf rdfs:label .
+
+locn:fullAddress a owl:AnnotationProperty .
+
+foaf:logo a owl:AnnotationProperty .
+
+foaf:mbox a owl:AnnotationProperty .
+
+foaf:name a owl:AnnotationProperty .
+
+foaf:workplaceHomepage a owl:AnnotationProperty .
+
+ns1:contact a owl:AnnotationProperty ;
+    rdfs:label "contact"@en ;
+    ns2:python_name "contact"@en ;
+    rdfs:comment "A person or organisation acting as a contact point for enquiries about the ontology resource"@en ;
+    rdfs:subPropertyOf rdfs:comment ;
+    skos:prefLabel "contact"@en ;
+    ns1:elucidation "A person or organisation acting as a contact point for enquiries about the ontology resource"@en ;
+    ns1:note "The annotation should include an email address."@en .
+
+ns1:dbpediaReference a owl:AnnotationProperty ;
+    rdfs:label "dbpediaReference"@en ;
+    ns2:python_name "dbpediaReference"@en ;
+    rdfs:comment "URL to corresponding dpbedia entry."@en ;
+    rdfs:range xsd:anyURI ;
+    rdfs:seeAlso "https://wiki.dbpedia.org/"^^xsd:string ;
+    rdfs:subPropertyOf rdfs:seeAlso ;
+    skos:prefLabel "dbpediaReference"@en ;
+    ns1:elucidation "URL to corresponding dpbedia entry."@en .
+
+ns1:hasFragment a owl:ObjectProperty ;
+    rdfs:label "hasFragment"@en ;
+    ns2:python_name "hasFragment"@en ;
+    rdfs:comment "The relation between two individuals representing a collection and a non-maximal proper part, meaning the the latter is connected with the rest of the whole."@en ;
+    rdfs:domain ns1:Collection ;
+    rdfs:subPropertyOf ns1:hasPiece ;
+    owl:inverseOf ns1:isFragmentOf ;
+    skos:prefLabel "hasFragment"@en ;
+    ns1:elucidation "The relation between two individuals representing a collection and a non-maximal proper part, meaning the the latter is connected with the rest of the whole."@en .
+
+ns1:hasJunctionPart a owl:ObjectProperty ;
+    rdfs:label "hasJunctionPart"@en ;
+    ns2:python_name "hasJunctionPart"@en ;
+    rdfs:comment "The part is connected with the rest item or members with both hasNext (or its inverse) and hasContact relations."@en ;
+    rdfs:domain ns1:CausalSystem ;
+    rdfs:subPropertyOf ns1:hasNonTemporalPart ;
+    owl:inverseOf ns1:isJunctionPartOf ;
+    owl:propertyDisjointWith ns1:hasSpatialPart ;
+    skos:altLabel "hasSpatioTemporalPart"@en ;
+    skos:prefLabel "hasJunctionPart"@en ;
+    ns1:elucidation "The part is connected with the rest item or members with both hasNext (or its inverse) and hasContact relations."@en .
+
+ns1:illustration a owl:AnnotationProperty ;
+    rdfs:label "illustration"@en ;
+    ns2:python_name "illustration"@en ;
+    rdfs:comment "A link to a graphical representation aimed to facilitate understanding of the concept, or of an annotation."@en ;
+    rdfs:range xsd:anyURI ;
+    rdfs:subPropertyOf rdfs:seeAlso ;
+    skos:prefLabel "illustration"@en ;
+    ns1:elucidation "A link to a graphical representation aimed to facilitate understanding of the concept, or of an annotation."@en .
+
+ns1:isMemberOf a owl:ObjectProperty ;
+    rdfs:label "isMemberOf"@en ;
+    ns2:python_name "isMemberOf"@en ;
+    rdfs:isDefinedBy ns1:hasMember ;
+    rdfs:range ns1:Collection ;
+    rdfs:subPropertyOf ns1:isProperPartOf ;
+    owl:inverseOf ns1:hasMember ;
+    skos:prefLabel "isMemberOf"@en .
+
+ns1:properOverlaps a owl:IrreflexiveProperty,
+        owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:label "properOverlaps"@en ;
+    ns2:python_name "properOverlaps"@en ;
+    rdfs:comment "The relation between two entities that overlaps and neither of them is a part of the other."@en ;
+    rdfs:subPropertyOf ns1:isOvercrossedBy,
+        ns1:overcrosses ;
+    skos:prefLabel "properOverlaps"@en ;
+    ns1:elucidation "The relation between two entities that overlaps and neither of them is a part of the other."@en .
+
+ns1:wikipediaReference a owl:AnnotationProperty ;
+    rdfs:label "wikipediaReference"@en ;
+    ns2:python_name "wikipediaReference"@en ;
+    rdfs:comment "URL to corresponding Wikipedia entry."@en ;
+    rdfs:range xsd:anyURI ;
+    rdfs:seeAlso "https://www.wikipedia.org/"^^xsd:string ;
+    rdfs:subPropertyOf rdfs:seeAlso ;
+    skos:prefLabel "wikipediaReference"@en ;
+    ns1:elucidation "URL to corresponding Wikipedia entry."@en .
+
+: a owl:Ontology ;
+    dcterms:abstract """Introduces the fundamental mereocausal (and mereotopological) concepts of EMMO and their relations with the real world entities that they represent. EMMO uses mereocausality as the ground for all the subsequent ontology modules.
+The concept of causal connection is used to distinguish between ontology entities: items are causally self-connected objects, while collections are causally disconnected.
+Quantum mereology is based on the concept of quantum entity.
+This module introduces also the fundamental mereotopological relations used to distinguish between space and time dimensions, making spacetime emerge from underlying network of causal relations between quantum entities."""@en ;
+    dcterms:contributor <https://orcid.org/AdhamHashibon>,
+        <https://orcid.org/AnnedeBaas>,
+        <https://orcid.org/FrancescoZaccarini>,
+        <https://orcid.org/GeorgSchmitz>,
+        <https://orcid.org/GerhardGoldbeck>,
+        <https://orcid.org/JesperFriis>,
+        <https://orcid.org/SebastianoMoruzzi> ;
+    dcterms:creator <https://orcid.org/EmanueleGhedini> ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "Elementary Multiperspective Material Ontology"@en,
+        "Mereocausality"@en ;
+    rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.4/contributors> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/foundation/mereocausality> ;
+    owl:versionInfo "1.0.4"^^xsd:string ;
+    foaf:mbox <mailto:emmo@emmc.eu> ;
+    ns1:contact "emmo@emmc.eu"^^xsd:string .
+
+ns1:OWL2DLRestrictedAxiom a owl:AnnotationProperty ;
+    rdfs:label "OWL2DLRestrictedAxiom"@en ;
+    ns2:python_name "OWL2DLRestrictedAxiom"@en ;
+    rdfs:comment "Axiom not included in the theory because of OWL 2 DL global restrictions for decidability."@en ;
+    rdfs:subPropertyOf rdfs:comment ;
+    skos:prefLabel "OWL2DLRestrictedAxiom"@en ;
+    ns1:elucidation "Axiom not included in the theory because of OWL 2 DL global restrictions for decidability."@en .
+
+ns1:OWLRL2DLAxioms a owl:AnnotationProperty ;
+    rdfs:label "OWLRL2DLAxioms"@en ;
+    ns2:python_name "OWLRL2DLAxioms"@en ;
+    rdfs:comment "Axioms to add to the OWL 2 RL version of the ontology to reach DL expressivity."@en ;
+    rdfs:subPropertyOf rdfs:comment ;
+    skos:prefLabel "OWLRL2DLAxioms"@en ;
+    ns1:elucidation "Axioms to add to the OWL 2 RL version of the ontology to reach DL expressivity."@en .
+
+ns1:contacts a owl:IrreflexiveProperty,
+        owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:label "contacts"@en ;
+    ns2:python_name "contacts"@en ;
+    rdfs:comment """A spatial contact between two entities occurs when the two entities are in an interaction relation whose causal structure is a representation of the fundamental interactions between elementary particles (Feynman diagrams).
+It means that if two entities are in contact, then there is at least a couple of elementary particles, one part of the first and one part of the second, interacting according to one of the fundamental interactions through virtual particles. This kind of connection is space-like (i.e. interconnecting force carrier particle is offshelf).
+Contacts between two entities exclude the possibility of other causal relations that are not included in a fundamental space-like interaction."""@en,
+        "An interaction that is the sum of direct causality relations between two entities that are interpretable as fundamental physical interactions."@en ;
+    rdfs:domain ns1:CausalStructure ;
+    rdfs:range ns1:CausalStructure ;
+    rdfs:subPropertyOf ns1:coexistsWith,
+        ns1:directlyCausedBy,
+        ns1:directlyCauses ;
+    skos:altLabel "adjacentWith"@en,
+        "hasSpatialnteractionWith"@en,
+        "touches"@en ;
+    skos:example "An elementary electron is in contact with another elementary electron in a scattering process."@en,
+        "The laptop is in contact with the desk, since there is a double-directional causality."@en ;
+    skos:prefLabel "contacts"@en ;
+    ns1:conceptualisation """A spatial contact between two entities occurs when the two entities are in an interaction relation whose causal structure is a representation of the fundamental interactions between elementary particles (Feynman diagrams).
+It means that if two entities are in contact, then there is at least a couple of elementary particles, one part of the first and one part of the second, interacting according to one of the fundamental interactions through virtual particles. This kind of connection is space-like (i.e. interconnecting force carrier particle is offshelf).
+Contacts between two entities exclude the possibility of other causal relations that are not included in a fundamental space-like interaction."""@en ;
+    ns1:elucidation "An interaction that is the sum of direct causality relations between two entities that are interpretable as fundamental physical interactions."@en ;
+    ns1:note "Spatial contact is symmetric and irreflexive."@en,
+        "The contact relation is not an ordering relation since is symmetric."@en .
+
+ns1:equalsTo a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:label "equalsTo"@en ;
+    ns2:python_name "equalsTo"@en ;
+    rdfs:comment "The relation between two individuals representing the same entity."@en ;
+    rdfs:subPropertyOf ns1:hasPart,
+        ns1:isPartOf ;
+    owl:propertyDisjointWith ns1:hasProperPart ;
+    skos:prefLabel "equalsTo"@en ;
+    ns1:elucidation "The relation between two individuals representing the same entity."@en ;
+    ns1:note "Equality is here defined following a mereological approach."@en .
+
+ns1:etymology a owl:AnnotationProperty ;
+    rdfs:label "etymology"@en ;
+    ns2:python_name "etymology"@en ;
+    rdfs:comment "The etymology annotation explains the origin of a word and the historical development of its meaning."@en ;
+    rdfs:subPropertyOf rdfs:comment ;
+    skos:prefLabel "etymology"@en ;
+    ns1:elucidation "The etymology annotation explains the origin of a word and the historical development of its meaning."@en ;
+    ns1:note "Definitions are usually taken from Wiktionary."@en,
+        "The etymology annotation is usually applied to rdfs:label entities, to better understand the connection between a label and the concept it concisely represents."@en .
+
+ns1:follows a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "follows"@en ;
+    ns2:python_name "follows"@en ;
+    rdfs:seeAlso ns1:precedes ;
+    rdfs:subPropertyOf ns1:directlyCausedBy,
+        ns1:isAfter ;
+    skos:altLabel "isNextOf"@en,
+        "succeeds"@en ;
+    skos:prefLabel "follows"@en .
+
+ns1:hasDirectPart a owl:ObjectProperty ;
+    rdfs:label "hasDirectPart"@en ;
+    ns2:python_name "hasDirectPart"@en ;
+    rdfs:comment "Direct parthood is the non transitive version of parthood enabling the establishment of hierarchy of granularities, starting with an entity and providing several granularity levels of parthood."@en,
+        "The non-transitive version of proper parthood property."@en ;
+    rdfs:subPropertyOf ns1:hasProperPart ;
+    owl:inverseOf ns1:isDirectPartOf ;
+    skos:altLabel "hasImmediatePart"@en ;
+    skos:prefLabel "hasDirectPart"@en ;
+    ns1:conceptualisation "Direct parthood is the non transitive version of parthood enabling the establishment of hierarchy of granularities, starting with an entity and providing several granularity levels of parthood."@en ;
+    ns1:elucidation "The non-transitive version of proper parthood property."@en .
+
+ns1:hasMultipleMembers a owl:ObjectProperty ;
+    rdfs:label "hasMultipleMembers"@en ;
+    ns2:python_name "hasMultipleMembers"@en ;
+    rdfs:comment "A sub collection relation where the proper part is fully encompasses some of the members of the collection."@en ;
+    rdfs:range ns1:Collection ;
+    rdfs:subPropertyOf ns1:hasMember ;
+    skos:prefLabel "hasMultipleMembers"@en ;
+    ns1:elucidation "A sub collection relation where the proper part is fully encompasses some of the members of the collection."@en .
+
+ns1:hasSingleMember a owl:AsymmetricProperty,
+        owl:ObjectProperty ;
+    rdfs:label "hasSingleMember"@en ;
+    ns2:python_name "hasSingleMember"@en ;
+    rdfs:comment "The relation between a collection and one of its item members."@en ;
+    rdfs:range ns1:Item ;
+    rdfs:subPropertyOf ns1:hasMember ;
+    owl:propertyDisjointWith ns1:hasMultipleMembers ;
+    skos:altLabel "hasMember"@en ;
+    skos:prefLabel "hasSingleMember"@en ;
+    ns1:elucidation "The relation between a collection and one of its item members."@en .
+
+ns1:hasSpatialPart a owl:ObjectProperty ;
+    rdfs:label "hasSpatialPart"@en ;
+    ns2:python_name "hasSpatialPart"@en ;
+    rdfs:comment "A proper part of a whole, whose parts always cover the full temporal extension of the whole within a spatial interval."@en ;
+    rdfs:domain ns1:CausalSystem ;
+    rdfs:subPropertyOf ns1:hasNonTemporalPart ;
+    owl:inverseOf ns1:isSpatialPartOf ;
+    skos:prefLabel "hasSpatialPart"@en ;
+    ns1:elucidation "A proper part of a whole, whose parts always cover the full temporal extension of the whole within a spatial interval."@en ;
+    ns1:note "In EMMO FOL this is a defined property. In OWL temporal relations are primitive."@en,
+        "The part is connected with the rest item or members with hasContact relations only (no hasNext)."@en .
+
+ns1:hasTemporalPart a owl:ObjectProperty ;
+    rdfs:label "hasTemporalPart"@en ;
+    ns2:python_name "hasTemporalPart"@en ;
+    rdfs:comment "A relation that identify a proper item part of the whole, whose parts always cover the full spatial extension of the whole within a time interval."@en ;
+    rdfs:domain ns1:CausalStructure ;
+    rdfs:subPropertyOf ns1:hasPortionPart ;
+    owl:inverseOf ns1:isTemporalPartOf ;
+    owl:propertyDisjointWith ns1:hasNonTemporalPart ;
+    skos:prefLabel "hasTemporalPart"@en ;
+    ns1:elucidation "A relation that identify a proper item part of the whole, whose parts always cover the full spatial extension of the whole within a time interval."@en ;
+    ns1:note """A temporal part of an item cannot both cause and be caused by any other proper part of the item.
+A temporal part is not constraint to be causally self-connected, i.e. it can be either an item or a collection. We therefore introduce two subproperties in order to distinguish between both cases."""@en,
+        "In EMMO FOL this is a defined property. In OWL temporal relations are primitive."@en .
+
+ns1:isDirectPartOf a owl:ObjectProperty ;
+    rdfs:label "isDirectPartOf"@en ;
+    ns2:python_name "isDirectPartOf"@en ;
+    rdfs:isDefinedBy ns1:hasDirectPart ;
+    rdfs:subPropertyOf ns1:isProperPartOf ;
+    skos:prefLabel "isDirectPartOf"@en .
+
+ns1:isDistinctPartOf a owl:ObjectProperty ;
+    rdfs:label "isDistinctPartOf"@en ;
+    ns2:python_name "isDistinctPartOf"@en ;
+    rdfs:isDefinedBy ns1:hasDistinctPart ;
+    rdfs:subPropertyOf ns1:isProperPartOf ;
+    skos:prefLabel "isDistinctPartOf"@en .
+
+ns1:isFragmentOf a owl:ObjectProperty ;
+    rdfs:label "isFragmentOf"@en ;
+    ns2:python_name "isFragmentOf"@en ;
+    rdfs:subPropertyOf ns1:isPieceOf ;
+    skos:prefLabel "isFragmentOf"@en .
+
+ns1:isNotCauseOf a owl:ObjectProperty ;
+    rdfs:label "isNotCauseOf"@en ;
+    ns2:python_name "isNotCauseOf"@en ;
+    rdfs:comment "x isNotCauseOf y iff not(x isCauseOf y)"@en ;
+    rdfs:seeAlso ns1:isCauseOf ;
+    rdfs:subPropertyOf ns1:causal ;
+    owl:inverseOf ns1:isNotCausedBy ;
+    owl:propertyDisjointWith ns1:isCauseOf ;
+    skos:prefLabel "isNotCauseOf"@en ;
+    ns1:definition "x isNotCauseOf y iff not(x isCauseOf y)"@en .
+
+ns1:isNotCausedBy a owl:ObjectProperty ;
+    rdfs:label "isNotCausedBy"@en ;
+    ns2:python_name "isNotCausedBy"@en ;
+    rdfs:subPropertyOf ns1:causal ;
+    owl:propertyDisjointWith ns1:isCausedBy ;
+    skos:prefLabel "isNotCausedBy"@en .
+
+ns1:isRedundantPartOf a owl:ObjectProperty ;
+    rdfs:label "isRedundantPartOf"@en ;
+    ns2:python_name "isRedundantPartOf"@en ;
+    rdfs:isDefinedBy ns1:hasRedundantPart ;
+    rdfs:subPropertyOf ns1:isProperPartOf ;
+    skos:prefLabel "isRedundantPartOf"@en .
+
+ns1:isSpatialPartOf a owl:ObjectProperty ;
+    rdfs:label "isSpatialPartOf"@en ;
+    ns2:python_name "isSpatialPartOf"@en ;
+    rdfs:range ns1:CausalSystem ;
+    rdfs:subPropertyOf ns1:isNonTemporalPartOf ;
+    owl:propertyDisjointWith ns1:isJunctionPartOf ;
+    skos:prefLabel "isSpatialPartOf"@en .
+
+ns1:precedes a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "precedes"@en ;
+    ns2:python_name "precedes"@en ;
+    rdfs:comment """A temporal relation between two entities occurs when the two entities are in a one directional causality relation. The idea is that a temporal relation always implies a one-directional causality between two entities, leading to a asymmetric relation.
+This means that the causing entity can be in direct and optionally indirect causality relation with the effect entity. On the contrary, the effect entity cannot be in any causal relation (direct or indirect) with the causing entity."""@en,
+        "A time contact occurs when x isDirectCause y and not(y isCauseOf x)."@en ;
+    rdfs:subPropertyOf ns1:directlyCauses,
+        ns1:isBefore ;
+    owl:inverseOf ns1:follows ;
+    owl:propertyDisjointWith ns1:contacts ;
+    skos:altLabel "foregoes"@en,
+        "hasNext"@en,
+        "isBefore"@en ;
+    skos:example "My life between 18-24 years has next my life between 24-32 years."@en,
+        "The raw sample has next the treated sampled, which has next the examined sample. In this sense the whole sample is made of three states, connected by the has next relation, following its evolution in time."@en ;
+    skos:prefLabel "precedes"@en ;
+    ns1:conceptualisation """A temporal relation between two entities occurs when the two entities are in a one directional causality relation. The idea is that a temporal relation always implies a one-directional causality between two entities, leading to a asymmetric relation.
+This means that the causing entity can be in direct and optionally indirect causality relation with the effect entity. On the contrary, the effect entity cannot be in any causal relation (direct or indirect) with the causing entity."""@en ;
+    ns1:elucidation "A time contact occurs when x isDirectCause y and not(y isCauseOf x)."@en ;
+    ns1:note "Each pair of entities in direct causality relation is either in hasNext or hasTwoWayCauseWith relation. The two are mutually exclusive."@en,
+        "This relation is asymmetric and irreflexive."@en .
+
+ns1:EMMORelation a owl:ObjectProperty ;
+    rdfs:label "EMMORelation"@en ;
+    ns2:python_name "EMMORelation"@en ;
+    rdfs:comment "The superclass for all relations used by the EMMO."@en ;
+    rdfs:domain ns1:EMMO ;
+    rdfs:range ns1:EMMO ;
+    rdfs:subPropertyOf owl:topObjectProperty ;
+    skos:prefLabel "EMMORelation"@en ;
+    ns1:elucidation "The superclass for all relations used by the EMMO."@en .
+
+ns1:coexistsWith a owl:IrreflexiveProperty,
+        owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:label "coexistsWith"@en ;
+    ns2:python_name "coexistsWith"@en ;
+    rdfs:comment "A relation jointly covered by Contact and InteractWith relations, which are mutually exclusive."@en,
+        """Spatial relations between entities are represented in the EMMO as bidirectional causality, meaning that both entities are at the beginning and at the end of causal paths connecting them.
+This type of relation represent the coexistence of two entities in the a spatial arrangement. The symmetric characteristic of this relation implies that it is not possible to order them and is related to the arbitrary choice of reference frames. Subclasses of spatial relations may be defined as asymmetric and introduce a spatial order, for example est to west, or internal to external layer.."""@en,
+        "The relation between entities that express a mutual causation."@en ;
+    rdfs:subPropertyOf ns1:isCauseOf,
+        ns1:isCausedBy ;
+    owl:propertyDisjointWith ns1:isBefore ;
+    skos:altLabel "isSpatiallyRelatedWith"@en ;
+    skos:prefLabel "coexistsWith"@en ;
+    ns1:conceptualisation """Spatial relations between entities are represented in the EMMO as bidirectional causality, meaning that both entities are at the beginning and at the end of causal paths connecting them.
+This type of relation represent the coexistence of two entities in the a spatial arrangement. The symmetric characteristic of this relation implies that it is not possible to order them and is related to the arbitrary choice of reference frames. Subclasses of spatial relations may be defined as asymmetric and introduce a spatial order, for example est to west, or internal to external layer.."""@en ;
+    ns1:definition "A relation jointly covered by Contact and InteractWith relations, which are mutually exclusive."@en ;
+    ns1:elucidation "The relation between entities that express a mutual causation."@en .
+
+ns1:conceptualisation a owl:AnnotationProperty ;
+    rdfs:label "conceptualisation"@en ;
+    ns2:python_name "conceptualisation"@en ;
+    rdfs:comment "The conceptualisation annotation is a comment that helps the reader to understand how the world has been conceptualised by the ontology authors."@en ;
+    rdfs:subPropertyOf rdfs:comment ;
+    skos:prefLabel "conceptualisation"@en ;
+    ns1:elucidation "The conceptualisation annotation is a comment that helps the reader to understand how the world has been conceptualised by the ontology authors."@en ;
+    ns1:note "A conceptualisation is the preliminary step behind each theory, preceding each logical formalisation. The readers approaching an ontology entity should first read the conceptualisation annotation to clearly understand \"what we are talking about\" and the accompanying terminology, and then read the elucidation."@en,
+        "An conceptualisation can provide references to external knowledge sources (i.e. ISO, Goldbook, RoMM)."@en .
+
+ns1:directlyCausedBy a owl:ObjectProperty ;
+    rdfs:label "directlyCausedBy"@en ;
+    ns2:python_name "directlyCausedBy"@en ;
+    rdfs:seeAlso ns1:directlyCauses ;
+    rdfs:subPropertyOf ns1:isCausedBy ;
+    owl:inverseOf ns1:directlyCauses ;
+    skos:altLabel "hasDirectCause"^^xsd:string ;
+    skos:prefLabel "directlyCausedBy"@en .
+
+ns1:elucidation a owl:AnnotationProperty ;
+    rdfs:label "elucidation"@en ;
+    ns2:python_name "elucidation"@en ;
+    rdfs:comment "Short enlightening explanation aimed to facilitate the user in drawing the connection (interpretation) between a OWL entity and the real world object(s) for which it stands."@en ;
+    rdfs:subPropertyOf rdfs:comment ;
+    skos:prefLabel "elucidation"@en ;
+    ns1:elucidation "Short enlightening explanation aimed to facilitate the user in drawing the connection (interpretation) between a OWL entity and the real world object(s) for which it stands."@en ;
+    ns1:note "An elucidation should address the real world entities using the concepts introduced by the conceptualisation annotation."@en .
+
+ns1:indirectlyCausedBy a owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "indirectlyCausedBy"@en ;
+    ns2:python_name "indirectlyCausedBy"@en ;
+    rdfs:seeAlso ns1:indirectlyCauses ;
+    rdfs:subPropertyOf ns1:isCausedBy ;
+    owl:inverseOf ns1:indirectlyCauses ;
+    skos:altLabel "hasIndirectCause"@en ;
+    skos:prefLabel "indirectlyCausedBy"@en .
+
+ns1:isAfter a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "isAfter"@en ;
+    ns2:python_name "isAfter"@en ;
+    rdfs:subPropertyOf ns1:isCausedBy ;
+    owl:inverseOf ns1:isBefore ;
+    skos:altLabel "isTemporallyAfter"@en ;
+    skos:prefLabel "isAfter"@en .
+
+ns1:isJunctionPartOf a owl:ObjectProperty ;
+    rdfs:label "isJunctionPartOf"@en ;
+    ns2:python_name "isJunctionPartOf"@en ;
+    rdfs:range ns1:CausalSystem ;
+    rdfs:subPropertyOf ns1:isNonTemporalPartOf ;
+    skos:prefLabel "isJunctionPartOf"@en .
+
+ns1:isNonTemporalPartOf a owl:ObjectProperty ;
+    rdfs:label "isNonTemporalPartOf"@en ;
+    ns2:python_name "isNonTemporalPartOf"@en ;
+    rdfs:range ns1:CausalSystem ;
+    rdfs:subPropertyOf ns1:isPortionPartOf ;
+    owl:inverseOf ns1:hasNonTemporalPart ;
+    owl:propertyDisjointWith ns1:isTemporalPartOf ;
+    skos:prefLabel "isNonTemporalPartOf"@en .
+
+ns1:isPieceOf a owl:ObjectProperty ;
+    rdfs:label "isPieceOf"@en ;
+    ns2:python_name "isPieceOf"@en ;
+    rdfs:subPropertyOf ns1:isProperPartOf ;
+    owl:inverseOf ns1:hasPiece ;
+    skos:prefLabel "isPieceOf"@en .
+
+ns1:isPortionPartOf a owl:ObjectProperty ;
+    rdfs:label "isPortionPartOf"@en ;
+    ns2:python_name "isPortionPartOf"@en ;
+    rdfs:range ns1:Item ;
+    rdfs:subPropertyOf ns1:isPieceOf ;
+    owl:inverseOf ns1:hasPortionPart ;
+    skos:prefLabel "isPortionPartOf"@en .
+
+ns1:isTemporalPartOf a owl:ObjectProperty ;
+    rdfs:label "isTemporalPartOf"@en ;
+    ns2:python_name "isTemporalPartOf"@en ;
+    rdfs:range ns1:CausalStructure ;
+    rdfs:subPropertyOf ns1:isPortionPartOf ;
+    skos:prefLabel "isTemporalPartOf"@en .
+
+ns1:notOverlaps a owl:IrreflexiveProperty,
+        owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:label "notOverlaps"@en ;
+    ns2:python_name "notOverlaps"@en ;
+    rdfs:comment "Dxy ≡ ¬Oxy."^^xsd:string,
+        "The relation between individuals representing non-overlapping entities (i.e. that have no parts in common)."@en ;
+    rdfs:subPropertyOf ns1:mereological ;
+    owl:propertyDisjointWith ns1:overlaps ;
+    skos:altLabel "disjointWith"@en ;
+    skos:prefLabel "notOverlaps"@en ;
+    ns1:definition "Dxy ≡ ¬Oxy."^^xsd:string ;
+    ns1:elucidation "The relation between individuals representing non-overlapping entities (i.e. that have no parts in common)."@en .
+
+ns1:successorOf a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "successorOf"@en ;
+    ns2:python_name "successorOf"@en ;
+    rdfs:subPropertyOf ns1:indirectlyCausedBy,
+        ns1:isAfter ;
+    skos:altLabel "isAncestorOf"@en ;
+    skos:prefLabel "successorOf"@en .
+
+rdfs:label rdfs:range rdfs:Literal .
+
+ns1:CausalParticle a owl:Class ;
+    rdfs:label "CausalParticle"@en ;
+    rdfs:comment "A causal particle represents the most elementary entity in physics, being it a simple state of an elementary particle, called quantum in the EMMO, or a chain of causally connected quanta."@en,
+        "The class of individuals representing causal particles."@en,
+        "The disjoint union of CausalPath and Quantum classes."@en ;
+    rdfs:subClassOf ns1:Item ;
+    owl:disjointWith ns1:CausalCluster ;
+    skos:prefLabel "CausalParticle"@en ;
+    ns1:OWLRL2DLAxioms "EquivalentTo: CausalPath or Quantum"^^xsd:string ;
+    ns1:conceptualisation "A causal particle represents the most elementary entity in physics, being it a simple state of an elementary particle, called quantum in the EMMO, or a chain of causally connected quanta."@en ;
+    ns1:definition "The disjoint union of CausalPath and Quantum classes."@en ;
+    ns1:elucidation "The class of individuals representing causal particles."@en .
+
+ns1:hasPortionPart a owl:AsymmetricProperty,
+        owl:ObjectProperty ;
+    rdfs:label "hasPortionPart"@en ;
+    ns2:python_name "hasPortionPart"@en ;
+    rdfs:comment "A proper part relation with domain restricted to items."@en ;
+    rdfs:domain ns1:Item ;
+    rdfs:subPropertyOf ns1:hasPiece ;
+    skos:prefLabel "hasPortionPart"@en ;
+    ns1:definition "A proper part relation with domain restricted to items."@en ;
+    ns1:note "A part of an item is always non-maximal, meaning that is causally connected with the rest."@en .
+
+ns1:mereological a owl:ObjectProperty ;
+    rdfs:label "mereological"@en ;
+    ns2:python_name "mereological"@en ;
+    rdfs:comment "The superclass of all mereological EMMO relations."@en ;
+    rdfs:subPropertyOf ns1:EMMORelation ;
+    skos:prefLabel "mereological"@en ;
+    ns1:elucidation "The superclass of all mereological EMMO relations."@en ;
+    ns1:note "The EMMO adheres to Atomistic General Extensional Mereology (AGEM)."@en .
+
+ns1:overcrosses a owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "overcrosses"@en ;
+    ns2:python_name "overcrosses"@en ;
+    rdfs:comment "OX(x, y) ≡ O(x, y) ∧ ¬P(x,y)"^^xsd:string,
+        "The relation between an entity that overlaps another without being its part."@en ;
+    rdfs:subPropertyOf ns1:overlaps ;
+    owl:inverseOf ns1:isOvercrossedBy ;
+    owl:propertyDisjointWith ns1:isPartOf ;
+    skos:prefLabel "overcrosses"@en ;
+    ns1:definition "OX(x, y) ≡ O(x, y) ∧ ¬P(x,y)"^^xsd:string ;
+    ns1:elucidation "The relation between an entity that overlaps another without being its part."@en .
+
+ns1:universe a owl:NamedIndividual,
+        ns1:CausalSystem ;
+    rdfs:label "universe"@en ;
+    rdfs:comment "u ≡ σx⟨P(x, x)⟩"^^xsd:string,
+        "The universe is considered as a causally self-connected object, encompassing all other objects. For this reason is unique."@en ;
+    skos:prefLabel "universe"@en ;
+    ns1:conceptualisation "The universe is considered as a causally self-connected object, encompassing all other objects. For this reason is unique."@en ;
+    ns1:definition "u ≡ σx⟨P(x, x)⟩"^^xsd:string .
+
+rdfs:seeAlso rdfs:comment """EMMO applies the naming convension to its sub-properties of rdfs:seeAlso that their label must end with one of the following terms:
+  - 'Match': resolvable URLs to corresponding entity in another ontology
+  - 'Entry': resolvable URLs to a human readable resource describing the subject
+  - 'Ref': non-resolvable reference to a human readable resource describing the subject"""@en,
+        "Indicate a resource that might provide additional information about the subject resource."@en .
+
+skos:altLabel a owl:AnnotationProperty ;
+    rdfs:subPropertyOf rdfs:label .
+
+ns1:CausalCluster a owl:Class ;
+    rdfs:label "CausalCluster"@en ;
+    rdfs:comment "The class of individuals representing causal clusters."@en,
+        "The disjoint union of the CausalSystem and Collection classes."@en,
+        "With the causal cluster term we address an heterogeneous group of entities, which possess the common feature of having at least two causally non connected quanta. It comprises collections (non self-connected entities) and causal systems (entities extended in space)."@en ;
+    rdfs:subClassOf ns1:Fusion ;
+    skos:prefLabel "CausalCluster"@en ;
+    ns1:OWLRL2DLAxioms "EquivalentTo: Collection or CausalSystem"^^xsd:string ;
+    ns1:conceptualisation "With the causal cluster term we address an heterogeneous group of entities, which possess the common feature of having at least two causally non connected quanta. It comprises collections (non self-connected entities) and causal systems (entities extended in space)."@en ;
+    ns1:definition "The disjoint union of the CausalSystem and Collection classes."@en ;
+    ns1:elucidation "The class of individuals representing causal clusters."@en .
+
+ns1:Fusion a owl:Class ;
+    rdfs:label "Fusion"@en ;
+    rdfs:comment "A mereological fusion is any entity that is made up of two or more quantum entities, regardless of the fact that they are or not self-connected. It captures the idea of set, but excluding singletons."@en,
+        "The class of individuals representing mereological fusions consisting of two or more quantum entities."@en,
+        "The union of the CausalCluster and CausalStructure classes."@en ;
+    rdfs:subClassOf ns1:EMMO ;
+    skos:example "An atom, a group of persons, a fluid."@en ;
+    skos:prefLabel "Fusion"@en ;
+    ns1:OWLRL2DLAxioms "EquivalentTo: CausalCluster or CausalStructure"^^xsd:string ;
+    ns1:conceptualisation "A mereological fusion is any entity that is made up of two or more quantum entities, regardless of the fact that they are or not self-connected. It captures the idea of set, but excluding singletons."@en ;
+    ns1:definition "The union of the CausalCluster and CausalStructure classes."@en ;
+    ns1:elucidation "The class of individuals representing mereological fusions consisting of two or more quantum entities."@en .
+
+ns1:alongsideWith a owl:IrreflexiveProperty,
+        owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:label "alongsideWith"@en ;
+    ns2:python_name "alongsideWith"@en ;
+    rdfs:comment "The relation between two causally reachable entities through a path of contacts relations (i.e. representing physical interactions)."@en ;
+    rdfs:domain ns1:CausalStructure ;
+    rdfs:range ns1:CausalStructure ;
+    rdfs:subPropertyOf ns1:coexistsWith,
+        ns1:indirectlyCausedBy,
+        ns1:indirectlyCauses ;
+    skos:altLabel "coexistsWith"@en,
+        "concurrentWith"@en,
+        "interactsWith"@en ;
+    skos:example "I'm interacting with another tennis player through a ball. Or, two people in a webconference are interacting using a mediator which is the network signal."@en ;
+    skos:prefLabel "alongsideWith"@en ;
+    ns1:elucidation "The relation between two causally reachable entities through a path of contacts relations (i.e. representing physical interactions)."@en .
+
+ns1:directlyCauses a owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "directlyCauses"@en ;
+    ns2:python_name "directlyCauses"@en ;
+    rdfs:comment "A causal relation between the causing and the effected entities occurring without intermediaries."@en,
+        """Direct causality is a concept that captures the idea of direct interaction between two entities, given the fact that there are no causal intermediaries between them. It requires that at least a quantum of the causing entity is direct cause of a quantum of the caused entity.
+It does not exclude the possibility of other indirect causal routes between some proper parts of the two entities.
+The direct causality in a 4D ontology covers both time-like causal interaction (when causality is one-way from one entity to another) and space-like causal interaction (when causality is two-way between two entities)."""@en ;
+    rdfs:subPropertyOf ns1:isCauseOf ;
+    owl:propertyDisjointWith ns1:indirectlyCauses ;
+    skos:altLabel "isDirectCauseOf"@en ;
+    skos:prefLabel "directlyCauses"@en ;
+    ns1:conceptualisation """Direct causality is a concept that captures the idea of direct interaction between two entities, given the fact that there are no causal intermediaries between them. It requires that at least a quantum of the causing entity is direct cause of a quantum of the caused entity.
+It does not exclude the possibility of other indirect causal routes between some proper parts of the two entities.
+The direct causality in a 4D ontology covers both time-like causal interaction (when causality is one-way from one entity to another) and space-like causal interaction (when causality is two-way between two entities)."""@en ;
+    ns1:elucidation "A causal relation between the causing and the effected entities occurring without intermediaries."@en ;
+    ns1:note "Direct cause is irreflexive."@en,
+        "Direct cause provides the edges for the transitive restriction of the direct acyclic causal graph whose nodes are the quantum entities."@en .
+
+ns1:foreruns a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "foreruns"@en ;
+    ns2:python_name "foreruns"@en ;
+    rdfs:comment "A causal relation between the y effected and the x causing entities with intermediaries, where x isCauseOf y and not(y isCauseOf x)."@en ;
+    rdfs:seeAlso ns1:successorOf ;
+    rdfs:subPropertyOf ns1:indirectlyCauses,
+        ns1:isBefore ;
+    owl:inverseOf ns1:successorOf ;
+    owl:propertyDisjointWith ns1:alongsideWith ;
+    skos:altLabel "hasSuccessor"@en,
+        "isAntecedentOf"@en,
+        "predecessorOf"@en ;
+    skos:example "My life between 18-24 years has successor my life between 32-40 years, since there is an intermediary (i.e. my life between 25-32 years)."@en ;
+    skos:prefLabel "foreruns"@en ;
+    ns1:elucidation "A causal relation between the y effected and the x causing entities with intermediaries, where x isCauseOf y and not(y isCauseOf x)."@en ;
+    ns1:note "Transitivity is implemented at A-Box level with a SWRL rule."@en .
+
+ns1:hasDistinctPart a owl:ObjectProperty ;
+    rdfs:label "hasDistinctPart"@en ;
+    ns2:python_name "hasDistinctPart"@en ;
+    rdfs:comment "DP(x, y) ≡ PP(x, y) ∧ ∃φ[φ(x) ↔ ¬φ(y)]"^^xsd:string,
+        "The superproperty of all object property relations between an entity and one of its proper parts that belongs to different taxonomical branch."@en ;
+    rdfs:subPropertyOf ns1:hasProperPart ;
+    owl:inverseOf ns1:isDistinctPartOf ;
+    skos:example "A molecule is a distinct part of a fluid."@en ;
+    skos:prefLabel "hasDistinctPart"@en ;
+    ns1:definition "DP(x, y) ≡ PP(x, y) ∧ ∃φ[φ(x) ↔ ¬φ(y)]"^^xsd:string ;
+    ns1:elucidation "The superproperty of all object property relations between an entity and one of its proper parts that belongs to different taxonomical branch."@en ;
+    ns1:note "A part is always distinct xor redundant."@en .
+
+ns1:hasMember a owl:ObjectProperty ;
+    rdfs:label "hasMember"@en ;
+    ns2:python_name "hasMember"@en ;
+    rdfs:comment "The relation between individuals representing a collection and one or more of its members."^^xsd:string,
+        "A proper part which is not connected with the rest of the whole."@en ;
+    rdfs:domain ns1:Collection ;
+    rdfs:subPropertyOf ns1:hasProperPart ;
+    owl:propertyDisjointWith ns1:hasPiece ;
+    skos:altLabel "hasMaximalPart"@en ;
+    skos:prefLabel "hasMember"@en ;
+    ns1:definition "A proper part which is not connected with the rest of the whole."@en ;
+    ns1:elucidation "The relation between individuals representing a collection and one or more of its members."^^xsd:string ;
+    ns1:note "A maximal part is a proper part that is not connected with the rest of the whole."@en .
+
+ns1:hasNonTemporalPart a owl:ObjectProperty ;
+    rdfs:label "hasNonTemporalPart"@en ;
+    ns2:python_name "hasNonTemporalPart"@en ;
+    rdfs:comment "The part is connected with the rest item or members with a combination of hasNext (or its inverse) or hasContact relations."@en ;
+    rdfs:domain ns1:CausalSystem ;
+    rdfs:subPropertyOf ns1:hasPortionPart ;
+    skos:prefLabel "hasNonTemporalPart"@en ;
+    ns1:elucidation "The part is connected with the rest item or members with a combination of hasNext (or its inverse) or hasContact relations."@en .
+
+ns1:hasPiece a owl:ObjectProperty ;
+    rdfs:label "hasPiece"@en ;
+    ns2:python_name "hasPiece"@en ;
+    rdfs:comment "The relation between two individuals representing an entity and a non-maximal proper part, meaning the the latter is connected with the rest of the whole."@en ;
+    rdfs:subPropertyOf ns1:hasProperPart ;
+    skos:altLabel "hasNotMaximalPart"@en ;
+    skos:prefLabel "hasPiece"@en ;
+    ns1:elucidation "The relation between two individuals representing an entity and a non-maximal proper part, meaning the the latter is connected with the rest of the whole."@en ;
+    ns1:note "A non-maximal part is a proper part that is connected with the rest of the whole."@en .
+
+ns1:hasRedundantPart a owl:ObjectProperty ;
+    rdfs:label "hasRedundantPart"@en ;
+    ns2:python_name "hasRedundantPart"@en ;
+    rdfs:comment "RP(x, y) ≡ PP(x, y) ∧ ∃φ(φ(x) ∧ φ(y))"^^xsd:string,
+        "The superproperty of the all object property relations between a whole and its mereological parts of the same type."@en ;
+    rdfs:subPropertyOf ns1:hasProperPart ;
+    owl:inverseOf ns1:isRedundantPartOf ;
+    skos:example "A volume of water has redundand parts other volumes of water. All this volumes have holistic parts some water molecules."@en ;
+    skos:prefLabel "hasRedundantPart"@en ;
+    ns1:definition "RP(x, y) ≡ PP(x, y) ∧ ∃φ(φ(x) ∧ φ(y))"^^xsd:string ;
+    ns1:elucidation "The superproperty of the all object property relations between a whole and its mereological parts of the same type."@en ;
+    ns1:note "A part is always distinct xor redundant."@en .
+
+ns1:isBefore a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "isBefore"@en ;
+    ns2:python_name "isBefore"@en ;
+    rdfs:comment "A relation between entities that are only one-directionally causally connected."@en,
+        "A relation jointly covered by hasNext and hasSuccessor relations, which are mutually exclusive."@en ;
+    rdfs:subPropertyOf ns1:isCauseOf ;
+    skos:altLabel "isTemporallyBefore"@en ;
+    skos:prefLabel "isBefore"@en ;
+    ns1:definition "A relation jointly covered by hasNext and hasSuccessor relations, which are mutually exclusive."@en ;
+    ns1:elucidation "A relation between entities that are only one-directionally causally connected."@en .
+
+ns1:isOvercrossedBy a owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "isOvercrossedBy"@en ;
+    ns2:python_name "isOvercrossedBy"@en ;
+    rdfs:comment "The inverse relation for overcrosses."@en ;
+    rdfs:seeAlso ns1:overcrosses ;
+    rdfs:subPropertyOf ns1:overlaps ;
+    skos:prefLabel "isOvercrossedBy"@en ;
+    ns1:elucidation "The inverse relation for overcrosses."@en .
+
+ns1:note a owl:AnnotationProperty ;
+    rdfs:label "note"@en ;
+    ns2:python_name "note"@en ;
+    rdfs:comment "A text that add some information about the entity."@en ;
+    rdfs:subPropertyOf rdfs:comment ;
+    skos:prefLabel "note"@en ;
+    ns1:elucidation "A text that add some information about the entity."@en ;
+    ns1:note "A note can be addressed to facilitate interpretation, to suggest possible usage, to clarify the concepts behind each entity with respect to other ontological apporaches."@en .
+
+ns1:causal a owl:ObjectProperty ;
+    rdfs:label "causal"@en ;
+    ns2:python_name "causal"@en ;
+    rdfs:comment """Causality is the fundamental concept describing how entities affect each other, and conceptually precedes time and space relations. In the EMMO causality is the foundation for space and time relations.
+Embracing a strong reductionistic view, causality originates at quantum entities level, meaning that causal relations between macroscopic entities is simply the sum of quantum level causality relations."""@en,
+        "The superclass of all causal EMMO relations."@en ;
+    rdfs:subPropertyOf ns1:EMMORelation ;
+    skos:prefLabel "causal"@en ;
+    ns1:conceptualisation """Causality is the fundamental concept describing how entities affect each other, and conceptually precedes time and space relations. In the EMMO causality is the foundation for space and time relations.
+Embracing a strong reductionistic view, causality originates at quantum entities level, meaning that causal relations between macroscopic entities is simply the sum of quantum level causality relations."""@en ;
+    ns1:elucidation "The superclass of all causal EMMO relations."@en ;
+    ns1:note "Causality in the EMMO is intended as physical causation and not counter-factual. Meaning that causality is an expression of actual physical interactions, and not of a counterfactual depence such as “I didn't water the flowers, hence, I'm the cause of their death”."@en,
+        "Each pair of entities is either in isCauseOf or isNotCauseOf relation. The two are mutually exclusive."@en .
+
+ns1:isCausedBy a owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "isCausedBy"@en ;
+    ns2:python_name "isCausedBy"@en ;
+    rdfs:seeAlso ns1:isCauseOf ;
+    rdfs:subPropertyOf ns1:causal ;
+    owl:inverseOf ns1:isCauseOf ;
+    skos:altLabel "causes"@en ;
+    skos:prefLabel "isCausedBy"@en .
+
+ns1:isPartOf a owl:ObjectProperty ;
+    rdfs:label "isPartOf"@en ;
+    ns2:python_name "isPartOf"@en ;
+    rdfs:comment """Reflexivity: Pxx
+Transitivity: (Pxy ∧ Pyz) → Pxz
+Antisymmetry: (Pxy ∧ Pyx) → x=y."""@en,
+        "The inverse relation of hasPart."@en ;
+    rdfs:seeAlso ns1:hasPart ;
+    rdfs:subPropertyOf ns1:overlaps ;
+    skos:prefLabel "isPartOf"@en ;
+    ns1:definition """Reflexivity: Pxx
+Transitivity: (Pxy ∧ Pyz) → Pxz
+Antisymmetry: (Pxy ∧ Pyx) → x=y."""@en ;
+    ns1:elucidation "The inverse relation of hasPart."@en .
+
+ns1:CausalPath a owl:Class ;
+    rdfs:label "CausalPath"@en ;
+    rdfs:comment "A causal chain is an ordered causal sequence of entities that does not host any bifurcation within itself (a chain). A chain can only be partitioned in time."@en,
+        "The class of entities that possess a temporal structure but no spatial structure."@en ;
+    rdfs:subClassOf _:Nb2a1991208ae4789b735ce70a6d07a6e,
+        ns1:CausalParticle,
+        ns1:CausalStructure ;
+    skos:altLabel "CausalChain"@en,
+        "Elementary"@en ;
+    skos:example "An electron moving in time interacting with other particles."@en ;
+    skos:prefLabel "CausalPath"@en ;
+    ns1:conceptualisation "A causal chain is an ordered causal sequence of entities that does not host any bifurcation within itself (a chain). A chain can only be partitioned in time."@en ;
+    ns1:elucidation "The class of entities that possess a temporal structure but no spatial structure."@en ;
+    ns1:note "A causal path is a concept almost equivalent to the concept of elementary particle in physics."@en .
+
+ns1:Quantum a owl:Class ;
+    rdfs:label "Quantum"@en ;
+    rdfs:comment """A quantum is the most fundamental item of the EMMO (both mereologically and causally) and is considered causally self-connected by definition.
+The quantum concept recalls the fact that there is lower epistemological limit to our knowledge of the universe, related to the uncertainity principle.
+In the EMMO, space and time emerge following the network of causal connections between quantum objects. So quantum objects are adimensional objects, that precede space and time dimensions: they are simple beings (in greek οντα).
+Using physics concepts, we can think the quantum as an elementary particle (e.g. an electron) in a specific state between two causal interactions. For a quanta to change its state, it requires an interaction.
+A quantum may be thought as standing for an incoming or outcoming real particle in a Feynman diagram in a scattering event."""@en,
+        "Q(x) ≡ ¬∃y(PP(y,x))"@en,
+        "The class of the mereological and causal fundamental entities having no proper parts"@en ;
+    rdfs:subClassOf ns1:CausalParticle ;
+    owl:disjointWith ns1:Fusion ;
+    skos:altLabel "RealParticle"@en ;
+    skos:example """From a physics perspective a quantum can be related to smallest identifiable entities, according to the limits imposed by the uncertainty principle in space and time measurements.
+However, the quantum mereotopology approach is not restricted only to physics. For example, in a manpower management ontology, a quantum can stand for an hour (time) of a worker (space) activity."""@en ;
+    skos:prefLabel "Quantum"@en ;
+    ns1:conceptualisation """A quantum is the most fundamental item of the EMMO (both mereologically and causally) and is considered causally self-connected by definition.
+The quantum concept recalls the fact that there is lower epistemological limit to our knowledge of the universe, related to the uncertainity principle.
+In the EMMO, space and time emerge following the network of causal connections between quantum objects. So quantum objects are adimensional objects, that precede space and time dimensions: they are simple beings (in greek οντα).
+Using physics concepts, we can think the quantum as an elementary particle (e.g. an electron) in a specific state between two causal interactions. For a quanta to change its state, it requires an interaction.
+A quantum may be thought as standing for an incoming or outcoming real particle in a Feynman diagram in a scattering event."""@en ;
+    ns1:definition "Q(x) ≡ ¬∃y(PP(y,x))"@en ;
+    ns1:elucidation "The class of the mereological and causal fundamental entities having no proper parts"@en ;
+    ns1:note "A quantum is the EMMO mereological atomistic and causal reductionistic entity.  To avoid confusion with the concept of atom coming from physics and to underline the causal reductionistic approach, we will use the expression quantum mereology, instead of atomistic mereology."@en .
+
+ns1:definition a owl:AnnotationProperty ;
+    rdfs:label "definition"@en ;
+    ns2:python_name "definition"@en ;
+    rdfs:comment "Precise and univocal description of an ontological entity in the framework of an axiomatic system."@en ;
+    rdfs:subPropertyOf rdfs:comment ;
+    skos:prefLabel "definition"@en ;
+    ns1:elucidation "Precise and univocal description of an ontological entity in the framework of an axiomatic system."@en ;
+    ns1:note "A definition univocally determines a OWL entity using necessary and sufficient conditions referring to other OWL entities."@en .
+
+ns1:isProperPartOf a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "isProperPartOf"@en ;
+    ns2:python_name "isProperPartOf"@en ;
+    rdfs:comment "PP(x, y) ≡ P(x, y) ∧ ¬x=y"^^xsd:string,
+        "The inverse relation for hasProperPart."^^xsd:string ;
+    rdfs:seeAlso ns1:hasProperPart ;
+    rdfs:subPropertyOf ns1:isOvercrossedBy,
+        ns1:isPartOf ;
+    owl:inverseOf ns1:hasProperPart ;
+    skos:prefLabel "isProperPartOf"@en ;
+    ns1:definition "PP(x, y) ≡ P(x, y) ∧ ¬x=y"^^xsd:string ;
+    ns1:elucidation "The inverse relation for hasProperPart."^^xsd:string .
+
+ns1:Collection a owl:Class ;
+    rdfs:label "Collection"@en ;
+    rdfs:comment """A collection is the concept that complements the item. A collection is an entity that has at least one part non directly causally connected with the rest.
+A collection can be partitioned in maximally connected items called members. The members are self-connected entities and there is no direct causality relation between them.
+The combination of collection and item concepts is the EMMO mereocausality alternative to set theory. However, two items can be members only if they are non direct causally connected, giving some constraints to a collection definition. For example, two entities which are directly connected cannot be two distinct members, while their interiors (i.e. the entities obtained by removing the layer of parts that provides the causal contact between them) can be."""@en,
+        "The class of not direct causally self-connected world entities."@en ;
+    rdfs:subClassOf _:Nb40bd49eff644f55991fed5a08d1efef,
+        ns1:CausalCluster ;
+    owl:disjointWith ns1:Item ;
+    skos:example "The collection of users of a particular software, the collection of atoms that have been part of that just dissociated molecule."@en ;
+    skos:prefLabel "Collection"@en ;
+    ns1:conceptualisation """A collection is the concept that complements the item. A collection is an entity that has at least one part non directly causally connected with the rest.
+A collection can be partitioned in maximally connected items called members. The members are self-connected entities and there is no direct causality relation between them.
+The combination of collection and item concepts is the EMMO mereocausality alternative to set theory. However, two items can be members only if they are non direct causally connected, giving some constraints to a collection definition. For example, two entities which are directly connected cannot be two distinct members, while their interiors (i.e. the entities obtained by removing the layer of parts that provides the causal contact between them) can be."""@en ;
+    ns1:elucidation "The class of not direct causally self-connected world entities."@en .
+
+ns1:indirectlyCauses a owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "indirectlyCauses"@en ;
+    ns2:python_name "indirectlyCauses"@en ;
+    rdfs:comment "A causal relation between the effected and the causing entities with intermediaries."@en,
+        "An indirect cause is a relation between two entities that is mediated by a intermediate entity. In other words, there are no quantum parts of the causing entity that are direct cause of quantum parts of the caused entity."@en ;
+    rdfs:subPropertyOf ns1:isCauseOf ;
+    skos:altLabel "influences"@en,
+        "isIndirectCauseOf"@en ;
+    skos:prefLabel "indirectlyCauses"@en ;
+    ns1:conceptualisation "An indirect cause is a relation between two entities that is mediated by a intermediate entity. In other words, there are no quantum parts of the causing entity that are direct cause of quantum parts of the caused entity."@en ;
+    ns1:elucidation "A causal relation between the effected and the causing entities with intermediaries."@en .
+
+ns1:overlaps a owl:ObjectProperty,
+        owl:SymmetricProperty ;
+    rdfs:label "overlaps"@en ;
+    ns2:python_name "overlaps"@en ;
+    rdfs:comment "Oxy ≡ ∃z(Pzx ∧ Pzy)"^^xsd:string,
+        "The relation between two individuals representing entities that share at least one of their parts."@en ;
+    rdfs:subPropertyOf ns1:mereological ;
+    skos:prefLabel "overlaps"@en ;
+    ns1:definition "Oxy ≡ ∃z(Pzx ∧ Pzy)"^^xsd:string ;
+    ns1:elucidation "The relation between two individuals representing entities that share at least one of their parts."@en .
+
+ns1:CausalStructure a owl:Class ;
+    rdfs:label "CausalStructure"@en ;
+    rdfs:comment "The class of individuals representing causally self-connected world entities."^^xsd:string,
+        "The disjoint union of Causal Path and CausalSystem classes."^^xsd:string,
+        """The most fundamental unity criterion for the definition of an structure is that:
+- is made of at least two quantums (a structure is not a simple entity)
+- all quantum parts form a causally connected graph"""^^xsd:string ;
+    rdfs:subClassOf ns1:Fusion,
+        ns1:Item ;
+    skos:prefLabel "CausalStructure"@en ;
+    ns1:OWLRL2DLAxioms "EquivalentTo: CausalPath or CausalSystem"^^xsd:string ;
+    ns1:conceptualisation """The most fundamental unity criterion for the definition of an structure is that:
+- is made of at least two quantums (a structure is not a simple entity)
+- all quantum parts form a causally connected graph"""^^xsd:string ;
+    ns1:definition "The disjoint union of Causal Path and CausalSystem classes."^^xsd:string ;
+    ns1:elucidation "The class of individuals representing causally self-connected world entities."^^xsd:string ;
+    ns1:note "A causal structure expresses itself in time and space thanks to the underlying causality relations between its constituent quantum entities. It must at least provide two temporal parts. The unity criterion beyond the definition of a causal structure (the most general concept of structure) is the existence of an undirected causal path between each of its parts."^^xsd:string .
+
+ns1:Item a owl:Class ;
+    rdfs:label "Item"@en ;
+    rdfs:comment """A world entity is direct causally self-connected if any two parts that make up the whole are direct causally connected to each other. In the EMMO, topological connectivity is based on causality.
+All physical objects, i.e. entities whose behaviour is explained by physics laws, are represented only by items. In other words, a physical object part is embedded in a direct causal graph that provides always a path between two of its parts.
+Members of a collection lack such direct causality connection, i.e. they do not constitute a physical object.
+Following graph theory concepts, the quantums of an item are all connected together within a network of causal relations, forming a connected causal graph. A collection is then a set of disconnected graphs."""@en,
+        "The class of individuals standing for quantum or causally self-connected world entities."@en,
+        "The disjoint union of Particle and CausalStructure classes."@en ;
+    rdfs:subClassOf ns1:EMMO ;
+    skos:altLabel "CausalObject"@en ;
+    skos:example "A person life, an interval of a person life. The lifetime of two components, from the production in separate manufacturing lines, their being connected components in a device, including their eparation and decommissioning."@en ;
+    skos:prefLabel "Item"@en ;
+    ns1:OWLRL2DLAxioms "EquivalentTo: CausalParticle or CausalStructure"^^xsd:string ;
+    ns1:conceptualisation """A world entity is direct causally self-connected if any two parts that make up the whole are direct causally connected to each other. In the EMMO, topological connectivity is based on causality.
+All physical objects, i.e. entities whose behaviour is explained by physics laws, are represented only by items. In other words, a physical object part is embedded in a direct causal graph that provides always a path between two of its parts.
+Members of a collection lack such direct causality connection, i.e. they do not constitute a physical object.
+Following graph theory concepts, the quantums of an item are all connected together within a network of causal relations, forming a connected causal graph. A collection is then a set of disconnected graphs."""@en ;
+    ns1:definition "The disjoint union of Particle and CausalStructure classes."@en ;
+    ns1:elucidation "The class of individuals standing for quantum or causally self-connected world entities."@en ;
+    ns1:note "The concept of self-connectivity is applied using a 4D approach. Given that, the entity made of an electron and a proton that travel, interact, and then depart from each other is an item, since we don't focus only on the beginning or the end stage but to the overall 4D entity, being the interaction the connectivity bridge between the two particles."^^xsd:string .
+
+ns1:CausalSystem a owl:Class ;
+    rdfs:label "CausalSystem"@en ;
+    rdfs:comment """A causal system provides the most general concept of system, being a union of causal structures interacting together. In its most simple form, a causal system is an interlacement of causal paths (the most simple structure type).
+A causal system is always a spatial-like structure, and is represented as a multiple topologically orderable direct acyclic graph, with quanta as nodes and causality relations as edges."""@en,
+        "The class of individuals representing a causal system."@en ;
+    rdfs:subClassOf ns1:CausalCluster,
+        ns1:CausalStructure ;
+    skos:example "A electron binded by a nucleus."@en ;
+    skos:prefLabel "CausalSystem"@en ;
+    ns1:conceptualisation """A causal system provides the most general concept of system, being a union of causal structures interacting together. In its most simple form, a causal system is an interlacement of causal paths (the most simple structure type).
+A causal system is always a spatial-like structure, and is represented as a multiple topologically orderable direct acyclic graph, with quanta as nodes and causality relations as edges."""@en ;
+    ns1:elucidation "The class of individuals representing a causal system."@en .
+
+<urn:swrl:var#z> a swrl:Variable .
+
+ns1:EMMO a owl:Class ;
+    rdfs:label "EMMO"@en ;
+    rdfs:comment """The EMMO conceptualises the world using the primitive concepts of causality and parthood. Parthood is about the composition of world entities starting from other more fundamental entities. Causality is about the interactions between world entities.
+The quantum is the smallest indivisible part of any world entity. Quantum individuals are the fundamental causal constituents of the universe, since it is implied that causality originates from quantum-to-quantum interactions. Quantums are no-dimensional, and their aggregation makes spacetime emerge from their causal structure. We can think of a quantum as an elementary particle after and interaction and before another interaction.
+Causality between macro entities (i.e. entities made of more than one quantum) is explained as the sum of the causality relations between their quantum constituents. Fundamental interactions (quantum fields) are represented as symmetric causality relation between macro entities, while classical interactions are mediated by chain of quantums (i.e. elementary particles).
+The fundamental distinction between world entities is causality self-connectedness: a world entity can be self-connected xor not self-connected depending on the causality network of its fundamental components.
+Void regions do not exist in the EMMO. In other words there is no spacetime without entities and spacetime emerges as relational property not as a self-standing entity). Entities are not placed in space or time: space and time are measured quantities, always relative between entities and are measured. In other words, space and time relations originates from causality interactions."""@en,
+        "The class of all the OWL individuals representing world entities according to EMMO conceptualisation."@en,
+        "The disjoint union of the fundamental mereocausal classes of Quantum, CausalPath, CausalSystem and Collection."@en ;
+    rdfs:subClassOf _:Nbca313a0190b4e25893bb2165aa99512,
+        _:Nfb56d6533fa84bb0936386997efb77c8 ;
+    skos:prefLabel "EMMO"@en ;
+    ns1:OWLRL2DLAxioms "DisjointUnion: CausalPath, Collection, Quantum, CausalSystem"^^xsd:string ;
+    ns1:conceptualisation """The EMMO conceptualises the world using the primitive concepts of causality and parthood. Parthood is about the composition of world entities starting from other more fundamental entities. Causality is about the interactions between world entities.
+The quantum is the smallest indivisible part of any world entity. Quantum individuals are the fundamental causal constituents of the universe, since it is implied that causality originates from quantum-to-quantum interactions. Quantums are no-dimensional, and their aggregation makes spacetime emerge from their causal structure. We can think of a quantum as an elementary particle after and interaction and before another interaction.
+Causality between macro entities (i.e. entities made of more than one quantum) is explained as the sum of the causality relations between their quantum constituents. Fundamental interactions (quantum fields) are represented as symmetric causality relation between macro entities, while classical interactions are mediated by chain of quantums (i.e. elementary particles).
+The fundamental distinction between world entities is causality self-connectedness: a world entity can be self-connected xor not self-connected depending on the causality network of its fundamental components.
+Void regions do not exist in the EMMO. In other words there is no spacetime without entities and spacetime emerges as relational property not as a self-standing entity). Entities are not placed in space or time: space and time are measured quantities, always relative between entities and are measured. In other words, space and time relations originates from causality interactions."""@en ;
+    ns1:definition "The disjoint union of the fundamental mereocausal classes of Quantum, CausalPath, CausalSystem and Collection."@en ;
+    ns1:elucidation "The class of all the OWL individuals representing world entities according to EMMO conceptualisation."@en ;
+    ns1:note """EMMO entities dimensionality is related to their mereocausal structures. From the no-dimensional quantum entity, we introduce time dimension with the elementary concept, and space with the causal system concept.
+The EMMO conceptualisation does not allow the existence of space without a temporal dimension, the latter coming from a causal relation between entities.
+For this reason, the EMMO entities that are not quantum or elementaries, may be considered to be always 4D spatiotemporal entities.
+Moreover, the combination of mereology and causality used in the EMMO theory (mereocausality) represents entities as direct acyclic graphs with dimension of 4 (i.e., the mereocasual graph can be represented in a 4D euclidian space with edges having unit length).
+For this reasons, the EMMO can be considered a 4D ontology."""@en .
+
+ns1:hasPart a owl:ObjectProperty ;
+    rdfs:label "hasPart"@en ;
+    ns2:python_name "hasPart"@en ;
+    rdfs:comment "The primitive relation that express the concept of an entity being part of another one."@en ;
+    rdfs:subPropertyOf ns1:overlaps ;
+    owl:inverseOf ns1:isPartOf ;
+    owl:propertyDisjointWith ns1:isOvercrossedBy ;
+    skos:prefLabel "hasPart"@en ;
+    ns1:elucidation "The primitive relation that express the concept of an entity being part of another one."@en ;
+    ns1:note "All other mereology relations can be defined in FOL using hasPart as primitive."@en .
+
+ns1:isCauseOf a owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "isCauseOf"@en ;
+    ns2:python_name "isCauseOf"@en ;
+    rdfs:comment "A relation between an entity that causally affects another."@en,
+        """We say that an entity causes another if there is a quantum part of the first that is in causal relation with a quantum parts of the second.
+More formally, causality is defined as a relation between individuals x and y that holds if and only if:
+a) x having a part that is causing an effect on a part of y
+b) x and y are non-overlapping
+An entity cannot cause itself or a part of itself. For this reasons causality between entities excludes reflexivity and prevents them to overlap.
+The existence of one-directional of bi-directional causality relations between two entities is what reconstruct time-like and space-like relations, respectively."""@en ;
+    rdfs:subPropertyOf ns1:causal ;
+    skos:altLabel "causes"@en ;
+    skos:example "John yesterday is the cause of John today, is an example of temporal-like causality. The desk supporting my laptop is a space-like causality."^^xsd:string ;
+    skos:prefLabel "isCauseOf"@en ;
+    ns1:conceptualisation """We say that an entity causes another if there is a quantum part of the first that is in causal relation with a quantum parts of the second.
+More formally, causality is defined as a relation between individuals x and y that holds if and only if:
+a) x having a part that is causing an effect on a part of y
+b) x and y are non-overlapping
+An entity cannot cause itself or a part of itself. For this reasons causality between entities excludes reflexivity and prevents them to overlap.
+The existence of one-directional of bi-directional causality relations between two entities is what reconstruct time-like and space-like relations, respectively."""@en ;
+    ns1:elucidation "A relation between an entity that causally affects another."@en ;
+    ns1:note "Each pair of causally connected entities is either in isDirectCauseOf or isIndirectCauseOf relation. The two are mutually exclusive."@en,
+        """The OWL 2 DL version of the EMMO introduces this object property as primitive causal relation. It refers to the macro causality relation mC(x,y), defined in the EMMO FOL version.
+While the EMMO FOL introduces the quantum causality relation C(x,y) as primitive, the OWL 2 DL version of the EMMO substantially simplifies the theory, neglecting these lower level relations that are well above DL expressivity.
+For this reason the EMMO OWL 2 DL will only deal with macro causality relations, sacrificing the full FOL theory expressivity for the sake of simplicity."""@en,
+        "The cause relation applies to both quantums and macro-entities (entities made of more than one quantum). It is admissible for two entities to be one the cause of the other, excepts when they are both quantums."@en .
+
+skos:prefLabel a owl:AnnotationProperty ;
+    rdfs:subPropertyOf rdfs:label .
+
+ns1:hasProperPart a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "hasProperPart"@en ;
+    ns2:python_name "hasProperPart"@en ;
+    rdfs:comment "The relation between an entity and one of its parts, when both entities are distinct."@en ;
+    rdfs:subPropertyOf ns1:hasPart,
+        ns1:overcrosses ;
+    skos:prefLabel "hasProperPart"@en ;
+    ns1:elucidation "The relation between an entity and one of its parts, when both entities are distinct."@en ;
+    ns1:note """The proper part relation has the following pair-covering sub-relations:
+- hasMembers xor hasPiece
+- hasPortionPart xor hasGatheredPart
+. hasItemPart xor hasScatteredPart"""@en .
+
+<urn:swrl:var#y> a swrl:Variable .
+
+<urn:swrl:var#x> a swrl:Variable .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso ns1:isPartOf ;
+    owl:annotatedProperty ns1:definition ;
+    owl:annotatedSource ns1:overlaps ;
+    owl:annotatedTarget "Oxy ≡ ∃z(Pzx ∧ Pzy)"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso ns1:overlaps ;
+    owl:annotatedProperty ns1:definition ;
+    owl:annotatedSource ns1:notOverlaps ;
+    owl:annotatedTarget "Dxy ≡ ¬Oxy."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso ns1:Quantum,
+        "doi:10.3233/FAIA231120"^^xsd:string ;
+    owl:annotatedProperty ns1:conceptualisation ;
+    owl:annotatedSource ns1:causal ;
+    owl:annotatedTarget """Causality is the fundamental concept describing how entities affect each other, and conceptually precedes time and space relations. In the EMMO causality is the foundation for space and time relations.
+Embracing a strong reductionistic view, causality originates at quantum entities level, meaning that causal relations between macroscopic entities is simply the sum of quantum level causality relations."""@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:CausalParticle ;
+    owl:annotatedTarget "CausalParticle"@en ;
+    ns1:etymology "From Latin particula (“small part, particle”), diminutive of pars (“part, piece”)."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:CausalStructure ;
+    owl:annotatedTarget "CausalStructure"@en ;
+    ns1:etymology "From Latin causa (“reason, sake, cause”), and from Latin struere (“arrange, assemble, build”)."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Quantum ;
+    owl:annotatedTarget "Quantum"@en ;
+    ns1:etymology "From Latin quantum (plural quanta) \"as much as, so much as\"."@en .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:ClassAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:classPredicate ns1:EMMO ] ;
+            rdf:rest () ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#x> ;
+                    swrl:propertyPredicate ns1:hasPart ] ;
+            rdf:rest () ] ;
+    ns1:note "Enforcing parthood reflexivity."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso ns1:hasRedundantPart ;
+    owl:annotatedProperty ns1:note ;
+    owl:annotatedSource ns1:hasDistinctPart ;
+    owl:annotatedTarget "A part is always distinct xor redundant."@en .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( ns1:CausalPath ns1:Collection ns1:Quantum ns1:CausalSystem ) .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Fusion ;
+    owl:annotatedTarget "Fusion"@en ;
+    ns1:etymology "From Latin fusio, from fundere ‘pour, melt’."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdf:type ;
+    owl:annotatedSource ns1:universe ;
+    owl:annotatedTarget ns1:CausalSystem ;
+    ns1:conceptualisation """This axiom reflects the fact the the universe is causally self-connected. In fact, a  non causally connected universe would have been the sum of causally independend sub-universes, without any knowledge of others.
+This axiom may be seen as Ockam's razor applied to causality."""@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso ns1:isProperPartOf ;
+    owl:annotatedProperty ns1:definition ;
+    owl:annotatedSource ns1:Quantum ;
+    owl:annotatedTarget "Q(x) ≡ ¬∃y(PP(y,x))"@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "doi:10.3233/FAIA231120"^^xsd:string ;
+    owl:annotatedProperty ns1:note ;
+    owl:annotatedSource ns1:isCauseOf ;
+    owl:annotatedTarget """The OWL 2 DL version of the EMMO introduces this object property as primitive causal relation. It refers to the macro causality relation mC(x,y), defined in the EMMO FOL version.
+While the EMMO FOL introduces the quantum causality relation C(x,y) as primitive, the OWL 2 DL version of the EMMO substantially simplifies the theory, neglecting these lower level relations that are well above DL expressivity.
+For this reason the EMMO OWL 2 DL will only deal with macro causality relations, sacrificing the full FOL theory expressivity for the sake of simplicity."""@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource ns1:CausalPath ;
+    owl:annotatedTarget "CausalChain"@en ;
+    ns1:etymology "From Old French chaine, chaene (“chain”), from Latin catēna (“chain”)."@en .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:ClassAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:classPredicate ns1:EMMO ] ;
+            rdf:rest () ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#x> ;
+                    swrl:propertyPredicate ns1:isNotCauseOf ] ;
+            rdf:rest () ] ;
+    ns1:note "Enforcing the fact that an entity cannot cause itself."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Item ;
+    owl:annotatedTarget "Item"@en ;
+    ns1:etymology "From Latin item, \"likewise, just so, moreover\"."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource ns1:CausalPath ;
+    owl:annotatedTarget "Elementary"@en ;
+    ns1:etymology "From Latin elementārius (“elementary”), from elementum (“one of the four elements of antiquity; fundamentals”)."@en .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate ns1:isCauseOf ] ;
+            rdf:rest () ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate ns1:notOverlaps ] ;
+            rdf:rest () ] ;
+    ns1:note "Enforcing exclusivity between overlapping and causality."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso ns1:hasDistinctPart ;
+    owl:annotatedProperty ns1:note ;
+    owl:annotatedSource ns1:hasRedundantPart ;
+    owl:annotatedTarget "A part is always distinct xor redundant."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty ns1:conceptualisation ;
+    owl:annotatedSource ns1:EMMO ;
+    owl:annotatedTarget """The EMMO conceptualises the world using the primitive concepts of causality and parthood. Parthood is about the composition of world entities starting from other more fundamental entities. Causality is about the interactions between world entities.
+The quantum is the smallest indivisible part of any world entity. Quantum individuals are the fundamental causal constituents of the universe, since it is implied that causality originates from quantum-to-quantum interactions. Quantums are no-dimensional, and their aggregation makes spacetime emerge from their causal structure. We can think of a quantum as an elementary particle after and interaction and before another interaction.
+Causality between macro entities (i.e. entities made of more than one quantum) is explained as the sum of the causality relations between their quantum constituents. Fundamental interactions (quantum fields) are represented as symmetric causality relation between macro entities, while classical interactions are mediated by chain of quantums (i.e. elementary particles).
+The fundamental distinction between world entities is causality self-connectedness: a world entity can be self-connected xor not self-connected depending on the causality network of its fundamental components.
+Void regions do not exist in the EMMO. In other words there is no spacetime without entities and spacetime emerges as relational property not as a self-standing entity). Entities are not placed in space or time: space and time are measured quantities, always relative between entities and are measured. In other words, space and time relations originates from causality interactions."""@en ;
+    ns1:note "While EMMO mereocausality conceptualisation can be used on any possibile domain, so that a quantum can be a Lego brick or an furniture component, it can be better understood when a quantum is elucidated as an elementary particle after and interaction and before another interaction. (e.g. quark, photon)."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ns1:EMMO ;
+    owl:annotatedTarget _:Nfb56d6533fa84bb0936386997efb77c8 ;
+    ns1:note "Every entity is made of quantum parts. This axiomatisation is the expression of the radical reductionistic approach of the EMMO."@en .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate ns1:equalsTo ] ;
+            rdf:rest () ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:SameIndividualAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ] ;
+            rdf:rest () ] ;
+    ns1:note "The equalsTo object property is equivalent to the OWL  SameAs"@en .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:ClassAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:classPredicate ns1:EMMO ] ;
+            rdf:rest () ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#x> ;
+                    swrl:propertyPredicate ns1:overlaps ] ;
+            rdf:rest () ] ;
+    ns1:note "Enforcing reflexivity of overlapping."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "https://www.w3.org/TR/2012/REC-owl2-profiles-20121211/"^^xsd:anyURI ;
+    owl:annotatedProperty ns1:elucidation ;
+    owl:annotatedSource ns1:OWLRL2DLAxioms ;
+    owl:annotatedTarget "Axioms to add to the OWL 2 RL version of the ontology to reach DL expressivity."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#Global_Restrictions_on_Axioms_in_OWL_2_DL"^^xsd:anyURI ;
+    owl:annotatedProperty ns1:elucidation ;
+    owl:annotatedSource ns1:OWL2DLRestrictedAxiom ;
+    owl:annotatedTarget "Axiom not included in the theory because of OWL 2 DL global restrictions for decidability."@en .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate ns1:hasProperPart ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl:var#y> ;
+                            swrl:argument2 <urn:swrl:var#z> ;
+                            swrl:propertyPredicate ns1:hasProperPart ] ;
+                    rdf:rest () ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#z> ;
+                    swrl:propertyPredicate ns1:hasProperPart ] ;
+            rdf:rest () ] ;
+    ns1:note "Transitivity for proper parthood."@en .
+
+[] a swrl:Imp ;
+    rdfs:comment "Implementing transitivity."@en ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate ns1:indirectlyCauses ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl:var#y> ;
+                            swrl:argument2 <urn:swrl:var#z> ;
+                            swrl:propertyPredicate ns1:indirectlyCauses ] ;
+                    rdf:rest () ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#z> ;
+                    swrl:propertyPredicate ns1:indirectlyCauses ] ;
+            rdf:rest () ] .
+
+[] a swrl:Imp ;
+    rdfs:comment "Implementation of equality based on mereology."^^rdfs:Literal ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate ns1:hasPart ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl:var#y> ;
+                            swrl:argument2 <urn:swrl:var#x> ;
+                            swrl:propertyPredicate ns1:hasPart ] ;
+                    rdf:rest () ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:SameIndividualAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ] ;
+            rdf:rest () ] .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Collection ;
+    owl:annotatedTarget "Collection"@en ;
+    ns1:etymology "From Latin collectio, from colligere ‘gather together’."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource ns1:Item ;
+    owl:annotatedTarget "CausalObject"@en ;
+    ns1:etymology "From Latin causa (“reason, sake, cause”), and Medieval Latin obiectum (“object”, literally “thrown against”)."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ns1:CausalPath ;
+    owl:annotatedTarget _:Nb2a1991208ae4789b735ce70a6d07a6e ;
+    ns1:elucidation "This axiom underlines the monodimensional nature of a causal chain, as a sequence of quanta."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:CausalPath ;
+    owl:annotatedTarget "CausalPath"@en ;
+    ns1:etymology "From Ancient Greek πάτος (pátos, “path”)."@en .
+
+[] a swrl:Imp ;
+    rdfs:comment "Implementig transitivity."@en ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate ns1:foreruns ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl:var#y> ;
+                            swrl:argument2 <urn:swrl:var#z> ;
+                            swrl:propertyPredicate ns1:foreruns ] ;
+                    rdf:rest () ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#z> ;
+                    swrl:propertyPredicate ns1:foreruns ] ;
+            rdf:rest () ] .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate ns1:hasPart ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl:var#y> ;
+                            swrl:argument2 <urn:swrl:var#z> ;
+                            swrl:propertyPredicate ns1:hasPart ] ;
+                    rdf:rest () ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#z> ;
+                    swrl:propertyPredicate ns1:hasPart ] ;
+            rdf:rest () ] ;
+    ns1:note "Transitivity for parthood."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:CausalSystem ;
+    owl:annotatedTarget "CausalSystem"@en ;
+    ns1:etymology "From Latin causa (“reason, sake, cause”), and Ancient Greek σύστημα (sústēma, “musical scale; organized body; whole made of several parts or members”), from σῠν- (sun-, prefix meaning ‘with, together’) + ἵστημι (hístēmi, “to stand”)."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty ns1:definition ;
+    owl:annotatedSource ns1:universe ;
+    owl:annotatedTarget "u ≡ σx⟨P(x, x)⟩"^^xsd:string ;
+    ns1:note "This definition reads: \"The universe is the sum of all entities that are part of themselves\". Since parthood (P) is reflexive by axiom, then the universe is the sum of all mereological entities."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:isCauseOf ;
+    owl:annotatedTarget "isCauseOf"@en ;
+    ns1:etymology "From Latin causa (“reason, sake, cause”)."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ns1:EMMO ;
+    owl:annotatedTarget _:Nbca313a0190b4e25893bb2165aa99512 ;
+    ns1:note "All EMMO individuals are part of the most comprehensive entity which is the universe."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:mereological ;
+    owl:annotatedTarget "mereological"@en ;
+    ns1:etymology """Coined by Stanisław Leśniewski in 1927, from Ancient Greek μέρος (méros, “part”) +‎ -logy (“study, discussion, science”).
+https://en.wiktionary.org/wiki/mereology"""@en .
+
+[] a swrl:Imp ;
+    rdfs:comment "Implementing Transitivity."@en ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate ns1:alongsideWith ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl:var#y> ;
+                            swrl:argument2 <urn:swrl:var#z> ;
+                            swrl:propertyPredicate ns1:alongsideWith ] ;
+                    rdf:rest () ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#z> ;
+                    swrl:propertyPredicate ns1:alongsideWith ] ;
+            rdf:rest () ] .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "https://en.wiktionary.org/wiki/Wiktionary"@en ;
+    owl:annotatedProperty ns1:note ;
+    owl:annotatedSource ns1:etymology ;
+    owl:annotatedTarget "Definitions are usually taken from Wiktionary."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty ns1:definition ;
+    owl:annotatedSource ns1:hasDistinctPart ;
+    owl:annotatedTarget "DP(x, y) ≡ PP(x, y) ∧ ∃φ[φ(x) ↔ ¬φ(y)]"^^xsd:string ;
+    ns1:note "We usa a predicate template notation as DP<φ>(x,y) to specify subclasses of DP(x,y) for the class φ, meaning that DP<φ>(x, y) ≡ PP(x, y) ∧ (φ(x) ↔ ¬φ(y))"@en,
+        "φ is a class of the theory"@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso ns1:hasProperPart ;
+    owl:annotatedProperty ns1:definition ;
+    owl:annotatedSource ns1:hasRedundantPart ;
+    owl:annotatedTarget "RP(x, y) ≡ PP(x, y) ∧ ∃φ(φ(x) ∧ φ(y))"^^xsd:string ;
+    ns1:note "We usa a predicate template notation as RP<φ>(x,y) to specify subclasses of RP(x,y) for the class φ, meaning that RP<φ>(x, y) ≡ PP(x, y) ∧ φ(x) ∧ φ(y)"@en,
+        "φ is a class of the theory that in the EMMO OWL is supposed to be subclass of CausalStructure."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource ns1:foreruns ;
+    owl:annotatedTarget "hasSuccessor"@en ;
+    ns1:etymology "From Latin succedĕre (\"coming after\")."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:EMMO ;
+    owl:annotatedTarget "EMMO"@en ;
+    ns1:etymology "EMMO is the acronym of Elementary Multiperspective Material Ontology."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:CausalCluster ;
+    owl:annotatedTarget "CausalCluster"@en ;
+    ns1:etymology "From Proto-Germanic *klas-, *klus- (“to clump, lump together”)."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ns1:Collection ;
+    owl:annotatedTarget _:Nb40bd49eff644f55991fed5a08d1efef ;
+    ns1:note "Every collection has at least two item members, since a collection of one item is a self-connected entity (and then an item)."@en .
+
+_:N0f93d9baf1654e9288678ba6fae0727a rdf:first ns1:Quantum ;
+    rdf:rest () .
+
+_:N78af38dc66a5448283c30179708c0da1 owl:inverseOf ns1:hasPart .
+
+_:Nbc4ad3a77a484fc2bd7a5535fba5b605 a owl:Class ;
+    owl:unionOf ( ns1:CausalPath ns1:Quantum ) .
+
+_:Nb2a1991208ae4789b735ce70a6d07a6e a owl:Restriction ;
+    owl:allValuesFrom _:Nbc4ad3a77a484fc2bd7a5535fba5b605 ;
+    owl:onProperty ns1:hasTemporalPart .
+
+_:Nb40bd49eff644f55991fed5a08d1efef a owl:Restriction ;
+    owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+    owl:onClass ns1:Item ;
+    owl:onProperty ns1:hasSingleMember .
+
+_:Nbca313a0190b4e25893bb2165aa99512 a owl:Restriction ;
+    owl:hasValue ns1:universe ;
+    owl:onProperty _:N78af38dc66a5448283c30179708c0da1 .
+
+_:Nfb56d6533fa84bb0936386997efb77c8 a owl:Restriction ;
+    owl:onProperty ns1:hasPart ;
+    owl:someValuesFrom ns1:Quantum .
+
