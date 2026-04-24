@@ -1,0 +1,471 @@
+@prefix : <https://w3id.org/emmo/hume/disciplines/models#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/emmo#> .
+@prefix ns2: <http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:Coded rdfs:label "Coded"@en ;
+    rdfs:comment "A conventional that stands for an object according to a code of interpretation to which the interpreter refers."@en .
+
+ns1:CodedByObservation rdfs:label "CodedByObservation"@en ;
+    rdfs:comment "A coded classified by observation."@en .
+
+ns1:CodedByStructure rdfs:label "CodedByStructure"@en ;
+    rdfs:comment "A coded classified by its structure."@en .
+
+ns1:CodedBySubjectivity rdfs:label "CodedBySubjectivity"@en ;
+    rdfs:comment "A coded classified by whether it is determined subjectively or objectively."@en .
+
+ns1:Conventional rdfs:label "Conventional"@en ;
+    rdfs:comment "A 'Sign' that stands for an 'Object' through convention, norm or habit, without any resemblance to it."@en .
+
+ns1:DataBasedSimulationSoftware a owl:Class ;
+    rdfs:label "DataBasedSimulationSoftware"@en ;
+    rdfs:comment "A computational application that uses existing data to predict the behaviour of a system without providing a identifiable analogy with the original object."@en ;
+    rdfs:subClassOf ns1:SimulationSoftware ;
+    skos:prefLabel "DataBasedSimulationSoftware"@en ;
+    ns1:elucidation "A computational application that uses existing data to predict the behaviour of a system without providing a identifiable analogy with the original object."@en .
+
+ns1:DataProcessing a owl:Class ;
+    rdfs:label "DataProcessing"@en ;
+    rdfs:comment "A computation that provides a data output following the elaboration of some input data, using a data processing application."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:hasInput ;
+            owl:someValuesFrom ns1:DiscreteData ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:hasParticipant ;
+            owl:someValuesFrom ns1:DataProcessingSoftware ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:hasOutput ;
+            owl:someValuesFrom ns1:DiscreteData ],
+        ns1:Computation ;
+    skos:prefLabel "DataProcessing"@en ;
+    ns1:elucidation "A computation that provides a data output following the elaboration of some input data, using a data processing application."@en .
+
+ns1:Declaration rdfs:label "Declaration"@en ;
+    rdfs:comment "A semiotic process that assigns a sign based on conventions."@en .
+
+ns1:DigitalData rdfs:label "DigitalData"@en ;
+    rdfs:comment "Discrete data that are decoded as a sequence of 1/0, or true/false, or on/off."@en .
+
+ns1:EmpiricalSimulationSoftware a owl:Class ;
+    rdfs:label "EmpiricalSimulationSoftware"@en ;
+    rdfs:comment "A computational application that uses an empiric equation to predict the behaviour of a system without relying on the knowledge of the actual physical phenomena occurring in the object."@en ;
+    rdfs:subClassOf ns1:SimulationSoftware ;
+    skos:prefLabel "EmpiricalSimulationSoftware"@en ;
+    ns1:elucidation "A computational application that uses an empiric equation to predict the behaviour of a system without relying on the knowledge of the actual physical phenomena occurring in the object."@en .
+
+ns1:Experiment a owl:Class ;
+    rdfs:label "Experiment"@en ;
+    rdfs:comment "An experiment is a process that is intended to replicate a physical phenomenon in a controlled environment."@en ;
+    rdfs:subClassOf ns1:Observation,
+        ns1:Process ;
+    skos:prefLabel "Experiment"@en ;
+    ns1:elucidation "An experiment is a process that is intended to replicate a physical phenomenon in a controlled environment."@en .
+
+ns1:Guess a owl:Class ;
+    rdfs:label "Guess"@en ;
+    rdfs:comment "A guess is a theory, estimated and subjective, since its premises are subjective."@en ;
+    rdfs:subClassOf ns1:Estimated,
+        ns1:Subjective,
+        ns1:Theory ;
+    skos:prefLabel "Guess"@en ;
+    ns1:elucidation "A guess is a theory, estimated and subjective, since its premises are subjective."@en .
+
+ns1:Hypothesis a owl:Class ;
+    rdfs:label "Hypothesis"@en ;
+    rdfs:comment "A hypothesis is a theory, estimated and objective, since its estimated premises are objective."@en ;
+    rdfs:subClassOf ns1:Estimated,
+        ns1:Objective,
+        ns1:Theory ;
+    skos:prefLabel "Hypothesis"@en ;
+    ns1:elucidation "A hypothesis is a theory, estimated and objective, since its estimated premises are objective."@en .
+
+ns1:Index skos:altLabel "Signal"@en .
+
+ns1:LinkedModelsSimulation a owl:Class ;
+    rdfs:label "LinkedModelsSimulation"@en ;
+    rdfs:comment "A chain of linked physics based model simulations, where equations are solved sequentially."@en ;
+    rdfs:subClassOf ns1:MultiSimulation ;
+    skos:prefLabel "LinkedModelsSimulation"@en ;
+    ns1:elucidation "A chain of linked physics based model simulations, where equations are solved sequentially."@en .
+
+ns1:MaterialLaw a owl:Class ;
+    rdfs:label "MaterialLaw"@en ;
+    rdfs:comment "A law that provides a connection between a material property and other properties of the object."@en ;
+    rdfs:subClassOf ns1:NaturalLaw ;
+    skos:prefLabel "MaterialLaw"@en ;
+    ns1:elucidation "A law that provides a connection between a material property and other properties of the object."@en .
+
+ns1:MaterialRelationComputation a owl:Class ;
+    rdfs:label "MaterialRelationComputation"@en ;
+    rdfs:subClassOf ns1:PhysicsMathematicalComputation ;
+    skos:prefLabel "MaterialRelationComputation"@en .
+
+ns1:PhysicalBasedSimulationSoftware a owl:Class ;
+    rdfs:label "PhysicalBasedSimulationSoftware"@en ;
+    rdfs:comment "A computational application that uses a physical model to predict the behaviour of a system, providing a identifiable analogy with the original object."@en ;
+    rdfs:subClassOf ns1:SimulationSoftware ;
+    skos:prefLabel "PhysicalBasedSimulationSoftware"@en ;
+    ns1:elucidation "A computational application that uses a physical model to predict the behaviour of a system, providing a identifiable analogy with the original object."@en .
+
+ns1:PhysicalLaw a owl:Class ;
+    rdfs:label "PhysicalLaw"@en ;
+    rdfs:comment "A law that provides a connection between a property of the object and other properties, capturing a fundamental physical phenomena."@en ;
+    rdfs:subClassOf ns1:NaturalLaw ;
+    skos:prefLabel "PhysicalLaw"@en ;
+    ns1:elucidation "A law that provides a connection between a property of the object and other properties, capturing a fundamental physical phenomena."@en .
+
+ns1:PhysicsEquationSolution a owl:Class ;
+    rdfs:label "PhysicsEquationSolution"@en ;
+    rdfs:comment "A function solution of a physics equation that provides a methods for the prediction of some quantitiative properties of an object."@en,
+        """This must be a mathematical function v(t), x(t).
+A dataset as solution is a conventional sign."""@en ;
+    rdfs:subClassOf ns1:Mathematical ;
+    skos:example "A parabolic function is a prediction of the trajectory of a falling object in a gravitational field. While it has predictive capabilities it lacks of an analogical character, since it does not show the law behind that trajectory."@en ;
+    skos:prefLabel "PhysicsEquationSolution"@en ;
+    ns1:elucidation "A function solution of a physics equation that provides a methods for the prediction of some quantitiative properties of an object."@en .
+
+ns1:Replica a owl:Class ;
+    rdfs:label "Replica"@en ;
+    rdfs:comment "An icon that not only resembles the object, but also can express some of the object's functions."@en ;
+    rdfs:subClassOf ns1:Icon ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( ns1:ResemblanceIcon ns1:FunctionalIcon ) ] ;
+    skos:example "A small scale replica of a plane tested in a wind gallery shares the same functionality in terms of aerodynamic behaviour of the bigger one."@en,
+        "Pinocchio is a functional icon of a boy since it imitates the external behaviour without having the internal biological structure of a human being (it is made of magic wood...)."@en ;
+    skos:prefLabel "Replica"@en ;
+    ns1:elucidation "An icon that not only resembles the object, but also can express some of the object's functions."@en .
+
+ns1:Semiosis rdfs:label "Semiosis"@en ;
+    rdfs:comment "The class for entities where an interpreter, interpretant, reference and sign relate with each others semiotically."@en .
+
+ns1:SemiosisByReferent rdfs:label "SemiosisByReferent"@en ;
+    rdfs:comment "Semiosis classified by how the sign stands for its reference object."@en .
+
+ns1:SemioticEntity rdfs:label "SemioticEntity"@en ;
+    rdfs:comment "The class of individuals that stands for semiotic objects, i.e. objects that take part on a semiotic process."@en .
+
+ns1:Semiotics rdfs:label "Semiotics"@en ;
+    rdfs:comment "A perspective based on Pierce semiotics, where an interpreter relates a referent to a sign in through semiotic relations."@en .
+
+ns1:Sign rdfs:label "Sign"@en ;
+    rdfs:comment "A CausalStructure that is used as sign (\"semeion\" in greek) that stands for another CausalStructure through an semiotic process."@en .
+
+ns1:SignByReferent rdfs:label "SignByReferent"@en ;
+    rdfs:comment "Sign classified by how the sign stands for its reference object."@en .
+
+ns1:Software rdfs:label "Software"@en ;
+    rdfs:comment "All or part of the programs, procedures, rules, and associated documentation of an information processing system."@en .
+
+ns1:StandaloneModelSimulation a owl:Class ;
+    rdfs:label "StandaloneModelSimulation"@en ;
+    rdfs:comment "A standalone simulation, where a single physics equation is solved."@en ;
+    rdfs:subClassOf ns1:PhysicsBasedSimulation ;
+    skos:prefLabel "StandaloneModelSimulation"@en ;
+    ns1:elucidation "A standalone simulation, where a single physics equation is solved."@en .
+
+ns1:Theorisation a owl:Class ;
+    rdfs:label "Theorisation"@en ;
+    rdfs:comment "The 'semiosis' process of interpreting a 'physical' and provide a complec sign, 'theory' that stands for it and explain it to another interpreter."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isParticipatedBy ;
+            owl:someValuesFrom ns1:Theory ],
+        ns1:Determination ;
+    skos:altLabel "Theorization"@en ;
+    skos:prefLabel "Theorisation"@en ;
+    ns1:elucidation "The 'semiosis' process of interpreting a 'physical' and provide a complec sign, 'theory' that stands for it and explain it to another interpreter."@en .
+
+ns1:hasModel a owl:ObjectProperty ;
+    rdfs:label "hasModel"@en ;
+    ns2:python_name "hasModel"@en ;
+    rdfs:subPropertyOf ns1:hasIcon ;
+    skos:prefLabel "hasModel"@en .
+
+ns1:hasSimulatedObject a owl:ObjectProperty ;
+    rdfs:label "hasSimulatedObject"@en ;
+    ns2:python_name "hasSimulatedObject"@en ;
+    rdfs:comment "Relates a simulation to the object or system that is simulated."@en ;
+    rdfs:domain ns1:Simulation ;
+    rdfs:subPropertyOf ns1:hasReferent ;
+    skos:prefLabel "hasSimulatedObject"@en ;
+    ns1:elucidation "Relates a simulation to the object or system that is simulated."@en .
+
+: a owl:Ontology ;
+    dcterms:abstract "The models module defines models as semiotic signs that stands for an object by resembling or imitating it, in shape or by sharing a similar logical structure."@en ;
+    dcterms:creator <https://orcid.org/AdhamHashibon>,
+        <https://orcid.org/EmanueleGhedini>,
+        <https://orcid.org/GeorgSchmitz>,
+        <https://orcid.org/GerhardGoldbeck>,
+        <https://orcid.org/JesperFriis> ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "Models"@en ;
+    rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.3/disciplines/computerscience>,
+        <https://w3id.org/emmo/1.0.3/disciplines/math>,
+        <https://w3id.org/emmo/1.0.3/disciplines/metrology>,
+        <https://w3id.org/emmo/1.0.3/perspectives/persistence>,
+        <https://w3id.org/emmo/1.0.3/reference/data>,
+        <https://w3id.org/emmo/1.0.3/reference/workflow> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.3/hume/disciplines/models> ;
+    owl:versionInfo "1.0.3"^^xsd:string ;
+    ns1:contact "emmo@emmc.eu"^^xsd:string .
+
+ns1:AtomisticModel a owl:Class ;
+    rdfs:label "AtomisticModel"@en ;
+    rdfs:comment "A physics-based model based on a physics equation describing the behaviour of atoms."@en ;
+    rdfs:subClassOf ns1:MaterialsModel ;
+    skos:prefLabel "AtomisticModel"@en ;
+    ns1:elucidation "A physics-based model based on a physics equation describing the behaviour of atoms."@en .
+
+ns1:ContinuumModel a owl:Class ;
+    rdfs:label "ContinuumModel"@en ;
+    rdfs:comment "A physics-based model based on a physics equation describing the behaviour of continuum volume."@en ;
+    rdfs:subClassOf ns1:MaterialsModel ;
+    skos:prefLabel "ContinuumModel"@en ;
+    ns1:elucidation "A physics-based model based on a physics equation describing the behaviour of continuum volume."@en .
+
+ns1:DataProcessingSoftware a owl:Class ;
+    rdfs:label "DataProcessingSoftware"@en ;
+    rdfs:comment "An application program aimed for data processing."@en ;
+    rdfs:subClassOf ns1:ApplicationProgram ;
+    skos:altLabel "DataProcessingApplication"@en ;
+    skos:prefLabel "DataProcessingSoftware"@en ;
+    ns1:elucidation "An application program aimed for data processing."@en .
+
+ns1:Description rdfs:label "Description"@en ;
+    rdfs:comment "A coded that is not atomic with respect to a code of description."@en .
+
+ns1:Determination rdfs:label "Determination"@en ;
+    rdfs:comment "A 'Semiosis' that involves an 'Observer' that perceives another 'Physical' (the 'Object') through a specific perception mechanism and produces a 'Property' (the 'Sign') that stands for the result of that particular perception according to a well defined conventional procedure."@en .
+
+ns1:ElectronicModel a owl:Class ;
+    rdfs:label "ElectronicModel"@en ;
+    rdfs:comment "A physics-based model based on a physics equation describing the behaviour of electrons."@en ;
+    rdfs:subClassOf ns1:MaterialsModel ;
+    skos:example """Density functional theory.
+Hartree-Fock."""@en ;
+    skos:prefLabel "ElectronicModel"@en ;
+    ns1:elucidation "A physics-based model based on a physics equation describing the behaviour of electrons."@en .
+
+ns1:Estimation rdfs:label "Estimation"@en ;
+    rdfs:comment "A determination of an object without any actual interaction."@en .
+
+ns1:Icon rdfs:label "Icon"@en ;
+    rdfs:comment "A sign that stands for an object by resembling or imitating it, in shape, function or by sharing a similar logical structure."@en .
+
+ns1:IterativeCoupledModelsSimulation a owl:Class ;
+    rdfs:label "IterativeCoupledModelsSimulation"@en ;
+    rdfs:comment "A chain of linked physics based model simulations solved iteratively, where equations are segregated."@en ;
+    rdfs:subClassOf ns1:Coupled ;
+    skos:prefLabel "IterativeCoupledModelsSimulation"@en ;
+    ns1:elucidation "A chain of linked physics based model simulations solved iteratively, where equations are segregated."@en .
+
+ns1:MaterialRelation a owl:Class ;
+    rdfs:label "MaterialRelation"@en ;
+    rdfs:comment "A material_relation can e.g. return a predefined number, return a database query, be an equation that depends on other physics_quantities."@en,
+        "An 'equation' that stands for a physical assumption specific to a material, and provides an expression for a 'physics_quantity' (the dependent variable) as function of other variables, physics_quantity or data (independent variables)."@en ;
+    rdfs:subClassOf ns1:Equation ;
+    skos:example """The Lennard-Jones potential.
+A force field.
+An Hamiltonian."""@en ;
+    skos:prefLabel "MaterialRelation"@en ;
+    ns1:elucidation "An 'equation' that stands for a physical assumption specific to a material, and provides an expression for a 'physics_quantity' (the dependent variable) as function of other variables, physics_quantity or data (independent variables)."@en .
+
+ns1:MathematicalModel a owl:Class ;
+    rdfs:label "MathematicalModel"@en ;
+    rdfs:comment """A mathematical model can be defined as a description of a system using mathematical concepts and language to facilitate proper explanation of a system or to study the effects of different components and to make predictions on patterns of behaviour.
+
+Abramowitz and Stegun, 1968"""@en,
+        "An analogical icon expressed in mathematical language."@en ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( ns1:AnalogicalIcon ns1:Mathematical ) ] ;
+    skos:prefLabel "MathematicalModel"@en ;
+    ns1:elucidation "An analogical icon expressed in mathematical language."@en .
+
+ns1:MesoscopicModel a owl:Class ;
+    rdfs:label "MesoscopicModel"@en ;
+    rdfs:comment "A physics-based model based on a physics equation describing the behaviour of mesoscopic entities, i.e. a set of bounded atoms like a molecule, bead or nanoparticle."@en ;
+    rdfs:subClassOf ns1:MaterialsModel ;
+    skos:prefLabel "MesoscopicModel"@en ;
+    ns1:elucidation "A physics-based model based on a physics equation describing the behaviour of mesoscopic entities, i.e. a set of bounded atoms like a molecule, bead or nanoparticle."@en .
+
+ns1:Observation rdfs:label "Observation"@en ;
+    rdfs:comment "A characterisation of an object with an actual interaction."@en .
+
+ns1:Observed rdfs:label "Observed"@en ;
+    rdfs:comment "A coded that has been observed by an interpreter."@en .
+
+ns1:PhysicsEquation a owl:Class ;
+    rdfs:label "PhysicsEquation"@en ;
+    rdfs:comment "An 'equation' that stands for a 'physical_law' by mathematically defining the relations between physics_quantities."@en ;
+    rdfs:subClassOf ns1:Equation,
+        ns1:PhysicsBasedModel ;
+    skos:example """The Newton's equation of motion.
+The Schrödinger equation.
+The Navier-Stokes equation."""@en ;
+    skos:prefLabel "PhysicsEquation"@en ;
+    ns1:elucidation "An 'equation' that stands for a 'physical_law' by mathematically defining the relations between physics_quantities."@en .
+
+ns1:PhysicsMathematicalComputation a owl:Class ;
+    rdfs:label "PhysicsMathematicalComputation"@en ;
+    rdfs:comment "A functional icon that imitates the behaviour of the object through mathematical evaluations of some mathematical construct."@en ;
+    rdfs:subClassOf ns1:Computation,
+        ns1:FunctionalIcon ;
+    skos:prefLabel "PhysicsMathematicalComputation"@en ;
+    ns1:elucidation "A functional icon that imitates the behaviour of the object through mathematical evaluations of some mathematical construct."@en ;
+    ns1:note "The equation that describes the velocity of a uniform accelerated body v = v0 + a*t is a functional icon. In general every analitical solution of a mathematical model can be considered an icon. A functional icon expresses its similarity with the object when is part of a process the makes it imitate the behavior of the object. In the case of v = v0 + a*t, plotting the velocity over time or listing their values at certain instants is when the icon expresses it functionality."@en .
+
+ns1:Procedure rdfs:label "Procedure"@en ;
+    rdfs:comment "An intentional process in which an agent works with some entities according to some existing formalised operative rules."@en,
+        "The set of established forms or methods of an organized body for accomplishing a certain task or tasks (Wiktionary)."@en .
+
+ns1:ScientificTheory a owl:Class ;
+    rdfs:label "ScientificTheory"@en ;
+    rdfs:comment "A scientific theory is a description, objective and observed, produced with scientific methodology."@en ;
+    rdfs:subClassOf ns1:Objective,
+        ns1:Observed,
+        ns1:Theory ;
+    skos:prefLabel "ScientificTheory"@en ;
+    ns1:elucidation "A scientific theory is a description, objective and observed, produced with scientific methodology."@en .
+
+ns1:Subjective rdfs:label "Subjective"@en ;
+    rdfs:comment "A coded conventional that cannot be univocally determined and depends on an agent (e.g. a human individual, a community) acting as black-box."@en .
+
+ns1:TightlyCoupledModelsSimulation a owl:Class ;
+    rdfs:label "TightlyCoupledModelsSimulation"@en ;
+    rdfs:comment "A simulation in which more than one model are solved together with a coupled method."@en ;
+    rdfs:subClassOf ns1:Coupled ;
+    skos:example "Solving within the same linear system the discretised form of the pressure and momentum equation for a fluid, using the ideal gas law as material relation for connecting pressure to density."@en ;
+    skos:prefLabel "TightlyCoupledModelsSimulation"@en ;
+    ns1:elucidation "A simulation in which more than one model are solved together with a coupled method."@en .
+
+ns1:ApplicationProgram rdfs:label "ApplicationProgram"@en ;
+    rdfs:comment "A program aimed to provide a specific high level function to the user, usually hiding lower level procedures."@en .
+
+ns1:Coupled a owl:Class ;
+    rdfs:label "Coupled"@en ;
+    rdfs:subClassOf ns1:MultiSimulation ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf ( ns1:IterativeCoupledModelsSimulation ns1:TightlyCoupledModelsSimulation ) ] ;
+    skos:prefLabel "Coupled"@en .
+
+ns1:Estimated rdfs:label "Estimated"@en ;
+    rdfs:comment "A coded that is assigned from an estimation."@en .
+
+ns1:MultiSimulation a owl:Class ;
+    rdfs:label "MultiSimulation"@en ;
+    rdfs:comment "A physics based simulation with multiple physics based models."@en ;
+    rdfs:subClassOf ns1:PhysicsBasedSimulation ;
+    skos:prefLabel "MultiSimulation"@en ;
+    ns1:elucidation "A physics based simulation with multiple physics based models."@en .
+
+ns1:NaturalLaw a owl:Class ;
+    rdfs:label "NaturalLaw"@en ;
+    rdfs:comment "A scientific theory that focuses on a specific phenomena, for which a single statement (not necessariliy in mathematical form) can be expressed."@en ;
+    rdfs:subClassOf ns1:ScientificTheory ;
+    skos:prefLabel "NaturalLaw"@en ;
+    ns1:elucidation "A scientific theory that focuses on a specific phenomena, for which a single statement (not necessariliy in mathematical form) can be expressed."@en .
+
+ns1:Objective rdfs:label "Objective"@en ;
+    rdfs:comment "A coded conventional that is determined by each interpeter following a well defined determination procedure through a specific perception channel."@en .
+
+ns1:Simulation a owl:Class ;
+    rdfs:label "Simulation"@en ;
+    rdfs:comment "A estimation of a property using a functional icon."@en ;
+    rdfs:subClassOf ns1:Computation,
+        ns1:Estimation ;
+    skos:altLabel "Modelling"@en ;
+    skos:example "I calculate the electrical conductivity of an Ar-He plasma with the Chapman-Enskog method and use the value as property for it."@en ;
+    skos:prefLabel "Simulation"@en ;
+    ns1:elucidation "A estimation of a property using a functional icon."@en .
+
+ns1:FunctionalIcon rdfs:label "FunctionalIcon"@en ;
+    rdfs:comment "An icon that imitates one representative character of the object. It share external similarities with the object, but not necessarily the same internal logical structure."@en ;
+    skos:example "A guinea pig."@en .
+
+ns1:PhysicsBasedModel a owl:Class ;
+    rdfs:label "PhysicsBasedModel"@en ;
+    rdfs:comment "A mathematical entity based on a fundamental physics theory which defines the relations between physics quantities of an entity."@en ;
+    rdfs:isDefinedBy "CEN Workshop Agreement – CWA 17284 “Materials modelling – terminology, classification and metadata”"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:hasSpatialPart ;
+            owl:someValuesFrom ns1:PhysicsEquation ],
+        ns1:MathematicalModel ;
+    skos:prefLabel "PhysicsBasedModel"@en ;
+    ns1:elucidation "A mathematical entity based on a fundamental physics theory which defines the relations between physics quantities of an entity."@en .
+
+ns1:PhysicsBasedSimulation a owl:Class ;
+    rdfs:label "PhysicsBasedSimulation"@en ;
+    rdfs:comment "A simulation that relies on physics based models, according to the Review of Materials Modelling and CWA 17284:2018."@en ;
+    rdfs:isDefinedBy "CEN Workshop Agreement – CWA 17284 “Materials modelling – terminology, classification and metadata”"@en ;
+    rdfs:subClassOf ns1:Simulation ;
+    skos:prefLabel "PhysicsBasedSimulation"@en ;
+    ns1:elucidation "A simulation that relies on physics based models, according to the Review of Materials Modelling and CWA 17284:2018."@en .
+
+ns1:SimulationSoftware a owl:Class ;
+    rdfs:label "SimulationSoftware"@en ;
+    rdfs:comment "An application program aimed to functionally reproduce an object."@en ;
+    rdfs:subClassOf ns1:ApplicationProgram,
+        ns1:FunctionalIcon ;
+    skos:altLabel "SimulationApplication"@en ;
+    skos:example "An application program that predicts the pressure drop of a fluid in a pipe segment is aimed to functionally reproduce the outcome of a measurement of pressure before and after the segment."@en ;
+    skos:prefLabel "SimulationSoftware"@en ;
+    ns1:elucidation "An application program aimed to functionally reproduce an object."@en .
+
+ns1:Computation a owl:Class ;
+    rdfs:label "Computation"@en ;
+    rdfs:comment "A procedure that deals with quantitative symbols (i.e. symbols associated with a quantitative oriented language)."@en ;
+    rdfs:subClassOf ns1:Procedure ;
+    skos:example """A mathematician that calculates 2+2.
+A computation machine that calculate the average value of a dataset."""@en ;
+    skos:prefLabel "Computation"@en ;
+    ns1:elucidation "A procedure that deals with quantitative symbols (i.e. symbols associated with a quantitative oriented language)."@en .
+
+ns1:MaterialsModel a owl:Class ;
+    rdfs:label "MaterialsModel"@en ;
+    rdfs:comment "A solvable set of one Physics Equation and one or more Materials Relations."@en ;
+    rdfs:seeAlso "https://op.europa.eu/en/publication-detail/-/publication/ec1455c3-d7ca-11e6-ad7c-01aa75ed71a1"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:hasSpatialPart ;
+            owl:someValuesFrom ns1:MaterialRelation ],
+        ns1:PhysicsBasedModel ;
+    owl:disjointUnionOf ( ns1:ContinuumModel ns1:MesoscopicModel ns1:ElectronicModel ns1:AtomisticModel ) ;
+    skos:prefLabel "MaterialsModel"@en ;
+    ns1:elucidation "A solvable set of one Physics Equation and one or more Materials Relations."@en .
+
+ns1:Theory a owl:Class ;
+    rdfs:label "Theory"@en ;
+    rdfs:comment "A 'conventional' that stand for a 'physical'."@en,
+        """The 'theory' is e.g. a proposition, a book or a paper whose sub-symbols suggest in the mind of the interpreter an interpretant structure that can represent a 'physical'.
+
+It is not an 'icon' (like a math equation), because it has no common resemblance or logical structure with the 'physical'.
+
+In Peirce semiotics: legisign-symbol-argument"""@en ;
+    rdfs:subClassOf ns1:Description ;
+    skos:prefLabel "Theory"@en ;
+    ns1:elucidation "A 'conventional' that stand for a 'physical'."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "https://www.cencenelec.eu/media/CEN-CENELEC/CWAs/RI/cwa17284_2018.pdf"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:isDefinedBy ;
+    owl:annotatedSource ns1:PhysicsBasedModel ;
+    owl:annotatedTarget "CEN Workshop Agreement – CWA 17284 “Materials modelling – terminology, classification and metadata”"@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Computation ;
+    owl:annotatedTarget "Computation"@en ;
+    ns1:etymology "From Latin con- +‎ putō (“I reckon”)."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "https://www.cencenelec.eu/media/CEN-CENELEC/CWAs/RI/cwa17284_2018.pdf"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:isDefinedBy ;
+    owl:annotatedSource ns1:PhysicsBasedSimulation ;
+    owl:annotatedTarget "CEN Workshop Agreement – CWA 17284 “Materials modelling – terminology, classification and metadata”"@en .
+

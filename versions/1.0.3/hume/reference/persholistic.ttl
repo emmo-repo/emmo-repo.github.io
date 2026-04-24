@@ -1,0 +1,126 @@
+@prefix : <https://w3id.org/emmo/hume/reference/persholistic#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/emmo#> .
+@prefix ns2: <http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:HolisticArrangement a owl:Class ;
+    rdfs:label "HolisticArrangement"@en ;
+    rdfs:comment "A system which is mainly characterised by the spatial configuration of its elements."@en ;
+    rdfs:subClassOf ns1:HolisticSystem ;
+    skos:prefLabel "HolisticArrangement"@en ;
+    ns1:elucidation "A system which is mainly characterised by the spatial configuration of its elements."@en .
+
+ns1:NaturalProcess a owl:Class ;
+    rdfs:label "NaturalProcess"@en ;
+    rdfs:comment "A process occurring by natural (non-intentional) laws."@en ;
+    rdfs:subClassOf ns1:Process ;
+    skos:altLabel "NonIntentionalProcess"@en ;
+    skos:prefLabel "NaturalProcess"@en ;
+    ns1:elucidation "A process occurring by natural (non-intentional) laws."@en .
+
+ns1:Network a owl:Class ;
+    rdfs:label "Network"@en ;
+    rdfs:comment "A system whose is mainly characterised by the way in which elements are interconnected."@en ;
+    rdfs:subClassOf ns1:HolisticSystem ;
+    skos:prefLabel "Network"@en ;
+    ns1:elucidation "A system whose is mainly characterised by the way in which elements are interconnected."@en .
+
+ns1:hasInterval a owl:ObjectProperty ;
+    rdfs:label "hasInterval"@en ;
+    ns2:python_name "hasInterval"@en ;
+    rdfs:comment "The relation between a process whole and a temporal part of the same type."@en ;
+    rdfs:domain ns1:Process,
+        ns1:Redundant ;
+    rdfs:range ns1:Process ;
+    rdfs:subPropertyOf ns1:hasRedundantPart,
+        ns1:hasTemporalPart ;
+    skos:prefLabel "hasInterval"@en ;
+    ns1:elucidation "The relation between a process whole and a temporal part of the same type."@en .
+
+ns1:hasPortion a owl:ObjectProperty ;
+    rdfs:label "hasPortion"@en ;
+    ns2:python_name "hasPortion"@en ;
+    rdfs:comment "The relation between a object whole and its spatial part of the same type."@en ;
+    rdfs:domain ns1:Object,
+        ns1:Redundant ;
+    rdfs:range ns1:Object ;
+    rdfs:subPropertyOf ns1:hasRedundantPart ;
+    skos:example "A volume of 1 cc of milk within a 1 litre can be considered still milk as a whole. If you scale down to a cluster of molecules, than the milk cannot be considered a fluid no more (and then no more a milk)."@en ;
+    skos:prefLabel "hasPortion"@en ;
+    ns1:elucidation "The relation between a object whole and its spatial part of the same type."@en .
+
+: a owl:Ontology ;
+    dcterms:abstract ""@en ;
+    dcterms:contributor <https://orcid.org/FrancescoZaccarini>,
+        <https://orcid.org/GerhardGoldbeck>,
+        <https://orcid.org/JesperFriis> ;
+    dcterms:creator <https://orcid.org/EmanueleGhedini> ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "Persholistic"@en ;
+    rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.3/perspectives/contrast>,
+        <https://w3id.org/emmo/1.0.3/perspectives/holistic>,
+        <https://w3id.org/emmo/1.0.3/perspectives/persistence>,
+        <https://w3id.org/emmo/1.0.3/perspectives/semiotics>,
+        <https://w3id.org/emmo/1.0.3/perspectives/structural> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.3/hume/reference/persholistic> ;
+    owl:versionInfo "1.0.3"^^xsd:string ;
+    ns1:contact "emmo@emmc.eu"^^xsd:string .
+
+ns1:Organisation a owl:Class ;
+    rdfs:label "Organisation"@en ;
+    rdfs:comment "An holistic system of people that has its own functions with responsibilities, authorities and relationships to achieve its objectives."@en ;
+    rdfs:seeAlso """ISO 55000:2014
+organization: person or group of people that has its own functions with responsibilities, authorities and relationships to achieve its objectives"""@en ;
+    rdfs:subClassOf ns1:HolisticSystem ;
+    skos:prefLabel "Organisation"@en ;
+    ns1:elucidation "An holistic system of people that has its own functions with responsibilities, authorities and relationships to achieve its objectives."@en .
+
+ns1:Component a owl:Class ;
+    rdfs:label "Component"@en ;
+    rdfs:comment "A constituent of a system."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf ns1:hasComponent ] ;
+            owl:someValuesFrom ns1:HolisticSystem ],
+        ns1:Constituent,
+        ns1:Role ;
+    skos:prefLabel "Component"@en ;
+    ns1:OWLRL2DLAxioms "SubClassOf:  inverse (hasConstituent) some HolisticSystem"^^xsd:string ;
+    ns1:elucidation "A constituent of a system."@en .
+
+ns1:hasComponent a owl:ObjectProperty ;
+    rdfs:label "hasComponent"@en ;
+    ns2:python_name "hasComponent"@en ;
+    rdfs:comment "Relation a holistic system to one of its components."@en ;
+    rdfs:domain ns1:HolisticSystem ;
+    rdfs:range ns1:Component ;
+    rdfs:subPropertyOf ns1:hasConstituent,
+        ns1:hasRole ;
+    skos:prefLabel "hasComponent"@en ;
+    ns1:elucidation "Relation a holistic system to one of its components."@en .
+
+ns1:HolisticSystem a owl:Class ;
+    rdfs:label "HolisticSystem"@en ;
+    rdfs:comment "An object that is made of a set of sub objects working together as parts of a mechanism or an interconnecting network (natural or artificial); a complex whole."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:hasComponent ;
+            owl:someValuesFrom ns1:Component ],
+        ns1:Object,
+        ns1:Whole ;
+    skos:prefLabel "HolisticSystem"@en ;
+    ns1:OWLRL2DLAxioms "SubClassOf: hasComponent some Component"^^xsd:string ;
+    ns1:elucidation "An object that is made of a set of sub objects working together as parts of a mechanism or an interconnecting network (natural or artificial); a complex whole."@en ;
+    ns1:note "A system is conceived as an aggregate of things that 'work' (or interact) together. While a system extends in time through distinct temporal parts (like every other 4D object), this elucdation focuses on a timescale in which the obejct shows a persistence in time."@en .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:55000:ed-1:v2:en:term:3.1.13"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:seeAlso ;
+    owl:annotatedSource ns1:Organisation ;
+    owl:annotatedTarget """ISO 55000:2014
+organization: person or group of people that has its own functions with responsibilities, authorities and relationships to achieve its objectives"""@en .
+

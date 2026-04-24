@@ -1,0 +1,104 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix emmo: <https://w3id.org/emmo#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://orcid.org/0000-0001-7815-6636> a owl:NamedIndividual ;
+    rdfs:label "OtelloRoscioni"^^xsd:string ;
+    skos:prefLabel "OtelloRoscioni"^^xsd:string ;
+    foaf:name "Otello M. Roscioni"^^xsd:string ;
+    foaf:workplaceHomepage <https://materialsmodelling.com> .
+
+<https://orcid.org/0000-0001-8869-3718> a owl:NamedIndividual ;
+    rdfs:label "FrancescaBleken"^^xsd:string ;
+    skos:prefLabel "FrancescaBleken"^^xsd:string ;
+    foaf:name "Francesca Lønstad Bleken"^^xsd:string ;
+    foaf:workplaceHomepage <https://www.sintef.no/en> .
+
+<https://orcid.org/0000-0001-9189-2400> a owl:NamedIndividual ;
+    rdfs:label "SebastianoMoruzzi"^^xsd:string ;
+    skos:prefLabel "SebastianoMoruzzi"^^xsd:string ;
+    foaf:name "Sebastiano Moruzzi"^^xsd:string ;
+    foaf:workplaceHomepage <https://www.unibo.it/en> .
+
+<https://orcid.org/0000-0002-1560-809X> a owl:NamedIndividual ;
+    rdfs:label "JesperFriis"^^xsd:string ;
+    skos:prefLabel "JesperFriis"^^xsd:string ;
+    foaf:name "Jesper Friis"^^xsd:string ;
+    foaf:workplaceHomepage <https://www.sintef.no/en> .
+
+<https://orcid.org/0000-0002-4181-2852> a owl:NamedIndividual ;
+    rdfs:label "GerhardGoldbeck"^^xsd:string ;
+    skos:prefLabel "GerhardGoldbeck"^^xsd:string ;
+    foaf:name "Gerhard Goldbeck"^^xsd:string ;
+    foaf:workplaceHomepage <https://materialsmodelling.com> .
+
+<https://orcid.org/0000-0002-5417-6808> a owl:NamedIndividual ;
+    rdfs:label "MichaelNoeske"^^xsd:string ;
+    skos:prefLabel "MichaelNoeske"^^xsd:string ;
+    foaf:name "Paul-Ludwig Michael Noeske"^^xsd:string ;
+    foaf:workplaceHomepage <https://www.ifam.fraunhofer.de/en> .
+
+<https://orcid.org/0000-0002-8758-6109> a owl:NamedIndividual ;
+    rdfs:label "SimonClark"^^xsd:string ;
+    skos:prefLabel "SimonClark"^^xsd:string ;
+    foaf:name "Simon Clark"^^xsd:string ;
+    foaf:workplaceHomepage <https://www.sintef.no/en> .
+
+<https://orcid.org/0000-0003-0514-9229> a owl:NamedIndividual ;
+    rdfs:label "AdhamHashibon"^^xsd:string ;
+    skos:prefLabel "AdhamHashibon"^^xsd:string ;
+    foaf:name "Adham Hashibon"^^xsd:string ;
+    foaf:workplaceHomepage <https://www.ucl.ac.uk> .
+
+<https://orcid.org/0000-0003-3805-8761> a owl:NamedIndividual ;
+    rdfs:label "EmanueleGhedini"^^xsd:string ;
+    skos:prefLabel "EmanueleGhedini"^^xsd:string ;
+    foaf:name "Emanuele Ghedini"^^xsd:string ;
+    foaf:workplaceHomepage <https://www.unibo.it/en> .
+
+<https://orcid.org/0000-0003-4065-9742> a owl:NamedIndividual ;
+    rdfs:label "GeorgSchmitz"^^xsd:string ;
+    skos:prefLabel "GeorgSchmitz"^^xsd:string ;
+    foaf:name "Georg J. Schmitz"^^xsd:string .
+
+<https://orcid.org/0009-0007-5850-6628> a owl:NamedIndividual ;
+    rdfs:label "AnnedeBaas"^^xsd:string ;
+    skos:prefLabel "AnnedeBaas"^^xsd:string ;
+    foaf:name "Anne de Baas"^^xsd:string ;
+    foaf:workplaceHomepage <https://materialsmodelling.com> .
+
+<https://orcid.org/0009-0008-8009-5009> a owl:NamedIndividual ;
+    rdfs:label "FrancescoZaccarini"^^xsd:string ;
+    skos:prefLabel "FrancescoZaccarini"^^xsd:string ;
+    foaf:name "Francesco A. Zaccarini"^^xsd:string ;
+    foaf:workplaceHomepage <https://www.unibo.it/en> .
+
+<https://w3id.org/emmo/contributors> a owl:Ontology ;
+    dcterms:abstract "People and organisations who has contributed to the development of EMMO."@en ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher emmo:EMMC_ASBL ;
+    dcterms:title "Contributors"@en ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.4/contributors> ;
+    owl:versionInfo "1.0.4"^^xsd:string ;
+    foaf:mbox <mailto:emmo@emmc.eu> ;
+    emmo:EMMO_1246b120_abbe_4840_b0f8_3e4348b24a17 "emmo@emmc.eu"^^xsd:string .
+
+emmo:EMMC_ASBL a owl:NamedIndividual ;
+    rdfs:label "EMMC_ASBL"^^xsd:string ;
+    skos:prefLabel "EMMC_ASBL"^^xsd:string ;
+    locn:fullAddress """EMMC ASBL
+European Materials Modelling Council
+Silversquare Stéphanie
+Avenue Louise 54
+1050 Brussels
+CBE no: 0731 621 312"""@en ;
+    foaf:homepage "https://emmc.eu"^^xsd:string ;
+    foaf:logo <https://emmo-repo.github.io/emmc.png> ;
+    foaf:mbox <mailto:contact@emmc.eu> ;
+    foaf:name "EMMC ASBL"^^xsd:string .
+

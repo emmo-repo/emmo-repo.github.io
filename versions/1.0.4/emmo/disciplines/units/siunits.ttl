@@ -1,0 +1,1594 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix emmo: <https://w3id.org/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+emmo:EMMO_057e7d57_aff0_49de_911a_8861d85cef40 rdfs:label "Symbolic"@en ;
+    rdfs:comment "A discrete data whose elements can be decoded as tokens from one or more alphabets, without necessarily respecting syntactic rules."@en .
+
+emmo:EMMO_1141d225_fe90_4230_82c6_31cab6a4e3fe rdfs:label "SymbolicByStructure"@en ;
+    rdfs:comment "Symbolic caterorised by its internal structure."@en .
+
+emmo:EMMO_15344998_4490_4b40_b242_c3d92e5cdc27 a owl:Class ;
+    rdfs:label "NonSIUnit"@en ;
+    rdfs:comment "Measurement units that are not SI units."@en ;
+    rdfs:subClassOf emmo:EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4 ;
+    owl:disjointWith emmo:EMMO_feb03a8a_bbb6_4918_a891_46713ef557f4 ;
+    skos:prefLabel "NonSIUnit"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Measurement units that are not SI units."@en .
+
+emmo:EMMO_18ce5200_00f5_45bb_8c6f_6fb128cd41ae rdfs:label "MetrologicalReference"@en ;
+    rdfs:comment "A reference can be a measurement unit, a measurement procedure, a reference material, or a combination of such (VIM3 1.1 NOTE 2)."@en .
+
+emmo:EMMO_1e85f9fa_ded6_4856_81be_ccca3c474314 a owl:Class ;
+    rdfs:label "SIMetricPrefixedUnit"@en ;
+    rdfs:comment "A SI base unit or SI derived unit with a metric prefix."@en ;
+    rdfs:subClassOf emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375,
+        emmo:EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106 ;
+    owl:disjointWith emmo:EMMO_60b78cc3_6011_4134_95ab_956f56d4bdc1 ;
+    skos:prefLabel "SIMetricPrefixedUnit"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A SI base unit or SI derived unit with a metric prefix."@en .
+
+emmo:EMMO_1e877c70_3b01_45a8_a8f6_8ce4f6a24660 rdfs:label "Contrast"@en ;
+    rdfs:comment "A perspective in which entities are represented according to the variation of their properties."@en .
+
+emmo:EMMO_1eed0732_e3f1_4b2c_a9c4_b4e75eeb5895 rdfs:label "Variable"@en ;
+    rdfs:comment "A variable is a symbolic object that stands for any other mathematical object, such as  number, a vector, a matrix, a function, the argument of a function, a set, an element of a set."@en .
+
+emmo:EMMO_3227b821_26a5_4c7c_9c01_5c24483e0bd0 rdfs:label "DimensionlessUnit"@en ;
+    rdfs:comment "The subclass of measurement units with no physical dimension."@en .
+
+emmo:EMMO_3e7add3d_e6ed_489a_a796_8e31fef9b490 rdfs:label "Data"@en ;
+    rdfs:comment "A causal object whose properties variation are encoded by an agent and that can be decoded by another agent according to a specific rule."@en .
+
+emmo:EMMO_49267eba_5548_4163_8f36_518d65b583f9 rdfs:label "Perspective"@en ;
+    rdfs:comment "The class of causal objects that stand for world objects according to a specific representational perspective."@en .
+
+emmo:EMMO_4b965242_29f0_4e42_a4b6_f8a5988052df rdfs:label "MeasurementUnitByPrefix"@en ;
+    rdfs:comment "Categorisation of measurement units by whether they are prefixed or not."@en .
+
+emmo:EMMO_53ed8611_2cd7_4286_9ef0_36572117b963 rdfs:label "Fusion"@en ;
+    rdfs:comment "A mereological fusion is any entity that is made up of two or more quantum entities, regardless of the fact that they are or not self-connected. It captures the idea of set, but excluding singletons."@en,
+        "The class of individuals representing mereological fusions consisting of two or more quantum entities."@en,
+        "The union of the CausalCluster and CausalStructure classes."@en .
+
+emmo:EMMO_54ee6b5e_5261_44a8_86eb_5717e7fdb9d0 rdfs:label "Mathematical"@en ;
+    rdfs:comment "The class of general mathematical symbolic objects respecting mathematical syntactic rules."@en .
+
+emmo:EMMO_611e4040_9a3e_4a1a_9fa2_7b1012269401 rdfs:label "MeasurementUnitByDimensionality"@en ;
+    rdfs:comment "Categorisation of measurement units by their physical dimensionality."@en .
+
+emmo:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 a owl:AnnotationProperty ;
+    rdfs:label "unitSymbol"@en ;
+    rdfs:comment "The standard symbol for a unit."@en ;
+    rdfs:domain emmo:EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4 ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf rdfs:comment ;
+    skos:prefLabel "unitSymbol"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The standard symbol for a unit."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "A unit symbol may be a symbolic construct (e.g. km) or a symbol (e.g. m)."@en .
+
+emmo:EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf rdfs:label "EMMO"@en ;
+    rdfs:comment """The EMMO conceptualises the world using the primitive concepts of causality and parthood. Parthood is about the composition of world entities starting from other more fundamental entities. Causality is about the interactions between world entities.
+The quantum is the smallest indivisible part of any world entity. Quantum individuals are the fundamental causal constituents of the universe, since it is implied that causality originates from quantum-to-quantum interactions. Quantums are no-dimensional, and their aggregation makes spacetime emerge from their causal structure. We can think of a quantum as an elementary particle after and interaction and before another interaction.
+Causality between macro entities (i.e. entities made of more than one quantum) is explained as the sum of the causality relations between their quantum constituents. Fundamental interactions (quantum fields) are represented as symmetric causality relation between macro entities, while classical interactions are mediated by chain of quantums (i.e. elementary particles).
+The fundamental distinction between world entities is causality self-connectedness: a world entity can be self-connected xor not self-connected depending on the causality network of its fundamental components.
+Void regions do not exist in the EMMO. In other words there is no spacetime without entities and spacetime emerges as relational property not as a self-standing entity). Entities are not placed in space or time: space and time are measured quantities, always relative between entities and are measured. In other words, space and time relations originates from causality interactions."""@en,
+        "The class of all the OWL individuals representing world entities according to EMMO conceptualisation."@en,
+        "The disjoint union of the fundamental mereocausal classes of Quantum, CausalPath, CausalSystem and Collection."@en .
+
+emmo:EMMO_868ae137_4d25_493e_b270_21ea3d94849e rdfs:label "NonPrefixedUnit"@en ;
+    rdfs:comment "A measurement unit symbol that do not have a metric prefix as a direct spatial part."@en .
+
+emmo:EMMO_8c64fcfa_23aa_45f8_9e58_bdfd065fab8f rdfs:label "Constant"@en ;
+    rdfs:comment "A variable that stand for a numerical constant, even if it is unknown."@en .
+
+emmo:EMMO_985bec21_989f_4b9e_a4b3_735d88099c3c rdfs:label "Metrological"@en ;
+    rdfs:comment "A language entity used in the metrology discipline."@en .
+
+emmo:EMMO_9895a1b4_f0a5_4167_ac5e_97db40b8bfcc rdfs:label "SIDimensionalUnit"@en ;
+    rdfs:comment "Dimensional unit with its physical dimensionality described accortind to the International System of Units (SI)."@en .
+
+emmo:EMMO_9e029526_79a2_47a8_a151_dd0545db471b rdfs:label "NumericalVariable"@en ;
+    rdfs:comment "A variable standing for a numerical defined mathematical object like e.g. a number, a vector of numbers, a matrix of numbers."@en .
+
+emmo:EMMO_a1083d0a_c1fb_471f_8e20_a98f881ad527 rdfs:label "Symbol"@en ;
+    rdfs:comment "The class of individuals that stand for an elementary mark of a specific symbolic code (alphabet)."@en .
+
+emmo:EMMO_be8592a7_68d1_4a06_ad23_82f2b56ef926 rdfs:label "DiscreteData"@en ;
+    rdfs:comment "Data whose variations are decoded according to a discrete schema."@en .
+
+emmo:EMMO_c2f5ee66_579c_44c6_a2e9_fa2eaa9fa4da rdfs:label "FractionUnit"@en ;
+    rdfs:comment "Unit for fractions of quantities of the same kind, to aid the understanding of the quantity being expressed."@en .
+
+emmo:EMMO_c5ddfdba_c074_4aa4_ad6b_1ac4942d300d rdfs:label "CausalStructure"@en ;
+    rdfs:comment "The class of individuals representing causally self-connected world entities."^^xsd:string,
+        "The disjoint union of Causal Path and CausalSystem classes."^^xsd:string,
+        """The most fundamental unity criterion for the definition of an structure is that:
+- is made of at least two quantums (a structure is not a simple entity)
+- all quantum parts form a causally connected graph"""^^xsd:string .
+
+emmo:EMMO_c66ad523_3937_485e_91bb_ad488ddb373f rdfs:label "DataByDiscretness"@en ;
+    rdfs:comment "Categorisation of data by whether it is descrete or not."@en .
+
+emmo:EMMO_cbdea88b_fef1_4c7c_b69f_ae1f0f241c4a rdfs:label "DimensionalUnit"@en ;
+    rdfs:comment "A subclass of measurement unit focusing on the physical dimensionality that is carried by the unit."@en .
+
+emmo:EMMO_d85162ec_6d62_4cdb_a5b9_f092285e5b7f a owl:DatatypeProperty ;
+    rdfs:label "hasPrefixSymbol"@en ;
+    rdfs:comment "Relates a SI prefixed unit to the prefix symbol."@en ;
+    rdfs:domain emmo:EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106 ;
+    rdfs:range xsd:string ;
+    owl:deprecated true ;
+    skos:prefLabel "hasPrefixSymbol"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Relates a SI prefixed unit to the prefix symbol."@en .
+
+emmo:EMMO_d8d2144e_5c8d_455d_a643_5caf4d8d9df8 rdfs:label "Language"@en ;
+    rdfs:comment "A language object is a discrete data entity respecting specific language syntactic rules (a well-formed formula)."@en .
+
+emmo:EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de rdfs:label "Item"@en ;
+    rdfs:comment """A world entity is direct causally self-connected if any two parts that make up the whole are direct causally connected to each other. In the EMMO, topological connectivity is based on causality.
+All physical objects, i.e. entities whose behaviour is explained by physics laws, are represented only by items. In other words, a physical object part is embedded in a direct causal graph that provides always a path between two of its parts.
+Members of a collection lack such direct causality connection, i.e. they do not constitute a physical object.
+Following graph theory concepts, the quantums of an item are all connected together within a network of causal relations, forming a connected causal graph. A collection is then a set of disconnected graphs."""@en,
+        "The class of individuals standing for quantum or causally self-connected world entities."@en,
+        "The disjoint union of Particle and CausalStructure classes."@en .
+
+<https://w3id.org/emmo/disciplines/units/siunits> a owl:Ontology ;
+    dcterms:abstract """The module 'siunits' defines the 7 base units and 22 derived units as well as the metric prefixes specified in the SI system.
+
+All other SI units goes into one of the following modules:
+- prefixedsiunits: SI units made of a metric prefix and a SI base, derived or accepted unit. Examples: km, mg...
+- coherentsiunits: Coherent SI-units. Products of integer powers of the base and derived SI units. Examples: A/J, Nm, m³, ...
+- noncoherentsiunits: Non-coherent SI-units whos numerical factor in front of the product of base SI units is NOT equal to one. This include all SI-units not included in the modules above. Examples: g, mg/s..."""@en ;
+    dcterms:contributor <https://orcid.org/0000-0002-4181-2852>,
+        <https://orcid.org/0000-0002-8758-6109> ;
+    dcterms:creator <https://orcid.org/0000-0002-1560-809X>,
+        <https://orcid.org/0000-0003-3805-8761> ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "SI units"@en ;
+    rdfs:comment "The EMMO should be reasoned with HermiT to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.4/disciplines/metrology>,
+        <https://w3id.org/emmo/1.0.4/disciplines/units/sidimensionalunits> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.4/disciplines/units/siunits> ;
+    owl:versionInfo "1.0.4"^^xsd:string ;
+    emmo:EMMO_1246b120_abbe_4840_b0f8_3e4348b24a17 "emmo@emmc.eu"^^xsd:string .
+
+emmo:Ampere a owl:Class ;
+    rdfs:label "Ampere"@en ;
+    rdfs:comment "The ampere, symbol A, is the SI unit of electric current. It is defined by taking the fixed numerical value of the elementary charge e to be 1.602176634×10−19 when expressed in the unit C, which is equal to A s, where the second is defined in terms of ∆νCs."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "A"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_3a185e6c_9e19_4776_b583_19c978156aa0,
+        emmo:EMMO_d5f3e0e5_fc7d_4e64_86ad_555e74aaff84 ;
+    skos:prefLabel "Ampere"@en ;
+    schema:unitCode "AMP"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/A"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "A"^^xsd:string ;
+    emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "http://dbpedia.org/resource/Ampere"^^xsd:anyURI ;
+    emmo:EMMO_70fe84ff_99b6_4206_a9fc_9a8931836d84 "The ampere, symbol A, is the SI unit of electric current. It is defined by taking the fixed numerical value of the elementary charge e to be 1.602176634×10−19 when expressed in the unit C, which is equal to A s, where the second is defined in terms of ∆νCs."@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Ampere?oldid=494026699"^^xsd:anyURI ;
+    emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.A00300"^^xsd:string .
+
+emmo:Becquerel a owl:Class ;
+    rdfs:label "Becquerel"@en ;
+    rdfs:comment "Radioactive decays per second."@en,
+        "SI unit for radioactive activity."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Bq"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_515b5579_d526_4842_9e6f_ecc34db6f368,
+        emmo:EMMO_e9ffc696_5228_4ff9_8a60_0f5e05e9931b ;
+    skos:prefLabel "Becquerel"@en ;
+    schema:unitCode "BQL"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/BQ"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "Bq"^^xsd:string ;
+    emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "http://dbpedia.org/resource/Becquerel"^^xsd:anyURI ;
+    emmo:EMMO_70fe84ff_99b6_4206_a9fc_9a8931836d84 "Radioactive decays per second."@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI unit for radioactive activity."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The SI derived unit of activity, usually meaning radioactivity. "Radioactivity" is caused when atoms disintegrate, ejecting energetic particles. One becquerel is the radiation caused by one disintegration per second; this is equivalent to about 27.0270 picocuries (pCi). The unit is named for a French physicist, Antoine-Henri Becquerel (1852-1908), the discoverer of radioactivity. Note: both the becquerel and the hertz are basically defined as one event per second, yet they measure different things. The hertz is used to measure the rates of events that happen periodically in a fixed and definite cycle. The becquerel is used to measure the rates of events that happen sporadically and unpredictably, not in a definite cycle.
+
+-- QUDT"""@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Becquerel?oldid=493710036"^^xsd:anyURI ;
+    emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.B00624"^^xsd:string .
+
+emmo:Candela a owl:Class ;
+    rdfs:label "Candela"@en ;
+    rdfs:comment "The candela, symbol cd, is the SI unit of luminous intensity in a given direction. It is defined by taking the fixed numerical value of the luminous efficacy of monochromatic radiation of frequency 540×1012 Hz, Kcd, to be 683 when expressed in the unit lm W−1, which is equal to cd sr W−1, or cd sr kg−1 m−2 s3, where the kilogram, metre and second are defined in terms of h, c and ∆νCs."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "cd"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_14ff4393_0f28_4fb4_abc7_c2cc00bc761d,
+        emmo:EMMO_3a185e6c_9e19_4776_b583_19c978156aa0 ;
+    skos:prefLabel "Candela"@en ;
+    schema:unitCode "CDL"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/CD"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "cd"^^xsd:string ;
+    emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "http://dbpedia.org/resource/Candela"^^xsd:anyURI ;
+    emmo:EMMO_70fe84ff_99b6_4206_a9fc_9a8931836d84 "The candela, symbol cd, is the SI unit of luminous intensity in a given direction. It is defined by taking the fixed numerical value of the luminous efficacy of monochromatic radiation of frequency 540×1012 Hz, Kcd, to be 683 when expressed in the unit lm W−1, which is equal to cd sr W−1, or cd sr kg−1 m−2 s3, where the kilogram, metre and second are defined in terms of h, c and ∆νCs."@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Candela?oldid=484253082"^^xsd:anyURI ;
+    emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.C00787"^^xsd:string .
+
+emmo:Coulomb a owl:Class ;
+    rdfs:label "Coulomb"@en ;
+    rdfs:comment "SI unit for electric charge."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "C"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_ab79e92b_5377_454d_be06_d61b50db295a,
+        emmo:EMMO_e9ffc696_5228_4ff9_8a60_0f5e05e9931b ;
+    skos:prefLabel "Coulomb"@en ;
+    schema:unitCode "COU"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/C"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "C"^^xsd:string ;
+    emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "http://dbpedia.org/resource/Coulomb"^^xsd:anyURI ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI unit for electric charge."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The SI unit of electric charge. One coulomb is the amount of charge accumulated in one second by a current of one ampere. Electricity is actually a flow of charged particles, such as electrons, protons, or ions. The charge on one of these particles is a whole-number multiple of the charge e on a single electron, and one coulomb represents a charge of approximately 6.241 506 x 1018 e. The coulomb is named for a French physicist, Charles-Augustin de Coulomb (1736-1806), who was the first to measure accurately the forces exerted between electric charges.
+
+-- QUDT"""@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Coulomb?oldid=491815163"^^xsd:anyURI ;
+    emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.C01365"^^xsd:string .
+
+emmo:DegreeCelsius a owl:Class ;
+    rdfs:label "DegreeCelsius"@en ;
+    rdfs:comment "Measurement unit for Celsius temperature. This unit can only be used for expressing temperature differences."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "°C"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+00 ;
+            owl:onProperty emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf ],
+        [ a owl:Restriction ;
+            owl:hasValue -2.7315e+02 ;
+            owl:onProperty emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd ],
+        emmo:EMMO_a77a0a4b_6bd2_42b2_be27_4b63cebbb59e,
+        emmo:EMMO_e9ffc696_5228_4ff9_8a60_0f5e05e9931b ;
+    skos:prefLabel "DegreeCelsius"@en ;
+    schema:unitCode "CEL"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/DEG_C"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "Cel"^^xsd:string ;
+    emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "http://dbpedia.org/resource/Celsius"^^xsd:anyURI ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Measurement unit for Celsius temperature. This unit can only be used for expressing temperature differences."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """Celsius, also known as centigrade, is a scale and unit of measurement for temperature. It can refer to a specific temperature on the Celsius scale as well as a unit to indicate a temperature interval, a difference between two temperatures or an uncertainty. This definition fixes the magnitude of both the degree Celsius and the kelvin as precisely 1 part in 273.16 (approximately 0.00366) of the difference between absolute zero and the triple point of water. Thus, it sets the magnitude of one degree Celsius and that of one kelvin as exactly the same. Additionally, it establishes the difference between the two scales' null points as being precisely 273.15 °C.
+
+-- QUDT"""@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Celsius?oldid=494152178"^^xsd:anyURI ;
+    emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.D01561"^^xsd:string .
+
+emmo:EMMO_02e894c3_b793_4197_b120_3442e08f58d1 rdfs:label "TimeUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'Time'."@en .
+
+emmo:EMMO_068c4e58_2470_4b1c_8454_010dd4906100 a owl:Class ;
+    rdfs:label "PicoPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"pico\" (1e-12)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-12 ;
+            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
+            owl:someValuesFrom emmo:EMMO_2b243e59_3a2a_412e_9a58_81d1e5c92fbe ],
+        emmo:EMMO_9d28f9ad_d9d3_4edb_bc00_5d9bd242244d ;
+    skos:prefLabel "PicoPrefixedUnit"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Superclass for all units prefixed with \"pico\" (1e-12)."@en .
+
+emmo:EMMO_08b308d4_31cd_4779_a784_aa92fc730f39 rdfs:label "DerivedUnit"@en ;
+    rdfs:comment "Derived units are defined as a numerical factor times the products of powers of the base units corresponding to the relations defining the derived quantities in terms of the base quantities."@en .
+
+emmo:EMMO_1181c938_c8f0_4ad6_bc7a_2bfdc0903d29 a owl:Class ;
+    rdfs:label "DeciPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"deci\" (0.1)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
+            owl:someValuesFrom emmo:EMMO_890856a3_3eb4_471e_a54a_65031bee30f4 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-01 ;
+            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
+        emmo:EMMO_9d28f9ad_d9d3_4edb_bc00_5d9bd242244d ;
+    skos:prefLabel "DeciPrefixedUnit"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Superclass for all units prefixed with \"deci\" (0.1)."@en .
+
+emmo:EMMO_1273eb34_de48_43a9_925f_104110469dd2 a owl:Class ;
+    rdfs:label "SICoherentDerivedUnit"@en ;
+    rdfs:comment "A SI derived unit whos numerical factor in front of the product of SI base units is one."@en,
+        "This class collects all units that are products or powers of SI base or SI special units only."@en ;
+    rdfs:subClassOf emmo:EMMO_59e710f4_d9ea_4167_9a3f_f90628a307df,
+        emmo:EMMO_707c6032_e272_4a20_98b5_d35c4f67be68 ;
+    owl:disjointWith emmo:EMMO_60b78cc3_6011_4134_95ab_956f56d4bdc1 ;
+    skos:example """m/s
+kg/m^3"""^^xsd:string ;
+    skos:prefLabel "SICoherentDerivedUnit"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A SI derived unit whos numerical factor in front of the product of SI base units is one."@en .
+
+emmo:EMMO_1d8b370b_c672_4d0c_964e_eaafcbf2f51f a owl:Class ;
+    rdfs:label "DecaPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"deca\" (10)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+01 ;
+            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
+            owl:someValuesFrom emmo:EMMO_e07a252a_6913_49d6_9038_37a258b2d95e ],
+        emmo:EMMO_2024fca1_b015_45ee_9490_e9e7d36bf704 ;
+    skos:altLabel "DekaPrefixedUnit"@en ;
+    skos:prefLabel "DecaPrefixedUnit"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Superclass for all units prefixed with \"deca\" (10)."@en .
+
+emmo:EMMO_216f448e_cdbc_4aeb_a529_7a5fe7fc38bb rdfs:label "UnitSymbol"@en ;
+    rdfs:comment "A symbol that stands for a single unit."@en .
+
+emmo:EMMO_21aaefc1_3f86_4208_b7db_a755f31f0f8c a owl:Class ;
+    rdfs:label "HectoPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"hecto\" (100)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
+            owl:someValuesFrom emmo:EMMO_4bc07644_8301_4aed_b21c_823f99b08d1a ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+02 ;
+            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
+        emmo:EMMO_2024fca1_b015_45ee_9490_e9e7d36bf704 ;
+    skos:prefLabel "HectoPrefixedUnit"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Superclass for all units prefixed with \"hecto\" (100)."@en .
+
+emmo:EMMO_23bfe79a_cade_48f1_9a8c_fd96e6bac8ba a owl:Class ;
+    rdfs:label "FemtoPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"femto\" (1e-15)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-15 ;
+            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
+            owl:someValuesFrom emmo:EMMO_7fd8ec39_1c4b_4ff3_9bc8_0bf3c27e2db0 ],
+        emmo:EMMO_9d28f9ad_d9d3_4edb_bc00_5d9bd242244d ;
+    skos:prefLabel "FemtoPrefixedUnit"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Superclass for all units prefixed with \"femto\" (1e-15)."@en .
+
+emmo:EMMO_254472c6_3dbd_4f02_bc43_571389cd281f a owl:Class ;
+    rdfs:label "ZeptoPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"zepto\" (1e-21)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-21 ;
+            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
+            owl:someValuesFrom emmo:EMMO_4db5c662_b065_49e4_96eb_826699fa8048 ],
+        emmo:EMMO_9d28f9ad_d9d3_4edb_bc00_5d9bd242244d ;
+    skos:prefLabel "ZeptoPrefixedUnit"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Superclass for all units prefixed with \"zepto\" (1e-21)."@en .
+
+emmo:EMMO_2e7e5796_4a80_4d73_bb84_f31138446c0c rdfs:label "ElectricPotentialUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'ElectricPotential'."@en .
+
+emmo:EMMO_321af35f_f0cc_4a5c_b4fe_8c2c0303fb0c rdfs:label "ElectricConductanceUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'ElectricConductance'."@en .
+
+emmo:EMMO_3a204900_2b33_47d1_b444_815cc4c8cffa a owl:Class ;
+    rdfs:label "TeraPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"tera\" (1e12)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
+            owl:someValuesFrom emmo:EMMO_33fe9747_d66f_4f88_b2c1_951279dbca59 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+12 ;
+            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
+        emmo:EMMO_2024fca1_b015_45ee_9490_e9e7d36bf704 ;
+    skos:prefLabel "TeraPrefixedUnit"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Superclass for all units prefixed with \"tera\" (1e12)."@en .
+
+emmo:EMMO_3eb993a1_61ae_4a20_b168_dda853f51c14 rdfs:label "SystemUnit"@en ;
+    rdfs:comment "A unit that belongs to one or more unit systems."@en .
+
+emmo:EMMO_3ee80521_3c23_4dd1_935d_9d522614a3e2 rdfs:label "SpecialUnit"@en ;
+    rdfs:comment "A unit symbol that stands for a derived unit."@en .
+
+emmo:EMMO_4000d06d_8594_4263_ba72_5d9440b66c5e rdfs:label "LuminanceUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'Luminance'."@en .
+
+emmo:EMMO_42955b2d_b465_4666_86cc_ea3c2d685753 a owl:Class ;
+    rdfs:label "AttoPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"atto\" (1e-18)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
+            owl:someValuesFrom emmo:EMMO_e9722f13_947c_444e_82ef_1ce045f6637c ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-18 ;
+            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
+        emmo:EMMO_9d28f9ad_d9d3_4edb_bc00_5d9bd242244d ;
+    skos:prefLabel "AttoPrefixedUnit"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Superclass for all units prefixed with \"atto\" (1e-18)."@en .
+
+emmo:EMMO_43a6b269_da31_4bb6_a537_c97df4fff32a a owl:Class ;
+    rdfs:label "PetaPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"peta\" (1e15)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+15 ;
+            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
+            owl:someValuesFrom emmo:EMMO_d7c74480_a568_4470_acff_f18b499cc850 ],
+        emmo:EMMO_2024fca1_b015_45ee_9490_e9e7d36bf704 ;
+    skos:prefLabel "PetaPrefixedUnit"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Superclass for all units prefixed with \"peta\" (1e15)."@en .
+
+emmo:EMMO_442bd91e_a724_4e9f_89c1_18423016fb75 rdfs:label "MetricPrefix"@en ;
+    rdfs:comment "Dimensionless multiplicative unit prefix."@en .
+
+emmo:EMMO_4c49ab58_a6f6_409e_b849_f873ae1dcbee rdfs:label "MagneticFluxUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'MagneticFlux'."@en .
+
+emmo:EMMO_53bd0c90_41c3_46e2_8779_cd2a80f7e18b rdfs:label "PressureUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'Pressure'."@en .
+
+emmo:EMMO_53e825d9_1a09_483c_baa7_37501ebfbe1c rdfs:label "ForceUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'Force'."@en .
+
+emmo:EMMO_556e27cd_fef1_41c9_824a_dd78980062b5 a owl:Class ;
+    rdfs:label "Quecto"@en ;
+    rdfs:comment "SI prefix who's value is 1e-30."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-30 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        [ a owl:Restriction ;
+            owl:hasValue "q"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_48fc9480_78c3_4c81_a126_019df20d58d9 ;
+    skos:prefLabel "Quecto"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI prefix who's value is 1e-30."@en .
+
+emmo:EMMO_585e0ff0_9429_4d3c_b578_58abb1ba21d1 rdfs:label "InductanceUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'Inductance'."@en .
+
+emmo:EMMO_5cf9f86c_86f5_40c4_846d_60371f670e0a a owl:Class ;
+    rdfs:label "ExaPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"exa\" (1e18)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+18 ;
+            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
+            owl:someValuesFrom emmo:EMMO_3f2d29d9_6d27_43bd_a1bc_85475eae98be ],
+        emmo:EMMO_2024fca1_b015_45ee_9490_e9e7d36bf704 ;
+    skos:prefLabel "ExaPrefixedUnit"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Superclass for all units prefixed with \"exa\" (1e18)."@en .
+
+emmo:EMMO_5eaecadc_4f0d_4a3a_afc7_1fc0b83cc928 a owl:Class ;
+    rdfs:label "MegaPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"mega\" (1e6)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
+            owl:someValuesFrom emmo:EMMO_85ee9154_5a3e_482e_aa37_c617ff1947ff ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+06 ;
+            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
+        emmo:EMMO_2024fca1_b015_45ee_9490_e9e7d36bf704 ;
+    skos:prefLabel "MegaPrefixedUnit"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Superclass for all units prefixed with \"mega\" (1e6)."@en .
+
+emmo:EMMO_6f4d704a_a7c6_4c07_b8a7_ea0bab04128f rdfs:label "AreaFractionUnit"@en ;
+    rdfs:comment "Unit for quantities of dimension one that are the fraction of two areas."@en .
+
+emmo:EMMO_74931b1b_c133_4e59_9a75_1bf0e1626201 a owl:Class ;
+    rdfs:label "KiloPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"kilo\" (1000)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+03 ;
+            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
+            owl:someValuesFrom emmo:EMMO_68a031ba_abf5_4859_b84c_32977f029908 ],
+        emmo:EMMO_2024fca1_b015_45ee_9490_e9e7d36bf704 ;
+    skos:prefLabel "KiloPrefixedUnit"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Superclass for all units prefixed with \"kilo\" (1000)."@en .
+
+emmo:EMMO_7610efb8_c7c6_4684_abc1_774783c62472 rdfs:label "ElectricResistanceUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'ElectricResistance'."@en .
+
+emmo:EMMO_77e9dc31_5b19_463e_b000_44c6e79f98aa rdfs:label "MassUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'Mass'."@en .
+
+emmo:EMMO_8189b42e_0995_423a_a26c_51168b27c3cf a owl:DatatypeProperty ;
+    rdfs:label "hasSIConversionMultiplier"@en ;
+    rdfs:comment "Number to multiply a SI coherent unit with when converting to a given non-SI coherent unit."@en ;
+    rdfs:domain emmo:EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4 ;
+    rdfs:range xsd:double ;
+    skos:prefLabel "hasSIConversionMultiplier"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Number to multiply a SI coherent unit with when converting to a given non-SI coherent unit."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """Conversion formula:
+
+    nonsi_coherent_unit = si_coherent_unit * multiplier + offset"""@en .
+
+emmo:EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae a owl:Class ;
+    rdfs:label "MicroPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"micro\" (1e-6)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
+            owl:someValuesFrom emmo:EMMO_6da1b965_768c_4cf0_8873_44f2035133ba ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-06 ;
+            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
+        emmo:EMMO_9d28f9ad_d9d3_4edb_bc00_5d9bd242244d ;
+    skos:prefLabel "MicroPrefixedUnit"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Superclass for all units prefixed with \"micro\" (1e-6)."@en .
+
+emmo:EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7 a owl:Class ;
+    rdfs:label "MilliPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"milli\" (1e-3)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
+            owl:someValuesFrom emmo:EMMO_49adf406_5c8f_498a_8c90_e4974e9e6d11 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-03 ;
+            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
+        emmo:EMMO_9d28f9ad_d9d3_4edb_bc00_5d9bd242244d ;
+    skos:prefLabel "MilliPrefixedUnit"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Superclass for all units prefixed with \"milli\" (1e-3)."@en .
+
+emmo:EMMO_a8eb4bbb_1bd3_4ad4_b114_2789bcbd2134 a owl:Class ;
+    rdfs:label "GigaPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"giga\" (1e9)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
+            owl:someValuesFrom emmo:EMMO_117d3e39_de3e_46f5_9744_b4a28d9fc83e ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+09 ;
+            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
+        emmo:EMMO_2024fca1_b015_45ee_9490_e9e7d36bf704 ;
+    skos:prefLabel "GigaPrefixedUnit"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Superclass for all units prefixed with \"giga\" (1e9)."@en .
+
+emmo:EMMO_ab79e92b_5377_454d_be06_d61b50db295a rdfs:label "ElectricChargeUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'ElectricCharge'."@en .
+
+emmo:EMMO_aef1144d_41bd_4189_be5c_d849204b3708 a owl:Class ;
+    rdfs:label "Ronna"@en ;
+    rdfs:comment "SI prefix who's value is 1e27."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "R"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+27 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        emmo:EMMO_2374896c_4ef8_4b3d_8c0c_0d29ba66bcfb ;
+    skos:prefLabel "Ronna"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI prefix who's value is 1e27."@en .
+
+emmo:EMMO_b14d9be5_f81e_469b_abca_379c2e83feab rdfs:label "CapacitanceUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'Capacitance'."@en .
+
+emmo:EMMO_b3600e73_3e05_479d_9714_c041c3acf5cc rdfs:label "LengthUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'Length'."@en .
+
+emmo:EMMO_b55cd09a_e54d_4eb1_81dd_03c29d1b878e a owl:Class ;
+    rdfs:label "CentiPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"centi\" (0.01)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-02 ;
+            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
+            owl:someValuesFrom emmo:EMMO_03d2c71b_0276_45d7_a847_7cd164cb7d45 ],
+        emmo:EMMO_9d28f9ad_d9d3_4edb_bc00_5d9bd242244d ;
+    skos:prefLabel "CentiPrefixedUnit"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Superclass for all units prefixed with \"centi\" (0.01)."@en .
+
+emmo:EMMO_c8d084ad_f88e_4596_8e4d_982c6655ce6f rdfs:label "PowerUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'Power'."@en .
+
+emmo:EMMO_cdc962d8_f3ea_4764_a57a_c7caa4859179 rdfs:label "LengthFractionUnit"@en ;
+    rdfs:comment "Unit for quantities of dimension one that are the fraction of two lengths."@en .
+
+emmo:EMMO_ce7d4720_aa20_4a8c_93e8_df41a35b6723 rdfs:label "CatalyticActivityUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'CatalyticActivity'."@en .
+
+emmo:EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd a owl:DatatypeProperty ;
+    rdfs:label "hasSIConversionOffset"@en ;
+    rdfs:comment "Number to add to a SI coherent unit when converting to a given non-SI coherent unit."@en ;
+    rdfs:domain emmo:EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4 ;
+    rdfs:range xsd:double ;
+    skos:prefLabel "hasSIConversionOffset"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Number to add to a SI coherent unit when converting to a given non-SI coherent unit."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """Conversion formula:
+
+    nonsi_coherent_unit = si_coherent_unit * multiplier + offset"""@en .
+
+emmo:EMMO_d5f3e0e5_fc7d_4e64_86ad_555e74aaff84 rdfs:label "ElectricCurrentUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'ElectricCurrent'."@en .
+
+emmo:EMMO_daa9ee97_4c5f_42e5_918c_44d7523e8958 a owl:Class ;
+    rdfs:label "ZettaPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"zetta\" (1e21)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+21 ;
+            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
+            owl:someValuesFrom emmo:EMMO_fbf7da6f_04bb_4c8e_abbf_e4048d6a5e73 ],
+        emmo:EMMO_2024fca1_b015_45ee_9490_e9e7d36bf704 ;
+    skos:prefLabel "ZettaPrefixedUnit"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Superclass for all units prefixed with \"zetta\" (1e21)."@en .
+
+emmo:EMMO_dabcbe7d_db82_4445_889b_ae4d76964ea0 a owl:Class ;
+    rdfs:label "Quetta"@en ;
+    rdfs:comment "SI prefix who's value is 1e30."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+30 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        [ a owl:Restriction ;
+            owl:hasValue "Q"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_2374896c_4ef8_4b3d_8c0c_0d29ba66bcfb ;
+    skos:prefLabel "Quetta"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI prefix who's value is 1e30."@en .
+
+emmo:EMMO_db716151_6b73_45ff_910c_d182fdcbb4f5 rdfs:label "BaseUnit"@en ;
+    rdfs:comment "A set of units that correspond to the base quantities in a system of units."@en .
+
+emmo:EMMO_e1981c25_7c55_4020_aa7a_d2e14ced86d4 a owl:Class ;
+    rdfs:label "NanoPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"nano\" (1e-9)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-09 ;
+            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
+            owl:someValuesFrom emmo:EMMO_afb29c1a_eba4_4ba7_b6a1_62e9023c94ec ],
+        emmo:EMMO_9d28f9ad_d9d3_4edb_bc00_5d9bd242244d ;
+    skos:prefLabel "NanoPrefixedUnit"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Superclass for all units prefixed with \"nano\" (1e-9)."@en .
+
+emmo:EMMO_e501069c_34d3_4dc7_ac87_c90c7342192b rdfs:label "AmountUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'Amount'."@en .
+
+emmo:EMMO_e79c62ff_10ad_4ec0_baba_c19ddd4eaa11 a owl:Class ;
+    rdfs:label "YottaPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"yotta\" (1e24)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
+            owl:someValuesFrom emmo:EMMO_cb3f4298_5895_4272_be63_42dd246cc10c ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+24 ;
+            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
+        emmo:EMMO_2024fca1_b015_45ee_9490_e9e7d36bf704 ;
+    skos:prefLabel "YottaPrefixedUnit"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Superclass for all units prefixed with \"yotta\" (1e24)."@en .
+
+emmo:EMMO_ec903946_ddc9_464a_903c_7373e0d1eeb5 rdfs:label "MagneticFluxDensityUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'MagneticFluxDensity'."@en .
+
+emmo:EMMO_f5769206_9257_4b08_bf7b_dad7868c6afc a owl:Class ;
+    rdfs:label "YoctoPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"yocto\" (1e-24)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-24 ;
+            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
+            owl:someValuesFrom emmo:EMMO_7abfbbc4_ce7b_4611_b731_1b5b8bd2bbc0 ],
+        emmo:EMMO_9d28f9ad_d9d3_4edb_bc00_5d9bd242244d ;
+    skos:prefLabel "YoctoPrefixedUnit"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Superclass for all units prefixed with \"yocto\" (1e-24)."@en .
+
+emmo:EMMO_f6070071_d054_4b17_9d2d_f446f7147d0f rdfs:label "EnergyUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'Energy'."@en .
+
+emmo:EMMO_fbc2549b_9108_467a_a573_de48eb45cc4a a owl:Class ;
+    rdfs:label "Ronto"@en ;
+    rdfs:comment "SI prefix who's value is 1e-27."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-27 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        [ a owl:Restriction ;
+            owl:hasValue "r"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_48fc9480_78c3_4c81_a126_019df20d58d9 ;
+    skos:prefLabel "Ronto"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI prefix who's value is 1e-27."@en .
+
+emmo:Farad a owl:Class ;
+    rdfs:label "Farad"@en ;
+    rdfs:comment "Measurement unit for electric capacitance."@en,
+        """The SI unit of electric capacitance. Very early in the study of electricity scientists discovered that a pair of conductors separated by an insulator can store a much larger charge than an isolated conductor can store. The better the insulator, the larger the charge that the conductors can hold. This property of a circuit is called capacitance, and it is measured in farads. One farad is defined as the ability to store one coulomb of charge per volt of potential difference between the two conductors. This is a natural definition, but the unit it defines is very large. In practical circuits, capacitance is often measured in microfarads, nanofarads, or sometimes even in picofarads (10⁻¹² farad, or trillionths of a farad). The unit is named for the British physicist Michael Faraday (1791-1867), who was known for his work in electricity and electrochemistry.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "F"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_b14d9be5_f81e_469b_abca_379c2e83feab,
+        emmo:EMMO_e9ffc696_5228_4ff9_8a60_0f5e05e9931b ;
+    skos:prefLabel "Farad"@en ;
+    schema:unitCode "FAR"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/FARAD"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "F"^^xsd:string ;
+    emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "http://dbpedia.org/resource/Farad"^^xsd:anyURI ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """The SI unit of electric capacitance. Very early in the study of electricity scientists discovered that a pair of conductors separated by an insulator can store a much larger charge than an isolated conductor can store. The better the insulator, the larger the charge that the conductors can hold. This property of a circuit is called capacitance, and it is measured in farads. One farad is defined as the ability to store one coulomb of charge per volt of potential difference between the two conductors. This is a natural definition, but the unit it defines is very large. In practical circuits, capacitance is often measured in microfarads, nanofarads, or sometimes even in picofarads (10⁻¹² farad, or trillionths of a farad). The unit is named for the British physicist Michael Faraday (1791-1867), who was known for his work in electricity and electrochemistry.
+
+-- QUDT"""@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Farad?oldid=493070876"^^xsd:anyURI ;
+    emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.F02320"^^xsd:string .
+
+emmo:Gray a owl:Class ;
+    rdfs:label "Gray"@en ;
+    rdfs:comment "SI unit for absorbed dose."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Gy"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_847f1d9f_205e_46c1_8cb6_a9e479421f88,
+        emmo:EMMO_e9ffc696_5228_4ff9_8a60_0f5e05e9931b ;
+    skos:prefLabel "Gray"@en ;
+    schema:unitCode "A95"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/GRAY"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "Gy"^^xsd:string ;
+    emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "http://dbpedia.org/resource/Grey"^^xsd:anyURI ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI unit for absorbed dose."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The SI unit of radiation dose. Radiation carries energy, and when it is absorbed by matter the matter receives this energy. The dose is the amount of energy deposited per unit of mass. One gray is defined to be the dose of one joule of energy absorbed per kilogram of matter, or 100 rad. The unit is named for the British physician L. Harold Gray (1905-1965), an authority on the use of radiation in the treatment of cancer.
+
+-- QUDT"""^^xsd:string ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "//en.wikipedia.org/wiki/Grey?oldid=494774160"^^xsd:anyURI ;
+    emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.G02696"^^xsd:string .
+
+emmo:Henry a owl:Class ;
+    rdfs:label "Henry"@en ;
+    rdfs:comment "SI unit for electrical inductance."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "H"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_585e0ff0_9429_4d3c_b578_58abb1ba21d1,
+        emmo:EMMO_e9ffc696_5228_4ff9_8a60_0f5e05e9931b ;
+    skos:prefLabel "Henry"@en ;
+    schema:unitCode "81"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/H"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "H"^^xsd:string ;
+    emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "http://dbpedia.org/resource/Henry"^^xsd:anyURI ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI unit for electrical inductance."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "H = Wb/A = V·s/A = Ω·s"@en,
+        """The SI unit of electric inductance. A changing magnetic field induces an electric current in a loop of wire (or in a coil of many loops) located in the field. Although the induced voltage depends only on the rate at which the magnetic flux changes, measured in webers per second, the amount of the current depends also on the physical properties of the coil. A coil with an inductance of one henry requires a flux of one weber for each ampere of induced current. If, on the other hand, it is the current which changes, then the induced field will generate a potential difference within the coil: if the inductance is one henry a current change of one ampere per second generates a potential difference of one volt. The henry is a large unit; inductances in practical circuits are measured in millihenrys (mH) or microhenrys (μH). The unit is named for the American physicist Joseph Henry (1797-1878), one of several scientists who discovered independently how magnetic fields can be used to generate alternating currents.
+
+-- QUDT"""@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Henry?oldid=491435978"^^xsd:anyURI ;
+    emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.H02782"^^xsd:string .
+
+emmo:Hertz a owl:Class ;
+    rdfs:label "Hertz"@en ;
+    rdfs:comment "SI unit for frequence."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Hz"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_515b5579_d526_4842_9e6f_ecc34db6f368,
+        emmo:EMMO_e9ffc696_5228_4ff9_8a60_0f5e05e9931b ;
+    skos:prefLabel "Hertz"@en ;
+    schema:unitCode "HTZ"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/HZ"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "Hz"^^xsd:string ;
+    emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "http://dbpedia.org/resource/Hertz"^^xsd:anyURI ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI unit for frequence."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The hertz (symbol Hz) is the SI unit of frequency defined as the number of cycles per second of a periodic phenomenon. One of its most common uses is the description of the sine wave, particularly those used in radio and audio applications, such as the frequency of musical tones. The word "hertz" is named for Heinrich Rudolf Hertz, who was the first to conclusively prove the existence of electromagnetic waves.
+
+-- QUDT"""@en ;
+    emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.H02785"^^xsd:string .
+
+emmo:Joule a owl:Class ;
+    rdfs:label "Joule"@en ;
+    rdfs:comment "SI unit for energy."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "J"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_e9ffc696_5228_4ff9_8a60_0f5e05e9931b,
+        emmo:EMMO_f6070071_d054_4b17_9d2d_f446f7147d0f ;
+    skos:prefLabel "Joule"@en ;
+    schema:unitCode "JOU"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/J"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "J"^^xsd:string ;
+    emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "http://dbpedia.org/resource/Joule"^^xsd:anyURI ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI unit for energy."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The SI unit of work or energy, defined to be the work done by a force of one newton acting to move an object through a distance of one meter in the direction in which the force is applied. Equivalently, since kinetic energy is one half the mass times the square of the velocity, one joule is the kinetic energy of a mass of two kilograms moving at a velocity of 1 m/s.
+
+-- QUDT"""@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Joule?oldid=494340406"^^xsd:anyURI ;
+    emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.J03363"^^xsd:string .
+
+emmo:Katal a owl:Class ;
+    rdfs:label "Katal"@en ;
+    rdfs:comment "SI unit for catalytic activity."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "kat"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_ce7d4720_aa20_4a8c_93e8_df41a35b6723,
+        emmo:EMMO_e9ffc696_5228_4ff9_8a60_0f5e05e9931b ;
+    skos:prefLabel "Katal"@en ;
+    schema:unitCode "KAT"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/KAT"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "kat"^^xsd:string ;
+    emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "http://dbpedia.org/resource/Katal"^^xsd:anyURI ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI unit for catalytic activity."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """A unit of catalytic activity used especially in the chemistry of enzymes. A catalyst is a substance that starts or speeds a chemical reaction. Enzymes are proteins that act as catalysts within the bodies of living plants and animals. A catalyst has an activity of one katal if it enables a reaction to proceed at the rate of one mole per second.
+
+-- QUDT"""@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Katal?oldid=486431865"^^xsd:anyURI ;
+    emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.K03372"^^xsd:string .
+
+emmo:Kelvin a owl:Class ;
+    rdfs:label "Kelvin"@en ;
+    rdfs:comment "The kelvin, symbol K, is the SI unit of thermodynamic temperature. It is defined by taking the fixed numerical value of the Boltzmann constant k to be 1.380649×10−23 when expressed in the unit J K−1, which is equal to kg m2 s−2 K−1, where the kilogram, metre and second are defined in terms of h, c and ∆νCs."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "K"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_3a185e6c_9e19_4776_b583_19c978156aa0,
+        emmo:EMMO_a77a0a4b_6bd2_42b2_be27_4b63cebbb59e ;
+    skos:prefLabel "Kelvin"@en ;
+    schema:unitCode "KEL"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/K"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "K"^^xsd:string ;
+    emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "http://dbpedia.org/resource/Kelvin"^^xsd:anyURI ;
+    emmo:EMMO_70fe84ff_99b6_4206_a9fc_9a8931836d84 "The kelvin, symbol K, is the SI unit of thermodynamic temperature. It is defined by taking the fixed numerical value of the Boltzmann constant k to be 1.380649×10−23 when expressed in the unit J K−1, which is equal to kg m2 s−2 K−1, where the kilogram, metre and second are defined in terms of h, c and ∆νCs."@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Kelvin?oldid=495075694"^^xsd:anyURI ;
+    emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.K03374"^^xsd:string .
+
+emmo:Kilogram a owl:Class ;
+    rdfs:label "Kilogram"@en ;
+    rdfs:comment "The kilogram, symbol kg, is the SI unit of mass. It is defined by taking the fixed numerical value of the Planck constant h to be 6.62607015×10−34 when expressed in the unit J s, which is equal to kg m2 s−1, where the metre and the second are defined in terms of c and ∆νCs."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "kg"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_3a185e6c_9e19_4776_b583_19c978156aa0,
+        emmo:EMMO_77e9dc31_5b19_463e_b000_44c6e79f98aa ;
+    skos:altLabel "Kilogram"@en ;
+    skos:prefLabel "Kilogram"@en ;
+    schema:unitCode "KGM"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/KiloGM"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "kg"^^xsd:string ;
+    emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "http://dbpedia.org/resource/Kilogram"^^xsd:anyURI ;
+    emmo:EMMO_70fe84ff_99b6_4206_a9fc_9a8931836d84 "The kilogram, symbol kg, is the SI unit of mass. It is defined by taking the fixed numerical value of the Planck constant h to be 6.62607015×10−34 when expressed in the unit J s, which is equal to kg m2 s−1, where the metre and the second are defined in terms of c and ∆νCs."@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Kilogram?oldid=493633626"^^xsd:anyURI ;
+    emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.K03391"^^xsd:string .
+
+emmo:Lumen a owl:Class ;
+    rdfs:label "Lumen"@en ;
+    rdfs:comment "SI unit for luminous flux."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "lm"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_14ff4393_0f28_4fb4_abc7_c2cc00bc761d,
+        emmo:EMMO_e9ffc696_5228_4ff9_8a60_0f5e05e9931b ;
+    skos:prefLabel "Lumen"@en ;
+    schema:unitCode "LUM"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/LM"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "lm"^^xsd:string ;
+    emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "http://dbpedia.org/resource/Lumen"^^xsd:anyURI ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI unit for luminous flux."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The SI unit for measuring the flux of light being produced by a light source or received by a surface. The intensity of a light source is measured in candelas. One lumen represents the total flux of light emitted, equal to the intensity in candelas multiplied by the solid angle in steradians into which the light is emitted. A full sphere has a solid angle of 4·π steradians. A light source that uniformly radiates one candela in all directions has a total luminous flux of 1 cd·4π sr = 4π cd·sr ≈ 12.57 lumens. "Lumen" is a Latin word for light.
+
+-- QUDT"""@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Lumen_(unit)"^^xsd:anyURI ;
+    emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.L03639"^^xsd:string .
+
+emmo:Lux a owl:Class ;
+    rdfs:label "Lux"@en ;
+    rdfs:comment "SI unit for illuminance."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "lx"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_4000d06d_8594_4263_ba72_5d9440b66c5e,
+        emmo:EMMO_e9ffc696_5228_4ff9_8a60_0f5e05e9931b ;
+    skos:prefLabel "Lux"@en ;
+    schema:unitCode "LUX"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/LUX"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "lx"^^xsd:string ;
+    emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "http://dbpedia.org/resource/Lux"^^xsd:anyURI ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI unit for illuminance."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The SI unit for measuring the illumination (illuminance) of a surface. One lux is defined as an illumination of one lumen per square meter or 0.0001 phot. In considering the various light units, it's useful to think about light originating at a point and shining upon a surface. The intensity of the light source is measured in candelas; the total light flux in transit is measured in lumens (1 lumen = 1 candelau·steradian); and the amount of light received per unit of surface area is measured in lux (1 lux = 1 lumen/square meter). One lux is equal to approximately 0.09290 foot candle.
+
+-- QUDT"""@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Lux?oldid=494700274"^^xsd:anyURI ;
+    emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.L03651"^^xsd:string .
+
+emmo:Metre a owl:Class ;
+    rdfs:label "Metre"@en ;
+    rdfs:comment "The metre, symbol m, is the SI unit of length. It is defined by taking the fixed numerical value of the speed of light in vacuum c to be 299792458 when expressed in the unit m s−1, where the second is defined in terms of ∆νCs."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "m"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_3a185e6c_9e19_4776_b583_19c978156aa0,
+        emmo:EMMO_b3600e73_3e05_479d_9714_c041c3acf5cc ;
+    skos:altLabel "Meter"@en-us ;
+    skos:prefLabel "Metre"@en ;
+    schema:unitCode "MTR"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/M"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "m"^^xsd:string ;
+    emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "http://dbpedia.org/resource/Metre"^^xsd:anyURI ;
+    emmo:EMMO_70fe84ff_99b6_4206_a9fc_9a8931836d84 "The metre, symbol m, is the SI unit of length. It is defined by taking the fixed numerical value of the speed of light in vacuum c to be 299792458 when expressed in the unit m s−1, where the second is defined in terms of ∆νCs."@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Metre?oldid=495145797"^^xsd:anyURI ;
+    emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.M03884"^^xsd:string .
+
+emmo:Mole a owl:Class ;
+    rdfs:label "Mole"@en ;
+    rdfs:comment "The mole, symbol mol, is the SI unit of amount of substance. One mole contains exactly 6.022 140 76 × 1023 elementary entities. This number is the fixed numerical value of the Avogadro constant, NA, when expressed in the unit mol−1 and is called the Avogadro number. The amount of substance, symbol n, of a system is a measure of the number of specified elementary entities. An elementary entity may be an atom, a molecule, an ion, an electron, any other particle or specified group of particles."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "mol"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_3a185e6c_9e19_4776_b583_19c978156aa0,
+        emmo:EMMO_e501069c_34d3_4dc7_ac87_c90c7342192b ;
+    skos:prefLabel "Mole"@en ;
+    schema:unitCode "C34"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/MOL"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "mol"^^xsd:string ;
+    emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "http://dbpedia.org/resource/Mole_%28unit%29"^^xsd:anyURI ;
+    emmo:EMMO_70fe84ff_99b6_4206_a9fc_9a8931836d84 "The mole, symbol mol, is the SI unit of amount of substance. One mole contains exactly 6.022 140 76 × 1023 elementary entities. This number is the fixed numerical value of the Avogadro constant, NA, when expressed in the unit mol−1 and is called the Avogadro number. The amount of substance, symbol n, of a system is a measure of the number of specified elementary entities. An elementary entity may be an atom, a molecule, an ion, an electron, any other particle or specified group of particles."@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Mole_(unit)"^^xsd:anyURI ;
+    emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.M03980"^^xsd:string .
+
+emmo:Newton a owl:Class ;
+    rdfs:label "Newton"@en ;
+    rdfs:comment "SI unit for force."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "N"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_53e825d9_1a09_483c_baa7_37501ebfbe1c,
+        emmo:EMMO_e9ffc696_5228_4ff9_8a60_0f5e05e9931b ;
+    skos:prefLabel "Newton"@en ;
+    schema:unitCode "NEW"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/N"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "N"^^xsd:string ;
+    emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "http://dbpedia.org/resource/Newton"^^xsd:anyURI ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI unit for force."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The "Newton" is the SI unit of force. A force of one newton will accelerate a mass of one kilogram at the rate of one meter per second per second. The newton is named for Isaac Newton (1642-1727), the British mathematician, physicist, and natural philosopher. He was the first person to understand clearly the relationship between force (F), mass (m), and acceleration (a) expressed by the formula F = m·a.
+
+-- QUDT"""@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Newton?oldid=488427661"^^xsd:anyURI ;
+    emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.N04135"^^xsd:string .
+
+emmo:Ohm a owl:Class ;
+    rdfs:label "Ohm"@en ;
+    rdfs:comment "The SI derived unit of electrical resistance, named after German physicist Georg Simon Ohm."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Ω"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_7610efb8_c7c6_4684_abc1_774783c62472,
+        emmo:EMMO_e9ffc696_5228_4ff9_8a60_0f5e05e9931b ;
+    skos:prefLabel "Ohm"@en ;
+    schema:unitCode "OHM"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/OHM"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "Ohm"^^xsd:string ;
+    emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "http://dbpedia.org/resource/Ohm"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The SI derived unit of electrical resistance, named after German physicist Georg Simon Ohm."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Ω = V/A = H/s"@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Ohm?oldid=494685555"^^xsd:anyURI ;
+    emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.O04280"^^xsd:string .
+
+emmo:Pascal a owl:Class ;
+    rdfs:label "Pascal"@en ;
+    rdfs:comment "SI unit for pressure."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Pa"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_53bd0c90_41c3_46e2_8779_cd2a80f7e18b,
+        emmo:EMMO_e9ffc696_5228_4ff9_8a60_0f5e05e9931b ;
+    skos:prefLabel "Pascal"@en ;
+    schema:unitCode "PAL"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/PA"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "Pa"^^xsd:string ;
+    emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "http://dbpedia.org/resource/Pascal"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI unit for pressure."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The SI unit of pressure. The pascal is the standard pressure unit in the MKS metric system, equal to one newton per square meter or one "kilogram per meter per second per second." The unit is named for Blaise Pascal (1623-1662), French philosopher and mathematician, who was the first person to use a barometer to measure differences in altitude.
+
+-- QUDT"""@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Pascal?oldid=492989202"^^xsd:anyURI ;
+    emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.P04442"^^xsd:string .
+
+emmo:Radian a owl:Class ;
+    rdfs:label "Radian"@en ;
+    rdfs:comment "Dimensionless measurement unit for plane angle."@en,
+        "Measure of plane angle."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "rad"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_cdc962d8_f3ea_4764_a57a_c7caa4859179,
+        emmo:EMMO_e9ffc696_5228_4ff9_8a60_0f5e05e9931b ;
+    skos:prefLabel "Radian"@en ;
+    schema:unitCode "C81"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/RAD"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "rad"^^xsd:string ;
+    emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "http://dbpedia.org/resource/Radian"^^xsd:anyURI ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Measure of plane angle."@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Radian?oldid=492309312"^^xsd:anyURI ;
+    emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.R05036"^^xsd:string .
+
+emmo:Second a owl:Class ;
+    rdfs:label "Second"@en ;
+    rdfs:comment "The second, symbol s, is the SI unit of time. It is defined by taking the fixed numerical value of the caesium frequency ∆νCs, the unperturbed ground-state hyperfine transition frequency of the caesium 133 atom, to be 9192631770 when expressed in the unit Hz, which is equal to s−1."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "s"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_02e894c3_b793_4197_b120_3442e08f58d1,
+        emmo:EMMO_3a185e6c_9e19_4776_b583_19c978156aa0 ;
+    skos:prefLabel "Second"@en ;
+    schema:unitCode "SEC"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/SEC"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "s"^^xsd:string ;
+    emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "http://dbpedia.org/resource/Second"^^xsd:anyURI ;
+    emmo:EMMO_70fe84ff_99b6_4206_a9fc_9a8931836d84 "The second, symbol s, is the SI unit of time. It is defined by taking the fixed numerical value of the caesium frequency ∆νCs, the unperturbed ground-state hyperfine transition frequency of the caesium 133 atom, to be 9192631770 when expressed in the unit Hz, which is equal to s−1."@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Second?oldid=495241006"^^xsd:anyURI ;
+    emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.S05513"^^xsd:string .
+
+emmo:Siemens a owl:Class ;
+    rdfs:label "Siemens"@en ;
+    rdfs:comment "SI unit for electrical conductance."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "S"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_321af35f_f0cc_4a5c_b4fe_8c2c0303fb0c,
+        emmo:EMMO_e9ffc696_5228_4ff9_8a60_0f5e05e9931b ;
+    skos:prefLabel "Siemens"@en ;
+    schema:unitCode "SIE"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/S"^^xsd:anyURI ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "S"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI unit for electrical conductance."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "S = A/V = F/s"^^xsd:string,
+        """Siemens  is the SI unit of electric conductance, susceptance, and admittance. The most important property of a conductor is the amount of current it will carry when a voltage is applied. Current flow is opposed by resistance in all circuits, and by also by reactance and impedance in alternating current circuits. Conductance, susceptance, and admittance are the inverses of resistance, reactance, and impedance, respectively. To measure these properties, the siemens is the reciprocal of the ohm. In other words, the conductance, susceptance, or admittance, in siemens, is simply 1 divided by the resistance, reactance or impedance, respectively, in ohms. The unit is named for the German electrical engineer Werner von Siemens (1816-1892).
+
+-- QUDT"""@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Siemens_(unit)"^^xsd:anyURI .
+
+emmo:Sievert a owl:Class ;
+    rdfs:label "Sievert"@en ;
+    rdfs:comment "SI unit for equivalent doseof ionizing radiation. Sievert is derived from absorbed dose, but takes into account the biological effectiveness of the radiation, which is dependent on the radiation type and energy."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Sv"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_847f1d9f_205e_46c1_8cb6_a9e479421f88,
+        emmo:EMMO_e9ffc696_5228_4ff9_8a60_0f5e05e9931b ;
+    skos:prefLabel "Sievert"@en ;
+    schema:unitCode "D13"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/SV"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "Sv"^^xsd:string ;
+    emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "http://dbpedia.org/resource/Sievert"^^xsd:anyURI ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI unit for equivalent doseof ionizing radiation. Sievert is derived from absorbed dose, but takes into account the biological effectiveness of the radiation, which is dependent on the radiation type and energy."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """Although the sievert has the same dimensions as the gray (i.e. joules per kilogram), it measures a different quantity. To avoid any risk of confusion between the absorbed dose and the equivalent dose, the corresponding special units, namely the gray instead of the joule per kilogram for absorbed dose and the sievert instead of the joule per kilogram for the dose equivalent, should be used.
+
+-- QUDT"""@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Sievert?oldid=495474333"^^xsd:anyURI,
+        "https://en.wikipedia.org/wiki/Equivalent_dose"^^xsd:string ;
+    emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.S05658"^^xsd:string .
+
+emmo:Steradian a owl:Class ;
+    rdfs:label "Steradian"@en ;
+    rdfs:comment "Dimensionless measurement unit for solid angle."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "sr"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_6f4d704a_a7c6_4c07_b8a7_ea0bab04128f,
+        emmo:EMMO_e9ffc696_5228_4ff9_8a60_0f5e05e9931b ;
+    skos:prefLabel "Steradian"@en ;
+    schema:unitCode "D27"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/SR"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "sr"^^xsd:string ;
+    emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "http://dbpedia.org/resource/Steradian"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Dimensionless measurement unit for solid angle."@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Steradian?oldid=494317847"^^xsd:anyURI ;
+    emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.S05971"^^xsd:string .
+
+emmo:Tesla a owl:Class ;
+    rdfs:label "Tesla"@en ;
+    rdfs:comment "SI unit for magnetic flux density or induction."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "T"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_e9ffc696_5228_4ff9_8a60_0f5e05e9931b,
+        emmo:EMMO_ec903946_ddc9_464a_903c_7373e0d1eeb5 ;
+    skos:prefLabel "Tesla"@en ;
+    schema:unitCode "D33"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/T"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "T"^^xsd:string ;
+    emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "http://dbpedia.org/resource/Tesla"^^xsd:anyURI ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI unit for magnetic flux density or induction."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "T = V·s·m⁻² = N/(A·m) = Wb/m²"^^xsd:string,
+        """The SI unit of flux density (or field intensity) for magnetic fields (also called the magnetic induction). The intensity of a magnetic field can be measured by placing a current-carrying conductor in the field. The magnetic field exerts a force on the conductor, a force which depends on the amount of the current and on the length of the conductor. One tesla is defined as the field intensity generating one newton of force per ampere of current per meter of conductor. Equivalently, one tesla represents a magnetic flux density of one weber per square meter of area. A field of one tesla is quite strong: the strongest fields available in laboratories are about 20 teslas, and the Earth's magnetic flux density, at its surface, is about 50 microteslas. The tesla, defined in 1958, honors the Serbian-American electrical engineer Nikola Tesla (1856-1943), whose work in electromagnetic induction led to the first practical generators and motors using alternating current.
+
+-- QUDT"""@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Tesla_(unit)"^^xsd:anyURI ;
+    emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.T06283"^^xsd:string .
+
+emmo:Volt a owl:Class ;
+    rdfs:label "Volt"@en ;
+    rdfs:comment "SI unit for electric potential difference."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "V"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_2e7e5796_4a80_4d73_bb84_f31138446c0c,
+        emmo:EMMO_e9ffc696_5228_4ff9_8a60_0f5e05e9931b ;
+    skos:prefLabel "Volt"@en ;
+    schema:unitCode "VLT"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/V"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "V"^^xsd:string ;
+    emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "http://dbpedia.org/resource/Volt"^^xsd:anyURI ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI unit for electric potential difference."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "The volt is the unit of electric potential difference—electric potential difference is also known as voltage. The size of 1 volt is officially defined as the potential difference between two points of a wire carrying a current of 1 ampere when the power dissipated in the wire is 1 watt."@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Volt?oldid=494812083"^^xsd:anyURI ;
+    emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.V06634"^^xsd:string .
+
+emmo:Watt a owl:Class ;
+    rdfs:label "Watt"@en ;
+    rdfs:comment "SI unit for power."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "W"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_c8d084ad_f88e_4596_8e4d_982c6655ce6f,
+        emmo:EMMO_e9ffc696_5228_4ff9_8a60_0f5e05e9931b ;
+    skos:prefLabel "Watt"@en ;
+    schema:unitCode "WTT"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/W"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "W"^^xsd:string ;
+    emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "http://dbpedia.org/resource/Watt"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI unit for power."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """The SI unit of power. Power is the rate at which work is done, or (equivalently) the rate at which energy is expended. One watt is equal to a power rate of one joule of work per second of time. This unit is used both in mechanics and in electricity, so it links the mechanical and electrical units to one another. In mechanical terms, one watt equals about 0.001 341 02 horsepower (hp) or 0.737 562 foot-pound per second (lbf/s). In electrical terms, one watt is the power produced by a current of one ampere flowing through an electric potential of one volt. The name of the unit honors James Watt (1736-1819), the British engineer whose improvements to the steam engine are often credited with igniting the Industrial Revolution.
+
+-- QUDT"""@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "http://en.wikipedia.org/wiki/Watt?oldid=494906356"^^xsd:anyURI ;
+    emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.W06656"^^xsd:string .
+
+emmo:Weber a owl:Class ;
+    rdfs:label "Weber"@en ;
+    rdfs:comment "SI unit for magnetic flux."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Wb"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_4c49ab58_a6f6_409e_b849_f873ae1dcbee,
+        emmo:EMMO_e9ffc696_5228_4ff9_8a60_0f5e05e9931b ;
+    skos:prefLabel "Weber"@en ;
+    schema:unitCode "WEB"^^xsd:string ;
+    emmo:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "http://qudt.org/vocab/unit/WB"^^xsd:string ;
+    emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 "Wb"^^xsd:string ;
+    emmo:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 "http://dbpedia.org/resource/Weber"^^xsd:anyURI ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI unit for magnetic flux."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "The SI unit of magnetic flux. \"Flux\" is the rate (per unit of time) at which something crosses a surface perpendicular to the flow. The weber is a large unit, equal to 10⁸ maxwells, and practical fluxes are usually fractions of one weber. The weber is the magnetic flux which, linking a circuit of one turn, would produce in it an electromotive force of 1 volt if it were reduced to zero at a uniform rate in 1 second. In SI base units, the dimensions of the weber are (kg·m²)/(s²·A). The weber is commonly expressed in terms of other derived units as the Tesla-square meter (T·m²), volt-seconds (V·s), or joules per ampere (J/A)."@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Weber_(unit)"^^xsd:anyURI ;
+    emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.W06666"^^xsd:string .
+
+emmo:EMMO_03d2c71b_0276_45d7_a847_7cd164cb7d45 a owl:Class ;
+    rdfs:label "Centi"@en ;
+    rdfs:comment "SI prefix who's value is 1/100."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "c"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-02 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        emmo:EMMO_48fc9480_78c3_4c81_a126_019df20d58d9 ;
+    skos:prefLabel "Centi"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI prefix who's value is 1/100."@en .
+
+emmo:EMMO_117d3e39_de3e_46f5_9744_b4a28d9fc83e a owl:Class ;
+    rdfs:label "Giga"@en ;
+    rdfs:comment "SI prefix who's value is 1e9."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+09 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        [ a owl:Restriction ;
+            owl:hasValue "G"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_2374896c_4ef8_4b3d_8c0c_0d29ba66bcfb ;
+    skos:prefLabel "Giga"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI prefix who's value is 1e9."@en .
+
+emmo:EMMO_14ff4393_0f28_4fb4_abc7_c2cc00bc761d rdfs:label "LuminousIntensityUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'LuminousIntensity'."@en .
+
+emmo:EMMO_23eabdb5_6de6_4615_b6b1_a07b3ad32fd9 a owl:Class ;
+    rdfs:label "SIPrefix"@en ;
+    rdfs:comment "Metric prefix defined in the SI system."@en ;
+    rdfs:subClassOf emmo:EMMO_442bd91e_a724_4e9f_89c1_18423016fb75 ;
+    skos:prefLabel "SIPrefix"@en ;
+    emmo:EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db "disjointUnionOf: SIMultiplePrefix, SISubMultiplePrefix"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Metric prefix defined in the SI system."@en .
+
+emmo:EMMO_2b243e59_3a2a_412e_9a58_81d1e5c92fbe a owl:Class ;
+    rdfs:label "Pico"@en ;
+    rdfs:comment "SI prefix who's value is 1e-12."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "p"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-12 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        emmo:EMMO_48fc9480_78c3_4c81_a126_019df20d58d9 ;
+    skos:prefLabel "Pico"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI prefix who's value is 1e-12."@en .
+
+emmo:EMMO_32129fb5_df25_48fd_a29c_18a2f22a2dd5 a owl:Class ;
+    rdfs:label "SIUnitSymbol"@en ;
+    rdfs:comment "A unit symbol that belongs to the SI system. Is either a SI base unit or a SI special unit."@en ;
+    rdfs:subClassOf emmo:EMMO_216f448e_cdbc_4aeb_a529_7a5fe7fc38bb ;
+    skos:prefLabel "SIUnitSymbol"@en ;
+    emmo:EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db "disjointUnionOf: SIBaseUnit, SISpecialUnit"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A unit symbol that belongs to the SI system. Is either a SI base unit or a SI special unit."@en .
+
+emmo:EMMO_33fe9747_d66f_4f88_b2c1_951279dbca59 a owl:Class ;
+    rdfs:label "Tera"@en ;
+    rdfs:comment "SI prefix who's value is 1e12."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+12 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        [ a owl:Restriction ;
+            owl:hasValue "T"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_2374896c_4ef8_4b3d_8c0c_0d29ba66bcfb ;
+    skos:prefLabel "Tera"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI prefix who's value is 1e12."@en .
+
+emmo:EMMO_3f2d29d9_6d27_43bd_a1bc_85475eae98be a owl:Class ;
+    rdfs:label "Exa"@en ;
+    rdfs:comment "SI prefix who's value is 1e18."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "E"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+18 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        emmo:EMMO_2374896c_4ef8_4b3d_8c0c_0d29ba66bcfb ;
+    skos:prefLabel "Exa"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI prefix who's value is 1e18."@en .
+
+emmo:EMMO_49adf406_5c8f_498a_8c90_e4974e9e6d11 a owl:Class ;
+    rdfs:label "Milli"@en ;
+    rdfs:comment "SI prefix who's value is 1/1000."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "m"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-03 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        emmo:EMMO_48fc9480_78c3_4c81_a126_019df20d58d9 ;
+    skos:prefLabel "Milli"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI prefix who's value is 1/1000."@en .
+
+emmo:EMMO_4bc07644_8301_4aed_b21c_823f99b08d1a a owl:Class ;
+    rdfs:label "Hecto"@en ;
+    rdfs:comment "SI prefix who's value is 100."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "h"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+02 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        emmo:EMMO_2374896c_4ef8_4b3d_8c0c_0d29ba66bcfb ;
+    skos:prefLabel "Hecto"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI prefix who's value is 100."@en .
+
+emmo:EMMO_4db5c662_b065_49e4_96eb_826699fa8048 a owl:Class ;
+    rdfs:label "Zepto"@en ;
+    rdfs:comment "SI prefix who's value is 1e-21."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "z"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-21 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        emmo:EMMO_48fc9480_78c3_4c81_a126_019df20d58d9 ;
+    skos:prefLabel "Zepto"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI prefix who's value is 1e-21."@en .
+
+emmo:EMMO_515b5579_d526_4842_9e6f_ecc34db6f368 rdfs:label "FrequencyUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'Frequency'."@en .
+
+emmo:EMMO_59e710f4_d9ea_4167_9a3f_f90628a307df a owl:Class ;
+    rdfs:label "SIDerivedUnit"@en ;
+    rdfs:comment "A derived unit that belongs to the SI system."@en ;
+    rdfs:subClassOf emmo:EMMO_08b308d4_31cd_4779_a784_aa92fc730f39,
+        emmo:EMMO_feb03a8a_bbb6_4918_a891_46713ef557f4 ;
+    skos:prefLabel "SIDerivedUnit"@en ;
+    emmo:EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db "disjointUnionOf: SICoherentDerivedUnit, SINonCoherentDerivedUnit"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A derived unit that belongs to the SI system."@en .
+
+emmo:EMMO_60b78cc3_6011_4134_95ab_956f56d4bdc1 a owl:Class ;
+    rdfs:label "SINonCoherentDerivedUnit"@en ;
+    rdfs:comment "A derived unit whos numerical factor in front of the product of base units is NOT equal to one."@en ;
+    rdfs:subClassOf emmo:EMMO_59e710f4_d9ea_4167_9a3f_f90628a307df,
+        emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375 ;
+    skos:example "cm/s"^^xsd:string ;
+    skos:prefLabel "SINonCoherentDerivedUnit"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A derived unit whos numerical factor in front of the product of base units is NOT equal to one."@en .
+
+emmo:EMMO_68a031ba_abf5_4859_b84c_32977f029908 a owl:Class ;
+    rdfs:label "Kilo"@en ;
+    rdfs:comment "SI prefix who's value is 1000."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "k"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+03 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        emmo:EMMO_2374896c_4ef8_4b3d_8c0c_0d29ba66bcfb ;
+    skos:prefLabel "Kilo"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI prefix who's value is 1000."@en .
+
+emmo:EMMO_6da1b965_768c_4cf0_8873_44f2035133ba a owl:Class ;
+    rdfs:label "Micro"@en ;
+    rdfs:comment "SI prefix who's value is 1e-6."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "μ"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-06 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        emmo:EMMO_48fc9480_78c3_4c81_a126_019df20d58d9 ;
+    skos:prefLabel "Micro"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI prefix who's value is 1e-6."@en .
+
+emmo:EMMO_7abfbbc4_ce7b_4611_b731_1b5b8bd2bbc0 a owl:Class ;
+    rdfs:label "Yocto"@en ;
+    rdfs:comment "SI prefix who's value is 1e-24."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-24 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        [ a owl:Restriction ;
+            owl:hasValue "y"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_48fc9480_78c3_4c81_a126_019df20d58d9 ;
+    skos:prefLabel "Yocto"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI prefix who's value is 1e-24."@en .
+
+emmo:EMMO_7fd8ec39_1c4b_4ff3_9bc8_0bf3c27e2db0 a owl:Class ;
+    rdfs:label "Femto"@en ;
+    rdfs:comment "SI prefix who's value is 1e-15."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "f"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-15 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        emmo:EMMO_48fc9480_78c3_4c81_a126_019df20d58d9 ;
+    skos:prefLabel "Femto"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI prefix who's value is 1e-15."@en .
+
+emmo:EMMO_8246541a_f1f6_4d03_8bd7_fc6b76d17375 a owl:Class ;
+    rdfs:label "SINonCoherentUnit"@en ;
+    rdfs:comment "An SI unit whos numerical factor in front of the product of base SI units is NOT equal to one."@en ;
+    rdfs:subClassOf emmo:EMMO_feb03a8a_bbb6_4918_a891_46713ef557f4 ;
+    skos:prefLabel "SINonCoherentUnit"@en ;
+    emmo:EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db "disjointUnionOf: SIMetricPrefixedUnit, SINonCoherentDerivedUnit"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An SI unit whos numerical factor in front of the product of base SI units is NOT equal to one."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """A non-SI coherent can be expressed in terms of its corresponding SI coherent unit, as
+
+    nonsi_coherent_unit = si_coherent_unit * multiplier + offset
+
+where `multiplier` and `offset` are specified via the 'hasConversionMultiplier' and 'hasConversionOffset' data properties, respectively."""@en .
+
+emmo:EMMO_847f1d9f_205e_46c1_8cb6_a9e479421f88 rdfs:label "AbsorbedDoseUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'AbsorbedDose'."@en .
+
+emmo:EMMO_85ee9154_5a3e_482e_aa37_c617ff1947ff a owl:Class ;
+    rdfs:label "Mega"@en ;
+    rdfs:comment "SI prefix who's value is 1e6."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "M"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+06 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        emmo:EMMO_2374896c_4ef8_4b3d_8c0c_0d29ba66bcfb ;
+    skos:prefLabel "Mega"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI prefix who's value is 1e6."@en .
+
+emmo:EMMO_890856a3_3eb4_471e_a54a_65031bee30f4 a owl:Class ;
+    rdfs:label "Deci"@en ;
+    rdfs:comment "SI prefix who's value is 1/10."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "d"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-01 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        emmo:EMMO_48fc9480_78c3_4c81_a126_019df20d58d9 ;
+    skos:prefLabel "Deci"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI prefix who's value is 1/10."@en .
+
+emmo:EMMO_a77a0a4b_6bd2_42b2_be27_4b63cebbb59e rdfs:label "TemperatureUnit"@en ;
+    rdfs:comment "The class of units with dimensionality 'Temperature'."@en .
+
+emmo:EMMO_afb29c1a_eba4_4ba7_b6a1_62e9023c94ec a owl:Class ;
+    rdfs:label "Nano"@en ;
+    rdfs:comment "SI prefix who's value is 1e-9."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-09 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        [ a owl:Restriction ;
+            owl:hasValue "n"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_48fc9480_78c3_4c81_a126_019df20d58d9 ;
+    skos:prefLabel "Nano"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI prefix who's value is 1e-9."@en .
+
+emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e rdfs:label "PrefixedUnit"@en ;
+    rdfs:comment "A measurement unit that is made of a metric prefix and a unit symbol."@en .
+
+emmo:EMMO_cb3f4298_5895_4272_be63_42dd246cc10c a owl:Class ;
+    rdfs:label "Yotta"@en ;
+    rdfs:comment "SI prefix who's value is 1e24."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Y"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+24 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        emmo:EMMO_2374896c_4ef8_4b3d_8c0c_0d29ba66bcfb ;
+    skos:prefLabel "Yotta"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI prefix who's value is 1e24."@en .
+
+emmo:EMMO_d7c74480_a568_4470_acff_f18b499cc850 a owl:Class ;
+    rdfs:label "Peta"@en ;
+    rdfs:comment "SI prefix who's value is 1e15."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+15 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        [ a owl:Restriction ;
+            owl:hasValue "P"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_2374896c_4ef8_4b3d_8c0c_0d29ba66bcfb ;
+    skos:prefLabel "Peta"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI prefix who's value is 1e15."@en .
+
+emmo:EMMO_e07a252a_6913_49d6_9038_37a258b2d95e a owl:Class ;
+    rdfs:label "Deca"@en ;
+    rdfs:comment "SI prefix who's value is 10."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+01 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        [ a owl:Restriction ;
+            owl:hasValue "da"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_2374896c_4ef8_4b3d_8c0c_0d29ba66bcfb ;
+    skos:altLabel "Deka"@en ;
+    skos:prefLabel "Deca"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI prefix who's value is 10."@en .
+
+emmo:EMMO_e9722f13_947c_444e_82ef_1ce045f6637c a owl:Class ;
+    rdfs:label "Atto"@en ;
+    rdfs:comment "SI prefix who's value is 1e-18."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "a"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-18 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        emmo:EMMO_48fc9480_78c3_4c81_a126_019df20d58d9 ;
+    skos:prefLabel "Atto"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI prefix who's value is 1e-18."@en .
+
+emmo:EMMO_fbf7da6f_04bb_4c8e_abbf_e4048d6a5e73 a owl:Class ;
+    rdfs:label "Zetta"@en ;
+    rdfs:comment "SI prefix who's value is 1e21."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e-21 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        [ a owl:Restriction ;
+            owl:hasValue "Z"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        emmo:EMMO_2374896c_4ef8_4b3d_8c0c_0d29ba66bcfb ;
+    skos:prefLabel "Zetta"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI prefix who's value is 1e21."@en .
+
+emmo:EMMO_707c6032_e272_4a20_98b5_d35c4f67be68 a owl:Class ;
+    rdfs:label "SICoherentUnit"@en ;
+    rdfs:comment "A unit that can be expressed as a product of powers of SI base units with no pre-factor or offset."@en ;
+    rdfs:subClassOf emmo:EMMO_feb03a8a_bbb6_4918_a891_46713ef557f4 ;
+    skos:prefLabel "SICoherentUnit"@en ;
+    emmo:EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db "disjointUnionOf: SICoherentDerivedUnit, SIBaseUnit, SISpecialUnit"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A unit that can be expressed as a product of powers of SI base units with no pre-factor or offset."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Derived units are defined as products of powers of the base units. When the numerical factor of this product is one, the derived units are called coherent derived units. The base and coherent derived units of the SI form a coherent set, designated the set of coherent SI units."@en .
+
+emmo:EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4 rdfs:label "MeasurementUnit"@en ;
+    rdfs:comment "A metrological reference for a physical quantity."@en .
+
+emmo:EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106 a owl:Class ;
+    rdfs:label "MetricPrefixedUnit"@en ;
+    rdfs:comment "A special unit with a metric prefix."@en,
+        "The presence of the prefix makes this units non-coherent with SI system."@en ;
+    rdfs:subClassOf emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    skos:prefLabel "MetricPrefixedUnit"@en ;
+    emmo:EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db "disjointUnionOf: MetricMultipleUnit, MetricSubMultipleUnit"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A special unit with a metric prefix."@en .
+
+emmo:EMMO_feb03a8a_bbb6_4918_a891_46713ef557f4 a owl:Class ;
+    rdfs:label "SIUnit"@en ;
+    rdfs:comment "The complete set of SI units includes both the coherent set and the multiples and sub-multiples formed by using the SI prefixes."@en,
+        """The names, symbols and prefixes of SI units are defined by the General Conference on Weights and Measures (CGPM).
+
+https://en.wikipedia.org/wiki/General_Conference_on_Weights_and_Measures"""@en,
+        "The set of units provided by the SI referring to the ISQ."@en ;
+    rdfs:subClassOf emmo:EMMO_3eb993a1_61ae_4a20_b168_dda853f51c14 ;
+    skos:prefLabel "SIUnit"@en ;
+    emmo:EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db "disjointUnionOf: SICoherentDerivedUnit, SIMetricPrefixedUnit, SIBaseUnit, SINonCoherentDerivedUnit, SISpecialUnit"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The set of units provided by the SI referring to the ISQ."@en .
+
+emmo:EMMO_3a185e6c_9e19_4776_b583_19c978156aa0 a owl:Class ;
+    rdfs:label "SIBaseUnit"@en ;
+    rdfs:comment "The base units in the SI system."@en ;
+    rdfs:seeAlso "https://www.bipm.org/utils/common/pdf/si-brochure/SI-Brochure-9-EN.pdf"^^xsd:string ;
+    rdfs:subClassOf emmo:EMMO_32129fb5_df25_48fd_a29c_18a2f22a2dd5,
+        emmo:EMMO_707c6032_e272_4a20_98b5_d35c4f67be68,
+        emmo:EMMO_db716151_6b73_45ff_910c_d182fdcbb4f5 ;
+    skos:prefLabel "SIBaseUnit"@en ;
+    emmo:EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db "disjointUnionOf: Ampere, Candela, Kelvin, Kilogram, Metre, Mole, Second"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The base units in the SI system."@en .
+
+emmo:EMMO_2024fca1_b015_45ee_9490_e9e7d36bf704 a owl:Class ;
+    rdfs:label "MetricMultipleUnit"@en ;
+    rdfs:comment "Measurement unit obtained by multiplying a given measurement unit by an integer SI prefix greater than one."@en ;
+    rdfs:subClassOf emmo:EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106 ;
+    owl:disjointWith emmo:EMMO_9d28f9ad_d9d3_4edb_bc00_5d9bd242244d ;
+    skos:prefLabel "MetricMultipleUnit"@en ;
+    emmo:EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db "disjointUnionOf: DecaPrefixedUnit, HectoPrefixedUnit, TeraPrefixedUnit, PetaPrefixedUnit, ExaPrefixedUnit, MegaPrefixedUnit, KiloPrefixedUnit, GigaPrefixedUnit, ZettaPrefixedUnit, YottaPrefixedUnit"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Measurement unit obtained by multiplying a given measurement unit by an integer SI prefix greater than one."@en .
+
+emmo:EMMO_9d28f9ad_d9d3_4edb_bc00_5d9bd242244d a owl:Class ;
+    rdfs:label "MetricSubMultipleUnit"@en ;
+    rdfs:comment "Measurement unit obtained by dividing a given measurement unit by an integer SI prefix greater than one."@en ;
+    rdfs:subClassOf emmo:EMMO_d41ce84b_4317_41fb_a5d1_6cd281fca106 ;
+    skos:prefLabel "MetricSubMultipleUnit"@en ;
+    emmo:EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db "disjointUnionOf: PicoPrefixedUnit, DeciPrefixedUnit, FemtoPrefixedUnit, ZeptoPrefixedUnit, AttoPrefixedUnit, MicroPrefixedUnit, MilliPrefixedUnit, CentiPrefixedUnit, NanoPrefixedUnit, YoctoPrefixedUnit"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Measurement unit obtained by dividing a given measurement unit by an integer SI prefix greater than one."@en .
+
+emmo:EMMO_2374896c_4ef8_4b3d_8c0c_0d29ba66bcfb a owl:Class ;
+    rdfs:label "SIMultiplePrefix"@en ;
+    rdfs:comment "SI prefix who's value is a positive integer larger than 1."@en ;
+    rdfs:subClassOf emmo:EMMO_23eabdb5_6de6_4615_b6b1_a07b3ad32fd9 ;
+    owl:disjointWith emmo:EMMO_48fc9480_78c3_4c81_a126_019df20d58d9 ;
+    skos:prefLabel "SIMultiplePrefix"@en ;
+    emmo:EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db "disjointUnionOf: Giga, Tera, Exa, Hecto, Kilo, Mega, Ronna, Yotta, Peta, Quetta, Deca, Zetta"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI prefix who's value is a positive integer larger than 1."@en .
+
+emmo:EMMO_48fc9480_78c3_4c81_a126_019df20d58d9 a owl:Class ;
+    rdfs:label "SISubMultiplePrefix"@en ;
+    rdfs:comment "SI prefix who's value is 1/N where N is a positive integer larger than 1."@en ;
+    rdfs:subClassOf emmo:EMMO_23eabdb5_6de6_4615_b6b1_a07b3ad32fd9 ;
+    skos:prefLabel "SISubMultiplePrefix"@en ;
+    emmo:EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db "disjointUnionOf: Centi, Pico, Milli, Zepto, Quecto, Micro, Yocto, Femto, Deci, Nano, Atto, Ronto"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "SI prefix who's value is 1/N where N is a positive integer larger than 1."@en .
+
+emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f a owl:DatatypeProperty ;
+    rdfs:label "hasPrefixMultiplier"@en ;
+    rdfs:comment "Relates a SI prefixed unit to the multiplication factor corresponding to the prefix."@en ;
+    rdfs:domain emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e ;
+    rdfs:range xsd:double ;
+    skos:prefLabel "hasPrefixMultiplier"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Relates a SI prefixed unit to the multiplication factor corresponding to the prefix."@en .
+
+emmo:EMMO_e9ffc696_5228_4ff9_8a60_0f5e05e9931b a owl:Class ;
+    rdfs:label "SISpecialUnit"@en ;
+    rdfs:comment "The 22 derived units that are given a special name in the SI system that stands for units derived by SI base units."@en ;
+    rdfs:subClassOf emmo:EMMO_32129fb5_df25_48fd_a29c_18a2f22a2dd5,
+        emmo:EMMO_3ee80521_3c23_4dd1_935d_9d522614a3e2,
+        emmo:EMMO_707c6032_e272_4a20_98b5_d35c4f67be68 ;
+    skos:prefLabel "SISpecialUnit"@en ;
+    emmo:EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db "disjointUnionOf: Becquerel, Coulomb, DegreeCelsius, Farad, Gray, Henry, Hertz, Joule, Katal, Lumen, Lux, Newton, Ohm, Pascal, Radian, Siemens, Sievert, Steradian, Tesla, Volt, Watt, Weber"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The 22 derived units that are given a special name in the SI system that stands for units derived by SI base units."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "These units are SI coherent by definition."@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/International_System_of_Units#Derived_units"^^xsd:string .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( emmo:Becquerel emmo:Coulomb emmo:DegreeCelsius emmo:Farad emmo:Gray emmo:Henry emmo:Hertz emmo:Joule emmo:Katal emmo:Lumen emmo:Lux emmo:Newton emmo:Ohm emmo:Pascal emmo:Radian emmo:Siemens emmo:Sievert emmo:Steradian emmo:Tesla emmo:Volt emmo:Watt emmo:Weber ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( emmo:EMMO_117d3e39_de3e_46f5_9744_b4a28d9fc83e emmo:EMMO_33fe9747_d66f_4f88_b2c1_951279dbca59 emmo:EMMO_3f2d29d9_6d27_43bd_a1bc_85475eae98be emmo:EMMO_4bc07644_8301_4aed_b21c_823f99b08d1a emmo:EMMO_68a031ba_abf5_4859_b84c_32977f029908 emmo:EMMO_85ee9154_5a3e_482e_aa37_c617ff1947ff emmo:EMMO_aef1144d_41bd_4189_be5c_d849204b3708 emmo:EMMO_cb3f4298_5895_4272_be63_42dd246cc10c emmo:EMMO_d7c74480_a568_4470_acff_f18b499cc850 emmo:EMMO_dabcbe7d_db82_4445_889b_ae4d76964ea0 emmo:EMMO_e07a252a_6913_49d6_9038_37a258b2d95e emmo:EMMO_fbf7da6f_04bb_4c8e_abbf_e4048d6a5e73 ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( emmo:EMMO_1d8b370b_c672_4d0c_964e_eaafcbf2f51f emmo:EMMO_21aaefc1_3f86_4208_b7db_a755f31f0f8c emmo:EMMO_3a204900_2b33_47d1_b444_815cc4c8cffa emmo:EMMO_43a6b269_da31_4bb6_a537_c97df4fff32a emmo:EMMO_5cf9f86c_86f5_40c4_846d_60371f670e0a emmo:EMMO_5eaecadc_4f0d_4a3a_afc7_1fc0b83cc928 emmo:EMMO_74931b1b_c133_4e59_9a75_1bf0e1626201 emmo:EMMO_a8eb4bbb_1bd3_4ad4_b114_2789bcbd2134 emmo:EMMO_daa9ee97_4c5f_42e5_918c_44d7523e8958 emmo:EMMO_e79c62ff_10ad_4ec0_baba_c19ddd4eaa11 ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( emmo:EMMO_068c4e58_2470_4b1c_8454_010dd4906100 emmo:EMMO_1181c938_c8f0_4ad6_bc7a_2bfdc0903d29 emmo:EMMO_23bfe79a_cade_48f1_9a8c_fd96e6bac8ba emmo:EMMO_254472c6_3dbd_4f02_bc43_571389cd281f emmo:EMMO_42955b2d_b465_4666_86cc_ea3c2d685753 emmo:EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae emmo:EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7 emmo:EMMO_b55cd09a_e54d_4eb1_81dd_03c29d1b878e emmo:EMMO_e1981c25_7c55_4020_aa7a_d2e14ced86d4 emmo:EMMO_f5769206_9257_4b08_bf7b_dad7868c6afc ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( emmo:Ampere emmo:Candela emmo:Kelvin emmo:Kilogram emmo:Metre emmo:Mole emmo:Second ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( emmo:EMMO_1273eb34_de48_43a9_925f_104110469dd2 emmo:EMMO_3a185e6c_9e19_4776_b583_19c978156aa0 emmo:EMMO_e9ffc696_5228_4ff9_8a60_0f5e05e9931b ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( emmo:EMMO_03d2c71b_0276_45d7_a847_7cd164cb7d45 emmo:EMMO_2b243e59_3a2a_412e_9a58_81d1e5c92fbe emmo:EMMO_49adf406_5c8f_498a_8c90_e4974e9e6d11 emmo:EMMO_4db5c662_b065_49e4_96eb_826699fa8048 emmo:EMMO_556e27cd_fef1_41c9_824a_dd78980062b5 emmo:EMMO_6da1b965_768c_4cf0_8873_44f2035133ba emmo:EMMO_7abfbbc4_ce7b_4611_b731_1b5b8bd2bbc0 emmo:EMMO_7fd8ec39_1c4b_4ff3_9bc8_0bf3c27e2db0 emmo:EMMO_890856a3_3eb4_471e_a54a_65031bee30f4 emmo:EMMO_afb29c1a_eba4_4ba7_b6a1_62e9023c94ec emmo:EMMO_e9722f13_947c_444e_82ef_1ce045f6637c emmo:EMMO_fbc2549b_9108_467a_a573_de48eb45cc4a ) .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+

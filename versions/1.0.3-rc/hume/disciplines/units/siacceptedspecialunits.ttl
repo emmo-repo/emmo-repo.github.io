@@ -1,0 +1,501 @@
+@prefix : <https://w3id.org/emmo/hume/disciplines/units/siacceptedspecialunits#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:Arcminute a owl:Class ;
+    rdfs:label "Arcminute"@en ;
+    rdfs:comment """A minute of arc, arcminute, or minute arc (MOA), is a unit of angular measurement equal to one sixtieth (1/60) of one degree (circle/21,600), or π /10,800 radians. In turn, a second of arc or arcsecond is one sixtieth (1/60) of one minute of arc. Since one degree is defined as one three hundred and sixtieth (1/360) of a rotation, one minute of arc is 1/21,600 of a rotation.
+
+-- QUDT"""@en ;
+    rdfs:isDefinedBy "http://qudt.org/2.1/vocab/unit"^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "′"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty ns1:hasSIConversionOffset ],
+        [ a owl:Restriction ;
+            owl:hasValue 2.908882e-04 ;
+            owl:onProperty ns1:hasSIConversionMultiplier ],
+        ns1:LengthFractionUnit,
+        ns1:NonPrefixedUnit,
+        ns1:SIAcceptedUnit ;
+    skos:altLabel "ArcMinute"@en,
+        "MinuteOfArc"@en ;
+    skos:prefLabel "Arcminute"@en ;
+    schema:unitCode "D61"^^xsd:string ;
+    ns1:elucidation """A minute of arc, arcminute, or minute arc (MOA), is a unit of angular measurement equal to one sixtieth (1/60) of one degree (circle/21,600), or π /10,800 radians. In turn, a second of arc or arcsecond is one sixtieth (1/60) of one minute of arc. Since one degree is defined as one three hundred and sixtieth (1/360) of a rotation, one minute of arc is 1/21,600 of a rotation.
+
+-- QUDT"""@en ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/ARCMIN"^^xsd:string ;
+    ns1:ucumCode "'"^^xsd:string ;
+    ns1:unitSymbol "'"^^xsd:string ;
+    ns1:wikipediaReference "http://en.wikipedia.org/wiki/Minute_of_arc"^^xsd:string .
+
+ns1:Arcsecond a owl:Class ;
+    rdfs:label "Arcsecond"@en ;
+    rdfs:comment """"Arc Second" is a unit of angular measure, also called the `second of arc`, equal to 1/60 arcminute. One arcsecond is a very small angle: there are 1,296,000 in a circle. The SI recommends `double prime` ('') as the symbol for the arcsecond. The symbol has become common in astronomy, where very small angles are stated in milliarcseconds (mas).
+
+-- QUDT"""@en ;
+    rdfs:isDefinedBy "http://qudt.org/2.1/vocab/unit"^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty ns1:hasSIConversionOffset ],
+        [ a owl:Restriction ;
+            owl:hasValue "″"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 4.848137e-06 ;
+            owl:onProperty ns1:hasSIConversionMultiplier ],
+        ns1:LengthFractionUnit,
+        ns1:NonPrefixedUnit,
+        ns1:SIAcceptedUnit ;
+    skos:altLabel "ArcSecond"@en,
+        "SecondOfArc"@en ;
+    skos:prefLabel "Arcsecond"@en ;
+    schema:unitCode "D62"^^xsd:string ;
+    ns1:elucidation """"Arc Second" is a unit of angular measure, also called the `second of arc`, equal to 1/60 arcminute. One arcsecond is a very small angle: there are 1,296,000 in a circle. The SI recommends `double prime` ('') as the symbol for the arcsecond. The symbol has become common in astronomy, where very small angles are stated in milliarcseconds (mas).
+
+-- QUDT"""@en ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/ARCSEC"^^xsd:string ;
+    ns1:ucumCode "''"^^xsd:string ;
+    ns1:unitSymbol "\\\""^^xsd:string ;
+    ns1:wikipediaReference "http://en.wikipedia.org/wiki/Minute_of_arc#Symbols.2C_abbreviations_and_subdivisions"^^xsd:string .
+
+ns1:AstronomicalUnit a owl:Class ;
+    rdfs:label "AstronomicalUnit"@en ;
+    rdfs:comment """An astronomical unit (abbreviated as AU, au, a.u., or ua) is a unit of length equal to 149,597,870,700 metres (92,955,807.273 mi) or approximately the mean Earth Sun distance. The symbol ua is recommended by the International Bureau of Weights and Measures, and the international standard ISO 80000, while au is recommended by the International Astronomical Union, and is more common in Anglosphere countries. In general, the International System of Units only uses capital letters for the symbols of units which are named after individual scientists, while au or a.u. can also mean atomic unit or even arbitrary unit. However, the use of AU to refer to the astronomical unit is widespread. The astronomical constant whose value is one astronomical unit is referred to as unit distance and is given the symbol A. [Wikipedia]
+
+-- QUDT"""@en,
+        "One astronomical unit is defined as exactly 149597870700 m, which is roughly the distance from earth to sun."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1.495979e+11 ;
+            owl:onProperty ns1:hasSIConversionMultiplier ],
+        [ a owl:Restriction ;
+            owl:hasValue "au"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        ns1:LengthUnit,
+        ns1:SIAcceptedUnit ;
+    skos:altLabel "astronomical-unit"@en ;
+    skos:prefLabel "AstronomicalUnit"@en ;
+    schema:unitCode "A12"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/page/Astronomical_unit"^^xsd:string ;
+    ns1:definition "One astronomical unit is defined as exactly 149597870700 m, which is roughly the distance from earth to sun."@en ;
+    ns1:elucidation """An astronomical unit (abbreviated as AU, au, a.u., or ua) is a unit of length equal to 149,597,870,700 metres (92,955,807.273 mi) or approximately the mean Earth Sun distance. The symbol ua is recommended by the International Bureau of Weights and Measures, and the international standard ISO 80000, while au is recommended by the International Astronomical Union, and is more common in Anglosphere countries. In general, the International System of Units only uses capital letters for the symbols of units which are named after individual scientists, while au or a.u. can also mean atomic unit or even arbitrary unit. However, the use of AU to refer to the astronomical unit is widespread. The astronomical constant whose value is one astronomical unit is referred to as unit distance and is given the symbol A. [Wikipedia]
+
+-- QUDT"""@en ;
+    ns1:qudtReference "https://qudt.org/vocab/unit/AU"^^xsd:string ;
+    ns1:ucumCode "AU"^^xsd:string ;
+    ns1:unitSymbol "AU"^^xsd:string,
+        "au"^^xsd:string ;
+    ns1:wikipediaReference "http://en.wikipedia.org/wiki/Astronomical_unit"^^xsd:anyURI .
+
+ns1:Dalton a owl:Class ;
+    rdfs:label "Dalton"@en ;
+    rdfs:comment "One dalton is defined as one twelfth of the mass of an unbound neutral atom of carbon-12 in its nuclear and electronic ground state."@en,
+        """The unified atomic mass unit (symbol: μ) or dalton (symbol: Da) is a unit that is used for indicating mass on an atomic or molecular scale. It is defined as one twelfth of the rest mass of an unbound atom of carbon-12 in its nuclear and electronic ground state, and has a value of 1.660538782(83) × 10⁻²⁷ kg. One Da is approximately equal to the mass of one proton or one neutron. The CIPM have categorised it as a "non-SI unit whose values in SI units must be obtained experimentally".
+
+-- QUDT"""@en ;
+    rdfs:isDefinedBy "http://qudt.org/2.1/vocab/unit"^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Da"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 1.660539e-27 ;
+            owl:onProperty ns1:hasSIConversionMultiplier ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty ns1:hasSIConversionOffset ],
+        ns1:MassUnit,
+        ns1:SIAcceptedUnit ;
+    skos:altLabel "AtomicMassUnit"@en ;
+    skos:prefLabel "Dalton"@en ;
+    schema:unitCode "D43"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/page/Unified_atomic_mass_unit"^^xsd:string ;
+    ns1:definition "One dalton is defined as one twelfth of the mass of an unbound neutral atom of carbon-12 in its nuclear and electronic ground state."@en ;
+    ns1:elucidation """The unified atomic mass unit (symbol: μ) or dalton (symbol: Da) is a unit that is used for indicating mass on an atomic or molecular scale. It is defined as one twelfth of the rest mass of an unbound atom of carbon-12 in its nuclear and electronic ground state, and has a value of 1.660538782(83) × 10⁻²⁷ kg. One Da is approximately equal to the mass of one proton or one neutron. The CIPM have categorised it as a "non-SI unit whose values in SI units must be obtained experimentally".
+
+-- QUDT"""@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.D01514"^^xsd:string ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/Da"^^xsd:anyURI ;
+    ns1:ucumCode "u"^^xsd:string ;
+    ns1:unitSymbol "amu"^^xsd:string ;
+    ns1:wikipediaReference "http://en.wikipedia.org/wiki/Atomic_mass_unit"^^xsd:anyURI .
+
+ns1:Day a owl:Class ;
+    rdfs:label "Day"@en ;
+    rdfs:comment "A measure of time defined as 86 400 seconds."@en,
+        """Mean solar day
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty ns1:hasSIConversionOffset ],
+        [ a owl:Restriction ;
+            owl:hasValue "d"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 8.64e+04 ;
+            owl:onProperty ns1:hasSIConversionMultiplier ],
+        ns1:SIAcceptedUnit,
+        ns1:TimeUnit ;
+    skos:prefLabel "Day"@en ;
+    schema:unitCode "DAY"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/page/Day"^^xsd:string ;
+    ns1:definition "A measure of time defined as 86 400 seconds."@en ;
+    ns1:elucidation """Mean solar day
+
+-- QUDT"""@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.D01527"^^xsd:string ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/DAY"^^xsd:string ;
+    ns1:ucumCode "d"^^xsd:string ;
+    ns1:wikipediaReference "http://en.wikipedia.org/wiki/Day?oldid=494970012"^^xsd:anyURI .
+
+ns1:DeciBel a owl:Class ;
+    rdfs:label "DeciBel"^^xsd:string ;
+    rdfs:comment """A customary logarithmic measure most commonly used (in various ways) for measuring sound.Sound is measured on a logarithmic scale. Informally, if one sound is 1 bel (10 decibels) "louder" than another, this means the louder sound is 10 times louder than the fainter one. A difference of 20 decibels corresponds to an increase of 10 x 10 or 100 times in intensity. The beginning of the scale, 0 decibels, can be set in different ways, depending on exactly the aspect of sound being measured. For sound intensity (the power of the sound waves per unit of area) 0 decibel is equal to 1 picoWatts per Metre Squared. This corresponds approximately to the faintest sound that can be detected by a person who has good hearing. For sound pressure (the pressure exerted by the sound waves) 0 decibels equals 20 micropascals RMS, and for sound power 0 decibels sometimes equals 1 picoWatt. In all cases, one decibel equals ≈ 0.115129 neper.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:hasUnitSymbol ;
+            owl:someValuesFrom ns1:Bel ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-01 ;
+            owl:onProperty ns1:hasSIConversionMultiplier ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty ns1:hasSIConversionOffset ],
+        ns1:DeciPrefixedUnit,
+        ns1:LogarithmicUnit,
+        ns1:PrefixedUnit,
+        ns1:SINonCoherentUnit ;
+    skos:prefLabel "DeciBel"^^xsd:string ;
+    ns1:elucidation """A customary logarithmic measure most commonly used (in various ways) for measuring sound.Sound is measured on a logarithmic scale. Informally, if one sound is 1 bel (10 decibels) "louder" than another, this means the louder sound is 10 times louder than the fainter one. A difference of 20 decibels corresponds to an increase of 10 x 10 or 100 times in intensity. The beginning of the scale, 0 decibels, can be set in different ways, depending on exactly the aspect of sound being measured. For sound intensity (the power of the sound waves per unit of area) 0 decibel is equal to 1 picoWatts per Metre Squared. This corresponds approximately to the faintest sound that can be detected by a person who has good hearing. For sound pressure (the pressure exerted by the sound waves) 0 decibels equals 20 micropascals RMS, and for sound power 0 decibels sometimes equals 1 picoWatt. In all cases, one decibel equals ≈ 0.115129 neper.
+
+-- QUDT"""@en ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/DeciB"^^xsd:string ;
+    ns1:ucumCode "dB"^^xsd:string ;
+    ns1:unitSymbol "dB"^^xsd:string ;
+    ns1:wikipediaReference "http://en.wikipedia.org/wiki/Decibel?oldid=495380648"^^xsd:string .
+
+ns1:Degree a owl:Class ;
+    rdfs:label "Degree"@en ;
+    rdfs:comment """A degree (in full, a degree of arc, arc degree, or arcdegree), usually denoted by ° (the degree symbol), is a measurement of plane angle, representing 1/360 of a full rotation; one degree is equivalent to  2π /360 rad, 0.017453 rad. It is not an SI unit, as the SI unit for angles is radian, but is an accepted SI unit.
+
+-- QUDT"""@en,
+        "Degree is a measurement of plane angle, defined by representing a full rotation as 360 degrees."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1.745329e-02 ;
+            owl:onProperty ns1:hasSIConversionMultiplier ],
+        [ a owl:Restriction ;
+            owl:hasValue "°"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty ns1:hasSIConversionOffset ],
+        ns1:LengthFractionUnit,
+        ns1:SIAcceptedUnit ;
+    skos:prefLabel "Degree"@en ;
+    schema:unitCode "DD"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/page/Degree_(angle)"^^xsd:string ;
+    ns1:definition "Degree is a measurement of plane angle, defined by representing a full rotation as 360 degrees."@en ;
+    ns1:elucidation """A degree (in full, a degree of arc, arc degree, or arcdegree), usually denoted by ° (the degree symbol), is a measurement of plane angle, representing 1/360 of a full rotation; one degree is equivalent to  2π /360 rad, 0.017453 rad. It is not an SI unit, as the SI unit for angles is radian, but is an accepted SI unit.
+
+-- QUDT"""@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.D01560"^^xsd:string ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/DEG"^^xsd:string ;
+    ns1:ucumCode "deg"^^xsd:string .
+
+ns1:ElectronVolt a owl:Class ;
+    rdfs:label "ElectronVolt"@en ;
+    rdfs:comment """An electron volt (eV) is the energy that an electron gains when it travels through a potential of one volt. You can imagine that the electron starts at the negative plate of a parallel plate capacitor and accelerates to the positive plate, which is at one volt higher potential. Numerically 1 eV approximates 1.6x10⁻¹⁹ joules, where 1 joule is 6.2x10¹⁸ eV. For example, it would take 6.2x10²⁰ eV/sec to light a 100 watt light bulb.
+
+-- QUDT"""@en,
+        "The amount of energy gained (or lost) by the charge of a single electron moving across an electric potential difference of one volt."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "eV"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 1.602177e-19 ;
+            owl:onProperty ns1:hasSIConversionMultiplier ],
+        ns1:EnergyUnit,
+        ns1:SIAcceptedUnit ;
+    skos:prefLabel "ElectronVolt"@en ;
+    schema:unitCode "A53"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/page/Electronvolt"^^xsd:string ;
+    ns1:definition "The amount of energy gained (or lost) by the charge of a single electron moving across an electric potential difference of one volt."@en ;
+    ns1:elucidation """An electron volt (eV) is the energy that an electron gains when it travels through a potential of one volt. You can imagine that the electron starts at the negative plate of a parallel plate capacitor and accelerates to the positive plate, which is at one volt higher potential. Numerically 1 eV approximates 1.6x10⁻¹⁹ joules, where 1 joule is 6.2x10¹⁸ eV. For example, it would take 6.2x10²⁰ eV/sec to light a 100 watt light bulb.
+
+-- QUDT"""@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.E02014"^^xsd:string ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/EV"^^xsd:string ;
+    ns1:ucumCode "eV"^^xsd:string ;
+    ns1:wikipediaReference "http://en.wikipedia.org/wiki/Electron_volt?oldid=344021738"^^xsd:anyURI .
+
+ns1:Hectare a owl:Class ;
+    rdfs:label "Hectare"@en ;
+    rdfs:comment "A non-SI metric unit of area defined as the square with 100-metre sides."@en,
+        """The customary metric unit of land area, equal to 100 ares. One hectare is a square hectometer, that is, the area of a square 100 meters on each side: exactly 10 000 square meters or approximately 107 639.1 square feet, 11 959.9 square yards, or 2.471 054 acres.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty ns1:hasSIConversionOffset ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+04 ;
+            owl:onProperty ns1:hasSIConversionMultiplier ],
+        [ a owl:Restriction ;
+            owl:hasValue "ha"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        ns1:AreaUnit,
+        ns1:SIAcceptedUnit ;
+    skos:prefLabel "Hectare"@en ;
+    schema:unitCode "HAR"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/page/Hectare"^^xsd:string ;
+    ns1:definition "A non-SI metric unit of area defined as the square with 100-metre sides."@en ;
+    ns1:elucidation """The customary metric unit of land area, equal to 100 ares. One hectare is a square hectometer, that is, the area of a square 100 meters on each side: exactly 10 000 square meters or approximately 107 639.1 square feet, 11 959.9 square yards, or 2.471 054 acres.
+
+-- QUDT"""@en ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/HA"^^xsd:string ;
+    ns1:ucumCode "har"^^xsd:string ;
+    ns1:wikipediaReference "https://en.wikipedia.org/wiki/Hectare"^^xsd:string .
+
+ns1:Hour a owl:Class ;
+    rdfs:label "Hour"@en ;
+    rdfs:comment "Measure of time defined as 3600 seconds."@en,
+        """The hour (common symbol: h or hr) is a unit of measurement of time. In modern usage, an hour comprises 60 minutes, or 3,600 seconds. It is approximately 1/24 of a mean solar day. An hour in the Universal Coordinated Time (UTC) time standard can include a negative or positive leap second, and may therefore have a duration of 3,599 or 3,601 seconds for adjustment purposes. Although it is not a standard defined by the International System of Units, the hour is a unit accepted for use with SI, represented by the symbol h.
+
+-- QUDT"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty ns1:hasSIConversionOffset ],
+        [ a owl:Restriction ;
+            owl:hasValue "h"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 3.6e+03 ;
+            owl:onProperty ns1:hasSIConversionMultiplier ],
+        ns1:SIAcceptedUnit,
+        ns1:TimeUnit ;
+    skos:prefLabel "Hour"@en ;
+    schema:unitCode "HUR"^^xsd:string ;
+    ns1:definition "Measure of time defined as 3600 seconds."@en ;
+    ns1:elucidation """The hour (common symbol: h or hr) is a unit of measurement of time. In modern usage, an hour comprises 60 minutes, or 3,600 seconds. It is approximately 1/24 of a mean solar day. An hour in the Universal Coordinated Time (UTC) time standard can include a negative or positive leap second, and may therefore have a duration of 3,599 or 3,601 seconds for adjustment purposes. Although it is not a standard defined by the International System of Units, the hour is a unit accepted for use with SI, represented by the symbol h.
+
+-- QUDT"""@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.H02866"^^xsd:string ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/HR"^^xsd:string ;
+    ns1:ucumCode "h"^^xsd:string .
+
+ns1:Litre a owl:Class ;
+    rdfs:comment "Other used symbols for litre are \"l\" and \"ℓ\"."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "L"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-03 ;
+            owl:onProperty ns1:hasSIConversionMultiplier ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty ns1:hasSIConversionOffset ],
+        ns1:SIAcceptedUnit,
+        ns1:VolumeUnit ;
+    skos:altLabel "liter"@en-us ;
+    skos:prefLabel "Litre"@en ;
+    schema:unitCode "B51"^^xsd:string ;
+    ns1:definition "A non-SI unit of volume defined as 1 cubic decimetre (dm3),"@en ;
+    ns1:elucidation """The litre (American spelling: `liter`; SI symbol l or L) is a non-SI metric system unit of volume equal to 1 `cubic decimetre` (dm³), 1,000 cubic centimetres (cm³) or 1/1000 `cubic metre`. If the lower case "L" is used as the symbol, it is sometimes rendered as a italic "l" to help distinguish it from the capital "I", although this usage has no official approval by any international bureau.
+
+-- QUDT"""@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.L03594"^^xsd:string ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/L"^^xsd:string ;
+    ns1:ucumCode "L"^^xsd:string,
+        "l"^^xsd:string .
+
+ns1:Minute a owl:Class ;
+    rdfs:label "Minute"@en ;
+    rdfs:comment """A minute is a unit of measurement of time. The minute is a unit of time equal to 1/60 (the first sexagesimal fraction of an hour or 60 seconds. In the UTC time scale, a minute on rare occasions has 59 or 61 seconds; see leap second. The minute is not an SI unit; however, it is accepted for use with SI units. The SI symbol for minute or minutes is min (for time measurement) or the prime symbol after a number, e.g. 5' (for angle measurement, even if it is informally used for time).
+
+-- QUDT"""@en,
+        "Non-SI time unit defined as 60 seconds."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty ns1:hasSIConversionOffset ],
+        [ a owl:Restriction ;
+            owl:hasValue "min"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 6e+01 ;
+            owl:onProperty ns1:hasSIConversionMultiplier ],
+        ns1:SIAcceptedUnit,
+        ns1:TimeUnit ;
+    skos:prefLabel "Minute"@en ;
+    schema:unitCode "MIN"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/page/Minute"^^xsd:string ;
+    ns1:definition "Non-SI time unit defined as 60 seconds."@en ;
+    ns1:elucidation """A minute is a unit of measurement of time. The minute is a unit of time equal to 1/60 (the first sexagesimal fraction of an hour or 60 seconds. In the UTC time scale, a minute on rare occasions has 59 or 61 seconds; see leap second. The minute is not an SI unit; however, it is accepted for use with SI units. The SI symbol for minute or minutes is min (for time measurement) or the prime symbol after a number, e.g. 5' (for angle measurement, even if it is informally used for time).
+
+-- QUDT"""@en ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/MIN"^^xsd:string ;
+    ns1:ucumCode "min"^^xsd:string .
+
+ns1:Neper a owl:Class ;
+    rdfs:label "Neper"@en ;
+    rdfs:comment """The neper is a logarithmic unit for ratios of measurements of physical field and power quantities, such as gain and loss of electronic signals. It has the unit symbol Np. The unit's name is derived from the name of John Napier, the inventor of logarithms. As is the case for the decibel and bel, the neper is not a unit in the International System of Units (SI), but it is accepted for use alongside the SI. Like the decibel, the neper is a unit in a logarithmic scale. While the bel uses the decadic (base-10) logarithm to compute ratios, the neper uses the natural logarithm, based on Euler's number
+
+-- QUDT"""@en,
+        """Unit of measurement for quantities of type level or level difference, which are defined as the natural logarithm of the ratio of power- or field-type quantities.
+
+The value of a ratio in nepers is given by `ln(x1/x2)` where `x1` and `x2` are the values of interest (amplitudes), and ln is the natural logarithm. When the values are quadratic in the amplitude (e.g. power), they are first linearised by taking the square root before the logarithm is taken, or equivalently the result is halved.
+
+Wikipedia"""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Np"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+00 ;
+            owl:onProperty ns1:hasSIConversionMultiplier ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty ns1:hasSIConversionOffset ],
+        ns1:LogarithmicUnit,
+        ns1:SIAcceptedUnit ;
+    skos:prefLabel "Neper"@en ;
+    schema:unitCode "C50"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/page/Neper"^^xsd:string ;
+    ns1:definition """Unit of measurement for quantities of type level or level difference, which are defined as the natural logarithm of the ratio of power- or field-type quantities.
+
+The value of a ratio in nepers is given by `ln(x1/x2)` where `x1` and `x2` are the values of interest (amplitudes), and ln is the natural logarithm. When the values are quadratic in the amplitude (e.g. power), they are first linearised by taking the square root before the logarithm is taken, or equivalently the result is halved.
+
+Wikipedia"""@en ;
+    ns1:elucidation """The neper is a logarithmic unit for ratios of measurements of physical field and power quantities, such as gain and loss of electronic signals. It has the unit symbol Np. The unit's name is derived from the name of John Napier, the inventor of logarithms. As is the case for the decibel and bel, the neper is not a unit in the International System of Units (SI), but it is accepted for use alongside the SI. Like the decibel, the neper is a unit in a logarithmic scale. While the bel uses the decadic (base-10) logarithm to compute ratios, the neper uses the natural logarithm, based on Euler's number
+
+-- QUDT"""@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.N04106"^^xsd:string ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/NP"^^xsd:string ;
+    ns1:ucumCode "Np"^^xsd:string ;
+    ns1:wikipediaReference "https://en.wikipedia.org/wiki/Neper"^^xsd:string .
+
+ns1:Tonne a owl:Class ;
+    rdfs:label "Tonne"@en ;
+    rdfs:comment """1,000-fold of the SI base unit kilogram
+
+-- QUDT"""@en,
+        "A non-SI unit defined as 1000 kg."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1e+03 ;
+            owl:onProperty ns1:hasSIConversionMultiplier ],
+        [ a owl:Restriction ;
+            owl:hasValue "t"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty ns1:hasSIConversionOffset ],
+        ns1:MassUnit,
+        ns1:SIAcceptedUnit ;
+    skos:prefLabel "Tonne"@en ;
+    schema:unitCode "TNE"^^xsd:string ;
+    ns1:definition "A non-SI unit defined as 1000 kg."@en ;
+    ns1:elucidation """1,000-fold of the SI base unit kilogram
+
+-- QUDT"""@en ;
+    ns1:iupacReference "https://doi.org/10.1351/goldbook.T06394"^^xsd:string ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/TON_M"^^xsd:string ;
+    ns1:ucumCode "t"^^xsd:string ;
+    ns1:wikipediaReference "https://en.wikipedia.org/wiki/Tonne"^^xsd:string .
+
+: a owl:Ontology ;
+    dcterms:abstract "The module 'siacceptedspecialunits' include the 15 non-SI special units that are accepted for use with the SI units."@en ;
+    dcterms:contributor <https://orcid.org/FrancescaBleken>,
+        <https://orcid.org/GerhardGoldbeck>,
+        <https://orcid.org/SimonClark> ;
+    dcterms:creator <https://orcid.org/EmanueleGhedini>,
+        <https://orcid.org/JesperFriis> ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "SI accepted special units"@en ;
+    rdfs:comment """Note: this file has automatically been populated with dimensional units from QUDT.
+
+We kindly acknowledge NIST for reusing their content, including the selection of units, their elucidations and conversion multiplier."""@en,
+        "The EMMO should be reasoned with HermiT to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.3/disciplines/units/siunits> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.3/hume/disciplines/units/siacceptedspecialunits> ;
+    owl:versionInfo "1.0.3"^^xsd:string ;
+    ns1:contact "emmo@emmc.eu"^^xsd:string .
+
+ns1:Bel a owl:Class ;
+    rdfs:label "Bel"@en ;
+    rdfs:comment """A logarithmic unit of sound pressure equal to 10 decibels (dB),  It is defined as: 1 B = (1/2) log₁₀(Np)
+
+-- QUDT"""@en,
+        "One bel is defined as `1⁄2 ln(10) neper`."@en,
+        "Today decibel (one tenth of a bel) is commonly used instead of bel."@en,
+        "bel is used to express the ratio of one value of a power or field quantity to another, on a logarithmic scale, the logarithmic quantity being called the power level or field level, respectively."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "B"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 0e+00 ;
+            owl:onProperty ns1:hasSIConversionOffset ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+00 ;
+            owl:onProperty ns1:hasSIConversionMultiplier ],
+        ns1:LogarithmicUnit,
+        ns1:NonPrefixedUnit,
+        ns1:SIAcceptedUnit ;
+    skos:prefLabel "Bel"@en ;
+    schema:unitCode "M72"^^xsd:string ;
+    ns1:dbpediaReference "http://dbpedia.org/resource/Bel"^^xsd:anyURI ;
+    ns1:definition "One bel is defined as `1⁄2 ln(10) neper`."@en ;
+    ns1:elucidation """A logarithmic unit of sound pressure equal to 10 decibels (dB),  It is defined as: 1 B = (1/2) log₁₀(Np)
+
+-- QUDT"""@en ;
+    ns1:qudtReference "http://qudt.org/vocab/unit/B"^^xsd:string ;
+    ns1:ucumCode "B"^^xsd:string ;
+    ns1:wikipediaReference "https://en.wikipedia.org/wiki/Decibel"^^xsd:string .
+
+ns1:DeciPrefixedUnit rdfs:label "DeciPrefixedUnit"@en ;
+    rdfs:comment "Superclass for all units prefixed with \"deci\" (0.1)."@en .
+
+ns1:SIAcceptedDerivedUnit a owl:Class ;
+    rdfs:label "SIAcceptedDerivedUnit"@en ;
+    rdfs:comment "Defived units that are accepted to be used with SI."@en ;
+    rdfs:subClassOf ns1:DerivedUnit,
+        ns1:SIAccepted ;
+    skos:prefLabel "SIAcceptedDerivedUnit"@en ;
+    ns1:elucidation "Defived units that are accepted to be used with SI."@en .
+
+ns1:SIAcceptedPrefixedUnit a owl:Class ;
+    rdfs:label "SIAcceptedPrefixedUnit"@en ;
+    rdfs:comment "Non-SI prefixed units that have been accepted by SI to be used together with the SI system."@en ;
+    rdfs:subClassOf ns1:PrefixedUnit,
+        ns1:SIAccepted ;
+    skos:prefLabel "SIAcceptedPrefixedUnit"@en ;
+    ns1:elucidation "Non-SI prefixed units that have been accepted by SI to be used together with the SI system."@en .
+
+ns1:LengthFractionUnit rdfs:label "LengthFractionUnit"@en ;
+    rdfs:comment "Unit for quantities of dimension one that are the fraction of two lengths."@en .
+
+ns1:SIAccepted a owl:Class ;
+    rdfs:subClassOf ns1:MeasurementUnit ;
+    skos:prefLabel "SIAccepted"@en ;
+    ns1:OWLRL2DLAxioms "disjointUnionOf: SIAcceptedUnit, SIAcceptedPrefixedUnit, SIAcceptedDerivedUnit"^^xsd:string ;
+    ns1:elucidation "Non-SI unit that has been accepted by SI to be used together with the SI system."@en .
+
+ns1:SIAcceptedUnit a owl:Class ;
+    rdfs:comment "This is a list of units that are not defined as part of the International System of Units (SI), but are otherwise mentioned in the SI brouchure, because either the General Conference on Weights and Measures (CGPM) accepts their use as being multiples or submultiples of SI-units, they have important contemporary application worldwide, or are otherwise commonly encountered worldwide."@en ;
+    rdfs:subClassOf ns1:SIAccepted,
+        ns1:SpecialUnit ;
+    skos:prefLabel "SIAcceptedUnit"@en ;
+    ns1:elucidation "Non-SI units mentioned in the SI."@en ;
+    ns1:wikipediaReference "https://en.wikipedia.org/wiki/Non-SI_units_mentioned_in_the_SI"^^xsd:string .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( ns1:SIAcceptedUnit ns1:SIAcceptedPrefixedUnit ns1:SIAcceptedDerivedUnit ) .
+
