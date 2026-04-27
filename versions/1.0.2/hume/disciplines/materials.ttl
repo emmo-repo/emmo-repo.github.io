@@ -1,0 +1,622 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+owl:minQualifiedCardinality a owl:AnnotationProperty .
+
+owl:qualifiedCardinality a owl:AnnotationProperty .
+
+ns1:AmorphousMaterial a owl:Class ;
+    rdfs:label "AmorphousMaterial"@en ;
+    rdfs:subClassOf ns1:MaterialByStructure ;
+    skos:altLabel "NonCrystallineMaterial"@en ;
+    skos:prefLabel "AmorphousMaterial"@en .
+
+ns1:AqueousSolution a owl:Class ;
+    rdfs:label "AqueousSolution"@en ;
+    rdfs:comment "A liquid solution in which the solvent is water."@en ;
+    rdfs:subClassOf ns1:LiquidSolution ;
+    skos:prefLabel "AqueousSolution"@en ;
+    ns1:elucidation "A liquid solution in which the solvent is water."@en .
+
+ns1:BondedAtom a owl:Class ;
+    rdfs:label "BondedAtom"@en ;
+    rdfs:comment "A bonded atom that shares at least one electron to the atom-based entity of which is part of."@en,
+        """A real bond between atoms is always something hybrid between covalent, metallic and ionic.
+
+In general, metallic and ionic bonds have atoms sharing electrons."""@en,
+        "The bond types that are covered by this definition are the strong electronic bonds: covalent, metallic and ionic."@en,
+        "This class can be used to represent molecules as simplified quantum systems, in which outer molecule shared electrons are un-entangled with the inner shells of the atoms composing the molecule."@en ;
+    rdfs:subClassOf ns1:Atom ;
+    skos:prefLabel "BondedAtom"@en ;
+    ns1:elucidation "A bonded atom that shares at least one electron to the atom-based entity of which is part of."@en .
+
+ns1:CeramicMaterial a owl:Class ;
+    rdfs:label "CeramicMaterial"@en ;
+    rdfs:subClassOf ns1:MaterialByType ;
+    skos:prefLabel "CeramicMaterial"@en .
+
+ns1:CompositeMaterial a owl:Class ;
+    rdfs:label "CompositeMaterial"@en ;
+    rdfs:comment "A material that contains two or more constituent materials."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
+            owl:onClass ns1:Material ;
+            owl:onProperty ns1:hasSpatialPart ],
+        ns1:MaterialByType ;
+    skos:altLabel "Composite"@en ;
+    skos:prefLabel "CompositeMaterial"@en ;
+    ns1:elucidation "A material that contains two or more constituent materials."@en .
+
+ns1:Dispersion a owl:Class ;
+    rdfs:label "Dispersion"@en ;
+    rdfs:comment "A material in which distributed particles of one phase are dispersed in a different continuous phase."@en ;
+    rdfs:subClassOf ns1:Mixture ;
+    owl:disjointUnionOf ( ns1:Solution ns1:Suspension ns1:Colloid ) ;
+    skos:prefLabel "Dispersion"@en ;
+    ns1:elucidation "A material in which distributed particles of one phase are dispersed in a different continuous phase."@en .
+
+ns1:Dust a owl:Class ;
+    rdfs:label "Dust"@en ;
+    rdfs:comment "A suspension of fine particles in the atmosphere."@en ;
+    rdfs:subClassOf ns1:GasSolidSuspension ;
+    skos:prefLabel "Dust"@en ;
+    ns1:elucidation "A suspension of fine particles in the atmosphere."@en .
+
+ns1:Emulsion a owl:Class ;
+    rdfs:label "Emulsion"@en ;
+    rdfs:comment "An emulsion is a mixture of two or more liquids that are normally immiscible (a liquid-liquid heterogeneous mixture)."@en ;
+    rdfs:subClassOf ns1:Colloid,
+        ns1:Liquid ;
+    skos:example "Mayonnaise, milk."@en ;
+    skos:prefLabel "Emulsion"@en ;
+    ns1:elucidation "An emulsion is a mixture of two or more liquids that are normally immiscible (a liquid-liquid heterogeneous mixture)."@en .
+
+ns1:FunctionallyDefinedMaterial a owl:Class ;
+    rdfs:label "FunctionallyDefinedMaterial"@en ;
+    rdfs:subClassOf ns1:Material ;
+    skos:prefLabel "FunctionallyDefinedMaterial"@en .
+
+ns1:GasMixture a owl:Class ;
+    rdfs:label "GasMixture"@en ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( ns1:Gas ns1:Mixture ) ] ;
+    skos:prefLabel "GasMixture"@en .
+
+ns1:GasSolution a owl:Class ;
+    rdfs:label "GasSolution"@en ;
+    rdfs:comment "A gaseous solution made of more than one component type."@en ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( ns1:Gas ns1:Solution ) ] ;
+    skos:altLabel "GasMixture"@en ;
+    skos:prefLabel "GasSolution"@en ;
+    ns1:elucidation "A gaseous solution made of more than one component type."@en .
+
+ns1:Gel a owl:Class ;
+    rdfs:label "Gel"@en ;
+    rdfs:comment "A soft, solid or solid-like colloid consisting of two or more components, one of which is a liquid, present in substantial quantity."@en ;
+    rdfs:subClassOf ns1:Colloid,
+        ns1:Solid ;
+    skos:prefLabel "Gel"@en ;
+    ns1:elucidation "A soft, solid or solid-like colloid consisting of two or more components, one of which is a liquid, present in substantial quantity."@en .
+
+ns1:LiquidFoam a owl:Class ;
+    rdfs:label "LiquidFoam"@en ;
+    rdfs:comment "A foam of trapped gas in a liquid."@en ;
+    rdfs:subClassOf ns1:Foam,
+        ns1:Liquid ;
+    skos:prefLabel "LiquidFoam"@en ;
+    ns1:elucidation "A foam of trapped gas in a liquid."@en .
+
+ns1:LiquidSol a owl:Class ;
+    rdfs:label "LiquidSol"@en ;
+    rdfs:comment "A type of sol in the form of one solid dispersed in liquid."@en ;
+    rdfs:subClassOf ns1:Liquid,
+        ns1:Sol ;
+    skos:prefLabel "LiquidSol"@en ;
+    ns1:elucidation "A type of sol in the form of one solid dispersed in liquid."@en .
+
+ns1:MesoscopicSubstance a owl:Class ;
+    rdfs:label "MesoscopicSubstance"@en ;
+    rdfs:subClassOf ns1:Substance ;
+    owl:disjointWith ns1:ContinuumSubstance ;
+    skos:prefLabel "MesoscopicSubstance"@en .
+
+ns1:MetallicMaterial a owl:Class ;
+    rdfs:label "MetallicMaterial"@en ;
+    rdfs:subClassOf ns1:MaterialByType ;
+    skos:prefLabel "MetallicMaterial"@en .
+
+ns1:NanoMaterial a owl:Class ;
+    rdfs:label "NanoMaterial"@en ;
+    rdfs:comment "Nanomaterials are Materials possessing, at minimum, one external dimension measuring 1-100nm"@en ;
+    rdfs:subClassOf ns1:SizeDefinedMaterial ;
+    skos:prefLabel "NanoMaterial"@en ;
+    ns1:elucidation "Nanomaterials are Materials possessing, at minimum, one external dimension measuring 1-100nm"@en .
+
+ns1:NaturalMaterial a owl:Class ;
+    rdfs:label "NaturalMaterial"@en ;
+    rdfs:comment "A Material occurring in nature, without the need of human intervention."@en ;
+    rdfs:subClassOf ns1:Material ;
+    skos:prefLabel "NaturalMaterial"@en ;
+    ns1:elucidation "A Material occurring in nature, without the need of human intervention."@en .
+
+ns1:NeutralAtom a owl:Class ;
+    rdfs:label "NeutralAtom"@en ;
+    rdfs:comment "A standalone atom that has no net charge."@en ;
+    rdfs:subClassOf ns1:StandaloneAtom ;
+    owl:disjointWith ns1:IonAtom ;
+    skos:prefLabel "NeutralAtom"@en ;
+    ns1:elucidation "A standalone atom that has no net charge."@en .
+
+ns1:PolymericMaterial a owl:Class ;
+    rdfs:label "PolymericMaterial"@en ;
+    rdfs:subClassOf ns1:MaterialByType ;
+    skos:prefLabel "PolymericMaterial"@en .
+
+ns1:Powder a owl:Class ;
+    rdfs:label "Powder"@en ;
+    rdfs:comment "A powder is a granular material composed of many very fine dry solid particles that may flow freely when shaken or tilted."@en ;
+    rdfs:isDefinedBy "Duran, J., Reisinger A., Sands, Powders, and Grains: An Introduction to the Physics of Granular Materials. November 1999, Springer-Verlag New York, Inc., New York, ISBN 0-387-98656-1."@en ;
+    rdfs:subClassOf ns1:GranularMaterial ;
+    skos:prefLabel "Powder"@en ;
+    ns1:elucidation "A powder is a granular material composed of many very fine dry solid particles that may flow freely when shaken or tilted."@en .
+
+ns1:ReactiveMaterial a owl:Class ;
+    rdfs:label "ReactiveMaterial"@en ;
+    rdfs:comment "A material that can take active part in a chemical reaction."@en ;
+    rdfs:subClassOf ns1:ChemicallyDefinedMaterial ;
+    skos:prefLabel "ReactiveMaterial"@en ;
+    ns1:elucidation "A material that can take active part in a chemical reaction."@en .
+
+ns1:Smoke a owl:Class ;
+    rdfs:label "Smoke"@en ;
+    rdfs:comment "Smoke is a solid aerosol made of particles emitted when a material undergoes combustion or pyrolysis."@en ;
+    rdfs:subClassOf ns1:SolidAerosol ;
+    skos:prefLabel "Smoke"@en ;
+    ns1:elucidation "Smoke is a solid aerosol made of particles emitted when a material undergoes combustion or pyrolysis."@en .
+
+ns1:SolidFoam a owl:Class ;
+    rdfs:label "SolidFoam"@en ;
+    rdfs:comment "A foam of trapped gas in a solid."@en ;
+    rdfs:subClassOf ns1:Foam,
+        ns1:Solid ;
+    skos:example "Aerogel"@en ;
+    skos:prefLabel "SolidFoam"@en ;
+    ns1:elucidation "A foam of trapped gas in a solid."@en .
+
+ns1:SolidMixture a owl:Class ;
+    rdfs:label "SolidMixture"@en ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( ns1:Solid ns1:Mixture ) ] ;
+    skos:prefLabel "SolidMixture"@en .
+
+ns1:SolidSol a owl:Class ;
+    rdfs:label "SolidSol"@en ;
+    rdfs:comment "A type of sol in the form of one solid dispersed in another continuous solid."@en ;
+    rdfs:subClassOf ns1:Sol,
+        ns1:Solid ;
+    skos:prefLabel "SolidSol"@en ;
+    ns1:elucidation "A type of sol in the form of one solid dispersed in another continuous solid."@en .
+
+ns1:SolidSolution a owl:Class ;
+    rdfs:label "SolidSolution"@en ;
+    rdfs:comment "A solid solution made of two or more component substances."@en ;
+    rdfs:subClassOf ns1:Solid,
+        ns1:Solution ;
+    skos:prefLabel "SolidSolution"@en ;
+    ns1:elucidation "A solid solution made of two or more component substances."@en .
+
+ns1:Spray a owl:Class ;
+    rdfs:label "Spray"@en ;
+    rdfs:comment "A suspension of liquid droplets dispersed in a gas through an atomization process."@en ;
+    rdfs:subClassOf ns1:GasLiquidSuspension ;
+    skos:prefLabel "Spray"@en ;
+    ns1:elucidation "A suspension of liquid droplets dispersed in a gas through an atomization process."@en .
+
+ns1:Vapor a owl:Class ;
+    rdfs:label "Vapor"@en ;
+    rdfs:comment "A liquid aerosol composed of water droplets in air or another gas."@en ;
+    rdfs:subClassOf ns1:LiquidAerosol ;
+    skos:prefLabel "Vapor"@en ;
+    ns1:elucidation "A liquid aerosol composed of water droplets in air or another gas."@en .
+
+<https://w3id.org/emmo/disciplines/materials> a owl:Ontology ;
+    dcterms:abstract "The materials module populates the physicalistic perspective with materials subclasses categorised according to modern applied physical sciences."@en ;
+    dcterms:contributor ns1:OtelloRoscioni ;
+    dcterms:creator <https://orcid.org/0000-0003-4065-9742>,
+        ns1:AdhamHashibon,
+        ns1:EmanueleGhedini,
+        ns1:GerhardGoldbeck,
+        ns1:JesperFriis ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "Materials"@en ;
+    rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.2/reference/physicalistic> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.2/disciplines/materials> ;
+    owl:versionInfo "1.0.2"^^xsd:string ;
+    ns1:contact "emmo@emmc.eu"^^xsd:string .
+
+ns1:ChemicallyDefinedMaterial a owl:Class ;
+    rdfs:label "ChemicallyDefinedMaterial"@en ;
+    rdfs:subClassOf ns1:Material ;
+    skos:prefLabel "ChemicallyDefinedMaterial"@en .
+
+ns1:CrystallineMaterial a owl:Class ;
+    rdfs:label "CrystallineMaterial"@en ;
+    rdfs:comment "Suggestion of Rickard Armiento"^^xsd:string ;
+    rdfs:subClassOf ns1:MaterialByStructure ;
+    skos:prefLabel "CrystallineMaterial"@en .
+
+ns1:GranularMaterial a owl:Class ;
+    rdfs:label "GranularMaterial"@en ;
+    rdfs:comment "A granular material is a conglomeration of discrete solid, macroscopic particles that are  large enough to avoid thermal motion fluctuations, and characterized by a loss of energy whenever the particles interact."@en ;
+    rdfs:subClassOf ns1:Material ;
+    skos:prefLabel "GranularMaterial"@en ;
+    ns1:elucidation "A granular material is a conglomeration of discrete solid, macroscopic particles that are  large enough to avoid thermal motion fluctuations, and characterized by a loss of energy whenever the particles interact."@en .
+
+ns1:IonAtom a owl:Class ;
+    rdfs:label "IonAtom"@en ;
+    rdfs:comment "A standalone atom with an unbalanced number of electrons with respect to its atomic number."@en,
+        "The ion_atom is the basic part of a pure ionic bonded compound i.e. without eclectron sharing,"@en ;
+    rdfs:subClassOf ns1:StandaloneAtom ;
+    skos:prefLabel "IonAtom"@en ;
+    ns1:elucidation "A standalone atom with an unbalanced number of electrons with respect to its atomic number."@en .
+
+ns1:LiquidAerosol a owl:Class ;
+    rdfs:label "LiquidAerosol"@en ;
+    rdfs:comment "An aerosol composed of liquid droplets in air or another gas."@en ;
+    rdfs:subClassOf ns1:Aerosol ;
+    skos:prefLabel "LiquidAerosol"@en ;
+    ns1:elucidation "An aerosol composed of liquid droplets in air or another gas."@en .
+
+ns1:LiquidGasSuspension a owl:Class ;
+    rdfs:label "LiquidGasSuspension"@en ;
+    rdfs:comment "A coarse dispersion of gas in a liquid continuum phase."@en ;
+    rdfs:subClassOf ns1:Liquid ;
+    skos:example "Sparkling water"@en ;
+    skos:prefLabel "LiquidGasSuspension"@en ;
+    ns1:elucidation "A coarse dispersion of gas in a liquid continuum phase."@en .
+
+ns1:LiquidLiquidSuspension a owl:Class ;
+    rdfs:label "LiquidLiquidSuspension"@en ;
+    rdfs:comment "A coarse dispersion of liquid in a liquid continuum phase."@en ;
+    rdfs:subClassOf ns1:Liquid ;
+    skos:prefLabel "LiquidLiquidSuspension"@en ;
+    ns1:elucidation "A coarse dispersion of liquid in a liquid continuum phase."@en .
+
+ns1:LiquidSolidSuspension a owl:Class ;
+    rdfs:label "LiquidSolidSuspension"@en ;
+    rdfs:comment "A coarse dispersion of solids in a liquid continuum phase."@en ;
+    rdfs:subClassOf ns1:Liquid ;
+    skos:example "Mud"@en ;
+    skos:prefLabel "LiquidSolidSuspension"@en ;
+    ns1:elucidation "A coarse dispersion of solids in a liquid continuum phase."@en .
+
+ns1:LiquidSolution a owl:Class ;
+    rdfs:label "LiquidSolution"@en ;
+    rdfs:comment "A liquid solution made of two or more component substances."@en ;
+    rdfs:subClassOf ns1:Liquid,
+        ns1:Solution ;
+    skos:prefLabel "LiquidSolution"@en ;
+    ns1:elucidation "A liquid solution made of two or more component substances."@en .
+
+ns1:PhaseHomogeneousMixture a owl:Class ;
+    rdfs:label "PhaseHomogeneousMixture"@en ;
+    rdfs:comment "A single phase mixture."@en ;
+    rdfs:subClassOf ns1:Mixture ;
+    skos:prefLabel "PhaseHomogeneousMixture"@en ;
+    ns1:elucidation "A single phase mixture."@en .
+
+ns1:SizeDefinedMaterial a owl:Class ;
+    rdfs:label "SizeDefinedMaterial"@en ;
+    rdfs:subClassOf ns1:Material ;
+    skos:prefLabel "SizeDefinedMaterial"@en .
+
+ns1:SolidAerosol a owl:Class ;
+    rdfs:label "SolidAerosol"@en ;
+    rdfs:comment "An aerosol composed of fine solid particles in air or another gas."@en ;
+    rdfs:subClassOf ns1:Aerosol ;
+    skos:prefLabel "SolidAerosol"@en ;
+    ns1:elucidation "An aerosol composed of fine solid particles in air or another gas."@en .
+
+ns1:SolidGasSuspension a owl:Class ;
+    rdfs:label "SolidGasSuspension"@en ;
+    rdfs:comment "A coarse dispersion of gas in a solid continuum phase."@en ;
+    rdfs:subClassOf ns1:Solid ;
+    skos:prefLabel "SolidGasSuspension"@en ;
+    ns1:elucidation "A coarse dispersion of gas in a solid continuum phase."@en .
+
+ns1:SolidLiquidSuspension a owl:Class ;
+    rdfs:label "SolidLiquidSuspension"@en ;
+    rdfs:comment "A coarse dispersion of liquid in a solid continuum phase."@en ;
+    rdfs:subClassOf ns1:Solid ;
+    skos:prefLabel "SolidLiquidSuspension"@en ;
+    ns1:elucidation "A coarse dispersion of liquid in a solid continuum phase."@en .
+
+ns1:SolidSolidSuspension a owl:Class ;
+    rdfs:label "SolidSolidSuspension"@en ;
+    rdfs:comment "A coarse dispersion of solid in a solid continuum phase."@en ;
+    rdfs:subClassOf ns1:Solid ;
+    skos:example "Granite, sand, dried concrete."@en ;
+    skos:prefLabel "SolidSolidSuspension"@en ;
+    ns1:elucidation "A coarse dispersion of solid in a solid continuum phase."@en .
+
+ns1:Suspension a owl:Class ;
+    rdfs:label "Suspension"@en ;
+    rdfs:comment "An heterogeneous mixture that contains coarsly dispersed particles (no Tyndall effect), that generally tend to separate in time to the dispersion medium phase."@en,
+        "Suspensions show no significant effect on light."@en ;
+    rdfs:subClassOf ns1:PhaseHeterogeneousMixture ;
+    owl:disjointUnionOf ( ns1:SolidSolidSuspension ns1:SolidLiquidSuspension ns1:LiquidGasSuspension ns1:LiquidLiquidSuspension ns1:SolidGasSuspension ns1:GasSolidSuspension ns1:GasLiquidSuspension ns1:LiquidSolidSuspension ) ;
+    skos:prefLabel "Suspension"@en ;
+    ns1:elucidation "An heterogeneous mixture that contains coarsly dispersed particles (no Tyndall effect), that generally tend to separate in time to the dispersion medium phase."@en .
+
+ns1:Aerosol a owl:Class ;
+    rdfs:label "Aerosol"@en ;
+    rdfs:comment "A colloid composed of fine solid particles or liquid droplets in air or another gas."@en ;
+    rdfs:subClassOf ns1:Colloid,
+        ns1:Gas ;
+    skos:prefLabel "Aerosol"@en ;
+    ns1:elucidation "A colloid composed of fine solid particles or liquid droplets in air or another gas."@en .
+
+ns1:ClassicallyDefinedMaterial a owl:Class ;
+    rdfs:label "ClassicallyDefinedMaterial"@en ;
+    rdfs:subClassOf ns1:Material ;
+    skos:prefLabel "ClassicallyDefinedMaterial"@en ;
+    ns1:OWLRL2DLAxioms "Equivalent To: AmorphousMaterial or CrystallineMaterial"^^xsd:string,
+        "Equivalent To: MetallicMaterial or CeramicMaterial or CompositeMaterial or PolymericMaterial"^^xsd:string .
+
+ns1:Crystal a owl:Class ;
+    rdfs:label "Crystal"@en ;
+    rdfs:comment """A material is a crystal if it has essentially a sharp diffraction pattern.
+
+A solid is a crystal if it has essentially a sharp diffraction pattern. The word essentially means that most of the intensity of the diffraction is concentrated in relatively sharp Bragg peaks, besides the always present diffuse scattering. In all cases, the positions of the diffraction peaks can be expressed by
+
+
+H=∑ni=1hia∗i  (n≥3)"""^^xsd:string ;
+    rdfs:subClassOf ns1:CrystallineMaterial ;
+    skos:prefLabel "Crystal"@en ;
+    ns1:elucidation """A material is a crystal if it has essentially a sharp diffraction pattern.
+
+A solid is a crystal if it has essentially a sharp diffraction pattern. The word essentially means that most of the intensity of the diffraction is concentrated in relatively sharp Bragg peaks, besides the always present diffuse scattering. In all cases, the positions of the diffraction peaks can be expressed by
+
+
+H=∑ni=1hia∗i  (n≥3)"""^^xsd:string .
+
+ns1:Foam a owl:Class ;
+    rdfs:label "Foam"@en ;
+    rdfs:comment "A colloid formed by trapping pockets of gas in a liquid or solid."@en ;
+    rdfs:subClassOf ns1:Colloid ;
+    skos:prefLabel "Foam"@en ;
+    ns1:elucidation "A colloid formed by trapping pockets of gas in a liquid or solid."@en .
+
+ns1:GasLiquidSuspension a owl:Class ;
+    rdfs:label "GasLiquidSuspension"@en ;
+    rdfs:comment "A coarse dispersion of liquid in a gas continuum phase."@en ;
+    rdfs:subClassOf ns1:Gas ;
+    skos:example "Rain, spray."@en ;
+    skos:prefLabel "GasLiquidSuspension"@en ;
+    ns1:elucidation "A coarse dispersion of liquid in a gas continuum phase."@en .
+
+ns1:GasSolidSuspension a owl:Class ;
+    rdfs:label "GasSolidSuspension"@en ;
+    rdfs:comment "A coarse dispersion of solid in a gas continuum phase."@en ;
+    rdfs:subClassOf ns1:Gas ;
+    skos:example "Dust, sand storm."@en ;
+    skos:prefLabel "GasSolidSuspension"@en ;
+    ns1:elucidation "A coarse dispersion of solid in a gas continuum phase."@en .
+
+ns1:MaterialByStructure a owl:Class ;
+    rdfs:label "MaterialByStructure"@en ;
+    rdfs:subClassOf ns1:ClassicallyDefinedMaterial ;
+    skos:prefLabel "MaterialByStructure"@en .
+
+ns1:PhaseHeterogeneousMixture a owl:Class ;
+    rdfs:label "PhaseHeterogeneousMixture"@en ;
+    rdfs:comment "A mixture in which more than one phases of matter cohexists."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:hasProperPart ;
+            owl:someValuesFrom ns1:PhaseOfMatter ],
+        ns1:Mixture ;
+    skos:prefLabel "PhaseHeterogeneousMixture"@en ;
+    ns1:elucidation "A mixture in which more than one phases of matter cohexists."@en ;
+    ns1:note """Phase heterogeneous mixture may share the same state of matter.
+
+For example, immiscibile liquid phases (e.g. oil and water) constitute a mixture whose phases are clearly separated but share the same state of matter."""@en .
+
+ns1:PhaseOfMatter a owl:Class ;
+    rdfs:label "PhaseOfMatter"@en ;
+    rdfs:comment "A matter object throughout which all physical properties of a material are essentially uniform."@en ;
+    rdfs:subClassOf ns1:ContinuumSubstance ;
+    skos:altLabel "Phase"@en ;
+    skos:prefLabel "PhaseOfMatter"@en ;
+    ns1:elucidation "A matter object throughout which all physical properties of a material are essentially uniform."@en ;
+    ns1:note """In the physical sciences, a phase is a region of space (a thermodynamic system), throughout which all physical properties of a material are essentially uniform. Examples of physical properties include density, index of refraction, magnetization and chemical composition. A simple description is that a phase is a region of material that is chemically uniform, physically distinct, and (often) mechanically separable. In a system consisting of ice and water in a glass jar, the ice cubes are one phase, the water is a second phase, and the humid air is a third phase over the ice and water. The glass of the jar is another separate phase.
+
+The term phase is sometimes used as a synonym for state of matter, but there can be several immiscible phases of the same state of matter. Also, the term phase is sometimes used to refer to a set of equilibrium states demarcated in terms of state variables such as pressure and temperature by a phase boundary on a phase diagram. Because phase boundaries relate to changes in the organization of matter, such as a change from liquid to solid or a more subtle change from one crystal structure to another, this latter usage is similar to the use of "phase" as a synonym for state of matter. However, the state of matter and phase diagram usages are not commensurate with the formal definition given above and the intended meaning must be determined in part from the context in which the term is used."""@en .
+
+ns1:Plasma a owl:Class ;
+    rdfs:label "Plasma"@en ;
+    rdfs:comment "A fluid in which a gas is ionized to a level where its electrical conductivity allows long-range electric and magnetic fields to dominate its behaviour."@en ;
+    rdfs:subClassOf ns1:Fluid ;
+    skos:prefLabel "Plasma"@en ;
+    ns1:elucidation "A fluid in which a gas is ionized to a level where its electrical conductivity allows long-range electric and magnetic fields to dominate its behaviour."@en .
+
+ns1:Sol a owl:Class ;
+    rdfs:label "Sol"@en ;
+    rdfs:comment "A colloid in which small particles (1 nm to 100 nm) are suspended in a continuum phase."@en ;
+    rdfs:subClassOf ns1:Colloid ;
+    skos:prefLabel "Sol"@en ;
+    ns1:elucidation "A colloid in which small particles (1 nm to 100 nm) are suspended in a continuum phase."@en .
+
+ns1:StandaloneAtom a owl:Class ;
+    rdfs:label "StandaloneAtom"@en ;
+    rdfs:comment "A standalone atom can be bonded with other atoms by intermolecular forces (i.e. dipole–dipole, London dispersion force, hydrogen bonding), since this bonds does not involve electron sharing."@en,
+        "An atom that does not share electrons with other atoms."@en ;
+    rdfs:subClassOf ns1:Atom ;
+    skos:prefLabel "StandaloneAtom"@en ;
+    ns1:OWLRL2DLAxioms "DisjointUnionOf: NeutralAtom, IonAtom"^^xsd:string ;
+    ns1:elucidation "An atom that does not share electrons with other atoms."@en .
+
+ns1:StateOfMatter a owl:Class ;
+    rdfs:label "StateOfMatter"@en ;
+    rdfs:comment "A superclass made as the disjoint union of all the form under which matter can exist."@en ;
+    rdfs:subClassOf ns1:ContinuumSubstance ;
+    skos:prefLabel "StateOfMatter"@en ;
+    ns1:OWLRL2DLAxioms "Disjoint Union Of: Gas, Plasma, Liquid, Solid"^^xsd:string ;
+    ns1:elucidation "A superclass made as the disjoint union of all the form under which matter can exist."@en ;
+    ns1:note "In physics, a state of matter is one of the distinct forms in which matter can exist. Four states of matter are observable in everyday life: solid, liquid, gas, and plasma."@en ;
+    ns1:wikipediaReference "https://en.wikipedia.org/wiki/State_of_matter"@en .
+
+ns1:CondensedMatter a owl:Class ;
+    rdfs:label "CondensedMatter"@en ;
+    rdfs:comment "The subject of condensed matter physics that deals with the macroscopic and microscopic physical properties of matter, especially the solid and liquid phases which arise from electromagnetic forces between atoms. More generally, the subject deals with \"condensed\" phases of matter: systems of many constituents with strong interactions between them."@en ;
+    rdfs:subClassOf ns1:StateOfMatter ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf ( ns1:Liquid ns1:Solid ) ] ;
+    skos:prefLabel "CondensedMatter"@en ;
+    ns1:OWLRL2DLAxioms "Equivalent To: Liquid or Solid"^^xsd:string ;
+    ns1:conceptualisation "The subject of condensed matter physics that deals with the macroscopic and microscopic physical properties of matter, especially the solid and liquid phases which arise from electromagnetic forces between atoms. More generally, the subject deals with \"condensed\" phases of matter: systems of many constituents with strong interactions between them."@en .
+
+ns1:Fluid a owl:Class ;
+    rdfs:label "Fluid"@en ;
+    rdfs:comment "A continuum that has no fixed shape and yields easily to external pressure."@en ;
+    rdfs:subClassOf ns1:ContinuumSubstance,
+        ns1:StateOfMatter ;
+    owl:disjointUnionOf ( ns1:Gas ns1:Plasma ns1:Liquid ) ;
+    skos:example "Gas, liquid, plasma,"@en ;
+    skos:prefLabel "Fluid"@en ;
+    ns1:elucidation "A continuum that has no fixed shape and yields easily to external pressure."@en .
+
+ns1:Substance ns1:OWLRL2DLAxioms "Disjoint Union Of: MesoscopicSubstance, ContinuumSubstance"^^xsd:string .
+
+ns1:MaterialByType a owl:Class ;
+    rdfs:label "MaterialByType"@en ;
+    rdfs:subClassOf ns1:ClassicallyDefinedMaterial ;
+    skos:prefLabel "MaterialByType"@en .
+
+ns1:Solution a owl:Class ;
+    rdfs:label "Solution"@en ;
+    rdfs:comment "A solution is a homogeneous mixture composed of two or more substances."@en,
+        "Solutions are characterized by the occurrence of Rayleigh scattering on light,"@en ;
+    rdfs:subClassOf ns1:PhaseHomogeneousMixture ;
+    skos:prefLabel "Solution"@en ;
+    ns1:elucidation "A solution is a homogeneous mixture composed of two or more substances."@en .
+
+ns1:Mixture a owl:Class ;
+    rdfs:label "Mixture"@en ;
+    rdfs:comment "A Miixture is a material made up of two or more different substances which are physically (not chemically) combined."@en ;
+    rdfs:subClassOf ns1:ContinuumSubstance ;
+    skos:prefLabel "Mixture"@en ;
+    ns1:elucidation "A Miixture is a material made up of two or more different substances which are physically (not chemically) combined."@en .
+
+ns1:Colloid a owl:Class ;
+    rdfs:label "Colloid"@en ;
+    rdfs:comment "A mixture in which one substance of microscopically dispersed insoluble or soluble particles (from 1 nm to 1 μm) is suspended throughout another substance and that does not settle, or would take a very long time to settle appreciably."@en ;
+    rdfs:subClassOf ns1:PhaseHeterogeneousMixture ;
+    skos:prefLabel "Colloid"@en ;
+    ns1:elucidation "A mixture in which one substance of microscopically dispersed insoluble or soluble particles (from 1 nm to 1 μm) is suspended throughout another substance and that does not settle, or would take a very long time to settle appreciably."@en ;
+    ns1:note "Colloids are characterized by the occurring of the Tyndall effect on light."@en .
+
+ns1:ContinuumSubstance a owl:Class ;
+    rdfs:label "ContinuumSubstance"@en ;
+    rdfs:comment """A state that is a collection of sufficiently large number of other parts such that:
+- it is the bearer of qualities that can exists only by the fact that it is a sum of parts
+- the smallest partition dV of the state volume in which we are interested in, contains enough parts to be statistically consistent: n [#/m3] x dV [m3] >> 1"""@en ;
+    rdfs:subClassOf ns1:Substance ;
+    skos:prefLabel "ContinuumSubstance"@en ;
+    ns1:elucidation """A state that is a collection of sufficiently large number of other parts such that:
+- it is the bearer of qualities that can exists only by the fact that it is a sum of parts
+- the smallest partition dV of the state volume in which we are interested in, contains enough parts to be statistically consistent: n [#/m3] x dV [m3] >> 1"""@en ;
+    ns1:note "A continuum is made of a sufficient number of parts that it continues to exists as continuum individual even after the loss of one of them i.e. a continuum is a redundant."@en,
+        """A continuum is not necessarily small (i.e. composed by the minimum amount of sates to fulfill the definition).
+
+A single continuum individual can be the whole fluid in a pipe."""@en,
+        "A continuum is the bearer of properties that are generated by the interactions of parts such as viscosity and thermal or electrical conductivity."@en .
+
+ns1:Gas a owl:Class ;
+    rdfs:label "Gas"@en ;
+    rdfs:comment "Gas is a compressible fluid, a state of matter that has no fixed shape and no fixed volume."@en ;
+    rdfs:subClassOf ns1:Fluid ;
+    skos:prefLabel "Gas"@en ;
+    ns1:elucidation "Gas is a compressible fluid, a state of matter that has no fixed shape and no fixed volume."@en .
+
+ns1:Material a owl:Class ;
+    rdfs:subClassOf ns1:OrdinaryMatter,
+        ns1:Substance ;
+    skos:prefLabel "Material"@en ;
+    ns1:elucidation "The class of individuals standing for an amount of ordinary matter substance (or mixture of substances) in different states of matter or phases."@en ;
+    ns1:note "A instance of a material (e.g. nitrogen) can represent any state of matter. The fact that the individual also belongs to other classes (e.g. Gas) would reveal the actual form in which the material is found."@en,
+        "Material usually means some definite kind, quality, or quantity of matter, especially as intended for use."@en .
+
+ns1:Liquid a owl:Class ;
+    rdfs:label "Liquid"@en ;
+    rdfs:comment "A liquid is a nearly incompressible fluid that conforms to the shape of its container but retains a (nearly) constant volume independent of pressure."@en ;
+    rdfs:subClassOf ns1:CondensedMatter,
+        ns1:Fluid ;
+    skos:prefLabel "Liquid"@en ;
+    ns1:elucidation "A liquid is a nearly incompressible fluid that conforms to the shape of its container but retains a (nearly) constant volume independent of pressure."@en .
+
+ns1:Solid a owl:Class ;
+    rdfs:label "Solid"@en ;
+    rdfs:comment "A continuum characterized by structural rigidity and resistance to changes of shape or volume, that retains its shape and density when not confined."@en ;
+    rdfs:subClassOf ns1:CondensedMatter,
+        ns1:ContinuumSubstance ;
+    skos:prefLabel "Solid"@en ;
+    ns1:elucidation "A continuum characterized by structural rigidity and resistance to changes of shape or volume, that retains its shape and density when not confined."@en .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( ns1:Gas ns1:Plasma ns1:Liquid ns1:Solid ) .
+
+[] owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty ns1:conceptualisation ;
+    owl:annotatedSource ns1:CondensedMatter ;
+    owl:annotatedTarget "The subject of condensed matter physics that deals with the macroscopic and microscopic physical properties of matter, especially the solid and liquid phases which arise from electromagnetic forces between atoms. More generally, the subject deals with \"condensed\" phases of matter: systems of many constituents with strong interactions between them."@en ;
+    ns1:wikipediaReference "https://en.wikipedia.org/wiki/Condensed_matter_physics"@en .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger .
+
+[] owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger .
+
+[] owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Crystal ;
+    owl:annotatedTarget "Crystal"@en ;
+    ns1:etymology "From Ancient Greek κρύσταλλος (krústallos, “clear ice”), from κρύος (krúos, “frost”)."@en .
+
+[] owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty ns1:note ;
+    owl:annotatedSource ns1:PhaseOfMatter ;
+    owl:annotatedTarget """In the physical sciences, a phase is a region of space (a thermodynamic system), throughout which all physical properties of a material are essentially uniform. Examples of physical properties include density, index of refraction, magnetization and chemical composition. A simple description is that a phase is a region of material that is chemically uniform, physically distinct, and (often) mechanically separable. In a system consisting of ice and water in a glass jar, the ice cubes are one phase, the water is a second phase, and the humid air is a third phase over the ice and water. The glass of the jar is another separate phase.
+
+The term phase is sometimes used as a synonym for state of matter, but there can be several immiscible phases of the same state of matter. Also, the term phase is sometimes used to refer to a set of equilibrium states demarcated in terms of state variables such as pressure and temperature by a phase boundary on a phase diagram. Because phase boundaries relate to changes in the organization of matter, such as a change from liquid to solid or a more subtle change from one crystal structure to another, this latter usage is similar to the use of "phase" as a synonym for state of matter. However, the state of matter and phase diagram usages are not commensurate with the formal definition given above and the intended meaning must be determined in part from the context in which the term is used."""@en ;
+    ns1:wikipediaReference "https://en.wikipedia.org/wiki/Phase_(matter)"@en .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://dictionary.iucr.org/Crystal"^^xsd:anyURI ;
+    owl:annotatedProperty ns1:elucidation ;
+    owl:annotatedSource ns1:Crystal ;
+    owl:annotatedTarget """A material is a crystal if it has essentially a sharp diffraction pattern.
+
+A solid is a crystal if it has essentially a sharp diffraction pattern. The word essentially means that most of the intensity of the diffraction is concentrated in relatively sharp Bragg peaks, besides the always present diffuse scattering. In all cases, the positions of the diffraction peaks can be expressed by
+
+
+H=∑ni=1hia∗i  (n≥3)"""^^xsd:string .
+

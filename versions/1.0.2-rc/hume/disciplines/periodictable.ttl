@@ -1,0 +1,3133 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/emmo#> .
+@prefix ns2: <http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:ActiniumSymbol a owl:Class ;
+    rdfs:label "ActiniumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the actinium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Ac"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:ActiniumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "ActiniumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the actinium atom."@en .
+
+ns1:AluminiumSymbol a owl:Class ;
+    rdfs:label "AluminiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the aluminium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:AluminiumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Al"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "AluminiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the aluminium atom."@en .
+
+ns1:AmericiumSymbol a owl:Class ;
+    rdfs:label "AmericiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the americium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Am"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:AmericiumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "AmericiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the americium atom."@en .
+
+ns1:AntimonySymbol a owl:Class ;
+    rdfs:label "AntimonySymbol"@en ;
+    rdfs:comment "The symbol that stands for the antimony atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Sb"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:AntimonyAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "AntimonySymbol"@en ;
+    ns1:elucidation "The symbol that stands for the antimony atom."@en .
+
+ns1:ArgonSymbol a owl:Class ;
+    rdfs:label "ArgonSymbol"@en ;
+    rdfs:comment "The symbol that stands for the argon atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:ArgonAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Ar"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "ArgonSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the argon atom."@en .
+
+ns1:ArsenicSymbol a owl:Class ;
+    rdfs:label "ArsenicSymbol"@en ;
+    rdfs:comment "The symbol that stands for the arsenic atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "As"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:ArsenicAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "ArsenicSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the arsenic atom."@en .
+
+ns1:AstatineSymbol a owl:Class ;
+    rdfs:label "AstatineSymbol"@en ;
+    rdfs:comment "The symbol that stands for the astatine atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:AstatineAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "At"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "AstatineSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the astatine atom."@en .
+
+ns1:BariumSymbol a owl:Class ;
+    rdfs:label "BariumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the barium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Ba"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:BariumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "BariumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the barium atom."@en .
+
+ns1:BerkeliumSymbol a owl:Class ;
+    rdfs:label "BerkeliumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the berkelium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:BerkeliumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Bk"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "BerkeliumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the berkelium atom."@en .
+
+ns1:BerylliumSymbol a owl:Class ;
+    rdfs:label "BerylliumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the beryllium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:BerylliumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Be"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "BerylliumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the beryllium atom."@en .
+
+ns1:BismuthSymbol a owl:Class ;
+    rdfs:label "BismuthSymbol"@en ;
+    rdfs:comment "The symbol that stands for the bismuth atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:BismuthAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Bi"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "BismuthSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the bismuth atom."@en .
+
+ns1:BohriumSymbol a owl:Class ;
+    rdfs:label "BohriumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the bohrium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Bh"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:BohriumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "BohriumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the bohrium atom."@en .
+
+ns1:BoronSymbol a owl:Class ;
+    rdfs:label "BoronSymbol"@en ;
+    rdfs:comment "The symbol that stands for the boron atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "B"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:BoronAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "BoronSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the boron atom."@en .
+
+ns1:BromineSymbol a owl:Class ;
+    rdfs:label "BromineSymbol"@en ;
+    rdfs:comment "The symbol that stands for the bromine atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:BromineAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Br"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "BromineSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the bromine atom."@en .
+
+ns1:CadmiumSymbol a owl:Class ;
+    rdfs:label "CadmiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the cadmium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Cd"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:CadmiumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "CadmiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the cadmium atom."@en .
+
+ns1:CaesiumSymbol a owl:Class ;
+    rdfs:label "CaesiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the caesium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Cs"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:CaesiumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "CaesiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the caesium atom."@en .
+
+ns1:CalciumSymbol a owl:Class ;
+    rdfs:label "CalciumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the calcium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:CalciumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Ca"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "CalciumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the calcium atom."@en .
+
+ns1:CaliforniumSymbol a owl:Class ;
+    rdfs:label "CaliforniumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the californium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:CaliforniumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Cf"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "CaliforniumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the californium atom."@en .
+
+ns1:CarbonSymbol a owl:Class ;
+    rdfs:label "CarbonSymbol"@en ;
+    rdfs:comment "The symbol that stands for the carbon atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:CarbonAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "C"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "CarbonSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the carbon atom."@en .
+
+ns1:CeriumSymbol a owl:Class ;
+    rdfs:label "CeriumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the cerium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:CeriumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Ce"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "CeriumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the cerium atom."@en .
+
+ns1:ChlorineSymbol a owl:Class ;
+    rdfs:label "ChlorineSymbol"@en ;
+    rdfs:comment "The symbol that stands for the chlorine atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:ChlorineAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Cl"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "ChlorineSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the chlorine atom."@en .
+
+ns1:ChromiumSymbol a owl:Class ;
+    rdfs:label "ChromiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the chromium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Cr"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:ChromiumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "ChromiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the chromium atom."@en .
+
+ns1:CobaltSymbol a owl:Class ;
+    rdfs:label "CobaltSymbol"@en ;
+    rdfs:comment "The symbol that stands for the cobalt atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Co"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:CobaltAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "CobaltSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the cobalt atom."@en .
+
+ns1:CoperniciumSymbol a owl:Class ;
+    rdfs:label "CoperniciumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the copernicium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:CoperniciumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Cn"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "CoperniciumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the copernicium atom."@en .
+
+ns1:CopperSymbol a owl:Class ;
+    rdfs:label "CopperSymbol"@en ;
+    rdfs:comment "The symbol that stands for the copper atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:CopperAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Cu"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "CopperSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the copper atom."@en .
+
+ns1:CuriumSymbol a owl:Class ;
+    rdfs:label "CuriumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the curium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:CuriumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Cm"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "CuriumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the curium atom."@en .
+
+ns1:DarmastadtiumSymbol a owl:Class ;
+    rdfs:label "DarmastadtiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the darmastadtium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Ds"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:DarmastadtiumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "DarmastadtiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the darmastadtium atom."@en .
+
+ns1:DubniumSymbol a owl:Class ;
+    rdfs:label "DubniumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the dubnium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Db"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:DubniumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "DubniumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the dubnium atom."@en .
+
+ns1:DysprosiumSymbol a owl:Class ;
+    rdfs:label "DysprosiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the dysprosium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Dy"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:DysprosiumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "DysprosiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the dysprosium atom."@en .
+
+ns1:EinsteiniumSymbol a owl:Class ;
+    rdfs:label "EinsteiniumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the einsteinium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:EinsteiniumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Es"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "EinsteiniumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the einsteinium atom."@en .
+
+ns1:ErbiumSymbol a owl:Class ;
+    rdfs:label "ErbiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the erbium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Er"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:ErbiumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "ErbiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the erbium atom."@en .
+
+ns1:EuropiumSymbol a owl:Class ;
+    rdfs:label "EuropiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the europium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Eu"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:EuropiumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "EuropiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the europium atom."@en .
+
+ns1:FermiumSymbol a owl:Class ;
+    rdfs:label "FermiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the fermium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:FermiumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Fm"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "FermiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the fermium atom."@en .
+
+ns1:FleroviumSymbol a owl:Class ;
+    rdfs:label "FleroviumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the flerovium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Fl"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:FleroviumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "FleroviumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the flerovium atom."@en .
+
+ns1:FluorineSymbol a owl:Class ;
+    rdfs:label "FluorineSymbol"@en ;
+    rdfs:comment "The symbol that stands for the fluorine atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "F"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:FluorineAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "FluorineSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the fluorine atom."@en .
+
+ns1:FranciumSymbol a owl:Class ;
+    rdfs:label "FranciumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the francium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Fr"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:FranciumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "FranciumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the francium atom."@en .
+
+ns1:GadoliniumSymbol a owl:Class ;
+    rdfs:label "GadoliniumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the gadolinium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Gd"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:GadoliniumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "GadoliniumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the gadolinium atom."@en .
+
+ns1:GalliumSymbol a owl:Class ;
+    rdfs:label "GalliumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the gallium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Ga"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:GalliumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "GalliumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the gallium atom."@en .
+
+ns1:GermaniumSymbol a owl:Class ;
+    rdfs:label "GermaniumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the germanium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:GermaniumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Ge"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "GermaniumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the germanium atom."@en .
+
+ns1:GoldSymbol a owl:Class ;
+    rdfs:label "GoldSymbol"@en ;
+    rdfs:comment "The symbol that stands for the gold atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:GoldAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Au"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "GoldSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the gold atom."@en .
+
+ns1:HafniumSymbol a owl:Class ;
+    rdfs:label "HafniumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the hafnium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:HafniumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Hf"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "HafniumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the hafnium atom."@en .
+
+ns1:HassiumSymbol a owl:Class ;
+    rdfs:label "HassiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the hassium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Hs"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:HassiumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "HassiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the hassium atom."@en .
+
+ns1:HeliumSymbol a owl:Class ;
+    rdfs:label "HeliumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the helium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:HeliumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "He"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "HeliumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the helium atom."@en .
+
+ns1:HolmiumSymbol a owl:Class ;
+    rdfs:label "HolmiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the holmium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:HolmiumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Ho"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "HolmiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the holmium atom."@en .
+
+ns1:HydrogenSymbol a owl:Class ;
+    rdfs:label "HydrogenSymbol"@en ;
+    rdfs:comment "The symbol that stands for the hydrogen atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "H"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:HydrogenAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "HydrogenSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the hydrogen atom."@en .
+
+ns1:IndiumSymbol a owl:Class ;
+    rdfs:label "IndiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the indium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "In"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:IndiumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "IndiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the indium atom."@en .
+
+ns1:IodineSymbol a owl:Class ;
+    rdfs:label "IodineSymbol"@en ;
+    rdfs:comment "The symbol that stands for the iodine atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "I"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:IodineAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "IodineSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the iodine atom."@en .
+
+ns1:IridiumSymbol a owl:Class ;
+    rdfs:label "IridiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the iridium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:IridiumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Ir"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "IridiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the iridium atom."@en .
+
+ns1:IronSymbol a owl:Class ;
+    rdfs:label "IronSymbol"@en ;
+    rdfs:comment "The symbol that stands for the iron atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Fe"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:IronAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "IronSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the iron atom."@en .
+
+ns1:KryptonSymbol a owl:Class ;
+    rdfs:label "KryptonSymbol"@en ;
+    rdfs:comment "The symbol that stands for the krypton atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:KryptonAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Kr"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "KryptonSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the krypton atom."@en .
+
+ns1:LanthanumSymbol a owl:Class ;
+    rdfs:label "LanthanumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the lanthanum atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:LanthanumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "La"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "LanthanumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the lanthanum atom."@en .
+
+ns1:LawrenciumSymbol a owl:Class ;
+    rdfs:label "LawrenciumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the lawrencium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Lr"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:LawrenciumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "LawrenciumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the lawrencium atom."@en .
+
+ns1:LeadSymbol a owl:Class ;
+    rdfs:label "LeadSymbol"@en ;
+    rdfs:comment "The symbol that stands for the lead atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:LeadAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Pb"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "LeadSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the lead atom."@en .
+
+ns1:LithiumSymbol a owl:Class ;
+    rdfs:label "LithiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the lithium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Li"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:LithiumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "LithiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the lithium atom."@en .
+
+ns1:LivermoriumSymbol a owl:Class ;
+    rdfs:label "LivermoriumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the livermorium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:LivermoriumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Lv"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "LivermoriumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the livermorium atom."@en .
+
+ns1:LutetiumSymbol a owl:Class ;
+    rdfs:label "LutetiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the lutetium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:LutetiumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Lu"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "LutetiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the lutetium atom."@en .
+
+ns1:MagnesiumSymbol a owl:Class ;
+    rdfs:label "MagnesiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the magnesium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Mg"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:MagnesiumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "MagnesiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the magnesium atom."@en .
+
+ns1:ManganeseSymbol a owl:Class ;
+    rdfs:label "ManganeseSymbol"@en ;
+    rdfs:comment "The symbol that stands for the manganese atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Mn"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:ManganeseAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "ManganeseSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the manganese atom."@en .
+
+ns1:MeitneriumSymbol a owl:Class ;
+    rdfs:label "MeitneriumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the meitnerium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:MeitneriumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Mt"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "MeitneriumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the meitnerium atom."@en .
+
+ns1:MendeleviumSymbol a owl:Class ;
+    rdfs:label "MendeleviumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the mendelevium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Md"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:MendeleviumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "MendeleviumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the mendelevium atom."@en .
+
+ns1:MercurySymbol a owl:Class ;
+    rdfs:label "MercurySymbol"@en ;
+    rdfs:comment "The symbol that stands for the mercury atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Hg"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:MercuryAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "MercurySymbol"@en ;
+    ns1:elucidation "The symbol that stands for the mercury atom."@en .
+
+ns1:MolybdenumSymbol a owl:Class ;
+    rdfs:label "MolybdenumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the molybdenum atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:MolybdenumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Mo"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "MolybdenumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the molybdenum atom."@en .
+
+ns1:MoscoviumSymbol a owl:Class ;
+    rdfs:label "MoscoviumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the moscovium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:MoscoviumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Mc"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "MoscoviumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the moscovium atom."@en .
+
+ns1:NeodymiumSymbol a owl:Class ;
+    rdfs:label "NeodymiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the neodymium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:NeodymiumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Nd"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "NeodymiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the neodymium atom."@en .
+
+ns1:NeonSymbol a owl:Class ;
+    rdfs:label "NeonSymbol"@en ;
+    rdfs:comment "The symbol that stands for the neon atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:NeonAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Ne"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "NeonSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the neon atom."@en .
+
+ns1:NeptuniumSymbol a owl:Class ;
+    rdfs:label "NeptuniumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the neptunium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:NeptuniumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Np"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "NeptuniumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the neptunium atom."@en .
+
+ns1:NickelSymbol a owl:Class ;
+    rdfs:label "NickelSymbol"@en ;
+    rdfs:comment "The symbol that stands for the nickel atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Ni"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:NickelAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "NickelSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the nickel atom."@en .
+
+ns1:NihoniumSymbol a owl:Class ;
+    rdfs:label "NihoniumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the nihonium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Nh"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:NihoniumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "NihoniumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the nihonium atom."@en .
+
+ns1:NiobiumSymbol a owl:Class ;
+    rdfs:label "NiobiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the niobium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:NiobiumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Nb"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "NiobiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the niobium atom."@en .
+
+ns1:NitrogenSymbol a owl:Class ;
+    rdfs:label "NitrogenSymbol"@en ;
+    rdfs:comment "The symbol that stands for the nitrogen atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:NitrogenAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "N"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "NitrogenSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the nitrogen atom."@en .
+
+ns1:NobeliumSymbol a owl:Class ;
+    rdfs:label "NobeliumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the nobelium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "No"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:NobeliumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "NobeliumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the nobelium atom."@en .
+
+ns1:OganessonSymbol a owl:Class ;
+    rdfs:label "OganessonSymbol"@en ;
+    rdfs:comment "The symbol that stands for the oganesson atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:OganessonAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Og"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "OganessonSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the oganesson atom."@en .
+
+ns1:OsmiumSymbol a owl:Class ;
+    rdfs:label "OsmiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the osmium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Os"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:OsmiumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "OsmiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the osmium atom."@en .
+
+ns1:OxygenSymbol a owl:Class ;
+    rdfs:label "OxygenSymbol"@en ;
+    rdfs:comment "The symbol that stands for the oxygen atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:OxygenAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "O"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "OxygenSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the oxygen atom."@en .
+
+ns1:PalladiumSymbol a owl:Class ;
+    rdfs:label "PalladiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the palladium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Pd"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:PalladiumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "PalladiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the palladium atom."@en .
+
+ns1:PhosphorusSymbol a owl:Class ;
+    rdfs:label "PhosphorusSymbol"@en ;
+    rdfs:comment "The symbol that stands for the phosphorus atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "P"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:PhosphorusAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "PhosphorusSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the phosphorus atom."@en .
+
+ns1:PlatinumSymbol a owl:Class ;
+    rdfs:label "PlatinumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the platinum atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Pt"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:PlatinumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "PlatinumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the platinum atom."@en .
+
+ns1:PlutoniumSymbol a owl:Class ;
+    rdfs:label "PlutoniumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the plutonium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Pu"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:PlutoniumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "PlutoniumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the plutonium atom."@en .
+
+ns1:PoloniumSymbol a owl:Class ;
+    rdfs:label "PoloniumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the polonium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:PoloniumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Po"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "PoloniumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the polonium atom."@en .
+
+ns1:PotassiumSymbol a owl:Class ;
+    rdfs:label "PotassiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the potassium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "K"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:PotassiumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "PotassiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the potassium atom."@en .
+
+ns1:PraseodymiumSymbol a owl:Class ;
+    rdfs:label "PraseodymiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the praseodymium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Pr"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:PraseodymiumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "PraseodymiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the praseodymium atom."@en .
+
+ns1:PromethiumSymbol a owl:Class ;
+    rdfs:label "PromethiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the promethium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:PromethiumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Pm"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "PromethiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the promethium atom."@en .
+
+ns1:ProtactiniumSymbol a owl:Class ;
+    rdfs:label "ProtactiniumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the protactinium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:ProtactiniumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Pa"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "ProtactiniumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the protactinium atom."@en .
+
+ns1:RadiumSymbol a owl:Class ;
+    rdfs:label "RadiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the radium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:RadiumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Ra"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "RadiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the radium atom."@en .
+
+ns1:RadonSymbol a owl:Class ;
+    rdfs:label "RadonSymbol"@en ;
+    rdfs:comment "The symbol that stands for the radon atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Rn"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:RadonAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "RadonSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the radon atom."@en .
+
+ns1:RheniumSymbol a owl:Class ;
+    rdfs:label "RheniumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the rhenium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Re"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:RheniumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "RheniumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the rhenium atom."@en .
+
+ns1:RhodiumSymbol a owl:Class ;
+    rdfs:label "RhodiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the rhodium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Rh"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:RhodiumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "RhodiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the rhodium atom."@en .
+
+ns1:RoentgeniumSymbol a owl:Class ;
+    rdfs:label "RoentgeniumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the roentgenium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Rg"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:RoentgeniumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "RoentgeniumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the roentgenium atom."@en .
+
+ns1:RubidiumSymbol a owl:Class ;
+    rdfs:label "RubidiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the rubidium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Rb"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:RubidiumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "RubidiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the rubidium atom."@en .
+
+ns1:RutheniumSymbol a owl:Class ;
+    rdfs:label "RutheniumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the ruthenium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Ru"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:RutheniumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "RutheniumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the ruthenium atom."@en .
+
+ns1:RutherfordiumSymbol a owl:Class ;
+    rdfs:label "RutherfordiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the rutherfordium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:RutherfordiumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Rf"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "RutherfordiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the rutherfordium atom."@en .
+
+ns1:SamariumSymbol a owl:Class ;
+    rdfs:label "SamariumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the samarium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Sm"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:SamariumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "SamariumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the samarium atom."@en .
+
+ns1:ScandiumSymbol a owl:Class ;
+    rdfs:label "ScandiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the scandium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Sc"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:ScandiumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "ScandiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the scandium atom."@en .
+
+ns1:SeaborgiumSymbol a owl:Class ;
+    rdfs:label "SeaborgiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the seaborgium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:SeaborgiumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Sg"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "SeaborgiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the seaborgium atom."@en .
+
+ns1:SeleniumSymbol a owl:Class ;
+    rdfs:label "SeleniumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the selenium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:SeleniumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Se"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "SeleniumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the selenium atom."@en .
+
+ns1:SiliconSymbol a owl:Class ;
+    rdfs:label "SiliconSymbol"@en ;
+    rdfs:comment "The symbol that stands for the silicon atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:SiliconAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Si"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "SiliconSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the silicon atom."@en .
+
+ns1:SilverSymbol a owl:Class ;
+    rdfs:label "SilverSymbol"@en ;
+    rdfs:comment "The symbol that stands for the silver atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Ag"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:SilverAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "SilverSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the silver atom."@en .
+
+ns1:SodiumSymbol a owl:Class ;
+    rdfs:label "SodiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the sodium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:SodiumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Na"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "SodiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the sodium atom."@en .
+
+ns1:StrontiumSymbol a owl:Class ;
+    rdfs:label "StrontiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the strontium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Sr"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:StrontiumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "StrontiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the strontium atom."@en .
+
+ns1:SulfurSymbol a owl:Class ;
+    rdfs:label "SulfurSymbol"@en ;
+    rdfs:comment "The symbol that stands for the sulfur atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:SulfurAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "S"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "SulfurSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the sulfur atom."@en .
+
+ns1:TantalumSymbol a owl:Class ;
+    rdfs:label "TantalumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the tantalum atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:TantalumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Ta"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "TantalumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the tantalum atom."@en .
+
+ns1:TechnetiumSymbol a owl:Class ;
+    rdfs:label "TechnetiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the technetium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:TechnetiumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Tc"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "TechnetiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the technetium atom."@en .
+
+ns1:TelluriumSymbol a owl:Class ;
+    rdfs:label "TelluriumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the tellurium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Te"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:TelluriumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "TelluriumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the tellurium atom."@en .
+
+ns1:TennessineSymbol a owl:Class ;
+    rdfs:label "TennessineSymbol"@en ;
+    rdfs:comment "The symbol that stands for the tennessine atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:TennessineAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Ts"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "TennessineSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the tennessine atom."@en .
+
+ns1:TerbiumSymbol a owl:Class ;
+    rdfs:label "TerbiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the terbium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Tb"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:TerbiumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "TerbiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the terbium atom."@en .
+
+ns1:ThalliumSymbol a owl:Class ;
+    rdfs:label "ThalliumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the thallium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:ThalliumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Tl"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "ThalliumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the thallium atom."@en .
+
+ns1:ThoriumSymbol a owl:Class ;
+    rdfs:label "ThoriumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the thorium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Th"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:ThoriumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "ThoriumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the thorium atom."@en .
+
+ns1:ThuliumSymbol a owl:Class ;
+    rdfs:label "ThuliumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the thulium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Tm"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:ThuliumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "ThuliumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the thulium atom."@en .
+
+ns1:TinSymbol a owl:Class ;
+    rdfs:label "TinSymbol"@en ;
+    rdfs:comment "The symbol that stands for the tin atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Sn"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:TinAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "TinSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the tin atom."@en .
+
+ns1:TitaniumSymbol a owl:Class ;
+    rdfs:label "TitaniumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the titanium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Ti"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:TitaniumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "TitaniumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the titanium atom."@en .
+
+ns1:TungstenSymbol a owl:Class ;
+    rdfs:label "TungstenSymbol"@en ;
+    rdfs:comment "The symbol that stands for the tungsten atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "W"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:TungstenAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "TungstenSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the tungsten atom."@en .
+
+ns1:UraniumSymbol a owl:Class ;
+    rdfs:label "UraniumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the uranium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "U"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:UraniumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "UraniumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the uranium atom."@en .
+
+ns1:VanadiumSymbol a owl:Class ;
+    rdfs:label "VanadiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the vanadium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:VanadiumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "V"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "VanadiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the vanadium atom."@en .
+
+ns1:XenonSymbol a owl:Class ;
+    rdfs:label "XenonSymbol"@en ;
+    rdfs:comment "The symbol that stands for the xenon atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Xe"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:XenonAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "XenonSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the xenon atom."@en .
+
+ns1:YtterbiumSymbol a owl:Class ;
+    rdfs:label "YtterbiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the ytterbium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Yb"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:YtterbiumAtom ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "YtterbiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the ytterbium atom."@en .
+
+ns1:YttriumSymbol a owl:Class ;
+    rdfs:label "YttriumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the yttrium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:YttriumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Y"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "YttriumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the yttrium atom."@en .
+
+ns1:ZincSymbol a owl:Class ;
+    rdfs:label "ZincSymbol"@en ;
+    rdfs:comment "The symbol that stands for the zinc atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:ZincAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Zn"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "ZincSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the zinc atom."@en .
+
+ns1:ZirconiumSymbol a owl:Class ;
+    rdfs:label "ZirconiumSymbol"@en ;
+    rdfs:comment "The symbol that stands for the zirconium atom."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isChemicalSymbolFor ;
+            owl:someValuesFrom ns1:ZirconiumAtom ],
+        [ a owl:Restriction ;
+            owl:hasValue "Zr"^^xsd:string ;
+            owl:onProperty ns1:hasSymbolValue ],
+        ns1:ChemicalElement ;
+    skos:prefLabel "ZirconiumSymbol"@en ;
+    ns1:elucidation "The symbol that stands for the zirconium atom."@en .
+
+<https://w3id.org/emmo/disciplines/periodictable> a owl:Ontology ;
+    dcterms:abstract "The periodic table domain ontology provide a simple reference implementation of all atoms in the periodic table with a few selected conventional properties.  It is ment as both an example for other domain ontologies as well as a useful assert by itself. Periodic table is released under the Creative Commons Attribution 4.0 International license (CC BY 4.0)."@en ;
+    dcterms:creator ns1:EmanueleGhedini,
+        ns1:FrancescaBleken,
+        ns1:JesperFriis ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"@en ;
+    dcterms:publisher ns1:EMMC_ASBL ;
+    dcterms:title "Periodic table"@en ;
+    rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en,
+        "This ontology is generated with EMMOntoPy using data from the ASE Python package."@en,
+        "You can contact EMMO Authors via emmo@emmc.eu"@en ;
+    owl:imports <https://w3id.org/emmo/1.0.2/disciplines/chemistry> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.2/disciplines/periodictable> ;
+    owl:versionInfo "1.0.2"@en .
+
+ns1:ActiniumAtom a owl:Class ;
+    rdfs:label "ActiniumAtom"@en ;
+    rdfs:comment "Atom subclass for actinium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 89 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 227.02775 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "ActiniumAtom"@en ;
+    ns1:elucidation "Atom subclass for actinium."@en .
+
+ns1:AluminiumAtom a owl:Class ;
+    rdfs:label "AluminiumAtom"@en ;
+    rdfs:comment "Atom subclass for aluminium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 26.9815385 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 13 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "AluminiumAtom"@en ;
+    ns1:elucidation "Atom subclass for aluminium."@en .
+
+ns1:AmericiumAtom a owl:Class ;
+    rdfs:label "AmericiumAtom"@en ;
+    rdfs:comment "Atom subclass for americium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 95 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 243.06138 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "AmericiumAtom"@en ;
+    ns1:elucidation "Atom subclass for americium."@en .
+
+ns1:AntimonyAtom a owl:Class ;
+    rdfs:label "AntimonyAtom"@en ;
+    rdfs:comment "Atom subclass for antimony."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 121.76 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 51 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "AntimonyAtom"@en ;
+    ns1:elucidation "Atom subclass for antimony."@en .
+
+ns1:ArgonAtom a owl:Class ;
+    rdfs:label "ArgonAtom"@en ;
+    rdfs:comment "Atom subclass for argon."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 39.948 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 18 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "ArgonAtom"@en ;
+    ns1:elucidation "Atom subclass for argon."@en .
+
+ns1:ArsenicAtom a owl:Class ;
+    rdfs:label "ArsenicAtom"@en ;
+    rdfs:comment "Atom subclass for arsenic."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 33 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 74.921595 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "ArsenicAtom"@en ;
+    ns1:elucidation "Atom subclass for arsenic."@en .
+
+ns1:AstatineAtom a owl:Class ;
+    rdfs:label "AstatineAtom"@en ;
+    rdfs:comment "Atom subclass for astatine."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 209.98715 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 85 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "AstatineAtom"@en ;
+    ns1:elucidation "Atom subclass for astatine."@en .
+
+ns1:BariumAtom a owl:Class ;
+    rdfs:label "BariumAtom"@en ;
+    rdfs:comment "Atom subclass for barium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 56 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 137.327 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "BariumAtom"@en ;
+    ns1:elucidation "Atom subclass for barium."@en .
+
+ns1:BerkeliumAtom a owl:Class ;
+    rdfs:label "BerkeliumAtom"@en ;
+    rdfs:comment "Atom subclass for berkelium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 247.07031 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 97 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "BerkeliumAtom"@en ;
+    ns1:elucidation "Atom subclass for berkelium."@en .
+
+ns1:BerylliumAtom a owl:Class ;
+    rdfs:label "BerylliumAtom"@en ;
+    rdfs:comment "Atom subclass for beryllium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 9.0121831 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 4 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "BerylliumAtom"@en ;
+    ns1:elucidation "Atom subclass for beryllium."@en .
+
+ns1:BismuthAtom a owl:Class ;
+    rdfs:label "BismuthAtom"@en ;
+    rdfs:comment "Atom subclass for bismuth."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 83 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 208.9804 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "BismuthAtom"@en ;
+    ns1:elucidation "Atom subclass for bismuth."@en .
+
+ns1:BohriumAtom a owl:Class ;
+    rdfs:label "BohriumAtom"@en ;
+    rdfs:comment "Atom subclass for bohrium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 107 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 270.133 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "BohriumAtom"@en ;
+    ns1:elucidation "Atom subclass for bohrium."@en .
+
+ns1:BoronAtom a owl:Class ;
+    rdfs:label "BoronAtom"@en ;
+    rdfs:comment "Atom subclass for boron."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 5 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 10.81 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "BoronAtom"@en ;
+    ns1:elucidation "Atom subclass for boron."@en .
+
+ns1:BromineAtom a owl:Class ;
+    rdfs:label "BromineAtom"@en ;
+    rdfs:comment "Atom subclass for bromine."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 79.904 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 35 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "BromineAtom"@en ;
+    ns1:elucidation "Atom subclass for bromine."@en .
+
+ns1:CadmiumAtom a owl:Class ;
+    rdfs:label "CadmiumAtom"@en ;
+    rdfs:comment "Atom subclass for cadmium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 112.414 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 48 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "CadmiumAtom"@en ;
+    ns1:elucidation "Atom subclass for cadmium."@en .
+
+ns1:CaesiumAtom a owl:Class ;
+    rdfs:label "CaesiumAtom"@en ;
+    rdfs:comment "Atom subclass for caesium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 132.90545196 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 55 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "CaesiumAtom"@en ;
+    ns1:elucidation "Atom subclass for caesium."@en .
+
+ns1:CalciumAtom a owl:Class ;
+    rdfs:label "CalciumAtom"@en ;
+    rdfs:comment "Atom subclass for calcium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 40.078 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 20 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "CalciumAtom"@en ;
+    ns1:elucidation "Atom subclass for calcium."@en .
+
+ns1:CaliforniumAtom a owl:Class ;
+    rdfs:label "CaliforniumAtom"@en ;
+    rdfs:comment "Atom subclass for californium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 98 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 251.07959 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "CaliforniumAtom"@en ;
+    ns1:elucidation "Atom subclass for californium."@en .
+
+ns1:CarbonAtom a owl:Class ;
+    rdfs:label "CarbonAtom"@en ;
+    rdfs:comment "Atom subclass for carbon."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 12.011 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 6 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "CarbonAtom"@en ;
+    ns1:elucidation "Atom subclass for carbon."@en .
+
+ns1:CeriumAtom a owl:Class ;
+    rdfs:label "CeriumAtom"@en ;
+    rdfs:comment "Atom subclass for cerium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 58 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 140.116 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "CeriumAtom"@en ;
+    ns1:elucidation "Atom subclass for cerium."@en .
+
+ns1:ChlorineAtom a owl:Class ;
+    rdfs:label "ChlorineAtom"@en ;
+    rdfs:comment "Atom subclass for chlorine."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 17 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 35.45 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "ChlorineAtom"@en ;
+    ns1:elucidation "Atom subclass for chlorine."@en .
+
+ns1:ChromiumAtom a owl:Class ;
+    rdfs:label "ChromiumAtom"@en ;
+    rdfs:comment "Atom subclass for chromium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 51.9961 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 24 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "ChromiumAtom"@en ;
+    ns1:elucidation "Atom subclass for chromium."@en .
+
+ns1:CobaltAtom a owl:Class ;
+    rdfs:label "CobaltAtom"@en ;
+    rdfs:comment "Atom subclass for cobalt."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 27 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 58.933194 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "CobaltAtom"@en ;
+    ns1:elucidation "Atom subclass for cobalt."@en .
+
+ns1:CoperniciumAtom a owl:Class ;
+    rdfs:label "CoperniciumAtom"@en ;
+    rdfs:comment "Atom subclass for copernicium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 285.177 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 112 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "CoperniciumAtom"@en ;
+    ns1:elucidation "Atom subclass for copernicium."@en .
+
+ns1:CopperAtom a owl:Class ;
+    rdfs:label "CopperAtom"@en ;
+    rdfs:comment "Atom subclass for copper."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 63.546 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 29 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "CopperAtom"@en ;
+    ns1:elucidation "Atom subclass for copper."@en .
+
+ns1:CuriumAtom a owl:Class ;
+    rdfs:label "CuriumAtom"@en ;
+    rdfs:comment "Atom subclass for curium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 247.07035 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 96 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "CuriumAtom"@en ;
+    ns1:elucidation "Atom subclass for curium."@en .
+
+ns1:DarmastadtiumAtom a owl:Class ;
+    rdfs:label "DarmastadtiumAtom"@en ;
+    rdfs:comment "Atom subclass for darmastadtium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 281.165 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 110 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "DarmastadtiumAtom"@en ;
+    ns1:elucidation "Atom subclass for darmastadtium."@en .
+
+ns1:DubniumAtom a owl:Class ;
+    rdfs:label "DubniumAtom"@en ;
+    rdfs:comment "Atom subclass for dubnium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 105 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 268.126 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "DubniumAtom"@en ;
+    ns1:elucidation "Atom subclass for dubnium."@en .
+
+ns1:DysprosiumAtom a owl:Class ;
+    rdfs:label "DysprosiumAtom"@en ;
+    rdfs:comment "Atom subclass for dysprosium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 66 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 162.5 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "DysprosiumAtom"@en ;
+    ns1:elucidation "Atom subclass for dysprosium."@en .
+
+ns1:EinsteiniumAtom a owl:Class ;
+    rdfs:label "EinsteiniumAtom"@en ;
+    rdfs:comment "Atom subclass for einsteinium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 99 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 252.083 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "EinsteiniumAtom"@en ;
+    ns1:elucidation "Atom subclass for einsteinium."@en .
+
+ns1:ErbiumAtom a owl:Class ;
+    rdfs:label "ErbiumAtom"@en ;
+    rdfs:comment "Atom subclass for erbium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 167.259 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 68 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "ErbiumAtom"@en ;
+    ns1:elucidation "Atom subclass for erbium."@en .
+
+ns1:EuropiumAtom a owl:Class ;
+    rdfs:label "EuropiumAtom"@en ;
+    rdfs:comment "Atom subclass for europium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 151.964 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 63 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "EuropiumAtom"@en ;
+    ns1:elucidation "Atom subclass for europium."@en .
+
+ns1:FermiumAtom a owl:Class ;
+    rdfs:label "FermiumAtom"@en ;
+    rdfs:comment "Atom subclass for fermium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 100 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 257.09511 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "FermiumAtom"@en ;
+    ns1:elucidation "Atom subclass for fermium."@en .
+
+ns1:FleroviumAtom a owl:Class ;
+    rdfs:label "FleroviumAtom"@en ;
+    rdfs:comment "Atom subclass for flerovium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 289.19 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 114 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "FleroviumAtom"@en ;
+    ns1:elucidation "Atom subclass for flerovium."@en .
+
+ns1:FluorineAtom a owl:Class ;
+    rdfs:label "FluorineAtom"@en ;
+    rdfs:comment "Atom subclass for fluorine."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 9 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 18.998403163 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "FluorineAtom"@en ;
+    ns1:elucidation "Atom subclass for fluorine."@en .
+
+ns1:FranciumAtom a owl:Class ;
+    rdfs:label "FranciumAtom"@en ;
+    rdfs:comment "Atom subclass for francium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 87 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 223.01974 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "FranciumAtom"@en ;
+    ns1:elucidation "Atom subclass for francium."@en .
+
+ns1:GadoliniumAtom a owl:Class ;
+    rdfs:label "GadoliniumAtom"@en ;
+    rdfs:comment "Atom subclass for gadolinium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 64 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 157.25 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "GadoliniumAtom"@en ;
+    ns1:elucidation "Atom subclass for gadolinium."@en .
+
+ns1:GalliumAtom a owl:Class ;
+    rdfs:label "GalliumAtom"@en ;
+    rdfs:comment "Atom subclass for gallium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 69.723 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 31 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "GalliumAtom"@en ;
+    ns1:elucidation "Atom subclass for gallium."@en .
+
+ns1:GermaniumAtom a owl:Class ;
+    rdfs:label "GermaniumAtom"@en ;
+    rdfs:comment "Atom subclass for germanium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 72.63 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 32 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "GermaniumAtom"@en ;
+    ns1:elucidation "Atom subclass for germanium."@en .
+
+ns1:GoldAtom a owl:Class ;
+    rdfs:label "GoldAtom"@en ;
+    rdfs:comment "Atom subclass for gold."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 196.966569 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 79 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "GoldAtom"@en ;
+    ns1:elucidation "Atom subclass for gold."@en .
+
+ns1:HafniumAtom a owl:Class ;
+    rdfs:label "HafniumAtom"@en ;
+    rdfs:comment "Atom subclass for hafnium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 178.49 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 72 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "HafniumAtom"@en ;
+    ns1:elucidation "Atom subclass for hafnium."@en .
+
+ns1:HassiumAtom a owl:Class ;
+    rdfs:label "HassiumAtom"@en ;
+    rdfs:comment "Atom subclass for hassium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 269.1338 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 108 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "HassiumAtom"@en ;
+    ns1:elucidation "Atom subclass for hassium."@en .
+
+ns1:HeliumAtom a owl:Class ;
+    rdfs:label "HeliumAtom"@en ;
+    rdfs:comment "Atom subclass for helium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 2 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 4.002602 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "HeliumAtom"@en ;
+    ns1:elucidation "Atom subclass for helium."@en .
+
+ns1:HolmiumAtom a owl:Class ;
+    rdfs:label "HolmiumAtom"@en ;
+    rdfs:comment "Atom subclass for holmium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 164.93033 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 67 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "HolmiumAtom"@en ;
+    ns1:elucidation "Atom subclass for holmium."@en .
+
+ns1:HydrogenAtom a owl:Class ;
+    rdfs:label "HydrogenAtom"@en ;
+    rdfs:comment "Atom subclass for hydrogen."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 1 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 1.008 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "HydrogenAtom"@en ;
+    ns1:elucidation "Atom subclass for hydrogen."@en .
+
+ns1:IndiumAtom a owl:Class ;
+    rdfs:label "IndiumAtom"@en ;
+    rdfs:comment "Atom subclass for indium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 49 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 114.818 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "IndiumAtom"@en ;
+    ns1:elucidation "Atom subclass for indium."@en .
+
+ns1:IodineAtom a owl:Class ;
+    rdfs:label "IodineAtom"@en ;
+    rdfs:comment "Atom subclass for iodine."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 126.90447 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 53 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "IodineAtom"@en ;
+    ns1:elucidation "Atom subclass for iodine."@en .
+
+ns1:IridiumAtom a owl:Class ;
+    rdfs:label "IridiumAtom"@en ;
+    rdfs:comment "Atom subclass for iridium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 192.217 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 77 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "IridiumAtom"@en ;
+    ns1:elucidation "Atom subclass for iridium."@en .
+
+ns1:IronAtom a owl:Class ;
+    rdfs:label "IronAtom"@en ;
+    rdfs:comment "Atom subclass for iron."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 26 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 55.845 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "IronAtom"@en ;
+    ns1:elucidation "Atom subclass for iron."@en .
+
+ns1:KryptonAtom a owl:Class ;
+    rdfs:label "KryptonAtom"@en ;
+    rdfs:comment "Atom subclass for krypton."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 83.798 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 36 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "KryptonAtom"@en ;
+    ns1:elucidation "Atom subclass for krypton."@en .
+
+ns1:LanthanumAtom a owl:Class ;
+    rdfs:label "LanthanumAtom"@en ;
+    rdfs:comment "Atom subclass for lanthanum."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 57 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 138.90547 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "LanthanumAtom"@en ;
+    ns1:elucidation "Atom subclass for lanthanum."@en .
+
+ns1:LawrenciumAtom a owl:Class ;
+    rdfs:label "LawrenciumAtom"@en ;
+    rdfs:comment "Atom subclass for lawrencium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 262.11 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 103 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "LawrenciumAtom"@en ;
+    ns1:elucidation "Atom subclass for lawrencium."@en .
+
+ns1:LeadAtom a owl:Class ;
+    rdfs:label "LeadAtom"@en ;
+    rdfs:comment "Atom subclass for lead."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 207.2 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 82 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "LeadAtom"@en ;
+    ns1:elucidation "Atom subclass for lead."@en .
+
+ns1:LithiumAtom a owl:Class ;
+    rdfs:label "LithiumAtom"@en ;
+    rdfs:comment "Atom subclass for lithium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 3 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 6.94 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "LithiumAtom"@en ;
+    ns1:elucidation "Atom subclass for lithium."@en .
+
+ns1:LivermoriumAtom a owl:Class ;
+    rdfs:label "LivermoriumAtom"@en ;
+    rdfs:comment "Atom subclass for livermorium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 293.204 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 116 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "LivermoriumAtom"@en ;
+    ns1:elucidation "Atom subclass for livermorium."@en .
+
+ns1:LutetiumAtom a owl:Class ;
+    rdfs:label "LutetiumAtom"@en ;
+    rdfs:comment "Atom subclass for lutetium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 174.9668 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 71 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "LutetiumAtom"@en ;
+    ns1:elucidation "Atom subclass for lutetium."@en .
+
+ns1:MagnesiumAtom a owl:Class ;
+    rdfs:label "MagnesiumAtom"@en ;
+    rdfs:comment "Atom subclass for magnesium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 24.305 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 12 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "MagnesiumAtom"@en ;
+    ns1:elucidation "Atom subclass for magnesium."@en .
+
+ns1:ManganeseAtom a owl:Class ;
+    rdfs:label "ManganeseAtom"@en ;
+    rdfs:comment "Atom subclass for manganese."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 25 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 54.938044 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "ManganeseAtom"@en ;
+    ns1:elucidation "Atom subclass for manganese."@en .
+
+ns1:MeitneriumAtom a owl:Class ;
+    rdfs:label "MeitneriumAtom"@en ;
+    rdfs:comment "Atom subclass for meitnerium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 109 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 278.156 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "MeitneriumAtom"@en ;
+    ns1:elucidation "Atom subclass for meitnerium."@en .
+
+ns1:MendeleviumAtom a owl:Class ;
+    rdfs:label "MendeleviumAtom"@en ;
+    rdfs:comment "Atom subclass for mendelevium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 101 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 258.09843 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "MendeleviumAtom"@en ;
+    ns1:elucidation "Atom subclass for mendelevium."@en .
+
+ns1:MercuryAtom a owl:Class ;
+    rdfs:label "MercuryAtom"@en ;
+    rdfs:comment "Atom subclass for mercury."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 200.592 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 80 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "MercuryAtom"@en ;
+    ns1:elucidation "Atom subclass for mercury."@en .
+
+ns1:MolybdenumAtom a owl:Class ;
+    rdfs:label "MolybdenumAtom"@en ;
+    rdfs:comment "Atom subclass for molybdenum."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 42 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 95.95 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "MolybdenumAtom"@en ;
+    ns1:elucidation "Atom subclass for molybdenum."@en .
+
+ns1:MoscoviumAtom a owl:Class ;
+    rdfs:label "MoscoviumAtom"@en ;
+    rdfs:comment "Atom subclass for moscovium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 115 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 289.194 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "MoscoviumAtom"@en ;
+    ns1:elucidation "Atom subclass for moscovium."@en .
+
+ns1:NeodymiumAtom a owl:Class ;
+    rdfs:label "NeodymiumAtom"@en ;
+    rdfs:comment "Atom subclass for neodymium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 60 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 144.242 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "NeodymiumAtom"@en ;
+    ns1:elucidation "Atom subclass for neodymium."@en .
+
+ns1:NeonAtom a owl:Class ;
+    rdfs:label "NeonAtom"@en ;
+    rdfs:comment "Atom subclass for neon."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 10 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 20.1797 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "NeonAtom"@en ;
+    ns1:elucidation "Atom subclass for neon."@en .
+
+ns1:NeptuniumAtom a owl:Class ;
+    rdfs:label "NeptuniumAtom"@en ;
+    rdfs:comment "Atom subclass for neptunium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 93 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 237.04817 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "NeptuniumAtom"@en ;
+    ns1:elucidation "Atom subclass for neptunium."@en .
+
+ns1:NickelAtom a owl:Class ;
+    rdfs:label "NickelAtom"@en ;
+    rdfs:comment "Atom subclass for nickel."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 28 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 58.6934 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "NickelAtom"@en ;
+    ns1:elucidation "Atom subclass for nickel."@en .
+
+ns1:NihoniumAtom a owl:Class ;
+    rdfs:label "NihoniumAtom"@en ;
+    rdfs:comment "Atom subclass for nihonium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 286.182 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 113 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "NihoniumAtom"@en ;
+    ns1:elucidation "Atom subclass for nihonium."@en .
+
+ns1:NiobiumAtom a owl:Class ;
+    rdfs:label "NiobiumAtom"@en ;
+    rdfs:comment "Atom subclass for niobium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 92.90637 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 41 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "NiobiumAtom"@en ;
+    ns1:elucidation "Atom subclass for niobium."@en .
+
+ns1:NitrogenAtom a owl:Class ;
+    rdfs:label "NitrogenAtom"@en ;
+    rdfs:comment "Atom subclass for nitrogen."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 7 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 14.007 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "NitrogenAtom"@en ;
+    ns1:elucidation "Atom subclass for nitrogen."@en .
+
+ns1:NobeliumAtom a owl:Class ;
+    rdfs:label "NobeliumAtom"@en ;
+    rdfs:comment "Atom subclass for nobelium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 102 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 259.101 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "NobeliumAtom"@en ;
+    ns1:elucidation "Atom subclass for nobelium."@en .
+
+ns1:OganessonAtom a owl:Class ;
+    rdfs:label "OganessonAtom"@en ;
+    rdfs:comment "Atom subclass for oganesson."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 294.214 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 118 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "OganessonAtom"@en ;
+    ns1:elucidation "Atom subclass for oganesson."@en .
+
+ns1:OsmiumAtom a owl:Class ;
+    rdfs:label "OsmiumAtom"@en ;
+    rdfs:comment "Atom subclass for osmium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 76 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 190.23 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "OsmiumAtom"@en ;
+    ns1:elucidation "Atom subclass for osmium."@en .
+
+ns1:OxygenAtom a owl:Class ;
+    rdfs:label "OxygenAtom"@en ;
+    rdfs:comment "Atom subclass for oxygen."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 8 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 15.999 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "OxygenAtom"@en ;
+    ns1:elucidation "Atom subclass for oxygen."@en .
+
+ns1:PalladiumAtom a owl:Class ;
+    rdfs:label "PalladiumAtom"@en ;
+    rdfs:comment "Atom subclass for palladium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 46 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 106.42 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "PalladiumAtom"@en ;
+    ns1:elucidation "Atom subclass for palladium."@en .
+
+ns1:PhosphorusAtom a owl:Class ;
+    rdfs:label "PhosphorusAtom"@en ;
+    rdfs:comment "Atom subclass for phosphorus."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 15 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 30.973761998 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "PhosphorusAtom"@en ;
+    ns1:elucidation "Atom subclass for phosphorus."@en .
+
+ns1:PlatinumAtom a owl:Class ;
+    rdfs:label "PlatinumAtom"@en ;
+    rdfs:comment "Atom subclass for platinum."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 195.084 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 78 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "PlatinumAtom"@en ;
+    ns1:elucidation "Atom subclass for platinum."@en .
+
+ns1:PlutoniumAtom a owl:Class ;
+    rdfs:label "PlutoniumAtom"@en ;
+    rdfs:comment "Atom subclass for plutonium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 244.06421 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 94 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "PlutoniumAtom"@en ;
+    ns1:elucidation "Atom subclass for plutonium."@en .
+
+ns1:PoloniumAtom a owl:Class ;
+    rdfs:label "PoloniumAtom"@en ;
+    rdfs:comment "Atom subclass for polonium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 208.98243 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 84 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "PoloniumAtom"@en ;
+    ns1:elucidation "Atom subclass for polonium."@en .
+
+ns1:PotassiumAtom a owl:Class ;
+    rdfs:label "PotassiumAtom"@en ;
+    rdfs:comment "Atom subclass for potassium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 19 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 39.0983 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "PotassiumAtom"@en ;
+    ns1:elucidation "Atom subclass for potassium."@en .
+
+ns1:PraseodymiumAtom a owl:Class ;
+    rdfs:label "PraseodymiumAtom"@en ;
+    rdfs:comment "Atom subclass for praseodymium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 140.90766 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 59 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "PraseodymiumAtom"@en ;
+    ns1:elucidation "Atom subclass for praseodymium."@en .
+
+ns1:PromethiumAtom a owl:Class ;
+    rdfs:label "PromethiumAtom"@en ;
+    rdfs:comment "Atom subclass for promethium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 144.91276 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 61 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "PromethiumAtom"@en ;
+    ns1:elucidation "Atom subclass for promethium."@en .
+
+ns1:ProtactiniumAtom a owl:Class ;
+    rdfs:label "ProtactiniumAtom"@en ;
+    rdfs:comment "Atom subclass for protactinium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 91 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 231.03588 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "ProtactiniumAtom"@en ;
+    ns1:elucidation "Atom subclass for protactinium."@en .
+
+ns1:RadiumAtom a owl:Class ;
+    rdfs:label "RadiumAtom"@en ;
+    rdfs:comment "Atom subclass for radium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 226.02541 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 88 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "RadiumAtom"@en ;
+    ns1:elucidation "Atom subclass for radium."@en .
+
+ns1:RadonAtom a owl:Class ;
+    rdfs:label "RadonAtom"@en ;
+    rdfs:comment "Atom subclass for radon."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 86 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 222.01758 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "RadonAtom"@en ;
+    ns1:elucidation "Atom subclass for radon."@en .
+
+ns1:RheniumAtom a owl:Class ;
+    rdfs:label "RheniumAtom"@en ;
+    rdfs:comment "Atom subclass for rhenium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 186.207 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 75 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "RheniumAtom"@en ;
+    ns1:elucidation "Atom subclass for rhenium."@en .
+
+ns1:RhodiumAtom a owl:Class ;
+    rdfs:label "RhodiumAtom"@en ;
+    rdfs:comment "Atom subclass for rhodium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 45 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 102.9055 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "RhodiumAtom"@en ;
+    ns1:elucidation "Atom subclass for rhodium."@en .
+
+ns1:RoentgeniumAtom a owl:Class ;
+    rdfs:label "RoentgeniumAtom"@en ;
+    rdfs:comment "Atom subclass for roentgenium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 111 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 281.166 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "RoentgeniumAtom"@en ;
+    ns1:elucidation "Atom subclass for roentgenium."@en .
+
+ns1:RubidiumAtom a owl:Class ;
+    rdfs:label "RubidiumAtom"@en ;
+    rdfs:comment "Atom subclass for rubidium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 85.4678 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 37 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "RubidiumAtom"@en ;
+    ns1:elucidation "Atom subclass for rubidium."@en .
+
+ns1:RutheniumAtom a owl:Class ;
+    rdfs:label "RutheniumAtom"@en ;
+    rdfs:comment "Atom subclass for ruthenium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 101.07 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 44 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "RutheniumAtom"@en ;
+    ns1:elucidation "Atom subclass for ruthenium."@en .
+
+ns1:RutherfordiumAtom a owl:Class ;
+    rdfs:label "RutherfordiumAtom"@en ;
+    rdfs:comment "Atom subclass for rutherfordium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 267.122 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 104 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "RutherfordiumAtom"@en ;
+    ns1:elucidation "Atom subclass for rutherfordium."@en .
+
+ns1:SamariumAtom a owl:Class ;
+    rdfs:label "SamariumAtom"@en ;
+    rdfs:comment "Atom subclass for samarium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 62 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 150.36 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "SamariumAtom"@en ;
+    ns1:elucidation "Atom subclass for samarium."@en .
+
+ns1:ScandiumAtom a owl:Class ;
+    rdfs:label "ScandiumAtom"@en ;
+    rdfs:comment "Atom subclass for scandium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 44.955908 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 21 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "ScandiumAtom"@en ;
+    ns1:elucidation "Atom subclass for scandium."@en .
+
+ns1:SeaborgiumAtom a owl:Class ;
+    rdfs:label "SeaborgiumAtom"@en ;
+    rdfs:comment "Atom subclass for seaborgium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 271.134 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 106 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "SeaborgiumAtom"@en ;
+    ns1:elucidation "Atom subclass for seaborgium."@en .
+
+ns1:SeleniumAtom a owl:Class ;
+    rdfs:label "SeleniumAtom"@en ;
+    rdfs:comment "Atom subclass for selenium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 78.971 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 34 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "SeleniumAtom"@en ;
+    ns1:elucidation "Atom subclass for selenium."@en .
+
+ns1:SiliconAtom a owl:Class ;
+    rdfs:label "SiliconAtom"@en ;
+    rdfs:comment "Atom subclass for silicon."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 14 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 28.085 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "SiliconAtom"@en ;
+    ns1:elucidation "Atom subclass for silicon."@en .
+
+ns1:SilverAtom a owl:Class ;
+    rdfs:label "SilverAtom"@en ;
+    rdfs:comment "Atom subclass for silver."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 107.8682 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 47 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "SilverAtom"@en ;
+    ns1:elucidation "Atom subclass for silver."@en .
+
+ns1:SodiumAtom a owl:Class ;
+    rdfs:label "SodiumAtom"@en ;
+    rdfs:comment "Atom subclass for sodium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 22.98976928 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 11 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "SodiumAtom"@en ;
+    ns1:elucidation "Atom subclass for sodium."@en .
+
+ns1:StrontiumAtom a owl:Class ;
+    rdfs:label "StrontiumAtom"@en ;
+    rdfs:comment "Atom subclass for strontium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 87.62 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 38 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "StrontiumAtom"@en ;
+    ns1:elucidation "Atom subclass for strontium."@en .
+
+ns1:SulfurAtom a owl:Class ;
+    rdfs:label "SulfurAtom"@en ;
+    rdfs:comment "Atom subclass for sulfur."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 16 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 32.06 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "SulfurAtom"@en ;
+    ns1:elucidation "Atom subclass for sulfur."@en .
+
+ns1:TantalumAtom a owl:Class ;
+    rdfs:label "TantalumAtom"@en ;
+    rdfs:comment "Atom subclass for tantalum."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 73 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 180.94788 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "TantalumAtom"@en ;
+    ns1:elucidation "Atom subclass for tantalum."@en .
+
+ns1:TechnetiumAtom a owl:Class ;
+    rdfs:label "TechnetiumAtom"@en ;
+    rdfs:comment "Atom subclass for technetium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 43 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 97.90721 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "TechnetiumAtom"@en ;
+    ns1:elucidation "Atom subclass for technetium."@en .
+
+ns1:TelluriumAtom a owl:Class ;
+    rdfs:label "TelluriumAtom"@en ;
+    rdfs:comment "Atom subclass for tellurium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 127.6 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 52 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "TelluriumAtom"@en ;
+    ns1:elucidation "Atom subclass for tellurium."@en .
+
+ns1:TennessineAtom a owl:Class ;
+    rdfs:label "TennessineAtom"@en ;
+    rdfs:comment "Atom subclass for tennessine."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 293.208 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 117 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "TennessineAtom"@en ;
+    ns1:elucidation "Atom subclass for tennessine."@en .
+
+ns1:TerbiumAtom a owl:Class ;
+    rdfs:label "TerbiumAtom"@en ;
+    rdfs:comment "Atom subclass for terbium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 65 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 158.92535 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "TerbiumAtom"@en ;
+    ns1:elucidation "Atom subclass for terbium."@en .
+
+ns1:ThalliumAtom a owl:Class ;
+    rdfs:label "ThalliumAtom"@en ;
+    rdfs:comment "Atom subclass for thallium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 81 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 204.38 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "ThalliumAtom"@en ;
+    ns1:elucidation "Atom subclass for thallium."@en .
+
+ns1:ThoriumAtom a owl:Class ;
+    rdfs:label "ThoriumAtom"@en ;
+    rdfs:comment "Atom subclass for thorium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 90 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 232.0377 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "ThoriumAtom"@en ;
+    ns1:elucidation "Atom subclass for thorium."@en .
+
+ns1:ThuliumAtom a owl:Class ;
+    rdfs:label "ThuliumAtom"@en ;
+    rdfs:comment "Atom subclass for thulium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 69 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 168.93422 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "ThuliumAtom"@en ;
+    ns1:elucidation "Atom subclass for thulium."@en .
+
+ns1:TinAtom a owl:Class ;
+    rdfs:label "TinAtom"@en ;
+    rdfs:comment "Atom subclass for tin."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 118.71 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 50 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "TinAtom"@en ;
+    ns1:elucidation "Atom subclass for tin."@en .
+
+ns1:TitaniumAtom a owl:Class ;
+    rdfs:label "TitaniumAtom"@en ;
+    rdfs:comment "Atom subclass for titanium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 47.867 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 22 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "TitaniumAtom"@en ;
+    ns1:elucidation "Atom subclass for titanium."@en .
+
+ns1:TungstenAtom a owl:Class ;
+    rdfs:label "TungstenAtom"@en ;
+    rdfs:comment "Atom subclass for tungsten."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 183.84 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 74 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "TungstenAtom"@en ;
+    ns1:elucidation "Atom subclass for tungsten."@en .
+
+ns1:UraniumAtom a owl:Class ;
+    rdfs:label "UraniumAtom"@en ;
+    rdfs:comment "Atom subclass for uranium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 92 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 238.02891 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "UraniumAtom"@en ;
+    ns1:elucidation "Atom subclass for uranium."@en .
+
+ns1:VanadiumAtom a owl:Class ;
+    rdfs:label "VanadiumAtom"@en ;
+    rdfs:comment "Atom subclass for vanadium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 23 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 50.9415 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "VanadiumAtom"@en ;
+    ns1:elucidation "Atom subclass for vanadium."@en .
+
+ns1:XenonAtom a owl:Class ;
+    rdfs:label "XenonAtom"@en ;
+    rdfs:comment "Atom subclass for xenon."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 131.293 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 54 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "XenonAtom"@en ;
+    ns1:elucidation "Atom subclass for xenon."@en .
+
+ns1:YtterbiumAtom a owl:Class ;
+    rdfs:label "YtterbiumAtom"@en ;
+    rdfs:comment "Atom subclass for ytterbium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 70 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 173.054 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "YtterbiumAtom"@en ;
+    ns1:elucidation "Atom subclass for ytterbium."@en .
+
+ns1:YttriumAtom a owl:Class ;
+    rdfs:label "YttriumAtom"@en ;
+    rdfs:comment "Atom subclass for yttrium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 39 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 88.90584 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "YttriumAtom"@en ;
+    ns1:elucidation "Atom subclass for yttrium."@en .
+
+ns1:ZincAtom a owl:Class ;
+    rdfs:label "ZincAtom"@en ;
+    rdfs:comment "Atom subclass for zinc."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 30 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        [ a owl:Restriction ;
+            owl:hasValue 65.38 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        ns1:Atom ;
+    skos:prefLabel "ZincAtom"@en ;
+    ns1:elucidation "Atom subclass for zinc."@en .
+
+ns1:ZirconiumAtom a owl:Class ;
+    rdfs:label "ZirconiumAtom"@en ;
+    rdfs:comment "Atom subclass for zirconium."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue 91.224 ;
+            owl:onProperty ns1:hasIUPAC2016AtomicMass ],
+        [ a owl:Restriction ;
+            owl:hasValue 40 ;
+            owl:onProperty ns1:hasAtomicNumber ],
+        ns1:Atom ;
+    skos:prefLabel "ZirconiumAtom"@en ;
+    ns1:elucidation "Atom subclass for zirconium."@en .
+
+ns1:hasChemicalSymbol a owl:ObjectProperty ;
+    rdfs:label "hasChemicalSymbol"@en ;
+    ns2:python_name "hasChemicalSymbol"@en ;
+    rdfs:comment "Relates an atomic element to its chemical symbol."@en ;
+    rdfs:domain ns1:Atom ;
+    rdfs:range ns1:ChemicalSymbol ;
+    rdfs:subPropertyOf ns1:hasConvention ;
+    owl:inverseOf ns1:isChemicalSymbolFor ;
+    skos:prefLabel "hasChemicalSymbol"@en ;
+    ns1:elucidation "Relates an atomic element to its chemical symbol."@en .
+
+ns1:hasAtomicNumber a owl:DatatypeProperty ;
+    rdfs:label "hasAtomicNumber"@en ;
+    ns2:python_name "hasAtomicNumber"@en ;
+    rdfs:comment "This is a convenient shortcut for the conventional declaration process of assigning an atomic number to an atom subclass."^^xsd:string,
+        "The atomic number of an atomic element."@en ;
+    rdfs:domain ns1:Atom ;
+    rdfs:range xsd:integer ;
+    skos:prefLabel "hasAtomicNumber"@en ;
+    ns1:elucidation "The atomic number of an atomic element."@en .
+
+ns1:hasIUPAC2016AtomicMass a owl:DatatypeProperty ;
+    rdfs:label "hasIUPAC2016AtomicMass"@en ;
+    ns2:python_name "hasIUPAC2016AtomicMass"@en ;
+    rdfs:comment "This is a convenient shortcut for the measurement process process of the atomic mass reported by IUPAC2016."^^xsd:string,
+        "The mass of an atomic element according to IUPAC 2016."@en ;
+    rdfs:domain ns1:Atom ;
+    rdfs:range xsd:decimal ;
+    skos:prefLabel "hasIUPAC2016AtomicMass"@en ;
+    ns1:elucidation "The mass of an atomic element according to IUPAC 2016."@en .
+
+ns1:isChemicalSymbolFor a owl:ObjectProperty ;
+    rdfs:label "isChemicalSymbolFor"@en ;
+    ns2:python_name "isChemicalSymbolFor"@en ;
+    rdfs:comment "Relates a  chemical symbol to the atomic element it stands for."@en ;
+    rdfs:domain ns1:ChemicalSymbol ;
+    rdfs:range ns1:Atom ;
+    rdfs:subPropertyOf ns1:isConventionFor ;
+    owl:inverseOf ns1:hasChemicalSymbol ;
+    skos:prefLabel "isChemicalSymbolFor"@en ;
+    ns1:elucidation "Relates a  chemical symbol to the atomic element it stands for."@en .
+

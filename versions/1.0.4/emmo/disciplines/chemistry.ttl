@@ -1,0 +1,396 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix emmo: <https://w3id.org/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+emmo:EMMO_04b3300c_98bd_42dc_a3b5_e6c29d69f1ac rdfs:subClassOf emmo:EMMO_a293f923_954c_4af5_9f97_9600ebd362cb .
+
+emmo:EMMO_16a3bd5c_75f0_42b3_b000_cb0d018f840e a owl:Class ;
+    rdfs:label "IUPACName"@en ;
+    rdfs:comment "Name of a chemical according to the IUPAC standard."@en ;
+    rdfs:subClassOf emmo:EMMO_26586828_3b8c_4d8b_9c6c_0bc2502f26ae,
+        emmo:EMMO_91a0635a_a89a_46de_8928_04a777d145c7 ;
+    skos:prefLabel "IUPACName"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Name of a chemical according to the IUPAC standard."@en .
+
+emmo:EMMO_16f2fe60_2db7_43ca_8fee_5b3e416bfe87 rdfs:subClassOf emmo:EMMO_a293f923_954c_4af5_9f97_9600ebd362cb .
+
+emmo:EMMO_2856bbc2_96e1_485b_b5f8_2fdfcb0c9b92 a owl:AnnotationProperty ;
+    rdfs:label "inchiKey"@en ;
+    rdfs:comment "A hash of the full International Chemical Identifier (InChi) for a chemical substance."@en ;
+    rdfs:seeAlso "https://inchi.info/inchikey_overview_en.html"^^xsd:anyURI ;
+    rdfs:subPropertyOf rdfs:seeAlso ;
+    skos:prefLabel "inchiKey"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A hash of the full International Chemical Identifier (InChi) for a chemical substance."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "The InChiKey is a hash of the full InChi identifier using the SHA-256 algorithm, designed to allow for easy web searches of chemical compounds."@en .
+
+emmo:EMMO_2e0b0f1b_ba90_4827_af5a_92b826cb90de a owl:AnnotationProperty ;
+    rdfs:label "SMILESReference"@en ;
+    rdfs:comment "OpenSMILES representation of a molecular structure."@en ;
+    rdfs:isDefinedBy <http://opensmiles.org/opensmiles.html> ;
+    rdfs:subPropertyOf rdfs:seeAlso ;
+    skos:prefLabel "SMILESReference"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "OpenSMILES representation of a molecular structure."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "OpenSMILES is an open specification of the SMILE language for specifying molecular structures, which has become a defacto standard for exchange of molecular structures."@en ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d <https://en.wikipedia.org/wiki/Simplified_molecular-input_line-entry_system> .
+
+emmo:EMMO_40c65eb4_5b58_4b13_8752_9976582380af a owl:DatatypeProperty ;
+    rdfs:label "chemicalSymbolValue"@en ;
+    rdfs:domain emmo:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 ;
+    rdfs:subPropertyOf emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ;
+    skos:prefLabel "chemicalSymbolValue"@en .
+
+emmo:EMMO_4208f937_8bad_47cf_af46_4ada75e63adb a owl:Class ;
+    rdfs:label "MolecularFormula"@en ;
+    rdfs:comment "An expression that provides information about the element types that constiture a molecule or a molecular substance and their number."^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+            owl:someValuesFrom emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ],
+        emmo:EMMO_9236d0aa_cb39_43a1_bbdd_6a2a714951c8 ;
+    skos:example "Hydrogen peroxide is H2O2"^^xsd:string ;
+    skos:prefLabel "MolecularFormula"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An expression that provides information about the element types that constiture a molecule or a molecular substance and their number."^^xsd:string .
+
+emmo:EMMO_436b11bd_1756_4821_9f14_c9ed6b67552e a owl:Class ;
+    rdfs:label "ElementalSubstance"@en ;
+    rdfs:comment "A chemical substance composed of atoms with the same number of protons in the atomic nucleus."^^xsd:string ;
+    rdfs:subClassOf emmo:EMMO_df96cbb6_b5ee_4222_8eab_b3675df24bea ;
+    skos:altLabel "PureSubstance"@en ;
+    skos:prefLabel "ElementalSubstance"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A chemical substance composed of atoms with the same number of protons in the atomic nucleus."^^xsd:string ;
+    emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.C01022"^^xsd:string .
+
+emmo:EMMO_47338839_6cca_4a8e_b565_3c4d5517e2c0 a owl:Class ;
+    rdfs:label "ChemicalEntity"@en ;
+    rdfs:comment """A chemical entity comprises the two different ways to represents matter: as single recognizable particle entity (molecular entity) and as a composition of particle entities (substance).
+
+This distinction is not well assessed in actual chemical nomenclature, in which an element name refers to both the pure elemental substance or the atom.
+
+In the EMMO we force the adoption of a more strict categorization based on mereotopology.
+
+The class Material hosts the subclasses for which a substance can be identified without necessarily considering its nature of molecule/atom or substance (e.g. hydrocarbon is the class of both hydrocarbon molecules or gases)."""^^xsd:string ;
+    rdfs:subClassOf emmo:EMMO_5b2222df_4da6_442f_8244_96e9e45887d1 ;
+    owl:disjointUnionOf ( emmo:EMMO_21205421_5783_4d3e_81e5_10c5d894a88a emmo:EMMO_df96cbb6_b5ee_4222_8eab_b3675df24bea ) ;
+    skos:prefLabel "ChemicalEntity"@en .
+
+emmo:EMMO_4e659c69_ca2d_4569_8a96_f99857a1fa32 a owl:Class ;
+    rdfs:label "InorganicCompound"@en ;
+    rdfs:comment "A chemical compound that is not organic."@en ;
+    rdfs:subClassOf emmo:EMMO_e2b11f6a_4191_427e_9844_2e0ac88dfc8b ;
+    owl:disjointWith emmo:EMMO_704630b8_fee3_49b9_baca_40e2dd276370 ;
+    skos:prefLabel "InorganicCompound"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A chemical compound that is not organic."@en .
+
+emmo:EMMO_51f426a6_af4a_4e91_a392_2b0bb635e2d5 a owl:ObjectProperty ;
+    rdfs:label "hasChemicalComposition"@en ;
+    rdfs:comment "Relates a substance to chemical composition."@en ;
+    rdfs:domain emmo:EMMO_bc37743c_37c4_4ec7_9d58_d1aae5567352 ;
+    rdfs:range emmo:EMMO_7efd64d1_05a1_49cd_a7f0_783ca050d4f3 ;
+    rdfs:subPropertyOf emmo:EMMO_eb3518bf_f799_4f9e_8c3e_ce59af11453b ;
+    skos:example """This relation can be used to relate a material to a chemical composition quantity of one of its chemical species. For example, the amount of aluminium in substance subst:alloy1 can be expressed as:
+
+```turtle
+subst:alloy1 a emmo:Substance ;
+    emmo:hasChemicalComposition [
+        a emmo:SingleComponentComposition ;
+        emmo:hasSpeciesPart [ a emmo:AluminiumSymbol ] ;
+        emmo:hasQuantityPart [
+            a emmo:MassFraction ;
+            hasSIQuantityValue "98.1 wt%"^^emmo:SIQuantityDatatype
+        ]
+    ] .
+```"""@en ;
+    skos:prefLabel "hasChemicalComposition"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Relates a substance to chemical composition."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "This property is often used to relate a substance directly to SingleComponentComposition indifiduals for each of its components."@en .
+
+emmo:EMMO_6afdb7e8_2a0b_444d_bde3_8d67d98180c0 a owl:Class ;
+    rdfs:label "EmpiricalFormula"@en ;
+    rdfs:comment "An expression that provide information about the element type of a compound and their relative ratio."^^xsd:string ;
+    rdfs:subClassOf emmo:EMMO_9236d0aa_cb39_43a1_bbdd_6a2a714951c8 ;
+    skos:example "Hydrogen peroxide is HO"^^xsd:string ;
+    skos:prefLabel "EmpiricalFormula"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An expression that provide information about the element type of a compound and their relative ratio."^^xsd:string .
+
+emmo:EMMO_7aec67a4_fb96_47c6_80a3_8fea557b2cbb a owl:ObjectProperty ;
+    rdfs:label "hasChemicalSpecies"@en ;
+    rdfs:comment "Relates a substance to one of its chemical species."@en ;
+    rdfs:domain emmo:EMMO_bc37743c_37c4_4ec7_9d58_d1aae5567352 ;
+    rdfs:range emmo:EMMO_cbcf8fe6_6da6_49e0_ab4d_00f737ea9689 ;
+    rdfs:subPropertyOf emmo:EMMO_eb3518bf_f799_4f9e_8c3e_ce59af11453b ;
+    skos:prefLabel "hasChemicalSpecies"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Relates a substance to one of its chemical species."@en .
+
+emmo:EMMO_7c055d65_2929_40e1_af4f_4bf10995ad50 rdfs:subClassOf emmo:EMMO_a293f923_954c_4af5_9f97_9600ebd362cb .
+
+emmo:EMMO_a14dd591_8b7a_4847_8c91_3a2f421a45b4 a owl:Class ;
+    rdfs:label "Macromolecule"@en ;
+    rdfs:comment "A polyatomic entity containing a very large number of atoms."@en ;
+    rdfs:subClassOf emmo:EMMO_9fa966c7_5231_409e_841f_b4c5fd33732a ;
+    skos:example "Protein, nucleic acid, or synthetic polymer."@en ;
+    skos:prefLabel "Macromolecule"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A polyatomic entity containing a very large number of atoms."@en .
+
+emmo:EMMO_a466b60b_d973_4b8f_897f_d0b837a59df3 a owl:Class ;
+    rdfs:label "StructuralFormula"@en ;
+    rdfs:comment "A graphical representation of a molecular structure showing the relative position in space of the atomic constituents and their bonds."^^xsd:string ;
+    rdfs:subClassOf emmo:EMMO_ecc4efe9_77a2_47e3_8190_f9a883d54ac6 ;
+    skos:prefLabel "StructuralFormula"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A graphical representation of a molecular structure showing the relative position in space of the atomic constituents and their bonds."^^xsd:string .
+
+emmo:EMMO_a8eb87b5_4d10_4137_a75c_e04ee59ca095 rdfs:subClassOf emmo:EMMO_a293f923_954c_4af5_9f97_9600ebd362cb .
+
+emmo:EMMO_bf836c2b_7800_474d_b674_f5d629fa0bb1 a owl:Class ;
+    rdfs:label "CondensedFormula"@en ;
+    rdfs:subClassOf emmo:EMMO_9236d0aa_cb39_43a1_bbdd_6a2a714951c8 ;
+    skos:example "An expression that provides information about the element types that constiture a molecule or a molecular substance and their number, together with simple information about the connectivity of its groups by using parenthesis or by goruping element names according to its molecular structure."^^xsd:string ;
+    skos:prefLabel "CondensedFormula"@en .
+
+emmo:EMMO_d2a47cd8_662f_438f_855a_b4378eb992ff a owl:Class ;
+    rdfs:label "CASRN"@en ;
+    rdfs:comment "Chemical Abstact Service registry number for a chemical substance from the American Chemical Society"^^xsd:string ;
+    rdfs:subClassOf emmo:EMMO_643d99dd_fae6_4121_a76f_47f486a4480b ;
+    skos:example "Water is 7732-18-5"^^xsd:string ;
+    skos:prefLabel "CASRN"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Chemical Abstact Service registry number for a chemical substance from the American Chemical Society"^^xsd:string .
+
+emmo:EMMO_d5be1faf_0c56_4f5a_9b78_581e6dee949f rdfs:subClassOf emmo:EMMO_a293f923_954c_4af5_9f97_9600ebd362cb .
+
+emmo:EMMO_d74ed682_894f_46c5_87cb_167f60926965 a owl:Class ;
+    rdfs:label "InChI"@en ;
+    rdfs:comment "The International Chemical Identifier (InChI) textual identifier proposed by IUPAC to provide a standard encoding for databases of molecular information."^^xsd:string ;
+    rdfs:subClassOf emmo:EMMO_91a0635a_a89a_46de_8928_04a777d145c7 ;
+    skos:prefLabel "InChI"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The International Chemical Identifier (InChI) textual identifier proposed by IUPAC to provide a standard encoding for databases of molecular information."^^xsd:string .
+
+<https://w3id.org/emmo/disciplines/chemistry> a owl:Ontology ;
+    dcterms:abstract "The chemistry module populates the physicalistic perspective with materials subclasses categorised according to modern applied chemistry."@en ;
+    dcterms:creator <https://orcid.org/0000-0002-1560-809X>,
+        <https://orcid.org/0000-0002-4181-2852>,
+        <https://orcid.org/0000-0003-3805-8761> ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "Chemistry"@en ;
+    rdfs:comment "The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.4/disciplines/isq>,
+        <https://w3id.org/emmo/1.0.4/disciplines/perceptual> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.4/disciplines/chemistry> ;
+    owl:versionInfo "1.0.4"^^xsd:string ;
+    emmo:EMMO_1246b120_abbe_4840_b0f8_3e4348b24a17 "emmo@emmc.eu"^^xsd:string .
+
+emmo:EMMO_0eabfde6_c6c5_4b1f_bf10_e4e0e06e9b2e a owl:Class ;
+    rdfs:label "TotalComposition"@en ;
+    rdfs:comment "A language construct that represents fraction or amount of all constituents of a substance."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+            owl:someValuesFrom emmo:EMMO_172e2c96_180b_40f8_a3e7_b624471f40c2 ],
+        emmo:EMMO_7efd64d1_05a1_49cd_a7f0_783ca050d4f3 ;
+    skos:prefLabel "TotalComposition"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A language construct that represents fraction or amount of all constituents of a substance."@en .
+
+emmo:EMMO_18fdd2cd_4b0a_43a5_a938_66d8290a066c a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "hasSpeciesPart"@en ;
+    rdfs:comment "Relates a chemical composition to one its species."@en ;
+    rdfs:domain emmo:EMMO_7efd64d1_05a1_49cd_a7f0_783ca050d4f3 ;
+    rdfs:range emmo:EMMO_cbcf8fe6_6da6_49e0_ab4d_00f737ea9689 ;
+    rdfs:subPropertyOf emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+    skos:prefLabel "hasSpeciesPart"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Relates a chemical composition to one its species."@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "This property is typically used to relate a SingleComponentComposition to its chemical species."@en .
+
+emmo:EMMO_26586828_3b8c_4d8b_9c6c_0bc2502f26ae a owl:Class ;
+    rdfs:label "ChemicalName"@en ;
+    rdfs:comment "Name of a chemical according to a standard."@en ;
+    rdfs:subClassOf emmo:EMMO_643d99dd_fae6_4121_a76f_47f486a4480b ;
+    skos:prefLabel "ChemicalName"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Name of a chemical according to a standard."@en .
+
+emmo:EMMO_704630b8_fee3_49b9_baca_40e2dd276370 a owl:Class ;
+    rdfs:label "OrganicCompound"@en ;
+    dcterms:source "https://goldbook.iupac.org"^^xsd:anyURI ;
+    rdfs:comment """A chemical compound containing carbon atoms.
+
+-- IUPAC"""@en ;
+    rdfs:subClassOf emmo:EMMO_e2b11f6a_4191_427e_9844_2e0ac88dfc8b ;
+    skos:prefLabel "OrganicCompound"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """A chemical compound containing carbon atoms.
+
+-- IUPAC"""@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "The definition of organic compound is based on the IUPAC Gold Book. However, sometimes an organic compound is defined as a chemical compound that contains a carbon–hydrogen or carbon–carbon bond. Also, some carbon-containing compounds are typically not classified as organic, like carbides, carbonates, and cyanides."@en .
+
+emmo:EMMO_90963312_d9a9_4474_8d10_835aef5b168e a owl:Class ;
+    rdfs:label "PartialComposition"@en ;
+    rdfs:comment "A language construct that represents fraction or amount of some (but not all) constituents of a substance."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+            owl:someValuesFrom emmo:EMMO_172e2c96_180b_40f8_a3e7_b624471f40c2 ],
+        emmo:EMMO_7efd64d1_05a1_49cd_a7f0_783ca050d4f3 ;
+    skos:prefLabel "PartialComposition"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A language construct that represents fraction or amount of some (but not all) constituents of a substance."@en .
+
+emmo:EMMO_95d706e4_8b16_48a1_8dfd_40ccd4df1c12 a owl:AsymmetricProperty,
+        owl:IrreflexiveProperty,
+        owl:ObjectProperty ;
+    rdfs:label "hasQuantityPart"@en ;
+    rdfs:domain emmo:EMMO_89a0c87c_0804_4013_937a_6fe234d9499c ;
+    rdfs:range emmo:EMMO_0650c031_42b6_4f0a_b62d_d88f071da6bf ;
+    rdfs:subPropertyOf emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+    skos:prefLabel "hasQuantityPart"@en ;
+    emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Relates a symbolic construct to one of its quantity parts."@en .
+
+emmo:EMMO_9fa966c7_5231_409e_841f_b4c5fd33732a a owl:Class ;
+    rdfs:label "PolyatomicEntity"@en ;
+    rdfs:comment "An entity made of two or more bonded atoms."@en ;
+    rdfs:subClassOf emmo:EMMO_21205421_5783_4d3e_81e5_10c5d894a88a ;
+    skos:prefLabel "PolyatomicEntity"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An entity made of two or more bonded atoms."@en .
+
+emmo:EMMO_bd8db028_aec2_4a44_ad93_1a9f8270f72c a owl:Class ;
+    rdfs:label "ChemicalSymbolicConstruct"@en ;
+    rdfs:comment "A symbolic construct that stands for a chemical."@en ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( emmo:EMMO_89a0c87c_0804_4013_937a_6fe234d9499c emmo:EMMO_abf7efbe_6b04_41b8_8326_4dd0f6be753e ) ] ;
+    skos:example "H2O"@en ;
+    skos:prefLabel "ChemicalSymbolicConstruct"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A symbolic construct that stands for a chemical."@en .
+
+emmo:EMMO_d357e0dd_3497_4590_af6f_7954db7fecf7 a owl:Class ;
+    rdfs:label "ChemicalSymbol"@en ;
+    rdfs:comment "A symbol that stands for a chemical element."@en ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( emmo:EMMO_a1083d0a_c1fb_471f_8e20_a98f881ad527 emmo:EMMO_abf7efbe_6b04_41b8_8326_4dd0f6be753e ) ] ;
+    skos:example """"H"
+"He"
+"Li"
+..."""@en ;
+    skos:prefLabel "ChemicalSymbol"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A symbol that stands for a chemical element."@en .
+
+emmo:EMMO_ecc4efe9_77a2_47e3_8190_f9a883d54ac6 a owl:Class ;
+    rdfs:label "ChemicalRepresentation"@en ;
+    rdfs:comment "A representation of objects belonging to the chemistry field."^^xsd:string ;
+    rdfs:subClassOf emmo:EMMO_eb7de1a1_c30e_4f0d_94c6_fe70414d7e61 ;
+    skos:prefLabel "ChemicalRepresentation"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A representation of objects belonging to the chemistry field."^^xsd:string .
+
+emmo:EMMO_21205421_5783_4d3e_81e5_10c5d894a88a rdfs:comment """Molecular entity is used as a general term for singular entities, irrespective of their nature, while chemical species stands for sets or ensembles of molecular entities.
+
+Note that the name of a compound may refer to the respective molecular entity or to the chemical species,"""^^xsd:string ;
+    skos:example "Hydrogen molecule is an adequate definition of a certain molecular entity for some purposes, whereas for others it is necessary to distinguish the electronic state and/or vibrational state and/or nuclear spin, etc. of the hydrogen molecule."^^xsd:string,
+        "Methane, may mean a single molecule of CH4 (molecular entity) or a molar amount, specified or not (chemical species), participating in a reaction. The degree of precision necessary to describe a molecular entity depends on the context."^^xsd:string .
+
+emmo:EMMO_91a0635a_a89a_46de_8928_04a777d145c7 a owl:Class ;
+    rdfs:label "IUPACNomenclature"@en ;
+    rdfs:comment "Chemical nomenclauture following the IUPAC standard."@en ;
+    rdfs:subClassOf emmo:EMMO_643d99dd_fae6_4121_a76f_47f486a4480b ;
+    skos:prefLabel "IUPACNomenclature"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Chemical nomenclauture following the IUPAC standard."@en .
+
+emmo:EMMO_e2b11f6a_4191_427e_9844_2e0ac88dfc8b a owl:Class ;
+    rdfs:label "ChemicalCompound"@en ;
+    rdfs:comment "A chemical substance composed of many identical molecules (or molecular entities) composed of atoms from more than one element held together by chemical bonds."^^xsd:string ;
+    rdfs:subClassOf emmo:EMMO_df96cbb6_b5ee_4222_8eab_b3675df24bea ;
+    skos:prefLabel "ChemicalCompound"@en ;
+    emmo:EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db "DisjointUnionOf InorganicCompound, OrganicCompound"^^xsd:string ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A chemical substance composed of many identical molecules (or molecular entities) composed of atoms from more than one element held together by chemical bonds."^^xsd:string ;
+    emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d "https://en.wikipedia.org/wiki/Chemical_compound"^^xsd:string .
+
+emmo:EMMO_172e2c96_180b_40f8_a3e7_b624471f40c2 a owl:Class ;
+    rdfs:label "SingleComponentComposition"@en ;
+    rdfs:comment "A language construct that represents the fraction or amount of a single constituent of a substance."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_18fdd2cd_4b0a_43a5_a938_66d8290a066c ;
+            owl:someValuesFrom emmo:EMMO_cbcf8fe6_6da6_49e0_ab4d_00f737ea9689 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_95d706e4_8b16_48a1_8dfd_40ccd4df1c12 ;
+            owl:someValuesFrom emmo:EMMO_a293f923_954c_4af5_9f97_9600ebd362cb ],
+        emmo:EMMO_7efd64d1_05a1_49cd_a7f0_783ca050d4f3 ;
+    skos:prefLabel "SingleComponentComposition"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A language construct that represents the fraction or amount of a single constituent of a substance."@en .
+
+emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf a owl:Class ;
+    rdfs:label "ChemicalElement"@en ;
+    rdfs:comment """The IUPAC Gold Book defines the a chemical element both as:
+- a species of atoms; all atoms with the same number of protons in the atomic nucleus
+-  a pure chemical substance composed of atoms with the same number of protons in the atomic nucleus
+
+This qualifies a chemical element as a name and not a matter obejct that can stand for an atom or a substance."""^^xsd:string,
+        "The symbol for a specific chemical element, that can stand both for an atom or a substance."^^xsd:string ;
+    rdfs:seeAlso "http://publications.iupac.org/ci/2005/2701/ud.html"^^xsd:string ;
+    rdfs:subClassOf emmo:EMMO_a1083d0a_c1fb_471f_8e20_a98f881ad527,
+        emmo:EMMO_abf7efbe_6b04_41b8_8326_4dd0f6be753e ;
+    skos:prefLabel "ChemicalElement"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The symbol for a specific chemical element, that can stand both for an atom or a substance."^^xsd:string ;
+    emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.C01022"^^xsd:string .
+
+emmo:EMMO_cbcf8fe6_6da6_49e0_ab4d_00f737ea9689 a owl:Class ;
+    rdfs:label "ChemicalSpecies"@en ;
+    rdfs:comment """Following nominalistic approach a species is simply a name that can point to an element name, a chemical formula or a chemical compound.
+
+So everything addressed by these classes of names can be calleded a chemical species."""^^xsd:string,
+        """N2
+Methane
+CH4
+Fe
+Sodium Chloride"""^^xsd:string,
+        """Specific form of an element defined as to isotopic composition, electronic or oxidation state, and/or complex or molecular structure.
+
+Chemical species is the macroscopic equivalent of molecular entity and refers to sets or ensembles of molecular entities."""^^xsd:string ;
+    rdfs:subClassOf emmo:EMMO_abf7efbe_6b04_41b8_8326_4dd0f6be753e ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf ( emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf emmo:EMMO_643d99dd_fae6_4121_a76f_47f486a4480b emmo:EMMO_9236d0aa_cb39_43a1_bbdd_6a2a714951c8 ) ] ;
+    skos:prefLabel "ChemicalSpecies"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """Specific form of an element defined as to isotopic composition, electronic or oxidation state, and/or complex or molecular structure.
+
+Chemical species is the macroscopic equivalent of molecular entity and refers to sets or ensembles of molecular entities."""^^xsd:string ;
+    emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.CT06859"^^xsd:string .
+
+emmo:EMMO_df96cbb6_b5ee_4222_8eab_b3675df24bea a owl:Class ;
+    rdfs:label "ChemicalSubstance"@en ;
+    rdfs:comment "A substance is always composed of more than one molecular entity. It lays in the continuum or mesoscopic domain."^^xsd:string,
+        "Matter of constant composition best characterized by the entities (molecules, formula units, atoms) it is composed of."^^xsd:string ;
+    rdfs:subClassOf emmo:EMMO_bc37743c_37c4_4ec7_9d58_d1aae5567352 ;
+    skos:prefLabel "ChemicalSubstance"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Matter of constant composition best characterized by the entities (molecules, formula units, atoms) it is composed of."^^xsd:string ;
+    emmo:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.C01039"^^xsd:string .
+
+emmo:EMMO_643d99dd_fae6_4121_a76f_47f486a4480b a owl:Class ;
+    rdfs:label "ChemicalNomenclature"@en ;
+    rdfs:comment "A chemical numenclature should not be confused with the chemical formula."^^xsd:string,
+        "A language object following a specific nomenclature rules for defining univocal names of chemical compounds."^^xsd:string ;
+    rdfs:subClassOf emmo:EMMO_abf7efbe_6b04_41b8_8326_4dd0f6be753e ;
+    skos:prefLabel "ChemicalNomenclature"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A language object following a specific nomenclature rules for defining univocal names of chemical compounds."^^xsd:string .
+
+emmo:EMMO_9236d0aa_cb39_43a1_bbdd_6a2a714951c8 a owl:Class ;
+    rdfs:label "ChemicalFormula"@en ;
+    rdfs:comment "A chemical formula may also include other symbols such as parentheses, plus and minus signs, brackets"^^xsd:string,
+        "A symbolic construct that provides informations about the chemical proportions of the elements that constitute a chemical compound or a specific molecule."^^xsd:string ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
+            owl:someValuesFrom emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ],
+        emmo:EMMO_abf7efbe_6b04_41b8_8326_4dd0f6be753e ;
+    skos:prefLabel "ChemicalFormula"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A symbolic construct that provides informations about the chemical proportions of the elements that constitute a chemical compound or a specific molecule."^^xsd:string .
+
+emmo:EMMO_7efd64d1_05a1_49cd_a7f0_783ca050d4f3 a owl:Class ;
+    rdfs:label "ChemicalComposition"@en ;
+    rdfs:comment "A language construct that provides information about the consitutents of a substance and their fractions or amounts."^^xsd:string ;
+    rdfs:subClassOf emmo:EMMO_bd8db028_aec2_4a44_ad93_1a9f8270f72c ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:unionOf ( emmo:EMMO_0eabfde6_c6c5_4b1f_bf10_e4e0e06e9b2e emmo:EMMO_172e2c96_180b_40f8_a3e7_b624471f40c2 emmo:EMMO_90963312_d9a9_4474_8d10_835aef5b168e ) ] ;
+    skos:prefLabel "ChemicalComposition"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A language construct that provides information about the consitutents of a substance and their fractions or amounts."^^xsd:string .
+
+emmo:EMMO_abf7efbe_6b04_41b8_8326_4dd0f6be753e a owl:Class ;
+    rdfs:label "Chemical"@en ;
+    rdfs:comment "A language object that follows the syntactic rules used in the chemical field."^^xsd:string ;
+    rdfs:subClassOf emmo:EMMO_d8d2144e_5c8d_455d_a643_5caf4d8d9df8 ;
+    skos:prefLabel "Chemical"@en ;
+    emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A language object that follows the syntactic rules used in the chemical field."^^xsd:string .
+

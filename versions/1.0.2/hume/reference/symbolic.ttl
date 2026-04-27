@@ -1,0 +1,558 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/emmo#> .
+@prefix ns2: <http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+rdf:JSON a rdfs:Datatype .
+
+ns1:DateData a owl:Class ;
+    rdfs:label "DateData"@en ;
+    rdfs:comment "A data representing a date."@en ;
+    rdfs:seeAlso "https://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/datatypes.html#date"^^xsd:anyURI ;
+    rdfs:subClassOf ns1:SymbolicData ;
+    skos:prefLabel "DateData"@en ;
+    ns1:elucidation "A data representing a date."@en .
+
+ns1:MatrixData a owl:Class ;
+    rdfs:label "MatrixData"@en ;
+    rdfs:comment "The datatype for bidimensional arrays."@en ;
+    rdfs:subClassOf ns1:ArrayData ;
+    skos:prefLabel "MatrixData"@en ;
+    ns1:OWLRL2DLAxioms "SubClassOf: hasSpatialTile some VectorData"^^xsd:string ;
+    ns1:elucidation "The datatype for bidimensional arrays."@en .
+
+ns1:ScalarData a owl:Class ;
+    rdfs:label "ScalarData"@en ;
+    rdfs:comment "A symbolic data that is not array data."@en ;
+    rdfs:subClassOf ns1:SymbolicData ;
+    skos:prefLabel "ScalarData"@en ;
+    ns1:elucidation "A symbolic data that is not array data."@en ;
+    ns1:note "Scalar data are primitive symbolic data that are not built up of other types of symbolic data."@en .
+
+ns1:String a owl:Class ;
+    rdfs:label "String"@en ;
+    rdfs:comment "A physical made of more than one symbol sequentially arranged."@en ;
+    rdfs:subClassOf ns1:SymbolicConstruct ;
+    skos:example """The word "cat" considered as a collection of 'symbol'-s respecting the rules of english language.
+
+In this example the 'symbolic' entity "cat" is not related to the real cat, but it is only a word (like it would be to an italian person that ignores the meaning of this english word).
+
+If an 'interpreter' skilled in english language is involved in a 'semiotic' process with this word, that "cat" became also a 'sign' i.e. it became for the 'interpreter' a representation for a real cat."""@en ;
+    skos:prefLabel "String"@en ;
+    ns1:elucidation "A physical made of more than one symbol sequentially arranged."@en ;
+    ns1:note "A string is made of concatenated symbols whos arrangement is one-dimensional. Each symbol can have only one previous and one next neighborhood (bidirectional list)."@en,
+        "A string is not requested to respect any syntactic rule: it's simply directly made of symbols."@en .
+
+ns1:VectorData a owl:Class ;
+    rdfs:label "VectorData"@en ;
+    rdfs:comment "The datatype for monodimensional arrays."@en ;
+    rdfs:subClassOf ns1:ArrayData ;
+    skos:prefLabel "VectorData"@en ;
+    ns1:OWLRL2DLAxioms "SubClassOf: hasSpatialTile some ScalarData"^^xsd:string ;
+    ns1:elucidation "The datatype for monodimensional arrays."@en .
+
+ns1:hasStringValue a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "hasStringValue"@en ;
+    ns2:python_name "hasStringValue"@en ;
+    rdfs:domain ns1:StringData ;
+    rdfs:range xsd:string ;
+    rdfs:subPropertyOf ns1:hasDataValue ;
+    skos:prefLabel "hasStringValue"@en ;
+    ns1:note "The owl:dataProperty that provides a serialisation of an EMMO string data entity."^^xsd:string .
+
+ns1:hasSymbolValue a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "hasSymbolValue"@en ;
+    ns2:python_name "hasSymbolValue"@en ;
+    rdfs:domain [ a owl:Class ;
+            owl:intersectionOf ( ns1:SymbolicData ns1:Symbol ) ] ;
+    rdfs:subPropertyOf ns1:hasDataValue ;
+    skos:prefLabel "hasSymbolValue"@en ;
+    ns1:note "The owl:dataProperty that provides a serialisation of an EMMO symbol data entity."^^xsd:string .
+
+<https://w3id.org/emmo/reference/symbolic> a owl:Ontology ;
+    dcterms:abstract """The symbolic multi-perspective combines the contrast and reductionistic perspectives to describe symbolic entities.
+
+A symbolic entity is a discrete data that pocess a reductionistic structure, who's elements can be decoded to tokens from one or more alphabets.
+
+The symbolic module includes symbols, symbolic constructs and formal languages."""@en ;
+    dcterms:contributor ns1:AdhamHashibon,
+        ns1:FrancescoZaccarini,
+        ns1:GeorgSchmitz,
+        ns1:GerhardGoldbeck ;
+    dcterms:creator ns1:EmanueleGhedini,
+        ns1:JesperFriis ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "Symbolic"@en ;
+    rdfs:comment "The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.2/reference/data> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.2/reference/symbolic> ;
+    owl:versionInfo "1.0.2"^^xsd:string ;
+    ns1:contact "emmo@emmc.eu"^^xsd:string .
+
+ns1:Base64Binary a owl:Class ;
+    rdfs:label "Base64Binary"@en ;
+    rdfs:comment "Base-64 encoding of binary data."@en ;
+    rdfs:seeAlso "https://www.w3.org/TR/xmlschema11-2/#base64Binary"^^xsd:anyURI ;
+    rdfs:subClassOf ns1:BinaryData ;
+    skos:prefLabel "Base64Binary"@en ;
+    ns1:OWLRL2DLAxioms "EquivalentTo: hasDataValue some xsd:base64Binary"^^xsd:string ;
+    ns1:elucidation "Base-64 encoding of binary data."@en .
+
+ns1:BooleanData a owl:Class ;
+    rdfs:label "BooleanData"@en ;
+    rdfs:comment "A data representing a boolean number."@en ;
+    rdfs:seeAlso "https://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/datatypes.html#boolean"^^xsd:string ;
+    rdfs:subClassOf ns1:SymbolicData ;
+    skos:prefLabel "BooleanData"@en ;
+    ns1:OWLRL2DLAxioms "EquivalentTo: hasDataValue some xsd:boolean"^^xsd:string ;
+    ns1:elucidation "A data representing a boolean number."@en .
+
+ns1:ByteData a owl:Class ;
+    rdfs:label "ByteData"@en ;
+    rdfs:comment "A data representing 8-bit integer number."@en ;
+    rdfs:seeAlso "https://www.w3.org/TR/xmlschema11-2/#byte"^^xsd:anyURI ;
+    rdfs:subClassOf ns1:ShortData ;
+    skos:prefLabel "ByteData"@en ;
+    ns1:OWLRL2DLAxioms "EquivalentTo: hasDataValue some xsd:byte"^^xsd:string ;
+    ns1:elucidation "A data representing 8-bit integer number."@en .
+
+ns1:DateTimeStampData a owl:Class ;
+    rdfs:label "DateTimeStampData"@en ;
+    rdfs:comment "A data that represents instants of time, marked with a particular time zone offset."@en ;
+    rdfs:seeAlso "https://www.w3.org/TR/xmlschema11-2/#dateTimeStamp"^^xsd:anyURI ;
+    rdfs:subClassOf ns1:DateTimeData ;
+    skos:prefLabel "DateTimeStampData"@en ;
+    ns1:OWLRL2DLAxioms "EquivalentTo: hasDataValue some xsd:dateTimeStamp"^^xsd:string ;
+    ns1:elucidation "A data that represents instants of time, marked with a particular time zone offset."@en .
+
+ns1:DoubleData a owl:Class ;
+    rdfs:label "DoubleData"@en ;
+    rdfs:comment "A symbolic data representing a 64-bit floating point numbers incl. ±Inf, ±0, NaN."@en ;
+    rdfs:seeAlso "https://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/datatypes.html#double"^^xsd:anyURI ;
+    rdfs:subClassOf ns1:FloatingPointData ;
+    skos:prefLabel "DoubleData"@en ;
+    ns1:OWLRL2DLAxioms "EquivalentTo: hasDataValue some xsd:double"^^xsd:string ;
+    ns1:elucidation "A symbolic data representing a 64-bit floating point numbers incl. ±Inf, ±0, NaN."@en .
+
+ns1:FloatData a owl:Class ;
+    rdfs:label "FloatData"@en ;
+    rdfs:comment "A symbolic data representing a 32-bit floating point numbers incl. ±Inf, ±0, NaN."@en ;
+    rdfs:seeAlso "https://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/datatypes.html#float"^^xsd:anyURI ;
+    rdfs:subClassOf ns1:FloatingPointData ;
+    skos:prefLabel "FloatData"@en ;
+    ns1:OWLRL2DLAxioms "EquivalentTo: hasDataValue some xsd:float"^^xsd:string ;
+    ns1:elucidation "A symbolic data representing a 32-bit floating point numbers incl. ±Inf, ±0, NaN."@en .
+
+ns1:HexBinaryData a owl:Class ;
+    rdfs:label "HexBinaryData"@en ;
+    rdfs:comment "Hexadecimal encoding of binary data, using the alphabet [0-9a-f]."@en ;
+    rdfs:seeAlso "https://www.w3.org/TR/xmlschema11-2/#hexBinary"^^xsd:anyURI ;
+    rdfs:subClassOf ns1:BinaryData ;
+    skos:prefLabel "HexBinaryData"@en ;
+    ns1:OWLRL2DLAxioms "EquivalentTo: hasDataValue some xsd:hexBinary"^^xsd:string ;
+    ns1:elucidation "Hexadecimal encoding of binary data, using the alphabet [0-9a-f]."@en .
+
+ns1:Language a owl:Class ;
+    rdfs:subClassOf ns1:Symbolic ;
+    skos:prefLabel "Language"@en ;
+    ns1:elucidation "A language object is a discrete data entity respecting specific language syntactic rules (a well-formed formula)."@en .
+
+ns1:NegativeIntegerData a owl:Class ;
+    rdfs:label "NegativeIntegerData"@en ;
+    rdfs:comment "A data representing an integer number < 0."@en ;
+    rdfs:seeAlso "https://www.w3.org/TR/xmlschema11-2/#negativeInteger"^^xsd:anyURI ;
+    rdfs:subClassOf ns1:NonPositiveIntegerData ;
+    skos:prefLabel "NegativeIntegerData"@en ;
+    ns1:OWLRL2DLAxioms "EquivalentTo: hasDataValue some xsd:negativeInteger"^^xsd:string ;
+    ns1:elucidation "A data representing an integer number < 0."@en .
+
+ns1:PositiveIntegerData a owl:Class ;
+    rdfs:label "PositiveIntegerData"@en ;
+    rdfs:comment "A data representing an integer number > 0."@en ;
+    rdfs:seeAlso "https://www.w3.org/TR/xmlschema11-2/#positiveInteger"^^xsd:anyURI ;
+    rdfs:subClassOf ns1:NonNegativeIntegerData ;
+    skos:prefLabel "PositiveIntegerData"@en ;
+    ns1:OWLRL2DLAxioms "EquivalentTo: hasDataValue some xsd:positiveInteger"^^xsd:string ;
+    ns1:elucidation "A data representing an integer number > 0."@en .
+
+ns1:Symbol a owl:Class ;
+    rdfs:subClassOf ns1:SymbolicByStructure ;
+    skos:altLabel "AlphabeticEntity"@en ;
+    skos:example "A letter, a number, a punctuation sign, a space, an UTF-8 character."@en,
+        "The class of letter \"A\" is the symbol as idea and the letter A that you see on the screen is the mark that can be represented by an individual belonging to \"A\"."@en ;
+    skos:prefLabel "Symbol"@en ;
+    ns1:elucidation "The class of individuals that stand for an elementary mark of a specific symbolic code (alphabet)."@en ;
+    ns1:note """Subclasses of 'Symbol' are alphabets, in formal languages terminology. A 'Symbol' is atomic for that alphabet, i.e. it has no parts that are symbols for the same alphabet.
+e.g. a math symbol is not made of other math symbols
+A Symbol may be a String in another language.
+e.g. "Bq" is the symbol for Becquerel units when dealing with metrology, or a string of "B" and "q" symbols when dealing with characters."""@en,
+        """Symbols of a formal language need not be symbols of anything. For instance there are logical constants which do not refer to any idea, but rather serve as a form of punctuation in the language (e.g. parentheses).
+
+Symbols of a formal language must be capable of being specified without any reference to any interpretation of them.
+(Wikipedia)"""@en,
+        "The class is the idea of the symbol, while the individual of that class stands for a specific mark (or token) of that idea."@en .
+
+ns1:SymbolicConstruct a owl:Class ;
+    rdfs:subClassOf ns1:SymbolicByStructure ;
+    skos:prefLabel "SymbolicConstruct"@en ;
+    ns1:OWLRL2DLAxioms "SubClassOf: hasProperPart some Symbolic"^^xsd:string ;
+    ns1:elucidation "A symbolic entity made of other symbolic entities according to a specific spatial configuration."@en ;
+    ns1:note "This class collects individuals that represents arrangements of strings, or other symbolic compositions, without any particular predefined arrangement schema."@en .
+
+ns1:UnsignedByteData a owl:Class ;
+    rdfs:label "UnsignedByteData"@en ;
+    rdfs:comment "A data representing 8-bit non-negative integer number, 0...255."@en ;
+    rdfs:seeAlso "https://www.w3.org/TR/xmlschema11-2/#unsignedByte"^^xsd:anyURI ;
+    rdfs:subClassOf ns1:ShortData,
+        ns1:UnsignedShortData ;
+    skos:prefLabel "UnsignedByteData"@en ;
+    ns1:OWLRL2DLAxioms "EquivalentTo: hasDataValue some xsd:unsignedByte"^^xsd:string ;
+    ns1:elucidation "A data representing 8-bit non-negative integer number, 0...255."@en .
+
+ns1:ArrayData a owl:Class ;
+    rdfs:label "ArrayData"@en ;
+    rdfs:comment "An array is a datatype representing an ordered collection of elements (or values) that can be accessed by indexes. Arrays have an analog mathematical counterpart in vectors and matrixes, but are separate concepts. Arrays may be multidimensional."@en ;
+    rdfs:subClassOf ns1:SymbolicData ;
+    skos:prefLabel "ArrayData"@en ;
+    ns1:OWLRL2DLAxioms "SubClassOf: hasScalarData some ScalarData"^^xsd:string,
+        "SubClassOf: hasSpatialTile some SymbolicData"^^xsd:string ;
+    ns1:conceptualisation "An array is a datatype representing an ordered collection of elements (or values) that can be accessed by indexes. Arrays have an analog mathematical counterpart in vectors and matrixes, but are separate concepts. Arrays may be multidimensional."@en ;
+    ns1:note """In the EMMO we use the following JSON based syntax to represent arrays:
+- mono-dimensional array [v1,v2,...,vn] (vector)
+- bi-dimensional array [[v1,v2,...,vn],[w1,w2,...,2n]] (matrix)
+This notation can be extended to multidimensional arrays."""@en,
+        """The structure of an array is expressed mereologically. It consists of a set of equally sized tiles.
+The tiles of an n-dimensional array are (n-1) dimensional arrays. The tiles of an (n-1)-dimensional array are (n-2) dimensional arrays, and so forth down to 1-dimensional arrays (vectors), whos tiles are scalar data."""@en .
+
+ns1:BinaryData a owl:Class ;
+    rdfs:label "BinaryData"@en ;
+    rdfs:comment "Symbolic data that can be represented as a sequence of zeros and ones."@en ;
+    rdfs:subClassOf ns1:SymbolicData ;
+    skos:prefLabel "BinaryData"@en ;
+    ns1:elucidation "Symbolic data that can be represented as a sequence of zeros and ones."@en .
+
+ns1:DateTimeData a owl:Class ;
+    rdfs:label "DateTimeData"@en ;
+    rdfs:comment "A data that represents instants of time, optionally marked with a particular time zone offset."@en ;
+    rdfs:seeAlso "https://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/datatypes.html#dateTime"^^xsd:anyURI ;
+    rdfs:subClassOf ns1:SymbolicData ;
+    skos:prefLabel "DateTimeData"@en ;
+    ns1:OWLRL2DLAxioms "EquivalentTo: hasDataValue some xsd:dateTime"^^xsd:string ;
+    ns1:elucidation "A data that represents instants of time, optionally marked with a particular time zone offset."@en .
+
+ns1:DecimalData a owl:Class ;
+    rdfs:label "DecimalData"@en ;
+    rdfs:comment "A data representing an arbitrary precision decimal number."@en ;
+    rdfs:seeAlso "https://www.w3.org/TR/xmlschema11-2/#decimal"^^xsd:anyURI ;
+    rdfs:subClassOf ns1:RationalData ;
+    skos:prefLabel "DecimalData"@en ;
+    ns1:OWLRL2DLAxioms "EquivalentTo: hasDataValue some xsd:decimal"^^xsd:string ;
+    ns1:elucidation "A data representing an arbitrary precision decimal number."@en .
+
+ns1:FloatingPointData a owl:Class ;
+    rdfs:label "FloatingPointData"@en ;
+    rdfs:comment "A symbolic data representing a numerical floating point value."@en ;
+    rdfs:subClassOf ns1:NumericData ;
+    skos:prefLabel "FloatingPointData"@en ;
+    ns1:elucidation "A symbolic data representing a numerical floating point value."@en .
+
+ns1:NonPositiveIntegerData a owl:Class ;
+    rdfs:label "NonPositiveIntegerData"@en ;
+    rdfs:comment "A data representing an integer number <= 0."@en ;
+    rdfs:seeAlso "https://www.w3.org/TR/xmlschema11-2/#nonPositiveInteger"^^xsd:anyURI ;
+    rdfs:subClassOf ns1:IntegerData ;
+    skos:prefLabel "NonPositiveIntegerData"@en ;
+    ns1:OWLRL2DLAxioms "EquivalentTo: hasDataValue some xsd:nonPositiveInteger"^^xsd:string ;
+    ns1:elucidation "A data representing an integer number <= 0."@en .
+
+ns1:NumericData a owl:Class ;
+    rdfs:label "NumericData"@en ;
+    rdfs:comment "A symbolic data representing a numerical value."@en ;
+    rdfs:subClassOf ns1:SymbolicData ;
+    skos:prefLabel "NumericData"@en ;
+    ns1:elucidation "A symbolic data representing a numerical value."@en .
+
+ns1:RationalData a owl:Class ;
+    rdfs:label "RationalData"@en ;
+    rdfs:comment "A symbolic data representing a rational number, that is a number that can be expressed exact by `p/q` where `p` and `q` are integer numbers."@en ;
+    rdfs:subClassOf ns1:RealData ;
+    skos:prefLabel "RationalData"@en ;
+    ns1:OWLRL2DLAxioms "EquivalentTo: hasDataValue some owl:rational"^^xsd:string ;
+    ns1:elucidation "A symbolic data representing a rational number, that is a number that can be expressed exact by `p/q` where `p` and `q` are integer numbers."@en .
+
+ns1:RealData a owl:Class ;
+    rdfs:label "RealData"@en ;
+    rdfs:comment "A data representing a real number."@en ;
+    rdfs:subClassOf ns1:NumericData ;
+    skos:prefLabel "RealData"@en ;
+    ns1:OWLRL2DLAxioms "EquivalentTo: hasDataValue some owl:real"^^xsd:string ;
+    ns1:elucidation "A data representing a real number."@en .
+
+ns1:StringData a owl:Class ;
+    rdfs:label "StringData"@en ;
+    rdfs:comment "Symbolic data that consist of a sequence of characters."@en ;
+    rdfs:seeAlso "https://www.w3.org/TR/xmlschema11-2/#string"^^xsd:anyURI ;
+    rdfs:subClassOf ns1:SymbolicData ;
+    skos:prefLabel "StringData"@en ;
+    ns1:OWLRL2DLAxioms "EquivalentTo: hasDataValue some xsd:string"^^xsd:string ;
+    ns1:elucidation "Symbolic data that consist of a sequence of characters."@en ;
+    ns1:note "Since a string is a simple type that can contain only characters but not other child elements, is often not suitable for representing human text, that may need additional elements for control of aspects such as bidirectional formatting or ruby annotation."@en .
+
+ns1:SymbolicByStructure a owl:Class ;
+    rdfs:subClassOf ns1:Symbolic ;
+    skos:prefLabel "SymbolicByStructure"@en ;
+    ns1:elucidation "Symbolic caterorised by its internal structure."@en .
+
+ns1:UnsignedIntData a owl:Class ;
+    rdfs:label "UnsignedIntData"@en ;
+    rdfs:comment "A data representing 32-bit non-negative integer number, 0...4294967295."@en ;
+    rdfs:seeAlso "https://www.w3.org/TR/xmlschema11-2/#unsignedInt"^^xsd:anyURI ;
+    rdfs:subClassOf ns1:LongData,
+        ns1:UnsignedLongData ;
+    skos:prefLabel "UnsignedIntData"@en ;
+    ns1:OWLRL2DLAxioms "EquivalentTo: hasDataValue some xsd:unsignedInt"^^xsd:string ;
+    ns1:elucidation "A data representing 32-bit non-negative integer number, 0...4294967295."@en .
+
+ns1:UnsignedLongData a owl:Class ;
+    rdfs:label "UnsignedLongData"@en ;
+    rdfs:comment "A data representing 64-bit non-negative integer number, 0...18446744073709551615."@en ;
+    rdfs:seeAlso "https://www.w3.org/TR/xmlschema11-2/#unsignedLong"^^xsd:anyURI ;
+    rdfs:subClassOf ns1:NonNegativeIntegerData ;
+    skos:prefLabel "UnsignedLongData"@en ;
+    ns1:OWLRL2DLAxioms "EquivalentTo: hasDataValue some xsd:unsignedLong"^^xsd:string ;
+    ns1:elucidation "A data representing 64-bit non-negative integer number, 0...18446744073709551615."@en .
+
+ns1:UnsignedShortData a owl:Class ;
+    rdfs:label "UnsignedShortData"@en ;
+    rdfs:comment "A data representing 16-bit non-negative integer number, 0...65535."@en ;
+    rdfs:seeAlso "https://www.w3.org/TR/xmlschema11-2/#unsignedShort"^^xsd:anyURI ;
+    rdfs:subClassOf ns1:IntData,
+        ns1:UnsignedIntData ;
+    skos:prefLabel "UnsignedShortData"@en ;
+    ns1:OWLRL2DLAxioms "EquivalentTo: hasDataValue some xsd:unsignedShort"^^xsd:string ;
+    ns1:elucidation "A data representing 16-bit non-negative integer number, 0...65535."@en .
+
+ns1:IntData a owl:Class ;
+    rdfs:label "IntData"@en ;
+    rdfs:comment "A data representing 32-bit integer number."@en ;
+    rdfs:seeAlso "https://www.w3.org/TR/xmlschema11-2/#int"^^xsd:anyURI ;
+    rdfs:subClassOf ns1:LongData ;
+    skos:prefLabel "IntData"@en ;
+    ns1:OWLRL2DLAxioms "EquivalentTo: hasDataValue some xsd:int"^^xsd:string ;
+    ns1:elucidation "A data representing 32-bit integer number."@en .
+
+ns1:LongData a owl:Class ;
+    rdfs:label "LongData"@en ;
+    rdfs:comment "A data representing 64-bit integer number."@en ;
+    rdfs:seeAlso "https://www.w3.org/TR/xmlschema11-2/#long"^^xsd:anyURI ;
+    rdfs:subClassOf ns1:IntegerData ;
+    skos:prefLabel "LongData"@en ;
+    ns1:OWLRL2DLAxioms "EquivalentTo: hasDataValue some xsd:long"^^xsd:string ;
+    ns1:elucidation "A data representing 64-bit integer number."@en .
+
+ns1:NonNegativeIntegerData a owl:Class ;
+    rdfs:label "NonNegativeIntegerData"@en ;
+    rdfs:comment "A data representing an integer number >= 0."@en ;
+    rdfs:seeAlso "https://www.w3.org/TR/xmlschema11-2/#nonNegativeInteger"^^xsd:anyURI ;
+    rdfs:subClassOf ns1:IntegerData ;
+    skos:prefLabel "NonNegativeIntegerData"@en ;
+    ns1:OWLRL2DLAxioms "EquivalentTo: hasDataValue some xsd:nonNegativeInteger"^^xsd:string ;
+    ns1:elucidation "A data representing an integer number >= 0."@en .
+
+ns1:ShortData a owl:Class ;
+    rdfs:label "ShortData"@en ;
+    rdfs:comment "A data representing 16-bit integer number."@en ;
+    rdfs:seeAlso "https://www.w3.org/TR/xmlschema11-2/#short"^^xsd:anyURI ;
+    rdfs:subClassOf ns1:IntData ;
+    skos:prefLabel "ShortData"@en ;
+    ns1:OWLRL2DLAxioms "EquivalentTo: hasDataValue some xsd:short"^^xsd:string ;
+    ns1:elucidation "A data representing 16-bit integer number."@en .
+
+ns1:IntegerData a owl:Class ;
+    rdfs:label "IntegerData"@en ;
+    rdfs:comment "A data representing an arbritrary sized integer number."@en ;
+    rdfs:seeAlso "https://www.w3.org/TR/xmlschema11-2/#integer"^^xsd:anyURI ;
+    rdfs:subClassOf ns1:DecimalData ;
+    skos:prefLabel "IntegerData"@en ;
+    ns1:OWLRL2DLAxioms "EquivalentTo: hasDataValue some xsd:integer"^^xsd:string ;
+    ns1:elucidation "A data representing an arbritrary sized integer number."@en .
+
+ns1:Symbolic a owl:Class ;
+    rdfs:subClassOf ns1:DiscreteData ;
+    skos:example """fe780
+emmo
+!5*a
+cat
+for(i=0;i<N;++i)"""@en ;
+    skos:prefLabel "Symbolic"@en ;
+    ns1:OWLRL2DLAxioms "EquivalentTo: SymbolicConstruct or Symbol"^^xsd:string ;
+    ns1:elucidation "A discrete data whose elements can be decoded as tokens from one or more alphabets, without necessarily respecting syntactic rules."@en ;
+    ns1:note """A symbolic entity is not necessarily graphical (e.g. it doesn't necessarily have the physical shape of a letter), but its elements can be decoded and put in relation with an alphabet.
+In other words, a sequence of bit "1000010" in a RAM (a non-graphical entity) is a valid symbol since it can be decoded through ASCII rules as the letter "B". The same holds for an entity standing for the sound of a voice saying: "Hello", since it can be decomposed in discrete parts, each of them being associated to a letter of an alphabet."""@en,
+        """A symbolic object possesses a reductionistic oriented structure.
+For example, text is made of words, spaces and punctuations. Words are made of characters (i.e. atomic symbols)."""@en .
+
+ns1:SymbolicData a owl:Class ;
+    rdfs:label "SymbolicData"@en ;
+    rdfs:comment "A symbolic data is a data that is rooted on some specified symbolic based encoding, such as floating point numbers, strings, integer. When a symbolic data is used for expressing numerical data (e.g., integer), it is not to be intended as a mathematical entity (even if it may be interpreted as such) but as a syntactic structure (datastructures or datatypes) based on concatenated tokens (or symbols, letters) that can deliver data."@en,
+        "The class for entities which stands for a specific data format expressed using a symbolic encoding."@en ;
+    rdfs:seeAlso "https://www.w3.org/TR/2012/REC-xmlschema11-2-20120405/#built-in-datatypes"^^xsd:anyURI,
+        "https://www.w3.org/TR/rdf11-concepts/"^^xsd:anyURI,
+        "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#Datatype_Maps"^^xsd:string,
+        "https://www.w3schools.com/xml/schema_dtypes_numeric.asp"^^xsd:string ;
+    rdfs:subClassOf ns1:Symbolic ;
+    skos:altLabel "LiteralData"^^xsd:string ;
+    skos:prefLabel "SymbolicData"@en ;
+    ns1:OWLRL2DLAxioms "DisjointUnionOf: ArrayData, ScalarData"^^xsd:string ;
+    ns1:conceptualisation "A symbolic data is a data that is rooted on some specified symbolic based encoding, such as floating point numbers, strings, integer. When a symbolic data is used for expressing numerical data (e.g., integer), it is not to be intended as a mathematical entity (even if it may be interpreted as such) but as a syntactic structure (datastructures or datatypes) based on concatenated tokens (or symbols, letters) that can deliver data."@en ;
+    ns1:elucidation "The class for entities which stands for a specific data format expressed using a symbolic encoding."@en .
+
+ns1:hasDataValue a owl:DatatypeProperty ;
+    rdfs:label "hasDataValue"@en ;
+    ns2:python_name "hasDataValue"@en ;
+    rdfs:comment "The owl:dataProperty that provides a serialisation of an EMMO data entity."^^xsd:string ;
+    rdfs:domain ns1:SymbolicData ;
+    rdfs:subPropertyOf owl:topDataProperty ;
+    skos:prefLabel "hasDataValue"@en ;
+    ns1:elucidation "The owl:dataProperty that provides a serialisation of an EMMO data entity."^^xsd:string ;
+    ns1:note "This is the superproperty of all data properties used to serialise a fundamental data type in the EMMO Data perspective. An entity can have only one data value expressing its serialisation (e.g. a Real entity cannot have two different real values)."^^xsd:string .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf ns1:UnsignedByteData ;
+    owl:onProperty ns1:hasDataValue ;
+    owl:someValuesFrom xsd:unsignedByte .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Language ;
+    owl:annotatedTarget "Language"@en ;
+    ns1:etymology "From Latin lingua (“tongue, speech, language”), from Old Latin dingua (“tongue”)."@en .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf ns1:DateTimeStampData ;
+    owl:onProperty ns1:hasDataValue ;
+    owl:someValuesFrom xsd:dateTimeStamp .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf ns1:ByteData ;
+    owl:onProperty ns1:hasDataValue ;
+    owl:someValuesFrom xsd:byte .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf ns1:RealData ;
+    owl:onProperty ns1:hasDataValue ;
+    owl:someValuesFrom owl:real .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf ns1:ShortData ;
+    owl:onProperty ns1:hasDataValue ;
+    owl:someValuesFrom xsd:short .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf ns1:IntegerData ;
+    owl:onProperty ns1:hasDataValue ;
+    owl:someValuesFrom xsd:integer .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Symbolic ;
+    owl:annotatedTarget "Symbolic"@en ;
+    ns1:etymology "From Ancient Greek σύμβολον (súmbolon, “a sign by which one infers something; a mark, token, badge, ticket, tally, check, a signal, watchword, outward sign”), from συμβάλλω (sumbállō, “I throw together, dash together, compare, correspond, tally, come to a conclusion”), from σύν (sún, “with, together”) + βάλλω (bállō, “I throw, put”)."^^xsd:string .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf ns1:NonNegativeIntegerData ;
+    owl:onProperty ns1:hasDataValue ;
+    owl:someValuesFrom xsd:nonNegativeInteger .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf ns1:RationalData ;
+    owl:onProperty ns1:hasDataValue ;
+    owl:someValuesFrom owl:rational .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf ns1:UnsignedIntData ;
+    owl:onProperty ns1:hasDataValue ;
+    owl:someValuesFrom xsd:unsignedInt .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf ns1:FloatData ;
+    owl:onProperty ns1:hasDataValue ;
+    owl:someValuesFrom xsd:float .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf ns1:UnsignedLongData ;
+    owl:onProperty ns1:hasDataValue ;
+    owl:someValuesFrom xsd:unsignedLong .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf ns1:DoubleData ;
+    owl:onProperty ns1:hasDataValue ;
+    owl:someValuesFrom xsd:double .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf ns1:NonPositiveIntegerData ;
+    owl:onProperty ns1:hasDataValue ;
+    owl:someValuesFrom xsd:nonPositiveInteger .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf ns1:LongData ;
+    owl:onProperty ns1:hasDataValue ;
+    owl:someValuesFrom xsd:long .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf ns1:PositiveIntegerData ;
+    owl:onProperty ns1:hasDataValue ;
+    owl:someValuesFrom xsd:positiveInteger .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf ns1:IntData ;
+    owl:onProperty ns1:hasDataValue ;
+    owl:someValuesFrom xsd:int .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf ns1:NegativeIntegerData ;
+    owl:onProperty ns1:hasDataValue ;
+    owl:someValuesFrom xsd:negativeInteger .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf ns1:HexBinaryData ;
+    owl:onProperty ns1:hasDataValue ;
+    owl:someValuesFrom xsd:hexBinary .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf ns1:StringData ;
+    owl:onProperty ns1:hasDataValue ;
+    owl:someValuesFrom xsd:string .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf ns1:UnsignedShortData ;
+    owl:onProperty ns1:hasDataValue ;
+    owl:someValuesFrom xsd:unsignedShort .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf ns1:DecimalData ;
+    owl:onProperty ns1:hasDataValue ;
+    owl:someValuesFrom xsd:decimal .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf ns1:BooleanData ;
+    owl:onProperty ns1:hasDataValue ;
+    owl:someValuesFrom xsd:boolean .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf ns1:Base64Binary ;
+    owl:onProperty ns1:hasDataValue ;
+    owl:someValuesFrom xsd:base64Binary .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf ns1:DateTimeData ;
+    owl:onProperty ns1:hasDataValue ;
+    owl:someValuesFrom xsd:dateTime .
+

@@ -1,0 +1,61 @@
+@prefix : <https://w3id.org/emmo/hume/reference/information#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+: a owl:Ontology ;
+    dcterms:abstract ""@en ;
+    dcterms:contributor <https://orcid.org/FrancescaBleken>,
+        <https://orcid.org/FrancescoZaccarini>,
+        <https://orcid.org/GerhardGoldbeck>,
+        <https://orcid.org/JesperFriis>,
+        "Michael Noeske, FRAUNHOFER IFAM, DE"@en ;
+    dcterms:creator <https://orcid.org/EmanueleGhedini> ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "Information"@en ;
+    rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.3/perspectives/semiotics>,
+        <https://w3id.org/emmo/1.0.3/reference/data> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.3/hume/reference/information> ;
+    owl:versionInfo "1.0.3"^^xsd:string ;
+    ns1:contact "emmo@emmc.eu"^^xsd:string .
+
+ns1:Information a owl:Class ;
+    rdfs:label "Information"@en ;
+    rdfs:comment "Information is data with a meaning (semiotic sign)."@en,
+        """The General Definition of Information (GDI) can be used to define the concept of information.
+(GDI) a is an instance of information, understood as semantic content, if and only if:
+  GDI.l) a consists of n data, for n > 1;
+  GDI.2) the data are well formed;
+  GDI.3) the well-formed data are meaningful.
+
+In the EMMO conceptualisation, well-formed data are data with a specific syntactic structure (symbolic and reductionistic modules), while meaningful data are data that are part of a semiotic interpretation process that declares what the data are about (semiotic module)."""@en ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( ns1:Data ns1:Sign ) ] ;
+    skos:prefLabel "Information"@en ;
+    ns1:conceptualisation """The General Definition of Information (GDI) can be used to define the concept of information.
+(GDI) a is an instance of information, understood as semantic content, if and only if:
+  GDI.l) a consists of n data, for n > 1;
+  GDI.2) the data are well formed;
+  GDI.3) the well-formed data are meaningful.
+
+In the EMMO conceptualisation, well-formed data are data with a specific syntactic structure (symbolic and reductionistic modules), while meaningful data are data that are part of a semiotic interpretation process that declares what the data are about (semiotic module)."""@en ;
+    ns1:elucidation "Information is data with a meaning (semiotic sign)."@en .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "Luciano Floridi, \"Information - A Very Short Introduction\", Oxford University Press (2010) ISBN: 9780199551378"@en ;
+    owl:annotatedProperty ns1:conceptualisation ;
+    owl:annotatedSource ns1:Information ;
+    owl:annotatedTarget """The General Definition of Information (GDI) can be used to define the concept of information.
+(GDI) a is an instance of information, understood as semantic content, if and only if:
+  GDI.l) a consists of n data, for n > 1;
+  GDI.2) the data are well formed;
+  GDI.3) the well-formed data are meaningful.
+
+In the EMMO conceptualisation, well-formed data are data with a specific syntactic structure (symbolic and reductionistic modules), while meaningful data are data that are part of a semiotic interpretation process that declares what the data are about (semiotic module)."""@en .
+
