@@ -4987,22 +4987,22 @@ pH = −10 log(a_OH-)"""@en .
     :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "1/12 of the mass of an atom of the nuclide 12C in the ground state at rest."@en ;
     :EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.A00497"^^xsd:string .
 
-:EMMO_3ef37f82_cd1a_4d49_ace1_83b17487c8e2 a owl:Class ;
-    rdfs:label "MagneticMoment"@en ;
-    rdfs:comment "A vector quantity equal to the product of the current, the loop area, and the unit vector normal to the loop plane, the direction of which corresponds to the loop orientation"@en ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty :EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
-            owl:someValuesFrom :EMMO_120d86b6_d7c4_4490_8ef2_8a5f58403950 ],
-        :EMMO_af794e9d_dc7d_4756_83e1_2cd0e2ec864e ;
-    skos:altLabel "MagneticAreaMoment"@en ;
-    skos:prefLabel "MagneticMoment"@en ;
-    :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "https://qudt.org/vocab/quantitykind/MagneticMoment"^^xsd:string ;
-    :EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q242657"^^xsd:string ;
-    :EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=121-11-49"^^xsd:string ;
-    :EMMO_8de5d5bf_db1c_40ac_b698_095ba3b18578 "6-23"^^xsd:string ;
-    :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A vector quantity equal to the product of the current, the loop area, and the unit vector normal to the loop plane, the direction of which corresponds to the loop orientation"@en ;
-    :EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.M03688"^^xsd:string .
+#:EMMO_3ef37f82_cd1a_4d49_ace1_83b17487c8e2 a owl:Class ;
+#    rdfs:label "MagneticMoment"@en ;
+#    rdfs:comment "A vector quantity equal to the product of the current, the loop area, and the unit vector normal to the loop plane, the direction of which corresponds to the loop orientation"@en ;
+#    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
+#    rdfs:subClassOf [ a owl:Restriction ;
+#            owl:onProperty :EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+#            owl:someValuesFrom :EMMO_120d86b6_d7c4_4490_8ef2_8a5f58403950 ],
+#        :EMMO_af794e9d_dc7d_4756_83e1_2cd0e2ec864e ;
+#    skos:altLabel "MagneticAreaMoment"@en ;
+#    skos:prefLabel "MagneticMoment"@en ;
+#    :EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc "https://qudt.org/vocab/quantitykind/MagneticMoment"^^xsd:string ;
+#    :EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 "https://www.wikidata.org/wiki/Q242657"^^xsd:string ;
+#    :EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f "https://www.electropedia.org/iev/iev.nsf/display?openform&ievref=121-11-49"^^xsd:string ;
+#    :EMMO_8de5d5bf_db1c_40ac_b698_095ba3b18578 "6-23"^^xsd:string ;
+#    :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A vector quantity equal to the product of the current, the loop area, and the unit vector normal to the loop plane, the direction of which corresponds to the loop orientation"@en ;
+#    :EMMO_fe015383_afb3_44a6_ae86_043628697aa2 "https://doi.org/10.1351/goldbook.M03688"^^xsd:string .
 
 :EMMO_3f2a669c_101b_428e_9cfc_0157986c36d5 a owl:Class ;
     rdfs:label "BohrRadius"^^xsd:string ;
@@ -9059,7 +9059,7 @@ Sex of a human being."""@en ;
 
 :EMMO_a45dc074_c5ed_4aad_a4e7_141a02fe1d73 a owl:Class ;
     rdfs:label "RelativeMassFractionOfVapour"@en ;
-    rdfs:comment """Quotient of mass concentration of water vapour and mass concentration at its saturation 
+    rdfs:comment """Quotient of mass concentration of water vapour and mass concentration at its saturation
 
 ψ = r/rsat
 
@@ -9069,7 +9069,7 @@ where r is mass ratio of water vapour to dry gas and rsat is the mass ratio of w
         :EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ;
     skos:prefLabel "RelativeMassFractionOfVapour"@en ;
     :EMMO_8de5d5bf_db1c_40ac_b698_095ba3b18578 "5-35"^^xsd:string ;
-    :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """Quotient of mass concentration of water vapour and mass concentration at its saturation 
+    :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """Quotient of mass concentration of water vapour and mass concentration at its saturation
 
 ψ = r/rsat
 
@@ -26632,14 +26632,14 @@ If an 'interpreter' skilled in english language is involved in a 'semiotic' proc
 
 :EMMO_5848e476_2768_4988_98f9_9053c532307b a owl:Class ;
     rdfs:label "ParallelWorkflow"@en ;
-    rdfs:comment """A workflow can be seen as a direct acyclic graph, whose nodes are tasks and edges are asymmetric causal relations. A parallel graph occurs when the topological order of such graph if not unique, meaning that there is at least one portion of the workflow in which at least two tasks are running concurrently. 
+    rdfs:comment """A workflow can be seen as a direct acyclic graph, whose nodes are tasks and edges are asymmetric causal relations. A parallel graph occurs when the topological order of such graph if not unique, meaning that there is at least one portion of the workflow in which at least two tasks are running concurrently.
 Concurrent tasks may or may not communicate. Communication is represented as a symmetric causality relation, superimposing the direct acyclic graph structure of the workflow."""@en,
         "A workflow with some tasks running concurrently."@en ;
     rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
     rdfs:subClassOf :EMMO_64963ed6_39c9_4258_85e0_6466c4b5420c ;
     skos:prefLabel "ParallelWorkflow"@en ;
     :EMMO_157fdf31_6387_42be_8e72_10530519214a "https://w3id.org/emmo/raw/1.0.0/doc/figs/ParallelWorkflow.png"^^xsd:anyURI ;
-    :EMMO_31252f35_c767_4b97_a877_1235076c3e13 """A workflow can be seen as a direct acyclic graph, whose nodes are tasks and edges are asymmetric causal relations. A parallel graph occurs when the topological order of such graph if not unique, meaning that there is at least one portion of the workflow in which at least two tasks are running concurrently. 
+    :EMMO_31252f35_c767_4b97_a877_1235076c3e13 """A workflow can be seen as a direct acyclic graph, whose nodes are tasks and edges are asymmetric causal relations. A parallel graph occurs when the topological order of such graph if not unique, meaning that there is at least one portion of the workflow in which at least two tasks are running concurrently.
 Concurrent tasks may or may not communicate. Communication is represented as a symmetric causality relation, superimposing the direct acyclic graph structure of the workflow."""@en ;
     :EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A workflow with some tasks running concurrently."@en .
 
@@ -35099,7 +35099,7 @@ This class allows the picking of parts without necessarily going trough a rigid 
 - a whole is more than merely the sum of its parts (wholism)
 - the parts of a whole are interconnected in a way that can be explained only by reference to the whole (rolism)."""@en ;
     :EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "The holistic perspective is not excluding the reductionistic perspective, on the contrary it can be considered its complement."@en,
-        """Whole and roles are defined using parthood relations. However, there also must be a primitive component in the definition, besides parthood, capturing more subtle relations between entities that makes their relation holistic. 
+        """Whole and roles are defined using parthood relations. However, there also must be a primitive component in the definition, besides parthood, capturing more subtle relations between entities that makes their relation holistic.
 For example, a scattering event between an electron and a nucleus requires electron and nucleus types as parts to exist, but this is not enough to make this event an atom, since it requires a persistent bond. So defining something as an atom iff have parts some electons and a nucleus is not enough."""@en .
 
 :EMMO_057e7d57_aff0_49de_911a_8861d85cef40 a owl:Class ;
@@ -36281,7 +36281,7 @@ This class is expected to host the definition of world objects as they appear in
         :EMMO_cede9297_c60d_4487_9207_62ac963202b5 ;
     owl:priorVersion """The agent concept identifies the parts of a process that are also its drivers. An agent part has an active role with respect to any other generic part, meaning that is involved in the causal chain that characterize the process. An agent is a participant, meaning that is qualifiable as an object.
 As for all holistic relations, there is a level of subjectivity in drawing whole-role relations, so that the identification of an agent within a process is not fully axiomatizable.
-What is axiomatically expressible is that an agent requires to be part of a process (i.e., an agent exists only within a process) but a process may not require an agent to exist (qualified role). Agentless processes may have a distributed causality chain so that the agency is exerted collectively and there is no motivation to draw an holistic connection between the whole and some parts. For example, the breaking of a nail can be caused by an agent such as an hammer, or by the rusting process which is not a participant as required by the agent definition. 
+What is axiomatically expressible is that an agent requires to be part of a process (i.e., an agent exists only within a process) but a process may not require an agent to exist (qualified role). Agentless processes may have a distributed causality chain so that the agency is exerted collectively and there is no motivation to draw an holistic connection between the whole and some parts. For example, the breaking of a nail can be caused by an agent such as an hammer, or by the rusting process which is not a participant as required by the agent definition.
 This concept covers both intentional and non intentional agency."""@en ;
     skos:example "A catalyst. A bus driver. A substance that is initiating a reaction that would not occur without its presence."@en ;
     skos:prefLabel "Agent"@en ;
@@ -40803,7 +40803,7 @@ organization: person or group of people that has its own functions with responsi
     owl:annotatedSource :EMMO_2480b72b_db8d_460f_9a5f_c2912f979046 ;
     owl:annotatedTarget """The agent concept identifies the parts of a process that are also its drivers. An agent part has an active role with respect to any other generic part, meaning that is involved in the causal chain that characterize the process. An agent is a participant, meaning that is qualifiable as an object.
 As for all holistic relations, there is a level of subjectivity in drawing whole-role relations, so that the identification of an agent within a process is not fully axiomatizable.
-What is axiomatically expressible is that an agent requires to be part of a process (i.e., an agent exists only within a process) but a process may not require an agent to exist (qualified role). Agentless processes may have a distributed causality chain so that the agency is exerted collectively and there is no motivation to draw an holistic connection between the whole and some parts. For example, the breaking of a nail can be caused by an agent such as an hammer, or by the rusting process which is not a participant as required by the agent definition. 
+What is axiomatically expressible is that an agent requires to be part of a process (i.e., an agent exists only within a process) but a process may not require an agent to exist (qualified role). Agentless processes may have a distributed causality chain so that the agency is exerted collectively and there is no motivation to draw an holistic connection between the whole and some parts. For example, the breaking of a nail can be caused by an agent such as an hammer, or by the rusting process which is not a participant as required by the agent definition.
 This concept covers both intentional and non intentional agency."""@en .
 
 [] a owl:Axiom ;
@@ -41680,4 +41680,3 @@ _:49 a owl:Restriction ;
     owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
     owl:onClass :EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de ;
     owl:onProperty :EMMO_6b7276a4_4b9d_440a_b577_0277539c0fc4 .
-
