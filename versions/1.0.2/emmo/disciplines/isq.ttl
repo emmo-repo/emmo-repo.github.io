@@ -1254,7 +1254,7 @@ ns1:EMMO_3ef37f82_cd1a_4d49_ace1_83b17487c8e2 a owl:Class ;
     rdfs:comment "A vector quantity equal to the product of the current, the loop area, and the unit vector normal to the loop plane, the direction of which corresponds to the loop orientation"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
-            owl:someValuesFrom ns1:EMMO_120d86b6_d7c4_4490_8ef2_8a5f58403950 ],
+            owl:someValuesFrom ns1:EMMO_c18abee6_8c62_4f04_aac2_55aa1a1fc551 ],
         ns1:EMMO_af794e9d_dc7d_4756_83e1_2cd0e2ec864e ;
     skos:altLabel "MagneticAreaMoment"@en ;
     skos:prefLabel "MagneticMoment"@en ;
@@ -3494,7 +3494,7 @@ ns1:EMMO_a3c78d6f_ae49_47c8_a634_9b6d86b79382 a owl:Class ;
 
 ns1:EMMO_a45dc074_c5ed_4aad_a4e7_141a02fe1d73 a owl:Class ;
     rdfs:label "RelativeMassFractionOfVapour"@en ;
-    rdfs:comment """Quotient of mass concentration of water vapour and mass concentration at its saturation 
+    rdfs:comment """Quotient of mass concentration of water vapour and mass concentration at its saturation
 
 ψ = r/rsat
 
@@ -3503,7 +3503,7 @@ where r is mass ratio of water vapour to dry gas and rsat is the mass ratio of w
         ns1:EMMO_faab3f84_e475_4a46_af9c_7d249f0b9aef ;
     skos:prefLabel "RelativeMassFractionOfVapour"@en ;
     ns1:EMMO_8de5d5bf_db1c_40ac_b698_095ba3b18578 "5-35"^^xsd:string ;
-    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """Quotient of mass concentration of water vapour and mass concentration at its saturation 
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 """Quotient of mass concentration of water vapour and mass concentration at its saturation
 
 ψ = r/rsat
 
@@ -7432,4 +7432,3 @@ ns1:EMMO_2946d40b_24a1_47fa_8176_e3f79bb45064 a owl:Class ;
         ns1:EMMO_f35cff4d_dc09_44cf_a729_22fb79e3bfb2 ;
     skos:prefLabel "ISQDerivedQuantity"@en ;
     ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Derived quantities defined in the International System of Quantities (ISQ)."@en .
-
