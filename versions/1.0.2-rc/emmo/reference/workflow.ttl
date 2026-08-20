@@ -1,0 +1,393 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:EMMO_0277f24a_ea7f_4917_81b7_fb0406c8fc62 rdfs:label "Holistic"@en ;
+    rdfs:comment """A perspective characterized by the belief that:
+- a whole is more than merely the sum of its parts (wholism)
+- the parts of a whole are interconnected in a way that can be explained only by reference to the whole (rolism)."""@en,
+        """An holistic perspective considers each part of the whole as equally important, without the need to position the parts within a hierarchy (in time or space). The interest is on the whole, on its parts (how they contribute to the whole, i.e. their roles), and their types, without going further into specifying the spatial hierarchy or the temporal position of each part.
+This class allows the picking of parts without necessarily going trough a rigid hierarchy of spatial compositions (e.g. body -> organ -> cell -> molecule) or temporal composition. This is inline with the transitive nature of parthood, as it is usually defined in literature."""@en,
+        "The union of classes whole and part."@en .
+
+ns1:EMMO_13191289_6c2b_4741_93e1_82d53bd0e703 rdfs:label "Participant"@en ;
+    rdfs:comment "An object which is a spatial part of a process."@en .
+
+ns1:EMMO_15db234d_ecaf_4715_9838_4b4ec424fb13 rdfs:label "Reductionistic"@en ;
+    rdfs:comment "A class devoted to categorize causal objects by specifying their granularity levels."@en .
+
+ns1:EMMO_1e877c70_3b01_45a8_a8f6_8ce4f6a24660 rdfs:label "Contrast"@en ;
+    rdfs:comment "A perspective in which entities are represented according to the variation of their properties."@en .
+
+ns1:EMMO_1efe8b96_e006_4a33_bc9a_421406cbb9f0 rdfs:label "Whole"@en ;
+    rdfs:comment "The superclass of entities which are defined by requiring the existence of some parts (at least one) of specifically given types, where the specified types are different with respect to the type of the whole."@en .
+
+ns1:EMMO_2480b72b_db8d_460f_9a5f_c2912f979046 rdfs:label "Agent"@en ;
+    rdfs:comment "A participant that is the driver of a process."@en .
+
+ns1:EMMO_2e46d966_9f14_4673_821e_7c7cf2957926 rdfs:label "SpatioTemporalTile"^^xsd:string ;
+    rdfs:comment "The superclass for all tiles belonging to tessellations in which all tiles are connected through spatiotemporal relations hasNext or contacts."@en .
+
+ns1:EMMO_322ce14e_9ede_4841_ad70_302b4d6c5f28 a owl:Class ;
+    rdfs:label "InternalTask"@en ;
+    rdfs:comment "A generic task in a workflow, that is not the begin or the end."@en ;
+    rdfs:subClassOf ns1:EMMO_180bd73b_0c5d_4b1f_ba12_4309c5a50d49,
+        ns1:EMMO_caa63d00_80b1_4408_ac1b_cd0d23b0ec50 ;
+    skos:prefLabel "InternalTask"@en ;
+    ns1:EMMO_157fdf31_6387_42be_8e72_10530519214a "https://w3id.org/emmo/raw/1.0.2/doc/figs/ThroughTile.png"^^xsd:anyURI ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A generic task in a workflow, that is not the begin or the end."@en .
+
+ns1:EMMO_41c5f63b_f0e7_475e_bfac_a92027585979 rdfs:label "SpatioTemporalTileByConnection"@en ;
+    rdfs:comment "The superclass for tiles categorized accordingly to their topological role within a tessellation."@en .
+
+ns1:EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce rdfs:label "Process"@en ;
+    rdfs:comment "The superclass for causal structure classes whose individuals have some temporal item parts that are not of the same type of the whole."@en .
+
+ns1:EMMO_49267eba_5548_4163_8f36_518d65b583f9 rdfs:label "Perspective"@en ;
+    rdfs:comment "The class of causal objects that stand for world objects according to a specific representational perspective."@en .
+
+ns1:EMMO_4ab7fb52_cec3_4c00_90c0_5648f01e3296 a owl:ObjectProperty ;
+    rdfs:label "hasBeginTask"@en ;
+    rdfs:comment "The relation identifying the tasks of a workflow that are not causally temporally dependent by other parts of the workflow."@en ;
+    rdfs:range ns1:EMMO_fa595892_070d_455e_9459_06c97179c080 ;
+    rdfs:subPropertyOf ns1:EMMO_9558cd58_9847_4a0b_936d_32ca83a827a1 ;
+    skos:prefLabel "hasBeginTask"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The relation identifying the tasks of a workflow that are not causally temporally dependent by other parts of the workflow."@en .
+
+ns1:EMMO_53ed8611_2cd7_4286_9ef0_36572117b963 rdfs:label "Fusion"@en ;
+    rdfs:comment "A mereological fusion is any entity that is made up of two or more quantum entities, regardless of the fact that they are or not self-connected. It captures the idea of set, but excluding singletons."@en,
+        "The class of individuals representing mereological fusions consisting of two or more quantum entities."@en,
+        "The union of the CausalCluster and CausalStructure classes."@en .
+
+ns1:EMMO_5e38e44b_a0d1_4afc_a876_95095c0a589f rdfs:label "SpatioTemporalTileByPosition"@en ;
+    rdfs:comment "The superclass for tiles categorized accordingly to their location within a tessellation in terms of causal source, sink or intermediary."@en .
+
+ns1:EMMO_62a1601d_0d97_4103_b972_3bbc30839f91 a owl:ObjectProperty ;
+    rdfs:label "hasIterativeTask"@en ;
+    rdfs:domain ns1:EMMO_64963ed6_39c9_4258_85e0_6466c4b5420c ;
+    rdfs:range ns1:EMMO_9ac10a20_63d0_4bbd_a5d3_f00a0ad4682c,
+        ns1:EMMO_ddecfff6_d3a1_4972_b9e9_3d0ca11a3a0b ;
+    rdfs:subPropertyOf ns1:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a ;
+    skos:prefLabel "hasIterativeTask"@en .
+
+ns1:EMMO_62a76e62_9e17_4f2f_a42c_fc3d0df08cd9 a owl:ObjectProperty ;
+    rdfs:label "hasSerialTask"@en ;
+    rdfs:domain ns1:EMMO_64963ed6_39c9_4258_85e0_6466c4b5420c ;
+    rdfs:range ns1:EMMO_2666a7e3_2ad4_49a0_899e_329607231f4b ;
+    rdfs:subPropertyOf ns1:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a ;
+    skos:prefLabel "hasSerialTask"@en .
+
+ns1:EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf rdfs:label "EMMO"@en ;
+    rdfs:comment """The EMMO conceptualises the world using the primitive concepts of causality and parthood. Parthood is about the composition of world entities starting from other more fundamental entities. Causality is about the interactions between world entities.
+The quantum is the smallest indivisible part of any world entity. Quantum individuals are the fundamental causal constituents of the universe, since it is implied that causality originates from quantum-to-quantum interactions. Quantums are no-dimensional, and their aggregation makes spacetime emerge from their causal structure. We can think of a quantum as an elementary particle after and interaction and before another interaction.
+Causality between macro entities (i.e. entities made of more than one quantum) is explained as the sum of the causality relations between their quantum constituents. Fundamental interactions (quantum fields) are represented as symmetric causality relation between macro entities, while classical interactions are mediated by chain of quantums (i.e. elementary particles).
+The fundamental distinction between world entities is causality self-connectedness: a world entity can be self-connected xor not self-connected depending on the causality network of its fundamental components.
+Void regions do not exist in the EMMO. In other words there is no spacetime without entities and spacetime emerges as relational property not as a self-standing entity). Entities are not placed in space or time: space and time are measured quantities, always relative between entities and are measured. In other words, space and time relations originates from causality interactions."""@en,
+        "The class of all the OWL individuals representing world entities according to EMMO conceptualisation."@en,
+        "The disjoint union of the fundamental mereocausal classes of Quantum, CausalPath, CausalSystem and Collection."@en .
+
+ns1:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606 rdfs:label "Object"@en ;
+    rdfs:comment "An item can be classified as an object according to a type ϕ (a ϕ-object) if it's a ϕ all its temporal item parts are also of type ϕ. This conceptualisation tries to catch the persistency of type in the temporal parts of an entity."@en,
+        "The superclass for causal structure classes whose individuals have all temporal item parts of the same type of the whole."@en .
+
+ns1:EMMO_92227f7f_22e9_4b19_a011_920eac3c7b75 a owl:ObjectProperty ;
+    rdfs:label "hasEndTask"@en ;
+    rdfs:comment "The relation identifying the tasks of a workflow that are not a temporal cause of other parts of the workflow."@en ;
+    rdfs:range ns1:EMMO_8a2a1cbc_dfc3_4e6c_b337_00ee56fd438a ;
+    rdfs:subPropertyOf ns1:EMMO_9558cd58_9847_4a0b_936d_32ca83a827a1 ;
+    skos:prefLabel "hasEndTask"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The relation identifying the tasks of a workflow that are not a temporal cause of other parts of the workflow."@en .
+
+ns1:EMMO_946b5162_95b0_4801_81d4_efef43842a0d rdfs:label "QualifiedRole"@en ;
+    rdfs:comment """The qualified role concept express the requirement for an entity of a type, say A, to be part of a larger entity of another type, say B, with A and B belonging to different taxonomical branches.
+The concept of role is then defined as something that needs a wider and specific environment to exist.
+For example, the car radio type requires all instances to be a part of a car, while the opposite (the car having a radio) is not mandatory for qualified roles.  The same applies for airplane winglets that are by definition an optional part of an airplane. Food preservatives are anothe optional part of foods."""@en,
+        "The superclass for all classes of individuals that requires their individuals to be part of another specific class of entity of different type with a specific role with respect to it."@en .
+
+ns1:EMMO_9d799b43_e188_4047_8167_121d96b31a26 rdfs:label "ObjectByContext"@en ;
+    rdfs:comment "The superclass for all classes that categorise objects according to their mereological and persistence context"@en .
+
+ns1:EMMO_a49c2441_1e54_43f0_a1cf_2f553a23ac34 rdfs:label "Agency"@en ;
+    rdfs:comment "A process that occurs because of the exercise of the capacity to act of an agent."@en .
+
+ns1:EMMO_b941e455_2cb1_4c11_93e3_17caa06086b4 a owl:Class ;
+    rdfs:label "BeginTask"@en ;
+    rdfs:comment "An initial task of a workflow."@en ;
+    rdfs:subClassOf ns1:EMMO_180bd73b_0c5d_4b1f_ba12_4309c5a50d49,
+        ns1:EMMO_fa595892_070d_455e_9459_06c97179c080 ;
+    skos:prefLabel "BeginTask"@en ;
+    ns1:EMMO_157fdf31_6387_42be_8e72_10530519214a "https://w3id.org/emmo/raw/1.0.2/doc/figs/BeginTile.png"^^xsd:anyURI ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An initial task of a workflow."@en ;
+    ns1:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "There may be more than one begin task, if they run in parallel."@en .
+
+ns1:EMMO_c5ddfdba_c074_4aa4_ad6b_1ac4942d300d rdfs:label "CausalStructure"@en ;
+    rdfs:comment "The class of individuals representing causally self-connected world entities."^^xsd:string,
+        "The disjoint union of Causal Path and CausalSystem classes."^^xsd:string,
+        """The most fundamental unity criterion for the definition of an structure is that:
+- is made of at least two quantums (a structure is not a simple entity)
+- all quantum parts form a causally connected graph"""^^xsd:string .
+
+ns1:EMMO_cede9297_c60d_4487_9207_62ac963202b5 rdfs:label "ParticipantByAgency"@en ;
+    rdfs:comment "Categorisation of participant in terms of being an agent or not an agent."@en .
+
+ns1:EMMO_e04884d9_eda6_487e_93d5_7722d7eda96b rdfs:label "Persistence"@en ;
+    rdfs:comment "The union of the object or process classes."@en .
+
+ns1:EMMO_e12dcfa4_c9f1_4546_9a12_8457c052e6ba rdfs:label "SpatioTemporalTessellation"^^xsd:string ;
+    rdfs:comment "The superclass for all tessellations in which all tiles are connected through spatiotemporal relations hasNext or contacts."@en .
+
+ns1:EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de rdfs:label "Item"@en ;
+    rdfs:comment """A world entity is direct causally self-connected if any two parts that make up the whole are direct causally connected to each other. In the EMMO, topological connectivity is based on causality.
+All physical objects, i.e. entities whose behaviour is explained by physics laws, are represented only by items. In other words, a physical object part is embedded in a direct causal graph that provides always a path between two of its parts.
+Members of a collection lack such direct causality connection, i.e. they do not constitute a physical object.
+Following graph theory concepts, the quantums of an item are all connected together within a network of causal relations, forming a connected causal graph. A collection is then a set of disconnected graphs."""@en,
+        "The class of individuals standing for quantum or causally self-connected world entities."@en,
+        "The disjoint union of Particle and CausalStructure classes."@en .
+
+ns1:EMMO_eb50c9cb_9576_4a61_95ec_f81fb8218187 rdfs:label "QualifiedWhole"@en ;
+    rdfs:comment """The qualified whole concept express the requirement for an entity of a type, say A, to have a part of another type, say B, with A and B belonging to different taxonomical branches.
+The concept of whole is then defined as something that needs a part of a specific type to exist.
+For example, an atom always requires a nucleus part to exist (but not viceversa)"""@en,
+        "The superclass for all classes of individuals that requires to have a part of another specific class of entity of different type with a specific relation with it."@en .
+
+ns1:EMMO_ee0466e4_780d_4236_8281_ace7ad3fc5d2 rdfs:label "Tessellation"@en ;
+    rdfs:comment "A causal structure that is tessellated in direct parts."@en,
+        "A tessellation (or tiling) is the covering of a surface, often a plane, using one or more geometric shapes, called tiles, with no overlaps and no gaps."@en .
+
+ns1:EMMO_f53f45f2_c354_417c_a904_a2606ad584d7 rdfs:label "ProcessByAgency"@en ;
+    rdfs:comment "Categorisation of processes by whether they are driven by an agent or not."@en .
+
+ns1:EMMO_f7f41d20_eabb_4bcb_9a16_0436851fcd5c rdfs:label "TemporalTiling"@en ;
+    rdfs:comment "A well formed tessellation with tiles that are all temporal."@en .
+
+<https://w3id.org/emmo/reference/workflow> a owl:Ontology ;
+    dcterms:abstract """The workflow multi-perspective combines the persistence and holistic perspectives to describe workflows as a process built up of a set of temporal tasks.
+
+Workflows may also be extended reductionistically into serial and parallel workflows."""@en,
+        "Workflow"@en ;
+    dcterms:contributor ns1:FrancescoZaccarini ;
+    dcterms:creator ns1:EmanueleGhedini,
+        ns1:GerhardGoldbeck,
+        ns1:JesperFriis ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "Workflow"@en ;
+    rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.2/perspectives/reductionistic>,
+        <https://w3id.org/emmo/1.0.2/reference/agency> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.2/reference/workflow> ;
+    owl:versionInfo "1.0.2"^^xsd:string ;
+    ns1:EMMO_1246b120_abbe_4840_b0f8_3e4348b24a17 "emmo@emmc.eu"^^xsd:string .
+
+ns1:EMMO_2666a7e3_2ad4_49a0_899e_329607231f4b a owl:Class ;
+    rdfs:label "SerialTask"@en ;
+    rdfs:comment "A task that is a temporal tile of a workflow when there are no other activities taking place concurrently (i.e., no parallelism)."@en ;
+    rdfs:subClassOf ns1:EMMO_1a6ddb13_49ff_4305_97a1_d1458d51c066,
+        ns1:EMMO_504ad89e_dd4a_4fa6_aeb6_15c8ce0cde9b ;
+    skos:prefLabel "SerialTask"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A task that is a temporal tile of a workflow when there are no other activities taking place concurrently (i.e., no parallelism)."@en .
+
+ns1:EMMO_3e7add3d_e6ed_489a_a796_8e31fef9b490 rdfs:label "Data"@en ;
+    rdfs:comment "A causal object whose properties variation are encoded by an agent and that can be decoded by another agent according to a specific rule."@en .
+
+ns1:EMMO_4f226cf3_6d02_4d35_8566_a9e641bc6ff3 rdfs:label "Role"@en ;
+    rdfs:comment """A role entity is categorized according to its relation with the whole, i.e. how it contribute to make a specific whole, and not as standalone entity.
+This class is expected to host the definition of world objects as they appear in its relation with the surrounding whole (being a part implies being surrounded by something bigger to which it contributes).
+For example. a human being is a stand alone type, but an instance of a human being can also be an instance of the type student (intended as a role) if it plays a part into a school environment (i.e., a student entity can exist only if it is part of a surrounding whole: the school).
+The role type requires that also the whole type depends on the existence of parts of a specific type (e.g., there is no school without students)."""@en,
+        "An entity that is categorized according to its relation with a whole through a parthood relation and that contributes to it according to an holistic criterion, where the type of the whole is not the type of the part."@en .
+
+ns1:EMMO_504ad89e_dd4a_4fa6_aeb6_15c8ce0cde9b rdfs:label "TemporalTile"@en ;
+    rdfs:comment "A direct part that is obtained by partitioning a whole purely in temporal parts."@en .
+
+ns1:EMMO_57ba1bf0_4314_432c_a9bb_6a6720c8dab5 a owl:Class ;
+    rdfs:label "SerialWorkflow"@en ;
+    rdfs:comment "A workflow whose tasks are tiles of a sequence."@en ;
+    rdfs:subClassOf ns1:EMMO_64963ed6_39c9_4258_85e0_6466c4b5420c,
+        ns1:EMMO_92829beb_6ed4_4c88_bbd5_3bc7403e2895 ;
+    owl:disjointWith ns1:EMMO_5848e476_2768_4988_98f9_9053c532307b ;
+    skos:prefLabel "SerialWorkflow"@en ;
+    ns1:EMMO_157fdf31_6387_42be_8e72_10530519214a "https://w3id.org/emmo/raw/1.0.2/doc/figs/SerialWorkflow.png"^^xsd:anyURI ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A workflow whose tasks are tiles of a sequence."@en .
+
+ns1:EMMO_5848e476_2768_4988_98f9_9053c532307b a owl:Class ;
+    rdfs:label "ParallelWorkflow"@en ;
+    rdfs:comment """A workflow can be seen as a direct acyclic graph, whose nodes are tasks and edges are asymmetric causal relations. A parallel graph occurs when the topological order of such graph if not unique, meaning that there is at least one portion of the workflow in which at least two tasks are running concurrently. 
+Concurrent tasks may or may not communicate. Communication is represented as a symmetric causality relation, superimposing the direct acyclic graph structure of the workflow."""@en,
+        "A workflow with some tasks running concurrently."@en ;
+    rdfs:subClassOf ns1:EMMO_64963ed6_39c9_4258_85e0_6466c4b5420c ;
+    skos:prefLabel "ParallelWorkflow"@en ;
+    ns1:EMMO_157fdf31_6387_42be_8e72_10530519214a "https://w3id.org/emmo/raw/1.0.2/doc/figs/ParallelWorkflow.png"^^xsd:anyURI ;
+    ns1:EMMO_31252f35_c767_4b97_a877_1235076c3e13 """A workflow can be seen as a direct acyclic graph, whose nodes are tasks and edges are asymmetric causal relations. A parallel graph occurs when the topological order of such graph if not unique, meaning that there is at least one portion of the workflow in which at least two tasks are running concurrently. 
+Concurrent tasks may or may not communicate. Communication is represented as a symmetric causality relation, superimposing the direct acyclic graph structure of the workflow."""@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A workflow with some tasks running concurrently."@en .
+
+ns1:EMMO_8a2a1cbc_dfc3_4e6c_b337_00ee56fd438a a owl:Class ;
+    rdfs:label "EndTask"@en ;
+    rdfs:comment "The final task of a workflow."@en ;
+    rdfs:subClassOf ns1:EMMO_180bd73b_0c5d_4b1f_ba12_4309c5a50d49,
+        ns1:EMMO_edf72228_e040_4edc_8b46_78b2a47c72d7 ;
+    skos:prefLabel "EndTask"@en ;
+    ns1:EMMO_157fdf31_6387_42be_8e72_10530519214a "https://w3id.org/emmo/raw/1.0.2/doc/figs/EndTile.png"^^xsd:anyURI ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The final task of a workflow."@en ;
+    ns1:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "There may be more than one end task, if they run in parallel leading to more than one output."@en .
+
+ns1:EMMO_8cf62c94_ae5f_4f80_8669_d5f91178db6d a owl:Class ;
+    rdfs:label "ProceduralAgent"@en ;
+    rdfs:comment "An intentional agent that drives a process according to some existing formalised operative rules."@en ;
+    rdfs:subClassOf ns1:EMMO_c130614a_2985_476d_a7ed_8a137847703c ;
+    skos:prefLabel "ProceduralAgent"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An intentional agent that drives a process according to some existing formalised operative rules."@en .
+
+ns1:EMMO_92829beb_6ed4_4c88_bbd5_3bc7403e2895 rdfs:label "TemporalSequence"@en ;
+    rdfs:comment "A tessellation of temporal slices."@en .
+
+ns1:EMMO_9953c19f_ee33_4af8_be5e_dbf6d1e33581 rdfs:label "Tile"@en ;
+    rdfs:comment "A causal object that is direct part of a tessellation."@en .
+
+ns1:EMMO_9ac10a20_63d0_4bbd_a5d3_f00a0ad4682c a owl:Class ;
+    rdfs:label "IterativeTask"@en ;
+    rdfs:comment "An iterative workflow which is a task of a larger workflow."@en ;
+    rdfs:subClassOf ns1:EMMO_1a6ddb13_49ff_4305_97a1_d1458d51c066,
+        ns1:EMMO_ddecfff6_d3a1_4972_b9e9_3d0ca11a3a0b ;
+    skos:example "A Jacobi method, involving the iterative multiplication between a matrix A and a vector x, which is part of larger workflow for the solution of a partial differential equation using finite differences."@en ;
+    skos:prefLabel "IterativeTask"@en ;
+    ns1:EMMO_157fdf31_6387_42be_8e72_10530519214a "https://w3id.org/emmo/raw/1.0.2/doc/figs/IterativeWorkflow.png"^^xsd:anyURI ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An iterative workflow which is a task of a larger workflow."@en .
+
+ns1:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c rdfs:label "IntentionalAgency"@en ;
+    rdfs:comment "A process occurring with the active participation of an intentional agent that drives the process according to a specific objective (intention)."@en .
+
+ns1:EMMO_c130614a_2985_476d_a7ed_8a137847703c rdfs:label "IntentionalAgent"@en ;
+    rdfs:comment "An agent that is driven by the intention to reach a defined objective in driving a process."@en .
+
+ns1:EMMO_caa63d00_80b1_4408_ac1b_cd0d23b0ec50 rdfs:label "IntermidiateTile"@en ;
+    rdfs:comment "A tile that has next and is next of other tiles within the same tessellation."@en .
+
+ns1:EMMO_eaf4640d_651d_4cbe_a315_3d2dc5df3b35 a owl:Class ;
+    rdfs:label "ProceduralData"@en ;
+    rdfs:comment "Data that is encoded and/or decoded by a procedural agent following a procedure."@en ;
+    rdfs:subClassOf ns1:EMMO_3e7add3d_e6ed_489a_a796_8e31fef9b490 ;
+    skos:prefLabel "ProceduralData"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Data that is encoded and/or decoded by a procedural agent following a procedure."@en .
+
+ns1:EMMO_edf72228_e040_4edc_8b46_78b2a47c72d7 rdfs:label "EndTile"@en ;
+    rdfs:comment "A direct part that only is the target, but not the source of temporal relations."@en .
+
+ns1:EMMO_1a6ddb13_49ff_4305_97a1_d1458d51c066 a owl:Class ;
+    rdfs:label "TaskByFlow"@en ;
+    rdfs:comment "A task in a workflow, categorised by how it is connected to other tasks."@en ;
+    rdfs:subClassOf ns1:EMMO_9f6ec830_c59f_46aa_8a22_945ba20b6ea3 ;
+    skos:prefLabel "TaskByFlow"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A task in a workflow, categorised by how it is connected to other tasks."@en .
+
+ns1:EMMO_9558cd58_9847_4a0b_936d_32ca83a827a1 a owl:ObjectProperty ;
+    rdfs:label "hasTaskTile"@en ;
+    rdfs:range ns1:EMMO_9f6ec830_c59f_46aa_8a22_945ba20b6ea3 ;
+    rdfs:subPropertyOf ns1:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a,
+        ns1:EMMO_74a75cf1_3418_4244_b43c_b5db94635d42 ;
+    skos:prefLabel "hasTaskTile"@en .
+
+ns1:EMMO_ddecfff6_d3a1_4972_b9e9_3d0ca11a3a0b a owl:Class ;
+    rdfs:label "IterativeWorkflow"@en ;
+    rdfs:comment "A workflow whose steps are the repetition of the same task type."@en ;
+    rdfs:subClassOf ns1:EMMO_57ba1bf0_4314_432c_a9bb_6a6720c8dab5 ;
+    skos:prefLabel "IterativeWorkflow"@en ;
+    ns1:EMMO_157fdf31_6387_42be_8e72_10530519214a "https://w3id.org/emmo/raw/1.0.2/doc/figs/IterativeWorkflow.png"^^xsd:anyURI ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A workflow whose steps are the repetition of the same task type."@en .
+
+ns1:EMMO_fa595892_070d_455e_9459_06c97179c080 rdfs:label "BeginTile"@en ;
+    rdfs:comment "A direct part that only is the source, but not the target of temporal relations."@en .
+
+ns1:EMMO_180bd73b_0c5d_4b1f_ba12_4309c5a50d49 a owl:Class ;
+    rdfs:label "TaskByPosition"@en ;
+    rdfs:comment "A task in a workflow, categorised by its position in the workflow."@en ;
+    rdfs:subClassOf ns1:EMMO_9f6ec830_c59f_46aa_8a22_945ba20b6ea3 ;
+    skos:prefLabel "TaskByPosition"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A task in a workflow, categorised by its position in the workflow."@en .
+
+ns1:EMMO_4299e344_a321_4ef2_a744_bacfcce80afc a owl:Class ;
+    rdfs:label "Task"@en ;
+    rdfs:comment "A procedure that is an hoilistic part of a workflow."@en,
+        """The concept of task is developed in strict connection with the concept of workflow: a task is always part of a workflow and a workflow always possess some tasks. This makes the relation between task and workflow an holistic relation, with task as role and workflow as whole.
+A task is also holistically connected to an intentional agent, since a task is defined as a procedure. For this reason a task is both a role, with respect to a workflow, and a whole, with respect to an intentional agent."""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf ns1:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a ] ;
+            owl:someValuesFrom ns1:EMMO_64963ed6_39c9_4258_85e0_6466c4b5420c ],
+        ns1:EMMO_472a0ca2_58bf_4618_b561_6fe68bd9fd49,
+        ns1:EMMO_4f226cf3_6d02_4d35_8566_a9e641bc6ff3 ;
+    skos:altLabel "Job"@en ;
+    skos:prefLabel "Task"@en ;
+    ns1:EMMO_31252f35_c767_4b97_a877_1235076c3e13 """The concept of task is developed in strict connection with the concept of workflow: a task is always part of a workflow and a workflow always possess some tasks. This makes the relation between task and workflow an holistic relation, with task as role and workflow as whole.
+A task is also holistically connected to an intentional agent, since a task is defined as a procedure. For this reason a task is both a role, with respect to a workflow, and a whole, with respect to an intentional agent."""@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A procedure that is an hoilistic part of a workflow."@en ;
+    ns1:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f """A task is a generic part of a workflow, without taking care of the task granularities.
+It means that you can declare that e.g. tightening a bolt is a task of building an airplane, without caring of the coarser tasks to which this tightening belongs."""@en .
+
+ns1:EMMO_9f6ec830_c59f_46aa_8a22_945ba20b6ea3 a owl:Class ;
+    rdfs:label "TaskTile"@en ;
+    rdfs:comment "A task that is a well formed tile of a workflow, according to a reductionistic description."@en,
+        "While a task is only an holistic part of a workflow, a task tile provide a more precise context about the placement of a task in the topological structure of a workflow by using a reductionistic categorization. A workflow is now seen as a tiling and the task is on of its tiles."@en ;
+    rdfs:subClassOf ns1:EMMO_4299e344_a321_4ef2_a744_bacfcce80afc,
+        ns1:EMMO_9953c19f_ee33_4af8_be5e_dbf6d1e33581 ;
+    skos:altLabel "Step"@en ;
+    skos:prefLabel "TaskTile"@en ;
+    ns1:EMMO_31252f35_c767_4b97_a877_1235076c3e13 "While a task is only an holistic part of a workflow, a task tile provide a more precise context about the placement of a task in the topological structure of a workflow by using a reductionistic categorization. A workflow is now seen as a tiling and the task is on of its tiles."@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A task that is a well formed tile of a workflow, according to a reductionistic description."@en ;
+    ns1:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "A task tile is part of a specific granularity level for the workflow description, as composition of tasks."@en .
+
+ns1:EMMO_472a0ca2_58bf_4618_b561_6fe68bd9fd49 a owl:Class ;
+    rdfs:label "Procedure"@en ;
+    rdfs:comment "An intentional process in which an agent works with some entities according to some existing formalised operative rules."@en,
+        "The set of established forms or methods of an organized body for accomplishing a certain task or tasks (Wiktionary)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf ns1:EMMO_f2fc1ce9_cc3b_4eb5_a112_3c85d1b1374a ] ;
+            owl:someValuesFrom ns1:EMMO_8cf62c94_ae5f_4f80_8669_d5f91178db6d ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 ;
+            owl:someValuesFrom ns1:EMMO_eaf4640d_651d_4cbe_a315_3d2dc5df3b35 ],
+        ns1:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ;
+    skos:altLabel "Elaboration"@en,
+        "Work"@en ;
+    skos:example """The process in which a control unit of a CPU (the agent) orchestrates some cached binary data according to a list of instructions (e.g. a program).
+The process in which a librarian order books alphabetically on a shelf.
+The execution of an algorithm."""@en ;
+    skos:prefLabel "Procedure"@en ;
+    ns1:EMMO_31252f35_c767_4b97_a877_1235076c3e13 "The set of established forms or methods of an organized body for accomplishing a certain task or tasks (Wiktionary)."@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "An intentional process in which an agent works with some entities according to some existing formalised operative rules."@en ;
+    ns1:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "A procedure can be considered as an intentional process with a plan."@en .
+
+ns1:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a a owl:ObjectProperty ;
+    rdfs:label "hasTask"@en ;
+    rdfs:comment "The holistic relation connecting a workflow with one of its tasks."@en ;
+    rdfs:domain ns1:EMMO_64963ed6_39c9_4258_85e0_6466c4b5420c ;
+    rdfs:range ns1:EMMO_4299e344_a321_4ef2_a744_bacfcce80afc ;
+    rdfs:subPropertyOf ns1:EMMO_8e52c42b_e879_4473_9fa1_4b23428b392b ;
+    skos:prefLabel "hasTask"@en ;
+    ns1:EMMO_31252f35_c767_4b97_a877_1235076c3e13 "The holistic relation connecting a workflow with one of its tasks."@en .
+
+ns1:EMMO_64963ed6_39c9_4258_85e0_6466c4b5420c a owl:Class ;
+    rdfs:label "Workflow"@en ;
+    rdfs:comment "A procedure that has at least two procedures (tasks) as proper parts."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:EMMO_8e52c42b_e879_4473_9fa1_4b23428b392b ;
+            owl:someValuesFrom ns1:EMMO_4299e344_a321_4ef2_a744_bacfcce80afc ],
+        ns1:EMMO_472a0ca2_58bf_4618_b561_6fe68bd9fd49 ;
+    skos:prefLabel "Workflow"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A procedure that has at least two procedures (tasks) as proper parts."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "https://en.wiktionary.org/wiki/procedure"^^xsd:anyURI ;
+    owl:annotatedProperty ns1:EMMO_31252f35_c767_4b97_a877_1235076c3e13 ;
+    owl:annotatedSource ns1:EMMO_472a0ca2_58bf_4618_b561_6fe68bd9fd49 ;
+    owl:annotatedTarget "The set of established forms or methods of an organized body for accomplishing a certain task or tasks (Wiktionary)."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:EMMO_472a0ca2_58bf_4618_b561_6fe68bd9fd49 ;
+    owl:annotatedTarget "Procedure"@en ;
+    ns1:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 "From Latin pro-cedere (“to go forward, to proceed”)."@en .
+

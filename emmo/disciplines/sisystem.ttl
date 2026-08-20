@@ -1,0 +1,10 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+<https://w3id.org/emmo/disciplines/sisystem> a owl:Ontology ;
+    owl:imports <https://w3id.org/emmo/1.0.3/disciplines/units/coherentsiunits>,
+        <https://w3id.org/emmo/1.0.3/disciplines/units/noncoherentsiunits>,
+        <https://w3id.org/emmo/1.0.3/disciplines/units/prefixedsiunits>,
+        <https://w3id.org/emmo/1.0.3/disciplines/units/siacceptedspecialunits>,
+        <https://w3id.org/emmo/1.0.3/disciplines/units/sidimensionalunits> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.3/disciplines/sisystem> .
+

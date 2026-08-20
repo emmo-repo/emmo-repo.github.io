@@ -1,0 +1,100 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix ns1: <https://w3id.org/emmo#> .
+@prefix ns2: <http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://orcid.org/0000-0001-7815-6636> a foaf:Person ;
+    skos:prefLabel "OtelloRoscioni"^^xsd:string ;
+    foaf:name "Otello M. Roscioni"^^xsd:string ;
+    foaf:workplaceHomepage <https://materialsmodelling.com> .
+
+<https://orcid.org/0000-0001-8869-3718> a foaf:Person ;
+    skos:prefLabel "FrancescaBleken"^^xsd:string ;
+    foaf:name "Francesca Lønstad Bleken"^^xsd:string ;
+    foaf:workplaceHomepage <https://www.sintef.no/en> .
+
+<https://orcid.org/0000-0001-9189-2400> a foaf:Person ;
+    skos:prefLabel "SebastianoMoruzzi"^^xsd:string ;
+    foaf:name "Sebastiano Moruzzi"^^xsd:string ;
+    foaf:workplaceHomepage <https://www.unibo.it/en> .
+
+<https://orcid.org/0000-0002-1560-809X> a foaf:Person ;
+    skos:prefLabel "JesperFriis"^^xsd:string ;
+    foaf:name "Jesper Friis"^^xsd:string ;
+    foaf:workplaceHomepage <https://www.sintef.no/en> .
+
+<https://orcid.org/0000-0002-4181-2852> a foaf:Person ;
+    skos:prefLabel "GerhardGoldbeck"^^xsd:string ;
+    foaf:name "Gerhard Goldbeck"^^xsd:string ;
+    foaf:workplaceHomepage <https://materialsmodelling.com> .
+
+<https://orcid.org/0000-0002-5417-6808> a foaf:Person ;
+    skos:prefLabel "MichaelNoeske"^^xsd:string ;
+    foaf:name "Paul-Ludwig Michael Noeske"^^xsd:string ;
+    foaf:workplaceHomepage <https://www.ifam.fraunhofer.de/en> .
+
+<https://orcid.org/0000-0002-8758-6109> a foaf:Person ;
+    skos:prefLabel "SimonClark"^^xsd:string ;
+    foaf:name "Simon Clark"^^xsd:string ;
+    foaf:workplaceHomepage <https://www.sintef.no/en> .
+
+<https://orcid.org/0000-0003-0514-9229> a foaf:Person ;
+    skos:prefLabel "AdhamHashibon"^^xsd:string ;
+    foaf:name "Adham Hashibon"^^xsd:string ;
+    foaf:workplaceHomepage <https://www.ucl.ac.uk> .
+
+<https://orcid.org/0000-0003-3805-8761> a foaf:Person ;
+    skos:prefLabel "EmanueleGhedini"^^xsd:string ;
+    foaf:name "Emanuele Ghedini"^^xsd:string ;
+    foaf:workplaceHomepage <https://www.unibo.it/en> .
+
+<https://orcid.org/0000-0003-4065-9742> a foaf:Person ;
+    skos:prefLabel "GeorgSchmitz"^^xsd:string ;
+    foaf:name "Georg J. Schmitz"^^xsd:string .
+
+<https://orcid.org/0009-0007-5850-6628> a foaf:Person ;
+    skos:prefLabel "AnnedeBaas"^^xsd:string ;
+    foaf:name "Anne de Baas"^^xsd:string ;
+    foaf:workplaceHomepage <https://materialsmodelling.com> .
+
+<https://orcid.org/0009-0008-8009-5009> a foaf:Person ;
+    skos:prefLabel "FrancescoZaccarini"^^xsd:string ;
+    foaf:name "Francesco A. Zaccarini"^^xsd:string ;
+    foaf:workplaceHomepage <https://www.unibo.it/en> .
+
+ns1:EMMC_ASBL a foaf:Organization ;
+    skos:prefLabel "EMMC_ASBL"^^xsd:string ;
+    locn:fullAddress """EMMC ASBL
+European Materials Modelling Council
+Silversquare Stéphanie
+Avenue Louise 54
+1050 Brussels
+CBE no: 0731 621 312"""@en ;
+    foaf:homepage "https://emmc.eu"^^xsd:string ;
+    foaf:logo <https://emmo-repo.github.io/emmc.png> ;
+    foaf:mbox <mailto:contact@emmc.eu> ;
+    foaf:name "EMMC ASBL"^^xsd:string .
+
+ns1:hasORCID a owl:DatatypeProperty ;
+    rdfs:label "hasORCID"@en ;
+    ns2:python_name "hasORCID"@en ;
+    rdfs:comment "Relates an individual to an ORCID that identifies the individual."@en,
+        "The domain is not provided to not impose restrictions on the individual carrying the ORCID. Typically it will be a person (maximal) or a temporal part of a person."@en ;
+    rdfs:range xsd:anyURI ;
+    skos:prefLabel "hasORCID"@en .
+
+<https://w3id.org/emmo/contributors> a owl:Ontology ;
+    dcterms:abstract "People and organisations who has contributed to the development of EMMO."@en ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "Contributors"@en ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.2/contributors> ;
+    owl:versionInfo "1.0.2"^^xsd:string ;
+    foaf:mbox <mailto:emmo@emmc.eu> ;
+    ns1:contact "emmo@emmc.eu"^^xsd:string .
+

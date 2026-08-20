@@ -1,0 +1,304 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/emmo#> .
+@prefix ns2: <http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:Agent rdfs:label "Agent"@en ;
+    rdfs:comment "A participant that is the driver of a process."@en .
+
+ns1:BeginTask a owl:Class ;
+    rdfs:label "BeginTask"@en ;
+    rdfs:comment "An initial task of a workflow."@en ;
+    rdfs:subClassOf ns1:BeginTile,
+        ns1:TaskByPosition ;
+    skos:prefLabel "BeginTask"@en ;
+    ns1:elucidation "An initial task of a workflow."@en ;
+    ns1:illustration "https://w3id.org/emmo/raw/1.0.2/doc/figs/BeginTile.png"^^xsd:anyURI ;
+    ns1:note "There may be more than one begin task, if they run in parallel."@en .
+
+ns1:InternalTask a owl:Class ;
+    rdfs:label "InternalTask"@en ;
+    rdfs:comment "A generic task in a workflow, that is not the begin or the end."@en ;
+    rdfs:subClassOf ns1:IntermidiateTile,
+        ns1:TaskByPosition ;
+    skos:prefLabel "InternalTask"@en ;
+    ns1:elucidation "A generic task in a workflow, that is not the begin or the end."@en ;
+    ns1:illustration "https://w3id.org/emmo/raw/1.0.2/doc/figs/ThroughTile.png"^^xsd:anyURI .
+
+ns1:ParticipantByAgency rdfs:label "ParticipantByAgency"@en ;
+    rdfs:comment "Categorisation of participant in terms of being an agent or not an agent."@en .
+
+ns1:Reductionistic rdfs:label "Reductionistic"@en ;
+    rdfs:comment "A class devoted to categorize causal objects by specifying their granularity levels."@en .
+
+ns1:SpatioTemporalTessellation rdfs:label "SpatioTemporalTessellation"^^xsd:string ;
+    rdfs:comment "The superclass for all tessellations in which all tiles are connected through spatiotemporal relations hasNext or contacts."@en .
+
+ns1:SpatioTemporalTile rdfs:label "SpatioTemporalTile"^^xsd:string ;
+    rdfs:comment "The superclass for all tiles belonging to tessellations in which all tiles are connected through spatiotemporal relations hasNext or contacts."@en .
+
+ns1:SpatioTemporalTileByConnection rdfs:label "SpatioTemporalTileByConnection"@en ;
+    rdfs:comment "The superclass for tiles categorized accordingly to their topological role within a tessellation."@en .
+
+ns1:SpatioTemporalTileByPosition rdfs:label "SpatioTemporalTileByPosition"@en ;
+    rdfs:comment "The superclass for tiles categorized accordingly to their location within a tessellation in terms of causal source, sink or intermediary."@en .
+
+ns1:TemporalTiling rdfs:label "TemporalTiling"@en ;
+    rdfs:comment "A well formed tessellation with tiles that are all temporal."@en .
+
+ns1:Tessellation rdfs:label "Tessellation"@en ;
+    rdfs:comment "A causal structure that is tessellated in direct parts."@en,
+        "A tessellation (or tiling) is the covering of a surface, often a plane, using one or more geometric shapes, called tiles, with no overlaps and no gaps."@en .
+
+ns1:hasBeginTask a owl:ObjectProperty ;
+    rdfs:label "hasBeginTask"@en ;
+    ns2:python_name "hasBeginTask"@en ;
+    rdfs:comment "The relation identifying the tasks of a workflow that are not causally temporally dependent by other parts of the workflow."@en ;
+    rdfs:range ns1:BeginTile ;
+    rdfs:subPropertyOf ns1:hasTaskTile ;
+    skos:prefLabel "hasBeginTask"@en ;
+    ns1:elucidation "The relation identifying the tasks of a workflow that are not causally temporally dependent by other parts of the workflow."@en .
+
+ns1:hasEndTask a owl:ObjectProperty ;
+    rdfs:label "hasEndTask"@en ;
+    ns2:python_name "hasEndTask"@en ;
+    rdfs:comment "The relation identifying the tasks of a workflow that are not a temporal cause of other parts of the workflow."@en ;
+    rdfs:range ns1:EndTask ;
+    rdfs:subPropertyOf ns1:hasTaskTile ;
+    skos:prefLabel "hasEndTask"@en ;
+    ns1:elucidation "The relation identifying the tasks of a workflow that are not a temporal cause of other parts of the workflow."@en .
+
+ns1:hasIterativeTask a owl:ObjectProperty ;
+    rdfs:label "hasIterativeTask"@en ;
+    ns2:python_name "hasIterativeTask"@en ;
+    rdfs:domain ns1:Workflow ;
+    rdfs:range ns1:IterativeTask,
+        ns1:IterativeWorkflow ;
+    rdfs:subPropertyOf ns1:hasTask ;
+    skos:prefLabel "hasIterativeTask"@en .
+
+ns1:hasSerialTask a owl:ObjectProperty ;
+    rdfs:label "hasSerialTask"@en ;
+    ns2:python_name "hasSerialTask"@en ;
+    rdfs:domain ns1:Workflow ;
+    rdfs:range ns1:SerialTask ;
+    rdfs:subPropertyOf ns1:hasTask ;
+    skos:prefLabel "hasSerialTask"@en .
+
+<https://w3id.org/emmo/reference/workflow> a owl:Ontology ;
+    dcterms:abstract """The workflow multi-perspective combines the persistence and holistic perspectives to describe workflows as a process built up of a set of temporal tasks.
+
+Workflows may also be extended reductionistically into serial and parallel workflows."""@en,
+        "Workflow"@en ;
+    dcterms:contributor ns1:FrancescoZaccarini ;
+    dcterms:creator ns1:EmanueleGhedini,
+        ns1:GerhardGoldbeck,
+        ns1:JesperFriis ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "Workflow"@en ;
+    rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.2/perspectives/reductionistic>,
+        <https://w3id.org/emmo/1.0.2/reference/agency> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.2/reference/workflow> ;
+    owl:versionInfo "1.0.2"^^xsd:string ;
+    ns1:contact "emmo@emmc.eu"^^xsd:string .
+
+ns1:EndTask a owl:Class ;
+    rdfs:label "EndTask"@en ;
+    rdfs:comment "The final task of a workflow."@en ;
+    rdfs:subClassOf ns1:EndTile,
+        ns1:TaskByPosition ;
+    skos:prefLabel "EndTask"@en ;
+    ns1:elucidation "The final task of a workflow."@en ;
+    ns1:illustration "https://w3id.org/emmo/raw/1.0.2/doc/figs/EndTile.png"^^xsd:anyURI ;
+    ns1:note "There may be more than one end task, if they run in parallel leading to more than one output."@en .
+
+ns1:EndTile rdfs:label "EndTile"@en ;
+    rdfs:comment "A direct part that only is the target, but not the source of temporal relations."@en .
+
+ns1:IntentionalAgent rdfs:label "IntentionalAgent"@en ;
+    rdfs:comment "An agent that is driven by the intention to reach a defined objective in driving a process."@en .
+
+ns1:IntermidiateTile rdfs:label "IntermidiateTile"@en ;
+    rdfs:comment "A tile that has next and is next of other tiles within the same tessellation."@en .
+
+ns1:IterativeTask a owl:Class ;
+    rdfs:label "IterativeTask"@en ;
+    rdfs:comment "An iterative workflow which is a task of a larger workflow."@en ;
+    rdfs:subClassOf ns1:IterativeWorkflow,
+        ns1:TaskByFlow ;
+    skos:example "A Jacobi method, involving the iterative multiplication between a matrix A and a vector x, which is part of larger workflow for the solution of a partial differential equation using finite differences."@en ;
+    skos:prefLabel "IterativeTask"@en ;
+    ns1:elucidation "An iterative workflow which is a task of a larger workflow."@en ;
+    ns1:illustration "https://w3id.org/emmo/raw/1.0.2/doc/figs/IterativeWorkflow.png"^^xsd:anyURI .
+
+ns1:ParallelWorkflow a owl:Class ;
+    rdfs:label "ParallelWorkflow"@en ;
+    rdfs:comment """A workflow can be seen as a direct acyclic graph, whose nodes are tasks and edges are asymmetric causal relations. A parallel graph occurs when the topological order of such graph if not unique, meaning that there is at least one portion of the workflow in which at least two tasks are running concurrently. 
+Concurrent tasks may or may not communicate. Communication is represented as a symmetric causality relation, superimposing the direct acyclic graph structure of the workflow."""@en,
+        "A workflow with some tasks running concurrently."@en ;
+    rdfs:subClassOf ns1:Workflow ;
+    skos:prefLabel "ParallelWorkflow"@en ;
+    ns1:conceptualisation """A workflow can be seen as a direct acyclic graph, whose nodes are tasks and edges are asymmetric causal relations. A parallel graph occurs when the topological order of such graph if not unique, meaning that there is at least one portion of the workflow in which at least two tasks are running concurrently. 
+Concurrent tasks may or may not communicate. Communication is represented as a symmetric causality relation, superimposing the direct acyclic graph structure of the workflow."""@en ;
+    ns1:elucidation "A workflow with some tasks running concurrently."@en ;
+    ns1:illustration "https://w3id.org/emmo/raw/1.0.2/doc/figs/ParallelWorkflow.png"^^xsd:anyURI .
+
+ns1:ProceduralAgent a owl:Class ;
+    rdfs:label "ProceduralAgent"@en ;
+    rdfs:comment "An intentional agent that drives a process according to some existing formalised operative rules."@en ;
+    rdfs:subClassOf ns1:IntentionalAgent ;
+    skos:prefLabel "ProceduralAgent"@en ;
+    ns1:elucidation "An intentional agent that drives a process according to some existing formalised operative rules."@en .
+
+ns1:ProceduralData a owl:Class ;
+    rdfs:label "ProceduralData"@en ;
+    rdfs:comment "Data that is encoded and/or decoded by a procedural agent following a procedure."@en ;
+    rdfs:subClassOf ns1:Data ;
+    skos:prefLabel "ProceduralData"@en ;
+    ns1:elucidation "Data that is encoded and/or decoded by a procedural agent following a procedure."@en .
+
+ns1:SerialTask a owl:Class ;
+    rdfs:label "SerialTask"@en ;
+    rdfs:comment "A task that is a temporal tile of a workflow when there are no other activities taking place concurrently (i.e., no parallelism)."@en ;
+    rdfs:subClassOf ns1:TaskByFlow,
+        ns1:TemporalTile ;
+    skos:prefLabel "SerialTask"@en ;
+    ns1:elucidation "A task that is a temporal tile of a workflow when there are no other activities taking place concurrently (i.e., no parallelism)."@en .
+
+ns1:SerialWorkflow a owl:Class ;
+    rdfs:label "SerialWorkflow"@en ;
+    rdfs:comment "A workflow whose tasks are tiles of a sequence."@en ;
+    rdfs:subClassOf ns1:TemporalSequence,
+        ns1:Workflow ;
+    owl:disjointWith ns1:ParallelWorkflow ;
+    skos:prefLabel "SerialWorkflow"@en ;
+    ns1:elucidation "A workflow whose tasks are tiles of a sequence."@en ;
+    ns1:illustration "https://w3id.org/emmo/raw/1.0.2/doc/figs/SerialWorkflow.png"^^xsd:anyURI .
+
+ns1:TemporalSequence rdfs:label "TemporalSequence"@en ;
+    rdfs:comment "A tessellation of temporal slices."@en .
+
+ns1:TemporalTile rdfs:label "TemporalTile"@en ;
+    rdfs:comment "A direct part that is obtained by partitioning a whole purely in temporal parts."@en .
+
+ns1:Tile rdfs:label "Tile"@en ;
+    rdfs:comment "A causal object that is direct part of a tessellation."@en .
+
+ns1:BeginTile rdfs:label "BeginTile"@en ;
+    rdfs:comment "A direct part that only is the source, but not the target of temporal relations."@en .
+
+ns1:IterativeWorkflow a owl:Class ;
+    rdfs:label "IterativeWorkflow"@en ;
+    rdfs:comment "A workflow whose steps are the repetition of the same task type."@en ;
+    rdfs:subClassOf ns1:SerialWorkflow ;
+    skos:prefLabel "IterativeWorkflow"@en ;
+    ns1:elucidation "A workflow whose steps are the repetition of the same task type."@en ;
+    ns1:illustration "https://w3id.org/emmo/raw/1.0.2/doc/figs/IterativeWorkflow.png"^^xsd:anyURI .
+
+ns1:TaskByFlow a owl:Class ;
+    rdfs:label "TaskByFlow"@en ;
+    rdfs:comment "A task in a workflow, categorised by how it is connected to other tasks."@en ;
+    rdfs:subClassOf ns1:TaskTile ;
+    skos:prefLabel "TaskByFlow"@en ;
+    ns1:elucidation "A task in a workflow, categorised by how it is connected to other tasks."@en .
+
+ns1:hasTaskTile a owl:ObjectProperty ;
+    rdfs:label "hasTaskTile"@en ;
+    ns2:python_name "hasTaskTile"@en ;
+    rdfs:range ns1:TaskTile ;
+    rdfs:subPropertyOf ns1:hasTask,
+        ns1:hasTile ;
+    skos:prefLabel "hasTaskTile"@en .
+
+ns1:Task a owl:Class ;
+    rdfs:label "Task"@en ;
+    rdfs:comment "A procedure that is an hoilistic part of a workflow."@en,
+        """The concept of task is developed in strict connection with the concept of workflow: a task is always part of a workflow and a workflow always possess some tasks. This makes the relation between task and workflow an holistic relation, with task as role and workflow as whole.
+A task is also holistically connected to an intentional agent, since a task is defined as a procedure. For this reason a task is both a role, with respect to a workflow, and a whole, with respect to an intentional agent."""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf ns1:hasTask ] ;
+            owl:someValuesFrom ns1:Workflow ],
+        ns1:Procedure,
+        ns1:Role ;
+    skos:altLabel "Job"@en ;
+    skos:prefLabel "Task"@en ;
+    ns1:conceptualisation """The concept of task is developed in strict connection with the concept of workflow: a task is always part of a workflow and a workflow always possess some tasks. This makes the relation between task and workflow an holistic relation, with task as role and workflow as whole.
+A task is also holistically connected to an intentional agent, since a task is defined as a procedure. For this reason a task is both a role, with respect to a workflow, and a whole, with respect to an intentional agent."""@en ;
+    ns1:elucidation "A procedure that is an hoilistic part of a workflow."@en ;
+    ns1:note """A task is a generic part of a workflow, without taking care of the task granularities.
+It means that you can declare that e.g. tightening a bolt is a task of building an airplane, without caring of the coarser tasks to which this tightening belongs."""@en .
+
+ns1:TaskByPosition a owl:Class ;
+    rdfs:label "TaskByPosition"@en ;
+    rdfs:comment "A task in a workflow, categorised by its position in the workflow."@en ;
+    rdfs:subClassOf ns1:TaskTile ;
+    skos:prefLabel "TaskByPosition"@en ;
+    ns1:elucidation "A task in a workflow, categorised by its position in the workflow."@en .
+
+ns1:TaskTile a owl:Class ;
+    rdfs:label "TaskTile"@en ;
+    rdfs:comment "A task that is a well formed tile of a workflow, according to a reductionistic description."@en,
+        "While a task is only an holistic part of a workflow, a task tile provide a more precise context about the placement of a task in the topological structure of a workflow by using a reductionistic categorization. A workflow is now seen as a tiling and the task is on of its tiles."@en ;
+    rdfs:subClassOf ns1:Task,
+        ns1:Tile ;
+    skos:altLabel "Step"@en ;
+    skos:prefLabel "TaskTile"@en ;
+    ns1:conceptualisation "While a task is only an holistic part of a workflow, a task tile provide a more precise context about the placement of a task in the topological structure of a workflow by using a reductionistic categorization. A workflow is now seen as a tiling and the task is on of its tiles."@en ;
+    ns1:elucidation "A task that is a well formed tile of a workflow, according to a reductionistic description."@en ;
+    ns1:note "A task tile is part of a specific granularity level for the workflow description, as composition of tasks."@en .
+
+ns1:Procedure a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:isRepresentedBy ;
+            owl:someValuesFrom ns1:ProceduralData ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf ns1:providesInterpretation ] ;
+            owl:someValuesFrom ns1:ProceduralAgent ],
+        ns1:IntentionalAgency ;
+    skos:altLabel "Elaboration"@en,
+        "Work"@en ;
+    skos:example """The process in which a control unit of a CPU (the agent) orchestrates some cached binary data according to a list of instructions (e.g. a program).
+The process in which a librarian order books alphabetically on a shelf.
+The execution of an algorithm."""@en ;
+    skos:prefLabel "Procedure"@en ;
+    ns1:conceptualisation "The set of established forms or methods of an organized body for accomplishing a certain task or tasks (Wiktionary)."@en ;
+    ns1:elucidation "An intentional process in which an agent works with some entities according to some existing formalised operative rules."@en ;
+    ns1:note "A procedure can be considered as an intentional process with a plan."@en .
+
+ns1:hasTask a owl:ObjectProperty ;
+    rdfs:label "hasTask"@en ;
+    ns2:python_name "hasTask"@en ;
+    rdfs:comment "The holistic relation connecting a workflow with one of its tasks."@en ;
+    rdfs:domain ns1:Workflow ;
+    rdfs:range ns1:Task ;
+    rdfs:subPropertyOf ns1:hasRole ;
+    skos:prefLabel "hasTask"@en ;
+    ns1:conceptualisation "The holistic relation connecting a workflow with one of its tasks."@en .
+
+ns1:Workflow a owl:Class ;
+    rdfs:label "Workflow"@en ;
+    rdfs:comment "A procedure that has at least two procedures (tasks) as proper parts."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:hasRole ;
+            owl:someValuesFrom ns1:Task ],
+        ns1:Procedure ;
+    skos:prefLabel "Workflow"@en ;
+    ns1:elucidation "A procedure that has at least two procedures (tasks) as proper parts."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Procedure ;
+    owl:annotatedTarget "Procedure"@en ;
+    ns1:etymology "From Latin pro-cedere (“to go forward, to proceed”)."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "https://en.wiktionary.org/wiki/procedure"^^xsd:anyURI ;
+    owl:annotatedProperty ns1:conceptualisation ;
+    owl:annotatedSource ns1:Procedure ;
+    owl:annotatedTarget "The set of established forms or methods of an organized body for accomplishing a certain task or tasks (Wiktionary)."@en .
+

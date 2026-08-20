@@ -1,0 +1,96 @@
+@prefix : <https://w3id.org/emmo/hume/disciplines/properties#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/emmo#> .
+@prefix ns2: <http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+owl:qualifiedCardinality a owl:AnnotationProperty .
+
+ns1:Declarer rdfs:label "Declarer"@en ;
+    rdfs:comment "An interpreter who establish the connection between an conventional sign and an object according to a specific convention."@en .
+
+ns1:Interpreter rdfs:label "Interpreter"@en ;
+    rdfs:comment "The entity (or agent, or observer, or cognitive entity) who connects 'Sign', 'Interpretant' and 'Object'."@en .
+
+ns1:InterpreterByReferent rdfs:label "InterpreterByReferent"@en ;
+    rdfs:comment "Interpreter classified by how the sign stands for its reference object."@en .
+
+ns1:Measurer a owl:Class ;
+    rdfs:label "Measurer"@en ;
+    rdfs:comment "An observer that makes use of a measurement tool and provides a quantitative property."@en ;
+    rdfs:subClassOf ns1:Observer ;
+    skos:prefLabel "Measurer"@en ;
+    ns1:elucidation "An observer that makes use of a measurement tool and provides a quantitative property."@en .
+
+ns1:Modeller a owl:Class ;
+    rdfs:label "Modeller"@en ;
+    rdfs:comment "A estimator that uses modelling to declare a property of an object (i.e. infer a property from other properties)."@en ;
+    rdfs:subClassOf ns1:Estimator ;
+    skos:prefLabel "Modeller"@en ;
+    ns1:elucidation "A estimator that uses modelling to declare a property of an object (i.e. infer a property from other properties)."@en .
+
+ns1:SemioticEntity rdfs:label "SemioticEntity"@en ;
+    rdfs:comment "The class of individuals that stands for semiotic objects, i.e. objects that take part on a semiotic process."@en .
+
+ns1:Semiotics rdfs:label "Semiotics"@en ;
+    rdfs:comment "A perspective based on Pierce semiotics, where an interpreter relates a referent to a sign in through semiotic relations."@en .
+
+ns1:hasCharacterised a owl:ObjectProperty ;
+    rdfs:label "hasCharacterised"@en ;
+    ns2:python_name "hasCharacterised"@en ;
+    rdfs:domain ns1:Determiner ;
+    rdfs:subPropertyOf ns1:hasDeclared ;
+    skos:prefLabel "hasCharacterised"@en .
+
+ns1:hasCharacteriser a owl:ObjectProperty ;
+    rdfs:label "hasCharacteriser"@en ;
+    ns2:python_name "hasCharacteriser"@en ;
+    rdfs:domain ns1:Property ;
+    rdfs:range ns1:Determiner ;
+    rdfs:subPropertyOf ns1:hasDeclarer ;
+    skos:prefLabel "hasCharacteriser"@en .
+
+: a owl:Ontology ;
+    dcterms:abstract """Defines properties as the result of an observation process. Observation is a semiotic process that stimulate an interpretant within the interpreter who communicates the observed result to other interpreters through a sign, which is the property.
+
+Hence, properties creates a link between the holistic and the symbolic perspectives.
+
+Subclasses of property are subclasses that spesialise the type of observation process."""@en ;
+    dcterms:creator <https://orcid.org/AdhamHashibon>,
+        <https://orcid.org/EmanueleGhedini>,
+        <https://orcid.org/GeorgSchmitz>,
+        <https://orcid.org/GerhardGoldbeck>,
+        <https://orcid.org/JesperFriis> ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "Properties"@en ;
+    rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.3/perspectives/semiotics> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.3/hume/disciplines/properties> ;
+    owl:versionInfo "1.0.3"^^xsd:string ;
+    ns1:contact "emmo@emmc.eu"^^xsd:string .
+
+ns1:Estimator rdfs:label "Estimator"@en ;
+    rdfs:comment "A characteriser that declares a property for an object without actually interact with it with the specific interaction required by the property definition (i.e. infer a property from other properties)."@en .
+
+ns1:Observer rdfs:label "Observer"@en ;
+    rdfs:comment "A characteriser that declares a property for an object through the specific interaction required by the property definition."@en .
+
+ns1:Determiner rdfs:label "Determiner"@en ;
+    rdfs:comment "An 'interpreter' that perceives another 'entity' (the 'object') through a specific perception mechanism and produces a 'property' (the 'sign') that stands for the result of that particular perception."@en .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+

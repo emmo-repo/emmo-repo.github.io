@@ -1,0 +1,42 @@
+@prefix : <https://w3id.org/emmo/hume/contributors-mappings#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://orcid.org/AdhamHashibon> a foaf:Person .
+
+<https://orcid.org/AnnedeBaas> a foaf:Person .
+
+<https://orcid.org/EmanueleGhedini> a foaf:Person .
+
+<https://orcid.org/FrancescaBleken> a foaf:Person .
+
+<https://orcid.org/FrancescoZaccarini> a foaf:Person .
+
+<https://orcid.org/GeorgSchmitz> a foaf:Person .
+
+<https://orcid.org/GerhardGoldbeck> a foaf:Person .
+
+<https://orcid.org/JesperFriis> a foaf:Person .
+
+<https://orcid.org/MichaelNoeske> a foaf:Person .
+
+<https://orcid.org/OtelloRoscioni> a foaf:Person .
+
+<https://orcid.org/SebastianoMoruzzi> a foaf:Person .
+
+<https://orcid.org/SimonClark> a foaf:Person .
+
+: a owl:Ontology ;
+    dcterms:abstract "Mappings for contributors.ttl."@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/legalcode> ;
+    dcterms:publisher <https://w3id.org/emmo#EMMC_ASBL> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/contributors-mappings> .
+
+foaf:Organization rdfs:subClassOf <https://w3id.org/emmo#CollectiveAgent> .
+
+<https://w3id.org/emmo#EMMC_ASBL> a foaf:Organization .
+
+foaf:Person rdfs:subClassOf <https://w3id.org/emmo#MentalAgent> .
+

@@ -1,0 +1,429 @@
+@prefix : <https://w3id.org/emmo/hume/disciplines/math#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/emmo#> .
+@prefix ns2: <http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+owl:qualifiedCardinality a owl:AnnotationProperty .
+
+ns1:AlgebraicEquation a owl:Class ;
+    rdfs:label "AlgebraicEquation"@en ;
+    rdfs:comment "An 'equation' that has parts two 'polynomial'-s"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:hasSpatialPart ;
+            owl:someValuesFrom ns1:AlgebraicExpression ],
+        ns1:Equation ;
+    skos:example "2 * a - b = c"@en ;
+    skos:prefLabel "AlgebraicEquation"@en .
+
+ns1:ArithmeticEquation a owl:Class ;
+    rdfs:label "ArithmeticEquation"@en ;
+    rdfs:subClassOf ns1:Equation ;
+    skos:example "1 + 1 = 2"@en ;
+    skos:prefLabel "ArithmeticEquation"@en .
+
+ns1:ArithmeticExpression a owl:Class ;
+    rdfs:label "ArithmeticExpression"@en ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:complementOf [ a owl:Restriction ;
+                    owl:onProperty ns1:hasSpatialTile ;
+                    owl:someValuesFrom ns1:Variable ] ],
+        ns1:AlgebraicExpression ;
+    skos:example "2+2"@en ;
+    skos:prefLabel "ArithmeticExpression"@en .
+
+ns1:Array3D a owl:Class ;
+    rdfs:label "Array3D"@en ;
+    rdfs:comment "3-dimensional array who's spatial direct parts are matrices."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:hasSpatialTile ;
+            owl:someValuesFrom ns1:Matrix ],
+        ns1:Array ;
+    skos:altLabel "3DArray"@en ;
+    skos:prefLabel "Array3D"@en ;
+    ns1:elucidation "3-dimensional array who's spatial direct parts are matrices."@en .
+
+ns1:Division a owl:Class ;
+    rdfs:label "Division"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "/"^^xsd:string ;
+            owl:onProperty ns1:mathematicalSymbolValue ],
+        ns1:ArithmeticOperator ;
+    skos:prefLabel "Division"@en .
+
+ns1:Equals a owl:Class ;
+    rdfs:label "Equals"@en ;
+    rdfs:comment "The equals symbol."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "="^^xsd:string ;
+            owl:onProperty ns1:mathematicalSymbolValue ],
+        ns1:Mathematical,
+        ns1:Symbol ;
+    skos:prefLabel "Equals"@en ;
+    ns1:elucidation "The equals symbol."@en .
+
+ns1:Exponent a owl:Class ;
+    rdfs:label "Exponent"@en ;
+    rdfs:subClassOf ns1:AlgebraicOperator ;
+    skos:prefLabel "Exponent"@en .
+
+ns1:Gradient a owl:Class ;
+    rdfs:label "Gradient"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "∇"^^xsd:string ;
+            owl:onProperty ns1:mathematicalSymbolValue ],
+        ns1:DifferentialOperator ;
+    skos:prefLabel "Gradient"@en .
+
+ns1:Inequality a owl:Class ;
+    rdfs:label "Inequality"@en ;
+    rdfs:comment "A relation which makes a non-equal comparison between two numbers or other mathematical expressions."@en ;
+    rdfs:subClassOf ns1:MathematicalFormula ;
+    skos:example "f(x) > 0"@en ;
+    skos:prefLabel "Inequality"@en ;
+    ns1:elucidation "A relation which makes a non-equal comparison between two numbers or other mathematical expressions."@en .
+
+ns1:KnownConstant a owl:Class ;
+    rdfs:label "KnownConstant"@en ;
+    rdfs:comment "A variable that stand for a well known numerical constant (a known number)."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom ns1:Numerical ;
+            owl:onProperty [ owl:inverseOf ns1:hasVariable ] ],
+        ns1:Constant,
+        ns1:Numerical ;
+    skos:example "π refers to the constant number ~3.14"@en ;
+    skos:prefLabel "KnownConstant"@en ;
+    ns1:elucidation "A variable that stand for a well known numerical constant (a known number)."@en .
+
+ns1:Laplacian a owl:Class ;
+    rdfs:label "Laplacian"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "Δ"^^xsd:string ;
+            owl:onProperty ns1:mathematicalSymbolValue ],
+        ns1:DifferentialOperator ;
+    skos:prefLabel "Laplacian"@en .
+
+ns1:MathematicalConstruct a owl:Class ;
+    rdfs:label "MathematicalConstruct"@en ;
+    rdfs:comment "A construct of two or more mathematical symbols."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:hasProperPart ;
+            owl:someValuesFrom ns1:MathematicalSymbol ] ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( ns1:Mathematical ns1:SymbolicConstruct ) ] ;
+    skos:prefLabel "MathematicalConstruct"@en ;
+    ns1:elucidation "A construct of two or more mathematical symbols."@en .
+
+ns1:MathematicalFunction a owl:Class ;
+    rdfs:label "MathematicalFunction"@en ;
+    rdfs:comment "A function defined using functional notation."@en,
+        "A mathematical relation that relates each element in the domain (X) to exactly one element in the range (Y)."@en ;
+    rdfs:subClassOf ns1:DefiningEquation ;
+    skos:altLabel "FunctionDefinition"@en ;
+    skos:example "y = f(x)"@en ;
+    skos:prefLabel "MathematicalFunction"@en ;
+    ns1:elucidation "A function defined using functional notation."@en .
+
+ns1:Minus a owl:Class ;
+    rdfs:label "Minus"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "-"^^xsd:string ;
+            owl:onProperty ns1:mathematicalSymbolValue ],
+        ns1:ArithmeticOperator ;
+    skos:prefLabel "Minus"@en .
+
+ns1:Multiplication a owl:Class ;
+    rdfs:label "Multiplication"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "*"^^xsd:string ;
+            owl:onProperty ns1:mathematicalSymbolValue ],
+        ns1:ArithmeticOperator ;
+    skos:prefLabel "Multiplication"@en .
+
+ns1:Parameter a owl:Class ;
+    rdfs:label "Parameter"@en ;
+    rdfs:comment "A variable whose value is assumed to be known independently from the equation, but whose value is not explicitated in the equation."@en ;
+    rdfs:subClassOf ns1:NumericalVariable ;
+    skos:example "Viscosity in the Navier-Stokes equation"@en ;
+    skos:prefLabel "Parameter"@en .
+
+ns1:Plus a owl:Class ;
+    rdfs:label "Plus"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "+"^^xsd:string ;
+            owl:onProperty ns1:mathematicalSymbolValue ],
+        ns1:ArithmeticOperator ;
+    skos:prefLabel "Plus"@en .
+
+ns1:Polynomial a owl:Class ;
+    rdfs:label "Polynomial"@en ;
+    rdfs:subClassOf ns1:AlgebraicExpression ;
+    skos:example "2 * x^2 + x + 3"@en ;
+    skos:prefLabel "Polynomial"@en .
+
+ns1:Shape3Vector a owl:Class ;
+    rdfs:label "Shape3Vector"@en ;
+    rdfs:comment "A real vector with 3 elements."@en ;
+    rdfs:subClassOf ns1:Vector ;
+    skos:example "The quantity value of physical quantities if real space is a Shape3Vector."@en ;
+    skos:prefLabel "Shape3Vector"@en ;
+    ns1:elucidation "A real vector with 3 elements."@en .
+
+ns1:Shape4x3Matrix a owl:Class ;
+    rdfs:label "Shape4x3Matrix"@en ;
+    rdfs:comment "A real matrix with shape 4x3."@en ;
+    rdfs:subClassOf ns1:Matrix ;
+    skos:prefLabel "Shape4x3Matrix"@en ;
+    ns1:elucidation "A real matrix with shape 4x3."@en .
+
+ns1:Unknown a owl:Class ;
+    rdfs:label "Unknown"@en ;
+    rdfs:comment "The dependent variable for which an equation has been written."@en ;
+    rdfs:subClassOf ns1:NumericalVariable ;
+    skos:example "Velocity, for the Navier-Stokes equation."@en ;
+    skos:prefLabel "Unknown"@en ;
+    ns1:elucidation "The dependent variable for which an equation has been written."@en .
+
+ns1:hasNumberValue a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "hasNumberValue"@en ;
+    ns2:python_name "hasNumberValue"@en ;
+    rdfs:domain ns1:NumericData ;
+    rdfs:subPropertyOf ns1:hasDataValue ;
+    skos:prefLabel "hasNumberValue"@en ;
+    ns1:note "The owl:dataProperty that provides a serialisation of an EMMO numerical data entity."^^xsd:string .
+
+: a owl:Ontology ;
+    dcterms:abstract "The math module defines the formal language of mathematics. Mathematical objects represents graphical objects based on graphical symbols arranged according the rules of math."@en ;
+    dcterms:creator <https://orcid.org/AdhamHashibon>,
+        <https://orcid.org/EmanueleGhedini>,
+        <https://orcid.org/GeorgSchmitz>,
+        <https://orcid.org/GerhardGoldbeck>,
+        <https://orcid.org/JesperFriis> ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "Math"@en ;
+    rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.4/perspectives/reductionistic>,
+        <https://w3id.org/emmo/1.0.4/perspectives/semiotics>,
+        <https://w3id.org/emmo/1.0.4/reference/data>,
+        <https://w3id.org/emmo/1.0.4/reference/symbolic> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/disciplines/math> ;
+    owl:versionInfo "1.0.4"^^xsd:string ;
+    ns1:contact "emmo@emmc.eu"^^xsd:string .
+
+ns1:Constant a owl:Class ;
+    rdfs:subClassOf ns1:NumericalVariable ;
+    skos:prefLabel "Constant"@en ;
+    ns1:elucidation "A variable that stand for a numerical constant, even if it is unknown."@en .
+
+ns1:DefiningEquation a owl:Class ;
+    rdfs:label "DefiningEquation"@en ;
+    rdfs:comment "An equation that define a new variable in terms of other mathematical entities."@en ;
+    rdfs:subClassOf ns1:Equation ;
+    skos:example """The definition of velocity as v = dx/dt.
+
+The definition of density as mass/volume.
+
+y = f(x)"""@en ;
+    skos:prefLabel "DefiningEquation"@en ;
+    ns1:elucidation "An equation that define a new variable in terms of other mathematical entities."@en .
+
+ns1:Language a owl:Class .
+
+ns1:Number a owl:Class ;
+    rdfs:label "Number"@en ;
+    rdfs:comment "A number individual provides the link between the ontology and the actual data, through the data property hasNumericalValue."@en,
+        "A number is actually a string (e.g. 1.4, 1e-8) of numerical digits and other symbols. However, in order not to increase complexity of the taxonomy and relations, here we take a number as an \"atomic\" object, without decomposit it in digits (i.e. we do not include digits in the EMMO as alphabet for numbers)."@en,
+        "A numerical data value."@en,
+        """In math usually number and numeral are distinct concepts, the numeral being the symbol or a composition of symbols (e.g. 3.14, 010010, three) and the number is the idea behind it.
+More than one numeral stands for the same number.
+In the EMMO abstract entities do not exists, and numbers are simply defined by other numerals, so that a number is the class of all the numerals that are equivalent (e.g. 3 and 0011 are numerals that stands for the same number).
+Or alternatively, an integer numeral may also stands for a set of a specific cardinality (e.g. 3 stands for a set of three apples). Rational and real numbers are simply a syntactic arrangment of integers (digits, in decimal system).
+The fact that you can't give a name to a number without using a numeral or, in case of positive integers, without referring to a real world objects set with specific cardinality, suggests that the abstract concept of number is not a concept that can be practically used.
+For these reasons, the EMMO will consider numerals and numbers as the same concept."""@en ;
+    rdfs:subClassOf ns1:Numerical,
+        ns1:Symbol ;
+    skos:altLabel "Numeral"@en ;
+    skos:prefLabel "Number"@en ;
+    ns1:elucidation "A numerical data value."@en .
+
+ns1:hasSymbolValue a owl:DatatypeProperty .
+
+ns1:hasVariable a owl:ObjectProperty ;
+    rdfs:label "hasVariable"@en ;
+    ns2:python_name "hasVariable"@en ;
+    rdfs:domain ns1:Mathematical ;
+    rdfs:range ns1:Variable ;
+    rdfs:subPropertyOf ns1:hasConvention ;
+    skos:prefLabel "hasVariable"@en .
+
+ns1:AlgebraicOperator a owl:Class ;
+    rdfs:label "AlgebraicOperator"@en ;
+    rdfs:subClassOf ns1:MathematicalOperator ;
+    skos:prefLabel "AlgebraicOperator"@en .
+
+ns1:DifferentialOperator a owl:Class ;
+    rdfs:label "DifferentialOperator"@en ;
+    rdfs:subClassOf ns1:MathematicalOperator ;
+    skos:prefLabel "DifferentialOperator"@en .
+
+ns1:Expression a owl:Class ;
+    rdfs:label "Expression"@en ;
+    rdfs:comment "A well-formed finite combination of mathematical symbols according to some specific rules."@en ;
+    rdfs:subClassOf ns1:Mathematical,
+        ns1:SymbolicConstruct ;
+    skos:prefLabel "Expression"@en ;
+    ns1:elucidation "A well-formed finite combination of mathematical symbols according to some specific rules."@en .
+
+ns1:MathematicalFormula a owl:Class ;
+    rdfs:comment "The set X is called domain and the set Y range or codomain."@en ;
+    rdfs:subClassOf ns1:Mathematical,
+        ns1:SymbolicConstruct ;
+    skos:prefLabel "MathematicalFormula"@en ;
+    ns1:elucidation "A mathematical string that express a relation between the elements in one set X to elements in another set Y."@en .
+
+ns1:MathematicalOperator a owl:Class ;
+    rdfs:label "MathematicalOperator"@en ;
+    rdfs:comment "A mapping that acts on elements of one space and produces elements of another space."@en ;
+    rdfs:subClassOf ns1:Mathematical,
+        ns1:Symbol ;
+    skos:example "The algebraic operator '+' that acts on two real numbers and produces one real number."@en,
+        "The differential operator that acts on a C1 real function and produces another real function."@en ;
+    skos:prefLabel "MathematicalOperator"@en ;
+    ns1:elucidation "A mapping that acts on elements of one space and produces elements of another space."@en .
+
+ns1:MathematicalSymbol a owl:Class ;
+    rdfs:label "MathematicalSymbol"@en ;
+    rdfs:subClassOf [ a owl:Class ;
+            owl:complementOf [ a owl:Restriction ;
+                    owl:onProperty ns1:hasProperPart ;
+                    owl:someValuesFrom ns1:Mathematical ] ] ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( ns1:Mathematical ns1:Symbol ) ] ;
+    skos:prefLabel "MathematicalSymbol"@en .
+
+ns1:Matrix a owl:Class ;
+    rdfs:label "Matrix"@en ;
+    rdfs:comment "2-dimensional array who's spatial direct parts are vectors."@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:hasSpatialTile ;
+            owl:someValuesFrom ns1:Vector ],
+        ns1:Array ;
+    skos:altLabel "2DArray"@en ;
+    skos:prefLabel "Matrix"@en ;
+    ns1:elucidation "2-dimensional array who's spatial direct parts are vectors."@en .
+
+ns1:Vector a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:hasSpatialTile ;
+            owl:someValuesFrom ns1:Number ],
+        ns1:Array ;
+    skos:altLabel "LinearArray"^^xsd:string,
+        "1DArray"@en ;
+    skos:prefLabel "Vector"@en ;
+    ns1:elucidation "1-dimensional array who's spatial direct parts are numbers."@en .
+
+ns1:AlgebraicExpression a owl:Class ;
+    rdfs:label "AlgebraicExpression"@en ;
+    rdfs:comment "An expression that has parts only integer constants, variables, and the algebraic operations (addition, subtraction, multiplication, division and exponentiation by an exponent that is a rational number)"@en ;
+    rdfs:subClassOf ns1:Expression ;
+    skos:example "2x+3"@en ;
+    skos:prefLabel "AlgebraicExpression"@en .
+
+ns1:Array a owl:Class ;
+    rdfs:comment """Array subclasses with a specific shape can be constructed with cardinality restrictions.
+
+See Shape4x3Matrix as an example."""@en,
+        "Arrays are ordered objects, since they are a subclasses of Arrangement."@en ;
+    rdfs:subClassOf ns1:Mathematical ;
+    skos:example """A Vector is a 1-dimensional Array with Number as spatial direct parts,
+a Matrix is a 2-dimensional Array with Vector as spatial direct parts,
+an Array3D is a 3-dimensional Array with Matrix as spatial direct parts,
+and so forth..."""@en ;
+    skos:prefLabel "Array"@en ;
+    ns1:elucidation "Arrays are ordered mathematical objects who's elementary spatial parts are numbers. Their dimensionality is constructed with spatial direct parthood, where 1-dimensional arrays have spatial direct parts Number and n-dimensional array have spatial direct parts (n-1)-dimensional arrays."@en .
+
+ns1:Equation a owl:Class ;
+    rdfs:comment """An equation with variables can always be represented as:
+
+f(v0, v1, ..., vn) = g(v0, v1, ..., vn)
+
+where f is the left hand and g the right hand  side expressions and v0, v1, ..., vn are the variables."""@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:hasSpatialPart ;
+            owl:someValuesFrom ns1:Expression ],
+        ns1:Mathematical,
+        ns1:MathematicalFormula ;
+    skos:example """2+3 = 5
+x^2 +3x  = 5x
+dv/dt = a
+sin(x) = y"""@en ;
+    skos:prefLabel "Equation"@en ;
+    ns1:elucidation "The class of 'mathematical'-s that stand for a statement of equality between two mathematical expressions."@en .
+
+ns1:Numerical a owl:Class ;
+    rdfs:label "Numerical"@en ;
+    rdfs:comment "A 'Mathematical' that has no unknown value, i.e. all its 'Variable\"-s parts refers to a 'Number' (for scalars that have a built-in datatype) or to another 'Numerical' (for complex numerical data structures that should rely on external implementations)."@en ;
+    rdfs:subClassOf ns1:Mathematical ;
+    skos:prefLabel "Numerical"@en ;
+    ns1:elucidation "A 'Mathematical' that has no unknown value, i.e. all its 'Variable\"-s parts refers to a 'Number' (for scalars that have a built-in datatype) or to another 'Numerical' (for complex numerical data structures that should rely on external implementations)."@en .
+
+ns1:NumericalVariable a owl:Class ;
+    rdfs:subClassOf ns1:Variable ;
+    skos:prefLabel "NumericalVariable"@en ;
+    ns1:elucidation "A variable standing for a numerical defined mathematical object like e.g. a number, a vector of numbers, a matrix of numbers."@en .
+
+ns1:SymbolicConstruct a owl:Class .
+
+ns1:ArithmeticOperator a owl:Class ;
+    rdfs:label "ArithmeticOperator"@en ;
+    rdfs:subClassOf ns1:AlgebraicOperator ;
+    skos:prefLabel "ArithmeticOperator"@en .
+
+ns1:Symbol a owl:Class .
+
+ns1:hasSpatialTile a owl:ObjectProperty .
+
+ns1:Variable a owl:Class ;
+    rdfs:subClassOf ns1:Mathematical ;
+    skos:example """x
+k"""@en ;
+    skos:prefLabel "Variable"@en ;
+    ns1:elucidation "A variable is a symbolic object that stands for any other mathematical object, such as  number, a vector, a matrix, a function, the argument of a function, a set, an element of a set."@en .
+
+ns1:mathematicalSymbolValue a owl:DatatypeProperty ;
+    rdfs:label "mathematicalSymbolValue"@en ;
+    ns2:python_name "mathematicalSymbolValue"@en ;
+    rdfs:domain ns1:MathematicalSymbol ;
+    rdfs:subPropertyOf ns1:hasSymbolValue ;
+    skos:prefLabel "mathematicalSymbolValue"@en .
+
+ns1:Mathematical a owl:Class ;
+    rdfs:subClassOf ns1:Language ;
+    skos:prefLabel "Mathematical"@en ;
+    ns1:elucidation "The class of general mathematical symbolic objects respecting mathematical syntactic rules."@en ;
+    ns1:note "A mathematical object in this branch is not representing a concept but an actual graphical object built using mathematcal symbols arranged in some way, according to math conventions."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty ns1:elucidation ;
+    owl:annotatedSource ns1:Variable ;
+    owl:annotatedTarget "A variable is a symbolic object that stands for any other mathematical object, such as  number, a vector, a matrix, a function, the argument of a function, a set, an element of a set."@en ;
+    ns1:wikipediaReference "https://en.wikipedia.org/wiki/Variable_(mathematics)"^^xsd:anyURI .
+
+[] owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "3"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Variable ;
+    owl:annotatedTarget "Variable"@en ;
+    ns1:etymology "Fom Latin variabilis (\"changeable\")."@en .
+

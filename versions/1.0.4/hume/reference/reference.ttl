@@ -1,0 +1,24 @@
+@prefix : <https://w3id.org/emmo/hume/reference#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+: a owl:Ontology ;
+    dcterms:abstract "A collection of all the EMMO reference level ontology modules"@en ;
+    dcterms:creator <https://orcid.org/EmanueleGhedini> ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "Reference"@en ;
+    rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.4/perspectives>,
+        <https://w3id.org/emmo/1.0.4/reference/information>,
+        <https://w3id.org/emmo/1.0.4/reference/persholistic>,
+        <https://w3id.org/emmo/1.0.4/reference/physicalistic>,
+        <https://w3id.org/emmo/1.0.4/reference/symbolic>,
+        <https://w3id.org/emmo/1.0.4/reference/workflow> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/reference> ;
+    owl:versionInfo "1.0.4"^^xsd:string ;
+    ns1:contact "emmo@emmc.eu"^^xsd:string .
+
