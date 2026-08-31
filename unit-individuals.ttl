@@ -5578,7 +5578,7 @@ emmo:EMMO_0c1009ee_d84c_4b8c_bcea_756f07af1b32 a owl:AsymmetricProperty,
     owl:inverseOf emmo:EMMO_27ceaab7_8293_408d_a22b_ad4bf4a7bc2d ;
     skos:prefLabel "hasObjectInput"@en ;
     emmo:elucidation "The relation between a process P that proper overlaps an object O, where the non-overlapping part of O causes P."@en ;
-    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/hasObjectInput.png"^^xsd:string .
+    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/hasObjectInput.png"^^xsd:string .
 
 emmo:EMMO_0d1c0018_42e2_4506_bc3d_f53c117c1ad3 a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/reference/data#> ;
@@ -5772,7 +5772,7 @@ emmo:EMMO_2d572205_274c_414a_9564_01c3e14e3c8f a owl:AsymmetricProperty,
     owl:inverseOf emmo:EMMO_3c51ea74_43a4_42d5_953b_fcb43f359c73 ;
     skos:prefLabel "isInfluencedBy"@en ;
     emmo:elucidation "The relation between an object O that proper overlaps a process P, where the non-overlapping part of P causes O."@en ;
-    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/isInfluencedBy.png"^^xsd:string .
+    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/isInfluencedBy.png"^^xsd:string .
 
 emmo:EMMO_2dddfc30_d4e1_4e3e_a0ca_755c4d9d2cf4 a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/structural#> ;
@@ -5835,7 +5835,7 @@ emmo:EMMO_31693539_435a_4b0d_9366_b01e4f294a28 a owl:AsymmetricProperty,
     owl:inverseOf emmo:EMMO_ea7724fe_ba5d_4201_865e_761cb6fe9f99 ;
     skos:prefLabel "gets"@en ;
     emmo:elucidation "The relation between an object O1 that proper overlaps an object O2, where the non-overlapping part of O2 causes O1."@en ;
-    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/gets.png"^^xsd:string .
+    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/gets.png"^^xsd:string .
 
 emmo:EMMO_322ce14e_9ede_4841_ad70_302b4d6c5f28 a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
@@ -5933,7 +5933,7 @@ emmo:EMMO_449beacd_4fda_4d46_a723_d2118f4e2623 a owl:AsymmetricProperty,
     owl:inverseOf emmo:EMMO_d3d46e3f_20c0_4507_9076_2c849ada490a ;
     skos:prefLabel "affects"@en ;
     emmo:elucidation "The relation between a process P that through overlaps an object O."@en ;
-    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/affects.png"^^xsd:string .
+    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/affects.png"^^xsd:string .
 
 emmo:EMMO_451ce6e1_9742_4e04_9bf8_acfcc81876f1 a owl:AsymmetricProperty,
         owl:IrreflexiveProperty,
@@ -6290,7 +6290,7 @@ emmo:EMMO_8a9b62df_e1ee_463b_bd1c_9fd9a572e970 a owl:AsymmetricProperty,
     owl:inverseOf emmo:EMMO_ee518694_9a11_41e5_ada2_8c68c62c2993 ;
     skos:prefLabel "generates"@en ;
     emmo:elucidation "The relation between an object O that proper overlaps a process P, where the non-overlapping part of P is caused by O."@en ;
-    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/generates.png"^^xsd:string .
+    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/generates.png"^^xsd:string .
 
 emmo:EMMO_8aba9715_d542_4a79_a778_6115d2b4febd a owl:Class ;
     rdfs:isDefinedBy <https://plato.stanford.edu/entries/agency/#OthKinAgeMenShaColRelArt>,
@@ -27080,7 +27080,7 @@ emmo:EMMO_5aa0f895_1567_4239_8343_29e91a33d4c9 a owl:AsymmetricProperty,
     rdfs:subPropertyOf emmo:EMMO_bed37b1f_0479_4b61_bd49_54e25f414222 ;
     skos:prefLabel "releases"@en ;
     emmo:elucidation "The relation between an object O1 that proper overlaps an object O2, where the non-overlapping part of O2 is caused by O1."@en ;
-    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/releases.png"^^xsd:string .
+    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/releases.png"^^xsd:string .
 
 emmo:EMMO_5d73661e_e710_4844_ab9b_a85b7e68576a a owl:ObjectProperty ;
     rdfs:domain emmo:EMMO_0f6f0120_c079_4d95_bb11_4ddee05e530e ;
@@ -27784,7 +27784,7 @@ emmo:EMMO_d162b33e_e1f5_47dc_b06f_58f35e591f45 a owl:AsymmetricProperty,
     rdfs:subPropertyOf emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 ;
     skos:prefLabel "hasProcessOutput"@en ;
     emmo:elucidation "The relation between a process P1 that proper overlaps a process P2, where the non-overlapping part of P2 is caused by P1."@en ;
-    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/hasProcessOutput.png"^^xsd:string .
+    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/hasProcessOutput.png"^^xsd:string .
 
 emmo:EMMO_d2a20142_b3a4_4d3b_a7e1_e17597e7f177 a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
@@ -27894,7 +27894,7 @@ emmo:EMMO_e1c65ca8_6fed_4859_b320_5f14928e8464 a owl:AsymmetricProperty,
     rdfs:subPropertyOf emmo:EMMO_29e45c39_cc99_43f8_a545_f329f622f551 ;
     skos:prefLabel "participatesTo"@en ;
     emmo:elucidation "The relation between an object O that through overlaps a process P."@en ;
-    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/participatesTo.png"^^xsd:string .
+    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/participatesTo.png"^^xsd:string .
 
 emmo:EMMO_e3850f08_8e79_454b_9d83_c517cab42857 a owl:ObjectProperty ;
     rdfs:domain emmo:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606 ;
@@ -27930,7 +27930,7 @@ emmo:EMMO_e701ec30_c993_48bf_8f29_fb10664065e5 a owl:AsymmetricProperty,
     rdfs:subPropertyOf emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 ;
     skos:prefLabel "hasObjectOutput"@en ;
     emmo:elucidation "The relation between a process P that proper overlaps an object O, where the non-overlapping part of O is caused by P."@en ;
-    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/hasObjectOutput.png"^^xsd:string .
+    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/hasObjectOutput.png"^^xsd:string .
 
 emmo:EMMO_e999f9e0_7d63_4564_9028_07246580a267 a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
@@ -27960,7 +27960,7 @@ emmo:EMMO_e9d65041_d87d_4b04_9fe9_1eed8f9c0370 a owl:AsymmetricProperty,
     rdfs:subPropertyOf emmo:EMMO_29e45c39_cc99_43f8_a545_f329f622f551 ;
     skos:prefLabel "partakesIn"@en ;
     emmo:elucidation "The relation between an object O1 that through overlaps an object O2."@en ;
-    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/partakesIn.png"^^xsd:string .
+    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/partakesIn.png"^^xsd:string .
 
 emmo:EMMO_ea67144c_56fd_4312_a4f4_af78edd5eacc a owl:DatatypeProperty ;
     rdfs:label "quantityValue"@en ;
@@ -27989,7 +27989,7 @@ emmo:EMMO_eaef29bd_bd79_4de1_b192_4fdc9016730b a owl:AsymmetricProperty,
     rdfs:subPropertyOf emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 ;
     skos:prefLabel "hasProcessInput"@en ;
     emmo:elucidation "The relation between a process P1 that proper overlaps a process P2, where the non-overlapping part of P2 causes P1."@en ;
-    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/hasProcessInput.png"^^xsd:string .
+    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/hasProcessInput.png"^^xsd:string .
 
 emmo:EMMO_eaf4640d_651d_4cbe_a315_3d2dc5df3b35 a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
@@ -28065,7 +28065,7 @@ emmo:EMMO_f09e1d0a_07ce_4121_8c89_5bd67b7e8116 a owl:AsymmetricProperty,
     rdfs:subPropertyOf emmo:EMMO_29e45c39_cc99_43f8_a545_f329f622f551 ;
     skos:prefLabel "contributesTo"@en ;
     emmo:elucidation "The relation between a process P1 that through overlaps a process P2."@en ;
-    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/contributesTo.png"^^xsd:string .
+    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/contributesTo.png"^^xsd:string .
 
 emmo:EMMO_f1503598_03af_4fec_a860_ebc77aa92832 a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://w3id.org/emmo/foundation/mereocausality#> ;
@@ -29316,7 +29316,7 @@ emmo:EMMO_1cfd072d_2157_43e2_b9f6_ff1e7a708774 a owl:AsymmetricProperty,
     owl:inverseOf emmo:EMMO_64be8885_2c8a_4e84_a4fc_9d2de61b4d0d ;
     skos:prefLabel "isIncomingOverlappedBy"@en ;
     emmo:elucidation "The relation between an item I1 that proper overlaps an item I2, where the non-overlapping part of I2 causes I1."@en ;
-    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/isIncomingOverlappedBy.png"^^xsd:string .
+    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/isIncomingOverlappedBy.png"^^xsd:string .
 
 emmo:EMMO_1daaf7b2_e7bf_4b3a_b7f6_8aa3f3c3d080 a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/reference/symbolic#> ;
@@ -30000,7 +30000,7 @@ emmo:EMMO_b1a64980_c524_4d48_af8f_9805570ce453 a owl:AsymmetricProperty,
     owl:inverseOf emmo:EMMO_c5b4c32b_74de_403d_96f2_266bec8bd0e8 ;
     skos:prefLabel "isOutgoingOverlappedBy"@en ;
     emmo:elucidation "The relation between an item I1 that proper overlaps an item I2, where the non-overlapping part of I2 is caused by I1."@en ;
-    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/isOutgoingOverlappedBy.png"^^xsd:string .
+    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/isOutgoingOverlappedBy.png"^^xsd:string .
 
 emmo:EMMO_b953f2b1_c8d1_4dd9_b630_d3ef6580c2bb a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
@@ -30021,7 +30021,7 @@ emmo:EMMO_bed37b1f_0479_4b61_bd49_54e25f414222 a owl:AsymmetricProperty,
     owl:inverseOf emmo:EMMO_eb3ffec6_3d69_4633_a3b1_088ad53cb00b ;
     skos:prefLabel "isLeftBy"@en ;
     emmo:elucidation "The relation between an object O that proper overlaps an item I, where the non-overlapping part of I is caused by O."@en ;
-    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/isLeftBy.png"^^xsd:string .
+    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/isLeftBy.png"^^xsd:string .
 
 emmo:EMMO_c01bea11_1937_4cc0_b40d_4b192fdba311 a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
@@ -31280,7 +31280,7 @@ emmo:EMMO_86726b7c_b208_4690_893e_0cc798fac974 a owl:AsymmetricProperty,
     rdfs:subPropertyOf emmo:EMMO_1cfd072d_2157_43e2_b9f6_ff1e7a708774 ;
     skos:prefLabel "isJoinedBy"@en ;
     emmo:elucidation "The relation between an object O that proper overlaps an item I, where the non-overlapping part of I causes O."@en ;
-    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/isJoinedBy.png"^^xsd:string .
+    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/isJoinedBy.png"^^xsd:string .
 
 emmo:EMMO_87b5dd20_e4fe_422d_9e70_1eee54ec9496 a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
@@ -31856,7 +31856,7 @@ emmo:EMMO_29e45c39_cc99_43f8_a545_f329f622f551 a owl:AsymmetricProperty,
     owl:inverseOf emmo:EMMO_d78b940d_4e2a_4a46_816b_da89029adc19 ;
     skos:prefLabel "throughOverlaps"@en ;
     emmo:elucidation "The relation between an item I1 that proper overlaps an Item I2 where I1 has two non-overlapping parts, one that causes I2 and one that is a cause of I2."@en ;
-    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/throughOverlaps.png"^^xsd:string .
+    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/throughOverlaps.png"^^xsd:string .
 
 emmo:EMMO_2bb50428_568d_46e8_b8bf_59a4c5656461 a owl:AsymmetricProperty,
         owl:IrreflexiveProperty,
@@ -32502,7 +32502,7 @@ emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 a owl:AsymmetricProperty,
     rdfs:subPropertyOf emmo:EMMO_1cfd072d_2157_43e2_b9f6_ff1e7a708774 ;
     skos:prefLabel "hasInput"@en ;
     emmo:elucidation "The relation between a process P that proper overlaps an item I, where the non-overlapping part of I causes P."@en ;
-    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/hasInput.png"^^xsd:string .
+    emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/hasInput.png"^^xsd:string .
 
 emmo:EMMO_3fe66e46_9343_4a36_b101_a732ad5f4f76 a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;

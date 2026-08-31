@@ -637,7 +637,7 @@ rdf:JSON rdf:type rdfs:Datatype .
                          "https://w3id.org/emmo/emmo-for-humans#affects"^^xsd:anyURI ;
          skos:prefLabel "affects"@en ;
          :elucidation "The relation between a process P that through overlaps an object O."@en ;
-         :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/affects.png" .
+         :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/affects.png" .
 
 
 ###  https://w3id.org/emmo/emmo-for-humans#alongsideWith
@@ -747,7 +747,7 @@ Contacts between two entities exclude the possibility of other causal relations 
                                "https://w3id.org/emmo/emmo-for-humans#contributesTo"^^xsd:anyURI ;
                skos:prefLabel "contributesTo"@en ;
                :elucidation "The relation between a process P1 that through overlaps a process P2."@en ;
-               :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/contributesTo.png" .
+               :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/contributesTo.png" .
 
 
 ###  https://w3id.org/emmo/emmo-for-humans#directlyCausedBy
@@ -855,7 +855,7 @@ The direct causality in a 4D ontology covers both time-like causal interaction (
                            "https://w3id.org/emmo/emmo-for-humans#generates"^^xsd:anyURI ;
            skos:prefLabel "generates"@en ;
            :elucidation "The relation between an object O that proper overlaps a process P, where the non-overlapping part of P is caused by O."@en ;
-           :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/generates.png" .
+           :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/generates.png" .
 
 
 ###  https://w3id.org/emmo/emmo-for-humans#gets
@@ -871,7 +871,7 @@ The direct causality in a 4D ontology covers both time-like causal interaction (
                       "https://w3id.org/emmo/emmo-for-humans#gets"^^xsd:anyURI ;
       skos:prefLabel "gets"@en ;
       :elucidation "The relation between an object O1 that proper overlaps an object O2, where the non-overlapping part of O2 causes O1."@en ;
-      :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/gets.png" .
+      :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/gets.png" .
 
 
 ###  https://w3id.org/emmo/emmo-for-humans#hasAgent
@@ -1329,7 +1329,7 @@ The quantity is selected without an observation aimed to measure its actual valu
                           "https://w3id.org/emmo/emmo-for-humans#hasInput"^^xsd:anyURI ;
           skos:prefLabel "hasInput"@en ;
           :elucidation "The relation between a process P that proper overlaps an item I, where the non-overlapping part of I causes P."@en ;
-          :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/hasInput.png" .
+          :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/hasInput.png" .
 
 
 ###  https://w3id.org/emmo/emmo-for-humans#hasInternalRepresentation
@@ -1639,7 +1639,7 @@ The label of this class was also changed from PhysicsDimension to PhysicalDimens
                                 "https://w3id.org/emmo/emmo-for-humans#hasObjectInput"^^xsd:anyURI ;
                 skos:prefLabel "hasObjectInput"@en ;
                 :elucidation "The relation between a process P that proper overlaps an object O, where the non-overlapping part of O causes P."@en ;
-                :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/hasObjectInput.png" .
+                :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/hasObjectInput.png" .
 
 
 ###  https://w3id.org/emmo/emmo-for-humans#hasObjectOutput
@@ -1655,7 +1655,7 @@ The label of this class was also changed from PhysicsDimension to PhysicalDimens
                                  "https://w3id.org/emmo/emmo-for-humans#hasObjectOutput"^^xsd:anyURI ;
                  skos:prefLabel "hasObjectOutput"@en ;
                  :elucidation "The relation between a process P that proper overlaps an object O, where the non-overlapping part of O is caused by P."@en ;
-                 :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/hasObjectOutput.png" .
+                 :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/hasObjectOutput.png" .
 
 
 ###  https://w3id.org/emmo/emmo-for-humans#hasObjectiveProperty
@@ -1773,7 +1773,7 @@ Participation is not under direct parthood since a process is not strictly relat
                                  "https://w3id.org/emmo/emmo-for-humans#hasProcessInput"^^xsd:anyURI ;
                  skos:prefLabel "hasProcessInput"@en ;
                  :elucidation "The relation between a process P1 that proper overlaps a process P2, where the non-overlapping part of P2 causes P1."@en ;
-                 :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/hasProcessInput.png" .
+                 :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/hasProcessInput.png" .
 
 
 ###  https://w3id.org/emmo/emmo-for-humans#hasProcessOutput
@@ -1789,7 +1789,7 @@ Participation is not under direct parthood since a process is not strictly relat
                                   "https://w3id.org/emmo/emmo-for-humans#hasProcessOutput"^^xsd:anyURI ;
                   skos:prefLabel "hasProcessOutput"@en ;
                   :elucidation "The relation between a process P1 that proper overlaps a process P2, where the non-overlapping part of P2 is caused by P1."@en ;
-                  :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/hasProcessOutput.png" .
+                  :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/hasProcessOutput.png" .
 
 
 ###  https://w3id.org/emmo/emmo-for-humans#hasProductOutput
@@ -2625,7 +2625,7 @@ For this reason the EMMO OWL 2 DL will only deal with macro causality relations,
                                         "https://w3id.org/emmo/emmo-for-humans#isIncomingOverlappedBy"^^xsd:anyURI ;
                         skos:prefLabel "isIncomingOverlappedBy"@en ;
                         :elucidation "The relation between an item I1 that proper overlaps an item I2, where the non-overlapping part of I2 causes I1."@en ;
-                        :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/isIncomingOverlappedBy.png" .
+                        :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/isIncomingOverlappedBy.png" .
 
 
 ###  https://w3id.org/emmo/emmo-for-humans#isInfluencedBy
@@ -2640,7 +2640,7 @@ For this reason the EMMO OWL 2 DL will only deal with macro causality relations,
                                 "https://w3id.org/emmo/emmo-for-humans#isInfluencedBy"^^xsd:anyURI ;
                 skos:prefLabel "isInfluencedBy"@en ;
                 :elucidation "The relation between an object O that proper overlaps a process P, where the non-overlapping part of P causes O."@en ;
-                :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/isInfluencedBy.png" .
+                :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/isInfluencedBy.png" .
 
 
 ###  https://w3id.org/emmo/emmo-for-humans#isInputOf
@@ -2725,7 +2725,7 @@ For this reason the EMMO OWL 2 DL will only deal with macro causality relations,
                             "https://w3id.org/emmo/emmo-for-humans#isJoinedBy"^^xsd:anyURI ;
             skos:prefLabel "isJoinedBy"@en ;
             :elucidation "The relation between an object O that proper overlaps an item I, where the non-overlapping part of I causes O."@en ;
-            :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/isJoinedBy.png" .
+            :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/isJoinedBy.png" .
 
 
 ###  https://w3id.org/emmo/emmo-for-humans#isJunctionPartOf
@@ -2753,7 +2753,7 @@ For this reason the EMMO OWL 2 DL will only deal with macro causality relations,
                           "https://w3id.org/emmo/emmo-for-humans#isLeftBy"^^xsd:anyURI ;
           skos:prefLabel "isLeftBy"@en ;
           :elucidation "The relation between an object O that proper overlaps an item I, where the non-overlapping part of I is caused by O."@en ;
-          :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/isLeftBy.png" .
+          :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/isLeftBy.png" .
 
 
 ###  https://w3id.org/emmo/emmo-for-humans#isMemberOf
@@ -2842,7 +2842,7 @@ For this reason the EMMO OWL 2 DL will only deal with macro causality relations,
                                         "https://w3id.org/emmo/emmo-for-humans#isOutgoingOverlappedBy"^^xsd:anyURI ;
                         skos:prefLabel "isOutgoingOverlappedBy"@en ;
                         :elucidation "The relation between an item I1 that proper overlaps an item I2, where the non-overlapping part of I2 is caused by I1."@en ;
-                        :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/isOutgoingOverlappedBy.png" .
+                        :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/isOutgoingOverlappedBy.png" .
 
 
 ###  https://w3id.org/emmo/emmo-for-humans#isOutputOf
@@ -3286,7 +3286,7 @@ https://en.wiktionary.org/wiki/mereology"""@en
                             "https://w3id.org/emmo/emmo-for-humans#partakesIn"^^xsd:anyURI ;
             skos:prefLabel "partakesIn"@en ;
             :elucidation "The relation between an object O1 that through overlaps an object O2."@en ;
-            :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/partakesIn.png" .
+            :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/partakesIn.png" .
 
 
 ###  https://w3id.org/emmo/emmo-for-humans#participatesTo
@@ -3302,7 +3302,7 @@ https://en.wiktionary.org/wiki/mereology"""@en
                                 "https://w3id.org/emmo/emmo-for-humans#participatesTo"^^xsd:anyURI ;
                 skos:prefLabel "participatesTo"@en ;
                 :elucidation "The relation between an object O that through overlaps a process P."@en ;
-                :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/participatesTo.png" .
+                :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/participatesTo.png" .
 
 
 ###  https://w3id.org/emmo/emmo-for-humans#precedes
@@ -3406,7 +3406,7 @@ This means that the causing entity can be in direct and optionally indirect caus
                           "https://w3id.org/emmo/emmo-for-humans#releases"^^xsd:anyURI ;
           skos:prefLabel "releases"@en ;
           :elucidation "The relation between an object O1 that proper overlaps an object O2, where the non-overlapping part of O2 is caused by O1."@en ;
-          :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/releases.png" .
+          :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/releases.png" .
 
 
 ###  https://w3id.org/emmo/emmo-for-humans#semioticOvercrossedBy
@@ -3482,7 +3482,7 @@ This means that the causing entity can be in direct and optionally indirect caus
                                  "https://w3id.org/emmo/emmo-for-humans#throughOverlaps"^^xsd:anyURI ;
                  skos:prefLabel "throughOverlaps"@en ;
                  :elucidation "The relation between an item I1 that proper overlaps an Item I2 where I1 has two non-overlapping parts, one that causes I2 and one that is a cause of I2."@en ;
-                 :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/throughOverlaps.png" .
+                 :illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/throughOverlaps.png" .
 
 
 #################################################################
