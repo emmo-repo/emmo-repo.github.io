@@ -9,7 +9,6 @@
 
 ns1:AbsorbedDoseRateUnit a owl:Class ;
     rdfs:label "AbsorbedDoseRateUnit"@en ;
-    rdfs:comment "The class of units with dimensionality 'AbsorbedDoseRate'."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T-3 L+2 M0 I0 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -26,20 +25,13 @@ ns1:AbsorbedDoseUnit a owl:Class ;
     ns1:elucidation "The class of units with dimensionality 'AbsorbedDose'."@en .
 
 ns1:AccelerationUnit a owl:Class ;
+    rdfs:label "AccelerationUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T-2 L+1 M0 I0 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
         ns1:SIDimensionalUnit ;
     skos:prefLabel "AccelerationUnit"@en ;
     ns1:elucidation "The class of units with dimensionality 'Acceleration'."@en .
-
-ns1:AmountConcentrationUnit a owl:Class ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "T0 L-3 M0 I0 Θ0 N+1 J0"^^xsd:string ;
-            owl:onProperty ns1:hasDimensionString ],
-        ns1:SIDimensionalUnit ;
-    skos:prefLabel "AmountConcentrationUnit"@en ;
-    ns1:elucidation "The class of units with dimensionality 'AmountConcentration'."@en .
 
 ns1:AmountConductivityUnit a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
@@ -50,6 +42,7 @@ ns1:AmountConductivityUnit a owl:Class ;
     ns1:elucidation "The class of units with dimensionality 'AmountConductivity'."@en .
 
 ns1:AmountFractionUnit a owl:Class ;
+    rdfs:label "AmountFractionUnit"@en ;
     rdfs:subClassOf ns1:FractionUnit ;
     skos:example "Unit for amount fraction."@en ;
     skos:prefLabel "AmountFractionUnit"@en ;
@@ -103,6 +96,16 @@ ns1:AmountPerVolumeTimeUnit a owl:Class ;
     skos:prefLabel "AmountPerVolumeTimeUnit"@en ;
     ns1:elucidation "The class of units with dimensionality 'AmountPerVolumeTime'."@en .
 
+ns1:AmountPerVolumeUnit a owl:Class ;
+    rdfs:label "AmountPerVolumeUnit"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "T0 L-3 M0 I0 Θ0 N+1 J0"^^xsd:string ;
+            owl:onProperty ns1:hasDimensionString ],
+        ns1:SIDimensionalUnit ;
+    skos:altLabel "AmountConcentrationUnit"@en ;
+    skos:prefLabel "AmountPerVolumeUnit"@en ;
+    ns1:elucidation "The class of units with dimensionality 'AmountPerVolume'."@en .
+
 ns1:AmountSquareTimePerMassVolumeUnit a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T+2 L-3 M-1 I0 Θ0 N+1 J0"^^xsd:string ;
@@ -136,6 +139,7 @@ ns1:AngularFrequencyUnit a owl:Class ;
     ns1:elucidation "The class of units with dimensionality 'AngularFrequency'."@en .
 
 ns1:AngularMomentumUnit a owl:Class ;
+    rdfs:label "AngularMomentumUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T-1 L+2 M+1 I0 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -144,6 +148,7 @@ ns1:AngularMomentumUnit a owl:Class ;
     ns1:elucidation "The class of units with dimensionality 'AngularMomentum'."@en .
 
 ns1:AreaDensityUnit a owl:Class ;
+    rdfs:label "AreaDensityUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T0 L-2 M+1 I0 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -153,7 +158,6 @@ ns1:AreaDensityUnit a owl:Class ;
 
 ns1:AreaFractionUnit a owl:Class ;
     rdfs:label "AreaFractionUnit"@en ;
-    rdfs:comment "Unit for quantities of dimension one that are the fraction of two areas."@en ;
     rdfs:subClassOf ns1:FractionUnit ;
     skos:example "Unit for solid angle."@en ;
     skos:prefLabel "AreaFractionUnit"@en ;
@@ -184,6 +188,7 @@ ns1:AreaPerQuarticTimeUnit a owl:Class ;
     ns1:elucidation "The class of units with dimensionality 'AreaPerQuarticTime'."@en .
 
 ns1:AreaPerTemperatureUnit a owl:Class ;
+    rdfs:label "AreaPerTemperatureUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T0 L+2 M0 I0 Θ-1 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -217,7 +222,6 @@ ns1:AreaTemperatureUnit a owl:Class ;
 
 ns1:AreaTimeTemperatureUnit a owl:Class ;
     rdfs:label "AreaTimeTemperatureUnit"@en ;
-    rdfs:comment "The class of units with dimensionality 'AreaTimeTemperature'."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T+1 L+2 M0 I0 Θ+1 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -234,6 +238,7 @@ ns1:AreaTimeUnit a owl:Class ;
     ns1:elucidation "The class of units with dimensionality 'AreaTime'."@en .
 
 ns1:AreaUnit a owl:Class ;
+    rdfs:label "AreaUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T0 L+2 M0 I0 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -359,7 +364,6 @@ ns1:ElectricChargeUnit a owl:Class ;
 
 ns1:ElectricConductanceUnit a owl:Class ;
     rdfs:label "ElectricConductanceUnit"@en ;
-    rdfs:comment "The class of units with dimensionality 'ElectricConductance'."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T+3 L-2 M-1 I+2 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -376,6 +380,7 @@ ns1:ElectricConductivityPerAmountUnit a owl:Class ;
     ns1:elucidation "The class of units with dimensionality 'ElectricConductivityPerAmount'."@en .
 
 ns1:ElectricConductivityUnit a owl:Class ;
+    rdfs:label "ElectricConductivityUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T+3 L-3 M-1 I+2 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -385,7 +390,6 @@ ns1:ElectricConductivityUnit a owl:Class ;
 
 ns1:ElectricCurrentAreaUnit a owl:Class ;
     rdfs:label "ElectricCurrentAreaUnit"@en ;
-    rdfs:comment "The class of units with dimensionality 'ElectricCurrentArea'."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T0 L+2 M0 I+1 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -402,6 +406,7 @@ ns1:ElectricCurrentDensityPerTemperatureUnit a owl:Class ;
     ns1:elucidation "The class of units with dimensionality 'ElectricCurrentDensityPerTemperature'."@en .
 
 ns1:ElectricCurrentDensityUnit a owl:Class ;
+    rdfs:label "ElectricCurrentDensityUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T0 L-2 M0 I+1 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -443,7 +448,6 @@ ns1:ElectricCurrentPerTemperatureUnit a owl:Class ;
 
 ns1:ElectricCurrentPerUnitEnergyUnit a owl:Class ;
     rdfs:label "ElectricCurrentPerUnitEnergyUnit"@en ;
-    rdfs:comment "The class of units with dimensionality 'ElectricCurrentPerUnitEnergy'."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T+3 L-2 M-1 I+1 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -461,7 +465,6 @@ ns1:ElectricCurrentUnit a owl:Class ;
 
 ns1:ElectricDipoleMomentUnit a owl:Class ;
     rdfs:label "ElectricDipoleMomentUnit"@en ;
-    rdfs:comment "The class of units with dimensionality 'ElectricDipoleMoment'."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T+1 L+1 M0 I+1 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -487,7 +490,6 @@ ns1:ElectricFieldStrengthUnit a owl:Class ;
 
 ns1:ElectricFluxUnit a owl:Class ;
     rdfs:label "ElectricFluxUnit"@en ;
-    rdfs:comment "The class of units with dimensionality 'ElectricFlux'."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T-3 L+3 M+1 I-1 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -576,6 +578,7 @@ ns1:EnergyLengthPerAmountUnit a owl:Class ;
     ns1:elucidation "The class of units with dimensionality 'EnergyLengthPerAmount'."@en .
 
 ns1:EnergyPerAmountUnit a owl:Class ;
+    rdfs:label "EnergyPerAmountUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T-2 L+2 M+1 I0 Θ0 N-1 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -624,6 +627,7 @@ ns1:EntropyPerMassUnit a owl:Class ;
     ns1:elucidation "The class of units with dimensionality 'EntropyPerMass'."@en .
 
 ns1:EntropyUnit a owl:Class ;
+    rdfs:label "EntropyUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T-2 L+2 M+1 I0 Θ-1 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -705,7 +709,6 @@ ns1:InversePermittivityUnit a owl:Class ;
 
 ns1:InverseSquareMassUnit a owl:Class ;
     rdfs:label "InverseSquareMassUnit"@en ;
-    rdfs:comment "The class of units with dimensionality 'InverseSquareMass'."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T0 L0 M-2 I0 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -715,7 +718,6 @@ ns1:InverseSquareMassUnit a owl:Class ;
 
 ns1:JosephsonConstantUnit a owl:Class ;
     rdfs:label "JosephsonConstantUnit"@en ;
-    rdfs:comment "The class of units with dimensionality 'JosephsonConstant'."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T+4 L-2 M-1 I+1 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -725,7 +727,6 @@ ns1:JosephsonConstantUnit a owl:Class ;
 
 ns1:LengthFractionUnit a owl:Class ;
     rdfs:label "LengthFractionUnit"@en ;
-    rdfs:comment "Unit for quantities of dimension one that are the fraction of two lengths."@en ;
     rdfs:subClassOf ns1:FractionUnit ;
     skos:example "Unit for plane angle."@en ;
     skos:prefLabel "LengthFractionUnit"@en ;
@@ -749,7 +750,6 @@ ns1:LengthPerAmountUnit a owl:Class ;
 
 ns1:LengthPerCubeTimeUnit a owl:Class ;
     rdfs:label "LengthPerCubeTimeUnit"@en ;
-    rdfs:comment "The class of units with dimensionality 'LengthPerCubeTime'."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T-3 L+1 M0 I0 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -775,7 +775,6 @@ ns1:LengthTemperatureUnit a owl:Class ;
 
 ns1:LengthTimeCurrentUnit a owl:Class ;
     rdfs:label "LengthTimeCurrentUnit"@en ;
-    rdfs:comment "The class of units with dimensionality 'LengthTimeCurrent'."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T+1 L+1 M0 I+1 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -825,7 +824,6 @@ ns1:LuminanceUnit a owl:Class ;
 
 ns1:LuminousEfficacyUnit a owl:Class ;
     rdfs:label "LuminousEfficacyUnit"@en ;
-    rdfs:comment "The class of units with dimensionality 'LuminousEfficacy'."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T+3 L-2 M-1 I0 Θ0 N0 J+1"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -843,7 +841,6 @@ ns1:LuminousIntensityUnit a owl:Class ;
 
 ns1:MagneticDipoleMomentUnit a owl:Class ;
     rdfs:label "MagneticDipoleMomentUnit"@en ;
-    rdfs:comment "The class of units with dimensionality 'MagneticDipoleMoment'."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T-2 L+3 M+1 I-1 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -852,6 +849,7 @@ ns1:MagneticDipoleMomentUnit a owl:Class ;
     ns1:elucidation "The class of units with dimensionality 'MagneticDipoleMoment'."@en .
 
 ns1:MagneticFieldStrengthUnit a owl:Class ;
+    rdfs:label "MagneticFieldStrengthUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T0 L-1 M0 I+1 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -901,7 +899,6 @@ ns1:MagneticReluctivityUnit a owl:Class ;
 
 ns1:MassAmountOfSubstanceUnit a owl:Class ;
     rdfs:label "MassAmountOfSubstanceUnit"@en ;
-    rdfs:comment "The class of units with dimensionality 'MassAmountOfSubstance'."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T0 L0 M+1 I0 Θ0 N+1 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -926,6 +923,7 @@ ns1:MassFluxUnit a owl:Class ;
     ns1:elucidation "The class of units with dimensionality 'MassFlux'."@en .
 
 ns1:MassFractionUnit a owl:Class ;
+    rdfs:label "MassFractionUnit"@en ;
     rdfs:subClassOf ns1:FractionUnit ;
     skos:example "Unit for mass fraction."@en ;
     skos:prefLabel "MassFractionUnit"@en ;
@@ -957,7 +955,6 @@ ns1:MassPerCubicTimeQuarticTemperatureUnit a owl:Class ;
 
 ns1:MassPerElectricChargeUnit a owl:Class ;
     rdfs:label "MassPerElectricChargeUnit"@en ;
-    rdfs:comment "The class of units with dimensionality 'MassPerElectricCharge'."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T-1 L0 M+1 I-1 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -1021,6 +1018,16 @@ ns1:MassPerVolumeTimeUnit a owl:Class ;
     skos:prefLabel "MassPerVolumeTimeUnit"@en ;
     ns1:elucidation "The class of units with dimensionality 'MassPerVolumeTime'."@en .
 
+ns1:MassPerVolumeUnit a owl:Class ;
+    rdfs:label "MassPerVolumeUnit"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue "T0 L-3 M+1 I0 Θ0 N0 J0"^^xsd:string ;
+            owl:onProperty ns1:hasDimensionString ],
+        ns1:SIDimensionalUnit ;
+    skos:altLabel "MassConcentrationUnit"@en ;
+    skos:prefLabel "MassPerVolumeUnit"@en ;
+    ns1:elucidation "The class of units with dimensionality 'MassPerVolume'."@en .
+
 ns1:MassSquareTimeUnit a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T+2 L0 M+1 I0 Θ0 N0 J0"^^xsd:string ;
@@ -1055,7 +1062,6 @@ ns1:MassUnit a owl:Class ;
 
 ns1:MechanicalMobilityUnit a owl:Class ;
     rdfs:label "MechanicalMobilityUnit"@en ;
-    rdfs:comment "The class of units with dimensionality 'MechanicalMobility'."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T+1 L0 M-1 I0 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -1065,7 +1071,6 @@ ns1:MechanicalMobilityUnit a owl:Class ;
 
 ns1:MomentumUnit a owl:Class ;
     rdfs:label "MomentumUnit"@en ;
-    rdfs:comment "The class of units with dimensionality 'Momentum'."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T-1 L+1 M+1 I0 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -1075,7 +1080,6 @@ ns1:MomentumUnit a owl:Class ;
 
 ns1:NewtonSquareMetrePerAmpereUnit a owl:Class ;
     rdfs:label "NewtonSquareMetrePerAmpereUnit"@en ;
-    rdfs:comment "The class of units with dimensionality 'NewtonSquareMetrePerAmpere'."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T-2 L+3 M+1 I-1 Θ+1 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -1085,7 +1089,6 @@ ns1:NewtonSquareMetrePerAmpereUnit a owl:Class ;
 
 ns1:NewtonianConstantOfGravityUnit a owl:Class ;
     rdfs:label "NewtonianConstantOfGravityUnit"@en ;
-    rdfs:comment "The class of units with dimensionality 'NewtonianConstantOfGravity'."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T-2 L+3 M-1 I0 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -1095,7 +1098,6 @@ ns1:NewtonianConstantOfGravityUnit a owl:Class ;
 
 ns1:PerAmountUnit a owl:Class ;
     rdfs:label "PerAmountUnit"@en ;
-    rdfs:comment "The class of units with dimensionality 'PerAmount'."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T0 L0 M0 I0 Θ0 N-1 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -1145,7 +1147,6 @@ ns1:PerLengthTimeUnit a owl:Class ;
 
 ns1:PerLengthUnit a owl:Class ;
     rdfs:label "PerLengthUnit"@en ;
-    rdfs:comment "The class of units with dimensionality 'PerLength'."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T0 L-1 M0 I0 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -1163,7 +1164,6 @@ ns1:PerPressureUnit a owl:Class ;
 
 ns1:PerQuarticLengthUnit a owl:Class ;
     rdfs:label "PerQuarticLengthUnit"@en ;
-    rdfs:comment "The class of units with physical dimensionality per length to the power of four."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T0 L-4 M0 I0 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -1212,6 +1212,7 @@ ns1:PerVolumeUnit a owl:Class ;
     ns1:elucidation "The class of units with dimensionality 'PerVolume'."@en .
 
 ns1:PermeabilityUnit a owl:Class ;
+    rdfs:label "PermeabilityUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T-2 L+1 M+1 I-2 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -1220,6 +1221,7 @@ ns1:PermeabilityUnit a owl:Class ;
     ns1:elucidation "The class of units with dimensionality 'Permeability'."@en .
 
 ns1:PermittivityUnit a owl:Class ;
+    rdfs:label "PermittivityUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T+4 L-3 M-1 I+2 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -1261,7 +1263,6 @@ ns1:PowerUnit a owl:Class ;
 
 ns1:PressureFractionUnit a owl:Class ;
     rdfs:label "PressureFractionUnit"@en ;
-    rdfs:comment "Unit for quantities of dimension one that are the fraction of two pressures."@en ;
     rdfs:subClassOf ns1:FractionUnit ;
     skos:prefLabel "PressureFractionUnit"@en ;
     ns1:elucidation "Unit for quantities of dimension one that are the fraction of two pressures."@en .
@@ -1292,7 +1293,6 @@ ns1:PressureUnit a owl:Class ;
 
 ns1:QuarticElectricDipoleMomentPerCubicEnergyUnit a owl:Class ;
     rdfs:label "QuarticElectricDipoleMomentPerCubicEnergyUnit"@en ;
-    rdfs:comment "The class of units with dimensionality 'QuarticElectricDipoleMomentPerCubicEnergy'."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T+10 L-2 M-3 I+4 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -1333,6 +1333,7 @@ ns1:ReciprocalElectricChargeDensityUnit a owl:Class ;
     ns1:elucidation "The class of units with dimensionality 'ReciprocalElectricChargeDensity'."@en .
 
 ns1:ReciprocalLengthUnit a owl:Class ;
+    rdfs:label "ReciprocalLengthUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T0 L-1 M0 I0 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -1366,7 +1367,6 @@ ns1:RichardsonConstantUnit a owl:Class ;
 
 ns1:SectionAreaIntegralUnit a owl:Class ;
     rdfs:label "SectionAreaIntegralUnit"@en ;
-    rdfs:comment "The class of units with dimensionality 'SectionAreaIntegral'."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T0 L+5 M0 I0 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -1384,13 +1384,13 @@ ns1:SexticLengthUnit a owl:Class ;
 
 ns1:SpeedFractionUnit a owl:Class ;
     rdfs:label "SpeedFractionUnit"@en ;
-    rdfs:comment "Unit for quantities of dimension one that are the fraction of two speeds."@en ;
     rdfs:subClassOf ns1:FractionUnit ;
     skos:example "Unit for refractive index."@en ;
     skos:prefLabel "SpeedFractionUnit"@en ;
     ns1:elucidation "Unit for quantities of dimension one that are the fraction of two speeds."@en .
 
 ns1:SpeedUnit a owl:Class ;
+    rdfs:label "SpeedUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T-1 L+1 M0 I0 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -1416,7 +1416,6 @@ ns1:SquareElectricPotentialPerSquareTemperatureUnit a owl:Class ;
 
 ns1:SquareLengthPerVoltageTimeUnit a owl:Class ;
     rdfs:label "SquareLengthPerVoltageTimeUnit"@en ;
-    rdfs:comment "The class of units with dimensionality 'SquareLengthPerVoltageTime'."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T+2 L0 M-1 I-1 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -1530,7 +1529,6 @@ ns1:TemperaturePerPressureUnit a owl:Class ;
 
 ns1:TemperaturePerSquareTimeUnit a owl:Class ;
     rdfs:label "TemperaturePerSquareTimeUnit"@en ;
-    rdfs:comment "The class of units with dimensionality 'TemperaturePerSquareTime'."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T-2 L0 M0 I0 Θ+1 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -1635,6 +1633,7 @@ ns1:TimeUnit a owl:Class ;
     ns1:elucidation "The class of units with dimensionality 'Time'."@en .
 
 ns1:VolumeFractionUnit a owl:Class ;
+    rdfs:label "VolumeFractionUnit"@en ;
     rdfs:subClassOf ns1:FractionUnit ;
     skos:example "Unit for volume fraction."@en ;
     skos:prefLabel "VolumeFractionUnit"@en ;
@@ -1689,6 +1688,7 @@ ns1:VolumePerTimeUnit a owl:Class ;
     ns1:elucidation "The class of units with dimensionality 'VolumePerTime'."@en .
 
 ns1:VolumeUnit a owl:Class ;
+    rdfs:label "VolumeUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T0 L+3 M0 I0 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ],
@@ -1738,17 +1738,15 @@ The SI dimensional units are equivalent to dimensional strings that uniquely def
 
 The physical dimensionality of all subclasses of SIDimensionalUnit are defined by their dimensional string. Examples of correspondance between dimensional units and their dimensional string are:
 
-- AmountOfSubstanceUnit <=> "T0 L0 M0 I0 Θ0 N+1 J0"
-- TimeUnit <=> "T+1 L0 M0 I0 Θ0 N0 J0"
-- ElectricCurrentDensityUnit <=> "T0 L-2 M0 I+1 Θ0 N0 J0\""""@en .
+- AmountOfSubstanceUnit <=> ″T0 L0 M0 I0 Θ0 N+1 J0″
+- TimeUnit <=> ″T+1 L0 M0 I0 Θ0 N0 J0″
+- ElectricCurrentDensityUnit <=> ″T0 L-2 M0 I+1 Θ0 N0 J0″
+"""@en .
 
 ns1:hasDimensionString a owl:DatatypeProperty,
         owl:FunctionalProperty ;
     rdfs:label "hasDimensionString"@en ;
     ns2:python_name "hasDimensionString"@en ;
-    rdfs:comment "Relates a SI dimensional unit to a dimension string."@en ;
-    rdfs:range ns1:EMMO_799c067b_083f_4365_9452_1f1433b03676 ;
-    rdfs:seeAlso ns1:EMMO_799c067b_083f_4365_9452_1f1433b03676 ;
     skos:prefLabel "hasDimensionString"@en ;
     ns1:elucidation "Relates a SI dimensional unit to a dimension string."@en .
 

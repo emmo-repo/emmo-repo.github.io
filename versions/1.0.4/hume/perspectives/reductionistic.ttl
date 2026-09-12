@@ -9,7 +9,6 @@
 
 ns1:Broadcast a owl:Class ;
     rdfs:label "Broadcast"@en ;
-    rdfs:comment "A mixed tiling in which a tile has next spatially connected tiles."@en ;
     rdfs:subClassOf ns1:MixedTiling ;
     skos:prefLabel "Broadcast"@en ;
     ns1:elucidation "A mixed tiling in which a tile has next spatially connected tiles."@en ;
@@ -17,7 +16,6 @@ ns1:Broadcast a owl:Class ;
 
 ns1:Fork a owl:Class ;
     rdfs:label "Fork"@en ;
-    rdfs:comment "A tessellation in which a tile has next two or more non spatially connected tiles."@en ;
     rdfs:subClassOf ns1:TemporalTiling ;
     skos:prefLabel "Fork"@en ;
     ns1:elucidation "A tessellation in which a tile has next two or more non spatially connected tiles."@en ;
@@ -25,7 +23,6 @@ ns1:Fork a owl:Class ;
 
 ns1:Gathering a owl:Class ;
     rdfs:label "Gathering"@en ;
-    rdfs:comment "A mixed tiling in which a tile is the next of spatially connected tiles."@en ;
     rdfs:subClassOf ns1:MixedTiling ;
     skos:prefLabel "Gathering"@en ;
     ns1:elucidation "A mixed tiling in which a tile is the next of spatially connected tiles."@en ;
@@ -39,7 +36,6 @@ ns1:IntermidiateTile a owl:Class ;
 
 ns1:Join a owl:Class ;
     rdfs:label "Join"@en ;
-    rdfs:comment "A tessellation in which a tile is next for two or more non spatially connected tiles."@en ;
     rdfs:subClassOf ns1:TemporalTiling ;
     skos:prefLabel "Join"@en ;
     ns1:elucidation "A tessellation in which a tile is next for two or more non spatially connected tiles."@en ;
@@ -47,7 +43,6 @@ ns1:Join a owl:Class ;
 
 ns1:SpatialSequence a owl:Class ;
     rdfs:label "SpatialSequence"@en ;
-    rdfs:comment "A monodimensional arrangement of tiles."@en ;
     rdfs:subClassOf ns1:Arrangement ;
     skos:altLabel "Sequence"@en ;
     skos:prefLabel "SpatialSequence"@en ;
@@ -66,7 +61,6 @@ ns1:hasBeginTile a owl:AsymmetricProperty,
         owl:ObjectProperty ;
     rdfs:label "hasBeginTile"@en ;
     ns2:python_name "hasBeginTile"@en ;
-    rdfs:comment "The relation between the whole and a temporal tile that has only outgoing temporal connections."^^xsd:string ;
     rdfs:range ns1:BeginTile ;
     rdfs:subPropertyOf ns1:hasTemporalTile ;
     skos:altLabel "hasTemporalFirst"@en ;
@@ -78,7 +72,6 @@ ns1:hasEndTile a owl:AsymmetricProperty,
         owl:ObjectProperty ;
     rdfs:label "hasEndTile"@en ;
     ns2:python_name "hasEndTile"@en ;
-    rdfs:comment "The relation between the whole and a temporal tile that has only ingoing temporal connections."^^xsd:string ;
     rdfs:range ns1:EndTile ;
     rdfs:subPropertyOf ns1:hasTemporalTile ;
     skos:altLabel "hasTemporalLast"@en ;
@@ -90,7 +83,6 @@ ns1:hasSpatialTile a owl:AsymmetricProperty,
         owl:ObjectProperty ;
     rdfs:label "hasSpatialTile"@en ;
     ns2:python_name "hasSpatialTile"@en ;
-    rdfs:comment "A relation between the whole and one of its tiles, where the tile is only spatially connected with the other tiles forming the tessellation."^^xsd:string ;
     rdfs:range ns1:SpatialTile ;
     rdfs:subPropertyOf ns1:hasSpatioTemporalTile ;
     skos:altLabel "hasSpatialDirectPart"@en ;
@@ -117,7 +109,6 @@ In addition to direct parthood, the reductionistic module defines 'State' as a t
 
 ns1:Arrangement a owl:Class ;
     rdfs:label "Arrangement"@en ;
-    rdfs:comment "A causal object which is tessellated with only spatial direct parts."@en ;
     rdfs:subClassOf ns1:SpatialTiling ;
     skos:altLabel "MereologicalState"@en ;
     skos:example """e.g. the existent in my glass is declared at t = t_start as made of two direct parts: the ice and the water. It will continue to exists as state as long as the ice is completely melt at t = t_end. The new state will be completely made of water. Between t_start and t_end there is an exchange of molecules between the ice and the water, but this does not affect the existence of the two states.
@@ -148,7 +139,6 @@ ns1:EndTile a owl:Class ;
 
 ns1:SpatialTiling a owl:Class ;
     rdfs:label "SpatialTiling"@en ;
-    rdfs:comment "A well formed tessellation with tiles that all spatial."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom ns1:SpatialTile ;
             owl:onProperty ns1:hasSpatioTemporalTile ],
@@ -165,7 +155,6 @@ ns1:hasJunctionTile a owl:AsymmetricProperty,
         owl:ObjectProperty ;
     rdfs:label "hasJunctionTile"@en ;
     ns2:python_name "hasJunctionTile"@en ;
-    rdfs:comment "A relation between the whole and one of its tiles, where the tile is both spatially and temporally connected with the other tiles forming the tessellation."^^xsd:string ;
     rdfs:range ns1:JunctionTile ;
     rdfs:subPropertyOf ns1:hasSpatioTemporalTile ;
     skos:prefLabel "hasJunctionTile"@en ;
@@ -173,7 +162,6 @@ ns1:hasJunctionTile a owl:AsymmetricProperty,
 
 ns1:JunctionTile a owl:Class ;
     rdfs:label "JunctionTile"@en ;
-    rdfs:comment "A direct part that is obtained by partitioning a whole hybridly in spatial, temporal and spatiotemporal parts."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf ns1:hasJunctionTile ] ;
             owl:someValuesFrom ns1:MixedTiling ],
@@ -195,7 +183,6 @@ ns1:Reductionistic a owl:Class ;
 
 ns1:SpatialTile a owl:Class ;
     rdfs:label "SpatialTile"@en ;
-    rdfs:comment "A direct part that is obtained by partitioning a whole purely in spatial parts."@en ;
     rdfs:subClassOf ns1:SpatioTemporalTileByConnection ;
     skos:prefLabel "SpatialTile"@en ;
     ns1:elucidation "A direct part that is obtained by partitioning a whole purely in spatial parts."@en ;
@@ -220,7 +207,6 @@ ns1:hasTemporalTile a owl:AsymmetricProperty,
         owl:ObjectProperty ;
     rdfs:label "hasTemporalTile"@en ;
     ns2:python_name "hasTemporalTile"@en ;
-    rdfs:comment "A relation that establishes for the whole a univocal tessellation in temporal parts forming the tessellation."^^xsd:string ;
     rdfs:range ns1:TemporalTile ;
     rdfs:subPropertyOf ns1:hasSpatioTemporalTile ;
     skos:altLabel "hasTemporalDirectPart"@en ;
@@ -229,7 +215,6 @@ ns1:hasTemporalTile a owl:AsymmetricProperty,
 
 ns1:MixedTiling a owl:Class ;
     rdfs:label "MixedTiling"@en ;
-    rdfs:comment "A well formed tessellation with at least a junction tile."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:hasTile ;
             owl:someValuesFrom ns1:JunctionTile ],
@@ -291,11 +276,6 @@ ns1:hasTile a owl:AsymmetricProperty,
         owl:ObjectProperty ;
     rdfs:label "hasTile"@en ;
     ns2:python_name "hasTile"@en ;
-    rdfs:comment "The relation grouping all direct parthood relations used in the reductionistic perspective."@en,
-        """Tiling parthood enables the establishment of hierarchy of granularities, starting with an entity and providing several tessellation levels according to specific criteria.
-The criteria are implemented in specialised versions of the tiling parthood relation (e.g., metrological direct part, XML format direct part).
-The tiles and the tessellated entity (tessellation) are causally self connected (i.e., items), coherently with the concept behind the definition of the reductionistic perspective.
-The tiles of specific granularity level provide a covering for the whole and are mutually non-overlapping, as the label "tile" suggests."""@en ;
     rdfs:domain ns1:Tessellation ;
     rdfs:range ns1:Tile ;
     rdfs:subPropertyOf ns1:hasDirectPart ;
@@ -314,7 +294,6 @@ ns1:hasSpatioTemporalTile a owl:AsymmetricProperty,
         owl:ObjectProperty ;
     rdfs:label "hasSpatioTemporalTile"^^xsd:string ;
     ns2:python_name "hasSpatioTemporalTile"^^xsd:string ;
-    rdfs:comment "A tile that is connected with other tiles with bi-directional causal relations that fall under hasNext (or its inverse) or hasContact."@en ;
     rdfs:domain ns1:SpatioTemporalTessellation ;
     rdfs:range ns1:SpatioTemporalTile ;
     rdfs:subPropertyOf ns1:hasTile ;

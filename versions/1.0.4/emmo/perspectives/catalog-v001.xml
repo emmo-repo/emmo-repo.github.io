@@ -2,6 +2,7 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=false, version=2" prefer="public" xml:base="">
         <uri name="https://w3id.org/emmo/1.0.4/emmo" uri="../emmo.ttl"/>
+        <uri name="https://w3id.org/emmo/1.0.4/contributors-mappings" uri="../contributors-mappings.ttl"/>
         <uri name="https://w3id.org/emmo/1.0.4/disciplines" uri="../disciplines/disciplines.ttl"/>
         <uri name="https://w3id.org/emmo/1.0.4/reference" uri="../reference/reference.ttl"/>
         <uri name="https://w3id.org/emmo/1.0.4/perspectives" uri="perspectives.ttl"/>
@@ -9,6 +10,8 @@
         <uri name="https://w3id.org/emmo/1.0.4/perspectives/perspective" uri="perspective.ttl"/>
         <uri name="https://w3id.org/emmo/1.0.4/foundation/mereocausality" uri="../foundation/mereocausality.ttl"/>
         <uri name="https://w3id.org/emmo/1.0.4/contributors" uri="../contributors.ttl"/>
+        <uri name="https://w3id.org/emmo/1.0.4/foundation/annotations-deprecated" uri="../foundation/annotations-deprecated.ttl"/>
+        <uri name="https://w3id.org/emmo/1.0.4/foundation/annotations" uri="../foundation/annotations.ttl"/>
         <uri name="https://w3id.org/emmo/1.0.4/perspectives/holistic" uri="holistic.ttl"/>
         <uri name="https://w3id.org/emmo/1.0.4/perspectives/persistence" uri="persistence.ttl"/>
         <uri name="https://w3id.org/emmo/1.0.4/perspectives/reductionistic" uri="reductionistic.ttl"/>
@@ -31,16 +34,15 @@
         <uri name="https://w3id.org/emmo/1.0.4/disciplines/properties" uri="../disciplines/properties.ttl"/>
         <uri name="https://w3id.org/emmo/1.0.4/disciplines/perceptual" uri="../disciplines/perceptual.ttl"/>
         <uri name="https://w3id.org/emmo/1.0.4/disciplines/computerscience" uri="../disciplines/computerscience.ttl"/>
+        <uri name="https://w3id.org/emmo/1.0.4/disciplines/geometrical" uri="../disciplines/geometrical.ttl"/>
         <uri name="https://w3id.org/emmo/1.0.4/disciplines/manufacturing" uri="../disciplines/manufacturing.ttl"/>
         <uri name="https://w3id.org/emmo/1.0.4/disciplines/models" uri="../disciplines/models.ttl"/>
         <uri name="https://w3id.org/emmo/1.0.4/disciplines/periodictable" uri="../disciplines/periodictable.ttl"/>
-        <uri name="https://w3id.org/emmo/1.0.4/disciplines/geometrical" uri="../disciplines/geometrical.ttl"/>
         <uri name="https://w3id.org/emmo/1.0.4/disciplines/sisystem" uri="../disciplines/sisystem.ttl"/>
         <uri name="https://w3id.org/emmo/1.0.4/disciplines/units/coherentsiunits" uri="../disciplines/units/coherentsiunits.ttl"/>
         <uri name="https://w3id.org/emmo/1.0.4/disciplines/units/siunits" uri="../disciplines/units/siunits.ttl"/>
         <uri name="https://w3id.org/emmo/1.0.4/disciplines/units/noncoherentsiunits" uri="../disciplines/units/noncoherentsiunits.ttl"/>
         <uri name="https://w3id.org/emmo/1.0.4/disciplines/units/prefixedsiunits" uri="../disciplines/units/prefixedsiunits.ttl"/>
         <uri name="https://w3id.org/emmo/1.0.4/disciplines/units/siacceptedspecialunits" uri="../disciplines/units/siacceptedspecialunits.ttl"/>
-        <uri name="https://w3id.org/emmo/1.0.4/contributors-mappings" uri="../contributors-mappings.ttl"/>
     </group>
 </catalog>

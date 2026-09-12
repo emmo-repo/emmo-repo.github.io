@@ -9,7 +9,6 @@
 
 ns1:AnalogData a owl:Class ;
     rdfs:label "AnalogData"@en ;
-    rdfs:comment "Data that are decoded retaining its continuous variations characteristic."@en ;
     rdfs:subClassOf ns1:DataByDiscretness ;
     skos:example "A vynil contain continuous information about the recorded sound."@en ;
     skos:prefLabel "AnalogData"@en ;
@@ -18,7 +17,6 @@ ns1:AnalogData a owl:Class ;
 
 ns1:ClassicalData a owl:Class ;
     rdfs:label "ClassicalData"@en ;
-    rdfs:comment "Data that are expressed through classical physics mechanisms, having one value and one state, and being in the same place at the same time."@en ;
     rdfs:subClassOf ns1:DataByNature ;
     skos:prefLabel "ClassicalData"@en ;
     ns1:elucidation "Data that are expressed through classical physics mechanisms, having one value and one state, and being in the same place at the same time."@en .
@@ -33,21 +31,18 @@ Discrete does not mean that the material basis is discrete, but that the data ar
 
 ns1:NonNumericalData a owl:Class ;
     rdfs:label "NonNumericalData"@en ;
-    rdfs:comment "Data that are non-quantitatively interpreted (e.g., qualitative data, types)."@en ;
     rdfs:subClassOf ns1:DataByNumerical ;
     skos:prefLabel "NonNumericalData"@en ;
     ns1:elucidation "Data that are non-quantitatively interpreted (e.g., qualitative data, types)."@en .
 
 ns1:NumericalData a owl:Class ;
     rdfs:label "NumericalData"@en ;
-    rdfs:comment "Data that can be decoded under a quantitative schema and also associated with a graphical number symbols."@en ;
     rdfs:subClassOf ns1:DataByNumerical ;
     skos:prefLabel "NumericalData"@en ;
     ns1:elucidation "Data that can be decoded under a quantitative schema and also associated with a graphical number symbols."@en .
 
 ns1:QuantumData a owl:Class ;
     rdfs:label "QuantumData"@en ;
-    rdfs:comment "Data that are expressed through quantum mechanical principles, and that can have several values ​​/ be in several states in the same place at the same time (quantum superposition), each of them with a certain probability."@en ;
     rdfs:subClassOf ns1:DataByNature ;
     skos:prefLabel "QuantumData"@en ;
     ns1:elucidation "Data that are expressed through quantum mechanical principles, and that can have several values ​​/ be in several states in the same place at the same time (quantum superposition), each of them with a certain probability."@en .
@@ -55,7 +50,6 @@ ns1:QuantumData a owl:Class ;
 ns1:hasDatum a owl:ObjectProperty ;
     rdfs:label "hasDatum"@en ;
     ns2:python_name "hasDatum"@en ;
-    rdfs:comment "Relates a dataset to its datum."@en ;
     rdfs:domain ns1:Dataset ;
     rdfs:range ns1:Datum ;
     rdfs:subPropertyOf ns1:hasPortionPart ;
@@ -81,14 +75,12 @@ ns1:hasDatum a owl:ObjectProperty ;
 
 ns1:Dataset a owl:Class ;
     rdfs:label "Dataset"@en ;
-    rdfs:comment "Encoded data made of more than one datum."@en ;
     rdfs:subClassOf ns1:DataByStructure ;
     skos:prefLabel "Dataset"@en ;
     ns1:elucidation "Encoded data made of more than one datum."@en .
 
 ns1:Datum a owl:Class ;
     rdfs:label "Datum"@en ;
-    rdfs:comment "A self-consistent encoded data entity."@en ;
     rdfs:subClassOf ns1:DataByStructure ;
     skos:example "A character, a bit, a song in a CD."@en ;
     skos:prefLabel "Datum"@en ;
@@ -102,7 +94,6 @@ ns1:DataByDiscretness a owl:Class ;
 
 ns1:DataByNature a owl:Class ;
     rdfs:label "DataByNature"@en ;
-    rdfs:comment "Categorisation of data by its nature."@en ;
     rdfs:subClassOf ns1:Data ;
     skos:prefLabel "DataByNature"@en ;
     ns1:OWLRL2DLAxioms "EquivalentTo: ClassicalData or QuantumData"^^xsd:string ;
@@ -110,7 +101,6 @@ ns1:DataByNature a owl:Class ;
 
 ns1:DataByNumerical a owl:Class ;
     rdfs:label "DataByNumerical"@en ;
-    rdfs:comment "Categorisation of data by whether it is numerical or not."@en ;
     rdfs:subClassOf ns1:Data ;
     skos:prefLabel "DataByNumerical"@en ;
     ns1:OWLRL2DLAxioms "EquivalentTo: NumericalData or NonNumericalData"^^xsd:string ;
@@ -118,7 +108,6 @@ ns1:DataByNumerical a owl:Class ;
 
 ns1:DataByStructure a owl:Class ;
     rdfs:label "DataByStructure"@en ;
-    rdfs:comment "Categorisation of data by its structure."@en ;
     rdfs:subClassOf ns1:Data ;
     skos:prefLabel "DataByStructure"@en ;
     ns1:OWLRL2DLAxioms "EquivalentTo: Dataset or Datum"^^xsd:string ;

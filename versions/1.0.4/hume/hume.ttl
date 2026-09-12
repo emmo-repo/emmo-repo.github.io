@@ -15,7 +15,7 @@ dcterms:bibliographicCitation a owl:AnnotationProperty .
 
 dcterms:created a owl:AnnotationProperty .
 
-dcterms:hasFormat a owl:ObjectProperty .
+dcterms:hasFormat a owl:AnnotationProperty .
 
 dcterms:issued a owl:AnnotationProperty .
 
@@ -25,7 +25,7 @@ dcterms:source a owl:AnnotationProperty .
 
 bibo:doi a owl:AnnotationProperty .
 
-bibo:status a owl:ObjectProperty .
+bibo:status a owl:AnnotationProperty .
 
 vann:preferredNamespacePrefix a owl:AnnotationProperty .
 
@@ -122,8 +122,6 @@ ns1:AmorphousMaterial skos:exactMatch "https://w3id.org/emmo#EMMO_0afc19b0_2d43_
 
 ns1:AmountConcentration skos:exactMatch "https://w3id.org/emmo#EMMO_d5be1faf_0c56_4f5a_9b78_581e6dee949f"^^xsd:anyURI .
 
-ns1:AmountConcentrationUnit skos:exactMatch "https://w3id.org/emmo#EMMO_e9348e5b_af4f_4898_bbfe_c4583cf44b80"^^xsd:anyURI .
-
 ns1:AmountConductivityUnit skos:exactMatch "https://w3id.org/emmo#AmountConductivityUnit"^^xsd:anyURI,
         "https://w3id.org/emmo#EMMO_14235b93_650f_4452_8395_a23b8f645c9a"^^xsd:anyURI .
 
@@ -151,6 +149,8 @@ ns1:AmountPerMassUnit skos:exactMatch "https://w3id.org/emmo#AmountPerMassUnit"^
 ns1:AmountPerVolumeTimeUnit skos:exactMatch "https://w3id.org/emmo#AmountPerVolumeTimeUnit"^^xsd:anyURI,
         "https://w3id.org/emmo#EMMO_c5ac5c53_14de_47ce_b424_2576d042d241"^^xsd:anyURI .
 
+ns1:AmountPerVolumeUnit skos:exactMatch "https://w3id.org/emmo#EMMO_e9348e5b_af4f_4898_bbfe_c4583cf44b80"^^xsd:anyURI .
+
 ns1:AmountSquareTimePerMassVolumeUnit skos:exactMatch "https://w3id.org/emmo#AmountSquareTimePerMassVolumeUnit"^^xsd:anyURI,
         "https://w3id.org/emmo#EMMO_052e9796_1144_43ae_a798_c5755cd6cd81"^^xsd:anyURI .
 
@@ -159,36 +159,6 @@ ns1:AmountTemperatureUnit skos:exactMatch "https://w3id.org/emmo#AmountTemperatu
 
 ns1:AmountUnit skos:exactMatch "https://w3id.org/emmo#AmountUnit"^^xsd:anyURI,
         "https://w3id.org/emmo#EMMO_e501069c_34d3_4dc7_ac87_c90c7342192b"^^xsd:anyURI .
-
-ns1:Ampere skos:exactMatch "https://w3id.org/emmo#Ampere"^^xsd:anyURI .
-
-ns1:AmperePerCentiMetre skos:exactMatch "https://w3id.org/emmo#AmperePerCentiMetre"^^xsd:anyURI .
-
-ns1:AmperePerDegreeCelsius skos:exactMatch "https://w3id.org/emmo#AmperePerDegreeCelsius"^^xsd:anyURI .
-
-ns1:AmperePerGram skos:exactMatch "https://w3id.org/emmo#AmperePerGram"^^xsd:anyURI .
-
-ns1:AmperePerJoule skos:exactMatch "https://w3id.org/emmo#AmperePerJoule"^^xsd:anyURI .
-
-ns1:AmperePerMetre skos:exactMatch "https://w3id.org/emmo#AmperePerMetre"^^xsd:anyURI .
-
-ns1:AmperePerMilliMetre skos:exactMatch "https://w3id.org/emmo#AmperePerMilliMetre"^^xsd:anyURI .
-
-ns1:AmperePerRadian skos:exactMatch "https://w3id.org/emmo#AmperePerRadian"^^xsd:anyURI .
-
-ns1:AmperePerSquareCentiMetre skos:exactMatch "https://w3id.org/emmo#AmperePerSquareCentiMetre"^^xsd:anyURI .
-
-ns1:AmperePerSquareMetre skos:exactMatch "https://w3id.org/emmo#AmperePerSquareMetre"^^xsd:anyURI .
-
-ns1:AmperePerSquareMetreSquareKelvin skos:exactMatch "https://w3id.org/emmo#AmperePerSquareMetreSquareKelvin"^^xsd:anyURI .
-
-ns1:AmperePerSquareMilliMetre skos:exactMatch "https://w3id.org/emmo#AmperePerSquareMilliMetre"^^xsd:anyURI .
-
-ns1:AmpereSecond skos:exactMatch "https://w3id.org/emmo#AmpereSecond"^^xsd:anyURI .
-
-ns1:AmpereSquareMetre skos:exactMatch "https://w3id.org/emmo#AmpereSquareMetre"^^xsd:anyURI .
-
-ns1:AmpereSquareMetrePerJouleSecond skos:exactMatch "https://w3id.org/emmo#AmpereSquareMetrePerJouleSecond"^^xsd:anyURI .
 
 ns1:AnalogData skos:exactMatch "https://w3id.org/emmo#EMMO_0d1c0018_42e2_4506_bc3d_f53c117c1ad3"^^xsd:anyURI .
 
@@ -237,10 +207,6 @@ ns1:ArchetypeJoin skos:exactMatch "https://w3id.org/emmo#EMMO_22496460_c849_4bd7
 
 ns1:ArchetypeManufacturing skos:exactMatch "https://w3id.org/emmo#EMMO_e9244742_c185_4c50_b455_c57654852582"^^xsd:anyURI .
 
-ns1:Arcminute skos:exactMatch "https://w3id.org/emmo#Arcminute"^^xsd:anyURI .
-
-ns1:Arcsecond skos:exactMatch "https://w3id.org/emmo#Arcsecond"^^xsd:anyURI .
-
 ns1:Area skos:exactMatch "https://w3id.org/emmo#EMMO_96f39f77_44dc_491b_8fa7_30d887fe0890"^^xsd:anyURI .
 
 ns1:AreaDensity skos:exactMatch "https://w3id.org/emmo#EMMO_afea89af_ef16_4bdb_99d5_f3b2f4c85a6c"^^xsd:anyURI .
@@ -258,8 +224,7 @@ ns1:AreaPerMassUnit skos:exactMatch "https://w3id.org/emmo#AreaPerMassUnit"^^xsd
 ns1:AreaPerQuarticTimeUnit skos:exactMatch "https://w3id.org/emmo#AreaPerQuarticTimeUnit"^^xsd:anyURI,
         "https://w3id.org/emmo#EMMO_27c8e4db_eb18_402c_951e_6a38751cf1d0"^^xsd:anyURI .
 
-ns1:AreaPerTemperatureUnit skos:exactMatch "https://w3id.org/emmo#AreaPerTemperatureUnit"^^xsd:anyURI,
-        "https://w3id.org/emmo#EMMO_002e4002_58c7_4aea_ac1f_bba5188818ff"^^xsd:anyURI .
+ns1:AreaPerTemperatureUnit skos:exactMatch "https://w3id.org/emmo#EMMO_002e4002_58c7_4aea_ac1f_bba5188818ff"^^xsd:anyURI .
 
 ns1:AreaPerTimeUnit skos:exactMatch "https://w3id.org/emmo#AreaPerTimeUnit"^^xsd:anyURI,
         "https://w3id.org/emmo#EMMO_10f703b5_8b2a_4c5a_a734_f0cfb29622ad"^^xsd:anyURI .
@@ -324,8 +289,6 @@ ns1:AstatineAtom skos:exactMatch "https://w3id.org/emmo#EMMO_186607c3-fe59-5731-
 
 ns1:AstatineSymbol skos:exactMatch "https://w3id.org/emmo#EMMO_c7651944-e33f-56bc-8d83-f6de9760d661"^^xsd:anyURI .
 
-ns1:AstronomicalUnit skos:exactMatch "https://w3id.org/emmo#AstronomicalUnit"^^xsd:anyURI .
-
 ns1:Atom skos:exactMatch "https://w3id.org/emmo#EMMO_eb77076b_a104_42ac_a065_798b2d2809ad"^^xsd:anyURI .
 
 ns1:AtomicAndNuclearPhysicsQuantity skos:exactMatch "https://w3id.org/emmo#EMMO_3b1b64d1_60c9_4689_a300_eb9cd56e368b"^^xsd:anyURI .
@@ -345,14 +308,6 @@ ns1:AtomisticModel skos:exactMatch "https://w3id.org/emmo#EMMO_84cadc45_6758_46f
 ns1:Attenuation skos:exactMatch "https://w3id.org/emmo#EMMO_ecf938f1_bc37_4897_841d_092cd37f74de"^^xsd:anyURI .
 
 ns1:Atto skos:exactMatch "https://w3id.org/emmo#EMMO_e9722f13_947c_444e_82ef_1ce045f6637c"^^xsd:anyURI .
-
-ns1:AttoCoulomb skos:exactMatch "https://w3id.org/emmo#AttoCoulomb"^^xsd:anyURI .
-
-ns1:AttoFarad skos:exactMatch "https://w3id.org/emmo#AttoFarad"^^xsd:anyURI .
-
-ns1:AttoJoule skos:exactMatch "https://w3id.org/emmo#AttoJoule"^^xsd:anyURI .
-
-ns1:AttoJouleSecond skos:exactMatch "https://w3id.org/emmo#AttoJouleSecond"^^xsd:anyURI .
 
 ns1:AttoPrefixedUnit skos:exactMatch "https://w3id.org/emmo#EMMO_42955b2d_b465_4666_86cc_ea3c2d685753"^^xsd:anyURI .
 
@@ -376,23 +331,11 @@ ns1:BaseQuantity skos:exactMatch "https://w3id.org/emmo#EMMO_acaaa124_3dde_48b6_
 
 ns1:BaseUnit skos:exactMatch "https://w3id.org/emmo#EMMO_db716151_6b73_45ff_910c_d182fdcbb4f5"^^xsd:anyURI .
 
-ns1:Becquerel skos:exactMatch "https://w3id.org/emmo#Becquerel"^^xsd:anyURI .
-
-ns1:BecquerelPerCubicMetre skos:exactMatch "https://w3id.org/emmo#BecquerelPerCubicMetre"^^xsd:anyURI .
-
-ns1:BecquerelPerKilogram skos:exactMatch "https://w3id.org/emmo#BecquerelPerKilogram"^^xsd:anyURI .
-
-ns1:BecquerelPerSquareMetre skos:exactMatch "https://w3id.org/emmo#BecquerelPerSquareMetre"^^xsd:anyURI .
-
-ns1:BecquerelSecondPerCubicMetre skos:exactMatch "https://w3id.org/emmo#BecquerelSecondPerCubicMetre"^^xsd:anyURI .
-
 ns1:BeginTask skos:exactMatch "https://w3id.org/emmo#EMMO_b941e455_2cb1_4c11_93e3_17caa06086b4"^^xsd:anyURI .
 
 ns1:BeginTile skos:exactMatch "https://w3id.org/emmo#EMMO_fa595892_070d_455e_9459_06c97179c080"^^xsd:anyURI .
 
 ns1:Behaviour skos:exactMatch "https://w3id.org/emmo#EMMO_210e7e99_c1cf_44cc_87c7_310a10ff068b"^^xsd:anyURI .
-
-ns1:Bel skos:exactMatch "https://w3id.org/emmo#Bel"^^xsd:anyURI .
 
 ns1:Bending skos:exactMatch "https://w3id.org/emmo#EMMO_68ee441e_c89e_4391_93c3_e68fef59fe14"^^xsd:anyURI .
 
@@ -478,12 +421,6 @@ ns1:CaliforniumAtom skos:exactMatch "https://w3id.org/emmo#EMMO_b443dea3-7407-59
 
 ns1:CaliforniumSymbol skos:exactMatch "https://w3id.org/emmo#EMMO_ff1d6ece-712d-54b8-9c05-c26854e0c35a"^^xsd:anyURI .
 
-ns1:Candela skos:exactMatch "https://w3id.org/emmo#Candela"^^xsd:anyURI .
-
-ns1:CandelaPerLumen skos:exactMatch "https://w3id.org/emmo#CandelaPerLumen"^^xsd:anyURI .
-
-ns1:CandelaPerSquareMetre skos:exactMatch "https://w3id.org/emmo#CandelaPerSquareMetre"^^xsd:anyURI .
-
 ns1:CanonicalPartitionFunction skos:exactMatch "https://w3id.org/emmo#EMMO_d8612fa0_c0fb_485d_b45a_1845e7a46796"^^xsd:anyURI .
 
 ns1:Capacitance skos:exactMatch "https://w3id.org/emmo#EMMO_99dba333_0dbd_4f75_8841_8c0f97fd58e2"^^xsd:anyURI .
@@ -524,28 +461,6 @@ ns1:CelsiusTemperature skos:exactMatch "https://w3id.org/emmo#EMMO_66bc9029_f473
 ns1:Cementing skos:exactMatch "https://w3id.org/emmo#EMMO_dc3a6b2d_e31d_491a_ab40_c433f8dd8d48"^^xsd:anyURI .
 
 ns1:Centi skos:exactMatch "https://w3id.org/emmo#EMMO_03d2c71b_0276_45d7_a847_7cd164cb7d45"^^xsd:anyURI .
-
-ns1:CentiCoulomb skos:exactMatch "https://w3id.org/emmo#CentiCoulomb"^^xsd:anyURI .
-
-ns1:CentiGram skos:exactMatch "https://w3id.org/emmo#CentiGram"^^xsd:anyURI .
-
-ns1:CentiMetre skos:exactMatch "https://w3id.org/emmo#CentiMetre"^^xsd:anyURI .
-
-ns1:CentiMetrePerKelvin skos:exactMatch "https://w3id.org/emmo#CentiMetrePerKelvin"^^xsd:anyURI .
-
-ns1:CentiMetrePerSecond skos:exactMatch "https://w3id.org/emmo#CentiMetrePerSecond"^^xsd:anyURI .
-
-ns1:CentiMetrePerSquareSecond skos:exactMatch "https://w3id.org/emmo#CentiMetrePerSquareSecond"^^xsd:anyURI .
-
-ns1:CentiMetreSecondDegreeCelsius skos:exactMatch "https://w3id.org/emmo#CentiMetreSecondDegreeCelsius"^^xsd:anyURI .
-
-ns1:CentiMole skos:exactMatch "https://w3id.org/emmo#CentiMole"^^xsd:anyURI .
-
-ns1:CentiMolePerKilogram skos:exactMatch "https://w3id.org/emmo#CentiMolePerKilogram"^^xsd:anyURI .
-
-ns1:CentiNewton skos:exactMatch "https://w3id.org/emmo#CentiNewton"^^xsd:anyURI .
-
-ns1:CentiNewtonMetre skos:exactMatch "https://w3id.org/emmo#CentiNewtonMetre"^^xsd:anyURI .
 
 ns1:CentiPrefixedUnit skos:exactMatch "https://w3id.org/emmo#EMMO_b55cd09a_e54d_4eb1_81dd_03c29d1b878e"^^xsd:anyURI .
 
@@ -729,34 +644,6 @@ ns1:CopperAtom skos:exactMatch "https://w3id.org/emmo#EMMO_57a7ab6b-30a4-54e5-82
 
 ns1:CopperSymbol skos:exactMatch "https://w3id.org/emmo#EMMO_bd93ef72-3d4f-5f17-b613-01f440296995"^^xsd:anyURI .
 
-ns1:Coulomb skos:exactMatch "https://w3id.org/emmo#Coulomb"^^xsd:anyURI .
-
-ns1:CoulombMetre skos:exactMatch "https://w3id.org/emmo#CoulombMetre"^^xsd:anyURI .
-
-ns1:CoulombPerCubicCentiMetre skos:exactMatch "https://w3id.org/emmo#CoulombPerCubicCentiMetre"^^xsd:anyURI .
-
-ns1:CoulombPerCubicMetre skos:exactMatch "https://w3id.org/emmo#CoulombPerCubicMetre"^^xsd:anyURI .
-
-ns1:CoulombPerCubicMilliMetre skos:exactMatch "https://w3id.org/emmo#CoulombPerCubicMilliMetre"^^xsd:anyURI .
-
-ns1:CoulombPerKilogram skos:exactMatch "https://w3id.org/emmo#CoulombPerKilogram"^^xsd:anyURI .
-
-ns1:CoulombPerKilogramSecond skos:exactMatch "https://w3id.org/emmo#CoulombPerKilogramSecond"^^xsd:anyURI .
-
-ns1:CoulombPerMetre skos:exactMatch "https://w3id.org/emmo#CoulombPerMetre"^^xsd:anyURI .
-
-ns1:CoulombPerMole skos:exactMatch "https://w3id.org/emmo#CoulombPerMole"^^xsd:anyURI .
-
-ns1:CoulombPerSquareCentiMetre skos:exactMatch "https://w3id.org/emmo#CoulombPerSquareCentiMetre"^^xsd:anyURI .
-
-ns1:CoulombPerSquareMetre skos:exactMatch "https://w3id.org/emmo#CoulombPerSquareMetre"^^xsd:anyURI .
-
-ns1:CoulombPerSquareMilliMetre skos:exactMatch "https://w3id.org/emmo#CoulombPerSquareMilliMetre"^^xsd:anyURI .
-
-ns1:CoulombSquareMetre skos:exactMatch "https://w3id.org/emmo#CoulombSquareMetre"^^xsd:anyURI .
-
-ns1:CoulombSquareMetrePerVolt skos:exactMatch "https://w3id.org/emmo#CoulombSquareMetrePerVolt"^^xsd:anyURI .
-
 ns1:CountingUnit skos:exactMatch "https://w3id.org/emmo#EMMO_15d62b55_38ea_4aec_b7c4_25db1a2e5a01"^^xsd:anyURI .
 
 ns1:Coupled skos:exactMatch "https://w3id.org/emmo#EMMO_02c4890b_aef3_4173_9669_94d1f6baf611"^^xsd:anyURI .
@@ -769,64 +656,10 @@ ns1:Crystal skos:exactMatch "https://w3id.org/emmo#EMMO_0bb3b434_73aa_428f_b4e8_
 
 ns1:CrystallineMaterial skos:exactMatch "https://w3id.org/emmo#EMMO_f1025834_0cd2_42a1_bfeb_13bec41c8655"^^xsd:anyURI .
 
-ns1:CubicCentiMetre skos:exactMatch "https://w3id.org/emmo#CubicCentiMetre"^^xsd:anyURI .
-
-ns1:CubicCentiMetrePerCubicCentiMetre skos:exactMatch "https://w3id.org/emmo#CubicCentiMetrePerCubicCentiMetre"^^xsd:anyURI .
-
-ns1:CubicCentiMetrePerCubicMetre skos:exactMatch "https://w3id.org/emmo#CubicCentiMetrePerCubicMetre"^^xsd:anyURI .
-
-ns1:CubicCentiMetrePerKelvin skos:exactMatch "https://w3id.org/emmo#CubicCentiMetrePerKelvin"^^xsd:anyURI .
-
-ns1:CubicCentiMetrePerMole skos:exactMatch "https://w3id.org/emmo#CubicCentiMetrePerMole"^^xsd:anyURI .
-
-ns1:CubicCentiMetrePerMoleSecond skos:exactMatch "https://w3id.org/emmo#CubicCentiMetrePerMoleSecond"^^xsd:anyURI .
-
-ns1:CubicCentiMetrePerSecond skos:exactMatch "https://w3id.org/emmo#CubicCentiMetrePerSecond"^^xsd:anyURI .
-
-ns1:CubicCoulombMetrePerSquareJoule skos:exactMatch "https://w3id.org/emmo#CubicCoulombMetrePerSquareJoule"^^xsd:anyURI .
-
-ns1:CubicDecaMetre skos:exactMatch "https://w3id.org/emmo#CubicDecaMetre"^^xsd:anyURI .
-
-ns1:CubicDeciMetre skos:exactMatch "https://w3id.org/emmo#CubicDeciMetre"^^xsd:anyURI .
-
-ns1:CubicDeciMetrePerCubicMetre skos:exactMatch "https://w3id.org/emmo#CubicDeciMetrePerCubicMetre"^^xsd:anyURI .
-
-ns1:CubicDeciMetrePerMole skos:exactMatch "https://w3id.org/emmo#CubicDeciMetrePerMole"^^xsd:anyURI .
-
-ns1:CubicDeciMetrePerSecond skos:exactMatch "https://w3id.org/emmo#CubicDeciMetrePerSecond"^^xsd:anyURI .
-
 ns1:CubicElectricChargeLengthPerSquareEnergyUnit skos:exactMatch "https://w3id.org/emmo#CubicElectricChargeLengthPerSquareEnergyUnit"^^xsd:anyURI,
         "https://w3id.org/emmo#EMMO_360adeca_9eee_4bb9_a5ca_728756c1ed4a"^^xsd:anyURI .
 
 ns1:CubicExpansionCoefficient skos:exactMatch "https://w3id.org/emmo#EMMO_1c1ec02e_4def_4979_aff9_572c06a95391"^^xsd:anyURI .
-
-ns1:CubicKiloMetrePerSquareSecond skos:exactMatch "https://w3id.org/emmo#CubicKiloMetrePerSquareSecond"^^xsd:anyURI .
-
-ns1:CubicMetre skos:exactMatch "https://w3id.org/emmo#CubicMetre"^^xsd:anyURI .
-
-ns1:CubicMetrePerCoulomb skos:exactMatch "https://w3id.org/emmo#CubicMetrePerCoulomb"^^xsd:anyURI .
-
-ns1:CubicMetrePerCubicMetre skos:exactMatch "https://w3id.org/emmo#CubicMetrePerCubicMetre"^^xsd:anyURI .
-
-ns1:CubicMetrePerKelvin skos:exactMatch "https://w3id.org/emmo#CubicMetrePerKelvin"^^xsd:anyURI .
-
-ns1:CubicMetrePerKilogram skos:exactMatch "https://w3id.org/emmo#CubicMetrePerKilogram"^^xsd:anyURI .
-
-ns1:CubicMetrePerKilogramSquareSecond skos:exactMatch "https://w3id.org/emmo#CubicMetrePerKilogramSquareSecond"^^xsd:anyURI .
-
-ns1:CubicMetrePerMole skos:exactMatch "https://w3id.org/emmo#CubicMetrePerMole"^^xsd:anyURI .
-
-ns1:CubicMetrePerSecond skos:exactMatch "https://w3id.org/emmo#CubicMetrePerSecond"^^xsd:anyURI .
-
-ns1:CubicMetrePerSquareMetre skos:exactMatch "https://w3id.org/emmo#CubicMetrePerSquareMetre"^^xsd:anyURI .
-
-ns1:CubicMetrePerSquareSecond skos:exactMatch "https://w3id.org/emmo#CubicMetrePerSquareSecond"^^xsd:anyURI .
-
-ns1:CubicMicroMetrePerCubicMetre skos:exactMatch "https://w3id.org/emmo#CubicMicroMetrePerCubicMetre"^^xsd:anyURI .
-
-ns1:CubicMilliMetre skos:exactMatch "https://w3id.org/emmo#CubicMilliMetre"^^xsd:anyURI .
-
-ns1:CubicMilliMetrePerCubicMetre skos:exactMatch "https://w3id.org/emmo#CubicMilliMetrePerCubicMetre"^^xsd:anyURI .
 
 ns1:CurieTemperature skos:exactMatch "https://w3id.org/emmo#EMMO_6b5af5a8_a2d8_4353_a1d6_54c9f778343d"^^xsd:anyURI .
 
@@ -845,8 +678,6 @@ ns1:Cutting skos:exactMatch "https://w3id.org/emmo#EMMO_d5f98475_00ce_4987_99fb_
 ns1:CyclotronAngularFrequency skos:exactMatch "https://w3id.org/emmo#EMMO_bdb1ece0_0631_452e_9348_8387595428e8"^^xsd:anyURI .
 
 ns1:Cylinder skos:exactMatch "https://w3id.org/emmo#EMMO_750d42f1_c291_42ce_91b2_a079d79639fb"^^xsd:anyURI .
-
-ns1:Dalton skos:exactMatch "https://w3id.org/emmo#Dalton"^^xsd:anyURI .
 
 ns1:DampingCoefficient skos:exactMatch "https://w3id.org/emmo#EMMO_ab3e812f_4d0f_4290_83fb_b2f5963f3772"^^xsd:anyURI .
 
@@ -884,8 +715,6 @@ ns1:DateTimeStampData skos:exactMatch "https://w3id.org/emmo#EMMO_10bbe9e9_46b6_
 
 ns1:Datum skos:exactMatch "https://w3id.org/emmo#EMMO_50d6236a_7667_4883_8ae1_9bb5d190423a"^^xsd:anyURI .
 
-ns1:Day skos:exactMatch "https://w3id.org/emmo#Day"^^xsd:anyURI .
-
 ns1:DebyeAngularFrequency skos:exactMatch "https://w3id.org/emmo#EMMO_65ec122c_b67f_4009_8b16_2df7dfae118a"^^xsd:anyURI .
 
 ns1:DebyeAngularWavenumber skos:exactMatch "https://w3id.org/emmo#EMMO_76acb5d8_5ab8_484b_8354_7f7612f39c17"^^xsd:anyURI .
@@ -896,14 +725,6 @@ ns1:DebyeWallerFactor skos:exactMatch "https://w3id.org/emmo#EMMO_485720e7_b24a_
 
 ns1:Deca skos:exactMatch "https://w3id.org/emmo#EMMO_e07a252a_6913_49d6_9038_37a258b2d95e"^^xsd:anyURI .
 
-ns1:DecaCoulomb skos:exactMatch "https://w3id.org/emmo#DecaCoulomb"^^xsd:anyURI .
-
-ns1:DecaGram skos:exactMatch "https://w3id.org/emmo#DecaGram"^^xsd:anyURI .
-
-ns1:DecaMetre skos:exactMatch "https://w3id.org/emmo#DecaMetre"^^xsd:anyURI .
-
-ns1:DecaPascal skos:exactMatch "https://w3id.org/emmo#DecaPascal"^^xsd:anyURI .
-
 ns1:DecaPrefixedUnit skos:exactMatch "https://w3id.org/emmo#EMMO_1d8b370b_c672_4d0c_964e_eaafcbf2f51f"^^xsd:anyURI .
 
 ns1:Decay skos:exactMatch "https://w3id.org/emmo#EMMO_a9891fff_fa7a_4806_b7bd_786de7358e8d"^^xsd:anyURI .
@@ -912,23 +733,7 @@ ns1:DecayConstant skos:exactMatch "https://w3id.org/emmo#EMMO_0449de81_0995_4575
 
 ns1:Deci skos:exactMatch "https://w3id.org/emmo#EMMO_890856a3_3eb4_471e_a54a_65031bee30f4"^^xsd:anyURI .
 
-ns1:DeciBel skos:exactMatch "https://w3id.org/emmo#DeciBel"^^xsd:anyURI .
-
-ns1:DeciCoulomb skos:exactMatch "https://w3id.org/emmo#DeciCoulomb"^^xsd:anyURI .
-
-ns1:DeciGram skos:exactMatch "https://w3id.org/emmo#DeciGram"^^xsd:anyURI .
-
-ns1:DeciMetre skos:exactMatch "https://w3id.org/emmo#DeciMetre"^^xsd:anyURI .
-
-ns1:DeciNewton skos:exactMatch "https://w3id.org/emmo#DeciNewton"^^xsd:anyURI .
-
-ns1:DeciNewtonMetre skos:exactMatch "https://w3id.org/emmo#DeciNewtonMetre"^^xsd:anyURI .
-
 ns1:DeciPrefixedUnit skos:exactMatch "https://w3id.org/emmo#EMMO_1181c938_c8f0_4ad6_bc7a_2bfdc0903d29"^^xsd:anyURI .
-
-ns1:DeciSiemens skos:exactMatch "https://w3id.org/emmo#DeciSiemens"^^xsd:anyURI .
-
-ns1:DeciSiemensPerMetre skos:exactMatch "https://w3id.org/emmo#DeciSiemensPerMetre"^^xsd:anyURI .
 
 ns1:DecimalData skos:exactMatch "https://w3id.org/emmo#EMMO_d43546df_7fd7_44d5_9d7c_0f2bf56cefe3"^^xsd:anyURI .
 
@@ -949,20 +754,6 @@ ns1:DefinedEdgeCutting skos:exactMatch "https://w3id.org/emmo#EMMO_8679c7d3_fd5d
 ns1:DefiningEquation skos:exactMatch "https://w3id.org/emmo#EMMO_29afdf54_90ae_4c98_8845_fa9ea3f143a8"^^xsd:anyURI .
 
 ns1:Degenerency skos:exactMatch "https://w3id.org/emmo#EMMO_9864a26d_ee34_43ac_bc01_118734886185"^^xsd:anyURI .
-
-ns1:Degree skos:exactMatch "https://w3id.org/emmo#Degree"^^xsd:anyURI .
-
-ns1:DegreeCelsius skos:exactMatch "https://w3id.org/emmo#DegreeCelsius"^^xsd:anyURI .
-
-ns1:DegreeCelsiusCentiMetre skos:exactMatch "https://w3id.org/emmo#DegreeCelsiusCentiMetre"^^xsd:anyURI .
-
-ns1:DegreeCelsiusKilogramPerSquareMetre skos:exactMatch "https://w3id.org/emmo#DegreeCelsiusKilogramPerSquareMetre"^^xsd:anyURI .
-
-ns1:DegreeCelsiusPerKelvin skos:exactMatch "https://w3id.org/emmo#DegreeCelsiusPerKelvin"^^xsd:anyURI .
-
-ns1:DegreeCelsiusPerMetre skos:exactMatch "https://w3id.org/emmo#DegreeCelsiusPerMetre"^^xsd:anyURI .
-
-ns1:DegreeCelsiusPerSecond skos:exactMatch "https://w3id.org/emmo#DegreeCelsiusPerSecond"^^xsd:anyURI .
 
 ns1:DegreeOfDissociation skos:exactMatch "https://w3id.org/emmo#EMMO_f4cce1ec_c7dd_4061_8c46_7a24fdcd07ca"^^xsd:anyURI .
 
@@ -1082,6 +873,72 @@ ns1:EMMO skos:exactMatch "https://w3id.org/emmo#EMMO_802d3e92_8770_4f98_a289_cca
 
 ns1:EMMORelation skos:exactMatch "https://w3id.org/emmo#EMMORelation"^^xsd:anyURI,
         "https://w3id.org/emmo#EMMO_ec2472ae_cf4a_46a5_8555_1556f5a6c3c5"^^xsd:anyURI .
+
+ns1:EMMO_1246b120_abbe_4840_b0f8_3e4348b24a17 skos:exactMatch "https://w3id.org/emmo#EMMO_1246b120_abbe_4840_b0f8_3e4348b24a17"^^xsd:anyURI,
+        "https://w3id.org/emmo#contact"^^xsd:anyURI .
+
+ns1:EMMO_157fdf31_6387_42be_8e72_10530519214a skos:exactMatch "https://w3id.org/emmo#EMMO_157fdf31_6387_42be_8e72_10530519214a"^^xsd:anyURI,
+        "https://w3id.org/emmo#illustration"^^xsd:anyURI .
+
+ns1:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc skos:exactMatch "https://w3id.org/emmo#EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc"^^xsd:anyURI,
+        "https://w3id.org/emmo#qudtReference"^^xsd:anyURI .
+
+ns1:EMMO_209ba1b3_149f_4ff0_b672_941610eafd72 skos:exactMatch "https://w3id.org/emmo#EMMO_209ba1b3_149f_4ff0_b672_941610eafd72"^^xsd:anyURI,
+        "https://w3id.org/emmo#omReference"^^xsd:anyURI .
+
+ns1:EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54 skos:exactMatch "https://w3id.org/emmo#EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54"^^xsd:anyURI,
+        "https://w3id.org/emmo#wikidataReference"^^xsd:anyURI .
+
+ns1:EMMO_2856bbc2_96e1_485b_b5f8_2fdfcb0c9b92 skos:exactMatch "https://w3id.org/emmo#EMMO_2856bbc2_96e1_485b_b5f8_2fdfcb0c9b92"^^xsd:anyURI,
+        "https://w3id.org/emmo#inchiKey"^^xsd:anyURI .
+
+ns1:EMMO_2e0b0f1b_ba90_4827_af5a_92b826cb90de skos:exactMatch "https://w3id.org/emmo#EMMO_2e0b0f1b_ba90_4827_af5a_92b826cb90de"^^xsd:anyURI,
+        "https://w3id.org/emmo#SMILESReference"^^xsd:anyURI .
+
+ns1:EMMO_31252f35_c767_4b97_a877_1235076c3e13 skos:exactMatch "https://w3id.org/emmo#EMMO_31252f35_c767_4b97_a877_1235076c3e13"^^xsd:anyURI,
+        "https://w3id.org/emmo#conceptualisation"^^xsd:anyURI .
+
+ns1:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 skos:exactMatch "https://w3id.org/emmo#EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652"^^xsd:anyURI,
+        "https://w3id.org/emmo#ucumCode"^^xsd:anyURI .
+
+ns1:EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f skos:exactMatch "https://w3id.org/emmo#EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f"^^xsd:anyURI,
+        "https://w3id.org/emmo#IEVReference"^^xsd:anyURI .
+
+ns1:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 skos:exactMatch "https://w3id.org/emmo#EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25"^^xsd:anyURI,
+        "https://w3id.org/emmo#dbpediaReference"^^xsd:anyURI .
+
+ns1:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 skos:exactMatch "https://w3id.org/emmo#EMMO_705f27ae_954c_4f13_98aa_18473fc52b25"^^xsd:anyURI,
+        "https://w3id.org/emmo#etymology"^^xsd:anyURI .
+
+ns1:EMMO_70fe84ff_99b6_4206_a9fc_9a8931836d84 skos:exactMatch "https://w3id.org/emmo#EMMO_70fe84ff_99b6_4206_a9fc_9a8931836d84"^^xsd:anyURI,
+        "https://w3id.org/emmo#definition"^^xsd:anyURI .
+
+ns1:EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64 skos:exactMatch "https://w3id.org/emmo#EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64"^^xsd:anyURI,
+        "https://w3id.org/emmo#unitSymbol"^^xsd:anyURI .
+
+ns1:EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db skos:exactMatch "https://w3id.org/emmo#EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db"^^xsd:anyURI,
+        "https://w3id.org/emmo#OWLRL2DLAxioms"^^xsd:anyURI .
+
+ns1:EMMO_8de5d5bf_db1c_40ac_b698_095ba3b18578 skos:exactMatch "https://w3id.org/emmo#EMMO_8de5d5bf_db1c_40ac_b698_095ba3b18578"^^xsd:anyURI,
+        "https://w3id.org/emmo#ISO80000Reference"^^xsd:anyURI .
+
+ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 skos:exactMatch "https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9"^^xsd:anyURI,
+        "https://w3id.org/emmo#elucidation"^^xsd:anyURI .
+
+ns1:EMMO_bb49844b_45d7_4f0d_8cae_8e552cbc20d6 skos:exactMatch "https://w3id.org/emmo#EMMO_bb49844b_45d7_4f0d_8cae_8e552cbc20d6"^^xsd:anyURI,
+        "https://w3id.org/emmo#VIMTerm"^^xsd:anyURI .
+
+ns1:EMMO_c6e77b51_681b_4d04_b20d_a08f2b977470 skos:exactMatch "https://w3id.org/emmo#EMMO_c6e77b51_681b_4d04_b20d_a08f2b977470"^^xsd:anyURI,
+        "https://w3id.org/emmo#OWL2DLRestrictedAxiom"^^xsd:anyURI .
+
+ns1:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f skos:exactMatch "https://w3id.org/emmo#EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f"^^xsd:anyURI,
+        "https://w3id.org/emmo#note"^^xsd:anyURI .
+
+ns1:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d skos:exactMatch "https://w3id.org/emmo#EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d"^^xsd:anyURI,
+        "https://w3id.org/emmo#wikipediaReference"^^xsd:anyURI .
+
+ns1:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 skos:exactMatch "https://w3id.org/emmo#EMMO_fe015383_afb3_44a6_ae86_043628697aa2"^^xsd:anyURI,
+        "https://w3id.org/emmo#iupacReference"^^xsd:anyURI .
 
 ns1:EffectiveDiffusionCoefficient skos:exactMatch "https://w3id.org/emmo#EMMO_1744d51d_0dac_4f48_8b50_fde6c7c2ab39"^^xsd:anyURI .
 
@@ -1236,8 +1093,6 @@ ns1:ElectronMass skos:exactMatch "https://w3id.org/emmo#EMMO_44fc8c60_7a9c_49af_
 
 ns1:ElectronRadius skos:exactMatch "https://w3id.org/emmo#EMMO_e6a173ac_40e9_4616_8883_710b358f5c85"^^xsd:anyURI .
 
-ns1:ElectronVolt skos:exactMatch "https://w3id.org/emmo#ElectronVolt"^^xsd:anyURI .
-
 ns1:ElectronicModel skos:exactMatch "https://w3id.org/emmo#EMMO_6eca09be_17e9_445e_abc9_000aa61b7a11"^^xsd:anyURI .
 
 ns1:Electroplating skos:exactMatch "https://w3id.org/emmo#EMMO_30e3edb5_0977_4b9b_9aed_5a4d16c1c07c"^^xsd:anyURI .
@@ -1336,10 +1191,6 @@ ns1:EuropiumSymbol skos:exactMatch "https://w3id.org/emmo#EMMO_4894a40d-6bf5-54a
 
 ns1:Exa skos:exactMatch "https://w3id.org/emmo#EMMO_3f2d29d9_6d27_43bd_a1bc_85475eae98be"^^xsd:anyURI .
 
-ns1:ExaCoulomb skos:exactMatch "https://w3id.org/emmo#ExaCoulomb"^^xsd:anyURI .
-
-ns1:ExaJoule skos:exactMatch "https://w3id.org/emmo#ExaJoule"^^xsd:anyURI .
-
 ns1:ExaPrefixedUnit skos:exactMatch "https://w3id.org/emmo#EMMO_5cf9f86c_86f5_40c4_846d_60371f670e0a"^^xsd:anyURI .
 
 ns1:ExactConstant skos:exactMatch "https://w3id.org/emmo#EMMO_89762966_8076_4f7c_b745_f718d653e8e2"^^xsd:anyURI .
@@ -1368,29 +1219,9 @@ ns1:FORTRAN skos:exactMatch "https://w3id.org/emmo#EMMO_aab6a0cc_2fbd_43ac_ac5a_
 
 ns1:Factory skos:exactMatch "https://w3id.org/emmo#EMMO_02122e58_e0b3_4274_bdd4_745f64a61645"^^xsd:anyURI .
 
-ns1:Farad skos:exactMatch "https://w3id.org/emmo#Farad"^^xsd:anyURI .
-
-ns1:FaradPerKiloMetre skos:exactMatch "https://w3id.org/emmo#FaradPerKiloMetre"^^xsd:anyURI .
-
-ns1:FaradPerMetre skos:exactMatch "https://w3id.org/emmo#FaradPerMetre"^^xsd:anyURI .
-
 ns1:FastFissionFactor skos:exactMatch "https://w3id.org/emmo#EMMO_cb62c651_f41a_4e12_a374_a3da3db1d2ff"^^xsd:anyURI .
 
 ns1:Femto skos:exactMatch "https://w3id.org/emmo#EMMO_7fd8ec39_1c4b_4ff3_9bc8_0bf3c27e2db0"^^xsd:anyURI .
-
-ns1:FemtoCoulomb skos:exactMatch "https://w3id.org/emmo#FemtoCoulomb"^^xsd:anyURI .
-
-ns1:FemtoGram skos:exactMatch "https://w3id.org/emmo#FemtoGram"^^xsd:anyURI .
-
-ns1:FemtoGramPerKilogram skos:exactMatch "https://w3id.org/emmo#FemtoGramPerKilogram"^^xsd:anyURI .
-
-ns1:FemtoJoule skos:exactMatch "https://w3id.org/emmo#FemtoJoule"^^xsd:anyURI .
-
-ns1:FemtoMetre skos:exactMatch "https://w3id.org/emmo#FemtoMetre"^^xsd:anyURI .
-
-ns1:FemtoMole skos:exactMatch "https://w3id.org/emmo#FemtoMole"^^xsd:anyURI .
-
-ns1:FemtoMolePerKilogram skos:exactMatch "https://w3id.org/emmo#FemtoMolePerKilogram"^^xsd:anyURI .
 
 ns1:FemtoPrefixedUnit skos:exactMatch "https://w3id.org/emmo#EMMO_23bfe79a_cade_48f1_9a8c_fd96e6bac8ba"^^xsd:anyURI .
 
@@ -1472,8 +1303,6 @@ ns1:FormingFromPowder skos:exactMatch "https://w3id.org/emmo#EMMO_f8b20fd2_08b9_
 ns1:FormingFromPulp skos:exactMatch "https://w3id.org/emmo#EMMO_a46f2e3f_6d06_4968_a02f_55274d131130"^^xsd:anyURI .
 
 ns1:FormingJoin skos:exactMatch "https://w3id.org/emmo#EMMO_78284835_f4ed_4a7c_914f_a7fdb460ed8e"^^xsd:anyURI .
-
-ns1:Fraction skos:exactMatch "https://w3id.org/emmo#Fraction"^^xsd:anyURI .
 
 ns1:FractionUnit skos:exactMatch "https://w3id.org/emmo#EMMO_c2f5ee66_579c_44c6_a2e9_fa2eaa9fa4da"^^xsd:anyURI .
 
@@ -1558,25 +1387,7 @@ ns1:GibbsEnergy skos:exactMatch "https://w3id.org/emmo#EMMO_e3727dab_74f9_438b_9
 
 ns1:Giga skos:exactMatch "https://w3id.org/emmo#EMMO_117d3e39_de3e_46f5_9744_b4a28d9fc83e"^^xsd:anyURI .
 
-ns1:GigaBecquerel skos:exactMatch "https://w3id.org/emmo#GigaBecquerel"^^xsd:anyURI .
-
-ns1:GigaCoulomb skos:exactMatch "https://w3id.org/emmo#GigaCoulomb"^^xsd:anyURI .
-
-ns1:GigaCoulombPerCubicMetre skos:exactMatch "https://w3id.org/emmo#GigaCoulombPerCubicMetre"^^xsd:anyURI .
-
-ns1:GigaHertz skos:exactMatch "https://w3id.org/emmo#GigaHertz"^^xsd:anyURI .
-
-ns1:GigaHertzMetre skos:exactMatch "https://w3id.org/emmo#GigaHertzMetre"^^xsd:anyURI .
-
-ns1:GigaJoule skos:exactMatch "https://w3id.org/emmo#GigaJoule"^^xsd:anyURI .
-
-ns1:GigaOhm skos:exactMatch "https://w3id.org/emmo#GigaOhm"^^xsd:anyURI .
-
-ns1:GigaPascal skos:exactMatch "https://w3id.org/emmo#GigaPascal"^^xsd:anyURI .
-
 ns1:GigaPrefixedUnit skos:exactMatch "https://w3id.org/emmo#EMMO_a8eb4bbb_1bd3_4ad4_b114_2789bcbd2134"^^xsd:anyURI .
-
-ns1:GigaWatt skos:exactMatch "https://w3id.org/emmo#GigaWatt"^^xsd:anyURI .
 
 ns1:Gluing skos:exactMatch "https://w3id.org/emmo#EMMO_ecc10f05_b301_4dcf_8c84_b6f511117234"^^xsd:anyURI .
 
@@ -1585,36 +1396,6 @@ ns1:GoldAtom skos:exactMatch "https://w3id.org/emmo#EMMO_0d37beeb-9dea-558e-82c5
 ns1:GoldSymbol skos:exactMatch "https://w3id.org/emmo#EMMO_811c67a9-bcdf-5a9e-bbce-28ae2af12915"^^xsd:anyURI .
 
 ns1:Gradient skos:exactMatch "https://w3id.org/emmo#EMMO_b5c58790_fb2d_42eb_b184_2a3f6ca60acb"^^xsd:anyURI .
-
-ns1:Gram skos:exactMatch "https://w3id.org/emmo#Gram"^^xsd:anyURI .
-
-ns1:GramDegreeCelsius skos:exactMatch "https://w3id.org/emmo#GramDegreeCelsius"^^xsd:anyURI .
-
-ns1:GramMilliMetre skos:exactMatch "https://w3id.org/emmo#GramMilliMetre"^^xsd:anyURI .
-
-ns1:GramPerCubicCentiMetre skos:exactMatch "https://w3id.org/emmo#GramPerCubicCentiMetre"^^xsd:anyURI .
-
-ns1:GramPerCubicDeciMetre skos:exactMatch "https://w3id.org/emmo#GramPerCubicDeciMetre"^^xsd:anyURI .
-
-ns1:GramPerCubicMetre skos:exactMatch "https://w3id.org/emmo#GramPerCubicMetre"^^xsd:anyURI .
-
-ns1:GramPerGram skos:exactMatch "https://w3id.org/emmo#GramPerGram"^^xsd:anyURI .
-
-ns1:GramPerKiloMetre skos:exactMatch "https://w3id.org/emmo#GramPerKiloMetre"^^xsd:anyURI .
-
-ns1:GramPerKilogram skos:exactMatch "https://w3id.org/emmo#GramPerKilogram"^^xsd:anyURI .
-
-ns1:GramPerMetre skos:exactMatch "https://w3id.org/emmo#GramPerMetre"^^xsd:anyURI .
-
-ns1:GramPerMilliMetre skos:exactMatch "https://w3id.org/emmo#GramPerMilliMetre"^^xsd:anyURI .
-
-ns1:GramPerMole skos:exactMatch "https://w3id.org/emmo#GramPerMole"^^xsd:anyURI .
-
-ns1:GramPerSecond skos:exactMatch "https://w3id.org/emmo#GramPerSecond"^^xsd:anyURI .
-
-ns1:GramPerSquareCentiMetre skos:exactMatch "https://w3id.org/emmo#GramPerSquareCentiMetre"^^xsd:anyURI .
-
-ns1:GramPerSquareMetre skos:exactMatch "https://w3id.org/emmo#GramPerSquareMetre"^^xsd:anyURI .
 
 ns1:GrandCanonicalPartionFunction skos:exactMatch "https://w3id.org/emmo#EMMO_80b19ae3_7248_4205_8c79_4e94f5f0444c"^^xsd:anyURI .
 
@@ -1625,10 +1406,6 @@ ns1:Graphical skos:exactMatch "https://w3id.org/emmo#EMMO_c74da218_9147_4f03_92d
 ns1:GravityCasting skos:exactMatch "https://w3id.org/emmo#EMMO_f1d0f28b_7575_4e82_8d22_cb5b46b84cfd"^^xsd:anyURI .
 
 ns1:GravitySintering skos:exactMatch "https://w3id.org/emmo#EMMO_3ec45f3b_677d_4e71_be75_6f8966b4f808"^^xsd:anyURI .
-
-ns1:Gray skos:exactMatch "https://w3id.org/emmo#Gray"^^xsd:anyURI .
-
-ns1:GrayPerSecond skos:exactMatch "https://w3id.org/emmo#GrayPerSecond"^^xsd:anyURI .
 
 ns1:Grinding skos:exactMatch "https://w3id.org/emmo#EMMO_2138677c_845a_4bc2_8be7_7b0a07b4777d"^^xsd:anyURI .
 
@@ -1688,21 +1465,7 @@ ns1:HeatFlowRate skos:exactMatch "https://w3id.org/emmo#EMMO_91a99750_7914_42be_
 
 ns1:HeatTreatment skos:exactMatch "https://w3id.org/emmo#EMMO_dacfc7dc_5ddb_4f67_986b_dcd01d649d60"^^xsd:anyURI .
 
-ns1:Hectare skos:exactMatch "https://w3id.org/emmo#Hectare"^^xsd:anyURI .
-
 ns1:Hecto skos:exactMatch "https://w3id.org/emmo#EMMO_4bc07644_8301_4aed_b21c_823f99b08d1a"^^xsd:anyURI .
-
-ns1:HectoCoulomb skos:exactMatch "https://w3id.org/emmo#HectoCoulomb"^^xsd:anyURI .
-
-ns1:HectoGram skos:exactMatch "https://w3id.org/emmo#HectoGram"^^xsd:anyURI .
-
-ns1:HectoMetre skos:exactMatch "https://w3id.org/emmo#HectoMetre"^^xsd:anyURI .
-
-ns1:HectoPascal skos:exactMatch "https://w3id.org/emmo#HectoPascal"^^xsd:anyURI .
-
-ns1:HectoPascalCubicMetrePerSecond skos:exactMatch "https://w3id.org/emmo#HectoPascalCubicMetrePerSecond"^^xsd:anyURI .
-
-ns1:HectoPascalPerKelvin skos:exactMatch "https://w3id.org/emmo#HectoPascalPerKelvin"^^xsd:anyURI .
 
 ns1:HectoPrefixedUnit skos:exactMatch "https://w3id.org/emmo#EMMO_21aaefc1_3f86_4208_b7db_a755f31f0f8c"^^xsd:anyURI .
 
@@ -1713,24 +1476,6 @@ ns1:HeliumAtom skos:exactMatch "https://w3id.org/emmo#EMMO_2c85ff7a-835c-5559-b3
 ns1:HeliumSymbol skos:exactMatch "https://w3id.org/emmo#EMMO_fad04773-08a7-5bd3-8990-06d7e9d2c21e"^^xsd:anyURI .
 
 ns1:HelmholtzEnergy skos:exactMatch "https://w3id.org/emmo#EMMO_262d4582_15b9_4685_b693_24f8e9ead98d"^^xsd:anyURI .
-
-ns1:Henry skos:exactMatch "https://w3id.org/emmo#Henry"^^xsd:anyURI .
-
-ns1:HenryPerKiloOhm skos:exactMatch "https://w3id.org/emmo#HenryPerKiloOhm"^^xsd:anyURI .
-
-ns1:HenryPerMetre skos:exactMatch "https://w3id.org/emmo#HenryPerMetre"^^xsd:anyURI .
-
-ns1:HenryPerOhm skos:exactMatch "https://w3id.org/emmo#HenryPerOhm"^^xsd:anyURI .
-
-ns1:Hertz skos:exactMatch "https://w3id.org/emmo#Hertz"^^xsd:anyURI .
-
-ns1:HertzMetre skos:exactMatch "https://w3id.org/emmo#HertzMetre"^^xsd:anyURI .
-
-ns1:HertzPerKelvin skos:exactMatch "https://w3id.org/emmo#HertzPerKelvin"^^xsd:anyURI .
-
-ns1:HertzPerTesla skos:exactMatch "https://w3id.org/emmo#HertzPerTesla"^^xsd:anyURI .
-
-ns1:HertzPerVolt skos:exactMatch "https://w3id.org/emmo#HertzPerVolt"^^xsd:anyURI .
 
 ns1:Heteronuclear skos:exactMatch "https://w3id.org/emmo#EMMO_50967f46_51f9_462a_b1e4_e63365b4a184"^^xsd:anyURI .
 
@@ -1752,8 +1497,6 @@ ns1:Homonuclear skos:exactMatch "https://w3id.org/emmo#EMMO_e024544d_e374_45b7_9
 
 ns1:HotDipGalvanizing skos:exactMatch "https://w3id.org/emmo#EMMO_47eea65c_e6ce_4c95_9406_fdb1519abc87"^^xsd:anyURI .
 
-ns1:Hour skos:exactMatch "https://w3id.org/emmo#Hour"^^xsd:anyURI .
-
 ns1:HybridMatter skos:exactMatch "https://w3id.org/emmo#EMMO_1c16bb7f_5400_4498_8ef2_54392908da4e"^^xsd:anyURI .
 
 ns1:HydrogenAtom skos:exactMatch "https://w3id.org/emmo#EMMO_5a4790e5-b11b-5a0c-80e4-81515c27a560"^^xsd:anyURI .
@@ -1768,15 +1511,13 @@ ns1:Hyperon skos:exactMatch "https://w3id.org/emmo#EMMO_f87e79eb_f549_4a06_9c27_
 
 ns1:Hypothesis skos:exactMatch "https://w3id.org/emmo#EMMO_e7cbc129_0d05_41a2_851a_10b198cd7ca2"^^xsd:anyURI .
 
-ns1:IEVReference skos:exactMatch "https://w3id.org/emmo#EMMO_50c298c2_55a2_4068_b3ac_4e948c33181f"^^xsd:anyURI,
-        "https://w3id.org/emmo#IEVReference"^^xsd:anyURI .
+ns1:IEVReference skos:exactMatch "https://w3id.org/emmo#IEVReference"^^xsd:anyURI .
 
 ns1:IRI skos:exactMatch "https://w3id.org/emmo#EMMO_5c15f8c4_d2de_47a0_acdd_470b8dda979b"^^xsd:anyURI .
 
 ns1:ISO80000Categorised skos:exactMatch "https://w3id.org/emmo#EMMO_2ce04004_62cf_4394_b6a2_b45fce1aebfe"^^xsd:anyURI .
 
-ns1:ISO80000Reference skos:exactMatch "https://w3id.org/emmo#EMMO_8de5d5bf_db1c_40ac_b698_095ba3b18578"^^xsd:anyURI,
-        "https://w3id.org/emmo#ISO80000Reference"^^xsd:anyURI .
+ns1:ISO80000Reference skos:exactMatch "https://w3id.org/emmo#ISO80000Reference"^^xsd:anyURI .
 
 ns1:ISQBaseQuantity skos:exactMatch "https://w3id.org/emmo#EMMO_1a4c1a97_88a7_4d8e_b2f9_2ca58e92dde4"^^xsd:anyURI .
 
@@ -1926,83 +1667,9 @@ ns1:JosephsonConstant skos:exactMatch "https://w3id.org/emmo#EMMO_ba380bc6_2bfd_
 
 ns1:JosephsonConstantUnit skos:exactMatch "https://w3id.org/emmo#EMMO_6b8bf0c9_4ec7_452c_bee5_26e5149a4f05"^^xsd:anyURI .
 
-ns1:Joule skos:exactMatch "https://w3id.org/emmo#Joule"^^xsd:anyURI .
-
-ns1:JouleMetrePerMole skos:exactMatch "https://w3id.org/emmo#JouleMetrePerMole"^^xsd:anyURI .
-
-ns1:JoulePerCubicMetre skos:exactMatch "https://w3id.org/emmo#JoulePerCubicMetre"^^xsd:anyURI .
-
-ns1:JoulePerCubicMetreKelvin skos:exactMatch "https://w3id.org/emmo#JoulePerCubicMetreKelvin"^^xsd:anyURI .
-
-ns1:JoulePerGram skos:exactMatch "https://w3id.org/emmo#JoulePerGram"^^xsd:anyURI .
-
-ns1:JoulePerKelvin skos:exactMatch "https://w3id.org/emmo#JoulePerKelvin"^^xsd:anyURI .
-
-ns1:JoulePerKilogram skos:exactMatch "https://w3id.org/emmo#JoulePerKilogram"^^xsd:anyURI .
-
-ns1:JoulePerKilogramKelvin skos:exactMatch "https://w3id.org/emmo#JoulePerKilogramKelvin"^^xsd:anyURI .
-
-ns1:JoulePerKilogramKelvinCubicMetre skos:exactMatch "https://w3id.org/emmo#JoulePerKilogramKelvinCubicMetre"^^xsd:anyURI .
-
-ns1:JoulePerKilogramKelvinPerPascal skos:exactMatch "https://w3id.org/emmo#JoulePerKilogramKelvinPerPascal"^^xsd:anyURI .
-
-ns1:JoulePerMetre skos:exactMatch "https://w3id.org/emmo#JoulePerMetre"^^xsd:anyURI .
-
-ns1:JoulePerMole skos:exactMatch "https://w3id.org/emmo#JoulePerMole"^^xsd:anyURI .
-
-ns1:JoulePerMoleKelvin skos:exactMatch "https://w3id.org/emmo#JoulePerMoleKelvin"^^xsd:anyURI .
-
-ns1:JoulePerQuarticMetre skos:exactMatch "https://w3id.org/emmo#JoulePerQuarticMetre"^^xsd:anyURI .
-
-ns1:JoulePerSecond skos:exactMatch "https://w3id.org/emmo#JoulePerSecond"^^xsd:anyURI .
-
-ns1:JoulePerSquareCentiMetre skos:exactMatch "https://w3id.org/emmo#JoulePerSquareCentiMetre"^^xsd:anyURI .
-
-ns1:JoulePerSquareMetre skos:exactMatch "https://w3id.org/emmo#JoulePerSquareMetre"^^xsd:anyURI .
-
-ns1:JoulePerSquareTesla skos:exactMatch "https://w3id.org/emmo#JoulePerSquareTesla"^^xsd:anyURI .
-
-ns1:JoulePerTesla skos:exactMatch "https://w3id.org/emmo#JoulePerTesla"^^xsd:anyURI .
-
-ns1:JouleSecond skos:exactMatch "https://w3id.org/emmo#JouleSecond"^^xsd:anyURI .
-
-ns1:JouleSecondPerMole skos:exactMatch "https://w3id.org/emmo#JouleSecondPerMole"^^xsd:anyURI .
-
-ns1:JouleSquareMetre skos:exactMatch "https://w3id.org/emmo#JouleSquareMetre"^^xsd:anyURI .
-
-ns1:JouleSquareMetrePerKilogram skos:exactMatch "https://w3id.org/emmo#JouleSquareMetrePerKilogram"^^xsd:anyURI .
-
 ns1:JouleThomsonCoefficient skos:exactMatch "https://w3id.org/emmo#EMMO_a43cb01a_beb0_46e1_ae6d_22236222e6a1"^^xsd:anyURI .
 
 ns1:JunctionTile skos:exactMatch "https://w3id.org/emmo#EMMO_d4c95fa1_5bda_4063_a22d_62c81fcea284"^^xsd:anyURI .
-
-ns1:Katal skos:exactMatch "https://w3id.org/emmo#Katal"^^xsd:anyURI .
-
-ns1:Kelvin skos:exactMatch "https://w3id.org/emmo#Kelvin"^^xsd:anyURI .
-
-ns1:KelvinMetre skos:exactMatch "https://w3id.org/emmo#KelvinMetre"^^xsd:anyURI .
-
-ns1:KelvinMetrePerSecond skos:exactMatch "https://w3id.org/emmo#KelvinMetrePerSecond"^^xsd:anyURI .
-
-ns1:KelvinMetrePerWatt skos:exactMatch "https://w3id.org/emmo#KelvinMetrePerWatt"^^xsd:anyURI .
-
-ns1:KelvinPascalPerSecond skos:exactMatch "https://w3id.org/emmo#KelvinPascalPerSecond"^^xsd:anyURI .
-
-ns1:KelvinPerKelvin skos:exactMatch "https://w3id.org/emmo#KelvinPerKelvin"^^xsd:anyURI .
-
-ns1:KelvinPerMetre skos:exactMatch "https://w3id.org/emmo#KelvinPerMetre"^^xsd:anyURI .
-
-ns1:KelvinPerSecond skos:exactMatch "https://w3id.org/emmo#KelvinPerSecond"^^xsd:anyURI .
-
-ns1:KelvinPerSquareSecond skos:exactMatch "https://w3id.org/emmo#KelvinPerSquareSecond"^^xsd:anyURI .
-
-ns1:KelvinPerTesla skos:exactMatch "https://w3id.org/emmo#KelvinPerTesla"^^xsd:anyURI .
-
-ns1:KelvinPerWatt skos:exactMatch "https://w3id.org/emmo#KelvinPerWatt"^^xsd:anyURI .
-
-ns1:KelvinSecond skos:exactMatch "https://w3id.org/emmo#KelvinSecond"^^xsd:anyURI .
-
-ns1:KelvinSquareMetrePerKilogramPerSecond skos:exactMatch "https://w3id.org/emmo#KelvinSquareMetrePerKilogramPerSecond"^^xsd:anyURI .
 
 ns1:Kerma skos:exactMatch "https://w3id.org/emmo#EMMO_e963f280_1599_4ee8_bb74_439a4bc6412d"^^xsd:anyURI .
 
@@ -2010,133 +1677,7 @@ ns1:KermaRate skos:exactMatch "https://w3id.org/emmo#EMMO_d481815b_11bd_4cf6_a29
 
 ns1:Kilo skos:exactMatch "https://w3id.org/emmo#EMMO_68a031ba_abf5_4859_b84c_32977f029908"^^xsd:anyURI .
 
-ns1:KiloAmpere skos:exactMatch "https://w3id.org/emmo#KiloAmpere"^^xsd:anyURI .
-
-ns1:KiloAmperePerMetre skos:exactMatch "https://w3id.org/emmo#KiloAmperePerMetre"^^xsd:anyURI .
-
-ns1:KiloAmperePerSquareMetre skos:exactMatch "https://w3id.org/emmo#KiloAmperePerSquareMetre"^^xsd:anyURI .
-
-ns1:KiloBecquerel skos:exactMatch "https://w3id.org/emmo#KiloBecquerel"^^xsd:anyURI .
-
-ns1:KiloCoulomb skos:exactMatch "https://w3id.org/emmo#KiloCoulomb"^^xsd:anyURI .
-
-ns1:KiloCoulombPerCubicMetre skos:exactMatch "https://w3id.org/emmo#KiloCoulombPerCubicMetre"^^xsd:anyURI .
-
-ns1:KiloCoulombPerSquareMetre skos:exactMatch "https://w3id.org/emmo#KiloCoulombPerSquareMetre"^^xsd:anyURI .
-
-ns1:KiloHertz skos:exactMatch "https://w3id.org/emmo#KiloHertz"^^xsd:anyURI .
-
-ns1:KiloHertzMetre skos:exactMatch "https://w3id.org/emmo#KiloHertzMetre"^^xsd:anyURI .
-
-ns1:KiloJoule skos:exactMatch "https://w3id.org/emmo#KiloJoule"^^xsd:anyURI .
-
-ns1:KiloJoulePerKelvin skos:exactMatch "https://w3id.org/emmo#KiloJoulePerKelvin"^^xsd:anyURI .
-
-ns1:KiloJoulePerKilogram skos:exactMatch "https://w3id.org/emmo#KiloJoulePerKilogram"^^xsd:anyURI .
-
-ns1:KiloJoulePerKilogramKelvin skos:exactMatch "https://w3id.org/emmo#KiloJoulePerKilogramKelvin"^^xsd:anyURI .
-
-ns1:KiloJoulePerMole skos:exactMatch "https://w3id.org/emmo#KiloJoulePerMole"^^xsd:anyURI .
-
-ns1:KiloMetre skos:exactMatch "https://w3id.org/emmo#KiloMetre"^^xsd:anyURI .
-
-ns1:KiloMetrePerSecond skos:exactMatch "https://w3id.org/emmo#KiloMetrePerSecond"^^xsd:anyURI .
-
-ns1:KiloMole skos:exactMatch "https://w3id.org/emmo#KiloMole"^^xsd:anyURI .
-
-ns1:KiloMolePerCubicMetre skos:exactMatch "https://w3id.org/emmo#KiloMolePerCubicMetre"^^xsd:anyURI .
-
-ns1:KiloMolePerKilogram skos:exactMatch "https://w3id.org/emmo#KiloMolPerKilogram"^^xsd:anyURI .
-
-ns1:KiloMolePerSecond skos:exactMatch "https://w3id.org/emmo#KiloMolePerSecond"^^xsd:anyURI .
-
-ns1:KiloNewton skos:exactMatch "https://w3id.org/emmo#KiloNewton"^^xsd:anyURI .
-
-ns1:KiloNewtonMetre skos:exactMatch "https://w3id.org/emmo#KiloNewtonMetre"^^xsd:anyURI .
-
-ns1:KiloNewtonSquareMetre skos:exactMatch "https://w3id.org/emmo#KiloNewtonSquareMetre"^^xsd:anyURI .
-
-ns1:KiloOhm skos:exactMatch "https://w3id.org/emmo#KiloOhm"^^xsd:anyURI .
-
-ns1:KiloPascal skos:exactMatch "https://w3id.org/emmo#KiloPascal"^^xsd:anyURI .
-
-ns1:KiloPascalPerKelvin skos:exactMatch "https://w3id.org/emmo#KiloPascalPerKelvin"^^xsd:anyURI .
-
-ns1:KiloPascalPerMilliMetre skos:exactMatch "https://w3id.org/emmo#KiloPascalPerMilliMetre"^^xsd:anyURI .
-
-ns1:KiloPascalSquareMetrePerGram skos:exactMatch "https://w3id.org/emmo#KiloPascalSquareMetrePerGram"^^xsd:anyURI .
-
 ns1:KiloPrefixedUnit skos:exactMatch "https://w3id.org/emmo#EMMO_74931b1b_c133_4e59_9a75_1bf0e1626201"^^xsd:anyURI .
-
-ns1:KiloSiemensPerMetre skos:exactMatch "https://w3id.org/emmo#KiloSiemensPerMetre"^^xsd:anyURI .
-
-ns1:KiloVolt skos:exactMatch "https://w3id.org/emmo#KiloVolt"^^xsd:anyURI .
-
-ns1:KiloVoltAmpere skos:exactMatch "https://w3id.org/emmo#KiloVoltAmpere"^^xsd:anyURI .
-
-ns1:KiloVoltPerMetre skos:exactMatch "https://w3id.org/emmo#KiloVoltPerMetre"^^xsd:anyURI .
-
-ns1:KiloWatt skos:exactMatch "https://w3id.org/emmo#KiloWatt"^^xsd:anyURI .
-
-ns1:KiloWeber skos:exactMatch "https://w3id.org/emmo#KiloWeber"^^xsd:anyURI .
-
-ns1:KiloWeberPerMetre skos:exactMatch "https://w3id.org/emmo#KiloWeberPerMetre"^^xsd:anyURI .
-
-ns1:Kilogram skos:exactMatch "https://w3id.org/emmo#Kilogram"^^xsd:anyURI .
-
-ns1:KilogramKelvin skos:exactMatch "https://w3id.org/emmo#KilogramKelvin"^^xsd:anyURI .
-
-ns1:KilogramMetrePerSecond skos:exactMatch "https://w3id.org/emmo#KilogramMetrePerSecond"^^xsd:anyURI .
-
-ns1:KilogramPerCubicCentiMetre skos:exactMatch "https://w3id.org/emmo#KilogramPerCubicCentiMetre"^^xsd:anyURI .
-
-ns1:KilogramPerCubicDeciMetre skos:exactMatch "https://w3id.org/emmo#KilogramPerCubicDeciMetre"^^xsd:anyURI .
-
-ns1:KilogramPerCubicMetre skos:exactMatch "https://w3id.org/emmo#KilogramPerCubicMetre"^^xsd:anyURI .
-
-ns1:KilogramPerCubicMetrePerSecond skos:exactMatch "https://w3id.org/emmo#KilogramPerCubicMetrePerSecond"^^xsd:anyURI .
-
-ns1:KilogramPerKiloMole skos:exactMatch "https://w3id.org/emmo#KilogramPerKiloMol"^^xsd:anyURI .
-
-ns1:KilogramPerKilogram skos:exactMatch "https://w3id.org/emmo#KilogramPerKilogram"^^xsd:anyURI .
-
-ns1:KilogramPerMetre skos:exactMatch "https://w3id.org/emmo#KilogramPerMetre"^^xsd:anyURI .
-
-ns1:KilogramPerMetrePerSecond skos:exactMatch "https://w3id.org/emmo#KilogramPerMetrePerSecond"^^xsd:anyURI .
-
-ns1:KilogramPerMetrePerSquareSecond skos:exactMatch "https://w3id.org/emmo#KilogramPerMetrePerSquareSecond"^^xsd:anyURI .
-
-ns1:KilogramPerMilliMetre skos:exactMatch "https://w3id.org/emmo#KilogramPerMilliMetre"^^xsd:anyURI .
-
-ns1:KilogramPerMole skos:exactMatch "https://w3id.org/emmo#KilogramPerMol"^^xsd:anyURI .
-
-ns1:KilogramPerSecond skos:exactMatch "https://w3id.org/emmo#KilogramPerSecond"^^xsd:anyURI .
-
-ns1:KilogramPerSecondPerSquareMetre skos:exactMatch "https://w3id.org/emmo#KilogramPerSecondPerSquareMetre"^^xsd:anyURI .
-
-ns1:KilogramPerSquareCentiMetre skos:exactMatch "https://w3id.org/emmo#KilogramPerSquareCentiMetre"^^xsd:anyURI .
-
-ns1:KilogramPerSquareKiloMetre skos:exactMatch "https://w3id.org/emmo#KilogramPerSquareKiloMetre"^^xsd:anyURI .
-
-ns1:KilogramPerSquareMetre skos:exactMatch "https://w3id.org/emmo#KilogramPerSquareMetre"^^xsd:anyURI .
-
-ns1:KilogramPerSquareMetrePerPascalPerSecond skos:exactMatch "https://w3id.org/emmo#KilogramPerSquareMetrePerPascalPerSecond"^^xsd:anyURI .
-
-ns1:KilogramPerSquareMetrePerSecond skos:exactMatch "https://w3id.org/emmo#KilogramPerSquareMetrePerSecond"^^xsd:anyURI .
-
-ns1:KilogramPerSquareMetreSquareSecond skos:exactMatch "https://w3id.org/emmo#KilogramPerSquareMetreSquareSecond"^^xsd:anyURI .
-
-ns1:KilogramPerSquareSecond skos:exactMatch "https://w3id.org/emmo#KilogramPerSquareSecond"^^xsd:anyURI .
-
-ns1:KilogramSquareCentiMetre skos:exactMatch "https://w3id.org/emmo#KilogramSquareCentiMetre"^^xsd:anyURI .
-
-ns1:KilogramSquareMetre skos:exactMatch "https://w3id.org/emmo#KilogramSquareMetre"^^xsd:anyURI .
-
-ns1:KilogramSquareMetrePerSecond skos:exactMatch "https://w3id.org/emmo#KilogramSquareMetrePerSecond"^^xsd:anyURI .
-
-ns1:KilogramSquareMilliMetre skos:exactMatch "https://w3id.org/emmo#KilogramSquareMilliMetre"^^xsd:anyURI .
-
-ns1:KilogramSquareSecond skos:exactMatch "https://w3id.org/emmo#KilogramSquareSecond"^^xsd:anyURI .
 
 ns1:KinematicViscosity skos:exactMatch "https://w3id.org/emmo#EMMO_b5523f03_5f2f_4e11_92c0_3734c6de3749"^^xsd:anyURI .
 
@@ -2266,8 +1807,6 @@ ns1:LithiumAtom skos:exactMatch "https://w3id.org/emmo#EMMO_3bb84fc5-5cb4-5250-b
 
 ns1:LithiumSymbol skos:exactMatch "https://w3id.org/emmo#EMMO_0755dd67-bdf1-5164-a706-55fcf9ced526"^^xsd:anyURI .
 
-ns1:Litre skos:exactMatch "https://w3id.org/emmo#Litre"^^xsd:anyURI .
-
 ns1:LivermoriumAtom skos:exactMatch "https://w3id.org/emmo#EMMO_f2d4c89a-c354-5e4c-9cdb-f2de932e294f"^^xsd:anyURI .
 
 ns1:LivermoriumSymbol skos:exactMatch "https://w3id.org/emmo#EMMO_31fda9f8-24e1-5c53-8616-a63cee7613de"^^xsd:anyURI .
@@ -2295,12 +1834,6 @@ ns1:LowPressureCasting skos:exactMatch "https://w3id.org/emmo#EMMO_8b2fd84c_8f51
 
 ns1:LowerCriticalMagneticFluxDensity skos:exactMatch "https://w3id.org/emmo#EMMO_fd4a6307_f9f7_4b54_b044_caa04e620232"^^xsd:anyURI .
 
-ns1:Lumen skos:exactMatch "https://w3id.org/emmo#Lumen"^^xsd:anyURI .
-
-ns1:LumenPerWatt skos:exactMatch "https://w3id.org/emmo#LumenPerWatt"^^xsd:anyURI .
-
-ns1:LumenSecond skos:exactMatch "https://w3id.org/emmo#LumenSecond"^^xsd:anyURI .
-
 ns1:Luminance skos:exactMatch "https://w3id.org/emmo#EMMO_97589322_710c_4af4_9431_1e5027f2be42"^^xsd:anyURI .
 
 ns1:LuminanceUnit skos:exactMatch "https://w3id.org/emmo#EMMO_4000d06d_8594_4263_ba72_5d9440b66c5e"^^xsd:anyURI,
@@ -2320,8 +1853,6 @@ ns1:LuminousIntensityUnit skos:exactMatch "https://w3id.org/emmo#EMMO_14ff4393_0
 ns1:LutetiumAtom skos:exactMatch "https://w3id.org/emmo#EMMO_098f6f77-746a-5fcc-a6d1-4988929bf404"^^xsd:anyURI .
 
 ns1:LutetiumSymbol skos:exactMatch "https://w3id.org/emmo#EMMO_66c364c4-16b7-5d5f-abd5-b6977c46f525"^^xsd:anyURI .
-
-ns1:Lux skos:exactMatch "https://w3id.org/emmo#Lux"^^xsd:anyURI .
 
 ns1:MachineCell skos:exactMatch "https://w3id.org/emmo#EMMO_4d2ca841_6cb1_4710_a756_5b989746bca2"^^xsd:anyURI .
 
@@ -2468,6 +1999,8 @@ ns1:MassPerTimeUnit skos:exactMatch "https://w3id.org/emmo#EMMO_8826aefb_0bf6_43
 ns1:MassPerVolumeTimeUnit skos:exactMatch "https://w3id.org/emmo#EMMO_8f3a9f9f_6f56_49dc_b39e_1aee57ffdc58"^^xsd:anyURI,
         "https://w3id.org/emmo#MassPerVolumeTimeUnit"^^xsd:anyURI .
 
+ns1:MassPerVolumeUnit skos:exactMatch "https://w3id.org/emmo#EMMO_af068ad8_12b8_4e44_a8aa_0f5e74404eda"^^xsd:anyURI .
+
 ns1:MassRatioOfWaterToDryMatter skos:exactMatch "https://w3id.org/emmo#EMMO_bba5d6f7_53e5_417a_855e_a95322fb641e"^^xsd:anyURI .
 
 ns1:MassSquareTimeUnit skos:exactMatch "https://w3id.org/emmo#EMMO_5f375229_de0c_46bf_b11f_da9d3b742253"^^xsd:anyURI,
@@ -2588,67 +2121,7 @@ ns1:MechanicalQuantity skos:exactMatch "https://w3id.org/emmo#EMMO_be76ad52_2e29
 
 ns1:Mega skos:exactMatch "https://w3id.org/emmo#EMMO_85ee9154_5a3e_482e_aa37_c617ff1947ff"^^xsd:anyURI .
 
-ns1:MegaAmpere skos:exactMatch "https://w3id.org/emmo#MegaAmpere"^^xsd:anyURI .
-
-ns1:MegaAmperePerSquareMetre skos:exactMatch "https://w3id.org/emmo#MegaAmperePerSquareMetre"^^xsd:anyURI .
-
-ns1:MegaBecquerel skos:exactMatch "https://w3id.org/emmo#MegaBecquerel"^^xsd:anyURI .
-
-ns1:MegaCoulomb skos:exactMatch "https://w3id.org/emmo#MegaCoulomb"^^xsd:anyURI .
-
-ns1:MegaCoulombPerCubicMetre skos:exactMatch "https://w3id.org/emmo#MegaCoulombPerCubicMetre"^^xsd:anyURI .
-
-ns1:MegaCoulombPerSquareMetre skos:exactMatch "https://w3id.org/emmo#MegaCoulombPerSquareMetre"^^xsd:anyURI .
-
-ns1:MegaGram skos:exactMatch "https://w3id.org/emmo#MegaGram"^^xsd:anyURI .
-
-ns1:MegaGramPerCubicMetre skos:exactMatch "https://w3id.org/emmo#MegaGramPerCubicMetre"^^xsd:anyURI .
-
-ns1:MegaHertz skos:exactMatch "https://w3id.org/emmo#MegaHertz"^^xsd:anyURI .
-
-ns1:MegaHertzMetre skos:exactMatch "https://w3id.org/emmo#MegaHertzMetre"^^xsd:anyURI .
-
-ns1:MegaHertzPerKelvin skos:exactMatch "https://w3id.org/emmo#MegaHertzPerKelvin"^^xsd:anyURI .
-
-ns1:MegaHertzPerTesla skos:exactMatch "https://w3id.org/emmo#MegaHertzPerTesla"^^xsd:anyURI .
-
-ns1:MegaJoule skos:exactMatch "https://w3id.org/emmo#MegaJoule"^^xsd:anyURI .
-
-ns1:MegaJoulePerCubicMetre skos:exactMatch "https://w3id.org/emmo#MegaJoulePerCubicMetre"^^xsd:anyURI .
-
-ns1:MegaJoulePerKelvin skos:exactMatch "https://w3id.org/emmo#MegaJoulePerKelvin"^^xsd:anyURI .
-
-ns1:MegaJoulePerKilogram skos:exactMatch "https://w3id.org/emmo#MegaJoulePerKilogram"^^xsd:anyURI .
-
-ns1:MegaJoulePerSecond skos:exactMatch "https://w3id.org/emmo#MegaJoulePerSecond"^^xsd:anyURI .
-
-ns1:MegaJoulePerSquareMetre skos:exactMatch "https://w3id.org/emmo#MegaJoulePerSquareMetre"^^xsd:anyURI .
-
-ns1:MegaNewton skos:exactMatch "https://w3id.org/emmo#MegaNewton"^^xsd:anyURI .
-
-ns1:MegaNewtonMetre skos:exactMatch "https://w3id.org/emmo#MegaNewtonMetre"^^xsd:anyURI .
-
-ns1:MegaOhm skos:exactMatch "https://w3id.org/emmo#MegaOhm"^^xsd:anyURI .
-
-ns1:MegaPascal skos:exactMatch "https://w3id.org/emmo#MegaPascal"^^xsd:anyURI .
-
-ns1:MegaPascalCubicMetrePerSecond skos:exactMatch "https://w3id.org/emmo#MegaPascalCubicMetrePerSecond"^^xsd:anyURI .
-
-ns1:MegaPascalPerKelvin skos:exactMatch "https://w3id.org/emmo#MegaPascalPerKelvin"^^xsd:anyURI .
-
 ns1:MegaPrefixedUnit skos:exactMatch "https://w3id.org/emmo#EMMO_5eaecadc_4f0d_4a3a_afc7_1fc0b83cc928"^^xsd:anyURI .
-
-ns1:MegaSiemens skos:exactMatch "https://w3id.org/emmo#MegaSiemens"^^xsd:anyURI .
-
-ns1:MegaSiemensPerMetre skos:exactMatch "https://w3id.org/emmo#MegaSiemensPerMetre"^^xsd:anyURI .
-
-ns1:MegaVolt skos:exactMatch "https://w3id.org/emmo#MegaVolt"^^xsd:anyURI .
-
-ns1:MegaVoltAmpere skos:exactMatch "https://w3id.org/emmo#MegaVoltAmpere"^^xsd:anyURI .
-
-ns1:MegaVoltPerMetre skos:exactMatch "https://w3id.org/emmo#MegaVoltPerMetre"^^xsd:anyURI .
-
-ns1:MegaWatt skos:exactMatch "https://w3id.org/emmo#MegaWatt"^^xsd:anyURI .
 
 ns1:MeitneriumAtom skos:exactMatch "https://w3id.org/emmo#EMMO_3213514e-b1ba-506c-ae22-d4e3a688ddf3"^^xsd:anyURI .
 
@@ -2678,20 +2151,6 @@ ns1:MetallicMaterial skos:exactMatch "https://w3id.org/emmo#EMMO_4c1f58cd_6e2c_4
 
 ns1:MetallicPowderSintering skos:exactMatch "https://w3id.org/emmo#EMMO_1a9e6e27_1e1d_492a_824e_6fb848574846"^^xsd:anyURI .
 
-ns1:Metre skos:exactMatch "https://w3id.org/emmo#Metre"^^xsd:anyURI .
-
-ns1:MetreKelvin skos:exactMatch "https://w3id.org/emmo#MetreKelvin"^^xsd:anyURI .
-
-ns1:MetreKilogram skos:exactMatch "https://w3id.org/emmo#MetreKilogram"^^xsd:anyURI .
-
-ns1:MetrePerFarad skos:exactMatch "https://w3id.org/emmo#MetrePerFarad"^^xsd:anyURI .
-
-ns1:MetrePerKelvin skos:exactMatch "https://w3id.org/emmo#MetrePerKelvin"^^xsd:anyURI .
-
-ns1:MetrePerSecond skos:exactMatch "https://w3id.org/emmo#MetrePerSecond"^^xsd:anyURI .
-
-ns1:MetrePerSquareSecond skos:exactMatch "https://w3id.org/emmo#MetrePerSquareSecond"^^xsd:anyURI .
-
 ns1:MetricMultipleUnit skos:exactMatch "https://w3id.org/emmo#EMMO_2024fca1_b015_45ee_9490_e9e7d36bf704"^^xsd:anyURI .
 
 ns1:MetricPrefix skos:exactMatch "https://w3id.org/emmo#EMMO_442bd91e_a724_4e9f_89c1_18423016fb75"^^xsd:anyURI .
@@ -2712,99 +2171,7 @@ ns1:MetrologicalUncertainty skos:exactMatch "https://w3id.org/emmo#EMMO_847724b7
 
 ns1:Micro skos:exactMatch "https://w3id.org/emmo#EMMO_6da1b965_768c_4cf0_8873_44f2035133ba"^^xsd:anyURI .
 
-ns1:MicroAmpere skos:exactMatch "https://w3id.org/emmo#MicroAmpere"^^xsd:anyURI .
-
-ns1:MicroBecquerel skos:exactMatch "https://w3id.org/emmo#MicroBecquerel"^^xsd:anyURI .
-
-ns1:MicroBecquerelPerKilogram skos:exactMatch "https://w3id.org/emmo#MicroBecquerelPerKilogram"^^xsd:anyURI .
-
-ns1:MicroCoulomb skos:exactMatch "https://w3id.org/emmo#MicroCoulomb"^^xsd:anyURI .
-
-ns1:MicroCoulombPerCubicMetre skos:exactMatch "https://w3id.org/emmo#MicroCoulombPerCubicMetre"^^xsd:anyURI .
-
-ns1:MicroCoulombPerSquareMetre skos:exactMatch "https://w3id.org/emmo#MicroCoulombPerSquareMetre"^^xsd:anyURI .
-
-ns1:MicroFarad skos:exactMatch "https://w3id.org/emmo#MicroFarad"^^xsd:anyURI .
-
-ns1:MicroFaradPerKiloMetre skos:exactMatch "https://w3id.org/emmo#MicroFaradPerKiloMetre"^^xsd:anyURI .
-
-ns1:MicroFaradPerMetre skos:exactMatch "https://w3id.org/emmo#MicroFaradPerMetre"^^xsd:anyURI .
-
-ns1:MicroGram skos:exactMatch "https://w3id.org/emmo#MicroGram"^^xsd:anyURI .
-
-ns1:MicroGramPerCubicMetre skos:exactMatch "https://w3id.org/emmo#MicroGramPerCubicMetre"^^xsd:anyURI .
-
-ns1:MicroGramPerGram skos:exactMatch "https://w3id.org/emmo#MicroGramPerGram"^^xsd:anyURI .
-
-ns1:MicroGramPerKilogram skos:exactMatch "https://w3id.org/emmo#MicroGramPerKilogram"^^xsd:anyURI .
-
-ns1:MicroGramPerSquareCentiMetre skos:exactMatch "https://w3id.org/emmo#MicroGramPerSquareCentiMetre"^^xsd:anyURI .
-
-ns1:MicroGray skos:exactMatch "https://w3id.org/emmo#MicroGray"^^xsd:anyURI .
-
-ns1:MicroHenry skos:exactMatch "https://w3id.org/emmo#MicroHenry"^^xsd:anyURI .
-
-ns1:MicroHenryPerKiloOhm skos:exactMatch "https://w3id.org/emmo#MicroHenryPerKiloOhm"^^xsd:anyURI .
-
-ns1:MicroHenryPerMetre skos:exactMatch "https://w3id.org/emmo#MicroHenryPerMetre"^^xsd:anyURI .
-
-ns1:MicroHenryPerOhm skos:exactMatch "https://w3id.org/emmo#MicroHenryPerOhm"^^xsd:anyURI .
-
-ns1:MicroJoule skos:exactMatch "https://w3id.org/emmo#MicroJoule"^^xsd:anyURI .
-
-ns1:MicroMetre skos:exactMatch "https://w3id.org/emmo#MicroMetre"^^xsd:anyURI .
-
-ns1:MicroMetrePerKelvin skos:exactMatch "https://w3id.org/emmo#MicroMetrePerKelvin"^^xsd:anyURI .
-
-ns1:MicroMetrePerNewton skos:exactMatch "https://w3id.org/emmo#MicroMetrePerNewton"^^xsd:anyURI .
-
-ns1:MicroMole skos:exactMatch "https://w3id.org/emmo#MicroMole"^^xsd:anyURI .
-
-ns1:MicroMolePerGram skos:exactMatch "https://w3id.org/emmo#MicroMolePerGram"^^xsd:anyURI .
-
-ns1:MicroMolePerGramPerSecond skos:exactMatch "https://w3id.org/emmo#MicroMolePerGramPerSecond"^^xsd:anyURI .
-
-ns1:MicroMolePerKilogram skos:exactMatch "https://w3id.org/emmo#MicroMolePerKilogram"^^xsd:anyURI .
-
-ns1:MicroMolePerMole skos:exactMatch "https://w3id.org/emmo#MicroMolePerMole"^^xsd:anyURI .
-
-ns1:MicroMolePerSecond skos:exactMatch "https://w3id.org/emmo#MicroMolePerSecond"^^xsd:anyURI .
-
-ns1:MicroMolePerSquareMetre skos:exactMatch "https://w3id.org/emmo#MicroMolePerSquareMetre"^^xsd:anyURI .
-
-ns1:MicroMolePerSquareMetrePerSecond skos:exactMatch "https://w3id.org/emmo#MicroMolePerSquareMetrePerSecond"^^xsd:anyURI .
-
-ns1:MicroNewton skos:exactMatch "https://w3id.org/emmo#MicroNewton"^^xsd:anyURI .
-
-ns1:MicroNewtonMetre skos:exactMatch "https://w3id.org/emmo#MicroNewtonMetre"^^xsd:anyURI .
-
-ns1:MicroOhm skos:exactMatch "https://w3id.org/emmo#MicroOhm"^^xsd:anyURI .
-
-ns1:MicroPascal skos:exactMatch "https://w3id.org/emmo#MicroPascal"^^xsd:anyURI .
-
 ns1:MicroPrefixedUnit skos:exactMatch "https://w3id.org/emmo#EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae"^^xsd:anyURI .
-
-ns1:MicroRadian skos:exactMatch "https://w3id.org/emmo#MicroRadian"^^xsd:anyURI .
-
-ns1:MicroSecond skos:exactMatch "https://w3id.org/emmo#MicroSecond"^^xsd:anyURI .
-
-ns1:MicroSiemens skos:exactMatch "https://w3id.org/emmo#MicroSiemens"^^xsd:anyURI .
-
-ns1:MicroSiemensPerCentiMetre skos:exactMatch "https://w3id.org/emmo#MicroSiemensPerCentiMetre"^^xsd:anyURI .
-
-ns1:MicroSiemensPerMetre skos:exactMatch "https://w3id.org/emmo#MicroSiemensPerMetre"^^xsd:anyURI .
-
-ns1:MicroSievert skos:exactMatch "https://w3id.org/emmo#MicroSievert"^^xsd:anyURI .
-
-ns1:MicroTesla skos:exactMatch "https://w3id.org/emmo#MicroTesla"^^xsd:anyURI .
-
-ns1:MicroVolt skos:exactMatch "https://w3id.org/emmo#MicroVolt"^^xsd:anyURI .
-
-ns1:MicroVoltPerMetre skos:exactMatch "https://w3id.org/emmo#MicroVoltPerMetre"^^xsd:anyURI .
-
-ns1:MicroWatt skos:exactMatch "https://w3id.org/emmo#MicroWatt"^^xsd:anyURI .
-
-ns1:MicroWattPerSquareMetre skos:exactMatch "https://w3id.org/emmo#MicroWattPerSquareMetre"^^xsd:anyURI .
 
 ns1:MicrocanonicalPartitionFunction skos:exactMatch "https://w3id.org/emmo#EMMO_90a1a4d4_7f02_4b0e_9bfd_053bafbed5f2"^^xsd:anyURI .
 
@@ -2816,133 +2183,13 @@ ns1:MigrationLength skos:exactMatch "https://w3id.org/emmo#EMMO_c05759c8_de71_42
 
 ns1:Milli skos:exactMatch "https://w3id.org/emmo#EMMO_49adf406_5c8f_498a_8c90_e4974e9e6d11"^^xsd:anyURI .
 
-ns1:MilliAmpere skos:exactMatch "https://w3id.org/emmo#MilliAmpere"^^xsd:anyURI .
-
-ns1:MilliAmperePerGram skos:exactMatch "https://w3id.org/emmo#MilliAmperePerGram"^^xsd:anyURI .
-
-ns1:MilliAmperePerMilliMetre skos:exactMatch "https://w3id.org/emmo#MilliAmperePerMilliMetre"^^xsd:anyURI .
-
-ns1:MilliAmperePerSquareCentiMetre skos:exactMatch "https://w3id.org/emmo#MilliAmperePerSquareCentiMetre"^^xsd:anyURI .
-
-ns1:MilliBecquerel skos:exactMatch "https://w3id.org/emmo#MilliBecquerel"^^xsd:anyURI .
-
-ns1:MilliBecquerelPerGram skos:exactMatch "https://w3id.org/emmo#MilliBecquerelPerGram"^^xsd:anyURI .
-
-ns1:MilliBecquerelPerKilogram skos:exactMatch "https://w3id.org/emmo#MilliBecquerelPerKilogram"^^xsd:anyURI .
-
-ns1:MilliCoulomb skos:exactMatch "https://w3id.org/emmo#MilliCoulomb"^^xsd:anyURI .
-
-ns1:MilliCoulombPerCubicMetre skos:exactMatch "https://w3id.org/emmo#MilliCoulombPerCubicMetre"^^xsd:anyURI .
-
-ns1:MilliCoulombPerKilogram skos:exactMatch "https://w3id.org/emmo#MilliCoulombPerKilogram"^^xsd:anyURI .
-
-ns1:MilliCoulombPerSquareMetre skos:exactMatch "https://w3id.org/emmo#MilliCoulombPerSquareMetre"^^xsd:anyURI .
-
-ns1:MilliDegreeCelsius skos:exactMatch "https://w3id.org/emmo#MilliDegreeCelsius"^^xsd:anyURI .
-
-ns1:MilliFarad skos:exactMatch "https://w3id.org/emmo#MilliFarad"^^xsd:anyURI .
-
-ns1:MilliGram skos:exactMatch "https://w3id.org/emmo#MilliGram"^^xsd:anyURI .
-
-ns1:MilliGramPerCubicMetre skos:exactMatch "https://w3id.org/emmo#MilliGramPerCubicMetre"^^xsd:anyURI .
-
-ns1:MilliGramPerCubicMetrePerSecond skos:exactMatch "https://w3id.org/emmo#MilliGramPerCubicMetrePerSecond"^^xsd:anyURI .
-
-ns1:MilliGramPerGram skos:exactMatch "https://w3id.org/emmo#MilliGramPerGram"^^xsd:anyURI .
-
-ns1:MilliGramPerKilogram skos:exactMatch "https://w3id.org/emmo#MilliGramPerKilogram"^^xsd:anyURI .
-
-ns1:MilliGramPerMetre skos:exactMatch "https://w3id.org/emmo#MilliGramPerMetre"^^xsd:anyURI .
-
-ns1:MilliGramPerSecond skos:exactMatch "https://w3id.org/emmo#MilliGramPerSecond"^^xsd:anyURI .
-
-ns1:MilliGramPerSquareCentiMetre skos:exactMatch "https://w3id.org/emmo#MilliGramPerSquareCentiMetre"^^xsd:anyURI .
-
-ns1:MilliGramPerSquareMetre skos:exactMatch "https://w3id.org/emmo#MilliGramPerSquareMetre"^^xsd:anyURI .
-
-ns1:MilliGramPerSquareMetrePerSecond skos:exactMatch "https://w3id.org/emmo#MilliGramPerSquareMetrePerSecond"^^xsd:anyURI .
-
-ns1:MilliGray skos:exactMatch "https://w3id.org/emmo#MilliGray"^^xsd:anyURI .
-
-ns1:MilliHenry skos:exactMatch "https://w3id.org/emmo#MilliHenry"^^xsd:anyURI .
-
-ns1:MilliHenryPerKiloOhm skos:exactMatch "https://w3id.org/emmo#MilliHenryPerKiloOhm"^^xsd:anyURI .
-
-ns1:MilliHenryPerOhm skos:exactMatch "https://w3id.org/emmo#MilliHenryPerOhm"^^xsd:anyURI .
-
-ns1:MilliJoule skos:exactMatch "https://w3id.org/emmo#MilliJoule"^^xsd:anyURI .
-
-ns1:MilliMetre skos:exactMatch "https://w3id.org/emmo#MilliMetre"^^xsd:anyURI .
-
-ns1:MilliMetrePerKelvin skos:exactMatch "https://w3id.org/emmo#MilliMetrePerKelvin"^^xsd:anyURI .
-
-ns1:MilliMetrePerSecond skos:exactMatch "https://w3id.org/emmo#MilliMetrePerSecond"^^xsd:anyURI .
-
-ns1:MilliMole skos:exactMatch "https://w3id.org/emmo#MilliMole"^^xsd:anyURI .
-
-ns1:MilliMolePerCubicMetre skos:exactMatch "https://w3id.org/emmo#MilliMolePerCubicMetre"^^xsd:anyURI .
-
-ns1:MilliMolePerGram skos:exactMatch "https://w3id.org/emmo#MilliMolePerGram"^^xsd:anyURI .
-
-ns1:MilliMolePerKilogram skos:exactMatch "https://w3id.org/emmo#MilliMolePerKilogram"^^xsd:anyURI .
-
-ns1:MilliMolePerMole skos:exactMatch "https://w3id.org/emmo#MilliMolePerMole"^^xsd:anyURI .
-
-ns1:MilliMolePerSquareMetre skos:exactMatch "https://w3id.org/emmo#MilliMolePerSquareMetre"^^xsd:anyURI .
-
-ns1:MilliMolePerSquareMetrePerSecond skos:exactMatch "https://w3id.org/emmo#MilliMolePerSquareMetrePerSecond"^^xsd:anyURI .
-
-ns1:MilliNewton skos:exactMatch "https://w3id.org/emmo#MilliNewton"^^xsd:anyURI .
-
-ns1:MilliNewtonMetre skos:exactMatch "https://w3id.org/emmo#MilliNewtonMetre"^^xsd:anyURI .
-
-ns1:MilliNewtonPerMetre skos:exactMatch "https://w3id.org/emmo#MilliNewtonPerMetre"^^xsd:anyURI .
-
-ns1:MilliOhm skos:exactMatch "https://w3id.org/emmo#MilliOhm"^^xsd:anyURI .
-
-ns1:MilliPascal skos:exactMatch "https://w3id.org/emmo#MilliPascal"^^xsd:anyURI .
-
-ns1:MilliPascalSecond skos:exactMatch "https://w3id.org/emmo#MilliPascalSecond"^^xsd:anyURI .
-
 ns1:MilliPrefixedUnit skos:exactMatch "https://w3id.org/emmo#EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7"^^xsd:anyURI .
-
-ns1:MilliRadian skos:exactMatch "https://w3id.org/emmo#MilliRadian"^^xsd:anyURI .
-
-ns1:MilliSecond skos:exactMatch "https://w3id.org/emmo#MilliSecond"^^xsd:anyURI .
-
-ns1:MilliSiemens skos:exactMatch "https://w3id.org/emmo#MilliSiemens"^^xsd:anyURI .
-
-ns1:MilliSiemensPerCentiMetre skos:exactMatch "https://w3id.org/emmo#MilliSiemensPerCentiMetre"^^xsd:anyURI .
-
-ns1:MilliSiemensPerMetre skos:exactMatch "https://w3id.org/emmo#MilliSiemensPerMetre"^^xsd:anyURI .
-
-ns1:MilliSievert skos:exactMatch "https://w3id.org/emmo#MilliSievert"^^xsd:anyURI .
-
-ns1:MilliTesla skos:exactMatch "https://w3id.org/emmo#MilliTesla"^^xsd:anyURI .
-
-ns1:MilliVolt skos:exactMatch "https://w3id.org/emmo#MilliVolt"^^xsd:anyURI .
-
-ns1:MilliVoltPerMetre skos:exactMatch "https://w3id.org/emmo#MilliVoltPerMetre"^^xsd:anyURI .
-
-ns1:MilliWatt skos:exactMatch "https://w3id.org/emmo#MilliWatt"^^xsd:anyURI .
-
-ns1:MilliWattPerSquareCentiMetrePerMicroMetrePerSteradian skos:exactMatch "https://w3id.org/emmo#MilliWattPerSquareCentiMetrePerMicroMetrePerSteradian"^^xsd:anyURI .
-
-ns1:MilliWattPerSquareMetre skos:exactMatch "https://w3id.org/emmo#MilliWattPerSquareMetre"^^xsd:anyURI .
-
-ns1:MilliWattPerSquareMetrePerNanoMetre skos:exactMatch "https://w3id.org/emmo#MilliWattPerSquareMetrePerNanoMetre"^^xsd:anyURI .
-
-ns1:MilliWattPerSquareMetrePerNanoMetrePerSteradian skos:exactMatch "https://w3id.org/emmo#MilliWattPerSquareMetrePerNanoMetrePerSteradian"^^xsd:anyURI .
-
-ns1:MilliWeber skos:exactMatch "https://w3id.org/emmo#MilliWeber"^^xsd:anyURI .
 
 ns1:Milling skos:exactMatch "https://w3id.org/emmo#EMMO_44f91d47_3faf_48e2_844c_d44bbe3e22f6"^^xsd:anyURI .
 
 ns1:Minimal skos:exactMatch "https://w3id.org/emmo#EMMO_0914449c_ef24_4372_b669_9cdd13b59fed"^^xsd:anyURI .
 
 ns1:Minus skos:exactMatch "https://w3id.org/emmo#EMMO_46d5643b_9706_4b67_8bea_ed77d6026539"^^xsd:anyURI .
-
-ns1:Minute skos:exactMatch "https://w3id.org/emmo#Minute"^^xsd:anyURI .
 
 ns1:MixedTiling skos:exactMatch "https://w3id.org/emmo#EMMO_2b1fb71c_0eb0_445c_9be7_fb5d30ae79fd"^^xsd:anyURI .
 
@@ -2998,36 +2245,6 @@ ns1:MolarVolume skos:exactMatch "https://w3id.org/emmo#EMMO_8b4af754_110a_4854_a
 
 ns1:Molds skos:exactMatch "https://w3id.org/emmo#EMMO_8f4d2c80_002f_44b4_a4f1_0d9ead0779ba"^^xsd:anyURI .
 
-ns1:Mole skos:exactMatch "https://w3id.org/emmo#Mole"^^xsd:anyURI .
-
-ns1:MoleDegreeCelsius skos:exactMatch "https://w3id.org/emmo#MoleDegreeCelsius"^^xsd:anyURI .
-
-ns1:MoleFraction skos:exactMatch "https://w3id.org/emmo#AtomFraction"^^xsd:anyURI .
-
-ns1:MoleKelvin skos:exactMatch "https://w3id.org/emmo#MoleKelvin"^^xsd:anyURI .
-
-ns1:MolePerCubicDeciMetre skos:exactMatch "https://w3id.org/emmo#MolePerCubicDeciMetre"^^xsd:anyURI .
-
-ns1:MolePerCubicMetre skos:exactMatch "https://w3id.org/emmo#MolePerCubicMetre"^^xsd:anyURI .
-
-ns1:MolePerCubicMetrePerSecond skos:exactMatch "https://w3id.org/emmo#MolePerCubicMetrePerSecond"^^xsd:anyURI .
-
-ns1:MolePerKilogram skos:exactMatch "https://w3id.org/emmo#MolPerKilogram"^^xsd:anyURI .
-
-ns1:MolePerKilogramPascal skos:exactMatch "https://w3id.org/emmo#MolePerKilogramPascal"^^xsd:anyURI .
-
-ns1:MolePerSecond skos:exactMatch "https://w3id.org/emmo#MolePerSecond"^^xsd:anyURI .
-
-ns1:MolePerSquareMetre skos:exactMatch "https://w3id.org/emmo#MolePerSquareMetre"^^xsd:anyURI .
-
-ns1:MolePerSquareMetrePerSecond skos:exactMatch "https://w3id.org/emmo#MolePerSquareMetrePerSecond"^^xsd:anyURI .
-
-ns1:MolePerSquareMetrePerSecondPerMetre skos:exactMatch "https://w3id.org/emmo#MolePerSquareMetrePerSecondPerMetre"^^xsd:anyURI .
-
-ns1:MolePerSquareMetrePerSecondPerMetrePerSteradian skos:exactMatch "https://w3id.org/emmo#MolePerSquareMetrePerSecondPerMetrePerSteradian"^^xsd:anyURI .
-
-ns1:MolePerSquareMetrePerSecondPerSteradian skos:exactMatch "https://w3id.org/emmo#MolePerSquareMetrePerSecondPerSteradian"^^xsd:anyURI .
-
 ns1:MolecularConcentration skos:exactMatch "https://w3id.org/emmo#EMMO_46406907_9afd_424e_934a_a523f9f9cc36"^^xsd:anyURI .
 
 ns1:MolecularEntity skos:exactMatch "https://w3id.org/emmo#EMMO_21205421_5783_4d3e_81e5_10c5d894a88a"^^xsd:anyURI .
@@ -3080,57 +2297,9 @@ ns1:Naming skos:exactMatch "https://w3id.org/emmo#EMMO_e999f9e0_7d63_4564_9028_0
 
 ns1:Nano skos:exactMatch "https://w3id.org/emmo#EMMO_afb29c1a_eba4_4ba7_b6a1_62e9023c94ec"^^xsd:anyURI .
 
-ns1:NanoAmpere skos:exactMatch "https://w3id.org/emmo#NanoAmpere"^^xsd:anyURI .
-
-ns1:NanoBecquerel skos:exactMatch "https://w3id.org/emmo#NanoBecquerel"^^xsd:anyURI .
-
-ns1:NanoCoulomb skos:exactMatch "https://w3id.org/emmo#NanoCoulomb"^^xsd:anyURI .
-
-ns1:NanoFarad skos:exactMatch "https://w3id.org/emmo#NanoFarad"^^xsd:anyURI .
-
-ns1:NanoFaradPerMetre skos:exactMatch "https://w3id.org/emmo#NanoFaradPerMetre"^^xsd:anyURI .
-
-ns1:NanoGram skos:exactMatch "https://w3id.org/emmo#NanoGram"^^xsd:anyURI .
-
-ns1:NanoGramPerCubicMetre skos:exactMatch "https://w3id.org/emmo#NanoGramPerCubicMetre"^^xsd:anyURI .
-
-ns1:NanoGramPerKilogram skos:exactMatch "https://w3id.org/emmo#NanoGramPerKilogram"^^xsd:anyURI .
-
-ns1:NanoGramPerSquareMetrePerPascalPerSecond skos:exactMatch "https://w3id.org/emmo#NanoGramPerSquareMetrePerPascalPerSecond"^^xsd:anyURI .
-
-ns1:NanoHenry skos:exactMatch "https://w3id.org/emmo#NanoHenry"^^xsd:anyURI .
-
-ns1:NanoHenryPerMetre skos:exactMatch "https://w3id.org/emmo#NanoHenryPerMetre"^^xsd:anyURI .
-
 ns1:NanoMaterial skos:exactMatch "https://w3id.org/emmo#EMMO_5d659e25_a508_43ed_903c_3707c7c7cd4b"^^xsd:anyURI .
 
-ns1:NanoMeterPerMilliMeterMegaPascal skos:exactMatch "https://w3id.org/emmo#NanoMeterPerMilliMeterMegaPascal"^^xsd:anyURI .
-
-ns1:NanoMetre skos:exactMatch "https://w3id.org/emmo#NanoMetre"^^xsd:anyURI .
-
-ns1:NanoMole skos:exactMatch "https://w3id.org/emmo#NanoMole"^^xsd:anyURI .
-
-ns1:NanoMolePerCubicCentiMetrePerHour skos:exactMatch "https://w3id.org/emmo#NanoMolePerCubicCentiMetrePerHour"^^xsd:anyURI .
-
-ns1:NanoMolePerGramPerSecond skos:exactMatch "https://w3id.org/emmo#NanoMolePerGramPerSecond"^^xsd:anyURI .
-
-ns1:NanoMolePerKilogram skos:exactMatch "https://w3id.org/emmo#NanoMolePerKilogram"^^xsd:anyURI .
-
-ns1:NanoMolePerMicroMole skos:exactMatch "https://w3id.org/emmo#NanoMolePerMicroMole"^^xsd:anyURI .
-
 ns1:NanoPrefixedUnit skos:exactMatch "https://w3id.org/emmo#EMMO_e1981c25_7c55_4020_aa7a_d2e14ced86d4"^^xsd:anyURI .
-
-ns1:NanoSecond skos:exactMatch "https://w3id.org/emmo#NanoSecond"^^xsd:anyURI .
-
-ns1:NanoSiemens skos:exactMatch "https://w3id.org/emmo#NanoSiemens"^^xsd:anyURI .
-
-ns1:NanoSiemensPerCentiMetre skos:exactMatch "https://w3id.org/emmo#NanoSiemensPerCentiMetre"^^xsd:anyURI .
-
-ns1:NanoSiemensPerMetre skos:exactMatch "https://w3id.org/emmo#NanoSiemensPerMetre"^^xsd:anyURI .
-
-ns1:NanoTesla skos:exactMatch "https://w3id.org/emmo#NanoTesla"^^xsd:anyURI .
-
-ns1:NanoWatt skos:exactMatch "https://w3id.org/emmo#NanoWatt"^^xsd:anyURI .
 
 ns1:NaturalLaw skos:exactMatch "https://w3id.org/emmo#EMMO_db9a009e_f097_43f5_9520_6cbc07e7610b"^^xsd:anyURI .
 
@@ -3150,8 +2319,6 @@ ns1:NeonAtom skos:exactMatch "https://w3id.org/emmo#EMMO_24e7961c-26c8-5ae1-a29c
 
 ns1:NeonSymbol skos:exactMatch "https://w3id.org/emmo#EMMO_2e96348b-f8d1-5877-a5c5-b6863c5ebcf2"^^xsd:anyURI .
 
-ns1:Neper skos:exactMatch "https://w3id.org/emmo#Neper"^^xsd:anyURI .
-
 ns1:NeptuniumAtom skos:exactMatch "https://w3id.org/emmo#EMMO_15595dc5-20a7-5b9f-a896-aad79f97bb8b"^^xsd:anyURI .
 
 ns1:NeptuniumSymbol skos:exactMatch "https://w3id.org/emmo#EMMO_e941986d-658b-5a08-ae3d-4cc170344b06"^^xsd:anyURI .
@@ -3168,67 +2335,7 @@ ns1:NeutronYieldPerAbsorption skos:exactMatch "https://w3id.org/emmo#EMMO_d3fce8
 
 ns1:NeutronYieldPerFission skos:exactMatch "https://w3id.org/emmo#EMMO_5d34ae8e_182c_49f3_815e_ea675faaaf30"^^xsd:anyURI .
 
-ns1:Newton skos:exactMatch "https://w3id.org/emmo#Newton"^^xsd:anyURI .
-
-ns1:NewtonCentiMetre skos:exactMatch "https://w3id.org/emmo#NewtonCentiMetre"^^xsd:anyURI .
-
-ns1:NewtonMetre skos:exactMatch "https://w3id.org/emmo#NewtonMetre"^^xsd:anyURI .
-
-ns1:NewtonMetrePerAmpere skos:exactMatch "https://w3id.org/emmo#NewtonMetrePerAmpere"^^xsd:anyURI .
-
-ns1:NewtonMetrePerKilogram skos:exactMatch "https://w3id.org/emmo#NewtonMetrePerKilogram"^^xsd:anyURI .
-
-ns1:NewtonMetrePerMetre skos:exactMatch "https://w3id.org/emmo#NewtonMetrePerMetre"^^xsd:anyURI .
-
-ns1:NewtonMetrePerMetrePerRadian skos:exactMatch "https://w3id.org/emmo#NewtonMetrePerMetrePerRadian"^^xsd:anyURI .
-
-ns1:NewtonMetrePerRadian skos:exactMatch "https://w3id.org/emmo#NewtonMetrePerRadian"^^xsd:anyURI .
-
-ns1:NewtonMetrePerSquareMetre skos:exactMatch "https://w3id.org/emmo#NewtonMetrePerSquareMetre"^^xsd:anyURI .
-
-ns1:NewtonMetreSecond skos:exactMatch "https://w3id.org/emmo#NewtonMetreSecond"^^xsd:anyURI .
-
-ns1:NewtonMetreSecondPerMetre skos:exactMatch "https://w3id.org/emmo#NewtonMetreSecondPerMetre"^^xsd:anyURI .
-
-ns1:NewtonMetreSecondPerRadian skos:exactMatch "https://w3id.org/emmo#NewtonMetreSecondPerRadian"^^xsd:anyURI .
-
-ns1:NewtonPerAmpere skos:exactMatch "https://w3id.org/emmo#NewtonPerAmpere"^^xsd:anyURI .
-
-ns1:NewtonPerCentiMetre skos:exactMatch "https://w3id.org/emmo#NewtonPerCentiMetre"^^xsd:anyURI .
-
-ns1:NewtonPerCoulomb skos:exactMatch "https://w3id.org/emmo#NewtonPerCoulomb"^^xsd:anyURI .
-
-ns1:NewtonPerCubicMetre skos:exactMatch "https://w3id.org/emmo#NewtonPerCubicMetre"^^xsd:anyURI .
-
-ns1:NewtonPerKilogram skos:exactMatch "https://w3id.org/emmo#NewtonPerKilogram"^^xsd:anyURI .
-
-ns1:NewtonPerMetre skos:exactMatch "https://w3id.org/emmo#NewtonPerMetre"^^xsd:anyURI .
-
-ns1:NewtonPerMilliMetre skos:exactMatch "https://w3id.org/emmo#NewtonPerMilliMetre"^^xsd:anyURI .
-
-ns1:NewtonPerRadian skos:exactMatch "https://w3id.org/emmo#NewtonPerRadian"^^xsd:anyURI .
-
-ns1:NewtonPerSquareCentiMetre skos:exactMatch "https://w3id.org/emmo#NewtonPerSquareCentiMetre"^^xsd:anyURI .
-
-ns1:NewtonPerSquareMetre skos:exactMatch "https://w3id.org/emmo#NewtonPerSquareMetre"^^xsd:anyURI .
-
-ns1:NewtonPerSquareMilliMetre skos:exactMatch "https://w3id.org/emmo#NewtonPerSquareMilliMetre"^^xsd:anyURI .
-
-ns1:NewtonSecond skos:exactMatch "https://w3id.org/emmo#NewtonSecond"^^xsd:anyURI .
-
-ns1:NewtonSecondPerCubicMetre skos:exactMatch "https://w3id.org/emmo#NewtonSecondPerCubicMetre"^^xsd:anyURI .
-
-ns1:NewtonSecondPerMetre skos:exactMatch "https://w3id.org/emmo#NewtonSecondPerMetre"^^xsd:anyURI .
-
-ns1:NewtonSecondPerRadian skos:exactMatch "https://w3id.org/emmo#NewtonSecondPerRadian"^^xsd:anyURI .
-
-ns1:NewtonSquareMetre skos:exactMatch "https://w3id.org/emmo#NewtonSquareMetre"^^xsd:anyURI .
-
-ns1:NewtonSquareMetrePerAmpere skos:exactMatch "https://w3id.org/emmo#NewtonSquareMetrePerAmpere"^^xsd:anyURI .
-
 ns1:NewtonSquareMetrePerAmpereUnit skos:exactMatch "https://w3id.org/emmo#EMMO_431ce3bc_3d54_481d_a10d_7c4a4418732a"^^xsd:anyURI .
-
-ns1:NewtonSquareMetrePerSquareKilogram skos:exactMatch "https://w3id.org/emmo#NewtonSquareMetrePerSquareKilogram"^^xsd:anyURI .
 
 ns1:NewtonianConstantOfGravity skos:exactMatch "https://w3id.org/emmo#EMMO_da831168_975a_41f8_baae_279c298569da"^^xsd:anyURI .
 
@@ -3276,6 +2383,8 @@ ns1:NonPositiveIntegerData skos:exactMatch "https://w3id.org/emmo#EMMO_cf0f8f57_
 
 ns1:NonPrefixedUnit skos:exactMatch "https://w3id.org/emmo#EMMO_868ae137_4d25_493e_b270_21ea3d94849e"^^xsd:anyURI .
 
+ns1:NonSISpecialUnit skos:exactMatch "https://w3id.org/emmo#EMMO_f0404eb3_433e_48af_a50f_67f1a03f5f0c"^^xsd:anyURI .
+
 ns1:NonSIUnit skos:exactMatch "https://w3id.org/emmo#EMMO_15344998_4490_4b40_b242_c3d92e5cdc27"^^xsd:anyURI .
 
 ns1:NonTemporalRole skos:exactMatch "https://w3id.org/emmo#EMMO_fcae603e_aa6e_4940_9fa1_9f0909cabf3b"^^xsd:anyURI .
@@ -3318,11 +2427,9 @@ ns1:NumericalData skos:exactMatch "https://w3id.org/emmo#EMMO_888a5dea_3b7d_4dc0
 
 ns1:NumericalVariable skos:exactMatch "https://w3id.org/emmo#EMMO_9e029526_79a2_47a8_a151_dd0545db471b"^^xsd:anyURI .
 
-ns1:OWL2DLRestrictedAxiom skos:exactMatch "https://w3id.org/emmo#EMMO_c6e77b51_681b_4d04_b20d_a08f2b977470"^^xsd:anyURI,
-        "https://w3id.org/emmo#OWL2DLRestrictedAxiom"^^xsd:anyURI .
+ns1:OWL2DLRestrictedAxiom skos:exactMatch "https://w3id.org/emmo#OWL2DLRestrictedAxiom"^^xsd:anyURI .
 
-ns1:OWLRL2DLAxioms skos:exactMatch "https://w3id.org/emmo#EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db"^^xsd:anyURI,
-        "https://w3id.org/emmo#OWLRL2DLAxioms"^^xsd:anyURI .
+ns1:OWLRL2DLAxioms skos:exactMatch "https://w3id.org/emmo#OWLRL2DLAxioms"^^xsd:anyURI .
 
 ns1:Object skos:exactMatch "https://w3id.org/emmo#EMMO_90ae56e4_d197_49b6_be1a_0049e4756606"^^xsd:anyURI .
 
@@ -3341,12 +2448,6 @@ ns1:Observer skos:exactMatch "https://w3id.org/emmo#EMMO_ea67caa5_2609_4e91_98ae
 ns1:OganessonAtom skos:exactMatch "https://w3id.org/emmo#EMMO_cffec057-9258-52ae-bb4c-ca761b6bc407"^^xsd:anyURI .
 
 ns1:OganessonSymbol skos:exactMatch "https://w3id.org/emmo#EMMO_e5d7bd48-4098-59b6-b872-8bba421157eb"^^xsd:anyURI .
-
-ns1:Ohm skos:exactMatch "https://w3id.org/emmo#Ohm"^^xsd:anyURI .
-
-ns1:OhmMetre skos:exactMatch "https://w3id.org/emmo#OhmMetre"^^xsd:anyURI .
-
-ns1:OhmSquareMetrePerMetre skos:exactMatch "https://w3id.org/emmo#OhmSquareMetrePerMetre"^^xsd:anyURI .
 
 ns1:Olfactory skos:exactMatch "https://w3id.org/emmo#EMMO_e1021593_06da_4237_8a02_29d8f6fef76d"^^xsd:anyURI .
 
@@ -3424,28 +2525,6 @@ ns1:ParticlesSystem skos:exactMatch "https://w3id.org/emmo#EMMO_0f19d84e_05b4_47
 
 ns1:ParticulateMatter skos:exactMatch "https://w3id.org/emmo#EMMO_32f55395_8b94_40de_a103_bffa5c121d98"^^xsd:anyURI .
 
-ns1:Pascal skos:exactMatch "https://w3id.org/emmo#Pascal"^^xsd:anyURI .
-
-ns1:PascalCubicMetrePerSecond skos:exactMatch "https://w3id.org/emmo#PascalCubicMetrePerSecond"^^xsd:anyURI .
-
-ns1:PascalMetre skos:exactMatch "https://w3id.org/emmo#PascalMetre"^^xsd:anyURI .
-
-ns1:PascalMetrePerSecond skos:exactMatch "https://w3id.org/emmo#PascalMetrePerSecond"^^xsd:anyURI .
-
-ns1:PascalMetrePerSquareSecond skos:exactMatch "https://w3id.org/emmo#PascalMetrePerSquareSecond"^^xsd:anyURI .
-
-ns1:PascalPerKelvin skos:exactMatch "https://w3id.org/emmo#PascalPerKelvin"^^xsd:anyURI .
-
-ns1:PascalPerMetre skos:exactMatch "https://w3id.org/emmo#PascalPerMetre"^^xsd:anyURI .
-
-ns1:PascalPerSecond skos:exactMatch "https://w3id.org/emmo#PascalPerSecond"^^xsd:anyURI .
-
-ns1:PascalSecond skos:exactMatch "https://w3id.org/emmo#PascalSecond"^^xsd:anyURI .
-
-ns1:PascalSecondPerCubicMetre skos:exactMatch "https://w3id.org/emmo#PascalSecondPerCubicMetre"^^xsd:anyURI .
-
-ns1:PascalSecondPerMetre skos:exactMatch "https://w3id.org/emmo#PascalSecondPerMetre"^^xsd:anyURI .
-
 ns1:Path skos:exactMatch "https://w3id.org/emmo#EMMO_e94a9156_fb6c_4e16_88ee_829ac9933155"^^xsd:anyURI .
 
 ns1:PathLength skos:exactMatch "https://w3id.org/emmo#EMMO_a0ce1017_0467_473b_8af8_0ddf4621b0be"^^xsd:anyURI .
@@ -3462,26 +2541,8 @@ ns1:PerAreaTimeUnit skos:exactMatch "https://w3id.org/emmo#EMMO_9b075686_4ac2_43
 ns1:PerAreaUnit skos:exactMatch "https://w3id.org/emmo#EMMO_11708648_fc62_46c6_bae5_3a10693e416e"^^xsd:anyURI,
         "https://w3id.org/emmo#PerAreaUnit"^^xsd:anyURI .
 
-ns1:PerCentiMetre skos:exactMatch "https://w3id.org/emmo#PerCentiMetre"^^xsd:anyURI .
-
-ns1:PerCubicCentiMetre skos:exactMatch "https://w3id.org/emmo#PerCubicCentiMetre"^^xsd:anyURI .
-
-ns1:PerCubicMetre skos:exactMatch "https://w3id.org/emmo#PerCubicMetre"^^xsd:anyURI .
-
-ns1:PerCubicMetreSecond skos:exactMatch "https://w3id.org/emmo#PerCubicMetreSecond"^^xsd:anyURI .
-
-ns1:PerCubicMilliMetre skos:exactMatch "https://w3id.org/emmo#PerCubicMilliMetre"^^xsd:anyURI .
-
 ns1:PerEnergyUnit skos:exactMatch "https://w3id.org/emmo#EMMO_071b87fd_8ac8_4287_bfc6_9fcd8ce6674c"^^xsd:anyURI,
         "https://w3id.org/emmo#PerEnergyUnit"^^xsd:anyURI .
-
-ns1:PerHenry skos:exactMatch "https://w3id.org/emmo#PerHenry"^^xsd:anyURI .
-
-ns1:PerJouleCubicMetre skos:exactMatch "https://w3id.org/emmo#PerJouleCubicMetre"^^xsd:anyURI .
-
-ns1:PerKelvin skos:exactMatch "https://w3id.org/emmo#PerKelvin"^^xsd:anyURI .
-
-ns1:PerKiloMetre skos:exactMatch "https://w3id.org/emmo#PerKiloMetre"^^xsd:anyURI .
 
 ns1:PerLengthTemperatureUnit skos:exactMatch "https://w3id.org/emmo#EMMO_61eec472_f9af_4861_bedd_d741f022a7e5"^^xsd:anyURI,
         "https://w3id.org/emmo#PerLengthTemperatureUnit"^^xsd:anyURI .
@@ -3491,68 +2552,16 @@ ns1:PerLengthTimeUnit skos:exactMatch "https://w3id.org/emmo#EMMO_9f0338b9_326f_
 
 ns1:PerLengthUnit skos:exactMatch "https://w3id.org/emmo#EMMO_fee2a014_3322_48f9_91ab_d947a6e54556"^^xsd:anyURI .
 
-ns1:PerMetre skos:exactMatch "https://w3id.org/emmo#PerMetre"^^xsd:anyURI .
-
-ns1:PerMetreKelvin skos:exactMatch "https://w3id.org/emmo#PerMetreKelvin"^^xsd:anyURI .
-
-ns1:PerMetreNanoMetre skos:exactMatch "https://w3id.org/emmo#PerMetreNanoMetre"^^xsd:anyURI .
-
-ns1:PerMetreNanoMetreSteradian skos:exactMatch "https://w3id.org/emmo#PerMetreNanoMetreSteradian"^^xsd:anyURI .
-
-ns1:PerMetreSecond skos:exactMatch "https://w3id.org/emmo#PerMetreSecond"^^xsd:anyURI .
-
-ns1:PerMetreSteradian skos:exactMatch "https://w3id.org/emmo#PerMetreSteradian"^^xsd:anyURI .
-
-ns1:PerMicroMetre skos:exactMatch "https://w3id.org/emmo#PerMicroMetre"^^xsd:anyURI .
-
-ns1:PerMilliMetre skos:exactMatch "https://w3id.org/emmo#PerMilliMetre"^^xsd:anyURI .
-
-ns1:PerMilliSecond skos:exactMatch "https://w3id.org/emmo#PerMilliSecond"^^xsd:anyURI .
-
-ns1:PerMole skos:exactMatch "https://w3id.org/emmo#PerMole"^^xsd:anyURI .
-
-ns1:PerNanoMetre skos:exactMatch "https://w3id.org/emmo#PerNanoMetre"^^xsd:anyURI .
-
-ns1:PerPascal skos:exactMatch "https://w3id.org/emmo#PerPascal"^^xsd:anyURI .
-
-ns1:PerPascalSecond skos:exactMatch "https://w3id.org/emmo#PerPascalSecond"^^xsd:anyURI .
-
-ns1:PerPicoMetre skos:exactMatch "https://w3id.org/emmo#PerPicoMetre"^^xsd:anyURI .
-
 ns1:PerPressureUnit skos:exactMatch "https://w3id.org/emmo#EMMO_2a068ad0_582c_4f50_90d2_89d9e28977c1"^^xsd:anyURI,
         "https://w3id.org/emmo#PerPressureUnit"^^xsd:anyURI .
 
 ns1:PerQuarticLengthUnit skos:exactMatch "https://w3id.org/emmo#EMMO_3c38a8b4_ed07_4185_8d9b_b57b9130c537"^^xsd:anyURI .
-
-ns1:PerSecond skos:exactMatch "https://w3id.org/emmo#PerSecond"^^xsd:anyURI .
-
-ns1:PerSecondSquareMetre skos:exactMatch "https://w3id.org/emmo#PerSecondSquareMetre"^^xsd:anyURI .
-
-ns1:PerSecondSquareMetreSteradian skos:exactMatch "https://w3id.org/emmo#PerSecondSquareMetreSteradian"^^xsd:anyURI .
-
-ns1:PerSecondSteradian skos:exactMatch "https://w3id.org/emmo#PerSecondSteradian"^^xsd:anyURI .
-
-ns1:PerSquareJoule skos:exactMatch "https://w3id.org/emmo#PerSquareJoule"^^xsd:anyURI .
-
-ns1:PerSquareKilogram skos:exactMatch "https://w3id.org/emmo#PerSquareKilogram"^^xsd:anyURI .
-
-ns1:PerSquareMetre skos:exactMatch "https://w3id.org/emmo#PerSquareMetre"^^xsd:anyURI .
-
-ns1:PerSquareMetreSecond skos:exactMatch "https://w3id.org/emmo#PerSquareMetreSecond"^^xsd:anyURI .
-
-ns1:PerSquareSecond skos:exactMatch "https://w3id.org/emmo#PerSquareSecond"^^xsd:anyURI .
-
-ns1:PerSteradian skos:exactMatch "https://w3id.org/emmo#PerSteradian"^^xsd:anyURI .
 
 ns1:PerTemperatureTimeUnit skos:exactMatch "https://w3id.org/emmo#EMMO_6bcf334d_efeb_49f8_9dd0_dbcbb31514d3"^^xsd:anyURI,
         "https://w3id.org/emmo#PerTemperatureTimeUnit"^^xsd:anyURI .
 
 ns1:PerTemperatureUnit skos:exactMatch "https://w3id.org/emmo#EMMO_02a935c8_c2d4_4a00_bd6f_b89d05aac79e"^^xsd:anyURI,
         "https://w3id.org/emmo#PerTemperatureUnit"^^xsd:anyURI .
-
-ns1:PerTeslaMetre skos:exactMatch "https://w3id.org/emmo#PerTeslaMetre"^^xsd:anyURI .
-
-ns1:PerTeslaSecond skos:exactMatch "https://w3id.org/emmo#PerTeslaSecond"^^xsd:anyURI .
 
 ns1:PerThermalTransmittanceUnit skos:exactMatch "https://w3id.org/emmo#EMMO_869e6e4f_a9b5_4db8_a978_8ad050239933"^^xsd:anyURI,
         "https://w3id.org/emmo#PerThermalTransmittanceUnit"^^xsd:anyURI .
@@ -3562,8 +2571,6 @@ ns1:PerTimeMassUnit skos:exactMatch "https://w3id.org/emmo#EMMO_52b029aa_e525_49
 
 ns1:PerVolumeUnit skos:exactMatch "https://w3id.org/emmo#EMMO_95a9bf22_eabc_4a84_863d_9ea398c8a52e"^^xsd:anyURI,
         "https://w3id.org/emmo#PerVolumeUnit"^^xsd:anyURI .
-
-ns1:PerWeber skos:exactMatch "https://w3id.org/emmo#PerWeber"^^xsd:anyURI .
 
 ns1:Perceptual skos:exactMatch "https://w3id.org/emmo#EMMO_649bf97b_4397_4005_90d9_219755d92e34"^^xsd:anyURI .
 
@@ -3586,10 +2593,6 @@ ns1:Persistence skos:exactMatch "https://w3id.org/emmo#EMMO_e04884d9_eda6_487e_9
 ns1:Perspective skos:exactMatch "https://w3id.org/emmo#EMMO_49267eba_5548_4163_8f36_518d65b583f9"^^xsd:anyURI .
 
 ns1:Peta skos:exactMatch "https://w3id.org/emmo#EMMO_d7c74480_a568_4470_acff_f18b499cc850"^^xsd:anyURI .
-
-ns1:PetaCoulomb skos:exactMatch "https://w3id.org/emmo#PetaCoulomb"^^xsd:anyURI .
-
-ns1:PetaJoule skos:exactMatch "https://w3id.org/emmo#PetaJoule"^^xsd:anyURI .
 
 ns1:PetaPrefixedUnit skos:exactMatch "https://w3id.org/emmo#EMMO_43a6b269_da31_4bb6_a537_c97df4fff32a"^^xsd:anyURI .
 
@@ -3637,6 +2640,8 @@ ns1:PhysicalQuantity skos:exactMatch "https://w3id.org/emmo#EMMO_02c0621e_a527_4
 
 ns1:PhysicalQuantiyByDefinition skos:exactMatch "https://w3id.org/emmo#EMMO_9159bb16_8a70_49f9_bac4_f5cf2a82c39a"^^xsd:anyURI .
 
+ns1:PhysicoChemicalQuantity skos:exactMatch "https://w3id.org/emmo#EMMO_a06e3d38_1aa8_4f45_89a8_722dbacfda24"^^xsd:anyURI .
+
 ns1:PhysicsBasedModel skos:exactMatch "https://w3id.org/emmo#EMMO_b29fd350_39aa_4af7_9459_3faa0544cba6"^^xsd:anyURI .
 
 ns1:PhysicsBasedSimulation skos:exactMatch "https://w3id.org/emmo#EMMO_e97af6ec_4371_4bbc_8936_34b76e33302f"^^xsd:anyURI .
@@ -3647,55 +2652,9 @@ ns1:PhysicsEquationSolution skos:exactMatch "https://w3id.org/emmo#EMMO_6e0664f2
 
 ns1:PhysicsMathematicalComputation skos:exactMatch "https://w3id.org/emmo#EMMO_5dd63d84_57f5_4b79_b760_fe940c06680d"^^xsd:anyURI .
 
-ns1:PhysioChemicalQuantity skos:exactMatch "https://w3id.org/emmo#EMMO_a06e3d38_1aa8_4f45_89a8_722dbacfda24"^^xsd:anyURI .
-
 ns1:Pico skos:exactMatch "https://w3id.org/emmo#EMMO_2b243e59_3a2a_412e_9a58_81d1e5c92fbe"^^xsd:anyURI .
 
-ns1:PicoAmpere skos:exactMatch "https://w3id.org/emmo#PicoAmpere"^^xsd:anyURI .
-
-ns1:PicoCoulomb skos:exactMatch "https://w3id.org/emmo#PicoCoulomb"^^xsd:anyURI .
-
-ns1:PicoFarad skos:exactMatch "https://w3id.org/emmo#PicoFarad"^^xsd:anyURI .
-
-ns1:PicoFaradPerMetre skos:exactMatch "https://w3id.org/emmo#PicoFaradPerMetre"^^xsd:anyURI .
-
-ns1:PicoGram skos:exactMatch "https://w3id.org/emmo#PicoGram"^^xsd:anyURI .
-
-ns1:PicoGramPerGram skos:exactMatch "https://w3id.org/emmo#PicoGramPerGram"^^xsd:anyURI .
-
-ns1:PicoGramPerKilogram skos:exactMatch "https://w3id.org/emmo#PicoGramPerKilogram"^^xsd:anyURI .
-
-ns1:PicoHenry skos:exactMatch "https://w3id.org/emmo#PicoHenry"^^xsd:anyURI .
-
-ns1:PicoLitre skos:exactMatch "https://w3id.org/emmo#PicoLitre"^^xsd:anyURI .
-
-ns1:PicoMetre skos:exactMatch "https://w3id.org/emmo#PicoMetre"^^xsd:anyURI .
-
-ns1:PicoMole skos:exactMatch "https://w3id.org/emmo#PicoMole"^^xsd:anyURI .
-
-ns1:PicoMolePerCubicMetre skos:exactMatch "https://w3id.org/emmo#PicoMolePerCubicMetre"^^xsd:anyURI .
-
-ns1:PicoMolePerCubicMetrePerSecond skos:exactMatch "https://w3id.org/emmo#PicoMolePerCubicMetrePerSecond"^^xsd:anyURI .
-
-ns1:PicoMolePerKilogram skos:exactMatch "https://w3id.org/emmo#PicoMolePerKilogram"^^xsd:anyURI .
-
-ns1:PicoMolePerMetrePerWattPerSecond skos:exactMatch "https://w3id.org/emmo#PicoMolePerMetrePerWattPerSecond"^^xsd:anyURI .
-
-ns1:PicoPascal skos:exactMatch "https://w3id.org/emmo#PicoPascal"^^xsd:anyURI .
-
-ns1:PicoPascalPerKiloMetre skos:exactMatch "https://w3id.org/emmo#PicoPascalPerKiloMetre"^^xsd:anyURI .
-
 ns1:PicoPrefixedUnit skos:exactMatch "https://w3id.org/emmo#EMMO_068c4e58_2470_4b1c_8454_010dd4906100"^^xsd:anyURI .
-
-ns1:PicoSecond skos:exactMatch "https://w3id.org/emmo#PicoSecond"^^xsd:anyURI .
-
-ns1:PicoSiemens skos:exactMatch "https://w3id.org/emmo#PicoSiemens"^^xsd:anyURI .
-
-ns1:PicoSiemensPerMetre skos:exactMatch "https://w3id.org/emmo#PicoSiemensPerMetre"^^xsd:anyURI .
-
-ns1:PicoWatt skos:exactMatch "https://w3id.org/emmo#PicoWatt"^^xsd:anyURI .
-
-ns1:PicoWattPerSquareMetre skos:exactMatch "https://w3id.org/emmo#PicoWattPerSquareMetre"^^xsd:anyURI .
 
 ns1:Pictorial skos:exactMatch "https://w3id.org/emmo#EMMO_1da53c06_9577_4008_8652_272fa3b62be7"^^xsd:anyURI .
 
@@ -3876,8 +2835,6 @@ ns1:QuantumData skos:exactMatch "https://w3id.org/emmo#EMMO_6fa1feac_c388_44cc_a
 
 ns1:QuantumNumber skos:exactMatch "https://w3id.org/emmo#EMMO_252cce84_cc8a_49dc_8405_0d5e06425d69"^^xsd:anyURI .
 
-ns1:QuarticCoulombMetrePerCubicEnergy skos:exactMatch "https://w3id.org/emmo#QuarticCoulombMetrePerCubicEnergy"^^xsd:anyURI .
-
 ns1:QuarticElectricDipoleMomentPerCubicEnergyUnit skos:exactMatch "https://w3id.org/emmo#EMMO_c0487653_66e8_454e_bb11_e50167e412e4"^^xsd:anyURI .
 
 ns1:QuarticLengthPerTimeUnit skos:exactMatch "https://w3id.org/emmo#EMMO_6cfc5b82_b47b_47bc_bb45_c23c273d2e06"^^xsd:anyURI,
@@ -3886,33 +2843,13 @@ ns1:QuarticLengthPerTimeUnit skos:exactMatch "https://w3id.org/emmo#EMMO_6cfc5b8
 ns1:QuarticLengthUnit skos:exactMatch "https://w3id.org/emmo#EMMO_8627410d_01f8_4ed1_8f2b_aba69d791ad3"^^xsd:anyURI,
         "https://w3id.org/emmo#QuarticLengthUnit"^^xsd:anyURI .
 
-ns1:QuarticMetre skos:exactMatch "https://w3id.org/emmo#QuarticMetre"^^xsd:anyURI .
-
-ns1:QuarticMetrePerSecond skos:exactMatch "https://w3id.org/emmo#QuarticMetrePerSecond"^^xsd:anyURI .
-
-ns1:QuarticMilliMetre skos:exactMatch "https://w3id.org/emmo#QuarticMilliMetre"^^xsd:anyURI .
-
 ns1:Quecto skos:exactMatch "https://w3id.org/emmo#EMMO_556e27cd_fef1_41c9_824a_dd78980062b5"^^xsd:anyURI .
 
 ns1:QueryLanguage skos:exactMatch "https://w3id.org/emmo#EMMO_29791c75_2899_47a8_bfad_fc239aa4dd2d"^^xsd:anyURI .
 
 ns1:Quetta skos:exactMatch "https://w3id.org/emmo#EMMO_dabcbe7d_db82_4445_889b_ae4d76964ea0"^^xsd:anyURI .
 
-ns1:QuinticMetre skos:exactMatch "https://w3id.org/emmo#QuinticMetre"^^xsd:anyURI .
-
 ns1:RadialDistance skos:exactMatch "https://w3id.org/emmo#EMMO_d772fa7a_0a31_44bb_a825_ae7829d794c6"^^xsd:anyURI .
-
-ns1:Radian skos:exactMatch "https://w3id.org/emmo#Radian"^^xsd:anyURI .
-
-ns1:RadianPerMetre skos:exactMatch "https://w3id.org/emmo#RadianPerMetre"^^xsd:anyURI .
-
-ns1:RadianPerSecond skos:exactMatch "https://w3id.org/emmo#RadianPerSecond"^^xsd:anyURI .
-
-ns1:RadianPerSquareSecond skos:exactMatch "https://w3id.org/emmo#RadianPerSquareSecond"^^xsd:anyURI .
-
-ns1:RadianSquareMetrePerKilogram skos:exactMatch "https://w3id.org/emmo#RadianSquareMetrePerKilogram"^^xsd:anyURI .
-
-ns1:RadianSquareMetrePerMole skos:exactMatch "https://w3id.org/emmo#RadianSquareMetrePerMole"^^xsd:anyURI .
 
 ns1:RadiantEnergy skos:exactMatch "https://w3id.org/emmo#EMMO_b3c004d7_d377_459d_8857_dee6b5f51f3a"^^xsd:anyURI .
 
@@ -4121,8 +3058,7 @@ ns1:SIUnit skos:exactMatch "https://w3id.org/emmo#EMMO_feb03a8a_bbb6_4918_a891_4
 
 ns1:SIUnitSymbol skos:exactMatch "https://w3id.org/emmo#EMMO_32129fb5_df25_48fd_a29c_18a2f22a2dd5"^^xsd:anyURI .
 
-ns1:SMILESReference skos:exactMatch "https://w3id.org/emmo#EMMO_2e0b0f1b_ba90_4827_af5a_92b826cb90de"^^xsd:anyURI,
-        "https://w3id.org/emmo#SMILESReference"^^xsd:anyURI .
+ns1:SMILESReference skos:exactMatch "https://w3id.org/emmo#SMILESReference"^^xsd:anyURI .
 
 ns1:SamariumAtom skos:exactMatch "https://w3id.org/emmo#EMMO_65d84215-de2a-56c9-80e3-a49d08dfc1de"^^xsd:anyURI .
 
@@ -4152,13 +3088,7 @@ ns1:SeaborgiumAtom skos:exactMatch "https://w3id.org/emmo#EMMO_67eaac8f-7f83-5bc
 
 ns1:SeaborgiumSymbol skos:exactMatch "https://w3id.org/emmo#EMMO_3fb44e47-7de9-5d86-9320-5949d8792951"^^xsd:anyURI .
 
-ns1:Second skos:exactMatch "https://w3id.org/emmo#Second"^^xsd:anyURI .
-
 ns1:SecondAxialMomentOfArea skos:exactMatch "https://w3id.org/emmo#EMMO_700cd058_a54d_4104_97ab_887ad865409e"^^xsd:anyURI .
-
-ns1:SecondPerMetre skos:exactMatch "https://w3id.org/emmo#SecondPerMetre"^^xsd:anyURI .
-
-ns1:SecondPerRadianCubicMetre skos:exactMatch "https://w3id.org/emmo#SecondPerRadianCubicMetre"^^xsd:anyURI .
 
 ns1:SecondPolarMomentOfArea skos:exactMatch "https://w3id.org/emmo#EMMO_38a53b33_0eda_45fd_b955_69d2f0d3f9de"^^xsd:anyURI .
 
@@ -4193,8 +3123,6 @@ ns1:Service skos:exactMatch "https://w3id.org/emmo#EMMO_127594de_4802_4ad6_b09d_
 ns1:SexticLengthUnit skos:exactMatch "https://w3id.org/emmo#EMMO_21bc99ae_f2ba_4eb3_90c1_d81968c429e2"^^xsd:anyURI,
         "https://w3id.org/emmo#SexticLengthUnit"^^xsd:anyURI .
 
-ns1:SexticMetre skos:exactMatch "https://w3id.org/emmo#SexticMetre"^^xsd:anyURI .
-
 ns1:Shape3Vector skos:exactMatch "https://w3id.org/emmo#EMMO_2ff07b07_c447_490f_903a_f6a72a12d7bf"^^xsd:anyURI .
 
 ns1:Shape4x3Matrix skos:exactMatch "https://w3id.org/emmo#EMMO_24b30ba4_90f4_423d_93d2_fd0fde349087"^^xsd:anyURI .
@@ -4214,16 +3142,6 @@ ns1:ShellScript skos:exactMatch "https://w3id.org/emmo#EMMO_f42a0e95_c130_4a69_9
 ns1:ShortData skos:exactMatch "https://w3id.org/emmo#EMMO_443198a5_934c_44fa_b89e_28eca13b25b2"^^xsd:anyURI .
 
 ns1:ShortRangeOrderParameter skos:exactMatch "https://w3id.org/emmo#EMMO_e6efd70d_87b4_4e18_a471_9b29c7a1fe16"^^xsd:anyURI .
-
-ns1:Siemens skos:exactMatch "https://w3id.org/emmo#Siemens"^^xsd:anyURI .
-
-ns1:SiemensPerCentiMetre skos:exactMatch "https://w3id.org/emmo#SiemensPerCentiMetre"^^xsd:anyURI .
-
-ns1:SiemensPerMetre skos:exactMatch "https://w3id.org/emmo#SiemensPerMetre"^^xsd:anyURI .
-
-ns1:SiemensSquareMetrePerMole skos:exactMatch "https://w3id.org/emmo#SiemensSquareMetrePerMole"^^xsd:anyURI .
-
-ns1:Sievert skos:exactMatch "https://w3id.org/emmo#Sievert"^^xsd:anyURI .
 
 ns1:Sign skos:exactMatch "https://w3id.org/emmo#EMMO_b21a56ed_f969_4612_a6ec_cb7766f7f31d"^^xsd:anyURI .
 
@@ -4270,8 +3188,6 @@ ns1:Solid skos:exactMatch "https://w3id.org/emmo#EMMO_a2b006f2_bbfd_4dba_bcaa_3f
 ns1:SolidAerosol skos:exactMatch "https://w3id.org/emmo#EMMO_96c8d72f_b436_44e2_9f7f_085c24094292"^^xsd:anyURI .
 
 ns1:SolidAngle skos:exactMatch "https://w3id.org/emmo#EMMO_e7c9f7fd_e534_4441_88fe_1fec6cb20f26"^^xsd:anyURI .
-
-ns1:SolidAngularMeasure skos:exactMatch "https://w3id.org/emmo#EMMO_35e1dd93_2cb6_4cea_b201_31036e113f61"^^xsd:anyURI .
 
 ns1:SolidFoam skos:exactMatch "https://w3id.org/emmo#EMMO_9bed5d66_805a_4b3a_9153_beaf67143848"^^xsd:anyURI .
 
@@ -4365,102 +3281,22 @@ ns1:SpontaneousProcess skos:exactMatch "https://w3id.org/emmo#EMMO_7c2c9869_f6b4
 
 ns1:Spray skos:exactMatch "https://w3id.org/emmo#EMMO_498aad49_f8d4_40a4_a9eb_efd563a0115f"^^xsd:anyURI .
 
-ns1:SquareCentiMetre skos:exactMatch "https://w3id.org/emmo#SquareCentiMetre"^^xsd:anyURI .
-
-ns1:SquareCentiMetrePerCubicCentiMetre skos:exactMatch "https://w3id.org/emmo#SquareCentiMetrePerCubicCentiMetre"^^xsd:anyURI .
-
-ns1:SquareCentiMetrePerGram skos:exactMatch "https://w3id.org/emmo#SquareCentiMetrePerGram"^^xsd:anyURI .
-
-ns1:SquareCentiMetrePerSecond skos:exactMatch "https://w3id.org/emmo#SquareCentiMetrePerSecond"^^xsd:anyURI .
-
-ns1:SquareCentiMetreSecond skos:exactMatch "https://w3id.org/emmo#SquareCentiMetreSecond"^^xsd:anyURI .
-
-ns1:SquareCoulombSquareMetrePerJoule skos:exactMatch "https://w3id.org/emmo#SquareCoulombSquareMetrePerJoule"^^xsd:anyURI .
-
 ns1:SquareCurrentQuarticTimePerMassUnit skos:exactMatch "https://w3id.org/emmo#EMMO_cd9ad446_04f7_44ff_b9ea_ae7389574fa6"^^xsd:anyURI,
         "https://w3id.org/emmo#SquareCurrentQuarticTimePerMassUnit"^^xsd:anyURI .
 
-ns1:SquareDeciMetre skos:exactMatch "https://w3id.org/emmo#SquareDeciMetre"^^xsd:anyURI .
-
-ns1:SquareDegreeCelsiusPerSecond skos:exactMatch "https://w3id.org/emmo#SquareDegreeCelsiusPerSecond"^^xsd:anyURI .
-
 ns1:SquareElectricPotentialPerSquareTemperatureUnit skos:exactMatch "https://w3id.org/emmo#EMMO_58c5b65c_c896_4740_80d9_ff9a7643c7e8"^^xsd:anyURI,
         "https://w3id.org/emmo#SquareElectricPotentialPerSquareTemperatureUnit"^^xsd:anyURI .
-
-ns1:SquareKelvin skos:exactMatch "https://w3id.org/emmo#SquareKelvin"^^xsd:anyURI .
-
-ns1:SquareKilogramPerSquareSecond skos:exactMatch "https://w3id.org/emmo#SquareKilogramPerSquareSecond"^^xsd:anyURI .
 
 ns1:SquareLengthPerVoltageTimeUnit skos:exactMatch "https://w3id.org/emmo#EMMO_d09e8aea_3fd0_4213_955d_10fc2a6f1d74"^^xsd:anyURI .
 
 ns1:SquareMassPerSquareTimeUnit skos:exactMatch "https://w3id.org/emmo#EMMO_109e8c69_4148_4cb0_9ceb_fbd526befca0"^^xsd:anyURI,
         "https://w3id.org/emmo#SquareMassPerSquareTimeUnit"^^xsd:anyURI .
 
-ns1:SquareMetre skos:exactMatch "https://w3id.org/emmo#SquareMetre"^^xsd:anyURI .
-
-ns1:SquareMetreCubicHertz skos:exactMatch "https://w3id.org/emmo#SquareMetreCubicHertz"^^xsd:anyURI .
-
-ns1:SquareMetreHertz skos:exactMatch "https://w3id.org/emmo#SquareMetreHertz"^^xsd:anyURI .
-
-ns1:SquareMetreKelvin skos:exactMatch "https://w3id.org/emmo#SquareMetreKelvin"^^xsd:anyURI .
-
-ns1:SquareMetreKelvinPerWatt skos:exactMatch "https://w3id.org/emmo#SquareMetreKelvinPerWatt"^^xsd:anyURI .
-
-ns1:SquareMetrePerGram skos:exactMatch "https://w3id.org/emmo#SquareMetrePerGram"^^xsd:anyURI .
-
-ns1:SquareMetrePerHertz skos:exactMatch "https://w3id.org/emmo#SquareMetrePerHertz"^^xsd:anyURI .
-
-ns1:SquareMetrePerJoule skos:exactMatch "https://w3id.org/emmo#SquareMetrePerJoule"^^xsd:anyURI .
-
-ns1:SquareMetrePerKelvin skos:exactMatch "https://w3id.org/emmo#SquareMetrePerKelvin"^^xsd:anyURI .
-
-ns1:SquareMetrePerKilogram skos:exactMatch "https://w3id.org/emmo#SquareMetrePerKilogram"^^xsd:anyURI .
-
-ns1:SquareMetrePerMole skos:exactMatch "https://w3id.org/emmo#SquareMetrePerMole"^^xsd:anyURI .
-
-ns1:SquareMetrePerNewton skos:exactMatch "https://w3id.org/emmo#SquareMetrePerNewton"^^xsd:anyURI .
-
-ns1:SquareMetrePerSecond skos:exactMatch "https://w3id.org/emmo#SquareMetrePerSecond"^^xsd:anyURI .
-
-ns1:SquareMetrePerSquareHertz skos:exactMatch "https://w3id.org/emmo#SquareMetrePerSquareHertz"^^xsd:anyURI .
-
-ns1:SquareMetrePerSquareMetre skos:exactMatch "https://w3id.org/emmo#SquareMetrePerSquareMetre"^^xsd:anyURI .
-
-ns1:SquareMetrePerSquareSecond skos:exactMatch "https://w3id.org/emmo#SquareMetrePerSquareSecond"^^xsd:anyURI .
-
-ns1:SquareMetrePerSteradian skos:exactMatch "https://w3id.org/emmo#SquareMetrePerSteradian"^^xsd:anyURI .
-
-ns1:SquareMetrePerSteradianJoule skos:exactMatch "https://w3id.org/emmo#SquareMetrePerSteradianJoule"^^xsd:anyURI .
-
-ns1:SquareMetrePerVoltSecond skos:exactMatch "https://w3id.org/emmo#SquareMetrePerVoltSecond"^^xsd:anyURI .
-
-ns1:SquareMetreQuarticHertz skos:exactMatch "https://w3id.org/emmo#SquareMetreQuarticHertz"^^xsd:anyURI .
-
-ns1:SquareMetreSecondPerRadian skos:exactMatch "https://w3id.org/emmo#SquareMetreSecondPerRadian"^^xsd:anyURI .
-
-ns1:SquareMetreSquareHertz skos:exactMatch "https://w3id.org/emmo#SquareMetreSquareHertz"^^xsd:anyURI .
-
-ns1:SquareMetreSteradian skos:exactMatch "https://w3id.org/emmo#SquareMetreSteradian"^^xsd:anyURI .
-
-ns1:SquareMicroMetre skos:exactMatch "https://w3id.org/emmo#SquareMicroMetre"^^xsd:anyURI .
-
-ns1:SquareMilliMetre skos:exactMatch "https://w3id.org/emmo#SquareMilliMetre"^^xsd:anyURI .
-
-ns1:SquareMilliMetrePerSecond skos:exactMatch "https://w3id.org/emmo#SquareMilliMetrePerSecond"^^xsd:anyURI .
-
-ns1:SquareNanoMetre skos:exactMatch "https://w3id.org/emmo#SquareNanoMetre"^^xsd:anyURI .
-
-ns1:SquarePascalPerSquareSecond skos:exactMatch "https://w3id.org/emmo#SquarePascalPerSquareSecond"^^xsd:anyURI .
-
-ns1:SquarePascalSecond skos:exactMatch "https://w3id.org/emmo#SquarePascalSecond"^^xsd:anyURI .
-
 ns1:SquarePressurePerSquareTimeUnit skos:exactMatch "https://w3id.org/emmo#EMMO_ffbacbc4_c3be_4cc5_9539_94344e72f7a6"^^xsd:anyURI,
         "https://w3id.org/emmo#SquarePressurePerSquareTimeUnit"^^xsd:anyURI .
 
 ns1:SquarePressureTimeUnit skos:exactMatch "https://w3id.org/emmo#EMMO_886eb0fb_4d36_4b7d_99e4_e5915a06aff1"^^xsd:anyURI,
         "https://w3id.org/emmo#SquarePressureTimeUnit"^^xsd:anyURI .
-
-ns1:SquareSecond skos:exactMatch "https://w3id.org/emmo#SquareSecond"^^xsd:anyURI .
 
 ns1:SquareTemperaturePerTimeUnit skos:exactMatch "https://w3id.org/emmo#EMMO_dafdcae3_f8ec_4993_8269_2c9299a75158"^^xsd:anyURI,
         "https://w3id.org/emmo#SquareTemperaturePerTimeUnit"^^xsd:anyURI .
@@ -4473,8 +3309,6 @@ ns1:SquareTimePerMassUnit skos:exactMatch "https://w3id.org/emmo#EMMO_f508dec1_e
 
 ns1:SquareTimeUnit skos:exactMatch "https://w3id.org/emmo#EMMO_f2c1a072_4ccb_46c4_a0f8_ac801d328d0f"^^xsd:anyURI,
         "https://w3id.org/emmo#SquareTimeUnit"^^xsd:anyURI .
-
-ns1:SquareVoltPerSquareKelvin skos:exactMatch "https://w3id.org/emmo#SquareVoltPerSquareKelvin"^^xsd:anyURI .
 
 ns1:Stage skos:exactMatch "https://w3id.org/emmo#EMMO_a633c6f8_4269_4870_9b28_f5ca1783fd54"^^xsd:anyURI .
 
@@ -4507,8 +3341,6 @@ ns1:StaticFrictionForce skos:exactMatch "https://w3id.org/emmo#EMMO_445d186f_189
 ns1:StatisticalWeightOfSubsystem skos:exactMatch "https://w3id.org/emmo#EMMO_b0ef0941_5c92_4b71_bc26_95e95e5e0004"^^xsd:anyURI .
 
 ns1:Status skos:exactMatch "https://w3id.org/emmo#EMMO_d9589ed2_5304_48b3_9795_11bf44e64e9b"^^xsd:anyURI .
-
-ns1:Steradian skos:exactMatch "https://w3id.org/emmo#Steradian"^^xsd:anyURI .
 
 ns1:StoichiometricNumberOfSubstance skos:exactMatch "https://w3id.org/emmo#EMMO_cbba91a7_d639_461f_ae23_d021751029e4"^^xsd:anyURI .
 
@@ -4658,23 +3490,11 @@ ns1:TensorMeson skos:exactMatch "https://w3id.org/emmo#EMMO_f895cb83_2280_42e9_9
 
 ns1:Tera skos:exactMatch "https://w3id.org/emmo#EMMO_33fe9747_d66f_4f88_b2c1_951279dbca59"^^xsd:anyURI .
 
-ns1:TeraCoulomb skos:exactMatch "https://w3id.org/emmo#TeraCoulomb"^^xsd:anyURI .
-
-ns1:TeraHertz skos:exactMatch "https://w3id.org/emmo#TeraHertz"^^xsd:anyURI .
-
-ns1:TeraJoule skos:exactMatch "https://w3id.org/emmo#TeraJoule"^^xsd:anyURI .
-
-ns1:TeraOhm skos:exactMatch "https://w3id.org/emmo#TeraOhm"^^xsd:anyURI .
-
 ns1:TeraPrefixedUnit skos:exactMatch "https://w3id.org/emmo#EMMO_3a204900_2b33_47d1_b444_815cc4c8cffa"^^xsd:anyURI .
-
-ns1:TeraWatt skos:exactMatch "https://w3id.org/emmo#TeraWatt"^^xsd:anyURI .
 
 ns1:TerbiumAtom skos:exactMatch "https://w3id.org/emmo#EMMO_e3cd5791-6fbb-587a-a535-0e937800beaa"^^xsd:anyURI .
 
 ns1:TerbiumSymbol skos:exactMatch "https://w3id.org/emmo#EMMO_6599389d-7a26-5d51-a65c-5dd9c3ed532f"^^xsd:anyURI .
-
-ns1:Tesla skos:exactMatch "https://w3id.org/emmo#Tesla"^^xsd:anyURI .
 
 ns1:Tessellation skos:exactMatch "https://w3id.org/emmo#EMMO_ee0466e4_780d_4236_8281_ace7ad3fc5d2"^^xsd:anyURI .
 
@@ -4778,8 +3598,6 @@ ns1:TitaniumSymbol skos:exactMatch "https://w3id.org/emmo#EMMO_1cba8181-2ea5-577
 
 ns1:TokenData skos:exactMatch "https://w3id.org/emmo#EMMO_be8680e5_28ec_4168_9206_d1cd33fbd458"^^xsd:anyURI .
 
-ns1:Tonne skos:exactMatch "https://w3id.org/emmo#Tonne"^^xsd:anyURI .
-
 ns1:Tool skos:exactMatch "https://w3id.org/emmo#EMMO_5c68497d_2544_4cd4_897b_1ea783c9f6fe"^^xsd:anyURI .
 
 ns1:Torque skos:exactMatch "https://w3id.org/emmo#EMMO_aaf9dd7f_0474_40d0_9606_02def8515249"^^xsd:anyURI .
@@ -4858,8 +3676,7 @@ ns1:UraniumAtom skos:exactMatch "https://w3id.org/emmo#EMMO_b233f8c0-37d8-51ae-9
 
 ns1:UraniumSymbol skos:exactMatch "https://w3id.org/emmo#EMMO_0080b38f-bac4-5dd6-9d28-d821cf723787"^^xsd:anyURI .
 
-ns1:VIMTerm skos:exactMatch "https://w3id.org/emmo#EMMO_bb49844b_45d7_4f0d_8cae_8e552cbc20d6"^^xsd:anyURI,
-        "https://w3id.org/emmo#VIMTerm"^^xsd:anyURI .
+ns1:VIMTerm skos:exactMatch "https://w3id.org/emmo#VIMTerm"^^xsd:anyURI .
 
 ns1:VacuumElectricPermittivity skos:exactMatch "https://w3id.org/emmo#EMMO_61a32ae9_8200_473a_bd55_59a9899996f4"^^xsd:anyURI .
 
@@ -4888,26 +3705,6 @@ ns1:Vergence skos:exactMatch "https://w3id.org/emmo#EMMO_1e7603a7_1365_49b8_b5e5
 ns1:Verifying skos:exactMatch "https://w3id.org/emmo#EMMO_2b44fb2a_ada8_46af_a961_6e534a61416d"^^xsd:anyURI .
 
 ns1:Visual skos:exactMatch "https://w3id.org/emmo#EMMO_c5ae6d8e_6b39_431f_8de4_ae4e357abc04"^^xsd:anyURI .
-
-ns1:Volt skos:exactMatch "https://w3id.org/emmo#Volt"^^xsd:anyURI .
-
-ns1:VoltAmpere skos:exactMatch "https://w3id.org/emmo#VoltAmpere"^^xsd:anyURI .
-
-ns1:VoltPerCentiMetre skos:exactMatch "https://w3id.org/emmo#VoltPerCentiMetre"^^xsd:anyURI .
-
-ns1:VoltPerKelvin skos:exactMatch "https://w3id.org/emmo#VoltPerKelvin"^^xsd:anyURI .
-
-ns1:VoltPerMetre skos:exactMatch "https://w3id.org/emmo#VoltPerMetre"^^xsd:anyURI .
-
-ns1:VoltPerMicroSecond skos:exactMatch "https://w3id.org/emmo#VoltPerMicroSecond"^^xsd:anyURI .
-
-ns1:VoltPerMilliMetre skos:exactMatch "https://w3id.org/emmo#VoltPerMilliMetre"^^xsd:anyURI .
-
-ns1:VoltPerSecond skos:exactMatch "https://w3id.org/emmo#VoltPerSecond"^^xsd:anyURI .
-
-ns1:VoltPerSquareMetre skos:exactMatch "https://w3id.org/emmo#VoltPerSquareMetre"^^xsd:anyURI .
-
-ns1:VoltSecondPerMetre skos:exactMatch "https://w3id.org/emmo#VoltSecondPerMetre"^^xsd:anyURI .
 
 ns1:Voltage skos:exactMatch "https://w3id.org/emmo#EMMO_17b031fb_4695_49b6_bb69_189ec63df3ee"^^xsd:anyURI .
 
@@ -4949,59 +3746,11 @@ ns1:VolumicTotalCrossSection skos:exactMatch "https://w3id.org/emmo#EMMO_cb71d1c
 
 ns1:VonKlitzingConstant skos:exactMatch "https://w3id.org/emmo#EMMO_eb561764_276e_413d_a8cb_3a3154fd9bf8"^^xsd:anyURI .
 
-ns1:Watt skos:exactMatch "https://w3id.org/emmo#Watt"^^xsd:anyURI .
-
-ns1:WattMetrePerSquareMetreSteradian skos:exactMatch "https://w3id.org/emmo#WattMetrePerSquareMetreSteradian"^^xsd:anyURI .
-
-ns1:WattPerCubicMetre skos:exactMatch "https://w3id.org/emmo#WattPerCubicMetre"^^xsd:anyURI .
-
-ns1:WattPerKelvin skos:exactMatch "https://w3id.org/emmo#WattPerKelvin"^^xsd:anyURI .
-
-ns1:WattPerKilogram skos:exactMatch "https://w3id.org/emmo#WattPerKilogram"^^xsd:anyURI .
-
-ns1:WattPerMetre skos:exactMatch "https://w3id.org/emmo#WattPerMetre"^^xsd:anyURI .
-
-ns1:WattPerMetreKelvin skos:exactMatch "https://w3id.org/emmo#WattPerMetreKelvin"^^xsd:anyURI .
-
-ns1:WattPerSquareCentiMetre skos:exactMatch "https://w3id.org/emmo#WattPerSquareCentiMetre"^^xsd:anyURI .
-
-ns1:WattPerSquareMetre skos:exactMatch "https://w3id.org/emmo#WattPerSquareMetre"^^xsd:anyURI .
-
-ns1:WattPerSquareMetreKelvin skos:exactMatch "https://w3id.org/emmo#WattPerSquareMetreKelvin"^^xsd:anyURI .
-
-ns1:WattPerSquareMetrePascal skos:exactMatch "https://w3id.org/emmo#WattPerSquareMetrePascal"^^xsd:anyURI .
-
-ns1:WattPerSquareMetrePerMetre skos:exactMatch "https://w3id.org/emmo#WattPerSquareMetrePerMetre"^^xsd:anyURI .
-
-ns1:WattPerSquareMetrePerMetrePerSteradian skos:exactMatch "https://w3id.org/emmo#WattPerSquareMetrePerMetrePerSteradian"^^xsd:anyURI .
-
-ns1:WattPerSquareMetrePerNanoMetre skos:exactMatch "https://w3id.org/emmo#WattPerSquareMetrePerNanoMetre"^^xsd:anyURI .
-
-ns1:WattPerSquareMetrePerNanoMetrePerSteradian skos:exactMatch "https://w3id.org/emmo#WattPerSquareMetrePerNanoMetrePerSteradian"^^xsd:anyURI .
-
-ns1:WattPerSquareMetreQuarticKelvin skos:exactMatch "https://w3id.org/emmo#WattPerSquareMetreQuarticKelvin"^^xsd:anyURI .
-
-ns1:WattPerSquareMetreSteradian skos:exactMatch "https://w3id.org/emmo#WattPerSquareMetreSteradian"^^xsd:anyURI .
-
-ns1:WattPerSteradian skos:exactMatch "https://w3id.org/emmo#WattPerSteradian"^^xsd:anyURI .
-
-ns1:WattSecond skos:exactMatch "https://w3id.org/emmo#WattSecond"^^xsd:anyURI .
-
-ns1:WattSecondPerSquareMetre skos:exactMatch "https://w3id.org/emmo#WattSecondPerSquareMetre"^^xsd:anyURI .
-
 ns1:WaveVector skos:exactMatch "https://w3id.org/emmo#EMMO_6074aa9d_7c3b_4011_b45a_4e7cde6f5f39"^^xsd:anyURI .
 
 ns1:Wavelength skos:exactMatch "https://w3id.org/emmo#EMMO_573c7572_e7c7_4909_93a4_2bfe102e389d"^^xsd:anyURI .
 
 ns1:Wavenumber skos:exactMatch "https://w3id.org/emmo#EMMO_e0aaed83_9224_4bd8_a960_a813c4569412"^^xsd:anyURI .
-
-ns1:Weber skos:exactMatch "https://w3id.org/emmo#Weber"^^xsd:anyURI .
-
-ns1:WeberMetre skos:exactMatch "https://w3id.org/emmo#WeberMetre"^^xsd:anyURI .
-
-ns1:WeberPerMetre skos:exactMatch "https://w3id.org/emmo#WeberPerMetre"^^xsd:anyURI .
-
-ns1:WeberPerMilliMetre skos:exactMatch "https://w3id.org/emmo#WeberPerMilliMetre"^^xsd:anyURI .
 
 ns1:Weight skos:exactMatch "https://w3id.org/emmo#EMMO_04cf0295_3e8f_4693_a87f_3130d125cf05"^^xsd:anyURI .
 
@@ -5031,13 +3780,9 @@ ns1:XenonSymbol skos:exactMatch "https://w3id.org/emmo#EMMO_fba570fc-6881-51d6-8
 
 ns1:Yocto skos:exactMatch "https://w3id.org/emmo#EMMO_7abfbbc4_ce7b_4611_b731_1b5b8bd2bbc0"^^xsd:anyURI .
 
-ns1:YoctoCoulomb skos:exactMatch "https://w3id.org/emmo#YoctoCoulomb"^^xsd:anyURI .
-
 ns1:YoctoPrefixedUnit skos:exactMatch "https://w3id.org/emmo#EMMO_f5769206_9257_4b08_bf7b_dad7868c6afc"^^xsd:anyURI .
 
 ns1:Yotta skos:exactMatch "https://w3id.org/emmo#EMMO_cb3f4298_5895_4272_be63_42dd246cc10c"^^xsd:anyURI .
-
-ns1:YottaCoulomb skos:exactMatch "https://w3id.org/emmo#YottaCoulomb"^^xsd:anyURI .
 
 ns1:YottaPrefixedUnit skos:exactMatch "https://w3id.org/emmo#EMMO_e79c62ff_10ad_4ec0_baba_c19ddd4eaa11"^^xsd:anyURI .
 
@@ -5051,15 +3796,11 @@ ns1:YttriumSymbol skos:exactMatch "https://w3id.org/emmo#EMMO_74fd9704-69a8-5112
 
 ns1:Zepto skos:exactMatch "https://w3id.org/emmo#EMMO_4db5c662_b065_49e4_96eb_826699fa8048"^^xsd:anyURI .
 
-ns1:ZeptoCoulomb skos:exactMatch "https://w3id.org/emmo#ZeptoCoulomb"^^xsd:anyURI .
-
 ns1:ZeptoPrefixedUnit skos:exactMatch "https://w3id.org/emmo#EMMO_254472c6_3dbd_4f02_bc43_571389cd281f"^^xsd:anyURI .
 
 ns1:ZeroManifold skos:exactMatch "https://w3id.org/emmo#EMMO_0ab0485c_9e5b_4257_a679_90a2dfba5c7c"^^xsd:anyURI .
 
 ns1:Zetta skos:exactMatch "https://w3id.org/emmo#EMMO_fbf7da6f_04bb_4c8e_abbf_e4048d6a5e73"^^xsd:anyURI .
-
-ns1:ZettaCoulomb skos:exactMatch "https://w3id.org/emmo#ZettaCoulomb"^^xsd:anyURI .
 
 ns1:ZettaPrefixedUnit skos:exactMatch "https://w3id.org/emmo#EMMO_daa9ee97_4c5f_42e5_918c_44d7523e8958"^^xsd:anyURI .
 
@@ -5086,11 +3827,12 @@ ns1:chemicalSymbolValue skos:exactMatch "https://w3id.org/emmo#EMMO_40c65eb4_5b5
 ns1:coexistsWith skos:exactMatch "https://w3id.org/emmo#EMMO_54d0d0f4_d9fa_4179_a9b5_4110c49dafff"^^xsd:anyURI,
         "https://w3id.org/emmo#coexistsWith"^^xsd:anyURI .
 
-ns1:conceptualisation skos:exactMatch "https://w3id.org/emmo#EMMO_31252f35_c767_4b97_a877_1235076c3e13"^^xsd:anyURI,
-        "https://w3id.org/emmo#conceptualisation"^^xsd:anyURI .
+ns1:computes skos:exactMatch "https://w3id.org/emmo#EMMO_aa4d44c7_0aa5_485f_b072_faca05a65b3d"^^xsd:anyURI,
+        "https://w3id.org/emmo#computes"^^xsd:anyURI .
 
-ns1:contact skos:exactMatch "https://w3id.org/emmo#EMMO_1246b120_abbe_4840_b0f8_3e4348b24a17"^^xsd:anyURI,
-        "https://w3id.org/emmo#contact"^^xsd:anyURI .
+ns1:conceptualisation skos:exactMatch "https://w3id.org/emmo#conceptualisation"^^xsd:anyURI .
+
+ns1:contact skos:exactMatch "https://w3id.org/emmo#contact"^^xsd:anyURI .
 
 ns1:contacts skos:exactMatch "https://w3id.org/emmo#EMMO_8785be5a_2493_4b12_8f39_31907ab11748"^^xsd:anyURI,
         "https://w3id.org/emmo#contacts"^^xsd:anyURI .
@@ -5098,11 +3840,18 @@ ns1:contacts skos:exactMatch "https://w3id.org/emmo#EMMO_8785be5a_2493_4b12_8f39
 ns1:contributesTo skos:exactMatch "https://w3id.org/emmo#EMMO_f09e1d0a_07ce_4121_8c89_5bd67b7e8116"^^xsd:anyURI,
         "https://w3id.org/emmo#contributesTo"^^xsd:anyURI .
 
-ns1:dbpediaReference skos:exactMatch "https://w3id.org/emmo#EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25"^^xsd:anyURI,
-        "https://w3id.org/emmo#dbpediaReference"^^xsd:anyURI .
+ns1:coverageInterval skos:exactMatch "https://w3id.org/emmo#EMMO_2594a687_b888_4878_b51b_63563ce7e6d3"^^xsd:anyURI,
+        "https://w3id.org/emmo#coverageInterval"^^xsd:anyURI .
 
-ns1:definition skos:exactMatch "https://w3id.org/emmo#EMMO_70fe84ff_99b6_4206_a9fc_9a8931836d84"^^xsd:anyURI,
-        "https://w3id.org/emmo#definition"^^xsd:anyURI .
+ns1:coverageProbability skos:exactMatch "https://w3id.org/emmo#EMMO_4b3c7c64_fe82_41b5_bfc5_63614e1cfe7a"^^xsd:anyURI,
+        "https://w3id.org/emmo#coverageProbability"^^xsd:anyURI .
+
+ns1:dataValue skos:exactMatch "https://w3id.org/emmo#EMMO_b6292331_94af_4f00_976b_ea55960c2f1c"^^xsd:anyURI,
+        "https://w3id.org/emmo#dataValue"^^xsd:anyURI .
+
+ns1:dbpediaReference skos:exactMatch "https://w3id.org/emmo#dbpediaReference"^^xsd:anyURI .
+
+ns1:definition skos:exactMatch "https://w3id.org/emmo#definition"^^xsd:anyURI .
 
 ns1:directlyCausedBy skos:exactMatch "https://w3id.org/emmo#EMMO_11501e0a_4442_4bd0_8483_7ea6dc8ba444"^^xsd:anyURI,
         "https://w3id.org/emmo#directlyCausedBy"^^xsd:anyURI .
@@ -5110,14 +3859,12 @@ ns1:directlyCausedBy skos:exactMatch "https://w3id.org/emmo#EMMO_11501e0a_4442_4
 ns1:directlyCauses skos:exactMatch "https://w3id.org/emmo#EMMO_555d0261_da5e_4301_b7f9_46f604a32e91"^^xsd:anyURI,
         "https://w3id.org/emmo#directlyCauses"^^xsd:anyURI .
 
-ns1:elucidation skos:exactMatch "https://w3id.org/emmo#EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9"^^xsd:anyURI,
-        "https://w3id.org/emmo#elucidation"^^xsd:anyURI .
+ns1:elucidation skos:exactMatch "https://w3id.org/emmo#elucidation"^^xsd:anyURI .
 
 ns1:equalsTo skos:exactMatch "https://w3id.org/emmo#EMMO_6835537c_d294_4005_a770_ec9621f29ed1"^^xsd:anyURI,
         "https://w3id.org/emmo#equalsTo"^^xsd:anyURI .
 
-ns1:etymology skos:exactMatch "https://w3id.org/emmo#EMMO_705f27ae_954c_4f13_98aa_18473fc52b25"^^xsd:anyURI,
-        "https://w3id.org/emmo#etymology"^^xsd:anyURI .
+ns1:etymology skos:exactMatch "https://w3id.org/emmo#etymology"^^xsd:anyURI .
 
 ns1:follows skos:exactMatch "https://w3id.org/emmo#EMMO_60c57607_c9e7_4e75_a3d1_7a1f1f9928e4"^^xsd:anyURI,
         "https://w3id.org/emmo#follows"^^xsd:anyURI .
@@ -5182,9 +3929,6 @@ ns1:hasConvention skos:exactMatch "https://w3id.org/emmo#EMMO_eb3518bf_f799_4f9e
 ns1:hasConventionalProperty skos:exactMatch "https://w3id.org/emmo#EMMO_16b510a6_0584_4134_bdb6_3bc185c17860"^^xsd:anyURI,
         "https://w3id.org/emmo#hasConventionalProperty"^^xsd:anyURI .
 
-ns1:hasDataValue skos:exactMatch "https://w3id.org/emmo#EMMO_b6292331_94af_4f00_976b_ea55960c2f1c"^^xsd:anyURI,
-        "https://w3id.org/emmo#hasDataValue"^^xsd:anyURI .
-
 ns1:hasDatum skos:exactMatch "https://w3id.org/emmo#EMMO_b19aacfc_5f73_4c33_9456_469c1e89a53e"^^xsd:anyURI,
         "https://w3id.org/emmo#hasDatum"^^xsd:anyURI .
 
@@ -5239,6 +3983,9 @@ ns1:hasIndex skos:exactMatch "https://w3id.org/emmo#EMMO_297999d6_c9e4_4262_9536
 ns1:hasInput skos:exactMatch "https://w3id.org/emmo#EMMO_36e69413_8c59_4799_946c_10b05d266e22"^^xsd:anyURI,
         "https://w3id.org/emmo#hasInput"^^xsd:anyURI .
 
+ns1:hasIntentionalAgent skos:exactMatch "https://w3id.org/emmo#EMMO_6f17a01a_ba2a_4e59_afc0_61d0f616ac08"^^xsd:anyURI,
+        "https://w3id.org/emmo#hasIntentionalAgent"^^xsd:anyURI .
+
 ns1:hasInternalRepresentation skos:exactMatch "https://w3id.org/emmo#EMMO_da27d905_beb6_44ea_a330_a2dd9c17b263"^^xsd:anyURI,
         "https://w3id.org/emmo#hasInternalRepresentation"^^xsd:anyURI .
 
@@ -5275,7 +4022,7 @@ ns1:hasMeasuredProperty skos:exactMatch "https://w3id.org/emmo#EMMO_fd689787_31b
 ns1:hasMeasurementUnit skos:exactMatch "https://w3id.org/emmo#EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569"^^xsd:anyURI,
         "https://w3id.org/emmo#hasMeasurementUnit"^^xsd:anyURI .
 
-ns1:hasMember skos:exactMatch "https://w3id.org/emmo#33fd15ab_7662_4cc6_8bf6_988422efc631"^^xsd:anyURI,
+ns1:hasMember skos:exactMatch "https://w3id.org/emmo#EMMO_33fd15ab_7662_4cc6_8bf6_988422efc631"^^xsd:anyURI,
         "https://w3id.org/emmo#hasMember"^^xsd:anyURI .
 
 ns1:hasMetricPrefix skos:exactMatch "https://w3id.org/emmo#EMMO_4be0acad_af05_426f_aa6d_fe7531072564"^^xsd:anyURI,
@@ -5293,14 +4040,11 @@ ns1:hasModel skos:exactMatch "https://w3id.org/emmo#EMMO_24c71baf_6db6_48b9_86c8
 ns1:hasModelledProperty skos:exactMatch "https://w3id.org/emmo#EMMO_b8f79e53_2ad4_441d_87ff_284a5c419e46"^^xsd:anyURI,
         "https://w3id.org/emmo#hasModelledProperty"^^xsd:anyURI .
 
-ns1:hasMultipleMembers skos:exactMatch "https://w3id.org/emmo#0528e41d_edd2_49f9_bd2a_aeabdc215515"^^xsd:anyURI,
+ns1:hasMultipleMembers skos:exactMatch "https://w3id.org/emmo#EMMO_0528e41d_edd2_49f9_bd2a_aeabdc215515"^^xsd:anyURI,
         "https://w3id.org/emmo#hasMultipleMembers"^^xsd:anyURI .
 
 ns1:hasNonTemporalPart skos:exactMatch "https://w3id.org/emmo#EMMO_9a50a0ae_841a_46fe_8b23_3df319b60611"^^xsd:anyURI,
         "https://w3id.org/emmo#hasNonTemporalPart"^^xsd:anyURI .
-
-ns1:hasNumberValue skos:exactMatch "https://w3id.org/emmo#EMMO_faf79f53_749d_40b2_807c_d34244c192f4"^^xsd:anyURI,
-        "https://w3id.org/emmo#hasNumberValue"^^xsd:anyURI .
 
 ns1:hasNumericalPart skos:exactMatch "https://w3id.org/emmo#EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0"^^xsd:anyURI,
         "https://w3id.org/emmo#hasNumericalPart"^^xsd:anyURI .
@@ -5323,7 +4067,7 @@ ns1:hasPart skos:exactMatch "https://w3id.org/emmo#EMMO_17e27c22_37e1_468c_9dd7_
 ns1:hasParticipant skos:exactMatch "https://w3id.org/emmo#EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a"^^xsd:anyURI,
         "https://w3id.org/emmo#hasParticipant"^^xsd:anyURI .
 
-ns1:hasPiece skos:exactMatch "https://w3id.org/emmo#76413949_896c_4363_a955_de4722c6e149"^^xsd:anyURI,
+ns1:hasPiece skos:exactMatch "https://w3id.org/emmo#EMMO_76413949_896c_4363_a955_de4722c6e149"^^xsd:anyURI,
         "https://w3id.org/emmo#hasPiece"^^xsd:anyURI .
 
 ns1:hasPortion skos:exactMatch "https://w3id.org/emmo#EMMO_b1daa610_64c6_4935_94b8_a19db586a2f6"^^xsd:anyURI,
@@ -5359,9 +4103,6 @@ ns1:hasQualifiedRole skos:exactMatch "https://w3id.org/emmo#EMMO_a9a9d824_5ba1_4
 ns1:hasQuantityPart skos:exactMatch "https://w3id.org/emmo#EMMO_95d706e4_8b16_48a1_8dfd_40ccd4df1c12"^^xsd:anyURI,
         "https://w3id.org/emmo#hasQuantityPart"^^xsd:anyURI .
 
-ns1:hasQuantityValue skos:exactMatch "https://w3id.org/emmo#EMMO_88b84515_a0df_47bb_8166_c7c8b893c1d8"^^xsd:anyURI,
-        "https://w3id.org/emmo#hasQuantityValue"^^xsd:anyURI .
-
 ns1:hasQuantityValuePart skos:exactMatch "https://w3id.org/emmo#EMMO_5d73661e_e710_4844_ab9b_a85b7e68576a"^^xsd:anyURI,
         "https://w3id.org/emmo#hasQuantityValuePart"^^xsd:anyURI .
 
@@ -5385,9 +4126,6 @@ ns1:hasSIConversionMultiplier skos:exactMatch "https://w3id.org/emmo#EMMO_8189b4
 
 ns1:hasSIConversionOffset skos:exactMatch "https://w3id.org/emmo#EMMO_d088a3cb_d3e3_4eb2_9897_00aef0cb00cd"^^xsd:anyURI,
         "https://w3id.org/emmo#hasSIConversionOffset"^^xsd:anyURI .
-
-ns1:hasSIQuantityValue skos:exactMatch "https://w3id.org/emmo#EMMO_42806efc_581b_4ff8_81b0_b4d62153458b"^^xsd:anyURI,
-        "https://w3id.org/emmo#hasSIQuantityValue"^^xsd:anyURI .
 
 ns1:hasSerialTask skos:exactMatch "https://w3id.org/emmo#EMMO_62a76e62_9e17_4f2f_a42c_fc3d0df08cd9"^^xsd:anyURI,
         "https://w3id.org/emmo#hasSerialTask"^^xsd:anyURI .
@@ -5422,17 +4160,11 @@ ns1:hasStage skos:exactMatch "https://w3id.org/emmo#EMMO_f22abf74_4538_4f50_ab85
 ns1:hasStatus skos:exactMatch "https://w3id.org/emmo#EMMO_1440d010_e4c5_4597_8858_1d58cb1fb28f"^^xsd:anyURI,
         "https://w3id.org/emmo#hasStatus"^^xsd:anyURI .
 
-ns1:hasStringValue skos:exactMatch "https://w3id.org/emmo#EMMO_02face50_43a1_40ce_a909_dfe54d5e186b"^^xsd:anyURI,
-        "https://w3id.org/emmo#hasStringValue"^^xsd:anyURI .
-
 ns1:hasSubObject skos:exactMatch "https://w3id.org/emmo#EMMO_7329967c_3972_4c99_b478_84f66436620d"^^xsd:anyURI,
         "https://w3id.org/emmo#hasSubObject"^^xsd:anyURI .
 
 ns1:hasSubProcess skos:exactMatch "https://w3id.org/emmo#EMMO_d43af210_f854_4432_a891_ce3022e3b558"^^xsd:anyURI,
         "https://w3id.org/emmo#hasSubProcess"^^xsd:anyURI .
-
-ns1:hasSymbolValue skos:exactMatch "https://w3id.org/emmo#EMMO_23b579e1_8088_45b5_9975_064014026c42"^^xsd:anyURI,
-        "https://w3id.org/emmo#hasSymbolValue"^^xsd:anyURI .
 
 ns1:hasTask skos:exactMatch "https://w3id.org/emmo#EMMO_70da982d_1810_4b01_9630_a28e216ecd9a"^^xsd:anyURI,
         "https://w3id.org/emmo#hasTask"^^xsd:anyURI .
@@ -5458,6 +4190,9 @@ ns1:hasURLValue skos:exactMatch "https://w3id.org/emmo#EMMO_ac852bf0_3251_4d6b_9
 ns1:hasURNValue skos:exactMatch "https://w3id.org/emmo#EMMO_b7493aee_366c_442d_8f59_49ac7aa664d7"^^xsd:anyURI,
         "https://w3id.org/emmo#hasURNValue"^^xsd:anyURI .
 
+ns1:hasUnintentionalAgent skos:exactMatch "https://w3id.org/emmo#EMMO_e62012fb_1b8c_45c7_b092_2178dcc455ae"^^xsd:anyURI,
+        "https://w3id.org/emmo#hasUnintentionalAgent"^^xsd:anyURI .
+
 ns1:hasUnitNonPrefixPart skos:exactMatch "https://w3id.org/emmo#EMMO_78c79b48_4b76_4cbe_812f_b32dbb04fd44"^^xsd:anyURI,
         "https://w3id.org/emmo#hasUnitNonPrefixPart"^^xsd:anyURI .
 
@@ -5467,11 +4202,12 @@ ns1:hasUnitSymbol skos:exactMatch "https://w3id.org/emmo#EMMO_d4e0a0ab_2f67_4f87
 ns1:hasVariable skos:exactMatch "https://w3id.org/emmo#EMMO_3446e167_c576_49d6_846c_215bb8878a55"^^xsd:anyURI,
         "https://w3id.org/emmo#hasVariable"^^xsd:anyURI .
 
-ns1:illustration skos:exactMatch "https://w3id.org/emmo#EMMO_157fdf31_6387_42be_8e72_10530519214a"^^xsd:anyURI,
-        "https://w3id.org/emmo#illustration"^^xsd:anyURI .
+ns1:illustration skos:exactMatch "https://w3id.org/emmo#illustration"^^xsd:anyURI .
 
-ns1:inchiKey skos:exactMatch "https://w3id.org/emmo#EMMO_2856bbc2_96e1_485b_b5f8_2fdfcb0c9b92"^^xsd:anyURI,
-        "https://w3id.org/emmo#inchiKey"^^xsd:anyURI .
+ns1:impacts skos:exactMatch "https://w3id.org/emmo#EMMO_3d450778_fb55_40ac_b44c_c74699f677b7"^^xsd:anyURI,
+        "https://w3id.org/emmo#impacts"^^xsd:anyURI .
+
+ns1:inchiKey skos:exactMatch "https://w3id.org/emmo#inchiKey"^^xsd:anyURI .
 
 ns1:incomingOverlaps skos:exactMatch "https://w3id.org/emmo#EMMO_64be8885_2c8a_4e84_a4fc_9d2de61b4d0d"^^xsd:anyURI,
         "https://w3id.org/emmo#incomingOverlaps"^^xsd:anyURI .
@@ -5515,6 +4251,9 @@ ns1:isCognisedBy skos:exactMatch "https://w3id.org/emmo#EMMO_7ee1c29c_c453_4ad8_
 ns1:isCogniserFor skos:exactMatch "https://w3id.org/emmo#EMMO_9950720f_a0b4_40f5_92db_071a3e4bbf4b"^^xsd:anyURI,
         "https://w3id.org/emmo#isCogniserFor"^^xsd:anyURI .
 
+ns1:isComputedBy skos:exactMatch "https://w3id.org/emmo#EMMO_289fe77a_34fb_4376_87d5_53adf12d4469"^^xsd:anyURI,
+        "https://w3id.org/emmo#isComputedBy"^^xsd:anyURI .
+
 ns1:isContributedBy skos:exactMatch "https://w3id.org/emmo#EMMO_cd4ca7b9_127d_41ce_81fd_bbb312263aca"^^xsd:anyURI,
         "https://w3id.org/emmo#isContributedBy"^^xsd:anyURI .
 
@@ -5550,6 +4289,9 @@ ns1:isGeneratedBy skos:exactMatch "https://w3id.org/emmo#EMMO_ee518694_9a11_41e5
 
 ns1:isIconFor skos:exactMatch "https://w3id.org/emmo#EMMO_ef2d83f4_1f8a_4c11_aa62_1ea7a0cbd837"^^xsd:anyURI,
         "https://w3id.org/emmo#isIconFor"^^xsd:anyURI .
+
+ns1:isImpactedBy skos:exactMatch "https://w3id.org/emmo#EMMO_573dd48c_50f4_460a_aaa1_ff1512cd2a35"^^xsd:anyURI,
+        "https://w3id.org/emmo#isImpactedBy"^^xsd:anyURI .
 
 ns1:isIncomingOverlappedBy skos:exactMatch "https://w3id.org/emmo#EMMO_1cfd072d_2157_43e2_b9f6_ff1e7a708774"^^xsd:anyURI,
         "https://w3id.org/emmo#isIncomingOverlappedBy"^^xsd:anyURI .
@@ -5638,9 +4380,6 @@ ns1:isProperPartOf skos:exactMatch "https://w3id.org/emmo#EMMO_559ab98c_1c7d_479
 ns1:isPropertyFor skos:exactMatch "https://w3id.org/emmo#EMMO_b3ddad94_ef7e_4b97_8329_9e7c788dd94d"^^xsd:anyURI,
         "https://w3id.org/emmo#isPropertyFor"^^xsd:anyURI .
 
-ns1:isQuantityValueFor skos:exactMatch "https://w3id.org/emmo#EMMO_a97351bc_1b1b_4157_95b7_0a60ac56b8e2"^^xsd:anyURI,
-        "https://w3id.org/emmo#isQuantityValueFor"^^xsd:anyURI .
-
 ns1:isRedundantPartOf skos:exactMatch "https://w3id.org/emmo#EMMO_9c2a9899_df4a_4dc7_a28a_ab4dc498db71"^^xsd:anyURI,
         "https://w3id.org/emmo#isRedundantPartOf"^^xsd:anyURI .
 
@@ -5674,8 +4413,7 @@ ns1:isTemporalPartOf skos:exactMatch "https://w3id.org/emmo#EMMO_f722a7a9_864d_4
 ns1:isThroughOverlappedBy skos:exactMatch "https://w3id.org/emmo#EMMO_d78b940d_4e2a_4a46_816b_da89029adc19"^^xsd:anyURI,
         "https://w3id.org/emmo#isThroughOverlappedBy"^^xsd:anyURI .
 
-ns1:iupacReference skos:exactMatch "https://w3id.org/emmo#EMMO_fe015383_afb3_44a6_ae86_043628697aa2"^^xsd:anyURI,
-        "https://w3id.org/emmo#iupacReference"^^xsd:anyURI .
+ns1:iupacReference skos:exactMatch "https://w3id.org/emmo#iupacReference"^^xsd:anyURI .
 
 ns1:joins skos:exactMatch "https://w3id.org/emmo#EMMO_7d77a013_1a0c_46fe_a6d8_ef6f4abb44fa"^^xsd:anyURI,
         "https://w3id.org/emmo#joins"^^xsd:anyURI .
@@ -5692,20 +4430,26 @@ ns1:manufacturedWith skos:exactMatch "https://w3id.org/emmo#EMMO_b1c64830_45c7_4
 ns1:mathematicalSymbolValue skos:exactMatch "https://w3id.org/emmo#EMMO_436c8a78_f95d_42a0_9854_07ad3736f061"^^xsd:anyURI,
         "https://w3id.org/emmo#mathematicalSymbolValue"^^xsd:anyURI .
 
+ns1:meanQuantityValue skos:exactMatch "https://w3id.org/emmo#EMMO_593ce968_e1ec_4101_822a_1739ef13fb2b"^^xsd:anyURI,
+        "https://w3id.org/emmo#meanQuantityValue"^^xsd:anyURI .
+
 ns1:mereological skos:exactMatch "https://w3id.org/emmo#EMMO_3f2e4ac2_8ef3_4a14_b826_60d37f15f8ee"^^xsd:anyURI,
         "https://w3id.org/emmo#mereological"^^xsd:anyURI .
 
 ns1:metrologicalReference skos:exactMatch "https://w3id.org/emmo#EMMO_58e7c821_4af0_4394_89f7_a9649735f4d2"^^xsd:anyURI,
         "https://w3id.org/emmo#metrologicalReference"^^xsd:anyURI .
 
+ns1:metrologyReference skos:exactMatch "https://w3id.org/emmo#metrologyReference"^^xsd:anyURI .
+
 ns1:notOverlaps skos:exactMatch "https://w3id.org/emmo#EMMO_aa987900_caf1_4ce2_82fa_6b1d6fbd2ead"^^xsd:anyURI,
         "https://w3id.org/emmo#notOverlaps"^^xsd:anyURI .
 
-ns1:note skos:exactMatch "https://w3id.org/emmo#EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f"^^xsd:anyURI,
-        "https://w3id.org/emmo#note"^^xsd:anyURI .
+ns1:note skos:exactMatch "https://w3id.org/emmo#note"^^xsd:anyURI .
 
-ns1:omReference skos:exactMatch "https://w3id.org/emmo#EMMO_209ba1b3_149f_4ff0_b672_941610eafd72"^^xsd:anyURI,
-        "https://w3id.org/emmo#omReference"^^xsd:anyURI .
+ns1:numberValue skos:exactMatch "https://w3id.org/emmo#EMMO_faf79f53_749d_40b2_807c_d34244c192f4"^^xsd:anyURI,
+        "https://w3id.org/emmo#numberValue"^^xsd:anyURI .
+
+ns1:omReference skos:exactMatch "https://w3id.org/emmo#omReference"^^xsd:anyURI .
 
 ns1:outgoingOverlaps skos:exactMatch "https://w3id.org/emmo#EMMO_c5b4c32b_74de_403d_96f2_266bec8bd0e8"^^xsd:anyURI,
         "https://w3id.org/emmo#outgoingOverlaps"^^xsd:anyURI .
@@ -5737,8 +4481,7 @@ ns1:properOverlaps skos:exactMatch "https://w3id.org/emmo#EMMO_b3c8ba10_6bee_45e
 ns1:providesInterpretation skos:exactMatch "https://w3id.org/emmo#EMMO_f2fc1ce9_cc3b_4eb5_a112_3c85d1b1374a"^^xsd:anyURI,
         "https://w3id.org/emmo#providesInterpretation"^^xsd:anyURI .
 
-ns1:qudtReference skos:exactMatch "https://w3id.org/emmo#EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc"^^xsd:anyURI,
-        "https://w3id.org/emmo#qudtReference"^^xsd:anyURI .
+ns1:qudtReference skos:exactMatch "https://w3id.org/emmo#qudtReference"^^xsd:anyURI .
 
 ns1:refersTo skos:exactMatch "https://w3id.org/emmo#EMMO_27e8e2dd_78a5_433a_b522_a1f61a08aab4"^^xsd:anyURI,
         "https://w3id.org/emmo#refersTo"^^xsd:anyURI .
@@ -5755,34 +4498,42 @@ ns1:semioticOvercrosses skos:exactMatch "https://w3id.org/emmo#EMMO_f275e4e9_062
 ns1:semiotical skos:exactMatch "https://w3id.org/emmo#EMMO_2337e25c_3c60_43fc_a8f9_b11a3f974291"^^xsd:anyURI,
         "https://w3id.org/emmo#semiotical"^^xsd:anyURI .
 
+ns1:standardUncertainty skos:exactMatch "https://w3id.org/emmo#EMMO_bba7f0f0_3707_42b9_b3fa_fd04610ef147"^^xsd:anyURI,
+        "https://w3id.org/emmo#standardUncertainty"^^xsd:anyURI .
+
 ns1:standsFor skos:exactMatch "https://w3id.org/emmo#EMMO_82a96de2_41aa_4bf7_b7ac_de1373d50160"^^xsd:anyURI,
         "https://w3id.org/emmo#standsFor"^^xsd:anyURI .
+
+ns1:stringValue skos:exactMatch "https://w3id.org/emmo#EMMO_02face50_43a1_40ce_a909_dfe54d5e186b"^^xsd:anyURI,
+        "https://w3id.org/emmo#stringValue"^^xsd:anyURI .
 
 ns1:successorOf skos:exactMatch "https://w3id.org/emmo#EMMO_451e410e_8e0d_4a4b_9211_d6ef619296dc"^^xsd:anyURI,
         "https://w3id.org/emmo#successorOf"^^xsd:anyURI .
 
+ns1:symbolValue skos:exactMatch "https://w3id.org/emmo#EMMO_23b579e1_8088_45b5_9975_064014026c42"^^xsd:anyURI,
+        "https://w3id.org/emmo#symbolValue"^^xsd:anyURI .
+
 ns1:throughOverlaps skos:exactMatch "https://w3id.org/emmo#EMMO_29e45c39_cc99_43f8_a545_f329f622f551"^^xsd:anyURI,
         "https://w3id.org/emmo#throughOverlaps"^^xsd:anyURI .
 
-ns1:ucumCode skos:exactMatch "https://w3id.org/emmo#EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652"^^xsd:anyURI,
-        "https://w3id.org/emmo#ucumCode"^^xsd:anyURI .
+ns1:ucumCode skos:exactMatch "https://w3id.org/emmo#ucumCode"^^xsd:anyURI .
+
+ns1:uncertainty skos:exactMatch "https://w3id.org/emmo#EMMO_39cbed73_6e97_4ab2_bede_dc670e9469c9"^^xsd:anyURI,
+        "https://w3id.org/emmo#uncertainty"^^xsd:anyURI .
 
 ns1:uneceCommonCode skos:exactMatch "https://w3id.org/emmo#EMMO_0b1cbe60_d380_4787_b92e_be26bdacf2c2"^^xsd:anyURI,
         "https://w3id.org/emmo#uneceCommonCode"^^xsd:anyURI .
 
-ns1:unitSymbol skos:exactMatch "https://w3id.org/emmo#EMMO_7f1dec83_d85e_4e1b_b7bd_c9442d4f5a64"^^xsd:anyURI,
-        "https://w3id.org/emmo#unitSymbol"^^xsd:anyURI .
+ns1:unitSymbol skos:exactMatch "https://w3id.org/emmo#unitSymbol"^^xsd:anyURI .
 
 ns1:unitSymbolValue skos:exactMatch "https://w3id.org/emmo#EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8"^^xsd:anyURI,
         "https://w3id.org/emmo#unitSymbolValue"^^xsd:anyURI .
 
 ns1:universe skos:exactMatch "https://w3id.org/emmo#EMMO_08cb807c_e626_447b_863f_e2835540e918"^^xsd:anyURI .
 
-ns1:wikidataReference skos:exactMatch "https://w3id.org/emmo#EMMO_26bf1bef_d192_4da6_b0eb_d2209698fb54"^^xsd:anyURI,
-        "https://w3id.org/emmo#wikidataReference"^^xsd:anyURI .
+ns1:wikidataReference skos:exactMatch "https://w3id.org/emmo#wikidataReference"^^xsd:anyURI .
 
-ns1:wikipediaReference skos:exactMatch "https://w3id.org/emmo#EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d"^^xsd:anyURI,
-        "https://w3id.org/emmo#wikipediaReference"^^xsd:anyURI .
+ns1:wikipediaReference skos:exactMatch "https://w3id.org/emmo#wikipediaReference"^^xsd:anyURI .
 
 : a owl:Ontology ;
     dcterms:abstract """Elementary Multiperspective Material Ontology (EMMO)

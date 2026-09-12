@@ -10,12 +10,13 @@
 owl:qualifiedCardinality a owl:AnnotationProperty .
 
 ns1:Atom a owl:Class ;
+    rdfs:label "Atom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:hasSpatialPart ;
-            owl:someValuesFrom ns1:Nucleus ],
+            owl:someValuesFrom ns1:Electron ],
         [ a owl:Restriction ;
             owl:onProperty ns1:hasSpatialPart ;
-            owl:someValuesFrom ns1:Electron ],
+            owl:someValuesFrom ns1:Nucleus ],
         ns1:MolecularEntity ;
     skos:altLabel "ChemicalElement"@en ;
     skos:prefLabel "Atom"@en ;
@@ -33,7 +34,6 @@ ns1:ElementaryParticle rdfs:subClassOf ns1:PhysicalParticleByBond ;
 
 ns1:Heteronuclear a owl:Class ;
     rdfs:label "Heteronuclear"@en ;
-    rdfs:comment "A molecule composed of more than one element type."@en ;
     rdfs:subClassOf ns1:Molecule ;
     owl:disjointWith ns1:Homonuclear ;
     skos:example "Nitric oxide (NO) or carbon dioxide (CO₂)."@en ;
@@ -42,7 +42,6 @@ ns1:Heteronuclear a owl:Class ;
 
 ns1:Hyperon a owl:Class ;
     rdfs:label "Hyperon"@en ;
-    rdfs:comment "A baryon containing one or more strange quarks, but no charm, bottom, or top quark."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom ns1:ElementaryQuark ;
             owl:onProperty ns1:hasProperPart ],
@@ -54,7 +53,6 @@ ns1:Hyperon a owl:Class ;
 
 ns1:Proton a owl:Class ;
     rdfs:label "Proton"@en ;
-    rdfs:comment "A positive charged subatomic particle found in the atomic nucleus."@en ;
     rdfs:subClassOf ns1:Nucleon ;
     owl:disjointWith ns1:Neutron ;
     skos:prefLabel "Proton"@en ;
@@ -63,7 +61,6 @@ ns1:Proton a owl:Class ;
 
 ns1:PseudoscalarMeson a owl:Class ;
     rdfs:label "PseudoscalarMeson"@en ;
-    rdfs:comment "A meson with spin zero and odd parity."@en ;
     rdfs:subClassOf ns1:Meson ;
     skos:prefLabel "PseudoscalarMeson"@en ;
     ns1:elucidation "A meson with spin zero and odd parity."@en ;
@@ -71,7 +68,6 @@ ns1:PseudoscalarMeson a owl:Class ;
 
 ns1:PseudovectorMeson a owl:Class ;
     rdfs:label "PseudovectorMeson"@en ;
-    rdfs:comment "A meson with total spin 1 and even parity."@en ;
     rdfs:subClassOf ns1:Meson ;
     skos:prefLabel "PseudovectorMeson"@en ;
     ns1:elucidation "A meson with total spin 1 and even parity."@en ;
@@ -79,7 +75,6 @@ ns1:PseudovectorMeson a owl:Class ;
 
 ns1:ScalarMeson a owl:Class ;
     rdfs:label "ScalarMeson"@en ;
-    rdfs:comment "A meson with spin zero and even parity."@en ;
     rdfs:subClassOf ns1:Meson ;
     skos:prefLabel "ScalarMeson"@en ;
     ns1:elucidation "A meson with spin zero and even parity."@en ;
@@ -96,14 +91,12 @@ ns1:Substance a owl:Class ;
 
 ns1:TensorMeson a owl:Class ;
     rdfs:label "TensorMeson"@en ;
-    rdfs:comment "A meson with spin two."@en ;
     rdfs:subClassOf ns1:Meson ;
     skos:prefLabel "TensorMeson"@en ;
     ns1:elucidation "A meson with spin two."@en .
 
 ns1:VectorMeson a owl:Class ;
     rdfs:label "VectorMeson"@en ;
-    rdfs:comment "A meson with total spin 1 and odd parity."@en ;
     rdfs:subClassOf ns1:Meson ;
     skos:prefLabel "VectorMeson"@en ;
     ns1:elucidation "A meson with total spin 1 and odd parity."@en ;
@@ -128,7 +121,6 @@ ns1:VectorMeson a owl:Class ;
 
 ns1:AntiMatter a owl:Class ;
     rdfs:label "AntiMatter"@en ;
-    rdfs:comment "Antimatter is matter that is composed only of the antiparticles of those that constitute ordinary matter."@en ;
     rdfs:subClassOf ns1:MatterByType ;
     skos:prefLabel "AntiMatter"@en ;
     ns1:elucidation "Antimatter is matter that is composed only of the antiparticles of those that constitute ordinary matter."@en ;
@@ -136,7 +128,6 @@ ns1:AntiMatter a owl:Class ;
 
 ns1:CompositeBoson a owl:Class ;
     rdfs:label "CompositeBoson"@en ;
-    rdfs:comment "A non-elementary particle (bonded) of a fundamental bosonic type (integer spin)."@en ;
     owl:disjointWith ns1:CompositeFermion,
         ns1:ElementaryBoson ;
     owl:equivalentClass [ a owl:Class ;
@@ -161,7 +152,6 @@ ns1:ElementaryFermion rdfs:subClassOf ns1:Fermion .
 
 ns1:Homonuclear a owl:Class ;
     rdfs:label "Homonuclear"@en ;
-    rdfs:comment "A molecule composed of only one element type."@en ;
     rdfs:subClassOf ns1:Molecule ;
     skos:altLabel "ElementalMolecule"@en ;
     skos:example "Hydrogen molecule (H₂)."@en ;
@@ -170,21 +160,19 @@ ns1:Homonuclear a owl:Class ;
 
 ns1:Neutron a owl:Class ;
     rdfs:label "Neutron"@en ;
-    rdfs:comment "An uncharged subatomic particle found in the atomic nucleus."@en ;
     rdfs:subClassOf ns1:Nucleon ;
     skos:prefLabel "Neutron"@en ;
     ns1:elucidation "An uncharged subatomic particle found in the atomic nucleus."@en ;
     ns1:wikipediaReference "https://en.wikipedia.org/wiki/Neutron"^^xsd:string .
 
 ns1:OrdinaryMatter a owl:Class ;
+    rdfs:label "OrdinaryMatter"@en ;
     rdfs:subClassOf ns1:MatterByType ;
     skos:prefLabel "OrdinaryMatter"@en ;
     ns1:elucidation "Matter composed of only matter particles, excluding anti-matter particles."@en .
 
 ns1:PhysicalPhenomenon a owl:Class ;
     rdfs:label "PhysicalPhenomenon"@en ;
-    rdfs:comment "A physical phenomenon is intended as a physical process that starts or ends with an unbonded state, or that includes incoming or aoutgoing particles."@en,
-        "The class of individuals standing for causally non-convex interacting systems."@en ;
     rdfs:seeAlso ns1:PhysicalObject ;
     rdfs:subClassOf ns1:InteractingSystem ;
     skos:example "A molecule, including a photon emitted (or captured) as result of a de-excitation (or excitation) process."@en,
@@ -195,7 +183,6 @@ ns1:PhysicalPhenomenon a owl:Class ;
 
 ns1:Baryon a owl:Class ;
     rdfs:label "Baryon"@en ;
-    rdfs:comment "Subatomic particle which contains an odd number of valence quarks, at least 3."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:hasProperPart ;
             owl:someValuesFrom ns1:ElementaryQuark ],
@@ -214,7 +201,6 @@ D. Griffiths, "Introduction to elementary Particles", Wiley-VCH, 2004, pp.16-17"
 
 ns1:CompositeFermion a owl:Class ;
     rdfs:label "CompositeFermion"@en ;
-    rdfs:comment "A non-elementary particle (bonded) of a fundamental fermionic type (half-integer spin)."@en ;
     owl:disjointWith ns1:ElementaryFermion ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( ns1:Fermion ns1:BondedParticle ) ] ;
@@ -233,7 +219,6 @@ ns1:Fermion a owl:Class ;
 
 ns1:Hadron a owl:Class ;
     rdfs:label "Hadron"@en ;
-    rdfs:comment "Particles composed of two or more quarks."@en ;
     rdfs:subClassOf ns1:ParticulateMatter ;
     skos:prefLabel "Hadron"@en ;
     ns1:OWLRL2DLAxioms "EquivalentTo: Baryon or Meson"^^xsd:string ;
@@ -242,7 +227,6 @@ ns1:Hadron a owl:Class ;
 
 ns1:HybridMatter a owl:Class ;
     rdfs:label "HybridMatter"@en ;
-    rdfs:comment "Matter composed of both matter and antimatter fundamental particles."@en ;
     rdfs:subClassOf ns1:MatterByType ;
     skos:prefLabel "HybridMatter"@en ;
     ns1:elucidation "Matter composed of both matter and antimatter fundamental particles."@en .
@@ -268,7 +252,6 @@ Note that the name of a compound may refer to the respective molecular entity or
 
 ns1:Molecule a owl:Class ;
     rdfs:label "Molecule"@en ;
-    rdfs:comment "An atom-based state defined by an exact number of e-bonded atomic species and an electron cloud made of the shared electrons."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:hasSpatialPart ;
             owl:someValuesFrom ns1:Nucleus ],
@@ -289,7 +272,6 @@ e.g. you cannot remove H from H₂0 without changing the molecule type (essentia
 
 ns1:Nucleus a owl:Class ;
     rdfs:label "Nucleus"@en ;
-    rdfs:comment "The small, dense region at the centre of an atom consisting of protons and neutrons."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:hasPart ;
             owl:someValuesFrom ns1:Nucleon ],
@@ -315,6 +297,7 @@ ns1:PhysicalParticleBySpin a owl:Class ;
     ns1:elucidation "Categorisation of physical particles by whether they have integer or half-odd-integer spin."@en .
 
 ns1:MatterByType a owl:Class ;
+    rdfs:label "MatterByType"@en ;
     rdfs:subClassOf ns1:Matter ;
     skos:prefLabel "MatterByType"@en ;
     ns1:OWLRL2DLAxioms "DisjointUnionOf: AntiMatter, HybridMatter, OrdinaryMatter"^^xsd:string ;
@@ -322,7 +305,6 @@ ns1:MatterByType a owl:Class ;
 
 ns1:Nucleon a owl:Class ;
     rdfs:label "Nucleon"@en ;
-    rdfs:comment "Either a proton or a neutron."@en ;
     rdfs:subClassOf ns1:Baryon ;
     skos:prefLabel "Nucleon"@en ;
     ns1:OWLRL2DLAxioms "DisjointUnionOf: Proton, Neutron"^^xsd:string ;
@@ -383,7 +365,6 @@ ns1:BondedParticle a owl:Class ;
 
 ns1:Meson a owl:Class ;
     rdfs:label "Meson"@en ;
-    rdfs:comment "Hadronic subatomic particles composed of an equal number of quarks and antiquarks bound together by strong interactions."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:hasProperPart ;
             owl:someValuesFrom ns1:ElementaryQuark ],
@@ -396,13 +377,13 @@ ns1:Meson a owl:Class ;
     ns1:note "Most mesons are composed of one quark and one antiquark."@en ;
     ns1:wikipediaReference "https://en.wikipedia.org/wiki/Meson"^^xsd:string .
 
-[] owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger .
-
 [] a owl:Axiom ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource ns1:PhysicalParticle ;
-    owl:annotatedTarget "Particle"@en ;
-    ns1:etymology "From Latin particula (“small part, particle”), diminutive of pars (“part, piece”)."@en .
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:PhysicalObject ;
+    owl:annotatedTarget "PhysicalObject"@en ;
+    ns1:etymology "From Latin physica \"study of nature\" (and Ancient Greek φυσικός, “natural”), and Medieval Latin obiectum (“object”, literally “thrown against”)."@en .
+
+[] owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger .
 
 [] owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger .
 
@@ -412,7 +393,8 @@ ns1:Meson a owl:Class ;
     owl:annotatedTarget "Boson"@en ;
     ns1:etymology "1940s: named after S.N. Bose."@en .
 
-[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+[] a owl:AllDisjointClasses ;
+    owl:members ( ns1:HybridMatter ns1:OrdinaryMatter ns1:AntiMatter ) .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
@@ -420,14 +402,13 @@ ns1:Meson a owl:Class ;
     owl:annotatedTarget "Matter"@en ;
     ns1:etymology "From Latin materia (“matter, stuff, material”), from mater (“mother”)."@en .
 
-[] a owl:AllDisjointClasses ;
-    owl:members ( ns1:HybridMatter ns1:OrdinaryMatter ns1:AntiMatter ) .
-
 [] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:PhysicalObject ;
-    owl:annotatedTarget "PhysicalObject"@en ;
-    ns1:etymology "From Latin physica \"study of nature\" (and Ancient Greek φυσικός, “natural”), and Medieval Latin obiectum (“object”, literally “thrown against”)."@en .
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource ns1:PhysicalParticle ;
+    owl:annotatedTarget "Particle"@en ;
+    ns1:etymology "From Latin particula (“small part, particle”), diminutive of pars (“part, piece”)."@en .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
 
 [] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
 

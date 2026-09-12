@@ -13,7 +13,7 @@ dcterms:bibliographicCitation a owl:AnnotationProperty .
 
 dcterms:created a owl:AnnotationProperty .
 
-dcterms:hasFormat a owl:ObjectProperty .
+dcterms:hasFormat a owl:AnnotationProperty .
 
 dcterms:issued a owl:AnnotationProperty .
 
@@ -23,7 +23,7 @@ dcterms:source a owl:AnnotationProperty .
 
 bibo:doi a owl:AnnotationProperty .
 
-bibo:status a owl:ObjectProperty .
+bibo:status a owl:AnnotationProperty .
 
 vann:preferredNamespacePrefix a owl:AnnotationProperty .
 
@@ -76,5 +76,5 @@ EMMO is released under a Creative Commons license Attribution 4.0 International 
     foaf:homepage <https://github.com/emmo-repo/EMMO> ;
     foaf:logo "https://github.com/emmo-repo/EMMO/raw/master/doc/emmo-logo.png"^^xsd:string ;
     foaf:mbox <mailto:emmo@emmc.eu> ;
-    emmo:EMMO_1246b120_abbe_4840_b0f8_3e4348b24a17 "emmo@emmc.eu"^^xsd:string .
+    emmo:contact "emmo@emmc.eu"^^xsd:string .
 

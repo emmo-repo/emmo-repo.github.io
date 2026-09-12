@@ -19,5 +19,5 @@
         <https://w3id.org/emmo/1.0.4/reference/workflow> ;
     owl:versionIRI <https://w3id.org/emmo/1.0.4/reference> ;
     owl:versionInfo "1.0.4"^^xsd:string ;
-    emmo:EMMO_1246b120_abbe_4840_b0f8_3e4348b24a17 "emmo@emmc.eu"^^xsd:string .
+    emmo:contact "emmo@emmc.eu"^^xsd:string .
 

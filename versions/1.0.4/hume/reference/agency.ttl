@@ -9,7 +9,6 @@
 
 ns1:ArtificialAgency a owl:Class ;
     rdfs:label "ArtificialAgency"@en ;
-    rdfs:comment "An intentional agency exercised by artificial systems that have internal states that enables adaptive regulation of the agent’s coupling with the environment and metabolic self-maintenance."^^xsd:string ;
     rdfs:isDefinedBy <https://plato.stanford.edu/entries/agency/#OthKinAgeMenShaColRelArt> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:hasAgent ;
@@ -20,7 +19,6 @@ ns1:ArtificialAgency a owl:Class ;
 
 ns1:CollectiveAgency a owl:Class ;
     rdfs:label "CollectiveAgency"@en ;
-    rdfs:comment "Collective agency occurs when two or more individuals act as a group, in accordance with certain principles or procedures that constitute and organize the group."@en ;
     rdfs:isDefinedBy <https://plato.stanford.edu/entries/agency/#OthKinAgeMenShaColRelArt> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:hasAgent ;
@@ -30,9 +28,10 @@ ns1:CollectiveAgency a owl:Class ;
     ns1:elucidation "Collective agency occurs when two or more individuals act as a group, in accordance with certain principles or procedures that constitute and organize the group."@en ;
     ns1:note "The group acting collectively is intended to be represented as an item, meaning that all members of the group should have had at least one causal interaction with another member. The collective action in fact is taken in accordance with certain principles or procedures that constitute and organize the group itself that requires implicitly a causal interaction between members."@en .
 
+ns1:Holistic rdfs:label "Holistic"@en .
+
 ns1:MentalAgency a owl:Class ;
     rdfs:label "MentalAgency"@en ;
-    rdfs:comment "An intentional agency caused by the agent’s mental states and events."@en ;
     rdfs:isDefinedBy <https://plato.stanford.edu/entries/agency/#OthKinAgeMenShaColRelArt> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:hasAgent ;
@@ -44,14 +43,22 @@ ns1:MentalAgency a owl:Class ;
 
 ns1:NonAgent a owl:Class ;
     rdfs:label "NonAgent"@en ;
-    rdfs:comment "A participant that does not have an active role in driving the process."@en ;
     rdfs:subClassOf ns1:ParticipantByAgency ;
     skos:prefLabel "NonAgent"@en ;
     ns1:elucidation "A participant that does not have an active role in driving the process."@en .
 
+ns1:Object rdfs:label "Object"@en .
+
+ns1:ObjectByContext rdfs:label "ObjectByContext"@en .
+
+ns1:Persistence rdfs:label "Persistence"@en .
+
+ns1:QualifiedRole rdfs:label "QualifiedRole"@en .
+
+ns1:QualifiedWhole rdfs:label "QualifiedWhole"@en .
+
 ns1:SharedAgency a owl:Class ;
     rdfs:label "SharedAgency"@en ;
-    rdfs:comment "Shared agency occurs when two or more individuals do something together."@en ;
     rdfs:isDefinedBy <https://plato.stanford.edu/entries/agency/#OthKinAgeMenShaColRelArt> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:hasAgent ;
@@ -62,7 +69,6 @@ ns1:SharedAgency a owl:Class ;
 
 ns1:SpontaneousProcess a owl:Class ;
     rdfs:label "SpontaneousProcess"@en ;
-    rdfs:comment "A process that has no identifiable agent driving its occurence."@en ;
     rdfs:subClassOf ns1:ProcessByAgency ;
     skos:altLabel "NaturalProcess"@en ;
     skos:prefLabel "SpontaneousProcess"@en ;
@@ -70,13 +76,35 @@ ns1:SpontaneousProcess a owl:Class ;
 
 ns1:UnintentionalAgency a owl:Class ;
     rdfs:label "UnintentionalAgency"@en ;
-    rdfs:comment "A process that does not have an active participation of an intentional agent driving it."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:hasAgent ;
             owl:someValuesFrom ns1:UnintentionalAgent ],
         ns1:Agency ;
     skos:prefLabel "UnintentionalAgency"@en ;
     ns1:elucidation "A process that does not have an active participation of an intentional agent driving it."@en .
+
+ns1:hasIntentionalAgent a owl:ObjectProperty ;
+    rdfs:label "hasIntentionalAgent"@en ;
+    ns2:python_name "hasIntentionalAgent"@en ;
+    rdfs:domain ns1:IntentionalAgency ;
+    rdfs:range ns1:IntentionalAgent ;
+    rdfs:subPropertyOf ns1:hasAgent ;
+    skos:altLabel "performedBy"@en ;
+    skos:example """For a haircutting process, you could say
+
+    haircutting performedBy hairdresser"""@en ;
+    skos:prefLabel "hasIntentionalAgent"@en ;
+    ns1:elucidation "Relates an agency to an intentional agent driving the process."@en .
+
+ns1:hasUnintentionalAgent a owl:ObjectProperty ;
+    rdfs:label "hasUnintentionalAgent"@en ;
+    ns2:python_name "hasUnintentionalAgent"@en ;
+    rdfs:range ns1:UnintentionalAgent ;
+    rdfs:subPropertyOf ns1:hasAgent ;
+    skos:altLabel "performedWith"@en ;
+    skos:prefLabel "hasUnintentionalAgent"@en ;
+    ns1:elucidation "Relates an agency to an unintentional agent participant."@en ;
+    ns1:note "Note the domain is not UnintentionalAgency, since there exists an intentional agent that drives the process."@en .
 
 : a owl:Ontology ;
     dcterms:abstract """This EMMO module deals with the representation of 'agency', meaning the manifestation of the capacity of an entity to act, the so called 'agent'. Moreover, based on philosophical motivations, the module provide a distinction between intentional and unintentional acts.
@@ -97,7 +125,6 @@ The represeantion is part of the EMMO framework and makes use of mereocausality 
 
 ns1:ArtificialIntelligence a owl:Class ;
     rdfs:label "ArtificialIntelligence"@en ;
-    rdfs:comment "An agent that is a machine-learning or symbolic reasoning system (not biological-based)."@en ;
     rdfs:isDefinedBy <https://plato.stanford.edu/entries/agency/#OthKinAgeMenShaColRelArt> ;
     rdfs:subClassOf ns1:IntentionalAgentByKind ;
     skos:altLabel "ArtificialAgent"@en ;
@@ -106,7 +133,6 @@ ns1:ArtificialIntelligence a owl:Class ;
 
 ns1:CollectiveAgent a owl:Class ;
     rdfs:label "CollectiveAgent"@en ;
-    rdfs:comment "An intentional agent that takes part in driving a process as part of a group."@en ;
     rdfs:isDefinedBy <https://plato.stanford.edu/entries/agency/#OthKinAgeMenShaColRelArt> ;
     rdfs:subClassOf ns1:IntentionalAgentByKind ;
     skos:example "A catalyst that together with another catalyst drives a chemical process that needs both catalysts to occur."@en ;
@@ -115,16 +141,18 @@ ns1:CollectiveAgent a owl:Class ;
 
 ns1:MentalAgent a owl:Class ;
     rdfs:label "MentalAgent"@en ;
-    rdfs:comment "A biological agent possessing an intentional mental state."@en ;
     rdfs:isDefinedBy <https://plato.stanford.edu/entries/agency/#OthKinAgeMenShaColRelArt> ;
     rdfs:subClassOf ns1:IntentionalAgentByKind ;
     skos:prefLabel "MentalAgent"@en ;
     ns1:elucidation "A biological agent possessing an intentional mental state."@en ;
     ns1:note "A mental agent is typically attributed to a human but not nessesary."@en .
 
+ns1:Participant rdfs:label "Participant"@en .
+
+ns1:Role rdfs:label "Role"@en .
+
 ns1:SharedAgent a owl:Class ;
     rdfs:label "SharedAgent"@en ;
-    rdfs:comment "An intentional agent that takes part in driving a process without being a group."@en ;
     rdfs:isDefinedBy <https://plato.stanford.edu/entries/agency/#OthKinAgeMenShaColRelArt> ;
     rdfs:subClassOf ns1:IntentionalAgentByKind ;
     skos:example """Singing a song together with others.
@@ -132,36 +160,32 @@ Carrying a piece of furniture together with others."""@en ;
     skos:prefLabel "SharedAgent"@en ;
     ns1:elucidation "An intentional agent that takes part in driving a process without being a group."@en .
 
-ns1:UnintentionalAgent a owl:Class ;
-    rdfs:label "UnintentionalAgent"@en ;
-    rdfs:comment "An agent that is driven by the law of physics rather than the intention to reach a defined objective."@en ;
-    rdfs:subClassOf ns1:Agent ;
-    skos:example "A catalyst."@en ;
-    skos:prefLabel "UnintentionalAgent"@en ;
-    ns1:elucidation "An agent that is driven by the law of physics rather than the intention to reach a defined objective."@en .
-
-ns1:IntentionalAgent a owl:Class ;
-    rdfs:seeAlso <https://plato.stanford.edu/entries/agency> ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty [ owl:inverseOf ns1:hasAgent ] ;
-            owl:someValuesFrom ns1:IntentionalAgency ],
-        ns1:Agent ;
-    skos:prefLabel "IntentionalAgent"@en ;
-    ns1:elucidation "An agent that is driven by the intention to reach a defined objective in driving a process."@en ;
-    ns1:note "Intentionality is not limited to human agents, but in general to all agents that have the capacity to decide to act in driving a process according to a motivation."@en .
+ns1:Whole rdfs:label "Whole"@en .
 
 ns1:ParticipantByAgency a owl:Class ;
+    rdfs:label "ParticipantByAgency"@en ;
     rdfs:subClassOf ns1:Participant ;
     skos:prefLabel "ParticipantByAgency"@en ;
     ns1:OWLRL2DLAxioms "EquivalentTo: Agent or NonAgent"^^xsd:string ;
     ns1:elucidation "Categorisation of participant in terms of being an agent or not an agent."@en .
 
+ns1:Process rdfs:label "Process"@en .
+
 ns1:ProcessByAgency a owl:Class ;
+    rdfs:label "ProcessByAgency"@en ;
     rdfs:subClassOf ns1:Process ;
     skos:prefLabel "ProcessByAgency"@en ;
     ns1:elucidation "Categorisation of processes by whether they are driven by an agent or not."@en .
 
+ns1:UnintentionalAgent a owl:Class ;
+    rdfs:label "UnintentionalAgent"@en ;
+    rdfs:subClassOf ns1:Agent ;
+    skos:example "A catalyst."@en ;
+    skos:prefLabel "UnintentionalAgent"@en ;
+    ns1:elucidation "An agent that is driven by the law of physics rather than the intention to reach a defined objective."@en .
+
 ns1:Agency a owl:Class ;
+    rdfs:label "Agency"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:hasAgent ;
             owl:someValuesFrom ns1:Agent ],
@@ -171,33 +195,31 @@ ns1:Agency a owl:Class ;
     skos:prefLabel "Agency"@en ;
     ns1:elucidation "A process that occurs because of the exercise of the capacity to act of an agent."@en .
 
-ns1:IntentionalAgency a owl:Class ;
+ns1:IntentionalAgent a owl:Class ;
+    rdfs:label "IntentionalAgent"@en ;
+    rdfs:seeAlso <https://plato.stanford.edu/entries/agency> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty ns1:hasAgent ;
-            owl:someValuesFrom ns1:IntentionalAgent ],
-        ns1:Agency ;
-    skos:altLabel "IntentionalProcess"@en ;
-    skos:prefLabel "IntentionalAgency"@en ;
-    ns1:OWLRL2DLAxioms "SubClassOf: hasAgent some IntentionalAgent"^^xsd:string ;
-    ns1:elucidation "A process occurring with the active participation of an intentional agent that drives the process according to a specific objective (intention)."@en ;
-    ns1:note """The concept is not restricted to agencies where the agent accomplish its intention. For example, breaking a vase while reaching for a book is an intentional agency, because the action causing the vase to fall and break follows a volition (i.e., an act of willing).
-Intentional agency may be further categorised acccording to the fact that the some of the resulting processes may or may not be coherent with the volition."""@en .
+            owl:onProperty [ owl:inverseOf ns1:hasAgent ] ;
+            owl:someValuesFrom ns1:IntentionalAgency ],
+        ns1:Agent ;
+    skos:prefLabel "IntentionalAgent"@en ;
+    ns1:elucidation "An agent that is driven by the intention to reach a defined objective in driving a process."@en ;
+    ns1:note "Intentionality is not limited to human agents, but in general to all agents that have the capacity to decide to act in driving a process according to a motivation."@en .
 
 ns1:IntentionalAgencyByKind a owl:Class ;
     rdfs:label "IntentionalAgencyByKind"@en ;
-    rdfs:comment "Categorisation of intentional agencies by their kind."@en ;
     rdfs:subClassOf ns1:IntentionalAgency ;
     skos:prefLabel "IntentionalAgencyByKind"@en ;
     ns1:elucidation "Categorisation of intentional agencies by their kind."@en .
 
 ns1:IntentionalAgentByKind a owl:Class ;
     rdfs:label "IntentionalAgentByKind"@en ;
-    rdfs:comment "Categorisation of intentional agents by their kind."@en ;
     rdfs:subClassOf ns1:IntentionalAgent ;
     skos:prefLabel "IntentionalAgentByKind"@en ;
     ns1:elucidation "Categorisation of intentional agents by their kind."@en .
 
 ns1:Agent a owl:Class ;
+    rdfs:label "Agent"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf ns1:hasAgent ] ;
             owl:someValuesFrom ns1:Process ],
@@ -213,22 +235,28 @@ This concept covers both intentional and non intentional agency."""@en ;
     ns1:elucidation "A participant that is the driver of a process."@en ;
     ns1:note "An agent is not necessarily human. In fact, the concept of agent has been generalised to encompass both intentional and unintentional acts primarily to take into account usage of the term in chemistry (e.g., chemical agent that intiitate a reaction), inline also with the most recent development in the philosophical debate."@en .
 
+ns1:IntentionalAgency a owl:Class ;
+    rdfs:label "IntentionalAgency"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:hasAgent ;
+            owl:someValuesFrom ns1:IntentionalAgent ],
+        ns1:Agency ;
+    skos:altLabel "IntentionalProcess"@en ;
+    skos:prefLabel "IntentionalAgency"@en ;
+    ns1:OWLRL2DLAxioms "SubClassOf: hasAgent some IntentionalAgent"^^xsd:string ;
+    ns1:elucidation "A process occurring with the active participation of an intentional agent that drives the process according to a specific objective (intention)."@en ;
+    ns1:note """The concept is not restricted to agencies where the agent accomplish its intention. For example, breaking a vase while reaching for a book is an intentional agency, because the action causing the vase to fall and break follows a volition (i.e., an act of willing).
+Intentional agency may be further categorised acccording to the fact that the some of the resulting processes may or may not be coherent with the volition."""@en .
+
 ns1:hasAgent a owl:ObjectProperty ;
     rdfs:label "hasAgent"@en ;
     ns2:python_name "hasAgent"@en ;
-    rdfs:comment "The relation within a process and an agengt participant."@en ;
     rdfs:domain ns1:Agency ;
     rdfs:range ns1:Agent ;
     rdfs:subPropertyOf ns1:hasParticipant,
         ns1:hasRole ;
     skos:prefLabel "hasAgent"@en ;
-    ns1:elucidation "The relation within a process and an agengt participant."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource ns1:IntentionalAgency ;
-    owl:annotatedTarget "IntentionalProcess"@en ;
-    ns1:etymology "From Latin intentionem, derived from intendere (\"stretching out\")"@en .
+    ns1:elucidation "The relation within a process and an agent participant."@en .
 
 [] a owl:Axiom ;
     rdfs:seeAlso <https://plato.stanford.edu/entries/agency> ;
@@ -244,4 +272,10 @@ This concept covers both intentional and non intentional agency."""@en .
     owl:annotatedSource ns1:IntentionalAgency ;
     owl:annotatedTarget "IntentionalAgency"@en ;
     ns1:etymology "From Latin agēns (present participle of agere (“to act”))"@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource ns1:IntentionalAgency ;
+    owl:annotatedTarget "IntentionalProcess"@en ;
+    ns1:etymology "From Latin intentionem, derived from intendere (\"stretching out\")"@en .
 

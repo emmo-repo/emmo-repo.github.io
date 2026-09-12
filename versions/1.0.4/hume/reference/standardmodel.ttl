@@ -7,12 +7,12 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ns1:Boson rdfs:label "Boson"@en ;
-    rdfs:comment "A physical particle with integer spin that follows Bose–Einstein statistics."@en .
+ns1:Boson rdfs:label "Boson"@en .
+
+ns1:CausalParticle rdfs:label "CausalParticle"@en .
 
 ns1:Electron a owl:Class ;
     rdfs:label "Electron"@en ;
-    rdfs:comment "An elementary charged fermionic particle that belongs to the first generation of the lepton particle family."@en ;
     rdfs:subClassOf ns1:ElementaryFermion ;
     skos:altLabel "ElementaryElectron"@en ;
     skos:prefLabel "Electron"@en ;
@@ -20,20 +20,17 @@ ns1:Electron a owl:Class ;
 
 ns1:ElementaryPhoton a owl:Class ;
     rdfs:label "ElementaryPhoton"@en ;
-    rdfs:comment "A boson with spin of 1 that carries electromagnetism."@en ;
     rdfs:subClassOf ns1:ElementaryBoson ;
     skos:prefLabel "ElementaryPhoton"@en ;
     ns1:elucidation "A boson with spin of 1 that carries electromagnetism."@en .
 
 ns1:ElementaryQuark a owl:Class ;
     rdfs:label "ElementaryQuark"@en ;
-    rdfs:comment "An elementary fermionic particle that is the fundamental constituent of matter."@en ;
     rdfs:subClassOf ns1:ElementaryFermion ;
     skos:prefLabel "ElementaryQuark"@en ;
     ns1:elucidation "An elementary fermionic particle that is the fundamental constituent of matter."@en .
 
-ns1:Fermion rdfs:label "Fermion"@en ;
-    rdfs:comment "A physical particle with half odd integer spin (1/2, 3/2, etc...) that follows Fermi-Dirac statistics."@en .
+ns1:Fermion rdfs:label "Fermion"@en .
 
 ns1:InteractingSystem a owl:Class ;
     rdfs:subClassOf ns1:GenericPhysicalSystem ;
@@ -43,9 +40,6 @@ ns1:InteractingSystem a owl:Class ;
 
 ns1:MultiParticlePath a owl:Class ;
     rdfs:label "MultiParticlePath"@en ;
-    rdfs:comment "A chausal path whose quantum parts belongs to at least two different standard model fundamental types."@en,
-        """An multi-particle path is a causal path of quantum entities of different type, following the causal connection between an initial quantum up to the final one, regardless on the fact that causality is passing through elementary particles of different types.
-For example, a path starting from an elementary  photon, then through the electron with which it scatter, and then trough a positron with which the electron collides."""@en ;
     rdfs:subClassOf ns1:CausalPath ;
     owl:disjointWith ns1:ElementaryParticle ;
     skos:prefLabel "MultiParticlePath"@en ;
@@ -53,8 +47,7 @@ For example, a path starting from an elementary  photon, then through the electr
 For example, a path starting from an elementary  photon, then through the electron with which it scatter, and then trough a positron with which the electron collides."""@en ;
     ns1:elucidation "A chausal path whose quantum parts belongs to at least two different standard model fundamental types."@en .
 
-ns1:PhysicalParticleBySpin rdfs:label "PhysicalParticleBySpin"@en ;
-    rdfs:comment "Categorisation of physical particles by whether they have integer or half-odd-integer spin."@en .
+ns1:PhysicalParticleBySpin rdfs:label "PhysicalParticleBySpin"@en .
 
 : a owl:Ontology ;
     dcterms:abstract "Defines the root of the physicalistic perspective that introduces the concept of real world objects that have a meaning for the ontologist under an applied physics perspective."@en ;
@@ -75,8 +68,6 @@ ns1:PhysicalParticleBySpin rdfs:label "PhysicalParticleBySpin"@en ;
 
 ns1:Collapse a owl:Class ;
     rdfs:label "Collapse"@en ;
-    rdfs:comment "A collapse is a fundamental interaction between m colliding particles that results in a single outgoing particle (inverse decay)  that is expressed as a complete bipartite directed graph K(m,1) with m>1."@en,
-        "The class of fundamental systems where the number of input particles is reduced to one."@en ;
     rdfs:subClassOf ns1:FundamentalPhysicalSystem ;
     skos:example "The Higgs boson production from two gluons, or a bottom and an anti-bottom quark."@en ;
     skos:prefLabel "Collapse"@en ;
@@ -85,8 +76,6 @@ ns1:Collapse a owl:Class ;
 
 ns1:Decay a owl:Class ;
     rdfs:label "Decay"@en ;
-    rdfs:comment "A decay is a fundamental process occurring to one particle that is expressed as a complete bipartite directed graph K(1,n) with n>1, being n the number of outgoing particles."@en,
-        "The class of fundamental systems where a particle generates two or more other particles."@en ;
     rdfs:subClassOf ns1:FundamentalPhysicalSystem ;
     skos:example "The W boson decays, where a single W boson decays in two particles such as electron and electron antineutrino, or quark and antiquark."@en ;
     skos:prefLabel "Decay"@en ;
@@ -95,9 +84,6 @@ ns1:Decay a owl:Class ;
 
 ns1:Interaction a owl:Class ;
     rdfs:label "Interaction"@en ;
-    rdfs:comment """A causal interaction is a fundamental causal system that can be represented as a complete bipartite directed graph K(m,n), when m,n>1.
-This concept covers fundamental particles interactions with 2 or more particles as input and as output."""@en,
-        "The class of fundamental systems where two or more input particles interacts, providing an output of other two or more particles."@en ;
     rdfs:subClassOf ns1:FundamentalPhysicalSystem ;
     skos:example "Electron-electron scattering. Electron-positron annihilation."@en ;
     skos:prefLabel "Interaction"@en ;
@@ -107,7 +93,6 @@ This concept covers fundamental particles interactions with 2 or more particles 
 
 ns1:ParticlesSystem a owl:Class ;
     rdfs:label "ParticlesSystem"@en ;
-    rdfs:comment "A particles system is a system made of causal paths that are not interacting between each others, or possibly merge and fork."@en ;
     rdfs:subClassOf ns1:GenericPhysicalSystem ;
     skos:altLabel "NonInteractingSystem"@en ;
     skos:example "A W boson that travels through time and space and decays in a quark and anti-quark, and their evolution after their generation."@en ;
@@ -115,20 +100,19 @@ ns1:ParticlesSystem a owl:Class ;
     ns1:elucidation "A particles system is a system made of causal paths that are not interacting between each others, or possibly merge and fork."@en ;
     ns1:note "A particle system is a combination of elementary particles that may include also decays and/or annihilations, without any space-like interaction between elementary particles."@en .
 
-ns1:CausalPath ns1:OWLRL2DLAxioms "DisjointUnionOf: MultiParticlePath, ElementaryParticle"^^xsd:string .
+ns1:CausalPath rdfs:label "CausalPath"@en ;
+    ns1:OWLRL2DLAxioms "DisjointUnionOf: MultiParticlePath, ElementaryParticle"^^xsd:string .
 
 ns1:CausalSystem ns1:OWLRL2DLAxioms "DisjointUnionOf: FundamentalPhysicalSystem, GenericPhysicalSystem"^^xsd:string .
 
 ns1:ElementaryBoson a owl:Class ;
     rdfs:label "ElementaryBoson"@en ;
-    rdfs:comment "An elementary particle of a fundamental bosonic type."@en ;
     rdfs:subClassOf ns1:ElementaryParticle ;
     skos:prefLabel "ElementaryBoson"@en ;
     ns1:elucidation "An elementary particle of a fundamental bosonic type."@en .
 
 ns1:ElementaryFermion a owl:Class ;
     rdfs:label "ElementaryFermion"@en ;
-    rdfs:comment "An elementary particle of a fundamental fermionic type."@en ;
     rdfs:subClassOf ns1:ElementaryParticle ;
     owl:disjointWith ns1:ElementaryBoson ;
     skos:prefLabel "ElementaryFermion"@en ;
@@ -136,10 +120,6 @@ ns1:ElementaryFermion a owl:Class ;
 
 ns1:FundamentalPhysicalSystem a owl:Class ;
     rdfs:label "FundamentalPhysicalSystem"@en ;
-    rdfs:comment "A causal system that is the representation of a Feynman diagram, where quantum represents the real particles entering and exiting the system."@en,
-        """A fundamental physical process is made of one or more standard particles as input, and one or more standard particles as output, where each input is direct cause of each output.
-Each fundamental physical phenomena refers to a Feynman diagram, hence is made at least of three standard model particles.
-This requirement implies that a physical phenomena is either a decay, annihilation, interaction, collapse or creation phenomena (fundamental) or a composition of them (non-fundamental)."""@en ;
     rdfs:subClassOf ns1:CausalSystem ;
     owl:disjointWith ns1:GenericPhysicalSystem ;
     skos:prefLabel "FundamentalPhysicalSystem"@en ;
@@ -159,8 +139,6 @@ ns1:GenericPhysicalSystem a owl:Class ;
 
 ns1:ElementaryParticle a owl:Class ;
     rdfs:label "ElementaryParticle"@en ;
-    rdfs:comment "A chausal chain whose quantum parts are of the same standard model fundamental type."@en,
-        "An elementary particle is a causal chain of quantum entities of the same type. For example, an elementary electron is a sequence of fundamental electrons only."@en ;
     rdfs:subClassOf ns1:CausalPath ;
     skos:altLabel "SingleParticleChain"@en ;
     skos:example "An electron. A quark. A photon."@en ;
@@ -169,12 +147,12 @@ ns1:ElementaryParticle a owl:Class ;
     ns1:conceptualisation "An elementary particle is a causal chain of quantum entities of the same type. For example, an elementary electron is a sequence of fundamental electrons only."@en ;
     ns1:elucidation "A chausal chain whose quantum parts are of the same standard model fundamental type."@en .
 
+[] a owl:AllDisjointClasses ;
+    owl:members ( ns1:Collapse ns1:Interaction ns1:Decay ) .
+
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource ns1:ElementaryParticle ;
     owl:annotatedTarget "ElementaryParticle"@en ;
     ns1:etymology "From Latin elementārius (“elementary”), from elementum (“one of the four elements of antiquity; fundamentals”)."@en .
-
-[] a owl:AllDisjointClasses ;
-    owl:members ( ns1:Collapse ns1:Interaction ns1:Decay ) .
 

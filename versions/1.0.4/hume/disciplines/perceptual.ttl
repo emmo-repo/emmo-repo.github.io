@@ -9,7 +9,6 @@
 
 ns1:Pictorial a owl:Class ;
     rdfs:label "Pictorial"@en ;
-    rdfs:comment "A 'Graphical' that stands for a real world object that shows a recognizable pictorial pattern without being necessarily associated to a symbolic language."@en ;
     rdfs:subClassOf ns1:Graphical ;
     skos:example """A drawing of a cat.
 A circle on a paper sheet.
@@ -40,7 +39,6 @@ ns1:Representation a owl:Class ;
 
 ns1:Auditory a owl:Class ;
     rdfs:label "Auditory"@en ;
-    rdfs:comment "A 'Perceptual' which stands for a real world object whose spatiotemporal pattern makes it identifiable by an observer as a sound."@en ;
     rdfs:subClassOf ns1:Perceptual ;
     skos:altLabel "Sound"@en ;
     skos:example """When we use the term 'sound' what are we referring to? The EMMO identifies a sound as the physical object that can be heard by the observer (more exactly, by the sensor of the observer).
@@ -54,28 +52,24 @@ If the waveform is travelling through a cable as electronic signal (analog or di
 
 ns1:Document a owl:Class ;
     rdfs:label "Document"@en ;
-    rdfs:comment "A heterogeneous object made of different graphical object parts."@en ;
     rdfs:subClassOf ns1:Graphical ;
     skos:prefLabel "Document"@en ;
     ns1:elucidation "A heterogeneous object made of different graphical object parts."@en .
 
 ns1:Gustatory a owl:Class ;
     rdfs:label "Gustatory"@en ;
-    rdfs:comment "A 'Perceptual' which stands for a real world object whose spatiotemporal pattern makes it identifiable by an observer as a taste."@en ;
     rdfs:subClassOf ns1:Perceptual ;
     skos:prefLabel "Gustatory"@en ;
     ns1:elucidation "A 'Perceptual' which stands for a real world object whose spatiotemporal pattern makes it identifiable by an observer as a taste."@en .
 
 ns1:Olfactory a owl:Class ;
     rdfs:label "Olfactory"@en ;
-    rdfs:comment "A 'Perceptual' which stands for a real world object whose spatiotemporal pattern makes it identifiable by an observer as a smell."@en ;
     rdfs:subClassOf ns1:Perceptual ;
     skos:prefLabel "Olfactory"@en ;
     ns1:elucidation "A 'Perceptual' which stands for a real world object whose spatiotemporal pattern makes it identifiable by an observer as a smell."@en .
 
 ns1:Somatosensory a owl:Class ;
     rdfs:label "Somatosensory"@en ;
-    rdfs:comment "A 'Perceptual' which stands for a real world object whose spatiotemporal pattern makes it identifiable by an observer as a sensation (such as a pressure, pain or temperature)."@en ;
     rdfs:subClassOf ns1:Perceptual ;
     skos:prefLabel "Somatosensory"@en ;
     ns1:elucidation "A 'Perceptual' which stands for a real world object whose spatiotemporal pattern makes it identifiable by an observer as a sensation (such as a pressure, pain or temperature)."@en .
@@ -128,12 +122,6 @@ A 'Perceptual' becomes a semiotic object, when it is part of a 'Semiotic' proces
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:Document ;
-    owl:annotatedTarget "Document"@en ;
-    ns1:etymology "From Latin documentum, from the verb doceō (“teach”) +‎ -mentum."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource ns1:Perceptual ;
     owl:annotatedTarget "Perceptual"@en ;
     ns1:etymology "From Latin percipiō, past participle perceptus (“take hold of, obtain, receive, observe”), from per (“by, through”) + capiō (“to take”)."@en .
@@ -144,4 +132,10 @@ A 'Perceptual' becomes a semiotic object, when it is part of a 'Semiotic' proces
     owl:annotatedTarget "Graphical"@en ;
     ns1:etymology "From the Ancient Greek γραφή (graphḗ) which means drawing, painting, writing, a writing, description, and from γράφω (gráphō) which means scratch, carve."@en ;
     ns1:note "The term graphical is used in etymological sense, comprising both writings and visual arts."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Document ;
+    owl:annotatedTarget "Document"@en ;
+    ns1:etymology "From Latin documentum, from the verb doceō (“teach”) +‎ -mentum."@en .
 

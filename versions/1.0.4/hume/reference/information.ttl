@@ -27,14 +27,6 @@
 
 ns1:Information a owl:Class ;
     rdfs:label "Information"@en ;
-    rdfs:comment "Information is data with a meaning (semiotic sign)."@en,
-        """The General Definition of Information (GDI) can be used to define the concept of information.
-(GDI) a is an instance of information, understood as semantic content, if and only if:
-  GDI.l) a consists of n data, for n > 1;
-  GDI.2) the data are well formed;
-  GDI.3) the well-formed data are meaningful.
-
-In the EMMO conceptualisation, well-formed data are data with a specific syntactic structure (symbolic and reductionistic modules), while meaningful data are data that are part of a semiotic interpretation process that declares what the data are about (semiotic module)."""@en ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( ns1:Data ns1:Sign ) ] ;
     skos:prefLabel "Information"@en ;

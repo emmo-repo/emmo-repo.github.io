@@ -1,0 +1,147 @@
+@prefix : <https://w3id.org/emmo/hume/foundation/annotations-deprecated#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <https://w3id.org/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:EMMO_1246b120_abbe_4840_b0f8_3e4348b24a17 a owl:AnnotationProperty ;
+    rdfs:label "contact"@en ;
+    rdfs:comment "A person or organisation acting as a contact point for enquiries about the ontology resource"@en ;
+    rdfs:subPropertyOf rdfs:comment ;
+    owl:deprecated true ;
+    skos:prefLabel "contact"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A person or organisation acting as a contact point for enquiries about the ontology resource"@en ;
+    ns1:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "The annotation should include an email address."@en .
+
+ns1:EMMO_157fdf31_6387_42be_8e72_10530519214a a owl:AnnotationProperty ;
+    rdfs:label "illustration"@en ;
+    rdfs:comment "A link to a graphical representation aimed to facilitate understanding of the concept, or of an annotation."@en ;
+    rdfs:range xsd:anyURI ;
+    rdfs:subPropertyOf rdfs:seeAlso ;
+    owl:deprecated true ;
+    skos:prefLabel "illustration"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A link to a graphical representation aimed to facilitate understanding of the concept, or of an annotation."@en .
+
+ns1:EMMO_31252f35_c767_4b97_a877_1235076c3e13 a owl:AnnotationProperty ;
+    rdfs:label "conceptualisation"@en ;
+    rdfs:comment "The conceptualisation annotation is a comment that helps the reader to understand how the world has been conceptualised by the ontology authors."@en ;
+    rdfs:subPropertyOf rdfs:comment ;
+    owl:deprecated true ;
+    skos:prefLabel "conceptualisation"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The conceptualisation annotation is a comment that helps the reader to understand how the world has been conceptualised by the ontology authors."@en ;
+    ns1:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "A conceptualisation is the preliminary step behind each theory, preceding each logical formalisation. The readers approaching an ontology entity should first read the conceptualisation annotation to clearly understand \"what we are talking about\" and the accompanying terminology, and then read the elucidation."@en,
+        "An conceptualisation can provide references to external knowledge sources (i.e. ISO, Goldbook, RoMM)."@en .
+
+ns1:EMMO_6dd685dd_1895_46e4_b227_be9f7d643c25 a owl:AnnotationProperty ;
+    rdfs:label "dbpediaReference"@en ;
+    rdfs:comment "URL to corresponding dpbedia entry."@en ;
+    rdfs:range xsd:anyURI ;
+    rdfs:seeAlso "https://wiki.dbpedia.org/"^^xsd:string ;
+    rdfs:subPropertyOf rdfs:seeAlso ;
+    owl:deprecated true ;
+    skos:prefLabel "dbpediaReference"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "URL to corresponding dpbedia entry."@en .
+
+ns1:EMMO_70fe84ff_99b6_4206_a9fc_9a8931836d84 a owl:AnnotationProperty ;
+    rdfs:label "definition"@en ;
+    rdfs:comment "Precise and univocal description of an ontological entity in the framework of an axiomatic system."@en ;
+    rdfs:subPropertyOf rdfs:comment ;
+    owl:deprecated true ;
+    skos:prefLabel "definition"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Precise and univocal description of an ontological entity in the framework of an axiomatic system."@en ;
+    ns1:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "A definition univocally determines a OWL entity using necessary and sufficient conditions referring to other OWL entities."@en .
+
+ns1:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d a owl:AnnotationProperty ;
+    rdfs:label "wikipediaReference"@en ;
+    rdfs:comment "URL to corresponding Wikipedia entry."@en ;
+    rdfs:range xsd:anyURI ;
+    rdfs:seeAlso "https://www.wikipedia.org/"^^xsd:string ;
+    rdfs:subPropertyOf rdfs:seeAlso ;
+    owl:deprecated true ;
+    skos:prefLabel "wikipediaReference"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "URL to corresponding Wikipedia entry."@en .
+
+: a owl:Ontology ;
+    dcterms:abstract "Deprecated EMMO annotations. This module include the old annotations with numerical IRIs."@en ;
+    dcterms:contributor <https://orcid.org/AdhamHashibon>,
+        <https://orcid.org/AnnedeBaas>,
+        <https://orcid.org/FrancescoZaccarini>,
+        <https://orcid.org/GeorgSchmitz>,
+        <https://orcid.org/GerhardGoldbeck>,
+        <https://orcid.org/SebastianoMoruzzi> ;
+    dcterms:creator <https://orcid.org/EmanueleGhedini>,
+        <https://orcid.org/JesperFriis> ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "Deprecated EMMO Annotations"@en ;
+    owl:imports <https://w3id.org/emmo/1.0.4/foundation/annotations> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/foundation/annotations-deprecated> ;
+    owl:versionInfo "1.0.4"^^xsd:string ;
+    foaf:mbox <mailto:emmo@emmc.eu> ;
+    ns1:EMMO_1246b120_abbe_4840_b0f8_3e4348b24a17 "emmo@emmc.eu"^^xsd:string .
+
+ns1:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 a owl:AnnotationProperty ;
+    rdfs:label "etymology"@en ;
+    rdfs:comment "The etymology annotation explains the origin of a word and the historical development of its meaning."@en ;
+    rdfs:subPropertyOf rdfs:comment ;
+    owl:deprecated true ;
+    skos:prefLabel "etymology"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "The etymology annotation explains the origin of a word and the historical development of its meaning."@en ;
+    ns1:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "Definitions are usually taken from Wiktionary."@en,
+        "The etymology annotation is usually applied to rdfs:label entities, to better understand the connection between a label and the concept it concisely represents."@en .
+
+ns1:EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db a owl:AnnotationProperty ;
+    rdfs:label "OWLRL2DLAxioms"@en ;
+    rdfs:comment "Axioms to add to the OWL 2 RL version of the ontology to reach DL expressivity."@en ;
+    rdfs:subPropertyOf rdfs:comment ;
+    owl:deprecated true ;
+    skos:prefLabel "OWLRL2DLAxioms"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Axioms to add to the OWL 2 RL version of the ontology to reach DL expressivity."@en .
+
+ns1:EMMO_c6e77b51_681b_4d04_b20d_a08f2b977470 a owl:AnnotationProperty ;
+    rdfs:label "OWL2DLRestrictedAxiom"@en ;
+    rdfs:comment "Axiom not included in the theory because of OWL 2 DL global restrictions for decidability."@en ;
+    rdfs:subPropertyOf rdfs:comment ;
+    owl:deprecated true ;
+    skos:prefLabel "OWL2DLRestrictedAxiom"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Axiom not included in the theory because of OWL 2 DL global restrictions for decidability."@en .
+
+ns1:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f a owl:AnnotationProperty ;
+    rdfs:label "note"@en ;
+    rdfs:comment "A text that add some information about the entity."@en ;
+    rdfs:subPropertyOf rdfs:comment ;
+    owl:deprecated true ;
+    skos:prefLabel "note"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "A text that add some information about the entity."@en ;
+    ns1:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "A note can be addressed to facilitate interpretation, to suggest possible usage, to clarify the concepts behind each entity with respect to other ontological apporaches."@en .
+
+ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 a owl:AnnotationProperty ;
+    rdfs:label "elucidation"@en ;
+    rdfs:comment "Short enlightening explanation aimed to facilitate the user in drawing the connection (interpretation) between a OWL entity and the real world object(s) for which it stands."@en ;
+    rdfs:subPropertyOf rdfs:comment ;
+    owl:deprecated true ;
+    skos:prefLabel "elucidation"@en ;
+    ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 "Short enlightening explanation aimed to facilitate the user in drawing the connection (interpretation) between a OWL entity and the real world object(s) for which it stands."@en ;
+    ns1:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "An elucidation should address the real world entities using the concepts introduced by the conceptualisation annotation."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "https://en.wiktionary.org/wiki/Wiktionary"@en ;
+    owl:annotatedProperty ns1:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
+    owl:annotatedSource ns1:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 ;
+    owl:annotatedTarget "Definitions are usually taken from Wiktionary."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#Global_Restrictions_on_Axioms_in_OWL_2_DL"^^xsd:anyURI ;
+    owl:annotatedProperty ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+    owl:annotatedSource ns1:EMMO_c6e77b51_681b_4d04_b20d_a08f2b977470 ;
+    owl:annotatedTarget "Axiom not included in the theory because of OWL 2 DL global restrictions for decidability."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "https://www.w3.org/TR/2012/REC-owl2-profiles-20121211/"^^xsd:anyURI ;
+    owl:annotatedProperty ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+    owl:annotatedSource ns1:EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db ;
+    owl:annotatedTarget "Axioms to add to the OWL 2 RL version of the ontology to reach DL expressivity."@en .
+

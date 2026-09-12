@@ -8,7 +8,6 @@
 
 ns1:Convergent a owl:Class ;
     rdfs:label "Convergent"@en ;
-    rdfs:comment "The superclass for all classes of entities that have a proper parts of the same type φ of the whole, and so that for every two distinct φ proper parts one is part of the other."@en ;
     rdfs:subClassOf ns1:Nuclear ;
     skos:prefLabel "Convergent"@en ;
     ns1:elucidation "The superclass for all classes of entities that have a proper parts of the same type φ of the whole, and so that for every two distinct φ proper parts one is part of the other."@en ;
@@ -16,7 +15,6 @@ ns1:Convergent a owl:Class ;
 
 ns1:Heap a owl:Class ;
     rdfs:label "Heap"@en ;
-    rdfs:comment "The superclass for all classes of entities that have at least two non overlapping proper parts of the same type of the whole."@en ;
     rdfs:subClassOf ns1:Redundant ;
     skos:prefLabel "Heap"@en ;
     ns1:elucidation "The superclass for all classes of entities that have at least two non overlapping proper parts of the same type of the whole."@en ;
@@ -25,7 +23,6 @@ ns1:Heap a owl:Class ;
 
 ns1:Maximal a owl:Class ;
     rdfs:label "Maximal"@en ;
-    rdfs:comment "The superclass for all classes of entities that have no proper parts of the same type of the whole are not proper part of an entity of that type."@en ;
     rdfs:subClassOf ns1:Fundamental ;
     skos:prefLabel "Maximal"@en ;
     ns1:elucidation "The superclass for all classes of entities that have no proper parts of the same type of the whole are not proper part of an entity of that type."@en ;
@@ -34,7 +31,6 @@ ns1:Maximal a owl:Class ;
 
 ns1:Minimal a owl:Class ;
     rdfs:label "Minimal"@en ;
-    rdfs:comment "The superclass for all classes of entities that have no proper parts of the same type of the whole is proper part of an entity of that type."@en ;
     rdfs:subClassOf ns1:Fundamental ;
     skos:prefLabel "Minimal"@en ;
     ns1:elucidation "The superclass for all classes of entities that have no proper parts of the same type of the whole is proper part of an entity of that type."@en ;
@@ -43,7 +39,6 @@ ns1:Minimal a owl:Class ;
 
 ns1:NonConvergent a owl:Class ;
     rdfs:label "NonConvergent"@en ;
-    rdfs:comment "The superclass for all classes of entities that have a proper parts of the same type φ of the whole, and so that for every two distinct φ proper parts one is not part of the other."@en ;
     rdfs:subClassOf ns1:Nuclear ;
     skos:prefLabel "NonConvergent"@en ;
     ns1:elucidation "The superclass for all classes of entities that have a proper parts of the same type φ of the whole, and so that for every two distinct φ proper parts one is not part of the other."@en ;
@@ -51,7 +46,6 @@ ns1:NonConvergent a owl:Class ;
 
 ns1:NonNuclear a owl:Class ;
     rdfs:label "NonNuclear"@en ;
-    rdfs:comment "The superclass for all classes of entities that have a proper parts of the same type φ of the whole, but have no φ proper part that is part of other φ proper parts."@en ;
     rdfs:subClassOf ns1:Multiplex ;
     skos:prefLabel "NonNuclear"@en ;
     ns1:elucidation "The superclass for all classes of entities that have a proper parts of the same type φ of the whole, but have no φ proper part that is part of other φ proper parts."@en ;
@@ -74,21 +68,18 @@ ns1:NonNuclear a owl:Class ;
 
 ns1:Multiplex a owl:Class ;
     rdfs:label "Multiplex"@en ;
-    rdfs:comment "The superclass for all classes of entities that have a proper parts of the same type of the whole that overlaps all the oter proper parts of the same type."@en ;
     rdfs:subClassOf ns1:Redundant ;
     skos:prefLabel "Multiplex"@en ;
     ns1:elucidation "The superclass for all classes of entities that have a proper parts of the same type of the whole that overlaps all the oter proper parts of the same type."@en .
 
 ns1:Nuclear a owl:Class ;
     rdfs:label "Nuclear"@en ;
-    rdfs:comment "The superclass for all classes of entities that have a proper parts of the same type of the whole that is part of all the other proper parts of the same type."@en ;
     rdfs:subClassOf ns1:Multiplex ;
     skos:prefLabel "Nuclear"@en ;
     ns1:elucidation "The superclass for all classes of entities that have a proper parts of the same type of the whole that is part of all the other proper parts of the same type."@en .
 
 ns1:Structural a owl:Class ;
     rdfs:label "Structural"@en ;
-    rdfs:comment "A perspective that categorises causal structures according to the merelogical relations between the whole and the parts, taking into account their types."@en ;
     rdfs:subClassOf ns1:Perspective ;
     skos:prefLabel "Structural"@en ;
     ns1:elucidation "A perspective that categorises causal structures according to the merelogical relations between the whole and the parts, taking into account their types."@en .
@@ -97,8 +88,6 @@ ns1:hasRedundantPart rdfs:domain ns1:Redundant .
 
 ns1:Redundant a owl:Class ;
     rdfs:label "Redundant"@en ;
-    rdfs:comment "Redundant(x) ≡ ∃φ[φ(x) ∧ ∃yRP⟨φ⟩(y, x)]"@en,
-        "The superclass for all classes of entities that have parts of the same type of the whole."@en ;
     rdfs:seeAlso ns1:Fundamental ;
     rdfs:subClassOf ns1:Structural ;
     skos:altLabel "NonMaximal"@en ;
@@ -112,8 +101,6 @@ If A is a water-fluid so small that its every proper part is no more a continuum
 
 ns1:Fundamental a owl:Class ;
     rdfs:label "Fundamental"@en ;
-    rdfs:comment "Fundamental(x) ≡ ∃φ[φ(x) ∧ ¬∃yRP⟨φ⟩(y, x)]"^^xsd:string,
-        "The superclass for all classes of entities that have no proper parts of the same type of the whole."@en ;
     rdfs:seeAlso ns1:Redundant ;
     rdfs:subClassOf ns1:Structural ;
     skos:altLabel "Lifetime"@en ;
@@ -125,16 +112,10 @@ Following the two examples, a marathon individual is a maximal that can be decom
     ns1:elucidation "The superclass for all classes of entities that have no proper parts of the same type of the whole."@en .
 
 [] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
+    rdfs:seeAlso ns1:hasRedundantPart ;
+    owl:annotatedProperty ns1:definition ;
     owl:annotatedSource ns1:Fundamental ;
-    owl:annotatedTarget "Fundamental"@en ;
-    ns1:etymology "From Latin fundamentum (“foundation”), from fundō (“to lay the foundation (of something), to found”), from fundus (“bottom”)."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource ns1:Fundamental ;
-    owl:annotatedTarget "Lifetime"@en ;
-    ns1:etymology "From Middle English liftime, equivalent to life +‎ time."@en .
+    owl:annotatedTarget "Fundamental(x) ≡ ∃φ[φ(x) ∧ ¬∃yRP⟨φ⟩(y, x)]"^^xsd:string .
 
 [] a owl:Axiom ;
     rdfs:seeAlso ns1:hasRedundantPart ;
@@ -143,8 +124,14 @@ Following the two examples, a marathon individual is a maximal that can be decom
     owl:annotatedTarget "Redundant(x) ≡ ∃φ[φ(x) ∧ ∃yRP⟨φ⟩(y, x)]"@en .
 
 [] a owl:Axiom ;
-    rdfs:seeAlso ns1:hasRedundantPart ;
-    owl:annotatedProperty ns1:definition ;
+    owl:annotatedProperty skos:altLabel ;
     owl:annotatedSource ns1:Fundamental ;
-    owl:annotatedTarget "Fundamental(x) ≡ ∃φ[φ(x) ∧ ¬∃yRP⟨φ⟩(y, x)]"^^xsd:string .
+    owl:annotatedTarget "Lifetime"@en ;
+    ns1:etymology "From Middle English liftime, equivalent to life +‎ time."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Fundamental ;
+    owl:annotatedTarget "Fundamental"@en ;
+    ns1:etymology "From Latin fundamentum (“foundation”), from fundō (“to lay the foundation (of something), to found”), from fundus (“bottom”)."@en .
 

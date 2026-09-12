@@ -3,5 +3,8 @@
    :includehidden:
    :hidden:
 
-   Reference Index <emmo>
+   Reference Index <emmo.rst>
+
+.. include:: ../README.md
+   :parser: myst_parser.sphinx_
 
