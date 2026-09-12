@@ -40698,7 +40698,7 @@ ns1:affects a owl:AsymmetricProperty,
         "https://w3id.org/emmo#affects"^^xsd:anyURI ;
     skos:prefLabel "affects"@en ;
     ns1:elucidation "The relation between a process P that through overlaps an object O."@en ;
-    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/affects.png"^^xsd:string .
+    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/affects.png"^^xsd:string .
 
 ns1:chemicalSymbolValue a owl:DatatypeProperty ;
     rdfs:domain ns1:ChemicalSymbol ;
@@ -40756,7 +40756,7 @@ ns1:contributesTo a owl:AsymmetricProperty,
         "https://w3id.org/emmo#contributesTo"^^xsd:anyURI ;
     skos:prefLabel "contributesTo"@en ;
     ns1:elucidation "The relation between a process P1 that through overlaps a process P2."@en ;
-    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/contributesTo.png"^^xsd:string .
+    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/contributesTo.png"^^xsd:string .
 
 ns1:dbpediaReference a owl:AnnotationProperty ;
     rdfs:isDefinedBy <https://w3id.org/emmo/foundation/mereocausality#> ;
@@ -40793,7 +40793,7 @@ ns1:generates a owl:AsymmetricProperty,
         "https://w3id.org/emmo#generates"^^xsd:anyURI ;
     skos:prefLabel "generates"@en ;
     ns1:elucidation "The relation between an object O that proper overlaps a process P, where the non-overlapping part of P is caused by O."@en ;
-    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/generates.png"^^xsd:string .
+    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/generates.png"^^xsd:string .
 
 ns1:gets a owl:AsymmetricProperty,
         owl:IrreflexiveProperty,
@@ -40806,7 +40806,7 @@ ns1:gets a owl:AsymmetricProperty,
         "https://w3id.org/emmo#gets"^^xsd:anyURI ;
     skos:prefLabel "gets"@en ;
     ns1:elucidation "The relation between an object O1 that proper overlaps an object O2, where the non-overlapping part of O2 causes O1."@en ;
-    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/gets.png"^^xsd:string .
+    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/gets.png"^^xsd:string .
 
 ns1:hasBeginTask a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
@@ -41119,7 +41119,7 @@ ns1:hasObjectInput a owl:AsymmetricProperty,
         "https://w3id.org/emmo#hasObjectInput"^^xsd:anyURI ;
     skos:prefLabel "hasObjectInput"@en ;
     ns1:elucidation "The relation between a process P that proper overlaps an object O, where the non-overlapping part of O causes P."@en ;
-    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/hasObjectInput.png"^^xsd:string .
+    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/hasObjectInput.png"^^xsd:string .
 
 ns1:hasObjectOutput a owl:AsymmetricProperty,
         owl:IrreflexiveProperty,
@@ -41132,7 +41132,7 @@ ns1:hasObjectOutput a owl:AsymmetricProperty,
         "https://w3id.org/emmo#hasObjectOutput"^^xsd:anyURI ;
     skos:prefLabel "hasObjectOutput"@en ;
     ns1:elucidation "The relation between a process P that proper overlaps an object O, where the non-overlapping part of O is caused by P."@en ;
-    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/hasObjectOutput.png"^^xsd:string .
+    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/hasObjectOutput.png"^^xsd:string .
 
 ns1:hasPortion a owl:ObjectProperty ;
     rdfs:domain ns1:Object,
@@ -41167,7 +41167,7 @@ ns1:hasProcessInput a owl:AsymmetricProperty,
         "https://w3id.org/emmo#hasProcessInput"^^xsd:anyURI ;
     skos:prefLabel "hasProcessInput"@en ;
     ns1:elucidation "The relation between a process P1 that proper overlaps a process P2, where the non-overlapping part of P2 causes P1."@en ;
-    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/hasProcessInput.png"^^xsd:string .
+    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/hasProcessInput.png"^^xsd:string .
 
 ns1:hasProcessOutput a owl:AsymmetricProperty,
         owl:IrreflexiveProperty,
@@ -41180,7 +41180,7 @@ ns1:hasProcessOutput a owl:AsymmetricProperty,
         "https://w3id.org/emmo#hasProcessOutput"^^xsd:anyURI ;
     skos:prefLabel "hasProcessOutput"@en ;
     ns1:elucidation "The relation between a process P1 that proper overlaps a process P2, where the non-overlapping part of P2 is caused by P1."@en ;
-    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/hasProcessOutput.png"^^xsd:string .
+    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/hasProcessOutput.png"^^xsd:string .
 
 ns1:hasQuantityValue a owl:ObjectProperty ;
     rdfs:domain ns1:Quantity ;
@@ -48159,7 +48159,7 @@ ns1:isInfluencedBy a owl:AsymmetricProperty,
         "https://w3id.org/emmo#isInfluencedBy"^^xsd:anyURI ;
     skos:prefLabel "isInfluencedBy"@en ;
     ns1:elucidation "The relation between an object O that proper overlaps a process P, where the non-overlapping part of P causes O."@en ;
-    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/isInfluencedBy.png"^^xsd:string .
+    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/isInfluencedBy.png"^^xsd:string .
 
 ns1:isInternalRepresentationBy a owl:ObjectProperty ;
     rdfs:isDefinedBy ns1:hasInternalRepresentation,
@@ -48313,7 +48313,7 @@ ns1:partakesIn a owl:AsymmetricProperty,
         "https://w3id.org/emmo#partakesIn"^^xsd:anyURI ;
     skos:prefLabel "partakesIn"@en ;
     ns1:elucidation "The relation between an object O1 that through overlaps an object O2."@en ;
-    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/partakesIn.png"^^xsd:string .
+    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/partakesIn.png"^^xsd:string .
 
 ns1:participatesTo a owl:AsymmetricProperty,
         owl:IrreflexiveProperty,
@@ -48326,7 +48326,7 @@ ns1:participatesTo a owl:AsymmetricProperty,
         "https://w3id.org/emmo#participatesTo"^^xsd:anyURI ;
     skos:prefLabel "participatesTo"@en ;
     ns1:elucidation "The relation between an object O that through overlaps a process P."@en ;
-    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/participatesTo.png"^^xsd:string .
+    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/participatesTo.png"^^xsd:string .
 
 ns1:releases a owl:AsymmetricProperty,
         owl:IrreflexiveProperty,
@@ -48338,7 +48338,7 @@ ns1:releases a owl:AsymmetricProperty,
         "https://w3id.org/emmo#releases"^^xsd:anyURI ;
     skos:prefLabel "releases"@en ;
     ns1:elucidation "The relation between an object O1 that proper overlaps an object O2, where the non-overlapping part of O2 is caused by O1."@en ;
-    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/releases.png"^^xsd:string .
+    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/releases.png"^^xsd:string .
 
 <https://www.w3.org/TR/turtle> a owl:NamedIndividual .
 
@@ -51660,7 +51660,7 @@ ns1:isJoinedBy a owl:AsymmetricProperty,
         "https://w3id.org/emmo#isJoinedBy"^^xsd:anyURI ;
     skos:prefLabel "isJoinedBy"@en ;
     ns1:elucidation "The relation between an object O that proper overlaps an item I, where the non-overlapping part of I causes O."@en ;
-    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/isJoinedBy.png"^^xsd:string .
+    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/isJoinedBy.png"^^xsd:string .
 
 ns1:isLeftBy a owl:AsymmetricProperty,
         owl:IrreflexiveProperty,
@@ -51673,7 +51673,7 @@ ns1:isLeftBy a owl:AsymmetricProperty,
         "https://w3id.org/emmo#isLeftBy"^^xsd:anyURI ;
     skos:prefLabel "isLeftBy"@en ;
     ns1:elucidation "The relation between an object O that proper overlaps an item I, where the non-overlapping part of I is caused by O."@en ;
-    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/isLeftBy.png"^^xsd:string .
+    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/isLeftBy.png"^^xsd:string .
 
 ns1:isNotCauseOf a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://w3id.org/emmo/foundation/mereocausality#> ;
@@ -51714,7 +51714,7 @@ ns1:isOutgoingOverlappedBy a owl:AsymmetricProperty,
         "https://w3id.org/emmo#isOutgoingOverlappedBy"^^xsd:anyURI ;
     skos:prefLabel "isOutgoingOverlappedBy"@en ;
     ns1:elucidation "The relation between an item I1 that proper overlaps an item I2, where the non-overlapping part of I2 is caused by I1."@en ;
-    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/isOutgoingOverlappedBy.png"^^xsd:string .
+    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/isOutgoingOverlappedBy.png"^^xsd:string .
 
 ns1:isQuantityValueFor a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
@@ -53248,7 +53248,7 @@ ns1:hasInput a owl:AsymmetricProperty,
         "https://w3id.org/emmo#hasInput"^^xsd:anyURI ;
     skos:prefLabel "hasInput"@en ;
     ns1:elucidation "The relation between a process P that proper overlaps an item I, where the non-overlapping part of I causes P."@en ;
-    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/hasInput.png"^^xsd:string .
+    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/hasInput.png"^^xsd:string .
 
 ns1:hasInternalRepresentation a owl:ObjectProperty ;
     rdfs:domain ns1:Interpreter ;
@@ -53341,7 +53341,7 @@ ns1:isIncomingOverlappedBy a owl:AsymmetricProperty,
         "https://w3id.org/emmo#isIncomingOverlappedBy"^^xsd:anyURI ;
     skos:prefLabel "isIncomingOverlappedBy"@en ;
     ns1:elucidation "The relation between an item I1 that proper overlaps an item I2, where the non-overlapping part of I2 causes I1."@en ;
-    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/isIncomingOverlappedBy.png"^^xsd:string .
+    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/isIncomingOverlappedBy.png"^^xsd:string .
 
 ns1:isNonTemporalPartOf a owl:ObjectProperty ;
     rdfs:isDefinedBy <https://w3id.org/emmo/foundation/mereocausality#> ;
@@ -55412,7 +55412,7 @@ ns1:throughOverlaps a owl:AsymmetricProperty,
         "https://w3id.org/emmo#throughOverlaps"^^xsd:anyURI ;
     skos:prefLabel "throughOverlaps"@en ;
     ns1:elucidation "The relation between an item I1 that proper overlaps an Item I2 where I1 has two non-overlapping parts, one that causes I2 and one that is a cause of I2."@en ;
-    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/dev/doc/figs/throughOverlaps.png"^^xsd:string .
+    ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/throughOverlaps.png"^^xsd:string .
 
 ns1:Angle a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/isq#> ;
