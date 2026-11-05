@@ -33,13 +33,11 @@ emmo:EMMO_b1daa610_64c6_4935_94b8_a19db586a2f6 a owl:ObjectProperty ;
     emmo:elucidation "The relation between a object whole and its spatial part of the same type."@en .
 
 emmo:EMMO_b9522e56_1fac_4766_97e6_428605fabd3e a owl:Class ;
-    rdfs:label "HolisticArrangement"@en ;
     rdfs:subClassOf emmo:EMMO_65a007dc_2550_46b0_b394_3346c67fbb69 ;
     skos:prefLabel "HolisticArrangement"@en ;
     emmo:elucidation "A system which is mainly characterised by the spatial configuration of its elements."@en .
 
 emmo:EMMO_f93fe78b_9646_4a15_b88b_1c93686a764d a owl:Class ;
-    rdfs:label "Network"@en ;
     rdfs:subClassOf emmo:EMMO_65a007dc_2550_46b0_b394_3346c67fbb69 ;
     skos:prefLabel "Network"@en ;
     emmo:elucidation "A system whose is mainly characterised by the way in which elements are interconnected."@en .
@@ -92,7 +90,6 @@ emmo:EMMO_f76884f7_964e_488e_9bb7_1b2453e9e817 a owl:Class ;
     emmo:elucidation "A constituent of a system."@en .
 
 emmo:EMMO_65a007dc_2550_46b0_b394_3346c67fbb69 a owl:Class ;
-    rdfs:label "HolisticSystem"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_3c7f239f_e833_4a2b_98a1_c88831770c1b ;
             owl:someValuesFrom emmo:EMMO_f76884f7_964e_488e_9bb7_1b2453e9e817 ],

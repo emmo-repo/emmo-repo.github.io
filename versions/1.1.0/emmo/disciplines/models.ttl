@@ -6,6 +6,8 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+emmo:EMMO_008fd3b2_4013_451f_8827_52bceab11841 rdfs:label "Semiosis"@en .
+
 emmo:EMMO_084b4f77_6df7_4c6a_b705_2528aba5cdda a owl:Class ;
     rdfs:label "MaterialRelationComputation"@en ;
     rdfs:subClassOf emmo:EMMO_5dd63d84_57f5_4b79_b760_fe940c06680d ;
@@ -16,14 +18,14 @@ emmo:EMMO_0cd58641_824c_4851_907f_f4c3be76630c skos:altLabel "Signal"@en .
 emmo:EMMO_1c7f2dfe_0db4_4bf6_a0f6_853054a34ead a owl:Class ;
     rdfs:label "DataProcessing"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 ;
+            owl:someValuesFrom emmo:EMMO_be8592a7_68d1_4a06_ad23_82f2b56ef926 ],
+        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 ;
             owl:someValuesFrom emmo:EMMO_be8592a7_68d1_4a06_ad23_82f2b56ef926 ],
         [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ;
             owl:someValuesFrom emmo:EMMO_cbf42aa6_9e11_4be8_932a_ae3c792ab17d ],
-        [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 ;
-            owl:someValuesFrom emmo:EMMO_be8592a7_68d1_4a06_ad23_82f2b56ef926 ],
         emmo:EMMO_eff42cb3_208e_4768_9a39_f8b6b3c3d7a2 ;
     skos:prefLabel "DataProcessing"@en ;
     emmo:elucidation "A computation that provides a data output following the elaboration of some input data, using a data processing application."@en .
@@ -51,6 +53,14 @@ emmo:EMMO_289fe77a_34fb_4376_87d5_53adf12d4469 a owl:ObjectProperty ;
     rdfs:subPropertyOf emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 ;
     owl:inverseOf emmo:EMMO_aa4d44c7_0aa5_485f_b072_faca05a65b3d ;
     skos:prefLabel "isComputedBy"@en .
+
+emmo:EMMO_3d03a403_facd_48c6_b75e_7ab8b9299218 rdfs:label "CodedByObservation"@en .
+
+emmo:EMMO_4292fdcd_bbba_4d99_95c6_daa533d952ef rdfs:label "CodedBySubjectivity"@en .
+
+emmo:EMMO_47bf3513_4ae6_4858_9c45_76e23230d68d rdfs:label "Declaration"@en .
+
+emmo:EMMO_4d5621e8_af7f_4aef_abd5_f905a34f62af rdfs:label "SemiosisByReferent"@en .
 
 emmo:EMMO_57b9fd6c_84d6_43f2_8c4f_de6a1ab50aea a owl:Class ;
     rdfs:label "Guess"@en ;
@@ -94,6 +104,8 @@ emmo:EMMO_8533871a_01e4_4935_8c7b_cedf8fcc3fa3 a owl:Class ;
         "Pinocchio is a functional icon of a boy since it imitates the external behaviour without having the internal biological structure of a human being (it is made of magic wood...)."@en ;
     skos:prefLabel "Replica"@en ;
     emmo:elucidation "An icon that not only resembles the object, but also can express some of the object's functions."@en .
+
+emmo:EMMO_88470739_03d3_4c47_a03e_b30a1288d50c rdfs:label "MathematicalFormula"@en .
 
 emmo:EMMO_8d4962d7_9608_44f7_a2f1_82a4bb173f4a a owl:Class ;
     rdfs:label "PhysicalBasedSimulationSoftware"@en ;
@@ -173,6 +185,14 @@ emmo:EMMO_01354ac2_cce1_4b7d_8b4a_7322d6cb10bc a owl:Class ;
     skos:prefLabel "IterativeCoupledModelsSimulation"@en ;
     emmo:elucidation "A chain of linked physics based model simulations solved iteratively, where equations are segregated."@en .
 
+emmo:EMMO_10a5fd39_06aa_4648_9e70_f962a9cb2069 rdfs:label "Determination"@en .
+
+emmo:EMMO_1b6a95fb_3df7_44c9_ad3d_419c9c5fe7cb rdfs:label "Observed"@en .
+
+emmo:EMMO_1c0b22a2_be82_4fa8_9e2b_a569a625d442 rdfs:label "Estimation"@en .
+
+emmo:EMMO_251cfb4f_5c75_4778_91ed_6c8395212fd8 rdfs:label "Subjective"@en .
+
 emmo:EMMO_27c5d8c6_8af7_4d63_beb1_ec37cd8b3fa3 a owl:Class ;
     rdfs:label "PhysicsEquation"@en ;
     rdfs:subClassOf emmo:EMMO_b29fd350_39aa_4af7_9459_3faa0544cba6,
@@ -182,6 +202,10 @@ The Schrödinger equation.
 The Navier-Stokes equation."""@en ;
     skos:prefLabel "PhysicsEquation"@en ;
     emmo:elucidation "An 'equation' that stands for a 'physical_law' by mathematically defining the relations between physics_quantities."@en .
+
+emmo:EMMO_35d4c439_fcb6_4399_a855_a89a207b41e9 rdfs:label "Description"@en .
+
+emmo:EMMO_3b19eab4_79be_4b02_bdaf_ecf1f0067a68 rdfs:label "Observation"@en .
 
 emmo:EMMO_4456a5d2_16a6_4ee1_9a8e_5c75956b28ea a owl:Class ;
     rdfs:label "ContinuumModel"@en ;
@@ -240,6 +264,8 @@ emmo:EMMO_cbf42aa6_9e11_4be8_932a_ae3c792ab17d a owl:Class ;
     skos:prefLabel "DataProcessingSoftware"@en ;
     emmo:elucidation "An application program aimed for data processing."@en .
 
+emmo:EMMO_d7788d1a_020d_4c78_85a1_13563fcec168 rdfs:label "Icon"@en .
+
 emmo:EMMO_e5438930_04e7_4d42_ade5_3700d4a52ab7 a owl:Class ;
     rdfs:label "MaterialRelation"@en ;
     rdfs:comment "A material_relation can e.g. return a predefined number, return a database query, be an equation that depends on other physics_quantities."@en ;
@@ -264,6 +290,8 @@ emmo:EMMO_02c4890b_aef3_4173_9669_94d1f6baf611 a owl:Class ;
             owl:unionOf ( emmo:EMMO_01354ac2_cce1_4b7d_8b4a_7322d6cb10bc emmo:EMMO_fbcc3aad_c58a_4185_bcc9_859db779b226 ) ] ;
     skos:prefLabel "Coupled"@en .
 
+emmo:EMMO_2a888cdf_ec4a_4ec5_af1c_0343372fc978 rdfs:label "Objective"@en .
+
 emmo:EMMO_7d56ec24_499d_487a_af7d_a91aaa787bfe a owl:Class ;
     rdfs:label "MultiSimulation"@en ;
     rdfs:subClassOf emmo:EMMO_e97af6ec_4371_4bbc_8936_34b76e33302f ;
@@ -279,11 +307,15 @@ emmo:EMMO_9335cf09_431f_4613_9dab_ce4ceaca965b a owl:Class ;
     skos:prefLabel "Simulation"@en ;
     emmo:elucidation "A estimation of a property using a functional icon."@en .
 
+emmo:EMMO_9b87d718_9dcc_4f7d_ad20_12c2aa4c76be rdfs:label "Estimated"@en .
+
 emmo:EMMO_db9a009e_f097_43f5_9520_6cbc07e7610b a owl:Class ;
     rdfs:label "NaturalLaw"@en ;
     rdfs:subClassOf emmo:EMMO_937757d3_ed79_4ae3_9513_3b135e58a6a1 ;
     skos:prefLabel "NaturalLaw"@en ;
     emmo:elucidation "A scientific theory that focuses on a specific phenomena, for which a single statement (not necessariliy in mathematical form) can be expressed."@en .
+
+emmo:EMMO_e56ee3eb_7609_4ae1_8bed_51974f0960a6 rdfs:label "Equation"@en .
 
 emmo:EMMO_f7ed665b_c2e1_42bc_889b_6b42ed3a36f0 a owl:Class ;
     rdfs:label "MathematicalModel"@en ;
@@ -314,7 +346,8 @@ emmo:EMMO_b29fd350_39aa_4af7_9459_3faa0544cba6 a owl:Class ;
     skos:prefLabel "PhysicsBasedModel"@en ;
     emmo:elucidation "A mathematical entity based on a fundamental physics theory which defines the relations between physics quantities of an entity."@en .
 
-emmo:EMMO_c7013b53_3071_410b_a5e4_a8d266dcdfb5 skos:example "A guinea pig."@en .
+emmo:EMMO_c7013b53_3071_410b_a5e4_a8d266dcdfb5 rdfs:label "FunctionalIcon"@en ;
+    skos:example "A guinea pig."@en .
 
 emmo:EMMO_e97af6ec_4371_4bbc_8936_34b76e33302f a owl:Class ;
     rdfs:label "PhysicsBasedSimulation"@en ;
@@ -354,6 +387,12 @@ A computation machine that calculate the average value of a dataset."""@en ;
     emmo:elucidation "A procedure that deals with quantitative symbols (i.e. symbols associated with a quantitative oriented language)."@en .
 
 [] a owl:Axiom ;
+    rdfs:seeAlso "https://www.cencenelec.eu/media/CEN-CENELEC/CWAs/RI/cwa17284_2018.pdf"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:isDefinedBy ;
+    owl:annotatedSource emmo:EMMO_e97af6ec_4371_4bbc_8936_34b76e33302f ;
+    owl:annotatedTarget "CEN Workshop Agreement – CWA 17284 “Materials modelling – terminology, classification and metadata”"@en .
+
+[] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource emmo:EMMO_eff42cb3_208e_4768_9a39_f8b6b3c3d7a2 ;
     owl:annotatedTarget "Computation"@en ;
@@ -363,11 +402,5 @@ A computation machine that calculate the average value of a dataset."""@en ;
     rdfs:seeAlso "https://www.cencenelec.eu/media/CEN-CENELEC/CWAs/RI/cwa17284_2018.pdf"^^xsd:anyURI ;
     owl:annotatedProperty rdfs:isDefinedBy ;
     owl:annotatedSource emmo:EMMO_b29fd350_39aa_4af7_9459_3faa0544cba6 ;
-    owl:annotatedTarget "CEN Workshop Agreement – CWA 17284 “Materials modelling – terminology, classification and metadata”"@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "https://www.cencenelec.eu/media/CEN-CENELEC/CWAs/RI/cwa17284_2018.pdf"^^xsd:anyURI ;
-    owl:annotatedProperty rdfs:isDefinedBy ;
-    owl:annotatedSource emmo:EMMO_e97af6ec_4371_4bbc_8936_34b76e33302f ;
     owl:annotatedTarget "CEN Workshop Agreement – CWA 17284 “Materials modelling – terminology, classification and metadata”"@en .
 

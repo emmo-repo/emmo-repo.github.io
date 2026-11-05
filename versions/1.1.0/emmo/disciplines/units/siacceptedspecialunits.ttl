@@ -6,6 +6,12 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+emmo:EMMO_216f448e_cdbc_4aeb_a529_7a5fe7fc38bb rdfs:label "UnitSymbol"@en .
+
+emmo:EMMO_4b965242_29f0_4e42_a4b6_f8a5988052df rdfs:label "MeasurementUnitByPrefix"@en .
+
+emmo:EMMO_868ae137_4d25_493e_b270_21ea3d94849e rdfs:label "NonPrefixedUnit"@en .
+
 <https://w3id.org/emmo/disciplines/units/siacceptedspecialunits> a owl:Ontology ;
     dcterms:abstract "The module 'siacceptedspecialunits' include the tbox for the 15 non-SI special units that are accepted for use with the SI units."@en ;
     dcterms:contributor <https://orcid.org/0000-0001-8869-3718>,
@@ -24,6 +30,10 @@ We kindly acknowledge NIST for reusing their content, including the selection of
     owl:versionIRI <https://w3id.org/emmo/1.0.4/disciplines/units/siacceptedspecialunits> ;
     owl:versionInfo "1.0.4"^^xsd:string ;
     emmo:contact "emmo@emmc.eu"^^xsd:string .
+
+emmo:EMMO_08b308d4_31cd_4779_a784_aa92fc730f39 rdfs:label "DerivedUnit"@en .
+
+emmo:EMMO_3ee80521_3c23_4dd1_935d_9d522614a3e2 rdfs:label "SpecialUnit"@en .
 
 emmo:EMMO_6795a4b8_ffd0_4588_a581_a9413fe49cac a owl:Class ;
     rdfs:label "SIAcceptedUnit"@en ;
@@ -47,6 +57,8 @@ emmo:EMMO_ac19c801_bead_4730_8b8c_50020eec45ec a owl:Class ;
         emmo:EMMO_e8b5f7de_4fd9_41d7_b988_87b512fe0180 ;
     skos:prefLabel "SIAcceptedDerivedUnit"@en ;
     emmo:elucidation "Defived units that are accepted to be used with SI."@en .
+
+emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e rdfs:label "PrefixedUnit"@en .
 
 emmo:EMMO_e8b5f7de_4fd9_41d7_b988_87b512fe0180 a owl:Class ;
     rdfs:label "SIAccepted"@en ;

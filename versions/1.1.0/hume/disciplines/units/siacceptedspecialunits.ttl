@@ -7,35 +7,9 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ns1:CausalStructure rdfs:label "CausalStructure"@en .
-
-ns1:Contrast rdfs:label "Contrast"@en .
-
-ns1:Data rdfs:label "Data"@en .
-
-ns1:DataByDiscretness rdfs:label "DataByDiscretness"@en .
-
-ns1:DiscreteData rdfs:label "DiscreteData"@en .
-
-ns1:EMMO rdfs:label "EMMO"@en .
-
-ns1:Fusion rdfs:label "Fusion"@en .
-
-ns1:Item rdfs:label "Item"@en .
-
-ns1:Language rdfs:label "Language"@en .
-
 ns1:MeasurementUnitByPrefix rdfs:label "MeasurementUnitByPrefix"@en .
 
-ns1:Metrological rdfs:label "Metrological"@en .
-
-ns1:MetrologicalReference rdfs:label "MetrologicalReference"@en .
-
 ns1:NonPrefixedUnit rdfs:label "NonPrefixedUnit"@en .
-
-ns1:Perspective rdfs:label "Perspective"@en .
-
-ns1:Symbolic rdfs:label "Symbolic"@en .
 
 ns1:UnitSymbol rdfs:label "UnitSymbol"@en .
 
@@ -59,8 +33,6 @@ We kindly acknowledge NIST for reusing their content, including the selection of
     ns1:contact "emmo@emmc.eu"^^xsd:string .
 
 ns1:DerivedUnit rdfs:label "DerivedUnit"@en .
-
-ns1:MeasurementUnit rdfs:label "MeasurementUnit"@en .
 
 ns1:PrefixedUnit rdfs:label "PrefixedUnit"@en .
 

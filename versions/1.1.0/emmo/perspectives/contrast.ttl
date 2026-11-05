@@ -22,8 +22,6 @@
     owl:versionInfo "1.0.4"^^xsd:string ;
     emmo:contact "emmo@emmc.eu"^^xsd:string .
 
-emmo:EMMO_49267eba_5548_4163_8f36_518d65b583f9 rdfs:label "Perspective"@en .
-
 emmo:EMMO_5a10e288_c6a5_409a_a16a_98a2fb8be4f3 a owl:Class ;
     rdfs:label "NonEncodedContrast"@en ;
     rdfs:subClassOf emmo:EMMO_1e877c70_3b01_45a8_a8f6_8ce4f6a24660 ;
@@ -36,7 +34,6 @@ emmo:EMMO_5a10e288_c6a5_409a_a16a_98a2fb8be4f3 a owl:Class ;
 It doesn't mean that such contrasts cannot be used to deduce something: in fact they can be seen as indexes (in semiotic sense) of a causally connected phenomena. Simply, there is no agent behind that contrast with the intention to transmit data."""@en .
 
 emmo:EMMO_3e7add3d_e6ed_489a_a796_8e31fef9b490 a owl:Class ;
-    rdfs:label "Data"@en ;
     rdfs:subClassOf emmo:EMMO_1e877c70_3b01_45a8_a8f6_8ce4f6a24660 ;
     owl:disjointWith emmo:EMMO_5a10e288_c6a5_409a_a16a_98a2fb8be4f3 ;
     skos:altLabel "EncodedContrast"@en,
@@ -59,7 +56,6 @@ We call "interpreting" the act of providing semantic meaning to data, which is c
     emmo:wikipediaReference "https://no.wikipedia.org/wiki/Data"^^xsd:anyURI .
 
 emmo:EMMO_1e877c70_3b01_45a8_a8f6_8ce4f6a24660 a owl:Class ;
-    rdfs:label "Contrast"@en ;
     rdfs:seeAlso "Luciano Floridi, \"Information - A very Short Introduction\", Oxford University Press., (2010) ISBN 978-0199551378"@en ;
     rdfs:subClassOf emmo:EMMO_49267eba_5548_4163_8f36_518d65b583f9 ;
     skos:altLabel "Dedomena"@en,

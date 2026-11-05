@@ -36,6 +36,7 @@ emmo:EMMO_7f92ac53_3a89_41a4_af5c_a8ad320a7936 a owl:Class ;
     emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.2/doc/figs/NonConvergent.png"^^xsd:anyURI .
 
 emmo:EMMO_b4494d69_6393_4eb4_8346_7fedd4df0bc5 a owl:Class ;
+    rdfs:label "Maximal"@en ;
     rdfs:subClassOf emmo:EMMO_57c75ca1_bf8a_42bc_85d9_58cfe38c7df2 ;
     skos:prefLabel "Maximal"@en ;
     emmo:elucidation "The superclass for all classes of entities that have no proper parts of the same type of the whole are not proper part of an entity of that type."@en ;
@@ -65,6 +66,7 @@ emmo:EMMO_b501a8ed_ae15_4288_9d92_1026463e95cb a owl:Class ;
     emmo:contact "emmo@emmc.eu"^^xsd:string .
 
 emmo:EMMO_32e701c0_a925_49df_9829_0931b8554807 a owl:Class ;
+    rdfs:label "Structural"@en ;
     rdfs:subClassOf emmo:EMMO_49267eba_5548_4163_8f36_518d65b583f9 ;
     skos:prefLabel "Structural"@en ;
     emmo:elucidation "A perspective that categorises causal structures according to the merelogical relations between the whole and the parts, taking into account their types."@en .
@@ -97,6 +99,7 @@ If A is a water-fluid so small that its every proper part is no more a continuum
     emmo:elucidation "The superclass for all classes of entities that have parts of the same type of the whole."@en .
 
 emmo:EMMO_57c75ca1_bf8a_42bc_85d9_58cfe38c7df2 a owl:Class ;
+    rdfs:label "Fundamental"@en ;
     rdfs:seeAlso emmo:EMMO_bbca6dfa_7463_4e8d_8280_35862ff50ce0 ;
     rdfs:subClassOf emmo:EMMO_32e701c0_a925_49df_9829_0931b8554807 ;
     skos:altLabel "Lifetime"@en ;
@@ -106,12 +109,6 @@ Following the two examples, a marathon individual is a maximal that can be decom
     skos:prefLabel "Fundamental"@en ;
     emmo:definition "Fundamental(x) ≡ ∃φ[φ(x) ∧ ¬∃yRP⟨φ⟩(y, x)]"^^xsd:string ;
     emmo:elucidation "The superclass for all classes of entities that have no proper parts of the same type of the whole."@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso emmo:EMMO_6786b336_e982_4759_8dee_1905a4106591 ;
-    owl:annotatedProperty emmo:definition ;
-    owl:annotatedSource emmo:EMMO_57c75ca1_bf8a_42bc_85d9_58cfe38c7df2 ;
-    owl:annotatedTarget "Fundamental(x) ≡ ∃φ[φ(x) ∧ ¬∃yRP⟨φ⟩(y, x)]"^^xsd:string .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:altLabel ;
@@ -124,6 +121,12 @@ Following the two examples, a marathon individual is a maximal that can be decom
     owl:annotatedSource emmo:EMMO_57c75ca1_bf8a_42bc_85d9_58cfe38c7df2 ;
     owl:annotatedTarget "Fundamental"@en ;
     emmo:etymology "From Latin fundamentum (“foundation”), from fundō (“to lay the foundation (of something), to found”), from fundus (“bottom”)."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso emmo:EMMO_6786b336_e982_4759_8dee_1905a4106591 ;
+    owl:annotatedProperty emmo:definition ;
+    owl:annotatedSource emmo:EMMO_57c75ca1_bf8a_42bc_85d9_58cfe38c7df2 ;
+    owl:annotatedTarget "Fundamental(x) ≡ ∃φ[φ(x) ∧ ¬∃yRP⟨φ⟩(y, x)]"^^xsd:string .
 
 [] a owl:Axiom ;
     rdfs:seeAlso emmo:EMMO_6786b336_e982_4759_8dee_1905a4106591 ;

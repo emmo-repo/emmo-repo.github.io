@@ -122,15 +122,15 @@ A 'Perceptual' becomes a semiotic object, when it is part of a 'Semiotic' proces
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:Document ;
-    owl:annotatedTarget "Document"@en ;
-    ns1:etymology "From Latin documentum, from the verb doceō (“teach”) +‎ -mentum."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource ns1:Perceptual ;
     owl:annotatedTarget "Perceptual"@en ;
     ns1:etymology "From Latin percipiō, past participle perceptus (“take hold of, obtain, receive, observe”), from per (“by, through”) + capiō (“to take”)."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Document ;
+    owl:annotatedTarget "Document"@en ;
+    ns1:etymology "From Latin documentum, from the verb doceō (“teach”) +‎ -mentum."@en .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;

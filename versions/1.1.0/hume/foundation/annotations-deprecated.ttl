@@ -134,14 +134,14 @@ ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 a owl:AnnotationProperty ;
     owl:annotatedTarget "Axiom not included in the theory because of OWL 2 DL global restrictions for decidability."@en .
 
 [] a owl:Axiom ;
-    rdfs:seeAlso "https://www.w3.org/TR/2012/REC-owl2-profiles-20121211/"^^xsd:anyURI ;
-    owl:annotatedProperty ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
-    owl:annotatedSource ns1:EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db ;
-    owl:annotatedTarget "Axioms to add to the OWL 2 RL version of the ontology to reach DL expressivity."@en .
-
-[] a owl:Axiom ;
     rdfs:seeAlso "https://en.wiktionary.org/wiki/Wiktionary"@en ;
     owl:annotatedProperty ns1:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
     owl:annotatedSource ns1:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 ;
     owl:annotatedTarget "Definitions are usually taken from Wiktionary."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "https://www.w3.org/TR/2012/REC-owl2-profiles-20121211/"^^xsd:anyURI ;
+    owl:annotatedProperty ns1:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+    owl:annotatedSource ns1:EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db ;
+    owl:annotatedTarget "Axioms to add to the OWL 2 RL version of the ontology to reach DL expressivity."@en .
 

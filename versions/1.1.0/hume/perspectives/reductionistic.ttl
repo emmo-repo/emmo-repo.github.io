@@ -29,7 +29,6 @@ ns1:Gathering a owl:Class ;
     ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.2/doc/figs/Gathering.png"^^xsd:anyURI .
 
 ns1:IntermidiateTile a owl:Class ;
-    rdfs:label "IntermidiateTile"@en ;
     rdfs:subClassOf ns1:SpatioTemporalTileByPosition ;
     skos:prefLabel "IntermidiateTile"@en ;
     ns1:elucidation "A tile that has next and is next of other tiles within the same tessellation."@en ;
@@ -51,7 +50,6 @@ ns1:SpatialSequence a owl:Class ;
     ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.2/doc/figs/SpatialSequence.png"^^xsd:anyURI .
 
 ns1:TemporalSequence a owl:Class ;
-    rdfs:label "TemporalSequence"@en ;
     rdfs:subClassOf ns1:TemporalTiling ;
     skos:altLabel "Sequence"@en ;
     skos:prefLabel "TemporalSequence"@en ;
@@ -128,14 +126,12 @@ This does not mean that there cannot be a change in the internal structure of th
         "The use of spatial direct parthood in state definition means that an arrangement cannot overlap in space another arrangement that is direct part of the same whole."@en .
 
 ns1:BeginTile a owl:Class ;
-    rdfs:label "BeginTile"@en ;
     rdfs:subClassOf ns1:SpatioTemporalTileByPosition ;
     skos:prefLabel "BeginTile"@en ;
     ns1:elucidation "A direct part that only is the source, but not the target of temporal relations."@en ;
     ns1:illustration "https://w3id.org/emmo/raw/1.0.4/doc/figs/BeginTile.png"^^xsd:anyURI .
 
 ns1:EndTile a owl:Class ;
-    rdfs:label "EndTile"@en ;
     rdfs:subClassOf ns1:SpatioTemporalTileByPosition ;
     skos:prefLabel "EndTile"@en ;
     ns1:elucidation "A direct part that only is the target, but not the source of temporal relations."@en ;
@@ -175,7 +171,6 @@ ns1:JunctionTile a owl:Class ;
     ns1:illustration "https://w3id.org/emmo/raw/1.0.4/doc/figs/JunctionTile.png"^^xsd:anyURI .
 
 ns1:Reductionistic a owl:Class ;
-    rdfs:label "Reductionistic"@en ;
     rdfs:subClassOf ns1:Perspective ;
     skos:prefLabel "Reductionistic"@en ;
     ns1:elucidation "A class devoted to categorize causal objects by specifying their granularity levels."@en ;
@@ -194,14 +189,12 @@ ns1:SpatialTile a owl:Class ;
     ns1:illustration "https://w3id.org/emmo/raw/1.0.4/doc/figs/SpatialTile.png"^^xsd:anyURI .
 
 ns1:TemporalTile a owl:Class ;
-    rdfs:label "TemporalTile"@en ;
     rdfs:subClassOf ns1:SpatioTemporalTileByConnection ;
     skos:prefLabel "TemporalTile"@en ;
     ns1:elucidation "A direct part that is obtained by partitioning a whole purely in temporal parts."@en ;
     ns1:illustration "https://w3id.org/emmo/raw/1.0.4/doc/figs/TemporalTile.png"^^xsd:anyURI .
 
 ns1:Tile a owl:Class ;
-    rdfs:label "Tile"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf ns1:hasTile ] ;
             owl:someValuesFrom ns1:Tessellation ],
@@ -231,7 +224,6 @@ ns1:MixedTiling a owl:Class ;
     ns1:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.2/doc/figs/MixedTiling.png"^^xsd:anyURI .
 
 ns1:SpatioTemporalTile a owl:Class ;
-    rdfs:label "SpatioTemporalTile"^^xsd:string ;
     rdfs:seeAlso ns1:EMMO_22c91e99_61f8_4433_8853_432d44a2a46a ;
     rdfs:subClassOf ns1:Tile ;
     skos:altLabel "WellFormedTile"@en ;
@@ -241,19 +233,16 @@ ns1:SpatioTemporalTile a owl:Class ;
     ns1:elucidation "The superclass for all tiles belonging to tessellations in which all tiles are connected through spatiotemporal relations hasNext or contacts."@en .
 
 ns1:SpatioTemporalTileByConnection a owl:Class ;
-    rdfs:label "SpatioTemporalTileByConnection"@en ;
     rdfs:subClassOf ns1:SpatioTemporalTile ;
     skos:prefLabel "SpatioTemporalTileByConnection"@en ;
     ns1:elucidation "The superclass for tiles categorized accordingly to their topological role within a tessellation."@en .
 
 ns1:SpatioTemporalTileByPosition a owl:Class ;
-    rdfs:label "SpatioTemporalTileByPosition"@en ;
     rdfs:subClassOf ns1:SpatioTemporalTile ;
     skos:prefLabel "SpatioTemporalTileByPosition"@en ;
     ns1:elucidation "The superclass for tiles categorized accordingly to their location within a tessellation in terms of causal source, sink or intermediary."@en .
 
 ns1:TemporalTiling a owl:Class ;
-    rdfs:label "TemporalTiling"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom ns1:TemporalTile ;
             owl:onProperty ns1:hasSpatioTemporalTile ],
@@ -263,7 +252,6 @@ ns1:TemporalTiling a owl:Class ;
     ns1:illustration "https://w3id.org/emmo/raw/1.0.4/doc/figs/TemporalTile.png"^^xsd:anyURI .
 
 ns1:SpatioTemporalTessellation a owl:Class ;
-    rdfs:label "SpatioTemporalTessellation"^^xsd:string ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:hasSpatioTemporalTile ;
             owl:someValuesFrom ns1:Item ],
@@ -274,7 +262,6 @@ ns1:SpatioTemporalTessellation a owl:Class ;
     ns1:elucidation "The superclass for all tessellations in which all tiles are connected through spatiotemporal relations hasNext or contacts."@en .
 
 ns1:Tessellation a owl:Class ;
-    rdfs:label "Tessellation"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:hasTile ;
             owl:someValuesFrom ns1:Item ],

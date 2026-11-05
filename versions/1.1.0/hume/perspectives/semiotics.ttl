@@ -245,6 +245,7 @@ ns2:EMMO_64e4d7b0_f07b_4328_9282_7bf9fb0c3d09 a owl:ObjectProperty ;
     ns2:note "This relation is used to specify the detailed information that make up the overall description for an entity. A description can be used to summarize in one single entiity several properties relaterd to the same referent."@en .
 
 ns2:Estimator a owl:Class ;
+    rdfs:label "Estimator"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf ns2:hasInterpreter ] ;
             owl:someValuesFrom ns2:Estimation ],
@@ -283,6 +284,7 @@ ns2:Naming a owl:Class ;
     ns2:elucidation "A declaration that provides a sign for an object that is independent from any assignment rule."@en .
 
 ns2:Observer a owl:Class ;
+    rdfs:label "Observer"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf ns2:hasInterpreter ] ;
             owl:someValuesFrom ns2:Observation ],
@@ -413,11 +415,11 @@ ns2:CodedBySubjectivity a owl:Class ;
 ns2:Cognition a owl:Class ;
     rdfs:label "Cognition"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty ns2:hasInterpreter ;
-            owl:someValuesFrom ns2:Cogniser ],
-        [ a owl:Restriction ;
             owl:onProperty ns2:hasSign ;
             owl:someValuesFrom ns2:Icon ],
+        [ a owl:Restriction ;
+            owl:onProperty ns2:hasInterpreter ;
+            owl:someValuesFrom ns2:Cogniser ],
         ns2:SemiosisByReferent ;
     skos:altLabel "IconSemiosis"@en ;
     skos:prefLabel "Cognition"@en ;
@@ -426,11 +428,11 @@ ns2:Cognition a owl:Class ;
 ns2:Deduction a owl:Class ;
     rdfs:label "Deduction"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty ns2:hasInterpreter ;
-            owl:someValuesFrom ns2:Deducer ],
-        [ a owl:Restriction ;
             owl:onProperty ns2:hasSign ;
             owl:someValuesFrom ns2:Index ],
+        [ a owl:Restriction ;
+            owl:onProperty ns2:hasInterpreter ;
+            owl:someValuesFrom ns2:Deducer ],
         ns2:SemiosisByReferent ;
     skos:altLabel "IndexSemiosis"@en ;
     skos:example "The interpreter feels that the plate is hot and assigns the status of the kitchen stove to be on."@en ;
@@ -537,6 +539,7 @@ ns2:Description a owl:Class ;
     ns2:note "A description is a collection of properties that depicts an object. It is not atomic since it is made of several properties collected together."@en .
 
 ns2:Determiner a owl:Class ;
+    rdfs:label "Determiner"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf ns2:hasInterpreter ] ;
             owl:someValuesFrom ns2:Determination ],
@@ -546,6 +549,7 @@ ns2:Determiner a owl:Class ;
     ns2:elucidation "An 'interpreter' that perceives another 'entity' (the 'object') through a specific perception mechanism and produces a 'property' (the 'sign') that stands for the result of that particular perception."@en .
 
 ns2:InterpreterByReferent a owl:Class ;
+    rdfs:label "InterpreterByReferent"@en ;
     rdfs:subClassOf ns2:Interpreter ;
     skos:prefLabel "InterpreterByReferent"@en ;
     ns2:elucidation "Interpreter classified by how the sign stands for its reference object."@en .
@@ -591,11 +595,11 @@ ns2:Cogniser a owl:Class ;
 
 ns2:Declaration a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty ns2:hasInterpreter ;
-            owl:someValuesFrom ns2:Declarer ],
-        [ a owl:Restriction ;
             owl:onProperty ns2:hasSign ;
             owl:someValuesFrom ns2:Conventional ],
+        [ a owl:Restriction ;
+            owl:onProperty ns2:hasInterpreter ;
+            owl:someValuesFrom ns2:Declarer ],
         ns2:SemiosisByReferent ;
     skos:altLabel "ConventionalSemiosis"@en ;
     skos:prefLabel "Declaration"@en ;
@@ -604,11 +608,11 @@ ns2:Declaration a owl:Class ;
 
 ns2:Determination a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty ns2:hasSign ;
-            owl:someValuesFrom ns2:Property ],
-        [ a owl:Restriction ;
             owl:onProperty ns2:hasInterpreter ;
             owl:someValuesFrom ns2:Determiner ],
+        [ a owl:Restriction ;
+            owl:onProperty ns2:hasSign ;
+            owl:someValuesFrom ns2:Property ],
         ns2:Declaration ;
     skos:altLabel "Characterisation"@en ;
     skos:example "Assigning the word \"red\" as sign for an object provides an information to all other interpreters about the outcome of a specific observation procedure according to the determiner."@en ;
@@ -693,6 +697,7 @@ ns2:Conventional a owl:Class ;
     ns2:note "In Peirce semiotics this kind of sign category is called symbol. However, since symbol is also used in formal languages, the name is changed in conventional."@en .
 
 ns2:Declarer a owl:Class ;
+    rdfs:label "Declarer"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf ns2:hasInterpreter ] ;
             owl:someValuesFrom ns2:Declaration ],
@@ -761,17 +766,17 @@ ns2:semioticOvercrosses a owl:ObjectProperty ;
 ns2:Interpretant a owl:Class ;
     rdfs:label "Interpretant"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty [ owl:inverseOf ns2:hasInternalRepresentation ] ;
-            owl:someValuesFrom ns2:Interpreter ],
-        [ a owl:Restriction ;
-            owl:onProperty ns2:refersTo ;
-            owl:someValuesFrom ns2:Referent ],
+            owl:onProperty [ owl:inverseOf ns2:hasInterpretant ] ;
+            owl:someValuesFrom ns2:Semiosis ],
         [ a owl:Restriction ;
             owl:onProperty ns2:isSignifiedBy ;
             owl:someValuesFrom ns2:Sign ],
         [ a owl:Restriction ;
-            owl:onProperty [ owl:inverseOf ns2:hasInterpretant ] ;
-            owl:someValuesFrom ns2:Semiosis ],
+            owl:onProperty ns2:refersTo ;
+            owl:someValuesFrom ns2:Referent ],
+        [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf ns2:hasInternalRepresentation ] ;
+            owl:someValuesFrom ns2:Interpreter ],
         ns2:SemioticEntity ;
     skos:example """A film is the interpretant for a camera, which is the interpreter. The object captured by the camera is the referent. The film is the internal representation of the object, i.e. how the camera understand the object according to its capacity. The film (interpretant) refers to the object (referent) according to the camera (interpreter).
 When the film is removed from the camera, developed and printed on photographic paper (or for digital camera the image is downloaded as jpeg and displayed on a laptop) then we create a sign other than the interpretant.
@@ -783,17 +788,17 @@ However, in case of analogic film we can always look at the negatve that will su
 ns2:Referent a owl:Class ;
     rdfs:label "Referent"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty ns2:isReferredBy ;
-            owl:someValuesFrom ns2:Interpretant ],
-        [ a owl:Restriction ;
-            owl:onProperty ns2:isRepresentedBy ;
-            owl:someValuesFrom ns2:Sign ],
-        [ a owl:Restriction ;
             owl:onProperty ns2:isInterpretationAccordingTo ;
             owl:someValuesFrom ns2:Interpreter ],
         [ a owl:Restriction ;
+            owl:onProperty ns2:isReferredBy ;
+            owl:someValuesFrom ns2:Interpretant ],
+        [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf ns2:hasReferent ] ;
             owl:someValuesFrom ns2:Semiosis ],
+        [ a owl:Restriction ;
+            owl:onProperty ns2:isRepresentedBy ;
+            owl:someValuesFrom ns2:Sign ],
         ns2:SemioticEntity ;
     skos:altLabel "Object"@en,
         "SemioticObject"@en ;
@@ -815,18 +820,19 @@ ns2:providesInterpretation a owl:ObjectProperty ;
     ns2:elucidation "A relation that connects the interpreter to the semiotic object in a semiotic process."@en .
 
 ns2:Interpreter a owl:Class ;
+    rdfs:label "Interpreter"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns2:hasInternalRepresentation ;
             owl:someValuesFrom ns2:Interpretant ],
+        [ a owl:Restriction ;
+            owl:onProperty ns2:providesInterpretation ;
+            owl:someValuesFrom ns2:Referent ],
         [ a owl:Restriction ;
             owl:onProperty ns2:interprets ;
             owl:someValuesFrom ns2:Sign ],
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf ns2:hasInterpreter ] ;
             owl:someValuesFrom ns2:Semiosis ],
-        [ a owl:Restriction ;
-            owl:onProperty ns2:providesInterpretation ;
-            owl:someValuesFrom ns2:Referent ],
         ns2:SemioticEntity ;
     skos:example """For example, the ontologist may be interest in cataloguing in the EMMO how the same object (e.g. a cat) is addressed using different signs (e.g. cat, gatto, chat) by different interpreters (e.g. english, italian or french people).
 
@@ -840,17 +846,17 @@ On the contrary, the interpreter is an agent recognized by the ontologist. The s
 
 ns2:Sign a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty ns2:isInterpretedBy ;
-            owl:someValuesFrom ns2:Interpreter ],
+            owl:onProperty ns2:standsFor ;
+            owl:someValuesFrom ns2:Referent ],
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf ns2:hasSign ] ;
             owl:someValuesFrom ns2:Semiosis ],
         [ a owl:Restriction ;
-            owl:onProperty ns2:standsFor ;
-            owl:someValuesFrom ns2:Referent ],
-        [ a owl:Restriction ;
             owl:onProperty ns2:isSignificationFor ;
             owl:someValuesFrom ns2:Interpretant ],
+        [ a owl:Restriction ;
+            owl:onProperty ns2:isInterpretedBy ;
+            owl:someValuesFrom ns2:Interpreter ],
         ns2:SemioticEntity ;
     skos:example """A novel is made of chapters, paragraphs, sentences, words and characters (in a direct parthood mereological hierarchy).
 
@@ -899,11 +905,11 @@ ns2:Semiosis a owl:Class ;
             owl:onProperty ns2:hasInterpretant ;
             owl:someValuesFrom ns2:Interpretant ],
         [ a owl:Restriction ;
-            owl:onProperty ns2:hasInterpreter ;
-            owl:someValuesFrom ns2:Interpreter ],
-        [ a owl:Restriction ;
             owl:onProperty ns2:hasSign ;
             owl:someValuesFrom ns2:Sign ],
+        [ a owl:Restriction ;
+            owl:onProperty ns2:hasInterpreter ;
+            owl:someValuesFrom ns2:Interpreter ],
         ns2:Semiotics ;
     skos:example """Me looking a cat and saying loud: "Cat!" -> the semiosis process
 
@@ -948,24 +954,9 @@ ns2:hasInterpreter a owl:ObjectProperty ;
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns2:FunctionalIcon ;
-    owl:annotatedTarget "FunctionalIcon"@en ;
-    ns2:etymology "From Latin functiō (“performance, execution”), from functus, perfect participle of fungor (“to perform, execute, discharge”)."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns2:Property ;
-    owl:annotatedTarget "Property"@en ;
-    ns2:etymology "From Latin proprietas (“a peculiarity, one's peculiar nature or quality, right or fact of possession, property”), from proprius (“special, particular, one's own”)."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns2:Observation ;
-    owl:annotatedTarget "Observation"@en ;
-    ns2:etymology "From Latin observare (“to watch, note, mark, heed, guard, keep, pay attention to, regard, comply with, etc.”), from ob (“before”) + servare (“to keep”),"@en .
-
-[] ns2:note """The rule for the subproperty chain:
-inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"""@en .
+    owl:annotatedSource ns2:Index ;
+    owl:annotatedTarget "Index"@en ;
+    ns2:etymology "From Latin index (“a discoverer, informer, spy; of things, an indicator, the forefinger, a title, superscription”), from indicō (“point out, show”)."@en .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
@@ -975,21 +966,12 @@ inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"""@en .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns2:Index ;
-    owl:annotatedTarget "Index"@en ;
-    ns2:etymology "From Latin index (“a discoverer, informer, spy; of things, an indicator, the forefinger, a title, superscription”), from indicō (“point out, show”)."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:altLabel ;
     owl:annotatedSource ns2:Icon ;
-    owl:annotatedTarget "Model"@en ;
-    ns2:etymology "From Latin modus (“measure”)."@en .
+    owl:annotatedTarget "Icon"@en ;
+    ns2:etymology "From Ancient Greek εἰκών (eikṓn, “likeness, image, portrait”)."@en .
 
 [] ns2:note """The rule for the subproperty chain:
  inverse (hasReferent) o inverse (hasInterpreter) ⇒ hasSign"""@en .
-
-[] ns2:note """The rule for the subproperty chain:
- inverse (hasInterpreter) o inverse (hasSign) ⇒ hasReferent"""@en .
 
 [] a swrl:Imp ;
     swrl:body [ a swrl:AtomList ;
@@ -1010,6 +992,21 @@ inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"""@en .
                     swrl:propertyPredicate ns2:providesInterpretation ] ;
             rdf:rest () ] .
 
+[] ns2:note """The rule for the subproperty chain:
+ inverse (hasInterpreter) o inverse (hasSign) ⇒ hasReferent"""@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource ns2:Icon ;
+    owl:annotatedTarget "Model"@en ;
+    ns2:etymology "From Latin modus (“measure”)."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns2:Estimation ;
+    owl:annotatedTarget "Estimation"@en ;
+    ns2:etymology "From Latin aestimatus (“to value, rate, esteem”)."@en .
+
 [] a owl:Axiom ;
     rdfs:seeAlso "https://en.wikipedia.org/wiki/Semiotic_theory_of_Charles_Sanders_Peirce#II._Icon,_index,_symbol"^^xsd:anyURI ;
     owl:annotatedProperty ns2:note ;
@@ -1019,6 +1016,58 @@ inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"""@en .
 (b) the diagram, whose internal relations, mainly dyadic or so taken, represent by analogy the relations in something (e.g. math formula, geometric flowchart)
 (c) the metaphor, which represents the representative character of a sign by representing a parallelism in something else
 [Wikipedia]"""@en .
+
+[] ns2:note """The rule for the subproperty chain:
+inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"""@en .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate ns2:isInterpretedBy ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl:var#y> ;
+                            swrl:argument2 <urn:swrl:var#z> ;
+                            swrl:propertyPredicate ns2:providesInterpretation ] ;
+                    rdf:rest () ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#z> ;
+                    swrl:argument2 <urn:swrl:var#x> ;
+                    swrl:propertyPredicate ns2:isRepresentedBy ] ;
+            rdf:rest () ] .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns2:ResemblanceIcon ;
+    owl:annotatedTarget "ResemblanceIcon"@en ;
+    ns2:etymology "From Old French sambler, sembler, from Late Latin similāre, present active infinitive of similō, from Latin similis, from Proto-Italic *semalis, from Proto-Indo-European *sem- (“together, one”)."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns2:FunctionalIcon ;
+    owl:annotatedTarget "FunctionalIcon"@en ;
+    ns2:etymology "From Latin functiō (“performance, execution”), from functus, perfect participle of fungor (“to perform, execute, discharge”)."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns2:Property ;
+    owl:annotatedTarget "Property"@en ;
+    ns2:etymology "From Latin proprietas (“a peculiarity, one's peculiar nature or quality, right or fact of possession, property”), from proprius (“special, particular, one's own”)."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns2:Observation ;
+    owl:annotatedTarget "Observation"@en ;
+    ns2:etymology "From Latin observare (“to watch, note, mark, heed, guard, keep, pay attention to, regard, comply with, etc.”), from ob (“before”) + servare (“to keep”),"@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource ns2:Icon ;
+    owl:annotatedTarget "Simulacrum"@en ;
+    ns2:etymology "From Latin simulacrum (\"likeness, semblance\")"@en .
 
 [] a swrl:Imp ;
     swrl:body [ a swrl:AtomList ;
@@ -1041,50 +1090,7 @@ inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"""@en .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns2:ResemblanceIcon ;
-    owl:annotatedTarget "ResemblanceIcon"@en ;
-    ns2:etymology "From Old French sambler, sembler, from Late Latin similāre, present active infinitive of similō, from Latin similis, from Proto-Italic *semalis, from Proto-Indo-European *sem- (“together, one”)."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns2:Icon ;
-    owl:annotatedTarget "Icon"@en ;
-    ns2:etymology "From Ancient Greek εἰκών (eikṓn, “likeness, image, portrait”)."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns2:Estimation ;
-    owl:annotatedTarget "Estimation"@en ;
-    ns2:etymology "From Latin aestimatus (“to value, rate, esteem”)."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource ns2:AnalogicalIcon ;
     owl:annotatedTarget "AnalogicalIcon"@en ;
     ns2:etymology "From Ancient Greek ἀναλογία (analogía), from ἀνά (aná) + λόγος (lógos, “speech, reckoning”)."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource ns2:Icon ;
-    owl:annotatedTarget "Simulacrum"@en ;
-    ns2:etymology "From Latin simulacrum (\"likeness, semblance\")"@en .
-
-[] a swrl:Imp ;
-    swrl:body [ a swrl:AtomList ;
-            rdf:first [ a swrl:IndividualPropertyAtom ;
-                    swrl:argument1 <urn:swrl:var#x> ;
-                    swrl:argument2 <urn:swrl:var#y> ;
-                    swrl:propertyPredicate ns2:isInterpretedBy ] ;
-            rdf:rest [ a swrl:AtomList ;
-                    rdf:first [ a swrl:IndividualPropertyAtom ;
-                            swrl:argument1 <urn:swrl:var#y> ;
-                            swrl:argument2 <urn:swrl:var#z> ;
-                            swrl:propertyPredicate ns2:providesInterpretation ] ;
-                    rdf:rest () ] ] ;
-    swrl:head [ a swrl:AtomList ;
-            rdf:first [ a swrl:IndividualPropertyAtom ;
-                    swrl:argument1 <urn:swrl:var#z> ;
-                    swrl:argument2 <urn:swrl:var#x> ;
-                    swrl:propertyPredicate ns2:isRepresentedBy ] ;
-            rdf:rest () ] .
 

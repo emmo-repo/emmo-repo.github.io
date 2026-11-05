@@ -42,6 +42,8 @@ emmo:EMMO_50967f46_51f9_462a_b1e4_e63365b4a184 a owl:Class ;
     skos:prefLabel "Heteronuclear"@en ;
     emmo:elucidation "A molecule composed of more than one element type."@en .
 
+emmo:EMMO_76bd5e44_bf5a_49f9_a517_eea5e8bcbc2d rdfs:label "CausalCluster"@en .
+
 emmo:EMMO_7b79b2ac_3cf2_4d3b_8cdc_bcabb59d869e rdfs:subClassOf emmo:EMMO_b32fe85d_2f7b_4972_9dd7_7cf20d4bba59 ;
     owl:disjointWith emmo:EMMO_8b1367d6_0133_4b56_acc1_fa8b058169e3 .
 
@@ -52,6 +54,10 @@ emmo:EMMO_8f87e700_99a8_4427_8ffb_e493de05c217 a owl:Class ;
     skos:prefLabel "Proton"@en ;
     emmo:elucidation "A positive charged subatomic particle found in the atomic nucleus."@en ;
     emmo:wikipediaReference "https://en.wikipedia.org/wiki/Proton"^^xsd:string .
+
+emmo:EMMO_b295158f_fda4_4124_ab58_d9ea4ccfca5a rdfs:label "GenericPhysicalSystem"@en .
+
+emmo:EMMO_e7aac247_31d6_4b2e_9fd2_e842b1b7ccac rdfs:label "CausalSystem"@en .
 
 emmo:EMMO_f87e79eb_f549_4a06_9c27_a3d1412444c6 a owl:Class ;
     rdfs:label "Hyperon"@en ;
@@ -101,6 +107,7 @@ spin 2: O15 in ground state."""@en ;
     emmo:elucidation "A non-elementary particle (bonded) of a fundamental bosonic type (integer spin)."@en .
 
 emmo:EMMO_57d977ab_0036_4779_b59a_e47620afdb9c a owl:Class ;
+    rdfs:label "CompositePhysicalObject"@en ;
     rdfs:subClassOf emmo:EMMO_0f3e0646_4f06_4588_9779_6a4f05c5a8d6 ;
     owl:disjointWith emmo:EMMO_801395f8_948e_4637_ac3b_5fcd587d72ca ;
     skos:prefLabel "CompositePhysicalObject"@en ;
@@ -118,6 +125,7 @@ emmo:EMMO_5cc4e111_3eb1_44a3_9369_5af3846cf605 a owl:Class ;
     emmo:elucidation "The class of individuals standing for causally non-convex interacting systems."@en .
 
 emmo:EMMO_6e9cb807_fc68_4bcf_b3ba_5fccc887c644 a owl:Class ;
+    rdfs:label "OrdinaryMatter"@en ;
     rdfs:subClassOf emmo:EMMO_43d0bb2c_bb0e_4312_a0de_084c29ff7f9e ;
     skos:prefLabel "OrdinaryMatter"@en ;
     emmo:elucidation "Matter composed of only matter particles, excluding anti-matter particles."@en .
@@ -125,6 +133,7 @@ emmo:EMMO_6e9cb807_fc68_4bcf_b3ba_5fccc887c644 a owl:Class ;
 emmo:EMMO_820619ca_b23e_4c7a_8543_18a17722abc0 rdfs:subClassOf emmo:EMMO_53dced52_34f6_4cf0_8a99_ddf451861543 .
 
 emmo:EMMO_bc37743c_37c4_4ec7_9d58_d1aae5567352 a owl:Class ;
+    rdfs:label "Substance"@en ;
     rdfs:subClassOf emmo:EMMO_41cecfc2_bb6b_45f3_b6cc_e7740d931afe,
         emmo:EMMO_57d977ab_0036_4779_b59a_e47620afdb9c ;
     skos:example "A litre of water."@en,
@@ -154,6 +163,7 @@ emmo:EMMO_e024544d_e374_45b7_9340_1982040bc6b7 a owl:Class ;
     emmo:elucidation "A molecule composed of only one element type."@en .
 
 emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad a owl:Class ;
+    rdfs:label "Atom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_dc57d998_23db_4d8e_b2cd_f346b195b846 ;
             owl:someValuesFrom emmo:EMMO_730f2e31_ca78_410f_a5e1_4043217a41ab ],
@@ -179,9 +189,11 @@ emmo:EMMO_f13672a3_59cc_40ed_8def_65009a8f74e6 a owl:Class ;
     emmo:elucidation "Antimatter is matter that is composed only of the antiparticles of those that constitute ordinary matter."@en ;
     emmo:note "This branch is not expanded due to the limited use of such entities."@en .
 
-emmo:EMMO_09f0ac34_c349_46b5_acf0_0edeae52cca1 emmo:OWLRL2DLAxioms "DisjointUnionOf: PhysicalObject, PhysicalPhenomenon"^^xsd:string .
+emmo:EMMO_09f0ac34_c349_46b5_acf0_0edeae52cca1 rdfs:label "InteractingSystem"@en ;
+    emmo:OWLRL2DLAxioms "DisjointUnionOf: PhysicalObject, PhysicalPhenomenon"^^xsd:string .
 
 emmo:EMMO_0f3e0646_4f06_4588_9779_6a4f05c5a8d6 a owl:Class ;
+    rdfs:label "PhysicalObjectByBond"@en ;
     rdfs:subClassOf emmo:EMMO_38b579de_4331_40e0_803d_09efa298e726 ;
     skos:prefLabel "PhysicalObjectByBond"@en ;
     emmo:elucidation "Categorisation of physical objects by how they are bonded."@en .
@@ -194,6 +206,7 @@ emmo:EMMO_1c16bb7f_5400_4498_8ef2_54392908da4e a owl:Class ;
     emmo:elucidation "Matter composed of both matter and antimatter fundamental particles."@en .
 
 emmo:EMMO_21205421_5783_4d3e_81e5_10c5d894a88a a owl:Class ;
+    rdfs:label "MolecularEntity"@en ;
     rdfs:isDefinedBy "https://goldbook.iupac.org/terms/view/M03986"@en ;
     rdfs:subClassOf emmo:EMMO_32f55395_8b94_40de_a103_bffa5c121d98 ;
     skos:altLabel "ChemicalEntity"@en ;
@@ -229,6 +242,7 @@ spin 3/2: He5 in ground state, Delta baryons (excitations of the proton and neut
     emmo:elucidation "A non-elementary particle (bonded) of a fundamental fermionic type (half-integer spin)."@en .
 
 emmo:EMMO_2c07a731_84f9_4883_9e58_2bc073abda29 a owl:Class ;
+    rdfs:label "PhysicalParticleBySpin"@en ;
     rdfs:subClassOf emmo:EMMO_a15cea10_9946_4d2b_95c5_cfc333fd2abb ;
     skos:prefLabel "PhysicalParticleBySpin"@en ;
     emmo:OWLRL2DLAxioms "DisjointUnionOf: Boson, Fermion"^^xsd:string ;
@@ -238,10 +252,10 @@ emmo:EMMO_3397f270_dfc1_4500_8f6f_4d0d85ac5f71 a owl:Class ;
     rdfs:label "Molecule"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_dc57d998_23db_4d8e_b2cd_f346b195b846 ;
-            owl:someValuesFrom emmo:EMMO_730f2e31_ca78_410f_a5e1_4043217a41ab ],
+            owl:someValuesFrom emmo:EMMO_f835f4d4_c665_403d_ab25_dca5cc74be52 ],
         [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_dc57d998_23db_4d8e_b2cd_f346b195b846 ;
-            owl:someValuesFrom emmo:EMMO_f835f4d4_c665_403d_ab25_dca5cc74be52 ],
+            owl:someValuesFrom emmo:EMMO_730f2e31_ca78_410f_a5e1_4043217a41ab ],
         emmo:EMMO_21205421_5783_4d3e_81e5_10c5d894a88a ;
     skos:altLabel "ChemicalSubstance"@en ;
     skos:example "H₂0, C₆H₁₂O₆, CH₄"@en ;
@@ -255,6 +269,7 @@ Removing an atom from the state will result in another type of atom_based state.
 e.g. you cannot remove H from H₂0 without changing the molecule type (essential). However, you can remove a C from a nanotube (redundant). C60 fullerene is a molecule, since it has a finite periodicity and is made of a well defined number of atoms (essential). A C nanotube is not a molecule, since it has an infinite periodicity (redundant)."""@en .
 
 emmo:EMMO_41cecfc2_bb6b_45f3_b6cc_e7740d931afe a owl:Class ;
+    rdfs:label "MatterByStructure"@en ;
     rdfs:subClassOf emmo:EMMO_5b2222df_4da6_442f_8244_96e9e45887d1 ;
     skos:prefLabel "MatterByStructure"@en ;
     emmo:conceptualisation "Matter can be categorized according to its structure in two types, by drawing a line between particulate matter (i.e., from elementary particles up to molecules) and aggregate of such particulates. When such aggregates show an homogeneity of property, according to some criteria, we call it a substance."@en ;
@@ -262,6 +277,7 @@ emmo:EMMO_41cecfc2_bb6b_45f3_b6cc_e7740d931afe a owl:Class ;
     emmo:note "Particulate matter and substance are not a covering for matter. Non-particulate matter are not represented with a class for simplicity."@en .
 
 emmo:EMMO_53dced52_34f6_4cf0_8a99_ddf451861543 a owl:Class ;
+    rdfs:label "Fermion"@en ;
     rdfs:subClassOf emmo:EMMO_2c07a731_84f9_4883_9e58_2bc073abda29 ;
     owl:disjointWith emmo:EMMO_b5a5494c_83bf_44aa_a9a6_49b948e68939 ;
     skos:prefLabel "Fermion"@en ;
@@ -277,6 +293,7 @@ emmo:EMMO_7b42954f_0b91_4b3a_a65e_2470202cf548 a owl:Class ;
     emmo:wikipediaReference "https://en.wikipedia.org/wiki/Hadron"^^xsd:string .
 
 emmo:EMMO_801395f8_948e_4637_ac3b_5fcd587d72ca a owl:Class ;
+    rdfs:label "BondedObject"@en ;
     rdfs:subClassOf emmo:EMMO_0f3e0646_4f06_4588_9779_6a4f05c5a8d6 ;
     skos:prefLabel "BondedObject"@en ;
     emmo:conceptualisation "A bonded object is a sequence of fundamental interactions that can be described approximatively by Schrodinger formulation. A bonded object is typically characterised by having quantum states (e.g.  electron states in an atom, energy levels of a molecule). Furthermore, a bonded object is made of elementary particles that travels from the beginning to the end of the entity (i.e. a bonded object doesn't change its components)."@en ;
@@ -284,6 +301,7 @@ emmo:EMMO_801395f8_948e_4637_ac3b_5fcd587d72ca a owl:Class ;
 D. Griffiths, "Introduction to elementary Particles", Wiley-VCH, 2004, pp.16-17"""@en .
 
 emmo:EMMO_b32fe85d_2f7b_4972_9dd7_7cf20d4bba59 a owl:Class ;
+    rdfs:label "PhysicalParticleByBond"@en ;
     rdfs:subClassOf emmo:EMMO_a15cea10_9946_4d2b_95c5_cfc333fd2abb ;
     skos:prefLabel "PhysicalParticleByBond"@en ;
     emmo:OWLRL2DLAxioms "DisjointUnionOf: BondedParticle, ElementaryParticle"^^xsd:string ;
@@ -299,6 +317,7 @@ emmo:EMMO_f835f4d4_c665_403d_ab25_dca5cc74be52 a owl:Class ;
     emmo:elucidation "The small, dense region at the centre of an atom consisting of protons and neutrons."@en .
 
 emmo:EMMO_32f55395_8b94_40de_a103_bffa5c121d98 a owl:Class ;
+    rdfs:label "ParticulateMatter"@en ;
     rdfs:subClassOf emmo:EMMO_41cecfc2_bb6b_45f3_b6cc_e7740d931afe,
         emmo:EMMO_8b1367d6_0133_4b56_acc1_fa8b058169e3 ;
     owl:equivalentClass [ a owl:Class ;
@@ -307,6 +326,7 @@ emmo:EMMO_32f55395_8b94_40de_a103_bffa5c121d98 a owl:Class ;
     emmo:elucidation "Matter in the form of particulate of bonded constituents."@en .
 
 emmo:EMMO_43d0bb2c_bb0e_4312_a0de_084c29ff7f9e a owl:Class ;
+    rdfs:label "MatterByType"@en ;
     rdfs:subClassOf emmo:EMMO_5b2222df_4da6_442f_8244_96e9e45887d1 ;
     skos:prefLabel "MatterByType"@en ;
     emmo:OWLRL2DLAxioms "DisjointUnionOf: AntiMatter, HybridMatter, OrdinaryMatter"^^xsd:string ;
@@ -321,6 +341,7 @@ emmo:EMMO_50781fd9_a9e4_46ad_b7be_4500371d188d a owl:Class ;
     emmo:wikipediaReference "https://en.wikipedia.org/wiki/Nucleon"^^xsd:string .
 
 emmo:EMMO_a15cea10_9946_4d2b_95c5_cfc333fd2abb a owl:Class ;
+    rdfs:label "PhysicalParticle"@en ;
     rdfs:subClassOf emmo:EMMO_c5ddfdba_c074_4aa4_ad6b_1ac4942d300d ;
     skos:altLabel "Particle"@en ;
     skos:prefLabel "PhysicalParticle"@en ;
@@ -329,6 +350,7 @@ emmo:EMMO_a15cea10_9946_4d2b_95c5_cfc333fd2abb a owl:Class ;
     emmo:note "The scope of the physical particle definition goes from the elementary particles to molecules, as fundamental constituents of substances."@en .
 
 emmo:EMMO_38b579de_4331_40e0_803d_09efa298e726 a owl:Class ;
+    rdfs:label "PhysicalObject"@en ;
     rdfs:subClassOf emmo:EMMO_09f0ac34_c349_46b5_acf0_0edeae52cca1 ;
     owl:disjointWith emmo:EMMO_5cc4e111_3eb1_44a3_9369_5af3846cf605 ;
     skos:prefLabel "PhysicalObject"@en ;
@@ -339,6 +361,7 @@ A physical phenomenon is defined as a causally non-convex interacting system, co
     emmo:elucidation "The class of individuals standing for causally convex interacting systems."@en .
 
 emmo:EMMO_5b2222df_4da6_442f_8244_96e9e45887d1 a owl:Class ;
+    rdfs:label "Matter"@en ;
     rdfs:subClassOf emmo:EMMO_38b579de_4331_40e0_803d_09efa298e726 ;
     skos:altLabel "PhysicalSubstance"@en ;
     skos:prefLabel "Matter"@en ;
@@ -353,12 +376,14 @@ Matter is categorized by:
         "Matter includes ordinary- and anti-matter. It is possible to have entities that are made of particle and anti-particles (e.g. mesons made of a quark and an anti-quark pair) so that it is possible to have entities that are somewhat heterogeneous with regards to this distinction."@en .
 
 emmo:EMMO_b5a5494c_83bf_44aa_a9a6_49b948e68939 a owl:Class ;
+    rdfs:label "Boson"@en ;
     rdfs:subClassOf emmo:EMMO_2c07a731_84f9_4883_9e58_2bc073abda29 ;
     skos:prefLabel "Boson"@en ;
     emmo:elucidation "A physical particle with integer spin that follows Bose–Einstein statistics."@en ;
     emmo:wikipediaReference "https://en.wikipedia.org/wiki/Boson"^^xsd:string .
 
 emmo:EMMO_8b1367d6_0133_4b56_acc1_fa8b058169e3 a owl:Class ;
+    rdfs:label "BondedParticle"@en ;
     rdfs:subClassOf emmo:EMMO_801395f8_948e_4637_ac3b_5fcd587d72ca,
         emmo:EMMO_b32fe85d_2f7b_4972_9dd7_7cf20d4bba59 ;
     skos:prefLabel "BondedParticle"@en ;
@@ -387,6 +412,12 @@ emmo:EMMO_be0a7278_b4e6_4bca_88ba_de3f67a478e2 a owl:Class ;
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_b5a5494c_83bf_44aa_a9a6_49b948e68939 ;
+    owl:annotatedTarget "Boson"@en ;
+    emmo:etymology "1940s: named after S.N. Bose."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     owl:annotatedTarget "Atom"@en ;
     emmo:etymology "From Ancient Greek ἄτομος (átomos, “indivisible”), from ἀ- (a-, “not”) +‎ τέμνω (témnō, “to cut”, o-grade in τομ-) +‎ -ος (-os) [Wiktionary]"@en .
@@ -403,18 +434,12 @@ emmo:EMMO_be0a7278_b4e6_4bca_88ba_de3f67a478e2 a owl:Class ;
     owl:annotatedTarget "Particle"@en ;
     emmo:etymology "From Latin particula (“small part, particle”), diminutive of pars (“part, piece”)."@en .
 
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_b5a5494c_83bf_44aa_a9a6_49b948e68939 ;
-    owl:annotatedTarget "Boson"@en ;
-    emmo:etymology "1940s: named after S.N. Bose."@en .
+[] a owl:AllDisjointClasses ;
+    owl:members ( emmo:EMMO_1c16bb7f_5400_4498_8ef2_54392908da4e emmo:EMMO_6e9cb807_fc68_4bcf_b3ba_5fccc887c644 emmo:EMMO_f13672a3_59cc_40ed_8def_65009a8f74e6 ) .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource emmo:EMMO_bc37743c_37c4_4ec7_9d58_d1aae5567352 ;
     owl:annotatedTarget "Substance"@en ;
     emmo:etymology "From Latin substantia (“substance, essence”), from substāns, present active participle of substō (“exist”, literally “stand under”), from sub + stō (“stand”) [Wikictionary]"@en .
-
-[] a owl:AllDisjointClasses ;
-    owl:members ( emmo:EMMO_1c16bb7f_5400_4498_8ef2_54392908da4e emmo:EMMO_6e9cb807_fc68_4bcf_b3ba_5fccc887c644 emmo:EMMO_f13672a3_59cc_40ed_8def_65009a8f74e6 ) .
 

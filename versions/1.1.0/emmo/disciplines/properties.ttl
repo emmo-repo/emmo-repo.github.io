@@ -7,7 +7,14 @@
 
 owl:qualifiedCardinality a owl:AnnotationProperty .
 
+emmo:EMMO_0527413c_b286_4e9c_b2d0_03fb2a038dee rdfs:label "Interpreter"@en .
+
+emmo:EMMO_2d72e38c_d587_437f_98f6_f2718fb130eb rdfs:label "Declarer"@en .
+
+emmo:EMMO_33dc57d7_68bd_460c_a440_26a78d57ea0d rdfs:label "InterpreterByReferent"@en .
+
 emmo:EMMO_9be5fcc4_0d8b_481d_b984_6338d4b55588 a owl:Class ;
+    rdfs:label "Measurer"@en ;
     rdfs:subClassOf emmo:EMMO_ea67caa5_2609_4e91_98ae_81103f2d5c25 ;
     skos:prefLabel "Measurer"@en ;
     emmo:elucidation "An observer that makes use of a measurement tool and provides a quantitative property."@en .
@@ -50,6 +57,12 @@ Subclasses of property are subclasses that spesialise the type of observation pr
     owl:versionIRI <https://w3id.org/emmo/1.0.4/disciplines/properties> ;
     owl:versionInfo "1.0.4"^^xsd:string ;
     emmo:contact "emmo@emmc.eu"^^xsd:string .
+
+emmo:EMMO_4a1c73f1_b6f5_4d10_a3a6_5de90bac7cd0 rdfs:label "Estimator"@en .
+
+emmo:EMMO_ea67caa5_2609_4e91_98ae_81103f2d5c25 rdfs:label "Observer"@en .
+
+emmo:EMMO_1b52ee70_121e_4d8d_8419_3f97cd0bd89c rdfs:label "Determiner"@en .
 
 [] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
 

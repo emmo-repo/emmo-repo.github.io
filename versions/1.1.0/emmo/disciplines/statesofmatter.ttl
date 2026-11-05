@@ -625,6 +625,46 @@ emmo:EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1 a owl:Class ;
     emmo:elucidation "A continuum characterized by structural rigidity and resistance to changes of shape or volume, that retains its shape and density when not confined."@en .
 
 [] a owl:Axiom ;
+    rdfs:seeAlso <https://en.wiktionary.org/wiki/phase> ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a ;
+    owl:annotatedTarget "PhaseOfMatter"@en ;
+    emmo:etymology "From Ancient Greek φάσις (phásis, “an appearance”), from φαίνω (phaínō, “to cause to appear”) [Wiktionary]"@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso <https://en.wiktionary.org/wiki/continuum> ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2 ;
+    owl:annotatedTarget "ContinuumSubstance"@en ;
+    emmo:etymology "From Latin continuum, neuter form of continuus, from contineō (“contain, enclose”) [Wiktionary]"@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_04f2a2d5_e799_4692_a654_420e76f5acc1 ;
+    owl:annotatedTarget "GaseousState"@en ;
+    emmo:etymology "The word gas was coined in the early 17th century by Flemish chemist Jan Baptist van Helmont. He derived the term from the Ancient Greek word χάος (\"chaos\": void, empty space)."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_87ac88ff_8379_4f5a_8c7b_424a8fff1ee8 ;
+    owl:annotatedTarget "Fluid"@en ;
+    emmo:etymology "From Latin fluidus (“flowing; fluid”), from Latin fluō (“to flow”), from Proto-Indo-European *bʰleh₁- (“to swell; surge; overflow; run”) [Wiktionary]"@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_4e9fd152_147b_4564_8999_089608f41aff ;
+    owl:annotatedTarget "AmorphousState"@en ;
+    emmo:etymology "From Ancient Greek ἄμορφος (ámorphos, “without form, shapeless, deformed”) (itself from ἀ- (a-, “without”) + μορφή (morphḗ, “form”)  [Wiktionary]"@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty emmo:note ;
+    owl:annotatedSource emmo:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a ;
+    owl:annotatedTarget """In the physical sciences, a phase is a region of space (a thermodynamic system), throughout which all physical properties of a material are essentially uniform. Examples of physical properties include density, index of refraction, magnetization and chemical composition. A simple description is that a phase is a region of material that is chemically uniform, physically distinct, and (often) mechanically separable. In a system consisting of ice and water in a glass jar, the ice cubes are one phase, the water is a second phase, and the humid air is a third phase over the ice and water. The glass of the jar is another separate phase.
+
+The term phase is sometimes used as a synonym for state of matter, but there can be several immiscible phases of the same state of matter. Also, the term phase is sometimes used to refer to a set of equilibrium states demarcated in terms of state variables such as pressure and temperature by a phase boundary on a phase diagram. Because phase boundaries relate to changes in the organization of matter, such as a change from liquid to solid or a more subtle change from one crystal structure to another, this latter usage is similar to the use of "phase" as a synonym for state of matter. However, the state of matter and phase diagram usages are not commensurate with the formal definition given above and the intended meaning must be determined in part from the context in which the term is used."""@en ;
+    emmo:wikipediaReference "https://en.wikipedia.org/wiki/Phase_(matter)"@en .
+
+[] a owl:Axiom ;
     rdfs:seeAlso <https://en.wiktionary.org/wiki/condense> ;
     owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource emmo:EMMO_220b7201_d277_4dca_bf6a_5a5e2c4062dd ;
@@ -637,9 +677,6 @@ emmo:EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1 a owl:Class ;
     owl:annotatedTarget "The subject of condensed matter physics that deals with the macroscopic and microscopic physical properties of matter, especially the solid and liquid phases which arise from electromagnetic forces between atoms. More generally, the subject deals with \"condensed\" phases of matter: systems of many constituents with strong interactions between them."@en ;
     emmo:wikipediaReference "https://en.wikipedia.org/wiki/Condensed_matter_physics"@en .
 
-[] a owl:AllDisjointClasses ;
-    owl:members ( emmo:EMMO_04f2a2d5_e799_4692_a654_420e76f5acc1 emmo:EMMO_4c21fb86_fdcf_444e_b498_86fe656295af emmo:EMMO_7509da43_56b1_4d7f_887a_65d1663df4ba emmo:EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1 ) .
-
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c ;
@@ -648,9 +685,9 @@ emmo:EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1 a owl:Class ;
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_4e9fd152_147b_4564_8999_089608f41aff ;
-    owl:annotatedTarget "AmorphousState"@en ;
-    emmo:etymology "From Ancient Greek ἄμορφος (ámorphos, “without form, shapeless, deformed”) (itself from ἀ- (a-, “without”) + μορφή (morphḗ, “form”)  [Wiktionary]"@en .
+    owl:annotatedSource emmo:EMMO_6c487fb3_03d1_4e56_91ed_c2e16dcbef60 ;
+    owl:annotatedTarget "Colloid"@en ;
+    emmo:etymology "From Ancient Greek κόλλα (kólla, “glue”)."@en .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
@@ -659,46 +696,9 @@ emmo:EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1 a owl:Class ;
     emmo:etymology """From Late Latin plasma (“mold”), from Ancient Greek πλάσμα (plásma, “something formed”) [Wiktionary]
 The term has been introduced in physics by Irving Langmuir in 1928."""@en .
 
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_6c487fb3_03d1_4e56_91ed_c2e16dcbef60 ;
-    owl:annotatedTarget "Colloid"@en ;
-    emmo:etymology "From Ancient Greek κόλλα (kólla, “glue”)."@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso <https://en.wiktionary.org/wiki/phase> ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a ;
-    owl:annotatedTarget "PhaseOfMatter"@en ;
-    emmo:etymology "From Ancient Greek φάσις (phásis, “an appearance”), from φαίνω (phaínō, “to cause to appear”) [Wiktionary]"@en .
-
 [] a owl:AllDisjointClasses ;
     owl:members ( emmo:EMMO_2dd512a1_5187_47cc_b0b8_141214e22b59 emmo:EMMO_33e0ac8b_a318_4285_b1de_e95347784632 emmo:EMMO_42185fe7_122c_4e0c_a3cd_659d3e21c389 emmo:EMMO_47fe2379_be21_48d1_9ede_402f0faf494b emmo:EMMO_c457b6b9_5e73_4853_ae08_d776c12b8058 emmo:EMMO_d4f37e32_16ae_4cc6_b4cd_fd896b2449c4 emmo:EMMO_e0edfb9e_9a96_4fae_b942_831ffe27b84a emmo:EMMO_e9e02156_651f_41c8_9efb_d5da0d4ce5e2 ) .
 
-[] a owl:Axiom ;
-    owl:annotatedProperty emmo:note ;
-    owl:annotatedSource emmo:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a ;
-    owl:annotatedTarget """In the physical sciences, a phase is a region of space (a thermodynamic system), throughout which all physical properties of a material are essentially uniform. Examples of physical properties include density, index of refraction, magnetization and chemical composition. A simple description is that a phase is a region of material that is chemically uniform, physically distinct, and (often) mechanically separable. In a system consisting of ice and water in a glass jar, the ice cubes are one phase, the water is a second phase, and the humid air is a third phase over the ice and water. The glass of the jar is another separate phase.
-
-The term phase is sometimes used as a synonym for state of matter, but there can be several immiscible phases of the same state of matter. Also, the term phase is sometimes used to refer to a set of equilibrium states demarcated in terms of state variables such as pressure and temperature by a phase boundary on a phase diagram. Because phase boundaries relate to changes in the organization of matter, such as a change from liquid to solid or a more subtle change from one crystal structure to another, this latter usage is similar to the use of "phase" as a synonym for state of matter. However, the state of matter and phase diagram usages are not commensurate with the formal definition given above and the intended meaning must be determined in part from the context in which the term is used."""@en ;
-    emmo:wikipediaReference "https://en.wikipedia.org/wiki/Phase_(matter)"@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso <https://en.wiktionary.org/wiki/continuum> ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2 ;
-    owl:annotatedTarget "ContinuumSubstance"@en ;
-    emmo:etymology "From Latin continuum, neuter form of continuus, from contineō (“contain, enclose”) [Wiktionary]"@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_87ac88ff_8379_4f5a_8c7b_424a8fff1ee8 ;
-    owl:annotatedTarget "Fluid"@en ;
-    emmo:etymology "From Latin fluidus (“flowing; fluid”), from Latin fluō (“to flow”), from Proto-Indo-European *bʰleh₁- (“to swell; surge; overflow; run”) [Wiktionary]"@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_04f2a2d5_e799_4692_a654_420e76f5acc1 ;
-    owl:annotatedTarget "GaseousState"@en ;
-    emmo:etymology "The word gas was coined in the early 17th century by Flemish chemist Jan Baptist van Helmont. He derived the term from the Ancient Greek word χάος (\"chaos\": void, empty space)."@en .
+[] a owl:AllDisjointClasses ;
+    owl:members ( emmo:EMMO_04f2a2d5_e799_4692_a654_420e76f5acc1 emmo:EMMO_4c21fb86_fdcf_444e_b498_86fe656295af emmo:EMMO_7509da43_56b1_4d7f_887a_65d1663df4ba emmo:EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1 ) .
 

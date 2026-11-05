@@ -351,6 +351,7 @@ ns1:successorOf a owl:AsymmetricProperty,
     skos:prefLabel "successorOf"@en .
 
 ns1:CausalParticle a owl:Class ;
+    rdfs:label "CausalParticle"@en ;
     rdfs:subClassOf ns1:Item ;
     owl:disjointWith ns1:CausalCluster ;
     skos:prefLabel "CausalParticle"@en ;
@@ -573,7 +574,8 @@ Antisymmetry: (Pxy ∧ Pyx) → x=y."""@en ;
     ns1:elucidation "The inverse relation of hasPart."@en .
 
 ns1:CausalPath a owl:Class ;
-    rdfs:subClassOf _:N7903e711e0c649d89a0ebcbc995c8e3d,
+    rdfs:label "CausalPath"@en ;
+    rdfs:subClassOf _:N5c3d43a754db472d8e09306ccf63a6b1,
         ns1:CausalParticle,
         ns1:CausalStructure ;
     skos:altLabel "CausalChain"@en,
@@ -616,7 +618,7 @@ ns1:isProperPartOf a owl:AsymmetricProperty,
 
 ns1:Collection a owl:Class ;
     rdfs:label "Collection"@en ;
-    rdfs:subClassOf _:N0b7dccd701d9409ba28bda18395c371f,
+    rdfs:subClassOf _:N0ebf6f0efac54236bc22510a6811cbe0,
         ns1:CausalCluster ;
     owl:disjointWith ns1:Item ;
     skos:example "The collection of users of a particular software, the collection of atoms that have been part of that just dissociated molecule."@en ;
@@ -684,8 +686,8 @@ A causal system is always a spatial-like structure, and is represented as a mult
 <urn:swrl:var#z> a swrl:Variable .
 
 ns1:EMMO a owl:Class ;
-    rdfs:subClassOf _:N84cf701e74e543278adf97969b003cbe,
-        _:N8e12ba59d1c144cf96a061a90ba50917 ;
+    rdfs:subClassOf _:N20608bd18a7a4990a1fac79613015c99,
+        _:N36d978935c074f7eb73a590598a69bf4 ;
     skos:prefLabel "EMMO"@en ;
     ns1:OWLRL2DLAxioms "DisjointUnion: CausalPath, Collection, Quantum, CausalSystem"^^xsd:string ;
     ns1:conceptualisation """The EMMO conceptualises the world using the primitive concepts of causality and parthood. Parthood is about the composition of world entities starting from other more fundamental entities. Causality is about the interactions between world entities.
@@ -750,79 +752,26 @@ ns1:hasProperPart a owl:AsymmetricProperty,
 
 <urn:swrl:var#x> a swrl:Variable .
 
-[] a swrl:Imp ;
-    rdfs:comment "Implementing Transitivity."@en ;
-    swrl:body [ a swrl:AtomList ;
-            rdf:first [ a swrl:IndividualPropertyAtom ;
-                    swrl:argument1 <urn:swrl:var#x> ;
-                    swrl:argument2 <urn:swrl:var#y> ;
-                    swrl:propertyPredicate ns1:alongsideWith ] ;
-            rdf:rest [ a swrl:AtomList ;
-                    rdf:first [ a swrl:IndividualPropertyAtom ;
-                            swrl:argument1 <urn:swrl:var#y> ;
-                            swrl:argument2 <urn:swrl:var#z> ;
-                            swrl:propertyPredicate ns1:alongsideWith ] ;
-                    rdf:rest () ] ] ;
-    swrl:head [ a swrl:AtomList ;
-            rdf:first [ a swrl:IndividualPropertyAtom ;
-                    swrl:argument1 <urn:swrl:var#x> ;
-                    swrl:argument2 <urn:swrl:var#z> ;
-                    swrl:propertyPredicate ns1:alongsideWith ] ;
-            rdf:rest () ] .
+[] a owl:AllDisjointClasses ;
+    owl:members ( ns1:CausalPath ns1:Collection ns1:Quantum ns1:CausalSystem ) .
 
-[] a swrl:Imp ;
-    rdfs:comment "Implementig transitivity."@en ;
-    swrl:body [ a swrl:AtomList ;
-            rdf:first [ a swrl:IndividualPropertyAtom ;
-                    swrl:argument1 <urn:swrl:var#x> ;
-                    swrl:argument2 <urn:swrl:var#y> ;
-                    swrl:propertyPredicate ns1:foreruns ] ;
-            rdf:rest [ a swrl:AtomList ;
-                    rdf:first [ a swrl:IndividualPropertyAtom ;
-                            swrl:argument1 <urn:swrl:var#y> ;
-                            swrl:argument2 <urn:swrl:var#z> ;
-                            swrl:propertyPredicate ns1:foreruns ] ;
-                    rdf:rest () ] ] ;
-    swrl:head [ a swrl:AtomList ;
-            rdf:first [ a swrl:IndividualPropertyAtom ;
-                    swrl:argument1 <urn:swrl:var#x> ;
-                    swrl:argument2 <urn:swrl:var#z> ;
-                    swrl:propertyPredicate ns1:foreruns ] ;
-            rdf:rest () ] .
+[] a owl:Axiom ;
+    rdfs:seeAlso ns1:overlaps ;
+    owl:annotatedProperty ns1:definition ;
+    owl:annotatedSource ns1:notOverlaps ;
+    owl:annotatedTarget "Dxy ≡ ¬Oxy."^^xsd:string .
 
-[] a swrl:Imp ;
-    swrl:body [ a swrl:AtomList ;
-            rdf:first [ a swrl:IndividualPropertyAtom ;
-                    swrl:argument1 <urn:swrl:var#x> ;
-                    swrl:argument2 <urn:swrl:var#y> ;
-                    swrl:propertyPredicate ns1:hasPart ] ;
-            rdf:rest [ a swrl:AtomList ;
-                    rdf:first [ a swrl:IndividualPropertyAtom ;
-                            swrl:argument1 <urn:swrl:var#y> ;
-                            swrl:argument2 <urn:swrl:var#z> ;
-                            swrl:propertyPredicate ns1:hasPart ] ;
-                    rdf:rest () ] ] ;
-    swrl:head [ a swrl:AtomList ;
-            rdf:first [ a swrl:IndividualPropertyAtom ;
-                    swrl:argument1 <urn:swrl:var#x> ;
-                    swrl:argument2 <urn:swrl:var#z> ;
-                    swrl:propertyPredicate ns1:hasPart ] ;
-            rdf:rest () ] ;
-    ns1:note "Transitivity for parthood."@en .
+[] a owl:Axiom ;
+    owl:annotatedProperty ns1:definition ;
+    owl:annotatedSource ns1:universe ;
+    owl:annotatedTarget "u ≡ σx⟨P(x, x)⟩"^^xsd:string ;
+    ns1:note "This definition reads: \"The universe is the sum of all entities that are part of themselves\". Since parthood (P) is reflexive by axiom, then the universe is the sum of all mereological entities."@en .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:CausalParticle ;
-    owl:annotatedTarget "CausalParticle"@en ;
-    ns1:etymology "From Latin particula (“small part, particle”), diminutive of pars (“part, piece”)."@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso ns1:hasProperPart ;
-    owl:annotatedProperty ns1:definition ;
-    owl:annotatedSource ns1:hasRedundantPart ;
-    owl:annotatedTarget "RP(x, y) ≡ PP(x, y) ∧ ∃φ(φ(x) ∧ φ(y))"^^xsd:string ;
-    ns1:note "We usa a predicate template notation as RP<φ>(x,y) to specify subclasses of RP(x,y) for the class φ, meaning that RP<φ>(x, y) ≡ PP(x, y) ∧ φ(x) ∧ φ(y)"@en,
-        "φ is a class of the theory that in the EMMO OWL is supposed to be subclass of CausalStructure."@en .
+    owl:annotatedSource ns1:Quantum ;
+    owl:annotatedTarget "Quantum"@en ;
+    ns1:etymology "From Latin quantum (plural quanta) \"as much as, so much as\"."@en .
 
 [] a swrl:Imp ;
     swrl:body [ a swrl:AtomList ;
@@ -840,67 +789,47 @@ ns1:hasProperPart a owl:AsymmetricProperty,
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:Collection ;
-    owl:annotatedTarget "Collection"@en ;
-    ns1:etymology "From Latin collectio, from colligere ‘gather together’."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource ns1:CausalSystem ;
     owl:annotatedTarget "CausalSystem"@en ;
     ns1:etymology "From Latin causa (“reason, sake, cause”), and Ancient Greek σύστημα (sústēma, “musical scale; organized body; whole made of several parts or members”), from σῠν- (sun-, prefix meaning ‘with, together’) + ἵστημι (hístēmi, “to stand”)."@en .
 
 [] a owl:Axiom ;
-    rdfs:seeAlso ns1:isPartOf ;
-    owl:annotatedProperty ns1:definition ;
-    owl:annotatedSource ns1:overlaps ;
-    owl:annotatedTarget "Oxy ≡ ∃z(Pzx ∧ Pzy)"^^xsd:string .
+    owl:annotatedProperty rdf:type ;
+    owl:annotatedSource ns1:universe ;
+    owl:annotatedTarget ns1:CausalSystem ;
+    ns1:conceptualisation """This axiom reflects the fact the the universe is causally self-connected. In fact, a  non causally connected universe would have been the sum of causally independend sub-universes, without any knowledge of others.
+This axiom may be seen as Ockam's razor applied to causality."""@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:CausalParticle ;
+    owl:annotatedTarget "CausalParticle"@en ;
+    ns1:etymology "From Latin particula (“small part, particle”), diminutive of pars (“part, piece”)."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Item ;
+    owl:annotatedTarget "Item"@en ;
+    ns1:etymology "From Latin item, \"likewise, just so, moreover\"."@en .
 
 [] a swrl:Imp ;
-    swrl:body [ a swrl:AtomList ;
-            rdf:first [ a swrl:ClassAtom ;
-                    swrl:argument1 <urn:swrl:var#x> ;
-                    swrl:classPredicate ns1:EMMO ] ;
-            rdf:rest () ] ;
-    swrl:head [ a swrl:AtomList ;
-            rdf:first [ a swrl:IndividualPropertyAtom ;
-                    swrl:argument1 <urn:swrl:var#x> ;
-                    swrl:argument2 <urn:swrl:var#x> ;
-                    swrl:propertyPredicate ns1:isNotCauseOf ] ;
-            rdf:rest () ] ;
-    ns1:note "Enforcing the fact that an entity cannot cause itself."@en .
-
-[] a swrl:Imp ;
-    rdfs:comment "Implementing transitivity."@en ;
+    rdfs:comment "Implementation of equality based on mereology."^^rdfs:Literal ;
     swrl:body [ a swrl:AtomList ;
             rdf:first [ a swrl:IndividualPropertyAtom ;
                     swrl:argument1 <urn:swrl:var#x> ;
                     swrl:argument2 <urn:swrl:var#y> ;
-                    swrl:propertyPredicate ns1:indirectlyCauses ] ;
+                    swrl:propertyPredicate ns1:hasPart ] ;
             rdf:rest [ a swrl:AtomList ;
                     rdf:first [ a swrl:IndividualPropertyAtom ;
                             swrl:argument1 <urn:swrl:var#y> ;
-                            swrl:argument2 <urn:swrl:var#z> ;
-                            swrl:propertyPredicate ns1:indirectlyCauses ] ;
+                            swrl:argument2 <urn:swrl:var#x> ;
+                            swrl:propertyPredicate ns1:hasPart ] ;
                     rdf:rest () ] ] ;
     swrl:head [ a swrl:AtomList ;
-            rdf:first [ a swrl:IndividualPropertyAtom ;
+            rdf:first [ a swrl:SameIndividualAtom ;
                     swrl:argument1 <urn:swrl:var#x> ;
-                    swrl:argument2 <urn:swrl:var#z> ;
-                    swrl:propertyPredicate ns1:indirectlyCauses ] ;
+                    swrl:argument2 <urn:swrl:var#y> ] ;
             rdf:rest () ] .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource ns1:EMMO ;
-    owl:annotatedTarget _:N8e12ba59d1c144cf96a061a90ba50917 ;
-    ns1:note "Every entity is made of quantum parts. This axiomatisation is the expression of the radical reductionistic approach of the EMMO."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:CausalStructure ;
-    owl:annotatedTarget "CausalStructure"@en ;
-    ns1:etymology "From Latin causa (“reason, sake, cause”), and from Latin struere (“arrange, assemble, build”)."@en .
 
 [] a swrl:Imp ;
     swrl:body [ a swrl:AtomList ;
@@ -923,75 +852,24 @@ ns1:hasProperPart a owl:AsymmetricProperty,
     ns1:note "Transitivity for proper parthood."@en .
 
 [] a swrl:Imp ;
+    rdfs:comment "Implementig transitivity."@en ;
     swrl:body [ a swrl:AtomList ;
-            rdf:first [ a swrl:ClassAtom ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
                     swrl:argument1 <urn:swrl:var#x> ;
-                    swrl:classPredicate ns1:EMMO ] ;
-            rdf:rest () ] ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate ns1:foreruns ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl:var#y> ;
+                            swrl:argument2 <urn:swrl:var#z> ;
+                            swrl:propertyPredicate ns1:foreruns ] ;
+                    rdf:rest () ] ] ;
     swrl:head [ a swrl:AtomList ;
             rdf:first [ a swrl:IndividualPropertyAtom ;
                     swrl:argument1 <urn:swrl:var#x> ;
-                    swrl:argument2 <urn:swrl:var#x> ;
-                    swrl:propertyPredicate ns1:hasPart ] ;
-            rdf:rest () ] ;
-    ns1:note "Enforcing parthood reflexivity."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource ns1:EMMO ;
-    owl:annotatedTarget _:N84cf701e74e543278adf97969b003cbe ;
-    ns1:note "All EMMO individuals are part of the most comprehensive entity which is the universe."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:isCauseOf ;
-    owl:annotatedTarget "isCauseOf"@en ;
-    ns1:etymology "From Latin causa (“reason, sake, cause”)."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:mereological ;
-    owl:annotatedTarget "mereological"@en ;
-    ns1:etymology """Coined by Stanisław Leśniewski in 1927, from Ancient Greek μέρος (méros, “part”) +‎ -logy (“study, discussion, science”).
-https://en.wiktionary.org/wiki/mereology"""@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso ns1:hasDistinctPart ;
-    owl:annotatedProperty ns1:note ;
-    owl:annotatedSource ns1:hasRedundantPart ;
-    owl:annotatedTarget "A part is always distinct xor redundant."@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "doi:10.3233/FAIA231120"^^xsd:string ;
-    owl:annotatedProperty ns1:note ;
-    owl:annotatedSource ns1:isCauseOf ;
-    owl:annotatedTarget """The OWL 2 DL version of the EMMO introduces this object property as primitive causal relation. It refers to the macro causality relation mC(x,y), defined in the EMMO FOL version.
-While the EMMO FOL introduces the quantum causality relation C(x,y) as primitive, the OWL 2 DL version of the EMMO substantially simplifies the theory, neglecting these lower level relations that are well above DL expressivity.
-For this reason the EMMO OWL 2 DL will only deal with macro causality relations, sacrificing the full FOL theory expressivity for the sake of simplicity."""@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource ns1:Collection ;
-    owl:annotatedTarget _:N0b7dccd701d9409ba28bda18395c371f ;
-    ns1:note "Every collection has at least two item members, since a collection of one item is a self-connected entity (and then an item)."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:CausalCluster ;
-    owl:annotatedTarget "CausalCluster"@en ;
-    ns1:etymology "From Proto-Germanic *klas-, *klus- (“to clump, lump together”)."@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso ns1:hasRedundantPart ;
-    owl:annotatedProperty ns1:note ;
-    owl:annotatedSource ns1:hasDistinctPart ;
-    owl:annotatedTarget "A part is always distinct xor redundant."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource ns1:foreruns ;
-    owl:annotatedTarget "hasSuccessor"@en ;
-    ns1:etymology "From Latin succedĕre (\"coming after\")."@en .
+                    swrl:argument2 <urn:swrl:var#z> ;
+                    swrl:propertyPredicate ns1:foreruns ] ;
+            rdf:rest () ] .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:altLabel ;
@@ -1000,56 +878,10 @@ For this reason the EMMO OWL 2 DL will only deal with macro causality relations,
     ns1:etymology "From Old French chaine, chaene (“chain”), from Latin catēna (“chain”)."@en .
 
 [] a owl:Axiom ;
-    owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource ns1:CausalPath ;
-    owl:annotatedTarget _:N7903e711e0c649d89a0ebcbc995c8e3d ;
-    ns1:elucidation "This axiom underlines the monodimensional nature of a causal chain, as a sequence of quanta."@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso ns1:overlaps ;
-    owl:annotatedProperty ns1:definition ;
-    owl:annotatedSource ns1:notOverlaps ;
-    owl:annotatedTarget "Dxy ≡ ¬Oxy."^^xsd:string .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty ns1:conceptualisation ;
-    owl:annotatedSource ns1:EMMO ;
-    owl:annotatedTarget """The EMMO conceptualises the world using the primitive concepts of causality and parthood. Parthood is about the composition of world entities starting from other more fundamental entities. Causality is about the interactions between world entities.
-The quantum is the smallest indivisible part of any world entity. Quantum individuals are the fundamental causal constituents of the universe, since it is implied that causality originates from quantum-to-quantum interactions. Quantums are no-dimensional, and their aggregation makes spacetime emerge from their causal structure. We can think of a quantum as an elementary particle after and interaction and before another interaction.
-Causality between macro entities (i.e. entities made of more than one quantum) is explained as the sum of the causality relations between their quantum constituents. Fundamental interactions (quantum fields) are represented as symmetric causality relation between macro entities, while classical interactions are mediated by chain of quantums (i.e. elementary particles).
-The fundamental distinction between world entities is causality self-connectedness: a world entity can be self-connected xor not self-connected depending on the causality network of its fundamental components.
-Void regions do not exist in the EMMO. In other words there is no spacetime without entities and spacetime emerges as relational property not as a self-standing entity). Entities are not placed in space or time: space and time are measured quantities, always relative between entities and are measured. In other words, space and time relations originates from causality interactions."""@en ;
-    ns1:note "While EMMO mereocausality conceptualisation can be used on any possibile domain, so that a quantum can be a Lego brick or an furniture component, it can be better understood when a quantum is elucidated as an elementary particle after and interaction and before another interaction. (e.g. quark, photon)."@en .
-
-[] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:Item ;
-    owl:annotatedTarget "Item"@en ;
-    ns1:etymology "From Latin item, \"likewise, just so, moreover\"."@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso ns1:isProperPartOf ;
-    owl:annotatedProperty ns1:definition ;
-    owl:annotatedSource ns1:Quantum ;
-    owl:annotatedTarget "Q(x) ≡ ¬∃y(PP(y,x))"@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:Quantum ;
-    owl:annotatedTarget "Quantum"@en ;
-    ns1:etymology "From Latin quantum (plural quanta) \"as much as, so much as\"."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource ns1:CausalPath ;
-    owl:annotatedTarget "Elementary"@en ;
-    ns1:etymology "From Latin elementārius (“elementary”), from elementum (“one of the four elements of antiquity; fundamentals”)."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:Fusion ;
-    owl:annotatedTarget "Fusion"@en ;
-    ns1:etymology "From Latin fusio, from fundere ‘pour, melt’."@en .
+    owl:annotatedSource ns1:isCauseOf ;
+    owl:annotatedTarget "isCauseOf"@en ;
+    ns1:etymology "From Latin causa (“reason, sake, cause”)."@en .
 
 [] a owl:Axiom ;
     rdfs:seeAlso ns1:Quantum,
@@ -1074,20 +906,55 @@ Embracing a strong reductionistic view, causality originates at quantum entities
     ns1:note "The equalsTo object property is equivalent to the OWL  SameAs"@en .
 
 [] a owl:Axiom ;
+    rdfs:seeAlso ns1:hasProperPart ;
     owl:annotatedProperty ns1:definition ;
-    owl:annotatedSource ns1:universe ;
-    owl:annotatedTarget "u ≡ σx⟨P(x, x)⟩"^^xsd:string ;
-    ns1:note "This definition reads: \"The universe is the sum of all entities that are part of themselves\". Since parthood (P) is reflexive by axiom, then the universe is the sum of all mereological entities."@en .
+    owl:annotatedSource ns1:hasRedundantPart ;
+    owl:annotatedTarget "RP(x, y) ≡ PP(x, y) ∧ ∃φ(φ(x) ∧ φ(y))"^^xsd:string ;
+    ns1:note "We usa a predicate template notation as RP<φ>(x,y) to specify subclasses of RP(x,y) for the class φ, meaning that RP<φ>(x, y) ≡ PP(x, y) ∧ φ(x) ∧ φ(y)"@en,
+        "φ is a class of the theory that in the EMMO OWL is supposed to be subclass of CausalStructure."@en .
 
 [] a owl:Axiom ;
-    owl:annotatedProperty rdf:type ;
-    owl:annotatedSource ns1:universe ;
-    owl:annotatedTarget ns1:CausalSystem ;
-    ns1:conceptualisation """This axiom reflects the fact the the universe is causally self-connected. In fact, a  non causally connected universe would have been the sum of causally independend sub-universes, without any knowledge of others.
-This axiom may be seen as Ockam's razor applied to causality."""@en .
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:EMMO ;
+    owl:annotatedTarget "EMMO"@en ;
+    ns1:etymology "EMMO is the acronym of Elementary Multiperspective Material Ontology."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:mereological ;
+    owl:annotatedTarget "mereological"@en ;
+    ns1:etymology """Coined by Stanisław Leśniewski in 1927, from Ancient Greek μέρος (méros, “part”) +‎ -logy (“study, discussion, science”).
+https://en.wiktionary.org/wiki/mereology"""@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource ns1:foreruns ;
+    owl:annotatedTarget "hasSuccessor"@en ;
+    ns1:etymology "From Latin succedĕre (\"coming after\")."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty ns1:conceptualisation ;
+    owl:annotatedSource ns1:EMMO ;
+    owl:annotatedTarget """The EMMO conceptualises the world using the primitive concepts of causality and parthood. Parthood is about the composition of world entities starting from other more fundamental entities. Causality is about the interactions between world entities.
+The quantum is the smallest indivisible part of any world entity. Quantum individuals are the fundamental causal constituents of the universe, since it is implied that causality originates from quantum-to-quantum interactions. Quantums are no-dimensional, and their aggregation makes spacetime emerge from their causal structure. We can think of a quantum as an elementary particle after and interaction and before another interaction.
+Causality between macro entities (i.e. entities made of more than one quantum) is explained as the sum of the causality relations between their quantum constituents. Fundamental interactions (quantum fields) are represented as symmetric causality relation between macro entities, while classical interactions are mediated by chain of quantums (i.e. elementary particles).
+The fundamental distinction between world entities is causality self-connectedness: a world entity can be self-connected xor not self-connected depending on the causality network of its fundamental components.
+Void regions do not exist in the EMMO. In other words there is no spacetime without entities and spacetime emerges as relational property not as a self-standing entity). Entities are not placed in space or time: space and time are measured quantities, always relative between entities and are measured. In other words, space and time relations originates from causality interactions."""@en ;
+    ns1:note "While EMMO mereocausality conceptualisation can be used on any possibile domain, so that a quantum can be a Lego brick or an furniture component, it can be better understood when a quantum is elucidated as an elementary particle after and interaction and before another interaction. (e.g. quark, photon)."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:CausalCluster ;
+    owl:annotatedTarget "CausalCluster"@en ;
+    ns1:etymology "From Proto-Germanic *klas-, *klus- (“to clump, lump together”)."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Collection ;
+    owl:annotatedTarget "Collection"@en ;
+    ns1:etymology "From Latin collectio, from colligere ‘gather together’."@en .
 
 [] a swrl:Imp ;
-    rdfs:comment "Implementation of equality based on mereology."^^rdfs:Literal ;
     swrl:body [ a swrl:AtomList ;
             rdf:first [ a swrl:IndividualPropertyAtom ;
                     swrl:argument1 <urn:swrl:var#x> ;
@@ -1096,42 +963,36 @@ This axiom may be seen as Ockam's razor applied to causality."""@en .
             rdf:rest [ a swrl:AtomList ;
                     rdf:first [ a swrl:IndividualPropertyAtom ;
                             swrl:argument1 <urn:swrl:var#y> ;
-                            swrl:argument2 <urn:swrl:var#x> ;
+                            swrl:argument2 <urn:swrl:var#z> ;
                             swrl:propertyPredicate ns1:hasPart ] ;
                     rdf:rest () ] ] ;
     swrl:head [ a swrl:AtomList ;
-            rdf:first [ a swrl:SameIndividualAtom ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
                     swrl:argument1 <urn:swrl:var#x> ;
-                    swrl:argument2 <urn:swrl:var#y> ] ;
-            rdf:rest () ] .
+                    swrl:argument2 <urn:swrl:var#z> ;
+                    swrl:propertyPredicate ns1:hasPart ] ;
+            rdf:rest () ] ;
+    ns1:note "Transitivity for parthood."@en .
 
-[] a owl:AllDisjointClasses ;
-    owl:members ( ns1:CausalPath ns1:Collection ns1:Quantum ns1:CausalSystem ) .
+[] a owl:Axiom ;
+    rdfs:seeAlso "doi:10.3233/FAIA231120"^^xsd:string ;
+    owl:annotatedProperty ns1:note ;
+    owl:annotatedSource ns1:isCauseOf ;
+    owl:annotatedTarget """The OWL 2 DL version of the EMMO introduces this object property as primitive causal relation. It refers to the macro causality relation mC(x,y), defined in the EMMO FOL version.
+While the EMMO FOL introduces the quantum causality relation C(x,y) as primitive, the OWL 2 DL version of the EMMO substantially simplifies the theory, neglecting these lower level relations that are well above DL expressivity.
+For this reason the EMMO OWL 2 DL will only deal with macro causality relations, sacrificing the full FOL theory expressivity for the sake of simplicity."""@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso ns1:isProperPartOf ;
+    owl:annotatedProperty ns1:definition ;
+    owl:annotatedSource ns1:Quantum ;
+    owl:annotatedTarget "Q(x) ≡ ¬∃y(PP(y,x))"@en .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:altLabel ;
     owl:annotatedSource ns1:Item ;
     owl:annotatedTarget "CausalObject"@en ;
     ns1:etymology "From Latin causa (“reason, sake, cause”), and Medieval Latin obiectum (“object”, literally “thrown against”)."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:CausalPath ;
-    owl:annotatedTarget "CausalPath"@en ;
-    ns1:etymology "From Ancient Greek πάτος (pátos, “path”)."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty ns1:definition ;
-    owl:annotatedSource ns1:hasDistinctPart ;
-    owl:annotatedTarget "DP(x, y) ≡ PP(x, y) ∧ ∃φ[φ(x) ↔ ¬φ(y)]"^^xsd:string ;
-    ns1:note "We usa a predicate template notation as DP<φ>(x,y) to specify subclasses of DP(x,y) for the class φ, meaning that DP<φ>(x, y) ≡ PP(x, y) ∧ (φ(x) ↔ ¬φ(y))"@en,
-        "φ is a class of the theory"@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:EMMO ;
-    owl:annotatedTarget "EMMO"@en ;
-    ns1:etymology "EMMO is the acronym of Elementary Multiperspective Material Ontology."@en .
 
 [] a swrl:Imp ;
     swrl:body [ a swrl:AtomList ;
@@ -1148,28 +1009,169 @@ This axiom may be seen as Ockam's razor applied to causality."""@en .
             rdf:rest () ] ;
     ns1:note "Enforcing exclusivity between overlapping and causality."@en .
 
-_:N22b24830fe90430c8079443718f4eb46 rdf:first ns1:CausalPath ;
-    rdf:rest ( ns1:Quantum ) .
+[] a swrl:Imp ;
+    rdfs:comment "Implementing transitivity."@en ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate ns1:indirectlyCauses ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl:var#y> ;
+                            swrl:argument2 <urn:swrl:var#z> ;
+                            swrl:propertyPredicate ns1:indirectlyCauses ] ;
+                    rdf:rest () ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#z> ;
+                    swrl:propertyPredicate ns1:indirectlyCauses ] ;
+            rdf:rest () ] .
 
-_:Nb769a212fe51417eb256c6745923ba1f owl:inverseOf ns1:hasPart .
+[] a owl:Axiom ;
+    rdfs:seeAlso ns1:isPartOf ;
+    owl:annotatedProperty ns1:definition ;
+    owl:annotatedSource ns1:overlaps ;
+    owl:annotatedTarget "Oxy ≡ ∃z(Pzx ∧ Pzy)"^^xsd:string .
 
-_:Nc15681e5622a4bc58ebe185e57cf0549 a owl:Class ;
-    owl:unionOf _:N22b24830fe90430c8079443718f4eb46 .
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource ns1:CausalPath ;
+    owl:annotatedTarget "Elementary"@en ;
+    ns1:etymology "From Latin elementārius (“elementary”), from elementum (“one of the four elements of antiquity; fundamentals”)."@en .
 
-_:N0b7dccd701d9409ba28bda18395c371f a owl:Restriction ;
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ns1:Collection ;
+    owl:annotatedTarget _:N0ebf6f0efac54236bc22510a6811cbe0 ;
+    ns1:note "Every collection has at least two item members, since a collection of one item is a self-connected entity (and then an item)."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ns1:EMMO ;
+    owl:annotatedTarget _:N36d978935c074f7eb73a590598a69bf4 ;
+    ns1:note "Every entity is made of quantum parts. This axiomatisation is the expression of the radical reductionistic approach of the EMMO."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:CausalStructure ;
+    owl:annotatedTarget "CausalStructure"@en ;
+    ns1:etymology "From Latin causa (“reason, sake, cause”), and from Latin struere (“arrange, assemble, build”)."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso ns1:hasDistinctPart ;
+    owl:annotatedProperty ns1:note ;
+    owl:annotatedSource ns1:hasRedundantPart ;
+    owl:annotatedTarget "A part is always distinct xor redundant."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ns1:CausalPath ;
+    owl:annotatedTarget _:N5c3d43a754db472d8e09306ccf63a6b1 ;
+    ns1:elucidation "This axiom underlines the monodimensional nature of a causal chain, as a sequence of quanta."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso ns1:hasRedundantPart ;
+    owl:annotatedProperty ns1:note ;
+    owl:annotatedSource ns1:hasDistinctPart ;
+    owl:annotatedTarget "A part is always distinct xor redundant."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource ns1:EMMO ;
+    owl:annotatedTarget _:N20608bd18a7a4990a1fac79613015c99 ;
+    ns1:note "All EMMO individuals are part of the most comprehensive entity which is the universe."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty ns1:definition ;
+    owl:annotatedSource ns1:hasDistinctPart ;
+    owl:annotatedTarget "DP(x, y) ≡ PP(x, y) ∧ ∃φ[φ(x) ↔ ¬φ(y)]"^^xsd:string ;
+    ns1:note "We usa a predicate template notation as DP<φ>(x,y) to specify subclasses of DP(x,y) for the class φ, meaning that DP<φ>(x, y) ≡ PP(x, y) ∧ (φ(x) ↔ ¬φ(y))"@en,
+        "φ is a class of the theory"@en .
+
+[] a swrl:Imp ;
+    rdfs:comment "Implementing Transitivity."@en ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate ns1:alongsideWith ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl:var#y> ;
+                            swrl:argument2 <urn:swrl:var#z> ;
+                            swrl:propertyPredicate ns1:alongsideWith ] ;
+                    rdf:rest () ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#z> ;
+                    swrl:propertyPredicate ns1:alongsideWith ] ;
+            rdf:rest () ] .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:CausalPath ;
+    owl:annotatedTarget "CausalPath"@en ;
+    ns1:etymology "From Ancient Greek πάτος (pátos, “path”)."@en .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:ClassAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:classPredicate ns1:EMMO ] ;
+            rdf:rest () ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#x> ;
+                    swrl:propertyPredicate ns1:isNotCauseOf ] ;
+            rdf:rest () ] ;
+    ns1:note "Enforcing the fact that an entity cannot cause itself."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Fusion ;
+    owl:annotatedTarget "Fusion"@en ;
+    ns1:etymology "From Latin fusio, from fundere ‘pour, melt’."@en .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:ClassAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:classPredicate ns1:EMMO ] ;
+            rdf:rest () ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#x> ;
+                    swrl:propertyPredicate ns1:hasPart ] ;
+            rdf:rest () ] ;
+    ns1:note "Enforcing parthood reflexivity."@en .
+
+_:N2d7c51b8a95f426b9ff27ad2c437a877 rdf:first ns1:Quantum ;
+    rdf:rest () .
+
+_:N34c9590592ee4f9aabf78ec0952a78fa a owl:Class ;
+    owl:unionOf ( ns1:CausalPath ns1:Quantum ) .
+
+_:Nfc7f7bae536647398d6a3b533f852f70 owl:inverseOf ns1:hasPart .
+
+_:N0ebf6f0efac54236bc22510a6811cbe0 a owl:Restriction ;
     owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
     owl:onClass ns1:Item ;
     owl:onProperty ns1:hasSingleMember .
 
-_:N7903e711e0c649d89a0ebcbc995c8e3d a owl:Restriction ;
-    owl:allValuesFrom _:Nc15681e5622a4bc58ebe185e57cf0549 ;
-    owl:onProperty ns1:hasTemporalPart .
-
-_:N84cf701e74e543278adf97969b003cbe a owl:Restriction ;
+_:N20608bd18a7a4990a1fac79613015c99 a owl:Restriction ;
     owl:hasValue ns1:universe ;
-    owl:onProperty _:Nb769a212fe51417eb256c6745923ba1f .
+    owl:onProperty _:Nfc7f7bae536647398d6a3b533f852f70 .
 
-_:N8e12ba59d1c144cf96a061a90ba50917 a owl:Restriction ;
+_:N36d978935c074f7eb73a590598a69bf4 a owl:Restriction ;
     owl:onProperty ns1:hasPart ;
     owl:someValuesFrom ns1:Quantum .
+
+_:N5c3d43a754db472d8e09306ccf63a6b1 a owl:Restriction ;
+    owl:allValuesFrom _:N34c9590592ee4f9aabf78ec0952a78fa ;
+    owl:onProperty ns1:hasTemporalPart .
 

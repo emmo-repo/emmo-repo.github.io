@@ -19,6 +19,10 @@ In general, metallic and ionic bonds have atoms sharing electrons."""@en,
     skos:prefLabel "BondedAtom"@en ;
     ns1:elucidation "A bonded atom that shares at least one electron to the atom-based entity of which is part of."@en .
 
+ns1:BondedObject rdfs:label "BondedObject"@en .
+
+ns1:BondedParticle rdfs:label "BondedParticle"@en .
+
 ns1:CASRN a owl:Class ;
     rdfs:label "CASRN"@en ;
     rdfs:subClassOf ns1:ChemicalNomenclature ;
@@ -38,8 +42,6 @@ The class Material hosts the subclasses for which a substance can be identified 
     rdfs:subClassOf ns1:Matter ;
     owl:disjointUnionOf ( ns1:MolecularEntity ns1:ChemicalSubstance ) ;
     skos:prefLabel "ChemicalEntity"@en .
-
-ns1:CompositePhysicalObject rdfs:label "CompositePhysicalObject"@en .
 
 ns1:CondensedFormula a owl:Class ;
     rdfs:label "CondensedFormula"@en ;
@@ -129,7 +131,13 @@ ns1:NeutralAtom a owl:Class ;
     skos:prefLabel "NeutralAtom"@en ;
     ns1:elucidation "A standalone atom that has no net charge."@en .
 
+ns1:ParticulateMatter rdfs:label "ParticulateMatter"@en .
+
 ns1:Perceptual rdfs:label "Perceptual"@en .
+
+ns1:PhysicalParticle rdfs:label "PhysicalParticle"@en .
+
+ns1:PhysicalParticleByBond rdfs:label "PhysicalParticleByBond"@en .
 
 ns1:SMILESReference a owl:AnnotationProperty ;
     rdfs:label "SMILESReference"@en ;
@@ -307,6 +315,8 @@ ns1:hasSpeciesPart a owl:AsymmetricProperty,
     ns1:elucidation "Relates a chemical composition to one its species."@en ;
     ns1:note "This property is typically used to relate a SingleComponentComposition to its chemical species."@en .
 
+ns1:Atom rdfs:label "Atom"@en .
+
 ns1:ChemicalCompound a owl:Class ;
     rdfs:label "ChemicalCompound"@en ;
     rdfs:subClassOf ns1:ChemicalSubstance ;
@@ -321,7 +331,8 @@ ns1:IUPACNomenclature a owl:Class ;
     skos:prefLabel "IUPACNomenclature"@en ;
     ns1:elucidation "Chemical nomenclauture following the IUPAC standard."@en .
 
-ns1:MolecularEntity rdfs:comment """Molecular entity is used as a general term for singular entities, irrespective of their nature, while chemical species stands for sets or ensembles of molecular entities.
+ns1:MolecularEntity rdfs:label "MolecularEntity"@en ;
+    rdfs:comment """Molecular entity is used as a general term for singular entities, irrespective of their nature, while chemical species stands for sets or ensembles of molecular entities.
 
 Note that the name of a compound may refer to the respective molecular entity or to the chemical species,"""^^xsd:string ;
     skos:example "Hydrogen molecule is an adequate definition of a certain molecular entity for some purposes, whereas for others it is necessary to distinguish the electronic state and/or vibrational state and/or nuclear spin, etc. of the hydrogen molecule."^^xsd:string,
@@ -335,7 +346,10 @@ ns1:StandaloneAtom a owl:Class ;
     ns1:OWLRL2DLAxioms "DisjointUnionOf: NeutralAtom, IonAtom"^^xsd:string ;
     ns1:elucidation "An atom that does not share electrons with other atoms."@en .
 
+ns1:Symbol rdfs:label "Symbol"@en .
+
 ns1:ChemicalElement a owl:Class ;
+    rdfs:label "ChemicalElement"@en ;
     rdfs:comment """The IUPAC Gold Book defines the a chemical element both as:
 - a species of atoms; all atoms with the same number of protons in the atomic nucleus
 -  a pure chemical substance composed of atoms with the same number of protons in the atomic nucleus
@@ -378,16 +392,14 @@ ns1:ChemicalSubstance a owl:Class ;
 ns1:SingleComponentComposition a owl:Class ;
     rdfs:label "SingleComponentComposition"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty ns1:hasQuantityPart ;
-            owl:someValuesFrom ns1:ChemicalCompositionQuantity ],
-        [ a owl:Restriction ;
             owl:onProperty ns1:hasSpeciesPart ;
             owl:someValuesFrom ns1:ChemicalSpecies ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:hasQuantityPart ;
+            owl:someValuesFrom ns1:ChemicalCompositionQuantity ],
         ns1:ChemicalComposition ;
     skos:prefLabel "SingleComponentComposition"@en ;
     ns1:elucidation "A language construct that represents the fraction or amount of a single constituent of a substance."@en .
-
-ns1:Substance rdfs:label "Substance"@en .
 
 ns1:ChemicalFormula a owl:Class ;
     rdfs:label "ChemicalFormula"@en ;
@@ -415,6 +427,7 @@ ns1:ChemicalComposition a owl:Class ;
     ns1:elucidation "A language construct that provides information about the consitutents of a substance and their fractions or amounts."^^xsd:string .
 
 ns1:Chemical a owl:Class ;
+    rdfs:label "Chemical"@en ;
     rdfs:subClassOf ns1:Language ;
     skos:prefLabel "Chemical"@en ;
     ns1:elucidation "A language object that follows the syntactic rules used in the chemical field."^^xsd:string .

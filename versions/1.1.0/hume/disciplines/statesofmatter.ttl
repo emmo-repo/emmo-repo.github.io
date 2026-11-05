@@ -36,6 +36,12 @@ ns1:AqueousSolution a owl:Class ;
     skos:prefLabel "AqueousSolution"@en ;
     ns1:elucidation "A liquid solution in which the solvent is water."@en .
 
+ns1:CausalCluster rdfs:label "CausalCluster"@en .
+
+ns1:CausalSystem rdfs:label "CausalSystem"@en .
+
+ns1:CompositePhysicalObject rdfs:label "CompositePhysicalObject"@en .
+
 ns1:DrySaturatedVapor a owl:Class ;
     rdfs:label "DrySaturatedVapor"@en ;
     rdfs:subClassOf ns1:SaturatedVapor ;
@@ -88,6 +94,8 @@ ns1:Gel a owl:Class ;
     skos:prefLabel "Gel"@en ;
     ns1:elucidation "A soft, solid or solid-like colloid consisting of two or more components, one of which is a liquid, present in substantial quantity."@en .
 
+ns1:GenericPhysicalSystem rdfs:label "GenericPhysicalSystem"@en .
+
 ns1:Hydrosol a owl:Class ;
     rdfs:label "Hydrosol"@en ;
     rdfs:subClassOf ns1:LiquidSol ;
@@ -101,12 +109,18 @@ ns1:IdealGas a owl:Class ;
     ns1:conceptualisation "A gas where the PV=nRT relation holds, with compressibility factor Z=1. Since no gas really fits whis model, an ideal gas is intended to be a substance for which this model is a reasonable apporoximation."@en ;
     ns1:note "Strictly speaking, an ideal gas is a model, not a thermodynamic region."@en .
 
+ns1:InteractingSystem rdfs:label "InteractingSystem"@en .
+
 ns1:LiquidFoam a owl:Class ;
     rdfs:label "LiquidFoam"@en ;
     rdfs:subClassOf ns1:Foam,
         ns1:Liquid ;
     skos:prefLabel "LiquidFoam"@en ;
     ns1:elucidation "A foam of trapped gas in a liquid."@en .
+
+ns1:Matter rdfs:label "Matter"@en .
+
+ns1:MatterByStructure rdfs:label "MatterByStructure"@en .
 
 ns1:MesoscopicSubstance a owl:Class ;
     rdfs:label "MesoscopicSubstance"@en ;
@@ -119,6 +133,10 @@ ns1:MesoscopicSubstance a owl:Class ;
     skos:prefLabel "MesoscopicSubstance"@en ;
     ns1:conceptualisation "Mesoscopic substances typically exist on a length scale between atoms and molecules and macroscopic (bulk) substances. They are typically in the range of some nanometers to about a micrometer and often exhibit unique physical properties due to their size and shape. Due to their nature of  they show no clear homonegenity in properties, and cannot be qualified as solid or liquid, but still have some criteria (e.g., structural, shape) that can be used to define them."@en ;
     ns1:elucidation "A matter that is not a particulate matter and that does not fullfill the criteria of being a continuum substance."@en .
+
+ns1:PhysicalObject rdfs:label "PhysicalObject"@en .
+
+ns1:PhysicalObjectByBond rdfs:label "PhysicalObjectByBond"@en .
 
 ns1:RealGas a owl:Class ;
     rdfs:label "RealGas"@en ;
@@ -414,6 +432,8 @@ ns1:Sol a owl:Class ;
     ns1:elucidation "A colloid in which small particles (1 nm to 100 nm) are suspended in a continuum phase."@en ;
     ns1:wikipediaReference <https://en.wikipedia.org/wiki/Sol_(colloid)> .
 
+ns1:Substance rdfs:label "Substance"@en .
+
 ns1:SupercriticalGaseousState a owl:Class ;
     rdfs:label "SupercriticalGaseousState"@en ;
     rdfs:subClassOf ns1:GaseousState ;
@@ -642,19 +662,16 @@ ns1:Solid a owl:Class ;
     ns1:elucidation "A continuum characterized by structural rigidity and resistance to changes of shape or volume, that retains its shape and density when not confined."@en .
 
 [] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:Plasma ;
-    owl:annotatedTarget "Plasma"@en ;
-    ns1:etymology """From Late Latin plasma (“mold”), from Ancient Greek πλάσμα (plásma, “something formed”) [Wiktionary]
-The term has been introduced in physics by Irving Langmuir in 1928."""@en .
+    owl:annotatedProperty ns1:conceptualisation ;
+    owl:annotatedSource ns1:CondensedMatter ;
+    owl:annotatedTarget "The subject of condensed matter physics that deals with the macroscopic and microscopic physical properties of matter, especially the solid and liquid phases which arise from electromagnetic forces between atoms. More generally, the subject deals with \"condensed\" phases of matter: systems of many constituents with strong interactions between them."@en ;
+    ns1:wikipediaReference "https://en.wikipedia.org/wiki/Condensed_matter_physics"@en .
 
 [] a owl:Axiom ;
-    owl:annotatedProperty ns1:note ;
-    owl:annotatedSource ns1:PhaseOfMatter ;
-    owl:annotatedTarget """In the physical sciences, a phase is a region of space (a thermodynamic system), throughout which all physical properties of a material are essentially uniform. Examples of physical properties include density, index of refraction, magnetization and chemical composition. A simple description is that a phase is a region of material that is chemically uniform, physically distinct, and (often) mechanically separable. In a system consisting of ice and water in a glass jar, the ice cubes are one phase, the water is a second phase, and the humid air is a third phase over the ice and water. The glass of the jar is another separate phase.
-
-The term phase is sometimes used as a synonym for state of matter, but there can be several immiscible phases of the same state of matter. Also, the term phase is sometimes used to refer to a set of equilibrium states demarcated in terms of state variables such as pressure and temperature by a phase boundary on a phase diagram. Because phase boundaries relate to changes in the organization of matter, such as a change from liquid to solid or a more subtle change from one crystal structure to another, this latter usage is similar to the use of "phase" as a synonym for state of matter. However, the state of matter and phase diagram usages are not commensurate with the formal definition given above and the intended meaning must be determined in part from the context in which the term is used."""@en ;
-    ns1:wikipediaReference "https://en.wikipedia.org/wiki/Phase_(matter)"@en .
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Colloid ;
+    owl:annotatedTarget "Colloid"@en ;
+    ns1:etymology "From Ancient Greek κόλλα (kólla, “glue”)."@en .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
@@ -664,15 +681,17 @@ The term phase is sometimes used as a synonym for state of matter, but there can
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:AmorphousState ;
-    owl:annotatedTarget "AmorphousState"@en ;
-    ns1:etymology "From Ancient Greek ἄμορφος (ámorphos, “without form, shapeless, deformed”) (itself from ἀ- (a-, “without”) + μορφή (morphḗ, “form”)  [Wiktionary]"@en .
+    owl:annotatedSource ns1:Plasma ;
+    owl:annotatedTarget "Plasma"@en ;
+    ns1:etymology """From Late Latin plasma (“mold”), from Ancient Greek πλάσμα (plásma, “something formed”) [Wiktionary]
+The term has been introduced in physics by Irving Langmuir in 1928."""@en .
 
 [] a owl:Axiom ;
+    rdfs:seeAlso <https://en.wiktionary.org/wiki/continuum> ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:Colloid ;
-    owl:annotatedTarget "Colloid"@en ;
-    ns1:etymology "From Ancient Greek κόλλα (kólla, “glue”)."@en .
+    owl:annotatedSource ns1:ContinuumSubstance ;
+    owl:annotatedTarget "ContinuumSubstance"@en ;
+    ns1:etymology "From Latin continuum, neuter form of continuus, from contineō (“contain, enclose”) [Wiktionary]"@en .
 
 [] a owl:AllDisjointClasses ;
     owl:members ( ns1:SolidSolidSuspension ns1:SolidLiquidSuspension ns1:LiquidGasSuspension ns1:LiquidLiquidSuspension ns1:SolidGasSuspension ns1:GasSolidSuspension ns1:GasLiquidSuspension ns1:LiquidSolidSuspension ) .
@@ -681,10 +700,23 @@ The term phase is sometimes used as a synonym for state of matter, but there can
     owl:members ( ns1:GaseousState ns1:Plasma ns1:Liquid ns1:Solid ) .
 
 [] a owl:Axiom ;
-    owl:annotatedProperty ns1:conceptualisation ;
-    owl:annotatedSource ns1:CondensedMatter ;
-    owl:annotatedTarget "The subject of condensed matter physics that deals with the macroscopic and microscopic physical properties of matter, especially the solid and liquid phases which arise from electromagnetic forces between atoms. More generally, the subject deals with \"condensed\" phases of matter: systems of many constituents with strong interactions between them."@en ;
-    ns1:wikipediaReference "https://en.wikipedia.org/wiki/Condensed_matter_physics"@en .
+    rdfs:seeAlso <https://en.wiktionary.org/wiki/phase> ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:PhaseOfMatter ;
+    owl:annotatedTarget "PhaseOfMatter"@en ;
+    ns1:etymology "From Ancient Greek φάσις (phásis, “an appearance”), from φαίνω (phaínō, “to cause to appear”) [Wiktionary]"@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Fluid ;
+    owl:annotatedTarget "Fluid"@en ;
+    ns1:etymology "From Latin fluidus (“flowing; fluid”), from Latin fluō (“to flow”), from Proto-Indo-European *bʰleh₁- (“to swell; surge; overflow; run”) [Wiktionary]"@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:AmorphousState ;
+    owl:annotatedTarget "AmorphousState"@en ;
+    ns1:etymology "From Ancient Greek ἄμορφος (ámorphos, “without form, shapeless, deformed”) (itself from ἀ- (a-, “without”) + μορφή (morphḗ, “form”)  [Wiktionary]"@en .
 
 [] a owl:Axiom ;
     rdfs:seeAlso <https://en.wiktionary.org/wiki/condense> ;
@@ -700,22 +732,10 @@ The term phase is sometimes used as a synonym for state of matter, but there can
     ns1:etymology "The word gas was coined in the early 17th century by Flemish chemist Jan Baptist van Helmont. He derived the term from the Ancient Greek word χάος (\"chaos\": void, empty space)."@en .
 
 [] a owl:Axiom ;
-    rdfs:seeAlso <https://en.wiktionary.org/wiki/continuum> ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:ContinuumSubstance ;
-    owl:annotatedTarget "ContinuumSubstance"@en ;
-    ns1:etymology "From Latin continuum, neuter form of continuus, from contineō (“contain, enclose”) [Wiktionary]"@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso <https://en.wiktionary.org/wiki/phase> ;
-    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedProperty ns1:note ;
     owl:annotatedSource ns1:PhaseOfMatter ;
-    owl:annotatedTarget "PhaseOfMatter"@en ;
-    ns1:etymology "From Ancient Greek φάσις (phásis, “an appearance”), from φαίνω (phaínō, “to cause to appear”) [Wiktionary]"@en .
+    owl:annotatedTarget """In the physical sciences, a phase is a region of space (a thermodynamic system), throughout which all physical properties of a material are essentially uniform. Examples of physical properties include density, index of refraction, magnetization and chemical composition. A simple description is that a phase is a region of material that is chemically uniform, physically distinct, and (often) mechanically separable. In a system consisting of ice and water in a glass jar, the ice cubes are one phase, the water is a second phase, and the humid air is a third phase over the ice and water. The glass of the jar is another separate phase.
 
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:Fluid ;
-    owl:annotatedTarget "Fluid"@en ;
-    ns1:etymology "From Latin fluidus (“flowing; fluid”), from Latin fluō (“to flow”), from Proto-Indo-European *bʰleh₁- (“to swell; surge; overflow; run”) [Wiktionary]"@en .
+The term phase is sometimes used as a synonym for state of matter, but there can be several immiscible phases of the same state of matter. Also, the term phase is sometimes used to refer to a set of equilibrium states demarcated in terms of state variables such as pressure and temperature by a phase boundary on a phase diagram. Because phase boundaries relate to changes in the organization of matter, such as a change from liquid to solid or a more subtle change from one crystal structure to another, this latter usage is similar to the use of "phase" as a synonym for state of matter. However, the state of matter and phase diagram usages are not commensurate with the formal definition given above and the intended meaning must be determined in part from the context in which the term is used."""@en ;
+    ns1:wikipediaReference "https://en.wikipedia.org/wiki/Phase_(matter)"@en .
 

@@ -272,6 +272,8 @@ ns1:MartensiticStainlessSteel a owl:Class ;
     rdfs:subClassOf ns1:StainlessSteel ;
     skos:prefLabel "MartensiticStainlessSteel"@en .
 
+ns1:MatterByType rdfs:label "MatterByType"@en .
+
 ns1:MediumCarbonSteel a owl:Class ;
     rdfs:label "MediumCarbonSteel"@en ;
     rdfs:subClassOf ns1:LowAlloySteel ;
@@ -561,6 +563,8 @@ ns1:MetallicMaterial a owl:Class ;
     skos:prefLabel "MetallicMaterial"@en ;
     ns1:elucidation "Inorganic substance, consisting of one or more metallic elements, and often small amount of nonmetallic elements."@en ;
     ns1:note "Metallic materials are known for their shiny luster, excellent electrical/thermal conductivity, malleability (shapable by hammering), and ductility (can be drawn into wires), due to metallic bonding (shared electrons); they often form alloys (like steel from iron/carbon) to enhance these properties for diverse applications."@en .
+
+ns1:OrdinaryMatter rdfs:label "OrdinaryMatter"@en .
 
 ns1:Powder a owl:Class ;
     rdfs:label "Powder"@en ;
@@ -868,20 +872,6 @@ Here we embrace this definition in its wide and literal meaning, even if in prac
     dcterms:title "Materials Science and Engineering: An Introduction"^^xsd:string .
 
 [] a owl:Axiom ;
-    rdfs:seeAlso <https://en.wiktionary.org/wiki/ceramic> ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:CeramicMaterial ;
-    owl:annotatedTarget "CeramicMaterial"@en ;
-    ns1:etymology "From Ancient Greek κεραμικός (keramikós, “potter's”) [Wiktionary]"@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso <https://en.wiktionary.org/wiki/powder> ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:Powder ;
-    owl:annotatedTarget "Powder"@en ;
-    ns1:etymology "From Latin pulverem, accusative singular of Latin pulvis (“dust, powder”) [Wiktionary]"@en .
-
-[] a owl:Axiom ;
     rdfs:seeAlso ns1:MaterialByIsotropy ;
     owl:annotatedProperty ns1:note ;
     owl:annotatedSource ns1:MaterialByStructure ;
@@ -896,13 +886,27 @@ Here we embrace this definition in its wide and literal meaning, even if in prac
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:CrystallineMaterial ;
-    owl:annotatedTarget "CrystallineMaterial"@en ;
-    ns1:etymology "From Ancient Greek κρύσταλλος (krústallos, “clear ice”), from κρύος (krúos, “frost”) [Wiktionary]"@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource ns1:Material ;
     owl:annotatedTarget "Material"@en ;
     ns1:etymology "From Latin māteria (“wood, material, substance”), from māter (“mother”) [Wikictionary]"@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso <https://en.wiktionary.org/wiki/powder> ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Powder ;
+    owl:annotatedTarget "Powder"@en ;
+    ns1:etymology "From Latin pulverem, accusative singular of Latin pulvis (“dust, powder”) [Wiktionary]"@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso <https://en.wiktionary.org/wiki/ceramic> ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:CeramicMaterial ;
+    owl:annotatedTarget "CeramicMaterial"@en ;
+    ns1:etymology "From Ancient Greek κεραμικός (keramikós, “potter's”) [Wiktionary]"@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:CrystallineMaterial ;
+    owl:annotatedTarget "CrystallineMaterial"@en ;
+    ns1:etymology "From Ancient Greek κρύσταλλος (krústallos, “clear ice”), from κρύος (krúos, “frost”) [Wiktionary]"@en .
 

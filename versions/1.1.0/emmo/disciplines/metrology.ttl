@@ -90,6 +90,7 @@ emmo:EMMO_33ae2d07_5526_4555_a0b4_8f4c031b5652 a owl:AnnotationProperty ;
     emmo:note "The Unified Code for Units of Measure (UCUM) is a code system intended to include all units of measures being contemporarily used in international science, engineering, and business. The purpose is to facilitate unambiguous electronic communication of quantities together with their units."@en .
 
 emmo:EMMO_3eb993a1_61ae_4a20_b168_dda853f51c14 a owl:Class ;
+    rdfs:label "SystemUnit"@en ;
     rdfs:subClassOf emmo:EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4 ;
     skos:prefLabel "SystemUnit"@en ;
     emmo:elucidation "A unit that belongs to one or more unit systems."@en .
@@ -489,7 +490,6 @@ emmo:EMMO_ae081613_1d3a_49af_ba03_7195fcc9ebba a owl:ObjectProperty ;
     emmo:elucidation "Relates a measurement to the measured object (referent)."@en .
 
 emmo:EMMO_c2f5ee66_579c_44c6_a2e9_fa2eaa9fa4da a owl:Class ;
-    rdfs:label "FractionUnit"@en ;
     rdfs:comment """Quantities that are ratios of quantities of the same kind (for example length ratios and amount fractions) have the option of being expressed with units (m/m, mol/mol to aid the understanding of the quantity being expressed and also allow the use of SI prefixes, if this
 is desirable (μm/m, nmol/mol).
 -- SI Brochure"""@en ;
@@ -544,6 +544,7 @@ Then I have two different physical quantities that are properties thanks to two 
     emmo:elucidation "A quantitative property attributed by agreement to a quantity for a given purpose."@en .
 
 emmo:EMMO_db716151_6b73_45ff_910c_d182fdcbb4f5 a owl:Class ;
+    rdfs:label "BaseUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom emmo:EMMO_acaaa124_3dde_48b6_86e6_6ec6f364f408 ;
             owl:onProperty [ owl:inverseOf emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ] ],
@@ -604,6 +605,7 @@ A set of quantity values being attributed to a measurand (quantity) together wit
         "A measurement result has the measured quantity, measurement uncertainty and other relevant attributes as holistic parts."@en .
 
 emmo:EMMO_442bd91e_a724_4e9f_89c1_18423016fb75 a owl:Class ;
+    rdfs:label "MetricPrefix"@en ;
     rdfs:seeAlso "https://en.wikipedia.org/wiki/Metric_prefix"^^xsd:anyURI ;
     rdfs:subClassOf emmo:EMMO_8c64fcfa_23aa_45f8_9e58_bdfd065fab8f,
         emmo:EMMO_985bec21_989f_4b9e_a4b3_735d88099c3c,
@@ -616,14 +618,14 @@ emmo:EMMO_463bcfda_867b_41d9_a967_211d4d437cfb a owl:Class ;
     rdfs:comment "A measurement always implies a causal interaction between the object and the observer."@en,
         "A measurement is the process of experimentally obtaining one or more measurement results that can reasonably be attributed to a quantity."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_cb804456_9459_4be5_ac63_a291a872fbd0 ;
-            owl:someValuesFrom emmo:EMMO_7dea2572_ab42_45bd_9fd7_92448cec762a ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 ;
             owl:someValuesFrom emmo:EMMO_0f6f0120_c079_4d95_bb11_4ddee05e530e ],
         [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_963b7cf2_3358_463e_86fa_2e8ef00704d9 ;
             owl:someValuesFrom emmo:EMMO_f658c301_ce93_46cf_9639_4eace2c5d1d5 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_cb804456_9459_4be5_ac63_a291a872fbd0 ;
+            owl:someValuesFrom emmo:EMMO_7dea2572_ab42_45bd_9fd7_92448cec762a ],
         [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_802b7639_9498_4b47_ad45_1a087fe8fb85 ;
             owl:someValuesFrom emmo:EMMO_0650c031_42b6_4f0a_b62d_d88f071da6bf ],
@@ -686,8 +688,6 @@ emmo:EMMO_9159bb16_8a70_49f9_bac4_f5cf2a82c39a a owl:Class ;
     skos:prefLabel "PhysicalQuantiyByDefinition"@en ;
     emmo:elucidation "Categorisation of physical quantities by how they are defined."@en .
 
-emmo:EMMO_9be5fcc4_0d8b_481d_b984_6338d4b55588 rdfs:label "Measurer"@en .
-
 emmo:EMMO_acaaa124_3dde_48b6_86e6_6ec6f364f408 a owl:Class ;
     rdfs:subClassOf emmo:EMMO_9159bb16_8a70_49f9_bac4_f5cf2a82c39a ;
     skos:prefLabel "BaseQuantity"@en ;
@@ -734,7 +734,6 @@ emmo:EMMO_0aa934ee_1ad4_4345_8a7f_bc73ec67c7e5 a owl:ObjectProperty ;
     skos:prefLabel "hasObjectiveProperty"@en .
 
 emmo:EMMO_3227b821_26a5_4c7c_9c01_5c24483e0bd0 a owl:Class ;
-    rdfs:label "DimensionlessUnit"@en ;
     rdfs:subClassOf emmo:EMMO_611e4040_9a3e_4a1a_9fa2_7b1012269401 ;
     owl:disjointWith emmo:EMMO_cbdea88b_fef1_4c7c_b69f_ae1f0f241c4a ;
     skos:example """Refractive index
@@ -864,12 +863,12 @@ So, for the EMMO the symbol "kg" is not a physical quantity but simply a 'Symbol
 
 While the string "1 kg" is a 'QuantityValue'."""@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onClass emmo:EMMO_18ce5200_00f5_45bb_8c6f_6fb128cd41ae ;
-            owl:onProperty emmo:EMMO_eeb06032_dd4f_476e_9da6_aa24302b7588 ;
-            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
-        [ a owl:Restriction ;
             owl:onClass emmo:EMMO_4ce76d7f_03f8_45b6_9003_90052a79bfaa ;
             owl:onProperty emmo:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onClass emmo:EMMO_18ce5200_00f5_45bb_8c6f_6fb128cd41ae ;
+            owl:onProperty emmo:EMMO_eeb06032_dd4f_476e_9da6_aa24302b7588 ;
             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
         emmo:EMMO_985bec21_989f_4b9e_a4b3_735d88099c3c ;
     skos:example """6.8 m
@@ -904,6 +903,12 @@ https://www.bipm.org/utils/common/pdf/si-brochure/SI-Brochure-9-EN.pdf"""@en,
         "Quantitative value are expressed as a multiple of the 'MeasurementUnit'."@en .
 
 [] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/standard/45324.html"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource emmo:EMMO_463bcfda_867b_41d9_a967_211d4d437cfb ;
+    owl:annotatedTarget "A measurement is the process of experimentally obtaining one or more measurement results that can reasonably be attributed to a quantity."@en .
+
+[] a owl:Axiom ;
     rdfs:isDefinedBy "https://www.bipm.org/documents/20126/2071204/JCGM_200_2012.pdf"^^xsd:string ;
     owl:annotatedProperty emmo:note ;
     owl:annotatedSource emmo:EMMO_985bec21_989f_4b9e_a4b3_735d88099c3c ;
@@ -914,10 +919,4 @@ https://www.bipm.org/utils/common/pdf/si-brochure/SI-Brochure-9-EN.pdf"""@en,
     owl:annotatedSource emmo:EMMO_0650c031_42b6_4f0a_b62d_d88f071da6bf ;
     owl:annotatedTarget "measurand"@en ;
     emmo:note "VIM defines measurand as a quantity intended to be measured. This is redundant in EMMO and correspond to Quantity."@en .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy "https://www.iso.org/standard/45324.html"^^xsd:anyURI ;
-    owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_463bcfda_867b_41d9_a967_211d4d437cfb ;
-    owl:annotatedTarget "A measurement is the process of experimentally obtaining one or more measurement results that can reasonably be attributed to a quantity."@en .
 

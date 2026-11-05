@@ -100,6 +100,8 @@ emmo:EMMO_04cf0295_3e8f_4693_a87f_3130d125cf05 a owl:Class ;
 emmo:EMMO_052e9796_1144_43ae_a798_c5755cd6cd81 a owl:Class ;
     rdfs:label "AmountSquareTimePerMassVolumeUnit"@en .
 
+emmo:EMMO_057e7d57_aff0_49de_911a_8861d85cef40 rdfs:label "Symbolic"@en .
+
 emmo:EMMO_0650c031_42b6_4f0a_b62d_d88f071da6bf rdfs:label "Quantity"@en .
 
 emmo:EMMO_0658e7df_ffd9_4779_82fc_62efe0a7f3b1 a owl:Class ;
@@ -407,6 +409,8 @@ It defines the base unit mole in the SI system."""@en ;
 
 emmo:EMMO_183f6fac_8543_44e0_bd59_434aa7054f4c a owl:Class ;
     rdfs:label "AmountPerAreaUnit"@en .
+
+emmo:EMMO_18ce5200_00f5_45bb_8c6f_6fb128cd41ae rdfs:label "MetrologicalReference"@en .
 
 emmo:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 rdfs:label "RealData"@en .
 
@@ -733,6 +737,8 @@ emmo:EMMO_276f1224_fdc1_42ac_bd27_03d6dcec191a a owl:Class ;
 emmo:EMMO_27c8e4db_eb18_402c_951e_6a38751cf1d0 a owl:Class ;
     rdfs:label "AreaPerQuarticTimeUnit"@en .
 
+emmo:EMMO_28fbea28_2204_4613_87ff_6d877b855fcd rdfs:label "Array"@en .
+
 emmo:EMMO_29edd972_2e77_4658_8106_01c86b3b10a2 a owl:Class ;
     rdfs:label "BindingFraction"@en ;
     rdfs:subClassOf emmo:EMMO_3b1b64d1_60c9_4689_a300_eb9cd56e368b,
@@ -909,6 +915,8 @@ emmo:EMMO_34bdb169_90da_4d38_a351_647071804e5d a owl:Class ;
     emmo:elucidation "Sum of the maximum beta-particle kinetic energy and the recoil energy of the atom produced in a reference frame in which the emitting nucleus is at rest before its disintegration."@en ;
     emmo:wikidataReference "https://www.wikidata.org/wiki/Q98148340"^^xsd:string .
 
+emmo:EMMO_35d2e130_6e01_41ed_94f7_00b333d46cf9 rdfs:label "Conventional"@en .
+
 emmo:EMMO_360adeca_9eee_4bb9_a5ca_728756c1ed4a a owl:Class ;
     rdfs:label "CubicElectricChargeLengthPerSquareEnergyUnit"@en .
 
@@ -989,6 +997,8 @@ emmo:EMMO_38d65ffa_353f_4820_8781_ff986b63e517 a owl:Class ;
     emmo:elucidation "The analytical composition of a saturated solution, expressed in terms of the proportion of a designated solute in a designated solvent, is the solubility of that solute."@en ;
     emmo:iupacReference "https://doi.org/10.1351/goldbook.S05740"^^xsd:string ;
     emmo:wikidataReference "https://www.wikidata.org/wiki/Q170731"^^xsd:string .
+
+emmo:EMMO_38f31ba5_348f_4ac2_9a67_a62b5dd7aadd rdfs:label "CodedByStructure"@en .
 
 emmo:EMMO_394390c8_7b29_4c0a_9104_2d2bc8780138 a owl:Class ;
     rdfs:label "LorenzCoefficient"@en ;
@@ -1350,6 +1360,8 @@ emmo:EMMO_485720e7_b24a_4149_86eb_9985b2bea4da a owl:Class ;
     emmo:qudtReference "https://qudt.org/vocab/quantitykind/Debye-WallerFactor"^^xsd:string ;
     emmo:wikidataReference "https://www.wikidata.org/wiki/Q902587"^^xsd:string .
 
+emmo:EMMO_4a2bf359_c47b_4aa3_9811_b59c3e1dac1e rdfs:label "SignByReferent"@en .
+
 emmo:EMMO_4c151909_6f26_4ef9_b43d_7c9e9514883a a owl:Class ;
     rdfs:label "PotentialEnergy"@en ;
     rdfs:subClassOf emmo:EMMO_31ec09ba_1713_42cb_83c7_b38bf6f9ced2 ;
@@ -1547,6 +1559,8 @@ emmo:EMMO_535021bf_d490_416a_9855_b918cf96c115 a owl:Class ;
     emmo:iupacReference "https://doi.org/10.1351/goldbook.P04420"^^xsd:string ;
     emmo:qudtReference "https://qudt.org/vocab/quantitykind/PartialPressure"^^xsd:string ;
     emmo:wikidataReference "https://www.wikidata.org/wiki/Q27165"^^xsd:string .
+
+emmo:EMMO_54ee6b5e_5261_44a8_86eb_5717e7fdb9d0 rdfs:label "Mathematical"@en .
 
 emmo:EMMO_5574a8ed_5094_4d63_8d95_1c19cfd38409 a owl:Class ;
     rdfs:label "RelativeLinearStrain"@en ;
@@ -2141,6 +2155,8 @@ emmo:EMMO_6f55a062_4a3b_4bb7_b2d3_54a4a93ce5cc a owl:Class ;
     emmo:qudtReference "https://qudt.org/vocab/quantitykind/RichardsonConstant"^^xsd:string ;
     emmo:wikidataReference "https://www.wikidata.org/wiki/Q105883079"^^xsd:string .
 
+emmo:EMMO_70bbb94e_2ca7_4d73_ba01_6397f134d172 rdfs:label "SymbolicData"@en .
+
 emmo:EMMO_71a0d05d_4c29_4eae_aff1_fb34b8d36f96 a owl:Class ;
     rdfs:label "EnergyDensityOfStates"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
@@ -2210,6 +2226,8 @@ emmo:EMMO_7254c8be_965d_4b3c_b3be_12c5578bee7c a owl:Class ;
     emmo:elucidation "Vector whose scalar products with all fundamental lattice vectors are integral multiples of 2pi."@en ;
     emmo:qudtReference "https://qudt.org/vocab/quantitykind/AngularReciprocalLatticeVector"^^xsd:string ;
     emmo:wikidataReference "https://www.wikidata.org/wiki/Q105475278"^^xsd:string .
+
+emmo:EMMO_7286b164_df4c_4c14_a4b5_d41ad9c121f3 rdfs:label "Coded"@en .
 
 emmo:EMMO_748ff828_763b_4290_adb9_e05376d4136a a owl:Class ;
     rdfs:label "DirectionDistributionOfCrossSection"@en ;
@@ -2562,6 +2580,8 @@ emmo:EMMO_8b960a48_8017_4cc0_8e38_27d9237b7e0d a owl:Class ;
     emmo:qudtReference "https://qudt.org/vocab/quantitykind/TotalAngularMomentumQuantumNumber"^^xsd:string ;
     emmo:wikidataReference "https://www.wikidata.org/wiki/Q1141095"^^xsd:string .
 
+emmo:EMMO_8bb6b688_812a_4cb9_b76c_d5a058928719 rdfs:label "Semiotics"@en .
+
 emmo:EMMO_8c151a67_f04a_4435_b7d1_1738e6d952ee a owl:Class ;
     rdfs:label "LinearIonization"@en ;
     rdfs:subClassOf emmo:EMMO_3b1b64d1_60c9_4689_a300_eb9cd56e368b,
@@ -2895,6 +2915,8 @@ emmo:EMMO_97589322_710c_4af4_9431_1e5027f2be42 a owl:Class ;
     emmo:elucidation "A photometric measure of the luminous intensity per unit area of light travelling in a given direction."@en ;
     emmo:iupacReference "https://doi.org/10.1351/goldbook.L03640"^^xsd:string ;
     emmo:qudtReference "http://qudt.org/vocab/quantitykind/Luminance"^^xsd:string .
+
+emmo:EMMO_985bec21_989f_4b9e_a4b3_735d88099c3c rdfs:label "Metrological"@en .
 
 emmo:EMMO_9864a26d_ee34_43ac_bc01_118734886185 a owl:Class ;
     rdfs:label "Degenerency"@en ;
@@ -3360,6 +3382,8 @@ emmo:EMMO_b03dfad7_eab8_4949_9d10_dd4fd12faaef a owl:Class ;
     emmo:qudtReference "https://qudt.org/vocab/quantitykind/ReactorTimeConstant"^^xsd:string ;
     emmo:wikidataReference "https://www.wikidata.org/wiki/Q99518950"^^xsd:string .
 
+emmo:EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4 rdfs:label "MeasurementUnit"@en .
+
 emmo:EMMO_b0ef0941_5c92_4b71_bc26_95e95e5e0004 a owl:Class ;
     rdfs:label "StatisticalWeightOfSubsystem"@en ;
     rdfs:subClassOf emmo:EMMO_a06e3d38_1aa8_4f45_89a8_722dbacfda24,
@@ -3368,6 +3392,8 @@ emmo:EMMO_b0ef0941_5c92_4b71_bc26_95e95e5e0004 a owl:Class ;
     emmo:ISO80000Reference "9-36.1"^^xsd:string ;
     emmo:elucidation "Number of different microstates in a subsystem."@en ;
     emmo:wikidataReference "https://www.wikidata.org/wiki/Q96207431"^^xsd:string .
+
+emmo:EMMO_b21a56ed_f969_4612_a6ec_cb7766f7f31d rdfs:label "Sign"@en .
 
 emmo:EMMO_b23e7251_a488_4732_8268_027ad76d7e37 a owl:Class ;
     rdfs:label "Magnetization"@en ;
@@ -3549,6 +3575,10 @@ emmo:EMMO_b725aad8_55e2_430a_b2d2_f84b8333484e a owl:Class ;
     emmo:qudtReference "https://qudt.org/vocab/quantitykind/SeebeckCoefficient"^^xsd:string ;
     emmo:wikidataReference "https://www.wikidata.org/wiki/Q1091448"^^xsd:string .
 
+emmo:EMMO_b7bcff25_ffc3_474e_9ab5_01b1664bd4ba rdfs:label "Property"@en .
+
+emmo:EMMO_b803f122_4acb_4064_9d71_c1e5fd091fc9 rdfs:label "SemioticEntity"@en .
+
 emmo:EMMO_b82d6a44_ea23_4b68_9b24_70f77deac955 a owl:Class ;
     rdfs:label "TotalIonization"@en ;
     rdfs:subClassOf emmo:EMMO_3b1b64d1_60c9_4689_a300_eb9cd56e368b,
@@ -3658,6 +3688,8 @@ emmo:EMMO_be31e6c6_881f_41c4_8354_c05aac4d7c46 a owl:Class ;
     emmo:iupacReference "https://doi.org/10.1351/goldbook.S05908"^^xsd:string ;
     emmo:qudtReference "https://qudt.org/vocab/quantitykind/StandardChemicalPotential"^^xsd:string ;
     emmo:wikidataReference "https://www.wikidata.org/wiki/Q89333468"^^xsd:string .
+
+emmo:EMMO_be8592a7_68d1_4a06_ad23_82f2b56ef926 rdfs:label "DiscreteData"@en .
 
 emmo:EMMO_bf106e62_ce1c_4ccc_9f45_c10326078a5a a owl:Class ;
     rdfs:label "PowerAreaUnit"@en .
@@ -3810,6 +3842,8 @@ emmo:EMMO_c5fcfb08_12a9_4030_925b_14e3a0eabd07 a owl:Class ;
     emmo:elucidation "In condensed matter physics, position vector of an atom or ion relative to its equilibrium position."@en ;
     emmo:qudtReference "https://qudt.org/vocab/quantitykind/DisplacementVectorOfIon"^^xsd:string ;
     emmo:wikidataReference "https://www.wikidata.org/wiki/Q105533558"^^xsd:string .
+
+emmo:EMMO_c66ad523_3937_485e_91bb_ad488ddb373f rdfs:label "DataByDiscretness"@en .
 
 emmo:EMMO_c6da5256_df91_48f5_8653_35165fb454a0 a owl:Class ;
     rdfs:label "NuclearQuadrupoleMoment"@en ;
@@ -4191,6 +4225,8 @@ emmo:EMMO_d8612fa0_c0fb_485d_b45a_1845e7a46796 a owl:Class ;
     emmo:note "In physics, a partition function describes the statistical properties of a system in thermodynamic equilibrium. Partition functions are functions of the thermodynamic state variables, such as the temperature and volume. Most of the aggregate thermodynamic variables of the system, such as the total energy, free energy, entropy, and pressure, can be expressed in terms of the partition function or its derivatives. The partition function is dimensionless."@en ;
     emmo:qudtReference "https://qudt.org/vocab/quantitykind/CanonicalPartitionFunction"^^xsd:string ;
     emmo:wikidataReference "https://www.wikidata.org/wiki/Q96142389"^^xsd:string .
+
+emmo:EMMO_d8d2144e_5c8d_455d_a643_5caf4d8d9df8 rdfs:label "Language"@en .
 
 emmo:EMMO_d97b27cb_61a4_4568_a38b_4edd4f224acc a owl:Class ;
     rdfs:label "IonTransportNumber"@en ;
@@ -5128,11 +5164,11 @@ emmo:EMMO_04cc9451_5306_45d0_8554_22cee4d6e785 a owl:Class ;
 emmo:EMMO_06448f64_8db6_4304_8b2c_e785dba82044 a owl:Class ;
     rdfs:label "Density"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
-            owl:someValuesFrom emmo:EMMO_1c957677_a460_4702_85a6_baef659d14b1 ],
-        [ a owl:Restriction ;
             owl:allValuesFrom emmo:EMMO_5b2222df_4da6_442f_8244_96e9e45887d1 ;
             owl:onProperty [ owl:inverseOf emmo:EMMO_e1097637_70d2_4895_973f_2396f04fa204 ] ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_bed1d005_b04e_4a90_94cf_02bc678a8569 ;
+            owl:someValuesFrom emmo:EMMO_1c957677_a460_4702_85a6_baef659d14b1 ],
         emmo:EMMO_2946d40b_24a1_47fa_8176_e3f79bb45064,
         emmo:EMMO_602397bd_e302_42a6_be33_fe67ea81933a ;
     skos:altLabel "MassConcentration"@en,
@@ -5880,6 +5916,8 @@ emmo:EMMO_0329f1f5_8339_4ce4_8505_a264c6d606ba a owl:Class ;
 -- ISO 80000-3"""@en ;
     emmo:qudtReference "http://qudt.org/vocab/quantitykind/Velocity"^^xsd:string ;
     emmo:wikidataReference "https://www.wikidata.org/wiki/Q11465"^^xsd:string .
+
+emmo:EMMO_06658d8d_dcde_4fc9_aae1_17f71c0bcdec rdfs:label "Vector"@en .
 
 emmo:EMMO_0a88be81_343d_4388_92c1_09228ff95ada a owl:Class ;
     rdfs:label "Probability"@en ;

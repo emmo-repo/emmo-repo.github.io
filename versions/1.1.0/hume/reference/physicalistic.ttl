@@ -154,7 +154,6 @@ ns1:Neutron a owl:Class ;
     ns1:wikipediaReference "https://en.wikipedia.org/wiki/Neutron"^^xsd:string .
 
 ns1:OrdinaryMatter a owl:Class ;
-    rdfs:label "OrdinaryMatter"@en ;
     rdfs:subClassOf ns1:MatterByType ;
     skos:prefLabel "OrdinaryMatter"@en ;
     ns1:elucidation "Matter composed of only matter particles, excluding anti-matter particles."@en .
@@ -211,6 +210,7 @@ spin 3/2: He5 in ground state, Delta baryons (excitations of the proton and neut
     ns1:elucidation "A non-elementary particle (bonded) of a fundamental fermionic type (half-integer spin)."@en .
 
 ns1:Fermion a owl:Class ;
+    rdfs:label "Fermion"@en ;
     rdfs:subClassOf ns1:PhysicalParticleBySpin ;
     owl:disjointWith ns1:Boson ;
     skos:prefLabel "Fermion"@en ;
@@ -295,13 +295,13 @@ ns1:PhysicalParticleByBond a owl:Class ;
     ns1:elucidation "Categorisation of physical particles by whether they are bonded."@en .
 
 ns1:PhysicalParticleBySpin a owl:Class ;
+    rdfs:label "PhysicalParticleBySpin"@en ;
     rdfs:subClassOf ns1:PhysicalParticle ;
     skos:prefLabel "PhysicalParticleBySpin"@en ;
     ns1:OWLRL2DLAxioms "DisjointUnionOf: Boson, Fermion"^^xsd:string ;
     ns1:elucidation "Categorisation of physical particles by whether they have integer or half-odd-integer spin."@en .
 
 ns1:MatterByType a owl:Class ;
-    rdfs:label "MatterByType"@en ;
     rdfs:subClassOf ns1:Matter ;
     skos:prefLabel "MatterByType"@en ;
     ns1:OWLRL2DLAxioms "DisjointUnionOf: AntiMatter, HybridMatter, OrdinaryMatter"^^xsd:string ;
@@ -332,6 +332,7 @@ ns1:PhysicalParticle a owl:Class ;
     ns1:note "The scope of the physical particle definition goes from the elementary particles to molecules, as fundamental constituents of substances."@en .
 
 ns1:Boson a owl:Class ;
+    rdfs:label "Boson"@en ;
     rdfs:subClassOf ns1:PhysicalParticleBySpin ;
     skos:prefLabel "Boson"@en ;
     ns1:elucidation "A physical particle with integer spin that follows Bose–Einstein statistics."@en ;
@@ -384,9 +385,9 @@ ns1:Meson a owl:Class ;
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:Substance ;
-    owl:annotatedTarget "Substance"@en ;
-    ns1:etymology "From Latin substantia (“substance, essence”), from substāns, present active participle of substō (“exist”, literally “stand under”), from sub + stō (“stand”) [Wikictionary]"@en .
+    owl:annotatedSource ns1:Atom ;
+    owl:annotatedTarget "Atom"@en ;
+    ns1:etymology "From Ancient Greek ἄτομος (átomos, “indivisible”), from ἀ- (a-, “not”) +‎ τέμνω (témnō, “to cut”, o-grade in τομ-) +‎ -ος (-os) [Wiktionary]"@en .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
@@ -394,8 +395,11 @@ ns1:Meson a owl:Class ;
     owl:annotatedTarget "Boson"@en ;
     ns1:etymology "1940s: named after S.N. Bose."@en .
 
-[] a owl:AllDisjointClasses ;
-    owl:members ( ns1:HybridMatter ns1:OrdinaryMatter ns1:AntiMatter ) .
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:PhysicalObject ;
+    owl:annotatedTarget "PhysicalObject"@en ;
+    ns1:etymology "From Latin physica \"study of nature\" (and Ancient Greek φυσικός, “natural”), and Medieval Latin obiectum (“object”, literally “thrown against”)."@en .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:altLabel ;
@@ -403,11 +407,8 @@ ns1:Meson a owl:Class ;
     owl:annotatedTarget "Particle"@en ;
     ns1:etymology "From Latin particula (“small part, particle”), diminutive of pars (“part, piece”)."@en .
 
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:PhysicalObject ;
-    owl:annotatedTarget "PhysicalObject"@en ;
-    ns1:etymology "From Latin physica \"study of nature\" (and Ancient Greek φυσικός, “natural”), and Medieval Latin obiectum (“object”, literally “thrown against”)."@en .
+[] a owl:AllDisjointClasses ;
+    owl:members ( ns1:HybridMatter ns1:OrdinaryMatter ns1:AntiMatter ) .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
@@ -417,7 +418,7 @@ ns1:Meson a owl:Class ;
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:Atom ;
-    owl:annotatedTarget "Atom"@en ;
-    ns1:etymology "From Ancient Greek ἄτομος (átomos, “indivisible”), from ἀ- (a-, “not”) +‎ τέμνω (témnō, “to cut”, o-grade in τομ-) +‎ -ος (-os) [Wiktionary]"@en .
+    owl:annotatedSource ns1:Substance ;
+    owl:annotatedTarget "Substance"@en ;
+    ns1:etymology "From Latin substantia (“substance, essence”), from substāns, present active participle of substō (“exist”, literally “stand under”), from sub + stō (“stand”) [Wikictionary]"@en .
 

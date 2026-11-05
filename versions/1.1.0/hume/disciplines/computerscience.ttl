@@ -12,8 +12,6 @@ rdf:HTML a rdfs:Datatype .
 
 owl:qualifiedCardinality a owl:AnnotationProperty .
 
-ns1:Agency rdfs:label "Agency"@en .
-
 ns1:ApplicationSpecificScript a owl:Class ;
     rdfs:label "ApplicationSpecificScript"@en ;
     rdfs:subClassOf ns1:ScriptingLanguage ;
@@ -88,10 +86,6 @@ ns1:File a owl:Class ;
     skos:prefLabel "File"@en ;
     ns1:elucidation "In computing, a computer file is a resource for recording data on a computer storage device, primarily identified by its file path."@en .
 
-ns1:Holistic rdfs:label "Holistic"@en .
-
-ns1:IntentionalAgency rdfs:label "IntentionalAgency"@en .
-
 ns1:Java a owl:Class ;
     rdfs:label "Java"@en ;
     rdfs:subClassOf ns1:CompiledLanguage ;
@@ -110,20 +104,10 @@ ns1:MarkupLanguage a owl:Class ;
     ns1:elucidation "A grammar for annotating a document in a way that is syntactically distinguishable from the text."@en ;
     ns1:wikipediaReference "https://en.wikipedia.org/wiki/Markup_language"^^xsd:anyURI .
 
-ns1:Persistence rdfs:label "Persistence"@en .
-
-ns1:Procedure rdfs:label "Procedure"@en .
-
-ns1:Process rdfs:label "Process"@en .
-
-ns1:ProcessByAgency rdfs:label "ProcessByAgency"@en .
-
 ns1:Python a owl:Class ;
     rdfs:label "Python"@en ;
     rdfs:subClassOf ns1:ScriptingLanguage ;
     skos:prefLabel "Python"@en .
-
-ns1:QualifiedWhole rdfs:label "QualifiedWhole"@en .
 
 ns1:QueryLanguage a owl:Class ;
     rdfs:label "QueryLanguage"@en ;
@@ -176,8 +160,6 @@ ns1:TransformationLanguage a owl:Class ;
     ns1:elucidation "A construction language designed to transform some input text in a certain formal language into a modified output text that meets some specific goal."@en ;
     ns1:wikipediaReference "https://en.wikipedia.org/wiki/Transformation_language"^^xsd:anyURI .
 
-ns1:Whole rdfs:label "Whole"@en .
-
 ns1:hasJSONValue a owl:DatatypeProperty ;
     rdfs:label "hasJSONValue"@en ;
     ns2:python_name "hasJSONValue"@en ;
@@ -224,7 +206,6 @@ ns1:hasURNValue a owl:DatatypeProperty ;
     ns1:contact "emmo@emmc.eu"^^xsd:anyURI .
 
 ns1:ApplicationProgram a owl:Class ;
-    rdfs:label "ApplicationProgram"@en ;
     rdfs:subClassOf ns1:Software ;
     skos:altLabel "App"@en,
         "Application"@en ;
@@ -307,8 +288,6 @@ ns1:SystemProgram a owl:Class ;
     skos:prefLabel "SystemProgram"@en ;
     ns1:elucidation "System program refers to operating systems and utility programs that manage computer resources at a low level enabling a computer to function."@en .
 
-ns1:Workflow rdfs:label "Workflow"@en .
-
 ns1:hasResourceIdentifier a owl:ObjectProperty ;
     rdfs:label "hasResourceIdentifier"@en ;
     ns2:python_name "hasResourceIdentifier"@en ;
@@ -345,8 +324,6 @@ ns1:NormalizedStringData a owl:Class ;
     rdfs:subClassOf ns1:StringData ;
     skos:prefLabel "NormalizedStringData"@en .
 
-ns1:Object rdfs:label "Object"@en .
-
 ns1:Path a owl:Class ;
     rdfs:label "Path"@en ;
     rdfs:subClassOf ns1:ResourceIdentifier,
@@ -355,8 +332,6 @@ ns1:Path a owl:Class ;
 C:\\\\Users\\\\John\\\\Desktop  (DOS-like path)"""@en ;
     skos:prefLabel "Path"@en ;
     ns1:elucidation "A path is a string of characters used to uniquely identify a location in a directory structure according to a particular convention."@en .
-
-ns1:SymbolicData rdfs:label "SymbolicData"@en .
 
 ns1:SystemResource a owl:Class ;
     rdfs:label "SystemResource"@en ;
@@ -417,7 +392,6 @@ ns1:ComputerScience a owl:Class ;
     ns1:note "A well-formed formula in computer science may be or not be interpreted by a computer. For example pseudo-code is only intended for human consumption."@en .
 
 ns1:DigitalData a owl:Class ;
-    rdfs:label "DigitalData"@en ;
     rdfs:subClassOf ns1:DiscreteData ;
     skos:altLabel "BinaryData"@en ;
     skos:prefLabel "DigitalData"@en ;
@@ -467,12 +441,62 @@ https://www.computer.org/education/bodies-of-knowledge/software-engineering"""@e
     ns1:wikipediaReference "https://en.wikipedia.org/wiki/Computer_language"^^xsd:anyURI .
 
 ns1:Software a owl:Class ;
-    rdfs:label "Software"@en ;
     rdfs:subClassOf ns1:DigitalData ;
     skos:prefLabel "Software"@en ;
     ns1:elucidation "All or part of the programs, procedures, rules, and associated documentation of an information processing system."@en ;
     ns1:note """Software is usually used as a generic term for programs. However, in its broadest sense it can refer to all information (i.e., both programs and data) in electronic form and can provide a distinction from hardware, which refers to computers or other electronic systems on which software can exist and be use.
 Here we explicitly include in the definition also all the data (e.g. source code, script files) that takes part to the building of the executable, are necessary to the execution of a program or that document it for the users."""@en .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/fr/#iso:std:iso-iec:2382:-1:ed-3:en"@en ;
+    owl:annotatedProperty ns1:elucidation ;
+    owl:annotatedSource ns1:Software ;
+    owl:annotatedTarget "All or part of the programs, procedures, rules, and associated documentation of an information processing system."@en .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.ietf.org/rfc/rfc3986.txt"^^xsd:anyURI ;
+    owl:annotatedProperty ns1:elucidation ;
+    owl:annotatedSource ns1:URN ;
+    owl:annotatedTarget "The term \"Uniform Resource Name\" (URN) has been used historically to refer to both URIs under the \"urn\" scheme [RFC2141], which are required to remain globally unique and persistent even when the resource ceases to exist or becomes unavailable, and to any other URI with the properties of a name."@en .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf ns1:LanguageData ;
+    owl:onProperty ns1:dataValue ;
+    owl:someValuesFrom xsd:language .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf ns1:TokenData ;
+    owl:onProperty ns1:dataValue ;
+    owl:someValuesFrom xsd:token .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://datatracker.ietf.org/doc/rfc3987/"^^xsd:anyURI ;
+    owl:annotatedProperty ns1:elucidation ;
+    owl:annotatedSource ns1:IRI ;
+    owl:annotatedTarget "An Internationalized Resource Identifier (IRI) is a compact sequence of characters that identifies an abstract or physical resource. It is similar to URI, but greatly extends the allowed character set from ASCII to the Universal Character Set (Unicode/ISO 10646).."@en .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf ns1:NameData ;
+    owl:onProperty ns1:dataValue ;
+    owl:someValuesFrom xsd:Name .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.ietf.org/rfc/rfc3986.txt"^^xsd:anyURI ;
+    owl:annotatedProperty ns1:elucidation ;
+    owl:annotatedSource ns1:URI ;
+    owl:annotatedTarget "A Uniform Resource Identifier (URI) is a compact sequence of characters that identifies an abstract or physical resource."@en .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "http://www.linfo.org/program.html"^^xsd:anyURI ;
+    owl:annotatedProperty ns1:note ;
+    owl:annotatedSource ns1:Program ;
+    owl:annotatedTarget "A program is a sequence of instructions understandable by a computer's central processing unit (CPU) that indicates which operations the computer should perform on a set of data."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Software ;
+    owl:annotatedTarget "Software"@en ;
+    ns1:etymology "From soft +‎ -ware, by contrast with hardware (“the computer itself”). Coined by Paul Niquette in 1953."@en .
 
 [] a owl:Axiom ;
     rdfs:isDefinedBy "https://www.ietf.org/rfc/rfc3986.txt"^^xsd:anyURI ;
@@ -486,51 +510,10 @@ Here we explicitly include in the definition also all the data (e.g. source code
     owl:annotatedTarget "A path is a string of characters used to uniquely identify a location in a directory structure according to a particular convention."@en ;
     ns1:wikipediaReference "https://en.wikipedia.org/wiki/Path_(computing)#Universal_Naming_Convention"^^xsd:string .
 
-[] a owl:Axiom ;
-    rdfs:isDefinedBy "http://www.linfo.org/program.html"^^xsd:anyURI ;
-    owl:annotatedProperty ns1:note ;
-    owl:annotatedSource ns1:Program ;
-    owl:annotatedTarget "A program is a sequence of instructions understandable by a computer's central processing unit (CPU) that indicates which operations the computer should perform on a set of data."@en .
-
 [] a owl:Restriction ;
-    rdfs:subClassOf ns1:NormalizedStringData ;
+    rdfs:subClassOf ns1:NCNameData ;
     owl:onProperty ns1:dataValue ;
-    owl:someValuesFrom xsd:normalizedString .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy "https://www.iso.org/obp/ui/fr/#iso:std:iso-iec:2382:-1:ed-3:en"@en ;
-    owl:annotatedProperty ns1:elucidation ;
-    owl:annotatedSource ns1:Software ;
-    owl:annotatedTarget "All or part of the programs, procedures, rules, and associated documentation of an information processing system."@en .
-
-[] a owl:Restriction ;
-    rdfs:subClassOf ns1:TokenData ;
-    owl:onProperty ns1:dataValue ;
-    owl:someValuesFrom xsd:token .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:Software ;
-    owl:annotatedTarget "Software"@en ;
-    ns1:etymology "From soft +‎ -ware, by contrast with hardware (“the computer itself”). Coined by Paul Niquette in 1953."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:DigitalData ;
-    owl:annotatedTarget "DigitalData"@en ;
-    ns1:etymology "From Latin digitus (“finger”)."^^xsd:string .
-
-[] a owl:Restriction ;
-    rdfs:subClassOf ns1:LanguageData ;
-    owl:onProperty ns1:dataValue ;
-    owl:someValuesFrom xsd:language .
-
-[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
-
-[] a owl:Restriction ;
-    rdfs:subClassOf ns1:NameData ;
-    owl:onProperty ns1:dataValue ;
-    owl:someValuesFrom xsd:Name .
+    owl:someValuesFrom xsd:NCName .
 
 [] a owl:Axiom ;
     rdfs:seeAlso "http://www.linfo.org/program.html"^^xsd:anyURI ;
@@ -538,6 +521,17 @@ Here we explicitly include in the definition also all the data (e.g. source code
     owl:annotatedSource ns1:Software ;
     owl:annotatedTarget """Software is usually used as a generic term for programs. However, in its broadest sense it can refer to all information (i.e., both programs and data) in electronic form and can provide a distinction from hardware, which refers to computers or other electronic systems on which software can exist and be use.
 Here we explicitly include in the definition also all the data (e.g. source code, script files) that takes part to the building of the executable, are necessary to the execution of a program or that document it for the users."""@en .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "http://www.linfo.org/source_code.html"^^xsd:anyURI ;
+    owl:annotatedProperty ns1:note ;
+    owl:annotatedSource ns1:SourceCode ;
+    owl:annotatedTarget "Source code (also referred to as source or code) is the version of software as it is originally written (i.e., typed into a computer) by a human in plain text (i.e., human readable alphanumeric characters)."@en .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf ns1:NormalizedStringData ;
+    owl:onProperty ns1:dataValue ;
+    owl:someValuesFrom xsd:normalizedString .
 
 [] a owl:Restriction ;
     rdfs:subClassOf ns1:URI ;
@@ -550,36 +544,15 @@ Here we explicitly include in the definition also all the data (e.g. source code
     owl:someValuesFrom rdf:JSON .
 
 [] a owl:Restriction ;
-    rdfs:subClassOf ns1:NCNameData ;
-    owl:onProperty ns1:dataValue ;
-    owl:someValuesFrom xsd:NCName .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy "https://www.ietf.org/rfc/rfc3986.txt"^^xsd:anyURI ;
-    owl:annotatedProperty ns1:elucidation ;
-    owl:annotatedSource ns1:URI ;
-    owl:annotatedTarget "A Uniform Resource Identifier (URI) is a compact sequence of characters that identifies an abstract or physical resource."@en .
-
-[] a owl:Restriction ;
     rdfs:subClassOf ns1:NMTOKENData ;
     owl:onProperty ns1:dataValue ;
     owl:someValuesFrom xsd:NMTOKEN .
 
-[] a owl:Axiom ;
-    rdfs:isDefinedBy "http://www.linfo.org/source_code.html"^^xsd:anyURI ;
-    owl:annotatedProperty ns1:note ;
-    owl:annotatedSource ns1:SourceCode ;
-    owl:annotatedTarget "Source code (also referred to as source or code) is the version of software as it is originally written (i.e., typed into a computer) by a human in plain text (i.e., human readable alphanumeric characters)."@en .
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
 
 [] a owl:Axiom ;
-    rdfs:isDefinedBy "https://www.ietf.org/rfc/rfc3986.txt"^^xsd:anyURI ;
-    owl:annotatedProperty ns1:elucidation ;
-    owl:annotatedSource ns1:URN ;
-    owl:annotatedTarget "The term \"Uniform Resource Name\" (URN) has been used historically to refer to both URIs under the \"urn\" scheme [RFC2141], which are required to remain globally unique and persistent even when the resource ceases to exist or becomes unavailable, and to any other URI with the properties of a name."@en .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy "https://datatracker.ietf.org/doc/rfc3987/"^^xsd:anyURI ;
-    owl:annotatedProperty ns1:elucidation ;
-    owl:annotatedSource ns1:IRI ;
-    owl:annotatedTarget "An Internationalized Resource Identifier (IRI) is a compact sequence of characters that identifies an abstract or physical resource. It is similar to URI, but greatly extends the allowed character set from ASCII to the Universal Character Set (Unicode/ISO 10646).."@en .
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:DigitalData ;
+    owl:annotatedTarget "DigitalData"@en ;
+    ns1:etymology "From Latin digitus (“finger”)."^^xsd:string .
 

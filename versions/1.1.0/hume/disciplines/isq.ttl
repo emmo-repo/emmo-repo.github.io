@@ -317,6 +317,8 @@ ns1:AreaTemperatureUnit a owl:Class ;
 ns1:AreaTimeUnit a owl:Class ;
     rdfs:label "AreaTimeUnit"@en .
 
+ns1:Array rdfs:label "Array"@en .
+
 ns1:AtomicAttenuationCoefficient a owl:Class ;
     rdfs:label "AtomicAttenuationCoefficient"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
@@ -629,6 +631,8 @@ ns1:ConductanceForAlternatingCurrent a owl:Class ;
     ns1:elucidation "Real part of the admittance."@en ;
     ns1:wikidataReference "https://www.wikidata.org/wiki/Q79464628"^^xsd:string .
 
+ns1:Contrast rdfs:label "Contrast"@en .
+
 ns1:CouplingFactor a owl:Class ;
     rdfs:label "CouplingFactor"@en ;
     rdfs:subClassOf ns1:ElectromagneticQuantity,
@@ -707,6 +711,10 @@ ns1:DampingCoefficient a owl:Class ;
     ns1:ISO80000Reference "3-24"^^xsd:string ;
     ns1:elucidation "Inverse of the time constant of an exponentially varying quantity."@en .
 
+ns1:Data rdfs:label "Data"@en .
+
+ns1:DataByDiscretness rdfs:label "DataByDiscretness"@en .
+
 ns1:DebyeAngularFrequency a owl:Class ;
     rdfs:label "DebyeAngularFrequency"@en ;
     rdfs:subClassOf ns1:AngularFrequency,
@@ -764,6 +772,8 @@ ns1:DecayConstant a owl:Class ;
     ns1:iupacReference "https://doi.org/10.1351/goldbook.D01538"^^xsd:string ;
     ns1:qudtReference "https://qudt.org/vocab/quantitykind/DecayConstant"^^xsd:string ;
     ns1:wikidataReference "https://www.wikidata.org/wiki/Q11477200"^^xsd:string .
+
+ns1:DecimalData rdfs:label "DecimalData"@en .
 
 ns1:Degenerency a owl:Class ;
     rdfs:label "Degenerency"@en ;
@@ -860,6 +870,8 @@ ns1:DiffusionLength a owl:Class ;
 ns1:DiffusivityUnit a owl:Class ;
     rdfs:label "DiffusivityUnit"@en .
 
+ns1:DimensionalUnit rdfs:label "DimensionalUnit"@en .
+
 ns1:DirectionAndEnergyDistributionOfCrossSection a owl:Class ;
     rdfs:label "DirectionAndEnergyDistributionOfCrossSection"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
@@ -885,6 +897,8 @@ ns1:DirectionDistributionOfCrossSection a owl:Class ;
     ns1:elucidation "Differential quotient of the cross section for scattering a particle in a given direction and the solid angle around that direction."@en ;
     ns1:qudtReference "https://qudt.org/vocab/quantitykind/AngularCrossSection"^^xsd:string ;
     ns1:wikidataReference "https://www.wikidata.org/wiki/Q98266630"^^xsd:string .
+
+ns1:DiscreteData rdfs:label "DiscreteData"@en .
 
 ns1:DisplacementCurrent a owl:Class ;
     rdfs:label "DisplacementCurrent"@en ;
@@ -2007,6 +2021,8 @@ ns1:LandeFactor a owl:Class ;
     ns1:qudtReference "https://qudt.org/vocab/quantitykind/LandeGFactor"^^xsd:string ;
     ns1:wikidataReference "https://www.wikidata.org/wiki/Q1191684"^^xsd:string .
 
+ns1:Language rdfs:label "Language"@en .
+
 ns1:LarmonAngularFrequency a owl:Class ;
     rdfs:label "LarmonAngularFrequency"@en ;
     rdfs:subClassOf ns1:AngularFrequency,
@@ -2723,6 +2739,10 @@ ns1:MeanMassRange a owl:Class ;
     ns1:qudtReference "https://qudt.org/vocab/quantitykind/MeanMassRange"^^xsd:string ;
     ns1:wikidataReference "https://www.wikidata.org/wiki/Q98681670"^^xsd:string .
 
+ns1:MeasurementUnit rdfs:label "MeasurementUnit"@en .
+
+ns1:MeasurementUnitByDimensionality rdfs:label "MeasurementUnitByDimensionality"@en .
+
 ns1:MechanicalEfficiency a owl:Class ;
     rdfs:label "MechanicalEfficiency"@en ;
     rdfs:subClassOf ns1:MechanicalQuantity,
@@ -2731,6 +2751,10 @@ ns1:MechanicalEfficiency a owl:Class ;
     ns1:ISO80000Reference "4-29"^^xsd:string ;
     ns1:elucidation "Quotient of mechanical output and input power."@en ;
     ns1:wikidataReference "https://www.wikidata.org/wiki/Q2628085"^^xsd:string .
+
+ns1:Metrological rdfs:label "Metrological"@en .
+
+ns1:MetrologicalReference rdfs:label "MetrologicalReference"@en .
 
 ns1:MicrocanonicalPartitionFunction a owl:Class ;
     rdfs:label "MicrocanonicalPartitionFunction"@en ;
@@ -3236,6 +3260,8 @@ ns1:NumberOfTurnsInAWinding a owl:Class ;
     ns1:elucidation "Number of turns in a winding."@en ;
     ns1:wikidataReference "https://www.wikidata.org/wiki/Q77995997"^^xsd:string .
 
+ns1:NumericData rdfs:label "NumericData"@en .
+
 ns1:OrbitalAngularMomentumQuantumNumber a owl:Class ;
     rdfs:label "OrbitalAngularMomentumQuantumNumber"^^xsd:string ;
     rdfs:subClassOf ns1:QuantumNumber ;
@@ -3510,6 +3536,10 @@ ns1:PhaseVelocity a owl:Class ;
     ns1:wikidataReference "https://www.wikidata.org/wiki/Q13824"^^xsd:string ;
     ns1:wikipediaReference "https://en.wikipedia.org/wiki/Phase_velocity"^^xsd:string .
 
+ns1:PhysicalQuantity rdfs:label "PhysicalQuantity"@en .
+
+ns1:PhysicalQuantiyByDefinition rdfs:label "PhysicalQuantiyByDefinition"@en .
+
 ns1:PlanckConstant a owl:Class ;
     rdfs:label "PlanckConstant"@en ;
     rdfs:subClassOf ns1:AngularMomentum,
@@ -3615,6 +3645,8 @@ ns1:PropagationCoefficient a owl:Class ;
     ns1:qudtReference "https://qudt.org/vocab/quantitykind/PropagationCoefficient.html"^^xsd:string ;
     ns1:wikidataReference "https://www.wikidata.org/wiki/Q1434913"^^xsd:string .
 
+ns1:Property rdfs:label "Property"@en .
+
 ns1:ProtonMass a owl:Class ;
     rdfs:label "ProtonMass"@en ;
     rdfs:subClassOf ns1:Mass,
@@ -3634,6 +3666,10 @@ ns1:QualityFactor a owl:Class ;
     ns1:elucidation "Dimensionless quantity in electromagnetism."@en ;
     ns1:qudtReference "https://qudt.org/vocab/quantitykind/QualityFactor"^^xsd:string ;
     ns1:wikidataReference "https://www.wikidata.org/wiki/Q79467569"^^xsd:string .
+
+ns1:Quantity rdfs:label "Quantity"@en .
+
+ns1:QuantityByPhysicalNature rdfs:label "QuantityByPhysicalNature"@en .
 
 ns1:QuarticLengthPerTimeUnit a owl:Class ;
     rdfs:label "QuarticLengthPerTimeUnit"@en .
@@ -3689,6 +3725,8 @@ ns1:RatioOfSpecificHeatCapacities a owl:Class ;
     ns1:qudtReference "https://qudt.org/vocab/quantitykind/HeatCapacityRatio"^^xsd:string ;
     ns1:wikidataReference "https://www.wikidata.org/wiki/Q503869"^^xsd:string .
 
+ns1:RationalData rdfs:label "RationalData"@en .
+
 ns1:ReactionEnergy a owl:Class ;
     rdfs:label "ReactionEnergy"@en ;
     rdfs:subClassOf ns1:AtomicAndNuclearPhysicsQuantity,
@@ -3719,6 +3757,8 @@ ns1:ReactorTimeConstant a owl:Class ;
     ns1:elucidation "Duration required for the neutron fluence rate in a reactor to change by the factor e when the fluence rate is rising or falling exponentially."@en ;
     ns1:qudtReference "https://qudt.org/vocab/quantitykind/ReactorTimeConstant"^^xsd:string ;
     ns1:wikidataReference "https://www.wikidata.org/wiki/Q99518950"^^xsd:string .
+
+ns1:RealData rdfs:label "RealData"@en .
 
 ns1:ReciprocalAmountPerVolumeUnit a owl:Class ;
     rdfs:label "ReciprocalAmountPerVolumeUnit"@en .
@@ -4545,6 +4585,10 @@ ns1:Susceptance a owl:Class ;
     ns1:qudtReference "https://qudt.org/vocab/quantitykind/Susceptance"^^xsd:string ;
     ns1:wikidataReference "https://www.wikidata.org/wiki/Q509598"^^xsd:string .
 
+ns1:Symbolic rdfs:label "Symbolic"@en .
+
+ns1:SymbolicData rdfs:label "SymbolicData"@en .
+
 ns1:TemperatureAreaPerMassTimeUnit a owl:Class ;
     rdfs:label "TemperatureAreaPerMassTimeUnit"@en .
 
@@ -5164,6 +5208,8 @@ ns1:AtomicPhysicsCrossSection a owl:Class ;
     ns1:qudtReference "https://qudt.org/vocab/quantitykind/Cross-Section.html"^^xsd:string ;
     ns1:wikidataReference "https://www.wikidata.org/wiki/Q17128025"^^xsd:string .
 
+ns1:BaseQuantity rdfs:label "BaseQuantity"@en .
+
 ns1:CapacitanceUnit a owl:Class ;
     rdfs:label "CapacitanceUnit"@en .
 
@@ -5205,11 +5251,11 @@ ns1:CoefficientOfHeatTransfer a owl:Class ;
 ns1:Density a owl:Class ;
     rdfs:label "Density"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom ns1:Matter ;
-            owl:onProperty [ owl:inverseOf ns1:hasProperty ] ],
-        [ a owl:Restriction ;
             owl:onProperty ns1:hasMeasurementUnit ;
             owl:someValuesFrom ns1:DensityUnit ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom ns1:Matter ;
+            owl:onProperty [ owl:inverseOf ns1:hasProperty ] ],
         ns1:ISQDerivedQuantity,
         ns1:Intensive ;
     skos:altLabel "MassConcentration"@en,
@@ -5250,6 +5296,8 @@ ns1:DensityOfVibrationalStates a owl:Class ;
 
 ns1:DensityUnit a owl:Class ;
     rdfs:label "DensityUnit"@en .
+
+ns1:DerivedQuantity rdfs:label "DerivedQuantity"@en .
 
 ns1:ElectricChargeDensityUnit a owl:Class ;
     rdfs:label "ElectricChargeDensityUnit"@en .
@@ -5345,6 +5393,8 @@ ns1:Entropy a owl:Class ;
     ns1:iupacReference "https://doi.org/10.1351/goldbook.E02149"^^xsd:string ;
     ns1:qudtReference "http://qudt.org/vocab/quantitykind/Entropy"^^xsd:string .
 
+ns1:ExactConstant rdfs:label "ExactConstant"@en .
+
 ns1:GapEnergy a owl:Class ;
     rdfs:label "GapEnergy"@en ;
     rdfs:subClassOf ns1:CondensedMatterPhysicsQuantity,
@@ -5382,6 +5432,8 @@ ns1:Heat a owl:Class ;
     ns1:elucidation "Heat is energy in transfer to or from a thermodynamic system, by mechanisms other than thermodynamic work or transfer of matter."@en ;
     ns1:iupacReference "https://doi.org/10.1351/goldbook.H02752"^^xsd:string ;
     ns1:qudtReference "http://qudt.org/vocab/quantitykind/Heat"^^xsd:string .
+
+ns1:IntegerData rdfs:label "IntegerData"@en .
 
 ns1:Intensity a owl:Class ;
     rdfs:label "Intensity"@en ;
@@ -5604,6 +5656,8 @@ ns1:Permittivity a owl:Class ;
     ns1:iupacReference "https://doi.org/10.1351/goldbook.P04507"^^xsd:string ;
     ns1:qudtReference "http://qudt.org/vocab/quantitykind/Permittivity"^^xsd:string .
 
+ns1:PhysicalConstant rdfs:label "PhysicalConstant"@en .
+
 ns1:PowerUnit a owl:Class ;
     rdfs:label "PowerUnit"@en .
 
@@ -5747,6 +5801,8 @@ ns1:SpecificHeatCapacity a owl:Class ;
 
 ns1:SquareTimePerMassUnit a owl:Class ;
     rdfs:label "SquareTimePerMassUnit"@en .
+
+ns1:StandardizedPhysicalQuantity rdfs:label "StandardizedPhysicalQuantity"@en .
 
 ns1:TemperaturePerPressureUnit a owl:Class ;
     rdfs:label "TemperaturePerPressureUnit"@en .
@@ -6180,6 +6236,8 @@ ns1:TimeConstant a owl:Class ;
     ns1:elucidation "parameter characterizing the response to a step input of a first‑order, linear time‑invariant system"@en ;
     ns1:wikidataReference "https://www.wikidata.org/wiki/Q1335249"^^xsd:string .
 
+ns1:Vector rdfs:label "Vector"@en .
+
 ns1:Velocity a owl:Class ;
     rdfs:label "Velocity"@en ;
     rdfs:comment """The velocity depends on the choice of the reference frame. Proper transformation between frames must be used: Galilean for non-relativistic description, Lorentzian for relativistic description.
@@ -6365,6 +6423,8 @@ ns1:AngularFrequency a owl:Class ;
     ns1:iupacReference "https://doi.org/10.1351/goldbook.A00352"^^xsd:string ;
     ns1:qudtReference "https://qudt.org/vocab/quantitykind/AngularFrequency"^^xsd:string ;
     ns1:wikipediaReference "https://en.wikipedia.org/wiki/Angular_frequency"^^xsd:string .
+
+ns1:CategorizedPhysicalQuantity rdfs:label "CategorizedPhysicalQuantity"@en .
 
 ns1:Concentration a owl:Class ;
     rdfs:label "Concentration"@en ;
@@ -6570,11 +6630,11 @@ ns1:ISQBaseQuantity a owl:Class ;
 ns1:Mass a owl:Class ;
     rdfs:label "Mass"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom ns1:Matter ;
-            owl:onProperty [ owl:inverseOf ns1:hasProperty ] ],
-        [ a owl:Restriction ;
             owl:onProperty ns1:hasMeasurementUnit ;
             owl:someValuesFrom ns1:MassUnit ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom ns1:Matter ;
+            owl:onProperty [ owl:inverseOf ns1:hasProperty ] ],
         ns1:Extensive,
         ns1:ISQBaseQuantity,
         ns1:MechanicalQuantity ;
@@ -6583,6 +6643,8 @@ ns1:Mass a owl:Class ;
     ns1:elucidation "Property of a physical body that express its resistance to acceleration (a change in its state of motion) when a force is applied."@en ;
     ns1:iupacReference "https://doi.org/10.1351/goldbook.M03709"^^xsd:string ;
     ns1:qudtReference "http://qudt.org/vocab/quantitykind/Mass"^^xsd:string .
+
+ns1:MeasuredConstant rdfs:label "MeasuredConstant"@en .
 
 ns1:PerVolumeUnit a owl:Class ;
     rdfs:label "PerVolumeUnit"@en .

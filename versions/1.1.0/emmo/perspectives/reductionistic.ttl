@@ -20,6 +20,7 @@ emmo:EMMO_79aad3fb_2e01_4626_8369_4e914893aa6d a owl:Class ;
     emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.2/doc/figs/Broadcast.png"^^xsd:anyURI .
 
 emmo:EMMO_92829beb_6ed4_4c88_bbd5_3bc7403e2895 a owl:Class ;
+    rdfs:label "TemporalSequence"@en ;
     rdfs:subClassOf emmo:EMMO_f7f41d20_eabb_4bcb_9a16_0436851fcd5c ;
     skos:altLabel "Sequence"@en ;
     skos:prefLabel "TemporalSequence"@en ;
@@ -69,6 +70,7 @@ emmo:EMMO_c7ee175d_4c25_45cb_b74e_71435b11b77d a owl:Class ;
     emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.2/doc/figs/Join.png"^^xsd:anyURI .
 
 emmo:EMMO_caa63d00_80b1_4408_ac1b_cd0d23b0ec50 a owl:Class ;
+    rdfs:label "IntermidiateTile"@en ;
     rdfs:subClassOf emmo:EMMO_5e38e44b_a0d1_4afc_a876_95095c0a589f ;
     skos:prefLabel "IntermidiateTile"@en ;
     emmo:elucidation "A tile that has next and is next of other tiles within the same tessellation."@en ;
@@ -143,18 +145,21 @@ emmo:EMMO_8944581c_64da_46a9_be29_7074f7cc8098 a owl:Class ;
         "https://w3id.org/emmo/raw/1.0.4/doc/figs/Arrangement-3D.png"^^xsd:anyURI .
 
 emmo:EMMO_edf72228_e040_4edc_8b46_78b2a47c72d7 a owl:Class ;
+    rdfs:label "EndTile"@en ;
     rdfs:subClassOf emmo:EMMO_5e38e44b_a0d1_4afc_a876_95095c0a589f ;
     skos:prefLabel "EndTile"@en ;
     emmo:elucidation "A direct part that only is the target, but not the source of temporal relations."@en ;
     emmo:illustration "https://w3id.org/emmo/raw/1.0.4/doc/figs/EndTile.png"^^xsd:anyURI .
 
 emmo:EMMO_fa595892_070d_455e_9459_06c97179c080 a owl:Class ;
+    rdfs:label "BeginTile"@en ;
     rdfs:subClassOf emmo:EMMO_5e38e44b_a0d1_4afc_a876_95095c0a589f ;
     skos:prefLabel "BeginTile"@en ;
     emmo:elucidation "A direct part that only is the source, but not the target of temporal relations."@en ;
     emmo:illustration "https://w3id.org/emmo/raw/1.0.4/doc/figs/BeginTile.png"^^xsd:anyURI .
 
 emmo:EMMO_15db234d_ecaf_4715_9838_4b4ec424fb13 a owl:Class ;
+    rdfs:label "Reductionistic"@en ;
     rdfs:subClassOf emmo:EMMO_49267eba_5548_4163_8f36_518d65b583f9 ;
     skos:prefLabel "Reductionistic"@en ;
     emmo:elucidation "A class devoted to categorize causal objects by specifying their granularity levels."@en ;
@@ -173,6 +178,7 @@ emmo:EMMO_4cf484af_082a_40f5_9f11_930bf4634482 a owl:Class ;
     emmo:illustration "https://w3id.org/emmo/raw/1.0.4/doc/figs/SpatialTile.png"^^xsd:anyURI .
 
 emmo:EMMO_504ad89e_dd4a_4fa6_aeb6_15c8ce0cde9b a owl:Class ;
+    rdfs:label "TemporalTile"@en ;
     rdfs:subClassOf emmo:EMMO_41c5f63b_f0e7_475e_bfac_a92027585979 ;
     skos:prefLabel "TemporalTile"@en ;
     emmo:elucidation "A direct part that is obtained by partitioning a whole purely in temporal parts."@en ;
@@ -189,6 +195,7 @@ emmo:EMMO_65a2c5b8_e4d8_4a51_b2f8_e55effc0547d a owl:AsymmetricProperty,
     emmo:elucidation "A relation that establishes for the whole a univocal tessellation in temporal parts forming the tessellation."^^xsd:string .
 
 emmo:EMMO_9953c19f_ee33_4af8_be5e_dbf6d1e33581 a owl:Class ;
+    rdfs:label "Tile"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf emmo:EMMO_74a75cf1_3418_4244_b43c_b5db94635d42 ] ;
             owl:someValuesFrom emmo:EMMO_ee0466e4_780d_4236_8281_ace7ad3fc5d2 ],
@@ -217,6 +224,7 @@ emmo:EMMO_2b1fb71c_0eb0_445c_9be7_fb5d30ae79fd a owl:Class ;
     emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/1.0.2/doc/figs/MixedTiling.png"^^xsd:anyURI .
 
 emmo:EMMO_2e46d966_9f14_4673_821e_7c7cf2957926 a owl:Class ;
+    rdfs:label "SpatioTemporalTile"^^xsd:string ;
     rdfs:seeAlso emmo:EMMO_22c91e99_61f8_4433_8853_432d44a2a46a ;
     rdfs:subClassOf emmo:EMMO_9953c19f_ee33_4af8_be5e_dbf6d1e33581 ;
     skos:altLabel "WellFormedTile"@en ;
@@ -226,16 +234,19 @@ emmo:EMMO_2e46d966_9f14_4673_821e_7c7cf2957926 a owl:Class ;
     emmo:elucidation "The superclass for all tiles belonging to tessellations in which all tiles are connected through spatiotemporal relations hasNext or contacts."@en .
 
 emmo:EMMO_41c5f63b_f0e7_475e_bfac_a92027585979 a owl:Class ;
+    rdfs:label "SpatioTemporalTileByConnection"@en ;
     rdfs:subClassOf emmo:EMMO_2e46d966_9f14_4673_821e_7c7cf2957926 ;
     skos:prefLabel "SpatioTemporalTileByConnection"@en ;
     emmo:elucidation "The superclass for tiles categorized accordingly to their topological role within a tessellation."@en .
 
 emmo:EMMO_5e38e44b_a0d1_4afc_a876_95095c0a589f a owl:Class ;
+    rdfs:label "SpatioTemporalTileByPosition"@en ;
     rdfs:subClassOf emmo:EMMO_2e46d966_9f14_4673_821e_7c7cf2957926 ;
     skos:prefLabel "SpatioTemporalTileByPosition"@en ;
     emmo:elucidation "The superclass for tiles categorized accordingly to their location within a tessellation in terms of causal source, sink or intermediary."@en .
 
 emmo:EMMO_f7f41d20_eabb_4bcb_9a16_0436851fcd5c a owl:Class ;
+    rdfs:label "TemporalTiling"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:allValuesFrom emmo:EMMO_504ad89e_dd4a_4fa6_aeb6_15c8ce0cde9b ;
             owl:onProperty emmo:EMMO_7efab93d_c8fe_49c7_ba8e_d21d13b38c85 ],
@@ -262,6 +273,7 @@ The tiles of specific granularity level provide a covering for the whole and are
         "This relation is not antitransitive, to enable partitioning of a causal structure with more than one tiling scheme (e.g. time and space partitioning)."@en .
 
 emmo:EMMO_e12dcfa4_c9f1_4546_9a12_8457c052e6ba a owl:Class ;
+    rdfs:label "SpatioTemporalTessellation"^^xsd:string ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_7efab93d_c8fe_49c7_ba8e_d21d13b38c85 ;
             owl:someValuesFrom emmo:EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de ],
@@ -272,6 +284,7 @@ emmo:EMMO_e12dcfa4_c9f1_4546_9a12_8457c052e6ba a owl:Class ;
     emmo:elucidation "The superclass for all tessellations in which all tiles are connected through spatiotemporal relations hasNext or contacts."@en .
 
 emmo:EMMO_ee0466e4_780d_4236_8281_ace7ad3fc5d2 a owl:Class ;
+    rdfs:label "Tessellation"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_74a75cf1_3418_4244_b43c_b5db94635d42 ;
             owl:someValuesFrom emmo:EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de ],

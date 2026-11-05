@@ -302,7 +302,8 @@ ns1:DiffusivityUnit a owl:Class ;
     skos:prefLabel "DiffusivityUnit"@en ;
     ns1:elucidation "The class of units with dimensionality 'Diffusivity'."@en .
 
-ns1:DimensionlessUnit rdfs:subClassOf [ a owl:Restriction ;
+ns1:DimensionlessUnit rdfs:label "DimensionlessUnit"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T0 L0 M0 I0 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty ns1:hasDimensionString ] .
 
@@ -1717,6 +1718,8 @@ We kindly acknowledge NIST for reusing their content, including the physical dim
     owl:imports <https://w3id.org/emmo/1.0.4/disciplines/metrology> ;
     owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/disciplines/units/sidimensionalunits> ;
     ns1:contact "emmo@emmc.eu"^^xsd:string .
+
+ns1:FractionUnit rdfs:label "FractionUnit"@en .
 
 ns1:SIDimensionalUnit a owl:Class ;
     rdfs:seeAlso "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf"^^xsd:anyURI ;

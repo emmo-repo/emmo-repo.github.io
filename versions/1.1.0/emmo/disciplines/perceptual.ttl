@@ -16,6 +16,7 @@ The Mona Lisa."""@en ;
     emmo:elucidation "A 'Graphical' that stands for a real world object that shows a recognizable pictorial pattern without being necessarily associated to a symbolic language."@en .
 
 emmo:EMMO_eb7de1a1_c30e_4f0d_94c6_fe70414d7e61 a owl:Class ;
+    rdfs:label "Representation"@en ;
     rdfs:subClassOf emmo:EMMO_c74da218_9147_4f03_92d1_8894abca55f3 ;
     skos:prefLabel "Representation"@en ;
     emmo:elucidation "A graphical object aimed to represent schematically the conceptual, temporal or spatial structure of another object, that may or may not exist."@en .
@@ -74,6 +75,7 @@ emmo:EMMO_e1021593_06da_4237_8a02_29d8f6fef76d a owl:Class ;
     emmo:elucidation "A 'Perceptual' which stands for a real world object whose spatiotemporal pattern makes it identifiable by an observer as a smell."@en .
 
 emmo:EMMO_c5ae6d8e_6b39_431f_8de4_ae4e357abc04 a owl:Class ;
+    rdfs:label "Visual"@en ;
     rdfs:subClassOf emmo:EMMO_649bf97b_4397_4005_90d9_219755d92e34 ;
     skos:example """A cloud.
 A picture.
@@ -84,6 +86,7 @@ A mail."""@en ;
     emmo:elucidation "A 'Perceptual' which stands for a real world object whose spatiotemporal pattern makes it identifiable by an observer through an optical perception employing the visible part of the electromagnetic spectrum."@en .
 
 emmo:EMMO_c74da218_9147_4f03_92d1_8894abca55f3 a owl:Class ;
+    rdfs:label "Graphical"@en ;
     rdfs:subClassOf emmo:EMMO_3e7add3d_e6ed_489a_a796_8e31fef9b490,
         emmo:EMMO_c5ae6d8e_6b39_431f_8de4_ae4e357abc04 ;
     skos:example "'Graphical' objects include writings, pictures, sketches ..."@en ;
@@ -92,6 +95,7 @@ emmo:EMMO_c74da218_9147_4f03_92d1_8894abca55f3 a owl:Class ;
     emmo:note "This concept includes only things that are purposely created by an agent."@en .
 
 emmo:EMMO_649bf97b_4397_4005_90d9_219755d92e34 a owl:Class ;
+    rdfs:label "Perceptual"@en ;
     rdfs:subClassOf emmo:EMMO_1e877c70_3b01_45a8_a8f6_8ce4f6a24660 ;
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( emmo:EMMO_4b3afb22_27cf_4ce3_88bc_492bfccb546b emmo:EMMO_8f207971_aaab_48dc_a10d_55a6b4331410 emmo:EMMO_c5ae6d8e_6b39_431f_8de4_ae4e357abc04 emmo:EMMO_dd14d055_2db0_4b81_bc97_ef6c2f72b8a0 emmo:EMMO_e1021593_06da_4237_8a02_29d8f6fef76d ) ] ;
@@ -121,6 +125,12 @@ A 'Perceptual' becomes a semiotic object, when it is part of a 'Semiotic' proces
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_ccdc1a41_6e96_416b_92ec_efe67917434a ;
+    owl:annotatedTarget "Document"@en ;
+    emmo:etymology "From Latin documentum, from the verb doceō (“teach”) +‎ -mentum."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource emmo:EMMO_c74da218_9147_4f03_92d1_8894abca55f3 ;
     owl:annotatedTarget "Graphical"@en ;
     emmo:etymology "From the Ancient Greek γραφή (graphḗ) which means drawing, painting, writing, a writing, description, and from γράφω (gráphō) which means scratch, carve."@en ;
@@ -131,10 +141,4 @@ A 'Perceptual' becomes a semiotic object, when it is part of a 'Semiotic' proces
     owl:annotatedSource emmo:EMMO_649bf97b_4397_4005_90d9_219755d92e34 ;
     owl:annotatedTarget "Perceptual"@en ;
     emmo:etymology "From Latin percipiō, past participle perceptus (“take hold of, obtain, receive, observe”), from per (“by, through”) + capiō (“to take”)."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_ccdc1a41_6e96_416b_92ec_efe67917434a ;
-    owl:annotatedTarget "Document"@en ;
-    emmo:etymology "From Latin documentum, from the verb doceō (“teach”) +‎ -mentum."@en .
 

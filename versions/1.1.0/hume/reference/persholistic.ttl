@@ -8,7 +8,6 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 ns1:HolisticArrangement a owl:Class ;
-    rdfs:label "HolisticArrangement"@en ;
     rdfs:subClassOf ns1:HolisticSystem ;
     skos:prefLabel "HolisticArrangement"@en ;
     ns1:elucidation "A system which is mainly characterised by the spatial configuration of its elements."@en .
@@ -21,12 +20,9 @@ ns1:NaturalProcess a owl:Class ;
     ns1:elucidation "A process occurring by natural (non-intentional) laws."@en .
 
 ns1:Network a owl:Class ;
-    rdfs:label "Network"@en ;
     rdfs:subClassOf ns1:HolisticSystem ;
     skos:prefLabel "Network"@en ;
     ns1:elucidation "A system whose is mainly characterised by the way in which elements are interconnected."@en .
-
-ns1:QualifiedRole rdfs:label "QualifiedRole"@en .
 
 ns1:hasInterval a owl:ObjectProperty ;
     rdfs:label "hasInterval"@en ;
@@ -77,8 +73,6 @@ organization: person or group of people that has its own functions with responsi
     skos:prefLabel "Organisation"@en ;
     ns1:elucidation "An holistic system of people that has its own functions with responsibilities, authorities and relationships to achieve its objectives."@en .
 
-ns1:Role rdfs:label "Role"@en .
-
 ns1:Component a owl:Class ;
     rdfs:label "Component"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
@@ -101,7 +95,6 @@ ns1:hasComponent a owl:ObjectProperty ;
     ns1:elucidation "Relation a holistic system to one of its components."@en .
 
 ns1:HolisticSystem a owl:Class ;
-    rdfs:label "HolisticSystem"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:hasComponent ;
             owl:someValuesFrom ns1:Component ],

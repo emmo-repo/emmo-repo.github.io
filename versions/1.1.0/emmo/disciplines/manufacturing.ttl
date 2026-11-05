@@ -106,8 +106,6 @@ emmo:EMMO_30e3edb5_0977_4b9b_9aed_5a4d16c1c07c a owl:Class ;
     rdfs:subClassOf emmo:EMMO_92028373_3a43_4b80_9a69_caca22df3918 ;
     skos:prefLabel "Electroplating"@en .
 
-emmo:EMMO_32e701c0_a925_49df_9829_0931b8554807 rdfs:label "Structural"@en .
-
 emmo:EMMO_3528547f_cefe_4f24_bc46_936b39f711eb a owl:Class ;
     rdfs:label "ThermomechanicalTreatment"@en ;
     rdfs:subClassOf emmo:EMMO_fc859d37_408d_44b6_b345_a0ea0b65121e ;
@@ -168,8 +166,6 @@ emmo:EMMO_52bbaaee_1145_4be3_8a5c_b366851ea1b9 a owl:Class ;
     rdfs:subClassOf emmo:EMMO_b9522e56_1fac_4766_97e6_428605fabd3e ;
     skos:prefLabel "Assembled"@en ;
     emmo:elucidation "A system of independent elements that are assembled together to perform a function."@en .
-
-emmo:EMMO_57c75ca1_bf8a_42bc_85d9_58cfe38c7df2 rdfs:label "Fundamental"@en .
 
 emmo:EMMO_5a5cf124_1ece_4b8e_ae63_edc2b5ee573a a owl:Class ;
     rdfs:label "ElectricCurrentAssistedSintering"@en ;
@@ -583,6 +579,8 @@ emmo:EMMO_61846411_8c6f_410b_ae7b_8999ec18f2b2 a owl:Class ;
     skos:prefLabel "DeepFreezing"@en ;
     emmo:note "Treatment carried out after hardening or case hardening consisting of cooling to a temperature below room temperature to complete the transformation of austenite to martensite"^^xsd:string .
 
+emmo:EMMO_65a007dc_2550_46b0_b394_3346c67fbb69 rdfs:label "HolisticSystem"@en .
+
 emmo:EMMO_6800c3fd_bf5d_4a2a_8e6e_9e909eefc16c a owl:Class ;
     rdfs:label "Moulding"@en ;
     rdfs:comment "Free forming is pressure forming with tools that do not or only partially contain the shape of the workpiece and move against each other (from: DIN 8583 Part 3/05.70)."^^xsd:string ;
@@ -667,8 +665,6 @@ emmo:EMMO_b24af630_0758_447e_a04d_a0e95db9b4fa a owl:ObjectProperty ;
     rdfs:subPropertyOf emmo:EMMO_5dc167a2_d50e_47a5_be4f_5139f3bff2ec ;
     skos:prefLabel "manufacturedBy"@en ;
     emmo:elucidation "Relates a manufactured product to its manufacturer."@en .
-
-emmo:EMMO_b4494d69_6393_4eb4_8346_7fedd4df0bc5 rdfs:label "Maximal"@en .
 
 emmo:EMMO_b8ce01a5_1e0c_4c69_8e54_7235fd4fe47e a owl:Class ;
     rdfs:label "SparkErosion"@en ;
@@ -800,6 +796,8 @@ emmo:EMMO_aced32dd_1a13_49b0_8d8f_c79313942d19 a owl:Class ;
     skos:altLabel "Biegeumformen"^^xsd:string ;
     skos:prefLabel "FlexuralForming"@en .
 
+emmo:EMMO_b9522e56_1fac_4766_97e6_428605fabd3e rdfs:label "HolisticArrangement"@en .
+
 emmo:EMMO_d5f98475_00ce_4987_99fb_262aed395e46 a owl:Class ;
     rdfs:label "Cutting"@en ;
     rdfs:comment "Mechanical separation of workpieces without the formation of shapeless material, i.e. also without chips (chipless)."^^xsd:string ;
@@ -820,6 +818,8 @@ emmo:EMMO_eb85216f_b872_4ee5_9f62_655aa2ae0470 a owl:Class ;
     rdfs:subClassOf emmo:EMMO_8786cb47_8e1f_4968_9b15_f6d41fc51252 ;
     skos:altLabel "AddingManufacturing"^^xsd:string ;
     skos:prefLabel "MergingManufacturing"@en .
+
+emmo:EMMO_f93fe78b_9646_4a15_b88b_1c93686a764d rdfs:label "Network"@en .
 
 emmo:EMMO_03eb9b46_8ff0_4fcd_b1a0_73f65ae7434e a owl:Class ;
     rdfs:label "AdditiveManufacturing"@en ;
@@ -1091,10 +1091,10 @@ manufacturing process: set of processes in manufacturing involving a flow and/or
             owl:someValuesFrom emmo:EMMO_479db031_b344_4488_9efa_4bc12c6c1765 ],
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 ] ;
-            owl:someValuesFrom emmo:EMMO_c0afb341_7d31_4883_a307_ae4606df2a1b ],
+            owl:someValuesFrom emmo:EMMO_86ca9b93_1183_4b65_81b8_c0fcd3bba5ad ],
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 ] ;
-            owl:someValuesFrom emmo:EMMO_86ca9b93_1183_4b65_81b8_c0fcd3bba5ad ],
+            owl:someValuesFrom emmo:EMMO_c0afb341_7d31_4883_a307_ae4606df2a1b ],
         emmo:EMMO_2b9cbfb5_dbd0_4a68_9c6f_acc41b40dd72 ;
     skos:prefLabel "Manufacturing"@en ;
     emmo:elucidation "The process of transforming precursor objects (e.g. raw materials) into a product by the use of manual labor, machinery or chemical/biological processes."@en ;
@@ -1116,109 +1116,10 @@ sintering: process of heating a powder metal compact to increase density and/or 
 Because the sintering temperature doesn’t reach the materials’ melting point, it is often used for materials with high melting points, such as molybdenum and tungsten."""@en .
 
 [] a owl:Axiom ;
-    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:3252:ed-5:v1:en:term:3.3.60"^^xsd:anyURI ;
-    owl:annotatedProperty rdfs:seeAlso ;
-    owl:annotatedSource emmo:EMMO_03441eb3_d1fd_4906_b953_b83312d7589e ;
-    owl:annotatedTarget """ISO 3252:2019 Powder metallurgy
-sintering: thermal treatment of a powder or compact, at a temperature below the melting point of the main constituent, for the purpose of increasing its strength by the metallurgical bonding of its particles"""@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "DIN EN 62047-1:2016-12"^^xsd:string ;
+    rdfs:seeAlso "DIN 8589-3:2003-09"^^xsd:string ;
     owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_ecc10f05_b301_4dcf_8c84_b6f511117234 ;
-    owl:annotatedTarget "Process for joining two (base) materials by means of an adhesive polymer material"^^xsd:string .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "DIN 8580:2022-12"^^xsd:string ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource emmo:EMMO_46dc0d51_b60f_49cd_8650_9aba7be3726c ;
-    owl:annotatedTarget "Verfestigen durch Umformen"^^xsd:string .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8 ;
-    owl:annotatedTarget "Device"@en ;
-    emmo:etymology "From Old French \"deviser\", meaning: arrange, plan, contrive. Literally \"dispose in portions,\" from Vulgar Latin \"divisare\", frequentative of Latin dividere, meaning \"to divide\"."@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "DIN 65099-5:1989-11"^^xsd:string ;
-    owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_4f46c5ab_1c21_4639_90d5_3c4ebf3b156b ;
-    owl:annotatedTarget "Nailing is joining by hammering or pressing nails (wire pins) as auxiliary parts into the solid material. Several parts are joined by pressing them together (from: DIN 8593 part 3/09.85)."^^xsd:string .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:15531:-1:ed-1:v1:en:term:3.6.9"^^xsd:anyURI ;
-    owl:annotatedProperty rdfs:seeAlso ;
-    owl:annotatedSource emmo:EMMO_8786cb47_8e1f_4968_9b15_f6d41fc51252 ;
-    owl:annotatedTarget """ISO 15531-1:2004
-discrete manufacturing: production of discrete items."""@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "https://en.wiktionary.org/wiki/workpiece"^^xsd:string ;
-    owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_479db031_b344_4488_9efa_4bc12c6c1765 ;
-    owl:annotatedTarget "The raw material or partially finished piece that is shaped by performing various operations."^^xsd:string .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "ISO 13574:2015-02"^^xsd:string ;
-    owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_92eaefcb_50be_4237_9ec0_4a019ce24921 ;
-    owl:annotatedTarget "Process for removing unwanted residual or waste material from a given product or material"^^xsd:string .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "DIN EN ISO 472/A1:2019-03"^^xsd:string ;
-    owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_f5655090_2266_41cb_b2e9_3b4569c45731 ;
-    owl:annotatedTarget "Type of scratching behaviour where the scratching force and the (displacement) deflection of the scratching tip are constant over the scratching distance during the test."^^xsd:string .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "DIN 8586:2003-09"^^xsd:string ;
-    owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_aced32dd_1a13_49b0_8d8f_c79313942d19 ;
-    owl:annotatedTarget "Forming of a solid body, whereby the plastic state is essentially brought about by a bending stress."^^xsd:string .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "DIN 8589-0:2003-09"^^xsd:string ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource emmo:EMMO_8679c7d3_fd5d_49ba_bc1f_1bb820a1f73f ;
-    owl:annotatedTarget "Machining in which a tool is used whose number of cutting edges, geometry of the cutting wedges and position of the cutting edges in relation to the workpiece are determined"^^xsd:string .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "ISO 23952:2020(en), 3.4.143"^^xsd:string ;
-    owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_479db031_b344_4488_9efa_4bc12c6c1765 ;
-    owl:annotatedTarget "a physical artifact, real or virtual, intended for subsequent transformation within some manufacturing operation"^^xsd:string .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "DIN 65099-4:1989-11"^^xsd:string ;
-    owl:annotatedProperty emmo:note ;
-    owl:annotatedSource emmo:EMMO_c9f0abb6_d3e8_459e_bacc_c14ed5481998 ;
-    owl:annotatedTarget "Thermal ablation is the separation of material particles in solid, liquid or gaseous state by heat processes as well as the removal of these material particles by mechanical or electromagnetic forces (from: DIN"^^xsd:string .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:3252:ed-5:v1:en:term:3.3.33"^^xsd:anyURI ;
-    owl:annotatedProperty rdfs:seeAlso ;
-    owl:annotatedSource emmo:EMMO_3ec45f3b_677d_4e71_be75_6f8966b4f808 ;
-    owl:annotatedTarget """ISO 3252:2019 Powder metallurgy
-loose-powder sintering, gravity sintering: sintering of uncompacted powder"""@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "DIN 8587:2003-09"^^xsd:string ;
-    owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_22744495_4f32_4a17_b189_259c644268f9 ;
-    owl:annotatedTarget "Forming of a solid body, whereby the plastic state is essentially brought about by shear stress."^^xsd:string .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource emmo:EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8 ;
-    owl:annotatedTarget "Equipment"@en ;
-    emmo:etymology "From French équipement, from équiper ‘equip’."@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "DIN 8586:2003-09"^^xsd:string ;
-    owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_68ee441e_c89e_4391_93c3_e68fef59fe14 ;
-    owl:annotatedTarget "Forming of a solid body, whereby the plastic state is essentially brought about by a bending stress"^^xsd:string .
+    owl:annotatedSource emmo:EMMO_44f91d47_3faf_48e2_844c_d44bbe3e22f6 ;
+    owl:annotatedTarget "Machining with a circular cutting movement, usually associated with a multi-toothed tool, and with a feed movement perpendicular or oblique to the axis of rotation of the tool, to produce any workpiece surface."^^xsd:string .
 
 [] a owl:Axiom ;
     rdfs:seeAlso "DIN 65099-7:1989-11"^^xsd:string ;
@@ -1227,10 +1128,29 @@ loose-powder sintering, gravity sintering: sintering of uncompacted powder"""@en
     owl:annotatedTarget "Strengthening by rolling is the strengthening of component surfaces by mechanically generating compressive stresses in the component surface and consolidating the material."^^xsd:string .
 
 [] a owl:Axiom ;
-    owl:annotatedProperty emmo:elucidation ;
-    owl:annotatedSource emmo:EMMO_0c7ad550_00ae_45ff_a4e2_58d6a61f48eb ;
-    owl:annotatedTarget "A supply chain is a system of organizations, people, activities, information, and resources involved in supplying a product or service to a consumer."@en ;
-    emmo:wikipediaReference "https://en.wikipedia.org/wiki/Supply_chain"^^xsd:string .
+    rdfs:seeAlso "DIN 65099-7:1989-11"^^xsd:string ;
+    owl:annotatedProperty emmo:note ;
+    owl:annotatedSource emmo:EMMO_dc0874e8_36e1_44df_947d_0d7c81167a09 ;
+    owl:annotatedTarget "(according to DIN 8200) Shot peening to generate residual compressive stresses in layers of the blasting material close to the surface in order to improve certain component properties, e.g. fatigue strength, corrosion resistance, wear resistance (from: DIN 8200:1982)"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 65099-3:1989-11"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource emmo:EMMO_46f70544_818e_495e_99ef_d342c54ee7dc ;
+    owl:annotatedTarget "Shot peening is shot peening for shaping or straightening workpieces by introducing residual compressive stresses (from: DIN 8200/10.82)."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "ISO 23704-1:2022(en), 3.1.2"^^xsd:string ;
+    owl:annotatedProperty emmo:note ;
+    owl:annotatedSource emmo:EMMO_03eb9b46_8ff0_4fcd_b1a0_73f65ae7434e ;
+    owl:annotatedTarget "process of joining materials to make parts from 3D model data, usually layer upon layer, as opposed to subtractive manufacturing (3.1.29) and formative manufacturing methodologies,"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:3252:ed-5:v1:en:term:3.3.60"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:seeAlso ;
+    owl:annotatedSource emmo:EMMO_03441eb3_d1fd_4906_b953_b83312d7589e ;
+    owl:annotatedTarget """ISO 3252:2019 Powder metallurgy
+sintering: thermal treatment of a powder or compact, at a temperature below the melting point of the main constituent, for the purpose of increasing its strength by the metallurgical bonding of its particles"""@en .
 
 [] a owl:Axiom ;
     rdfs:seeAlso "DIN 8580:2022-12"^^xsd:string ;
@@ -1239,23 +1159,42 @@ loose-powder sintering, gravity sintering: sintering of uncompacted powder"""@en
     owl:annotatedTarget "Manufacturing by changing the properties of the material of which a workpiece is made, which is done, among other things, by changes in the submicroscopic or atomic range, e.g. by diffusion of atoms, generation and movement of dislocations in the atomic lattice or chemical reactions, and where unavoidable changes in shape are not part of the essence of these processes."^^xsd:string .
 
 [] a owl:Axiom ;
-    rdfs:seeAlso "DIN 8585-3:2003-09"^^xsd:string ;
+    rdfs:seeAlso "ISO/ASTM 52900:2021(en), 3.3.1"^^xsd:string ;
     owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_214e9a99_58de_40e2_86cf_fa6aa1d180a8 ;
-    owl:annotatedTarget "Widening is tensile forming to increase the circumference of a hollow body. A distinction is made between: Widening, bulging."^^xsd:string .
+    owl:annotatedSource emmo:EMMO_253e1d54_69af_4931_90d0_5ccfd7e690ad ;
+    owl:annotatedTarget """fabrication of objects through the deposition of a material using a print head, nozzle or another printer technology
+Note 1 to entry: This term is often used in a non-technical context synonymously with additive manufacturing (3.1.2) and, in these cases, typically associated with machines used for non-industrial purposes including personal use."""^^xsd:string .
 
 [] a owl:Axiom ;
-    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:3252:ed-5:v1:en:term:3.3.55"^^xsd:anyURI ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso-astm:tr:52906:ed-1:v1:en:term:3.9"^^xsd:anyURI ;
     owl:annotatedProperty rdfs:seeAlso ;
-    owl:annotatedSource emmo:EMMO_2b524942_4e3e_403a_b4ab_2b53750f3d3b ;
-    owl:annotatedTarget """ISO 3252:2019 Powder metallurgy
-reaction sintering: process wherein at least two constituents of a powder mixture react during sintering"""@en .
+    owl:annotatedSource emmo:EMMO_03441eb3_d1fd_4906_b953_b83312d7589e ;
+    owl:annotatedTarget """ISO/ASTM TR 52906:2022 Additive manufacturing
+sintering: process of heating a powder metal compact to increase density and/or improve mechanical properties via solid state diffusion"""@en .
 
 [] a owl:Axiom ;
-    rdfs:seeAlso "ISO 4885:2018-02"^^xsd:string ;
-    owl:annotatedProperty emmo:note ;
-    owl:annotatedSource emmo:EMMO_3c7affee_09ed_42e7_a190_4a10c75ab6dd ;
-    owl:annotatedTarget "hardening of a workpiece caused by the precipitation of one or more compounds from a supersaturated solid solution"^^xsd:string .
+    rdfs:seeAlso "DIN 8589-6:2003-09"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource emmo:EMMO_c7d004db_59fa_5ae3_adb1_e75736aa721a ;
+    owl:annotatedTarget "Cutting with circular or straight cutting motion, using a multi-toothed tool of small cutting width, the cutting motion being performed by the tool"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN EN ISO 472/A1:2019-03"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource emmo:EMMO_f5655090_2266_41cb_b2e9_3b4569c45731 ;
+    owl:annotatedTarget "Type of scratching behaviour where the scratching force and the (displacement) deflection of the scratching tip are constant over the scratching distance during the test."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "ISO 14034:2016-11"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource emmo:EMMO_2b9cbfb5_dbd0_4a68_9c6f_acc41b40dd72 ;
+    owl:annotatedTarget "application of scientific knowledge, tools, techniques, crafts or systems in order to solve a problem or to achieve an objective which can result in a product or process"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 8589-0:2003-09"^^xsd:string ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource emmo:EMMO_8679c7d3_fd5d_49ba_bc1f_1bb820a1f73f ;
+    owl:annotatedTarget "Machining in which a tool is used whose number of cutting edges, geometry of the cutting wedges and position of the cutting edges in relation to the workpiece are determined"^^xsd:string .
 
 [] a owl:Axiom ;
     rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:8887:-1:ed-1:v1:en:term:3.1.5"^^xsd:anyURI ;
@@ -1265,16 +1204,47 @@ reaction sintering: process wherein at least two constituents of a powder mixtur
 manufacturing: production of components"""@en .
 
 [] a owl:Axiom ;
-    rdfs:seeAlso "DIN 8589-6:2003-09"^^xsd:string ;
-    owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_c7d004db_59fa_5ae3_adb1_e75736aa721a ;
-    owl:annotatedTarget "Cutting with circular or straight cutting motion, using a multi-toothed tool of small cutting width, the cutting motion being performed by the tool"^^xsd:string .
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:18435:-1:ed-1:v1:en:term:3.16"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:seeAlso ;
+    owl:annotatedSource emmo:EMMO_a4d66059_5dd3_4b90_b4cb_10960559441b ;
+    owl:annotatedTarget """ISO 18435-1:2009
+manufacturing process: set of processes in manufacturing involving a flow and/or transformation of material, information, energy, control, or any other element in a manufacturing area"""@en .
 
 [] a owl:Axiom ;
-    rdfs:seeAlso "DIN 8588:2013-08"^^xsd:string ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_02122e58_e0b3_4274_bdd4_745f64a61645 ;
+    owl:annotatedTarget "Factory"@en ;
+    emmo:etymology "From Latin factor, from fact- ‘done’, from the verb facere (to do)."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 8590 Berichtigung 1:2004-02"^^xsd:string ;
     owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_d5f98475_00ce_4987_99fb_262aed395e46 ;
-    owl:annotatedTarget "Mechanical separation of workpieces without the formation of shapeless material, i.e. also without chips (chipless)."^^xsd:string .
+    owl:annotatedSource emmo:EMMO_1a2cbca8_3d3b_4e2c_9a71_e39273937786 ;
+    owl:annotatedTarget "Manufacturing by separating particles of material from a solid body by non-mechanical means. Ablation refers both to the removal of layers of material and to the separation of workpiece parts. The production process of ablation is considered in its stationary instantaneous state, independently of the application of auxiliary processes necessary to initiate the process. Ablation is divided into three subgroups according to the order point of view (OGP) \"process in the effective zone on the surface of the workpiece\": - thermal ablation; - chemical ablation; - electrochemical ablation."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 65099-4:1989-11"^^xsd:string ;
+    owl:annotatedProperty emmo:note ;
+    owl:annotatedSource emmo:EMMO_c9f0abb6_d3e8_459e_bacc_c14ed5481998 ;
+    owl:annotatedTarget "Thermal ablation is the separation of material particles in solid, liquid or gaseous state by heat processes as well as the removal of these material particles by mechanical or electromagnetic forces (from: DIN"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN EN ISO 5349-2:2015-12"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource emmo:EMMO_479db031_b344_4488_9efa_4bc12c6c1765 ;
+    owl:annotatedTarget "Object that is processed with a machine"^^xsd:string .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_82fc8506_1f84_4add_9683_abea077bd1e3 ;
+    owl:annotatedTarget "Product"@en ;
+    emmo:etymology "From Latin productum ‘something produced’, derived from Latin producere, from pro- ‘forward’ + ducere ‘to lead’."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN EN 14943:2006-03"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource emmo:EMMO_2b9cbfb5_dbd0_4a68_9c6f_acc41b40dd72 ;
+    owl:annotatedTarget "Conversion of materials and assembly of components for the manufacture of products"^^xsd:string .
 
 [] a owl:Axiom ;
     rdfs:seeAlso "ISO/TR 10809-1:2009, 0000_19"^^xsd:string ;
@@ -1283,29 +1253,229 @@ manufacturing: production of components"""@en .
     owl:annotatedTarget "Heat treatment process that generally produces martensite in the matrix."^^xsd:string .
 
 [] a owl:Axiom ;
-    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:18435:-1:ed-1:v1:en:term:3.16"^^xsd:anyURI ;
-    owl:annotatedProperty rdfs:seeAlso ;
-    owl:annotatedSource emmo:EMMO_a4d66059_5dd3_4b90_b4cb_10960559441b ;
-    owl:annotatedTarget """ISO 18435-1:2009
-manufacturing process: set of processes in manufacturing involving a flow and/or transformation of material, information, energy, control, or any other element in a manufacturing area"""@en .
-
-[] a owl:Axiom ;
     rdfs:seeAlso "DIN 65099-3:1989-11"^^xsd:string ;
     owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_46f70544_818e_495e_99ef_d342c54ee7dc ;
-    owl:annotatedTarget "Shot peening is shot peening for shaping or straightening workpieces by introducing residual compressive stresses (from: DIN 8200/10.82)."^^xsd:string .
+    owl:annotatedSource emmo:EMMO_7432b843_cfd2_4345_a3d2_eaa539b27e61 ;
+    owl:annotatedTarget "Free forming is pressure forming with tools that do not or only partially contain the shape of the workpiece and move against each other."^^xsd:string .
 
 [] a owl:Axiom ;
-    rdfs:seeAlso "ISO 14034:2016-11"^^xsd:string ;
+    rdfs:seeAlso "ISO 13574:2015-02"^^xsd:string ;
     owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_2b9cbfb5_dbd0_4a68_9c6f_acc41b40dd72 ;
-    owl:annotatedTarget "application of scientific knowledge, tools, techniques, crafts or systems in order to solve a problem or to achieve an objective which can result in a product or process"^^xsd:string .
+    owl:annotatedSource emmo:EMMO_92eaefcb_50be_4237_9ec0_4a019ce24921 ;
+    owl:annotatedTarget "Process for removing unwanted residual or waste material from a given product or material"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 8588:2013-08"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource emmo:EMMO_d5f98475_00ce_4987_99fb_262aed395e46 ;
+    owl:annotatedTarget "Mechanical separation of workpieces without the formation of shapeless material, i.e. also without chips (chipless)."^^xsd:string .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource emmo:EMMO_86ca9b93_1183_4b65_81b8_c0fcd3bba5ad ;
+    owl:annotatedTarget "TangibleProduct"@en ;
+    emmo:etymology "From late Latin tangibilis, from tangere ‘to touch’."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty emmo:elucidation ;
+    owl:annotatedSource emmo:EMMO_0c7ad550_00ae_45ff_a4e2_58d6a61f48eb ;
+    owl:annotatedTarget "A supply chain is a system of organizations, people, activities, information, and resources involved in supplying a product or service to a consumer."@en ;
+    emmo:wikipediaReference "https://en.wikipedia.org/wiki/Supply_chain"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 8584-1:2003-09"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource emmo:EMMO_6fba4018_24bd_450c_abc3_354e2c7809c9 ;
+    owl:annotatedTarget "Forming of a solid body, whereby the plastic state is essentially brought about by a combined tensile and compressive stress."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN EN 10210-3:2020-11"^^xsd:string ;
+    owl:annotatedProperty emmo:note ;
+    owl:annotatedSource emmo:EMMO_6fa330f7_3289_4228_81df_12ee8a9708ac ;
+    owl:annotatedTarget "Process consisting of two steps: - first, the steel is heated in a quenching treatment to a temperature above Ac3 and then rapidly cooled in a liquid to produce a process-specific grain structure; - subsequently, the steel is heated to a specific temperature during tempering to set the desired property and cooled in air."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 8593-0:2003-09"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource emmo:EMMO_6ab555fd_5803_4f03_82e8_127c01aabfea ;
+    owl:annotatedTarget "The permanent joining or other bringing together of two or more workpieces of a geometric shape or of similar workpieces with shapeless material. In each case, the cohesion is created locally and increased as a whole."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "ISO 23952:2020(en), 3.4.143"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource emmo:EMMO_479db031_b344_4488_9efa_4bc12c6c1765 ;
+    owl:annotatedTarget "a physical artifact, real or virtual, intended for subsequent transformation within some manufacturing operation"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 8583-1:2003-09"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource emmo:EMMO_39d5c9c4_7d24_4409_ba3b_60ca3afde902 ;
+    owl:annotatedTarget "Forming of a solid body, whereby the plastic state is essentially brought about by uniaxial or multiaxial compressive stress."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "ISO 4885:2018-02"^^xsd:string ;
+    owl:annotatedProperty emmo:note ;
+    owl:annotatedSource emmo:EMMO_3c7affee_09ed_42e7_a190_4a10c75ab6dd ;
+    owl:annotatedTarget "hardening of a workpiece caused by the precipitation of one or more compounds from a supersaturated solid solution"^^xsd:string .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_912ac3a2_a124_4233_92dd_06c9aebea46c ;
+    owl:annotatedTarget "Assemblying"@en ;
+    emmo:etymology "From Old French asembler, based on Latin ad- ‘to’ + simul ‘together’."@en .
 
 [] a owl:Axiom ;
     rdfs:seeAlso "DIN 8589-2:2003-09"^^xsd:string ;
     owl:annotatedProperty rdfs:comment ;
     owl:annotatedSource emmo:EMMO_c1dad83e_974f_432e_ac92_d016f2445279 ;
     owl:annotatedTarget "machining with a circular cutting movement in which the axis of rotation of the tool and the axis of the internal surface to be produced are identical and the feed movement is in the direction of this axis. The axis of rotation of the cutting movement maintains its position relative to the workpiece independently of the feed movement (axis of rotation workpiece-bound)."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN EN 9110:2018-08"^^xsd:string ;
+    owl:annotatedProperty emmo:note ;
+    owl:annotatedSource emmo:EMMO_c7171429_b9e3_4812_95c1_e97309370538 ;
+    owl:annotatedTarget "action to disassemble a product or a component by removing all or some of its constituent parts with the intent to salvage"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 8584-2:2003-09"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource emmo:EMMO_01048432_3722_40a9_aa37_ea009da44272 ;
+    owl:annotatedTarget "Draw forming by drawing a workpiece through a tool opening that is narrowed in the drawing direction."^^xsd:string .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_a4d66059_5dd3_4b90_b4cb_10960559441b ;
+    owl:annotatedTarget "Manufacturing"@en ;
+    emmo:etymology "From Latin manu factum (\"made by hand\")."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 8580:2022-12"^^xsd:string ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource emmo:EMMO_46dc0d51_b60f_49cd_8650_9aba7be3726c ;
+    owl:annotatedTarget "Verfestigen durch Umformen"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 8585-3:2003-09"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource emmo:EMMO_214e9a99_58de_40e2_86cf_fa6aa1d180a8 ;
+    owl:annotatedTarget "Widening is tensile forming to increase the circumference of a hollow body. A distinction is made between: Widening, bulging."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:15531:-1:ed-1:v1:en:term:3.6.22"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:seeAlso ;
+    owl:annotatedSource emmo:EMMO_a4d66059_5dd3_4b90_b4cb_10960559441b ;
+    owl:annotatedTarget """ISO 15531-1:2004
+manufacturing: function or act of converting or transforming material from raw material or semi-finished state to a state of further completion"""@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource emmo:EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8 ;
+    owl:annotatedTarget "Equipment"@en ;
+    emmo:etymology "From French équipement, from équiper ‘equip’."@en .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:15531:-1:ed-1:v1:en:term:3.6.9"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:seeAlso ;
+    owl:annotatedSource emmo:EMMO_8786cb47_8e1f_4968_9b15_f6d41fc51252 ;
+    owl:annotatedTarget """ISO 15531-1:2004
+discrete manufacturing: production of discrete items."""@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN EN ISO 15156-3:2015-12"^^xsd:string ;
+    owl:annotatedProperty emmo:note ;
+    owl:annotatedSource emmo:EMMO_dacfc7dc_5ddb_4f67_986b_dcd01d649d60 ;
+    owl:annotatedTarget "Heat to a temperature appropriate for the particular material, maintain at that temperature and then cool at an appropriate rate to reduce hardness, improve machinability or achieve desired properties."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 55405:2014-12"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource emmo:EMMO_c790c7ff_2d10_4336_94ad_4f4e173109a9 ;
+    owl:annotatedTarget "Method of joining metallic materials with the aid of a molten filler metal (solder), optionally with the use of flow agents"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 8588:2013-08"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource emmo:EMMO_1d6b63d5_9938_483c_ad62_a09ac34153c9 ;
+    owl:annotatedTarget "Cutting workpieces between two cutting edges that move past each other (see Figure 1 [see figure in the standard])."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN EN 62047-1:2016-12"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource emmo:EMMO_ecc10f05_b301_4dcf_8c84_b6f511117234 ;
+    owl:annotatedTarget "Process for joining two (base) materials by means of an adhesive polymer material"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN EN 13956:2013-03"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource emmo:EMMO_06c415dc_ba26_407d_b596_283bd4d9a66f ;
+    owl:annotatedTarget "Joining process by softening the surfaces to be joined, either by heat or with a solvent (swelling welding, solvent welding), and pressing the softened surfaces together."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "https://en.wiktionary.org/wiki/workpiece"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource emmo:EMMO_479db031_b344_4488_9efa_4bc12c6c1765 ;
+    owl:annotatedTarget "The raw material or partially finished piece that is shaped by performing various operations."^^xsd:string .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_86ca9b93_1183_4b65_81b8_c0fcd3bba5ad ;
+    owl:annotatedTarget "ManufacturedProduct"@en ;
+    emmo:etymology "From Latin manufacture: \"made by hand\"."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 8586:2003-09"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource emmo:EMMO_68ee441e_c89e_4391_93c3_e68fef59fe14 ;
+    owl:annotatedTarget "Forming of a solid body, whereby the plastic state is essentially brought about by a bending stress"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN EN ISO 4885:2018-07"^^xsd:string ;
+    owl:annotatedProperty emmo:note ;
+    owl:annotatedSource emmo:EMMO_61846411_8c6f_410b_ae7b_8999ec18f2b2 ;
+    owl:annotatedTarget "Treatment carried out after hardening or case hardening consisting of cooling to a temperature below room temperature to complete the transformation of austenite to martensite"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 8593-3:2003-09"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource emmo:EMMO_bbf12904_e25e_4f49_87f3_8bd210a6b535 ;
+    owl:annotatedTarget "A collective term for the processes in which, during joining, the parts to be joined and any auxiliary parts are essentially only elastically deformed and unintentional loosening is prevented by frictional connection."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:3252:ed-5:v1:en:term:3.3.55"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:seeAlso ;
+    owl:annotatedSource emmo:EMMO_2b524942_4e3e_403a_b4ab_2b53750f3d3b ;
+    owl:annotatedTarget """ISO 3252:2019 Powder metallurgy
+reaction sintering: process wherein at least two constituents of a powder mixture react during sintering"""@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 65099-5:1989-11"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource emmo:EMMO_4f46c5ab_1c21_4639_90d5_3c4ebf3b156b ;
+    owl:annotatedTarget "Nailing is joining by hammering or pressing nails (wire pins) as auxiliary parts into the solid material. Several parts are joined by pressing them together (from: DIN 8593 part 3/09.85)."^^xsd:string .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource emmo:EMMO_86ca9b93_1183_4b65_81b8_c0fcd3bba5ad ;
+    owl:annotatedTarget "Artifact"@en ;
+    emmo:etymology "From Latin arte ‘by or using art’ + factum ‘something made’."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "EN 16603-11:2019-11"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource emmo:EMMO_2b9cbfb5_dbd0_4a68_9c6f_acc41b40dd72 ;
+    owl:annotatedTarget "application of scientific knowledge, tools, techniques, crafts, systems or methods of organization in order to solve a problem or achieve an objective"^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "DIN 8587:2003-09"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource emmo:EMMO_22744495_4f32_4a17_b189_259c644268f9 ;
+    owl:annotatedTarget "Forming of a solid body, whereby the plastic state is essentially brought about by shear stress."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "https://www.collinsdictionary.com/it/dizionario/inglese/technology"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource emmo:EMMO_2b9cbfb5_dbd0_4a68_9c6f_acc41b40dd72 ;
+    owl:annotatedTarget "Technology refers to methods, systems, and devices which are the result of scientific knowledge being used for practical purposes."^^xsd:string .
 
 [] a owl:Axiom ;
     rdfs:seeAlso "DIN 8583-2:2003-09"^^xsd:string ;
@@ -1320,89 +1490,35 @@ manufacturing process: set of processes in manufacturing involving a flow and/or
     owl:annotatedTarget "In manufacturing, a workpiece is a single, delimited part of largely solid material that is processed in some form (e.g. stone )."^^xsd:string .
 
 [] a owl:Axiom ;
-    rdfs:seeAlso "DIN 8589-3:2003-09"^^xsd:string ;
-    owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_44f91d47_3faf_48e2_844c_d44bbe3e22f6 ;
-    owl:annotatedTarget "Machining with a circular cutting movement, usually associated with a multi-toothed tool, and with a feed movement perpendicular or oblique to the axis of rotation of the tool, to produce any workpiece surface."^^xsd:string .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "DIN 65099-3:1989-11"^^xsd:string ;
-    owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_7432b843_cfd2_4345_a3d2_eaa539b27e61 ;
-    owl:annotatedTarget "Free forming is pressure forming with tools that do not or only partially contain the shape of the workpiece and move against each other."^^xsd:string .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "DIN 8593-0:2003-09"^^xsd:string ;
-    owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_6ab555fd_5803_4f03_82e8_127c01aabfea ;
-    owl:annotatedTarget "The permanent joining or other bringing together of two or more workpieces of a geometric shape or of similar workpieces with shapeless material. In each case, the cohesion is created locally and increased as a whole."^^xsd:string .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "DIN 65099-3:1989-11"^^xsd:string ;
-    owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_6800c3fd_bf5d_4a2a_8e6e_9e909eefc16c ;
-    owl:annotatedTarget "Free forming is pressure forming with tools that do not or only partially contain the shape of the workpiece and move against each other (from: DIN 8583 Part 3/05.70)."^^xsd:string .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "EN 16603-11:2019-11"^^xsd:string ;
-    owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_2b9cbfb5_dbd0_4a68_9c6f_acc41b40dd72 ;
-    owl:annotatedTarget "application of scientific knowledge, tools, techniques, crafts, systems or methods of organization in order to solve a problem or achieve an objective"^^xsd:string .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "DIN EN 10210-3:2020-11"^^xsd:string ;
+    rdfs:seeAlso "EN 10028-1:2017-07"^^xsd:string ;
     owl:annotatedProperty emmo:note ;
-    owl:annotatedSource emmo:EMMO_6fa330f7_3289_4228_81df_12ee8a9708ac ;
-    owl:annotatedTarget "Process consisting of two steps: - first, the steel is heated in a quenching treatment to a temperature above Ac3 and then rapidly cooled in a liquid to produce a process-specific grain structure; - subsequently, the steel is heated to a specific temperature during tempering to set the desired property and cooled in air."^^xsd:string .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "DIN 65099-7:1989-11"^^xsd:string ;
-    owl:annotatedProperty emmo:note ;
-    owl:annotatedSource emmo:EMMO_dc0874e8_36e1_44df_947d_0d7c81167a09 ;
-    owl:annotatedTarget "(according to DIN 8200) Shot peening to generate residual compressive stresses in layers of the blasting material close to the surface in order to improve certain component properties, e.g. fatigue strength, corrosion resistance, wear resistance (from: DIN 8200:1982)"^^xsd:string .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource emmo:EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8 ;
-    owl:annotatedTarget "Machine"@en ;
-    emmo:etymology "From Latin māchina (“a machine, engine, contrivance, device, stratagem, trick”), from Doric Greek μᾱχᾰνᾱ́ (mākhanā́), cognate with Attic Greek μηχᾰνή (mēkhanḗ, “a machine, engine, contrivance, device”), from which comes mechanical."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource emmo:EMMO_86ca9b93_1183_4b65_81b8_c0fcd3bba5ad ;
-    owl:annotatedTarget "Artifact"@en ;
-    emmo:etymology "From Latin arte ‘by or using art’ + factum ‘something made’."@en .
+    owl:annotatedSource emmo:EMMO_9900d51c_bdd3_40e8_aa82_ad1aa7092f71 ;
+    owl:annotatedTarget "heat treatment consisting of heating and soaking at a suitable temperature, followed by cooling under conditions such that, after return to ambient temperature, the metal will be in a structural state closer to that of equilibrium"^^xsd:string .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_912ac3a2_a124_4233_92dd_06c9aebea46c ;
-    owl:annotatedTarget "Assemblying"@en ;
-    emmo:etymology "From Old French asembler, based on Latin ad- ‘to’ + simul ‘together’."@en .
+    owl:annotatedSource emmo:EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8 ;
+    owl:annotatedTarget "Device"@en ;
+    emmo:etymology "From Old French \"deviser\", meaning: arrange, plan, contrive. Literally \"dispose in portions,\" from Vulgar Latin \"divisare\", frequentative of Latin dividere, meaning \"to divide\"."@en .
 
 [] a owl:Axiom ;
-    rdfs:seeAlso "https://www.collinsdictionary.com/it/dizionario/inglese/technology"^^xsd:string ;
+    rdfs:seeAlso "DIN EN 12258-1:2012-08"^^xsd:string ;
     owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_2b9cbfb5_dbd0_4a68_9c6f_acc41b40dd72 ;
-    owl:annotatedTarget "Technology refers to methods, systems, and devices which are the result of scientific knowledge being used for practical purposes."^^xsd:string .
+    owl:annotatedSource emmo:EMMO_2138677c_845a_4bc2_8be7_7b0a07b4777d ;
+    owl:annotatedTarget "Removal of material by means of rigid or flexible discs or belts containing abrasives."^^xsd:string .
 
 [] a owl:Axiom ;
-    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:15531:-1:ed-1:v1:en:term:3.6.22"^^xsd:anyURI ;
+    rdfs:seeAlso "DIN 65099-5:1989-11"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource emmo:EMMO_410b5956_a06d_4370_b7df_b1bd2126fb4b ;
+    owl:annotatedTarget "Screwing (screwing on, screwing in, screwing tight) is joining by pressing on by means of a self-locking thread (from: DIN 8593 Part 3/09.85)."^^xsd:string .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:3252:ed-5:v1:en:term:3.3.33"^^xsd:anyURI ;
     owl:annotatedProperty rdfs:seeAlso ;
-    owl:annotatedSource emmo:EMMO_a4d66059_5dd3_4b90_b4cb_10960559441b ;
-    owl:annotatedTarget """ISO 15531-1:2004
-manufacturing: function or act of converting or transforming material from raw material or semi-finished state to a state of further completion"""@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "DIN 8584-2:2003-09"^^xsd:string ;
-    owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_01048432_3722_40a9_aa37_ea009da44272 ;
-    owl:annotatedTarget "Draw forming by drawing a workpiece through a tool opening that is narrowed in the drawing direction."^^xsd:string .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "DIN 55405:2014-12"^^xsd:string ;
-    owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_c790c7ff_2d10_4336_94ad_4f4e173109a9 ;
-    owl:annotatedTarget "Method of joining metallic materials with the aid of a molten filler metal (solder), optionally with the use of flow agents"^^xsd:string .
+    owl:annotatedSource emmo:EMMO_3ec45f3b_677d_4e71_be75_6f8966b4f808 ;
+    owl:annotatedTarget """ISO 3252:2019 Powder metallurgy
+loose-powder sintering, gravity sintering: sintering of uncompacted powder"""@en .
 
 [] a owl:Axiom ;
     rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso:3252:ed-5:v1:en:term:3.3.32"^^xsd:anyURI ;
@@ -1412,22 +1528,34 @@ manufacturing: function or act of converting or transforming material from raw m
 liquid-phase sintering: sintering of a powder or compact containing at least two constituents, under conditions such that a liquid phase is formed"""@en .
 
 [] a owl:Axiom ;
-    rdfs:seeAlso "DIN EN ISO 15156-3:2015-12"^^xsd:string ;
-    owl:annotatedProperty emmo:note ;
-    owl:annotatedSource emmo:EMMO_dacfc7dc_5ddb_4f67_986b_dcd01d649d60 ;
-    owl:annotatedTarget "Heat to a temperature appropriate for the particular material, maintain at that temperature and then cool at an appropriate rate to reduce hardness, improve machinability or achieve desired properties."^^xsd:string .
+    rdfs:seeAlso "DIN 8586:2003-09"^^xsd:string ;
+    owl:annotatedProperty rdfs:comment ;
+    owl:annotatedSource emmo:EMMO_aced32dd_1a13_49b0_8d8f_c79313942d19 ;
+    owl:annotatedTarget "Forming of a solid body, whereby the plastic state is essentially brought about by a bending stress."^^xsd:string .
 
 [] a owl:Axiom ;
-    rdfs:seeAlso "DIN EN ISO 5349-2:2015-12"^^xsd:string ;
+    rdfs:seeAlso "DIN 65099-3:1989-11"^^xsd:string ;
     owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_479db031_b344_4488_9efa_4bc12c6c1765 ;
-    owl:annotatedTarget "Object that is processed with a machine"^^xsd:string .
+    owl:annotatedSource emmo:EMMO_6800c3fd_bf5d_4a2a_8e6e_9e909eefc16c ;
+    owl:annotatedTarget "Free forming is pressure forming with tools that do not or only partially contain the shape of the workpiece and move against each other (from: DIN 8583 Part 3/05.70)."^^xsd:string .
 
 [] a owl:Axiom ;
-    rdfs:seeAlso "DIN 8583-1:2003-09"^^xsd:string ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_5c68497d_2544_4cd4_897b_1ea783c9f6fe ;
+    owl:annotatedTarget "Tool"@en ;
+    emmo:etymology "Old English tōl, from a Germanic base meaning ‘prepare’."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource emmo:EMMO_494b372c_cfdf_47d3_a4de_5e037c540de8 ;
+    owl:annotatedTarget "Machine"@en ;
+    emmo:etymology "From Latin māchina (“a machine, engine, contrivance, device, stratagem, trick”), from Doric Greek μᾱχᾰνᾱ́ (mākhanā́), cognate with Attic Greek μηχᾰνή (mēkhanḗ, “a machine, engine, contrivance, device”), from which comes mechanical."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "https://en.wikipedia.org/wiki/Technology"^^xsd:string ;
     owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_39d5c9c4_7d24_4409_ba3b_60ca3afde902 ;
-    owl:annotatedTarget "Forming of a solid body, whereby the plastic state is essentially brought about by uniaxial or multiaxial compressive stress."^^xsd:string .
+    owl:annotatedSource emmo:EMMO_2b9cbfb5_dbd0_4a68_9c6f_acc41b40dd72 ;
+    owl:annotatedTarget "Technology is the application of knowledge for achieving practical goals in a reproducible way."^^xsd:string .
 
 [] a owl:Axiom ;
     rdfs:seeAlso "DIN EN 13831:2007-12"^^xsd:string ;
@@ -1438,140 +1566,12 @@ liquid-phase sintering: sintering of a powder or compact containing at least two
 [] a owl:Axiom ;
     rdfs:seeAlso "DIN 8590 Berichtigung 1:2004-02"^^xsd:string ;
     owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_1a2cbca8_3d3b_4e2c_9a71_e39273937786 ;
-    owl:annotatedTarget "Manufacturing by separating particles of material from a solid body by non-mechanical means. Ablation refers both to the removal of layers of material and to the separation of workpiece parts. The production process of ablation is considered in its stationary instantaneous state, independently of the application of auxiliary processes necessary to initiate the process. Ablation is divided into three subgroups according to the order point of view (OGP) \"process in the effective zone on the surface of the workpiece\": - thermal ablation; - chemical ablation; - electrochemical ablation."^^xsd:string .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_86ca9b93_1183_4b65_81b8_c0fcd3bba5ad ;
-    owl:annotatedTarget "ManufacturedProduct"@en ;
-    emmo:etymology "From Latin manufacture: \"made by hand\"."@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "DIN 65099-5:1989-11"^^xsd:string ;
-    owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_410b5956_a06d_4370_b7df_b1bd2126fb4b ;
-    owl:annotatedTarget "Screwing (screwing on, screwing in, screwing tight) is joining by pressing on by means of a self-locking thread (from: DIN 8593 Part 3/09.85)."^^xsd:string .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource emmo:EMMO_86ca9b93_1183_4b65_81b8_c0fcd3bba5ad ;
-    owl:annotatedTarget "TangibleProduct"@en ;
-    emmo:etymology "From late Latin tangibilis, from tangere ‘to touch’."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_02122e58_e0b3_4274_bdd4_745f64a61645 ;
-    owl:annotatedTarget "Factory"@en ;
-    emmo:etymology "From Latin factor, from fact- ‘done’, from the verb facere (to do)."@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "DIN EN 12258-1:2012-08"^^xsd:string ;
-    owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_2138677c_845a_4bc2_8be7_7b0a07b4777d ;
-    owl:annotatedTarget "Removal of material by means of rigid or flexible discs or belts containing abrasives."^^xsd:string .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "DIN 8593-3:2003-09"^^xsd:string ;
-    owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_bbf12904_e25e_4f49_87f3_8bd210a6b535 ;
-    owl:annotatedTarget "A collective term for the processes in which, during joining, the parts to be joined and any auxiliary parts are essentially only elastically deformed and unintentional loosening is prevented by frictional connection."^^xsd:string .
-
-[] a owl:Axiom ;
-    rdfs:isDefinedBy "https://www.iso.org/obp/ui/#iso:std:iso-astm:tr:52906:ed-1:v1:en:term:3.9"^^xsd:anyURI ;
-    owl:annotatedProperty rdfs:seeAlso ;
-    owl:annotatedSource emmo:EMMO_03441eb3_d1fd_4906_b953_b83312d7589e ;
-    owl:annotatedTarget """ISO/ASTM TR 52906:2022 Additive manufacturing
-sintering: process of heating a powder metal compact to increase density and/or improve mechanical properties via solid state diffusion"""@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_a4d66059_5dd3_4b90_b4cb_10960559441b ;
-    owl:annotatedTarget "Manufacturing"@en ;
-    emmo:etymology "From Latin manu factum (\"made by hand\")."@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "DIN 8584-1:2003-09"^^xsd:string ;
-    owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_6fba4018_24bd_450c_abc3_354e2c7809c9 ;
-    owl:annotatedTarget "Forming of a solid body, whereby the plastic state is essentially brought about by a combined tensile and compressive stress."^^xsd:string .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "EN 10028-1:2017-07"^^xsd:string ;
-    owl:annotatedProperty emmo:note ;
-    owl:annotatedSource emmo:EMMO_9900d51c_bdd3_40e8_aa82_ad1aa7092f71 ;
-    owl:annotatedTarget "heat treatment consisting of heating and soaking at a suitable temperature, followed by cooling under conditions such that, after return to ambient temperature, the metal will be in a structural state closer to that of equilibrium"^^xsd:string .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "ISO/ASTM 52900:2021(en), 3.3.1"^^xsd:string ;
-    owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_253e1d54_69af_4931_90d0_5ccfd7e690ad ;
-    owl:annotatedTarget """fabrication of objects through the deposition of a material using a print head, nozzle or another printer technology
-Note 1 to entry: This term is often used in a non-technical context synonymously with additive manufacturing (3.1.2) and, in these cases, typically associated with machines used for non-industrial purposes including personal use."""^^xsd:string .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "https://en.wikipedia.org/wiki/Technology"^^xsd:string ;
-    owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_2b9cbfb5_dbd0_4a68_9c6f_acc41b40dd72 ;
-    owl:annotatedTarget "Technology is the application of knowledge for achieving practical goals in a reproducible way."^^xsd:string .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "ISO 23704-1:2022(en), 3.1.2"^^xsd:string ;
-    owl:annotatedProperty emmo:note ;
-    owl:annotatedSource emmo:EMMO_03eb9b46_8ff0_4fcd_b1a0_73f65ae7434e ;
-    owl:annotatedTarget "process of joining materials to make parts from 3D model data, usually layer upon layer, as opposed to subtractive manufacturing (3.1.29) and formative manufacturing methodologies,"^^xsd:string .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "DIN EN ISO 4885:2018-07"^^xsd:string ;
-    owl:annotatedProperty emmo:note ;
-    owl:annotatedSource emmo:EMMO_61846411_8c6f_410b_ae7b_8999ec18f2b2 ;
-    owl:annotatedTarget "Treatment carried out after hardening or case hardening consisting of cooling to a temperature below room temperature to complete the transformation of austenite to martensite"^^xsd:string .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_5c68497d_2544_4cd4_897b_1ea783c9f6fe ;
-    owl:annotatedTarget "Tool"@en ;
-    emmo:etymology "Old English tōl, from a Germanic base meaning ‘prepare’."@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "DIN 8590 Berichtigung 1:2004-02"^^xsd:string ;
-    owl:annotatedProperty rdfs:comment ;
     owl:annotatedSource emmo:EMMO_b8ce01a5_1e0c_4c69_8e54_7235fd4fe47e ;
     owl:annotatedTarget "A manufacturing process in which metallic material is anodically dissolved under the influence of an electric current and an electrolyte solution. The current flow can be caused either by connection to an external current source or due to local element formation on the workpiece (etching)."^^xsd:string .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_82fc8506_1f84_4add_9683_abea077bd1e3 ;
-    owl:annotatedTarget "Product"@en ;
-    emmo:etymology "From Latin productum ‘something produced’, derived from Latin producere, from pro- ‘forward’ + ducere ‘to lead’."@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "DIN 8588:2013-08"^^xsd:string ;
-    owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_1d6b63d5_9938_483c_ad62_a09ac34153c9 ;
-    owl:annotatedTarget "Cutting workpieces between two cutting edges that move past each other (see Figure 1 [see figure in the standard])."^^xsd:string .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:altLabel ;
     owl:annotatedSource emmo:EMMO_86ca9b93_1183_4b65_81b8_c0fcd3bba5ad ;
     owl:annotatedTarget "Engineered"@en ;
     emmo:etymology "From Latin ingenium \"innate qualities, ability; inborn character,\" in Late Latin \"a war engine, battering ram\"; literally \"that which is inborn,\" from in- (\"in\") + gignere (\"give birth, beget\")."@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "DIN EN 14943:2006-03"^^xsd:string ;
-    owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_2b9cbfb5_dbd0_4a68_9c6f_acc41b40dd72 ;
-    owl:annotatedTarget "Conversion of materials and assembly of components for the manufacture of products"^^xsd:string .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "DIN EN 9110:2018-08"^^xsd:string ;
-    owl:annotatedProperty emmo:note ;
-    owl:annotatedSource emmo:EMMO_c7171429_b9e3_4812_95c1_e97309370538 ;
-    owl:annotatedTarget "action to disassemble a product or a component by removing all or some of its constituent parts with the intent to salvage"^^xsd:string .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "DIN EN 13956:2013-03"^^xsd:string ;
-    owl:annotatedProperty rdfs:comment ;
-    owl:annotatedSource emmo:EMMO_06c415dc_ba26_407d_b596_283bd4d9a66f ;
-    owl:annotatedTarget "Joining process by softening the surfaces to be joined, either by heat or with a solvent (swelling welding, solvent welding), and pressing the softened surfaces together."^^xsd:string .
 

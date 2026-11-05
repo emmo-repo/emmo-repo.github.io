@@ -161,6 +161,7 @@ emmo:EMMO_d05e7aea_7d45_412c_8724_43772ee92240 a owl:AsymmetricProperty,
     emmo:contact "emmo@emmc.eu"^^xsd:string .
 
 emmo:EMMO_13191289_6c2b_4741_93e1_82d53bd0e703 a owl:Class ;
+    rdfs:label "Participant"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ] ;
             owl:someValuesFrom emmo:EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce ],
@@ -488,6 +489,7 @@ emmo:EMMO_bed37b1f_0479_4b61_bd49_54e25f414222 a owl:AsymmetricProperty,
     emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/isLeftBy.png"^^xsd:string .
 
 emmo:EMMO_e04884d9_eda6_487e_93d5_7722d7eda96b a owl:Class ;
+    rdfs:label "Persistence"@en ;
     rdfs:subClassOf emmo:EMMO_49267eba_5548_4163_8f36_518d65b583f9 ;
     skos:prefLabel "Persistence"@en ;
     emmo:OWLRL2DLAxioms "EquivalentTo: Process or Object"^^xsd:string ;
@@ -567,6 +569,7 @@ emmo:EMMO_846b637b_7b12_47a1_9430_0274b2f588ac a owl:Class ;
     emmo:elucidation "The superclass for all classes that categorise projects according to their mereological and persistence context"@en .
 
 emmo:EMMO_9d799b43_e188_4047_8167_121d96b31a26 a owl:Class ;
+    rdfs:label "ObjectByContext"@en ;
     rdfs:subClassOf emmo:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606 ;
     skos:prefLabel "ObjectByContext"@en ;
     emmo:elucidation "The superclass for all classes that categorise objects according to their mereological and persistence context"@en .
@@ -597,6 +600,7 @@ emmo:EMMO_d78b940d_4e2a_4a46_816b_da89029adc19 a owl:AsymmetricProperty,
     skos:prefLabel "isThroughOverlappedBy"@en .
 
 emmo:EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce a owl:Class ;
+    rdfs:label "Process"@en ;
     rdfs:subClassOf emmo:EMMO_e04884d9_eda6_487e_93d5_7722d7eda96b ;
     skos:altLabel "Occurrent"@en,
         "Perdurant"@en ;
@@ -610,6 +614,7 @@ The intended usage is not for an individual to belong directly to Process, but t
 The definition of every specific process subclass requires a reference type, that is expressed by some but not all temporal parts."""@en .
 
 emmo:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606 a owl:Class ;
+    rdfs:label "Object"@en ;
     rdfs:subClassOf emmo:EMMO_e04884d9_eda6_487e_93d5_7722d7eda96b ;
     skos:altLabel "Continuant"@en,
         "Endurant"@en ;
@@ -623,26 +628,6 @@ The intended usage is not for an individual to belong directly to Object, but to
     emmo:note """Indefinitely temporally slicing of an entity leads to temporal parts whose temporal extension is so small that the connectivity relations that define the entity as an item will no longer hold. More generally. a temporal part is no more of type ϕ when the temporal interval is lower than the interval that characterizes the causality interactions between the object parts.
 In other terms, if the time span of a temporal part is lower than the inverse of the frequency of interactions between the constituents, then the constituents in such temporal part are not connected. The object is no more an object, neither an item, but simply a collection of fundamental quantum parts.
 For this reason, the definition of object is done by considering only item temporal parts, meaning that slicing in time has the lower limit of a self-connected (i.e. item) entity."""@en .
-
-[] a swrl:Imp ;
-    swrl:body [ a swrl:AtomList ;
-            rdf:first [ a swrl:IndividualPropertyAtom ;
-                    swrl:argument1 <urn:swrl:var#x> ;
-                    swrl:argument2 <urn:swrl:var#y> ;
-                    swrl:propertyPredicate emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 ] ;
-            rdf:rest [ a swrl:AtomList ;
-                    rdf:first [ a swrl:IndividualPropertyAtom ;
-                            swrl:argument1 <urn:swrl:var#y> ;
-                            swrl:argument2 <urn:swrl:var#z> ;
-                            swrl:propertyPredicate emmo:EMMO_2bb50428_568d_46e8_b8bf_59a4c5656461 ] ;
-                    rdf:rest () ] ] ;
-    swrl:head [ a swrl:AtomList ;
-            rdf:first [ a swrl:IndividualPropertyAtom ;
-                    swrl:argument1 <urn:swrl:var#x> ;
-                    swrl:argument2 <urn:swrl:var#z> ;
-                    swrl:propertyPredicate emmo:EMMO_573dd48c_50f4_460a_aaa1_ff1512cd2a35 ] ;
-            rdf:rest () ] ;
-    emmo:note "Implements impactedBy."@en .
 
 [] a swrl:Imp ;
     swrl:body [ a swrl:AtomList ;
@@ -663,4 +648,24 @@ For this reason, the definition of object is done by considering only item tempo
                     swrl:propertyPredicate emmo:EMMO_7821eeb8_5e44_452b_90e9_3db03bbef241 ] ;
             rdf:rest () ] ;
     emmo:note "Implements ProcessedFrom."@en .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl:var#y> ;
+                            swrl:argument2 <urn:swrl:var#z> ;
+                            swrl:propertyPredicate emmo:EMMO_2bb50428_568d_46e8_b8bf_59a4c5656461 ] ;
+                    rdf:rest () ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#z> ;
+                    swrl:propertyPredicate emmo:EMMO_573dd48c_50f4_460a_aaa1_ff1512cd2a35 ] ;
+            rdf:rest () ] ;
+    emmo:note "Implements impactedBy."@en .
 

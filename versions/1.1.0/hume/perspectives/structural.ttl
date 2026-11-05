@@ -22,7 +22,6 @@ ns1:Heap a owl:Class ;
     ns1:note "A heap class H (subclass of Heap) is defined by choosing a reference type φ, with H subclass of φ, so that each H entity has non overlapping φ parts."@en .
 
 ns1:Maximal a owl:Class ;
-    rdfs:label "Maximal"@en ;
     rdfs:subClassOf ns1:Fundamental ;
     skos:prefLabel "Maximal"@en ;
     ns1:elucidation "The superclass for all classes of entities that have no proper parts of the same type of the whole are not proper part of an entity of that type."@en ;
@@ -79,7 +78,6 @@ ns1:Nuclear a owl:Class ;
     ns1:elucidation "The superclass for all classes of entities that have a proper parts of the same type of the whole that is part of all the other proper parts of the same type."@en .
 
 ns1:Structural a owl:Class ;
-    rdfs:label "Structural"@en ;
     rdfs:subClassOf ns1:Perspective ;
     skos:prefLabel "Structural"@en ;
     ns1:elucidation "A perspective that categorises causal structures according to the merelogical relations between the whole and the parts, taking into account their types."@en .
@@ -100,7 +98,6 @@ If A is a water-fluid so small that its every proper part is no more a continuum
     ns1:elucidation "The superclass for all classes of entities that have parts of the same type of the whole."@en .
 
 ns1:Fundamental a owl:Class ;
-    rdfs:label "Fundamental"@en ;
     rdfs:seeAlso ns1:Redundant ;
     rdfs:subClassOf ns1:Structural ;
     skos:altLabel "Lifetime"@en ;
@@ -112,16 +109,16 @@ Following the two examples, a marathon individual is a maximal that can be decom
     ns1:elucidation "The superclass for all classes of entities that have no proper parts of the same type of the whole."@en .
 
 [] a owl:Axiom ;
-    rdfs:seeAlso ns1:hasRedundantPart ;
-    owl:annotatedProperty ns1:definition ;
-    owl:annotatedSource ns1:Fundamental ;
-    owl:annotatedTarget "Fundamental(x) ≡ ∃φ[φ(x) ∧ ¬∃yRP⟨φ⟩(y, x)]"^^xsd:string .
-
-[] a owl:Axiom ;
     owl:annotatedProperty skos:altLabel ;
     owl:annotatedSource ns1:Fundamental ;
     owl:annotatedTarget "Lifetime"@en ;
     ns1:etymology "From Middle English liftime, equivalent to life +‎ time."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso ns1:hasRedundantPart ;
+    owl:annotatedProperty ns1:definition ;
+    owl:annotatedSource ns1:Fundamental ;
+    owl:annotatedTarget "Fundamental(x) ≡ ∃φ[φ(x) ∧ ¬∃yRP⟨φ⟩(y, x)]"^^xsd:string .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;

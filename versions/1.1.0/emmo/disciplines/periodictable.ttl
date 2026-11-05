@@ -8,11 +8,11 @@
 emmo:EMMO_0080b38f-bac4-5dd6-9d28-d821cf723787 a owl:Class ;
     rdfs:label "UraniumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
-            owl:someValuesFrom emmo:EMMO_b233f8c0-37d8-51ae-9264-560e6649e246 ],
-        [ a owl:Restriction ;
             owl:hasValue "U"^^xsd:string ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
+            owl:someValuesFrom emmo:EMMO_b233f8c0-37d8-51ae-9264-560e6649e246 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "UraniumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the uranium atom."@en .
@@ -32,11 +32,11 @@ emmo:EMMO_0755dd67-bdf1-5164-a706-55fcf9ced526 a owl:Class ;
 emmo:EMMO_0805a892-352b-53e3-9577-60aa0835bc17 a owl:Class ;
     rdfs:label "BohriumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "Bh"^^xsd:string ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
             owl:someValuesFrom emmo:EMMO_67761ddc-260b-5945-bfc3-311813ab71c9 ],
+        [ a owl:Restriction ;
+            owl:hasValue "Bh"^^xsd:string ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "BohriumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the bohrium atom."@en .
@@ -44,11 +44,11 @@ emmo:EMMO_0805a892-352b-53e3-9577-60aa0835bc17 a owl:Class ;
 emmo:EMMO_09e84f72-511a-5d22-adf1-accacaf7146a a owl:Class ;
     rdfs:label "TinSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
-            owl:someValuesFrom emmo:EMMO_9aa9e086-ae07-51f6-bf84-788ffdefcb6f ],
-        [ a owl:Restriction ;
             owl:hasValue "Sn"^^xsd:string ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
+            owl:someValuesFrom emmo:EMMO_9aa9e086-ae07-51f6-bf84-788ffdefcb6f ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "TinSymbol"@en ;
     emmo:elucidation "The symbol that stands for the tin atom."@en .
@@ -80,11 +80,11 @@ emmo:EMMO_0bd0c81a-2972-5b2d-8ff5-bb72a82b9c0d a owl:Class ;
 emmo:EMMO_0edbde89-9714-53c7-b2a9-0ef6c0f73091 a owl:Class ;
     rdfs:label "RutheniumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "Ru"^^xsd:string ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
             owl:someValuesFrom emmo:EMMO_948b47f0-3c24-50c7-a698-a805f760e667 ],
+        [ a owl:Restriction ;
+            owl:hasValue "Ru"^^xsd:string ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "RutheniumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the ruthenium atom."@en .
@@ -92,11 +92,11 @@ emmo:EMMO_0edbde89-9714-53c7-b2a9-0ef6c0f73091 a owl:Class ;
 emmo:EMMO_113acda0-3c17-59d9-87ef-7e5e5c0ba128 a owl:Class ;
     rdfs:label "VanadiumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
-            owl:someValuesFrom emmo:EMMO_f02b58a5-8f1e-5d72-a261-8fe5ad2fbb4b ],
-        [ a owl:Restriction ;
             owl:hasValue "V"^^xsd:string ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
+            owl:someValuesFrom emmo:EMMO_f02b58a5-8f1e-5d72-a261-8fe5ad2fbb4b ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "VanadiumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the vanadium atom."@en .
@@ -104,11 +104,11 @@ emmo:EMMO_113acda0-3c17-59d9-87ef-7e5e5c0ba128 a owl:Class ;
 emmo:EMMO_12120d44-785e-5e5e-a9fd-73fe7c24ead4 a owl:Class ;
     rdfs:label "MercurySymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
-            owl:someValuesFrom emmo:EMMO_bc1bb0e8-ec90-5276-a15c-3e805144a083 ],
-        [ a owl:Restriction ;
             owl:hasValue "Hg"^^xsd:string ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
+            owl:someValuesFrom emmo:EMMO_bc1bb0e8-ec90-5276-a15c-3e805144a083 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "MercurySymbol"@en ;
     emmo:elucidation "The symbol that stands for the mercury atom."@en .
@@ -128,11 +128,11 @@ emmo:EMMO_15841f91-ad7d-5b81-89d1-c12b13e42f32 a owl:Class ;
 emmo:EMMO_179a652d-68c8-5412-9621-98b4b00984dd a owl:Class ;
     rdfs:label "ManganeseSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
-            owl:someValuesFrom emmo:EMMO_2c701f72-a859-5e33-9552-b6bdbcbd28d9 ],
-        [ a owl:Restriction ;
             owl:hasValue "Mn"^^xsd:string ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
+            owl:someValuesFrom emmo:EMMO_2c701f72-a859-5e33-9552-b6bdbcbd28d9 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "ManganeseSymbol"@en ;
     emmo:elucidation "The symbol that stands for the manganese atom."@en .
@@ -152,11 +152,11 @@ emmo:EMMO_1936bc9e-5e81-5267-bd48-cbec9a6cfb17 a owl:Class ;
 emmo:EMMO_1c5c8217-481b-5ae9-b44f-9ec353f6ea93 a owl:Class ;
     rdfs:label "FleroviumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
-            owl:someValuesFrom emmo:EMMO_7aa6b5b1-34c8-5d37-9db0-cc6a232f3946 ],
-        [ a owl:Restriction ;
             owl:hasValue "Fl"^^xsd:string ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
+            owl:someValuesFrom emmo:EMMO_7aa6b5b1-34c8-5d37-9db0-cc6a232f3946 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "FleroviumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the flerovium atom."@en .
@@ -176,11 +176,11 @@ emmo:EMMO_1cba8181-2ea5-5772-8bd7-e668ffcde394 a owl:Class ;
 emmo:EMMO_1fade54b-20ed-5e58-af59-214ea3b15ba9 a owl:Class ;
     rdfs:label "NickelSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "Ni"^^xsd:string ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
             owl:someValuesFrom emmo:EMMO_caacc634-4328-5d9d-a8e8-1c25a2557e94 ],
+        [ a owl:Restriction ;
+            owl:hasValue "Ni"^^xsd:string ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "NickelSymbol"@en ;
     emmo:elucidation "The symbol that stands for the nickel atom."@en .
@@ -212,11 +212,11 @@ emmo:EMMO_20bb4724-2370-5205-ab8e-51a4c3609d3b a owl:Class ;
 emmo:EMMO_2563e18a-93d2-5d81-86d3-736295e9e519 a owl:Class ;
     rdfs:label "GadoliniumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
-            owl:someValuesFrom emmo:EMMO_0724601e-642c-5770-bc86-7078e7441664 ],
-        [ a owl:Restriction ;
             owl:hasValue "Gd"^^xsd:string ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
+            owl:someValuesFrom emmo:EMMO_0724601e-642c-5770-bc86-7078e7441664 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "GadoliniumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the gadolinium atom."@en .
@@ -248,11 +248,11 @@ emmo:EMMO_2dc17698-8cd9-562e-8eca-7818d507c813 a owl:Class ;
 emmo:EMMO_2e96348b-f8d1-5877-a5c5-b6863c5ebcf2 a owl:Class ;
     rdfs:label "NeonSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
-            owl:someValuesFrom emmo:EMMO_24e7961c-26c8-5ae1-a29c-c32717c40684 ],
-        [ a owl:Restriction ;
             owl:hasValue "Ne"^^xsd:string ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
+            owl:someValuesFrom emmo:EMMO_24e7961c-26c8-5ae1-a29c-c32717c40684 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "NeonSymbol"@en ;
     emmo:elucidation "The symbol that stands for the neon atom."@en .
@@ -272,11 +272,11 @@ emmo:EMMO_31fda9f8-24e1-5c53-8616-a63cee7613de a owl:Class ;
 emmo:EMMO_3565b4e7-51bd-57e5-afde-60be404857cf a owl:Class ;
     rdfs:label "PraseodymiumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
-            owl:someValuesFrom emmo:EMMO_18748aef-0e6b-5369-99b5-1e5ab1a0f99b ],
-        [ a owl:Restriction ;
             owl:hasValue "Pr"^^xsd:string ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
+            owl:someValuesFrom emmo:EMMO_18748aef-0e6b-5369-99b5-1e5ab1a0f99b ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "PraseodymiumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the praseodymium atom."@en .
@@ -284,11 +284,11 @@ emmo:EMMO_3565b4e7-51bd-57e5-afde-60be404857cf a owl:Class ;
 emmo:EMMO_357b32b5-7d1b-5649-b9bd-2b1b9359fcd0 a owl:Class ;
     rdfs:label "ErbiumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "Er"^^xsd:string ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
             owl:someValuesFrom emmo:EMMO_14729316-fa36-5eda-a5e6-86e28a5d80ba ],
+        [ a owl:Restriction ;
+            owl:hasValue "Er"^^xsd:string ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "ErbiumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the erbium atom."@en .
@@ -320,11 +320,11 @@ emmo:EMMO_38626021-30ac-5bd1-8776-0541a8341bf2 a owl:Class ;
 emmo:EMMO_3bf0809d-2f7c-5282-b7fd-2e5486f6dbd3 a owl:Class ;
     rdfs:label "ActiniumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
-            owl:someValuesFrom emmo:EMMO_380f1ba6-b4f3-51e2-a63f-ceeeca2ed2f4 ],
-        [ a owl:Restriction ;
             owl:hasValue "Ac"^^xsd:string ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
+            owl:someValuesFrom emmo:EMMO_380f1ba6-b4f3-51e2-a63f-ceeeca2ed2f4 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "ActiniumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the actinium atom."@en .
@@ -332,11 +332,11 @@ emmo:EMMO_3bf0809d-2f7c-5282-b7fd-2e5486f6dbd3 a owl:Class ;
 emmo:EMMO_3fb231cb-7818-5b59-b8da-b5bd2c09c0fc a owl:Class ;
     rdfs:label "ScandiumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
-            owl:someValuesFrom emmo:EMMO_fbfd4b93-12ee-5a15-8377-d4c54635b5de ],
-        [ a owl:Restriction ;
             owl:hasValue "Sc"^^xsd:string ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
+            owl:someValuesFrom emmo:EMMO_fbfd4b93-12ee-5a15-8377-d4c54635b5de ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "ScandiumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the scandium atom."@en .
@@ -356,11 +356,11 @@ emmo:EMMO_3fb44e47-7de9-5d86-9320-5949d8792951 a owl:Class ;
 emmo:EMMO_41ee55be-d0e9-5f39-86a6-36b81a7bc301 a owl:Class ;
     rdfs:label "BromineSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "Br"^^xsd:string ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
             owl:someValuesFrom emmo:EMMO_b3dfa085-5206-5868-b060-13efa01caf8e ],
+        [ a owl:Restriction ;
+            owl:hasValue "Br"^^xsd:string ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "BromineSymbol"@en ;
     emmo:elucidation "The symbol that stands for the bromine atom."@en .
@@ -380,11 +380,11 @@ emmo:EMMO_43815c80-05dc-5917-8d52-b200badbf1d3 a owl:Class ;
 emmo:EMMO_44eb5d63-b868-54c5-bd52-7528db10674d a owl:Class ;
     rdfs:label "CeriumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "Ce"^^xsd:string ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
             owl:someValuesFrom emmo:EMMO_125b6f65-caf4-5ff2-89f2-90a6183ee34e ],
+        [ a owl:Restriction ;
+            owl:hasValue "Ce"^^xsd:string ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "CeriumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the cerium atom."@en .
@@ -392,11 +392,11 @@ emmo:EMMO_44eb5d63-b868-54c5-bd52-7528db10674d a owl:Class ;
 emmo:EMMO_4894a40d-6bf5-54a2-8b21-e9b278e0e973 a owl:Class ;
     rdfs:label "EuropiumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
-            owl:someValuesFrom emmo:EMMO_8aa13073-865b-5035-b128-43a4758a0302 ],
-        [ a owl:Restriction ;
             owl:hasValue "Eu"^^xsd:string ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
+            owl:someValuesFrom emmo:EMMO_8aa13073-865b-5035-b128-43a4758a0302 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "EuropiumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the europium atom."@en .
@@ -404,11 +404,11 @@ emmo:EMMO_4894a40d-6bf5-54a2-8b21-e9b278e0e973 a owl:Class ;
 emmo:EMMO_490c2981-b1cb-5f8c-be82-17a1ef1c27b4 a owl:Class ;
     rdfs:label "TennessineSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
-            owl:someValuesFrom emmo:EMMO_706cac26-78f1-5ca4-a63c-2600828db412 ],
-        [ a owl:Restriction ;
             owl:hasValue "Ts"^^xsd:string ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
+            owl:someValuesFrom emmo:EMMO_706cac26-78f1-5ca4-a63c-2600828db412 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "TennessineSymbol"@en ;
     emmo:elucidation "The symbol that stands for the tennessine atom."@en .
@@ -416,11 +416,11 @@ emmo:EMMO_490c2981-b1cb-5f8c-be82-17a1ef1c27b4 a owl:Class ;
 emmo:EMMO_4aa59242-76e7-5cce-a126-c7e9c657e7ad a owl:Class ;
     rdfs:label "CobaltSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "Co"^^xsd:string ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
             owl:someValuesFrom emmo:EMMO_3fe9d899-f1f1-5657-b176-ac6afff2e93d ],
+        [ a owl:Restriction ;
+            owl:hasValue "Co"^^xsd:string ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "CobaltSymbol"@en ;
     emmo:elucidation "The symbol that stands for the cobalt atom."@en .
@@ -428,11 +428,11 @@ emmo:EMMO_4aa59242-76e7-5cce-a126-c7e9c657e7ad a owl:Class ;
 emmo:EMMO_4ee57a22-0634-5889-a283-0b4f8e5023f6 a owl:Class ;
     rdfs:label "AntimonySymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
-            owl:someValuesFrom emmo:EMMO_c32f8642-f1a1-5fae-8b4e-990b40f6eff8 ],
-        [ a owl:Restriction ;
             owl:hasValue "Sb"^^xsd:string ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
+            owl:someValuesFrom emmo:EMMO_c32f8642-f1a1-5fae-8b4e-990b40f6eff8 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "AntimonySymbol"@en ;
     emmo:elucidation "The symbol that stands for the antimony atom."@en .
@@ -476,11 +476,11 @@ emmo:EMMO_5833085e-0afc-516a-a584-f56f1f191a13 a owl:Class ;
 emmo:EMMO_5c736993-31b7-5839-aa36-38b6cd8b41a2 a owl:Class ;
     rdfs:label "BerkeliumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "Bk"^^xsd:string ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
             owl:someValuesFrom emmo:EMMO_d2a4df79-23a0-5536-9f12-37d3b49c323f ],
+        [ a owl:Restriction ;
+            owl:hasValue "Bk"^^xsd:string ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "BerkeliumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the berkelium atom."@en .
@@ -488,11 +488,11 @@ emmo:EMMO_5c736993-31b7-5839-aa36-38b6cd8b41a2 a owl:Class ;
 emmo:EMMO_6378a9e9-29e5-5cae-b75b-46ca365e49b9 a owl:Class ;
     rdfs:label "TantalumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
-            owl:someValuesFrom emmo:EMMO_dbe54798-a21f-519f-9d52-e6ab2c2e28cb ],
-        [ a owl:Restriction ;
             owl:hasValue "Ta"^^xsd:string ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
+            owl:someValuesFrom emmo:EMMO_dbe54798-a21f-519f-9d52-e6ab2c2e28cb ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "TantalumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the tantalum atom."@en .
@@ -500,11 +500,11 @@ emmo:EMMO_6378a9e9-29e5-5cae-b75b-46ca365e49b9 a owl:Class ;
 emmo:EMMO_649415e4-1e31-5809-aceb-59efbba7d5f5 a owl:Class ;
     rdfs:label "StrontiumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
-            owl:someValuesFrom emmo:EMMO_8ec7fdf6-5652-547d-942f-b8b09ad84660 ],
-        [ a owl:Restriction ;
             owl:hasValue "Sr"^^xsd:string ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
+            owl:someValuesFrom emmo:EMMO_8ec7fdf6-5652-547d-942f-b8b09ad84660 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "StrontiumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the strontium atom."@en .
@@ -512,11 +512,11 @@ emmo:EMMO_649415e4-1e31-5809-aceb-59efbba7d5f5 a owl:Class ;
 emmo:EMMO_6599389d-7a26-5d51-a65c-5dd9c3ed532f a owl:Class ;
     rdfs:label "TerbiumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
-            owl:someValuesFrom emmo:EMMO_e3cd5791-6fbb-587a-a535-0e937800beaa ],
-        [ a owl:Restriction ;
             owl:hasValue "Tb"^^xsd:string ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
+            owl:someValuesFrom emmo:EMMO_e3cd5791-6fbb-587a-a535-0e937800beaa ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "TerbiumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the terbium atom."@en .
@@ -524,11 +524,11 @@ emmo:EMMO_6599389d-7a26-5d51-a65c-5dd9c3ed532f a owl:Class ;
 emmo:EMMO_66c364c4-16b7-5d5f-abd5-b6977c46f525 a owl:Class ;
     rdfs:label "LutetiumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
-            owl:someValuesFrom emmo:EMMO_098f6f77-746a-5fcc-a6d1-4988929bf404 ],
-        [ a owl:Restriction ;
             owl:hasValue "Lu"^^xsd:string ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
+            owl:someValuesFrom emmo:EMMO_098f6f77-746a-5fcc-a6d1-4988929bf404 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "LutetiumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the lutetium atom."@en .
@@ -572,11 +572,11 @@ emmo:EMMO_68a887df-63af-55c0-8239-b0b8edaa94ea a owl:Class ;
 emmo:EMMO_69e0ff08-9843-5ca2-b2bb-58467b07c4bb a owl:Class ;
     rdfs:label "ArgonSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "Ar"^^xsd:string ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
             owl:someValuesFrom emmo:EMMO_755d962f-c703-514f-8d90-ca4f55e331d4 ],
+        [ a owl:Restriction ;
+            owl:hasValue "Ar"^^xsd:string ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "ArgonSymbol"@en ;
     emmo:elucidation "The symbol that stands for the argon atom."@en .
@@ -596,11 +596,11 @@ emmo:EMMO_6b241a1f-2a5f-5ea8-b0aa-7b162d7d73e4 a owl:Class ;
 emmo:EMMO_6b670dce-5692-5505-9688-8f735b325214 a owl:Class ;
     rdfs:label "GermaniumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
-            owl:someValuesFrom emmo:EMMO_694e27a2-f3ee-5a3e-8851-d6f78d79d84e ],
-        [ a owl:Restriction ;
             owl:hasValue "Ge"^^xsd:string ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
+            owl:someValuesFrom emmo:EMMO_694e27a2-f3ee-5a3e-8851-d6f78d79d84e ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "GermaniumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the germanium atom."@en .
@@ -608,11 +608,11 @@ emmo:EMMO_6b670dce-5692-5505-9688-8f735b325214 a owl:Class ;
 emmo:EMMO_6bd7b6f4-db3b-58da-b9a0-58f44bb3ed37 a owl:Class ;
     rdfs:label "PhosphorusSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
-            owl:someValuesFrom emmo:EMMO_7905373a-cf03-57fe-a627-bfdb1db9369c ],
-        [ a owl:Restriction ;
             owl:hasValue "P"^^xsd:string ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
+            owl:someValuesFrom emmo:EMMO_7905373a-cf03-57fe-a627-bfdb1db9369c ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "PhosphorusSymbol"@en ;
     emmo:elucidation "The symbol that stands for the phosphorus atom."@en .
@@ -644,11 +644,11 @@ emmo:EMMO_71b5082d-9908-5011-8ad0-b2ab70ffd08c a owl:Class ;
 emmo:EMMO_71d48627-4696-54c2-a990-4fdd9f353aef a owl:Class ;
     rdfs:label "DarmastadtiumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
-            owl:someValuesFrom emmo:EMMO_5455d87d-1c98-50e1-9904-c94f6a697097 ],
-        [ a owl:Restriction ;
             owl:hasValue "Ds"^^xsd:string ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
+            owl:someValuesFrom emmo:EMMO_5455d87d-1c98-50e1-9904-c94f6a697097 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "DarmastadtiumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the darmastadtium atom."@en .
@@ -668,11 +668,11 @@ emmo:EMMO_74fd9704-69a8-5112-b65a-72ba05bba315 a owl:Class ;
 emmo:EMMO_7ab01303-b09e-5a90-8a5b-f5087d6559d3 a owl:Class ;
     rdfs:label "ZirconiumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "Zr"^^xsd:string ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
             owl:someValuesFrom emmo:EMMO_c052baf7-358f-55de-8ca3-9688563c3cfb ],
+        [ a owl:Restriction ;
+            owl:hasValue "Zr"^^xsd:string ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "ZirconiumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the zirconium atom."@en .
@@ -704,11 +704,11 @@ emmo:EMMO_811c67a9-bcdf-5a9e-bbce-28ae2af12915 a owl:Class ;
 emmo:EMMO_849f62cf-3e92-5122-94ba-bcce51a04c5f a owl:Class ;
     rdfs:label "ThuliumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
-            owl:someValuesFrom emmo:EMMO_82f9a8f3-2bb4-5d14-9a41-30a858ecce61 ],
-        [ a owl:Restriction ;
             owl:hasValue "Tm"^^xsd:string ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
+            owl:someValuesFrom emmo:EMMO_82f9a8f3-2bb4-5d14-9a41-30a858ecce61 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "ThuliumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the thulium atom."@en .
@@ -716,11 +716,11 @@ emmo:EMMO_849f62cf-3e92-5122-94ba-bcce51a04c5f a owl:Class ;
 emmo:EMMO_89f46282-58a4-5140-8c5b-7aaddcccdcf0 a owl:Class ;
     rdfs:label "PalladiumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "Pd"^^xsd:string ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
             owl:someValuesFrom emmo:EMMO_cabcb18d-88ff-5ff7-aceb-ab573526620e ],
+        [ a owl:Restriction ;
+            owl:hasValue "Pd"^^xsd:string ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "PalladiumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the palladium atom."@en .
@@ -728,11 +728,11 @@ emmo:EMMO_89f46282-58a4-5140-8c5b-7aaddcccdcf0 a owl:Class ;
 emmo:EMMO_8caaf41b-df30-5355-be5a-74283c49f50a a owl:Class ;
     rdfs:label "TechnetiumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "Tc"^^xsd:string ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
             owl:someValuesFrom emmo:EMMO_9c803415-5978-5525-9de9-fcf0a2098b4c ],
+        [ a owl:Restriction ;
+            owl:hasValue "Tc"^^xsd:string ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "TechnetiumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the technetium atom."@en .
@@ -788,11 +788,11 @@ emmo:EMMO_920b8adc-575b-55e9-9cd5-cf5eab1696f1 a owl:Class ;
 emmo:EMMO_93582808-e5fc-5bb5-bc7a-0e674e1a7f0e a owl:Class ;
     rdfs:label "HydrogenSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
-            owl:someValuesFrom emmo:EMMO_5a4790e5-b11b-5a0c-80e4-81515c27a560 ],
-        [ a owl:Restriction ;
             owl:hasValue "H"^^xsd:string ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
+            owl:someValuesFrom emmo:EMMO_5a4790e5-b11b-5a0c-80e4-81515c27a560 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "HydrogenSymbol"@en ;
     emmo:elucidation "The symbol that stands for the hydrogen atom."@en .
@@ -800,11 +800,11 @@ emmo:EMMO_93582808-e5fc-5bb5-bc7a-0e674e1a7f0e a owl:Class ;
 emmo:EMMO_96252ae5-c061-5ba0-80a4-774e5d949e06 a owl:Class ;
     rdfs:label "SamariumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "Sm"^^xsd:string ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
             owl:someValuesFrom emmo:EMMO_65d84215-de2a-56c9-80e3-a49d08dfc1de ],
+        [ a owl:Restriction ;
+            owl:hasValue "Sm"^^xsd:string ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "SamariumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the samarium atom."@en .
@@ -893,14 +893,16 @@ emmo:EMMO_a939c29d-2304-5e48-8b15-fc592a9d1813 a owl:Class ;
     skos:prefLabel "PotassiumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the potassium atom."@en .
 
+emmo:EMMO_abf7efbe_6b04_41b8_8326_4dd0f6be753e rdfs:label "Chemical"@en .
+
 emmo:EMMO_af362dae-2da6-595e-8581-21a8363a5a54 a owl:Class ;
     rdfs:label "PoloniumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
-            owl:someValuesFrom emmo:EMMO_784119c1-c336-5b0c-80fc-4cc8bddc99ca ],
-        [ a owl:Restriction ;
             owl:hasValue "Po"^^xsd:string ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
+            owl:someValuesFrom emmo:EMMO_784119c1-c336-5b0c-80fc-4cc8bddc99ca ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "PoloniumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the polonium atom."@en .
@@ -908,11 +910,11 @@ emmo:EMMO_af362dae-2da6-595e-8581-21a8363a5a54 a owl:Class ;
 emmo:EMMO_afee3bf0-d0e0-53dc-bfb1-b624b5724d47 a owl:Class ;
     rdfs:label "NeodymiumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
-            owl:someValuesFrom emmo:EMMO_2e6eba5e-8c55-534c-b955-f09296e190e0 ],
-        [ a owl:Restriction ;
             owl:hasValue "Nd"^^xsd:string ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
+            owl:someValuesFrom emmo:EMMO_2e6eba5e-8c55-534c-b955-f09296e190e0 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "NeodymiumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the neodymium atom."@en .
@@ -968,11 +970,11 @@ emmo:EMMO_b546b51b-c19d-5368-8810-c9e4e9b1c1f3 a owl:Class ;
 emmo:EMMO_b8aab013-b729-51f1-bc14-5302e7f97cbe a owl:Class ;
     rdfs:label "IridiumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "Ir"^^xsd:string ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
             owl:someValuesFrom emmo:EMMO_5ae62317-1681-5ca9-9fa7-8801757ee5c8 ],
+        [ a owl:Restriction ;
+            owl:hasValue "Ir"^^xsd:string ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "IridiumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the iridium atom."@en .
@@ -1028,11 +1030,11 @@ emmo:EMMO_c1102bae-7e7d-5142-95fe-ec25c8cb4903 a owl:Class ;
 emmo:EMMO_c1bb775c-0888-5b88-9cce-c49bae1d298b a owl:Class ;
     rdfs:label "NobeliumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "No"^^xsd:string ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
             owl:someValuesFrom emmo:EMMO_49eb0790-50c2-5691-a8bf-dfa6f4a9f6c7 ],
+        [ a owl:Restriction ;
+            owl:hasValue "No"^^xsd:string ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "NobeliumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the nobelium atom."@en .
@@ -1040,11 +1042,11 @@ emmo:EMMO_c1bb775c-0888-5b88-9cce-c49bae1d298b a owl:Class ;
 emmo:EMMO_c3a05192-7d78-5190-bc3e-3ea44cfc9d19 a owl:Class ;
     rdfs:label "FranciumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
-            owl:someValuesFrom emmo:EMMO_291a1550-d4cb-5934-b0db-0ea3c6a23932 ],
-        [ a owl:Restriction ;
             owl:hasValue "Fr"^^xsd:string ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
+            owl:someValuesFrom emmo:EMMO_291a1550-d4cb-5934-b0db-0ea3c6a23932 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "FranciumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the francium atom."@en .
@@ -1064,11 +1066,11 @@ emmo:EMMO_c45d9e2f-54f3-5464-82f3-c0f11a36389a a owl:Class ;
 emmo:EMMO_c7651944-e33f-56bc-8d83-f6de9760d661 a owl:Class ;
     rdfs:label "AstatineSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
-            owl:someValuesFrom emmo:EMMO_186607c3-fe59-5731-983f-4374a1f8544b ],
-        [ a owl:Restriction ;
             owl:hasValue "At"^^xsd:string ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
+            owl:someValuesFrom emmo:EMMO_186607c3-fe59-5731-983f-4374a1f8544b ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "AstatineSymbol"@en ;
     emmo:elucidation "The symbol that stands for the astatine atom."@en .
@@ -1148,11 +1150,11 @@ emmo:EMMO_cfac37de-991d-5a7d-9adc-8946324ffef6 a owl:Class ;
 emmo:EMMO_d0af02f3-8a47-554e-a725-42b752451a1b a owl:Class ;
     rdfs:label "RadonSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "Rn"^^xsd:string ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
             owl:someValuesFrom emmo:EMMO_fd99c17e-6385-5b97-a20c-eddffdd56837 ],
+        [ a owl:Restriction ;
+            owl:hasValue "Rn"^^xsd:string ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "RadonSymbol"@en ;
     emmo:elucidation "The symbol that stands for the radon atom."@en .
@@ -1160,11 +1162,11 @@ emmo:EMMO_d0af02f3-8a47-554e-a725-42b752451a1b a owl:Class ;
 emmo:EMMO_d60619c8-1abe-52c0-9491-eb3086245e22 a owl:Class ;
     rdfs:label "BariumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "Ba"^^xsd:string ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
             owl:someValuesFrom emmo:EMMO_1b1aa658-a7d5-5bc6-9d78-37a901fd66dd ],
+        [ a owl:Restriction ;
+            owl:hasValue "Ba"^^xsd:string ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "BariumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the barium atom."@en .
@@ -1172,11 +1174,11 @@ emmo:EMMO_d60619c8-1abe-52c0-9491-eb3086245e22 a owl:Class ;
 emmo:EMMO_ddcc9683-bee2-5ea0-8b18-54c85b551ad6 a owl:Class ;
     rdfs:label "RhodiumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
-            owl:someValuesFrom emmo:EMMO_3bc0aedf-c43e-5d30-8688-44d19900a68b ],
-        [ a owl:Restriction ;
             owl:hasValue "Rh"^^xsd:string ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
+            owl:someValuesFrom emmo:EMMO_3bc0aedf-c43e-5d30-8688-44d19900a68b ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "RhodiumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the rhodium atom."@en .
@@ -1184,11 +1186,11 @@ emmo:EMMO_ddcc9683-bee2-5ea0-8b18-54c85b551ad6 a owl:Class ;
 emmo:EMMO_e0136ad7-1435-5292-9ed6-9848b481d503 a owl:Class ;
     rdfs:label "HolmiumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "Ho"^^xsd:string ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
             owl:someValuesFrom emmo:EMMO_fd03c660-7b3b-5451-9d78-bc48836e1cc6 ],
+        [ a owl:Restriction ;
+            owl:hasValue "Ho"^^xsd:string ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "HolmiumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the holmium atom."@en .
@@ -1232,11 +1234,11 @@ emmo:EMMO_e5d7bd48-4098-59b6-b872-8bba421157eb a owl:Class ;
 emmo:EMMO_e82869a8-32a8-5d57-81a8-e2d618976f23 a owl:Class ;
     rdfs:label "SilverSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "Ag"^^xsd:string ;
-            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
             owl:someValuesFrom emmo:EMMO_36ab7281-0187-568f-b0b4-61e33dc08cfc ],
+        [ a owl:Restriction ;
+            owl:hasValue "Ag"^^xsd:string ;
+            owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "SilverSymbol"@en ;
     emmo:elucidation "The symbol that stands for the silver atom."@en .
@@ -1244,11 +1246,11 @@ emmo:EMMO_e82869a8-32a8-5d57-81a8-e2d618976f23 a owl:Class ;
 emmo:EMMO_e941986d-658b-5a08-ae3d-4cc170344b06 a owl:Class ;
     rdfs:label "NeptuniumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
-            owl:someValuesFrom emmo:EMMO_15595dc5-20a7-5b9f-a896-aad79f97bb8b ],
-        [ a owl:Restriction ;
             owl:hasValue "Np"^^xsd:string ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
+            owl:someValuesFrom emmo:EMMO_15595dc5-20a7-5b9f-a896-aad79f97bb8b ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "NeptuniumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the neptunium atom."@en .
@@ -1256,11 +1258,11 @@ emmo:EMMO_e941986d-658b-5a08-ae3d-4cc170344b06 a owl:Class ;
 emmo:EMMO_e9fbc98d-3ac1-5a2d-a354-6e3ba1412157 a owl:Class ;
     rdfs:label "ThoriumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
-            owl:someValuesFrom emmo:EMMO_59d342fd-1ace-5b68-9d0d-ed4ff9f55d63 ],
-        [ a owl:Restriction ;
             owl:hasValue "Th"^^xsd:string ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
+            owl:someValuesFrom emmo:EMMO_59d342fd-1ace-5b68-9d0d-ed4ff9f55d63 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "ThoriumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the thorium atom."@en .
@@ -1304,11 +1306,11 @@ emmo:EMMO_f0f7abe2-766d-5dcd-ba67-ada816684677 a owl:Class ;
 emmo:EMMO_f107c0e5-0b9f-566c-9cba-a3443c904f78 a owl:Class ;
     rdfs:label "AmericiumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
-            owl:someValuesFrom emmo:EMMO_f90da1f3-eb4c-54c4-b5d9-cf00fef180a1 ],
-        [ a owl:Restriction ;
             owl:hasValue "Am"^^xsd:string ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
+            owl:someValuesFrom emmo:EMMO_f90da1f3-eb4c-54c4-b5d9-cf00fef180a1 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "AmericiumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the americium atom."@en .
@@ -1352,11 +1354,11 @@ emmo:EMMO_f9544c7c-d259-5839-b36a-61595809c538 a owl:Class ;
 emmo:EMMO_fad04773-08a7-5bd3-8990-06d7e9d2c21e a owl:Class ;
     rdfs:label "HeliumSymbol"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
-            owl:someValuesFrom emmo:EMMO_2c85ff7a-835c-5559-b369-193683d631c8 ],
-        [ a owl:Restriction ;
             owl:hasValue "He"^^xsd:string ;
             owl:onProperty emmo:EMMO_23b579e1_8088_45b5_9975_064014026c42 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_26c4132f-08aa-5391-aa39-121ce088e762 ;
+            owl:someValuesFrom emmo:EMMO_2c85ff7a-835c-5559-b369-193683d631c8 ],
         emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf ;
     skos:prefLabel "HeliumSymbol"@en ;
     emmo:elucidation "The symbol that stands for the helium atom."@en .
@@ -1439,11 +1441,11 @@ emmo:EMMO_ff1d6ece-712d-54b8-9c05-c26854e0c35a a owl:Class ;
 emmo:EMMO_0056cc2f-f2fe-558e-a65c-9a8fc5cea333 a owl:Class ;
     rdfs:label "CarbonAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 12.011 ;
-            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
-        [ a owl:Restriction ;
             owl:hasValue 6 ;
             owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
+        [ a owl:Restriction ;
+            owl:hasValue 12.011 ;
+            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "CarbonAtom"@en ;
     emmo:elucidation "Atom subclass for carbon."@en .
@@ -1511,11 +1513,11 @@ emmo:EMMO_098f6f77-746a-5fcc-a6d1-4988929bf404 a owl:Class ;
 emmo:EMMO_0d37beeb-9dea-558e-82c5-4df3fb6d08d0 a owl:Class ;
     rdfs:label "GoldAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 196.966569 ;
-            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
-        [ a owl:Restriction ;
             owl:hasValue 79 ;
             owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
+        [ a owl:Restriction ;
+            owl:hasValue 196.966569 ;
+            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "GoldAtom"@en ;
     emmo:elucidation "Atom subclass for gold."@en .
@@ -1607,11 +1609,11 @@ emmo:EMMO_15595dc5-20a7-5b9f-a896-aad79f97bb8b a owl:Class ;
 emmo:EMMO_186607c3-fe59-5731-983f-4374a1f8544b a owl:Class ;
     rdfs:label "AstatineAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 85 ;
-            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
-        [ a owl:Restriction ;
             owl:hasValue 209.98715 ;
             owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
+        [ a owl:Restriction ;
+            owl:hasValue 85 ;
+            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "AstatineAtom"@en ;
     emmo:elucidation "Atom subclass for astatine."@en .
@@ -1727,11 +1729,11 @@ emmo:EMMO_2b6dcba2-8e5f-50fb-8242-26fa609379a8 a owl:Class ;
 emmo:EMMO_2c701f72-a859-5e33-9552-b6bdbcbd28d9 a owl:Class ;
     rdfs:label "ManganeseAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 54.938044 ;
-            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
-        [ a owl:Restriction ;
             owl:hasValue 25 ;
             owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
+        [ a owl:Restriction ;
+            owl:hasValue 54.938044 ;
+            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "ManganeseAtom"@en ;
     emmo:elucidation "Atom subclass for manganese."@en .
@@ -1739,11 +1741,11 @@ emmo:EMMO_2c701f72-a859-5e33-9552-b6bdbcbd28d9 a owl:Class ;
 emmo:EMMO_2c85ff7a-835c-5559-b369-193683d631c8 a owl:Class ;
     rdfs:label "HeliumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 4.002602 ;
-            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
-        [ a owl:Restriction ;
             owl:hasValue 2 ;
             owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
+        [ a owl:Restriction ;
+            owl:hasValue 4.002602 ;
+            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "HeliumAtom"@en ;
     emmo:elucidation "Atom subclass for helium."@en .
@@ -1799,11 +1801,11 @@ emmo:EMMO_36ab7281-0187-568f-b0b4-61e33dc08cfc a owl:Class ;
 emmo:EMMO_380f1ba6-b4f3-51e2-a63f-ceeeca2ed2f4 a owl:Class ;
     rdfs:label "ActiniumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 227.02775 ;
-            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
-        [ a owl:Restriction ;
             owl:hasValue 89 ;
             owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
+        [ a owl:Restriction ;
+            owl:hasValue 227.02775 ;
+            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "ActiniumAtom"@en ;
     emmo:elucidation "Atom subclass for actinium."@en .
@@ -1811,11 +1813,11 @@ emmo:EMMO_380f1ba6-b4f3-51e2-a63f-ceeeca2ed2f4 a owl:Class ;
 emmo:EMMO_3bb84fc5-5cb4-5250-ba87-169ae90ec6d7 a owl:Class ;
     rdfs:label "LithiumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 3 ;
-            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
-        [ a owl:Restriction ;
             owl:hasValue 6.94 ;
             owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
+        [ a owl:Restriction ;
+            owl:hasValue 3 ;
+            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "LithiumAtom"@en ;
     emmo:elucidation "Atom subclass for lithium."@en .
@@ -1823,11 +1825,11 @@ emmo:EMMO_3bb84fc5-5cb4-5250-ba87-169ae90ec6d7 a owl:Class ;
 emmo:EMMO_3bc0aedf-c43e-5d30-8688-44d19900a68b a owl:Class ;
     rdfs:label "RhodiumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 102.9055 ;
-            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
-        [ a owl:Restriction ;
             owl:hasValue 45 ;
             owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
+        [ a owl:Restriction ;
+            owl:hasValue 102.9055 ;
+            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "RhodiumAtom"@en ;
     emmo:elucidation "Atom subclass for rhodium."@en .
@@ -1835,11 +1837,11 @@ emmo:EMMO_3bc0aedf-c43e-5d30-8688-44d19900a68b a owl:Class ;
 emmo:EMMO_3ea9993c-80b9-5133-b552-dce78cd17ade a owl:Class ;
     rdfs:label "RadiumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 88 ;
-            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
-        [ a owl:Restriction ;
             owl:hasValue 226.02541 ;
             owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
+        [ a owl:Restriction ;
+            owl:hasValue 88 ;
+            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "RadiumAtom"@en ;
     emmo:elucidation "Atom subclass for radium."@en .
@@ -1859,11 +1861,11 @@ emmo:EMMO_3f29d3e0-e9d9-5f1f-bd77-97af10125f7e a owl:Class ;
 emmo:EMMO_3fe9d899-f1f1-5657-b176-ac6afff2e93d a owl:Class ;
     rdfs:label "CobaltAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 58.933194 ;
-            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
-        [ a owl:Restriction ;
             owl:hasValue 27 ;
             owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
+        [ a owl:Restriction ;
+            owl:hasValue 58.933194 ;
+            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "CobaltAtom"@en ;
     emmo:elucidation "Atom subclass for cobalt."@en .
@@ -1871,11 +1873,11 @@ emmo:EMMO_3fe9d899-f1f1-5657-b176-ac6afff2e93d a owl:Class ;
 emmo:EMMO_41dba862-503f-57c2-86c7-bb40030481f0 a owl:Class ;
     rdfs:label "ArsenicAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 33 ;
-            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
-        [ a owl:Restriction ;
             owl:hasValue 74.921595 ;
             owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
+        [ a owl:Restriction ;
+            owl:hasValue 33 ;
+            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "ArsenicAtom"@en ;
     emmo:elucidation "Atom subclass for arsenic."@en .
@@ -1883,11 +1885,11 @@ emmo:EMMO_41dba862-503f-57c2-86c7-bb40030481f0 a owl:Class ;
 emmo:EMMO_41f2ed3b-aba4-5b99-a5a1-547109a7cb4c a owl:Class ;
     rdfs:label "LawrenciumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 262.11 ;
-            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
-        [ a owl:Restriction ;
             owl:hasValue 103 ;
             owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
+        [ a owl:Restriction ;
+            owl:hasValue 262.11 ;
+            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "LawrenciumAtom"@en ;
     emmo:elucidation "Atom subclass for lawrencium."@en .
@@ -1907,11 +1909,11 @@ emmo:EMMO_48be0f49-9e7f-51c1-96ce-88e7794a13b0 a owl:Class ;
 emmo:EMMO_49eb0790-50c2-5691-a8bf-dfa6f4a9f6c7 a owl:Class ;
     rdfs:label "NobeliumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 259.101 ;
-            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
-        [ a owl:Restriction ;
             owl:hasValue 102 ;
             owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
+        [ a owl:Restriction ;
+            owl:hasValue 259.101 ;
+            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "NobeliumAtom"@en ;
     emmo:elucidation "Atom subclass for nobelium."@en .
@@ -1955,11 +1957,11 @@ emmo:EMMO_57742ca9-95d8-50f8-9b33-0ded30da4532 a owl:Class ;
 emmo:EMMO_57a7ab6b-30a4-54e5-821d-0b8efb5e08b2 a owl:Class ;
     rdfs:label "CopperAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 63.546 ;
-            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
-        [ a owl:Restriction ;
             owl:hasValue 29 ;
             owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
+        [ a owl:Restriction ;
+            owl:hasValue 63.546 ;
+            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "CopperAtom"@en ;
     emmo:elucidation "Atom subclass for copper."@en .
@@ -1991,11 +1993,11 @@ emmo:EMMO_5a4790e5-b11b-5a0c-80e4-81515c27a560 a owl:Class ;
 emmo:EMMO_5ae62317-1681-5ca9-9fa7-8801757ee5c8 a owl:Class ;
     rdfs:label "IridiumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 192.217 ;
-            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
-        [ a owl:Restriction ;
             owl:hasValue 77 ;
             owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
+        [ a owl:Restriction ;
+            owl:hasValue 192.217 ;
+            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "IridiumAtom"@en ;
     emmo:elucidation "Atom subclass for iridium."@en .
@@ -2003,11 +2005,11 @@ emmo:EMMO_5ae62317-1681-5ca9-9fa7-8801757ee5c8 a owl:Class ;
 emmo:EMMO_5ee30708-feb6-54c0-977e-3d069e496a76 a owl:Class ;
     rdfs:label "FermiumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 257.09511 ;
-            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
-        [ a owl:Restriction ;
             owl:hasValue 100 ;
             owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
+        [ a owl:Restriction ;
+            owl:hasValue 257.09511 ;
+            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "FermiumAtom"@en ;
     emmo:elucidation "Atom subclass for fermium."@en .
@@ -2015,11 +2017,11 @@ emmo:EMMO_5ee30708-feb6-54c0-977e-3d069e496a76 a owl:Class ;
 emmo:EMMO_62cb8f50-5ce5-5f99-9cc8-514eff05d05e a owl:Class ;
     rdfs:label "BoronAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 10.81 ;
-            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
-        [ a owl:Restriction ;
             owl:hasValue 5 ;
             owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
+        [ a owl:Restriction ;
+            owl:hasValue 10.81 ;
+            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "BoronAtom"@en ;
     emmo:elucidation "Atom subclass for boron."@en .
@@ -2027,11 +2029,11 @@ emmo:EMMO_62cb8f50-5ce5-5f99-9cc8-514eff05d05e a owl:Class ;
 emmo:EMMO_65d84215-de2a-56c9-80e3-a49d08dfc1de a owl:Class ;
     rdfs:label "SamariumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 62 ;
-            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
-        [ a owl:Restriction ;
             owl:hasValue 150.36 ;
             owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
+        [ a owl:Restriction ;
+            owl:hasValue 62 ;
+            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "SamariumAtom"@en ;
     emmo:elucidation "Atom subclass for samarium."@en .
@@ -2063,11 +2065,11 @@ emmo:EMMO_67eaac8f-7f83-5bca-b1d0-10451d3a88a1 a owl:Class ;
 emmo:EMMO_694e27a2-f3ee-5a3e-8851-d6f78d79d84e a owl:Class ;
     rdfs:label "GermaniumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 32 ;
-            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
-        [ a owl:Restriction ;
             owl:hasValue 72.63 ;
             owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
+        [ a owl:Restriction ;
+            owl:hasValue 32 ;
+            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "GermaniumAtom"@en ;
     emmo:elucidation "Atom subclass for germanium."@en .
@@ -2075,11 +2077,11 @@ emmo:EMMO_694e27a2-f3ee-5a3e-8851-d6f78d79d84e a owl:Class ;
 emmo:EMMO_6e467e25-2883-5f7b-a60f-2f4b651bba3f a owl:Class ;
     rdfs:label "PlutoniumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 244.06421 ;
-            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
-        [ a owl:Restriction ;
             owl:hasValue 94 ;
             owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
+        [ a owl:Restriction ;
+            owl:hasValue 244.06421 ;
+            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "PlutoniumAtom"@en ;
     emmo:elucidation "Atom subclass for plutonium."@en .
@@ -2087,11 +2089,11 @@ emmo:EMMO_6e467e25-2883-5f7b-a60f-2f4b651bba3f a owl:Class ;
 emmo:EMMO_706cac26-78f1-5ca4-a63c-2600828db412 a owl:Class ;
     rdfs:label "TennessineAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 117 ;
-            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
-        [ a owl:Restriction ;
             owl:hasValue 293.208 ;
             owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
+        [ a owl:Restriction ;
+            owl:hasValue 117 ;
+            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "TennessineAtom"@en ;
     emmo:elucidation "Atom subclass for tennessine."@en .
@@ -2099,11 +2101,11 @@ emmo:EMMO_706cac26-78f1-5ca4-a63c-2600828db412 a owl:Class ;
 emmo:EMMO_71c716bf-75bb-529f-b7c8-9d36a7c58b3a a owl:Class ;
     rdfs:label "GalliumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 69.723 ;
-            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
-        [ a owl:Restriction ;
             owl:hasValue 31 ;
             owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
+        [ a owl:Restriction ;
+            owl:hasValue 69.723 ;
+            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "GalliumAtom"@en ;
     emmo:elucidation "Atom subclass for gallium."@en .
@@ -2159,11 +2161,11 @@ emmo:EMMO_749a9347-0b50-530a-995a-054f2a90bc0d a owl:Class ;
 emmo:EMMO_755d962f-c703-514f-8d90-ca4f55e331d4 a owl:Class ;
     rdfs:label "ArgonAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 39.948 ;
-            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
-        [ a owl:Restriction ;
             owl:hasValue 18 ;
             owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
+        [ a owl:Restriction ;
+            owl:hasValue 39.948 ;
+            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "ArgonAtom"@en ;
     emmo:elucidation "Atom subclass for argon."@en .
@@ -2171,11 +2173,11 @@ emmo:EMMO_755d962f-c703-514f-8d90-ca4f55e331d4 a owl:Class ;
 emmo:EMMO_75771a96-5e17-568c-bc28-caba06c0047a a owl:Class ;
     rdfs:label "NihoniumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 113 ;
-            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
-        [ a owl:Restriction ;
             owl:hasValue 286.182 ;
             owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
+        [ a owl:Restriction ;
+            owl:hasValue 113 ;
+            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "NihoniumAtom"@en ;
     emmo:elucidation "Atom subclass for nihonium."@en .
@@ -2183,11 +2185,11 @@ emmo:EMMO_75771a96-5e17-568c-bc28-caba06c0047a a owl:Class ;
 emmo:EMMO_784119c1-c336-5b0c-80fc-4cc8bddc99ca a owl:Class ;
     rdfs:label "PoloniumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 84 ;
-            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
-        [ a owl:Restriction ;
             owl:hasValue 208.98243 ;
             owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
+        [ a owl:Restriction ;
+            owl:hasValue 84 ;
+            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "PoloniumAtom"@en ;
     emmo:elucidation "Atom subclass for polonium."@en .
@@ -2207,11 +2209,11 @@ emmo:EMMO_78c3f353-1296-5dca-9759-7c59a7f53927 a owl:Class ;
 emmo:EMMO_7905373a-cf03-57fe-a627-bfdb1db9369c a owl:Class ;
     rdfs:label "PhosphorusAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 15 ;
-            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
-        [ a owl:Restriction ;
             owl:hasValue 30.973761998 ;
             owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
+        [ a owl:Restriction ;
+            owl:hasValue 15 ;
+            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "PhosphorusAtom"@en ;
     emmo:elucidation "Atom subclass for phosphorus."@en .
@@ -2219,11 +2221,11 @@ emmo:EMMO_7905373a-cf03-57fe-a627-bfdb1db9369c a owl:Class ;
 emmo:EMMO_798b0c96-82ca-5ce8-8d5f-f9f72668cf5d a owl:Class ;
     rdfs:label "SiliconAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 28.085 ;
-            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
-        [ a owl:Restriction ;
             owl:hasValue 14 ;
             owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
+        [ a owl:Restriction ;
+            owl:hasValue 28.085 ;
+            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "SiliconAtom"@en ;
     emmo:elucidation "Atom subclass for silicon."@en .
@@ -2239,11 +2241,11 @@ emmo:EMMO_79c0edfa-06f9-5149-b754-28c589035b8a a owl:ObjectProperty ;
 emmo:EMMO_7aa6b5b1-34c8-5d37-9db0-cc6a232f3946 a owl:Class ;
     rdfs:label "FleroviumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 289.19 ;
-            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
-        [ a owl:Restriction ;
             owl:hasValue 114 ;
             owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
+        [ a owl:Restriction ;
+            owl:hasValue 289.19 ;
+            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "FleroviumAtom"@en ;
     emmo:elucidation "Atom subclass for flerovium."@en .
@@ -2263,11 +2265,11 @@ emmo:EMMO_7b7d258b-3ea7-5716-af58-afc68679de23 a owl:Class ;
 emmo:EMMO_7e8f9419-0bda-5aa3-ba88-00b2be6ca69e a owl:Class ;
     rdfs:label "AluminiumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 26.9815385 ;
-            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
-        [ a owl:Restriction ;
             owl:hasValue 13 ;
             owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
+        [ a owl:Restriction ;
+            owl:hasValue 26.9815385 ;
+            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "AluminiumAtom"@en ;
     emmo:elucidation "Atom subclass for aluminium."@en .
@@ -2299,11 +2301,11 @@ emmo:EMMO_82f9a8f3-2bb4-5d14-9a41-30a858ecce61 a owl:Class ;
 emmo:EMMO_85ab88f1-3bb6-5fb7-8996-d1be786da995 a owl:Class ;
     rdfs:label "CaesiumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 55 ;
-            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
-        [ a owl:Restriction ;
             owl:hasValue 132.90545196 ;
             owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
+        [ a owl:Restriction ;
+            owl:hasValue 55 ;
+            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "CaesiumAtom"@en ;
     emmo:elucidation "Atom subclass for caesium."@en .
@@ -2311,11 +2313,11 @@ emmo:EMMO_85ab88f1-3bb6-5fb7-8996-d1be786da995 a owl:Class ;
 emmo:EMMO_87c8f425-c96c-5503-88a0-f10465669ea3 a owl:Class ;
     rdfs:label "SulfurAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 32.06 ;
-            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
-        [ a owl:Restriction ;
             owl:hasValue 16 ;
             owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
+        [ a owl:Restriction ;
+            owl:hasValue 32.06 ;
+            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "SulfurAtom"@en ;
     emmo:elucidation "Atom subclass for sulfur."@en .
@@ -2323,11 +2325,11 @@ emmo:EMMO_87c8f425-c96c-5503-88a0-f10465669ea3 a owl:Class ;
 emmo:EMMO_8aa13073-865b-5035-b128-43a4758a0302 a owl:Class ;
     rdfs:label "EuropiumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 63 ;
-            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
-        [ a owl:Restriction ;
             owl:hasValue 151.964 ;
             owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
+        [ a owl:Restriction ;
+            owl:hasValue 63 ;
+            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "EuropiumAtom"@en ;
     emmo:elucidation "Atom subclass for europium."@en .
@@ -2407,11 +2409,11 @@ emmo:EMMO_9aa9e086-ae07-51f6-bf84-788ffdefcb6f a owl:Class ;
 emmo:EMMO_9c803415-5978-5525-9de9-fcf0a2098b4c a owl:Class ;
     rdfs:label "TechnetiumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 97.90721 ;
-            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
-        [ a owl:Restriction ;
             owl:hasValue 43 ;
             owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
+        [ a owl:Restriction ;
+            owl:hasValue 97.90721 ;
+            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "TechnetiumAtom"@en ;
     emmo:elucidation "Atom subclass for technetium."@en .
@@ -2419,11 +2421,11 @@ emmo:EMMO_9c803415-5978-5525-9de9-fcf0a2098b4c a owl:Class ;
 emmo:EMMO_a4839f08-1080-53bf-9cb3-101e20c2656b a owl:Class ;
     rdfs:label "IronAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 55.845 ;
-            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
-        [ a owl:Restriction ;
             owl:hasValue 26 ;
             owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
+        [ a owl:Restriction ;
+            owl:hasValue 55.845 ;
+            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "IronAtom"@en ;
     emmo:elucidation "Atom subclass for iron."@en .
@@ -2431,11 +2433,11 @@ emmo:EMMO_a4839f08-1080-53bf-9cb3-101e20c2656b a owl:Class ;
 emmo:EMMO_ad2056af-0fa7-56cf-a881-80e3a7dfd266 a owl:Class ;
     rdfs:label "NiobiumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 92.90637 ;
-            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
-        [ a owl:Restriction ;
             owl:hasValue 41 ;
             owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
+        [ a owl:Restriction ;
+            owl:hasValue 92.90637 ;
+            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "NiobiumAtom"@en ;
     emmo:elucidation "Atom subclass for niobium."@en .
@@ -2491,11 +2493,11 @@ emmo:EMMO_b443dea3-7407-59c3-9e86-6784e715f48b a owl:Class ;
 emmo:EMMO_b655f801-c5b9-5187-99e8-c9eba8645c05 a owl:Class ;
     rdfs:label "MoscoviumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 115 ;
-            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
-        [ a owl:Restriction ;
             owl:hasValue 289.194 ;
             owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
+        [ a owl:Restriction ;
+            owl:hasValue 115 ;
+            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "MoscoviumAtom"@en ;
     emmo:elucidation "Atom subclass for moscovium."@en .
@@ -2503,11 +2505,11 @@ emmo:EMMO_b655f801-c5b9-5187-99e8-c9eba8645c05 a owl:Class ;
 emmo:EMMO_b65acde7-56c5-5cca-b589-b6744beb4223 a owl:Class ;
     rdfs:label "DubniumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 268.126 ;
-            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
-        [ a owl:Restriction ;
             owl:hasValue 105 ;
             owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
+        [ a owl:Restriction ;
+            owl:hasValue 268.126 ;
+            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "DubniumAtom"@en ;
     emmo:elucidation "Atom subclass for dubnium."@en .
@@ -2515,11 +2517,11 @@ emmo:EMMO_b65acde7-56c5-5cca-b589-b6744beb4223 a owl:Class ;
 emmo:EMMO_b8294a50-b121-5b9c-bacd-5d4206c3aaaf a owl:Class ;
     rdfs:label "BerylliumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 4 ;
-            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
-        [ a owl:Restriction ;
             owl:hasValue 9.0121831 ;
             owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
+        [ a owl:Restriction ;
+            owl:hasValue 4 ;
+            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "BerylliumAtom"@en ;
     emmo:elucidation "Atom subclass for beryllium."@en .
@@ -2599,11 +2601,11 @@ emmo:EMMO_c32f8642-f1a1-5fae-8b4e-990b40f6eff8 a owl:Class ;
 emmo:EMMO_c828cd65-e2de-5ae2-b581-4e5d2498e493 a owl:Class ;
     rdfs:label "RubidiumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 85.4678 ;
-            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
-        [ a owl:Restriction ;
             owl:hasValue 37 ;
             owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
+        [ a owl:Restriction ;
+            owl:hasValue 85.4678 ;
+            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "RubidiumAtom"@en ;
     emmo:elucidation "Atom subclass for rubidium."@en .
@@ -2611,11 +2613,11 @@ emmo:EMMO_c828cd65-e2de-5ae2-b581-4e5d2498e493 a owl:Class ;
 emmo:EMMO_caacc634-4328-5d9d-a8e8-1c25a2557e94 a owl:Class ;
     rdfs:label "NickelAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 58.6934 ;
-            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
-        [ a owl:Restriction ;
             owl:hasValue 28 ;
             owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
+        [ a owl:Restriction ;
+            owl:hasValue 58.6934 ;
+            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "NickelAtom"@en ;
     emmo:elucidation "Atom subclass for nickel."@en .
@@ -2623,11 +2625,11 @@ emmo:EMMO_caacc634-4328-5d9d-a8e8-1c25a2557e94 a owl:Class ;
 emmo:EMMO_cabcb18d-88ff-5ff7-aceb-ab573526620e a owl:Class ;
     rdfs:label "PalladiumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 106.42 ;
-            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
-        [ a owl:Restriction ;
             owl:hasValue 46 ;
             owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
+        [ a owl:Restriction ;
+            owl:hasValue 106.42 ;
+            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "PalladiumAtom"@en ;
     emmo:elucidation "Atom subclass for palladium."@en .
@@ -2635,11 +2637,11 @@ emmo:EMMO_cabcb18d-88ff-5ff7-aceb-ab573526620e a owl:Class ;
 emmo:EMMO_cffec057-9258-52ae-bb4c-ca761b6bc407 a owl:Class ;
     rdfs:label "OganessonAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 294.214 ;
-            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
-        [ a owl:Restriction ;
             owl:hasValue 118 ;
             owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
+        [ a owl:Restriction ;
+            owl:hasValue 294.214 ;
+            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "OganessonAtom"@en ;
     emmo:elucidation "Atom subclass for oganesson."@en .
@@ -2647,11 +2649,11 @@ emmo:EMMO_cffec057-9258-52ae-bb4c-ca761b6bc407 a owl:Class ;
 emmo:EMMO_d2a4df79-23a0-5536-9f12-37d3b49c323f a owl:Class ;
     rdfs:label "BerkeliumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 97 ;
-            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
-        [ a owl:Restriction ;
             owl:hasValue 247.07031 ;
             owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
+        [ a owl:Restriction ;
+            owl:hasValue 97 ;
+            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "BerkeliumAtom"@en ;
     emmo:elucidation "Atom subclass for berkelium."@en .
@@ -2671,11 +2673,11 @@ emmo:EMMO_d7c9e90e-ba46-55b2-9671-43408f6a1d74 a owl:Class ;
 emmo:EMMO_dbe54798-a21f-519f-9d52-e6ab2c2e28cb a owl:Class ;
     rdfs:label "TantalumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 73 ;
-            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
-        [ a owl:Restriction ;
             owl:hasValue 180.94788 ;
             owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
+        [ a owl:Restriction ;
+            owl:hasValue 73 ;
+            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "TantalumAtom"@en ;
     emmo:elucidation "Atom subclass for tantalum."@en .
@@ -2683,11 +2685,11 @@ emmo:EMMO_dbe54798-a21f-519f-9d52-e6ab2c2e28cb a owl:Class ;
 emmo:EMMO_dea931ca-1ec7-58f8-88e5-fb5615d8b214 a owl:Class ;
     rdfs:label "SodiumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 22.98976928 ;
-            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
-        [ a owl:Restriction ;
             owl:hasValue 11 ;
             owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
+        [ a owl:Restriction ;
+            owl:hasValue 22.98976928 ;
+            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "SodiumAtom"@en ;
     emmo:elucidation "Atom subclass for sodium."@en .
@@ -2707,11 +2709,11 @@ emmo:EMMO_e1e686a5-71c3-5a98-8646-6d4e0f665f35 a owl:Class ;
 emmo:EMMO_e37eaa49-d5e8-54e7-a7dc-9ad6073e86b7 a owl:Class ;
     rdfs:label "HafniumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 72 ;
-            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
-        [ a owl:Restriction ;
             owl:hasValue 178.49 ;
             owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
+        [ a owl:Restriction ;
+            owl:hasValue 72 ;
+            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "HafniumAtom"@en ;
     emmo:elucidation "Atom subclass for hafnium."@en .
@@ -2719,11 +2721,11 @@ emmo:EMMO_e37eaa49-d5e8-54e7-a7dc-9ad6073e86b7 a owl:Class ;
 emmo:EMMO_e3cd5791-6fbb-587a-a535-0e937800beaa a owl:Class ;
     rdfs:label "TerbiumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 65 ;
-            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
-        [ a owl:Restriction ;
             owl:hasValue 158.92535 ;
             owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
+        [ a owl:Restriction ;
+            owl:hasValue 65 ;
+            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "TerbiumAtom"@en ;
     emmo:elucidation "Atom subclass for terbium."@en .
@@ -2743,11 +2745,11 @@ emmo:EMMO_e85b68e1-ca2b-51b5-8b61-dea134d88bef a owl:Class ;
 emmo:EMMO_f02b58a5-8f1e-5d72-a261-8fe5ad2fbb4b a owl:Class ;
     rdfs:label "VanadiumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 23 ;
-            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
-        [ a owl:Restriction ;
             owl:hasValue 50.9415 ;
             owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
+        [ a owl:Restriction ;
+            owl:hasValue 23 ;
+            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "VanadiumAtom"@en ;
     emmo:elucidation "Atom subclass for vanadium."@en .
@@ -2767,11 +2769,11 @@ emmo:EMMO_f2d4c89a-c354-5e4c-9cdb-f2de932e294f a owl:Class ;
 emmo:EMMO_f4fee945-1d4a-5158-b0ca-eaef9ad40502 a owl:Class ;
     rdfs:label "ZincAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 65.38 ;
-            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
-        [ a owl:Restriction ;
             owl:hasValue 30 ;
             owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
+        [ a owl:Restriction ;
+            owl:hasValue 65.38 ;
+            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "ZincAtom"@en ;
     emmo:elucidation "Atom subclass for zinc."@en .
@@ -2779,11 +2781,11 @@ emmo:EMMO_f4fee945-1d4a-5158-b0ca-eaef9ad40502 a owl:Class ;
 emmo:EMMO_f90da1f3-eb4c-54c4-b5d9-cf00fef180a1 a owl:Class ;
     rdfs:label "AmericiumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 95 ;
-            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
-        [ a owl:Restriction ;
             owl:hasValue 243.06138 ;
             owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
+        [ a owl:Restriction ;
+            owl:hasValue 95 ;
+            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "AmericiumAtom"@en ;
     emmo:elucidation "Atom subclass for americium."@en .
@@ -2803,11 +2805,11 @@ emmo:EMMO_f9125b67-8798-5595-9db3-ffc1840c9947 a owl:Class ;
 emmo:EMMO_fbfd4b93-12ee-5a15-8377-d4c54635b5de a owl:Class ;
     rdfs:label "ScandiumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 44.955908 ;
-            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
-        [ a owl:Restriction ;
             owl:hasValue 21 ;
             owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
+        [ a owl:Restriction ;
+            owl:hasValue 44.955908 ;
+            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "ScandiumAtom"@en ;
     emmo:elucidation "Atom subclass for scandium."@en .
@@ -2815,11 +2817,11 @@ emmo:EMMO_fbfd4b93-12ee-5a15-8377-d4c54635b5de a owl:Class ;
 emmo:EMMO_fd03c660-7b3b-5451-9d78-bc48836e1cc6 a owl:Class ;
     rdfs:label "HolmiumAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 67 ;
-            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
-        [ a owl:Restriction ;
             owl:hasValue 164.93033 ;
             owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
+        [ a owl:Restriction ;
+            owl:hasValue 67 ;
+            owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "HolmiumAtom"@en ;
     emmo:elucidation "Atom subclass for holmium."@en .
@@ -2827,11 +2829,11 @@ emmo:EMMO_fd03c660-7b3b-5451-9d78-bc48836e1cc6 a owl:Class ;
 emmo:EMMO_fd99c17e-6385-5b97-a20c-eddffdd56837 a owl:Class ;
     rdfs:label "RadonAtom"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 222.01758 ;
-            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
-        [ a owl:Restriction ;
             owl:hasValue 86 ;
             owl:onProperty emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f ],
+        [ a owl:Restriction ;
+            owl:hasValue 222.01758 ;
+            owl:onProperty emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 ],
         emmo:EMMO_eb77076b_a104_42ac_a065_798b2d2809ad ;
     skos:prefLabel "RadonAtom"@en ;
     emmo:elucidation "Atom subclass for radon."@en .
@@ -2876,6 +2878,8 @@ emmo:EMMO_43de6d01-276c-55ed-a166-ad097ec75575 a owl:DatatypeProperty ;
     rdfs:range xsd:decimal ;
     skos:prefLabel "hasIUPAC2016AtomicMass"@en ;
     emmo:elucidation "The mass of an atomic element according to IUPAC 2016."@en .
+
+emmo:EMMO_4f40def1_3cd7_4067_9596_541e9a5134cf rdfs:label "ChemicalElement"@en .
 
 emmo:EMMO_a585728e-36c8-5df4-9d95-aa128d2a0e7f a owl:DatatypeProperty ;
     rdfs:label "hasAtomicNumber"@en ;

@@ -12,9 +12,7 @@ emmo:EMMO_09f0ac34_c349_46b5_acf0_0edeae52cca1 a owl:Class ;
     skos:prefLabel "InteractingSystem"@en ;
     emmo:elucidation "A causally bonded system is a system in which there are at least two causal paths that are interacting."@en .
 
-emmo:EMMO_2c07a731_84f9_4883_9e58_2bc073abda29 rdfs:label "PhysicalParticleBySpin"@en .
-
-emmo:EMMO_53dced52_34f6_4cf0_8a99_ddf451861543 rdfs:label "Fermion"@en .
+emmo:EMMO_52b8a39b_e5ff_46d3_b972_65bc43077a07 rdfs:label "CausalParticle"@en .
 
 emmo:EMMO_5e00b1db_48fc_445b_82e8_ab0e2255bf52 a owl:Class ;
     rdfs:label "MultiParticlePath"@en ;
@@ -37,12 +35,6 @@ emmo:EMMO_99a8eece_40bf_4f26_832c_f290ca664767 a owl:Class ;
     rdfs:subClassOf emmo:EMMO_820619ca_b23e_4c7a_8543_18a17722abc0 ;
     skos:prefLabel "ElementaryQuark"@en ;
     emmo:elucidation "An elementary fermionic particle that is the fundamental constituent of matter."@en .
-
-emmo:EMMO_a15cea10_9946_4d2b_95c5_cfc333fd2abb rdfs:label "PhysicalParticle"@en .
-
-emmo:EMMO_b32fe85d_2f7b_4972_9dd7_7cf20d4bba59 rdfs:label "PhysicalParticleByBond"@en .
-
-emmo:EMMO_b5a5494c_83bf_44aa_a9a6_49b948e68939 rdfs:label "Boson"@en .
 
 emmo:EMMO_c1a6e72c_de7a_48db_8f45_32c0be019291 a owl:Class ;
     rdfs:label "ElementaryPhoton"@en ;
@@ -101,7 +93,8 @@ emmo:EMMO_a9891fff_fa7a_4806_b7bd_786de7358e8d a owl:Class ;
     emmo:conceptualisation "A decay is a fundamental process occurring to one particle that is expressed as a complete bipartite directed graph K(1,n) with n>1, being n the number of outgoing particles."@en ;
     emmo:elucidation "The class of fundamental systems where a particle generates two or more other particles."@en .
 
-emmo:EMMO_0f795e3e_c602_4577_9a43_d5a231aa1360 emmo:OWLRL2DLAxioms "DisjointUnionOf: MultiParticlePath, ElementaryParticle"^^xsd:string .
+emmo:EMMO_0f795e3e_c602_4577_9a43_d5a231aa1360 rdfs:label "CausalPath"@en ;
+    emmo:OWLRL2DLAxioms "DisjointUnionOf: MultiParticlePath, ElementaryParticle"^^xsd:string .
 
 emmo:EMMO_820619ca_b23e_4c7a_8543_18a17722abc0 a owl:Class ;
     rdfs:label "ElementaryFermion"@en ;

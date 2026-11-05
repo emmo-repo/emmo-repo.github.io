@@ -97,11 +97,11 @@ All other SI units goes into one of the following modules:
 ns1:AttoPrefixedUnit a owl:Class ;
     rdfs:label "AttoPrefixedUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 1e-18 ;
-            owl:onProperty ns1:hasPrefixMultiplier ],
-        [ a owl:Restriction ;
             owl:onProperty ns1:hasMetricPrefix ;
             owl:someValuesFrom ns1:Atto ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-18 ;
+            owl:onProperty ns1:hasPrefixMultiplier ],
         ns1:MetricSubMultipleUnit ;
     skos:prefLabel "AttoPrefixedUnit"@en ;
     ns1:elucidation "Superclass for all units prefixed with \"atto\" (1e-18)."@en .
@@ -121,11 +121,11 @@ ns1:CentiPrefixedUnit a owl:Class ;
 ns1:DecaPrefixedUnit a owl:Class ;
     rdfs:label "DecaPrefixedUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 1e+01 ;
-            owl:onProperty ns1:hasPrefixMultiplier ],
-        [ a owl:Restriction ;
             owl:onProperty ns1:hasMetricPrefix ;
             owl:someValuesFrom ns1:Deca ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+01 ;
+            owl:onProperty ns1:hasPrefixMultiplier ],
         ns1:MetricMultipleUnit ;
     skos:altLabel "DekaPrefixedUnit"@en ;
     skos:prefLabel "DecaPrefixedUnit"@en ;
@@ -146,11 +146,11 @@ ns1:DeciPrefixedUnit a owl:Class ;
 ns1:ExaPrefixedUnit a owl:Class ;
     rdfs:label "ExaPrefixedUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 1e+18 ;
-            owl:onProperty ns1:hasPrefixMultiplier ],
-        [ a owl:Restriction ;
             owl:onProperty ns1:hasMetricPrefix ;
             owl:someValuesFrom ns1:Exa ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+18 ;
+            owl:onProperty ns1:hasPrefixMultiplier ],
         ns1:MetricMultipleUnit ;
     skos:prefLabel "ExaPrefixedUnit"@en ;
     ns1:elucidation "Superclass for all units prefixed with \"exa\" (1e18)."@en .
@@ -158,11 +158,11 @@ ns1:ExaPrefixedUnit a owl:Class ;
 ns1:FemtoPrefixedUnit a owl:Class ;
     rdfs:label "FemtoPrefixedUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty ns1:hasMetricPrefix ;
-            owl:someValuesFrom ns1:Femto ],
-        [ a owl:Restriction ;
             owl:hasValue 1e-15 ;
             owl:onProperty ns1:hasPrefixMultiplier ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:hasMetricPrefix ;
+            owl:someValuesFrom ns1:Femto ],
         ns1:MetricSubMultipleUnit ;
     skos:prefLabel "FemtoPrefixedUnit"@en ;
     ns1:elucidation "Superclass for all units prefixed with \"femto\" (1e-15)."@en .
@@ -182,11 +182,11 @@ ns1:GigaPrefixedUnit a owl:Class ;
 ns1:HectoPrefixedUnit a owl:Class ;
     rdfs:label "HectoPrefixedUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty ns1:hasMetricPrefix ;
-            owl:someValuesFrom ns1:Hecto ],
-        [ a owl:Restriction ;
             owl:hasValue 1e+02 ;
             owl:onProperty ns1:hasPrefixMultiplier ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:hasMetricPrefix ;
+            owl:someValuesFrom ns1:Hecto ],
         ns1:MetricMultipleUnit ;
     skos:prefLabel "HectoPrefixedUnit"@en ;
     ns1:elucidation "Superclass for all units prefixed with \"hecto\" (100)."@en .
@@ -194,11 +194,11 @@ ns1:HectoPrefixedUnit a owl:Class ;
 ns1:KiloPrefixedUnit a owl:Class ;
     rdfs:label "KiloPrefixedUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 1e+03 ;
-            owl:onProperty ns1:hasPrefixMultiplier ],
-        [ a owl:Restriction ;
             owl:onProperty ns1:hasMetricPrefix ;
             owl:someValuesFrom ns1:Kilo ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+03 ;
+            owl:onProperty ns1:hasPrefixMultiplier ],
         ns1:MetricMultipleUnit ;
     skos:prefLabel "KiloPrefixedUnit"@en ;
     ns1:elucidation "Superclass for all units prefixed with \"kilo\" (1000)."@en .
@@ -218,11 +218,11 @@ ns1:MegaPrefixedUnit a owl:Class ;
 ns1:MicroPrefixedUnit a owl:Class ;
     rdfs:label "MicroPrefixedUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty ns1:hasMetricPrefix ;
-            owl:someValuesFrom ns1:Micro ],
-        [ a owl:Restriction ;
             owl:hasValue 1e-06 ;
             owl:onProperty ns1:hasPrefixMultiplier ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:hasMetricPrefix ;
+            owl:someValuesFrom ns1:Micro ],
         ns1:MetricSubMultipleUnit ;
     skos:prefLabel "MicroPrefixedUnit"@en ;
     ns1:elucidation "Superclass for all units prefixed with \"micro\" (1e-6)."@en .
@@ -230,11 +230,11 @@ ns1:MicroPrefixedUnit a owl:Class ;
 ns1:MilliPrefixedUnit a owl:Class ;
     rdfs:label "MilliPrefixedUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty ns1:hasMetricPrefix ;
-            owl:someValuesFrom ns1:Milli ],
-        [ a owl:Restriction ;
             owl:hasValue 1e-03 ;
             owl:onProperty ns1:hasPrefixMultiplier ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:hasMetricPrefix ;
+            owl:someValuesFrom ns1:Milli ],
         ns1:MetricSubMultipleUnit ;
     skos:prefLabel "MilliPrefixedUnit"@en ;
     ns1:elucidation "Superclass for all units prefixed with \"milli\" (1e-3)."@en .
@@ -261,11 +261,11 @@ ns1:NonSIUnit a owl:Class ;
 ns1:PetaPrefixedUnit a owl:Class ;
     rdfs:label "PetaPrefixedUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty ns1:hasMetricPrefix ;
-            owl:someValuesFrom ns1:Peta ],
-        [ a owl:Restriction ;
             owl:hasValue 1e+15 ;
             owl:onProperty ns1:hasPrefixMultiplier ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:hasMetricPrefix ;
+            owl:someValuesFrom ns1:Peta ],
         ns1:MetricMultipleUnit ;
     skos:prefLabel "PetaPrefixedUnit"@en ;
     ns1:elucidation "Superclass for all units prefixed with \"peta\" (1e15)."@en .
@@ -285,11 +285,11 @@ ns1:PicoPrefixedUnit a owl:Class ;
 ns1:Quecto a owl:Class ;
     rdfs:label "Quecto"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 1e-30 ;
-            owl:onProperty ns1:numberValue ],
-        [ a owl:Restriction ;
             owl:hasValue "q"^^xsd:string ;
             owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-30 ;
+            owl:onProperty ns1:numberValue ],
         ns1:SISubMultiplePrefix ;
     skos:prefLabel "Quecto"@en ;
     ns1:elucidation "SI prefix who's value is 1e-30."@en .
@@ -309,11 +309,11 @@ ns1:Quetta a owl:Class ;
 ns1:Ronna a owl:Class ;
     rdfs:label "Ronna"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "R"^^xsd:string ;
-            owl:onProperty ns1:unitSymbolValue ],
-        [ a owl:Restriction ;
             owl:hasValue 1e+27 ;
             owl:onProperty ns1:numberValue ],
+        [ a owl:Restriction ;
+            owl:hasValue "R"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
         ns1:SIMultiplePrefix ;
     skos:prefLabel "Ronna"@en ;
     ns1:elucidation "SI prefix who's value is 1e27."@en .
@@ -321,11 +321,11 @@ ns1:Ronna a owl:Class ;
 ns1:Ronto a owl:Class ;
     rdfs:label "Ronto"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 1e-27 ;
-            owl:onProperty ns1:numberValue ],
-        [ a owl:Restriction ;
             owl:hasValue "r"^^xsd:string ;
             owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-27 ;
+            owl:onProperty ns1:numberValue ],
         ns1:SISubMultiplePrefix ;
     skos:prefLabel "Ronto"@en ;
     ns1:elucidation "SI prefix who's value is 1e-27."@en .
@@ -365,11 +365,11 @@ ns1:SISpecialUnit a owl:Class ;
 ns1:TeraPrefixedUnit a owl:Class ;
     rdfs:label "TeraPrefixedUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 1e+12 ;
-            owl:onProperty ns1:hasPrefixMultiplier ],
-        [ a owl:Restriction ;
             owl:onProperty ns1:hasMetricPrefix ;
             owl:someValuesFrom ns1:Tera ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+12 ;
+            owl:onProperty ns1:hasPrefixMultiplier ],
         ns1:MetricMultipleUnit ;
     skos:prefLabel "TeraPrefixedUnit"@en ;
     ns1:elucidation "Superclass for all units prefixed with \"tera\" (1e12)."@en .
@@ -389,11 +389,11 @@ ns1:YoctoPrefixedUnit a owl:Class ;
 ns1:YottaPrefixedUnit a owl:Class ;
     rdfs:label "YottaPrefixedUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty ns1:hasMetricPrefix ;
-            owl:someValuesFrom ns1:Yotta ],
-        [ a owl:Restriction ;
             owl:hasValue 1e+24 ;
             owl:onProperty ns1:hasPrefixMultiplier ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:hasMetricPrefix ;
+            owl:someValuesFrom ns1:Yotta ],
         ns1:MetricMultipleUnit ;
     skos:prefLabel "YottaPrefixedUnit"@en ;
     ns1:elucidation "Superclass for all units prefixed with \"yotta\" (1e24)."@en .
@@ -425,11 +425,11 @@ ns1:ZettaPrefixedUnit a owl:Class ;
 ns1:Atto a owl:Class ;
     rdfs:label "Atto"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "a"^^xsd:string ;
-            owl:onProperty ns1:unitSymbolValue ],
-        [ a owl:Restriction ;
             owl:hasValue 1e-18 ;
             owl:onProperty ns1:numberValue ],
+        [ a owl:Restriction ;
+            owl:hasValue "a"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
         ns1:SISubMultiplePrefix ;
     skos:prefLabel "Atto"@en ;
     ns1:elucidation "SI prefix who's value is 1e-18."@en .
@@ -437,11 +437,11 @@ ns1:Atto a owl:Class ;
 ns1:Centi a owl:Class ;
     rdfs:label "Centi"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "c"^^xsd:string ;
-            owl:onProperty ns1:unitSymbolValue ],
-        [ a owl:Restriction ;
             owl:hasValue 1e-02 ;
             owl:onProperty ns1:numberValue ],
+        [ a owl:Restriction ;
+            owl:hasValue "c"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
         ns1:SISubMultiplePrefix ;
     skos:prefLabel "Centi"@en ;
     ns1:elucidation "SI prefix who's value is 1/100."@en .
@@ -449,11 +449,11 @@ ns1:Centi a owl:Class ;
 ns1:Deca a owl:Class ;
     rdfs:label "Deca"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "da"^^xsd:string ;
-            owl:onProperty ns1:unitSymbolValue ],
-        [ a owl:Restriction ;
             owl:hasValue 1e+01 ;
             owl:onProperty ns1:numberValue ],
+        [ a owl:Restriction ;
+            owl:hasValue "da"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
         ns1:SIMultiplePrefix ;
     skos:altLabel "Deka"@en ;
     skos:prefLabel "Deca"@en ;
@@ -558,11 +558,11 @@ ns1:Micro a owl:Class ;
 ns1:Milli a owl:Class ;
     rdfs:label "Milli"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "m"^^xsd:string ;
-            owl:onProperty ns1:unitSymbolValue ],
-        [ a owl:Restriction ;
             owl:hasValue 1e-03 ;
             owl:onProperty ns1:numberValue ],
+        [ a owl:Restriction ;
+            owl:hasValue "m"^^xsd:string ;
+            owl:onProperty ns1:unitSymbolValue ],
         ns1:SISubMultiplePrefix ;
     skos:prefLabel "Milli"@en ;
     ns1:elucidation "SI prefix who's value is 1/1000."@en .
@@ -660,11 +660,11 @@ ns1:Tera a owl:Class ;
 ns1:Yocto a owl:Class ;
     rdfs:label "Yocto"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 1e-24 ;
-            owl:onProperty ns1:numberValue ],
-        [ a owl:Restriction ;
             owl:hasValue "y"^^xsd:string ;
             owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-24 ;
+            owl:onProperty ns1:numberValue ],
         ns1:SISubMultiplePrefix ;
     skos:prefLabel "Yocto"@en ;
     ns1:elucidation "SI prefix who's value is 1e-24."@en .
@@ -672,11 +672,11 @@ ns1:Yocto a owl:Class ;
 ns1:Yotta a owl:Class ;
     rdfs:label "Yotta"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 1e+24 ;
-            owl:onProperty ns1:numberValue ],
-        [ a owl:Restriction ;
             owl:hasValue "Y"^^xsd:string ;
             owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+24 ;
+            owl:onProperty ns1:numberValue ],
         ns1:SIMultiplePrefix ;
     skos:prefLabel "Yotta"@en ;
     ns1:elucidation "SI prefix who's value is 1e24."@en .
@@ -684,11 +684,11 @@ ns1:Yotta a owl:Class ;
 ns1:Zepto a owl:Class ;
     rdfs:label "Zepto"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 1e-21 ;
-            owl:onProperty ns1:numberValue ],
-        [ a owl:Restriction ;
             owl:hasValue "z"^^xsd:string ;
             owl:onProperty ns1:unitSymbolValue ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-21 ;
+            owl:onProperty ns1:numberValue ],
         ns1:SISubMultiplePrefix ;
     skos:prefLabel "Zepto"@en ;
     ns1:elucidation "SI prefix who's value is 1e-21."@en .
@@ -774,9 +774,6 @@ ns1:hasPrefixMultiplier a owl:DatatypeProperty ;
     owl:members ( ns1:DecaPrefixedUnit ns1:HectoPrefixedUnit ns1:TeraPrefixedUnit ns1:PetaPrefixedUnit ns1:ExaPrefixedUnit ns1:MegaPrefixedUnit ns1:KiloPrefixedUnit ns1:GigaPrefixedUnit ns1:ZettaPrefixedUnit ns1:YottaPrefixedUnit ) .
 
 [] a owl:AllDisjointClasses ;
-    owl:members ( ns1:Centi ns1:Pico ns1:Milli ns1:Zepto ns1:Quecto ns1:Micro ns1:Yocto ns1:Femto ns1:Deci ns1:Nano ns1:Atto ns1:Ronto ) .
-
-[] a owl:AllDisjointClasses ;
     owl:members ( ns1:PicoPrefixedUnit ns1:DeciPrefixedUnit ns1:FemtoPrefixedUnit ns1:ZeptoPrefixedUnit ns1:AttoPrefixedUnit ns1:MicroPrefixedUnit ns1:MilliPrefixedUnit ns1:CentiPrefixedUnit ns1:NanoPrefixedUnit ns1:YoctoPrefixedUnit ) .
 
 [] a owl:AllDisjointClasses ;
@@ -784,4 +781,7 @@ ns1:hasPrefixMultiplier a owl:DatatypeProperty ;
 
 [] a owl:AllDisjointClasses ;
     owl:members ( ns1:SICoherentDerivedUnit ns1:SIBaseUnit ns1:SISpecialUnit ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( ns1:Centi ns1:Pico ns1:Milli ns1:Zepto ns1:Quecto ns1:Micro ns1:Yocto ns1:Femto ns1:Deci ns1:Nano ns1:Atto ns1:Ronto ) .
 

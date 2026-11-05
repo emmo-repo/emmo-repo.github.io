@@ -209,7 +209,6 @@ ns1:ConstitutiveProcess a owl:Class ;
     ns1:note "A constitutive process is a process that is holistically relevant for the definition of the whole."@en .
 
 ns1:Participant a owl:Class ;
-    rdfs:label "Participant"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf ns1:hasParticipant ] ;
             owl:someValuesFrom ns1:Process ],
@@ -589,7 +588,6 @@ ns1:outgoingOverlaps a owl:AsymmetricProperty,
     skos:prefLabel "outgoingOverlaps"@en .
 
 ns1:ObjectByContext a owl:Class ;
-    rdfs:label "ObjectByContext"@en ;
     rdfs:subClassOf ns1:Object ;
     skos:prefLabel "ObjectByContext"@en ;
     ns1:elucidation "The superclass for all classes that categorise objects according to their mereological and persistence context"@en .
@@ -683,26 +681,6 @@ For this reason, the definition of object is done by considering only item tempo
             rdf:first [ a swrl:IndividualPropertyAtom ;
                     swrl:argument1 <urn:swrl:var#x> ;
                     swrl:argument2 <urn:swrl:var#y> ;
-                    swrl:propertyPredicate ns1:isOutputOf ] ;
-            rdf:rest [ a swrl:AtomList ;
-                    rdf:first [ a swrl:IndividualPropertyAtom ;
-                            swrl:argument1 <urn:swrl:var#y> ;
-                            swrl:argument2 <urn:swrl:var#z> ;
-                            swrl:propertyPredicate ns1:hasInput ] ;
-                    rdf:rest () ] ] ;
-    swrl:head [ a swrl:AtomList ;
-            rdf:first [ a swrl:IndividualPropertyAtom ;
-                    swrl:argument1 <urn:swrl:var#x> ;
-                    swrl:argument2 <urn:swrl:var#z> ;
-                    swrl:propertyPredicate ns1:processedFrom ] ;
-            rdf:rest () ] ;
-    ns1:note "Implements ProcessedFrom."@en .
-
-[] a swrl:Imp ;
-    swrl:body [ a swrl:AtomList ;
-            rdf:first [ a swrl:IndividualPropertyAtom ;
-                    swrl:argument1 <urn:swrl:var#x> ;
-                    swrl:argument2 <urn:swrl:var#y> ;
                     swrl:propertyPredicate ns1:hasInput ] ;
             rdf:rest [ a swrl:AtomList ;
                     rdf:first [ a swrl:IndividualPropertyAtom ;
@@ -717,4 +695,24 @@ For this reason, the definition of object is done by considering only item tempo
                     swrl:propertyPredicate ns1:isImpactedBy ] ;
             rdf:rest () ] ;
     ns1:note "Implements impactedBy."@en .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate ns1:isOutputOf ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl:var#y> ;
+                            swrl:argument2 <urn:swrl:var#z> ;
+                            swrl:propertyPredicate ns1:hasInput ] ;
+                    rdf:rest () ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#z> ;
+                    swrl:propertyPredicate ns1:processedFrom ] ;
+            rdf:rest () ] ;
+    ns1:note "Implements ProcessedFrom."@en .
 

@@ -145,7 +145,6 @@ Carrying a piece of furniture together with others."""@en ;
     ns1:elucidation "An intentional agent that takes part in driving a process without being a group."@en .
 
 ns1:ParticipantByAgency a owl:Class ;
-    rdfs:label "ParticipantByAgency"@en ;
     rdfs:subClassOf ns1:Participant ;
     skos:prefLabel "ParticipantByAgency"@en ;
     ns1:OWLRL2DLAxioms "EquivalentTo: Agent or NonAgent"^^xsd:string ;
@@ -174,7 +173,6 @@ ns1:Agency a owl:Class ;
     ns1:elucidation "A process that occurs because of the exercise of the capacity to act of an agent."@en .
 
 ns1:IntentionalAgent a owl:Class ;
-    rdfs:label "IntentionalAgent"@en ;
     rdfs:seeAlso <https://plato.stanford.edu/entries/agency> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf ns1:hasAgent ] ;
@@ -197,7 +195,6 @@ ns1:IntentionalAgentByKind a owl:Class ;
     ns1:elucidation "Categorisation of intentional agents by their kind."@en .
 
 ns1:Agent a owl:Class ;
-    rdfs:label "Agent"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf ns1:hasAgent ] ;
             owl:someValuesFrom ns1:Process ],
@@ -236,10 +233,10 @@ ns1:hasAgent a owl:ObjectProperty ;
     ns1:elucidation "The relation within a process and an agent participant."@en .
 
 [] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedProperty skos:altLabel ;
     owl:annotatedSource ns1:IntentionalAgency ;
-    owl:annotatedTarget "IntentionalAgency"@en ;
-    ns1:etymology "From Latin agēns (present participle of agere (“to act”))"@en .
+    owl:annotatedTarget "IntentionalProcess"@en ;
+    ns1:etymology "From Latin intentionem, derived from intendere (\"stretching out\")"@en .
 
 [] a owl:Axiom ;
     rdfs:seeAlso <https://plato.stanford.edu/entries/agency> ;
@@ -251,8 +248,8 @@ What is axiomatically expressible is that an agent requires to be part of a proc
 This concept covers both intentional and non intentional agency."""@en .
 
 [] a owl:Axiom ;
-    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource ns1:IntentionalAgency ;
-    owl:annotatedTarget "IntentionalProcess"@en ;
-    ns1:etymology "From Latin intentionem, derived from intendere (\"stretching out\")"@en .
+    owl:annotatedTarget "IntentionalAgency"@en ;
+    ns1:etymology "From Latin agēns (present participle of agere (“to act”))"@en .
 

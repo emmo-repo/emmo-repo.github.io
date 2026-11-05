@@ -131,6 +131,24 @@ The role type requires that also the whole type depends on the existence of part
     emmo:elucidation "An entity that is categorized according to its relation with a whole through a parthood relation and that contributes to it according to an holistic criterion, where the type of the whole is not the type of the part."@en .
 
 [] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_4f226cf3_6d02_4d35_8566_a9e641bc6ff3 ;
+    owl:annotatedTarget "Role"@en ;
+    emmo:etymology "From French rôle, from obsolete French roule ‘roll’, referring originally to the roll of paper on which the actor's part was written."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_0277f24a_ea7f_4917_81b7_fb0406c8fc62 ;
+    owl:annotatedTarget "Holistic"@en ;
+    emmo:etymology "Holism (from Greek ὅλος holos \"all, whole, entire\")."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource emmo:EMMO_0277f24a_ea7f_4917_81b7_fb0406c8fc62 ;
+    owl:annotatedTarget "Wholistic"@en ;
+    emmo:etymology "From the word 'holistic' with the 'w-' prefix, due to the affinity with the existing word 'whole', that share the same meaning of 'holos'."@en .
+
+[] a owl:Axiom ;
     owl:annotatedProperty skos:altLabel ;
     owl:annotatedSource emmo:EMMO_4f226cf3_6d02_4d35_8566_a9e641bc6ff3 ;
     owl:annotatedTarget "Part"@en ;
@@ -142,22 +160,4 @@ The role type requires that also the whole type depends on the existence of part
     owl:annotatedSource emmo:EMMO_1efe8b96_e006_4a33_bc9a_421406cbb9f0 ;
     owl:annotatedTarget "Whole"@en ;
     emmo:etymology "From Middle English hole (“healthy, unhurt, whole”)."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_4f226cf3_6d02_4d35_8566_a9e641bc6ff3 ;
-    owl:annotatedTarget "Role"@en ;
-    emmo:etymology "From French rôle, from obsolete French roule ‘roll’, referring originally to the roll of paper on which the actor's part was written."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource emmo:EMMO_0277f24a_ea7f_4917_81b7_fb0406c8fc62 ;
-    owl:annotatedTarget "Wholistic"@en ;
-    emmo:etymology "From the word 'holistic' with the 'w-' prefix, due to the affinity with the existing word 'whole', that share the same meaning of 'holos'."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_0277f24a_ea7f_4917_81b7_fb0406c8fc62 ;
-    owl:annotatedTarget "Holistic"@en ;
-    emmo:etymology "Holism (from Greek ὅλος holos \"all, whole, entire\")."@en .
 

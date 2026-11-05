@@ -8,6 +8,18 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+ns1:Agency rdfs:label "Agency"@en .
+
+ns1:Coded rdfs:label "Coded"@en .
+
+ns1:CodedByObservation rdfs:label "CodedByObservation"@en .
+
+ns1:CodedByStructure rdfs:label "CodedByStructure"@en .
+
+ns1:CodedBySubjectivity rdfs:label "CodedBySubjectivity"@en .
+
+ns1:Conventional rdfs:label "Conventional"@en .
+
 ns1:DataBasedSimulationSoftware a owl:Class ;
     rdfs:label "DataBasedSimulationSoftware"@en ;
     rdfs:subClassOf ns1:SimulationSoftware ;
@@ -28,6 +40,10 @@ ns1:DataProcessing a owl:Class ;
         ns1:Computation ;
     skos:prefLabel "DataProcessing"@en ;
     ns1:elucidation "A computation that provides a data output following the elaboration of some input data, using a data processing application."@en .
+
+ns1:Declaration rdfs:label "Declaration"@en .
+
+ns1:DigitalData rdfs:label "DigitalData"@en .
 
 ns1:EmpiricalSimulationSoftware a owl:Class ;
     rdfs:label "EmpiricalSimulationSoftware"@en ;
@@ -60,6 +76,8 @@ ns1:Hypothesis a owl:Class ;
 
 ns1:Index skos:altLabel "Signal"@en .
 
+ns1:IntentionalAgency rdfs:label "IntentionalAgency"@en .
+
 ns1:LinkedModelsSimulation a owl:Class ;
     rdfs:label "LinkedModelsSimulation"@en ;
     rdfs:subClassOf ns1:MultiSimulation ;
@@ -76,6 +94,10 @@ ns1:MaterialRelationComputation a owl:Class ;
     rdfs:label "MaterialRelationComputation"@en ;
     rdfs:subClassOf ns1:PhysicsMathematicalComputation ;
     skos:prefLabel "MaterialRelationComputation"@en .
+
+ns1:MathematicalFormula rdfs:label "MathematicalFormula"@en .
+
+ns1:Persistence rdfs:label "Persistence"@en .
 
 ns1:PhysicalBasedSimulationSoftware a owl:Class ;
     rdfs:label "PhysicalBasedSimulationSoftware"@en ;
@@ -98,6 +120,8 @@ A dataset as solution is a conventional sign."""@en ;
     skos:prefLabel "PhysicsEquationSolution"@en ;
     ns1:elucidation "A function solution of a physics equation that provides a methods for the prediction of some quantitiative properties of an object."@en .
 
+ns1:ProcessByAgency rdfs:label "ProcessByAgency"@en .
+
 ns1:Replica a owl:Class ;
     rdfs:label "Replica"@en ;
     rdfs:subClassOf ns1:Icon ;
@@ -108,11 +132,27 @@ ns1:Replica a owl:Class ;
     skos:prefLabel "Replica"@en ;
     ns1:elucidation "An icon that not only resembles the object, but also can express some of the object's functions."@en .
 
+ns1:Semiosis rdfs:label "Semiosis"@en .
+
+ns1:SemiosisByReferent rdfs:label "SemiosisByReferent"@en .
+
+ns1:SemioticEntity rdfs:label "SemioticEntity"@en .
+
+ns1:Semiotics rdfs:label "Semiotics"@en .
+
+ns1:Sign rdfs:label "Sign"@en .
+
+ns1:SignByReferent rdfs:label "SignByReferent"@en .
+
 ns1:StandaloneModelSimulation a owl:Class ;
     rdfs:label "StandaloneModelSimulation"@en ;
     rdfs:subClassOf ns1:PhysicsBasedSimulation ;
     skos:prefLabel "StandaloneModelSimulation"@en ;
     ns1:elucidation "A standalone simulation, where a single physics equation is solved."@en .
+
+ns1:SymbolicByStructure rdfs:label "SymbolicByStructure"@en .
+
+ns1:SymbolicConstruct rdfs:label "SymbolicConstruct"@en .
 
 ns1:Theorisation a owl:Class ;
     rdfs:label "Theorisation"@en ;
@@ -193,6 +233,8 @@ ns1:DataProcessingSoftware a owl:Class ;
 
 ns1:Description rdfs:label "Description"@en .
 
+ns1:Determination rdfs:label "Determination"@en .
+
 ns1:ElectronicModel a owl:Class ;
     rdfs:label "ElectronicModel"@en ;
     rdfs:subClassOf ns1:MaterialsModel ;
@@ -200,6 +242,8 @@ ns1:ElectronicModel a owl:Class ;
 Hartree-Fock."""@en ;
     skos:prefLabel "ElectronicModel"@en ;
     ns1:elucidation "A physics-based model based on a physics equation describing the behaviour of electrons."@en .
+
+ns1:Estimation rdfs:label "Estimation"@en .
 
 ns1:Icon rdfs:label "Icon"@en .
 
@@ -225,6 +269,8 @@ ns1:MesoscopicModel a owl:Class ;
     skos:prefLabel "MesoscopicModel"@en ;
     ns1:elucidation "A physics-based model based on a physics equation describing the behaviour of mesoscopic entities, i.e. a set of bounded atoms like a molecule, bead or nanoparticle."@en .
 
+ns1:Observation rdfs:label "Observation"@en .
+
 ns1:Observed rdfs:label "Observed"@en .
 
 ns1:PhysicsEquation a owl:Class ;
@@ -245,6 +291,10 @@ ns1:PhysicsMathematicalComputation a owl:Class ;
     ns1:elucidation "A functional icon that imitates the behaviour of the object through mathematical evaluations of some mathematical construct."@en ;
     ns1:note "The equation that describes the velocity of a uniform accelerated body v = v0 + a*t is a functional icon. In general every analitical solution of a mathematical model can be considered an icon. A functional icon expresses its similarity with the object when is part of a process the makes it imitate the behavior of the object. In the case of v = v0 + a*t, plotting the velocity over time or listing their values at certain instants is when the icon expresses it functionality."@en .
 
+ns1:Procedure rdfs:label "Procedure"@en .
+
+ns1:Process rdfs:label "Process"@en .
+
 ns1:ScientificTheory a owl:Class ;
     rdfs:label "ScientificTheory"@en ;
     rdfs:subClassOf ns1:Objective,
@@ -252,6 +302,10 @@ ns1:ScientificTheory a owl:Class ;
         ns1:Theory ;
     skos:prefLabel "ScientificTheory"@en ;
     ns1:elucidation "A scientific theory is a description, objective and observed, produced with scientific methodology."@en .
+
+ns1:Software rdfs:label "Software"@en .
+
+ns1:Subjective rdfs:label "Subjective"@en .
 
 ns1:TightlyCoupledModelsSimulation a owl:Class ;
     rdfs:label "TightlyCoupledModelsSimulation"@en ;
@@ -269,12 +323,20 @@ ns1:computes a owl:ObjectProperty ;
     rdfs:subPropertyOf ns1:participatesTo ;
     skos:prefLabel "computes"@en .
 
+ns1:ApplicationProgram rdfs:label "ApplicationProgram"@en .
+
 ns1:Coupled a owl:Class ;
     rdfs:label "Coupled"@en ;
     rdfs:subClassOf ns1:MultiSimulation ;
     owl:equivalentClass [ a owl:Class ;
             owl:unionOf ( ns1:IterativeCoupledModelsSimulation ns1:TightlyCoupledModelsSimulation ) ] ;
     skos:prefLabel "Coupled"@en .
+
+ns1:Equation rdfs:label "Equation"@en .
+
+ns1:Estimated rdfs:label "Estimated"@en .
+
+ns1:Mathematical rdfs:label "Mathematical"@en .
 
 ns1:MathematicalModel a owl:Class ;
     rdfs:label "MathematicalModel"@en ;
@@ -297,6 +359,8 @@ ns1:NaturalLaw a owl:Class ;
     rdfs:subClassOf ns1:ScientificTheory ;
     skos:prefLabel "NaturalLaw"@en ;
     ns1:elucidation "A scientific theory that focuses on a specific phenomena, for which a single statement (not necessariliy in mathematical form) can be expressed."@en .
+
+ns1:Objective rdfs:label "Objective"@en .
 
 ns1:Simulation a owl:Class ;
     rdfs:label "Simulation"@en ;
@@ -367,6 +431,12 @@ A computation machine that calculate the average value of a dataset."""@en ;
     ns1:elucidation "A procedure that deals with quantitative symbols (i.e. symbols associated with a quantitative oriented language)."@en .
 
 [] a owl:Axiom ;
+    rdfs:seeAlso "https://www.cencenelec.eu/media/CEN-CENELEC/CWAs/RI/cwa17284_2018.pdf"^^xsd:anyURI ;
+    owl:annotatedProperty rdfs:isDefinedBy ;
+    owl:annotatedSource ns1:PhysicsBasedSimulation ;
+    owl:annotatedTarget "CEN Workshop Agreement – CWA 17284 “Materials modelling – terminology, classification and metadata”"@en .
+
+[] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource ns1:Computation ;
     owl:annotatedTarget "Computation"@en ;
@@ -376,11 +446,5 @@ A computation machine that calculate the average value of a dataset."""@en ;
     rdfs:seeAlso "https://www.cencenelec.eu/media/CEN-CENELEC/CWAs/RI/cwa17284_2018.pdf"^^xsd:anyURI ;
     owl:annotatedProperty rdfs:isDefinedBy ;
     owl:annotatedSource ns1:PhysicsBasedModel ;
-    owl:annotatedTarget "CEN Workshop Agreement – CWA 17284 “Materials modelling – terminology, classification and metadata”"@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "https://www.cencenelec.eu/media/CEN-CENELEC/CWAs/RI/cwa17284_2018.pdf"^^xsd:anyURI ;
-    owl:annotatedProperty rdfs:isDefinedBy ;
-    owl:annotatedSource ns1:PhysicsBasedSimulation ;
     owl:annotatedTarget "CEN Workshop Agreement – CWA 17284 “Materials modelling – terminology, classification and metadata”"@en .
 
