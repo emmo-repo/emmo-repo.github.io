@@ -224,9 +224,9 @@ ns1:WetVapor a owl:Class ;
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "States of Matter"@en ;
     rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/reference/physicalistic> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/disciplines/statesofmatter> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/reference/physicalistic> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/hume/disciplines/statesofmatter> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     ns1:contact "emmo@emmc.eu"^^xsd:string .
 
 ns1:LiquidAerosol a owl:Class ;
@@ -662,6 +662,16 @@ ns1:Solid a owl:Class ;
     ns1:elucidation "A continuum characterized by structural rigidity and resistance to changes of shape or volume, that retains its shape and density when not confined."@en .
 
 [] a owl:Axiom ;
+    rdfs:seeAlso <https://en.wiktionary.org/wiki/phase> ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:PhaseOfMatter ;
+    owl:annotatedTarget "PhaseOfMatter"@en ;
+    ns1:etymology "From Ancient Greek φάσις (phásis, “an appearance”), from φαίνω (phaínō, “to cause to appear”) [Wiktionary]"@en .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( ns1:SolidSolidSuspension ns1:SolidLiquidSuspension ns1:LiquidGasSuspension ns1:LiquidLiquidSuspension ns1:SolidGasSuspension ns1:GasSolidSuspension ns1:GasLiquidSuspension ns1:LiquidSolidSuspension ) .
+
+[] a owl:Axiom ;
     owl:annotatedProperty ns1:conceptualisation ;
     owl:annotatedSource ns1:CondensedMatter ;
     owl:annotatedTarget "The subject of condensed matter physics that deals with the macroscopic and microscopic physical properties of matter, especially the solid and liquid phases which arise from electromagnetic forces between atoms. More generally, the subject deals with \"condensed\" phases of matter: systems of many constituents with strong interactions between them."@en ;
@@ -669,54 +679,18 @@ ns1:Solid a owl:Class ;
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:Colloid ;
-    owl:annotatedTarget "Colloid"@en ;
-    ns1:etymology "From Ancient Greek κόλλα (kólla, “glue”)."@en .
+    owl:annotatedSource ns1:GaseousState ;
+    owl:annotatedTarget "GaseousState"@en ;
+    ns1:etymology "The word gas was coined in the early 17th century by Flemish chemist Jan Baptist van Helmont. He derived the term from the Ancient Greek word χάος (\"chaos\": void, empty space)."@en .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( ns1:GaseousState ns1:Plasma ns1:Liquid ns1:Solid ) .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource ns1:Mixture ;
     owl:annotatedTarget "Mixture"@en ;
     ns1:etymology "From Latin mixtūra (“a mixing”), from mixtus (“mix”) [Wiktionary]"@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:Plasma ;
-    owl:annotatedTarget "Plasma"@en ;
-    ns1:etymology """From Late Latin plasma (“mold”), from Ancient Greek πλάσμα (plásma, “something formed”) [Wiktionary]
-The term has been introduced in physics by Irving Langmuir in 1928."""@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso <https://en.wiktionary.org/wiki/continuum> ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:ContinuumSubstance ;
-    owl:annotatedTarget "ContinuumSubstance"@en ;
-    ns1:etymology "From Latin continuum, neuter form of continuus, from contineō (“contain, enclose”) [Wiktionary]"@en .
-
-[] a owl:AllDisjointClasses ;
-    owl:members ( ns1:SolidSolidSuspension ns1:SolidLiquidSuspension ns1:LiquidGasSuspension ns1:LiquidLiquidSuspension ns1:SolidGasSuspension ns1:GasSolidSuspension ns1:GasLiquidSuspension ns1:LiquidSolidSuspension ) .
-
-[] a owl:AllDisjointClasses ;
-    owl:members ( ns1:GaseousState ns1:Plasma ns1:Liquid ns1:Solid ) .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso <https://en.wiktionary.org/wiki/phase> ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:PhaseOfMatter ;
-    owl:annotatedTarget "PhaseOfMatter"@en ;
-    ns1:etymology "From Ancient Greek φάσις (phásis, “an appearance”), from φαίνω (phaínō, “to cause to appear”) [Wiktionary]"@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:Fluid ;
-    owl:annotatedTarget "Fluid"@en ;
-    ns1:etymology "From Latin fluidus (“flowing; fluid”), from Latin fluō (“to flow”), from Proto-Indo-European *bʰleh₁- (“to swell; surge; overflow; run”) [Wiktionary]"@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:AmorphousState ;
-    owl:annotatedTarget "AmorphousState"@en ;
-    ns1:etymology "From Ancient Greek ἄμορφος (ámorphos, “without form, shapeless, deformed”) (itself from ἀ- (a-, “without”) + μορφή (morphḗ, “form”)  [Wiktionary]"@en .
 
 [] a owl:Axiom ;
     rdfs:seeAlso <https://en.wiktionary.org/wiki/condense> ;
@@ -727,9 +701,35 @@ The term has been introduced in physics by Irving Langmuir in 1928."""@en .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:GaseousState ;
-    owl:annotatedTarget "GaseousState"@en ;
-    ns1:etymology "The word gas was coined in the early 17th century by Flemish chemist Jan Baptist van Helmont. He derived the term from the Ancient Greek word χάος (\"chaos\": void, empty space)."@en .
+    owl:annotatedSource ns1:Colloid ;
+    owl:annotatedTarget "Colloid"@en ;
+    ns1:etymology "From Ancient Greek κόλλα (kólla, “glue”)."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Plasma ;
+    owl:annotatedTarget "Plasma"@en ;
+    ns1:etymology """From Late Latin plasma (“mold”), from Ancient Greek πλάσμα (plásma, “something formed”) [Wiktionary]
+The term has been introduced in physics by Irving Langmuir in 1928."""@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:AmorphousState ;
+    owl:annotatedTarget "AmorphousState"@en ;
+    ns1:etymology "From Ancient Greek ἄμορφος (ámorphos, “without form, shapeless, deformed”) (itself from ἀ- (a-, “without”) + μορφή (morphḗ, “form”)  [Wiktionary]"@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso <https://en.wiktionary.org/wiki/continuum> ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:ContinuumSubstance ;
+    owl:annotatedTarget "ContinuumSubstance"@en ;
+    ns1:etymology "From Latin continuum, neuter form of continuus, from contineō (“contain, enclose”) [Wiktionary]"@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Fluid ;
+    owl:annotatedTarget "Fluid"@en ;
+    ns1:etymology "From Latin fluidus (“flowing; fluid”), from Latin fluō (“to flow”), from Proto-Indo-European *bʰleh₁- (“to swell; surge; overflow; run”) [Wiktionary]"@en .
 
 [] a owl:Axiom ;
     owl:annotatedProperty ns1:note ;

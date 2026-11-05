@@ -19,10 +19,10 @@
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "Information"@en ;
     rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/perspectives/semiotics>,
-        <https://w3id.org/emmo/1.0.4/reference/data> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/reference/information> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/perspectives/semiotics>,
+        <https://w3id.org/emmo/1.1.0/reference/data> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/hume/reference/information> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     ns1:contact "emmo@emmc.eu"^^xsd:string .
 
 ns1:Information a owl:Class ;

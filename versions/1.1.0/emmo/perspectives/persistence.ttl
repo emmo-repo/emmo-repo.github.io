@@ -155,13 +155,12 @@ emmo:EMMO_d05e7aea_7d45_412c_8724_43772ee92240 a owl:AsymmetricProperty,
     dcterms:title "Persistence"@en ;
     rdfs:comment <https://orcid.org/0009-0008-8009-5009>,
         "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/perspectives/perspective> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/perspectives/persistence> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/perspectives/perspective> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/perspectives/persistence> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     emmo:contact "emmo@emmc.eu"^^xsd:string .
 
 emmo:EMMO_13191289_6c2b_4741_93e1_82d53bd0e703 a owl:Class ;
-    rdfs:label "Participant"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ] ;
             owl:someValuesFrom emmo:EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce ],
@@ -265,7 +264,6 @@ Participation is not under direct parthood since a process is not strictly relat
     emmo:elucidation "The relation between a process and an object participating to it, i.e. that is relevant to the process itself."@en .
 
 emmo:EMMO_ceaaf9f7_fd11_424b_8fda_9afa186af186 a owl:Class ;
-    rdfs:label "Constituent"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf emmo:EMMO_dba27ca1_33c9_4443_a912_1519ce4c39ec ] ;
             owl:someValuesFrom emmo:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606 ],
@@ -489,7 +487,6 @@ emmo:EMMO_bed37b1f_0479_4b61_bd49_54e25f414222 a owl:AsymmetricProperty,
     emmo:illustration "https://raw.githubusercontent.com/emmo-repo/EMMO/master/doc/figs/isLeftBy.png"^^xsd:string .
 
 emmo:EMMO_e04884d9_eda6_487e_93d5_7722d7eda96b a owl:Class ;
-    rdfs:label "Persistence"@en ;
     rdfs:subClassOf emmo:EMMO_49267eba_5548_4163_8f36_518d65b583f9 ;
     skos:prefLabel "Persistence"@en ;
     emmo:OWLRL2DLAxioms "EquivalentTo: Process or Object"^^xsd:string ;
@@ -569,7 +566,6 @@ emmo:EMMO_846b637b_7b12_47a1_9430_0274b2f588ac a owl:Class ;
     emmo:elucidation "The superclass for all classes that categorise projects according to their mereological and persistence context"@en .
 
 emmo:EMMO_9d799b43_e188_4047_8167_121d96b31a26 a owl:Class ;
-    rdfs:label "ObjectByContext"@en ;
     rdfs:subClassOf emmo:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606 ;
     skos:prefLabel "ObjectByContext"@en ;
     emmo:elucidation "The superclass for all classes that categorise objects according to their mereological and persistence context"@en .
@@ -600,7 +596,6 @@ emmo:EMMO_d78b940d_4e2a_4a46_816b_da89029adc19 a owl:AsymmetricProperty,
     skos:prefLabel "isThroughOverlappedBy"@en .
 
 emmo:EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce a owl:Class ;
-    rdfs:label "Process"@en ;
     rdfs:subClassOf emmo:EMMO_e04884d9_eda6_487e_93d5_7722d7eda96b ;
     skos:altLabel "Occurrent"@en,
         "Perdurant"@en ;
@@ -614,7 +609,6 @@ The intended usage is not for an individual to belong directly to Process, but t
 The definition of every specific process subclass requires a reference type, that is expressed by some but not all temporal parts."""@en .
 
 emmo:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606 a owl:Class ;
-    rdfs:label "Object"@en ;
     rdfs:subClassOf emmo:EMMO_e04884d9_eda6_487e_93d5_7722d7eda96b ;
     skos:altLabel "Continuant"@en,
         "Endurant"@en ;

@@ -32,9 +32,9 @@ ns1:Representation a owl:Class ;
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "Perceptual"@en ;
     rdfs:comment "The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/reference/data> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/disciplines/perceptual> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/reference/data> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/hume/disciplines/perceptual> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     ns1:contact "emmo@emmc.eu"^^xsd:string .
 
 ns1:Auditory a owl:Class ;
@@ -128,14 +128,14 @@ A 'Perceptual' becomes a semiotic object, when it is part of a 'Semiotic' proces
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:Document ;
-    owl:annotatedTarget "Document"@en ;
-    ns1:etymology "From Latin documentum, from the verb doceō (“teach”) +‎ -mentum."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource ns1:Graphical ;
     owl:annotatedTarget "Graphical"@en ;
     ns1:etymology "From the Ancient Greek γραφή (graphḗ) which means drawing, painting, writing, a writing, description, and from γράφω (gráphō) which means scratch, carve."@en ;
     ns1:note "The term graphical is used in etymological sense, comprising both writings and visual arts."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Document ;
+    owl:annotatedTarget "Document"@en ;
+    ns1:etymology "From Latin documentum, from the verb doceō (“teach”) +‎ -mentum."@en .
 

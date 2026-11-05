@@ -101,10 +101,10 @@ The represeantion is part of the EMMO framework and makes use of mereocausality 
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "Agency"@en ;
     rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/perspectives/semiotics>,
-        <https://w3id.org/emmo/1.0.4/reference/persholistic> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/reference/agency> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/perspectives/semiotics>,
+        <https://w3id.org/emmo/1.1.0/reference/persholistic> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/reference/agency> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     emmo:contact "emmo@emmc.eu"^^xsd:string .
 
 emmo:EMMO_3674bfb6_6636_4e9d_aae1_07023ad96d61 a owl:Class ;
@@ -228,13 +228,10 @@ emmo:EMMO_cd24eb82_a11c_4a31_96ea_32f870c5580a a owl:ObjectProperty ;
     emmo:elucidation "The relation within a process and an agent participant."@en .
 
 [] a owl:Axiom ;
-    rdfs:seeAlso <https://plato.stanford.edu/entries/agency> ;
-    owl:annotatedProperty owl:priorVersion ;
-    owl:annotatedSource emmo:EMMO_2480b72b_db8d_460f_9a5f_c2912f979046 ;
-    owl:annotatedTarget """The agent concept identifies the parts of a process that are also its drivers. An agent part has an active role with respect to any other generic part, meaning that is involved in the causal chain that characterize the process. An agent is a participant, meaning that is qualifiable as an object.
-As for all holistic relations, there is a level of subjectivity in drawing whole-role relations, so that the identification of an agent within a process is not fully axiomatizable.
-What is axiomatically expressible is that an agent requires to be part of a process (i.e., an agent exists only within a process) but a process may not require an agent to exist (qualified role). Agentless processes may have a distributed causality chain so that the agency is exerted collectively and there is no motivation to draw an holistic connection between the whole and some parts. For example, the breaking of a nail can be caused by an agent such as an hammer, or by the rusting process which is not a participant as required by the agent definition. 
-This concept covers both intentional and non intentional agency."""@en .
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ;
+    owl:annotatedTarget "IntentionalAgency"@en ;
+    emmo:etymology "From Latin agēns (present participle of agere (“to act”))"@en .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:altLabel ;
@@ -243,8 +240,11 @@ This concept covers both intentional and non intentional agency."""@en .
     emmo:etymology "From Latin intentionem, derived from intendere (\"stretching out\")"@en .
 
 [] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ;
-    owl:annotatedTarget "IntentionalAgency"@en ;
-    emmo:etymology "From Latin agēns (present participle of agere (“to act”))"@en .
+    rdfs:seeAlso <https://plato.stanford.edu/entries/agency> ;
+    owl:annotatedProperty owl:priorVersion ;
+    owl:annotatedSource emmo:EMMO_2480b72b_db8d_460f_9a5f_c2912f979046 ;
+    owl:annotatedTarget """The agent concept identifies the parts of a process that are also its drivers. An agent part has an active role with respect to any other generic part, meaning that is involved in the causal chain that characterize the process. An agent is a participant, meaning that is qualifiable as an object.
+As for all holistic relations, there is a level of subjectivity in drawing whole-role relations, so that the identification of an agent within a process is not fully axiomatizable.
+What is axiomatically expressible is that an agent requires to be part of a process (i.e., an agent exists only within a process) but a process may not require an agent to exist (qualified role). Agentless processes may have a distributed causality chain so that the agency is exerted collectively and there is no motivation to draw an holistic connection between the whole and some parts. For example, the breaking of a nail can be caused by an agent such as an hammer, or by the rusting process which is not a participant as required by the agent definition. 
+This concept covers both intentional and non intentional agency."""@en .
 

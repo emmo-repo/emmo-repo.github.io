@@ -41,10 +41,21 @@ ns1:Assignment a owl:Class ;
     ns1:elucidation "A estimation of a property by a criteria based on the pre-existing knowledge of the estimator."@en .
 
 ns1:CategorizedPhysicalQuantity a owl:Class ;
+    rdfs:label "CategorizedPhysicalQuantity"@en ;
     rdfs:seeAlso "https://physics.nist.gov/cuu/Constants"^^xsd:string ;
     rdfs:subClassOf ns1:PhysicalQuantity ;
     skos:prefLabel "CategorizedPhysicalQuantity"@en ;
     ns1:elucidation "The superclass for all physical quantities classes that are categorized according to some domain of interests (e.g. metallurgy, chemistry), property (intensive/extensive) or application."@en .
+
+ns1:Coded rdfs:label "Coded"@en .
+
+ns1:CodedByObservation rdfs:label "CodedByObservation"@en .
+
+ns1:CodedByStructure rdfs:label "CodedByStructure"@en .
+
+ns1:CodedBySubjectivity rdfs:label "CodedBySubjectivity"@en .
+
+ns1:Conventional rdfs:label "Conventional"@en .
 
 ns1:CountingUnit a owl:Class ;
     rdfs:label "CountingUnit"@en ;
@@ -58,12 +69,19 @@ Unit of degeneracy in quantum mechanics"""@en ;
     ns1:qudtReference "http://qudt.org/vocab/unit/NUM"^^xsd:anyURI ;
     ns1:ucumCode "1"^^xsd:string .
 
+ns1:Declaration rdfs:label "Declaration"@en .
+
+ns1:Declarer rdfs:label "Declarer"@en .
+
 ns1:DerivedQuantity a owl:Class ;
+    rdfs:label "DerivedQuantity"@en ;
     rdfs:subClassOf ns1:PhysicalQuantiyByDefinition ;
     owl:disjointWith ns1:BaseQuantity ;
     skos:prefLabel "DerivedQuantity"@en ;
     ns1:VIMTerm "derived quantity"@en ;
     ns1:elucidation "\"Quantity, in a system of quantities, defined in terms of the base quantities of that system\"."@en .
+
+ns1:Determiner rdfs:label "Determiner"@en .
 
 ns1:EMMO_1f1b164d_ec6a_4faa_8d5e_88bda62316cc a owl:AnnotationProperty ;
     rdfs:label "qudtReference"@en ;
@@ -117,6 +135,10 @@ ns1:EMMO_fe015383_afb3_44a6_ae86_043628697aa2 a owl:AnnotationProperty ;
     skos:changeNote "Replaced by emmo:iupacReference"@en ;
     skos:prefLabel "iupacReference"@en .
 
+ns1:Interpreter rdfs:label "Interpreter"@en .
+
+ns1:InterpreterByReferent rdfs:label "InterpreterByReferent"@en .
+
 ns1:LogarithmicUnit a owl:Class ;
     rdfs:label "LogarithmicUnit"@en ;
     rdfs:subClassOf ns1:DimensionlessUnit ;
@@ -129,7 +151,10 @@ It is advisory to create a uniquely defined subclass these units for concrete us
     ns1:qudtReference "http://qudt.org/schema/qudt/LogarithmicUnit"^^xsd:anyURI ;
     ns1:wikipediaReference "https://en.wikipedia.org/wiki/Logarithmic_scale#Logarithmic_units"^^xsd:anyURI .
 
+ns1:Mathematical rdfs:label "Mathematical"@en .
+
 ns1:MeasuredConstant a owl:Class ;
+    rdfs:label "MeasuredConstant"@en ;
     rdfs:subClassOf ns1:PhysicalConstant ;
     owl:disjointWith ns1:ExactConstant ;
     skos:prefLabel "MeasuredConstant"@en ;
@@ -172,6 +197,8 @@ Sex of a human being."""@en ;
 
 ns1:NumericalVariable rdfs:label "NumericalVariable"@en .
 
+ns1:Observer rdfs:label "Observer"@en .
+
 ns1:OrdinalQuantity a owl:Class ;
     rdfs:label "OrdinalQuantity"@en ;
     rdfs:comment """"Ordinal quantities, such as Rockwell C hardness, are usually not considered to be part of a system of quantities because they are related to other quantities through empirical relations only."
@@ -184,7 +211,20 @@ Resilience"""@en ;
     ns1:elucidation """"Quantity, defined by a conventional measurement procedure, for which a total ordering relation can be established, according to magnitude, with other quantities of the same kind, but for which no algebraic operations among those quantities exist"
 International vocabulary of metrology (VIM)"""@en .
 
+ns1:Semiosis rdfs:label "Semiosis"@en .
+
+ns1:SemiosisByReferent rdfs:label "SemiosisByReferent"@en .
+
+ns1:SemioticEntity rdfs:label "SemioticEntity"@en .
+
+ns1:Semiotics rdfs:label "Semiotics"@en .
+
+ns1:Sign rdfs:label "Sign"@en .
+
+ns1:SignByReferent rdfs:label "SignByReferent"@en .
+
 ns1:SpecialUnit a owl:Class ;
+    rdfs:label "SpecialUnit"@en ;
     rdfs:comment "Special units are semiotic shortcuts to more complex composed symbolic objects."@en ;
     rdfs:subClassOf ns1:DerivedUnit,
         ns1:UnitSymbol ;
@@ -204,6 +244,7 @@ ns1:StandardUnit a owl:Class ;
 International vocabulary of metrology (VIM)"""@en .
 
 ns1:StandardizedPhysicalQuantity a owl:Class ;
+    rdfs:label "StandardizedPhysicalQuantity"@en ;
     rdfs:subClassOf ns1:PhysicalQuantity ;
     skos:prefLabel "StandardizedPhysicalQuantity"@en ;
     ns1:elucidation "The superclass for all physical quantities classes that are categorized according to a standard (e.g. ISQ)."^^xsd:string .
@@ -216,6 +257,10 @@ ns1:SubjectiveProperty a owl:Class ;
     skos:example "The measure of beauty on a scale from 1 to 10."@en ;
     skos:prefLabel "SubjectiveProperty"@en ;
     ns1:elucidation "A quantity whos value that cannot be univocally determined and depends on an agent (e.g. a human individual, a community)."@en .
+
+ns1:Symbolic rdfs:label "Symbolic"@en .
+
+ns1:SymbolicByStructure rdfs:label "SymbolicByStructure"@en .
 
 ns1:SystemUnit a owl:Class ;
     rdfs:label "SystemUnit"@en ;
@@ -359,13 +404,13 @@ This module is based on the International vocabulary of metrology (VIM) as well 
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "Metrology"@en ;
     rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/disciplines/math>,
-        <https://w3id.org/emmo/1.0.4/disciplines/properties>,
-        <https://w3id.org/emmo/1.0.4/reference/persholistic>,
-        <https://w3id.org/emmo/1.0.4/reference/symbolic>,
-        <https://w3id.org/emmo/1.0.4/reference/workflow> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/disciplines/metrology> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/disciplines/math>,
+        <https://w3id.org/emmo/1.1.0/disciplines/properties>,
+        <https://w3id.org/emmo/1.1.0/reference/persholistic>,
+        <https://w3id.org/emmo/1.1.0/reference/symbolic>,
+        <https://w3id.org/emmo/1.1.0/reference/workflow> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/hume/disciplines/metrology> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     ns1:contact "emmo@emmc.eu"^^xsd:string .
 
 ns1:BaseUnit a owl:Class ;
@@ -393,6 +438,7 @@ Then I have two different physical quantities that are properties thanks to two 
     ns1:elucidation "A quantitative property attributed by agreement to a quantity for a given purpose."@en .
 
 ns1:DerivedUnit a owl:Class ;
+    rdfs:label "DerivedUnit"@en ;
     rdfs:subClassOf ns1:MeasurementUnit ;
     skos:prefLabel "DerivedUnit"@en ;
     ns1:VIMTerm "derived unit"@en ;
@@ -402,6 +448,7 @@ ns1:DerivedUnit a owl:Class ;
         "When the numerical factor of this product is one, the derived units are called coherent derived units."@en .
 
 ns1:DimensionalUnit a owl:Class ;
+    rdfs:label "DimensionalUnit"@en ;
     rdfs:subClassOf ns1:MeasurementUnitByDimensionality ;
     skos:prefLabel "DimensionalUnit"@en ;
     ns1:elucidation "A subclass of measurement unit focusing on the physical dimensionality that is carried by the unit."@en ;
@@ -419,12 +466,20 @@ ns1:EMMO_ea67144c_56fd_4312_a4f4_af78edd5eacc a owl:DatatypeProperty ;
     ns1:VIMTerm "VIM4: 2.11 measured value of a quantity"@en ;
     ns1:note "In VIM, dataValue correspond to \"measured value\" which is defined as a \"value of a quantity representing a measurement result\"."@en .
 
+ns1:Estimated rdfs:label "Estimated"@en .
+
+ns1:Estimation rdfs:label "Estimation"@en .
+
+ns1:Estimator rdfs:label "Estimator"@en .
+
 ns1:ExactConstant a owl:Class ;
+    rdfs:label "ExactConstant"@en ;
     rdfs:subClassOf ns1:PhysicalConstant ;
     skos:prefLabel "ExactConstant"@en ;
     ns1:elucidation "Physical constant used to define a unit system. Hence, when expressed in that unit system they have an exact value with no associated uncertainty."@en .
 
 ns1:FractionUnit a owl:Class ;
+    rdfs:label "FractionUnit"@en ;
     rdfs:comment """Quantities that are ratios of quantities of the same kind (for example length ratios and amount fractions) have the option of being expressed with units (m/m, mol/mol to aid the understanding of the quantity being expressed and also allow the use of SI prefixes, if this
 is desirable (μm/m, nmol/mol).
 -- SI Brochure"""@en ;
@@ -432,6 +487,8 @@ is desirable (μm/m, nmol/mol).
     skos:altLabel "RatioUnit"@en ;
     skos:prefLabel "FractionUnit"@en ;
     ns1:elucidation "Unit for fractions of quantities of the same kind, to aid the understanding of the quantity being expressed."@en .
+
+ns1:Language rdfs:label "Language"@en .
 
 ns1:MeasuredProperty a owl:Class ;
     rdfs:label "MeasuredProperty"@en ;
@@ -486,11 +543,16 @@ ns1:ModelledProperty a owl:Class ;
     ns1:elucidation "A quantity obtained from a well-defined modelling procedure."@en .
 
 ns1:NonPrefixedUnit a owl:Class ;
+    rdfs:label "NonPrefixedUnit"@en ;
     rdfs:subClassOf ns1:MeasurementUnitByPrefix ;
     owl:disjointWith ns1:PrefixedUnit ;
     skos:prefLabel "NonPrefixedUnit"@en ;
     ns1:OWLRL2DLAxioms "EquivalentTo: DerivedUnit or UnitSymbol"^^xsd:string ;
     ns1:elucidation "A measurement unit symbol that do not have a metric prefix as a direct spatial part."@en .
+
+ns1:Observation rdfs:label "Observation"@en .
+
+ns1:Procedure rdfs:label "Procedure"@en .
 
 ns1:ProcedureUnit a owl:Class ;
     rdfs:label "ProcedureUnit"@en ;
@@ -500,6 +562,8 @@ ns1:ProcedureUnit a owl:Class ;
     skos:prefLabel "ProcedureUnit"@en ;
     ns1:elucidation "A reference unit provided by a measurement procedure."@en ;
     ns1:note "Procedure units and measurement units are disjoint."@en .
+
+ns1:Subjective rdfs:label "Subjective"@en .
 
 ns1:VIMTerm a owl:AnnotationProperty ;
     rdfs:label "VIMTerm"@en ;
@@ -617,31 +681,34 @@ ns1:uncertainty a owl:DatatypeProperty ;
         "VIM defined 'measurement uncertainty' as a \"parameter characterising the dispersion of the values being attributed to a measurand, based on the information used\"."@en .
 
 ns1:BaseQuantity a owl:Class ;
+    rdfs:label "BaseQuantity"@en ;
     rdfs:subClassOf ns1:PhysicalQuantiyByDefinition ;
     skos:prefLabel "BaseQuantity"@en ;
     ns1:VIMTerm "base quantity"@en ;
     ns1:elucidation """"Quantity in a conventionally chosen subset of a given system of quantities, where no quantity in the subset can be expressed in terms of the other quantities within that subset"
 ISO 80000-1"""@en .
 
+ns1:Determination rdfs:label "Determination"@en .
+
 ns1:Measurement a owl:Class ;
     rdfs:label "Measurement"@en ;
     rdfs:comment "A measurement always implies a causal interaction between the object and the observer."@en,
         "A measurement is the process of experimentally obtaining one or more measurement results that can reasonably be attributed to a quantity."@en ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:hasDeterminedProperty ;
+            owl:someValuesFrom ns1:Quantity ],
+        [ a owl:Restriction ;
             owl:onProperty ns1:hasInterpreter ;
             owl:someValuesFrom ns1:MeasuringSystem ],
         [ a owl:Restriction ;
-            owl:onProperty ns1:hasDeterminedProperty ;
-            owl:someValuesFrom ns1:Quantity ],
+            owl:onProperty ns1:hasOutput ;
+            owl:someValuesFrom ns1:MeasurementResult ],
         [ a owl:Restriction ;
             owl:onProperty ns1:hasMeasuredObject ;
             owl:someValuesFrom ns1:Referent ],
         [ a owl:Restriction ;
             owl:onProperty ns1:hasDeterminedValue ;
             owl:someValuesFrom ns1:QuantityValue ],
-        [ a owl:Restriction ;
-            owl:onProperty ns1:hasOutput ;
-            owl:someValuesFrom ns1:MeasurementResult ],
         ns1:Observation,
         ns1:Procedure ;
     skos:altLabel "MeasurementProcedure"@en ;
@@ -668,12 +735,14 @@ A set of quantity values being attributed to a measurand (quantity) together wit
         "A measurement result has the measured quantity, measurement uncertainty and other relevant attributes as holistic parts."@en .
 
 ns1:MeasurementUnitByDimensionality a owl:Class ;
+    rdfs:label "MeasurementUnitByDimensionality"@en ;
     rdfs:subClassOf ns1:MeasurementUnit ;
     skos:prefLabel "MeasurementUnitByDimensionality"@en ;
     ns1:OWLRL2DLAxioms "EquivalentTo: DimensionalUnit or DimensionlessUnit"^^xsd:string ;
     ns1:elucidation "Categorisation of measurement units by their physical dimensionality."@en .
 
 ns1:MeasurementUnitByPrefix a owl:Class ;
+    rdfs:label "MeasurementUnitByPrefix"@en ;
     rdfs:subClassOf ns1:MeasurementUnit ;
     skos:prefLabel "MeasurementUnitByPrefix"@en ;
     ns1:OWLRL2DLAxioms "EquivalentTo: PrefixedUnit or NonPrefixedUnit"^^xsd:string ;
@@ -691,6 +760,7 @@ ns1:MetricPrefix a owl:Class ;
     ns1:elucidation "Dimensionless multiplicative unit prefix."@en .
 
 ns1:PhysicalConstant a owl:Class ;
+    rdfs:label "PhysicalConstant"@en ;
     rdfs:subClassOf ns1:PhysicalQuantity ;
     skos:prefLabel "PhysicalConstant"@en ;
     ns1:OWLRL2DLAxioms "DisjointUnionOf: MeasuredConstant, ExactConstant"^^xsd:string ;
@@ -700,11 +770,15 @@ With "exact" constants, we refer to physical constants that have an exact numeri
     ns1:wikipediaReference "https://en.wikipedia.org/wiki/List_of_physical_constants"^^xsd:string .
 
 ns1:PhysicalQuantiyByDefinition a owl:Class ;
+    rdfs:label "PhysicalQuantiyByDefinition"@en ;
     rdfs:subClassOf ns1:PhysicalQuantity ;
     skos:prefLabel "PhysicalQuantiyByDefinition"@en ;
     ns1:elucidation "Categorisation of physical quantities by how they are defined."@en .
 
+ns1:Property rdfs:label "Property"@en .
+
 ns1:QuantityByPhysicalNature a owl:Class ;
+    rdfs:label "QuantityByPhysicalNature"@en ;
     rdfs:subClassOf ns1:Quantity ;
     skos:hiddenLabel "QuantityByPhysical"@en ;
     skos:prefLabel "QuantityByPhysicalNature"@en ;
@@ -758,7 +832,12 @@ was changed to
 The label of this class was also changed from PhysicsDimension to PhysicalDimension."""^^xsd:string ;
     skos:prefLabel "hasMetrologicalReference"@en .
 
+ns1:Objective rdfs:label "Objective"@en .
+
+ns1:Symbol rdfs:label "Symbol"@en .
+
 ns1:DimensionlessUnit a owl:Class ;
+    rdfs:label "DimensionlessUnit"@en ;
     rdfs:subClassOf ns1:MeasurementUnitByDimensionality ;
     owl:disjointWith ns1:DimensionalUnit ;
     skos:example """Refractive index
@@ -769,6 +848,7 @@ Number of apples"""@en ;
     ns1:qudtReference "http://qudt.org/vocab/unit/UNITLESS"^^xsd:anyURI .
 
 ns1:PrefixedUnit a owl:Class ;
+    rdfs:label "PrefixedUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onClass ns1:UnitSymbol ;
             owl:onProperty ns1:hasUnitSymbol ;
@@ -790,6 +870,7 @@ ns1:hasObjectiveProperty a owl:ObjectProperty ;
     skos:prefLabel "hasObjectiveProperty"@en .
 
 ns1:PhysicalQuantity a owl:Class ;
+    rdfs:label "PhysicalQuantity"@en ;
     rdfs:comment """In the same system of quantities, dim ρB = ML−3 is the quantity dimension of mass concentration of component B, and ML−3 is also the quantity dimension of mass density, ρ.
 ISO 80000-1"""@en,
         """Measured or simulated 'physical propertiy'-s are always defined by a physical law, connected to a physical entity through a model perspective and measurement is done according to the same model.
@@ -817,6 +898,7 @@ ISO 80000-1"""@en ;
     ns1:elucidation "A 'Mathematical' entity that is made of a 'Numeral' and a 'MeasurementUnit' defined by a physical law, connected to a physical entity through a model perspective. Measurement is done according to the same model."@en .
 
 ns1:Quantity a owl:Class ;
+    rdfs:label "Quantity"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onClass ns1:MetrologicalReference ;
             owl:onProperty ns1:hasMetrologicalReference ;
@@ -838,6 +920,7 @@ A quantity in EMMO is a property and therefore only addresses the first part of 
     ns1:qudtReference "https://qudt.org/schema/qudt/Quantity"^^xsd:anyURI .
 
 ns1:UnitSymbol a owl:Class ;
+    rdfs:label "UnitSymbol"@en ;
     rdfs:subClassOf ns1:NonPrefixedUnit ;
     owl:equivalentClass [ a owl:Class ;
             owl:intersectionOf ( ns1:Symbol ns1:MeasurementUnit ) ] ;
@@ -860,12 +943,14 @@ ns1:metrologyReference a owl:AnnotationProperty ;
     skos:prefLabel "metrologyReference"@en .
 
 ns1:Metrological a owl:Class ;
+    rdfs:label "Metrological"@en ;
     rdfs:subClassOf ns1:Language ;
     skos:prefLabel "Metrological"@en ;
     ns1:elucidation "A language entity used in the metrology discipline."@en ;
     ns1:note "Metrology is the science of measurement and its application and includes all theoretical and practical aspects of measurement, whatever the measurement uncertainty and field of application (VIM3 2.2)"@en .
 
 ns1:MetrologicalReference a owl:Class ;
+    rdfs:label "MetrologicalReference"@en ;
     rdfs:subClassOf ns1:Metrological ;
     skos:prefLabel "MetrologicalReference"@en ;
     ns1:OWLRL2DLAxioms "EquivalentTo: StandardUnit or MeasurementUnit or ProcedureUnit"^^xsd:string ;
@@ -916,6 +1001,7 @@ While the string "1 kg" is a 'QuantityValue'."""@en ;
     ns1:note "A quantity value is not necessarily a property, since it is possible to write \"10 kg\", without assigning this quantity to a specific object."@en .
 
 ns1:MeasurementUnit a owl:Class ;
+    rdfs:label "MeasurementUnit"@en ;
     rdfs:subClassOf ns1:MetrologicalReference ;
     owl:disjointWith ns1:ProcedureUnit ;
     skos:example """kg
@@ -937,12 +1023,6 @@ https://www.bipm.org/utils/common/pdf/si-brochure/SI-Brochure-9-EN.pdf"""@en,
         "Quantitative value are expressed as a multiple of the 'MeasurementUnit'."@en .
 
 [] a owl:Axiom ;
-    rdfs:isDefinedBy "https://www.bipm.org/documents/20126/2071204/JCGM_200_2012.pdf"^^xsd:string ;
-    owl:annotatedProperty ns1:note ;
-    owl:annotatedSource ns1:Metrological ;
-    owl:annotatedTarget "Metrology is the science of measurement and its application and includes all theoretical and practical aspects of measurement, whatever the measurement uncertainty and field of application (VIM3 2.2)"@en .
-
-[] a owl:Axiom ;
     rdfs:isDefinedBy "https://www.iso.org/standard/45324.html"^^xsd:anyURI ;
     owl:annotatedProperty rdfs:comment ;
     owl:annotatedSource ns1:Measurement ;
@@ -953,4 +1033,10 @@ https://www.bipm.org/utils/common/pdf/si-brochure/SI-Brochure-9-EN.pdf"""@en,
     owl:annotatedSource ns1:Quantity ;
     owl:annotatedTarget "measurand"@en ;
     ns1:note "VIM defines measurand as a quantity intended to be measured. This is redundant in EMMO and correspond to Quantity."@en .
+
+[] a owl:Axiom ;
+    rdfs:isDefinedBy "https://www.bipm.org/documents/20126/2071204/JCGM_200_2012.pdf"^^xsd:string ;
+    owl:annotatedProperty ns1:note ;
+    owl:annotatedSource ns1:Metrological ;
+    owl:annotatedTarget "Metrology is the science of measurement and its application and includes all theoretical and practical aspects of measurement, whatever the measurement uncertainty and field of application (VIM3 2.2)"@en .
 

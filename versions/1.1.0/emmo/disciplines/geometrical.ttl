@@ -11,8 +11,6 @@ emmo:EMMO_0ef4ff4a_5458_4f2a_b51f_4689d472a3f2 a owl:Class ;
     skos:prefLabel "Curve"@en ;
     emmo:elucidation "A one-manyfold with two unconnected end points."@en .
 
-emmo:EMMO_1e877c70_3b01_45a8_a8f6_8ce4f6a24660 rdfs:label "Contrast"@en .
-
 emmo:EMMO_25f5ca8e_8f7f_44d8_a392_bd3fe8894458 a owl:Class ;
     rdfs:label "Plane"@en ;
     rdfs:subClassOf emmo:EMMO_9268958f_7f54_48ab_a693_febe2645892b ;
@@ -25,10 +23,6 @@ emmo:EMMO_39362460_2a97_4367_8f93_0418c2ac9a08 a owl:Class ;
     skos:prefLabel "Point"@en ;
     emmo:elucidation "A zero-manifold of only one point."@en .
 
-emmo:EMMO_49267eba_5548_4163_8f36_518d65b583f9 rdfs:label "Perspective"@en .
-
-emmo:EMMO_53ed8611_2cd7_4286_9ef0_36572117b963 rdfs:label "Fusion"@en .
-
 emmo:EMMO_5f278af9_8593_4e27_a717_ccc9e07a0ddf a owl:Class ;
     rdfs:label "EuclideanSpace"@en ;
     rdfs:subClassOf emmo:EMMO_46f0f8df_4dc6_418f_8036_10427a3a288e ;
@@ -40,8 +34,6 @@ emmo:EMMO_750d42f1_c291_42ce_91b2_a079d79639fb a owl:Class ;
     rdfs:subClassOf emmo:EMMO_9268958f_7f54_48ab_a693_febe2645892b ;
     skos:prefLabel "Cylinder"@en ;
     emmo:elucidation "A 2-manifold with one unconnected boundary and two \"faces\"."@en .
-
-emmo:EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf rdfs:label "EMMO"@en .
 
 emmo:EMMO_8406f483_eafc_4700_b6c0_5d2908ea2adf a owl:Class ;
     rdfs:label "MobiusStrip"@en ;
@@ -61,15 +53,11 @@ emmo:EMMO_b2a234a8_579a_422c_9305_b8f7e72c76cd a owl:Class ;
     skos:prefLabel "Circle"@en ;
     emmo:elucidation "Self-connected one-manyfold."@en .
 
-emmo:EMMO_c5ddfdba_c074_4aa4_ad6b_1ac4942d300d rdfs:label "CausalStructure"@en .
-
 emmo:EMMO_d7bf784a_db94_4dd9_861c_54f262846fbf a owl:Class ;
     rdfs:label "Sphere"@en ;
     rdfs:subClassOf emmo:EMMO_9268958f_7f54_48ab_a693_febe2645892b ;
     skos:prefLabel "Sphere"@en ;
     emmo:elucidation "A standard 2-manifold with no unconnected boundaries."@en .
-
-emmo:EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de rdfs:label "Item"@en .
 
 <https://w3id.org/emmo/disciplines/geometrical> a owl:Ontology ;
     dcterms:abstract "The graphical module provides classes for the representation of geometrical concepts."@en ;
@@ -82,9 +70,9 @@ emmo:EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de rdfs:label "Item"@en .
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "Geometrical"@en ;
     rdfs:comment "The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/reference/data> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/disciplines/geometrical> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/reference/data> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/disciplines/geometrical> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     emmo:contact "emmo@emmc.eu"^^xsd:string .
 
 emmo:EMMO_0ab0485c_9e5b_4257_a679_90a2dfba5c7c a owl:Class ;
@@ -93,8 +81,6 @@ emmo:EMMO_0ab0485c_9e5b_4257_a679_90a2dfba5c7c a owl:Class ;
     skos:altLabel "0-manifold"@en ;
     skos:prefLabel "ZeroManifold"@en ;
     emmo:elucidation "A topological space with the property that each point has a neighborhood that is homeomorphic to an open subset of 0-dimensional Euclidean space."@en .
-
-emmo:EMMO_3e7add3d_e6ed_489a_a796_8e31fef9b490 rdfs:label "Data"@en .
 
 emmo:EMMO_46f0f8df_4dc6_418f_8036_10427a3a288e a owl:Class ;
     rdfs:label "ThreeManifold"@en ;

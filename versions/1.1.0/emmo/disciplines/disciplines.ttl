@@ -20,20 +20,20 @@ Discipline level ontologies are reference ontologies that does not cover the who
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "EMMO discipline-level ontology"@en ;
     rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/disciplines/chemistry>,
-        <https://w3id.org/emmo/1.0.4/disciplines/computerscience>,
-        <https://w3id.org/emmo/1.0.4/disciplines/geometrical>,
-        <https://w3id.org/emmo/1.0.4/disciplines/isq>,
-        <https://w3id.org/emmo/1.0.4/disciplines/manufacturing>,
-        <https://w3id.org/emmo/1.0.4/disciplines/materials>,
-        <https://w3id.org/emmo/1.0.4/disciplines/math>,
-        <https://w3id.org/emmo/1.0.4/disciplines/metrology>,
-        <https://w3id.org/emmo/1.0.4/disciplines/models>,
-        <https://w3id.org/emmo/1.0.4/disciplines/perceptual>,
-        <https://w3id.org/emmo/1.0.4/disciplines/periodictable>,
-        <https://w3id.org/emmo/1.0.4/disciplines/sisystem>,
-        <https://w3id.org/emmo/1.0.4/reference> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/disciplines> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/disciplines/chemistry>,
+        <https://w3id.org/emmo/1.1.0/disciplines/computerscience>,
+        <https://w3id.org/emmo/1.1.0/disciplines/geometrical>,
+        <https://w3id.org/emmo/1.1.0/disciplines/isq>,
+        <https://w3id.org/emmo/1.1.0/disciplines/manufacturing>,
+        <https://w3id.org/emmo/1.1.0/disciplines/materials>,
+        <https://w3id.org/emmo/1.1.0/disciplines/math>,
+        <https://w3id.org/emmo/1.1.0/disciplines/metrology>,
+        <https://w3id.org/emmo/1.1.0/disciplines/models>,
+        <https://w3id.org/emmo/1.1.0/disciplines/perceptual>,
+        <https://w3id.org/emmo/1.1.0/disciplines/periodictable>,
+        <https://w3id.org/emmo/1.1.0/disciplines/sisystem>,
+        <https://w3id.org/emmo/1.1.0/reference> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/disciplines> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     emmo:contact "emmo@emmc.eu"^^xsd:string .
 

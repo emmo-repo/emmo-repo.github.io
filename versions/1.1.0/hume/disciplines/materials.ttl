@@ -488,9 +488,9 @@ ns1:Whitewares a owl:Class ;
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "Materials"@en ;
     rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/disciplines/statesofmatter> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/disciplines/materials> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/disciplines/statesofmatter> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/hume/disciplines/materials> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     ns1:contact "emmo@emmc.eu"^^xsd:string .
 
 <https://doi.org/10.1016/j.jnoncrysol.2018.01.033> a dcmitype:Text,
@@ -872,6 +872,25 @@ Here we embrace this definition in its wide and literal meaning, even if in prac
     dcterms:title "Materials Science and Engineering: An Introduction"^^xsd:string .
 
 [] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:CrystallineMaterial ;
+    owl:annotatedTarget "CrystallineMaterial"@en ;
+    ns1:etymology "From Ancient Greek κρύσταλλος (krústallos, “clear ice”), from κρύος (krúos, “frost”) [Wiktionary]"@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso <https://en.wiktionary.org/wiki/ceramic> ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:CeramicMaterial ;
+    owl:annotatedTarget "CeramicMaterial"@en ;
+    ns1:etymology "From Ancient Greek κεραμικός (keramikós, “potter's”) [Wiktionary]"@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Material ;
+    owl:annotatedTarget "Material"@en ;
+    ns1:etymology "From Latin māteria (“wood, material, substance”), from māter (“mother”) [Wikictionary]"@en .
+
+[] a owl:Axiom ;
     rdfs:seeAlso ns1:MaterialByIsotropy ;
     owl:annotatedProperty ns1:note ;
     owl:annotatedSource ns1:MaterialByStructure ;
@@ -885,28 +904,9 @@ Here we embrace this definition in its wide and literal meaning, even if in prac
     ns1:etymology "From Latin compāctus, perfect passive participle of compingō (“join together”), from com- (“together”) + pangō (“fasten”) [Wiktionary]"@en .
 
 [] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:Material ;
-    owl:annotatedTarget "Material"@en ;
-    ns1:etymology "From Latin māteria (“wood, material, substance”), from māter (“mother”) [Wikictionary]"@en .
-
-[] a owl:Axiom ;
     rdfs:seeAlso <https://en.wiktionary.org/wiki/powder> ;
     owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource ns1:Powder ;
     owl:annotatedTarget "Powder"@en ;
     ns1:etymology "From Latin pulverem, accusative singular of Latin pulvis (“dust, powder”) [Wiktionary]"@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso <https://en.wiktionary.org/wiki/ceramic> ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:CeramicMaterial ;
-    owl:annotatedTarget "CeramicMaterial"@en ;
-    ns1:etymology "From Ancient Greek κεραμικός (keramikós, “potter's”) [Wiktionary]"@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:CrystallineMaterial ;
-    owl:annotatedTarget "CrystallineMaterial"@en ;
-    ns1:etymology "From Ancient Greek κρύσταλλος (krústallos, “clear ice”), from κρύος (krúos, “frost”) [Wiktionary]"@en .
 

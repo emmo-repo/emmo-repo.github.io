@@ -99,9 +99,9 @@ In addition to direct parthood, the reductionistic module defines 'State' as a t
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "Reductionistic"@en ;
     rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/perspectives/perspective> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/perspectives/reductionistic> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/perspectives/perspective> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/perspectives/reductionistic> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     emmo:contact "emmo@emmc.eu"^^xsd:string .
 
 emmo:EMMO_36c79456_e29c_400d_8bd3_0eedddb82652 a owl:Class ;

@@ -18,9 +18,9 @@
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "Contrast"@en ;
     rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/perspectives/perspective> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/perspectives/contrast> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/perspectives/perspective> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/hume/perspectives/contrast> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     ns1:contact "emmo@emmc.eu"^^xsd:string .
 
 ns1:NonEncodedContrast a owl:Class ;
@@ -70,6 +70,13 @@ Variations are pure physical variations and do not necessarily possess semantic 
         "The covering axiom that defines the contrast class discriminates within all the possible causal objects between encoded contrast (data) or non encoded contrast."@en .
 
 [] a owl:Axiom ;
+    owl:annotatedProperty ns1:note ;
+    owl:annotatedSource ns1:Data ;
+    owl:annotatedTarget """We call "decoding" the act of recognise the variation according to a particular rule and generate another equivalent schema (e.g. in the agent's cognitive apparatus, as another form of data).
+We call "interpreting" the act of providing semantic meaning to data, which is covered by the semiotic perspective."""@en ;
+    skos:example "The electronical state of the RAM of my laptop is decoded by it as ASCII characters and printed on the screen."@en .
+
+[] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource ns1:Data ;
     owl:annotatedTarget "Data"@en ;
@@ -80,11 +87,4 @@ Variations are pure physical variations and do not necessarily possess semantic 
     owl:annotatedSource ns1:Contrast ;
     owl:annotatedTarget "Dedomena"@en ;
     ns1:etymology "From Greek, nominative plural form of δεδομένο (dedoméno) (data, information)"@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty ns1:note ;
-    owl:annotatedSource ns1:Data ;
-    owl:annotatedTarget """We call "decoding" the act of recognise the variation according to a particular rule and generate another equivalent schema (e.g. in the agent's cognitive apparatus, as another form of data).
-We call "interpreting" the act of providing semantic meaning to data, which is covered by the semiotic perspective."""@en ;
-    skos:example "The electronical state of the RAM of my laptop is decoded by it as ASCII characters and printed on the screen."@en .
 

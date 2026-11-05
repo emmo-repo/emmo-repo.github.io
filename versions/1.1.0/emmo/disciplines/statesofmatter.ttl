@@ -96,6 +96,7 @@ emmo:EMMO_5be9c137_325a_43d8_b7cd_ea93e7721c2d a owl:Class ;
     emmo:wikipediaReference <https://en.wikipedia.org/wiki/Solution_(chemistry)#Gaseous_mixtures> .
 
 emmo:EMMO_5cb107ba_7daa_46dd_8f9f_da22a6eac676 a owl:Class ;
+    rdfs:label "AqueousSolution"@en ;
     rdfs:subClassOf emmo:EMMO_4b3e2374_52a1_4420_8e3f_3ae6b9bf7dff ;
     skos:prefLabel "AqueousSolution"@en ;
     emmo:elucidation "A liquid solution in which the solvent is water."@en .
@@ -114,6 +115,7 @@ emmo:EMMO_5fbc8aca_e9c7_4e19_b4f5_32cbf8128104 a owl:Class ;
     emmo:elucidation "A liquid sol when the dispersion medium is water"@en .
 
 emmo:EMMO_660a4964_0333_4663_bc66_e93ef59b0679 a owl:Class ;
+    rdfs:label "MesoscopicSubstance"@en ;
     rdfs:seeAlso <https://doi.org/10.2777/417118> ;
     rdfs:subClassOf emmo:EMMO_bc37743c_37c4_4ec7_9d58_d1aae5567352 ;
     owl:disjointWith emmo:EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2 ;
@@ -203,12 +205,13 @@ emmo:EMMO_fc1d3f1c_b1bf_4e95_bbf6_1b8fdef710d2 a owl:Class ;
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "States of Matter"@en ;
     rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/reference/physicalistic> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/disciplines/statesofmatter> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/reference/physicalistic> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/disciplines/statesofmatter> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     emmo:contact "emmo@emmc.eu"^^xsd:string .
 
 emmo:EMMO_0e6378df_1ce8_4321_b00c_ee9beea60a67 a owl:Class ;
+    rdfs:label "PhaseHomogeneousMixture"@en ;
     rdfs:subClassOf emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c ;
     skos:prefLabel "PhaseHomogeneousMixture"@en ;
     emmo:elucidation "A single phase mixture."@en ;
@@ -230,6 +233,7 @@ emmo:EMMO_33e0ac8b_a318_4285_b1de_e95347784632 a owl:Class ;
     emmo:elucidation "A coarse dispersion of liquid in a solid continuum phase."@en .
 
 emmo:EMMO_42185fe7_122c_4e0c_a3cd_659d3e21c389 a owl:Class ;
+    rdfs:label "LiquidGasSuspension"@en ;
     rdfs:subClassOf emmo:EMMO_4a464c8d_8895_44a8_a628_aed13509f1bd,
         emmo:EMMO_7509da43_56b1_4d7f_887a_65d1663df4ba ;
     skos:example "Sparkling water"@en ;
@@ -244,6 +248,7 @@ emmo:EMMO_47fe2379_be21_48d1_9ede_402f0faf494b a owl:Class ;
     emmo:elucidation "A coarse dispersion of liquid in a liquid continuum phase."@en .
 
 emmo:EMMO_4b3e2374_52a1_4420_8e3f_3ae6b9bf7dff a owl:Class ;
+    rdfs:label "LiquidSolution"@en ;
     rdfs:subClassOf emmo:EMMO_2031516a_2be7_48e8_9af7_7e1270e308fe,
         emmo:EMMO_7509da43_56b1_4d7f_887a_65d1663df4ba ;
     skos:example "An alcoholic beverage with ethanol dissolved in water (e.g., beer)."@en ;
@@ -320,6 +325,7 @@ emmo:EMMO_e9e02156_651f_41c8_9efb_d5da0d4ce5e2 a owl:Class ;
     dcterms:title "What makes a material function? – Let me compute the ways – Modelling in H2020 LEIT-NMBP programme materials and nanotechnology projects – Sixth version"^^xsd:string .
 
 emmo:EMMO_0e030040_98a7_49b2_a871_dced1f3a6131 a owl:Class ;
+    rdfs:label "PhaseHeterogeneousMixture"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ;
             owl:someValuesFrom emmo:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a ],
@@ -432,6 +438,7 @@ This state can be categorised by pressure relative to critical pressure p𞁞"""
     dcterms:title "The Mathematical Theory of Non-uniform Gases"^^xsd:string .
 
 emmo:EMMO_0b15f4ae_092e_4487_9100_3c44176c545c a owl:Class ;
+    rdfs:label "Dispersion"@en ;
     rdfs:subClassOf emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c ;
     skos:prefLabel "Dispersion"@en ;
     emmo:OWLRL2DLAxioms "Equivalent To: Solution or Suspension or Colloid"@en ;
@@ -439,6 +446,7 @@ emmo:EMMO_0b15f4ae_092e_4487_9100_3c44176c545c a owl:Class ;
     emmo:wikipediaReference <https://en.wikipedia.org/wiki/Dispersion_(chemistry)> .
 
 emmo:EMMO_2031516a_2be7_48e8_9af7_7e1270e308fe a owl:Class ;
+    rdfs:label "Solution"@en ;
     rdfs:seeAlso <https://doi.org/10.1351/goldbook.S05746> ;
     rdfs:subClassOf emmo:EMMO_0b15f4ae_092e_4487_9100_3c44176c545c,
         emmo:EMMO_0e6378df_1ce8_4321_b00c_ee9beea60a67 ;
@@ -457,6 +465,7 @@ emmo:EMMO_4d604a13_d1f6_42fd_818f_d3138d5e308c a owl:Class ;
     emmo:elucidation "A gas made of a substance below its critical temperature"@en .
 
 emmo:EMMO_4e9fd152_147b_4564_8999_089608f41aff a owl:Class ;
+    rdfs:label "AmorphousState"@en ;
     rdfs:isDefinedBy <https://doi.org/10.1351/goldbook.12743> ;
     rdfs:subClassOf emmo:EMMO_b9695e87_8261_412e_83cd_a86459426a28 ;
     skos:altLabel "AmorphousNetwork"@en ;
@@ -490,6 +499,7 @@ emmo:EMMO_fc9222ed_14af_419b_b9df_b6a8a04e9d38 a owl:Class ;
     emmo:elucidation "Matter in gas or plasma physical state."@en .
 
 emmo:EMMO_220b7201_d277_4dca_bf6a_5a5e2c4062dd a owl:Class ;
+    rdfs:label "CondensedMatter"@en ;
     rdfs:subClassOf emmo:EMMO_b9695e87_8261_412e_83cd_a86459426a28 ;
     owl:disjointWith emmo:EMMO_fc9222ed_14af_419b_b9df_b6a8a04e9d38 ;
     skos:altLabel "CondensedState"@en ;
@@ -499,6 +509,7 @@ emmo:EMMO_220b7201_d277_4dca_bf6a_5a5e2c4062dd a owl:Class ;
     emmo:elucidation "Matter in liquid or solid physical state."@en .
 
 emmo:EMMO_87ac88ff_8379_4f5a_8c7b_424a8fff1ee8 a owl:Class ;
+    rdfs:label "Fluid"@en ;
     rdfs:seeAlso <urn:isbn:9780471400653> ;
     rdfs:subClassOf emmo:EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2,
         emmo:EMMO_b9695e87_8261_412e_83cd_a86459426a28 ;
@@ -528,6 +539,7 @@ emmo:EMMO_87ac88ff_8379_4f5a_8c7b_424a8fff1ee8 a owl:Class ;
 dcmitype:Text a owl:Class .
 
 emmo:EMMO_b9695e87_8261_412e_83cd_a86459426a28 a owl:Class ;
+    rdfs:label "StateOfMatter"@en ;
     rdfs:subClassOf emmo:EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2 ;
     skos:prefLabel "StateOfMatter"@en ;
     emmo:OWLRL2DLAxioms "Disjoint Union Of: CondensedMatter, UncondensedMatter"^^xsd:string,
@@ -550,6 +562,7 @@ emmo:EMMO_6c487fb3_03d1_4e56_91ed_c2e16dcbef60 a owl:Class ;
     emmo:wikipediaReference <https://en.wikipedia.org/wiki/Colloid> .
 
 emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c a owl:Class ;
+    rdfs:label "Mixture"@en ;
     rdfs:isDefinedBy <https://goldbook.iupac.org/terms/view/M03949> ;
     rdfs:subClassOf emmo:EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2 ;
     skos:prefLabel "Mixture"@en ;
@@ -557,6 +570,7 @@ emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c a owl:Class ;
     emmo:wikipediaReference <https://en.wikipedia.org/wiki/Mixture#> .
 
 emmo:EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2 a owl:Class ;
+    rdfs:label "ContinuumSubstance"@en ;
     rdfs:seeAlso <https://doi.org/10.2777/417118>,
         <urn:isbn:9780521405980> ;
     rdfs:subClassOf emmo:EMMO_bc37743c_37c4_4ec7_9d58_d1aae5567352 ;
@@ -569,6 +583,7 @@ Paramount to this definition is the applicability of the continuum assumption, t
     emmo:wikipediaReference <https://en.wikipedia.org/wiki/Continuum_mechanics> .
 
 emmo:EMMO_4a464c8d_8895_44a8_a628_aed13509f1bd a owl:Class ;
+    rdfs:label "Suspension"@en ;
     rdfs:comment "Suspensions show no significant effect on visible light."@en ;
     rdfs:subClassOf emmo:EMMO_0b15f4ae_092e_4487_9100_3c44176c545c,
         emmo:EMMO_0e030040_98a7_49b2_a871_dced1f3a6131,
@@ -579,6 +594,7 @@ emmo:EMMO_4a464c8d_8895_44a8_a628_aed13509f1bd a owl:Class ;
     emmo:wikipediaReference <https://en.wikipedia.org/wiki/Suspension_(chemistry)> .
 
 emmo:EMMO_7509da43_56b1_4d7f_887a_65d1663df4ba a owl:Class ;
+    rdfs:label "Liquid"@en ;
     rdfs:seeAlso <urn:isbn:9780471400653> ;
     rdfs:subClassOf emmo:EMMO_220b7201_d277_4dca_bf6a_5a5e2c4062dd,
         emmo:EMMO_87ac88ff_8379_4f5a_8c7b_424a8fff1ee8 ;
@@ -625,6 +641,18 @@ emmo:EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1 a owl:Class ;
     emmo:elucidation "A continuum characterized by structural rigidity and resistance to changes of shape or volume, that retains its shape and density when not confined."@en .
 
 [] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c ;
+    owl:annotatedTarget "Mixture"@en ;
+    emmo:etymology "From Latin mixtūra (“a mixing”), from mixtus (“mix”) [Wiktionary]"@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty emmo:conceptualisation ;
+    owl:annotatedSource emmo:EMMO_220b7201_d277_4dca_bf6a_5a5e2c4062dd ;
+    owl:annotatedTarget "The subject of condensed matter physics that deals with the macroscopic and microscopic physical properties of matter, especially the solid and liquid phases which arise from electromagnetic forces between atoms. More generally, the subject deals with \"condensed\" phases of matter: systems of many constituents with strong interactions between them."@en ;
+    emmo:wikipediaReference "https://en.wikipedia.org/wiki/Condensed_matter_physics"@en .
+
+[] a owl:Axiom ;
     rdfs:seeAlso <https://en.wiktionary.org/wiki/phase> ;
     owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource emmo:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a ;
@@ -639,24 +667,6 @@ emmo:EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1 a owl:Class ;
     emmo:etymology "From Latin continuum, neuter form of continuus, from contineō (“contain, enclose”) [Wiktionary]"@en .
 
 [] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_04f2a2d5_e799_4692_a654_420e76f5acc1 ;
-    owl:annotatedTarget "GaseousState"@en ;
-    emmo:etymology "The word gas was coined in the early 17th century by Flemish chemist Jan Baptist van Helmont. He derived the term from the Ancient Greek word χάος (\"chaos\": void, empty space)."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_87ac88ff_8379_4f5a_8c7b_424a8fff1ee8 ;
-    owl:annotatedTarget "Fluid"@en ;
-    emmo:etymology "From Latin fluidus (“flowing; fluid”), from Latin fluō (“to flow”), from Proto-Indo-European *bʰleh₁- (“to swell; surge; overflow; run”) [Wiktionary]"@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_4e9fd152_147b_4564_8999_089608f41aff ;
-    owl:annotatedTarget "AmorphousState"@en ;
-    emmo:etymology "From Ancient Greek ἄμορφος (ámorphos, “without form, shapeless, deformed”) (itself from ἀ- (a-, “without”) + μορφή (morphḗ, “form”)  [Wiktionary]"@en .
-
-[] a owl:Axiom ;
     owl:annotatedProperty emmo:note ;
     owl:annotatedSource emmo:EMMO_668fbd5b_6f1b_405c_9c6b_d6067bd0595a ;
     owl:annotatedTarget """In the physical sciences, a phase is a region of space (a thermodynamic system), throughout which all physical properties of a material are essentially uniform. Examples of physical properties include density, index of refraction, magnetization and chemical composition. A simple description is that a phase is a region of material that is chemically uniform, physically distinct, and (often) mechanically separable. In a system consisting of ice and water in a glass jar, the ice cubes are one phase, the water is a second phase, and the humid air is a third phase over the ice and water. The glass of the jar is another separate phase.
@@ -665,29 +675,25 @@ The term phase is sometimes used as a synonym for state of matter, but there can
     emmo:wikipediaReference "https://en.wikipedia.org/wiki/Phase_(matter)"@en .
 
 [] a owl:Axiom ;
-    rdfs:seeAlso <https://en.wiktionary.org/wiki/condense> ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_220b7201_d277_4dca_bf6a_5a5e2c4062dd ;
-    owl:annotatedTarget "CondensedMatter"@en ;
-    emmo:etymology "From Latin condēnsō, con- (“with, together”) + dēnsō (“thicken”) [Wiktionary]"@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty emmo:conceptualisation ;
-    owl:annotatedSource emmo:EMMO_220b7201_d277_4dca_bf6a_5a5e2c4062dd ;
-    owl:annotatedTarget "The subject of condensed matter physics that deals with the macroscopic and microscopic physical properties of matter, especially the solid and liquid phases which arise from electromagnetic forces between atoms. More generally, the subject deals with \"condensed\" phases of matter: systems of many constituents with strong interactions between them."@en ;
-    emmo:wikipediaReference "https://en.wikipedia.org/wiki/Condensed_matter_physics"@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c ;
-    owl:annotatedTarget "Mixture"@en ;
-    emmo:etymology "From Latin mixtūra (“a mixing”), from mixtus (“mix”) [Wiktionary]"@en .
-
-[] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource emmo:EMMO_6c487fb3_03d1_4e56_91ed_c2e16dcbef60 ;
     owl:annotatedTarget "Colloid"@en ;
     emmo:etymology "From Ancient Greek κόλλα (kólla, “glue”)."@en .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( emmo:EMMO_04f2a2d5_e799_4692_a654_420e76f5acc1 emmo:EMMO_4c21fb86_fdcf_444e_b498_86fe656295af emmo:EMMO_7509da43_56b1_4d7f_887a_65d1663df4ba emmo:EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1 ) .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_4e9fd152_147b_4564_8999_089608f41aff ;
+    owl:annotatedTarget "AmorphousState"@en ;
+    emmo:etymology "From Ancient Greek ἄμορφος (ámorphos, “without form, shapeless, deformed”) (itself from ἀ- (a-, “without”) + μορφή (morphḗ, “form”)  [Wiktionary]"@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_04f2a2d5_e799_4692_a654_420e76f5acc1 ;
+    owl:annotatedTarget "GaseousState"@en ;
+    emmo:etymology "The word gas was coined in the early 17th century by Flemish chemist Jan Baptist van Helmont. He derived the term from the Ancient Greek word χάος (\"chaos\": void, empty space)."@en .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
@@ -696,9 +702,19 @@ The term phase is sometimes used as a synonym for state of matter, but there can
     emmo:etymology """From Late Latin plasma (“mold”), from Ancient Greek πλάσμα (plásma, “something formed”) [Wiktionary]
 The term has been introduced in physics by Irving Langmuir in 1928."""@en .
 
-[] a owl:AllDisjointClasses ;
-    owl:members ( emmo:EMMO_2dd512a1_5187_47cc_b0b8_141214e22b59 emmo:EMMO_33e0ac8b_a318_4285_b1de_e95347784632 emmo:EMMO_42185fe7_122c_4e0c_a3cd_659d3e21c389 emmo:EMMO_47fe2379_be21_48d1_9ede_402f0faf494b emmo:EMMO_c457b6b9_5e73_4853_ae08_d776c12b8058 emmo:EMMO_d4f37e32_16ae_4cc6_b4cd_fd896b2449c4 emmo:EMMO_e0edfb9e_9a96_4fae_b942_831ffe27b84a emmo:EMMO_e9e02156_651f_41c8_9efb_d5da0d4ce5e2 ) .
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_87ac88ff_8379_4f5a_8c7b_424a8fff1ee8 ;
+    owl:annotatedTarget "Fluid"@en ;
+    emmo:etymology "From Latin fluidus (“flowing; fluid”), from Latin fluō (“to flow”), from Proto-Indo-European *bʰleh₁- (“to swell; surge; overflow; run”) [Wiktionary]"@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso <https://en.wiktionary.org/wiki/condense> ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_220b7201_d277_4dca_bf6a_5a5e2c4062dd ;
+    owl:annotatedTarget "CondensedMatter"@en ;
+    emmo:etymology "From Latin condēnsō, con- (“with, together”) + dēnsō (“thicken”) [Wiktionary]"@en .
 
 [] a owl:AllDisjointClasses ;
-    owl:members ( emmo:EMMO_04f2a2d5_e799_4692_a654_420e76f5acc1 emmo:EMMO_4c21fb86_fdcf_444e_b498_86fe656295af emmo:EMMO_7509da43_56b1_4d7f_887a_65d1663df4ba emmo:EMMO_a2b006f2_bbfd_4dba_bcaa_3fca20cd6be1 ) .
+    owl:members ( emmo:EMMO_2dd512a1_5187_47cc_b0b8_141214e22b59 emmo:EMMO_33e0ac8b_a318_4285_b1de_e95347784632 emmo:EMMO_42185fe7_122c_4e0c_a3cd_659d3e21c389 emmo:EMMO_47fe2379_be21_48d1_9ede_402f0faf494b emmo:EMMO_c457b6b9_5e73_4853_ae08_d776c12b8058 emmo:EMMO_d4f37e32_16ae_4cc6_b4cd_fd896b2449c4 emmo:EMMO_e0edfb9e_9a96_4fae_b942_831ffe27b84a emmo:EMMO_e9e02156_651f_41c8_9efb_d5da0d4ce5e2 ) .
 

@@ -32,9 +32,9 @@ Processes are 4D objects that unfolds in time in a way that has a meaning to the
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "Holistic"@en ;
     rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/perspectives/perspective> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/perspectives/holistic> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/perspectives/perspective> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/perspectives/holistic> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     emmo:contact "emmo@emmc.eu"^^xsd:string .
 
 emmo:EMMO_a9a9d824_5ba1_4dac_a407_e42bf63350ca a owl:ObjectProperty ;
@@ -132,15 +132,15 @@ The role type requires that also the whole type depends on the existence of part
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_4f226cf3_6d02_4d35_8566_a9e641bc6ff3 ;
-    owl:annotatedTarget "Role"@en ;
-    emmo:etymology "From French rôle, from obsolete French roule ‘roll’, referring originally to the roll of paper on which the actor's part was written."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource emmo:EMMO_0277f24a_ea7f_4917_81b7_fb0406c8fc62 ;
     owl:annotatedTarget "Holistic"@en ;
     emmo:etymology "Holism (from Greek ὅλος holos \"all, whole, entire\")."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_1efe8b96_e006_4a33_bc9a_421406cbb9f0 ;
+    owl:annotatedTarget "Whole"@en ;
+    emmo:etymology "From Middle English hole (“healthy, unhurt, whole”)."@en .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:altLabel ;
@@ -149,15 +149,15 @@ The role type requires that also the whole type depends on the existence of part
     emmo:etymology "From the word 'holistic' with the 'w-' prefix, due to the affinity with the existing word 'whole', that share the same meaning of 'holos'."@en .
 
 [] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_4f226cf3_6d02_4d35_8566_a9e641bc6ff3 ;
+    owl:annotatedTarget "Role"@en ;
+    emmo:etymology "From French rôle, from obsolete French roule ‘roll’, referring originally to the roll of paper on which the actor's part was written."@en .
+
+[] a owl:Axiom ;
     owl:annotatedProperty skos:altLabel ;
     owl:annotatedSource emmo:EMMO_4f226cf3_6d02_4d35_8566_a9e641bc6ff3 ;
     owl:annotatedTarget "Part"@en ;
     emmo:etymology "From Latin partire, partiri ‘divide, share’."@en ;
     emmo:note "The term 'part' is here intended not only in mereological sense but also as role. For example. the term part is used to define the role played by an actor, specifying not only a mereological participation of the actor to an act, but also a specific role for that actor."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_1efe8b96_e006_4a33_bc9a_421406cbb9f0 ;
-    owl:annotatedTarget "Whole"@en ;
-    emmo:etymology "From Middle English hole (“healthy, unhurt, whole”)."@en .
 

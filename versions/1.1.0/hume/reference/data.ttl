@@ -21,7 +21,10 @@ ns1:ClassicalData a owl:Class ;
     skos:prefLabel "ClassicalData"@en ;
     ns1:elucidation "Data that are expressed through classical physics mechanisms, having one value and one state, and being in the same place at the same time."@en .
 
+ns1:Contrast rdfs:label "Contrast"@en .
+
 ns1:DiscreteData a owl:Class ;
+    rdfs:label "DiscreteData"@en ;
     rdfs:subClassOf ns1:DataByDiscretness ;
     skos:example "A text is a collection of discrete symbols. A compact disc is designed to host discrete states in the form of pits and lands."@en ;
     skos:prefLabel "DiscreteData"@en ;
@@ -68,9 +71,9 @@ ns1:hasDatum a owl:ObjectProperty ;
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "Data"@en ;
     rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/perspectives/contrast> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/reference/data> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/perspectives/contrast> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/hume/reference/data> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     ns1:contact "emmo@emmc.eu"^^xsd:string .
 
 ns1:Dataset a owl:Class ;
@@ -87,6 +90,7 @@ ns1:Datum a owl:Class ;
     ns1:elucidation "A self-consistent encoded data entity."@en .
 
 ns1:DataByDiscretness a owl:Class ;
+    rdfs:label "DataByDiscretness"@en ;
     rdfs:subClassOf ns1:Data ;
     skos:prefLabel "DataByDiscretness"@en ;
     ns1:OWLRL2DLAxioms "EquivalentTo: AnalogData or DiscreteData"^^xsd:string ;
@@ -112,4 +116,6 @@ ns1:DataByStructure a owl:Class ;
     skos:prefLabel "DataByStructure"@en ;
     ns1:OWLRL2DLAxioms "EquivalentTo: Dataset or Datum"^^xsd:string ;
     ns1:elucidation "Categorisation of data by its structure."@en .
+
+ns1:Data rdfs:label "Data"@en .
 

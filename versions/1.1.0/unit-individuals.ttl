@@ -26167,8 +26167,8 @@ emmo:wikipediaReference a owl:AnnotationProperty ;
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "Unit individuals."@en ;
     rdfs:comment "The EMMO should be reasoned with HermiT to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/disciplines/units/unit-individuals> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/disciplines/units/unit-individuals> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     emmo:contact "emmo@emmc.eu"^^xsd:string .
 
 <https://orcid.org/0000-0002-1560-809X> a owl:NamedIndividual ;
@@ -27013,11 +27013,11 @@ emmo:EMMO_54dc83cb_06e1_4739_9e45_bc09cead7f48 a owl:Class ;
 emmo:EMMO_556e27cd_fef1_41c9_824a_dd78980062b5 a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 1e-30 ;
-            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
-        [ a owl:Restriction ;
             owl:hasValue "q"^^xsd:string ;
             owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-30 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
         emmo:EMMO_48fc9480_78c3_4c81_a126_019df20d58d9 ;
     skos:prefLabel "Quecto"@en ;
     emmo:elucidation "SI prefix who's value is 1e-30."@en .
@@ -27672,7 +27672,7 @@ emmo:EMMO_bdee99f6_389b_4816_8a1c_a7903a2df00a a owl:Class ;
     emmo:elucidation "The class of units with dimensionality 'SquareTemperature'."@en .
 
 emmo:EMMO_be8592a7_68d1_4a06_ad23_82f2b56ef926 a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/reference/data#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/math#> ;
     rdfs:subClassOf emmo:EMMO_c66ad523_3937_485e_91bb_ad488ddb373f ;
     skos:example "A text is a collection of discrete symbols. A compact disc is designed to host discrete states in the form of pits and lands."@en ;
     skos:prefLabel "DiscreteData"@en ;
@@ -28002,7 +28002,7 @@ emmo:EMMO_eaf4640d_651d_4cbe_a315_3d2dc5df3b35 a owl:Class ;
     emmo:elucidation "Data that is encoded and/or decoded by a procedural agent following a procedure."@en .
 
 emmo:EMMO_eb50c9cb_9576_4a61_95ec_f81fb8218187 a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/reference/agency#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
     rdfs:subClassOf emmo:EMMO_0277f24a_ea7f_4917_81b7_fb0406c8fc62 ;
     skos:altLabel "QWhole"@en ;
     skos:prefLabel "QualifiedWhole"@en ;
@@ -28155,11 +28155,11 @@ emmo:EMMO_ffbacbc4_c3be_4cc5_9539_94344e72f7a6 a owl:Class ;
 emmo:Exbi a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/otherunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "Ei"^^xsd:string ;
-            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
-        [ a owl:Restriction ;
             owl:hasValue 1.152922e+18 ;
             owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        [ a owl:Restriction ;
+            owl:hasValue "Ei"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
         emmo:EMMO_640ea55c_e9a7_4f23_8aae_5bb4ba867f30 ;
     skos:prefLabel "Exbi"@en ;
     emmo:elucidation "Binary SI prefix who's value is 2**60."@en .
@@ -28641,11 +28641,11 @@ emmo:Lux a owl:NamedIndividual,
 emmo:Mebi a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/otherunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "Mi"^^xsd:string ;
-            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
-        [ a owl:Restriction ;
             owl:hasValue 1.048576e+06 ;
             owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        [ a owl:Restriction ;
+            owl:hasValue "Mi"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
         emmo:EMMO_640ea55c_e9a7_4f23_8aae_5bb4ba867f30 ;
     skos:prefLabel "Mebi"@en ;
     emmo:elucidation "Binary SI prefix who's value is 2**20."@en .
@@ -28890,11 +28890,11 @@ emmo:PascalSquareRootMeter a owl:NamedIndividual,
 emmo:Pebi a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/otherunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "Pi"^^xsd:string ;
-            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
-        [ a owl:Restriction ;
             owl:hasValue 1.1259e+15 ;
             owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        [ a owl:Restriction ;
+            owl:hasValue "Pi"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
         emmo:EMMO_640ea55c_e9a7_4f23_8aae_5bb4ba867f30 ;
     skos:prefLabel "Pebi"@en ;
     emmo:elucidation "Binary SI prefix who's value is 2**50."@en .
@@ -29241,17 +29241,17 @@ emmo:EMMO_11501e0a_4442_4bd0_8483_7ea6dc8ba444 a owl:ObjectProperty ;
 emmo:EMMO_117d3e39_de3e_46f5_9744_b4a28d9fc83e a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "G"^^xsd:string ;
-            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
-        [ a owl:Restriction ;
             owl:hasValue 1e+09 ;
             owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        [ a owl:Restriction ;
+            owl:hasValue "G"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
         emmo:EMMO_2374896c_4ef8_4b3d_8c0c_0d29ba66bcfb ;
     skos:prefLabel "Giga"@en ;
     emmo:elucidation "SI prefix who's value is 1e9."@en .
 
 emmo:EMMO_13191289_6c2b_4741_93e1_82d53bd0e703 a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/persistence#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf emmo:EMMO_ae2d1a96_bfa1_409a_a7d2_03d69e8a125a ] ;
             owl:someValuesFrom emmo:EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce ],
@@ -29362,11 +29362,11 @@ emmo:EMMO_23eabdb5_6de6_4615_b6b1_a07b3ad32fd9 a owl:Class ;
 emmo:EMMO_254472c6_3dbd_4f02_bc43_571389cd281f a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 1e-21 ;
-            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
             owl:someValuesFrom emmo:EMMO_4db5c662_b065_49e4_96eb_826699fa8048 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-21 ;
+            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
         emmo:EMMO_9d28f9ad_d9d3_4edb_bc00_5d9bd242244d ;
     skos:prefLabel "ZeptoPrefixedUnit"@en ;
     emmo:elucidation "Superclass for all units prefixed with \"zepto\" (1e-21)."@en .
@@ -29383,11 +29383,11 @@ emmo:EMMO_2a28c0dd_89b1_47ac_b81f_fccc56f39617 a owl:AsymmetricProperty,
 emmo:EMMO_2b243e59_3a2a_412e_9a58_81d1e5c92fbe a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 1e-12 ;
-            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
-        [ a owl:Restriction ;
             owl:hasValue "p"^^xsd:string ;
             owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-12 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
         emmo:EMMO_48fc9480_78c3_4c81_a126_019df20d58d9 ;
     skos:prefLabel "Pico"@en ;
     emmo:elucidation "SI prefix who's value is 1e-12."@en .
@@ -29537,14 +29537,14 @@ emmo:EMMO_463bcfda_867b_41d9_a967_211d4d437cfb a owl:Class ;
         "A measurement is the process of experimentally obtaining one or more measurement results that can reasonably be attributed to a quantity."@en ;
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_ae081613_1d3a_49af_ba03_7195fcc9ebba ;
-            owl:someValuesFrom emmo:EMMO_6f5af708_f825_4feb_a0d1_a8d813d3022b ],
+            owl:onProperty emmo:EMMO_963b7cf2_3358_463e_86fa_2e8ef00704d9 ;
+            owl:someValuesFrom emmo:EMMO_f658c301_ce93_46cf_9639_4eace2c5d1d5 ],
         [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_802b7639_9498_4b47_ad45_1a087fe8fb85 ;
             owl:someValuesFrom emmo:EMMO_0650c031_42b6_4f0a_b62d_d88f071da6bf ],
         [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_963b7cf2_3358_463e_86fa_2e8ef00704d9 ;
-            owl:someValuesFrom emmo:EMMO_f658c301_ce93_46cf_9639_4eace2c5d1d5 ],
+            owl:onProperty emmo:EMMO_ae081613_1d3a_49af_ba03_7195fcc9ebba ;
+            owl:someValuesFrom emmo:EMMO_6f5af708_f825_4feb_a0d1_a8d813d3022b ],
         [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_c4bace1d_4db0_4cd3_87e9_18122bae2840 ;
             owl:someValuesFrom emmo:EMMO_0f6f0120_c079_4d95_bb11_4ddee05e530e ],
@@ -29581,11 +29581,11 @@ emmo:EMMO_48f00c52_8d3d_4e80_8d88_59fabaa01d87 a owl:Class ;
 emmo:EMMO_49adf406_5c8f_498a_8c90_e4974e9e6d11 a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 1e-03 ;
-            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
-        [ a owl:Restriction ;
             owl:hasValue "m"^^xsd:string ;
             owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-03 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
         emmo:EMMO_48fc9480_78c3_4c81_a126_019df20d58d9 ;
     skos:prefLabel "Milli"@en ;
     emmo:elucidation "SI prefix who's value is 1/1000."@en .
@@ -29600,11 +29600,11 @@ emmo:EMMO_4b965242_29f0_4e42_a4b6_f8a5988052df a owl:Class ;
 emmo:EMMO_4bc07644_8301_4aed_b21c_823f99b08d1a a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 1e+02 ;
-            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
-        [ a owl:Restriction ;
             owl:hasValue "h"^^xsd:string ;
             owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+02 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
         emmo:EMMO_2374896c_4ef8_4b3d_8c0c_0d29ba66bcfb ;
     skos:prefLabel "Hecto"@en ;
     emmo:elucidation "SI prefix who's value is 100."@en .
@@ -29619,11 +29619,11 @@ emmo:EMMO_4cf484af_082a_40f5_9f11_930bf4634482 a owl:Class ;
 emmo:EMMO_4db5c662_b065_49e4_96eb_826699fa8048 a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "z"^^xsd:string ;
-            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
-        [ a owl:Restriction ;
             owl:hasValue 1e-21 ;
             owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        [ a owl:Restriction ;
+            owl:hasValue "z"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
         emmo:EMMO_48fc9480_78c3_4c81_a126_019df20d58d9 ;
     skos:prefLabel "Zepto"@en ;
     emmo:elucidation "SI prefix who's value is 1e-21."@en .
@@ -29701,7 +29701,7 @@ emmo:EMMO_5f334606_f67d_4f0e_acb9_eeb21cb10c66 a owl:Class ;
     emmo:note "Since a string is a simple type that can contain only characters but not other child elements, is often not suitable for representing human text, that may need additional elements for control of aspects such as bidirectional formatting or ruby annotation."@en .
 
 emmo:EMMO_611e4040_9a3e_4a1a_9fa2_7b1012269401 a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
     rdfs:subClassOf emmo:EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4 ;
     skos:prefLabel "MeasurementUnitByDimensionality"@en ;
     emmo:OWLRL2DLAxioms "EquivalentTo: DimensionalUnit or DimensionlessUnit"^^xsd:string ;
@@ -29836,11 +29836,11 @@ emmo:EMMO_7abfbbc4_ce7b_4611_b731_1b5b8bd2bbc0 a owl:Class ;
 emmo:EMMO_7cdc375d_d371_4d78_acd5_d51732f52126 a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_cb804456_9459_4be5_ac63_a291a872fbd0 ;
-            owl:someValuesFrom emmo:EMMO_19608340_178c_4bfd_bd4d_0d3b935c6fec ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_9e3ad976_b179_4315_b51e_7e874df583dc ;
             owl:someValuesFrom emmo:EMMO_d7788d1a_020d_4c78_85a1_13563fcec168 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_cb804456_9459_4be5_ac63_a291a872fbd0 ;
+            owl:someValuesFrom emmo:EMMO_19608340_178c_4bfd_bd4d_0d3b935c6fec ],
         emmo:EMMO_4d5621e8_af7f_4aef_abd5_f905a34f62af ;
     skos:altLabel "IconSemiosis"@en ;
     skos:prefLabel "Cognition"@en ;
@@ -29857,11 +29857,11 @@ emmo:EMMO_7d77a013_1a0c_46fe_a6d8_ef6f4abb44fa a owl:AsymmetricProperty,
 emmo:EMMO_7fd8ec39_1c4b_4ff3_9bc8_0bf3c27e2db0 a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 1e-15 ;
-            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
-        [ a owl:Restriction ;
             owl:hasValue "f"^^xsd:string ;
             owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-15 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
         emmo:EMMO_48fc9480_78c3_4c81_a126_019df20d58d9 ;
     skos:prefLabel "Femto"@en ;
     emmo:elucidation "SI prefix who's value is 1e-15."@en .
@@ -29869,11 +29869,11 @@ emmo:EMMO_7fd8ec39_1c4b_4ff3_9bc8_0bf3c27e2db0 a owl:Class ;
 emmo:EMMO_85ee9154_5a3e_482e_aa37_c617ff1947ff a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "M"^^xsd:string ;
-            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
-        [ a owl:Restriction ;
             owl:hasValue 1e+06 ;
             owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        [ a owl:Restriction ;
+            owl:hasValue "M"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
         emmo:EMMO_2374896c_4ef8_4b3d_8c0c_0d29ba66bcfb ;
     skos:prefLabel "Mega"@en ;
     emmo:elucidation "SI prefix who's value is 1e6."@en .
@@ -29904,17 +29904,17 @@ emmo:EMMO_88a34881_b8d0_474b_9a08_40dbd414d834 a owl:Class ;
 emmo:EMMO_890856a3_3eb4_471e_a54a_65031bee30f4 a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "d"^^xsd:string ;
-            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
-        [ a owl:Restriction ;
             owl:hasValue 1e-01 ;
             owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        [ a owl:Restriction ;
+            owl:hasValue "d"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
         emmo:EMMO_48fc9480_78c3_4c81_a126_019df20d58d9 ;
     skos:prefLabel "Deci"@en ;
     emmo:elucidation "SI prefix who's value is 1/10."@en .
 
 emmo:EMMO_8c64fcfa_23aa_45f8_9e58_bdfd065fab8f a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/math#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
     rdfs:subClassOf emmo:EMMO_9e029526_79a2_47a8_a151_dd0545db471b ;
     skos:prefLabel "Constant"@en ;
     emmo:elucidation "A variable that stand for a numerical constant, even if it is unknown."@en .
@@ -29932,7 +29932,7 @@ emmo:EMMO_9159bb16_8a70_49f9_bac4_f5cf2a82c39a a owl:Class ;
     emmo:elucidation "Categorisation of physical quantities by how they are defined."@en .
 
 emmo:EMMO_946b5162_95b0_4801_81d4_efef43842a0d a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/reference/agency#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
     rdfs:subClassOf emmo:EMMO_0277f24a_ea7f_4917_81b7_fb0406c8fc62 ;
     skos:altLabel "QRole"@en ;
     skos:prefLabel "QualifiedRole"@en ;
@@ -30081,7 +30081,7 @@ emmo:EMMO_c01bea11_1937_4cc0_b40d_4b192fdba311 a owl:ObjectProperty ;
     skos:prefLabel "isReferredBy"@en .
 
 emmo:EMMO_c66ad523_3937_485e_91bb_ad488ddb373f a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/reference/data#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/math#> ;
     rdfs:subClassOf emmo:EMMO_3e7add3d_e6ed_489a_a796_8e31fef9b490 ;
     skos:prefLabel "DataByDiscretness"@en ;
     emmo:OWLRL2DLAxioms "EquivalentTo: AnalogData or DiscreteData"^^xsd:string ;
@@ -30114,7 +30114,7 @@ emmo:EMMO_cb3f4298_5895_4272_be63_42dd246cc10c a owl:Class ;
     emmo:elucidation "SI prefix who's value is 1e24."@en .
 
 emmo:EMMO_cbdea88b_fef1_4c7c_b69f_ae1f0f241c4a a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
     rdfs:subClassOf emmo:EMMO_611e4040_9a3e_4a1a_9fa2_7b1012269401 ;
     skos:prefLabel "DimensionalUnit"@en ;
     emmo:elucidation "A subclass of measurement unit focusing on the physical dimensionality that is carried by the unit."@en ;
@@ -30162,7 +30162,7 @@ emmo:EMMO_ceaaf9f7_fd11_424b_8fda_9afa186af186 a owl:Class ;
     emmo:elucidation "An object which is a spatial part of another object."@en .
 
 emmo:EMMO_cede9297_c60d_4487_9207_62ac963202b5 a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/reference/agency#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
     rdfs:subClassOf emmo:EMMO_13191289_6c2b_4741_93e1_82d53bd0e703 ;
     skos:prefLabel "ParticipantByAgency"@en ;
     emmo:OWLRL2DLAxioms "EquivalentTo: Agent or NonAgent"^^xsd:string ;
@@ -30276,7 +30276,7 @@ emmo:EMMO_ddecfff6_d3a1_4972_b9e9_3d0ca11a3a0b a owl:Class ;
     emmo:illustration "https://w3id.org/emmo/raw/1.0.4/doc/figs/IterativeWorkflow.png"^^xsd:anyURI .
 
 emmo:EMMO_e04884d9_eda6_487e_93d5_7722d7eda96b a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/persistence#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
     rdfs:subClassOf emmo:EMMO_49267eba_5548_4163_8f36_518d65b583f9 ;
     skos:prefLabel "Persistence"@en ;
     emmo:OWLRL2DLAxioms "EquivalentTo: Process or Object"^^xsd:string ;
@@ -30336,11 +30336,11 @@ emmo:EMMO_e95b9f89_3ffd_4ea5_b682_97c4cc191a8d a owl:Class ;
 emmo:EMMO_e9722f13_947c_444e_82ef_1ce045f6637c a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "a"^^xsd:string ;
-            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
-        [ a owl:Restriction ;
             owl:hasValue 1e-18 ;
             owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        [ a owl:Restriction ;
+            owl:hasValue "a"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
         emmo:EMMO_48fc9480_78c3_4c81_a126_019df20d58d9 ;
     skos:prefLabel "Atto"@en ;
     emmo:elucidation "SI prefix who's value is 1e-18."@en .
@@ -30352,7 +30352,7 @@ emmo:EMMO_ea5a4079_dbca_4ae7_80f4_415643f95257 a owl:Class ;
     emmo:elucidation "A semiosis where the triangle of relations is completely developed."@en .
 
 emmo:EMMO_ea67caa5_2609_4e91_98ae_81103f2d5c25 a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/properties#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf emmo:EMMO_cb804456_9459_4be5_ac63_a291a872fbd0 ] ;
             owl:someValuesFrom emmo:EMMO_3b19eab4_79be_4b02_bdaf_ecf1f0067a68 ],
@@ -30395,7 +30395,7 @@ emmo:EMMO_f37fc69b_d6fd_44de_9c66_3c70b2efb7f4 a owl:ObjectProperty ;
     skos:prefLabel "isJunctionPartOf"@en .
 
 emmo:EMMO_f53f45f2_c354_417c_a904_a2606ad584d7 a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/reference/agency#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
     rdfs:subClassOf emmo:EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce ;
     skos:prefLabel "ProcessByAgency"@en ;
     emmo:elucidation "Categorisation of processes by whether they are driven by an agent or not."@en .
@@ -30403,11 +30403,11 @@ emmo:EMMO_f53f45f2_c354_417c_a904_a2606ad584d7 a owl:Class ;
 emmo:EMMO_f5769206_9257_4b08_bf7b_dad7868c6afc a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
-            owl:someValuesFrom emmo:EMMO_7abfbbc4_ce7b_4611_b731_1b5b8bd2bbc0 ],
-        [ a owl:Restriction ;
             owl:hasValue 1e-24 ;
             owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
+            owl:someValuesFrom emmo:EMMO_7abfbbc4_ce7b_4611_b731_1b5b8bd2bbc0 ],
         emmo:EMMO_9d28f9ad_d9d3_4edb_bc00_5d9bd242244d ;
     skos:prefLabel "YoctoPrefixedUnit"@en ;
     emmo:elucidation "Superclass for all units prefixed with \"yocto\" (1e-24)."@en .
@@ -31010,7 +31010,7 @@ emmo:EMMO_1c2226a9_22f0_40c8_8928_5a01d398f96e a owl:Class ;
     emmo:elucidation "The class of units with dimensionality 'MagneticDipoleMoment'."@en .
 
 emmo:EMMO_1e877c70_3b01_45a8_a8f6_8ce4f6a24660 a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/reference/data#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/math#> ;
     rdfs:seeAlso "Luciano Floridi, \"Information - A very Short Introduction\", Oxford University Press., (2010) ISBN 978-0199551378"@en ;
     rdfs:subClassOf emmo:EMMO_49267eba_5548_4163_8f36_518d65b583f9 ;
     skos:altLabel "Dedomena"@en,
@@ -31076,7 +31076,7 @@ emmo:EMMO_33b6c84d_e139_418c_8f8c_f1d45f94df46 a owl:Class ;
     emmo:elucidation "The class of units with dimensionality 'ThermalResistivity'."@en .
 
 emmo:EMMO_33dc57d7_68bd_460c_a440_26a78d57ea0d a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/properties#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
     rdfs:subClassOf emmo:EMMO_0527413c_b286_4e9c_b2d0_03fb2a038dee ;
     skos:prefLabel "InterpreterByReferent"@en ;
     emmo:elucidation "Interpreter classified by how the sign stands for its reference object."@en .
@@ -31195,7 +31195,7 @@ emmo:EMMO_443198a5_934c_44fa_b89e_28eca13b25b2 a owl:Class ;
     emmo:elucidation "A data representing 16-bit integer number."@en .
 
 emmo:EMMO_4a1c73f1_b6f5_4d10_a3a6_5de90bac7cd0 a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/properties#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf emmo:EMMO_cb804456_9459_4be5_ac63_a291a872fbd0 ] ;
             owl:someValuesFrom emmo:EMMO_1c0b22a2_be82_4fa8_9e2b_a569a625d442 ],
@@ -31391,7 +31391,7 @@ emmo:EMMO_9ba91622_e39f_43e3_b95f_290937928d7e a owl:Class ;
     emmo:elucidation "The class of units with dimensionality 'MassPerAmount'."@en .
 
 emmo:EMMO_9e029526_79a2_47a8_a151_dd0545db471b a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/math#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
     rdfs:subClassOf emmo:EMMO_1eed0732_e3f1_4b2c_a9c4_b4e75eeb5895 ;
     skos:prefLabel "NumericalVariable"@en ;
     emmo:elucidation "A variable standing for a numerical defined mathematical object like e.g. a number, a vector of numbers, a matrix of numbers."@en .
@@ -31416,7 +31416,7 @@ emmo:EMMO_9f6ec830_c59f_46aa_8a22_945ba20b6ea3 a owl:Class ;
     emmo:note "A task tile is part of a specific granularity level for the workflow description, as composition of tasks."@en .
 
 emmo:EMMO_a49c2441_1e54_43f0_a1cf_2f553a23ac34 a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/reference/agency#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_cd24eb82_a11c_4a31_96ea_32f870c5580a ;
             owl:someValuesFrom emmo:EMMO_2480b72b_db8d_460f_9a5f_c2912f979046 ],
@@ -31453,7 +31453,7 @@ emmo:EMMO_d02c92e0_99ba_4c09_b01f_0d7a7dd7b24e a owl:Class ;
     emmo:elucidation "The class of units with dimensionality 'LengthTemperature'."@en .
 
 emmo:EMMO_d8d2144e_5c8d_455d_a643_5caf4d8d9df8 a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/specialunits#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/math#> ;
     rdfs:subClassOf emmo:EMMO_057e7d57_aff0_49de_911a_8861d85cef40 ;
     skos:prefLabel "Language"@en ;
     emmo:elucidation "A language object is a discrete data entity respecting specific language syntactic rules (a well-formed formula)."@en .
@@ -31817,7 +31817,7 @@ emmo:CoulombPerCubicMetre a owl:NamedIndividual,
     emmo:unitSymbol "C/m³"^^xsd:string .
 
 emmo:EMMO_0277f24a_ea7f_4917_81b7_fb0406c8fc62 a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/reference/agency#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
     rdfs:subClassOf emmo:EMMO_49267eba_5548_4163_8f36_518d65b583f9 ;
     skos:altLabel "Wholistic"@en ;
     skos:example "A molecule of a body can have role in the body evolution, without caring if its part of a specific organ and without specifying the time interval in which this role occurred."@en,
@@ -31834,7 +31834,7 @@ This class allows the picking of parts without necessarily going trough a rigid 
 For example, a scattering event between an electron and a nucleus requires electron and nucleus types as parts to exist, but this is not enough to make this event an atom, since it requires a persistent bond. So defining something as an atom iff have parts some electons and a nucleus is not enough."""@en .
 
 emmo:EMMO_057e7d57_aff0_49de_911a_8861d85cef40 a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/specialunits#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/math#> ;
     rdfs:subClassOf emmo:EMMO_be8592a7_68d1_4a06_ad23_82f2b56ef926 ;
     skos:example """fe780
 emmo
@@ -31931,11 +31931,11 @@ emmo:EMMO_3df1408c_df34_4037_8584_c25f854bb346 a owl:Class ;
 emmo:EMMO_43a6b269_da31_4bb6_a537_c97df4fff32a a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
-            owl:someValuesFrom emmo:EMMO_d7c74480_a568_4470_acff_f18b499cc850 ],
-        [ a owl:Restriction ;
             owl:hasValue 1e+15 ;
             owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
+            owl:someValuesFrom emmo:EMMO_d7c74480_a568_4470_acff_f18b499cc850 ],
         emmo:EMMO_2024fca1_b015_45ee_9490_e9e7d36bf704 ;
     skos:prefLabel "PetaPrefixedUnit"@en ;
     emmo:elucidation "Superclass for all units prefixed with \"peta\" (1e15)."@en .
@@ -31982,7 +31982,7 @@ emmo:EMMO_52b029aa_e525_4907_95d8_759298b04f97 a owl:Class ;
     emmo:elucidation "The class of units with dimensionality 'PerTimeMass'."@en .
 
 emmo:EMMO_53ed8611_2cd7_4286_9ef0_36572117b963 a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/reference/data#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
     rdfs:subClassOf emmo:EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf ;
     skos:example "An atom, a group of persons, a fluid."@en ;
     skos:prefLabel "Fusion"@en ;
@@ -32093,7 +32093,7 @@ emmo:EMMO_8af3b008_0e32_4684_85ab_a52a8e7b6877 a owl:Class ;
     emmo:elucidation "Categorisation of intentional agencies by their kind."@en .
 
 emmo:EMMO_8bb6b688_812a_4cb9_b76c_d5a058928719 a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/properties#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
     rdfs:seeAlso "https://plato.stanford.edu/entries/peirce-semiotics/"^^xsd:anyURI,
         "https://github.com/emmo-repo/EMMO/wiki/EMMO-Introduction#25-Semiotic-Framework"^^xsd:string ;
     rdfs:subClassOf emmo:EMMO_49267eba_5548_4163_8f36_518d65b583f9 ;
@@ -32112,7 +32112,7 @@ emmo:EMMO_9cb984ca_48ad_4864_b09e_50d3fff19420 a owl:IrreflexiveProperty,
     emmo:elucidation "The relation between an entity that overlaps another without being its part."@en .
 
 emmo:EMMO_9d799b43_e188_4047_8167_121d96b31a26 a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/persistence#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
     rdfs:subClassOf emmo:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606 ;
     skos:prefLabel "ObjectByContext"@en ;
     emmo:elucidation "The superclass for all classes that categorise objects according to their mereological and persistence context"@en .
@@ -32127,7 +32127,7 @@ emmo:EMMO_ab2ee5cd_4de3_46b6_bec5_29e293b33422 a owl:Class ;
     emmo:elucidation "The class of units with dimensionality 'TimePerLength'."@en .
 
 emmo:EMMO_b803f122_4acb_4064_9d71_c1e5fd091fc9 a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/properties#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
     rdfs:subClassOf emmo:EMMO_8bb6b688_812a_4cb9_b76c_d5a058928719 ;
     skos:prefLabel "SemioticEntity"@en ;
     emmo:OWLRL2DLAxioms "EquivalentTo: Interpreter or SemioticObject or Sign"^^xsd:string ;
@@ -32153,7 +32153,7 @@ emmo:EMMO_bf106e62_ce1c_4ccc_9f45_c10326078a5a a owl:Class ;
     emmo:elucidation "The class of units with dimensionality 'PowerArea'."@en .
 
 emmo:EMMO_c130614a_2985_476d_a7ed_8a137847703c a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/reference/agency#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
     rdfs:seeAlso <https://plato.stanford.edu/entries/agency> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf emmo:EMMO_cd24eb82_a11c_4a31_96ea_32f870c5580a ] ;
@@ -32431,7 +32431,7 @@ emmo:EMMO_1328d112_e731_4e56_b9b9_6b6cdd495cd6 a owl:ObjectProperty ;
     emmo:note "A part is always distinct xor redundant."@en .
 
 emmo:EMMO_1b52ee70_121e_4d8d_8419_3f97cd0bd89c a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/properties#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf emmo:EMMO_cb804456_9459_4be5_ac63_a291a872fbd0 ] ;
             owl:someValuesFrom emmo:EMMO_10a5fd39_06aa_4648_9e70_f962a9cb2069 ],
@@ -32441,7 +32441,7 @@ emmo:EMMO_1b52ee70_121e_4d8d_8419_3f97cd0bd89c a owl:Class ;
     emmo:elucidation "An 'interpreter' that perceives another 'entity' (the 'object') through a specific perception mechanism and produces a 'property' (the 'sign') that stands for the result of that particular perception."@en .
 
 emmo:EMMO_1eed0732_e3f1_4b2c_a9c4_b4e75eeb5895 a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/math#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
     rdfs:subClassOf emmo:EMMO_54ee6b5e_5261_44a8_86eb_5717e7fdb9d0 ;
     skos:example """x
 k"""@en ;
@@ -32449,7 +32449,7 @@ k"""@en ;
     emmo:elucidation "A variable is a symbolic object that stands for any other mathematical object, such as  number, a vector, a matrix, a function, the argument of a function, a set, an element of a set."@en .
 
 emmo:EMMO_1efe8b96_e006_4a33_bc9a_421406cbb9f0 a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/reference/agency#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_8e52c42b_e879_4473_9fa1_4b23428b392b ;
             owl:someValuesFrom emmo:EMMO_4f226cf3_6d02_4d35_8566_a9e641bc6ff3 ],
@@ -32461,7 +32461,7 @@ This class is expected to host the definition of world objects as they appear in
         "A whole is categorized as fundamental (or maximal) or redundant (non-maximal)."@en .
 
 emmo:EMMO_2480b72b_db8d_460f_9a5f_c2912f979046 a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/reference/agency#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf emmo:EMMO_cd24eb82_a11c_4a31_96ea_32f870c5580a ] ;
             owl:someValuesFrom emmo:EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce ],
@@ -32478,7 +32478,7 @@ This concept covers both intentional and non intentional agency."""@en ;
     emmo:note "An agent is not necessarily human. In fact, the concept of agent has been generalised to encompass both intentional and unintentional acts primarily to take into account usage of the term in chemistry (e.g., chemical agent that intiitate a reaction), inline also with the most recent development in the philosophical debate."@en .
 
 emmo:EMMO_2d72e38c_d587_437f_98f6_f2718fb130eb a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/properties#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf emmo:EMMO_cb804456_9459_4be5_ac63_a291a872fbd0 ] ;
             owl:someValuesFrom emmo:EMMO_47bf3513_4ae6_4858_9c45_76e23230d68d ],
@@ -32531,11 +32531,11 @@ emmo:EMMO_3fe66e46_9343_4a36_b101_a732ad5f4f76 a owl:Class ;
 emmo:EMMO_42955b2d_b465_4666_86cc_ea3c2d685753 a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
-            owl:someValuesFrom emmo:EMMO_e9722f13_947c_444e_82ef_1ce045f6637c ],
-        [ a owl:Restriction ;
             owl:hasValue 1e-18 ;
             owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
+            owl:someValuesFrom emmo:EMMO_e9722f13_947c_444e_82ef_1ce045f6637c ],
         emmo:EMMO_9d28f9ad_d9d3_4edb_bc00_5d9bd242244d ;
     skos:prefLabel "AttoPrefixedUnit"@en ;
     emmo:elucidation "Superclass for all units prefixed with \"atto\" (1e-18)."@en .
@@ -32881,7 +32881,7 @@ emmo:Becquerel a owl:NamedIndividual,
 
 emmo:EMMO_0f795e3e_c602_4577_9a43_d5a231aa1360 a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/foundation/mereocausality#> ;
-    rdfs:subClassOf _:250,
+    rdfs:subClassOf _:235,
         emmo:EMMO_52b8a39b_e5ff_46d3_b972_65bc43077a07,
         emmo:EMMO_c5ddfdba_c074_4aa4_ad6b_1ac4942d300d ;
     skos:altLabel "CausalChain"@en,
@@ -32895,11 +32895,11 @@ emmo:EMMO_0f795e3e_c602_4577_9a43_d5a231aa1360 a owl:Class ;
 emmo:EMMO_10a5fd39_06aa_4648_9e70_f962a9cb2069 a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_cb804456_9459_4be5_ac63_a291a872fbd0 ;
-            owl:someValuesFrom emmo:EMMO_1b52ee70_121e_4d8d_8419_3f97cd0bd89c ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_9e3ad976_b179_4315_b51e_7e874df583dc ;
             owl:someValuesFrom emmo:EMMO_b7bcff25_ffc3_474e_9ab5_01b1664bd4ba ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_cb804456_9459_4be5_ac63_a291a872fbd0 ;
+            owl:someValuesFrom emmo:EMMO_1b52ee70_121e_4d8d_8419_3f97cd0bd89c ],
         emmo:EMMO_47bf3513_4ae6_4858_9c45_76e23230d68d ;
     skos:altLabel "Characterisation"@en ;
     skos:example "Assigning the word \"red\" as sign for an object provides an information to all other interpreters about the outcome of a specific observation procedure according to the determiner."@en ;
@@ -33091,7 +33091,7 @@ emmo:EMMO_b3c8ba10_6bee_45e7_9416_e9019aa9f023 a owl:IrreflexiveProperty,
     emmo:elucidation "The relation between two entities that overlaps and neither of them is a part of the other."@en .
 
 emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/reference/agency#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_cd24eb82_a11c_4a31_96ea_32f870c5580a ;
             owl:someValuesFrom emmo:EMMO_c130614a_2985_476d_a7ed_8a137847703c ],
@@ -33255,7 +33255,7 @@ emmo:EMMO_1d8b370b_c672_4d0c_964e_eaafcbf2f51f a owl:Class ;
 
 emmo:EMMO_2d2ecd97_067f_4d0e_950c_d746b7700a31 a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/foundation/mereocausality#> ;
-    rdfs:subClassOf _:234,
+    rdfs:subClassOf _:222,
         emmo:EMMO_76bd5e44_bf5a_49f9_a517_eea5e8bcbc2d ;
     owl:disjointWith emmo:EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de ;
     skos:example "The collection of users of a particular software, the collection of atoms that have been part of that just dissociated molecule."@en ;
@@ -33266,7 +33266,7 @@ The combination of collection and item concepts is the EMMO mereocausality alter
     emmo:elucidation "The class of not direct causally self-connected world entities."@en .
 
 emmo:EMMO_3e7add3d_e6ed_489a_a796_8e31fef9b490 a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/reference/data#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/math#> ;
     rdfs:subClassOf emmo:EMMO_1e877c70_3b01_45a8_a8f6_8ce4f6a24660 ;
     owl:disjointWith emmo:EMMO_5a10e288_c6a5_409a_a16a_98a2fb8be4f3 ;
     skos:altLabel "EncodedContrast"@en,
@@ -33304,7 +33304,7 @@ emmo:EMMO_4832e353_6a2d_4deb_9a5b_96989afaff2d a owl:ObjectProperty ;
     emmo:elucidation "A relation connecting a sign to the interpreter in a semiotic process."@en .
 
 emmo:EMMO_49267eba_5548_4163_8f36_518d65b583f9 a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/reference/data#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
     rdfs:subClassOf emmo:EMMO_c5ddfdba_c074_4aa4_ad6b_1ac4942d300d ;
     skos:prefLabel "Perspective"@en ;
     emmo:elucidation "The class of causal objects that stand for world objects according to a specific representational perspective."@en ;
@@ -33424,12 +33424,12 @@ So, for the EMMO the symbol "kg" is not a physical quantity but simply a 'Symbol
 While the string "1 kg" is a 'QuantityValue'."""@en ;
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onClass emmo:EMMO_4ce76d7f_03f8_45b6_9003_90052a79bfaa ;
-            owl:onProperty emmo:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 ;
-            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
-        [ a owl:Restriction ;
             owl:onClass emmo:EMMO_18ce5200_00f5_45bb_8c6f_6fb128cd41ae ;
             owl:onProperty emmo:EMMO_eeb06032_dd4f_476e_9da6_aa24302b7588 ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onClass emmo:EMMO_4ce76d7f_03f8_45b6_9003_90052a79bfaa ;
+            owl:onProperty emmo:EMMO_8ef3cd6d_ae58_4a8d_9fc0_ad8f49015cd0 ;
             owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
         emmo:EMMO_985bec21_989f_4b9e_a4b3_735d88099c3c ;
     skos:example """6.8 m
@@ -33466,17 +33466,17 @@ emmo:note a owl:AnnotationProperty ;
 emmo:EMMO_054af807_85cd_4a13_8eba_119dfdaaf38b a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_27e8e2dd_78a5_433a_b522_a1f61a08aab4 ;
-            owl:someValuesFrom emmo:EMMO_6f5af708_f825_4feb_a0d1_a8d813d3022b ],
-        [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_c792cf6b_097b_4a9a_9fc8_cb693cd5fdf3 ;
-            owl:someValuesFrom emmo:EMMO_b21a56ed_f969_4612_a6ec_cb7766f7f31d ],
-        [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf emmo:EMMO_7fb7fe7e_bdf9_4eeb_adad_e384dd5285c6 ] ;
             owl:someValuesFrom emmo:EMMO_008fd3b2_4013_451f_8827_52bceab11841 ],
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf emmo:EMMO_da27d905_beb6_44ea_a330_a2dd9c17b263 ] ;
             owl:someValuesFrom emmo:EMMO_0527413c_b286_4e9c_b2d0_03fb2a038dee ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_27e8e2dd_78a5_433a_b522_a1f61a08aab4 ;
+            owl:someValuesFrom emmo:EMMO_6f5af708_f825_4feb_a0d1_a8d813d3022b ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_c792cf6b_097b_4a9a_9fc8_cb693cd5fdf3 ;
+            owl:someValuesFrom emmo:EMMO_b21a56ed_f969_4612_a6ec_cb7766f7f31d ],
         emmo:EMMO_b803f122_4acb_4064_9d71_c1e5fd091fc9 ;
     skos:example """A film is the interpretant for a camera, which is the interpreter. The object captured by the camera is the referent. The film is the internal representation of the object, i.e. how the camera understand the object according to its capacity. The film (interpretant) refers to the object (referent) according to the camera (interpreter).
 When the film is removed from the camera, developed and printed on photographic paper (or for digital camera the image is downloaded as jpeg and displayed on a laptop) then we create a sign other than the interpretant.
@@ -33525,11 +33525,11 @@ emmo:EMMO_3a185e6c_9e19_4776_b583_19c978156aa0 a owl:Class ;
 emmo:EMMO_3a204900_2b33_47d1_b444_815cc4c8cffa a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 1e+12 ;
-            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
             owl:someValuesFrom emmo:EMMO_33fe9747_d66f_4f88_b2c1_951279dbca59 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+12 ;
+            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
         emmo:EMMO_2024fca1_b015_45ee_9490_e9e7d36bf704 ;
     skos:prefLabel "TeraPrefixedUnit"@en ;
     emmo:elucidation "Superclass for all units prefixed with \"tera\" (1e12)."@en .
@@ -33553,7 +33553,7 @@ emmo:EMMO_4c49ab58_a6f6_409e_b849_f873ae1dcbee a owl:Class ;
     emmo:elucidation "The class of units with dimensionality 'MagneticFlux'."@en .
 
 emmo:EMMO_4f226cf3_6d02_4d35_8566_a9e641bc6ff3 a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/reference/agency#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf emmo:EMMO_8e52c42b_e879_4473_9fa1_4b23428b392b ] ;
             owl:someValuesFrom emmo:EMMO_1efe8b96_e006_4a33_bc9a_421406cbb9f0 ],
@@ -33730,7 +33730,7 @@ emmo:definition a owl:AnnotationProperty ;
     emmo:note "A definition univocally determines a OWL entity using necessary and sufficient conditions referring to other OWL entities."@en .
 
 emmo:EMMO_0527413c_b286_4e9c_b2d0_03fb2a038dee a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/properties#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_cd9a3a58_dabc_4c46_9ea4_03ca000b2022 ;
             owl:someValuesFrom emmo:EMMO_b21a56ed_f969_4612_a6ec_cb7766f7f31d ],
@@ -33796,6 +33796,9 @@ emmo:EMMO_a94aec97_71ff_4574_b111_a52d77d2c230 a owl:Class ;
 emmo:EMMO_b21a56ed_f969_4612_a6ec_cb7766f7f31d a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
     rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty [ owl:inverseOf emmo:EMMO_9e3ad976_b179_4315_b51e_7e874df583dc ] ;
+            owl:someValuesFrom emmo:EMMO_008fd3b2_4013_451f_8827_52bceab11841 ],
+        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_4832e353_6a2d_4deb_9a5b_96989afaff2d ;
             owl:someValuesFrom emmo:EMMO_0527413c_b286_4e9c_b2d0_03fb2a038dee ],
         [ a owl:Restriction ;
@@ -33804,9 +33807,6 @@ emmo:EMMO_b21a56ed_f969_4612_a6ec_cb7766f7f31d a owl:Class ;
         [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_b8d05d29_9eea_47db_a20b_0b83ceb6de93 ;
             owl:someValuesFrom emmo:EMMO_054af807_85cd_4a13_8eba_119dfdaaf38b ],
-        [ a owl:Restriction ;
-            owl:onProperty [ owl:inverseOf emmo:EMMO_9e3ad976_b179_4315_b51e_7e874df583dc ] ;
-            owl:someValuesFrom emmo:EMMO_008fd3b2_4013_451f_8827_52bceab11841 ],
         emmo:EMMO_b803f122_4acb_4064_9d71_c1e5fd091fc9 ;
     skos:example """A novel is made of chapters, paragraphs, sentences, words and characters (in a direct parthood mereological hierarchy).
 
@@ -33897,11 +33897,11 @@ emmo:Gram a owl:NamedIndividual,
 emmo:EMMO_008fd3b2_4013_451f_8827_52bceab11841 a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_7fb7fe7e_bdf9_4eeb_adad_e384dd5285c6 ;
-            owl:someValuesFrom emmo:EMMO_054af807_85cd_4a13_8eba_119dfdaaf38b ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_9e3ad976_b179_4315_b51e_7e874df583dc ;
             owl:someValuesFrom emmo:EMMO_b21a56ed_f969_4612_a6ec_cb7766f7f31d ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_7fb7fe7e_bdf9_4eeb_adad_e384dd5285c6 ;
+            owl:someValuesFrom emmo:EMMO_054af807_85cd_4a13_8eba_119dfdaaf38b ],
         [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_cb804456_9459_4be5_ac63_a291a872fbd0 ;
             owl:someValuesFrom emmo:EMMO_0527413c_b286_4e9c_b2d0_03fb2a038dee ],
@@ -33940,17 +33940,17 @@ emmo:EMMO_6d753e0c_a967_4de4_ad22_c2fecb3913be a owl:Class ;
 emmo:EMMO_6f5af708_f825_4feb_a0d1_a8d813d3022b a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_c01bea11_1937_4cc0_b40d_4b192fdba311 ;
-            owl:someValuesFrom emmo:EMMO_054af807_85cd_4a13_8eba_119dfdaaf38b ],
-        [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_0ed18c6b_8289_44fd_a7d7_c15a8786cdc0 ;
-            owl:someValuesFrom emmo:EMMO_0527413c_b286_4e9c_b2d0_03fb2a038dee ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 ;
             owl:someValuesFrom emmo:EMMO_b21a56ed_f969_4612_a6ec_cb7766f7f31d ],
         [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf emmo:EMMO_8fb6d667_f2af_482d_97a9_ec97cd81274d ] ;
             owl:someValuesFrom emmo:EMMO_008fd3b2_4013_451f_8827_52bceab11841 ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_0ed18c6b_8289_44fd_a7d7_c15a8786cdc0 ;
+            owl:someValuesFrom emmo:EMMO_0527413c_b286_4e9c_b2d0_03fb2a038dee ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_c01bea11_1937_4cc0_b40d_4b192fdba311 ;
+            owl:someValuesFrom emmo:EMMO_054af807_85cd_4a13_8eba_119dfdaaf38b ],
         emmo:EMMO_b803f122_4acb_4064_9d71_c1e5fd091fc9 ;
     skos:altLabel "Object"@en,
         "SemioticObject"@en ;
@@ -33985,7 +33985,7 @@ emmo:EMMO_7610efb8_c7c6_4684_abc1_774783c62472 a owl:Class ;
     emmo:elucidation "The class of units with dimensionality 'ElectricResistance'."@en .
 
 emmo:EMMO_c5ddfdba_c074_4aa4_ad6b_1ac4942d300d a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/reference/data#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
     rdfs:subClassOf emmo:EMMO_53ed8611_2cd7_4286_9ef0_36572117b963,
         emmo:EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de ;
     skos:prefLabel "CausalStructure"@en ;
@@ -34091,9 +34091,9 @@ emmo:EMMO_4dbe2b16_3e84_4049_898d_eb89bcc925a2 a owl:Class ;
     emmo:elucidation "The class of units with dimensionality 'ElectricChargePerMass'."@en .
 
 emmo:EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/reference/data#> ;
-    rdfs:subClassOf _:262,
-        _:263 ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
+    rdfs:subClassOf _:221,
+        _:260 ;
     skos:prefLabel "EMMO"@en ;
     emmo:OWLRL2DLAxioms "DisjointUnion: CausalPath, Collection, Quantum, CausalSystem"^^xsd:string ;
     emmo:conceptualisation """The EMMO conceptualises the world using the primitive concepts of causality and parthood. Parthood is about the composition of world entities starting from other more fundamental entities. Causality is about the interactions between world entities.
@@ -34268,7 +34268,7 @@ emmo:EMMO_2c224eb4_cb86_44a4_a067_8969ead598d7 a owl:Class ;
     emmo:elucidation "The class of units with dimensionality 'MassPerLengthTime'."@en .
 
 emmo:EMMO_54ee6b5e_5261_44a8_86eb_5717e7fdb9d0 a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/math#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
     rdfs:subClassOf emmo:EMMO_d8d2144e_5c8d_455d_a643_5caf4d8d9df8 ;
     skos:prefLabel "Mathematical"@en ;
     emmo:elucidation "The class of general mathematical symbolic objects respecting mathematical syntactic rules."@en ;
@@ -34345,7 +34345,7 @@ Unit of degeneracy in quantum mechanics"""@en ;
     emmo:ucumCode "1"^^xsd:string .
 
 emmo:EMMO_3227b821_26a5_4c7c_9c01_5c24483e0bd0 a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T0 L0 M0 I0 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty emmo:EMMO_19d925d0_2cf1_40e5_a391_1a99d68409c9 ],
@@ -34370,11 +34370,11 @@ emmo:EMMO_7cef5aae_baae_42d1_959a_ee70a7cf7a73 a owl:Class ;
 emmo:EMMO_a8eb4bbb_1bd3_4ad4_b114_2789bcbd2134 a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 1e+09 ;
-            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
             owl:someValuesFrom emmo:EMMO_117d3e39_de3e_46f5_9744_b4a28d9fc83e ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+09 ;
+            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
         emmo:EMMO_2024fca1_b015_45ee_9490_e9e7d36bf704 ;
     skos:prefLabel "GigaPrefixedUnit"@en ;
     emmo:elucidation "Superclass for all units prefixed with \"giga\" (1e9)."@en .
@@ -34448,11 +34448,11 @@ emmo:EMMO_0f3ec0ad_3fcf_42b2_8f34_6dca89e35a4f a owl:Class ;
 emmo:EMMO_1181c938_c8f0_4ad6_bc7a_2bfdc0903d29 a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
-            owl:someValuesFrom emmo:EMMO_890856a3_3eb4_471e_a54a_65031bee30f4 ],
-        [ a owl:Restriction ;
             owl:hasValue 1e-01 ;
             owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
+            owl:someValuesFrom emmo:EMMO_890856a3_3eb4_471e_a54a_65031bee30f4 ],
         emmo:EMMO_9d28f9ad_d9d3_4edb_bc00_5d9bd242244d ;
     skos:prefLabel "DeciPrefixedUnit"@en ;
     emmo:elucidation "Superclass for all units prefixed with \"deci\" (0.1)."@en .
@@ -34554,17 +34554,17 @@ emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 a owl:ObjectProperty ;
 emmo:EMMO_b55cd09a_e54d_4eb1_81dd_03c29d1b878e a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 1e-02 ;
-            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
             owl:someValuesFrom emmo:EMMO_03d2c71b_0276_45d7_a847_7cd164cb7d45 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-02 ;
+            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
         emmo:EMMO_9d28f9ad_d9d3_4edb_bc00_5d9bd242244d ;
     skos:prefLabel "CentiPrefixedUnit"@en ;
     emmo:elucidation "Superclass for all units prefixed with \"centi\" (0.01)."@en .
 
 emmo:EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/reference/data#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/semiotics#> ;
     rdfs:subClassOf emmo:EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf ;
     skos:altLabel "CausalObject"@en ;
     skos:example "A person life, an interval of a person life. The lifetime of two components, from the production in separate manufacturing lines, their being connected components in a device, including their eparation and decommissioning."@en ;
@@ -34582,7 +34582,7 @@ emmo:EMMO_c2f5ee66_579c_44c6_a2e9_fa2eaa9fa4da a owl:Class ;
     rdfs:comment """Quantities that are ratios of quantities of the same kind (for example length ratios and amount fractions) have the option of being expressed with units (m/m, mol/mol to aid the understanding of the quantity being expressed and also allow the use of SI prefixes, if this
 is desirable (μm/m, nmol/mol).
 -- SI Brochure"""@en ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/metrology#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/sidimensionalunits#> ;
     rdfs:subClassOf emmo:EMMO_3227b821_26a5_4c7c_9c01_5c24483e0bd0 ;
     skos:altLabel "RatioUnit"@en ;
     skos:prefLabel "FractionUnit"@en ;
@@ -34639,7 +34639,7 @@ emmo:EMMO_53e825d9_1a09_483c_baa7_37501ebfbe1c a owl:Class ;
     emmo:elucidation "The class of units with dimensionality 'Force'."@en .
 
 emmo:EMMO_90ae56e4_d197_49b6_be1a_0049e4756606 a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/persistence#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
     rdfs:subClassOf emmo:EMMO_e04884d9_eda6_487e_93d5_7722d7eda96b ;
     skos:altLabel "Continuant"@en,
         "Endurant"@en ;
@@ -34655,7 +34655,7 @@ In other terms, if the time span of a temporal part is lower than the inverse of
 For this reason, the definition of object is done by considering only item temporal parts, meaning that slicing in time has the lower limit of a self-connected (i.e. item) entity."""@en .
 
 emmo:EMMO_43e9a05d_98af_41b4_92f6_00f79a09bfce a owl:Class ;
-    rdfs:isDefinedBy <https://w3id.org/emmo/perspectives/persistence#> ;
+    rdfs:isDefinedBy <https://w3id.org/emmo/reference/workflow#> ;
     rdfs:subClassOf emmo:EMMO_e04884d9_eda6_487e_93d5_7722d7eda96b ;
     skos:altLabel "Occurrent"@en,
         "Perdurant"@en ;
@@ -34671,11 +34671,11 @@ The definition of every specific process subclass requires a reference type, tha
 emmo:EMMO_068c4e58_2470_4b1c_8454_010dd4906100 a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
-            owl:someValuesFrom emmo:EMMO_2b243e59_3a2a_412e_9a58_81d1e5c92fbe ],
-        [ a owl:Restriction ;
             owl:hasValue 1e-12 ;
             owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
+            owl:someValuesFrom emmo:EMMO_2b243e59_3a2a_412e_9a58_81d1e5c92fbe ],
         emmo:EMMO_9d28f9ad_d9d3_4edb_bc00_5d9bd242244d ;
     skos:prefLabel "PicoPrefixedUnit"@en ;
     emmo:elucidation "Superclass for all units prefixed with \"pico\" (1e-12)."@en .
@@ -34799,11 +34799,11 @@ emmo:EMMO_1c957677_a460_4702_85a6_baef659d14b1 a owl:Class ;
 emmo:EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 1e-06 ;
-            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
             owl:someValuesFrom emmo:EMMO_6da1b965_768c_4cf0_8873_44f2035133ba ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-06 ;
+            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
         emmo:EMMO_9d28f9ad_d9d3_4edb_bc00_5d9bd242244d ;
     skos:prefLabel "MicroPrefixedUnit"@en ;
     emmo:elucidation "Superclass for all units prefixed with \"micro\" (1e-6)."@en .
@@ -34899,11 +34899,11 @@ emmo:EMMO_a88475b9_c745_4a47_9403_ab0d158b9b1b a owl:Class ;
 emmo:EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7 a owl:Class ;
     rdfs:isDefinedBy <https://w3id.org/emmo/disciplines/units/siunits#> ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 1e-03 ;
-            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
             owl:someValuesFrom emmo:EMMO_49adf406_5c8f_498a_8c90_e4974e9e6d11 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-03 ;
+            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
         emmo:EMMO_9d28f9ad_d9d3_4edb_bc00_5d9bd242244d ;
     skos:prefLabel "MilliPrefixedUnit"@en ;
     emmo:elucidation "Superclass for all units prefixed with \"milli\" (1e-3)."@en .
@@ -35018,16 +35018,16 @@ where `multiplier` and `offset` are specified via the 'hasConversionMultiplier' 
     owl:members ( emmo:EMMO_1273eb34_de48_43a9_925f_104110469dd2 emmo:EMMO_3a185e6c_9e19_4776_b583_19c978156aa0 emmo:EMMO_e9ffc696_5228_4ff9_8a60_0f5e05e9931b ) .
 
 [] a owl:AllDisjointClasses ;
-    owl:members ( emmo:EMMO_068c4e58_2470_4b1c_8454_010dd4906100 emmo:EMMO_1181c938_c8f0_4ad6_bc7a_2bfdc0903d29 emmo:EMMO_23bfe79a_cade_48f1_9a8c_fd96e6bac8ba emmo:EMMO_254472c6_3dbd_4f02_bc43_571389cd281f emmo:EMMO_42955b2d_b465_4666_86cc_ea3c2d685753 emmo:EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae emmo:EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7 emmo:EMMO_b55cd09a_e54d_4eb1_81dd_03c29d1b878e emmo:EMMO_e1981c25_7c55_4020_aa7a_d2e14ced86d4 emmo:EMMO_f5769206_9257_4b08_bf7b_dad7868c6afc ) .
-
-[] a owl:AllDisjointClasses ;
     owl:members ( emmo:EMMO_117d3e39_de3e_46f5_9744_b4a28d9fc83e emmo:EMMO_33fe9747_d66f_4f88_b2c1_951279dbca59 emmo:EMMO_3f2d29d9_6d27_43bd_a1bc_85475eae98be emmo:EMMO_4bc07644_8301_4aed_b21c_823f99b08d1a emmo:EMMO_68a031ba_abf5_4859_b84c_32977f029908 emmo:EMMO_85ee9154_5a3e_482e_aa37_c617ff1947ff emmo:EMMO_aef1144d_41bd_4189_be5c_d849204b3708 emmo:EMMO_cb3f4298_5895_4272_be63_42dd246cc10c emmo:EMMO_d7c74480_a568_4470_acff_f18b499cc850 emmo:EMMO_dabcbe7d_db82_4445_889b_ae4d76964ea0 emmo:EMMO_e07a252a_6913_49d6_9038_37a258b2d95e emmo:EMMO_fbf7da6f_04bb_4c8e_abbf_e4048d6a5e73 ) .
 
-[] a owl:Axiom ;
-    owl:annotatedProperty emmo:VIMTerm ;
-    owl:annotatedSource emmo:EMMO_0650c031_42b6_4f0a_b62d_d88f071da6bf ;
-    owl:annotatedTarget "measurand"@en ;
-    emmo:note "VIM defines measurand as a quantity intended to be measured. This is redundant in EMMO and correspond to Quantity."@en .
+[] a owl:AllDisjointClasses ;
+    owl:members ( emmo:EMMO_1d8b370b_c672_4d0c_964e_eaafcbf2f51f emmo:EMMO_21aaefc1_3f86_4208_b7db_a755f31f0f8c emmo:EMMO_3a204900_2b33_47d1_b444_815cc4c8cffa emmo:EMMO_43a6b269_da31_4bb6_a537_c97df4fff32a emmo:EMMO_5cf9f86c_86f5_40c4_846d_60371f670e0a emmo:EMMO_5eaecadc_4f0d_4a3a_afc7_1fc0b83cc928 emmo:EMMO_74931b1b_c133_4e59_9a75_1bf0e1626201 emmo:EMMO_a8eb4bbb_1bd3_4ad4_b114_2789bcbd2134 emmo:EMMO_daa9ee97_4c5f_42e5_918c_44d7523e8958 emmo:EMMO_e79c62ff_10ad_4ec0_baba_c19ddd4eaa11 ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( emmo:EMMO_03d2c71b_0276_45d7_a847_7cd164cb7d45 emmo:EMMO_2b243e59_3a2a_412e_9a58_81d1e5c92fbe emmo:EMMO_49adf406_5c8f_498a_8c90_e4974e9e6d11 emmo:EMMO_4db5c662_b065_49e4_96eb_826699fa8048 emmo:EMMO_556e27cd_fef1_41c9_824a_dd78980062b5 emmo:EMMO_6da1b965_768c_4cf0_8873_44f2035133ba emmo:EMMO_7abfbbc4_ce7b_4611_b731_1b5b8bd2bbc0 emmo:EMMO_7fd8ec39_1c4b_4ff3_9bc8_0bf3c27e2db0 emmo:EMMO_890856a3_3eb4_471e_a54a_65031bee30f4 emmo:EMMO_afb29c1a_eba4_4ba7_b6a1_62e9023c94ec emmo:EMMO_e9722f13_947c_444e_82ef_1ce045f6637c emmo:EMMO_fbc2549b_9108_467a_a573_de48eb45cc4a ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( emmo:EMMO_068c4e58_2470_4b1c_8454_010dd4906100 emmo:EMMO_1181c938_c8f0_4ad6_bc7a_2bfdc0903d29 emmo:EMMO_23bfe79a_cade_48f1_9a8c_fd96e6bac8ba emmo:EMMO_254472c6_3dbd_4f02_bc43_571389cd281f emmo:EMMO_42955b2d_b465_4666_86cc_ea3c2d685753 emmo:EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae emmo:EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7 emmo:EMMO_b55cd09a_e54d_4eb1_81dd_03c29d1b878e emmo:EMMO_e1981c25_7c55_4020_aa7a_d2e14ced86d4 emmo:EMMO_f5769206_9257_4b08_bf7b_dad7868c6afc ) .
 
 [] a owl:Axiom ;
     rdfs:isDefinedBy "https://www.iso.org/standard/45324.html"^^xsd:anyURI ;
@@ -35041,14 +35041,11 @@ where `multiplier` and `offset` are specified via the 'hasConversionMultiplier' 
     owl:annotatedSource emmo:EMMO_985bec21_989f_4b9e_a4b3_735d88099c3c ;
     owl:annotatedTarget "Metrology is the science of measurement and its application and includes all theoretical and practical aspects of measurement, whatever the measurement uncertainty and field of application (VIM3 2.2)"@en .
 
-[] a owl:AllDisjointClasses ;
-    owl:members ( emmo:EMMO_1d8b370b_c672_4d0c_964e_eaafcbf2f51f emmo:EMMO_21aaefc1_3f86_4208_b7db_a755f31f0f8c emmo:EMMO_3a204900_2b33_47d1_b444_815cc4c8cffa emmo:EMMO_43a6b269_da31_4bb6_a537_c97df4fff32a emmo:EMMO_5cf9f86c_86f5_40c4_846d_60371f670e0a emmo:EMMO_5eaecadc_4f0d_4a3a_afc7_1fc0b83cc928 emmo:EMMO_74931b1b_c133_4e59_9a75_1bf0e1626201 emmo:EMMO_a8eb4bbb_1bd3_4ad4_b114_2789bcbd2134 emmo:EMMO_daa9ee97_4c5f_42e5_918c_44d7523e8958 emmo:EMMO_e79c62ff_10ad_4ec0_baba_c19ddd4eaa11 ) .
-
 [] a owl:Axiom ;
-    owl:annotatedProperty emmo:elucidation ;
-    owl:annotatedSource emmo:EMMO_1eed0732_e3f1_4b2c_a9c4_b4e75eeb5895 ;
-    owl:annotatedTarget "A variable is a symbolic object that stands for any other mathematical object, such as  number, a vector, a matrix, a function, the argument of a function, a set, an element of a set."@en ;
-    emmo:wikipediaReference "https://en.wikipedia.org/wiki/Variable_(mathematics)"^^xsd:anyURI .
+    owl:annotatedProperty emmo:VIMTerm ;
+    owl:annotatedSource emmo:EMMO_0650c031_42b6_4f0a_b62d_d88f071da6bf ;
+    owl:annotatedTarget "measurand"@en ;
+    emmo:note "VIM defines measurand as a quantity intended to be measured. This is redundant in EMMO and correspond to Quantity."@en .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
@@ -35056,11 +35053,17 @@ where `multiplier` and `offset` are specified via the 'hasConversionMultiplier' 
     owl:annotatedTarget "Variable"@en ;
     emmo:etymology "Fom Latin variabilis (\"changeable\")."@en .
 
-[] owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger .
+[] a owl:Axiom ;
+    owl:annotatedProperty emmo:elucidation ;
+    owl:annotatedSource emmo:EMMO_1eed0732_e3f1_4b2c_a9c4_b4e75eeb5895 ;
+    owl:annotatedTarget "A variable is a symbolic object that stands for any other mathematical object, such as  number, a vector, a matrix, a function, the argument of a function, a set, an element of a set."@en ;
+    emmo:wikipediaReference "https://en.wikipedia.org/wiki/Variable_(mathematics)"^^xsd:anyURI .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
 
 [] owl:qualifiedCardinality "3"^^xsd:nonNegativeInteger .
 
-[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+[] owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger .
 
 [] a owl:Axiom ;
     owl:annotatedProperty emmo:conceptualisation ;
@@ -35075,104 +35078,11 @@ where `multiplier` and `offset` are specified via the 'hasConversionMultiplier' 
     emmo:etymology "From medieval Latin perspectiva ‘(science of) optics’, from perspect- ‘looked at closely’, from the verb perspicere, from per- ‘through’ + specere ‘to look’."@en .
 
 [] a owl:Axiom ;
-    rdfs:seeAlso emmo:EMMO_1328d112_e731_4e56_b9b9_6b6cdd495cd6 ;
-    owl:annotatedProperty emmo:note ;
-    owl:annotatedSource emmo:EMMO_6786b336_e982_4759_8dee_1905a4106591 ;
-    owl:annotatedTarget "A part is always distinct xor redundant."@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso "doi:10.3233/FAIA231120"^^xsd:string ;
-    owl:annotatedProperty emmo:note ;
-    owl:annotatedSource emmo:EMMO_d67ee67e_4fac_4676_82c9_aec361dba698 ;
-    owl:annotatedTarget """The OWL 2 DL version of the EMMO introduces this object property as primitive causal relation. It refers to the macro causality relation mC(x,y), defined in the EMMO FOL version.
-While the EMMO FOL introduces the quantum causality relation C(x,y) as primitive, the OWL 2 DL version of the EMMO substantially simplifies the theory, neglecting these lower level relations that are well above DL expressivity.
-For this reason the EMMO OWL 2 DL will only deal with macro causality relations, sacrificing the full FOL theory expressivity for the sake of simplicity."""@en .
-
-[] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf ;
-    owl:annotatedTarget "EMMO"@en ;
-    emmo:etymology "EMMO is the acronym of Elementary Multiperspective Material Ontology."@en .
-
-[] a swrl:Imp ;
-    swrl:body [ a swrl:AtomList ;
-            rdf:first [ a swrl:IndividualPropertyAtom ;
-                    swrl:argument1 <urn:swrl:var#x> ;
-                    swrl:argument2 <urn:swrl:var#y> ;
-                    swrl:propertyPredicate emmo:EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ] ;
-            rdf:rest [ a swrl:AtomList ;
-                    rdf:first [ a swrl:IndividualPropertyAtom ;
-                            swrl:argument1 <urn:swrl:var#y> ;
-                            swrl:argument2 <urn:swrl:var#z> ;
-                            swrl:propertyPredicate emmo:EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ] ;
-                    rdf:rest () ] ] ;
-    swrl:head [ a swrl:AtomList ;
-            rdf:first [ a swrl:IndividualPropertyAtom ;
-                    swrl:argument1 <urn:swrl:var#x> ;
-                    swrl:argument2 <urn:swrl:var#z> ;
-                    swrl:propertyPredicate emmo:EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ] ;
-            rdf:rest () ] ;
-    emmo:note "Transitivity for proper parthood."@en .
-
-[] a swrl:Imp ;
-    swrl:body [ a swrl:AtomList ;
-            rdf:first [ a swrl:IndividualPropertyAtom ;
-                    swrl:argument1 <urn:swrl:var#x> ;
-                    swrl:argument2 <urn:swrl:var#y> ;
-                    swrl:propertyPredicate emmo:EMMO_6835537c_d294_4005_a770_ec9621f29ed1 ] ;
-            rdf:rest () ] ;
-    swrl:head [ a swrl:AtomList ;
-            rdf:first [ a swrl:SameIndividualAtom ;
-                    swrl:argument1 <urn:swrl:var#x> ;
-                    swrl:argument2 <urn:swrl:var#y> ] ;
-            rdf:rest () ] ;
-    emmo:note "The equalsTo object property is equivalent to the OWL  SameAs"@en .
-
-[] a swrl:Imp ;
-    rdfs:comment "Implementing Transitivity."@en ;
-    swrl:body [ a swrl:AtomList ;
-            rdf:first [ a swrl:IndividualPropertyAtom ;
-                    swrl:argument1 <urn:swrl:var#x> ;
-                    swrl:argument2 <urn:swrl:var#y> ;
-                    swrl:propertyPredicate emmo:EMMO_d01b3ee2_91a5_4ce2_95cd_f0d2c333c6d3 ] ;
-            rdf:rest [ a swrl:AtomList ;
-                    rdf:first [ a swrl:IndividualPropertyAtom ;
-                            swrl:argument1 <urn:swrl:var#y> ;
-                            swrl:argument2 <urn:swrl:var#z> ;
-                            swrl:propertyPredicate emmo:EMMO_d01b3ee2_91a5_4ce2_95cd_f0d2c333c6d3 ] ;
-                    rdf:rest () ] ] ;
-    swrl:head [ a swrl:AtomList ;
-            rdf:first [ a swrl:IndividualPropertyAtom ;
-                    swrl:argument1 <urn:swrl:var#x> ;
-                    swrl:argument2 <urn:swrl:var#z> ;
-                    swrl:propertyPredicate emmo:EMMO_d01b3ee2_91a5_4ce2_95cd_f0d2c333c6d3 ] ;
-            rdf:rest () ] .
-
-[] a swrl:Imp ;
-    swrl:body [ a swrl:AtomList ;
-            rdf:first [ a swrl:ClassAtom ;
-                    swrl:argument1 <urn:swrl:var#x> ;
-                    swrl:classPredicate emmo:EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf ] ;
-            rdf:rest () ] ;
-    swrl:head [ a swrl:AtomList ;
-            rdf:first [ a swrl:IndividualPropertyAtom ;
-                    swrl:argument1 <urn:swrl:var#x> ;
-                    swrl:argument2 <urn:swrl:var#x> ;
-                    swrl:propertyPredicate emmo:EMMO_d893d373_b579_4867_841e_1c2b31a8d2c6 ] ;
-            rdf:rest () ] ;
-    emmo:note "Enforcing reflexivity of overlapping."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource emmo:EMMO_0f795e3e_c602_4577_9a43_d5a231aa1360 ;
-    owl:annotatedTarget _:250 ;
-    emmo:elucidation "This axiom underlines the monodimensional nature of a causal chain, as a sequence of quanta."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource emmo:EMMO_2d2ecd97_067f_4d0e_950c_d746b7700a31 ;
-    owl:annotatedTarget _:234 ;
-    emmo:note "Every collection has at least two item members, since a collection of one item is a self-connected entity (and then an item)."@en .
+    owl:annotatedSource emmo:EMMO_3f2e4ac2_8ef3_4a14_b826_60d37f15f8ee ;
+    owl:annotatedTarget "mereological"@en ;
+    emmo:etymology """Coined by Stanisław Leśniewski in 1927, from Ancient Greek μέρος (méros, “part”) +‎ -logy (“study, discussion, science”).
+https://en.wiktionary.org/wiki/mereology"""@en .
 
 [] a owl:Axiom ;
     rdfs:seeAlso emmo:EMMO_d893d373_b579_4867_841e_1c2b31a8d2c6 ;
@@ -35181,96 +35091,16 @@ For this reason the EMMO OWL 2 DL will only deal with macro causality relations,
     owl:annotatedTarget "Dxy ≡ ¬Oxy."^^xsd:string .
 
 [] a owl:Axiom ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource emmo:EMMO_0f795e3e_c602_4577_9a43_d5a231aa1360 ;
-    owl:annotatedTarget "Elementary"@en ;
-    emmo:etymology "From Latin elementārius (“elementary”), from elementum (“one of the four elements of antiquity; fundamentals”)."@en .
-
-[] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_0f795e3e_c602_4577_9a43_d5a231aa1360 ;
-    owl:annotatedTarget "CausalPath"@en ;
-    emmo:etymology "From Ancient Greek πάτος (pátos, “path”)."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_c5ddfdba_c074_4aa4_ad6b_1ac4942d300d ;
-    owl:annotatedTarget "CausalStructure"@en ;
-    emmo:etymology "From Latin causa (“reason, sake, cause”), and from Latin struere (“arrange, assemble, build”)."@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso emmo:EMMO_3f9ae00e_810c_4518_aec2_7200e424cf68,
-        "doi:10.3233/FAIA231120"^^xsd:string ;
-    owl:annotatedProperty emmo:conceptualisation ;
-    owl:annotatedSource emmo:EMMO_ad0e72fc_dcaa_490d_8371_b4d814dcda2c ;
-    owl:annotatedTarget """Causality is the fundamental concept describing how entities affect each other, and conceptually precedes time and space relations. In the EMMO causality is the foundation for space and time relations.
-Embracing a strong reductionistic view, causality originates at quantum entities level, meaning that causal relations between macroscopic entities is simply the sum of quantum level causality relations."""@en .
+    owl:annotatedSource emmo:EMMO_e7aac247_31d6_4b2e_9fd2_e842b1b7ccac ;
+    owl:annotatedTarget "CausalSystem"@en ;
+    emmo:etymology "From Latin causa (“reason, sake, cause”), and Ancient Greek σύστημα (sústēma, “musical scale; organized body; whole made of several parts or members”), from σῠν- (sun-, prefix meaning ‘with, together’) + ἵστημι (hístēmi, “to stand”)."@en .
 
 [] a owl:Axiom ;
     owl:annotatedProperty rdfs:subClassOf ;
     owl:annotatedSource emmo:EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf ;
-    owl:annotatedTarget _:263 ;
+    owl:annotatedTarget _:221 ;
     emmo:note "All EMMO individuals are part of the most comprehensive entity which is the universe."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_52b8a39b_e5ff_46d3_b972_65bc43077a07 ;
-    owl:annotatedTarget "CausalParticle"@en ;
-    emmo:etymology "From Latin particula (“small part, particle”), diminutive of pars (“part, piece”)."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty emmo:conceptualisation ;
-    owl:annotatedSource emmo:EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf ;
-    owl:annotatedTarget """The EMMO conceptualises the world using the primitive concepts of causality and parthood. Parthood is about the composition of world entities starting from other more fundamental entities. Causality is about the interactions between world entities.
-The quantum is the smallest indivisible part of any world entity. Quantum individuals are the fundamental causal constituents of the universe, since it is implied that causality originates from quantum-to-quantum interactions. Quantums are no-dimensional, and their aggregation makes spacetime emerge from their causal structure. We can think of a quantum as an elementary particle after and interaction and before another interaction.
-Causality between macro entities (i.e. entities made of more than one quantum) is explained as the sum of the causality relations between their quantum constituents. Fundamental interactions (quantum fields) are represented as symmetric causality relation between macro entities, while classical interactions are mediated by chain of quantums (i.e. elementary particles).
-The fundamental distinction between world entities is causality self-connectedness: a world entity can be self-connected xor not self-connected depending on the causality network of its fundamental components.
-Void regions do not exist in the EMMO. In other words there is no spacetime without entities and spacetime emerges as relational property not as a self-standing entity). Entities are not placed in space or time: space and time are measured quantities, always relative between entities and are measured. In other words, space and time relations originates from causality interactions."""@en ;
-    emmo:note "While EMMO mereocausality conceptualisation can be used on any possibile domain, so that a quantum can be a Lego brick or an furniture component, it can be better understood when a quantum is elucidated as an elementary particle after and interaction and before another interaction. (e.g. quark, photon)."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource emmo:EMMO_3733bd38_ca2b_4264_a92a_3075a1715598 ;
-    owl:annotatedTarget "hasSuccessor"@en ;
-    emmo:etymology "From Latin succedĕre (\"coming after\")."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty rdf:type ;
-    owl:annotatedSource emmo:EMMO_08cb807c_e626_447b_863f_e2835540e918 ;
-    owl:annotatedTarget emmo:EMMO_e7aac247_31d6_4b2e_9fd2_e842b1b7ccac ;
-    emmo:conceptualisation """This axiom reflects the fact the the universe is causally self-connected. In fact, a  non causally connected universe would have been the sum of causally independend sub-universes, without any knowledge of others.
-This axiom may be seen as Ockam's razor applied to causality."""@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso emmo:EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ;
-    owl:annotatedProperty emmo:definition ;
-    owl:annotatedSource emmo:EMMO_6786b336_e982_4759_8dee_1905a4106591 ;
-    owl:annotatedTarget "RP(x, y) ≡ PP(x, y) ∧ ∃φ(φ(x) ∧ φ(y))"^^xsd:string ;
-    emmo:note "We usa a predicate template notation as RP<φ>(x,y) to specify subclasses of RP(x,y) for the class φ, meaning that RP<φ>(x, y) ≡ PP(x, y) ∧ φ(x) ∧ φ(y)"@en,
-        "φ is a class of the theory that in the EMMO OWL is supposed to be subclass of CausalStructure."@en .
-
-[] a swrl:Imp ;
-    swrl:body [ a swrl:AtomList ;
-            rdf:first [ a swrl:ClassAtom ;
-                    swrl:argument1 <urn:swrl:var#x> ;
-                    swrl:classPredicate emmo:EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf ] ;
-            rdf:rest () ] ;
-    swrl:head [ a swrl:AtomList ;
-            rdf:first [ a swrl:IndividualPropertyAtom ;
-                    swrl:argument1 <urn:swrl:var#x> ;
-                    swrl:argument2 <urn:swrl:var#x> ;
-                    swrl:propertyPredicate emmo:EMMO_01e5766d_dac3_4574_8a78_310de92a5c9d ] ;
-            rdf:rest () ] ;
-    emmo:note "Enforcing the fact that an entity cannot cause itself."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_2d2ecd97_067f_4d0e_950c_d746b7700a31 ;
-    owl:annotatedTarget "Collection"@en ;
-    emmo:etymology "From Latin collectio, from colligere ‘gather together’."@en .
-
-[] a owl:AllDisjointClasses ;
-    owl:members ( emmo:EMMO_0f795e3e_c602_4577_9a43_d5a231aa1360 emmo:EMMO_2d2ecd97_067f_4d0e_950c_d746b7700a31 emmo:EMMO_3f9ae00e_810c_4518_aec2_7200e424cf68 emmo:EMMO_e7aac247_31d6_4b2e_9fd2_e842b1b7ccac ) .
 
 [] a owl:Axiom ;
     owl:annotatedProperty emmo:definition ;
@@ -35280,10 +35110,10 @@ This axiom may be seen as Ockam's razor applied to causality."""@en .
         "φ is a class of the theory"@en .
 
 [] a owl:Axiom ;
-    owl:annotatedProperty rdfs:subClassOf ;
-    owl:annotatedSource emmo:EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf ;
-    owl:annotatedTarget _:262 ;
-    emmo:note "Every entity is made of quantum parts. This axiomatisation is the expression of the radical reductionistic approach of the EMMO."@en .
+    owl:annotatedProperty emmo:definition ;
+    owl:annotatedSource emmo:EMMO_08cb807c_e626_447b_863f_e2835540e918 ;
+    owl:annotatedTarget "u ≡ σx⟨P(x, x)⟩"^^xsd:string ;
+    emmo:note "This definition reads: \"The universe is the sum of all entities that are part of themselves\". Since parthood (P) is reflexive by axiom, then the universe is the sum of all mereological entities."@en .
 
 [] a swrl:Imp ;
     rdfs:comment "Implementing transitivity."@en ;
@@ -35306,10 +35136,30 @@ This axiom may be seen as Ockam's razor applied to causality."""@en .
             rdf:rest () ] .
 
 [] a owl:Axiom ;
-    rdfs:seeAlso emmo:EMMO_559ab98c_1c7d_4794_996c_8c1d8d56381c ;
-    owl:annotatedProperty emmo:definition ;
-    owl:annotatedSource emmo:EMMO_3f9ae00e_810c_4518_aec2_7200e424cf68 ;
-    owl:annotatedTarget "Q(x) ≡ ¬∃y(PP(y,x))"@en .
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_52b8a39b_e5ff_46d3_b972_65bc43077a07 ;
+    owl:annotatedTarget "CausalParticle"@en ;
+    emmo:etymology "From Latin particula (“small part, particle”), diminutive of pars (“part, piece”)."@en .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate emmo:EMMO_6835537c_d294_4005_a770_ec9621f29ed1 ] ;
+            rdf:rest () ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:SameIndividualAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ] ;
+            rdf:rest () ] ;
+    emmo:note "The equalsTo object property is equivalent to the OWL  SameAs"@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf ;
+    owl:annotatedTarget "EMMO"@en ;
+    emmo:etymology "EMMO is the acronym of Elementary Multiperspective Material Ontology."@en .
 
 [] a swrl:Imp ;
     swrl:body [ a swrl:AtomList ;
@@ -35321,46 +35171,31 @@ This axiom may be seen as Ockam's razor applied to causality."""@en .
             rdf:first [ a swrl:IndividualPropertyAtom ;
                     swrl:argument1 <urn:swrl:var#x> ;
                     swrl:argument2 <urn:swrl:var#x> ;
-                    swrl:propertyPredicate emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ] ;
+                    swrl:propertyPredicate emmo:EMMO_d893d373_b579_4867_841e_1c2b31a8d2c6 ] ;
             rdf:rest () ] ;
-    emmo:note "Enforcing parthood reflexivity."@en .
-
-[] a swrl:Imp ;
-    rdfs:comment "Implementation of equality based on mereology."^^rdfs:Literal ;
-    swrl:body [ a swrl:AtomList ;
-            rdf:first [ a swrl:IndividualPropertyAtom ;
-                    swrl:argument1 <urn:swrl:var#x> ;
-                    swrl:argument2 <urn:swrl:var#y> ;
-                    swrl:propertyPredicate emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ] ;
-            rdf:rest [ a swrl:AtomList ;
-                    rdf:first [ a swrl:IndividualPropertyAtom ;
-                            swrl:argument1 <urn:swrl:var#y> ;
-                            swrl:argument2 <urn:swrl:var#x> ;
-                            swrl:propertyPredicate emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ] ;
-                    rdf:rest () ] ] ;
-    swrl:head [ a swrl:AtomList ;
-            rdf:first [ a swrl:SameIndividualAtom ;
-                    swrl:argument1 <urn:swrl:var#x> ;
-                    swrl:argument2 <urn:swrl:var#y> ] ;
-            rdf:rest () ] .
+    emmo:note "Enforcing reflexivity of overlapping."@en .
 
 [] a owl:Axiom ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource emmo:EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de ;
-    owl:annotatedTarget "CausalObject"@en ;
-    emmo:etymology "From Latin causa (“reason, sake, cause”), and Medieval Latin obiectum (“object”, literally “thrown against”)."@en .
+    rdfs:seeAlso emmo:EMMO_1328d112_e731_4e56_b9b9_6b6cdd495cd6 ;
+    owl:annotatedProperty emmo:note ;
+    owl:annotatedSource emmo:EMMO_6786b336_e982_4759_8dee_1905a4106591 ;
+    owl:annotatedTarget "A part is always distinct xor redundant."@en .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_76bd5e44_bf5a_49f9_a517_eea5e8bcbc2d ;
-    owl:annotatedTarget "CausalCluster"@en ;
-    emmo:etymology "From Proto-Germanic *klas-, *klus- (“to clump, lump together”)."@en .
+    owl:annotatedSource emmo:EMMO_3f9ae00e_810c_4518_aec2_7200e424cf68 ;
+    owl:annotatedTarget "Quantum"@en ;
+    emmo:etymology "From Latin quantum (plural quanta) \"as much as, so much as\"."@en .
 
 [] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de ;
-    owl:annotatedTarget "Item"@en ;
-    emmo:etymology "From Latin item, \"likewise, just so, moreover\"."@en .
+    owl:annotatedProperty emmo:conceptualisation ;
+    owl:annotatedSource emmo:EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf ;
+    owl:annotatedTarget """The EMMO conceptualises the world using the primitive concepts of causality and parthood. Parthood is about the composition of world entities starting from other more fundamental entities. Causality is about the interactions between world entities.
+The quantum is the smallest indivisible part of any world entity. Quantum individuals are the fundamental causal constituents of the universe, since it is implied that causality originates from quantum-to-quantum interactions. Quantums are no-dimensional, and their aggregation makes spacetime emerge from their causal structure. We can think of a quantum as an elementary particle after and interaction and before another interaction.
+Causality between macro entities (i.e. entities made of more than one quantum) is explained as the sum of the causality relations between their quantum constituents. Fundamental interactions (quantum fields) are represented as symmetric causality relation between macro entities, while classical interactions are mediated by chain of quantums (i.e. elementary particles).
+The fundamental distinction between world entities is causality self-connectedness: a world entity can be self-connected xor not self-connected depending on the causality network of its fundamental components.
+Void regions do not exist in the EMMO. In other words there is no spacetime without entities and spacetime emerges as relational property not as a self-standing entity). Entities are not placed in space or time: space and time are measured quantities, always relative between entities and are measured. In other words, space and time relations originates from causality interactions."""@en ;
+    emmo:note "While EMMO mereocausality conceptualisation can be used on any possibile domain, so that a quantum can be a Lego brick or an furniture component, it can be better understood when a quantum is elucidated as an elementary particle after and interaction and before another interaction. (e.g. quark, photon)."@en .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
@@ -35369,10 +35204,30 @@ This axiom may be seen as Ockam's razor applied to causality."""@en .
     emmo:etymology "From Latin fusio, from fundere ‘pour, melt’."@en .
 
 [] a owl:Axiom ;
+    rdfs:seeAlso emmo:EMMO_559ab98c_1c7d_4794_996c_8c1d8d56381c ;
     owl:annotatedProperty emmo:definition ;
-    owl:annotatedSource emmo:EMMO_08cb807c_e626_447b_863f_e2835540e918 ;
-    owl:annotatedTarget "u ≡ σx⟨P(x, x)⟩"^^xsd:string ;
-    emmo:note "This definition reads: \"The universe is the sum of all entities that are part of themselves\". Since parthood (P) is reflexive by axiom, then the universe is the sum of all mereological entities."@en .
+    owl:annotatedSource emmo:EMMO_3f9ae00e_810c_4518_aec2_7200e424cf68 ;
+    owl:annotatedTarget "Q(x) ≡ ¬∃y(PP(y,x))"@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "doi:10.3233/FAIA231120"^^xsd:string ;
+    owl:annotatedProperty emmo:note ;
+    owl:annotatedSource emmo:EMMO_d67ee67e_4fac_4676_82c9_aec361dba698 ;
+    owl:annotatedTarget """The OWL 2 DL version of the EMMO introduces this object property as primitive causal relation. It refers to the macro causality relation mC(x,y), defined in the EMMO FOL version.
+While the EMMO FOL introduces the quantum causality relation C(x,y) as primitive, the OWL 2 DL version of the EMMO substantially simplifies the theory, neglecting these lower level relations that are well above DL expressivity.
+For this reason the EMMO OWL 2 DL will only deal with macro causality relations, sacrificing the full FOL theory expressivity for the sake of simplicity."""@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_0f795e3e_c602_4577_9a43_d5a231aa1360 ;
+    owl:annotatedTarget "CausalPath"@en ;
+    emmo:etymology "From Ancient Greek πάτος (pátos, “path”)."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_2d2ecd97_067f_4d0e_950c_d746b7700a31 ;
+    owl:annotatedTarget "Collection"@en ;
+    emmo:etymology "From Latin collectio, from colligere ‘gather together’."@en .
 
 [] a swrl:Imp ;
     swrl:body [ a swrl:AtomList ;
@@ -35395,23 +35250,11 @@ This axiom may be seen as Ockam's razor applied to causality."""@en .
     emmo:note "Transitivity for parthood."@en .
 
 [] a owl:Axiom ;
-    rdfs:seeAlso emmo:EMMO_a8bd7094_6b40_47af_b1f4_a69d81a3afbd ;
-    owl:annotatedProperty emmo:definition ;
-    owl:annotatedSource emmo:EMMO_d893d373_b579_4867_841e_1c2b31a8d2c6 ;
-    owl:annotatedTarget "Oxy ≡ ∃z(Pzx ∧ Pzy)"^^xsd:string .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso emmo:EMMO_6786b336_e982_4759_8dee_1905a4106591 ;
-    owl:annotatedProperty emmo:note ;
-    owl:annotatedSource emmo:EMMO_1328d112_e731_4e56_b9b9_6b6cdd495cd6 ;
-    owl:annotatedTarget "A part is always distinct xor redundant."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_3f2e4ac2_8ef3_4a14_b826_60d37f15f8ee ;
-    owl:annotatedTarget "mereological"@en ;
-    emmo:etymology """Coined by Stanisław Leśniewski in 1927, from Ancient Greek μέρος (méros, “part”) +‎ -logy (“study, discussion, science”).
-https://en.wiktionary.org/wiki/mereology"""@en .
+    owl:annotatedProperty rdf:type ;
+    owl:annotatedSource emmo:EMMO_08cb807c_e626_447b_863f_e2835540e918 ;
+    owl:annotatedTarget emmo:EMMO_e7aac247_31d6_4b2e_9fd2_e842b1b7ccac ;
+    emmo:conceptualisation """This axiom reflects the fact the the universe is causally self-connected. In fact, a  non causally connected universe would have been the sum of causally independend sub-universes, without any knowledge of others.
+This axiom may be seen as Ockam's razor applied to causality."""@en .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:altLabel ;
@@ -35420,37 +35263,70 @@ https://en.wiktionary.org/wiki/mereology"""@en .
     emmo:etymology "From Old French chaine, chaene (“chain”), from Latin catēna (“chain”)."@en .
 
 [] a swrl:Imp ;
+    rdfs:comment "Implementing Transitivity."@en ;
     swrl:body [ a swrl:AtomList ;
             rdf:first [ a swrl:IndividualPropertyAtom ;
                     swrl:argument1 <urn:swrl:var#x> ;
                     swrl:argument2 <urn:swrl:var#y> ;
-                    swrl:propertyPredicate emmo:EMMO_d67ee67e_4fac_4676_82c9_aec361dba698 ] ;
+                    swrl:propertyPredicate emmo:EMMO_d01b3ee2_91a5_4ce2_95cd_f0d2c333c6d3 ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl:var#y> ;
+                            swrl:argument2 <urn:swrl:var#z> ;
+                            swrl:propertyPredicate emmo:EMMO_d01b3ee2_91a5_4ce2_95cd_f0d2c333c6d3 ] ;
+                    rdf:rest () ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#z> ;
+                    swrl:propertyPredicate emmo:EMMO_d01b3ee2_91a5_4ce2_95cd_f0d2c333c6d3 ] ;
+            rdf:rest () ] .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource emmo:EMMO_0f795e3e_c602_4577_9a43_d5a231aa1360 ;
+    owl:annotatedTarget _:235 ;
+    emmo:elucidation "This axiom underlines the monodimensional nature of a causal chain, as a sequence of quanta."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource emmo:EMMO_3733bd38_ca2b_4264_a92a_3075a1715598 ;
+    owl:annotatedTarget "hasSuccessor"@en ;
+    emmo:etymology "From Latin succedĕre (\"coming after\")."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso emmo:EMMO_3f9ae00e_810c_4518_aec2_7200e424cf68,
+        "doi:10.3233/FAIA231120"^^xsd:string ;
+    owl:annotatedProperty emmo:conceptualisation ;
+    owl:annotatedSource emmo:EMMO_ad0e72fc_dcaa_490d_8371_b4d814dcda2c ;
+    owl:annotatedTarget """Causality is the fundamental concept describing how entities affect each other, and conceptually precedes time and space relations. In the EMMO causality is the foundation for space and time relations.
+Embracing a strong reductionistic view, causality originates at quantum entities level, meaning that causal relations between macroscopic entities is simply the sum of quantum level causality relations."""@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso emmo:EMMO_6786b336_e982_4759_8dee_1905a4106591 ;
+    owl:annotatedProperty emmo:note ;
+    owl:annotatedSource emmo:EMMO_1328d112_e731_4e56_b9b9_6b6cdd495cd6 ;
+    owl:annotatedTarget "A part is always distinct xor redundant."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource emmo:EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf ;
+    owl:annotatedTarget _:260 ;
+    emmo:note "Every entity is made of quantum parts. This axiomatisation is the expression of the radical reductionistic approach of the EMMO."@en .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:ClassAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:classPredicate emmo:EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf ] ;
             rdf:rest () ] ;
     swrl:head [ a swrl:AtomList ;
             rdf:first [ a swrl:IndividualPropertyAtom ;
                     swrl:argument1 <urn:swrl:var#x> ;
-                    swrl:argument2 <urn:swrl:var#y> ;
-                    swrl:propertyPredicate emmo:EMMO_aa987900_caf1_4ce2_82fa_6b1d6fbd2ead ] ;
+                    swrl:argument2 <urn:swrl:var#x> ;
+                    swrl:propertyPredicate emmo:EMMO_01e5766d_dac3_4574_8a78_310de92a5c9d ] ;
             rdf:rest () ] ;
-    emmo:note "Enforcing exclusivity between overlapping and causality."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_e7aac247_31d6_4b2e_9fd2_e842b1b7ccac ;
-    owl:annotatedTarget "CausalSystem"@en ;
-    emmo:etymology "From Latin causa (“reason, sake, cause”), and Ancient Greek σύστημα (sústēma, “musical scale; organized body; whole made of several parts or members”), from σῠν- (sun-, prefix meaning ‘with, together’) + ἵστημι (hístēmi, “to stand”)."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_d67ee67e_4fac_4676_82c9_aec361dba698 ;
-    owl:annotatedTarget "isCauseOf"@en ;
-    emmo:etymology "From Latin causa (“reason, sake, cause”)."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_3f9ae00e_810c_4518_aec2_7200e424cf68 ;
-    owl:annotatedTarget "Quantum"@en ;
-    emmo:etymology "From Latin quantum (plural quanta) \"as much as, so much as\"."@en .
+    emmo:note "Enforcing the fact that an entity cannot cause itself."@en .
 
 [] a swrl:Imp ;
     rdfs:comment "Implementig transitivity."@en ;
@@ -35473,16 +35349,131 @@ https://en.wiktionary.org/wiki/mereology"""@en .
             rdf:rest () ] .
 
 [] a owl:Axiom ;
-    rdfs:seeAlso "https://en.wiktionary.org/wiki/Wiktionary"@en ;
-    owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
-    owl:annotatedSource emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 ;
-    owl:annotatedTarget "Definitions are usually taken from Wiktionary."@en .
+    rdfs:seeAlso emmo:EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ;
+    owl:annotatedProperty emmo:definition ;
+    owl:annotatedSource emmo:EMMO_6786b336_e982_4759_8dee_1905a4106591 ;
+    owl:annotatedTarget "RP(x, y) ≡ PP(x, y) ∧ ∃φ(φ(x) ∧ φ(y))"^^xsd:string ;
+    emmo:note "We usa a predicate template notation as RP<φ>(x,y) to specify subclasses of RP(x,y) for the class φ, meaning that RP<φ>(x, y) ≡ PP(x, y) ∧ φ(x) ∧ φ(y)"@en,
+        "φ is a class of the theory that in the EMMO OWL is supposed to be subclass of CausalStructure."@en .
 
 [] a owl:Axiom ;
-    rdfs:seeAlso "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#Global_Restrictions_on_Axioms_in_OWL_2_DL"^^xsd:anyURI ;
-    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
-    owl:annotatedSource emmo:EMMO_c6e77b51_681b_4d04_b20d_a08f2b977470 ;
-    owl:annotatedTarget "Axiom not included in the theory because of OWL 2 DL global restrictions for decidability."@en .
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_c5ddfdba_c074_4aa4_ad6b_1ac4942d300d ;
+    owl:annotatedTarget "CausalStructure"@en ;
+    emmo:etymology "From Latin causa (“reason, sake, cause”), and from Latin struere (“arrange, assemble, build”)."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource emmo:EMMO_0f795e3e_c602_4577_9a43_d5a231aa1360 ;
+    owl:annotatedTarget "Elementary"@en ;
+    emmo:etymology "From Latin elementārius (“elementary”), from elementum (“one of the four elements of antiquity; fundamentals”)."@en .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:ClassAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:classPredicate emmo:EMMO_802d3e92_8770_4f98_a289_ccaaab7fdddf ] ;
+            rdf:rest () ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#x> ;
+                    swrl:propertyPredicate emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ] ;
+            rdf:rest () ] ;
+    emmo:note "Enforcing parthood reflexivity."@en .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate emmo:EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl:var#y> ;
+                            swrl:argument2 <urn:swrl:var#z> ;
+                            swrl:propertyPredicate emmo:EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ] ;
+                    rdf:rest () ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#z> ;
+                    swrl:propertyPredicate emmo:EMMO_9380ab64_0363_4804_b13f_3a8a94119a76 ] ;
+            rdf:rest () ] ;
+    emmo:note "Transitivity for proper parthood."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty rdfs:subClassOf ;
+    owl:annotatedSource emmo:EMMO_2d2ecd97_067f_4d0e_950c_d746b7700a31 ;
+    owl:annotatedTarget _:222 ;
+    emmo:note "Every collection has at least two item members, since a collection of one item is a self-connected entity (and then an item)."@en .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate emmo:EMMO_d67ee67e_4fac_4676_82c9_aec361dba698 ] ;
+            rdf:rest () ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate emmo:EMMO_aa987900_caf1_4ce2_82fa_6b1d6fbd2ead ] ;
+            rdf:rest () ] ;
+    emmo:note "Enforcing exclusivity between overlapping and causality."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource emmo:EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de ;
+    owl:annotatedTarget "CausalObject"@en ;
+    emmo:etymology "From Latin causa (“reason, sake, cause”), and Medieval Latin obiectum (“object”, literally “thrown against”)."@en .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( emmo:EMMO_0f795e3e_c602_4577_9a43_d5a231aa1360 emmo:EMMO_2d2ecd97_067f_4d0e_950c_d746b7700a31 emmo:EMMO_3f9ae00e_810c_4518_aec2_7200e424cf68 emmo:EMMO_e7aac247_31d6_4b2e_9fd2_e842b1b7ccac ) .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_76bd5e44_bf5a_49f9_a517_eea5e8bcbc2d ;
+    owl:annotatedTarget "CausalCluster"@en ;
+    emmo:etymology "From Proto-Germanic *klas-, *klus- (“to clump, lump together”)."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_d67ee67e_4fac_4676_82c9_aec361dba698 ;
+    owl:annotatedTarget "isCauseOf"@en ;
+    emmo:etymology "From Latin causa (“reason, sake, cause”)."@en .
+
+[] a swrl:Imp ;
+    rdfs:comment "Implementation of equality based on mereology."^^rdfs:Literal ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl:var#y> ;
+                            swrl:argument2 <urn:swrl:var#x> ;
+                            swrl:propertyPredicate emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ] ;
+                    rdf:rest () ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:SameIndividualAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ] ;
+            rdf:rest () ] .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de ;
+    owl:annotatedTarget "Item"@en ;
+    emmo:etymology "From Latin item, \"likewise, just so, moreover\"."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso emmo:EMMO_a8bd7094_6b40_47af_b1f4_a69d81a3afbd ;
+    owl:annotatedProperty emmo:definition ;
+    owl:annotatedSource emmo:EMMO_d893d373_b579_4867_841e_1c2b31a8d2c6 ;
+    owl:annotatedTarget "Oxy ≡ ∃z(Pzx ∧ Pzy)"^^xsd:string .
 
 [] a owl:Axiom ;
     rdfs:seeAlso "https://www.w3.org/TR/2012/REC-owl2-profiles-20121211/"^^xsd:anyURI ;
@@ -35491,16 +35482,28 @@ https://en.wiktionary.org/wiki/mereology"""@en .
     owl:annotatedTarget "Axioms to add to the OWL 2 RL version of the ontology to reach DL expressivity."@en .
 
 [] a owl:Axiom ;
-    rdfs:seeAlso "https://www.w3.org/TR/2012/REC-owl2-profiles-20121211/"^^xsd:anyURI ;
-    owl:annotatedProperty emmo:elucidation ;
-    owl:annotatedSource emmo:OWLRL2DLAxioms ;
-    owl:annotatedTarget "Axioms to add to the OWL 2 RL version of the ontology to reach DL expressivity."@en .
+    rdfs:seeAlso "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#Global_Restrictions_on_Axioms_in_OWL_2_DL"^^xsd:anyURI ;
+    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+    owl:annotatedSource emmo:EMMO_c6e77b51_681b_4d04_b20d_a08f2b977470 ;
+    owl:annotatedTarget "Axiom not included in the theory because of OWL 2 DL global restrictions for decidability."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "https://en.wiktionary.org/wiki/Wiktionary"@en ;
+    owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
+    owl:annotatedSource emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 ;
+    owl:annotatedTarget "Definitions are usually taken from Wiktionary."@en .
 
 [] a owl:Axiom ;
     rdfs:seeAlso "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#Global_Restrictions_on_Axioms_in_OWL_2_DL"^^xsd:anyURI ;
     owl:annotatedProperty emmo:elucidation ;
     owl:annotatedSource emmo:OWL2DLRestrictedAxiom ;
     owl:annotatedTarget "Axiom not included in the theory because of OWL 2 DL global restrictions for decidability."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "https://www.w3.org/TR/2012/REC-owl2-profiles-20121211/"^^xsd:anyURI ;
+    owl:annotatedProperty emmo:elucidation ;
+    owl:annotatedSource emmo:OWLRL2DLAxioms ;
+    owl:annotatedTarget "Axioms to add to the OWL 2 RL version of the ontology to reach DL expressivity."@en .
 
 [] a owl:Axiom ;
     rdfs:seeAlso "https://en.wiktionary.org/wiki/Wiktionary"@en ;
@@ -35510,15 +35513,64 @@ https://en.wiktionary.org/wiki/mereology"""@en .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_8c537c06_8e1d_4a3b_a251_1c89bb2c4790 ;
-    owl:annotatedTarget "ResemblanceIcon"@en ;
-    emmo:etymology "From Old French sambler, sembler, from Late Latin similāre, present active infinitive of similō, from Latin similis, from Proto-Italic *semalis, from Proto-Indo-European *sem- (“together, one”)."@en .
+    owl:annotatedSource emmo:EMMO_b7bcff25_ffc3_474e_9ab5_01b1664bd4ba ;
+    owl:annotatedTarget "Property"@en ;
+    emmo:etymology "From Latin proprietas (“a peculiarity, one's peculiar nature or quality, right or fact of possession, property”), from proprius (“special, particular, one's own”)."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_4f2d1fcc_e20c_4479_9ad7_7a0480dd3e44 ;
+    owl:annotatedTarget "AnalogicalIcon"@en ;
+    emmo:etymology "From Ancient Greek ἀναλογία (analogía), from ἀνά (aná) + λόγος (lógos, “speech, reckoning”)."@en .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource emmo:EMMO_3b19eab4_79be_4b02_bdaf_ecf1f0067a68 ;
     owl:annotatedTarget "Observation"@en ;
     emmo:etymology "From Latin observare (“to watch, note, mark, heed, guard, keep, pay attention to, regard, comply with, etc.”), from ob (“before”) + servare (“to keep”),"@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_0cd58641_824c_4851_907f_f4c3be76630c ;
+    owl:annotatedTarget "Index"@en ;
+    emmo:etymology "From Latin index (“a discoverer, informer, spy; of things, an indicator, the forefinger, a title, superscription”), from indicō (“point out, show”)."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_c7013b53_3071_410b_a5e4_a8d266dcdfb5 ;
+    owl:annotatedTarget "FunctionalIcon"@en ;
+    emmo:etymology "From Latin functiō (“performance, execution”), from functus, perfect participle of fungor (“to perform, execute, discharge”)."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_19608340_178c_4bfd_bd4d_0d3b935c6fec ;
+    owl:annotatedTarget "Cogniser"@en ;
+    emmo:etymology "From Latin cognitio (“knowledge, perception, a judicial examination, trial”), from cognitus, past participle of cognoscere (“to know”), from co- (“together”) + *gnoscere, older form of noscere (“to know”"@en .
+
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#y> ;
+                    swrl:argument2 <urn:swrl:var#z> ;
+                    swrl:propertyPredicate emmo:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl:var#x> ;
+                            swrl:argument2 <urn:swrl:var#y> ;
+                            swrl:propertyPredicate emmo:EMMO_f2fc1ce9_cc3b_4eb5_a112_3c85d1b1374a ] ;
+                    rdf:rest () ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#z> ;
+                    swrl:argument2 <urn:swrl:var#x> ;
+                    swrl:propertyPredicate emmo:EMMO_4832e353_6a2d_4deb_9a5b_96989afaff2d ] ;
+            rdf:rest () ] .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource emmo:EMMO_d7788d1a_020d_4c78_85a1_13563fcec168 ;
+    owl:annotatedTarget "Simulacrum"@en ;
+    emmo:etymology "From Latin simulacrum (\"likeness, semblance\")"@en .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
@@ -35532,6 +35584,31 @@ https://en.wiktionary.org/wiki/mereology"""@en .
     owl:annotatedTarget "Estimation"@en ;
     emmo:etymology "From Latin aestimatus (“to value, rate, esteem”)."@en .
 
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate emmo:EMMO_4832e353_6a2d_4deb_9a5b_96989afaff2d ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl:var#y> ;
+                            swrl:argument2 <urn:swrl:var#z> ;
+                            swrl:propertyPredicate emmo:EMMO_f2fc1ce9_cc3b_4eb5_a112_3c85d1b1374a ] ;
+                    rdf:rest () ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#z> ;
+                    swrl:argument2 <urn:swrl:var#x> ;
+                    swrl:propertyPredicate emmo:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 ] ;
+            rdf:rest () ] .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_8c537c06_8e1d_4a3b_a251_1c89bb2c4790 ;
+    owl:annotatedTarget "ResemblanceIcon"@en ;
+    emmo:etymology "From Old French sambler, sembler, from Late Latin similāre, present active infinitive of similō, from Latin similis, from Proto-Italic *semalis, from Proto-Indo-European *sem- (“together, one”)."@en .
+
 [] a owl:Axiom ;
     rdfs:seeAlso "https://en.wikipedia.org/wiki/Semiotic_theory_of_Charles_Sanders_Peirce#II._Icon,_index,_symbol"^^xsd:anyURI ;
     owl:annotatedProperty emmo:note ;
@@ -35541,18 +35618,6 @@ https://en.wiktionary.org/wiki/mereology"""@en .
 (b) the diagram, whose internal relations, mainly dyadic or so taken, represent by analogy the relations in something (e.g. math formula, geometric flowchart)
 (c) the metaphor, which represents the representative character of a sign by representing a parallelism in something else
 [Wikipedia]"""@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_c7013b53_3071_410b_a5e4_a8d266dcdfb5 ;
-    owl:annotatedTarget "FunctionalIcon"@en ;
-    emmo:etymology "From Latin functiō (“performance, execution”), from functus, perfect participle of fungor (“to perform, execute, discharge”)."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_b7bcff25_ffc3_474e_9ab5_01b1664bd4ba ;
-    owl:annotatedTarget "Property"@en ;
-    emmo:etymology "From Latin proprietas (“a peculiarity, one's peculiar nature or quality, right or fact of possession, property”), from proprius (“special, particular, one's own”)."@en .
 
 [] a swrl:Imp ;
     swrl:body [ a swrl:AtomList ;
@@ -35574,81 +35639,25 @@ https://en.wiktionary.org/wiki/mereology"""@en .
             rdf:rest () ] .
 
 [] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_0cd58641_824c_4851_907f_f4c3be76630c ;
-    owl:annotatedTarget "Index"@en ;
-    emmo:etymology "From Latin index (“a discoverer, informer, spy; of things, an indicator, the forefinger, a title, superscription”), from indicō (“point out, show”)."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_19608340_178c_4bfd_bd4d_0d3b935c6fec ;
-    owl:annotatedTarget "Cogniser"@en ;
-    emmo:etymology "From Latin cognitio (“knowledge, perception, a judicial examination, trial”), from cognitus, past participle of cognoscere (“to know”), from co- (“together”) + *gnoscere, older form of noscere (“to know”"@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_4f2d1fcc_e20c_4479_9ad7_7a0480dd3e44 ;
-    owl:annotatedTarget "AnalogicalIcon"@en ;
-    emmo:etymology "From Ancient Greek ἀναλογία (analogía), from ἀνά (aná) + λόγος (lógos, “speech, reckoning”)."@en .
-
-[] a owl:Axiom ;
     owl:annotatedProperty skos:altLabel ;
     owl:annotatedSource emmo:EMMO_d7788d1a_020d_4c78_85a1_13563fcec168 ;
     owl:annotatedTarget "Model"@en ;
     emmo:etymology "From Latin modus (“measure”)."@en .
 
-[] a swrl:Imp ;
-    swrl:body [ a swrl:AtomList ;
-            rdf:first [ a swrl:IndividualPropertyAtom ;
-                    swrl:argument1 <urn:swrl:var#y> ;
-                    swrl:argument2 <urn:swrl:var#z> ;
-                    swrl:propertyPredicate emmo:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 ] ;
-            rdf:rest [ a swrl:AtomList ;
-                    rdf:first [ a swrl:IndividualPropertyAtom ;
-                            swrl:argument1 <urn:swrl:var#x> ;
-                            swrl:argument2 <urn:swrl:var#y> ;
-                            swrl:propertyPredicate emmo:EMMO_f2fc1ce9_cc3b_4eb5_a112_3c85d1b1374a ] ;
-                    rdf:rest () ] ] ;
-    swrl:head [ a swrl:AtomList ;
-            rdf:first [ a swrl:IndividualPropertyAtom ;
-                    swrl:argument1 <urn:swrl:var#z> ;
-                    swrl:argument2 <urn:swrl:var#x> ;
-                    swrl:propertyPredicate emmo:EMMO_4832e353_6a2d_4deb_9a5b_96989afaff2d ] ;
-            rdf:rest () ] .
-
-[] a swrl:Imp ;
-    swrl:body [ a swrl:AtomList ;
-            rdf:first [ a swrl:IndividualPropertyAtom ;
-                    swrl:argument1 <urn:swrl:var#x> ;
-                    swrl:argument2 <urn:swrl:var#y> ;
-                    swrl:propertyPredicate emmo:EMMO_4832e353_6a2d_4deb_9a5b_96989afaff2d ] ;
-            rdf:rest [ a swrl:AtomList ;
-                    rdf:first [ a swrl:IndividualPropertyAtom ;
-                            swrl:argument1 <urn:swrl:var#y> ;
-                            swrl:argument2 <urn:swrl:var#z> ;
-                            swrl:propertyPredicate emmo:EMMO_f2fc1ce9_cc3b_4eb5_a112_3c85d1b1374a ] ;
-                    rdf:rest () ] ] ;
-    swrl:head [ a swrl:AtomList ;
-            rdf:first [ a swrl:IndividualPropertyAtom ;
-                    swrl:argument1 <urn:swrl:var#z> ;
-                    swrl:argument2 <urn:swrl:var#x> ;
-                    swrl:propertyPredicate emmo:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 ] ;
-            rdf:rest () ] .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource emmo:EMMO_d7788d1a_020d_4c78_85a1_13563fcec168 ;
-    owl:annotatedTarget "Simulacrum"@en ;
-    emmo:etymology "From Latin simulacrum (\"likeness, semblance\")"@en .
+[] emmo:note """The rule for the subproperty chain:
+inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"""@en .
 
 [] emmo:note """The rule for the subproperty chain:
  inverse (hasReferent) o inverse (hasInterpreter) ⇒ hasSign"""@en .
 
 [] emmo:note """The rule for the subproperty chain:
-inverse (hasSign) o inverse (hasReferent) ⇒ hasInterpreter"""@en .
-
-[] emmo:note """The rule for the subproperty chain:
  inverse (hasInterpreter) o inverse (hasSign) ⇒ hasReferent"""@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_3e7add3d_e6ed_489a_a796_8e31fef9b490 ;
+    owl:annotatedTarget "Data"@en ;
+    emmo:etymology "From Latin data, nominative plural of datum (“that is given”), neuter past participle of dō (“I give”)."@en .
 
 [] a owl:Axiom ;
     owl:annotatedProperty emmo:note ;
@@ -35658,36 +35667,16 @@ We call "interpreting" the act of providing semantic meaning to data, which is c
     skos:example "The electronical state of the RAM of my laptop is decoded by it as ASCII characters and printed on the screen."@en .
 
 [] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_3e7add3d_e6ed_489a_a796_8e31fef9b490 ;
-    owl:annotatedTarget "Data"@en ;
-    emmo:etymology "From Latin data, nominative plural of datum (“that is given”), neuter past participle of dō (“I give”)."@en .
-
-[] a owl:Axiom ;
     owl:annotatedProperty skos:altLabel ;
     owl:annotatedSource emmo:EMMO_1e877c70_3b01_45a8_a8f6_8ce4f6a24660 ;
     owl:annotatedTarget "Dedomena"@en ;
     emmo:etymology "From Greek, nominative plural form of δεδομένο (dedoméno) (data, information)"@en .
 
-[] a owl:Restriction ;
-    rdfs:subClassOf emmo:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
-    owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
-    owl:someValuesFrom owl:real .
-
-[] a owl:Restriction ;
-    rdfs:subClassOf emmo:EMMO_1f96db65_51df_4e8d_afd2_9c6b8bd40058 ;
-    owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
-    owl:someValuesFrom xsd:hexBinary .
-
-[] a owl:Restriction ;
-    rdfs:subClassOf emmo:EMMO_5f334606_f67d_4f0e_acb9_eeb21cb10c66 ;
-    owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
-    owl:someValuesFrom xsd:string .
-
-[] a owl:Restriction ;
-    rdfs:subClassOf emmo:EMMO_58f76a09_205c_44f2_b237_88de54e8e001 ;
-    owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
-    owl:someValuesFrom xsd:positiveInteger .
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_057e7d57_aff0_49de_911a_8861d85cef40 ;
+    owl:annotatedTarget "Symbolic"@en ;
+    emmo:etymology "From Ancient Greek σύμβολον (súmbolon, “a sign by which one infers something; a mark, token, badge, ticket, tally, check, a signal, watchword, outward sign”), from συμβάλλω (sumbállō, “I throw together, dash together, compare, correspond, tally, come to a conclusion”), from σύν (sún, “with, together”) + βάλλω (bállō, “I throw, put”)."^^xsd:string .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
@@ -35696,14 +35685,59 @@ We call "interpreting" the act of providing semantic meaning to data, which is c
     emmo:etymology "From Latin lingua (“tongue, speech, language”), from Old Latin dingua (“tongue”)."@en .
 
 [] a owl:Restriction ;
+    rdfs:subClassOf emmo:EMMO_dc6e40f6_5b6c_473b_a715_d36622ada5ad ;
+    owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
+    owl:someValuesFrom xsd:unsignedShort .
+
+[] a owl:Restriction ;
     rdfs:subClassOf emmo:EMMO_d43546df_7fd7_44d5_9d7c_0f2bf56cefe3 ;
     owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
     owl:someValuesFrom xsd:decimal .
 
 [] a owl:Restriction ;
-    rdfs:subClassOf emmo:EMMO_dc6e40f6_5b6c_473b_a715_d36622ada5ad ;
+    rdfs:subClassOf emmo:EMMO_0e03a375_8af8_46db_88ae_a45fe2d2940f ;
     owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
-    owl:someValuesFrom xsd:unsignedShort .
+    owl:someValuesFrom xsd:dateTime .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf emmo:EMMO_443198a5_934c_44fa_b89e_28eca13b25b2 ;
+    owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
+    owl:someValuesFrom xsd:short .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf emmo:EMMO_3c87fd89_b0f0_477a_86b6_d949c2b982ee ;
+    owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
+    owl:someValuesFrom xsd:byte .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf emmo:EMMO_220218b0_bbe2_489e_a68a_232e3610718e ;
+    owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
+    owl:someValuesFrom xsd:base64Binary .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf emmo:EMMO_aa972cc9_5d9e_47a2_abc5_00243d6b3917 ;
+    owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
+    owl:someValuesFrom xsd:int .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf emmo:EMMO_5f334606_f67d_4f0e_acb9_eeb21cb10c66 ;
+    owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
+    owl:someValuesFrom xsd:string .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf emmo:EMMO_e99aec47_9ae6_4a1d_bddd_b87bb456c52a ;
+    owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
+    owl:someValuesFrom xsd:unsignedByte .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf emmo:EMMO_10bbe9e9_46b6_4b5d_8b51_ed759fc21f21 ;
+    owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
+    owl:someValuesFrom xsd:dateTimeStamp .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf emmo:EMMO_69ebb235_9c5e_443d_9a3b_7042b1005f1f ;
+    owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
+    owl:someValuesFrom owl:rational .
 
 [] a owl:Restriction ;
     rdfs:subClassOf emmo:EMMO_52fa9c76_fc42_4eca_a5c1_6095a1c9caab ;
@@ -35711,14 +35745,29 @@ We call "interpreting" the act of providing semantic meaning to data, which is c
     owl:someValuesFrom xsd:double .
 
 [] a owl:Restriction ;
-    rdfs:subClassOf emmo:EMMO_648c17b7_a012_4060_a096_c76bd407804b ;
+    rdfs:subClassOf emmo:EMMO_cf0f8f57_8a9e_410c_8fe4_a436673fa3d3 ;
     owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
-    owl:someValuesFrom xsd:negativeInteger .
+    owl:someValuesFrom xsd:nonPositiveInteger .
 
 [] a owl:Restriction ;
     rdfs:subClassOf emmo:EMMO_51f93d8c_57fa_4314_a68d_8d69c2609c97 ;
     owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
     owl:someValuesFrom xsd:long .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf emmo:EMMO_1f96db65_51df_4e8d_afd2_9c6b8bd40058 ;
+    owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
+    owl:someValuesFrom xsd:hexBinary .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf emmo:EMMO_3a53b946_4dfd_4a38_bb5b_aa78d7b0db9c ;
+    owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
+    owl:someValuesFrom xsd:unsignedInt .
+
+[] a owl:Restriction ;
+    rdfs:subClassOf emmo:EMMO_54dc83cb_06e1_4739_9e45_bc09cead7f48 ;
+    owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
+    owl:someValuesFrom xsd:boolean .
 
 [] a owl:Restriction ;
     rdfs:subClassOf emmo:EMMO_42eee73b_e4d2_4a0f_b468_3d2ce0475af6 ;
@@ -35731,44 +35780,14 @@ We call "interpreting" the act of providing semantic meaning to data, which is c
     owl:someValuesFrom xsd:float .
 
 [] a owl:Restriction ;
-    rdfs:subClassOf emmo:EMMO_e99aec47_9ae6_4a1d_bddd_b87bb456c52a ;
+    rdfs:subClassOf emmo:EMMO_f8bd64d5_5d3e_4ad4_a46e_c30714fecb7f ;
     owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
-    owl:someValuesFrom xsd:unsignedByte .
+    owl:someValuesFrom xsd:integer .
 
 [] a owl:Restriction ;
-    rdfs:subClassOf emmo:EMMO_3a53b946_4dfd_4a38_bb5b_aa78d7b0db9c ;
+    rdfs:subClassOf emmo:EMMO_648c17b7_a012_4060_a096_c76bd407804b ;
     owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
-    owl:someValuesFrom xsd:unsignedInt .
-
-[] a owl:Restriction ;
-    rdfs:subClassOf emmo:EMMO_443198a5_934c_44fa_b89e_28eca13b25b2 ;
-    owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
-    owl:someValuesFrom xsd:short .
-
-[] a owl:Restriction ;
-    rdfs:subClassOf emmo:EMMO_54dc83cb_06e1_4739_9e45_bc09cead7f48 ;
-    owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
-    owl:someValuesFrom xsd:boolean .
-
-[] a owl:Restriction ;
-    rdfs:subClassOf emmo:EMMO_3c87fd89_b0f0_477a_86b6_d949c2b982ee ;
-    owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
-    owl:someValuesFrom xsd:byte .
-
-[] a owl:Restriction ;
-    rdfs:subClassOf emmo:EMMO_69ebb235_9c5e_443d_9a3b_7042b1005f1f ;
-    owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
-    owl:someValuesFrom owl:rational .
-
-[] a owl:Restriction ;
-    rdfs:subClassOf emmo:EMMO_10bbe9e9_46b6_4b5d_8b51_ed759fc21f21 ;
-    owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
-    owl:someValuesFrom xsd:dateTimeStamp .
-
-[] a owl:Restriction ;
-    rdfs:subClassOf emmo:EMMO_cf0f8f57_8a9e_410c_8fe4_a436673fa3d3 ;
-    owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
-    owl:someValuesFrom xsd:nonPositiveInteger .
+    owl:someValuesFrom xsd:negativeInteger .
 
 [] a owl:Restriction ;
     rdfs:subClassOf emmo:EMMO_f1ee5c02_5cc0_45ba_a09a_2e6319f75fc8 ;
@@ -35776,30 +35795,14 @@ We call "interpreting" the act of providing semantic meaning to data, which is c
     owl:someValuesFrom xsd:unsignedLong .
 
 [] a owl:Restriction ;
-    rdfs:subClassOf emmo:EMMO_aa972cc9_5d9e_47a2_abc5_00243d6b3917 ;
+    rdfs:subClassOf emmo:EMMO_58f76a09_205c_44f2_b237_88de54e8e001 ;
     owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
-    owl:someValuesFrom xsd:int .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_057e7d57_aff0_49de_911a_8861d85cef40 ;
-    owl:annotatedTarget "Symbolic"@en ;
-    emmo:etymology "From Ancient Greek σύμβολον (súmbolon, “a sign by which one infers something; a mark, token, badge, ticket, tally, check, a signal, watchword, outward sign”), from συμβάλλω (sumbállō, “I throw together, dash together, compare, correspond, tally, come to a conclusion”), from σύν (sún, “with, together”) + βάλλω (bállō, “I throw, put”)."^^xsd:string .
+    owl:someValuesFrom xsd:positiveInteger .
 
 [] a owl:Restriction ;
-    rdfs:subClassOf emmo:EMMO_f8bd64d5_5d3e_4ad4_a46e_c30714fecb7f ;
+    rdfs:subClassOf emmo:EMMO_18d180e4_5e3e_42f7_820c_e08951223486 ;
     owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
-    owl:someValuesFrom xsd:integer .
-
-[] a owl:Restriction ;
-    rdfs:subClassOf emmo:EMMO_0e03a375_8af8_46db_88ae_a45fe2d2940f ;
-    owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
-    owl:someValuesFrom xsd:dateTime .
-
-[] a owl:Restriction ;
-    rdfs:subClassOf emmo:EMMO_220218b0_bbe2_489e_a68a_232e3610718e ;
-    owl:onProperty emmo:EMMO_b6292331_94af_4f00_976b_ea55960c2f1c ;
-    owl:someValuesFrom xsd:base64Binary .
+    owl:someValuesFrom owl:real .
 
 [] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
 
@@ -35822,25 +35825,6 @@ organization: person or group of people that has its own functions with responsi
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_1efe8b96_e006_4a33_bc9a_421406cbb9f0 ;
-    owl:annotatedTarget "Whole"@en ;
-    emmo:etymology "From Middle English hole (“healthy, unhurt, whole”)."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource emmo:EMMO_0277f24a_ea7f_4917_81b7_fb0406c8fc62 ;
-    owl:annotatedTarget "Wholistic"@en ;
-    emmo:etymology "From the word 'holistic' with the 'w-' prefix, due to the affinity with the existing word 'whole', that share the same meaning of 'holos'."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource emmo:EMMO_4f226cf3_6d02_4d35_8566_a9e641bc6ff3 ;
-    owl:annotatedTarget "Part"@en ;
-    emmo:etymology "From Latin partire, partiri ‘divide, share’."@en ;
-    emmo:note "The term 'part' is here intended not only in mereological sense but also as role. For example. the term part is used to define the role played by an actor, specifying not only a mereological participation of the actor to an act, but also a specific role for that actor."@en .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource emmo:EMMO_4f226cf3_6d02_4d35_8566_a9e641bc6ff3 ;
     owl:annotatedTarget "Role"@en ;
     emmo:etymology "From French rôle, from obsolete French roule ‘roll’, referring originally to the roll of paper on which the actor's part was written."@en .
@@ -35851,25 +35835,24 @@ organization: person or group of people that has its own functions with responsi
     owl:annotatedTarget "Holistic"@en ;
     emmo:etymology "Holism (from Greek ὅλος holos \"all, whole, entire\")."@en .
 
-[] a swrl:Imp ;
-    swrl:body [ a swrl:AtomList ;
-            rdf:first [ a swrl:IndividualPropertyAtom ;
-                    swrl:argument1 <urn:swrl:var#x> ;
-                    swrl:argument2 <urn:swrl:var#y> ;
-                    swrl:propertyPredicate emmo:EMMO_2bb50428_568d_46e8_b8bf_59a4c5656461 ] ;
-            rdf:rest [ a swrl:AtomList ;
-                    rdf:first [ a swrl:IndividualPropertyAtom ;
-                            swrl:argument1 <urn:swrl:var#y> ;
-                            swrl:argument2 <urn:swrl:var#z> ;
-                            swrl:propertyPredicate emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 ] ;
-                    rdf:rest () ] ] ;
-    swrl:head [ a swrl:AtomList ;
-            rdf:first [ a swrl:IndividualPropertyAtom ;
-                    swrl:argument1 <urn:swrl:var#x> ;
-                    swrl:argument2 <urn:swrl:var#z> ;
-                    swrl:propertyPredicate emmo:EMMO_7821eeb8_5e44_452b_90e9_3db03bbef241 ] ;
-            rdf:rest () ] ;
-    emmo:note "Implements ProcessedFrom."@en .
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource emmo:EMMO_4f226cf3_6d02_4d35_8566_a9e641bc6ff3 ;
+    owl:annotatedTarget "Part"@en ;
+    emmo:etymology "From Latin partire, partiri ‘divide, share’."@en ;
+    emmo:note "The term 'part' is here intended not only in mereological sense but also as role. For example. the term part is used to define the role played by an actor, specifying not only a mereological participation of the actor to an act, but also a specific role for that actor."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource emmo:EMMO_0277f24a_ea7f_4917_81b7_fb0406c8fc62 ;
+    owl:annotatedTarget "Wholistic"@en ;
+    emmo:etymology "From the word 'holistic' with the 'w-' prefix, due to the affinity with the existing word 'whole', that share the same meaning of 'holos'."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_1efe8b96_e006_4a33_bc9a_421406cbb9f0 ;
+    owl:annotatedTarget "Whole"@en ;
+    emmo:etymology "From Middle English hole (“healthy, unhurt, whole”)."@en .
 
 [] a swrl:Imp ;
     swrl:body [ a swrl:AtomList ;
@@ -35891,17 +35874,25 @@ organization: person or group of people that has its own functions with responsi
             rdf:rest () ] ;
     emmo:note "Implements impactedBy."@en .
 
-[] a owl:Axiom ;
-    rdfs:seeAlso emmo:EMMO_6786b336_e982_4759_8dee_1905a4106591 ;
-    owl:annotatedProperty emmo:definition ;
-    owl:annotatedSource emmo:EMMO_bbca6dfa_7463_4e8d_8280_35862ff50ce0 ;
-    owl:annotatedTarget "Redundant(x) ≡ ∃φ[φ(x) ∧ ∃yRP⟨φ⟩(y, x)]"@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso emmo:EMMO_6786b336_e982_4759_8dee_1905a4106591 ;
-    owl:annotatedProperty emmo:definition ;
-    owl:annotatedSource emmo:EMMO_57c75ca1_bf8a_42bc_85d9_58cfe38c7df2 ;
-    owl:annotatedTarget "Fundamental(x) ≡ ∃φ[φ(x) ∧ ¬∃yRP⟨φ⟩(y, x)]"^^xsd:string .
+[] a swrl:Imp ;
+    swrl:body [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#y> ;
+                    swrl:propertyPredicate emmo:EMMO_2bb50428_568d_46e8_b8bf_59a4c5656461 ] ;
+            rdf:rest [ a swrl:AtomList ;
+                    rdf:first [ a swrl:IndividualPropertyAtom ;
+                            swrl:argument1 <urn:swrl:var#y> ;
+                            swrl:argument2 <urn:swrl:var#z> ;
+                            swrl:propertyPredicate emmo:EMMO_36e69413_8c59_4799_946c_10b05d266e22 ] ;
+                    rdf:rest () ] ] ;
+    swrl:head [ a swrl:AtomList ;
+            rdf:first [ a swrl:IndividualPropertyAtom ;
+                    swrl:argument1 <urn:swrl:var#x> ;
+                    swrl:argument2 <urn:swrl:var#z> ;
+                    swrl:propertyPredicate emmo:EMMO_7821eeb8_5e44_452b_90e9_3db03bbef241 ] ;
+            rdf:rest () ] ;
+    emmo:note "Implements ProcessedFrom."@en .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:altLabel ;
@@ -35910,22 +35901,34 @@ organization: person or group of people that has its own functions with responsi
     emmo:etymology "From Middle English liftime, equivalent to life +‎ time."@en .
 
 [] a owl:Axiom ;
+    rdfs:seeAlso emmo:EMMO_6786b336_e982_4759_8dee_1905a4106591 ;
+    owl:annotatedProperty emmo:definition ;
+    owl:annotatedSource emmo:EMMO_57c75ca1_bf8a_42bc_85d9_58cfe38c7df2 ;
+    owl:annotatedTarget "Fundamental(x) ≡ ∃φ[φ(x) ∧ ¬∃yRP⟨φ⟩(y, x)]"^^xsd:string .
+
+[] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource emmo:EMMO_57c75ca1_bf8a_42bc_85d9_58cfe38c7df2 ;
     owl:annotatedTarget "Fundamental"@en ;
     emmo:etymology "From Latin fundamentum (“foundation”), from fundō (“to lay the foundation (of something), to found”), from fundus (“bottom”)."@en .
 
 [] a owl:Axiom ;
-    rdfs:seeAlso "https://en.wiktionary.org/wiki/procedure"^^xsd:anyURI ;
-    owl:annotatedProperty emmo:conceptualisation ;
-    owl:annotatedSource emmo:EMMO_472a0ca2_58bf_4618_b561_6fe68bd9fd49 ;
-    owl:annotatedTarget "The set of established forms or methods of an organized body for accomplishing a certain task or tasks (Wiktionary)."@en .
+    rdfs:seeAlso emmo:EMMO_6786b336_e982_4759_8dee_1905a4106591 ;
+    owl:annotatedProperty emmo:definition ;
+    owl:annotatedSource emmo:EMMO_bbca6dfa_7463_4e8d_8280_35862ff50ce0 ;
+    owl:annotatedTarget "Redundant(x) ≡ ∃φ[φ(x) ∧ ∃yRP⟨φ⟩(y, x)]"@en .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource emmo:EMMO_472a0ca2_58bf_4618_b561_6fe68bd9fd49 ;
     owl:annotatedTarget "Procedure"@en ;
     emmo:etymology "From Latin pro-cedere (“to go forward, to proceed”)."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "https://en.wiktionary.org/wiki/procedure"^^xsd:anyURI ;
+    owl:annotatedProperty emmo:conceptualisation ;
+    owl:annotatedSource emmo:EMMO_472a0ca2_58bf_4618_b561_6fe68bd9fd49 ;
+    owl:annotatedTarget "The set of established forms or methods of an organized body for accomplishing a certain task or tasks (Wiktionary)."@en .
 
 [] a owl:Axiom ;
     rdfs:seeAlso <https://plato.stanford.edu/entries/agency> ;
@@ -35937,16 +35940,16 @@ What is axiomatically expressible is that an agent requires to be part of a proc
 This concept covers both intentional and non intentional agency."""@en .
 
 [] a owl:Axiom ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ;
-    owl:annotatedTarget "IntentionalProcess"@en ;
-    emmo:etymology "From Latin intentionem, derived from intendere (\"stretching out\")"@en .
-
-[] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ;
     owl:annotatedTarget "IntentionalAgency"@en ;
     emmo:etymology "From Latin agēns (present participle of agere (“to act”))"@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ;
+    owl:annotatedTarget "IntentionalProcess"@en ;
+    emmo:etymology "From Latin intentionem, derived from intendere (\"stretching out\")"@en .
 
 [] a owl:AllDisjointClasses ;
     owl:members ( emmo:Exbi emmo:Gibi emmo:Kibi emmo:Mebi emmo:Pebi emmo:Tebi emmo:Yobi emmo:Zebi ) .
@@ -35954,36 +35957,33 @@ This concept covers both intentional and non intentional agency."""@en .
 [] a owl:AllDisjointClasses ;
     owl:members ( emmo:EMMO_6795a4b8_ffd0_4588_a581_a9413fe49cac emmo:EMMO_93170bc8_d3b2_45bd_8cad_20aad08462ef emmo:EMMO_ac19c801_bead_4730_8b8c_50020eec45ec ) .
 
-[] a owl:AllDisjointClasses ;
-    owl:members ( emmo:EMMO_03d2c71b_0276_45d7_a847_7cd164cb7d45 emmo:EMMO_2b243e59_3a2a_412e_9a58_81d1e5c92fbe emmo:EMMO_49adf406_5c8f_498a_8c90_e4974e9e6d11 emmo:EMMO_4db5c662_b065_49e4_96eb_826699fa8048 emmo:EMMO_556e27cd_fef1_41c9_824a_dd78980062b5 emmo:EMMO_6da1b965_768c_4cf0_8873_44f2035133ba emmo:EMMO_7abfbbc4_ce7b_4611_b731_1b5b8bd2bbc0 emmo:EMMO_7fd8ec39_1c4b_4ff3_9bc8_0bf3c27e2db0 emmo:EMMO_890856a3_3eb4_471e_a54a_65031bee30f4 emmo:EMMO_afb29c1a_eba4_4ba7_b6a1_62e9023c94ec emmo:EMMO_e9722f13_947c_444e_82ef_1ce045f6637c emmo:EMMO_fbc2549b_9108_467a_a573_de48eb45cc4a ) .
+[] a owl:AllDifferent ;
+    owl:distinctMembers ( emmo:Becquerel emmo:Coulomb emmo:DegreeCelsius emmo:Farad emmo:Gray emmo:Henry emmo:Hertz emmo:Joule emmo:Katal emmo:Lumen emmo:Lux emmo:Newton emmo:Ohm emmo:Pascal emmo:Radian emmo:Siemens emmo:Sievert emmo:Steradian emmo:Tesla emmo:Volt emmo:Watt emmo:Weber ) .
 
 [] a owl:AllDifferent ;
     owl:distinctMembers ( emmo:Ampere emmo:Candela emmo:Kelvin emmo:Kilogram emmo:Metre emmo:Mole emmo:Second ) .
 
-[] a owl:AllDifferent ;
-    owl:distinctMembers ( emmo:Becquerel emmo:Coulomb emmo:DegreeCelsius emmo:Farad emmo:Gray emmo:Henry emmo:Hertz emmo:Joule emmo:Katal emmo:Lumen emmo:Lux emmo:Newton emmo:Ohm emmo:Pascal emmo:Radian emmo:Siemens emmo:Sievert emmo:Steradian emmo:Tesla emmo:Volt emmo:Watt emmo:Weber ) .
-
 [] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+_:228 owl:inverseOf emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f .
 
 _:274 a owl:Class ;
     owl:unionOf ( emmo:EMMO_0f795e3e_c602_4577_9a43_d5a231aa1360 emmo:EMMO_3f9ae00e_810c_4518_aec2_7200e424cf68 ) .
 
-_:320 owl:inverseOf emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f .
+_:221 a owl:Restriction ;
+    owl:hasValue emmo:EMMO_08cb807c_e626_447b_863f_e2835540e918 ;
+    owl:onProperty _:228 .
 
-_:234 a owl:Restriction ;
+_:222 a owl:Restriction ;
     owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger ;
     owl:onClass emmo:EMMO_eb3a768e_d53e_4be9_a23b_0714833c36de ;
     owl:onProperty emmo:EMMO_6b7276a4_4b9d_440a_b577_0277539c0fc4 .
 
-_:250 a owl:Restriction ;
+_:235 a owl:Restriction ;
     owl:allValuesFrom _:274 ;
     owl:onProperty emmo:EMMO_7afbed84_7593_4a23_bd88_9d9c6b04e8f6 .
 
-_:262 a owl:Restriction ;
+_:260 a owl:Restriction ;
     owl:onProperty emmo:EMMO_17e27c22_37e1_468c_9dd7_95e137f73e7f ;
     owl:someValuesFrom emmo:EMMO_3f9ae00e_810c_4518_aec2_7200e424cf68 .
-
-_:263 a owl:Restriction ;
-    owl:hasValue emmo:EMMO_08cb807c_e626_447b_863f_e2835540e918 ;
-    owl:onProperty _:320 .
 

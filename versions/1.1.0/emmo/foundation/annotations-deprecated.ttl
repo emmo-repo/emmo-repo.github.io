@@ -76,9 +76,9 @@ emmo:EMMO_c84c6752_6d64_48cc_9500_e54a3c34898d a owl:AnnotationProperty ;
     dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "Deprecated EMMO Annotations"@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/foundation/annotations> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/foundation/annotations-deprecated> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/foundation/annotations> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/foundation/annotations-deprecated> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     foaf:mbox <mailto:emmo@emmc.eu> ;
     emmo:EMMO_1246b120_abbe_4840_b0f8_3e4348b24a17 "emmo@emmc.eu"^^xsd:string .
 
@@ -127,12 +127,6 @@ emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 a owl:AnnotationProperty ;
     emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f "An elucidation should address the real world entities using the concepts introduced by the conceptualisation annotation."@en .
 
 [] a owl:Axiom ;
-    rdfs:seeAlso "https://www.w3.org/TR/2012/REC-owl2-profiles-20121211/"^^xsd:anyURI ;
-    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
-    owl:annotatedSource emmo:EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db ;
-    owl:annotatedTarget "Axioms to add to the OWL 2 RL version of the ontology to reach DL expressivity."@en .
-
-[] a owl:Axiom ;
     rdfs:seeAlso "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#Global_Restrictions_on_Axioms_in_OWL_2_DL"^^xsd:anyURI ;
     owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
     owl:annotatedSource emmo:EMMO_c6e77b51_681b_4d04_b20d_a08f2b977470 ;
@@ -143,4 +137,10 @@ emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 a owl:AnnotationProperty ;
     owl:annotatedProperty emmo:EMMO_c7b62dd7_063a_4c2a_8504_42f7264ba83f ;
     owl:annotatedSource emmo:EMMO_705f27ae_954c_4f13_98aa_18473fc52b25 ;
     owl:annotatedTarget "Definitions are usually taken from Wiktionary."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "https://www.w3.org/TR/2012/REC-owl2-profiles-20121211/"^^xsd:anyURI ;
+    owl:annotatedProperty emmo:EMMO_967080e5_2f42_4eb2_a3a9_c58143e835f9 ;
+    owl:annotatedSource emmo:EMMO_8a137e9f_579c_4e28_baca_e8980eb0c3db ;
+    owl:annotatedTarget "Axioms to add to the OWL 2 RL version of the ontology to reach DL expressivity."@en .
 

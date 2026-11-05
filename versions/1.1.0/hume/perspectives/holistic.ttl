@@ -7,14 +7,6 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-ns1:CausalStructure rdfs:label "CausalStructure"@en .
-
-ns1:EMMO rdfs:label "EMMO"@en .
-
-ns1:Fusion rdfs:label "Fusion"@en .
-
-ns1:Item rdfs:label "Item"@en .
-
 ns1:NonTemporalRole a owl:Class ;
     rdfs:label "NonTemporalRole"@en ;
     rdfs:subClassOf ns1:RoleBySpatiotemporal ;
@@ -42,15 +34,12 @@ Processes are 4D objects that unfolds in time in a way that has a meaning to the
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "Holistic"@en ;
     rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/perspectives/perspective> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/perspectives/holistic> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/perspectives/perspective> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/hume/perspectives/holistic> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     ns1:contact "emmo@emmc.eu"^^xsd:string .
 
-ns1:Perspective rdfs:label "Perspective"@en .
-
 ns1:QualifiedWhole a owl:Class ;
-    rdfs:label "QualifiedWhole"@en ;
     rdfs:subClassOf ns1:Holistic ;
     skos:altLabel "QWhole"@en ;
     skos:prefLabel "QualifiedWhole"@en ;
@@ -73,7 +62,6 @@ ns1:hasQualifiedRole a owl:ObjectProperty ;
     skos:prefLabel "hasQualifiedRole"@en .
 
 ns1:QualifiedRole a owl:Class ;
-    rdfs:label "QualifiedRole"@en ;
     rdfs:subClassOf ns1:Holistic ;
     skos:altLabel "QRole"@en ;
     skos:prefLabel "QualifiedRole"@en ;
@@ -106,7 +94,6 @@ ns1:hasRole a owl:ObjectProperty ;
     ns1:elucidation "The relation between the whole and a proper part of the whole that scale down to the point which it lose the characteristics of the whole and become something else."@en .
 
 ns1:Whole a owl:Class ;
-    rdfs:label "Whole"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:hasRole ;
             owl:someValuesFrom ns1:Role ],
@@ -118,7 +105,6 @@ This class is expected to host the definition of world objects as they appear in
         "A whole is categorized as fundamental (or maximal) or redundant (non-maximal)."@en .
 
 ns1:Holistic a owl:Class ;
-    rdfs:label "Holistic"@en ;
     rdfs:subClassOf ns1:Perspective ;
     skos:altLabel "Wholistic"@en ;
     skos:example "A molecule of a body can have role in the body evolution, without caring if its part of a specific organ and without specifying the time interval in which this role occurred."@en,
@@ -135,7 +121,6 @@ This class allows the picking of parts without necessarily going trough a rigid 
 For example, a scattering event between an electron and a nucleus requires electron and nucleus types as parts to exist, but this is not enough to make this event an atom, since it requires a persistent bond. So defining something as an atom iff have parts some electons and a nucleus is not enough."""@en .
 
 ns1:Role a owl:Class ;
-    rdfs:label "Role"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf ns1:hasRole ] ;
             owl:someValuesFrom ns1:Whole ],
@@ -151,9 +136,10 @@ The role type requires that also the whole type depends on the existence of part
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource ns1:Holistic ;
-    owl:annotatedTarget "Wholistic"@en ;
-    ns1:etymology "From the word 'holistic' with the 'w-' prefix, due to the affinity with the existing word 'whole', that share the same meaning of 'holos'."@en .
+    owl:annotatedSource ns1:Role ;
+    owl:annotatedTarget "Part"@en ;
+    ns1:etymology "From Latin partire, partiri ‘divide, share’."@en ;
+    ns1:note "The term 'part' is here intended not only in mereological sense but also as role. For example. the term part is used to define the role played by an actor, specifying not only a mereological participation of the actor to an act, but also a specific role for that actor."@en .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
@@ -168,15 +154,14 @@ The role type requires that also the whole type depends on the existence of part
     ns1:etymology "From French rôle, from obsolete French roule ‘roll’, referring originally to the roll of paper on which the actor's part was written."@en .
 
 [] a owl:Axiom ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource ns1:Role ;
-    owl:annotatedTarget "Part"@en ;
-    ns1:etymology "From Latin partire, partiri ‘divide, share’."@en ;
-    ns1:note "The term 'part' is here intended not only in mereological sense but also as role. For example. the term part is used to define the role played by an actor, specifying not only a mereological participation of the actor to an act, but also a specific role for that actor."@en .
-
-[] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource ns1:Whole ;
     owl:annotatedTarget "Whole"@en ;
     ns1:etymology "From Middle English hole (“healthy, unhurt, whole”)."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource ns1:Holistic ;
+    owl:annotatedTarget "Wholistic"@en ;
+    ns1:etymology "From the word 'holistic' with the 'w-' prefix, due to the affinity with the existing word 'whole', that share the same meaning of 'holos'."@en .
 

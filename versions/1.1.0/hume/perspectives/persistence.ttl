@@ -171,9 +171,9 @@ ns1:processedTo a owl:AsymmetricProperty,
     dcterms:title "Persistence"@en ;
     rdfs:comment <https://orcid.org/FrancescoZaccarini>,
         "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/perspectives/perspective> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/perspectives/persistence> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/perspectives/perspective> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/hume/perspectives/persistence> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     ns1:contact "emmo@emmc.eu"^^xsd:string .
 
 ns1:Behaviour a owl:Class ;

@@ -343,8 +343,7 @@ emmo:EMMO_321af35f_f0cc_4a5c_b4fe_8c2c0303fb0c a owl:Class ;
     skos:prefLabel "ElectricConductanceUnit"@en ;
     emmo:elucidation "The class of units with dimensionality 'ElectricConductance'."@en .
 
-emmo:EMMO_3227b821_26a5_4c7c_9c01_5c24483e0bd0 rdfs:label "DimensionlessUnit"@en ;
-    rdfs:subClassOf [ a owl:Restriction ;
+emmo:EMMO_3227b821_26a5_4c7c_9c01_5c24483e0bd0 rdfs:subClassOf [ a owl:Restriction ;
             owl:hasValue "T0 L0 M0 I0 Θ0 N0 J0"^^xsd:string ;
             owl:onProperty emmo:EMMO_19d925d0_2cf1_40e5_a391_1a99d68409c9 ] .
 
@@ -1713,11 +1712,9 @@ This module provides a connection between physical quantities defined in the 'is
 
 We kindly acknowledge NIST for reusing their content, including the physical dimensionality of units."""@en,
         "The EMMO should be reasoned with HermiT to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/disciplines/metrology> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/disciplines/units/sidimensionalunits> ;
+    owl:imports <https://w3id.org/emmo/1.1.0/disciplines/metrology> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/disciplines/units/sidimensionalunits> ;
     emmo:contact "emmo@emmc.eu"^^xsd:string .
-
-emmo:EMMO_c2f5ee66_579c_44c6_a2e9_fa2eaa9fa4da rdfs:label "FractionUnit"@en .
 
 emmo:EMMO_9895a1b4_f0a5_4167_ac5e_97db40b8bfcc a owl:Class ;
     rdfs:seeAlso "https://www.bipm.org/documents/20126/41483022/SI-Brochure-9-EN.pdf"^^xsd:anyURI ;

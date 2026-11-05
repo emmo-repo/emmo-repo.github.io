@@ -70,9 +70,9 @@
     dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
     dcterms:publisher emmo:EMMC_ASBL ;
     dcterms:title "Contributors"@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/foundation/annotations-deprecated> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/contributors> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/foundation/annotations-deprecated> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/contributors> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     foaf:mbox <mailto:emmo@emmc.eu> ;
     emmo:contact "emmo@emmc.eu"^^xsd:string .
 

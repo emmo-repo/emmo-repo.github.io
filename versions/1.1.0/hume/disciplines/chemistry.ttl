@@ -212,10 +212,10 @@ ns1:inchiKey a owl:AnnotationProperty ;
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "Chemistry"@en ;
     rdfs:comment "The EMMO requires FacT++ reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/disciplines/isq>,
-        <https://w3id.org/emmo/1.0.4/disciplines/perceptual> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/disciplines/chemistry> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/disciplines/isq>,
+        <https://w3id.org/emmo/1.1.0/disciplines/perceptual> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/hume/disciplines/chemistry> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     ns1:contact "emmo@emmc.eu"^^xsd:string .
 
 ns1:ChemicalName a owl:Class ;
@@ -346,8 +346,6 @@ ns1:StandaloneAtom a owl:Class ;
     ns1:OWLRL2DLAxioms "DisjointUnionOf: NeutralAtom, IonAtom"^^xsd:string ;
     ns1:elucidation "An atom that does not share electrons with other atoms."@en .
 
-ns1:Symbol rdfs:label "Symbol"@en .
-
 ns1:ChemicalElement a owl:Class ;
     rdfs:label "ChemicalElement"@en ;
     rdfs:comment """The IUPAC Gold Book defines the a chemical element both as:
@@ -392,11 +390,11 @@ ns1:ChemicalSubstance a owl:Class ;
 ns1:SingleComponentComposition a owl:Class ;
     rdfs:label "SingleComponentComposition"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty ns1:hasSpeciesPart ;
-            owl:someValuesFrom ns1:ChemicalSpecies ],
-        [ a owl:Restriction ;
             owl:onProperty ns1:hasQuantityPart ;
             owl:someValuesFrom ns1:ChemicalCompositionQuantity ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:hasSpeciesPart ;
+            owl:someValuesFrom ns1:ChemicalSpecies ],
         ns1:ChemicalComposition ;
     skos:prefLabel "SingleComponentComposition"@en ;
     ns1:elucidation "A language construct that represents the fraction or amount of a single constituent of a substance."@en .

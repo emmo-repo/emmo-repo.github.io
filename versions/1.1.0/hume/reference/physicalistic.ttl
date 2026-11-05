@@ -83,9 +83,9 @@ ns1:VectorMeson a owl:Class ;
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "Physicalistic"@en ;
     rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/reference/standardmodel> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/reference/physicalistic> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/reference/standardmodel> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/hume/reference/physicalistic> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     ns1:contact "emmo@emmc.eu"^^xsd:string .
 
 ns1:AntiMatter a owl:Class ;
@@ -210,7 +210,6 @@ spin 3/2: He5 in ground state, Delta baryons (excitations of the proton and neut
     ns1:elucidation "A non-elementary particle (bonded) of a fundamental fermionic type (half-integer spin)."@en .
 
 ns1:Fermion a owl:Class ;
-    rdfs:label "Fermion"@en ;
     rdfs:subClassOf ns1:PhysicalParticleBySpin ;
     owl:disjointWith ns1:Boson ;
     skos:prefLabel "Fermion"@en ;
@@ -258,10 +257,10 @@ ns1:Molecule a owl:Class ;
     rdfs:label "Molecule"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:hasSpatialPart ;
-            owl:someValuesFrom ns1:Electron ],
+            owl:someValuesFrom ns1:Nucleus ],
         [ a owl:Restriction ;
             owl:onProperty ns1:hasSpatialPart ;
-            owl:someValuesFrom ns1:Nucleus ],
+            owl:someValuesFrom ns1:Electron ],
         ns1:MolecularEntity ;
     skos:altLabel "ChemicalSubstance"@en ;
     skos:example "H₂0, C₆H₁₂O₆, CH₄"@en ;
@@ -295,7 +294,6 @@ ns1:PhysicalParticleByBond a owl:Class ;
     ns1:elucidation "Categorisation of physical particles by whether they are bonded."@en .
 
 ns1:PhysicalParticleBySpin a owl:Class ;
-    rdfs:label "PhysicalParticleBySpin"@en ;
     rdfs:subClassOf ns1:PhysicalParticle ;
     skos:prefLabel "PhysicalParticleBySpin"@en ;
     ns1:OWLRL2DLAxioms "DisjointUnionOf: Boson, Fermion"^^xsd:string ;
@@ -332,7 +330,6 @@ ns1:PhysicalParticle a owl:Class ;
     ns1:note "The scope of the physical particle definition goes from the elementary particles to molecules, as fundamental constituents of substances."@en .
 
 ns1:Boson a owl:Class ;
-    rdfs:label "Boson"@en ;
     rdfs:subClassOf ns1:PhysicalParticleBySpin ;
     skos:prefLabel "Boson"@en ;
     ns1:elucidation "A physical particle with integer spin that follows Bose–Einstein statistics."@en ;
@@ -396,12 +393,6 @@ ns1:Meson a owl:Class ;
     ns1:etymology "1940s: named after S.N. Bose."@en .
 
 [] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:PhysicalObject ;
-    owl:annotatedTarget "PhysicalObject"@en ;
-    ns1:etymology "From Latin physica \"study of nature\" (and Ancient Greek φυσικός, “natural”), and Medieval Latin obiectum (“object”, literally “thrown against”)."@en .
-
-[] a owl:Axiom ;
     owl:annotatedProperty skos:altLabel ;
     owl:annotatedSource ns1:PhysicalParticle ;
     owl:annotatedTarget "Particle"@en ;
@@ -409,6 +400,12 @@ ns1:Meson a owl:Class ;
 
 [] a owl:AllDisjointClasses ;
     owl:members ( ns1:HybridMatter ns1:OrdinaryMatter ns1:AntiMatter ) .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:PhysicalObject ;
+    owl:annotatedTarget "PhysicalObject"@en ;
+    ns1:etymology "From Latin physica \"study of nature\" (and Ancient Greek φυσικός, “natural”), and Medieval Latin obiectum (“object”, literally “thrown against”)."@en .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;

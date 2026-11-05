@@ -17,9 +17,9 @@
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "Contrast"@en ;
     rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/perspectives/perspective> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/perspectives/contrast> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/perspectives/perspective> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/perspectives/contrast> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     emmo:contact "emmo@emmc.eu"^^xsd:string .
 
 emmo:EMMO_5a10e288_c6a5_409a_a16a_98a2fb8be4f3 a owl:Class ;
@@ -69,16 +69,16 @@ Variations are pure physical variations and do not necessarily possess semantic 
         "The covering axiom that defines the contrast class discriminates within all the possible causal objects between encoded contrast (data) or non encoded contrast."@en .
 
 [] a owl:Axiom ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource emmo:EMMO_1e877c70_3b01_45a8_a8f6_8ce4f6a24660 ;
-    owl:annotatedTarget "Dedomena"@en ;
-    emmo:etymology "From Greek, nominative plural form of δεδομένο (dedoméno) (data, information)"@en .
-
-[] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource emmo:EMMO_3e7add3d_e6ed_489a_a796_8e31fef9b490 ;
     owl:annotatedTarget "Data"@en ;
     emmo:etymology "From Latin data, nominative plural of datum (“that is given”), neuter past participle of dō (“I give”)."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource emmo:EMMO_1e877c70_3b01_45a8_a8f6_8ce4f6a24660 ;
+    owl:annotatedTarget "Dedomena"@en ;
+    emmo:etymology "From Greek, nominative plural form of δεδομένο (dedoméno) (data, information)"@en .
 
 [] a owl:Axiom ;
     owl:annotatedProperty emmo:note ;

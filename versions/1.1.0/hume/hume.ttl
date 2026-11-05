@@ -4780,11 +4780,11 @@ EMMO is released under a Creative Commons license Attribution 4.0 International 
     vann:preferredNamespacePrefix "emmo"^^xsd:string ;
     vann:preferredNamespaceUri "https://w3id.org/emmo"^^xsd:string ;
     rdfs:comment "The EMMO should be reasoned in order to visualize all inferences and class hierarchy in Protege (ctrl+R hotkey).  It is tested with both the HermiT (preferred) and HermiT reasoners."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/contributors-mappings>,
-        <https://w3id.org/emmo/1.0.4/disciplines> ;
-    owl:priorVersion "1.0.3"^^xsd:string ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/emmo> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/contributors-mappings>,
+        <https://w3id.org/emmo/1.1.0/disciplines> ;
+    owl:priorVersion "1.0.4"^^xsd:string ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/hume/emmo> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     foaf:homepage <https://github.com/emmo-repo/EMMO> ;
     foaf:logo "https://github.com/emmo-repo/EMMO/raw/master/doc/emmo-logo.png"^^xsd:string ;
     foaf:mbox <mailto:emmo@emmc.eu> ;

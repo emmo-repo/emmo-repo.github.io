@@ -108,8 +108,8 @@ emmo:wikipediaReference a owl:AnnotationProperty ;
     dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "EMMO Annotations"@en ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/foundation/annotations> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/foundation/annotations> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     foaf:mbox <mailto:emmo@emmc.eu> ;
     emmo:contact "emmo@emmc.eu"^^xsd:string .
 
@@ -156,10 +156,10 @@ rdfs:seeAlso rdfs:comment """EMMO applies the naming convension to its sub-prope
         "Indicate a resource that might provide additional information about the subject resource."@en .
 
 [] a owl:Axiom ;
-    rdfs:seeAlso "https://www.w3.org/TR/2012/REC-owl2-profiles-20121211/"^^xsd:anyURI ;
-    owl:annotatedProperty emmo:elucidation ;
-    owl:annotatedSource emmo:OWLRL2DLAxioms ;
-    owl:annotatedTarget "Axioms to add to the OWL 2 RL version of the ontology to reach DL expressivity."@en .
+    rdfs:seeAlso "https://en.wiktionary.org/wiki/Wiktionary"@en ;
+    owl:annotatedProperty emmo:note ;
+    owl:annotatedSource emmo:etymology ;
+    owl:annotatedTarget "Definitions are usually taken from Wiktionary."@en .
 
 [] a owl:Axiom ;
     rdfs:seeAlso "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#Global_Restrictions_on_Axioms_in_OWL_2_DL"^^xsd:anyURI ;
@@ -168,8 +168,8 @@ rdfs:seeAlso rdfs:comment """EMMO applies the naming convension to its sub-prope
     owl:annotatedTarget "Axiom not included in the theory because of OWL 2 DL global restrictions for decidability."@en .
 
 [] a owl:Axiom ;
-    rdfs:seeAlso "https://en.wiktionary.org/wiki/Wiktionary"@en ;
-    owl:annotatedProperty emmo:note ;
-    owl:annotatedSource emmo:etymology ;
-    owl:annotatedTarget "Definitions are usually taken from Wiktionary."@en .
+    rdfs:seeAlso "https://www.w3.org/TR/2012/REC-owl2-profiles-20121211/"^^xsd:anyURI ;
+    owl:annotatedProperty emmo:elucidation ;
+    owl:annotatedSource emmo:OWLRL2DLAxioms ;
+    owl:annotatedTarget "Axioms to add to the OWL 2 RL version of the ontology to reach DL expressivity."@en .
 

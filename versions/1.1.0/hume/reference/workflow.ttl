@@ -24,20 +24,6 @@ ns1:InternalTask a owl:Class ;
     ns1:elucidation "A generic task in a workflow, that is not the begin or the end."@en ;
     ns1:illustration "https://w3id.org/emmo/raw/1.0.4/doc/figs/ThroughTile.png"^^xsd:anyURI .
 
-ns1:Reductionistic rdfs:label "Reductionistic"@en .
-
-ns1:SpatioTemporalTessellation rdfs:label "SpatioTemporalTessellation"^^xsd:string .
-
-ns1:SpatioTemporalTile rdfs:label "SpatioTemporalTile"^^xsd:string .
-
-ns1:SpatioTemporalTileByConnection rdfs:label "SpatioTemporalTileByConnection"@en .
-
-ns1:SpatioTemporalTileByPosition rdfs:label "SpatioTemporalTileByPosition"@en .
-
-ns1:TemporalTiling rdfs:label "TemporalTiling"@en .
-
-ns1:Tessellation rdfs:label "Tessellation"@en .
-
 ns1:hasBeginTask a owl:ObjectProperty ;
     rdfs:label "hasBeginTask"@en ;
     ns2:python_name "hasBeginTask"@en ;
@@ -84,10 +70,10 @@ Workflows may also be extended reductionistically into serial and parallel workf
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "Workflow"@en ;
     rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/perspectives/reductionistic>,
-        <https://w3id.org/emmo/1.0.4/reference/agency> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/reference/workflow> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/perspectives/reductionistic>,
+        <https://w3id.org/emmo/1.1.0/reference/agency> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/hume/reference/workflow> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     ns1:contact "emmo@emmc.eu"^^xsd:string .
 
 ns1:EndTask a owl:Class ;
@@ -98,10 +84,6 @@ ns1:EndTask a owl:Class ;
     ns1:elucidation "The final task of a workflow."@en ;
     ns1:illustration "https://w3id.org/emmo/raw/1.0.4/doc/figs/EndTile.png"^^xsd:anyURI ;
     ns1:note "There may be more than one end task, if they run in parallel leading to more than one output."@en .
-
-ns1:EndTile rdfs:label "EndTile"@en .
-
-ns1:IntermidiateTile rdfs:label "IntermidiateTile"@en .
 
 ns1:IterativeTask a owl:Class ;
     rdfs:label "IterativeTask"@en ;
@@ -148,14 +130,6 @@ ns1:SerialWorkflow a owl:Class ;
     skos:prefLabel "SerialWorkflow"@en ;
     ns1:elucidation "A workflow whose tasks are tiles of a sequence."@en ;
     ns1:illustration "https://w3id.org/emmo/raw/1.0.4/doc/figs/SerialWorkflow.png"^^xsd:anyURI .
-
-ns1:TemporalSequence rdfs:label "TemporalSequence"@en .
-
-ns1:TemporalTile rdfs:label "TemporalTile"@en .
-
-ns1:Tile rdfs:label "Tile"@en .
-
-ns1:BeginTile rdfs:label "BeginTile"@en .
 
 ns1:IterativeWorkflow a owl:Class ;
     rdfs:label "IterativeWorkflow"@en ;
@@ -211,11 +185,11 @@ ns1:TaskTile a owl:Class ;
 
 ns1:Procedure a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty ns1:isRepresentedBy ;
-            owl:someValuesFrom ns1:ProceduralData ],
-        [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf ns1:providesInterpretation ] ;
             owl:someValuesFrom ns1:ProceduralAgent ],
+        [ a owl:Restriction ;
+            owl:onProperty ns1:isRepresentedBy ;
+            owl:someValuesFrom ns1:ProceduralData ],
         ns1:IntentionalAgency ;
     skos:altLabel "Elaboration"@en,
         "Work"@en ;
@@ -237,7 +211,6 @@ ns1:hasTask a owl:ObjectProperty ;
     ns1:conceptualisation "The holistic relation connecting a workflow with one of its tasks."@en .
 
 ns1:Workflow a owl:Class ;
-    rdfs:label "Workflow"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:hasRole ;
             owl:someValuesFrom ns1:Task ],
@@ -246,14 +219,14 @@ ns1:Workflow a owl:Class ;
     ns1:elucidation "A procedure that has at least two procedures (tasks) as proper parts."@en .
 
 [] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource ns1:Procedure ;
-    owl:annotatedTarget "Procedure"@en ;
-    ns1:etymology "From Latin pro-cedere (“to go forward, to proceed”)."@en .
-
-[] a owl:Axiom ;
     rdfs:seeAlso "https://en.wiktionary.org/wiki/procedure"^^xsd:anyURI ;
     owl:annotatedProperty ns1:conceptualisation ;
     owl:annotatedSource ns1:Procedure ;
     owl:annotatedTarget "The set of established forms or methods of an organized body for accomplishing a certain task or tasks (Wiktionary)."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Procedure ;
+    owl:annotatedTarget "Procedure"@en ;
+    ns1:etymology "From Latin pro-cedere (“to go forward, to proceed”)."@en .
 

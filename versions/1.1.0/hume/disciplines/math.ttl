@@ -199,12 +199,12 @@ ns1:numberValue a owl:DatatypeProperty,
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "Math"@en ;
     rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/perspectives/reductionistic>,
-        <https://w3id.org/emmo/1.0.4/perspectives/semiotics>,
-        <https://w3id.org/emmo/1.0.4/reference/data>,
-        <https://w3id.org/emmo/1.0.4/reference/symbolic> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/disciplines/math> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/perspectives/reductionistic>,
+        <https://w3id.org/emmo/1.1.0/perspectives/semiotics>,
+        <https://w3id.org/emmo/1.1.0/reference/data>,
+        <https://w3id.org/emmo/1.1.0/reference/symbolic> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/hume/disciplines/math> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     ns1:contact "emmo@emmc.eu"^^xsd:string .
 
 ns1:Constant a owl:Class ;
@@ -269,6 +269,7 @@ ns1:Expression a owl:Class ;
     ns1:elucidation "A well-formed finite combination of mathematical symbols according to some specific rules."@en .
 
 ns1:MathematicalFormula a owl:Class ;
+    rdfs:label "MathematicalFormula"@en ;
     rdfs:comment "The set X is called domain and the set Y range or codomain."@en ;
     rdfs:subClassOf ns1:Mathematical,
         ns1:SymbolicConstruct ;
@@ -305,6 +306,7 @@ ns1:Matrix a owl:Class ;
     ns1:elucidation "2-dimensional array who's spatial direct parts are vectors."@en .
 
 ns1:Vector a owl:Class ;
+    rdfs:label "Vector"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty ns1:hasSpatialTile ;
             owl:someValuesFrom ns1:Number ],
@@ -322,6 +324,7 @@ ns1:AlgebraicExpression a owl:Class ;
     skos:prefLabel "AlgebraicExpression"@en .
 
 ns1:Array a owl:Class ;
+    rdfs:label "Array"@en ;
     rdfs:comment """Array subclasses with a specific shape can be constructed with cardinality restrictions.
 
 See Shape4x3Matrix as an example."""@en,
@@ -335,6 +338,7 @@ and so forth..."""@en ;
     ns1:elucidation "Arrays are ordered mathematical objects who's elementary spatial parts are numbers. Their dimensionality is constructed with spatial direct parthood, where 1-dimensional arrays have spatial direct parts Number and n-dimensional array have spatial direct parts (n-1)-dimensional arrays."@en .
 
 ns1:Equation a owl:Class ;
+    rdfs:label "Equation"@en ;
     rdfs:comment """An equation with variables can always be represented as:
 
 f(v0, v1, ..., vn) = g(v0, v1, ..., vn)
@@ -394,21 +398,21 @@ ns1:Mathematical a owl:Class ;
     ns1:elucidation "The class of general mathematical symbolic objects respecting mathematical syntactic rules."@en ;
     ns1:note "A mathematical object in this branch is not representing a concept but an actual graphical object built using mathematcal symbols arranged in some way, according to math conventions."@en .
 
-[] owl:qualifiedCardinality "3"^^xsd:nonNegativeInteger .
-
 [] owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger .
-
-[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
-
-[] a owl:Axiom ;
-    owl:annotatedProperty ns1:elucidation ;
-    owl:annotatedSource ns1:Variable ;
-    owl:annotatedTarget "A variable is a symbolic object that stands for any other mathematical object, such as  number, a vector, a matrix, a function, the argument of a function, a set, an element of a set."@en ;
-    ns1:wikipediaReference "https://en.wikipedia.org/wiki/Variable_(mathematics)"^^xsd:anyURI .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource ns1:Variable ;
     owl:annotatedTarget "Variable"@en ;
     ns1:etymology "Fom Latin variabilis (\"changeable\")."@en .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "3"^^xsd:nonNegativeInteger .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty ns1:elucidation ;
+    owl:annotatedSource ns1:Variable ;
+    owl:annotatedTarget "A variable is a symbolic object that stands for any other mathematical object, such as  number, a vector, a matrix, a function, the argument of a function, a set, an element of a set."@en ;
+    ns1:wikipediaReference "https://en.wikipedia.org/wiki/Variable_(mathematics)"^^xsd:anyURI .
 

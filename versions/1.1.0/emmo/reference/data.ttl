@@ -65,9 +65,9 @@ emmo:EMMO_ed257e78_8b59_44c3_9d61_06c261184f55 a owl:Class ;
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "Data"@en ;
     rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/perspectives/contrast> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/reference/data> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/perspectives/contrast> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/reference/data> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     emmo:contact "emmo@emmc.eu"^^xsd:string .
 
 emmo:EMMO_194e367c_9783_4bf5_96d0_9ad597d48d9a a owl:Class ;

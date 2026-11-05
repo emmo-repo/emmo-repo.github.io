@@ -60,9 +60,9 @@ ns1:NonNuclear a owl:Class ;
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "Structural"@en ;
     rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/perspectives/perspective> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/perspectives/structural> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/perspectives/perspective> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/hume/perspectives/structural> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     ns1:contact "emmo@emmc.eu"^^xsd:string .
 
 ns1:Multiplex a owl:Class ;
@@ -109,16 +109,16 @@ Following the two examples, a marathon individual is a maximal that can be decom
     ns1:elucidation "The superclass for all classes of entities that have no proper parts of the same type of the whole."@en .
 
 [] a owl:Axiom ;
-    owl:annotatedProperty skos:altLabel ;
-    owl:annotatedSource ns1:Fundamental ;
-    owl:annotatedTarget "Lifetime"@en ;
-    ns1:etymology "From Middle English liftime, equivalent to life +‎ time."@en .
-
-[] a owl:Axiom ;
     rdfs:seeAlso ns1:hasRedundantPart ;
     owl:annotatedProperty ns1:definition ;
     owl:annotatedSource ns1:Fundamental ;
     owl:annotatedTarget "Fundamental(x) ≡ ∃φ[φ(x) ∧ ¬∃yRP⟨φ⟩(y, x)]"^^xsd:string .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:altLabel ;
+    owl:annotatedSource ns1:Fundamental ;
+    owl:annotatedTarget "Lifetime"@en ;
+    ns1:etymology "From Middle English liftime, equivalent to life +‎ time."@en .
 
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;

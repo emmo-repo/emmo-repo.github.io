@@ -6,10 +6,10 @@
     dcterms:license <https://creativecommons.org/licenses/by/4.0/legalcode> ;
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "SI System"@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/disciplines/units/coherentsiunits>,
-        <https://w3id.org/emmo/1.0.4/disciplines/units/noncoherentsiunits>,
-        <https://w3id.org/emmo/1.0.4/disciplines/units/prefixedsiunits>,
-        <https://w3id.org/emmo/1.0.4/disciplines/units/siacceptedspecialunits>,
-        <https://w3id.org/emmo/1.0.4/disciplines/units/sidimensionalunits> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/disciplines/sisystem> .
+    owl:imports <https://w3id.org/emmo/1.1.0/disciplines/units/coherentsiunits>,
+        <https://w3id.org/emmo/1.1.0/disciplines/units/noncoherentsiunits>,
+        <https://w3id.org/emmo/1.1.0/disciplines/units/prefixedsiunits>,
+        <https://w3id.org/emmo/1.1.0/disciplines/units/siacceptedspecialunits>,
+        <https://w3id.org/emmo/1.1.0/disciplines/units/sidimensionalunits> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/disciplines/sisystem> .
 

@@ -52,13 +52,13 @@ emmo:EMMO_f93fe78b_9646_4a15_b88b_1c93686a764d a owl:Class ;
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "Persholistic"@en ;
     rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/perspectives/contrast>,
-        <https://w3id.org/emmo/1.0.4/perspectives/holistic>,
-        <https://w3id.org/emmo/1.0.4/perspectives/persistence>,
-        <https://w3id.org/emmo/1.0.4/perspectives/semiotics>,
-        <https://w3id.org/emmo/1.0.4/perspectives/structural> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/reference/persholistic> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/perspectives/contrast>,
+        <https://w3id.org/emmo/1.1.0/perspectives/holistic>,
+        <https://w3id.org/emmo/1.1.0/perspectives/persistence>,
+        <https://w3id.org/emmo/1.1.0/perspectives/semiotics>,
+        <https://w3id.org/emmo/1.1.0/perspectives/structural> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/reference/persholistic> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     emmo:contact "emmo@emmc.eu"^^xsd:string .
 
 emmo:EMMO_c0f72631_d7c2_434c_9c26_5c44123df682 a owl:Class ;
@@ -68,6 +68,8 @@ organization: person or group of people that has its own functions with responsi
     rdfs:subClassOf emmo:EMMO_65a007dc_2550_46b0_b394_3346c67fbb69 ;
     skos:prefLabel "Organisation"@en ;
     emmo:elucidation "An holistic system of people that has its own functions with responsibilities, authorities and relationships to achieve its objectives."@en .
+
+emmo:EMMO_ceaaf9f7_fd11_424b_8fda_9afa186af186 rdfs:label "Constituent"@en .
 
 emmo:EMMO_3c7f239f_e833_4a2b_98a1_c88831770c1b a owl:ObjectProperty ;
     rdfs:label "hasComponent"@en ;

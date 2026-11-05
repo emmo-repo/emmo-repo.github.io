@@ -27,8 +27,6 @@ dcterms:subject a owl:AnnotationProperty .
 
 xsd:gYear a rdfs:Datatype .
 
-emmo:EMMO_0b15f4ae_092e_4487_9100_3c44176c545c rdfs:label "Dispersion"@en .
-
 emmo:EMMO_0bb3b434_73aa_428f_b4e8_2a2468648e19 a owl:Class ;
     rdfs:label "SingleCrystal"@en ;
     rdfs:seeAlso <urn:isbn:9780471736967> ;
@@ -40,10 +38,6 @@ emmo:EMMO_0bb3b434_73aa_428f_b4e8_2a2468648e19 a owl:Class ;
     emmo:conceptualisation "In a single crystal the periodic atomic lattice is continuous and unbroken across the entire specimen. There are no internal boundaries. Examples include silicon wafers used in microchips, or gem-quality diamond."@en ;
     emmo:elucidation "A crystalline state is a single crystal when the periodic and repeated arrangement of atoms is perfect or extends throughout the entirety of the specimen without interruption."@en ;
     emmo:iupacReference <https://doi.org/10.1351/goldbook.12754> .
-
-emmo:EMMO_0e030040_98a7_49b2_a871_dced1f3a6131 rdfs:label "PhaseHeterogeneousMixture"@en .
-
-emmo:EMMO_0e6378df_1ce8_4321_b00c_ee9beea60a67 rdfs:label "PhaseHomogeneousMixture"@en .
 
 emmo:EMMO_0f9c0736_3a27_424b_a9d7_45e7a76b40c5 a owl:Class ;
     rdfs:label "AusteniticStainlessSteel"@en ;
@@ -84,8 +78,6 @@ emmo:EMMO_1c962026_b927_48a5_8359_e43c01c6e64e a owl:Class ;
     rdfs:subClassOf emmo:EMMO_a376ec3a_c50a_40ac_8cc3_aa066c6b6371 ;
     skos:prefLabel "Multiferroic"@en ;
     emmo:elucidation "Materials that exhibit more than one primary ferroic property simultaneously (e.g., coupled ferroelectricity and ferromagnetism), enabling cross-domain field control."@en .
-
-emmo:EMMO_2031516a_2be7_48e8_9af7_7e1270e308fe rdfs:label "Solution"@en .
 
 emmo:EMMO_20cdbfc8_2511_4ff3_b67c_28325960f70f a owl:Class ;
     rdfs:label "AdvancedCeramic"@en ;
@@ -137,10 +129,6 @@ emmo:EMMO_438cd1dd_15d6_4d49_acb6_c9f24fc5b4bf a owl:Class ;
     rdfs:label "Bronze"@en ;
     rdfs:subClassOf emmo:EMMO_a8a7d320_825f_479a_8a47_85d8694f95b9 ;
     skos:prefLabel "Bronze"@en .
-
-emmo:EMMO_4a464c8d_8895_44a8_a628_aed13509f1bd rdfs:label "Suspension"@en .
-
-emmo:EMMO_4b3e2374_52a1_4420_8e3f_3ae6b9bf7dff rdfs:label "LiquidSolution"@en .
 
 emmo:EMMO_54e56cc0_b595_4fa2_b5cf_84a8d72ab454 a owl:Class ;
     rdfs:label "LuminescentMaterial"@en ;
@@ -231,8 +219,6 @@ emmo:EMMO_74bd75e3_fd3d_49dc_8eef_3c4db09ac7ae a owl:Class ;
     skos:prefLabel "FerromagneticMaterial"@en ;
     emmo:elucidation "Materials that possess spontaneous, long-range magnetic ordering, utilized to transform energy or store data via magnetic domain manipulation."@en .
 
-emmo:EMMO_7509da43_56b1_4d7f_887a_65d1663df4ba rdfs:label "Liquid"@en .
-
 emmo:EMMO_75fe4fd1_0f7e_429b_b91d_59d248561bae a owl:Class ;
     rdfs:label "NaturalMaterial"@en ;
     rdfs:subClassOf emmo:EMMO_ddb62e5b_9a1f_4d10_8cd8_32655301bfc9 ;
@@ -262,15 +248,11 @@ emmo:EMMO_83568a6d_7cc6_4f68_a6c4_abe3ace1ce7b a owl:Class ;
     skos:prefLabel "StructuralMaterial"@en ;
     emmo:elucidation "Materials selected primarily for their mechanical properties, such as strength, toughness, and hardness, to bear loads or resist deformation."@en .
 
-emmo:EMMO_87ac88ff_8379_4f5a_8c7b_424a8fff1ee8 rdfs:label "Fluid"@en .
-
 emmo:EMMO_8a47028f_0988_45c1_89e1_178f7eea62a2 a owl:Class ;
     rdfs:label "ParamagneticMaterial"@en ;
     rdfs:subClassOf emmo:EMMO_cc6988f0_136a_4933_b986_270cff5e1137 ;
     skos:prefLabel "ParamagneticMaterial"@en ;
     emmo:elucidation "Materials with unpaired electron spins that exhibit random, uncoupled magnetic moments, generating a weak parallel alignment to an external field which is readily disrupted by thermal agitation."@en .
-
-emmo:EMMO_8b0923ab_b500_477b_9ce9_8b3a3e4dc4f2 rdfs:label "ContinuumSubstance"@en .
 
 emmo:EMMO_8c6a2498_e275_4bc7_8af8_62ad0d8fd242 a owl:Class ;
     rdfs:label "StructuralClayProduct"@en ;
@@ -391,8 +373,6 @@ emmo:EMMO_b5815840_5615_4015_8dcb_0ed2263991f2 a owl:Class ;
         emmo:EMMO_5cb107ba_7daa_46dd_8f9f_da22a6eac676 ;
     skos:prefLabel "Beer"@en .
 
-emmo:EMMO_b9695e87_8261_412e_83cd_a86459426a28 rdfs:label "StateOfMatter"@en .
-
 emmo:EMMO_ba2d8929_bf58_4721_a140_f2c8028b760c a owl:Class ;
     rdfs:label "Fireclay"@en ;
     rdfs:subClassOf emmo:EMMO_93426415_8640_407a_baf8_09e903261180 ;
@@ -450,8 +430,6 @@ emmo:EMMO_e2064298_2a27_4d4a_b5b3_de3c972d1867 a owl:Class ;
     skos:prefLabel "Conductor"@en ;
     emmo:elucidation "Materials with high concentrations of mobile charge carriers (e.g., free electron gas) that respond to an electric field by establishing a continuous macroscopic current density governed by Ohm's law."@en .
 
-emmo:EMMO_ec2c8ac8_98c5_4c74_b85b_ff8e8ca6655c rdfs:label "Mixture"@en .
-
 emmo:EMMO_f4ac5183_81ee_45a2_ba51_08c8dc91402d a owl:Class ;
     rdfs:label "ThermalResponseMaterial"@en ;
     rdfs:subClassOf emmo:EMMO_d8a7aac9_984a_4254_ab3b_7d8b1c061149 ;
@@ -507,9 +485,9 @@ emmo:EMMO_fda3040a_103a_4365_a8ca_bc1092e6b640 a owl:Class ;
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "Materials"@en ;
     rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/disciplines/statesofmatter> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/disciplines/materials> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/disciplines/statesofmatter> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/disciplines/materials> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     emmo:contact "emmo@emmc.eu"^^xsd:string .
 
 <https://doi.org/10.1016/j.jnoncrysol.2018.01.033> a dcmitype:Text,
@@ -541,8 +519,6 @@ emmo:EMMO_29a15bcd_e219_4afc_9f82_9d3fceb666cd a owl:Class ;
     emmo:elucidation "A powder is a granular material composed of many very fine dry solid particles that may flow freely when shaken or tilted."@en ;
     emmo:wikipediaReference "https://en.wikipedia.org/wiki/Powder"@en .
 
-emmo:EMMO_42185fe7_122c_4e0c_a3cd_659d3e21c389 rdfs:label "LiquidGasSuspension"@en .
-
 emmo:EMMO_48fc6f16_0f04_4e86_a9fc_fcfc14c5ef4b a owl:Class ;
     rdfs:label "GranularMaterial"@en ;
     rdfs:seeAlso <urn:isbn:9780387986562> ;
@@ -562,10 +538,6 @@ emmo:EMMO_4c1f58cd_6e2c_48fb_8098_1cbb762abb05 a owl:Class ;
     skos:prefLabel "MetallicMaterial"@en ;
     emmo:elucidation "Inorganic substance, consisting of one or more metallic elements, and often small amount of nonmetallic elements."@en ;
     emmo:note "Metallic materials are known for their shiny luster, excellent electrical/thermal conductivity, malleability (shapable by hammering), and ductility (can be drawn into wires), due to metallic bonding (shared electrons); they often form alloys (like steel from iron/carbon) to enhance these properties for diverse applications."@en .
-
-emmo:EMMO_4e9fd152_147b_4564_8999_089608f41aff rdfs:label "AmorphousState"@en .
-
-emmo:EMMO_5cb107ba_7daa_46dd_8f9f_da22a6eac676 rdfs:label "AqueousSolution"@en .
 
 emmo:EMMO_66281f4c_ce3b_46e0_bd24_b5cdcce93094 a owl:Class ;
     rdfs:label "AmorphousMaterial"@en ;
@@ -616,8 +588,6 @@ emmo:EMMO_1002691c_900f_4fe2_8fa4_fd7f02a16805 a owl:Class ;
     skos:prefLabel "ThermalAndThermoelectricMaterial"@en ;
     emmo:elucidation "Materials designed to manage heat flow, store thermal energy, or directly exploit temperature differentials."@en .
 
-emmo:EMMO_220b7201_d277_4dca_bf6a_5a5e2c4062dd rdfs:label "CondensedMatter"@en .
-
 emmo:EMMO_2f4e930e_1eee_4826_8cc0_e5d2444e4400 a owl:Class ;
     rdfs:label "DielectricMaterial"@en ;
     rdfs:subClassOf emmo:EMMO_9d1efd57_a270_4344_9a8d_dffcaecc7934 ;
@@ -644,8 +614,6 @@ emmo:EMMO_621bbbf3_d357_4ea7_b235_bc6a9ad3366a a owl:Class ;
     rdfs:subClassOf emmo:EMMO_00ed0f82_f20e_4749_9780_380f43398466 ;
     skos:prefLabel "FerrousAlloy"@en ;
     emmo:elucidation "A metal alloy in which iron is the primary constituent."@en .
-
-emmo:EMMO_660a4964_0333_4663_bc66_e93ef59b0679 rdfs:label "MesoscopicSubstance"@en .
 
 emmo:EMMO_76cfad65_2147_44d6_86da_dc89c27c1782 a owl:Class ;
     rdfs:label "PolyCrystallineMaterial"@en ;
@@ -911,17 +879,11 @@ Here we embrace this definition in its wide and literal meaning, even if in prac
     emmo:etymology "From Latin māteria (“wood, material, substance”), from māter (“mother”) [Wikictionary]"@en .
 
 [] a owl:Axiom ;
-    rdfs:seeAlso <https://en.wiktionary.org/wiki/compact> ;
+    rdfs:seeAlso <https://en.wiktionary.org/wiki/ceramic> ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_9ebb6e14_c656_4568_abfa_f7f193ea14ac ;
-    owl:annotatedTarget "CompactMaterial"@en ;
-    emmo:etymology "From Latin compāctus, perfect passive participle of compingō (“join together”), from com- (“together”) + pangō (“fasten”) [Wiktionary]"@en .
-
-[] a owl:Axiom ;
-    rdfs:seeAlso emmo:EMMO_ec613a57_0c55_42cf_ba62_2f6b6576eb2e ;
-    owl:annotatedProperty emmo:note ;
-    owl:annotatedSource emmo:EMMO_f00fb163_48c9_4c59_b6c2_4205c082aa54 ;
-    owl:annotatedTarget "The distinction between amorphous and crystalline is about structural isotropy. Property isotropy is not necessarly related to structural isotropy (e.g., an amorphous material can express some anisotropic property under external conditions such a stress, flow, fields)."@en .
+    owl:annotatedSource emmo:EMMO_c5e9e390_8836_4440_b4fd_c906fdd4f438 ;
+    owl:annotatedTarget "CeramicMaterial"@en ;
+    emmo:etymology "From Ancient Greek κεραμικός (keramikós, “potter's”) [Wiktionary]"@en .
 
 [] a owl:Axiom ;
     rdfs:seeAlso <https://en.wiktionary.org/wiki/powder> ;
@@ -931,9 +893,15 @@ Here we embrace this definition in its wide and literal meaning, even if in prac
     emmo:etymology "From Latin pulverem, accusative singular of Latin pulvis (“dust, powder”) [Wiktionary]"@en .
 
 [] a owl:Axiom ;
-    rdfs:seeAlso <https://en.wiktionary.org/wiki/ceramic> ;
+    rdfs:seeAlso emmo:EMMO_ec613a57_0c55_42cf_ba62_2f6b6576eb2e ;
+    owl:annotatedProperty emmo:note ;
+    owl:annotatedSource emmo:EMMO_f00fb163_48c9_4c59_b6c2_4205c082aa54 ;
+    owl:annotatedTarget "The distinction between amorphous and crystalline is about structural isotropy. Property isotropy is not necessarly related to structural isotropy (e.g., an amorphous material can express some anisotropic property under external conditions such a stress, flow, fields)."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso <https://en.wiktionary.org/wiki/compact> ;
     owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_c5e9e390_8836_4440_b4fd_c906fdd4f438 ;
-    owl:annotatedTarget "CeramicMaterial"@en ;
-    emmo:etymology "From Ancient Greek κεραμικός (keramikós, “potter's”) [Wiktionary]"@en .
+    owl:annotatedSource emmo:EMMO_9ebb6e14_c656_4568_abfa_f7f193ea14ac ;
+    owl:annotatedTarget "CompactMaterial"@en ;
+    emmo:etymology "From Latin compāctus, perfect passive participle of compingō (“join together”), from com- (“together”) + pangō (“fasten”) [Wiktionary]"@en .
 

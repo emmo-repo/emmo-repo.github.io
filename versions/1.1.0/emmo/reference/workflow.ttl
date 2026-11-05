@@ -5,8 +5,6 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-emmo:EMMO_2480b72b_db8d_460f_9a5f_c2912f979046 rdfs:label "Agent"@en .
-
 emmo:EMMO_322ce14e_9ede_4841_ad70_302b4d6c5f28 a owl:Class ;
     rdfs:label "InternalTask"@en ;
     rdfs:subClassOf emmo:EMMO_180bd73b_0c5d_4b1f_ba12_4309c5a50d49,
@@ -44,8 +42,6 @@ emmo:EMMO_92227f7f_22e9_4b19_a011_920eac3c7b75 a owl:ObjectProperty ;
     skos:prefLabel "hasEndTask"@en ;
     emmo:elucidation "The relation identifying the tasks of a workflow that are not a temporal cause of other parts of the workflow."@en .
 
-emmo:EMMO_946b5162_95b0_4801_81d4_efef43842a0d rdfs:label "QualifiedRole"@en .
-
 emmo:EMMO_b941e455_2cb1_4c11_93e3_17caa06086b4 a owl:Class ;
     rdfs:label "BeginTask"@en ;
     rdfs:subClassOf emmo:EMMO_180bd73b_0c5d_4b1f_ba12_4309c5a50d49,
@@ -54,8 +50,6 @@ emmo:EMMO_b941e455_2cb1_4c11_93e3_17caa06086b4 a owl:Class ;
     emmo:elucidation "An initial task of a workflow."@en ;
     emmo:illustration "https://w3id.org/emmo/raw/1.0.4/doc/figs/BeginTile.png"^^xsd:anyURI ;
     emmo:note "There may be more than one begin task, if they run in parallel."@en .
-
-emmo:EMMO_cede9297_c60d_4487_9207_62ac963202b5 rdfs:label "ParticipantByAgency"@en .
 
 <https://w3id.org/emmo/reference/workflow> a owl:Ontology ;
     dcterms:abstract """The workflow multi-perspective combines the persistence and holistic perspectives to describe workflows as a process built up of a set of temporal tasks.
@@ -70,10 +64,10 @@ Workflows may also be extended reductionistically into serial and parallel workf
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "Workflow"@en ;
     rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/perspectives/reductionistic>,
-        <https://w3id.org/emmo/1.0.4/reference/agency> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/reference/workflow> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/perspectives/reductionistic>,
+        <https://w3id.org/emmo/1.1.0/reference/agency> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/reference/workflow> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     emmo:contact "emmo@emmc.eu"^^xsd:string .
 
 emmo:EMMO_2666a7e3_2ad4_49a0_899e_329607231f4b a owl:Class ;
@@ -82,8 +76,6 @@ emmo:EMMO_2666a7e3_2ad4_49a0_899e_329607231f4b a owl:Class ;
         emmo:EMMO_504ad89e_dd4a_4fa6_aeb6_15c8ce0cde9b ;
     skos:prefLabel "SerialTask"@en ;
     emmo:elucidation "A task that is a temporal tile of a workflow when there are no other activities taking place concurrently (i.e., no parallelism)."@en .
-
-emmo:EMMO_4f226cf3_6d02_4d35_8566_a9e641bc6ff3 rdfs:label "Role"@en .
 
 emmo:EMMO_57ba1bf0_4314_432c_a9bb_6a6720c8dab5 a owl:Class ;
     rdfs:label "SerialWorkflow"@en ;
@@ -126,8 +118,6 @@ emmo:EMMO_9ac10a20_63d0_4bbd_a5d3_f00a0ad4682c a owl:Class ;
     skos:prefLabel "IterativeTask"@en ;
     emmo:elucidation "An iterative workflow which is a task of a larger workflow."@en ;
     emmo:illustration "https://w3id.org/emmo/raw/1.0.4/doc/figs/IterativeWorkflow.png"^^xsd:anyURI .
-
-emmo:EMMO_c130614a_2985_476d_a7ed_8a137847703c rdfs:label "IntentionalAgent"@en .
 
 emmo:EMMO_eaf4640d_651d_4cbe_a315_3d2dc5df3b35 a owl:Class ;
     rdfs:label "ProceduralData"@en ;
@@ -188,11 +178,11 @@ emmo:EMMO_9f6ec830_c59f_46aa_8a22_945ba20b6ea3 a owl:Class ;
 
 emmo:EMMO_472a0ca2_58bf_4618_b561_6fe68bd9fd49 a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 ;
-            owl:someValuesFrom emmo:EMMO_eaf4640d_651d_4cbe_a315_3d2dc5df3b35 ],
-        [ a owl:Restriction ;
             owl:onProperty [ owl:inverseOf emmo:EMMO_f2fc1ce9_cc3b_4eb5_a112_3c85d1b1374a ] ;
             owl:someValuesFrom emmo:EMMO_8cf62c94_ae5f_4f80_8669_d5f91178db6d ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_60577dea_9019_4537_ac41_80b0fb563d41 ;
+            owl:someValuesFrom emmo:EMMO_eaf4640d_651d_4cbe_a315_3d2dc5df3b35 ],
         emmo:EMMO_bafc17b5_9be4_4823_8bbe_ab4e90b6738c ;
     skos:altLabel "Elaboration"@en,
         "Work"@en ;
@@ -213,6 +203,7 @@ emmo:EMMO_70da982d_1810_4b01_9630_a28e216ecd9a a owl:ObjectProperty ;
     emmo:conceptualisation "The holistic relation connecting a workflow with one of its tasks."@en .
 
 emmo:EMMO_64963ed6_39c9_4258_85e0_6466c4b5420c a owl:Class ;
+    rdfs:label "Workflow"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_8e52c42b_e879_4473_9fa1_4b23428b392b ;
             owl:someValuesFrom emmo:EMMO_4299e344_a321_4ef2_a744_bacfcce80afc ],
@@ -221,14 +212,14 @@ emmo:EMMO_64963ed6_39c9_4258_85e0_6466c4b5420c a owl:Class ;
     emmo:elucidation "A procedure that has at least two procedures (tasks) as proper parts."@en .
 
 [] a owl:Axiom ;
-    owl:annotatedProperty skos:prefLabel ;
-    owl:annotatedSource emmo:EMMO_472a0ca2_58bf_4618_b561_6fe68bd9fd49 ;
-    owl:annotatedTarget "Procedure"@en ;
-    emmo:etymology "From Latin pro-cedere (“to go forward, to proceed”)."@en .
-
-[] a owl:Axiom ;
     rdfs:seeAlso "https://en.wiktionary.org/wiki/procedure"^^xsd:anyURI ;
     owl:annotatedProperty emmo:conceptualisation ;
     owl:annotatedSource emmo:EMMO_472a0ca2_58bf_4618_b561_6fe68bd9fd49 ;
     owl:annotatedTarget "The set of established forms or methods of an organized body for accomplishing a certain task or tasks (Wiktionary)."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource emmo:EMMO_472a0ca2_58bf_4618_b561_6fe68bd9fd49 ;
+    owl:annotatedTarget "Procedure"@en ;
+    emmo:etymology "From Latin pro-cedere (“to go forward, to proceed”)."@en .
 

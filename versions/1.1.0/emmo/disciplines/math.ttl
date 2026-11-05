@@ -196,12 +196,12 @@ emmo:EMMO_ffe760a2_9d1f_4aef_8bee_1f450f9cb00d a owl:Class ;
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "Math"@en ;
     rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/perspectives/reductionistic>,
-        <https://w3id.org/emmo/1.0.4/perspectives/semiotics>,
-        <https://w3id.org/emmo/1.0.4/reference/data>,
-        <https://w3id.org/emmo/1.0.4/reference/symbolic> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/disciplines/math> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/perspectives/reductionistic>,
+        <https://w3id.org/emmo/1.1.0/perspectives/semiotics>,
+        <https://w3id.org/emmo/1.1.0/reference/data>,
+        <https://w3id.org/emmo/1.1.0/reference/symbolic> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/disciplines/math> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     emmo:contact "emmo@emmc.eu"^^xsd:string .
 
 emmo:EMMO_21f56795_ee72_4858_b571_11cfaa59c1a8 a owl:Class ;
@@ -249,6 +249,7 @@ emmo:EMMO_8c64fcfa_23aa_45f8_9e58_bdfd065fab8f a owl:Class ;
 emmo:EMMO_d8d2144e_5c8d_455d_a643_5caf4d8d9df8 a owl:Class .
 
 emmo:EMMO_06658d8d_dcde_4fc9_aae1_17f71c0bcdec a owl:Class ;
+    rdfs:label "Vector"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_b2282816_b7a3_44c6_b2cb_3feff1ceb7fe ;
             owl:someValuesFrom emmo:EMMO_21f56795_ee72_4858_b571_11cfaa59c1a8 ],
@@ -284,6 +285,7 @@ emmo:EMMO_5be83f9c_a4ba_4b9a_be1a_5bfc6e891231 a owl:Class ;
     skos:prefLabel "MathematicalSymbol"@en .
 
 emmo:EMMO_88470739_03d3_4c47_a03e_b30a1288d50c a owl:Class ;
+    rdfs:label "MathematicalFormula"@en ;
     rdfs:comment "The set X is called domain and the set Y range or codomain."@en ;
     rdfs:subClassOf emmo:EMMO_54ee6b5e_5261_44a8_86eb_5717e7fdb9d0,
         emmo:EMMO_89a0c87c_0804_4013_937a_6fe234d9499c ;
@@ -319,6 +321,7 @@ emmo:EMMO_1aed91a3_d00c_48af_8f43_a0c958b2512a a owl:Class ;
     skos:prefLabel "AlgebraicExpression"@en .
 
 emmo:EMMO_28fbea28_2204_4613_87ff_6d877b855fcd a owl:Class ;
+    rdfs:label "Array"@en ;
     rdfs:comment """Array subclasses with a specific shape can be constructed with cardinality restrictions.
 
 See Shape4x3Matrix as an example."""@en,
@@ -346,6 +349,7 @@ emmo:EMMO_9e029526_79a2_47a8_a151_dd0545db471b a owl:Class ;
     emmo:elucidation "A variable standing for a numerical defined mathematical object like e.g. a number, a vector of numbers, a matrix of numbers."@en .
 
 emmo:EMMO_e56ee3eb_7609_4ae1_8bed_51974f0960a6 a owl:Class ;
+    rdfs:label "Equation"@en ;
     rdfs:comment """An equation with variables can always be represented as:
 
 f(v0, v1, ..., vn) = g(v0, v1, ..., vn)
@@ -387,6 +391,7 @@ emmo:EMMO_436c8a78_f95d_42a0_9854_07ad3736f061 a owl:DatatypeProperty ;
     skos:prefLabel "mathematicalSymbolValue"@en .
 
 emmo:EMMO_54ee6b5e_5261_44a8_86eb_5717e7fdb9d0 a owl:Class ;
+    rdfs:label "Mathematical"@en ;
     rdfs:subClassOf emmo:EMMO_d8d2144e_5c8d_455d_a643_5caf4d8d9df8 ;
     skos:prefLabel "Mathematical"@en ;
     emmo:elucidation "The class of general mathematical symbolic objects respecting mathematical syntactic rules."@en ;
@@ -394,19 +399,19 @@ emmo:EMMO_54ee6b5e_5261_44a8_86eb_5717e7fdb9d0 a owl:Class ;
 
 [] owl:qualifiedCardinality "4"^^xsd:nonNegativeInteger .
 
+[] owl:qualifiedCardinality "3"^^xsd:nonNegativeInteger .
+
+[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
+
 [] a owl:Axiom ;
     owl:annotatedProperty emmo:elucidation ;
     owl:annotatedSource emmo:EMMO_1eed0732_e3f1_4b2c_a9c4_b4e75eeb5895 ;
     owl:annotatedTarget "A variable is a symbolic object that stands for any other mathematical object, such as  number, a vector, a matrix, a function, the argument of a function, a set, an element of a set."@en ;
     emmo:wikipediaReference "https://en.wikipedia.org/wiki/Variable_(mathematics)"^^xsd:anyURI .
 
-[] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .
-
 [] a owl:Axiom ;
     owl:annotatedProperty skos:prefLabel ;
     owl:annotatedSource emmo:EMMO_1eed0732_e3f1_4b2c_a9c4_b4e75eeb5895 ;
     owl:annotatedTarget "Variable"@en ;
     emmo:etymology "Fom Latin variabilis (\"changeable\")."@en .
-
-[] owl:qualifiedCardinality "3"^^xsd:nonNegativeInteger .
 

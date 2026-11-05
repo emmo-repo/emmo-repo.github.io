@@ -54,9 +54,9 @@ emmo:EMMO_c1a6e72c_de7a_48db_8f45_32c0be019291 a owl:Class ;
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "Standard model"@en ;
     rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/foundation/mereocausality> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/reference/standardmodel> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/foundation/mereocausality> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/reference/standardmodel> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     emmo:contact "emmo@emmc.eu"^^xsd:string .
 
 emmo:EMMO_0f19d84e_05b4_47c9_a5de_bb2a913d211b a owl:Class ;

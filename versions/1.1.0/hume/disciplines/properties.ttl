@@ -50,9 +50,9 @@ Subclasses of property are subclasses that spesialise the type of observation pr
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "Properties"@en ;
     rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/perspectives/semiotics> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/disciplines/properties> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/perspectives/semiotics> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/hume/disciplines/properties> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     ns2:contact "emmo@emmc.eu"^^xsd:string .
 
 [] owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger .

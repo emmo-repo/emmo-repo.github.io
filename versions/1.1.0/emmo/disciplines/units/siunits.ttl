@@ -83,20 +83,20 @@ All other SI units goes into one of the following modules:
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "SI units"@en ;
     rdfs:comment "The EMMO should be reasoned with HermiT to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/disciplines/metrology>,
-        <https://w3id.org/emmo/1.0.4/disciplines/units/sidimensionalunits> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/disciplines/units/siunits> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/disciplines/metrology>,
+        <https://w3id.org/emmo/1.1.0/disciplines/units/sidimensionalunits> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/disciplines/units/siunits> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     emmo:contact "emmo@emmc.eu"^^xsd:string .
 
 emmo:EMMO_068c4e58_2470_4b1c_8454_010dd4906100 a owl:Class ;
     rdfs:label "PicoPrefixedUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
-            owl:someValuesFrom emmo:EMMO_2b243e59_3a2a_412e_9a58_81d1e5c92fbe ],
-        [ a owl:Restriction ;
             owl:hasValue 1e-12 ;
             owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
+            owl:someValuesFrom emmo:EMMO_2b243e59_3a2a_412e_9a58_81d1e5c92fbe ],
         emmo:EMMO_9d28f9ad_d9d3_4edb_bc00_5d9bd242244d ;
     skos:prefLabel "PicoPrefixedUnit"@en ;
     emmo:elucidation "Superclass for all units prefixed with \"pico\" (1e-12)."@en .
@@ -104,11 +104,11 @@ emmo:EMMO_068c4e58_2470_4b1c_8454_010dd4906100 a owl:Class ;
 emmo:EMMO_1181c938_c8f0_4ad6_bc7a_2bfdc0903d29 a owl:Class ;
     rdfs:label "DeciPrefixedUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 1e-01 ;
-            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
             owl:someValuesFrom emmo:EMMO_890856a3_3eb4_471e_a54a_65031bee30f4 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-01 ;
+            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
         emmo:EMMO_9d28f9ad_d9d3_4edb_bc00_5d9bd242244d ;
     skos:prefLabel "DeciPrefixedUnit"@en ;
     emmo:elucidation "Superclass for all units prefixed with \"deci\" (0.1)."@en .
@@ -171,11 +171,11 @@ emmo:EMMO_23bfe79a_cade_48f1_9a8c_fd96e6bac8ba a owl:Class ;
 emmo:EMMO_254472c6_3dbd_4f02_bc43_571389cd281f a owl:Class ;
     rdfs:label "ZeptoPrefixedUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 1e-21 ;
-            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
             owl:someValuesFrom emmo:EMMO_4db5c662_b065_49e4_96eb_826699fa8048 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-21 ;
+            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
         emmo:EMMO_9d28f9ad_d9d3_4edb_bc00_5d9bd242244d ;
     skos:prefLabel "ZeptoPrefixedUnit"@en ;
     emmo:elucidation "Superclass for all units prefixed with \"zepto\" (1e-21)."@en .
@@ -217,11 +217,11 @@ emmo:EMMO_42955b2d_b465_4666_86cc_ea3c2d685753 a owl:Class ;
 emmo:EMMO_43a6b269_da31_4bb6_a537_c97df4fff32a a owl:Class ;
     rdfs:label "PetaPrefixedUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
-            owl:someValuesFrom emmo:EMMO_d7c74480_a568_4470_acff_f18b499cc850 ],
-        [ a owl:Restriction ;
             owl:hasValue 1e+15 ;
             owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
+            owl:someValuesFrom emmo:EMMO_d7c74480_a568_4470_acff_f18b499cc850 ],
         emmo:EMMO_2024fca1_b015_45ee_9490_e9e7d36bf704 ;
     skos:prefLabel "PetaPrefixedUnit"@en ;
     emmo:elucidation "Superclass for all units prefixed with \"peta\" (1e15)."@en .
@@ -229,11 +229,11 @@ emmo:EMMO_43a6b269_da31_4bb6_a537_c97df4fff32a a owl:Class ;
 emmo:EMMO_556e27cd_fef1_41c9_824a_dd78980062b5 a owl:Class ;
     rdfs:label "Quecto"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "q"^^xsd:string ;
-            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
-        [ a owl:Restriction ;
             owl:hasValue 1e-30 ;
             owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        [ a owl:Restriction ;
+            owl:hasValue "q"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
         emmo:EMMO_48fc9480_78c3_4c81_a126_019df20d58d9 ;
     skos:prefLabel "Quecto"@en ;
     emmo:elucidation "SI prefix who's value is 1e-30."@en .
@@ -265,11 +265,11 @@ emmo:EMMO_5eaecadc_4f0d_4a3a_afc7_1fc0b83cc928 a owl:Class ;
 emmo:EMMO_74931b1b_c133_4e59_9a75_1bf0e1626201 a owl:Class ;
     rdfs:label "KiloPrefixedUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 1e+03 ;
-            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
             owl:someValuesFrom emmo:EMMO_68a031ba_abf5_4859_b84c_32977f029908 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+03 ;
+            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
         emmo:EMMO_2024fca1_b015_45ee_9490_e9e7d36bf704 ;
     skos:prefLabel "KiloPrefixedUnit"@en ;
     emmo:elucidation "Superclass for all units prefixed with \"kilo\" (1000)."@en .
@@ -301,11 +301,11 @@ emmo:EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7 a owl:Class ;
 emmo:EMMO_a8eb4bbb_1bd3_4ad4_b114_2789bcbd2134 a owl:Class ;
     rdfs:label "GigaPrefixedUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 1e+09 ;
-            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
             owl:someValuesFrom emmo:EMMO_117d3e39_de3e_46f5_9744_b4a28d9fc83e ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+09 ;
+            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
         emmo:EMMO_2024fca1_b015_45ee_9490_e9e7d36bf704 ;
     skos:prefLabel "GigaPrefixedUnit"@en ;
     emmo:elucidation "Superclass for all units prefixed with \"giga\" (1e9)."@en .
@@ -313,11 +313,11 @@ emmo:EMMO_a8eb4bbb_1bd3_4ad4_b114_2789bcbd2134 a owl:Class ;
 emmo:EMMO_aef1144d_41bd_4189_be5c_d849204b3708 a owl:Class ;
     rdfs:label "Ronna"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "R"^^xsd:string ;
-            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
-        [ a owl:Restriction ;
             owl:hasValue 1e+27 ;
             owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        [ a owl:Restriction ;
+            owl:hasValue "R"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
         emmo:EMMO_2374896c_4ef8_4b3d_8c0c_0d29ba66bcfb ;
     skos:prefLabel "Ronna"@en ;
     emmo:elucidation "SI prefix who's value is 1e27."@en .
@@ -337,11 +337,11 @@ emmo:EMMO_b55cd09a_e54d_4eb1_81dd_03c29d1b878e a owl:Class ;
 emmo:EMMO_daa9ee97_4c5f_42e5_918c_44d7523e8958 a owl:Class ;
     rdfs:label "ZettaPrefixedUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 1e+21 ;
-            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
-        [ a owl:Restriction ;
             owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
             owl:someValuesFrom emmo:EMMO_fbf7da6f_04bb_4c8e_abbf_e4048d6a5e73 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+21 ;
+            owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
         emmo:EMMO_2024fca1_b015_45ee_9490_e9e7d36bf704 ;
     skos:prefLabel "ZettaPrefixedUnit"@en ;
     emmo:elucidation "Superclass for all units prefixed with \"zetta\" (1e21)."@en .
@@ -349,11 +349,11 @@ emmo:EMMO_daa9ee97_4c5f_42e5_918c_44d7523e8958 a owl:Class ;
 emmo:EMMO_dabcbe7d_db82_4445_889b_ae4d76964ea0 a owl:Class ;
     rdfs:label "Quetta"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 1e+30 ;
-            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
-        [ a owl:Restriction ;
             owl:hasValue "Q"^^xsd:string ;
             owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+30 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
         emmo:EMMO_2374896c_4ef8_4b3d_8c0c_0d29ba66bcfb ;
     skos:prefLabel "Quetta"@en ;
     emmo:elucidation "SI prefix who's value is 1e30."@en .
@@ -373,11 +373,11 @@ emmo:EMMO_e1981c25_7c55_4020_aa7a_d2e14ced86d4 a owl:Class ;
 emmo:EMMO_e79c62ff_10ad_4ec0_baba_c19ddd4eaa11 a owl:Class ;
     rdfs:label "YottaPrefixedUnit"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
-            owl:someValuesFrom emmo:EMMO_cb3f4298_5895_4272_be63_42dd246cc10c ],
-        [ a owl:Restriction ;
             owl:hasValue 1e+24 ;
             owl:onProperty emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f ],
+        [ a owl:Restriction ;
+            owl:onProperty emmo:EMMO_4be0acad_af05_426f_aa6d_fe7531072564 ;
+            owl:someValuesFrom emmo:EMMO_cb3f4298_5895_4272_be63_42dd246cc10c ],
         emmo:EMMO_2024fca1_b015_45ee_9490_e9e7d36bf704 ;
     skos:prefLabel "YottaPrefixedUnit"@en ;
     emmo:elucidation "Superclass for all units prefixed with \"yotta\" (1e24)."@en .
@@ -408,11 +408,11 @@ emmo:EMMO_f5769206_9257_4b08_bf7b_dad7868c6afc a owl:Class ;
 emmo:EMMO_fbc2549b_9108_467a_a573_de48eb45cc4a a owl:Class ;
     rdfs:label "Ronto"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 1e-27 ;
-            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
-        [ a owl:Restriction ;
             owl:hasValue "r"^^xsd:string ;
             owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-27 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
         emmo:EMMO_48fc9480_78c3_4c81_a126_019df20d58d9 ;
     skos:prefLabel "Ronto"@en ;
     emmo:elucidation "SI prefix who's value is 1e-27."@en .
@@ -451,11 +451,11 @@ emmo:EMMO_23eabdb5_6de6_4615_b6b1_a07b3ad32fd9 a owl:Class ;
 emmo:EMMO_2b243e59_3a2a_412e_9a58_81d1e5c92fbe a owl:Class ;
     rdfs:label "Pico"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 1e-12 ;
-            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
-        [ a owl:Restriction ;
             owl:hasValue "p"^^xsd:string ;
             owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-12 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
         emmo:EMMO_48fc9480_78c3_4c81_a126_019df20d58d9 ;
     skos:prefLabel "Pico"@en ;
     emmo:elucidation "SI prefix who's value is 1e-12."@en .
@@ -470,11 +470,11 @@ emmo:EMMO_32129fb5_df25_48fd_a29c_18a2f22a2dd5 a owl:Class ;
 emmo:EMMO_33fe9747_d66f_4f88_b2c1_951279dbca59 a owl:Class ;
     rdfs:label "Tera"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 1e+12 ;
-            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
-        [ a owl:Restriction ;
             owl:hasValue "T"^^xsd:string ;
             owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e+12 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
         emmo:EMMO_2374896c_4ef8_4b3d_8c0c_0d29ba66bcfb ;
     skos:prefLabel "Tera"@en ;
     emmo:elucidation "SI prefix who's value is 1e12."@en .
@@ -482,11 +482,11 @@ emmo:EMMO_33fe9747_d66f_4f88_b2c1_951279dbca59 a owl:Class ;
 emmo:EMMO_3f2d29d9_6d27_43bd_a1bc_85475eae98be a owl:Class ;
     rdfs:label "Exa"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "E"^^xsd:string ;
-            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
-        [ a owl:Restriction ;
             owl:hasValue 1e+18 ;
             owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        [ a owl:Restriction ;
+            owl:hasValue "E"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
         emmo:EMMO_2374896c_4ef8_4b3d_8c0c_0d29ba66bcfb ;
     skos:prefLabel "Exa"@en ;
     emmo:elucidation "SI prefix who's value is 1e18."@en .
@@ -506,11 +506,11 @@ emmo:EMMO_49adf406_5c8f_498a_8c90_e4974e9e6d11 a owl:Class ;
 emmo:EMMO_4bc07644_8301_4aed_b21c_823f99b08d1a a owl:Class ;
     rdfs:label "Hecto"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "h"^^xsd:string ;
-            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
-        [ a owl:Restriction ;
             owl:hasValue 1e+02 ;
             owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        [ a owl:Restriction ;
+            owl:hasValue "h"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
         emmo:EMMO_2374896c_4ef8_4b3d_8c0c_0d29ba66bcfb ;
     skos:prefLabel "Hecto"@en ;
     emmo:elucidation "SI prefix who's value is 100."@en .
@@ -518,11 +518,11 @@ emmo:EMMO_4bc07644_8301_4aed_b21c_823f99b08d1a a owl:Class ;
 emmo:EMMO_4db5c662_b065_49e4_96eb_826699fa8048 a owl:Class ;
     rdfs:label "Zepto"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "z"^^xsd:string ;
-            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
-        [ a owl:Restriction ;
             owl:hasValue 1e-21 ;
             owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        [ a owl:Restriction ;
+            owl:hasValue "z"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
         emmo:EMMO_48fc9480_78c3_4c81_a126_019df20d58d9 ;
     skos:prefLabel "Zepto"@en ;
     emmo:elucidation "SI prefix who's value is 1e-21."@en .
@@ -618,11 +618,11 @@ emmo:EMMO_85ee9154_5a3e_482e_aa37_c617ff1947ff a owl:Class ;
 emmo:EMMO_890856a3_3eb4_471e_a54a_65031bee30f4 a owl:Class ;
     rdfs:label "Deci"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue 1e-01 ;
-            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
-        [ a owl:Restriction ;
             owl:hasValue "d"^^xsd:string ;
             owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
+        [ a owl:Restriction ;
+            owl:hasValue 1e-01 ;
+            owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
         emmo:EMMO_48fc9480_78c3_4c81_a126_019df20d58d9 ;
     skos:prefLabel "Deci"@en ;
     emmo:elucidation "SI prefix who's value is 1/10."@en .
@@ -691,11 +691,11 @@ emmo:EMMO_e9722f13_947c_444e_82ef_1ce045f6637c a owl:Class ;
 emmo:EMMO_fbf7da6f_04bb_4c8e_abbf_e4048d6a5e73 a owl:Class ;
     rdfs:label "Zetta"@en ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:hasValue "Z"^^xsd:string ;
-            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
-        [ a owl:Restriction ;
             owl:hasValue 1e-21 ;
             owl:onProperty emmo:EMMO_faf79f53_749d_40b2_807c_d34244c192f4 ],
+        [ a owl:Restriction ;
+            owl:hasValue "Z"^^xsd:string ;
+            owl:onProperty emmo:EMMO_daf7a9b7_18ef_4e73_9fb9_75adfd9800e8 ],
         emmo:EMMO_2374896c_4ef8_4b3d_8c0c_0d29ba66bcfb ;
     skos:prefLabel "Zetta"@en ;
     emmo:elucidation "SI prefix who's value is 1e21."@en .
@@ -765,16 +765,16 @@ emmo:EMMO_95908a5b_2e5e_4a52_9c5d_db25efe76e0f a owl:DatatypeProperty ;
     emmo:elucidation "Relates a SI prefixed unit to the multiplication factor corresponding to the prefix."@en .
 
 [] a owl:AllDisjointClasses ;
-    owl:members ( emmo:EMMO_117d3e39_de3e_46f5_9744_b4a28d9fc83e emmo:EMMO_33fe9747_d66f_4f88_b2c1_951279dbca59 emmo:EMMO_3f2d29d9_6d27_43bd_a1bc_85475eae98be emmo:EMMO_4bc07644_8301_4aed_b21c_823f99b08d1a emmo:EMMO_68a031ba_abf5_4859_b84c_32977f029908 emmo:EMMO_85ee9154_5a3e_482e_aa37_c617ff1947ff emmo:EMMO_aef1144d_41bd_4189_be5c_d849204b3708 emmo:EMMO_cb3f4298_5895_4272_be63_42dd246cc10c emmo:EMMO_d7c74480_a568_4470_acff_f18b499cc850 emmo:EMMO_dabcbe7d_db82_4445_889b_ae4d76964ea0 emmo:EMMO_e07a252a_6913_49d6_9038_37a258b2d95e emmo:EMMO_fbf7da6f_04bb_4c8e_abbf_e4048d6a5e73 ) .
+    owl:members ( emmo:EMMO_1d8b370b_c672_4d0c_964e_eaafcbf2f51f emmo:EMMO_21aaefc1_3f86_4208_b7db_a755f31f0f8c emmo:EMMO_3a204900_2b33_47d1_b444_815cc4c8cffa emmo:EMMO_43a6b269_da31_4bb6_a537_c97df4fff32a emmo:EMMO_5cf9f86c_86f5_40c4_846d_60371f670e0a emmo:EMMO_5eaecadc_4f0d_4a3a_afc7_1fc0b83cc928 emmo:EMMO_74931b1b_c133_4e59_9a75_1bf0e1626201 emmo:EMMO_a8eb4bbb_1bd3_4ad4_b114_2789bcbd2134 emmo:EMMO_daa9ee97_4c5f_42e5_918c_44d7523e8958 emmo:EMMO_e79c62ff_10ad_4ec0_baba_c19ddd4eaa11 ) .
 
 [] a owl:AllDisjointClasses ;
     owl:members ( emmo:EMMO_03d2c71b_0276_45d7_a847_7cd164cb7d45 emmo:EMMO_2b243e59_3a2a_412e_9a58_81d1e5c92fbe emmo:EMMO_49adf406_5c8f_498a_8c90_e4974e9e6d11 emmo:EMMO_4db5c662_b065_49e4_96eb_826699fa8048 emmo:EMMO_556e27cd_fef1_41c9_824a_dd78980062b5 emmo:EMMO_6da1b965_768c_4cf0_8873_44f2035133ba emmo:EMMO_7abfbbc4_ce7b_4611_b731_1b5b8bd2bbc0 emmo:EMMO_7fd8ec39_1c4b_4ff3_9bc8_0bf3c27e2db0 emmo:EMMO_890856a3_3eb4_471e_a54a_65031bee30f4 emmo:EMMO_afb29c1a_eba4_4ba7_b6a1_62e9023c94ec emmo:EMMO_e9722f13_947c_444e_82ef_1ce045f6637c emmo:EMMO_fbc2549b_9108_467a_a573_de48eb45cc4a ) .
 
 [] a owl:AllDisjointClasses ;
-    owl:members ( emmo:EMMO_1d8b370b_c672_4d0c_964e_eaafcbf2f51f emmo:EMMO_21aaefc1_3f86_4208_b7db_a755f31f0f8c emmo:EMMO_3a204900_2b33_47d1_b444_815cc4c8cffa emmo:EMMO_43a6b269_da31_4bb6_a537_c97df4fff32a emmo:EMMO_5cf9f86c_86f5_40c4_846d_60371f670e0a emmo:EMMO_5eaecadc_4f0d_4a3a_afc7_1fc0b83cc928 emmo:EMMO_74931b1b_c133_4e59_9a75_1bf0e1626201 emmo:EMMO_a8eb4bbb_1bd3_4ad4_b114_2789bcbd2134 emmo:EMMO_daa9ee97_4c5f_42e5_918c_44d7523e8958 emmo:EMMO_e79c62ff_10ad_4ec0_baba_c19ddd4eaa11 ) .
+    owl:members ( emmo:EMMO_068c4e58_2470_4b1c_8454_010dd4906100 emmo:EMMO_1181c938_c8f0_4ad6_bc7a_2bfdc0903d29 emmo:EMMO_23bfe79a_cade_48f1_9a8c_fd96e6bac8ba emmo:EMMO_254472c6_3dbd_4f02_bc43_571389cd281f emmo:EMMO_42955b2d_b465_4666_86cc_ea3c2d685753 emmo:EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae emmo:EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7 emmo:EMMO_b55cd09a_e54d_4eb1_81dd_03c29d1b878e emmo:EMMO_e1981c25_7c55_4020_aa7a_d2e14ced86d4 emmo:EMMO_f5769206_9257_4b08_bf7b_dad7868c6afc ) .
 
 [] a owl:AllDisjointClasses ;
-    owl:members ( emmo:EMMO_068c4e58_2470_4b1c_8454_010dd4906100 emmo:EMMO_1181c938_c8f0_4ad6_bc7a_2bfdc0903d29 emmo:EMMO_23bfe79a_cade_48f1_9a8c_fd96e6bac8ba emmo:EMMO_254472c6_3dbd_4f02_bc43_571389cd281f emmo:EMMO_42955b2d_b465_4666_86cc_ea3c2d685753 emmo:EMMO_9ff3bf8e_2168_406e_8251_1d158fc948ae emmo:EMMO_a3a701ed_6f7d_4a10_9aee_dfa1961fc7b7 emmo:EMMO_b55cd09a_e54d_4eb1_81dd_03c29d1b878e emmo:EMMO_e1981c25_7c55_4020_aa7a_d2e14ced86d4 emmo:EMMO_f5769206_9257_4b08_bf7b_dad7868c6afc ) .
+    owl:members ( emmo:EMMO_117d3e39_de3e_46f5_9744_b4a28d9fc83e emmo:EMMO_33fe9747_d66f_4f88_b2c1_951279dbca59 emmo:EMMO_3f2d29d9_6d27_43bd_a1bc_85475eae98be emmo:EMMO_4bc07644_8301_4aed_b21c_823f99b08d1a emmo:EMMO_68a031ba_abf5_4859_b84c_32977f029908 emmo:EMMO_85ee9154_5a3e_482e_aa37_c617ff1947ff emmo:EMMO_aef1144d_41bd_4189_be5c_d849204b3708 emmo:EMMO_cb3f4298_5895_4272_be63_42dd246cc10c emmo:EMMO_d7c74480_a568_4470_acff_f18b499cc850 emmo:EMMO_dabcbe7d_db82_4445_889b_ae4d76964ea0 emmo:EMMO_e07a252a_6913_49d6_9038_37a258b2d95e emmo:EMMO_fbf7da6f_04bb_4c8e_abbf_e4048d6a5e73 ) .
 
 [] a owl:AllDisjointClasses ;
     owl:members ( emmo:EMMO_1273eb34_de48_43a9_925f_104110469dd2 emmo:EMMO_3a185e6c_9e19_4776_b583_19c978156aa0 emmo:EMMO_e9ffc696_5228_4ff9_8a60_0f5e05e9931b ) .

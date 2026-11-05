@@ -21,13 +21,13 @@ The perspectives level ontologies act as roots for extending the EMMO towards sp
     dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
     dcterms:title "EMMO perspectives-level ontology"@en ;
     rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/perspectives/contrast>,
-        <https://w3id.org/emmo/1.0.4/perspectives/holistic>,
-        <https://w3id.org/emmo/1.0.4/perspectives/persistence>,
-        <https://w3id.org/emmo/1.0.4/perspectives/reductionistic>,
-        <https://w3id.org/emmo/1.0.4/perspectives/semiotics>,
-        <https://w3id.org/emmo/1.0.4/perspectives/structural> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/perspectives> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/perspectives/contrast>,
+        <https://w3id.org/emmo/1.1.0/perspectives/holistic>,
+        <https://w3id.org/emmo/1.1.0/perspectives/persistence>,
+        <https://w3id.org/emmo/1.1.0/perspectives/reductionistic>,
+        <https://w3id.org/emmo/1.1.0/perspectives/semiotics>,
+        <https://w3id.org/emmo/1.1.0/perspectives/structural> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/hume/perspectives> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     ns1:contact "emmo@emmc.eu"^^xsd:string .
 

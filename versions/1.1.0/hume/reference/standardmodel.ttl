@@ -7,6 +7,10 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+ns1:Boson rdfs:label "Boson"@en .
+
+ns1:CausalParticle rdfs:label "CausalParticle"@en .
+
 ns1:Electron a owl:Class ;
     rdfs:label "Electron"@en ;
     rdfs:subClassOf ns1:ElementaryFermion ;
@@ -26,6 +30,8 @@ ns1:ElementaryQuark a owl:Class ;
     skos:prefLabel "ElementaryQuark"@en ;
     ns1:elucidation "An elementary fermionic particle that is the fundamental constituent of matter."@en .
 
+ns1:Fermion rdfs:label "Fermion"@en .
+
 ns1:InteractingSystem a owl:Class ;
     rdfs:subClassOf ns1:GenericPhysicalSystem ;
     owl:disjointWith ns1:ParticlesSystem ;
@@ -41,6 +47,8 @@ ns1:MultiParticlePath a owl:Class ;
 For example, a path starting from an elementary  photon, then through the electron with which it scatter, and then trough a positron with which the electron collides."""@en ;
     ns1:elucidation "A chausal path whose quantum parts belongs to at least two different standard model fundamental types."@en .
 
+ns1:PhysicalParticleBySpin rdfs:label "PhysicalParticleBySpin"@en .
+
 : a owl:Ontology ;
     dcterms:abstract "Defines the root of the physicalistic perspective that introduces the concept of real world objects that have a meaning for the ontologist under an applied physics perspective."@en ;
     dcterms:contributor <https://orcid.org/AdhamHashibon>,
@@ -53,9 +61,9 @@ For example, a path starting from an elementary  photon, then through the electr
     dcterms:publisher <https://emmc.eu> ;
     dcterms:title "Standard model"@en ;
     rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
-    owl:imports <https://w3id.org/emmo/1.0.4/foundation/mereocausality> ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/reference/standardmodel> ;
-    owl:versionInfo "1.0.4"^^xsd:string ;
+    owl:imports <https://w3id.org/emmo/1.1.0/foundation/mereocausality> ;
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/hume/reference/standardmodel> ;
+    owl:versionInfo "1.1.0"^^xsd:string ;
     ns1:contact "emmo@emmc.eu"^^xsd:string .
 
 ns1:Collapse a owl:Class ;
@@ -92,7 +100,8 @@ ns1:ParticlesSystem a owl:Class ;
     ns1:elucidation "A particles system is a system made of causal paths that are not interacting between each others, or possibly merge and fork."@en ;
     ns1:note "A particle system is a combination of elementary particles that may include also decays and/or annihilations, without any space-like interaction between elementary particles."@en .
 
-ns1:CausalPath ns1:OWLRL2DLAxioms "DisjointUnionOf: MultiParticlePath, ElementaryParticle"^^xsd:string .
+ns1:CausalPath rdfs:label "CausalPath"@en ;
+    ns1:OWLRL2DLAxioms "DisjointUnionOf: MultiParticlePath, ElementaryParticle"^^xsd:string .
 
 ns1:CausalSystem ns1:OWLRL2DLAxioms "DisjointUnionOf: FundamentalPhysicalSystem, GenericPhysicalSystem"^^xsd:string .
 

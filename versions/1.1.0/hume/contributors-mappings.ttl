@@ -46,7 +46,7 @@
     dcterms:license <https://creativecommons.org/licenses/by/4.0/legalcode> ;
     dcterms:publisher <https://w3id.org/emmo#EMMC_ASBL> ;
     dcterms:title "Mappings for contributors"@en ;
-    owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/contributors-mappings> .
+    owl:versionIRI <https://w3id.org/emmo/1.1.0/hume/contributors-mappings> .
 
 foaf:Organization rdfs:subClassOf <https://w3id.org/emmo#CollectiveAgent> .
 
