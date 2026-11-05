@@ -1,0 +1,176 @@
+@prefix : <https://w3id.org/emmo/hume/foundation/annotations#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix ns1: <https://w3id.org/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dcterms:abstract a owl:AnnotationProperty .
+
+dcterms:contributor a owl:AnnotationProperty .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:publisher a owl:AnnotationProperty .
+
+dcterms:source a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+rdfs:isDefinedBy rdfs:subPropertyOf rdfs:seeAlso .
+
+skos:altLabel a owl:AnnotationProperty ;
+    rdfs:subPropertyOf rdfs:label .
+
+skos:changeNote a owl:AnnotationProperty ;
+    rdfs:subPropertyOf rdfs:comment .
+
+skos:editorialNote a owl:AnnotationProperty ;
+    rdfs:subPropertyOf rdfs:comment .
+
+skos:example a owl:AnnotationProperty .
+
+skos:hiddenLabel a owl:AnnotationProperty ;
+    rdfs:subPropertyOf rdfs:label .
+
+skos:prefLabel a owl:AnnotationProperty ;
+    rdfs:subPropertyOf rdfs:label .
+
+locn:fullAddress a owl:AnnotationProperty .
+
+foaf:logo a owl:AnnotationProperty .
+
+foaf:mbox a owl:AnnotationProperty .
+
+foaf:name a owl:AnnotationProperty .
+
+foaf:workplaceHomepage a owl:AnnotationProperty .
+
+ns1:conceptualisation a owl:AnnotationProperty ;
+    rdfs:label "conceptualisation"@en ;
+    rdfs:subPropertyOf rdfs:comment ;
+    skos:prefLabel "conceptualisation"@en ;
+    ns1:elucidation "The conceptualisation annotation is a comment that helps the reader to understand how the world has been conceptualised by the ontology authors."@en ;
+    ns1:note "A conceptualisation is the preliminary step behind each theory, preceding each logical formalisation. The readers approaching an ontology entity should first read the conceptualisation annotation to clearly understand \"what we are talking about\" and the accompanying terminology, and then read the elucidation."@en,
+        "An conceptualisation can provide references to external knowledge sources (i.e. ISO, Goldbook, RoMM)."@en .
+
+ns1:contact a owl:AnnotationProperty ;
+    rdfs:label "contact"@en ;
+    rdfs:subPropertyOf rdfs:comment ;
+    skos:prefLabel "contact"@en ;
+    ns1:elucidation "A person or organisation acting as a contact point for enquiries about the ontology resource"@en ;
+    ns1:note "The annotation should include an email address."@en .
+
+ns1:dbpediaReference a owl:AnnotationProperty ;
+    rdfs:label "dbpediaReference"@en ;
+    rdfs:range xsd:anyURI ;
+    rdfs:seeAlso "https://wiki.dbpedia.org/"^^xsd:string ;
+    rdfs:subPropertyOf rdfs:seeAlso ;
+    skos:prefLabel "dbpediaReference"@en ;
+    ns1:elucidation "URL to corresponding dpbedia entry."@en .
+
+ns1:definition a owl:AnnotationProperty ;
+    rdfs:label "definition"@en ;
+    rdfs:subPropertyOf rdfs:comment ;
+    skos:prefLabel "definition"@en ;
+    ns1:elucidation "Precise and univocal description of an ontological entity in the framework of an axiomatic system."@en ;
+    ns1:note "A definition univocally determines a OWL entity using necessary and sufficient conditions referring to other OWL entities."@en .
+
+ns1:illustration a owl:AnnotationProperty ;
+    rdfs:label "illustration"@en ;
+    rdfs:range xsd:anyURI ;
+    rdfs:subPropertyOf rdfs:seeAlso ;
+    skos:prefLabel "illustration"@en ;
+    ns1:elucidation "A link to a graphical representation aimed to facilitate understanding of the concept, or of an annotation."@en .
+
+ns1:iupacReference a owl:AnnotationProperty ;
+    rdfs:label "iupacReference"@en ;
+    rdfs:comment "DOI to corresponding concept in IUPAC"@en ;
+    rdfs:range xsd:anyURI ;
+    rdfs:seeAlso "https://goldbook.iupac.org/"^^xsd:anyURI ;
+    rdfs:subPropertyOf rdfs:seeAlso ;
+    skos:prefLabel "iupacReference"@en .
+
+ns1:wikipediaReference a owl:AnnotationProperty ;
+    rdfs:label "wikipediaReference"@en ;
+    rdfs:range xsd:anyURI ;
+    rdfs:seeAlso "https://www.wikipedia.org/"^^xsd:string ;
+    rdfs:subPropertyOf rdfs:seeAlso ;
+    skos:prefLabel "wikipediaReference"@en ;
+    ns1:elucidation "URL to corresponding Wikipedia entry."@en .
+
+: a owl:Ontology ;
+    dcterms:abstract "Basic annotations used by EMMO."@en ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "EMMO Annotations"@en ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/foundation/annotations> ;
+    owl:versionInfo "1.0.4"^^xsd:string ;
+    foaf:mbox <mailto:emmo@emmc.eu> ;
+    ns1:contact "emmo@emmc.eu"^^xsd:string .
+
+ns1:OWL2DLRestrictedAxiom a owl:AnnotationProperty ;
+    rdfs:label "OWL2DLRestrictedAxiom"@en ;
+    rdfs:subPropertyOf rdfs:comment ;
+    skos:prefLabel "OWL2DLRestrictedAxiom"@en ;
+    ns1:elucidation "Axiom not included in the theory because of OWL 2 DL global restrictions for decidability."@en .
+
+ns1:OWLRL2DLAxioms a owl:AnnotationProperty ;
+    rdfs:label "OWLRL2DLAxioms"@en ;
+    rdfs:subPropertyOf rdfs:comment ;
+    skos:prefLabel "OWLRL2DLAxioms"@en ;
+    ns1:elucidation "Axioms to add to the OWL 2 RL version of the ontology to reach DL expressivity."@en .
+
+ns1:etymology a owl:AnnotationProperty ;
+    rdfs:label "etymology"@en ;
+    rdfs:subPropertyOf rdfs:comment ;
+    skos:prefLabel "etymology"@en ;
+    ns1:elucidation "The etymology annotation explains the origin of a word and the historical development of its meaning."@en ;
+    ns1:note "Definitions are usually taken from Wiktionary."@en,
+        "The etymology annotation is usually applied to rdfs:label entities, to better understand the connection between a label and the concept it concisely represents."@en .
+
+ns1:note a owl:AnnotationProperty ;
+    rdfs:label "note"@en ;
+    rdfs:subPropertyOf rdfs:comment ;
+    skos:prefLabel "note"@en ;
+    ns1:elucidation "A text that add some information about the entity."@en ;
+    ns1:note "A note can be addressed to facilitate interpretation, to suggest possible usage, to clarify the concepts behind each entity with respect to other ontological approaches."@en .
+
+ns1:elucidation a owl:AnnotationProperty ;
+    rdfs:label "elucidation"@en ;
+    rdfs:subPropertyOf rdfs:comment ;
+    skos:prefLabel "elucidation"@en ;
+    ns1:elucidation "Short enlightening explanation aimed to facilitate the user in drawing the connection (interpretation) between a OWL entity and the real world object(s) for which it stands."@en ;
+    ns1:note "An elucidation should address the real world entities using the concepts introduced by the conceptualisation annotation."@en .
+
+rdfs:label rdfs:range rdfs:Literal .
+
+rdfs:seeAlso rdfs:comment """EMMO applies the naming convension to its sub-properties of rdfs:seeAlso that their label must end with one of the following terms:
+  - 'Match': resolvable URLs to corresponding entity in another ontology
+  - 'Entry': resolvable URLs to a human readable resource describing the subject
+  - 'Ref': non-resolvable reference to a human readable resource describing the subject"""@en,
+        "Indicate a resource that might provide additional information about the subject resource."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "https://en.wiktionary.org/wiki/Wiktionary"@en ;
+    owl:annotatedProperty ns1:note ;
+    owl:annotatedSource ns1:etymology ;
+    owl:annotatedTarget "Definitions are usually taken from Wiktionary."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "https://www.w3.org/TR/2012/REC-owl2-profiles-20121211/"^^xsd:anyURI ;
+    owl:annotatedProperty ns1:elucidation ;
+    owl:annotatedSource ns1:OWLRL2DLAxioms ;
+    owl:annotatedTarget "Axioms to add to the OWL 2 RL version of the ontology to reach DL expressivity."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso "https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/#Global_Restrictions_on_Axioms_in_OWL_2_DL"^^xsd:anyURI ;
+    owl:annotatedProperty ns1:elucidation ;
+    owl:annotatedSource ns1:OWL2DLRestrictedAxiom ;
+    owl:annotatedTarget "Axiom not included in the theory because of OWL 2 DL global restrictions for decidability."@en .
+

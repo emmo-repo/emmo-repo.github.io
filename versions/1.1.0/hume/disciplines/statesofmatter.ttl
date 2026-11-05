@@ -1,0 +1,721 @@
+@prefix : <https://w3id.org/emmo/hume/disciplines/statesofmatter#> .
+@prefix dcmitype: <http://purl.org/dc/dcmitype/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dcterms:alternative a owl:AnnotationProperty .
+
+dcterms:description a owl:AnnotationProperty .
+
+dcterms:edition a owl:AnnotationProperty .
+
+dcterms:identifier a owl:AnnotationProperty .
+
+dcterms:issued a owl:AnnotationProperty .
+
+dcterms:language a owl:AnnotationProperty .
+
+dcterms:subject a owl:AnnotationProperty .
+
+xsd:gYear a rdfs:Datatype .
+
+ns1:Alcosol a owl:Class ;
+    rdfs:label "Alcosol"@en ;
+    rdfs:subClassOf ns1:LiquidSol ;
+    skos:prefLabel "Alcosol"@en ;
+    ns1:elucidation "A liquid sol when the dispersion medium is alcohol"@en .
+
+ns1:AqueousSolution a owl:Class ;
+    rdfs:label "AqueousSolution"@en ;
+    rdfs:subClassOf ns1:LiquidSolution ;
+    skos:prefLabel "AqueousSolution"@en ;
+    ns1:elucidation "A liquid solution in which the solvent is water."@en .
+
+ns1:DrySaturatedVapor a owl:Class ;
+    rdfs:label "DrySaturatedVapor"@en ;
+    rdfs:subClassOf ns1:SaturatedVapor ;
+    skos:prefLabel "DrySaturatedVapor"@en ;
+    ns1:conceptualisation "A saturated vapor with x = 1 (no wet phases)"@en .
+
+ns1:Dust a owl:Class ;
+    rdfs:label "Dust"@en ;
+    rdfs:isDefinedBy <urn:isbn:9780195129991> ;
+    rdfs:subClassOf ns1:GasSolidSuspension ;
+    skos:prefLabel "Dust"@en ;
+    ns1:elucidation "A suspension of fine particles in the atmosphere."@en .
+
+ns1:Emulsion a owl:Class ;
+    rdfs:label "Emulsion"@en ;
+    rdfs:isDefinedBy <https://goldbook.iupac.org/terms/view/E02065> ;
+    rdfs:subClassOf ns1:Colloid,
+        ns1:Liquid ;
+    skos:example "Mayonnaise"@en,
+        "Milk"@en ;
+    skos:prefLabel "Emulsion"@en ;
+    ns1:elucidation "An emulsion is a mixture of two or more liquids that are normally immiscible (a liquid-liquid heterogeneous mixture)."@en ;
+    ns1:wikipediaReference <https://en.wikipedia.org/wiki/Emulsion> .
+
+ns1:GasMixture a owl:Class ;
+    rdfs:label "GasMixture"@en ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( ns1:GaseousState ns1:Mixture ) ] ;
+    skos:prefLabel "GasMixture"@en ;
+    ns1:elucidation "A mixture that behave macroscopically as a gas, even if it is composed of multi-phase/multi-state components."@en ;
+    ns1:note "Usually the gas-like behavior is retained when the ratio between non-gaseous and gaseous components volumes is very small."@en .
+
+ns1:GasSolution a owl:Class ;
+    rdfs:label "GasSolution"@en ;
+    rdfs:seeAlso <urn:isbn:9780471400653>,
+        <urn:isbn:9780521408448> ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( ns1:GaseousState ns1:Solution ) ] ;
+    skos:altLabel "GasMixture"@en ;
+    skos:example "Air"@en ;
+    skos:prefLabel "GasSolution"@en ;
+    ns1:elucidation "A gaseous solution made of more than one component type."@en ;
+    ns1:wikipediaReference <https://en.wikipedia.org/wiki/Solution_(chemistry)#Gaseous_mixtures> .
+
+ns1:Gel a owl:Class ;
+    rdfs:label "Gel"@en ;
+    rdfs:seeAlso <https://www.britannica.com/science/gel> ;
+    rdfs:subClassOf ns1:Colloid,
+        ns1:Solid ;
+    skos:prefLabel "Gel"@en ;
+    ns1:elucidation "A soft, solid or solid-like colloid consisting of two or more components, one of which is a liquid, present in substantial quantity."@en .
+
+ns1:Hydrosol a owl:Class ;
+    rdfs:label "Hydrosol"@en ;
+    rdfs:subClassOf ns1:LiquidSol ;
+    skos:prefLabel "Hydrosol"@en ;
+    ns1:elucidation "A liquid sol when the dispersion medium is water"@en .
+
+ns1:IdealGas a owl:Class ;
+    rdfs:label "IdealGas"@en ;
+    rdfs:subClassOf ns1:Gas ;
+    skos:prefLabel "IdealGas"@en ;
+    ns1:conceptualisation "A gas where the PV=nRT relation holds, with compressibility factor Z=1. Since no gas really fits whis model, an ideal gas is intended to be a substance for which this model is a reasonable apporoximation."@en ;
+    ns1:note "Strictly speaking, an ideal gas is a model, not a thermodynamic region."@en .
+
+ns1:LiquidFoam a owl:Class ;
+    rdfs:label "LiquidFoam"@en ;
+    rdfs:subClassOf ns1:Foam,
+        ns1:Liquid ;
+    skos:prefLabel "LiquidFoam"@en ;
+    ns1:elucidation "A foam of trapped gas in a liquid."@en .
+
+ns1:MesoscopicSubstance a owl:Class ;
+    rdfs:label "MesoscopicSubstance"@en ;
+    rdfs:seeAlso <https://doi.org/10.2777/417118> ;
+    rdfs:subClassOf ns1:Substance ;
+    owl:disjointWith ns1:ContinuumSubstance ;
+    skos:example "carbon nanotube"@en,
+        "nanoparticle"@en,
+        "quantum dot"@en ;
+    skos:prefLabel "MesoscopicSubstance"@en ;
+    ns1:conceptualisation "Mesoscopic substances typically exist on a length scale between atoms and molecules and macroscopic (bulk) substances. They are typically in the range of some nanometers to about a micrometer and often exhibit unique physical properties due to their size and shape. Due to their nature of  they show no clear homonegenity in properties, and cannot be qualified as solid or liquid, but still have some criteria (e.g., structural, shape) that can be used to define them."@en ;
+    ns1:elucidation "A matter that is not a particulate matter and that does not fullfill the criteria of being a continuum substance."@en .
+
+ns1:RealGas a owl:Class ;
+    rdfs:label "RealGas"@en ;
+    rdfs:subClassOf ns1:Gas ;
+    skos:prefLabel "RealGas"@en ;
+    ns1:conceptualisation "A gas for which ideal assumptions cannot be made. An important role i played by finite intermolecular interaction and co-volume, Z≠1, virial expansion, van der Waals, Redlich–Kwong, Peng–Robinson, etc."@en .
+
+ns1:Smoke a owl:Class ;
+    rdfs:label "Smoke"@en ;
+    rdfs:isDefinedBy <urn:isbn:9780195129991> ;
+    rdfs:subClassOf ns1:SolidAerosol ;
+    skos:prefLabel "Smoke"@en ;
+    ns1:elucidation "Smoke is a solid aerosol made of particles emitted when a material undergoes combustion or pyrolysis."@en .
+
+ns1:SolidFoam a owl:Class ;
+    rdfs:label "SolidFoam"@en ;
+    rdfs:subClassOf ns1:Foam,
+        ns1:Solid ;
+    skos:example "Aerogel"@en ;
+    skos:prefLabel "SolidFoam"@en ;
+    ns1:elucidation "A foam of trapped gas in a solid."@en .
+
+ns1:SolidMixture a owl:Class ;
+    rdfs:label "SolidMixture"@en ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( ns1:Solid ns1:Mixture ) ] ;
+    skos:prefLabel "SolidMixture"@en ;
+    ns1:elucidation "A physical combination of two or more solid substances that retain their individual chemical identities and properties."@en ;
+    ns1:note "A key characteristics of solid mixtures is that it is not chemically bonded."@en .
+
+ns1:SolidSol a owl:Class ;
+    rdfs:label "SolidSol"@en ;
+    rdfs:subClassOf ns1:Sol,
+        ns1:Solid ;
+    skos:prefLabel "SolidSol"@en ;
+    ns1:elucidation "A type of sol in the form of one solid dispersed in another continuous solid."@en .
+
+ns1:SolidSolution a owl:Class ;
+    rdfs:label "SolidSolution"@en ;
+    rdfs:subClassOf ns1:Solid,
+        ns1:Solution ;
+    skos:prefLabel "SolidSolution"@en ;
+    ns1:elucidation "A solid solution made of two or more component substances."@en .
+
+ns1:Spray a owl:Class ;
+    rdfs:label "Spray"@en ;
+    rdfs:isDefinedBy <urn:isbn:9780195129991> ;
+    rdfs:subClassOf ns1:GasLiquidSuspension ;
+    skos:prefLabel "Spray"@en ;
+    ns1:elucidation "A suspension of liquid droplets dispersed in a gas through an atomization process."@en .
+
+ns1:SupercriticalFluid a owl:Class ;
+    rdfs:label "SupercriticalFluid"@en ;
+    rdfs:subClassOf ns1:SupercriticalGaseousState ;
+    skos:prefLabel "SupercriticalFluid"@en ;
+    ns1:conceptualisation "A gas with T>T𞁞 and p>p𞁞, single phase with liquid-like density and solvating power but gas-like diffusivity and zero surface tension. Continuously connected to both liquid and gas (you can circle the critical point without ever crossing a phase boundary)."@en .
+
+ns1:SuperheatedVapor a owl:Class ;
+    rdfs:label "SuperheatedVapor"@en ;
+    rdfs:subClassOf ns1:Vapor ;
+    skos:prefLabel "SuperheatedVapor"@en ;
+    ns1:conceptualisation "A single gas phase displaced from saturation (higher T, or lower P at fixed T), but still below T𞁞."@en .
+
+ns1:SupersaturatedVapor a owl:Class ;
+    rdfs:label "SupersaturatedVapor"@en ;
+    rdfs:subClassOf ns1:Vapor ;
+    skos:prefLabel "SupersaturatedVapor"@en ;
+    ns1:conceptualisation "A metastable saturated vapor carried past the saturation point without nucleating (cloud chambers, condensing nozzle flow, atmospheric supersaturation)."@en .
+
+ns1:WetVapor a owl:Class ;
+    rdfs:label "WetVapor"@en ;
+    rdfs:subClassOf ns1:LiquidAerosol,
+        ns1:SaturatedVapor ;
+    skos:prefLabel "WetVapor"@en ;
+    ns1:conceptualisation "Wet vapor is a two-phase mixture of saturated vapor + entrained liquid droplets (0<x<1). The region identifies the steam-quality of the vapor."@en .
+
+: a owl:Ontology ;
+    dcterms:abstract "The states of matter module categorises different states of matter according to modern applied physical sciences."@en ;
+    dcterms:contributor <https://orcid.org/FrancescaBleken>,
+        <https://orcid.org/FrancescoZaccarini> ;
+    dcterms:creator <https://orcid.org/EmanueleGhedini>,
+        <https://orcid.org/GerhardGoldbeck>,
+        <https://orcid.org/JesperFriis> ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "States of Matter"@en ;
+    rdfs:comment "The EMMO requires HermiT reasoner plugin in order to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.4/reference/physicalistic> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/disciplines/statesofmatter> ;
+    owl:versionInfo "1.0.4"^^xsd:string ;
+    ns1:contact "emmo@emmc.eu"^^xsd:string .
+
+ns1:LiquidAerosol a owl:Class ;
+    rdfs:label "LiquidAerosol"@en ;
+    rdfs:seeAlso <urn:isbn:9780195129991> ;
+    rdfs:subClassOf ns1:Aerosol ;
+    skos:example "Fog"@en,
+        "Mist"@en,
+        "Steam"@en ;
+    skos:prefLabel "LiquidAerosol"@en ;
+    ns1:conceptualisation "A liquid aerosol is a two-phase system: tiny droplets of liquid suspended in a gas. The substance in the droplets is still in its condensed liquid phase, just finely divided. These droplets are large enough (typically ~0.1–100 µm) to scatter light, which is why aerosols are visible."@en ;
+    ns1:elucidation "An aerosol composed of liquid droplets in air or another gas."@en .
+
+ns1:LiquidGasSuspension a owl:Class ;
+    rdfs:label "LiquidGasSuspension"@en ;
+    rdfs:subClassOf ns1:Liquid,
+        ns1:Suspension ;
+    skos:example "Sparkling water"@en ;
+    skos:prefLabel "LiquidGasSuspension"@en ;
+    ns1:elucidation "A coarse dispersion of gas in a liquid continuum phase."@en .
+
+ns1:LiquidLiquidSuspension a owl:Class ;
+    rdfs:label "LiquidLiquidSuspension"@en ;
+    rdfs:subClassOf ns1:Liquid,
+        ns1:Suspension ;
+    skos:prefLabel "LiquidLiquidSuspension"@en ;
+    ns1:elucidation "A coarse dispersion of liquid in a liquid continuum phase."@en .
+
+ns1:LiquidSolidSuspension a owl:Class ;
+    rdfs:label "LiquidSolidSuspension"@en ;
+    rdfs:subClassOf ns1:Liquid,
+        ns1:Suspension ;
+    skos:example "Mud"@en ;
+    skos:prefLabel "LiquidSolidSuspension"@en ;
+    ns1:elucidation "A coarse dispersion of solids in a liquid continuum phase."@en .
+
+ns1:LiquidSolution a owl:Class ;
+    rdfs:label "LiquidSolution"@en ;
+    rdfs:subClassOf ns1:Liquid,
+        ns1:Solution ;
+    skos:example "An alcoholic beverage with ethanol dissolved in water (e.g., beer)."@en ;
+    skos:prefLabel "LiquidSolution"@en ;
+    ns1:elucidation "A liquid solution made of two or more component substances."@en ;
+    ns1:wikipediaReference <https://en.wikipedia.org/wiki/Solution_(chemistry)#Liquid_solutions> .
+
+ns1:PhaseHomogeneousMixture a owl:Class ;
+    rdfs:label "PhaseHomogeneousMixture"@en ;
+    rdfs:subClassOf ns1:Mixture ;
+    skos:prefLabel "PhaseHomogeneousMixture"@en ;
+    ns1:elucidation "A single phase mixture."@en ;
+    ns1:wikipediaReference <https://en.wikipedia.org/wiki/Mixture#Homogeneous_and_heterogeneous_mixtures> .
+
+ns1:SolidAerosol a owl:Class ;
+    rdfs:label "SolidAerosol"@en ;
+    rdfs:seeAlso <urn:isbn:9780195129991> ;
+    rdfs:subClassOf ns1:Aerosol ;
+    skos:prefLabel "SolidAerosol"@en ;
+    ns1:elucidation "An aerosol composed of fine solid particles in air or another gas."@en .
+
+ns1:SolidGasSuspension a owl:Class ;
+    rdfs:label "SolidGasSuspension"@en ;
+    rdfs:subClassOf ns1:Solid,
+        ns1:Suspension ;
+    skos:prefLabel "SolidGasSuspension"@en ;
+    ns1:elucidation "A coarse dispersion of gas in a solid continuum phase."@en .
+
+ns1:SolidLiquidSuspension a owl:Class ;
+    rdfs:label "SolidLiquidSuspension"@en ;
+    rdfs:subClassOf ns1:Solid,
+        ns1:Suspension ;
+    skos:prefLabel "SolidLiquidSuspension"@en ;
+    ns1:elucidation "A coarse dispersion of liquid in a solid continuum phase."@en .
+
+ns1:SolidSolidSuspension a owl:Class ;
+    rdfs:label "SolidSolidSuspension"@en ;
+    rdfs:subClassOf ns1:Solid,
+        ns1:Suspension ;
+    skos:example "Granite, sand, dried concrete."@en ;
+    skos:prefLabel "SolidSolidSuspension"@en ;
+    ns1:elucidation "A coarse dispersion of solid in a solid continuum phase."@en .
+
+<urn:isbn:9780521405980> a dcmitype:Text,
+        owl:NamedIndividual ;
+    dcterms:creator "Eliot Fried"^^xsd:string,
+        "Lallit Anand"^^xsd:string,
+        "Morton E. Gurtin"^^xsd:string ;
+    dcterms:description "A unified treatment of continuum mechanics and thermodynamics emphasizing the universal status of basic balances and the entropy imbalance."^^xsd:string ;
+    dcterms:identifier "ISBN-13. 9780521405980"^^xsd:string ;
+    dcterms:issued "2010"^^xsd:gYear ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher "Cambridge University Press"^^xsd:string ;
+    dcterms:subject "Continuum mechanics"^^xsd:string,
+        "Plasticity"^^xsd:string,
+        "Solid mechanics"^^xsd:string,
+        "Thermodynamics"^^xsd:string ;
+    dcterms:title "The Mechanics and Thermodynamics of Continua"^^xsd:string .
+
+<https://doi.org/10.2777/417118> a dcmitype:Text,
+        owl:NamedIndividual ;
+    dcterms:contributor "Anne F. de Baas"^^xsd:string ;
+    dcterms:creator "European Commission. Directorate-General for Research and Innovation"^^xsd:string ;
+    dcterms:description "The sixth edition of the Review of Materials Modelling, illustrating how advanced materials and nanotechnology simulation tools drive industrial efficiency and design within the Horizon 2020 framework."^^xsd:string ;
+    dcterms:edition "Sixth version"^^xsd:string ;
+    dcterms:identifier "10.2777/417118"^^xsd:string,
+        "978-92-79-63185-6"^^xsd:string ;
+    dcterms:issued "2017"^^xsd:gYear ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher "Publications Office of the European Union"^^xsd:string ;
+    dcterms:subject "Computational materials science"^^xsd:string,
+        "European Union projects"^^xsd:string,
+        "H2020 LEIT-NMBP programme"^^xsd:string,
+        "Materials modelling"^^xsd:string,
+        "Nanotechnology"^^xsd:string,
+        "Research and innovation policy"^^xsd:string ;
+    dcterms:title "What makes a material function? – Let me compute the ways – Modelling in H2020 LEIT-NMBP programme materials and nanotechnology projects – Sixth version"^^xsd:string .
+
+ns1:Aerosol a owl:Class ;
+    rdfs:label "Aerosol"@en ;
+    rdfs:isDefinedBy <urn:isbn:9780195129991> ;
+    rdfs:subClassOf ns1:Colloid,
+        ns1:GaseousState ;
+    skos:example "Vapor"@en ;
+    skos:prefLabel "Aerosol"@en ;
+    ns1:elucidation "A colloid composed of fine solid particles or liquid droplets in air or another gas."@en .
+
+ns1:Foam a owl:Class ;
+    rdfs:label "Foam"@en ;
+    rdfs:subClassOf ns1:Colloid ;
+    skos:prefLabel "Foam"@en ;
+    ns1:elucidation "A colloid formed by trapping pockets of gas in a liquid or solid."@en .
+
+ns1:Gas a owl:Class ;
+    rdfs:label "Gas"@en ;
+    rdfs:subClassOf ns1:SupercriticalGaseousState ;
+    skos:altLabel "ProperGas"@en,
+        "TrueGas"@en ;
+    skos:prefLabel "Gas"@en ;
+    ns1:conceptualisation "A proper (or true) gas is defined when T and p fall between T>T𞁞 and p<p𞁞. This is the region of permanent gases."@en ;
+    ns1:note "The historical permanent gases (He, H₂, N₂, O₂) are simply those whose T𞁞lies below ambient, so they resisted liquefaction until cryogenic cooling below T𞁞."@en .
+
+ns1:GasLiquidSuspension a owl:Class ;
+    rdfs:label "GasLiquidSuspension"@en ;
+    rdfs:seeAlso <urn:isbn:9780195129991> ;
+    rdfs:subClassOf ns1:GaseousState,
+        ns1:Suspension ;
+    skos:example "Rain, spray."@en ;
+    skos:prefLabel "GasLiquidSuspension"@en ;
+    ns1:elucidation "A coarse dispersion of liquid in a gas continuum phase."@en .
+
+ns1:GasSolidSuspension a owl:Class ;
+    rdfs:label "GasSolidSuspension"@en ;
+    rdfs:seeAlso <urn:isbn:9780195129991> ;
+    rdfs:subClassOf ns1:GaseousState,
+        ns1:Suspension ;
+    skos:example "Dust, sand storm."@en ;
+    skos:prefLabel "GasSolidSuspension"@en ;
+    ns1:elucidation "A coarse dispersion of solid in a gas continuum phase."@en .
+
+ns1:LiquidSol a owl:Class ;
+    rdfs:label "LiquidSol"@en ;
+    rdfs:subClassOf ns1:Liquid,
+        ns1:Sol ;
+    skos:example "Blood"@en ;
+    skos:prefLabel "LiquidSol"@en ;
+    ns1:elucidation "A type of sol in the form of one solid dispersed in liquid."@en .
+
+ns1:PhaseHeterogeneousMixture a owl:Class ;
+    rdfs:label "PhaseHeterogeneousMixture"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty ns1:hasProperPart ;
+            owl:someValuesFrom ns1:PhaseOfMatter ],
+        ns1:Mixture ;
+    skos:prefLabel "PhaseHeterogeneousMixture"@en ;
+    ns1:elucidation "A mixture in which more than one phases of matter cohexists."@en ;
+    ns1:note """Phase heterogeneous mixture may share the same state of matter.
+
+For example, immiscibile liquid phases (e.g. oil and water) constitute a mixture whose phases are clearly separated but share the same state of matter."""@en ;
+    ns1:wikipediaReference <https://en.wikipedia.org/wiki/Mixture#Homogeneous_and_heterogeneous_mixtures> .
+
+ns1:Plasma a owl:Class ;
+    rdfs:label "Plasma"@en ;
+    rdfs:subClassOf ns1:AmorphousState,
+        ns1:Fluid,
+        ns1:UncondensedMatter ;
+    skos:prefLabel "Plasma"@en ;
+    ns1:conceptualisation """The gaseous state grades into plasma once a non-negligible fraction of particles ionizes. Unlike vapor to liquid, this is generally a continuous ionization crossover, governed by Saha equilibrium under LTE, rather than a first-order phase transition with a sharp coexistence curve and latent heat.
+That's precisely why "fourth state of matter" is a loose pedagogical label rather than a thermodynamically rigorous one: there's no Tc​-analogue, no discontinuity in the order parameter, just a smooth rise in ionization degree."""@en ;
+    ns1:elucidation "A fluid in which a gas is ionized to a level where its electrical conductivity allows long-range electric and magnetic fields to dominate its behaviour."@en .
+
+ns1:SaturatedVapor a owl:Class ;
+    rdfs:label "SaturatedVapor"@en ;
+    rdfs:subClassOf ns1:Vapor ;
+    skos:prefLabel "SaturatedVapor"@en ;
+    ns1:conceptualisation "A saturated vapor sits on the coexistence (saturation) curve, in equilibrium with its liquid at the dew point."@en .
+
+ns1:Sol a owl:Class ;
+    rdfs:label "Sol"@en ;
+    rdfs:seeAlso <https://www.britannica.com/science/sol-colloid> ;
+    rdfs:subClassOf ns1:Colloid ;
+    skos:example "Fluid paint"@en,
+        "Mud"@en ;
+    skos:prefLabel "Sol"@en ;
+    ns1:elucidation "A colloid in which small particles (1 nm to 100 nm) are suspended in a continuum phase."@en ;
+    ns1:wikipediaReference <https://en.wikipedia.org/wiki/Sol_(colloid)> .
+
+ns1:SupercriticalGaseousState a owl:Class ;
+    rdfs:label "SupercriticalGaseousState"@en ;
+    rdfs:subClassOf ns1:GaseousState ;
+    skos:altLabel "Gas"@en ;
+    skos:prefLabel "SupercriticalGaseousState"@en ;
+    ns1:conceptualisation """A gaseous state where no liquid forms can be obtained by compression. The liquid–vapor distinction has vanished.
+This state can be categorised by pressure relative to critical pressure p𞁞"""@en .
+
+<urn:isbn:9780521408448> a dcmitype:Text,
+        owl:NamedIndividual ;
+    dcterms:alternative "An Account of the Kinetic Theory of Viscosity, Thermal Conduction and Diffusion in Gases"^^xsd:string ;
+    dcterms:creator "Sydney Chapman"^^xsd:string,
+        "T. G. Cowling"^^xsd:string ;
+    dcterms:identifier "ISBN-10. 052140844X"^^xsd:string,
+        "ISBN-13. 978-0521408448"^^xsd:string ;
+    dcterms:issued "1991"^^xsd:gYear ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher "Addison-Wesley"^^xsd:string ;
+    dcterms:subject "Diffusion"^^xsd:string,
+        "Kinetic theory of gases"^^xsd:string,
+        "Thermal conduction"^^xsd:string,
+        "Viscosity"^^xsd:string ;
+    dcterms:title "The Mathematical Theory of Non-uniform Gases"^^xsd:string .
+
+ns1:AmorphousState a owl:Class ;
+    rdfs:label "AmorphousState"@en ;
+    rdfs:isDefinedBy <https://doi.org/10.1351/goldbook.12743> ;
+    rdfs:subClassOf ns1:StateOfMatter ;
+    skos:altLabel "AmorphousNetwork"@en ;
+    skos:prefLabel "AmorphousState"@en ;
+    ns1:conceptualisation "Amorphous substances are characterized by the absence of regular long-range order within their atomic networks, distinguishing them from highly ordered crystalline lattices. This structural disorder prevents the formation of regular macroscopic geometric facets. Thermodynamically and physically, this manifests as a lack of a distinct melting point, irregular fracture behavior, diffuse X-ray diffraction patterns, and isotropic mechanical, optical, and electrical properties."@en ;
+    ns1:elucidation "State of matter characterised by the absence of long-range molecular order."@en ;
+    ns1:iupacReference <https://doi.org/10.1351/goldbook.12743> ;
+    ns1:note "If you look at the fundamental IUPAC (International Union of Pure and Applied Chemistry) definition, \"amorphous\" simply means a material lacks long-range translational order. Under this pure structural definition, liquids, gases, plasmas, and supercritical fluids are all amorphous states of matter. They have no crystalline lattice, no unit cells, and no repeating 3D patterns. If you take an X-ray diffraction scan of a liquid, you get the exact same broad, featureless \"amorphous halo\" that you get from a piece of solid glass. Therefore, structural physicists routinely refer to liquids as amorphous networks."@en,
+        "In the absence of stress, the structure and properties of the amorphous state are generally isotropic at a large-enough scale, as in liquids, but they can readily develop functional/property anisotropy under the right conditions."@en,
+        "One of the most common technique to define if a substance is lacking of a regular structure (amorphous) is to look at its x-ray diffraction pattern. A diffuse and poorly defined pattern is typical of an amorphous structure, while a regular reproducible pattern is typical of a crystalline structure."@en,
+        "Some degree of local order about 1 nm  in length may exist in the amorphous state."@en ;
+    ns1:wikipediaReference <https://en.wikipedia.org/wiki/Amorphous_solid> .
+
+ns1:Dispersion a owl:Class ;
+    rdfs:label "Dispersion"@en ;
+    rdfs:subClassOf ns1:Mixture ;
+    skos:prefLabel "Dispersion"@en ;
+    ns1:OWLRL2DLAxioms "Equivalent To: Solution or Suspension or Colloid"@en ;
+    ns1:elucidation "A material in which distributed particles of one phase are dispersed in a different continuous phase."@en ;
+    ns1:wikipediaReference <https://en.wikipedia.org/wiki/Dispersion_(chemistry)> .
+
+ns1:PhaseOfMatter a owl:Class ;
+    rdfs:label "PhaseOfMatter"@en ;
+    rdfs:subClassOf ns1:ContinuumSubstance ;
+    skos:altLabel "Phase"@en ;
+    skos:example "One State, Multiple Solid Phases: Ice isn't just one phase. Under extreme pressures, solid ice can arrange itself into more than 15 different crystalline structures (Ice I, Ice II, Ice VII, etc.). Each of these structures is a different phase, even though they are all in the same solid state."@en ;
+    skos:prefLabel "PhaseOfMatter"@en ;
+    ns1:elucidation "A chemically uniform, physically distinct, and mechanically separable region of matter, throughout which all physical properties of a material are essentially uniform."@en ;
+    ns1:note """In the physical sciences, a phase is a region of space (a thermodynamic system), throughout which all physical properties of a material are essentially uniform. Examples of physical properties include density, index of refraction, magnetization and chemical composition. A simple description is that a phase is a region of material that is chemically uniform, physically distinct, and (often) mechanically separable. In a system consisting of ice and water in a glass jar, the ice cubes are one phase, the water is a second phase, and the humid air is a third phase over the ice and water. The glass of the jar is another separate phase.
+
+The term phase is sometimes used as a synonym for state of matter, but there can be several immiscible phases of the same state of matter. Also, the term phase is sometimes used to refer to a set of equilibrium states demarcated in terms of state variables such as pressure and temperature by a phase boundary on a phase diagram. Because phase boundaries relate to changes in the organization of matter, such as a change from liquid to solid or a more subtle change from one crystal structure to another, this latter usage is similar to the use of "phase" as a synonym for state of matter. However, the state of matter and phase diagram usages are not commensurate with the formal definition given above and the intended meaning must be determined in part from the context in which the term is used."""@en .
+
+ns1:Solution a owl:Class ;
+    rdfs:label "Solution"@en ;
+    rdfs:seeAlso <https://doi.org/10.1351/goldbook.S05746> ;
+    rdfs:subClassOf ns1:Dispersion,
+        ns1:PhaseHomogeneousMixture ;
+    skos:prefLabel "Solution"@en ;
+    ns1:elucidation "A solution is a homogeneous mixture composed of two or more substances, when for convenience one (or more) substance, which is called the solvent, is treated differently from the other substances, which are called solutes."@en ;
+    ns1:note "IUPAC Goldbook definition is restricted to liquid or solid solutions. Here we extend the concept also to gas."@en,
+        "Solutions are characterized by the occurrence of Rayleigh scattering on light,"@en ;
+    ns1:wikipediaReference <https://en.wikipedia.org/wiki/Solution_(chemistry)> .
+
+ns1:UncondensedMatter a owl:Class ;
+    rdfs:label "UncondensedMatter"@en ;
+    rdfs:subClassOf ns1:StateOfMatter ;
+    skos:altLabel "UncondensedState"@en ;
+    skos:prefLabel "UncondensedMatter"@en ;
+    ns1:OWLRL2DLAxioms "Equivalent To: Gas or Plasma"^^xsd:string ;
+    ns1:elucidation "Matter in gas or plasma physical state."@en .
+
+ns1:Vapor a owl:Class ;
+    rdfs:label "Vapor"@en ;
+    rdfs:subClassOf ns1:GaseousState ;
+    skos:altLabel "SubcriticalGaseousState"@en ;
+    skos:prefLabel "Vapor"@en ;
+    ns1:conceptualisation "Vapor is defined as the gas-phase form of a substance that is below its critical temperature T𞁞, meaning it can be condensed to liquid by pressure alone (condensability). It is a single, homogeneous phase. Vapos are typically invisible."@en ;
+    ns1:elucidation "A gas made of a substance below its critical temperature"@en .
+
+ns1:CondensedMatter a owl:Class ;
+    rdfs:label "CondensedMatter"@en ;
+    rdfs:subClassOf ns1:StateOfMatter ;
+    owl:disjointWith ns1:UncondensedMatter ;
+    skos:altLabel "CondensedState"@en ;
+    skos:prefLabel "CondensedMatter"@en ;
+    ns1:OWLRL2DLAxioms "Equivalent To: Liquid or Solid"^^xsd:string ;
+    ns1:conceptualisation "The subject of condensed matter physics that deals with the macroscopic and microscopic physical properties of matter, especially the solid and liquid phases which arise from electromagnetic forces between atoms. More generally, the subject deals with \"condensed\" phases of matter: systems of many constituents with strong interactions between them."@en ;
+    ns1:elucidation "Matter in liquid or solid physical state."@en .
+
+ns1:Fluid a owl:Class ;
+    rdfs:label "Fluid"@en ;
+    rdfs:seeAlso <urn:isbn:9780471400653> ;
+    rdfs:subClassOf ns1:ContinuumSubstance,
+        ns1:StateOfMatter ;
+    owl:disjointWith ns1:Solid ;
+    skos:example "Gas, liquid, plasma,"@en ;
+    skos:prefLabel "Fluid"@en ;
+    ns1:OWLRL2DLAxioms "Equivalent To: Gas or Plasma or Liquid"@en ;
+    ns1:elucidation "A continuum that has no fixed shape and yields easily under an applied shear stress, or external force."@en ;
+    ns1:wikipediaReference <https://en.wikipedia.org/wiki/Fluid> .
+
+<urn:isbn:9780471400653> a dcmitype:Text,
+        owl:NamedIndividual ;
+    dcterms:creator "Charles F. Curtiss"^^xsd:string,
+        "Joseph O. Hirschfelder"^^xsd:string,
+        "R. Byron Bird"^^xsd:string ;
+    dcterms:description "A rigorous treatment of the molecular characteristics and behaviors of gases and liquids."^^xsd:string ;
+    dcterms:identifier "9780471400653"^^xsd:string ;
+    dcterms:issued "1964"^^xsd:gYear ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher "Wiley-Interscience"^^xsd:string ;
+    dcterms:subject "Fluid Dynamics"^^xsd:string,
+        "Kinetic Theory"^^xsd:string,
+        "Molecular Interactions"^^xsd:string,
+        "Statistical Mechanics"^^xsd:string ;
+    dcterms:title "The Molecular Theory of Gases and Liquids"^^xsd:string .
+
+dcmitype:Text a owl:Class .
+
+ns1:StateOfMatter a owl:Class ;
+    rdfs:label "StateOfMatter"@en ;
+    rdfs:subClassOf ns1:ContinuumSubstance ;
+    skos:prefLabel "StateOfMatter"@en ;
+    ns1:OWLRL2DLAxioms "Disjoint Union Of: CondensedMatter, UncondensedMatter"^^xsd:string,
+        "Disjoint Union Of: Gas, Plasma, Liquid, Solid"^^xsd:string ;
+    ns1:elucidation "A superclass made as the disjoint union of all the form under which matter can exist."@en ;
+    ns1:note "Besides the classical four state, IUPAC Goldbook introduces another categorisation dimension with the distinction between amorphous and crystalline state. A substance can then be the combination of these different categorisation schemes, such as liquid crystal or amorphous solid. However, between crystalline and amorphous states there may be intermediate state called semicrystalline materials where amorphous and crystalline phases are mixed."@en,
+        "Besides the classical four states,we have also the categorisation widely used in material science between condensed (liquid and solid) and uncondensed (gas and plasma) matter."@en,
+        "In physics, a state of matter is one of the distinct forms in which matter can exist. Four states of matter are observable in everyday life: solid, liquid, gas, and plasma."@en ;
+    ns1:wikipediaReference "https://en.wikipedia.org/wiki/State_of_matter"@en .
+
+ns1:Colloid a owl:Class ;
+    rdfs:label "Colloid"@en ;
+    rdfs:isDefinedBy <https://goldbook.iupac.org/terms/view/C01172> ;
+    rdfs:subClassOf ns1:Dispersion,
+        ns1:PhaseHeterogeneousMixture ;
+    skos:altLabel "ColloidalSystem"@en ;
+    skos:prefLabel "Colloid"@en ;
+    ns1:elucidation "A mixture in which one substance of microscopically dispersed insoluble or soluble particles (from 1 nm to 1 μm) is suspended throughout another substance and that does not settle, or would take a very long time to settle appreciably."@en ;
+    ns1:note "Colloids are characterized by the occurring of the Tyndall effect on light."@en ;
+    ns1:wikipediaReference <https://en.wikipedia.org/wiki/Colloid> .
+
+ns1:Mixture a owl:Class ;
+    rdfs:label "Mixture"@en ;
+    rdfs:isDefinedBy <https://goldbook.iupac.org/terms/view/M03949> ;
+    rdfs:subClassOf ns1:ContinuumSubstance ;
+    skos:prefLabel "Mixture"@en ;
+    ns1:elucidation "A continuum substance made up of two or more different substances which are physically (not chemically) combined called constituents."@en ;
+    ns1:wikipediaReference <https://en.wikipedia.org/wiki/Mixture#> .
+
+ns1:ContinuumSubstance a owl:Class ;
+    rdfs:label "ContinuumSubstance"@en ;
+    rdfs:seeAlso <https://doi.org/10.2777/417118>,
+        <urn:isbn:9780521405980> ;
+    rdfs:subClassOf ns1:Substance ;
+    skos:example "A single continuum individual can be the whole fluid in a pipe."@en ;
+    skos:prefLabel "ContinuumSubstance"@en ;
+    ns1:conceptualisation """Continuum is usually an assumption made relative to a specific entity and scale of observation. We can define a continuum substance as a substance for which continuum mechanics (i.e., solid or fluid mechanics) can be used as a model for the description and prediction of its behaviour.
+Paramount to this definition is the applicability of the continuum assumption, that is usually made by comparing the scale of the constituents' phenomena (e.g., mean free path of a molecule in a gas) and the scale of the macro-entity (e.g., the container of the gas)."""@en ;
+    ns1:elucidation "A substance that is made of sufficiently large number of smaller parts such that it is the bearer of qualities that can exist only by the fact that it is a sum of parts."@en ;
+    ns1:note "A continuum is the bearer of properties that are generated by the interactions of its fundamental parts, such as viscosity and thermal or electrical conductivity. In fact, viscosity or electrical conductivity are properties of the macro-entity (e.g., solid, fluid), and not of the constituents (e.g., atoms or molecules)."@en ;
+    ns1:wikipediaReference <https://en.wikipedia.org/wiki/Continuum_mechanics> .
+
+ns1:Liquid a owl:Class ;
+    rdfs:label "Liquid"@en ;
+    rdfs:seeAlso <urn:isbn:9780471400653> ;
+    rdfs:subClassOf ns1:CondensedMatter,
+        ns1:Fluid ;
+    skos:prefLabel "Liquid"@en ;
+    ns1:elucidation "A liquid is a nearly incompressible fluid that conforms to the shape of its container but retains a (nearly) constant volume independent of pressure."@en .
+
+ns1:Suspension a owl:Class ;
+    rdfs:label "Suspension"@en ;
+    rdfs:comment "Suspensions show no significant effect on visible light."@en ;
+    rdfs:subClassOf ns1:Dispersion,
+        ns1:PhaseHeterogeneousMixture,
+        ns1:StateOfMatter ;
+    skos:prefLabel "Suspension"@en ;
+    ns1:OWLRL2DLAxioms "Equivalent To: SolidSolidSuspension or SolidLiquidSuspension or LiquidGasSuspension or LiquidLiquidSuspension or SolidGasSuspension or GasSolidSuspension or GasLiquidSuspension or LiquidSolidSuspension"^^xsd:string ;
+    ns1:elucidation "An heterogeneous mixture that contains coarsly dispersed particles (no Tyndall effect), that generally tend to separate in time to the dispersion medium phase."@en ;
+    ns1:wikipediaReference <https://en.wikipedia.org/wiki/Suspension_(chemistry)> .
+
+<urn:isbn:9780195129991> a dcmitype:Text,
+        owl:NamedIndividual ;
+    dcterms:creator "Sheldon K. Friedlander"^^xsd:string ;
+    dcterms:description "A classic text focusing on the physical and chemical principles governing the behavior of ambient and engineered aerosols."^^xsd:string ;
+    dcterms:edition "2nd Edition"^^xsd:string ;
+    dcterms:identifier "9780195129991"^^xsd:string ;
+    dcterms:issued "2000"^^xsd:gYear ;
+    dcterms:language "en"^^xsd:string ;
+    dcterms:publisher "Oxford University Press"^^xsd:string ;
+    dcterms:subject "Aerosol dynamics"^^xsd:string,
+        "Air pollution control"^^xsd:string,
+        "Fluid mechanics"^^xsd:string,
+        "Particle technology"^^xsd:string ;
+    dcterms:title "Smoke, Dust, and Haze: Fundamentals of Aerosol Dynamics"^^xsd:string .
+
+ns1:GaseousState a owl:Class ;
+    rdfs:label "GaseousState"@en ;
+    rdfs:seeAlso <urn:isbn:9780471400653>,
+        <urn:isbn:9780521408448> ;
+    rdfs:subClassOf ns1:AmorphousState,
+        ns1:Fluid,
+        ns1:UncondensedMatter ;
+    skos:altLabel "Gas"@en ;
+    skos:prefLabel "GaseousState"@en ;
+    ns1:OWLRL2DLAxioms "Disjoint Union Of: SupercriticalGaseousState, Vapor"@en ;
+    ns1:conceptualisation """A gas is a state of matter in which particles (e.g., atoms or molecules) have enough kinetic energy to overcome the intermolecular forces binding them together, so they move freely and independently, filling whatever container holds them. Unlike a liquid, a gas has no definite volume and is readily compressible.
+A gaseous state can be categorised univocally whether the substance sits below or above critical temperature T𞁞​, because that alone determines whether a liquid–vapor phase boundary exists. Below T𞁞​ the gaseous phase is condensable by isothermal compression; at and above T𞁞 no amount of pressure produces a distinct liquid.
+A gas differs from a plasma in that its particles remain electrically neutral and un-ionized; once a significant fraction of particles ionize, the system becomes a plasma, which responds to electromagnetic fields collectively."""@en ;
+    ns1:elucidation "A gaseous state is a compressible fluid, a state of matter that has no fixed shape and no fixed volume."@en ;
+    ns1:note "\"Vapor\" and \"gas\" are often used interchangeably in casual speech, but in the strict sense they are different branches of the tree, divided by T𞁞. A vapor can be liquefied by pressure alone; a gas cannot. This is why \"water vapor\" is correct (water's Tc​ = 647 K is far above ambient) while room-temperature N₂ or O₂ is properly a gas."@en ;
+    ns1:wikipediaReference <https://en.wikipedia.org/wiki/Gas> .
+
+ns1:Solid a owl:Class ;
+    rdfs:label "Solid"@en ;
+    rdfs:subClassOf ns1:CondensedMatter,
+        ns1:ContinuumSubstance ;
+    skos:prefLabel "Solid"@en ;
+    ns1:elucidation "A continuum characterized by structural rigidity and resistance to changes of shape or volume, that retains its shape and density when not confined."@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Plasma ;
+    owl:annotatedTarget "Plasma"@en ;
+    ns1:etymology """From Late Latin plasma (“mold”), from Ancient Greek πλάσμα (plásma, “something formed”) [Wiktionary]
+The term has been introduced in physics by Irving Langmuir in 1928."""@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty ns1:note ;
+    owl:annotatedSource ns1:PhaseOfMatter ;
+    owl:annotatedTarget """In the physical sciences, a phase is a region of space (a thermodynamic system), throughout which all physical properties of a material are essentially uniform. Examples of physical properties include density, index of refraction, magnetization and chemical composition. A simple description is that a phase is a region of material that is chemically uniform, physically distinct, and (often) mechanically separable. In a system consisting of ice and water in a glass jar, the ice cubes are one phase, the water is a second phase, and the humid air is a third phase over the ice and water. The glass of the jar is another separate phase.
+
+The term phase is sometimes used as a synonym for state of matter, but there can be several immiscible phases of the same state of matter. Also, the term phase is sometimes used to refer to a set of equilibrium states demarcated in terms of state variables such as pressure and temperature by a phase boundary on a phase diagram. Because phase boundaries relate to changes in the organization of matter, such as a change from liquid to solid or a more subtle change from one crystal structure to another, this latter usage is similar to the use of "phase" as a synonym for state of matter. However, the state of matter and phase diagram usages are not commensurate with the formal definition given above and the intended meaning must be determined in part from the context in which the term is used."""@en ;
+    ns1:wikipediaReference "https://en.wikipedia.org/wiki/Phase_(matter)"@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Mixture ;
+    owl:annotatedTarget "Mixture"@en ;
+    ns1:etymology "From Latin mixtūra (“a mixing”), from mixtus (“mix”) [Wiktionary]"@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:AmorphousState ;
+    owl:annotatedTarget "AmorphousState"@en ;
+    ns1:etymology "From Ancient Greek ἄμορφος (ámorphos, “without form, shapeless, deformed”) (itself from ἀ- (a-, “without”) + μορφή (morphḗ, “form”)  [Wiktionary]"@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Colloid ;
+    owl:annotatedTarget "Colloid"@en ;
+    ns1:etymology "From Ancient Greek κόλλα (kólla, “glue”)."@en .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( ns1:SolidSolidSuspension ns1:SolidLiquidSuspension ns1:LiquidGasSuspension ns1:LiquidLiquidSuspension ns1:SolidGasSuspension ns1:GasSolidSuspension ns1:GasLiquidSuspension ns1:LiquidSolidSuspension ) .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( ns1:GaseousState ns1:Plasma ns1:Liquid ns1:Solid ) .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty ns1:conceptualisation ;
+    owl:annotatedSource ns1:CondensedMatter ;
+    owl:annotatedTarget "The subject of condensed matter physics that deals with the macroscopic and microscopic physical properties of matter, especially the solid and liquid phases which arise from electromagnetic forces between atoms. More generally, the subject deals with \"condensed\" phases of matter: systems of many constituents with strong interactions between them."@en ;
+    ns1:wikipediaReference "https://en.wikipedia.org/wiki/Condensed_matter_physics"@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso <https://en.wiktionary.org/wiki/condense> ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:CondensedMatter ;
+    owl:annotatedTarget "CondensedMatter"@en ;
+    ns1:etymology "From Latin condēnsō, con- (“with, together”) + dēnsō (“thicken”) [Wiktionary]"@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:GaseousState ;
+    owl:annotatedTarget "GaseousState"@en ;
+    ns1:etymology "The word gas was coined in the early 17th century by Flemish chemist Jan Baptist van Helmont. He derived the term from the Ancient Greek word χάος (\"chaos\": void, empty space)."@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso <https://en.wiktionary.org/wiki/continuum> ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:ContinuumSubstance ;
+    owl:annotatedTarget "ContinuumSubstance"@en ;
+    ns1:etymology "From Latin continuum, neuter form of continuus, from contineō (“contain, enclose”) [Wiktionary]"@en .
+
+[] a owl:Axiom ;
+    rdfs:seeAlso <https://en.wiktionary.org/wiki/phase> ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:PhaseOfMatter ;
+    owl:annotatedTarget "PhaseOfMatter"@en ;
+    ns1:etymology "From Ancient Greek φάσις (phásis, “an appearance”), from φαίνω (phaínō, “to cause to appear”) [Wiktionary]"@en .
+
+[] a owl:Axiom ;
+    owl:annotatedProperty skos:prefLabel ;
+    owl:annotatedSource ns1:Fluid ;
+    owl:annotatedTarget "Fluid"@en ;
+    ns1:etymology "From Latin fluidus (“flowing; fluid”), from Latin fluō (“to flow”), from Proto-Indo-European *bʰleh₁- (“to swell; surge; overflow; run”) [Wiktionary]"@en .
+

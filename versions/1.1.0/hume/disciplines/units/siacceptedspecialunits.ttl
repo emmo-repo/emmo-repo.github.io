@@ -1,0 +1,101 @@
+@prefix : <https://w3id.org/emmo/hume/disciplines/units/siacceptedspecialunits#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix ns1: <https://w3id.org/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ns1:CausalStructure rdfs:label "CausalStructure"@en .
+
+ns1:Contrast rdfs:label "Contrast"@en .
+
+ns1:Data rdfs:label "Data"@en .
+
+ns1:DataByDiscretness rdfs:label "DataByDiscretness"@en .
+
+ns1:DiscreteData rdfs:label "DiscreteData"@en .
+
+ns1:EMMO rdfs:label "EMMO"@en .
+
+ns1:Fusion rdfs:label "Fusion"@en .
+
+ns1:Item rdfs:label "Item"@en .
+
+ns1:Language rdfs:label "Language"@en .
+
+ns1:MeasurementUnitByPrefix rdfs:label "MeasurementUnitByPrefix"@en .
+
+ns1:Metrological rdfs:label "Metrological"@en .
+
+ns1:MetrologicalReference rdfs:label "MetrologicalReference"@en .
+
+ns1:NonPrefixedUnit rdfs:label "NonPrefixedUnit"@en .
+
+ns1:Perspective rdfs:label "Perspective"@en .
+
+ns1:Symbolic rdfs:label "Symbolic"@en .
+
+ns1:UnitSymbol rdfs:label "UnitSymbol"@en .
+
+: a owl:Ontology ;
+    dcterms:abstract "The module 'siacceptedspecialunits' include the tbox for the 15 non-SI special units that are accepted for use with the SI units."@en ;
+    dcterms:contributor <https://orcid.org/FrancescaBleken>,
+        <https://orcid.org/GerhardGoldbeck>,
+        <https://orcid.org/SimonClark> ;
+    dcterms:creator <https://orcid.org/EmanueleGhedini>,
+        <https://orcid.org/JesperFriis> ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "SI accepted special units"@en ;
+    rdfs:comment """Note: this file has automatically been populated with dimensional units from QUDT.
+
+We kindly acknowledge NIST for reusing their content, including the selection of units, their elucidations and conversion multiplier."""@en,
+        "The EMMO should be reasoned with HermiT to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.4/disciplines/units/siunits> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/disciplines/units/siacceptedspecialunits> ;
+    owl:versionInfo "1.0.4"^^xsd:string ;
+    ns1:contact "emmo@emmc.eu"^^xsd:string .
+
+ns1:DerivedUnit rdfs:label "DerivedUnit"@en .
+
+ns1:MeasurementUnit rdfs:label "MeasurementUnit"@en .
+
+ns1:PrefixedUnit rdfs:label "PrefixedUnit"@en .
+
+ns1:SIAcceptedDerivedUnit a owl:Class ;
+    rdfs:label "SIAcceptedDerivedUnit"@en ;
+    rdfs:subClassOf ns1:DerivedUnit,
+        ns1:SIAccepted ;
+    skos:prefLabel "SIAcceptedDerivedUnit"@en ;
+    ns1:elucidation "Defived units that are accepted to be used with SI."@en .
+
+ns1:SIAcceptedPrefixedUnit a owl:Class ;
+    rdfs:label "SIAcceptedPrefixedUnit"@en ;
+    rdfs:subClassOf ns1:PrefixedUnit,
+        ns1:SIAccepted ;
+    skos:prefLabel "SIAcceptedPrefixedUnit"@en ;
+    ns1:elucidation "Non-SI prefixed units that have been accepted by SI to be used together with the SI system."@en .
+
+ns1:SIAcceptedUnit a owl:Class ;
+    rdfs:label "SIAcceptedUnit"@en ;
+    rdfs:comment "This is a list of units that are not defined as part of the International System of Units (SI), but are otherwise mentioned in the SI brouchure, because either the General Conference on Weights and Measures (CGPM) accepts their use as being multiples or submultiples of SI-units, they have important contemporary application worldwide, or are otherwise commonly encountered worldwide."@en ;
+    rdfs:subClassOf ns1:SIAccepted,
+        ns1:SpecialUnit ;
+    skos:prefLabel "SIAcceptedUnit"@en ;
+    ns1:elucidation "Non-SI units mentioned in the SI."@en ;
+    ns1:wikipediaReference "https://en.wikipedia.org/wiki/Non-SI_units_mentioned_in_the_SI"^^xsd:string .
+
+ns1:SpecialUnit rdfs:label "SpecialUnit"@en .
+
+ns1:SIAccepted a owl:Class ;
+    rdfs:label "SIAccepted"@en ;
+    rdfs:subClassOf ns1:MeasurementUnit ;
+    skos:prefLabel "SIAccepted"@en ;
+    ns1:OWLRL2DLAxioms "disjointUnionOf: SIAcceptedUnit, SIAcceptedPrefixedUnit, SIAcceptedDerivedUnit"^^xsd:string ;
+    ns1:elucidation "Non-SI unit that has been accepted by SI to be used together with the SI system."@en .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( ns1:SIAcceptedUnit ns1:SIAcceptedPrefixedUnit ns1:SIAcceptedDerivedUnit ) .
+

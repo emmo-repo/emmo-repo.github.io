@@ -1,0 +1,57 @@
+@prefix : <https://w3id.org/emmo/hume/contributors-mappings#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://orcid.org/AdhamHashibon> a foaf:Person ;
+    rdfs:label "AdhamHashibon"^^xsd:string .
+
+<https://orcid.org/AnnedeBaas> a foaf:Person ;
+    rdfs:label "AnnedeBaas"^^xsd:string .
+
+<https://orcid.org/EmanueleGhedini> a foaf:Person ;
+    rdfs:label "EmanueleGhedini"^^xsd:string .
+
+<https://orcid.org/FrancescaBleken> a foaf:Person ;
+    rdfs:label "FrancescaBleken"^^xsd:string .
+
+<https://orcid.org/FrancescoZaccarini> a foaf:Person ;
+    rdfs:label "FrancescoZaccarini"^^xsd:string .
+
+<https://orcid.org/GeorgSchmitz> a foaf:Person ;
+    rdfs:label "GeorgSchmitz"^^xsd:string .
+
+<https://orcid.org/GerhardGoldbeck> a foaf:Person ;
+    rdfs:label "GerhardGoldbeck"^^xsd:string .
+
+<https://orcid.org/JesperFriis> a foaf:Person ;
+    rdfs:label "JesperFriis"^^xsd:string .
+
+<https://orcid.org/MichaelNoeske> a foaf:Person ;
+    rdfs:label "MichaelNoeske"^^xsd:string .
+
+<https://orcid.org/OtelloRoscioni> a foaf:Person ;
+    rdfs:label "OtelloRoscioni"^^xsd:string .
+
+<https://orcid.org/SebastianoMoruzzi> a foaf:Person ;
+    rdfs:label "SebastianoMoruzzi"^^xsd:string .
+
+<https://orcid.org/SimonClark> a foaf:Person ;
+    rdfs:label "SimonClark"^^xsd:string .
+
+: a owl:Ontology ;
+    dcterms:abstract "Mappings for contributors.ttl."@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/legalcode> ;
+    dcterms:publisher <https://w3id.org/emmo#EMMC_ASBL> ;
+    dcterms:title "Mappings for contributors"@en ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/contributors-mappings> .
+
+foaf:Organization rdfs:subClassOf <https://w3id.org/emmo#CollectiveAgent> .
+
+<https://w3id.org/emmo#EMMC_ASBL> a foaf:Organization ;
+    rdfs:label "EMMC_ASBL"^^xsd:string .
+
+foaf:Person rdfs:subClassOf <https://w3id.org/emmo#MentalAgent> .
+

@@ -1,0 +1,25 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix emmo: <https://w3id.org/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/emmo/disciplines/units/noncoherentsiunits> a owl:Ontology ;
+    dcterms:abstract "The 'noncoherentsiunits' module contains the t-box for non-coherent derived SI units (and SI-accepted units) that are not prefixed units (units made of a metric prefix followed by a unit symbol).  Examples: km/h, A/g."@en ;
+    dcterms:contributor <https://orcid.org/0000-0001-8869-3718>,
+        <https://orcid.org/0000-0002-4181-2852>,
+        <https://orcid.org/0000-0002-8758-6109> ;
+    dcterms:creator <https://orcid.org/0000-0002-1560-809X>,
+        <https://orcid.org/0000-0003-3805-8761> ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "Non-coherent SI units"@en ;
+    rdfs:comment """Note: this file has automatically been populated with units from QUDT.
+
+We kindly acknowledge NIST for reusing their content, including the selection of units, their elucidations and conversion multiplier."""@en,
+        "The EMMO should be reasoned with HermiT to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.4/disciplines/units/coherentsiunits> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.4/disciplines/units/noncoherentsiunits> ;
+    owl:versionInfo "1.0.4"^^xsd:string ;
+    emmo:contact "emmo@emmc.eu"^^xsd:string .
+

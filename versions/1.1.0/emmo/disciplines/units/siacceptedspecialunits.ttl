@@ -1,0 +1,60 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix emmo: <https://w3id.org/emmo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/emmo/disciplines/units/siacceptedspecialunits> a owl:Ontology ;
+    dcterms:abstract "The module 'siacceptedspecialunits' include the tbox for the 15 non-SI special units that are accepted for use with the SI units."@en ;
+    dcterms:contributor <https://orcid.org/0000-0001-8869-3718>,
+        <https://orcid.org/0000-0002-4181-2852>,
+        <https://orcid.org/0000-0002-8758-6109> ;
+    dcterms:creator <https://orcid.org/0000-0002-1560-809X>,
+        <https://orcid.org/0000-0003-3805-8761> ;
+    dcterms:license "https://creativecommons.org/licenses/by/4.0/legalcode"^^xsd:string ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "SI accepted special units"@en ;
+    rdfs:comment """Note: this file has automatically been populated with dimensional units from QUDT.
+
+We kindly acknowledge NIST for reusing their content, including the selection of units, their elucidations and conversion multiplier."""@en,
+        "The EMMO should be reasoned with HermiT to visualize all inferences and class hierarchy (ctrl+R hotkey in Protege)."@en ;
+    owl:imports <https://w3id.org/emmo/1.0.4/disciplines/units/siunits> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.4/disciplines/units/siacceptedspecialunits> ;
+    owl:versionInfo "1.0.4"^^xsd:string ;
+    emmo:contact "emmo@emmc.eu"^^xsd:string .
+
+emmo:EMMO_6795a4b8_ffd0_4588_a581_a9413fe49cac a owl:Class ;
+    rdfs:label "SIAcceptedUnit"@en ;
+    rdfs:comment "This is a list of units that are not defined as part of the International System of Units (SI), but are otherwise mentioned in the SI brouchure, because either the General Conference on Weights and Measures (CGPM) accepts their use as being multiples or submultiples of SI-units, they have important contemporary application worldwide, or are otherwise commonly encountered worldwide."@en ;
+    rdfs:subClassOf emmo:EMMO_3ee80521_3c23_4dd1_935d_9d522614a3e2,
+        emmo:EMMO_e8b5f7de_4fd9_41d7_b988_87b512fe0180 ;
+    skos:prefLabel "SIAcceptedUnit"@en ;
+    emmo:elucidation "Non-SI units mentioned in the SI."@en ;
+    emmo:wikipediaReference "https://en.wikipedia.org/wiki/Non-SI_units_mentioned_in_the_SI"^^xsd:string .
+
+emmo:EMMO_93170bc8_d3b2_45bd_8cad_20aad08462ef a owl:Class ;
+    rdfs:label "SIAcceptedPrefixedUnit"@en ;
+    rdfs:subClassOf emmo:EMMO_c6d4a5e0_7e95_44df_a6db_84ee0a8bbc8e,
+        emmo:EMMO_e8b5f7de_4fd9_41d7_b988_87b512fe0180 ;
+    skos:prefLabel "SIAcceptedPrefixedUnit"@en ;
+    emmo:elucidation "Non-SI prefixed units that have been accepted by SI to be used together with the SI system."@en .
+
+emmo:EMMO_ac19c801_bead_4730_8b8c_50020eec45ec a owl:Class ;
+    rdfs:label "SIAcceptedDerivedUnit"@en ;
+    rdfs:subClassOf emmo:EMMO_08b308d4_31cd_4779_a784_aa92fc730f39,
+        emmo:EMMO_e8b5f7de_4fd9_41d7_b988_87b512fe0180 ;
+    skos:prefLabel "SIAcceptedDerivedUnit"@en ;
+    emmo:elucidation "Defived units that are accepted to be used with SI."@en .
+
+emmo:EMMO_e8b5f7de_4fd9_41d7_b988_87b512fe0180 a owl:Class ;
+    rdfs:label "SIAccepted"@en ;
+    rdfs:subClassOf emmo:EMMO_b081b346_7279_46ef_9a3d_2c088fcd79f4 ;
+    skos:prefLabel "SIAccepted"@en ;
+    emmo:OWLRL2DLAxioms "disjointUnionOf: SIAcceptedUnit, SIAcceptedPrefixedUnit, SIAcceptedDerivedUnit"^^xsd:string ;
+    emmo:elucidation "Non-SI unit that has been accepted by SI to be used together with the SI system."@en .
+
+[] a owl:AllDisjointClasses ;
+    owl:members ( emmo:EMMO_6795a4b8_ffd0_4588_a581_a9413fe49cac emmo:EMMO_93170bc8_d3b2_45bd_8cad_20aad08462ef emmo:EMMO_ac19c801_bead_4730_8b8c_50020eec45ec ) .
+

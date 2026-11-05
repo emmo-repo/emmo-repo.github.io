@@ -1,0 +1,16 @@
+@prefix : <https://w3id.org/emmo/hume/disciplines/sisystem#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+: a owl:Ontology ;
+    dcterms:abstract "A module that imports the class definitions of the SI system."@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/legalcode> ;
+    dcterms:publisher <https://emmc.eu> ;
+    dcterms:title "SI System"@en ;
+    owl:imports <https://w3id.org/emmo/1.0.4/disciplines/units/coherentsiunits>,
+        <https://w3id.org/emmo/1.0.4/disciplines/units/noncoherentsiunits>,
+        <https://w3id.org/emmo/1.0.4/disciplines/units/prefixedsiunits>,
+        <https://w3id.org/emmo/1.0.4/disciplines/units/siacceptedspecialunits>,
+        <https://w3id.org/emmo/1.0.4/disciplines/units/sidimensionalunits> ;
+    owl:versionIRI <https://w3id.org/emmo/1.0.4/hume/disciplines/sisystem> .
+
